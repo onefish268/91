@@ -125,17 +125,6 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.1
 			}
 		}
-		ZIM_10 = {
-			picture = nongyexianzhuang
-			modifier = {
-				consumer_goods_factor = 0.4
-				mobilization_speed = -0.4
-				land_reinforce_rate = -0.1
-				conscription_factor = -0.15
-				monthly_population = -0.4
-				global_building_slots_factor = -0.2
-			}
-		}
 		ZIM_11 = {
 			picture = gongyexianzhuang
 			modifier = {

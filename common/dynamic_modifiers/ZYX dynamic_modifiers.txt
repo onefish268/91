@@ -1,5 +1,12 @@
 ZIM_10 = {
 	icon = "GFX_idea_nongyexianzhuang"
+	
+	consumer_goods_factor = 0.4
+	mobilization_speed = -0.4
+	land_reinforce_rate = -0.1
+	conscription_factor = -0.15
+	monthly_population = -0.4
+	global_building_slots_factor = -0.2
 
 	consumer_goods_factor = ZIM_10_1 #消费品
 	mobilization_speed = ZIM_10_2 #动员速度

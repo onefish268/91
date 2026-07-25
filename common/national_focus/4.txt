@@ -793,7 +793,10 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = ZIM_10
+			add_dynamic_modifier = {
+				modifier = ZIM_10				# 要添加的动态修正（精神）的ID
+				scope = ZYX
+			}
 			custom_effect_tooltip = xianzhuangyi
 		}
 	}
@@ -826,16 +829,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-			    add_to_variable = {
-				    ZIM_10_1 = -0.2
-			    }
-				add_dynamic_modifier = {
-					modifier = ZIM_10   # 要添加的动态修正（精神）的ID
-   					scope = ZYX
+				add_to_variable = {
+					ZIM_10_1 = -0.2
 				}
-		    }
+			}
 			custom_effect_tooltip = gaishanyi
-        }
+		}
 	}
 	focus = {
 		id = 3_focus_50
