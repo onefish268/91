@@ -1,12 +1,5 @@
 ZIM_10 = {
 	icon = "GFX_idea_nongyexianzhuang"
-	
-	consumer_goods_factor = 0.4
-	mobilization_speed = -0.4
-	land_reinforce_rate = -0.1
-	conscription_factor = -0.15
-	monthly_population = -0.4
-	global_building_slots_factor = -0.2
 
 	consumer_goods_factor = ZIM_10_1 #消费品
 	mobilization_speed = ZIM_10_2 #动员速度
@@ -14,4 +7,29 @@ ZIM_10 = {
 	conscription_factor = ZIM_10_4 #征兵倍率
 	monthly_population = ZIM_10_5 #月度人口增长
 	global_building_slots_factor = ZIM_10_6 #建筑建造槽位上限
+}
+
+ZIM_11 = {
+	icon = "GFX_idea_gongyexianzhuang"
+
+	industrial_capacity_factory = ZIM_11_1 #民用工厂工业产能修正
+	production_speed_buildings_factor = ZIM_11_2 #通用建筑建造速度修正
+	industrial_capacity_dockyard = ZIM_11_3 #船坞工业产能修正
+	production_speed_industrial_complex_factor = ZIM_11_4 #民用工厂建造速度修正系数
+	production_speed_arms_factory_factor = ZIM_11_5 #军工厂建造速度修正
+	production_factory_max_efficiency_factor = ZIM_11_6 #工厂最大效率上限修正
+	production_factory_efficiency_gain_factor = ZIM_11_7 #工厂效率增长速率修正
+	line_change_production_efficiency_factor = ZIM_11_8 #生产线切换效率惩罚修正
+	production_speed_infrastructure_factor = ZIM_11_9 #基建建造速度修正系数
+}
+
+ZIM_12 = {
+	icon = "GFX_idea_shehuixianzhuang"
+
+	monthly_population = ZIM_12_1 #月度人口增长修正
+	army_org_factor = ZIM_12_2 #陆军组织度修正
+	army_morale_factor = ZIM_12_3 #陆军士气修正
+	conscription_factor = ZIM_12_4 #征兵倍率修正
+	political_power_cost = ZIM_12_5 #每日消耗政治点数
+	consumer_goods_factor = ZIM_12_6 #消费品
 }

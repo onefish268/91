@@ -12,7 +12,7 @@ focus_tree = {
 		id = 3_focus_1
 		x = 0
 		y = -1
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ICE_hrafninn_flygur
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -392,7 +392,7 @@ focus_tree = {
 		id = 3_focus_29
 		x = -4
 		y = 0
-		cost = 0
+		cost = 5
 		icon = GFX_focus_ITA_strengthen_ascari_corps
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -408,7 +408,7 @@ focus_tree = {
 		id = 3_focus_30
 		x = -5
 		y = 1
-		cost = 0
+		cost = 8
 		icon = GFX_focus_CZE_demonstration_of_military_achievements
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -432,7 +432,7 @@ focus_tree = {
 		id = 3_focus_31
 		x = -3
 		y = 1
-		cost = 0
+		cost = 8
 		icon = GFX_focus_generic_soviet_politics
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -471,7 +471,7 @@ focus_tree = {
 		id = 3_focus_32
 		x = -5
 		y = 3
-		cost = 0
+		cost = 8
 		icon = GFX_focus_NGL_reopen_university
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -513,7 +513,7 @@ focus_tree = {
 		id = 3_focus_33
 		x = -3
 		y = 3
-		cost = 0
+		cost = 8
 		icon = GFX_focus_CHI_initiate_gung_ho_movement
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -545,7 +545,7 @@ focus_tree = {
 		id = 3_focus_34
 		x = -5
 		y = 5
-		cost = 0
+		cost = 8
 		icon = GFX_focus_NGL_face_up_to_it
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -567,7 +567,7 @@ focus_tree = {
 		id = 3_focus_35
 		x = -3
 		y = 5
-		cost = 0
+		cost = 8
 		icon = GFX_focus_rus_for_faith
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -589,7 +589,7 @@ focus_tree = {
 		id = 3_focus_36
 		x = -4
 		y = 6
-		cost = 0
+		cost = 2
 		icon = GFX_focus_JAP_writing_new_law
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -610,7 +610,7 @@ focus_tree = {
 		id = 3_focus_37
 		x = 4
 		y = 0
-		cost = 0
+		cost = 5
 		icon = GFX_focus_USS_investigate_internal_security
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -625,7 +625,7 @@ focus_tree = {
 		id = 3_focus_38
 		x = 2
 		y = 1
-		cost = 0
+		cost = 3
 		icon = GFX_focus_JAP_united_protest
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -640,7 +640,7 @@ focus_tree = {
 		id = 3_focus_39
 		x = 6
 		y = 1
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NOR_build_the_northern_rail
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -655,7 +655,7 @@ focus_tree = {
 		id = 3_focus_40
 		x = 4
 		y = 2
-		cost = 0
+		cost = 5
 		icon = GFX_focus_GER_autarky_ambitions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -676,7 +676,7 @@ focus_tree = {
 		id = 3_focus_41
 		x = 0
 		y = 3
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_60
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -691,7 +691,7 @@ focus_tree = {
 		id = 3_focus_42
 		x = 0
 		y = 4
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -715,7 +715,7 @@ focus_tree = {
 		id = 3_focus_43
 		x = 0
 		y = 6
-		cost = 0
+		cost = 10
 		icon = GFX_focus_CZE_coalition_building
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -730,7 +730,7 @@ focus_tree = {
 		id = 3_focus_44
 		x = -1
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_SOV_panslavic_nationalism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -750,7 +750,7 @@ focus_tree = {
 		id = 3_focus_45
 		x = 1
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_NORDIC_com_selector_research
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -770,7 +770,7 @@ focus_tree = {
 		id = 3_focus_46
 		x = 6
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_CHI_weaponise_the_faithful
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -785,7 +785,7 @@ focus_tree = {
 		id = 3_focus_47
 		x = 4
 		y = 4
-		cost = 0
+		cost = 8
 		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -794,8 +794,26 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_dynamic_modifier = {
-				modifier = ZIM_10				# 要添加的动态修正（精神）的ID
+				modifier = ZIM_10
 				scope = ZYX
+			}
+			add_to_variable = {
+				ZIM_10_1 = 0.4
+			}
+			add_to_variable = {
+				ZIM_10_2 = -0.4
+			}
+			add_to_variable = {
+				ZIM_10_3 = -0.1
+			}
+			add_to_variable = {
+				ZIM_10_4 = -0.15
+			}
+			add_to_variable = {
+				ZIM_10_5 = -0.4
+			}
+			add_to_variable = {
+				ZIM_10_6 = -0.2
 			}
 			custom_effect_tooltip = xianzhuangyi
 		}
@@ -804,7 +822,7 @@ focus_tree = {
 		id = 3_focus_48
 		x = 11
 		y = 4
-		cost = 0
+		cost = 8
 		icon = GFX_focus_generic_crush_capitalism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -812,7 +830,37 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = ZIM_11
+			add_dynamic_modifier = {
+				modifier = ZIM_11
+				scope = ZYX
+			}
+			add_to_variable = {
+				ZIM_11_1 = -0.1
+			}
+			add_to_variable = {
+				ZIM_11_2 = -0.1
+			}
+			add_to_variable = {
+				ZIM_11_3 = -0.1
+			}
+			add_to_variable = {
+				ZIM_11_4 = -0.1
+			}
+			add_to_variable = {
+				ZIM_11_5 = -0.1
+			}
+			add_to_variable = {
+				ZIM_11_6 = -0.3
+			}
+			add_to_variable = {
+				ZIM_11_7 = -0.3
+			}
+			add_to_variable = {
+				ZIM_11_8 = -0.4
+			}
+			add_to_variable = {
+				ZIM_11_9 = -0.15
+			}
 			custom_effect_tooltip = xianzhuanger
 		}
 	}
@@ -820,7 +868,7 @@ focus_tree = {
 		id = 3_focus_49
 		x = 3
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_little_entente
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -840,7 +888,7 @@ focus_tree = {
 		id = 3_focus_50
 		x = 5
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_PRC_land_revolution_expedited
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -851,13 +899,14 @@ focus_tree = {
 			add_to_variable = {
 				ZIM_10_5 = 0.2
 			}
+			custom_effect_tooltip = gaishanyi
 		}
 	}
 	focus = {
 		id = 3_focus_51
 		x = 3
 		y = 6
-		cost = 0
+		cost = 10
 		icon = GFX_focus_AST_permanent_military_forces
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -871,13 +920,14 @@ focus_tree = {
 			add_to_variable = {
 				ZIM_10_6 = 0.3
 			}
+			custom_effect_tooltip = gaishanyi
 		}
 	}
 	focus = {
 		id = 3_focus_52
 		x = 5
 		y = 6
-		cost = 0
+		cost = 10
 		icon = GFX_focus_PRC_petition_for_freedom
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -888,13 +938,14 @@ focus_tree = {
 			add_to_variable = {
 				ZIM_10_5 = 0.3
 			}
+			custom_effect_tooltip = gaishanyi
 		}
 	}
 	focus = {
 		id = 3_focus_53
 		x = 4
 		y = 7
-		cost = 0
+		cost = 5
 		icon = GFX_focus_ITA_milizia_marittima_di_artiglieria
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -920,109 +971,224 @@ focus_tree = {
 			add_to_variable = {
 				ZIM_10_6 = 0.1
 			}
+			custom_effect_tooltip = gaishanyi
 		}
 	}
 	focus = {
 		id = 3_focus_54
 		x = 7
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_POL_complete_april_constitution
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_48
 		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				state = 879
+				amount = 30
+			}
+			add_resource = {
+				type = chromium
+				state = 879
+				amount = 32
+			}
+			add_resource = {
+				type = aluminum
+				state = 879
+				amount = 37
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_55
 		x = 7
 		y = 6
-		cost = 0
+		cost = 10
 		icon = GFX_focus_AUS_steyr_arms_investment
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_54
 		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				state = 879
+				amount = 30
+			}
+			add_resource = {
+				type = coal
+				state = 879
+				amount = 110
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_56
 		x = 7
 		y = 7
-		cost = 0
+		cost = 10
 		icon = GFX_focus_USS_watch_out
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_55
 		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				state = 879
+				amount = 25
+			}
+			add_resource = {
+				type = oil
+				state = 879
+				amount = 50
+			}
+			add_resource = {
+				type = tungsten
+				state = 879
+				amount = 20
+			}
+			add_resource = {
+				type = chromium
+				state = 879
+				amount = 30
+			}
+			add_resource = {
+				type = coal
+				state = 879
+				amount = 30
+			}
+			add_manpower = -2000
+		}
 	}
 	focus = {
 		id = 3_focus_57
 		x = 9
 		y = 5
-		cost = 0
+		cost = 8
 		icon = GFX_focus_ETH_replace_the_abuna
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_48
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_6 = 0.15
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_58
 		x = 9
 		y = 6
-		cost = 0
+		cost = 8
 		icon = GFX_focus_SIA_rice_husk_steam_turbines
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_57
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_6 = 0.15
+			}
+			add_to_variable = {
+				ZIM_11_7 = 0.15
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_59
 		x = 9
 		y = 7
-		cost = 0
+		cost = 8
 		icon = GFX_focus_USS_rebuild_transportation_system
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_58
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_6 = 0.2
+			}
+			add_to_variable = {
+				ZIM_11_7 = 0.2
+			}
+			add_to_variable = {
+				ZIM_11_8 = 0.2
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_60
 		x = 11
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_BRA_joint_italian_motor_development
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_48
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_4 = 0.15
+			}
+			add_to_variable = {
+				ZIM_11_1 = 0.15
+			}
+			956 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_61
 		x = 13
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_steel
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_48
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_2 = 0.15
+			}
+			add_to_variable = {
+				ZIM_11_9 = 0.15
+			}
+			add_resource = {
+				type = steel
+				state = 869
+				amount = 15
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_62
 		x = 12
 		y = 6
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_steel_mill
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1032,60 +1198,116 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_61
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_4 = 0.15
+			}
+			add_to_variable = {
+				ZIM_11_6 = 0.1
+			}
+			add_resource = {
+				type = steel
+				state = 956
+				amount = 21
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_63
 		x = 11
 		y = 7
-		cost = 0
+		cost = 10
 		icon = GFX_focus_INS_work_with_oil_barons
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_62
 		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				state = 879
+				amount = 70
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_64
 		x = 13
 		y = 7
-		cost = 0
+		cost = 10
 		icon = GFX_focus_AUS_agriculture
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_62
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_10_1 = -0.15
+			}
+			add_to_variable = {
+				ZIM_10_2 = 0.15
+			}
+			custom_effect_tooltip = gaishanyi
+		}
 	}
 	focus = {
 		id = 3_focus_145
 		x = 11
 		y = 9
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_improve_roads
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_63
 		}
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				state = 879
+				amount = 71
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_65
 		x = 12
 		y = 8
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_military_industry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_62
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_3 = 0.15
+			}
+			add_to_variable = {
+				ZIM_11_5 = 0.2
+			}
+			add_to_variable = {
+				ZIM_11_7 = 0.15
+			}
+			956 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_66
 		x = 17
 		y = 4
-		cost = 0
+		cost = 8
 		icon = GFX_focus_JAP_attracting_foreign_capital
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1093,7 +1315,25 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = ZIM_12
+			add_dynamic_modifier = {
+				modifier = ZIM_12
+				scope = ZYX
+			}
+			add_to_variable = {
+				ZIM_12_1 = -0.15
+			}
+			add_to_variable = {
+				ZIM_12_2 = -0.1
+			}
+			add_to_variable = {
+				ZIM_12_3 = -0.15
+			}
+			add_to_variable = {
+				ZIM_12_4 = -0.15
+			}
+			add_to_variable = {
+				ZIM_12_5 = 0.15
+			}
 			custom_effect_tooltip = xianzhuangsan
 		}
 	}
@@ -1101,108 +1341,211 @@ focus_tree = {
 		id = 3_focus_67
 		x = 13
 		y = 9
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ITA_battaglioni_m
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_64
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_10_6 = 0.15
+			}
+			956 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = gaishanyi
+		}
 	}
 	focus = {
 		id = 3_focus_68
 		x = 15
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_NGL_medical_institution
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_66
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_12_1 = 0.2
+			}
+			custom_effect_tooltip = gaishansan
+		}
 	}
 	focus = {
 		id = 3_focus_69
 		x = 17
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ITA_workers_unions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_66
 		}
+		completion_reward = {
+			add_extra_state_shared_building_slots = 25
+		}
 	}
 	focus = {
 		id = 3_focus_71
 		x = 15
 		y = 7
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ITA_decima_flottiglia_mas
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_68
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_12_2 = 0.15
+			}
+			add_to_variable = {
+				ZIM_12_3 = 0.15
+			}
+			add_to_variable = {
+				ZIM_12_4 = 0.15
+			}
+			custom_effect_tooltip = gaishansan
+		}
 	}
 	focus = {
 		id = 3_focus_72
 		x = 19
 		y = 7
-		cost = 0
+		cost = 10
 		icon = GFX_focus_FIN_increase_military_budget
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_70
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_12_6 = -0.1
+			}
+			add_to_variable = {
+				ZIM_12_5 = -0.2
+			}
+			custom_effect_tooltip = gaishansan
+		}
 	}
 	focus = {
 		id = 3_focus_73
 		x = 17
 		y = 8
-		cost = 0
+		cost = 6
 		icon = GFX_focus_CHL_an_imperial_capital
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_69
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_11_1 = 0.1
+			}
+			add_to_variable = {
+				ZIM_11_2 = 0.1
+			}
+			add_to_variable = {
+				ZIM_11_6 = 0.1
+			}
+			custom_effect_tooltip = gaishaner
+		}
 	}
 	focus = {
 		id = 3_focus_74
 		x = 15
 		y = 9
-		cost = 0
+		cost = 8
 		icon = GFX_focus_NGL_job_opportunities
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_73
 		}
+		completion_reward = {
+			917 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			917 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_75
 		x = 17
 		y = 9
-		cost = 0
+		cost = 8
 		icon = GFX_focus_PRC_bolshevik_urbanization_completed
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_73
 		}
+		completion_reward = {
+			956 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			813 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_76
 		x = 19
 		y = 9
-		cost = 0
+		cost = 8
 		icon = GFX_focus_DEN_develop_bornholm
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_73
+		}
+		completion_reward = {
+			965 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			965 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -2052,12 +2395,18 @@ focus_tree = {
 		id = 3_focus_70
 		x = 19
 		y = 5
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ITA_devaluate_the_lire
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_66
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZIM_12_6 = -0.15
+			}
+			custom_effect_tooltip = gaishansan
 		}
 	}
 }
