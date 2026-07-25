@@ -1,0 +1,10 @@
+ZIM_10 = {
+	icon = "GFX_idea_nongyexianzhuang"
+
+	consumer_goods_factor = ZIM_10_1 #消费品
+	mobilization_speed = ZIM_10_2 #动员速度
+	land_reinforce_rate = ZIM_10_3 #陆军增援速度
+	conscription_factor = ZIM_10_4 #征兵倍率
+	monthly_population = ZIM_10_5 #月度人口增长
+	global_building_slots_factor = ZIM_10_6 #建筑建造槽位上限
+}

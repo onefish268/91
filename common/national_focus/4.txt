@@ -825,9 +825,13 @@ focus_tree = {
 			focus = 3_focus_47
 		}
 		completion_reward = {
-			remove_ideas = ZIM_6
-			add_ideas = ZIM_7
-		}
+			hidden_effect = {
+			    add_to_variable = {
+				    ZIM_10_1 = -0.2
+			    }
+		    }
+			custom_effect_tooltip = gaishanyi
+        }
 	}
 	focus = {
 		id = 3_focus_50
@@ -841,8 +845,9 @@ focus_tree = {
 			focus = 3_focus_47
 		}
 		completion_reward = {
-			remove_ideas = ZIM_6
-			add_ideas = ZIM_7
+			add_to_variable = {
+				ZIM_10_5 = 0.2
+			}
 		}
 	}
 	focus = {
@@ -857,8 +862,12 @@ focus_tree = {
 			focus = 3_focus_49
 		}
 		completion_reward = {
-			remove_ideas = ZIM_6
-			add_ideas = ZIM_7
+			add_to_variable = {
+				ZIM_10_1 = -0.3
+			}
+			add_to_variable = {
+				ZIM_10_6 = 0.3
+			}
 		}
 	}
 	focus = {
@@ -873,8 +882,9 @@ focus_tree = {
 			focus = 3_focus_50
 		}
 		completion_reward = {
-			remove_ideas = ZIM_6
-			add_ideas = ZIM_7
+			add_to_variable = {
+				ZIM_10_5 = 0.3
+			}
 		}
 	}
 	focus = {
@@ -892,8 +902,21 @@ focus_tree = {
 			focus = 3_focus_52
 		}
 		completion_reward = {
-			remove_ideas = ZIM_6
-			add_ideas = ZIM_7
+			add_to_variable = {
+				ZIM_10_2 = 0.2
+			}
+			add_to_variable = {
+				ZIM_10_3 = 0.2
+			}
+			add_to_variable = {
+				ZIM_10_4 = 0.2
+			}
+			add_to_variable = {
+				ZIM_10_5 = 0.2
+			}
+			add_to_variable = {
+				ZIM_10_6 = 0.1
+			}
 		}
 	}
 	focus = {
