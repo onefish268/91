@@ -829,6 +829,10 @@ focus_tree = {
 			    add_to_variable = {
 				    ZIM_10_1 = -0.2
 			    }
+				add_dynamic_modifier = {
+					modifier = ZIM_10   # 要添加的动态修正（精神）的ID
+   					scope = ZYX
+				}
 		    }
 			custom_effect_tooltip = gaishanyi
         }
