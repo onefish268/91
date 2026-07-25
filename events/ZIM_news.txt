@@ -1,0 +1,66 @@
+add_namespace = ZIM.news
+
+news_event = {
+    id = ZIM.news.1
+    title = ZIM.news.1.t
+    desc = ZIM.news.1.d
+    picture = GFX_news_1
+    major = yes 
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.news.1.a
+        trigger = {
+				tag = ZIM
+        }
+    }
+
+    option = {
+		name = ZIM.news.1.b							
+		trigger = {
+				tag = ENG			
+		}	
+	}
+	
+	option = {
+		name = ZIM.news.1.C				
+		trigger = {
+			NOT = {
+				tag = ENG	
+				tag = ZIM					
+			}			
+		}		
+	}		
+}
+news_event = {
+    id = ZIM.news.2
+    title = ZIM.news.2.t
+    desc = ZIM.news.2.d
+    picture = GFX_news_2
+    major = yes 
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.news.2.a
+        trigger = {
+				tag = ZYX
+        }
+    }
+
+    option = {
+		name = ZIM.news.2.b							
+		trigger = {
+				tag = ENG			
+		}	
+	}
+	
+	option = {
+		name = ZIM.news.2.C				
+		trigger = {
+			NOT = {
+				tag = ENG	
+				tag = ZYX					
+			}			
+		}		
+	}		
+}

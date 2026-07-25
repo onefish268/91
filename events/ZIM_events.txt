@@ -1,0 +1,259 @@
+add_namespace = ZIM
+
+country_event = {
+    id = ZIM.1
+    title = ZIM.1.t
+    desc = ZIM.1.desc
+    picture = GFX_ZIM1_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.1.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.2
+    title = ZIM.2.t
+    desc = ZIM.2.desc
+    picture = GFX_ZIM1_event
+    is_triggered_only = yes
+
+    immediate = {
+        news_event = { id = ZIM.news.1 days = 0 }
+    }
+
+    option = {
+        name = ZIM.2.a
+        load_focus_tree = ZIM_2_tree
+        mark_focus_tree_layout_dirty = yes
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.3
+    title = ZIM.3.t
+    desc = ZIM.3.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.3.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.4
+    title = ZIM.4.t
+    desc = ZIM.4.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.4.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.5
+    title = ZIM.5.t
+    desc = ZIM.5.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.5.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.6
+    title = ZIM.6.t
+    desc = ZIM.6.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.6.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.7
+    title = ZIM.7.t
+    desc = ZIM.7.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.7.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.8
+    title = ZIM.8.t
+    desc = ZIM.8.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.8.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.9
+    title = ZIM.9.t
+    desc = ZIM.9.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.9.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.10
+    title = ZIM.10.t
+    desc = ZIM.10.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.10.a
+        unlock_national_focus = 1_focus_16
+        complete_national_focus = 1_focus_16
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {
+    id = ZIM.11
+    title = ZIM.11.t
+    desc = ZIM.11.desc
+    picture = GFX_ZIM2_event
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.11.a
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZYX = {
+        change_tag_from = ZIM
+        }       
+        ai_chance = { base = 20 }
+    }
+    option = {
+        name = ZIM.11.b
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZCS = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 20 }
+    }
+    option = {
+        name = ZIM.11.c
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZDM = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 20 }
+    }
+    option = {
+        name = ZIM.11.d
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZHJ = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 0 }
+    }
+    option = {
+        name = ZIM.11.e
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZSB = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 20 }
+    }
+    option = {
+        name = ZIM.11.f
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZSH = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 20 }
+    }
+    option = {
+        name = ZIM.11.g
+        retire_character = ZIM_yifeier
+        release = ZCS
+        release = ZDM
+        release = ZHJ
+        release = ZSB
+        release = ZSH
+        release = ZXS
+        release = ZYX
+        ZXS = {
+        change_tag_from = ZIM
+        }  
+        ai_chance = { base = 0 }
+    }
+}
+country_event = {
+    id = ZIM.12
+    title = ZIM.12.t
+    desc = ZIM.12.desc
+    picture = GFX_ZIM3_event
+    is_triggered_only = yes
+
+    immediate = {
+        news_event = { id = ZIM.news.2 days = 3 }
+    }
+
+    option = {
+        name = ZIM.12.a
+        ai_chance = { base = 50 }
+    }
+}

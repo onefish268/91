@@ -1,0 +1,486 @@
+category = {
+	name = "Voices"
+	soundeffects = {
+		ZYX_infantry_idle
+		ZYX_infantry_neutral_combat
+		ZYX_infantry_positive_combat
+		ZYX_infantry_retreat
+	}
+	compressor = {
+		enabled = yes
+		pregain = 0.0
+		postgain = 2.0
+		ratio = 10.0
+		threshold = -10.0
+		attacktime = 0.030
+		releasetime = 1.2
+	}
+}
+
+########### AUDIO ASSETS
+########### ZYX
+sound =
+{
+	name = "ZYX_Idle_001"
+	file = "ZYX/ZYX_Idle_001.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_002"
+	file = "ZYX/ZYX_Idle_002.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_003"
+	file = "ZYX/ZYX_Idle_003.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_004"
+	file = "ZYX/ZYX_Idle_004.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_005"
+	file = "ZYX/ZYX_Idle_005.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_006"
+	file = "ZYX/ZYX_Idle_006.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_007"
+	file = "ZYX/ZYX_Idle_007.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_008"
+	file = "ZYX/ZYX_Idle_008.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_009"
+	file = "ZYX/ZYX_Idle_009.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_010"
+	file = "ZYX/ZYX_Idle_010.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_011"
+	file = "ZYX/ZYX_Idle_011.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_012"
+	file = "ZYX/ZYX_Idle_012.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_013"
+	file = "ZYX/ZYX_Idle_013.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_014"
+	file = "ZYX/ZYX_Idle_014.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_015"
+	file = "ZYX/ZYX_Idle_015.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_016"
+	file = "ZYX/ZYX_Idle_016.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_017"
+	file = "ZYX/ZYX_Idle_017.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_018"
+	file = "ZYX/ZYX_Idle_018.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_019"
+	file = "ZYX/ZYX_Idle_019.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_020"
+	file = "ZYX/ZYX_Idle_020.wav"
+}
+sound =
+{
+	name = "ZYX_Idle_021"
+	file = "ZYX/ZYX_Idle_021.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_001"
+	file = "ZYX/ZYX_Neutral_001.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_002"
+	file = "ZYX/ZYX_Neutral_002.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_003"
+	file = "ZYX/ZYX_Neutral_003.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_004"
+	file = "ZYX/ZYX_Neutral_004.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_005"
+	file = "ZYX/ZYX_Neutral_005.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_006"
+	file = "ZYX/ZYX_Neutral_006.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_007"
+	file = "ZYX/ZYX_Neutral_007.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_008"
+	file = "ZYX/ZYX_Neutral_008.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_009"
+	file = "ZYX/ZYX_Neutral_009.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_010"
+	file = "ZYX/ZYX_Neutral_010.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_011"
+	file = "ZYX/ZYX_Neutral_011.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_012"
+	file = "ZYX/ZYX_Neutral_012.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_013"
+	file = "ZYX/ZYX_Neutral_013.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_014"
+	file = "ZYX/ZYX_Neutral_014.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_015"
+	file = "ZYX/ZYX_Neutral_015.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_016"
+	file = "ZYX/ZYX_Neutral_016.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_017"
+	file = "ZYX/ZYX_Neutral_017.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_018"
+	file = "ZYX/ZYX_Neutral_018.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_019"
+	file = "ZYX/ZYX_Neutral_019.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_020"
+	file = "ZYX/ZYX_Neutral_020.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_021"
+	file = "ZYX/ZYX_Neutral_021.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_022"
+	file = "ZYX/ZYX_Neutral_022.wav"
+}
+sound =
+{
+	name = "ZYX_Neutral_023"
+	file = "ZYX/ZYX_Neutral_023.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_001"
+	file = "ZYX/ZYX_Positive_001.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_002"
+	file = "ZYX/ZYX_Positive_002.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_003"
+	file = "ZYX/ZYX_Positive_003.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_004"
+	file = "ZYX/ZYX_Positive_004.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_005"
+	file = "ZYX/ZYX_Positive_005.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_006"
+	file = "ZYX/ZYX_Positive_006.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_007"
+	file = "ZYX/ZYX_Positive_007.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_008"
+	file = "ZYX/ZYX_Positive_008.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_009"
+	file = "ZYX/ZYX_Positive_009.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_010"
+	file = "ZYX/ZYX_Positive_010.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_011"
+	file = "ZYX/ZYX_Positive_011.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_012"
+	file = "ZYX/ZYX_Positive_012.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_013"
+	file = "ZYX/ZYX_Positive_013.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_014"
+	file = "ZYX/ZYX_Positive_014.wav"
+}
+sound =
+{
+	name = "ZYX_Positive_015"
+	file = "ZYX/ZYX_Positive_015.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_001"
+	file = "ZYX/ZYX_Retreat_001.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_002"
+	file = "ZYX/ZYX_Retreat_002.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_003"
+	file = "ZYX/ZYX_Retreat_003.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_004"
+	file = "ZYX/ZYX_Retreat_004.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_005"
+	file = "ZYX/ZYX_Retreat_005.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_006"
+	file = "ZYX/ZYX_Retreat_006.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_007"
+	file = "ZYX/ZYX_Retreat_007.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_008"
+	file = "ZYX/ZYX_Retreat_008.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_009"
+	file = "ZYX/ZYX_Retreat_009.wav"
+}
+sound =
+{
+	name = "ZYX_Retreat_010"
+	file = "ZYX/ZYX_Retreat_010.wav"
+}
+
+########## ZYX
+########## ZYX
+
+soundeffect =
+{
+    name = "ZYX_infantry_idle"
+    sounds = {
+        sound = ZYX_Idle_001
+        sound = ZYX_Idle_002
+        sound = ZYX_Idle_003
+        sound = ZYX_Idle_004
+        sound = ZYX_Idle_005
+        sound = ZYX_Idle_006
+        sound = ZYX_Idle_007
+        sound = ZYX_Idle_008
+        sound = ZYX_Idle_009
+        sound = ZYX_Idle_010
+        sound = ZYX_Idle_011
+        sound = ZYX_Idle_012
+        sound = ZYX_Idle_013
+        sound = ZYX_Idle_014
+        sound = ZYX_Idle_015
+        sound = ZYX_Idle_016
+        sound = ZYX_Idle_017
+        sound = ZYX_Idle_018
+        sound = ZYX_Idle_019
+        sound = ZYX_Idle_020
+        sound = ZYX_Idle_021
+
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.9
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "ZYX_infantry_neutral_combat"
+    sounds = {
+        sound = ZYX_Neutral_001
+        sound = ZYX_Neutral_002
+        sound = ZYX_Neutral_003
+        sound = ZYX_Neutral_004
+        sound = ZYX_Neutral_005
+        sound = ZYX_Neutral_006
+        sound = ZYX_Neutral_007
+        sound = ZYX_Neutral_008
+        sound = ZYX_Neutral_009
+        sound = ZYX_Neutral_010
+        sound = ZYX_Neutral_011
+        sound = ZYX_Neutral_012
+        sound = ZYX_Neutral_013
+        sound = ZYX_Neutral_014
+        sound = ZYX_Neutral_015
+        sound = ZYX_Neutral_016
+        sound = ZYX_Neutral_017
+        sound = ZYX_Neutral_018
+        sound = ZYX_Neutral_019
+        sound = ZYX_Neutral_020
+		sound = ZYX_Neutral_021
+        sound = ZYX_Neutral_022
+        sound = ZYX_Neutral_023
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.9
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "ZYX_infantry_positive_combat"
+    sounds = {
+        sound = ZYX_Positive_001
+        sound = ZYX_Positive_002
+        sound = ZYX_Positive_003
+        sound = ZYX_Positive_004
+        sound = ZYX_Positive_005
+        sound = ZYX_Positive_006
+        sound = ZYX_Positive_007
+        sound = ZYX_Positive_008
+        sound = ZYX_Positive_009
+        sound = ZYX_Positive_010
+        sound = ZYX_Positive_011
+		sound = ZYX_Positive_012
+		sound = ZYX_Positive_013
+		sound = ZYX_Positive_014
+		sound = ZYX_Positive_015
+
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.9
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "ZYX_infantry_retreat"
+    sounds = {
+        sound = ZYX_Retreat_001
+        sound = ZYX_Retreat_002
+        sound = ZYX_Retreat_003
+        sound = ZYX_Retreat_004
+        sound = ZYX_Retreat_005
+        sound = ZYX_Retreat_006
+        sound = ZYX_Retreat_007
+        sound = ZYX_Retreat_008
+        sound = ZYX_Retreat_009
+        sound = ZYX_Retreat_010
+
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.9
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}

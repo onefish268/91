@@ -1,0 +1,170 @@
+focus_tree = {
+	id = ZIM_1_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZIM
+		}
+	}
+	default = no
+	focus = {
+		id = new_focus_1
+		x = 2
+		y = -2
+		cost = 1
+		icon = GFX_focus_theworld
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			country_event = {
+				id = ZIM.1
+			}
+		}
+	}
+	focus = {
+		id = new_focus_2
+		x = 0
+		y = -1
+		cost = 0
+		icon = GFX_focus_ROM_Break_Banks
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_1
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.3
+			}
+		}
+	}
+	focus = {
+		id = new_focus_3
+		x = 4
+		y = -1
+		cost = 0
+		icon = GFX_focus_xz
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_1
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.4
+			}
+		}
+	}
+	focus = {
+		id = new_focus_4
+		x = -3
+		y = 0
+		cost = 1
+		icon = GFX_focus_gate_of_dimension
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_2
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.5
+			}
+		}
+	}
+	focus = {
+		id = new_focus_5
+		x = -1
+		y = 0
+		cost = 1
+		icon = GFX_focus_gate_of_dimension
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_2
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.6
+			}
+		}
+	}
+	focus = {
+		id = new_focus_6
+		x = 4
+		y = 0
+		cost = 1
+		icon = GFX_focus_NGL_efficient_officials
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_3
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.8
+			}
+		}
+	}
+	focus = {
+		id = new_focus_7
+		x = 1
+		y = 0
+		cost = 1
+		icon = GFX_focus_gate_of_dimension
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_2
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.7
+			}
+		}
+	}
+	focus = {
+		id = new_focus_8
+		x = 4
+		y = 1
+		cost = 1
+		icon = GFX_focus_JAP_suggest_for_election
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_6
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.9
+			}
+		}
+	}
+	focus = {
+		id = new_focus_9
+		x = 2
+		y = 2
+		cost = 3
+		icon = GFX_focus_yanjiang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_8
+		}
+		prerequisite = {
+			focus = new_focus_7
+		}
+		prerequisite = {
+			focus = new_focus_5
+		}
+		prerequisite = {
+			focus = new_focus_4
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.2
+			}
+		}
+	}
+}

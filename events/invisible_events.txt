@@ -1,0 +1,12 @@
+add_namespace = invisible_event
+
+country_event = {
+	id = invisible_event.000
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		clr_country_flag = Expanding_army
+	}
+}
+

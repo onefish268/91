@@ -1,0 +1,2037 @@
+focus_tree = {
+	id = ZYX_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZYX
+		}
+	}
+	default = no
+	focus = {
+		id = 3_focus_1
+		x = 0
+		y = -1
+		cost = 0
+		icon = GFX_focus_ICE_hrafninn_flygur
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			set_party_name = {
+				ideology = fascism
+				long_name = "国家法西斯党"
+				name = "国家法西斯党"
+			}
+			set_cosmetic_tag = ZYXTY
+		}
+	}
+	focus = {
+		id = 3_focus_7
+		x = -15
+		y = 1
+		cost = 0
+		icon = GFX_focus_he1
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_3
+		}
+	}
+	focus = {
+		id = 3_focus_6
+		x = -9
+		y = 1
+		cost = 0
+		icon = GFX_focus_he4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_3
+		}
+	}
+	focus = {
+		id = 3_focus_5
+		x = -11
+		y = 1
+		cost = 0
+		icon = GFX_focus_he3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_3
+		}
+	}
+	focus = {
+		id = 3_focus_4
+		x = -13
+		y = 1
+		cost = 0
+		icon = GFX_focus_he2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_3
+		}
+	}
+	focus = {
+		id = 3_focus_3
+		x = -11
+		y = 0
+		cost = 0
+		icon = GFX_focus_lingxiu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_2
+		}
+	}
+	focus = {
+		id = 3_focus_2
+		x = -16
+		y = -1
+		cost = 0
+		icon = GFX_focus_ITA_italian_hegemony
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			custom_effect_tooltip = we_complete_this_huiyi
+		}
+	}
+	focus = {
+		id = 3_focus_8
+		x = -7
+		y = 1
+		cost = 0
+		icon = GFX_focus_he5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_3
+		}
+	}
+	focus = {
+		id = 3_focus_9
+		x = -20
+		y = 0
+		cost = 0
+		icon = GFX_focus_ITA_culto_del_duce
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_2
+		}
+	}
+	focus = {
+		id = 3_focus_10
+		x = -21
+		y = 1
+		cost = 0
+		icon = GFX_focus_PRC_the_central_committee
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_9
+		}
+	}
+	focus = {
+		id = 3_focus_11
+		x = -19
+		y = 1
+		cost = 0
+		icon = GFX_focus_ETH_invite_italian_settlers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_9
+		}
+	}
+	focus = {
+		id = 3_focus_12
+		x = -20
+		y = 2
+		cost = 0
+		icon = GFX_focus_SIA_order_discipline_and_unity
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_10
+		}
+		prerequisite = {
+			focus = 3_focus_11
+		}
+	}
+	focus = {
+		id = 3_focus_13
+		x = -20
+		y = 3
+		cost = 0
+		icon = GFX_focus_generic_military_academy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_12
+		}
+	}
+	focus = {
+		id = 3_focus_14
+		x = -22
+		y = 3
+		cost = 0
+		icon = GFX_focus_ICE_expanding_the_university_of_reykjavik
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_12
+		}
+	}
+	focus = {
+		id = 3_focus_15
+		x = -18
+		y = 3
+		cost = 0
+		icon = GFX_focus_SIA_defenders_of_constitutional_liberty
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_12
+		}
+	}
+	focus = {
+		id = 3_focus_16
+		x = -20
+		y = 5
+		cost = 0
+		icon = GFX_focus_DEN_national_unity
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_14
+		}
+		prerequisite = {
+			focus = 3_focus_13
+		}
+		prerequisite = {
+			focus = 3_focus_15
+		}
+	}
+	focus = {
+		id = 3_focus_17
+		x = -15
+		y = 3
+		cost = 0
+		icon = GFX_focus_ITA_blackshirts
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_7
+		}
+	}
+	focus = {
+		id = 3_focus_18
+		x = -13
+		y = 3
+		cost = 0
+		icon = GFX_focus_DEN_limited_regulations
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_4
+		}
+	}
+	focus = {
+		id = 3_focus_19
+		x = -11
+		y = 3
+		cost = 0
+		icon = GFX_focus_ETH_reach_out_to_the_italians
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_5
+		}
+	}
+	focus = {
+		id = 3_focus_20
+		x = -9
+		y = 3
+		cost = 0
+		icon = GFX_focus_ITA_the_social_republic_prevails
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_6
+		}
+	}
+	focus = {
+		id = 3_focus_21
+		x = -7
+		y = 3
+		cost = 0
+		icon = GFX_focus_generic_advanced_military_studies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_8
+		}
+	}
+	focus = {
+		id = 3_focus_22
+		x = -15
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_cavalry_charge
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_17
+		}
+	}
+	focus = {
+		id = 3_focus_23
+		x = -13
+		y = 5
+		cost = 0
+		icon = GFX_focus_CHL_cooperation_with_the_falange
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_18
+		}
+	}
+	focus = {
+		id = 3_focus_24
+		x = -11
+		y = 5
+		cost = 0
+		icon = GFX_focus_PER_limit_foreign_influence
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_19
+		}
+	}
+	focus = {
+		id = 3_focus_25
+		x = -9
+		y = 5
+		cost = 0
+		icon = GFX_focus_AFG_fruit_processing
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_20
+		}
+	}
+	focus = {
+		id = 3_focus_26
+		x = -7
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_mare_nostrum
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_21
+		}
+	}
+	focus = {
+		id = 3_focus_27
+		x = -12
+		y = 6
+		cost = 0
+		icon = GFX_focus_PRC_invite_soviet_general
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_28
+		}
+		prerequisite = {
+			focus = 3_focus_22
+		}
+		prerequisite = {
+			focus = 3_focus_23
+		}
+		prerequisite = {
+			focus = 3_focus_24
+		}
+		prerequisite = {
+			focus = 3_focus_25
+		}
+		prerequisite = {
+			focus = 3_focus_26
+		}
+	}
+	focus = {
+		id = 3_focus_28
+		x = -10
+		y = 6
+		cost = 0
+		icon = GFX_focus_ITA_capo_supremo
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_27
+		}
+		prerequisite = {
+			focus = 3_focus_22
+		}
+		prerequisite = {
+			focus = 3_focus_23
+		}
+		prerequisite = {
+			focus = 3_focus_24
+		}
+		prerequisite = {
+			focus = 3_focus_25
+		}
+		prerequisite = {
+			focus = 3_focus_26
+		}
+	}
+	focus = {
+		id = 3_focus_29
+		x = -4
+		y = 0
+		cost = 0
+		icon = GFX_focus_ITA_strengthen_ascari_corps
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = 3_focus_30
+		x = -5
+		y = 1
+		cost = 0
+		icon = GFX_focus_CZE_demonstration_of_military_achievements
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_29
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					869 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				869 = {
+					set_state_category = large_city
+				}
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_31
+		x = -3
+		y = 1
+		cost = 0
+		icon = GFX_focus_generic_soviet_politics
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_29
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					965 = {
+						is_fully_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				965 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_32
+		x = -5
+		y = 3
+		cost = 0
+		icon = GFX_focus_NGL_reopen_university
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_30
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					813 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				813 = {
+					set_state_category = metropolis
+				}
+			}
+			if = {
+				limit = {
+					956 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				956 = {
+					set_state_category = metropolis
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZSB
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_33
+		x = -3
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_initiate_gung_ho_movement
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_31
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					879 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				879 = {
+					add_extra_state_shared_building_slots = 3
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZHJ
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_34
+		x = -5
+		y = 5
+		cost = 0
+		icon = GFX_focus_NGL_face_up_to_it
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_32
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZDM
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_35
+		x = -3
+		y = 5
+		cost = 0
+		icon = GFX_focus_rus_for_faith
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_33
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZIM
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_36
+		x = -4
+		y = 6
+		cost = 0
+		icon = GFX_focus_JAP_writing_new_law
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_34
+		}
+		prerequisite = {
+			focus = 3_focus_35
+		}
+		completion_reward = {
+			set_capital = {
+				state = 956
+				remember_old_capital = no
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_37
+		x = 4
+		y = 0
+		cost = 0
+		icon = GFX_focus_USS_investigate_internal_security
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_1
+		}
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = 3_focus_38
+		x = 2
+		y = 1
+		cost = 0
+		icon = GFX_focus_JAP_united_protest
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_37
+		}
+		completion_reward = {
+			custom_effect_tooltip = qiyeyi
+		}
+	}
+	focus = {
+		id = 3_focus_39
+		x = 6
+		y = 1
+		cost = 0
+		icon = GFX_focus_NOR_build_the_northern_rail
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_37
+		}
+		completion_reward = {
+			custom_effect_tooltip = qiyeer
+		}
+	}
+	focus = {
+		id = 3_focus_40
+		x = 4
+		y = 2
+		cost = 0
+		icon = GFX_focus_GER_autarky_ambitions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_38
+		}
+		prerequisite = {
+			focus = 3_focus_39
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ZIM_9
+				days = 450
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_41
+		x = 0
+		y = 3
+		cost = 0
+		icon = GFX_focus_TRB_60
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_40
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = 3_focus_42
+		x = 0
+		y = 4
+		cost = 0
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_41
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_43
+		x = 0
+		y = 6
+		cost = 0
+		icon = GFX_focus_CZE_coalition_building
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_42
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = 3_focus_44
+		x = -1
+		y = 5
+		cost = 0
+		icon = GFX_focus_SOV_panslavic_nationalism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_41
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.2
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_45
+		x = 1
+		y = 5
+		cost = 0
+		icon = GFX_focus_NORDIC_com_selector_research
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_41
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 1
+				uses = 1
+				category = magic_army_tech
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_46
+		x = 6
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHI_weaponise_the_faithful
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_40
+		}
+		completion_reward = {
+			add_extra_state_shared_building_slots = 12
+		}
+	}
+	focus = {
+		id = 3_focus_47
+		x = 4
+		y = 4
+		cost = 0
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_46
+		}
+		completion_reward = {
+			add_ideas = ZIM_10
+			custom_effect_tooltip = xianzhuangyi
+		}
+	}
+	focus = {
+		id = 3_focus_48
+		x = 11
+		y = 4
+		cost = 0
+		icon = GFX_focus_generic_crush_capitalism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_46
+		}
+		completion_reward = {
+			add_ideas = ZIM_11
+			custom_effect_tooltip = xianzhuanger
+		}
+	}
+	focus = {
+		id = 3_focus_49
+		x = 3
+		y = 5
+		cost = 0
+		icon = GFX_focus_generic_little_entente
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_47
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 3_focus_50
+		x = 5
+		y = 5
+		cost = 0
+		icon = GFX_focus_PRC_land_revolution_expedited
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_47
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 3_focus_51
+		x = 3
+		y = 6
+		cost = 0
+		icon = GFX_focus_AST_permanent_military_forces
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_49
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 3_focus_52
+		x = 5
+		y = 6
+		cost = 0
+		icon = GFX_focus_PRC_petition_for_freedom
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_50
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 3_focus_53
+		x = 4
+		y = 7
+		cost = 0
+		icon = GFX_focus_ITA_milizia_marittima_di_artiglieria
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_51
+		}
+		prerequisite = {
+			focus = 3_focus_52
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 3_focus_54
+		x = 7
+		y = 5
+		cost = 0
+		icon = GFX_focus_POL_complete_april_constitution
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_48
+		}
+	}
+	focus = {
+		id = 3_focus_55
+		x = 7
+		y = 6
+		cost = 0
+		icon = GFX_focus_AUS_steyr_arms_investment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_54
+		}
+	}
+	focus = {
+		id = 3_focus_56
+		x = 7
+		y = 7
+		cost = 0
+		icon = GFX_focus_USS_watch_out
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_55
+		}
+	}
+	focus = {
+		id = 3_focus_57
+		x = 9
+		y = 5
+		cost = 0
+		icon = GFX_focus_ETH_replace_the_abuna
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_48
+		}
+	}
+	focus = {
+		id = 3_focus_58
+		x = 9
+		y = 6
+		cost = 0
+		icon = GFX_focus_SIA_rice_husk_steam_turbines
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_57
+		}
+	}
+	focus = {
+		id = 3_focus_59
+		x = 9
+		y = 7
+		cost = 0
+		icon = GFX_focus_USS_rebuild_transportation_system
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_58
+		}
+	}
+	focus = {
+		id = 3_focus_60
+		x = 11
+		y = 5
+		cost = 0
+		icon = GFX_focus_BRA_joint_italian_motor_development
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_48
+		}
+	}
+	focus = {
+		id = 3_focus_61
+		x = 13
+		y = 5
+		cost = 0
+		icon = GFX_focus_generic_steel
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_48
+		}
+	}
+	focus = {
+		id = 3_focus_62
+		x = 12
+		y = 6
+		cost = 0
+		icon = GFX_focus_generic_steel_mill
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_60
+		}
+		prerequisite = {
+			focus = 3_focus_61
+		}
+	}
+	focus = {
+		id = 3_focus_63
+		x = 11
+		y = 7
+		cost = 0
+		icon = GFX_focus_INS_work_with_oil_barons
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_62
+		}
+	}
+	focus = {
+		id = 3_focus_64
+		x = 13
+		y = 7
+		cost = 0
+		icon = GFX_focus_AUS_agriculture
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_62
+		}
+	}
+	focus = {
+		id = 3_focus_145
+		x = 11
+		y = 9
+		cost = 0
+		icon = GFX_focus_generic_improve_roads
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_63
+		}
+	}
+	focus = {
+		id = 3_focus_65
+		x = 12
+		y = 8
+		cost = 0
+		icon = GFX_focus_generic_military_industry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_62
+		}
+	}
+	focus = {
+		id = 3_focus_66
+		x = 17
+		y = 4
+		cost = 0
+		icon = GFX_focus_JAP_attracting_foreign_capital
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_46
+		}
+		completion_reward = {
+			add_ideas = ZIM_12
+			custom_effect_tooltip = xianzhuangsan
+		}
+	}
+	focus = {
+		id = 3_focus_67
+		x = 13
+		y = 9
+		cost = 0
+		icon = GFX_focus_ITA_battaglioni_m
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_64
+		}
+	}
+	focus = {
+		id = 3_focus_68
+		x = 15
+		y = 5
+		cost = 0
+		icon = GFX_focus_NGL_medical_institution
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_66
+		}
+	}
+	focus = {
+		id = 3_focus_69
+		x = 17
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_workers_unions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_66
+		}
+	}
+	focus = {
+		id = 3_focus_71
+		x = 15
+		y = 7
+		cost = 0
+		icon = GFX_focus_ITA_decima_flottiglia_mas
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_68
+		}
+	}
+	focus = {
+		id = 3_focus_72
+		x = 19
+		y = 7
+		cost = 0
+		icon = GFX_focus_FIN_increase_military_budget
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_70
+		}
+	}
+	focus = {
+		id = 3_focus_73
+		x = 17
+		y = 8
+		cost = 0
+		icon = GFX_focus_CHL_an_imperial_capital
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_69
+		}
+	}
+	focus = {
+		id = 3_focus_74
+		x = 15
+		y = 9
+		cost = 0
+		icon = GFX_focus_NGL_job_opportunities
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_73
+		}
+	}
+	focus = {
+		id = 3_focus_75
+		x = 17
+		y = 9
+		cost = 0
+		icon = GFX_focus_PRC_bolshevik_urbanization_completed
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_73
+		}
+	}
+	focus = {
+		id = 3_focus_76
+		x = 19
+		y = 9
+		cost = 0
+		icon = GFX_focus_DEN_develop_bornholm
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_73
+		}
+	}
+	focus = {
+		id = 3_focus_77
+		x = 29
+		y = 0
+		cost = 0
+		icon = GFX_focus_PHI_militarize_the_constabulary
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_1
+		}
+	}
+	focus = {
+		id = 3_focus_78
+		x = 23
+		y = 1
+		cost = 0
+		icon = GFX_focus_generic_military_equipment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_77
+		}
+	}
+	focus = {
+		id = 3_focus_79
+		x = 27
+		y = 1
+		cost = 0
+		icon = GFX_focus_TGI_far_east_military_factory
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_80
+		}
+		prerequisite = {
+			focus = 3_focus_77
+		}
+	}
+	focus = {
+		id = 3_focus_80
+		x = 31
+		y = 1
+		cost = 0
+		icon = GFX_focus_GER_demonstration_of_military_achievements
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_79
+		}
+		prerequisite = {
+			focus = 3_focus_77
+		}
+	}
+	focus = {
+		id = 3_focus_81
+		x = 22
+		y = 2
+		cost = 0
+		icon = GFX_focus_NGL_education_recovery
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_78
+		}
+	}
+	focus = {
+		id = 3_focus_82
+		x = 24
+		y = 2
+		cost = 0
+		icon = GFX_focus_USS_military_enterprises
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_78
+		}
+	}
+	focus = {
+		id = 3_focus_83
+		x = 22
+		y = 4
+		cost = 0
+		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_81
+		}
+	}
+	focus = {
+		id = 3_focus_84
+		x = 24
+		y = 4
+		cost = 0
+		icon = GFX_focus_RAJ_military_into_the_workforce
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_82
+		}
+	}
+	focus = {
+		id = 3_focus_85
+		x = 22
+		y = 6
+		cost = 0
+		icon = GFX_focus_ITA_fiat_ansaldo_duopoly
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_83
+		}
+	}
+	focus = {
+		id = 3_focus_86
+		x = 24
+		y = 6
+		cost = 0
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_84
+		}
+	}
+	focus = {
+		id = 3_focus_87
+		x = 26
+		y = 2
+		cost = 0
+		icon = GFX_focus_ITA_albanian_fascist_militia
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_79
+		}
+	}
+	focus = {
+		id = 3_focus_88
+		x = 26
+		y = 4
+		cost = 0
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_87
+		}
+	}
+	focus = {
+		id = 3_focus_89
+		x = 28
+		y = 2
+		cost = 0
+		icon = GFX_focus_generic_women_in_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_79
+		}
+	}
+	focus = {
+		id = 3_focus_90
+		x = 27
+		y = 3
+		cost = 0
+		icon = GFX_focus_ITA_banda_carita
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_79
+		}
+	}
+	focus = {
+		id = 3_focus_91
+		x = 27
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_a_colonial_empire
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_90
+		}
+	}
+	focus = {
+		id = 3_focus_92
+		x = 27
+		y = 6
+		cost = 0
+		icon = GFX_focus_USS_order_in_progress
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_91
+		}
+	}
+	focus = {
+		id = 3_focus_93
+		x = 31
+		y = 3
+		cost = 0
+		icon = GFX_focus_RAJ_a_private_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_80
+		}
+	}
+	focus = {
+		id = 3_focus_94
+		x = 31
+		y = 5
+		cost = 0
+		icon = GFX_focus_generic_military_mission
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_93
+		}
+	}
+	focus = {
+		id = 3_focus_95
+		x = 31
+		y = 6
+		cost = 0
+		icon = GFX_focus_ITA_redirect_alfa_romeo_production
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_94
+		}
+	}
+	focus = {
+		id = 3_focus_96
+		x = 30
+		y = 4
+		cost = 0
+		icon = GFX_focus_ITA_moschettieri_del_duce
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_80
+		}
+	}
+	focus = {
+		id = 3_focus_97
+		x = 32
+		y = 4
+		cost = 0
+		icon = GFX_focus_ITA_alpine_division
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_80
+		}
+	}
+	focus = {
+		id = 3_focus_98
+		x = 36
+		y = 1
+		cost = 0
+		icon = GFX_focus_BRA_italian_aircraft_development
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_77
+		}
+	}
+	focus = {
+		id = 3_focus_99
+		x = 41
+		y = 1
+		cost = 0
+		icon = GFX_focus_PHI_gunboat_diplomacy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_77
+		}
+	}
+	focus = {
+		id = 3_focus_100
+		x = 52
+		y = 0
+		cost = 0
+		icon = GFX_focus_ITA_guardia_nazionale_repubblicana
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_1
+		}
+	}
+	focus = {
+		id = 3_focus_101
+		x = 33
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_bersaglieri
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_97
+		}
+	}
+	focus = {
+		id = 3_focus_102
+		x = 34
+		y = 2
+		cost = 0
+		icon = GFX_focus_generic_military_dictatorship
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_98
+		}
+	}
+	focus = {
+		id = 3_focus_103
+		x = 36
+		y = 2
+		cost = 0
+		icon = GFX_focus_ITA_imperial_recognition
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_98
+		}
+	}
+	focus = {
+		id = 3_focus_104
+		x = 35
+		y = 3
+		cost = 0
+		icon = GFX_focus_PER_raf_planes
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_103
+		}
+	}
+	focus = {
+		id = 3_focus_105
+		x = 37
+		y = 3
+		cost = 0
+		icon = GFX_focus_ITA_liberation_or_death
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_103
+		}
+	}
+	focus = {
+		id = 3_focus_106
+		x = 34
+		y = 4
+		cost = 0
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_104
+		}
+	}
+	focus = {
+		id = 3_focus_107
+		x = 36
+		y = 4
+		cost = 0
+		icon = GFX_focus_generic_copy_plane_designs
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_104
+		}
+		prerequisite = {
+			focus = 3_focus_105
+		}
+	}
+	focus = {
+		id = 3_focus_108
+		x = 38
+		y = 4
+		cost = 0
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_105
+		}
+	}
+	focus = {
+		id = 3_focus_109
+		x = 41
+		y = 2
+		cost = 0
+		icon = GFX_focus_generic_naval_discipline
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_99
+		}
+	}
+	focus = {
+		id = 3_focus_110
+		x = 40
+		y = 3
+		cost = 0
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_109
+		}
+	}
+	focus = {
+		id = 3_focus_111
+		x = 42
+		y = 3
+		cost = 0
+		icon = GFX_focus_PRC_naval_capstone
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_109
+		}
+	}
+	focus = {
+		id = 3_focus_112
+		x = 40
+		y = 4
+		cost = 0
+		icon = GFX_focus_SWE_italian_destroyers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_110
+		}
+	}
+	focus = {
+		id = 3_focus_113
+		x = 42
+		y = 4
+		cost = 0
+		icon = GFX_focus_generic_navy_research_bonus
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_111
+		}
+	}
+	focus = {
+		id = 3_focus_114
+		x = 40
+		y = 5
+		cost = 0
+		icon = GFX_focus_PRC_establish_pla_air_force
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_112
+		}
+	}
+	focus = {
+		id = 3_focus_115
+		x = 42
+		y = 5
+		cost = 0
+		icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_113
+		}
+	}
+	focus = {
+		id = 3_focus_116
+		x = 41
+		y = 6
+		cost = 0
+		icon = GFX_focus_POL_plan_west
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_114
+		}
+		prerequisite = {
+			focus = 3_focus_115
+		}
+	}
+	focus = {
+		id = 3_focus_117
+		x = 46
+		y = 1
+		cost = 0
+		icon = GFX_focus_ITA_ministry_of_italian_africa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_100
+		}
+	}
+	focus = {
+		id = 3_focus_118
+		x = 50
+		y = 1
+		cost = 0
+		icon = GFX_focus_usa_focus_on_europe
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_100
+		}
+	}
+	focus = {
+		id = 3_focus_119
+		x = 54
+		y = 1
+		cost = 0
+		icon = GFX_focus_BRA_north_and_south_america
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_100
+		}
+	}
+	focus = {
+		id = 3_focus_120
+		x = 58
+		y = 1
+		cost = 0
+		icon = GFX_focus_GER_create_asian_reichskommissariat
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_100
+		}
+	}
+	focus = {
+		id = 3_focus_121
+		x = 45
+		y = 2
+		cost = 0
+		icon = GFX_focus_USS_new_military_thoughts
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_122
+		}
+		prerequisite = {
+			focus = 3_focus_117
+		}
+	}
+	focus = {
+		id = 3_focus_122
+		x = 47
+		y = 2
+		cost = 0
+		icon = GFX_focus_generic_league_of_nations
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_121
+		}
+		prerequisite = {
+			focus = 3_focus_117
+		}
+	}
+	focus = {
+		id = 3_focus_123
+		x = 44
+		y = 3
+		cost = 0
+		icon = GFX_focus_CHL_suppress_the_nacistas
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_121
+		}
+	}
+	focus = {
+		id = 3_focus_124
+		x = 46
+		y = 3
+		cost = 0
+		icon = GFX_focus_PHI_subordinate_philippine_department
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_121
+		}
+	}
+	focus = {
+		id = 3_focus_125
+		x = 47
+		y = 4
+		cost = 0
+		icon = GFX_focus_CHI_planned_economy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_122
+		}
+	}
+	focus = {
+		id = 3_focus_126
+		x = 45
+		y = 4
+		cost = 0
+		icon = GFX_focus_PHI_war_plan_orange
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_123
+		}
+		prerequisite = {
+			focus = 3_focus_124
+		}
+	}
+	focus = {
+		id = 3_focus_127
+		x = 45
+		y = 6
+		cost = 0
+		icon = GFX_focus_ITA_subdue_the_sentinels
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_126
+		}
+	}
+	focus = {
+		id = 3_focus_128
+		x = 49
+		y = 2
+		cost = 0
+		icon = GFX_focus_GER_mitteleuropa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_118
+		}
+	}
+	focus = {
+		id = 3_focus_129
+		x = 51
+		y = 2
+		cost = 0
+		icon = GFX_focus_GER_remilitarize_the_rhineland_historical
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_118
+		}
+	}
+	focus = {
+		id = 3_focus_130
+		x = 49
+		y = 4
+		cost = 0
+		icon = GFX_focus_ITA_bend_the_bars
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_128
+		}
+	}
+	focus = {
+		id = 3_focus_131
+		x = 51
+		y = 4
+		cost = 0
+		icon = GFX_focus_GER_befriend_italy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_129
+		}
+	}
+	focus = {
+		id = 3_focus_132
+		x = 51
+		y = 6
+		cost = 0
+		icon = GFX_focus_attack_italy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_131
+		}
+	}
+	focus = {
+		id = 3_focus_133
+		x = 53
+		y = 2
+		cost = 0
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_119
+		}
+	}
+	focus = {
+		id = 3_focus_134
+		x = 55
+		y = 2
+		cost = 0
+		icon = GFX_focus_generic_south_america
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_119
+		}
+	}
+	focus = {
+		id = 3_focus_135
+		x = 57
+		y = 2
+		cost = 0
+		icon = GFX_focus_PRC_move_capital
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_136
+		}
+		prerequisite = {
+			focus = 3_focus_120
+		}
+	}
+	focus = {
+		id = 3_focus_136
+		x = 59
+		y = 2
+		cost = 0
+		icon = GFX_focus_JAP_ballot_champagne
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 3_focus_135
+		}
+		prerequisite = {
+			focus = 3_focus_120
+		}
+	}
+	focus = {
+		id = 3_focus_137
+		x = 53
+		y = 3
+		cost = 0
+		icon = GFX_focus_PHI_military_requisitions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_133
+		}
+	}
+	focus = {
+		id = 3_focus_138
+		x = 55
+		y = 3
+		cost = 0
+		icon = GFX_focus_SOV_mobilization_plan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_134
+		}
+	}
+	focus = {
+		id = 3_focus_139
+		x = 55
+		y = 6
+		cost = 0
+		icon = GFX_focus_CHI_the_southern_mandate
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_138
+		}
+	}
+	focus = {
+		id = 3_focus_140
+		x = 49
+		y = 6
+		cost = 0
+		icon = GFX_focus_SOV_father_of_nations
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_130
+		}
+	}
+	focus = {
+		id = 3_focus_141
+		x = 57
+		y = 4
+		cost = 0
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_135
+		}
+	}
+	focus = {
+		id = 3_focus_142
+		x = 59
+		y = 4
+		cost = 0
+		icon = GFX_focus_JAP_resource_security
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_136
+		}
+	}
+	focus = {
+		id = 3_focus_143
+		x = 57
+		y = 6
+		cost = 0
+		icon = GFX_focus_generic_central_planning
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_141
+		}
+	}
+	focus = {
+		id = 3_focus_144
+		x = 59
+		y = 6
+		cost = 0
+		icon = GFX_focus_generic_full_employment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_142
+		}
+	}
+	focus = {
+		id = 3_focus_70
+		x = 19
+		y = 5
+		cost = 0
+		icon = GFX_focus_ITA_devaluate_the_lire
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_66
+		}
+	}
+}

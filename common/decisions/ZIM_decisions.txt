@@ -1,0 +1,76 @@
+ZIM_categories_0 = {
+	ZIM_Fight_with_other = {
+		name = ZIM_Fight_with_other
+		icon = generic_construction
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes				# 如果当前国家正在战争中，factor 乘以 0 = 不会选择这个决议
+			}
+		}
+		target_trigger = {
+			AND = {
+				ROOT = {
+					NOT = { tag = ZIM }
+				}
+				FROM = {
+					is_neighbor_of = ROOT
+					OR = {
+						tag = ZDM
+						tag = ZRD
+						#tag = ZIM
+						tag = ZSB
+						tag = ZYX
+						tag = ZHJ
+						tag = ZCS
+						tag = ZXS
+					}
+				}
+			}
+		}
+		cost = 10
+		days_remove = 10
+		remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = FROM
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	ZIM_Expend_army = {
+		name = ZIM_Expand_army
+		icon = generic_construction
+		visible = {
+			has_country_flag = Expand_army
+			NOT = {
+				has_country_flag = Expanding_army
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		days_remove = 10
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "name = \"殖民地武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					owner = ROOT
+					count = 3
+				}
+			}
+			}
+			hidden_effect = {
+				set_country_flag = Expanding_army
+				country_event = {
+					id = invisible_event.000
+					days = 20
+				}
+			}
+			custom_effect_tooltip = ZIM_Expend_army_tip
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 870
+	name = "STATE_870"
+	manpower = 2115000
+	state_category = two
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+		add_core_of = ZCS
+		add_to_array = { state_victory_points = 2220 }
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 2220 20 }
+	}
+
+	provinces = {
+		2220
+	}
+}
+

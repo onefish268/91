@@ -1,0 +1,508 @@
+focus_tree = {
+	id = ZIM_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			OR = {
+				tag = ZDM				#杜马人民共和国(西部)
+				tag = ZSH				#罗德西亚社会国(东部)
+				#tag = ZIM #总督府(南部)
+				tag = ZSB				#圣杯联邦(中部)
+				#tag = ZYX #一心会(卢旺达)
+				tag = ZHJ				#皇家矿业公司(加丹加)
+				tag = ZCS				#城市自治委员会(乌伦迪)
+				tag = ZXS				#邪神教会(最北边)
+			}
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 1500
+		y = 1300
+	}
+	focus = {
+		id = ZIM_Consolidate_territorial_hold
+		x = 10
+		y = 1
+		cost = 1
+		icon = GFX_focus_INS_recognize_moestopos_batallion
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##据地自固
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ZIM_Suppress_opposition
+		x = 2
+		y = 2
+		cost = 1
+		icon = GFX_focus_RAJ_union_busting
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##铲除异己
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ZIM_Consolidate_territorial_hold
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+		relative_position_id = ZIM_Consolidate_territorial_hold
+	}
+	focus = {
+		id = ZIM_Military_reform
+		x = 0
+		y = 2
+		cost = 1
+		icon = GFX_focus_PRC_develop_the_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##军队改革
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = ZIM_Consolidate_territorial_hold
+		}
+		completion_reward = {
+			add_ideas = ZIM_Military_reform_idea
+		}
+		relative_position_id = ZIM_Consolidate_territorial_hold
+	}
+	focus = {
+		id = ZIM_Industry_consolidation
+		x = -2
+		y = 2
+		cost = 2
+		icon = GFX_focus_DEN_heavy_regulations
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##产业整合
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Consolidate_territorial_hold
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		relative_position_id = ZIM_Consolidate_territorial_hold
+	}
+	focus = {
+		id = ZIM_Frontier_defense
+		x = 0
+		y = 2
+		cost = 1
+		icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##防务整备
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Military_reform
+		}
+		prerequisite = {
+			focus = ZIM_Industry_consolidation
+		}
+		prerequisite = {
+			focus = ZIM_Suppress_opposition
+		}
+		completion_reward = {
+			add_ideas = ZIM_Defense_against_invaders_idea
+		}
+		relative_position_id = ZIM_Military_reform
+	}
+	focus = {
+		id = ZIM_Stabilize_situation
+		x = 0
+		y = 2
+		cost = 1
+		icon = GFX_focus_generic_modernize_industry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##暂稳局势
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Frontier_defense
+		}
+		completion_reward = {
+			custom_effect_tooltip = ZIM_Stabilize_situation_tip
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ZIM_Chaotic_situation_idea_0
+					add_idea = ZIM_Chaotic_situation_idea_1
+				}
+			}
+		}
+		relative_position_id = ZIM_Frontier_defense
+	}
+	focus = {
+		id = ZIM_Wartime_preparation
+		x = 0
+		y = 1
+		cost = 1
+		icon = GFX_focus_AFG_adopt_nufus
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##战时准备
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_completed_focus = ZIM_Stabilize_situation
+		}
+		completion_reward = {
+			add_ideas = ZIM_War_preparation_idea
+		}
+	}
+	focus = {
+		id = ZIM_Tactical_improvement
+		x = -7
+		y = 2
+		cost = 1
+		icon = GFX_focus_FIN_weapon_caches
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##改进战术
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			add_ideas = ZIM_Better_tactics_idea
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Request_foreign_aid
+		x = 0
+		y = 2
+		cost = 1
+		icon = GFX_goal_generic_intelligence_exchange
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##向他国求援
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			#决议
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 20000
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 3000
+				producer = SOV
+			}
+			custom_effect_tooltip = ZIM_Request_foreign_aid_tip
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Internal_collaboration
+		x = -2
+		y = 2
+		cost = 1
+		icon = GFX_focus_PER_limit_foreign_influence
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##里应外合
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			add_collaboration = {
+				target = ZIM
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZDM
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZRD
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZXS
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZSB
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZCS
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZKY
+				value = 0.1
+			}
+			add_collaboration = {
+				target = ZYX
+				value = 0.1
+			}
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Civilian_to_military
+		x = 4
+		y = 2
+		cost = 1
+		icon = GFX_focus_PER_recruit_bakhtiari
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##民转军
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			add_ideas = ZIM_Military_priority_idea
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Wartime_coordination
+		x = 2
+		y = 2
+		cost = 1
+		icon = GFX_goal_generic_construct_mil_factory
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Expand_recruitment
+		x = -4
+		y = 2
+		cost = 1
+		icon = GFX_focus_AFG_royal_guard
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			load_oob = "default_devision"
+			capital_scope = {
+				create_unit = {
+					division = "name = \"殖民地武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					owner = ROOT
+					count = 7
+				}
+			}
+			set_country_flag = Expand_army
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Campaign_launch
+		x = 0
+		y = 3
+		cost = 3
+		icon = GFX_focus_CHI_weaponise_the_faithful
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##出征
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Wartime_preparation
+		}
+		completion_reward = {
+			set_country_flag = Campaign_launch
+		}
+		relative_position_id = ZIM_Wartime_preparation
+	}
+	focus = {
+		id = ZIM_Desperate_gamble
+		x = -1
+		y = 1
+		cost = 1
+		icon = GFX_goal_generic_attack_allies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##孤注一掷
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				tag = ZDM
+			}
+		}
+		mutually_exclusive = {
+			focus = ZIM_Limited_strategy
+		}
+		prerequisite = {
+			focus = ZIM_Campaign_launch
+		}
+		completion_reward = {
+			add_ideas = ZIM_Desperate_gamble_idea
+		}
+		relative_position_id = ZIM_Campaign_launch
+	}
+	focus = {
+		id = ZIM_Predatory_exploitation
+		x = 0
+		y = 1
+		cost = 1
+		icon = GFX_focus_RAJ_a_private_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##强取豪夺
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Desperate_gamble
+		}
+		completion_reward = {
+			add_ideas = ZIM_Predatory_exploitation_idea
+		}
+		relative_position_id = ZIM_Desperate_gamble
+	}
+	focus = {
+		id = ZIM_Limited_strategy
+		x = 1
+		y = 1
+		cost = 1
+		icon = GFX_focus_SIA_the_midnight_meeting
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##有限策略
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = ZIM_Desperate_gamble
+		}
+		prerequisite = {
+			focus = ZIM_Campaign_launch
+		}
+		completion_reward = {
+			add_ideas = ZIM_Limited_strategy_idea
+		}
+		relative_position_id = ZIM_Campaign_launch
+	}
+	focus = {
+		id = ZIM_Steady_advance
+		x = 0
+		y = 1
+		cost = 1
+		icon = GFX_goal_generic_position_armies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		##步步为营
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZIM_Limited_strategy
+		}
+		completion_reward = {
+			add_ideas = ZIM_Steady_advance_idea
+		}
+		relative_position_id = ZIM_Limited_strategy
+	}
+}

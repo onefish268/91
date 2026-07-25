@@ -1,0 +1,7 @@
+ZIM_categories_0 = {
+    icon = generic_construction
+    visible = {
+        has_country_flag = Campaign_launch
+    }
+}
+

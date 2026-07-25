@@ -1,0 +1,223 @@
+ideas = {
+
+	country = {
+		ZIM_a = {
+			picture = biaomianwending
+			modifier = {
+				stability_factor = 0.1
+				monthly_population = 0.15
+				hcp_exoutcome_monthly = 500
+				set_country_flag = daikuan_forbid
+				political_power_gain = 0.2
+			}
+		}
+
+		ZIM_b = {
+			picture = jinzhangjushi
+			modifier = {
+				industrial_capacity_factory = -0.2
+				research_speed_factor = -0.1
+				industrial_capacity_dockyard = -0.3
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.5
+				local_resources_factor = -0.4
+				consumer_goods_factor = 0.4
+				monthly_population = -0.1
+				political_power_factor = -0.3
+				political_power_cost = 0.5
+			}
+		}
+
+		ZIM_c = {
+			picture = buhezuodejundui
+			modifier = {
+				conscription_factor = -0.10
+				mobilization_speed = -0.3
+				initiative_factor = -0.45
+				experience_gain_factor = -0.8
+				training_time_factor = 0.8
+			}
+		}
+		ZIM_1 = {
+			picture = chunchunyudong
+			modifier = {
+				democratic_drift = 0.03 
+				communism_drift = 0.03 
+				neutrality_drift = -0.02
+				mobilization_laws_cost_factor = 0.05
+				drift_defence_factor = -0.3
+			}
+		}
+		ZIM_2 = {
+			picture = guliwuyuan
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		ZIM_3 = {
+			picture = jingjiwyh
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.2 
+				production_speed_buildings_factor = 0.1 
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+				casualty_trickleback = 0.1
+				min_export = -0.3
+			}
+		}
+		ZIM_4 = {
+			picture = jingjiwyh
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				consumer_goods_factor = -0.25 
+				production_speed_buildings_factor = 0.15 
+				industrial_capacity_factory = 0.15
+				local_resources_factor = 0.15
+				casualty_trickleback = 0.15
+				min_export = -0.3
+			}
+		}
+		ZIM_5 = {
+			picture = qiaodingfangzhen
+			modifier = {
+				army_attack_factor = 0.1 
+				army_defence_factor = 0.05
+				conscription_factor = 0.1
+				initiative_factor = 0.05
+			}
+		}
+		ZIM_6 = {
+			picture = zhenzhijianjun
+			modifier = {
+				army_attack_factor = 0.05 
+				army_defence_factor = 0.05
+			}
+		}
+		ZIM_7 = {
+			picture = zhenzhijianjun
+			modifier = {
+				army_attack_factor = 0.05 
+				army_defence_factor = 0.05
+				coordination_bonus = 0.07
+				initiative_factor = 0.03
+				recon_factor = 0.25
+			}
+		}
+		ZIM_8 = {
+			picture = zhenzhijianjun
+			modifier = {
+				army_attack_factor = 0.1 
+				army_defence_factor = 0.1
+				coordination_bonus = 0.07
+				initiative_factor = 0.03
+				recon_factor = 0.25
+				TERRAIN_PENALTY_REDUCTION = 0.05
+				LAND_NIGHT_ATTACK = 0.1
+			}
+		}
+		ZIM_9 = {
+			picture = wunianjihua
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		ZIM_10 = {
+			picture = nongyexianzhuang
+			modifier = {
+				consumer_goods_factor = 0.4
+				mobilization_speed = -0.4
+				land_reinforce_rate = -0.1
+				conscription_factor = -0.15
+				monthly_population = -0.4
+				global_building_slots_factor = -0.2
+			}
+		}
+		ZIM_11 = {
+			picture = gongyexianzhuang
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				line_change_production_efficiency_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+			}
+		}
+		ZIM_12 = {
+			picture = shehuixianzhuang
+			modifier = {
+				monthly_population = -0.3
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				conscription_factor = -0.1
+				political_power_cost = 30
+				conscription_factor = -0.1
+			}
+		}
+	}
+}
+
+
+ideas = {
+    industrial_concern = {
+	    designer = yes
+		
+	    #国家电工局
+	    ZYX_diangongju = {
+		    picture = diangongju
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+			    or = {
+				    tag = ZYX
+			    }
+		    }
+		    available = {
+			    has_completed_focus = 3_focus_38
+		    }
+		    cost = 150
+		    traits = { industrial_concern }
+		    modifier = {
+			    production_speed_buildings_factor = 0.05
+			    consumer_goods_factor = -0.2
+			    production_factory_start_efficiency_factor = 0.1
+		    }
+		    research_bonus = {
+			    electronics = 0.15
+		    }
+	    }
+
+	    ZYX_tieluju = { 
+		    picture = tieluju
+		    ai_will_do = {
+			    base = 1
+		    }
+	        visible = {
+			    or = {
+				    tag = ZYX
+			    }
+		    }
+		    available = {
+			    has_completed_focus = 3_focus_39
+		    }
+	        cost = 150
+	        research_bonus = {
+	    	    train_tech = 0.2
+	        }
+    	    traits = { railway_company }
+	        modifier = {
+			    army_org_factor = 0.15
+			    mobilization_speed = 0.3
+	        }
+        }
+	}
+}

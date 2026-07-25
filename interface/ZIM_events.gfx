@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_ZIM1_event"
+        texturefile = "gfx\interface\events\ZIM1_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM2_event"
+        texturefile = "gfx\interface\events\ZIM2_event.png"
+    }
+    spriteType = {
+        name = "GFX_news_1"
+        texturefile = "gfx\interface\events\news_1.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM3_event"
+        texturefile = "gfx\interface\events\ZIM3_event.png"
+    }
+    spriteType = {
+        name = "GFX_news_2"
+        texturefile = "gfx\interface\events\news_2.png"
+    }
+}

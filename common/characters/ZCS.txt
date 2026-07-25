@@ -1,0 +1,17 @@
+characters = {
+	ZCS_bisimai = {
+		name = "卡利雅*冯*比斯麦"
+		portraits = {
+			civilian = {
+				large = "bisimai"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+		    story_tiexue_trait	
+	        }
+			id= -1
+		}
+	}	
+}

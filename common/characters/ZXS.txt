@@ -1,0 +1,16 @@
+characters = {
+	ZXS_fengrao = {
+		name = "丰饶议会"
+		portraits = {
+			civilian = {
+				large = "fengrao"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+	        }
+			id= -1
+		}
+	}	
+}

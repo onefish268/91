@@ -1,0 +1,17 @@
+characters = {
+	ZSB_sitanli = {
+		name = "斯坦利伯爵"
+		portraits = {
+			civilian = {
+				large = "sitanli"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+		    story_ganshezhe_trait	
+	        }
+			id= -1
+		}
+	}	
+}

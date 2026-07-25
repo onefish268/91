@@ -1,0 +1,46 @@
+﻿capital = 869
+
+oob = "ZIM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_convoys = 100
+
+add_ideas = {
+}
+
+set_politics = {
+
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+
+	democratic = 10
+	fascism = 65
+	communism = 5
+	neutrality = 20
+
+} 
+
+recruit_character = ZYX_anqiubifei
+recruit_character = ZYX_sitalaqie
+recruit_character = ZYX_pawolini
+recruit_character = ZYX_qiyanuo
+recruit_character = ZYX_ppln
+recruit_character = ZYX_kepq
+recruit_character = ZYX_mglt
+recruit_character = ZYX_plxt
+recruit_character = ZYX_blny
+recruit_character = ZYX_tskn
+recruit_character = ZYX_lgly
+
+
+
+
+

@@ -1,0 +1,133 @@
+leader_traits = {
+
+    story_only_trait = {
+        random = no
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_tiexue_trait = {
+        random = no
+        political_power_gain = 0.05
+		consumer_goods_factor = -0.10
+        production_speed_arms_factory_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.15
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_liyizhishang_trait = {
+        random = no
+        consumer_goods_factor = -0.40
+		production_speed_buildings_factor = 0.1
+		production_speed_industrial_complex_factor = 0.2
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_reaiheping_trait = {
+        random = no
+        production_speed_buildings_factor = 0.1
+        political_power_gain = 0.05
+        stability_factor = 0.15
+        political_advisor_cost_factor = -0.15
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_ganshezhe_trait = {
+        random = no
+        stability_factor = 0.2
+        army_speed_factor = 0.05
+		production_speed_infrastructure_factor = 0.1
+		production_speed_supply_node_factor = 0.2
+		supply_consumption_factor = -0.1
+        production_speed_buildings_factor = 0.1
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_mao_trait = {
+        random = no
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_laoda_trait = {
+        random = no
+        justify_war_goal_time = -0.2  # 制造战争目标速度+20%（更快宣战）
+        surrender_limit = 0.15        # 国家投降阈值+15%，更不容易投降
+        research_speed_factor = -0.1  # 科研速度-10%
+        production_speed_buildings_factor = 0.05 # 建筑建造速度+5%
+        drift_defence_factor = 0.1    # 意识形态防御漂移+10%，不易变意识形态
+        war_support_factor = 0.1
+        political_power_gain = 0.5     
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_zongshuji_trait = {
+        random = no
+        drift_defence_factor = 0.1
+        stability_weekly = 0.003
+        war_support_weekly = 0.003
+        political_power_cost = -30
+        repair_speed_factor = 0.2
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_zhengfengzhe_trait = {
+        random = no
+        consumer_goods_factor = -0.2
+        industrial_capacity_factory = 0.2
+        political_power_gain = 0.5
+        production_speed_arms_factory_factor = 0.1
+        army_morale_factor = 0.1
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_qingnianzuzhi_trait = {
+        random = no
+        army_org_factor = 0.05
+        mobilization_speed = 0.2
+        mobilization_speed = 0.1
+        conscription_factor = 0.1
+        org_loss_when_moving = -0.15
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_shengruxiongshi_trait = {
+        random = no
+        production_factory_max_efficiency_factor = 0.1
+        political_power_gain = 0.5
+        generate_wargoal_tension = -0.2
+        political_advisor_cost_factor = -0.1
+        army_attack_against_major_factor = 0.15
+        justify_war_goal_time = 0.25
+        army_attack_speed_factor = 0.05
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+}

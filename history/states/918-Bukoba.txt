@@ -1,0 +1,23 @@
+state = {
+	id = 918
+	name = "STATE_918"
+	manpower = 365248
+	state_category = one
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+		add_core_of = ZXS
+		add_to_array = { state_victory_points = 4171 }
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 4171 1 } #Bukoba
+	}
+
+	provinces = {
+		4171
+	}
+}
+

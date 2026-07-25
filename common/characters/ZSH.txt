@@ -1,0 +1,17 @@
+characters = {
+	ZSH_liemao = {
+		name = "列宁*毛"
+		portraits = {
+			civilian = {
+				large = "liemao"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = { 
+		    story_mao_trait	
+	        }
+			id= -1
+		}
+	}	
+}

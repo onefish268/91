@@ -1,0 +1,74 @@
+spriteTypes = {
+    spriteType = {
+        name = "yifeier"
+        texturefile = "gfx/leaders/ZIM/yifeier.png"
+    }
+    spriteType = {
+        name = "bisimai"
+        texturefile = "gfx/leaders/ZIM/bisimai.png"
+    }
+    spriteType = {
+        name = "abhm"
+        texturefile = "gfx/leaders/ZIM/abhm.png"
+    }
+    spriteType = {
+        name = "daiweisi"
+        texturefile = "gfx/leaders/ZIM/daiweisi.png"
+    }
+    spriteType = {
+        name = "sitanli"
+        texturefile = "gfx/leaders/ZIM/sitanli.png"
+    }
+    spriteType = {
+        name = "liemao"
+        texturefile = "gfx/leaders/ZIM/liemao.png"
+    }
+    spriteType = {
+        name = "fengrao"
+        texturefile = "gfx/leaders/ZIM/fengrao.png"
+    }
+    spriteType = {
+        name = "anqiubifei"
+        texturefile = "gfx/leaders/ZIM/anqiubifei.png"
+    }
+    spriteType = {
+        name = "sitalaqie"
+        texturefile = "gfx/leaders/ZIM/sitalaqie.png"
+    }
+    spriteType = {
+        name = "pawolini"
+        texturefile = "gfx/leaders/ZIM/pawolini.png"
+    }
+    spriteType = {
+        name = "qiyanuo"
+        texturefile = "gfx/leaders/ZIM/qiyanuo.png"
+    }
+    spriteType = {
+        name = "ppln"
+        texturefile = "gfx/leaders/ZIM/ppln.png"
+    }
+    spriteType = {
+        name = "kepq"
+        texturefile = "gfx/leaders/ZIM/kepq.png"
+    }
+    spriteType = {
+        name = "mglt"
+        texturefile = "gfx/leaders/ZIM/mglt.png"
+    }
+    spriteType = {
+        name = "plxt"
+        texturefile = "gfx/leaders/ZIM/plxt.png"
+    }
+    spriteType = {
+        name = "blny"
+        texturefile = "gfx/leaders/ZIM/blny.png"
+    }
+    spriteType = {
+        name = "tskn"
+        texturefile = "gfx/leaders/ZIM/tskn.png"
+    }
+    spriteType = {
+        name = "lgly"
+        texturefile = "gfx/leaders/ZIM/lgly.png"
+    }
+}

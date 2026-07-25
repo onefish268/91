@@ -1,0 +1,227 @@
+characters = {
+	ZYX_anqiubifei = {
+		name = "安丘比菲*duce"
+		portraits = {
+			civilian = {
+				large = "anqiubifei"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { 
+		    story_laoda_trait	
+	        }
+			id= -1
+		}
+	}
+
+	#顾问	
+	ZYX_sitalaqie = {
+		name = "阿契尔・斯塔拉切"
+		portraits = {
+			civilian = {
+				small = "sitalaqie"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_zongshuji_trait
+			}
+			idea_token = ZYX_sitalaqie
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 2_focus_3
+			}
+		}
+	}
+
+	ZYX_pawolini = {
+		name = "亚历山德罗・帕沃利尼"
+		portraits = {
+			civilian = {
+				small = "pawolini"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_qingnianzuzhi_trait
+			}
+			idea_token = ZYX_pawolini
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 2_focus_3
+			}
+		}
+	}
+
+	ZYX_qiyanuo = {
+		name = "加莱阿佐・齐亚诺"
+		portraits = {
+			civilian = {
+				small = "qiyanuo"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_zhengfengzhe_trait
+			}
+			idea_token = ZYX_qiyanuo
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 2_focus_3
+			}
+		}
+	}
+
+	#将军
+	ZYX_ppln = {
+		name = "佩帕罗妮"
+		portraits = {
+			army = {
+				large = "ppln"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	ZYX_kepq = {
+		name = "卡尔帕乔"
+		portraits = {
+			army = {
+				large = "kepq"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	ZYX_mglt = {
+		name = "玛格丽特"
+		portraits = {
+			army = {
+				large = "mglt"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZYX_plxt = {
+		name = "普罗修托"
+		portraits = {
+			army = {
+				large = "plxt"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZYX_blny = {
+		name = "波洛尼亚"
+		portraits = {
+			army = {
+				large = "blny"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZYX_tskn = {
+		name = "托斯卡纳"
+		portraits = {
+			army = {
+				large = "tskn"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZYX_lgly = {
+		name = "利古里亚"
+		portraits = {
+			army = {
+				large = "lgly"
+			}
+		}
+		advisor = { 
+			available = {
+				has_completed_focus = 2_focus_19
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+}

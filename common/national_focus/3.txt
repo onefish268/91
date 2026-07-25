@@ -1,0 +1,979 @@
+focus_tree = {
+	id = ZYX_1_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZYX
+		}
+	}
+	default = no
+	focus = {
+		id = 2_focus_1
+		x = 30
+		y = -27
+		cost = 0
+		icon = GFX_focus_NGL_new_dawn_comes
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = 2_focus_2
+		x = 27
+		y = -26
+		cost = 1
+		icon = GFX_focus_TGI_shadow_of_war_econ
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_extra_state_shared_building_slots = 5
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_3
+		x = 30
+		y = -26
+		cost = 2
+		icon = GFX_focus_TGI_mentak_backups
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = zhaomu_one
+			show_ideas_tooltip = ZYX_sitalaqie
+			show_ideas_tooltip = ZYX_pawolini
+			show_ideas_tooltip = ZYX_qiyanuo
+		}
+	}
+	focus = {
+		id = 2_focus_4
+		x = 25
+		y = -25
+		cost = 0
+		icon = GFX_focus_gate_of_dimension
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_2
+		}
+		completion_reward = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	focus = {
+		id = 2_focus_5
+		x = 33
+		y = -26
+		cost = 2
+		icon = GFX_focus_generic_surrender
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = 2_focus_6
+		x = 37
+		y = -26
+		cost = 1
+		icon = GFX_focus_USS_conventional_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_1
+		}
+		completion_reward = {
+			add_ideas = ZIM_6
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = 2_focus_7
+		x = 27
+		y = -25
+		cost = 1
+		icon = GFX_focus_USS_northwest_mine
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_2
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				state = 869
+				amount = 30
+			}
+			add_resource = {
+				type = tungsten
+				state = 869
+				amount = 30
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_8
+		x = 23
+		y = -24
+		cost = 2
+		icon = GFX_focus_TGI_cooperation_with_non_infected
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 2_focus_9
+		}
+		prerequisite = {
+			focus = 2_focus_4
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_9
+		x = 25
+		y = -24
+		cost = 2
+		icon = GFX_focus_NGL_set_out
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = 2_focus_8
+		}
+		prerequisite = {
+			focus = 2_focus_4
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.2
+			add_political_power = 50
+			add_extra_state_shared_building_slots = 5
+			869 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			869 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_10
+		x = 27
+		y = -24
+		cost = 2
+		icon = GFX_focus_TGI_abolish_agricultural_tax
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_7
+		}
+		completion_reward = {
+			add_ideas = ZIM_3
+		}
+	}
+	focus = {
+		id = 2_focus_11
+		x = 30
+		y = -25
+		cost = 2
+		icon = GFX_focus_NGL_new_trade_network
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_3
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = 2_focus_12
+		x = 30
+		y = -24
+		cost = 2
+		icon = GFX_focus_SGL_lost_lamb
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_11
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ZIM_5
+				days = 150
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_13
+		x = 24
+		y = -22
+		cost = 1
+		icon = GFX_focus_USS_treatment_of_infectors
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_8
+		}
+		prerequisite = {
+			focus = 2_focus_10
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_14
+		x = 27
+		y = -22
+		cost = 1
+		icon = GFX_focus_SGL_reshuffle
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_9
+		}
+		prerequisite = {
+			focus = 2_focus_10
+		}
+		completion_reward = {
+			remove_ideas = ZIM_3
+			add_ideas = ZIM_4
+		}
+	}
+	focus = {
+		id = 2_focus_15
+		x = 33
+		y = -25
+		cost = 2
+		icon = GFX_focus_generic_italy_propaganda
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_5
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = 2_focus_16
+		x = 33
+		y = -24
+		cost = 1
+		icon = GFX_focus_generic_workers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_15
+		}
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = 2_focus_17
+		x = 30
+		y = -22
+		cost = 1
+		icon = GFX_focus_SGL_search_elders_house
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_12
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_18
+		x = 33
+		y = -22
+		cost = 1
+		icon = GFX_focus_lingxiu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_16
+		}
+		completion_reward = {
+			add_country_leader_trait = story_shengruxiongshi_trait
+		}
+	}
+	focus = {
+		id = 2_focus_19
+		x = 36
+		y = -25
+		cost = 1
+		icon = GFX_focus_USS_support_of_old_nobles
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_6
+		}
+		completion_reward = {
+			custom_effect_tooltip = zhaomu_two
+		}
+	}
+	focus = {
+		id = 2_focus_20
+		x = 38
+		y = -25
+		cost = 1
+		icon = GFX_focus_NGL_now
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_6
+		}
+		completion_reward = {
+			load_oob = "default_devision"
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = 2_focus_21
+		x = 36
+		y = -24
+		cost = 1
+		icon = GFX_focus_NGL_tailored
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_19
+		}
+		completion_reward = {
+			remove_ideas = ZIM_6
+			add_ideas = ZIM_7
+		}
+	}
+	focus = {
+		id = 2_focus_22
+		x = 38
+		y = -24
+		cost = 1
+		icon = GFX_focus_NGL_aim_at_the_traitor
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_20
+		}
+		prerequisite = {
+			focus = 2_focus_21
+		}
+		completion_reward = {
+			remove_ideas = ZIM_7
+			add_ideas = ZIM_8
+		}
+	}
+	focus = {
+		id = 2_focus_23
+		x = 37
+		y = -22
+		cost = 1
+		icon = GFX_focus_AUS_raid_military_storages
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_21
+		}
+		prerequisite = {
+			focus = 2_focus_22
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ENG
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_24
+		x = 30
+		y = -20
+		cost = 1
+		icon = GFX_focus_ITA_to_live_as_a_lion
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_17
+		}
+		prerequisite = {
+			focus = 2_focus_18
+		}
+		prerequisite = {
+			focus = 2_focus_23
+		}
+		prerequisite = {
+			focus = 2_focus_14
+			focus = 2_focus_13
+		}
+		completion_reward = {
+			custom_effect_tooltip = we_complete_this_job
+		}
+	}
+	focus = {
+		id = 2_focus_25
+		x = 26
+		y = -19
+		cost = 0
+		icon = GFX_focus_NOR_the_lone_wolf_norway
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_24
+		}
+		completion_reward = {
+			custom_effect_tooltip = fight_one
+		}
+	}
+	focus = {
+		id = 2_focus_26
+		x = 34
+		y = -19
+		cost = 0
+		icon = GFX_focus_NGL_connecting_the_north
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_24
+		}
+		completion_reward = {
+			custom_effect_tooltip = fight_two
+		}
+	}
+	focus = {
+		id = 2_focus_27
+		x = 26
+		y = -15
+		cost = 1
+		icon = GFX_focus_ZXSa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_25
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZXS
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_28
+		x = 26
+		y = -13
+		cost = 2
+		icon = GFX_focus_NGL_old_order_wins
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZXS = {
+				exists = no
+			}
+		}
+		mutually_exclusive = {
+			focus = 2_focus_29
+		}
+		prerequisite = {
+			focus = 2_focus_27
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_war_support = -0.2
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = 2_focus_29
+		x = 24
+		y = -13
+		cost = 2
+		icon = GFX_focus_NGL_never_forget
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZXS = {
+				exists = no
+			}
+		}
+		mutually_exclusive = {
+			focus = 2_focus_28
+		}
+		prerequisite = {
+			focus = 2_focus_27
+		}
+		completion_reward = {
+			add_manpower = -7000
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = 2_focus_30
+		x = 24
+		y = -12
+		cost = 1
+		icon = GFX_focus_NGL_take_up_arms
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZXS = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_29
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZXS
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_31
+		x = 26
+		y = -12
+		cost = 1
+		icon = GFX_focus_NGL_battle_plan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZXS = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_28
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZXS
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_32
+		x = 34
+		y = -15
+		cost = 1
+		icon = GFX_focus_zcsa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_26
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZCS
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_33
+		x = 33
+		y = -13
+		cost = 2
+		icon = GFX_focus_CHL_silverworking
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZCS = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_32
+		}
+		completion_reward = {
+			870 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			870 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_34
+		x = 35
+		y = -13
+		cost = 2
+		icon = GFX_focus_generic_military_dictatorship
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZCS = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_32
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = 2_focus_35
+		x = 34
+		y = -12
+		cost = 1
+		icon = GFX_focus_ITA_a_colonial_empire
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZCS = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_33
+		}
+		prerequisite = {
+			focus = 2_focus_34
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZCS
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_36
+		x = 30
+		y = -10
+		cost = 1
+		icon = GFX_focus_GER_realize_mittelafrika
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_35
+		}
+		prerequisite = {
+			focus = 2_focus_30
+			focus = 2_focus_31
+		}
+		completion_reward = {
+			custom_effect_tooltip = fight_three
+		}
+	}
+	focus = {
+		id = 2_focus_37
+		x = 30
+		y = -8
+		cost = 2
+		icon = GFX_focus_USS_kill_radicals
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_36
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZSH
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_38
+		x = 28
+		y = -7
+		cost = 3
+		icon = GFX_focus_TGI_betral_of_loyalty
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZSH = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_37
+		}
+		completion_reward = {
+			every_character = {
+				limit = {
+					is_general_advisor = no
+				}
+				set_nationality = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_39
+		x = 32
+		y = -7
+		cost = 3
+		icon = GFX_focus_USS_huge_military_exercise
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZSH = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_37
+		}
+		completion_reward = {
+			add_manpower = -2000
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_40
+		x = 30
+		y = -6
+		cost = 1
+		icon = GFX_focus_JAP_government_bill_pass
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_38
+		}
+		prerequisite = {
+			focus = 2_focus_39
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZSH
+					}
+				}
+				add_core_of = ZYX
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_41
+		x = 30
+		y = -4
+		cost = 4
+		icon = GFX_focus_NGL_humane_care
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_40
+		}
+		completion_reward = {
+			custom_effect_tooltip = fight_tongyi
+		}
+	}
+	focus = {
+		id = 2_focus_42
+		x = 25
+		y = -3
+		cost = 2
+		icon = GFX_focus_GER_strafbataillon
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_41
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZHJ
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_43
+		x = 30
+		y = -3
+		cost = 2
+		icon = GFX_focus_USS_parliament_stalled
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_41
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZSB
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_44
+		x = 27
+		y = -3
+		cost = 2
+		icon = GFX_focus_USS_keep_tracking
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_41
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZDM
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_45
+		x = 32
+		y = -3
+		cost = 2
+		icon = GFX_focus_USS_imperial_parliament
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 2_focus_41
+		}
+		completion_reward = {
+			ZYX = {
+				annex_country = {
+					target = ZIM
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = 2_focus_46
+		x = 30
+		y = -1
+		cost = 3
+		icon = GFX_focus_CHL_devalue_the_peso_export
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		available = {
+			ZXS = {
+				exists = no
+			}
+		}
+		available = {
+			ZCS = {
+				exists = no
+			}
+		}
+		available = {
+			ZSH = {
+				exists = no
+			}
+		}
+		available = {
+			ZDM = {
+				exists = no
+			}
+		}
+		available = {
+			ZHJ = {
+				exists = no
+			}
+		}
+		available = {
+			ZSB = {
+				exists = no
+			}
+		}
+		available = {
+			ZIM = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = 2_focus_42
+		}
+		prerequisite = {
+			focus = 2_focus_44
+		}
+		prerequisite = {
+			focus = 2_focus_43
+		}
+		prerequisite = {
+			focus = 2_focus_45
+		}
+		completion_reward = {
+			custom_effect_tooltip = fight_shoufu
+			load_focus_tree = ZYX_focus_tree
+			country_event = {
+				id = ZIM.12
+			}
+		}
+	}
+}

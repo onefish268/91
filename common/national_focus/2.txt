@@ -1,0 +1,248 @@
+focus_tree = {
+	id = ZIM_2_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZIM
+		}
+	}
+	default = no
+	focus = {
+		id = 1_focus_1
+		x = 13
+		y = -6
+		cost = 1
+		icon = GFX_focus_NGL_isolation_forever
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = 1_focus_2
+		x = 13
+		y = -5
+		cost = 1
+		icon = GFX_focus_NGL_bishop
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_1
+		}
+	}
+	focus = {
+		id = 1_focus_3
+		x = 13
+		y = -4
+		cost = 1
+		icon = GFX_focus_TGI_weapons_used_to_protect
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_2
+		}
+		completion_reward = {
+			remove_ideas = ZIM_a
+			add_ideas = ZIM_b
+			add_ideas = ZIM_c
+			add_ideas = ZIM_1
+			add_ideas = ZIM_2
+		}
+	}
+	focus = {
+		id = 1_focus_4
+		x = 8
+		y = -3
+		cost = 2
+		icon = GFX_focus_TGI_reopen_old_days_mil_school
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.10
+			}
+		}
+	}
+	focus = {
+		id = 1_focus_5
+		x = 10
+		y = -3
+		cost = 2
+		icon = GFX_focus_NGL_affirmative_action_for_infected
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_6
+		x = 12
+		y = -3
+		cost = 2
+		icon = GFX_focus_USS_search_warrant
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_7
+		x = 14
+		y = -3
+		cost = 2
+		icon = GFX_focus_USS_control_the_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_8
+		x = 16
+		y = -3
+		cost = 2
+		icon = GFX_focus_TGI_get_the_fxxk_outa_here
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_9
+		x = 18
+		y = -3
+		cost = 2
+		icon = GFX_focus_NGL_imperial_intelligence_agency
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_3
+		}
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_10
+		x = 8
+		y = -1
+		cost = 2
+		icon = GFX_focus_TGI_proper_isolation
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_4
+		}
+	}
+	focus = {
+		id = 1_focus_11
+		x = 10
+		y = -1
+		cost = 2
+		icon = GFX_focus_SGL_search_elders_house
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_5
+		}
+	}
+	focus = {
+		id = 1_focus_12
+		x = 12
+		y = -1
+		cost = 2
+		icon = GFX_focus_NGL_temporary_friends
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_6
+		}
+	}
+	focus = {
+		id = 1_focus_13
+		x = 14
+		y = -1
+		cost = 2
+		icon = GFX_focus_NGL_the_lost_man
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_7
+		}
+	}
+	focus = {
+		id = 1_focus_14
+		x = 16
+		y = -1
+		cost = 2
+		icon = GFX_focus_TGI_betral_of_loyalty
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_8
+		}
+	}
+	focus = {
+		id = 1_focus_15
+		x = 18
+		y = -1
+		cost = 2
+		icon = GFX_focus_USS_non_USAS_race
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_9
+		}
+	}
+	focus = {
+		id = 1_focus_16
+		x = 13
+		y = 1
+		cost = 1
+		icon = GFX_focus_AST_a_democratic_bulwark
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 1_focus_10
+		}
+		prerequisite = {
+			focus = 1_focus_11
+		}
+		prerequisite = {
+			focus = 1_focus_12
+		}
+		prerequisite = {
+			focus = 1_focus_13
+		}
+		prerequisite = {
+			focus = 1_focus_14
+		}
+		prerequisite = {
+			focus = 1_focus_15
+		}
+		completion_reward = {
+			country_event = {
+				id = ZIM.11
+				days = 5
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	ZIM_yifeier = {
+		name = "伊菲尔总督"
+		portraits = {
+			civilian = {
+				large = "yifeier"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+		    prince_of_terror
+		    story_only_trait	
+	        }
+			id= -1
+		}
+	}	
+}

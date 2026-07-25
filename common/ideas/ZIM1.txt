@@ -1,0 +1,135 @@
+ideas = {
+	country = {
+		#民族精神
+#RAJ_private_military_complex 掠夺
+#FRA_matignon_agreements 铲除异己
+		ZIM_Chaotic_situation_idea_0 = {#混乱不堪的局面
+			name = ZIM_Chaotic_situation_idea_name
+			picture = PRC_silver_dollar_promoted
+
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.5
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				command_power_gain_mult = -0.2
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+			}
+		}
+
+		ZIM_Chaotic_situation_idea_1 = {#混乱不堪的局面
+			name = ZIM_Chaotic_situation_idea_name
+			picture = PRC_silver_dollar_promoted
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				command_power_gain_mult = -0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+
+		ZIM_Military_reform_idea = {#必要的军事改革
+			name = ZIM_Military_reform_idea_name
+			picture = generic_women_in_the_army
+
+			modifier = {
+				command_power_gain_mult = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		ZIM_Defense_against_invaders_idea = {#防范来犯之敌
+			name = ZIM_Defense_against_invaders_idea_name
+			picture = PRC_the_internal_enemy
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		ZIM_War_preparation_idea = {#开战的准备
+			name = ZIM_War_preparation_idea_name
+			picture = SWE_varnplikt
+
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				training_time_factor = -0.1
+			}
+		}
+
+		ZIM_Military_priority_idea = {#让步于军事
+			name = ZIM_Military_priority_idea_name
+			picture = PRC_the_internal_enemy
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		ZIM_Better_tactics_idea = {#更好的战术
+			name = ZIM_Better_tactics_idea_name
+			picture = PRC_the_internal_enemy
+
+			modifier = {
+				max_planning = 0.1
+				planning_speed = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+
+		ZIM_Limited_strategy_idea = {#有限策略
+			name = ZIM_Limited_strategy
+			picture = PRC_the_internal_enemy
+
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				supply_factor = 0.05
+			}
+		}
+
+		ZIM_Desperate_gamble_idea = {#孤注一掷
+			name = ZIM_Desperate_gamble
+			picture = SIA_desperate_gambit
+
+			modifier = {
+				army_attack_factor = 0.20
+				army_defence_factor = 0.20
+				supply_factor = -0.05
+			}
+		}
+
+		ZIM_Predatory_exploitation_idea = {#强取豪夺
+			name = ZIM_Predatory_exploitation
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				compliance_gain = -0.25
+				supply_consumption_factor = -0.2
+				resistance_activity = 0.1
+				resistance_growth = 0.1
+			}
+		}
+
+		ZIM_Steady_advance_idea = {#步步为营
+			name = ZIM_Steady_advance
+			picture = FRA_fortification_focus
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+	}
+}

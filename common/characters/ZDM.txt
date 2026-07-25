@@ -1,0 +1,17 @@
+characters = {
+	ZDM_daiweisi = {
+		name = "哈里・戴维斯"
+		portraits = {
+			civilian = {
+				large = "daiweisi"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { 
+		    story_reaiheping_trait	
+	        }
+			id= -1
+		}
+	}	
+}

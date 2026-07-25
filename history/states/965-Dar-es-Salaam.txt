@@ -1,0 +1,29 @@
+state = {
+	id = 965
+	name = "STATE_965"
+	manpower = 1091319
+	state_category = three
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+		add_core_of = ZSH
+		add_to_array = { state_victory_points = 2196 }
+		add_to_array = { state_victory_points = 8183 }
+
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			2196 = {
+				naval_base = 5
+			}
+		}
+		victory_points = { 2196 15 }
+		victory_points = { 8183 10 }
+	}
+
+	provinces = {
+		2196 8182 8183 8254 12944 13403
+	}
+}
+

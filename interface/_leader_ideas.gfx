@@ -1,0 +1,66 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_biaomianwending"
+        texturefile = "gfx/interface/ideas/biaomianwending.png"
+    }
+    spriteType = {
+        name = "GFX_idea_jinzhangjushi"
+        texturefile = "gfx/interface/ideas/jinzhangjushi.png"
+    }
+    spriteType = {
+        name = "GFX_idea_buhezuodejundui"
+        texturefile = "gfx/interface/ideas/buhezuodejundui.png"
+    }
+    spriteType = {
+        name = "GFX_idea_chunchunyudong"
+        texturefile = "gfx/interface/ideas/chunchunyudong.png"
+    }
+    spriteType = {
+        name = "GFX_idea_guliwuyuan"
+        texturefile = "gfx/interface/ideas/guliwuyuan.png"
+    }
+    spriteType = {
+        name = "GFX_idea_haijunxianzhuang"
+        texturefile = "gfx/interface/ideas/haijunxianzhuang.png"
+    }
+    spriteType = {
+        name = "GFX_idea_neige"
+        texturefile = "gfx/interface/ideas/neige.png"
+    }
+    spriteType = {
+        name = "GFX_idea_jingjiwyh"
+        texturefile = "gfx/interface/ideas/jingjiwyh.png"
+    }
+    spriteType = {
+        name = "GFX_idea_qiaodingfangzhen"
+        texturefile = "gfx/interface/ideas/qiaodingfangzhen.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zhenzhijianjun"
+        texturefile = "gfx/interface/ideas/zhenzhijianjun.png"
+    }
+    spriteType = {
+        name = "GFX_idea_diangongju"
+        texturefile = "gfx/interface/ideas/diangongju.png"
+    }
+    spriteType = {
+        name = "GFX_idea_tieluju"
+        texturefile = "gfx/interface/ideas/tieluju.png"
+    }
+    spriteType = {
+        name = "GFX_idea_wunianjihua"
+        texturefile = "gfx/interface/ideas/wunianjihua.png"
+    }
+    spriteType = {
+        name = "GFX_idea_nongyexianzhuang"
+        texturefile = "gfx/interface/ideas/nongyexianzhuang.png"
+    }
+    spriteType = {
+        name = "GFX_idea_gongyexianzhuang"
+        texturefile = "gfx/interface/ideas/gongyexianzhuang.png"
+    }
+    spriteType = {
+        name = "GFX_idea_shehuixianzhuang"
+        texturefile = "gfx/interface/ideas/shehuixianzhuang.png"
+    }
+}

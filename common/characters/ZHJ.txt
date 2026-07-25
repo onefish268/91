@@ -1,0 +1,17 @@
+characters = {
+	ZHJ_abhm = {
+		name = "欧内斯特・奥本海默爵士"
+		portraits = {
+			civilian = {
+				large = "abhm"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+		    story_liyizhishang_trait	
+	        }
+			id= -1
+		}
+	}	
+}
