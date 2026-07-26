@@ -934,7 +934,7 @@ focus_tree = {
 	}
 
 	focus = {#生命不息、战斗不止
-		id = three_focus_Endless_fight
+		id = 3_focus_Endless_fight
 		x = -15
 		y = 7
 		cost = 20
@@ -977,7 +977,7 @@ focus_tree = {
 	}
 
 	focus = {#产业全面战争化
-		id = three_focus_Total_war_economy
+		id = 3_focus_Total_war_economy
 		x = -13
 		y = 7
 		cost = 20
@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 
 	focus = {#新非洲共同体
-		id = three_focus_Neo_African_union
+		id = 3_focus_Neo_African_union
 		x = -11
 		y = 7
 		cost = 20
@@ -1063,7 +1063,7 @@ focus_tree = {
 	}
 
 	focus = {#罗德西亚式文化
-		id = three_focus_Rhodesian_culture
+		id = 3_focus_Rhodesian_culture
 		x = -9
 		y = 7
 		cost = 20
@@ -1106,7 +1106,7 @@ focus_tree = {
 	}
 
 	focus = {#我来，我见，我征服
-		id = three_focus_Veni_vidi_vici
+		id = 3_focus_Veni_vidi_vici
 		x = -7
 		y = 7
 		cost = 20
@@ -1149,7 +1149,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = three_focus_27
+		id = 3_focus_27
 		x = -12
 		y = 8
 		cost = 5
@@ -1157,22 +1157,22 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_28
+			focus = 3_focus_28
 		}
 		prerequisite = {
-			focus = three_focus_Rhodesian_culture
+			focus = 3_focus_Rhodesian_culture
 		}
 		prerequisite = {
-			focus = three_focus_Total_war_economy
+			focus = 3_focus_Total_war_economy
 		}
 		prerequisite = {
-			focus = three_focus_Neo_African_union
+			focus = 3_focus_Neo_African_union
 		}
 		prerequisite = {
-			focus = three_focus_Veni_vidi_vici
+			focus = 3_focus_Veni_vidi_vici
 		}
 		prerequisite = {
-			focus = three_focus_Endless_fight
+			focus = 3_focus_Endless_fight
 		}
 		completion_reward = {
 			add_ideas = {
@@ -1181,7 +1181,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_28
+		id = 3_focus_28
 		x = -10
 		y = 8
 		cost = 5
@@ -1189,22 +1189,22 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_27
+			focus = 3_focus_27
 		}
 		prerequisite = {
-			focus = three_focus_Rhodesian_culture
+			focus = 3_focus_Rhodesian_culture
 		}
 		prerequisite = {
-			focus = three_focus_Total_war_economy
+			focus = 3_focus_Total_war_economy
 		}
 		prerequisite = {
-			focus = three_focus_Neo_African_union
+			focus = 3_focus_Neo_African_union
 		}
 		prerequisite = {
-			focus = three_focus_Veni_vidi_vici
+			focus = 3_focus_Veni_vidi_vici
 		}
 		prerequisite = {
-			focus = three_focus_Endless_fight
+			focus = 3_focus_Endless_fight
 		}
 		completion_reward = {
 			add_ideas = {
@@ -2373,7 +2373,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_77
+		id = 3_focus_77
 		x = 29
 		y = 0
 		cost = 4
@@ -2396,25 +2396,25 @@ focus_tree = {
 			add_daily_mastery = { #精通
                     amount = 0.5
                     days = 365
-                    name = three_focus_77
+                    name = 3_focus_77
                     folder = land
             }
 			add_daily_mastery = { #精通
                     amount = 0.5
                     days = 365
-                    name = three_focus_77
+                    name = 3_focus_77
                     folder = naval
             }
 			add_daily_mastery = { #精通
                     amount = 0.5
                     days = 365
-                    name = three_focus_77
+                    name = 3_focus_77
                     folder = air
             }
 		}
 	}
 	focus = {
-		id = three_focus_78
+		id = 3_focus_78
 		x = 23
 		y = 1
 		cost = 2
@@ -2422,7 +2422,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_77
+			focus = 3_focus_77
 		}
 
 		completion_reward = {
@@ -2432,7 +2432,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_79
+		id = 3_focus_79
 		x = 27
 		y = 1
 		cost = 3
@@ -2440,10 +2440,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_80
+			focus = 3_focus_80
 		}
 		prerequisite = {
-			focus = three_focus_77
+			focus = 3_focus_77
 		}
 
 		completion_reward = {
@@ -2453,7 +2453,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_80
+		id = 3_focus_80
 		x = 31
 		y = 1
 		cost = 3
@@ -2461,10 +2461,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_79
+			focus = 3_focus_79
 		}
 		prerequisite = {
-			focus = three_focus_77
+			focus = 3_focus_77
 		}
 
 		completion_reward = {
@@ -2474,7 +2474,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_81
+		id = 3_focus_81
 		x = 22
 		y = 2
 		cost = 3
@@ -2482,18 +2482,18 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_78
+			focus = 3_focus_78
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = three_focus_81
+				name = 3_focus_81
 				bonus = 0.25
 				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
-				name = three_focus_81
+				name = 3_focus_81
 				bonus = 0.25
 				uses = 1
 				category = infantry_weapons
@@ -2504,7 +2504,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_82
+		id = 3_focus_82
 		x = 24
 		y = 2
 		cost = 3
@@ -2512,7 +2512,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_78
+			focus = 3_focus_78
 		}
 
 		completion_reward = {
@@ -2522,7 +2522,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_83
+		id = 3_focus_83
 		x = 22
 		y = 4
 		cost = 3
@@ -2530,12 +2530,12 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_81
+			focus = 3_focus_81
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = three_focus_81
+				name = 3_focus_81
 				bonus = 0.50
 				uses = 1
 				category = armor
@@ -2546,7 +2546,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_84
+		id = 3_focus_84
 		x = 24
 		y = 4
 		cost = 3
@@ -2554,7 +2554,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_82
+			focus = 3_focus_82
 		}
 
 		completion_reward = {
@@ -2564,7 +2564,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_85
+		id = 3_focus_85
 		x = 22
 		y = 6
 		cost = 3
@@ -2572,7 +2572,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_83
+			focus = 3_focus_83
 		}
 
 		completion_reward = {
@@ -2582,7 +2582,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_86
+		id = 3_focus_86
 		x = 24
 		y = 6
 		cost = 3
@@ -2590,7 +2590,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_84
+			focus = 3_focus_84
 		}
 
 		completion_reward = {
@@ -2600,7 +2600,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_87
+		id = 3_focus_87
 		x = 26
 		y = 2
 		cost = 3
@@ -2608,7 +2608,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_79
+			focus = 3_focus_79
 		}
 
 		completion_reward = {
@@ -2618,7 +2618,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_88
+		id = 3_focus_88
 		x = 26
 		y = 4
 		cost = 3
@@ -2626,7 +2626,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_87
+			focus = 3_focus_87
 		}
 
 		completion_reward = {
@@ -2636,7 +2636,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_89
+		id = 3_focus_89
 		x = 28
 		y = 2
 		cost = 3
@@ -2644,7 +2644,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_79
+			focus = 3_focus_79
 		}
 
 		completion_reward = {
@@ -2654,7 +2654,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_90
+		id = 3_focus_90
 		x = 27
 		y = 3
 		cost = 3
@@ -2662,7 +2662,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_79
+			focus = 3_focus_79
 		}
 
 		completion_reward = {
@@ -2672,7 +2672,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_91
+		id = 3_focus_91
 		x = 27
 		y = 5
 		cost = 3
@@ -2680,7 +2680,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_90
+			focus = 3_focus_90
 		}
 
 		completion_reward = {
@@ -2690,7 +2690,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_92
+		id = 3_focus_92
 		x = 27
 		y = 6
 		cost = 3
@@ -2698,7 +2698,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_91
+			focus = 3_focus_91
 		}
 
 		completion_reward = {
@@ -2709,7 +2709,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_93
+		id = 3_focus_93
 		x = 31
 		y = 3
 		cost = 3
@@ -2717,7 +2717,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_80
+			focus = 3_focus_80
 		}
 
 		completion_reward = {
@@ -2727,7 +2727,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_94
+		id = 3_focus_94
 		x = 31
 		y = 5
 		cost = 3
@@ -2735,7 +2735,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_93
+			focus = 3_focus_93
 		}
 
 		completion_reward = {
@@ -2745,7 +2745,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_95
+		id = 3_focus_95
 		x = 31
 		y = 6
 		cost = 3
@@ -2753,25 +2753,25 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_94
+			focus = 3_focus_94
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = three_focus_95
+				name = 3_focus_95
 				bonus = 0.5
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
-				name = three_focus_95
+				name = 3_focus_95
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
-				name = three_focus_95
+				name = 3_focus_95
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
@@ -2780,7 +2780,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_96
+		id = 3_focus_96
 		x = 30
 		y = 4
 		cost = 3
@@ -2788,7 +2788,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_80
+			focus = 3_focus_80
 		}
 
 		completion_reward = {
@@ -2798,7 +2798,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_97
+		id = 3_focus_97
 		x = 32
 		y = 4
 		cost = 3
@@ -2806,7 +2806,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_80
+			focus = 3_focus_80
 		}
 
 		completion_reward = {
@@ -2816,7 +2816,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_98
+		id = 3_focus_98
 		x = 36
 		y = 1
 		cost = 3
@@ -2824,7 +2824,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_77
+			focus = 3_focus_77
 		}
 
 		completion_reward = {
@@ -2834,7 +2834,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_99
+		id = 3_focus_99
 		x = 41
 		y = 1
 		cost = 3
@@ -2842,7 +2842,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_77
+			focus = 3_focus_77
 		}
 
 		completion_reward = {
@@ -2852,7 +2852,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_100
+		id = 3_focus_100
 		x = 52
 		y = 0
 		cost = 1
@@ -2860,7 +2860,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_1
+			focus = 3_focus_1
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2870,7 +2870,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_101
+		id = 3_focus_101
 		x = 33
 		y = 5
 		cost = 3
@@ -2878,7 +2878,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_97
+			focus = 3_focus_97
 		}
 
 		completion_reward = {
@@ -2888,7 +2888,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_102
+		id = 3_focus_102
 		x = 34
 		y = 2
 		cost = 3
@@ -2896,7 +2896,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_98
+			focus = 3_focus_98
 		}
 
 		completion_reward = {
@@ -2906,7 +2906,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_103
+		id = 3_focus_103
 		x = 36
 		y = 2
 		cost = 3
@@ -2914,7 +2914,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_98
+			focus = 3_focus_98
 		}
 
 		completion_reward = {
@@ -2924,7 +2924,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_104
+		id = 3_focus_104
 		x = 35
 		y = 3
 		cost = 3
@@ -2932,7 +2932,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_103
+			focus = 3_focus_103
 		}
 
 		completion_reward = {
@@ -2940,14 +2940,14 @@ focus_tree = {
 				ZYX_Fighter_dev
 			}
 			add_tech_bonus = {
-				name = three_focus_104
+				name = 3_focus_104
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = cat_light_fighter
 			}
 			add_tech_bonus = {
-				name = three_focus_104
+				name = 3_focus_104
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
@@ -2956,7 +2956,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_105
+		id = 3_focus_105
 		x = 37
 		y = 3
 		cost = 3
@@ -2964,7 +2964,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_103
+			focus = 3_focus_103
 		}
 
 		completion_reward = {
@@ -2972,7 +2972,7 @@ focus_tree = {
 				ZYX_Bomber_dev
 			}
 			add_tech_bonus = {
-				name = three_focus_105
+				name = 3_focus_105
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
@@ -2981,7 +2981,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_106
+		id = 3_focus_106
 		x = 34
 		y = 4
 		cost = 3
@@ -2989,7 +2989,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_104
+			focus = 3_focus_104
 		}
 
 		completion_reward = {
@@ -2999,7 +2999,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_107
+		id = 3_focus_107
 		x = 36
 		y = 4
 		cost = 3
@@ -3007,10 +3007,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_104
+			focus = 3_focus_104
 		}
 		prerequisite = {
-			focus = three_focus_105
+			focus = 3_focus_105
 		}
 
 		completion_reward = {
@@ -3018,7 +3018,7 @@ focus_tree = {
 				ZYX_Air_castles
 			}
 			add_tech_bonus = {
-				name = three_focus_105
+				name = 3_focus_105
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
@@ -3027,7 +3027,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_108
+		id = 3_focus_108
 		x = 38
 		y = 4
 		cost = 3
@@ -3035,7 +3035,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_105
+			focus = 3_focus_105
 		}
 
 		completion_reward = {
@@ -3045,7 +3045,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_109
+		id = 3_focus_109
 		x = 41
 		y = 2
 		cost = 3
@@ -3053,7 +3053,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_99
+			focus = 3_focus_99
 		}
 
 		completion_reward = {
@@ -3063,7 +3063,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_110
+		id = 3_focus_110
 		x = 40
 		y = 3
 		cost = 3
@@ -3071,7 +3071,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_109
+			focus = 3_focus_109
 		}
 
 		completion_reward = {
@@ -3084,7 +3084,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_111
+		id = 3_focus_111
 		x = 42
 		y = 3
 		cost = 3
@@ -3092,7 +3092,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_109
+			focus = 3_focus_109
 		}
 
 		completion_reward = {
@@ -3102,7 +3102,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_112
+		id = 3_focus_112
 		x = 40
 		y = 4
 		cost = 3
@@ -3110,7 +3110,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_110
+			focus = 3_focus_110
 		}
 
 		completion_reward = {
@@ -3120,7 +3120,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_113
+		id = 3_focus_113
 		x = 42
 		y = 4
 		cost = 3
@@ -3128,7 +3128,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_111
+			focus = 3_focus_111
 		}
 
 		completion_reward = {
@@ -3138,7 +3138,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_114
+		id = 3_focus_114
 		x = 40
 		y = 5
 		cost = 3
@@ -3146,7 +3146,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_112
+			focus = 3_focus_112
 		}
 
 		completion_reward = {
@@ -3156,7 +3156,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_115
+		id = 3_focus_115
 		x = 42
 		y = 5
 		cost = 3
@@ -3164,7 +3164,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_113
+			focus = 3_focus_113
 		}
 
 		completion_reward = {
@@ -3184,7 +3184,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_116
+		id = 3_focus_116
 		x = 41
 		y = 6
 		cost = 3
@@ -3192,10 +3192,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_114
+			focus = 3_focus_114
 		}
 		prerequisite = {
-			focus = three_focus_115
+			focus = 3_focus_115
 		}
 
 		completion_reward = {
@@ -3205,7 +3205,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_117
+		id = 3_focus_117
 		x = 46
 		y = 1
 		cost = 1
@@ -3213,14 +3213,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_100
+			focus = 3_focus_100
 		}
 		completion_reward = {
 			add_war_support = 0.075
 		}
 	}
 	focus = {
-		id = three_focus_118
+		id = 3_focus_118
 		x = 50
 		y = 1
 		cost = 1
@@ -3228,14 +3228,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_100
+			focus = 3_focus_100
 		}
 		completion_reward = {
 			add_war_support = 0.05
 		}
 	}
 	focus = {
-		id = three_focus_119
+		id = 3_focus_119
 		x = 54
 		y = 1
 		cost = 1
@@ -3243,14 +3243,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_100
+			focus = 3_focus_100
 		}
 		completion_reward = {
 			add_war_support = 0.05
 		}
 	}
 	focus = {
-		id = three_focus_120
+		id = 3_focus_120
 		x = 58
 		y = 1
 		cost = 1
@@ -3258,14 +3258,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_100
+			focus = 3_focus_100
 		}
 		completion_reward = {
 			add_war_support = 0.025
 		}
 	}
 	focus = {
-		id = three_focus_121
+		id = 3_focus_121
 		x = 45
 		y = 2
 		cost = 2
@@ -3273,14 +3273,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_122
+			focus = 3_focus_122
 		}
 		prerequisite = {
-			focus = three_focus_117
+			focus = 3_focus_117
 		}
 		completion_reward = {
 			custom_effect_tooltip = "我们的行为可能激怒其他的邻国，甚至带来不必要的麻烦……"
-			ZYX_three_focus_121
+			ZYX_3_focus_121
 			hidden_effect = {
 				COG = {
 					country_event = ZYX.1
@@ -3292,7 +3292,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_122
+		id = 3_focus_122
 		x = 47
 		y = 2
 		cost = 4
@@ -3300,10 +3300,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_121
+			focus = 3_focus_121
 		}
 		prerequisite = {
-			focus = three_focus_117
+			focus = 3_focus_117
 		}
 		available = {
 			ENG = {
@@ -3315,7 +3315,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_123
+		id = 3_focus_123
 		x = 44
 		y = 3
 		cost = 3
@@ -3323,7 +3323,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_121
+			focus = 3_focus_121
 		}
 		bypass = {
 			EAS = {
@@ -3331,7 +3331,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-				custom_effect_tooltip = "我们要在最短的时间内打倒敌人！"				#ZYX_three_focus_123
+				custom_effect_tooltip = "我们要在最短的时间内打倒敌人！"				#ZYX_3_focus_123
 				create_wargoal = {
 					target = EAS
 					type = annex_everything
@@ -3347,7 +3347,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_124
+		id = 3_focus_124
 		x = 46
 		y = 3
 		cost = 3
@@ -3355,7 +3355,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_121
+			focus = 3_focus_121
 		}
 		bypass = {
 			COG = {
@@ -3363,7 +3363,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = "我们要在最短的时间内打倒敌人！"			#ZYX_three_focus_124
+			custom_effect_tooltip = "我们要在最短的时间内打倒敌人！"			#ZYX_3_focus_124
 			create_wargoal = {
 				target = COG
 				type = annex_everything
@@ -3379,7 +3379,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_125
+		id = 3_focus_125
 		x = 47
 		y = 4
 		cost = 4
@@ -3387,7 +3387,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_122
+			focus = 3_focus_122
 		}
 		available = {
 			ENG = {
@@ -3402,7 +3402,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_126
+		id = 3_focus_126
 		x = 45
 		y = 4
 		cost = 3
@@ -3410,8 +3410,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_123
-			focus = three_focus_124
+			focus = 3_focus_123
+			focus = 3_focus_124
 		}
 		bypass = {
 			AOI = {
@@ -3440,7 +3440,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_127
+		id = 3_focus_127
 		x = 45
 		y = 6
 		cost = 5
@@ -3448,14 +3448,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_126
+			focus = 3_focus_126
 		}
 		completion_reward = {
 			add_ideas = ZYX_Influence_of_great_africa
 		}
 	}
 	focus = {
-		id = three_focus_128
+		id = 3_focus_128
 		x = 49
 		y = 2
 		cost = 3
@@ -3463,7 +3463,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_118
+			focus = 3_focus_118
 		}
 
 		available = {
@@ -3484,7 +3484,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_129
+		id = 3_focus_129
 		x = 51
 		y = 2
 		cost = 3
@@ -3492,7 +3492,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_118
+			focus = 3_focus_118
 		}
 
 		available = {
@@ -3508,7 +3508,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_130
+		id = 3_focus_130
 		x = 49
 		y = 4
 		cost = 5
@@ -3516,7 +3516,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_128
+			focus = 3_focus_128
 		}
 		available = {
 			OR = {
@@ -3563,7 +3563,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_131
+		id = 3_focus_131
 		x = 51
 		y = 4
 		cost = 3
@@ -3571,7 +3571,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_129
+			focus = 3_focus_129
 		}
 		available = {
 			GER = {
@@ -3585,7 +3585,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_132
+		id = 3_focus_132
 		x = 51
 		y = 6
 		cost = 5
@@ -3593,7 +3593,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_131
+			focus = 3_focus_131
 		}
 		available = {
 			OR = {
@@ -3639,7 +3639,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_133
+		id = 3_focus_133
 		x = 53
 		y = 2
 		cost = 3
@@ -3647,7 +3647,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_119
+			focus = 3_focus_119
 		}
 		available = {
 			USA = {
@@ -3669,7 +3669,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_134
+		id = 3_focus_134
 		x = 55
 		y = 2
 		cost = 3
@@ -3677,7 +3677,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_119
+			focus = 3_focus_119
 		}
 		available = {
 			PAQ = {
@@ -3698,7 +3698,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_135
+		id = 3_focus_135
 		x = 57
 		y = 2
 		cost = 1
@@ -3706,10 +3706,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_136
+			focus = 3_focus_136
 		}
 		prerequisite = {
-			focus = three_focus_120
+			focus = 3_focus_120
 		}
 		available = {
 			ROC = {
@@ -3721,7 +3721,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_136
+		id = 3_focus_136
 		x = 59
 		y = 2
 		cost = 1
@@ -3729,10 +3729,10 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = three_focus_135
+			focus = 3_focus_135
 		}
 		prerequisite = {
-			focus = three_focus_120
+			focus = 3_focus_120
 		}
 		available = {
 			JAP = {
@@ -3744,7 +3744,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_137
+		id = 3_focus_137
 		x = 53
 		y = 3
 		cost = 3
@@ -3752,7 +3752,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_133
+			focus = 3_focus_133
 		}
 		available = {
 			USA = {
@@ -3768,7 +3768,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_138
+		id = 3_focus_138
 		x = 55
 		y = 3
 		cost = 2
@@ -3776,14 +3776,14 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_134
+			focus = 3_focus_134
 		}
 		completion_reward = {
 			add_ideas = ZYX_World_order_keeper
 		}
 	}
 	focus = {
-		id = three_focus_139
+		id = 3_focus_139
 		x = 55
 		y = 6
 		cost = 5
@@ -3791,7 +3791,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_138
+			focus = 3_focus_138
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -3826,7 +3826,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_140
+		id = 3_focus_140
 		x = 49
 		y = 6
 		cost = 3
@@ -3834,7 +3834,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_130
+			focus = 3_focus_130
 		}
 		available = {
 			SOV = {
@@ -3854,7 +3854,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_141
+		id = 3_focus_141
 		x = 57
 		y = 4
 		cost = 3
@@ -3862,7 +3862,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_135
+			focus = 3_focus_135
 		}
 		available = {
 			ROC = {
@@ -3886,7 +3886,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_142
+		id = 3_focus_142
 		x = 59
 		y = 4
 		cost = 3
@@ -3894,7 +3894,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_136
+			focus = 3_focus_136
 		}
 		available = {
 			JAP = {
@@ -3909,7 +3909,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_143
+		id = 3_focus_143
 		x = 57
 		y = 6
 		cost = 3
@@ -3917,7 +3917,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_141
+			focus = 3_focus_141
 		}
 		available = {
 			ROC = {
@@ -3933,7 +3933,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = three_focus_144
+		id = 3_focus_144
 		x = 59
 		y = 6
 		cost = 3
@@ -3941,7 +3941,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = three_focus_142
+			focus = 3_focus_142
 		}
 		available = {
 			JAP = {

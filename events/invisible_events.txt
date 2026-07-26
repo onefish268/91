@@ -28,7 +28,7 @@ country_event = {#配帕洛尼自动走国策
 	immediate = {
 		if = {
 			limit = {
-				has_completed_focus = three_focus_Endless_fight
+				has_completed_focus = 3_focus_Endless_fight
 			}
 		}
 		else_if = {
@@ -36,11 +36,11 @@ country_event = {#配帕洛尼自动走国策
 				has_completed_focus = three_focus_22
 			}
 			complete_national_focus = {
-				focus = three_focus_Endless_fight
+				focus = 3_focus_Endless_fight
 				use_side_message = yes
 				originator_name = "配帕洛尼"
 			}
-			deactivate_shine_on_focus = three_focus_Endless_fight
+			deactivate_shine_on_focus = 3_focus_Endless_fight
 			clr_country_flag = seven_time
 		}
 		else_if = {
@@ -85,7 +85,7 @@ country_event = {#卡尔帕乔自动走国策
 	immediate = {
 		if = {
 			limit = {
-				has_completed_focus = three_focus_Total_war_economy
+				has_completed_focus = 3_focus_Total_war_economy
 			}
 		}
 		else_if = {
@@ -93,11 +93,11 @@ country_event = {#卡尔帕乔自动走国策
 				has_completed_focus = three_focus_23
 			}
 			complete_national_focus = {
-				focus = three_focus_Total_war_economy
+				focus = 3_focus_Total_war_economy
 				use_side_message = yes
 				originator_name = "卡尔帕乔"
 			}
-			deactivate_shine_on_focus = three_focus_Total_war_economy
+			deactivate_shine_on_focus = 3_focus_Total_war_economy
 			clr_country_flag = seven_time
 		}
 		else_if = {
@@ -141,7 +141,7 @@ country_event = {#"得力干将齐亚诺"
 	immediate = {
 		if = {
 			limit = {
-				has_completed_focus = three_focus_Neo_African_union
+				has_completed_focus = 3_focus_Neo_African_union
 			}
 		}
 		else_if = {
@@ -149,11 +149,11 @@ country_event = {#"得力干将齐亚诺"
 				has_completed_focus = three_focus_24
 			}
 			complete_national_focus = {
-				focus = three_focus_Neo_African_union
+				focus = 3_focus_Neo_African_union
 				use_side_message = yes
 				originator_name = "齐亚诺"
 			}
-			deactivate_shine_on_focus = three_focus_Neo_African_union
+			deactivate_shine_on_focus = 3_focus_Neo_African_union
 			clr_country_flag = seven_time
 		}
 		else_if = {
@@ -197,7 +197,7 @@ country_event = {#斯塔拉切自动走国策
 	immediate = {
 		if = {
 			limit = {
-				has_completed_focus = three_focus_Rhodesian_culture
+				has_completed_focus = 3_focus_Rhodesian_culture
 			}
 		}
 		else_if = {
@@ -205,11 +205,11 @@ country_event = {#斯塔拉切自动走国策
 				has_completed_focus = three_focus_25
 			}
 			complete_national_focus = {
-				focus = three_focus_Rhodesian_culture
+				focus = 3_focus_Rhodesian_culture
 				use_side_message = yes
 				originator_name = "斯塔拉切"
 			}
-			deactivate_shine_on_focus = three_focus_Rhodesian_culture
+			deactivate_shine_on_focus = 3_focus_Rhodesian_culture
 			clr_country_flag = seven_time
 		}
 		else_if = {
@@ -253,7 +253,7 @@ country_event = {#帕沃利尼自动走国策
 	immediate = {
 		if = {
 			limit = {
-				has_completed_focus = three_focus_Veni_vidi_vici
+				has_completed_focus = 3_focus_Veni_vidi_vici
 			}
 		}
 		else_if = {
@@ -261,11 +261,11 @@ country_event = {#帕沃利尼自动走国策
 				has_completed_focus = three_focus_26
 			}
 			complete_national_focus = {
-				focus = three_focus_Veni_vidi_vici
+				focus = 3_focus_Veni_vidi_vici
 				use_side_message = yes
 				originator_name = "帕沃利尼"
 			}
-			deactivate_shine_on_focus = three_focus_Veni_vidi_vici
+			deactivate_shine_on_focus = 3_focus_Veni_vidi_vici
 			clr_country_flag = seven_time
 		}
 		else_if = {

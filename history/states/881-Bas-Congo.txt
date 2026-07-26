@@ -1,0 +1,32 @@
+state = {
+	id = 881
+	name = "STATE_881"
+	manpower = 1355430
+	state_category = six
+	local_supplies = 1.0
+
+	history = {
+		owner = COG
+		add_core_of = COG
+		add_to_array = { state_victory_points = 10968 }
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10968 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { 
+			10968 1	
+		}
+		victory_points = { 
+			12925 2 
+		}
+	}
+
+	provinces = {
+		10968 12925
+	}
+}
+

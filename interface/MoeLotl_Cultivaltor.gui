@@ -1,0 +1,103 @@
+guiTypes = {#MoeLotl_Cultivaltor
+	containerWindowType = {
+		name = "equipment_designer_MoeLotl_Cultivaltor"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = GFX_MY_EMPTY
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			################# MODULE SLOT: sect_slot #################
+			containerWindowType = {
+				name = "sect_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "sect_slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "sect_slot@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint"
+						spriteType = GFX_MY_EMPTY
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			################# MODULE SLOT: internal_energy_slot_1 #################
+			containerWindowType = {
+				name = "internal_energy_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "internal_energy_slot_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "internal_energy_slot_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint"
+						spriteType = GFX_MY_EMPTY
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Internal_energy_slot_2 #################
+			containerWindowType = {
+				name = "Internal_energy_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "Internal_energy_slot_2"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "Internal_energy_slot_2@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint"
+						spriteType = GFX_MY_EMPTY
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			################# MODULE SLOT: external_strength_slot #################
+			containerWindowType = {
+				name = "external_strength_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "lightness_skills_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }				
+			}
+		}
+	}
+}

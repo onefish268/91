@@ -1,0 +1,20 @@
+COG_MoeLoel_industry = {
+
+	include = generic_spirit_suit_organization
+
+	icon = GFX_MY_EMPTY
+
+	allowed = {
+		tag = COG
+	}
+	available = {
+
+	}
+
+	add_trait = {
+		
+	}
+	add_trait = {
+		
+	}
+}

@@ -1,0 +1,24 @@
+state = {
+	id = 962
+	name = "STATE_962"
+	manpower = 1827500
+	state_category = three
+
+	history = {
+		owner = COG
+		add_core_of = COG
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		victory_points = {
+			13627 1
+		}
+	}
+
+	provinces = {
+		7963 13627
+	}
+}
+

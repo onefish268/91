@@ -1,0 +1,92 @@
+##另外一位国家领袖头像
+defined_text = {
+	name = Country_leader_picture_66
+	text = {
+		trigger = {
+			tag = COG
+		}
+		localization_key = GFX_COG_Cat_warrior
+	}
+	text = {
+		trigger = {
+			tag = ZIM
+		}
+		localization_key = GFX_COG_Cat_warrior
+	}
+	##通用
+	text = {
+		localization_key = GFX_leader_unknown
+	}
+}
+
+##另外一位国家领袖名字
+defined_text = {
+	name = country_leader_name_66
+	text = {
+		trigger = {
+			tag = COG
+		}
+		localization_key = COG_Cat_warrior_name
+	}
+	text = {
+		trigger = {
+			tag = ZIM
+		}
+		localization_key = COG_Cat_warrior_name
+	}
+	##通用
+	text = {
+		localization_key = none_another_leader
+	}
+}
+
+##另外一位国家领袖介绍--姓名及buff
+defined_text = {
+	name = Another_country_leader_desc_66
+	text = {
+		trigger = {
+			tag = COG
+		}
+		localization_key = COG_Cat_warrior_DESC_1
+	}
+	text = {
+		trigger = {
+			tag = ZIM
+		}
+		localization_key = COG_Cat_warrior_DESC_1
+	}
+}
+
+####另外一位国家领袖介绍--姓名及buff--外交界面
+defined_text = {
+	name = Another_country_leader_Diplomacy_desc_66
+	text = {
+		trigger = {
+			tag = COG
+		}
+		localization_key = COG_Cat_warrior_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			tag = ZIM
+		}
+		localization_key = COG_Cat_warrior_Diplomacy_desc
+	}
+}
+
+##另外一位国家领袖介绍--生平
+defined_text = {
+	name = Another_country_leader_desc_2_66
+	text = {
+		trigger = {
+			tag = COG
+		}
+		localization_key = COG_Cat_warrior_desc
+	}
+	text = {
+		trigger = {
+			tag = ZIM
+		}
+		localization_key = COG_Cat_warrior_desc
+	}
+}

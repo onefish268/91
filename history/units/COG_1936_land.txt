@@ -1,0 +1,53 @@
+division_template = {
+    name = "民兵师"
+
+	division_names_group = COG_MIMA_00
+
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 1 y = 0 }
+    }
+    #support = {
+        # 支援连，可以留空
+    #}
+}
+
+
+units = {#单位
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 1
+		}
+		#位置(城市ID)
+		location = 5117
+		#模板名称
+		division_template = "民兵师"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.0
+		#装备数量(%)
+		start_equipment_factor =0.6
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment
+			creator = COG
+		}
+		requested_factories = 3
+		progress = 0.2
+		efficiency = 20
+	}
+}
+
+focus = {
+	current = "COG_Prepare_new_year"
+	progress = 5
+}

@@ -1,0 +1,29 @@
+state = {
+	id = 539
+	name = "STATE_539"
+	manpower = 32274
+	state_category = one
+
+	resources = {
+		originium = 10
+	}
+
+	history = {
+		owner = COG
+		add_core_of = COG
+		add_to_array = { state_victory_points = 5139 }
+		victory_points = { 5139 4 }
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13653 1
+		}
+	}
+
+	provinces = {
+		5139 8207 10948 13653
+	}
+}
+

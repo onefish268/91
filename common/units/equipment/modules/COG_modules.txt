@@ -1,0 +1,515 @@
+equipment_modules = {
+	
+	#卧槽，为什么玄幻、修仙小说的东西那么难翻译啊，哼哼哼~~啊啊啊啊啊啊啊啊啊啊
+
+#sect_modules 流派
+######################################################################
+
+	thunderclap_spirit_vein = {#雷霆灵脉
+		category = sect_modules
+
+		sfx = sfx_ui_sd_module_engine
+		allowed_module_categories = {
+			internal_energy_slot_1 = {#内功1
+				sect_0_internal_energy_modules
+			}
+			Internal_energy_slot_2 = {#内功2
+				sect_0_internal_energy_modules
+			}
+		}
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			originium = 3
+	 	}
+	}
+
+	primal_source_spirit_vein = {#源流灵脉
+		category = sect_modules
+
+		sfx = sfx_ui_sd_module_engine
+		allowed_module_categories = {
+			internal_energy_slot_1 = {#内功1
+				sect_1_internal_energy_modules
+			}
+			Internal_energy_slot_2 = {#内功2
+				sect_1_internal_energy_modules
+			}
+		}
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			originium = 3
+	 	}
+	}
+
+	hundred_flowers_spirit_vein = {#百花灵脉
+		category = sect_modules
+
+		sfx = sfx_ui_sd_module_engine
+		allowed_module_categories = {
+			internal_energy_slot_1 = {#内功1
+				sect_2_internal_energy_modules
+			}
+			Internal_energy_slot_2 = {#内功2
+				sect_2_internal_energy_modules
+			}
+		}
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			originium = 3
+	 	}
+	}
+
+	scorching_blaze_spirit_vein = {#灼炎灵脉
+		category = sect_modules
+
+		sfx = sfx_ui_sd_module_engine
+		allowed_module_categories = {
+			internal_energy_slot_1 = {#内功1
+				sect_3_internal_energy_modules
+			}
+			Internal_energy_slot_2 = {#内功2
+				sect_3_internal_energy_modules
+			}
+		}
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			originium = 3
+	 	}
+	}
+
+	bedrock_spirit_vein = {#磐岩灵脉
+		category = sect_modules
+
+		sfx = sfx_ui_sd_module_engine
+		allowed_module_categories = {
+			internal_energy_slot_1 = {#内功1
+				sect_4_internal_energy_modules
+			}
+			Internal_energy_slot_2 = {#内功2
+				sect_4_internal_energy_modules
+			}
+		}
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			originium = 3
+	 	}
+	}
+
+	thunderclap_mental_art = {#雷霆心法
+		category = sect_0_internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	primal_source_mental_art = {#源流心法
+		category = sect_1_internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	hundred_flowers_mental_art = {#百花心法
+		category = sect_2_internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	scorching_blaze_mental_art = {#灼炎心法
+		category = sect_3_internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	bedrock_mental_art = {#磐岩心法
+		category = sect_4_internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	qi_gathering_method = {#聚气法
+		category = internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	burning_heart_art = {#燃心法
+		category = internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	innate_steel_qi = {#先天罡气
+		category = internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	still_water_art = {#止水法
+		category = internal_energy_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	sword_control_art = {#御剑诀
+		category = external_strength_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	power_storing_art = {#蓄势诀
+		category = external_strength_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	jade_shadow_art = {#碧影诀
+		category = external_strength_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	bowstring_control_technique = {#控弦术
+		category = external_strength_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	cloud_trace_step = {#云来踪
+		category = lightness_skills_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	thousand_mile_dash = {#神行千里
+		category = lightness_skills_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+	limitless_step = {#无量步
+		category = lightness_skills_modules
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+	 		defense = 4
+	 		breakthrough = 1
+	 		soft_attack = 3
+	 		hard_attack = 7
+	 		ap_attack = 25
+	 		air_attack = 19
+	 		build_cost_ic = 3.5
+	 		
+	 	}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+	 	}
+	}
+
+}

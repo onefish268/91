@@ -1,0 +1,9 @@
+on_actions = {
+    on_monthly = {
+        effect = {
+            FRA = {
+                country_event = SA_invisible_event.001
+            }
+        }
+    }
+}

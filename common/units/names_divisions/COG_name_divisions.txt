@@ -1,0 +1,188 @@
+COG_MIMA_00 = 
+{
+	name = "魔界溪谷仪仗队"
+
+	for_countries = { COG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "第%d仪仗队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = {"国家仪仗队"}
+		2 = {"家仪仗队"}
+		3 = {"仪仗队"}
+		4 = {"仗队"}
+		5 = {"队"}
+	}
+}
+
+COG_RAT_00 = 
+{
+	name = "鼠族军团"
+
+	for_countries = { COG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "第%d鼠族军团"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "“铁鼠王国”第%d近卫军团" }
+    	2 = { "“向日葵公国”第%d攻城军团" }
+    	3 = { "“风雪公国”第%d奇袭军团" }
+    	4 = { "“翠绿公国”第%d先锋军团" }
+    	5 = { "“麦田公国”第%d挺进军团" }
+    	6 = { "“银月公国”第%d冲锋军团" }
+    	7 = { "“青石公国”第%d突袭军团" }
+    	8 = { "“松果公国”第%d强击军团" }
+    	9 = { "“溪流公国”第%d游击军团" }
+    	10 = { "“金矿公国”第%d陷阵军团" }
+    	11 = { "“蜜糖公国”第%d破阵军团" }
+    	12 = { "“橡树公国”第%d铁卫军团" }
+    	13 = { "“蓝湖公国”第%d守卫军团" }
+    	14 = { "“荆棘公国”第%d袭扰军团" }
+    	15 = { "“琥珀公国”第%d支援军团" }
+    	16 = { "“星尘公国”第%d追击军团" }
+    	17 = { "“蘑菇公国”第%d散兵军团" }
+    	18 = { "“雾林公国”第%d伏击军团" }
+	}
+}
+
+COG_RAT_01 = 
+{
+	name = "鼠族骑兵师"
+
+	for_countries = { COG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "第%d鼠族骑士团"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "“铁鼠王国”风骑兵" }
+		2 = { "“铁鼠王国”近卫骑兵" }
+		3 = { "“铁鼠王国”龙骑兵" }
+    	4 = { "“向日葵公国”游隼骑" }
+    	5 = { "“风雪公国”狮鹫骑" }
+    	6 = { "“翠绿公国”地鸣骑" }
+    	7 = { "“麦田公国”游骑兵" }
+    	8 = { "“银月公国”掠骑兵" }
+    	9 = { "“青石公国”赤云骑" }
+    	10 = { "“松果公国”猎骑兵" }
+    	11 = { "“溪流公国”飞刃骑" }
+    	12 = { "“金矿公国”弯刀骑" }
+    	13 = { "“蜜糖公国”狼骑兵" }
+		14 = { "“橡树公国”野骑兵" }
+    	15 = { "“蓝湖公国”轻骑兵" }
+    	16 = { "“荆棘公国”藤甲骑" }
+	}
+}
+
+
+
+COG_MOE_00 = 
+{
+	name = "萌螈灵团"
+
+	for_countries = { COG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "第%d萌螈修士灵团"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+    	1 = { "甲子奔雷灵团" }
+    	2 = { "乙丑焱火灵团" }
+    	3 = { "丙寅沧澜灵团" }
+    	4 = { "丁卯长春灵团" }
+    	5 = { "戊辰惊雷灵团" }
+    	6 = { "己巳紫电灵团" }
+    	7 = { "庚午炙火灵团" }
+    	8 = { "辛未烈焰灵团" }
+    	9 = { "壬申百花灵团" }
+    	10 = { "癸酉源流灵团" }
+    	11 = { "甲戌潮汐灵团" }
+    	12 = { "乙亥泉涌灵团" }
+    	13 = { "丙子磐岩灵团" }
+    	14 = { "丁丑山岳灵团" }
+    	15 = { "戊寅玄武灵团" }
+    	16 = { "己卯峰峦灵团" }
+    	17 = { "庚辰雷云灵团" }
+    	18 = { "辛巳霹雳灵团" }
+    	19 = { "壬午雷音灵团" }
+    	20 = { "癸未焚天灵团" }
+    	21 = { "甲申凰炎灵团" }
+    	22 = { "乙酉炽焰灵团" }
+    	23 = { "丙戌春华灵团" }
+    	24 = { "丁亥千蕊灵团" }
+    	25 = { "戊子百川灵团" }
+    	26 = { "己丑掠影灵团" }
+    	27 = { "庚寅隐花灵团" }
+   		28 = { "辛卯潜渊灵团" }
+    	29 = { "壬辰尘踪灵团" }
+    	30 = { "癸巳瞬雷灵团" }
+    	31 = { "甲午萤火灵团" }
+	}	
+}
+
+COG_KII_00 = 
+{
+	name = "绮罗特种部队"
+
+	for_countries = { COG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "绮罗第%d特遣队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "绮罗第一山地中队" }
+		2 = { "绮罗第二侦察中队" }
+		3 = { "绮罗第三爆破中队" }
+    	4 = { "绮罗第四狙击中队" }
+    	5 = { "绮罗第五渗透中队" }
+    	6 = { "绮罗第六快反中队" }
+    	7 = { "绮罗第七通讯中队" }
+	}
+}

@@ -1,0 +1,216 @@
+ideas = {
+	country = {
+		#民族精神
+
+		#CPC_over_the_sky = {
+			#ideas的id
+			#piture = CPC_over_the_sky
+		#	allowed = {
+				# Triggers 条件↓
+		#		always = yes				#总是允许
+				#original_tag = PRC #允许特定国家
+		#	}
+		#	allowed_civil_war = {
+				#内战精神继承判定
+		#		always = yes
+		#	}
+		#	cancel = {
+				#取消判定
+		#		exists = no
+		#	}
+		#	on_add = {
+				#获得精神的同时给的东西
+		#		add_political_power = 100
+		#	}
+		#	on_remove = {
+				#移除后的效果
+		#		add_political_power = -100
+		#	}
+		#	do_effect = {
+				#似乎无效的生效判定
+		#		has_stability > 0.49
+		#	}
+		#	rule = {
+				#规则调整
+		#		can_create_factions = yes 创建阵营
+		#	}
+		#	research_bonus = {
+				#研究修正
+		#		industry = 0.05
+		#	}
+		#	equipment_bonus = {
+				#装备修正
+				#production_speed_buildings_factor = -0.1
+				#instant = yes
+		#	}
+		#	targeted_modifier = {
+				#针对性国家加成
+		#		tag = JAP
+		#		attack_bonus_against = 0.1
+		#	}
+		#	modifier = {
+				#一般效果实现
+		#		industrial_capacity_factory = 0.1
+		#		production_speed_arms_factory_factor = 0.1
+		#		consumer_goods_factor = -0.1
+		#	}
+		#}
+		
+		COG_Autonomous_dependency = {#超然的独立
+			name = COG_Autonomous_dependency_name
+			#picture = ""
+			modifier = {
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+		}
+
+		COG_Tolerate_exploitation = {#承受剥削
+			name = COG_Tolerate_exploitation_name
+			#picture = ""
+			allowed = {
+				is_subject = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.3
+    			industrial_capacity_factory = -0.3
+    			political_power_gain = -0.3
+    			cic_to_overlord_factor = 0.3
+    			mic_to_overlord_factor = 0.3
+    			army_attack_factor = -0.3
+    			army_defence_factor = -0.3
+			}
+		} 
+
+		COG_Lower_exploitation = {#部分的剥削
+			name = COG_Lower_exploitation_name
+			#picture = ""
+			allowed = {
+				is_subject = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+    			industrial_capacity_factory = -0.1
+    			political_power_gain = -0.1
+    			cic_to_overlord_factor = 0.1
+    			mic_to_overlord_factor = 0.1
+    			army_attack_factor = -0.1
+    			army_defence_factor = -0.1
+			}
+		} 
+
+		COG_Absent_rule_0 = {#缺席的统治0级
+			name = COG_Absent_rule_0_name
+			#picture = ""
+			modifier = {
+			    production_speed_buildings_factor = -0.3
+    			industrial_capacity_factory =  -0.3
+    			political_power_gain =  -0.5
+    			consumer_goods_factor = 0.3
+			}
+		}
+
+		COG_Absent_rule_1 = {#缺席的统治1级
+			name = COG_Absent_rule_1_name
+			#picture = ""
+			modifier = {
+			    production_speed_buildings_factor = -0.2
+    			industrial_capacity_factory =  -0.2
+    			political_power_gain =  -0.25
+    			consumer_goods_factor = 0.2
+			}
+		}
+
+		COG_Absent_rule_2 = {#缺席的统治2级
+			name = COG_Absent_rule_2_name
+			#picture = ""
+			modifier = {
+			    production_speed_buildings_factor = -0.1
+    			industrial_capacity_factory =  -0.1
+    			political_power_gain =  -0.1
+    			consumer_goods_factor = 0.1
+			}
+		}
+
+		COG_MoeLotl_race = {#崇尚灵能的萌螈族
+			name = COG_MoeLotl_race_name
+			#picture = ""
+			modifier = {
+				special_forces_cap_flat = 0.25
+				special_forces_attack_factor = 0.1
+				stability_factor = -0.1
+				conscription_factor = -0.25
+				research_speed_factor = -0.3
+			}
+			research_bonus = {
+                magic_tank = 0.8
+                magic_airforce_tech = 0.8
+                magic_army_tech = 0.8
+            }
+		}
+
+		COG_Kiiro_race = {#分身乏术的绮罗
+			name = COG_Kiiro_race_name
+			#picture = ""
+			modifier = {
+				supply_factor = 0.1
+				recon_factor = 0.1
+				special_forces_cap_flat = 0.10
+				land_night_attack = 0.05
+				research_speed_factor = 0.2
+				industrial_capacity_factory = -0.1
+				war_support_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.10
+				conscription_factor = -0.1
+			}
+		}
+
+		COG_Ratkin_race = {#勤勤恳恳的鼠族
+			name = COG_Ratkin_race_name
+			#picture = ""
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				local_resources_factor = 0.15
+				monthly_population = 0.6
+				land_reinforce_rate = 0.01
+				army_attack_factor = -0.2
+				army_defence_factor = -0.1
+				breakthrough_factor = -0.05
+				army_org_factor = -0.2
+				war_support_factor = -0.1
+				command_power_gain_mult = -0.25
+			}
+		}
+
+		COG_Dragon_girl_race = {#无足轻重的龙族
+			name = COG_Dragon_girl_race_name
+			#picture = ""
+		}
+
+		COG_Lack_technology = {#科技落后
+			name = COG_Lack_technology_name
+			#picture = ""
+			modifier = {
+				research_speed_factor = -0.2
+				army_armor_attack_factor = -0.5
+				army_armor_speed_factor = -0.5
+				army_armor_defence_factor = -0.5
+				air_agility_factor = -0.5
+				air_attack_factor = -0.5
+				air_defence_factor = -0.5
+				air_training_xp_gain_factor = -0.5
+				air_untrained_pilots_penalty_factor = 0.5
+			}
+		}
+
+		COG_Autonomous_dependency = {#超然的独立
+			name = COG_Autonomous_dependency_name
+			#picture = ""
+			modifier = {
+				ai_call_ally_desire_factor = -5000
+				ai_join_ally_desire_factor = -5000
+			}
+		}
+		
+	}
+}
