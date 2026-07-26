@@ -26,58 +26,258 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 3_focus_7
+		id = three_focus_7
 		x = -15
 		y = 1
-		cost = 0
+		cost = 5
 		icon = GFX_focus_he1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = three_focus_7
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = employ_days
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content
+						DAYS = [?employ_days:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content2
+					}
+					always = yes
+				}
+			}
+		}
 		prerequisite = {
 			focus = 3_focus_3
 		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = employ_days
+					days = 121
+					value = 1
+				}
+				set_country_flag = {
+					flag = seven_time
+					days = 141
+					value = 1
+				}
+				country_event = {
+					id = invisible_event.001
+					days = 120
+				}
+				country_event = {
+					id = invisible_event.002
+					days = 140
+				}
+				activate_shine_on_focus = three_focus_17
+			}
+		}
 	}
 	focus = {
-		id = 3_focus_6
+		id = three_focus_6
 		x = -9
 		y = 1
-		cost = 0
+		cost = 5
 		icon = GFX_focus_he4
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_3
 		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = three_focus_6
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = employ_days
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content
+						DAYS = [?employ_days:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content2
+					}
+					always = yes
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = employ_days
+					days = 121
+					value = 1
+				}
+				set_country_flag = {
+					flag = six_time
+					days = 141
+					value = 1
+				}
+				country_event = {
+					id = invisible_event.001
+					days = 120
+				}
+				country_event = {
+					id = invisible_event.005
+					days = 140
+				}
+				activate_shine_on_focus = three_focus_20
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_5
 		x = -11
 		y = 1
-		cost = 0
+		cost = 5
 		icon = GFX_focus_he3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_3
 		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = three_focus_5
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = employ_days
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content
+						DAYS = [?employ_days:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content2
+					}
+					always = yes
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = employ_days
+					days = 121
+					value = 1
+				}
+				set_country_flag = {
+					flag = five_time
+					days = 141
+					value = 1
+				}
+				country_event = {
+					id = invisible_event.001
+					days = 120
+				}
+				country_event = {
+					id = invisible_event.003
+					days = 140
+				}
+				activate_shine_on_focus = three_focus_19
+			}
+		}
 	}
 	focus = {
-		id = 3_focus_4
+		id = three_focus_4
 		x = -13
 		y = 1
-		cost = 0
+		cost = 5
 		icon = GFX_focus_he2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_3
 		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = three_focus_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = employ_days
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content
+						DAYS = [?employ_days:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content2
+					}
+					always = yes
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = employ_days
+					days = 121
+					value = 1
+				}
+				set_country_flag = {
+					flag = four_time
+					days = 141
+					value = 1
+				}
+				country_event = {
+					id = invisible_event.001
+					days = 120
+				}
+				country_event = {
+					id = invisible_event.002
+					days = 140
+				}
+				activate_shine_on_focus = three_focus_18
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_3
 		x = -11
 		y = 0
-		cost = 0
+		cost = 3
 		icon = GFX_focus_lingxiu
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -89,7 +289,7 @@ focus_tree = {
 		id = 3_focus_2
 		x = -16
 		y = -1
-		cost = 0
+		cost = 1
 		icon = GFX_focus_ITA_italian_hegemony
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -98,58 +298,121 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 3_focus_8
+		id = three_focus_8
 		x = -7
 		y = 1
-		cost = 0
+		cost = 5
 		icon = GFX_focus_he5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_3
 		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = three_focus_8
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = employ_days
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content
+						DAYS = [?employ_days:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = content2
+					}
+					always = yes
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = employ_days
+					days = 121
+					value = 1
+				}
+				set_country_flag = {
+					flag = eight_time
+					days = 141
+					value = 1
+				}
+				country_event = {
+					id = invisible_event.001
+					days = 120
+				}
+				country_event = {
+					id = invisible_event.006
+					days = 140
+				}
+				activate_shine_on_focus = three_focus_21
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_9
 		x = -20
 		y = 0
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ITA_culto_del_duce
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_2
 		}
+		completion_reward = {
+			add_country_leader_trait = ZYX_Our_duce_trait
+		}
 	}
 	focus = {
 		id = 3_focus_10
 		x = -21
 		y = 1
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PRC_the_central_committee
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_9
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Counterrevolution_watch
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_11
 		x = -19
 		y = 1
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ETH_invite_italian_settlers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_9
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Ideological_unification
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_12
 		x = -20
 		y = 2
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SIA_order_discipline_and_unity
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -159,48 +422,68 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_11
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Rally_mobilization
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_13
 		x = -20
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_military_academy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_12
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Describing_the_prospect
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_14
 		x = -22
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ICE_expanding_the_university_of_reykjavik
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_12
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Forward_fascists
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_15
 		x = -18
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SIA_defenders_of_constitutional_liberty
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_12
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Party_member_deployment
+			}
+		}
 	}
 	focus = {
 		id = 3_focus_16
 		x = -20
 		y = 5
-		cost = 0
+		cost = 3
 		icon = GFX_focus_DEN_national_unity
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -213,69 +496,234 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_15
 		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Better_future
+			}
+		}
 	}
 	focus = {
-		id = 3_focus_17
+		id = three_focus_17
 		x = -15
 		y = 3
-		cost = 0
+		cost = 20
 		icon = GFX_focus_ITA_blackshirts
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_7
+			focus = three_focus_7
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = seven_time
+					NOT = {
+						has_completed_focus = three_focus_17
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "配帕洛尼"
+						DAYS = [?seven_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "配帕洛尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Brownshirt_formation
+			}
 		}
 	}
 	focus = {
 		id = 3_focus_18
 		x = -13
 		y = 3
-		cost = 0
+		cost = 20
 		icon = GFX_focus_DEN_limited_regulations
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_4
+			focus = three_focus_4
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = four_time
+					NOT = {
+						has_completed_focus = three_focus_18
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "卡尔帕乔"
+						DAYS = [?four_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "卡尔帕乔"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Control_company
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_19
+		id = three_focus_19
 		x = -11
 		y = 3
-		cost = 0
+		cost = 20
 		icon = GFX_focus_ETH_reach_out_to_the_italians
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_5
+			focus = three_focus_5
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = five_time
+					NOT = {
+						has_completed_focus = three_focus_19
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "齐亚诺"
+						DAYS = [?five_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "齐亚诺"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Equal_principle
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_20
+		id = three_focus_20
 		x = -9
 		y = 3
-		cost = 0
+		cost = 20
 		icon = GFX_focus_ITA_the_social_republic_prevails
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_6
+			focus = three_focus_6
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = six_time
+					NOT = {
+						has_completed_focus = three_focus_20
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "斯塔拉切"
+						DAYS = [?six_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "斯塔拉切"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Lead_of_party
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_21
+		id = three_focus_21
 		x = -7
 		y = 3
-		cost = 0
+		cost = 20
 		icon = GFX_focus_generic_advanced_military_studies
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_8
+			focus = three_focus_8
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = eight_time
+					NOT = {
+						has_completed_focus = three_focus_21
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "帕沃利尼"
+						DAYS = [?eight_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "帕沃利尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Youth_league_building
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_22
+		id = three_focus_22
 		x = -15
 		y = 5
 		cost = 0
@@ -283,109 +731,485 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_17
+			focus = three_focus_17
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = seven_time
+					has_completed_focus = three_focus_17
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "配帕洛尼"
+						DAYS = [?seven_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "配帕洛尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Sustaining_struggle
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_23
+		id = three_focus_23
 		x = -13
 		y = 5
-		cost = 0
+		cost = 20
 		icon = GFX_focus_CHL_cooperation_with_the_falange
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_18
+			focus = three_focus_18
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = four_time
+					has_completed_focus = three_focus_18
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "卡尔帕乔"
+						DAYS = [?four_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "卡尔帕乔"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Provide_profit
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_24
+		id = three_focus_24
 		x = -11
 		y = 5
-		cost = 0
+		cost = 20
 		icon = GFX_focus_PER_limit_foreign_influence
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_19
+			focus = three_focus_19
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = five_time
+					has_completed_focus = three_focus_19
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "齐亚诺"
+						DAYS = [?five_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "齐亚诺"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Unite_together
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_25
+		id = three_focus_25
 		x = -9
 		y = 5
-		cost = 0
+		cost = 20
 		icon = GFX_focus_AFG_fruit_processing
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_20
+			focus = three_focus_20
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = six_time
+					has_completed_focus = three_focus_20
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "斯塔拉切"
+						DAYS = [?six_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "斯塔拉切"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Conservation_action
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_26
+		id = three_focus_26
 		x = -7
 		y = 5
-		cost = 0
+		cost = 20
 		icon = GFX_focus_ITA_mare_nostrum
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_21
+			focus = three_focus_21
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = eight_time
+					has_completed_focus = three_focus_21
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "帕沃利尼"
+						DAYS = [?eight_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "帕沃利尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Promoting_Roman_spirit
+			}
 		}
 	}
-	focus = {
-		id = 3_focus_27
-		x = -12
-		y = 6
+
+	focus = {#生命不息、战斗不止
+		id = three_focus_Endless_fight
+		x = -15
+		y = 7
 		cost = 0
+		icon = GFX_focus_AST_from_picket_line_to_front_line
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = three_focus_22
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = seven_time
+					has_completed_focus = three_focus_22
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "配帕洛尼"
+						DAYS = [?seven_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "配帕洛尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Endless_fight
+			}
+		}
+	}
+
+	focus = {#产业全面战争化
+		id = three_focus_Total_war_economy
+		x = -13
+		y = 7
+		cost = 20
+		icon = GFX_focus_NORDIC_com_materiel
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = three_focus_23
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = four_time
+					has_completed_focus = three_focus_23
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "卡尔帕乔"
+						DAYS = [?four_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "卡尔帕乔"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Total_war_economy
+			}
+		}
+	}
+
+	focus = {#新非洲共同体
+		id = three_focus_Neo_African_union
+		x = -11
+		y = 7
+		cost = 20
+		icon = GFX_focus_ETH_the_african_union
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = three_focus_24
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = five_time
+					has_completed_focus = three_focus_24
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "齐亚诺"
+						DAYS = [?five_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "齐亚诺"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Neo_African_union
+			}
+		}
+	}
+
+	focus = {#罗德西亚式文化
+		id = three_focus_Rhodesian_culture
+		x = -9
+		y = 7
+		cost = 20
+		icon = GFX_focus_HUN_goulash_communism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = three_focus_25
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = six_time
+					has_completed_focus = three_focus_25
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "斯塔拉切"
+						DAYS = [?six_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "斯塔拉切"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Rhodesian_culture
+			}
+		}
+	}
+
+	focus = {#我来，我见，我征服
+		id = three_focus_Veni_vidi_vici
+		x = -7
+		y = 7
+		cost = 20
+		icon = GFX_focus_GER_realize_mittelafrika
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = three_focus_26
+		}
+		available = {
+			if = {
+				limit = {
+					has_country_flag = eight_time
+					has_completed_focus = three_focus_26
+				}
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content
+						PERSON = "帕沃利尼"
+						DAYS = [?eight_time:days]
+					}
+					always = yes
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = work_content2
+						PERSON = "帕沃利尼"
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Veni_vidi_vici
+			}
+		}
+	}
+
+	focus = {
+		id = three_focus_27
+		x = -12
+		y = 8
+		cost = 5
 		icon = GFX_focus_PRC_invite_soviet_general
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = 3_focus_28
+			focus = three_focus_28
 		}
 		prerequisite = {
-			focus = 3_focus_22
+			focus = three_focus_Rhodesian_culture
 		}
 		prerequisite = {
-			focus = 3_focus_23
+			focus = three_focus_Total_war_economy
 		}
 		prerequisite = {
-			focus = 3_focus_24
+			focus = three_focus_Neo_African_union
 		}
 		prerequisite = {
-			focus = 3_focus_25
+			focus = three_focus_Veni_vidi_vici
 		}
 		prerequisite = {
-			focus = 3_focus_26
+			focus = three_focus_Endless_fight
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Leading_circle
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_28
+		id = three_focus_28
 		x = -10
-		y = 6
-		cost = 0
+		y = 8
+		cost = 5
 		icon = GFX_focus_ITA_capo_supremo
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = 3_focus_27
+			focus = three_focus_27
 		}
 		prerequisite = {
-			focus = 3_focus_22
+			focus = three_focus_Rhodesian_culture
 		}
 		prerequisite = {
-			focus = 3_focus_23
+			focus = three_focus_Total_war_economy
 		}
 		prerequisite = {
-			focus = 3_focus_24
+			focus = three_focus_Neo_African_union
 		}
 		prerequisite = {
-			focus = 3_focus_25
+			focus = three_focus_Veni_vidi_vici
 		}
 		prerequisite = {
-			focus = 3_focus_26
+			focus = three_focus_Endless_fight
+		}
+		completion_reward = {
+			add_ideas = {
+				ZYX_Duce
+			}
 		}
 	}
 	focus = {
