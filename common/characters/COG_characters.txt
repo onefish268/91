@@ -1,0 +1,143 @@
+characters = {
+	COG_Mima = {
+		name = COG_Mima
+		portraits = {#指定其在哪些方面干活
+			civilian = {#政治顾问
+				large = "gfx/leaders/COG/COG_Mima.dds" #参考照片
+				#small = "gfx/interface/ideas/COG/COG_Mima.png"
+			}
+			army = {#军事顾问
+				large = "gfx/leaders/COG/COG_Mima.dds"
+				#small = "gfx/interface/ideas/COG/COG_Mima.png"
+			}
+		}
+
+		country_leader = {#国家领导人
+			desc = COG_Mima_desc #人物介绍
+			ideology = moderatism #意识形态
+			traits = { #特质
+				############################
+			}
+			expire = "1965.1.1.1" #退休时间（几乎无意义）
+			id = -1 #让系统自动分配唯一id
+		}
+	}
+
+	COG_Cat_warrior = { #猫猫勇者
+		name = COG_Cat_warrior
+		portraits = {
+			army = {
+				large = "gfx/leaders/COG/COG_Cat_warrior.dds"
+			}
+		}
+		country_leader = {
+			#desc = ENG_Misumi_Uika_desc_leader
+			ideology = fascism_ideology
+			expire = "2000.1.1.1"
+		}
+	}
+
+	COG_Kuangyeya = { #旷野牙牧师
+		name = COG_Kuangyeya
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/COG/COG_Kuangyeya.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+
+			visible = {
+				has_country_flag = COG_new_plan
+			}
+
+			cost = 50
+
+			traits = { COG_Kuangyeya_basic }
+		}
+	}
+
+	COG_Dragon_girl = { #聪明龙娘
+		name = COG_Dragon_girl
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/COG/COG_Dragon_girl.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+
+			visible = {
+				has_country_flag = COG_new_plan
+			}
+
+			cost = 0
+
+			traits = { COG_Dragon_girl_basic }
+
+			
+			on_add = {
+				set_country_flag = Dragon_girl_study
+			}
+
+			on_remove = {
+				clr_country_flag = Dragon_girl_study
+			}
+		}
+	}	
+
+	COG_Youziyin = { #游子吟行商
+		name = COG_Youziyin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/COG/COG_Youziyin.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+
+			visible = {
+				has_country_flag = COG_new_plan
+			}
+
+			cost = 50
+
+			traits = { COG_Youziyin_basic }
+		}
+	}
+
+	COG_Kangnaixin = { #康乃馨行商
+		name = COG_Kangnaixin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/COG/COG_Kangnaixin.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+
+			visible = {
+				has_country_flag = COG_new_plan
+			}
+			
+			cost = 50
+
+			traits = { COG_Kangnaixin_basic }
+		}
+	}	
+	COG_Nailaojiao = { #奶酪窖领袖
+		name = COG_Kangnaixin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/COG/COG_Nailaojiao.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+
+			cost = 50
+
+			traits = { COG_Nailaojiao_basic }
+		}
+	}	
+}

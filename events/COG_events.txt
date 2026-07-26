@@ -1,0 +1,533 @@
+add_namespace = SA_COG_event
+
+country_event = {#魅魔拜访萌螈
+	id = SA_COG_event.00000
+	title = SA_COG_event.00000.t
+	desc = SA_COG_event.00000.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00001
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00000.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00000.a_tip
+	}
+}
+
+country_event = {#魅魔拜访鼠族
+	id = SA_COG_event.00001
+	title = SA_COG_event.00001.t
+	desc = SA_COG_event.00001.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00002
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00001.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00001.a_tip
+	}
+}
+
+country_event = {#魅魔拜访绮罗
+	id = SA_COG_event.00002
+	title = SA_COG_event.00002.t
+	desc = SA_COG_event.00002.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00003
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00002.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00002.a_tip
+	}
+}
+
+country_event = {#魅魔拜访龙娘
+	id = SA_COG_event.00003
+	title = SA_COG_event.00003.t
+	desc = SA_COG_event.00003.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+			hidden_effect = {
+				country_event = {
+					id = SA_COG_event.00004
+					days = 7
+				}
+			}
+		}
+
+	option = {
+		name = SA_COG_event.00003.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00003.a_tip
+	}
+}
+
+country_event = {#与各个部族领袖的简单交流
+	id = SA_COG_event.00004
+	title = SA_COG_event.00004.t
+	desc = SA_COG_event.00004.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00004.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00003.a_tip
+	}
+}
+
+country_event = {#魅魔检查荧光森林
+	id = SA_COG_event.00100
+	title = SA_COG_event.00100.t
+	desc = SA_COG_event.00100.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00100.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#微不足道的新闻
+	id = SA_COG_event.00200
+	title = SA_COG_event.00200.t
+	desc = SA_COG_event.00200.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00200.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#殖民地的状况
+	id = SA_COG_event.00300
+	title = SA_COG_event.00300.t
+	desc = SA_COG_event.00300.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00400
+				days = 7
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00300.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#好像也没有什么变化
+	id = SA_COG_event.00400
+	title = SA_COG_event.00400.t
+	desc = SA_COG_event.00400.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00400.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#各族相融合的景象
+	id = SA_COG_event.00401
+	title = SA_COG_event.00401.t
+	desc = SA_COG_event.00401.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00401.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#一些猫猫鼠鼠的日常
+	id = SA_COG_event.00402
+	title = SA_COG_event.00402.t
+	desc = SA_COG_event.00402.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00402.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#灵巧的绮罗工艺
+	id = SA_COG_event.00403
+	title = SA_COG_event.00403.t
+	desc = SA_COG_event.00403.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00403.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#萌螈的神秘宝典
+	id = SA_COG_event.00404
+	title = SA_COG_event.00404.t
+	desc = SA_COG_event.00404.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00404.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#萌螈的神秘宝典
+	id = SA_COG_event.00405
+	title = SA_COG_event.00405.t
+	desc = SA_COG_event.00405.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00405.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#萌螈的神秘宝典
+	id = SA_COG_event.00406
+	title = SA_COG_event.00406.t
+	desc = SA_COG_event.00406.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00406.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#边境的不速之客
+	id = SA_COG_event.00500
+	title = SA_COG_event.00500.t
+	desc = SA_COG_event.00500.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00501
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00500.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#闲着也是闲着
+	id = SA_COG_event.00501
+	title = SA_COG_event.00501.t
+	desc = SA_COG_event.00501.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00502
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00501.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#行将崩溃的溃军
+	id = SA_COG_event.00502
+	title = SA_COG_event.00502.t
+	desc = SA_COG_event.00502.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00503
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00502.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#雨
+	id = SA_COG_event.00503
+	title = SA_COG_event.00503.t
+	desc = SA_COG_event.00503.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00504
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00503.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#猝不及防的相遇
+	id = SA_COG_event.00504
+	title = SA_COG_event.00504.t
+	desc = SA_COG_event.00504.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00505
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00504.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#奇怪的对峙
+	id = SA_COG_event.00505
+	title = SA_COG_event.00505.t
+	desc = SA_COG_event.00505.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00506
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00505.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#紧急会议
+	id = SA_COG_event.00506
+	title = SA_COG_event.00506.t
+	desc = SA_COG_event.00506.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00507
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00506.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#宽敞的大道上
+	id = SA_COG_event.00507
+	title = SA_COG_event.00507.t
+	desc = SA_COG_event.00507.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_COG_event.00508
+				days = 3
+		}
+		}
+	}
+
+	option = {
+		name = SA_COG_event.00507.a
+		ai_chance = {
+			base = 1
+		}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}
+
+country_event = {#新家园
+	id = SA_COG_event.00508
+	title = SA_COG_event.00508.t
+	desc = SA_COG_event.00508.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_COG_event.00508.a
+		ai_chance = {
+			base = 1
+		}
+		916 = {
+			add_manpower = 7231
+		}
+		add_popularity = {
+        	ideology = communism
+        	popularity = 0.03
+    	}
+		#custom_effect_tooltip = SA_COG_event.00100.a_tip
+	}
+}

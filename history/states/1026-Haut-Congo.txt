@@ -1,0 +1,24 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	manpower = 3267754
+	state_category = six
+	local_supplies = 1.0
+
+	history = {
+		owner = COG
+		add_core_of = COG
+		add_to_array = { state_victory_points = 1950 }
+
+		victory_points = { 1950 3 }
+
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		1950 4913 8048 10749 10951
+	}
+}
+

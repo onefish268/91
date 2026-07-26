@@ -1,0 +1,78 @@
+scripted_gui = {
+	#GM - general management  加前缀 防重名
+	#下拉按钮: 陆军 海军 陆军养老院 海军养老院 功德林
+	# 主按钮脚本：控制一个切换开关按钮的显示和逻辑
+	#GMOpenFive = {
+	# 绑定到 interface 文件中同名的容器窗口
+	#	window_name = "contGMOpenFive"
+	# 显示环境：玩家界面（始终可见，不限特定面板）
+	#	context_type = player_context
+	# 可见条件：只有人类玩家能看到，AI不显示
+	#	visible = {
+	#		ROOT = {
+	#			is_ai = no
+	#		}
+	#	}
+	# 按钮点击效果
+	#	effects = {
+	# 当按钮 btnOpenGMFive 被点击时执行
+	#		btnOpenGMFive_click = {# 依据点击更新数据
+	# 判断当前变量状态
+	#			if = {
+	#				limit = {
+	# 如果 showGMFive 当前是 0 或 1（窗口关闭中或已关闭）
+	#					OR = {
+	#						check_variable = {
+	#							ROOT.showGMFive = 0
+	#						}
+	#						check_variable = {
+	#							ROOT.showGMFive = 1
+	#						}
+	#					}
+	#				}
+	# 设置为 2（打开窗口）
+	#				set_variable = {
+	#					ROOT.showGMFive = 2
+	#				}
+	#			}
+	#			else = {
+	# 如果当前是其他值（即 2，窗口已打开），设置为 1（关闭窗口）
+	#				set_variable = {
+	#					ROOT.showGMFive = 1
+	#				}
+	#			}
+	#		}
+	#	}
+	# 按钮属性绑定：将变量值映射到按钮的视觉状态
+	#	properties = {#  系统采用新数据
+	#		btnOpenGMFive = {
+	# x = ROOT.posX    # 被注释：按钮x坐标不由变量控制，由interface文件固定
+	# y = ROOT.posY    # 被注释：按钮y坐标不由变量控制，由interface文件固定
+	# 按钮显示的帧/图标状态由 showGMFive 变量的值决定
+	# 0 或 1 → 显示关闭态图标
+	# 2 → 显示打开态图标
+	#			frame = ROOT.showGMFive
+	#		}
+	#	}
+	#}
+	ShowInformation = {
+		window_name = "Information_menu"
+		context_type = player_context
+		parent_window_token = politics_tab
+		# 只有人类玩家能看到
+		visible = {
+			#ROOT = {
+			#	is_ai = no
+			always = no
+			}
+		}
+		# 按钮点击效果
+		effects = {
+			btn_add_pp_click = {
+				add_political_power = 10
+			}
+		}
+	}
+	# common/scripted_guis/my_equipment_designer.txt
+	
+}

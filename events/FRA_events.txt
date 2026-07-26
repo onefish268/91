@@ -1,0 +1,214 @@
+add_namespace = SA_FRA_event
+
+country_event = {#向魔理沙给予新年祝福
+	id = SA_FRA_event.00000
+	title = SA_FRA_event.00000.t
+	desc = SA_FRA_event.00000.d
+	picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_FRA_event.00100
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_FRA_event.00000.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_FRA_event.00000.a_tip
+	}
+}
+
+country_event = { #殖民地年度报告
+	id = SA_FRA_event.00100
+	title = SA_FRA_event.00100.t
+	desc = SA_FRA_event.00100.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_FRA_event.00100.a
+		custom_effect_tooltip = SA_FRA_event.00100.a_tip
+		ai_chance = {
+			base = 1
+		}
+
+        hidden_effect = {
+			add_to_variable = { ubs_save = 50 }
+		} 
+		custom_effect_tooltip = COG_Get_50_change
+
+	}
+}
+
+
+
+country_event = { ####对殖民地的紧急措施
+    id = SA_FRA_event.00101
+    title = SA_FRA_event.00101.t
+    desc = SA_FRA_event.00101.d
+    is_triggered_only = yes          # 取消注释，让事件只被调用
+    fire_only_once = yes
+
+    immediate = {# 遍历所有是法国傀儡国的国家
+		hidden_effect = {	
+        	every_country = {
+				limit = {
+        	        is_subject_of = FRA
+           	 		is_puppet = yes
+            	}
+            		# 为每个傀儡国触发事件
+            		country_event = {
+						id = SA_FRA_event.00102
+						days = 3
+					}
+        	}
+		}
+    }
+
+
+    option = {
+        name = SA_FRA_event.00101.a
+        custom_effect_tooltip = SA_FRA_event.00101.a_tip
+        ai_chance = { base = 1 }
+    }
+}
+
+country_event = {#宗主国的通牒
+	id = SA_FRA_event.00102
+	title = SA_FRA_event.00102.t
+	desc = SA_FRA_event.00102.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = SA_FRA_event.00102.a
+		custom_effect_tooltip = SA_FRA_event.00102.a_tip
+		ai_chance = {
+			base = 9
+
+			modifier = {
+				factor = 9999
+				NOT = {
+					tag = COG
+				}
+			}
+
+			modifier = {
+				factor = 0
+				tag = COG
+			}
+		}
+		ROOT = {
+			add_ideas = {
+				COG_Tolerate_exploitation
+			}
+		}
+	}
+	option = {
+		name = SA_FRA_event.00102.b
+		custom_effect_tooltip = SA_FRA_event.00102.b_tip
+		ai_chance = {
+			base = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = COG
+				}
+			}
+		}
+
+		FRA = {
+				country_event = {
+					id = SA_FRA_event.00103
+					days = 7
+				}
+			}
+	}
+}
+
+country_event = {#对魔界溪谷殖民地的质疑
+	id = SA_FRA_event.00103
+	title = SA_FRA_event.00103.t
+	desc = SA_FRA_event.00103.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+					id = SA_FRA_event.00104
+					months = 1
+				}
+		}
+	}
+
+	option = {
+		name = SA_FRA_event.00103.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_FRA_event.00103.a_tip
+	}
+}
+
+country_event = {#一则晴天霹雳的秘密报告
+	id = SA_FRA_event.00104
+	title = SA_FRA_event.00104.t
+	desc = SA_FRA_event.00104.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+				country_event = {
+					id = SA_FRA_event.00105
+					days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_FRA_event.00104.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_FRA_event.00104.a_tip
+	}
+}
+
+country_event = {#魔界溪谷领地的未来
+	id = SA_FRA_event.00105
+	title = SA_FRA_event.00105.t
+	desc = SA_FRA_event.00105.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_FRA_event.00105.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_FRA_event.00105.a_tip
+	}
+	option = {
+		name = SA_FRA_event.00105.b
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = SA_FRA_event.00105.b_tip
+	}
+}

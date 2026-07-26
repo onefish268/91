@@ -1,0 +1,55 @@
+#!gfx:gfx/guis/button_window/my_gfx_file.dds
+
+guiTypes = {
+
+# 右上角悬浮按钮容器
+    containerWindowType = {
+    	name = "Information_menu"         # 对应 scripted_gui 中的 window_name
+    
+    	# 对齐方式：右上角为定位基准
+    	orientation = UPPER_RIGHT
+    
+    	# 容器尺寸：宽40像素，高40像素
+    	size = { width = 520 height = 300 }
+    
+    	# 位置：距离右上角向左偏移50像素，向下偏移10像素
+    	position = {
+    	    x = -140
+    	    y = 0
+    	}
+
+    	# 背景透明（不需要额外背景图）
+    	background = {
+    	    position = { x = 0 y = 0 }
+    	    name = "Background"
+    	    spriteType = "GFX_test_the_main_window"
+    	}
+    
+    	# 点击容器时提升到最前
+    	click_to_front = yes
+    
+    	# 可拖动
+    	#moveable = yes
+		
+    	# 按钮子元素
+    	buttonType = {
+    	    name = "btn_add_pp"                    # 对应 scripted_gui 中的 effects 按钮名
+        
+    	    # 按钮位置（相对于容器左上角）
+    	    position = { x = 0 y = 0 }
+#"GFX_tiled_plain_bg2"
+#"GFX_test_button"
+    	    spriteType = "GFX_test_button"
+        
+    	    # 鼠标悬停提示文本（需要在 localisation 中定义）
+    	    pdx_tooltip = menu_button_tip
+        
+    	    # 点击音效
+    	    clicksound = click_default
+        
+    	    # 缩放比例
+    	    scale = 1
+    	}
+	}
+
+}

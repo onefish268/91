@@ -1,0 +1,182 @@
+generic_spirit_suit_organization = {
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
+
+	equipment_type = {
+		magic_assault_equipment magic_artillery_equipment
+	}
+	research_categories = { magic_army_tech }
+
+	
+
+	tree_header_text = {
+		text = mio_header_design_and_production
+		x = 3
+	}
+
+	tree_header_text = {
+		text = mio_header_anti_tank
+		x = 8
+	}
+
+	initial_trait = {#初始加成
+		name = generic_mio_initial_trait_spirit_suit_manufacturer
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+			#production_capacity_factor = 0.05
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_finite_field
+		name = generic_mio_trait_finite_field
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = { x=1 y=0 }
+
+		equipment_bonus = {
+			defense = 0.035
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_reinforced_crystallization
+		name = generic_mio_trait_reinforced_crystallization
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=4 y=0 }
+		relative_position_id = generic_mio_trait_finite_field
+
+		equipment_bonus = {
+			soft_attack = 0.025
+			reliability = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_advanced_psiogenesis
+		name = generic_mio_trait_advanced_psiogenesis
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		position = { x=2 y=2 }
+		relative_position_id = generic_mio_trait_finite_field
+
+		any_parent = { generic_mio_trait_reinforced_crystallization generic_mio_trait_finite_field }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_mass_suit_production
+		name = generic_mio_trait_mass_suit_production
+		icon = GFX_generic_mio_department_icon_facilities
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_advanced_psiogenesis
+
+		all_parents = { generic_mio_trait_advanced_psiogenesis }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_cost_factor = -0.10
+			production_resource_penalty_factor = -0.10
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.5
+		}
+	}
+
+
+	trait = {
+		token = generic_mio_trait_high_purity_psychic_power
+		name = generic_mio_trait_high_purity_psychic_power
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_finite_field
+
+		all_parents = { generic_mio_trait_finite_field }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_psychic_projectile
+		name = generic_mio_trait_improved_psychic_projectile
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_high_purity_psychic_power
+
+		all_parents = { generic_mio_trait_high_purity_psychic_power }
+
+		mutually_exclusive = { generic_mio_trait_armor_piercing_psychic_projectile }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_armor_piercing_psychic_projectile
+		name = generic_mio_trait_armor_piercing_psychic_projectile
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_high_purity_psychic_power
+
+		all_parents = { generic_mio_trait_high_purity_psychic_power }
+		
+		mutually_exclusive = { generic_mio_trait_improved_psychic_projectile }
+
+		equipment_bonus = {
+			ap_attack = 0.25
+			hard_attack = 0.10
+		}
+	}
+
+
+	trait = {
+		token = the_first
+		name = the_first
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=8 y=0 }
+
+		#all_parents = { generic_mio_trait_high_purity_psychic_power }
+		#parents是要求，any，以及all限制
+
+		#mutually_exclusive = { generic_mio_trait_improved_psychic_projectile }
+
+		equipment_bonus = {
+			ap_attack = 0.25
+			hard_attack = 0.10
+		}
+	}
+}

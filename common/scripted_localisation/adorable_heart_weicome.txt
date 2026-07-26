@@ -1,0 +1,1887 @@
+defined_text = {
+    #开始游戏
+    name = start_game_text
+    text = {
+        trigger = {
+            tag = SOV
+        }
+        localization_key = SOV_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = GER
+        }
+        localization_key = GER_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ENG
+        }
+        localization_key = ENG_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = CHL
+        }
+        localization_key = CHL_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = CHI
+        }
+        localization_key = CHI_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ROC
+        }
+        localization_key = ROC_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = PRC
+        }
+        localization_key = PRC_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ROM
+        }
+        localization_key = ROM_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = FRA
+        }
+        localization_key = FRA_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = KMK
+        }
+        localization_key = KMK_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = TUR
+        }
+        localization_key = TUR_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = LAN
+        }
+        localization_key = LAN_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = USA
+        }
+        localization_key = USA_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = BAL
+        }
+        localization_key = BAL_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = NFA
+        }
+        localization_key = NFA_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ABY
+        }
+        localization_key = ABY_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = SWE
+        }
+        localization_key = SWE_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = FRG
+        }
+        localization_key = FRG_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = UKR
+        }
+        localization_key = UKR_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = NGD
+        }
+        localization_key = NGD_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = MAN
+        }
+        localization_key = MAN_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = DVL
+        }
+        localization_key = DVL_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ITA
+        }
+        localization_key = ITA_start_game_text
+    }
+    text = {
+        trigger = {
+            tag = ALS
+        }
+        localization_key = ALS_start_game_text
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_start_game_text
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = MGU_start_game_text
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = POL_start_game_text
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_start_game_text
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_start_game_text
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = PAO_start_game_text
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = PAM_start_game_text
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = PAQ_start_game_text
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = MON_start_game_text
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = PAW_start_game_text
+    }
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = COG_start_game_text
+    }
+
+    text = {
+        localization_key = "开始游戏"
+    }
+}
+
+defined_text = {
+    #侧图
+    name = GET_Welcome_Window_Picture
+    text = {
+        trigger = { tag = SOV }
+        localization_key = GFX_SOV_Side_Picture
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GFX_GER_Side_Picture
+    }
+    text = {
+        trigger = { tag = TRB }
+        localization_key = GFX_TRB_Side_Picture
+    }
+    text = {
+        trigger = { tag = GEU }
+        localization_key = GFX_GEU_Side_Picture
+    }
+    text = {
+        trigger = { tag = BAY }
+        localization_key = GFX_GEU_Side_Picture
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_DVL_Side_Picture
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = GFX_ENG_Side_Picture
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = GFX_CHI_Side_Picture
+    }
+    text = {
+        trigger = { tag = ROC }
+        localization_key = GFX_ROC_Side_Picture
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = GFX_PRC_Side_Picture
+    }
+    text = {
+        trigger = { tag = RJE }
+        localization_key = GFX_RJE_Side_Picture
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = GFX_FRA_Side_Picture
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = GFX_KMK_Side_Picture
+    }
+    text = {
+        trigger = { tag = PAN }
+        localization_key = GFX_PAN_Side_Picture
+    }
+    text = {
+        trigger = { tag = PAJ }
+        localization_key = GFX_PAJ_Side_Picture
+    }
+    text = {
+        trigger = { tag = LAN }
+        localization_key = GFX_LAN_Side_Picture
+    }
+    text = {
+        trigger = { tag = TUR }
+        localization_key = GFX_TUR_Side_Picture
+    }
+    text = {
+        trigger = { tag = TRY }
+        localization_key = GFX_TRY_Side_Picture
+    }
+    text = {
+        trigger = { tag = ABY }
+        localization_key = GFX_ABY_Side_Picture
+    }
+    text = {
+        trigger = { tag = PER }
+        localization_key = GFX_PER_Side_Picture
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = GFX_USA_Side_Picture
+    }
+    text = {
+        trigger = { tag = BAL }
+        localization_key = GFX_BAL_Side_Picture
+    }
+    text = {
+        trigger = { tag = NFA }
+        localization_key = GFX_NFA_Side_Picture
+    }
+    text = {
+        trigger = { tag = ROM }
+        localization_key = GFX_ROM_Side_Picture
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = GFX_POL_Side_Picture
+    }
+    text = {
+        trigger = { tag = MAL }
+        localization_key = GFX_MAL_Side_Picture
+    }
+    text = {
+        trigger = { tag = GUA }
+        localization_key = GFX_GUA_Side_Picture
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = GFX_SWE_Side_Picture
+    }
+    text = {
+        trigger = { tag = FRG }
+        localization_key = GFX_FRG_Side_Picture
+    }
+    text = {
+        trigger = { tag = UKR }
+        localization_key = GFX_UKR_Side_Picture
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = GFX_NGD_Side_Picture
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = GFX_MAN_Side_Picture
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = GFX_PAL_Side_Picture
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = GFX_MGU_Side_Picture
+    }
+    text = {
+        trigger = { tag = NPT }
+        localization_key = GFX_NPT_Side_Picture
+    }
+    text = {
+        trigger = { tag = ARF }
+        localization_key = GFX_NPT_Side_Picture
+    }
+    text = {
+        trigger = { tag = BLA }
+        localization_key = GFX_NPT_Side_Picture
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = GFX_MOR_Side_Picture
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GFX_GRE_Side_Picture
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = GFX_LHS_Side_Picture
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = GFX_PAO_Side_Picture
+    }
+    text = {
+         trigger = { tag = PAM }
+         localization_key = GFX_PAM_Side_Picture
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = GFX_PAQ_Side_Picture
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = GFX_MON_Side_Picture
+    }
+    text = {
+        trigger = { 
+            tag = PAW 
+            not = { has_country_flag = xilianjiushi_yes }
+            not = { has_country_flag = dapolunhui_yes }
+        }
+        localization_key = GFX_PAW_Side_Picture
+    }
+    text = {
+        trigger = { 
+            tag = PAW 
+            OR = {
+                 has_country_flag = xilianjiushi_yes
+                 has_country_flag = dapolunhui_yes
+            }
+        }
+        localization_key = GFX_PAW_Side_Picture_true
+    }
+    #text = {
+    #    trigger = { tag = COG }
+    #    localization_key = GFX_PAW_Side_Picture
+    #}
+    text = {
+        localization_key = GFX_Generic_Side_Picture
+    }
+}
+
+###  按钮  ###
+defined_text = {
+    #国家介绍-按钮
+    name = GET_Country_History_Button_Picture
+    text = {
+        trigger = { tag = SOV }
+        localization_key = GFX_Country_History_Button_SOV
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GFX_Country_History_Button_GER
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = GFX_Country_History_Button_FRA
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_Country_History_Button_DVL
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = GFX_Country_History_Button_PRC
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = GFX_Country_History_Button_USA
+    }
+    text = {
+        trigger = { tag = NGD}
+        localization_key = GFX_Country_History_Button_NGD
+    }
+    text = {
+        trigger = { tag = PAL}
+        localization_key = GFX_Country_History_Button_PAL
+    }
+    text = {
+        trigger = { tag = KMK}
+        localization_key = GFX_Country_History_Button_KMK
+    }
+    text = {
+        trigger = { tag = MGU}
+        localization_key = GFX_Country_History_Button_MGU
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = GFX_Country_History_Button_POL
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GFX_Country_History_Button_GRE
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = GFX_Country_History_Button_LHS
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = GFX_Country_History_Button_PAO
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = GFX_Country_History_Button_PAM
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = GFX_Country_History_Button_CHI
+    }    
+	text = {
+        trigger = { tag = MON }
+        localization_key = GFX_Country_History_Button_MON
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = GFX_Country_History_Button_PAW
+    }
+    text = {
+        localization_key = GFX_Country_History_Button
+    }
+}
+
+defined_text = {
+    #地区介绍-按钮
+    name = GET_Local_History_Button_Picture
+    text = {
+        trigger = { tag = SOV }
+        localization_key = GFX_Local_History_Button_SOV
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GFX_Local_History_Button_GER
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = GFX_Local_History_Button_FRA
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_Local_History_Button_DVL
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = GFX_Local_History_Button_PRC
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = GFX_Local_History_Button_USA
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = GFX_Local_History_Button_NGD
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = GFX_Local_History_Button_PAL
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = GFX_Local_History_Button_KMK
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = GFX_Local_History_Button_MGU
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = GFX_Local_History_Button_POL
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GFX_Local_History_Button_GRE
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = GFX_Local_History_Button_LHS
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = GFX_Local_History_Button_PAO
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = GFX_Local_History_Button_PAM
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = GFX_Local_History_Button_CHI
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = GFX_Local_History_Button_MON
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = GFX_Local_History_Button_PAW
+    }
+    text = {
+        localization_key = GFX_Local_History_Button
+    }
+}
+
+defined_text = {
+    #全局介绍-按钮
+    name = GET_World_History_Button_Picture
+    text = {
+        trigger = { tag = SOV }
+        localization_key = GFX_World_History_Button_SOV
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GFX_World_History_Button_GER
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = GFX_World_History_Button_FRA
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_World_History_Button_DVL
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = GFX_World_History_Button_PRC
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = GFX_World_History_Button_USA
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = GFX_World_History_Button_NGD
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = GFX_World_History_Button_PAL
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = GFX_World_History_Button_KMK
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = GFX_World_History_Button_MGU
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = GFX_World_History_Button_POL
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GFX_World_History_Button_GRE
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = GFX_World_History_Button_LHS
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = GFX_World_History_Button_PAO
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = GFX_World_History_Button_PAM
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = GFX_World_History_Button_CHI
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = GFX_World_History_Button_MON
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = GFX_World_History_Button_PAW
+    }
+    text = {
+        localization_key = GFX_World_History_Button
+    }
+}
+
+defined_text = {
+    #路线指南-按钮
+    name = GET_Route_Guide_Button_Picture
+    text = {
+        trigger = { tag = SOV }
+        localization_key = GFX_Route_Guide_Button_SOV
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GFX_Route_Guide_Button_GER
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = GFX_Route_Guide_Button_FRA
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_Route_Guide_Button_DVL
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = GFX_Route_Guide_Button_PRC
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = GFX_Route_Guide_Button_USA
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = GFX_Route_Guide_Button_NGD
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = GFX_Route_Guide_Button_PAL
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = GFX_Route_Guide_Button_KMK
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = GFX_Route_Guide_Button_POL
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = GFX_Route_Guide_Button_MGU
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GFX_Route_Guide_Button_GRE
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = GFX_Route_Guide_Button_LHS
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = GFX_Route_Guide_Button_PAO
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = GFX_Route_Guide_Button_PAM
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = GFX_Route_Guide_Button_CHI
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = GFX_Route_Guide_Button_MON
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = GFX_Route_Guide_Button_PAW
+    }
+    text = {
+        localization_key = GFX_Route_Guide_Button
+    }
+}
+
+###  按钮  ###
+
+###  国家介绍  ###
+defined_text = {
+    #国家介绍-文本
+    name = GET_Country_History
+    text = {
+        trigger = { tag = SOV }
+        localization_key = [GET_SOV_Country_History]
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = [GET_ENG_Country_History]
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = [GET_GER_Country_History]
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = [GET_DVL_Country_History]
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = [GET_FRA_Country_History]
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = [GET_USA_Country_History]
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = [GET_SWE_Country_History]
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = [GET_NGD_Country_History]
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = [GET_MAN_Country_History]
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = [GET_KMK_Country_History]
+    }
+    text = {
+        trigger = { tag = DEN }
+        localization_key = [GET_DEN_Country_History]
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = [GET_ITA_Country_History]
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = [GET_ALS_Country_History]
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = [GET_PRC_Country_History]
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = [GET_JAP_Country_History]
+    }
+    text = {
+        trigger = { tag = TUR }
+        localization_key = [GET_TUR_Country_History]
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = [GET_PAL_Country_History]
+    }
+    text = {
+        trigger = { tag = BAY }
+        localization_key = [GET_GEU_Country_History]
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = [GET_MGU_Country_History]
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = [GET_POL_Country_History]
+    }
+    text = {
+        trigger = { tag = NPT }
+        localization_key = [GET_NPT_Country_History]
+    }
+    text = {
+        trigger = { tag = ARF }
+        localization_key = [GET_NPT_Country_History]
+    }
+    text = {
+        trigger = { tag = BLA }
+        localization_key = [GET_NPT_Country_History]
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = [GET_MOR_Country_History]
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = [GET_GRE_Country_History]
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = [GET_LHS_Country_History]
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = [GET_PAO_Country_History]
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = [GET_PAM_Country_History]
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = [GET_CHI_Country_History]
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = [GET_PAQ_Country_History]
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = [GET_MON_Country_History]
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = [GET_PAW_Country_History]
+    }
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = [GET_COG_Country_History]
+    }
+
+    text = {
+        localization_key = coming_soon
+    }
+}
+
+defined_text = {
+    #国家介绍-小标题1
+    name = GET_Country_History_Button_01
+    text = {
+        trigger = { tag = SOV }
+        localization_key = SOV_his_page_01_title
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_his_page_01_title
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GER_his_page_01_title
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_his_page_01_title
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = FRA_his_page_01_title
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = USA_his_page_01_title
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = SWE_his_page_01_title
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = NGD_his_page_01_title
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = MAN_his_page_01_title
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = KMK_his_page_01_title
+    }
+    text = {
+        trigger = { tag = DEN }
+        localization_key = DEN_his_page_01_title
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_04
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_04
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_04
+    }
+    text = {
+        trigger = { tag = TUR }
+        localization_key = TUR_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = PRC_his_page_01_title
+    }
+    text = {
+        trigger = { tag = BAY }
+        localization_key = GEU_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = PAL_his_page_01_title
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = MGU_his_page_01_title
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = POL_his_page_01_title
+    }
+    text = {
+        trigger = { tag = NPT }
+        localization_key = NPT_his_page_01_title
+    }
+    text = {
+        trigger = { tag = ARF }
+        localization_key = NPT_his_page_01_title
+    }
+    text = {
+        trigger = { tag = BLA }
+        localization_key = NPT_his_page_01_title
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = MOR_his_page_01_title
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_his_page_01_title
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = PAM_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = PAO_his_page_01_title
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = CHI_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = PAQ_his_page_01_title
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = MON_his_page_01_title
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = PAW_his_page_01_title
+    } 
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = COG_his_page_01_title
+    } 
+}
+
+defined_text = {
+    #国家介绍-小标题2
+    name = GET_Country_History_Button_02
+    text = {
+        trigger = { tag = SOV }
+        localization_key = SOV_his_page_02_title
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_his_page_02_title
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GER_his_page_02_title
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_his_page_02_title
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = FRA_his_page_02_title
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = USA_his_page_02_title
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = SWE_his_page_02_title
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = NGD_his_page_02_title
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = MAN_his_page_02_title
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = KMK_his_page_02_title
+    }
+    text = {
+        trigger = { tag = DEN }
+        localization_key = DEN_his_page_02_title
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_05
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_05
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_05
+    }
+    text = {
+        trigger = { tag = TUR }
+        localization_key = TUR_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = PRC_his_page_02_title
+    }
+    text = {
+        trigger = { tag = BAY }
+        localization_key = GEU_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = PAL_his_page_02_title
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = MGU_his_page_02_title
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = POL_his_page_02_title
+    }
+    text = {
+        trigger = { tag = NPT }
+        localization_key = NPT_his_page_02_title
+    }
+    text = {
+        trigger = { tag = ARF }
+        localization_key = NPT_his_page_02_title
+    }
+    text = {
+        trigger = { tag = BLA }
+        localization_key = NPT_his_page_02_title
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = MOR_his_page_02_title
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_his_page_02_title
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = PAO_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = PAM_his_page_02_title
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = CHI_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = PAQ_his_page_02_title
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = MON_his_page_02_title
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = PAW_his_page_02_title
+    }  
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = COG_his_page_02_title
+    }  
+}
+
+defined_text = {
+    #国家介绍-小标题3
+    name = GET_Country_History_Button_03
+    text = {
+        trigger = { tag = SOV }
+        localization_key = SOV_his_page_03_title
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_his_page_03_title
+    }
+    text = {
+        trigger = { tag = GER }
+        localization_key = GER_his_page_03_title
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_his_page_03_title
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = FRA_his_page_03_title
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = USA_his_page_03_title
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = SWE_his_page_03_title
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = NGD_his_page_03_title
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = MAN_his_page_03_title
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = KMK_his_page_03_title
+    }
+    text = {
+        trigger = { tag = DEN }
+        localization_key = DEN_his_page_03_title
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_06
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_07
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_06
+    }
+    text = {
+        trigger = { tag = TUR }
+        localization_key = TUR_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = PRC_his_page_03_title
+    }
+    text = {
+        trigger = { tag = BAY }
+        localization_key = GEU_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = PAL_his_page_03_title
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = MGU_his_page_03_title
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = POL_his_page_03_title
+    }
+    text = {
+        trigger = { tag = NPT }
+        localization_key = NPT_his_page_03_title
+    }
+    text = {
+        trigger = { tag = ARF }
+        localization_key = NPT_his_page_03_title
+    }
+    text = {
+        trigger = { tag = BLA }
+        localization_key = NPT_his_page_03_title
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = MOR_his_page_03_title
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_his_page_03_title
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = PAO_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = PAM_his_page_03_title
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = CHI_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = PAQ_his_page_03_title
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = MON_his_page_03_title
+    }
+    text = {
+        trigger = { tag = PAW }
+        localization_key = PAW_his_page_03_title
+    } 
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = COG_his_page_03_title
+    } 
+}
+
+###  国家介绍  ###
+
+###  地区介绍  ###
+defined_text = {
+    #地区介绍-标题
+    name = GET_Local_History_Title
+    text = {
+        trigger = { is_russia_tag = yes }
+        localization_key = Eastern_Europe_and_Russia_Title
+    }
+    text = {
+        trigger = { is_germany_tag = yes }
+        localization_key = Germany_Local_History_Title
+    }
+    text = {
+        trigger = { is_french_tag = yes }
+        localization_key = French_Local_History_Title
+    }
+    text = {
+        trigger = { is_north_american_tag = yes }
+        localization_key = North_America_Local_History_Title
+    }
+    text = {
+        trigger = { is_chinese_country_for_welcome_window = yes }
+        localization_key = China_Local_History_Title
+    }
+    text = {
+        trigger = { is_nordic_country = yes }
+        localization_key = Nordic_Local_History_Title
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_Local_History_Title
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_Local_History_Title
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_Local_History_Title
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_Local_History_Title
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_Local_History_Title
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_Local_History_Title
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = LHS_Local_History_Title
+    }
+    text = {
+         trigger = { tag = PAM }
+         localization_key = LHS_Local_History_Title
+     }
+}
+
+defined_text = {
+    #地区介绍-文本
+    name = GET_Local_History
+    text = {
+        trigger = { is_germany_tag = yes }
+        localization_key = [GET_Germany_Local_History]
+    }
+    text = {
+        trigger = { is_french_tag = yes }
+        localization_key = [GET_French_Local_History]
+    }
+    text = {
+        trigger = { is_north_american_tag = yes }
+        localization_key = [GET_North_America_Local_History]
+    }
+    text = {
+        trigger = { is_chinese_country_for_welcome_window = yes }
+        localization_key = [GET_China_Local_History]
+    }
+    text = {
+        trigger = { is_nordic_country = yes }
+        localization_key = [GET_Nordic_Local_History]
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = [GET_ITA_Local_History]
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = [GET_ITA_Local_History]
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = [GET_ENG_Local_History]
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = [GET_JAP_Local_History]
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = [GET_GRE_Local_History]
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = [GET_LHS_Local_History]
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = [GET_LHS_Local_History]
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = [GET_LHS_Local_History]
+    }
+    text = {
+        localization_key = coming_soon
+    }
+}
+
+defined_text = {
+    #地区介绍-小标题1
+    name = GET_Local_History_Button_01
+    text = {
+        trigger = { is_germany_tag = yes }
+        localization_key = Germany_Local_History_Title_01
+    }
+    text = {
+        trigger = { is_french_tag = yes }
+        localization_key = French_Local_History_Title_01
+    }
+    text = {
+        trigger = { is_north_american_tag = yes }
+        localization_key = North_America_Local_History_Title_01
+    }
+    text = {
+        trigger = { is_chinese_country_for_welcome_window = yes }
+        localization_key = China_Local_History_Title_01
+    }
+    text = {
+        trigger = { is_nordic_country = yes }
+        localization_key = Nordic_Local_History_Title_01
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = LHS_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = LHS_loca_his_t_01
+    }
+}
+
+defined_text = {
+    #地区介绍-小标题2
+    name = GET_Local_History_Button_02
+    text = {
+        trigger = { is_germany_tag = yes }
+        localization_key = Germany_Local_History_Title_02
+    }
+    text = {
+        trigger = { is_french_tag = yes }
+        localization_key = French_Local_History_Title_02
+    }
+    text = {
+        trigger = { is_north_american_tag = yes }
+        localization_key = North_America_Local_History_Title_02
+    }
+    text = {
+        trigger = { is_chinese_country_for_welcome_window = yes }
+        localization_key = China_Local_History_Title_02
+    }
+    text = {
+        trigger = { is_nordic_country = yes }
+        localization_key = Nordic_Local_History_Title_02
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = LHS_loca_his_t_02
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = LHS_loca_his_t_02
+    }
+}
+
+defined_text = {
+    #地区介绍-小标题3
+    name = GET_Local_History_Button_03
+    text = {
+        trigger = { is_germany_tag = yes }
+        localization_key = Germany_Local_History_Title_03
+    }
+    text = {
+        trigger = { is_french_tag = yes }
+        localization_key = French_Local_History_Title_03
+    }
+    text = {
+        trigger = { is_north_american_tag = yes }
+        localization_key = North_America_Local_History_Title_03
+    }
+    text = {
+        trigger = { is_chinese_country_for_welcome_window = yes }
+        localization_key = China_Local_History_Title_03
+    }
+    text = {
+        trigger = { is_nordic_country = yes }
+        localization_key = Nordic_Local_History_Title_03
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ITA_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_loca_his_t_06
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = LHS_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = LHS_loca_his_t_03
+    }
+}
+
+###  地区介绍  ###
+
+###  路线指南  ###
+defined_text = {
+    #路线指南
+    name = GET_Route_Guide_Text
+    text = {
+        trigger = { tag = TRB }
+        localization_key = TRB_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ENG }
+        localization_key = ENG_route_guide_desc
+    }
+    text = {
+        trigger = { tag = MOR }
+        localization_key = MOR_route_guide_desc
+    }
+    text = {
+        trigger = { is_Iberian_country = yes }
+        localization_key = NPT_route_guide_desc
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = GER
+                tag = GEU
+            }
+        }
+        localization_key = GER_route_guide_desc
+    }
+    text = {
+        trigger = { tag = DVL }
+        localization_key = [Get_DVL_route_guide]
+    }
+    text = {
+        trigger = { tag = CHI }
+        localization_key = CHI_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ROC }
+        localization_key = ROC_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PRC }
+        localization_key = PRC_route_guide_desc
+    }
+    text = {
+        trigger = { tag = UKR }
+        localization_key = UKR_route_guide_desc
+    }
+    text = {
+        trigger = { tag = FIN }
+        localization_key = FIN_route_guide_desc
+    }
+    text = {
+        trigger = { tag = DEN }
+        localization_key = DEN_route_guide_desc
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = MAN_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = PAL_route_guide_desc
+    }
+    text = {
+        trigger = { tag = JAP }
+        localization_key = JAP_route_guide_desc
+    }
+    text = {
+        trigger = { tag = USA }
+        localization_key = USA_route_guide_desc
+    }
+    text = {
+        trigger = { tag = SOV }
+        localization_key = SOV_route_guide_desc
+    }
+    text = {
+        trigger = { tag = FRA }
+        localization_key = FRA_route_guide_desc
+    }
+    text = {
+        trigger = { tag = NFA }
+        localization_key = NFA_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ROM }
+        localization_key = ROM_route_guide_desc
+    }
+    text = {
+        trigger = { tag = POL }
+        localization_key = POL_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ABY }
+        localization_key = ABY_route_guide_desc
+    }
+    text = {
+        trigger = { tag = SWE }
+        localization_key = SWE_route_guide_desc
+    }
+    text = {
+        trigger = { tag = FRG }
+        localization_key = FRG_route_guide_desc
+    }
+    text = {
+        trigger = { tag = NGD }
+        localization_key = NGD_route_guide_desc
+    }
+    text = {
+        trigger = { tag = MAN }
+        localization_key = MAN_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ALS }
+        localization_key = ALS_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ITA }
+        localization_key = ITA_route_guide_desc
+    }
+    text = {
+        trigger = { tag = KMK }
+        localization_key = KMK_route_guide_desc
+    }
+    text = {
+        trigger = { tag = MGU }
+        localization_key = MGU_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PAL }
+        localization_key = PAL_route_guide_desc
+    }
+    text = {
+        trigger = { tag = GRE }
+        localization_key = GRE_route_guide_desc
+    }
+    text = {
+        trigger = { tag = LHS }
+        localization_key = LHS_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PAO }
+        localization_key = PAO_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PAM }
+        localization_key = PAM_route_guide_desc
+    }
+    text = {
+        trigger = { tag = PAQ }
+        localization_key = PAQ_route_guide_desc
+    }   
+	text = {
+        trigger = { tag = MON }
+        localization_key = MON_route_guide_desc
+    }
+    text = {
+        trigger = { 
+            tag = PAW
+            not = { has_country_flag =  xilianjiushi_yes }
+            not = { has_country_flag =  dapolunhui_yes }
+        }
+        localization_key = PAW_route_guide_desc
+    } 
+    text = {
+        trigger = { 
+            tag = PAW
+            OR = {
+                has_country_flag =  xilianjiushi_yes
+                has_country_flag =  dapolunhui_yes
+            }
+        }
+        localization_key = PAW_route_guide_desc2
+    }
+
+    text = {
+        trigger = { tag = COG }
+        localization_key = COG_route_guide_desc
+    }
+
+    text = { localization_key = coming_soon }
+}
+###  路线指南  ###
+
+###  全局介绍  ###
+defined_text = {
+    #全局介绍-小标题1
+    name = GET_World_History_Button_01
+    text = {
+        trigger = { check_variable = { World_History_Button_1_Var = 2 } }
+        localization_key = World_Colonial_page_01_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_2_Var = 2 } }
+        localization_key = The_Great_War_page_01_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_3_Var = 2 } }
+        localization_key = World_History_Button_3_page_01_title
+    }
+}
+
+defined_text = {
+    #全局介绍-小标题2
+    name = GET_World_History_Button_02
+    text = {
+        trigger = { check_variable = { World_History_Button_1_Var = 2 } }
+        localization_key = World_Colonial_page_02_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_2_Var = 2 } }
+        localization_key = The_Great_War_page_02_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_3_Var = 2 } }
+        localization_key = World_History_Button_3_page_02_title
+    }
+}
+
+defined_text = {
+    #全局介绍-小标题3
+    name = GET_World_History_Button_03
+    text = {
+        trigger = { check_variable = { World_History_Button_1_Var = 2 } }
+        localization_key = World_Colonial_page_03_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_2_Var = 2 } }
+        localization_key = The_Great_War_page_03_title
+    }
+    text = {
+        trigger = { check_variable = { World_History_Button_3_Var = 2 } }
+        localization_key = World_History_Button_3_page_03_title
+    }
+}
+
+defined_text = {
+    #全局介绍-文本
+    name = GET_World_History
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_1_Var = 2 }
+            check_variable = { World_History_Page_Var = 1 }
+        }
+        localization_key = World_Colonial_page_01
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_1_Var = 2 }
+            check_variable = { World_History_Page_Var = 2 }
+        }
+        localization_key = World_Colonial_page_02
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_1_Var = 2 }
+            check_variable = { World_History_Page_Var = 3 }
+        }
+        localization_key = World_Colonial_page_03
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_2_Var = 2 }
+            check_variable = { World_History_Page_Var = 1 }
+        }
+        localization_key = The_Great_War_Page_01
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_2_Var = 2 }
+            check_variable = { World_History_Page_Var = 2 }
+        }
+        localization_key = The_Great_War_Page_02
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_2_Var = 2 }
+            check_variable = { World_History_Page_Var = 3 }
+        }
+        localization_key = The_Great_War_Page_03
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_3_Var = 2 }
+            check_variable = { World_History_Page_Var = 1 }
+        }
+        localization_key = World_History_Button_3_page_01
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_3_Var = 2 }
+            check_variable = { World_History_Page_Var = 2 }
+        }
+        localization_key = World_History_Button_3_page_02
+    }
+    text = {
+        trigger = {
+            check_variable = { World_History_Button_3_Var = 2 }
+            check_variable = { World_History_Page_Var = 3 }
+        }
+        localization_key = World_History_Button_3_page_03
+    }
+}
+
+###  全局介绍  ###

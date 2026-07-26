@@ -1,0 +1,21 @@
+state = {
+	id = 916
+	name = "STATE_916"
+	manpower = 971188
+	state_category = four
+
+	history = {
+		owner = COG
+		add_core_of = COG
+		add_to_array = { state_victory_points = 8219 }
+
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		8219 13660
+	}
+}
+

@@ -1,0 +1,31 @@
+leader_traits = {
+	#涉世未深的孩童
+	COG_Dragon_girl_basic = {#龙娘基础
+		political_power_factor = -0.10
+		research_speed_factor = -0.15
+	}
+	#称职的牧师
+	COG_Kuangyeya_basic = {#旷野牙基础
+		stability_factor = 0.10
+		stability_weekly = 0.001
+		war_support_factor = 0.05
+		weekly_casualties_war_support = 0.005
+	}
+	#周游各地的旅商
+	COG_Youziyin_basic = {#游子吟基础
+		consumer_goods_factor = -0.15
+		production_speed_industrial_complex_factor = 0.1
+	}
+	#善谈的镇长
+	COG_Kangnaixin_basic = {#康乃馨基础
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		global_building_slots_factor = 0.1
+	}
+	#革命领袖
+	COG_Nailaojiao_basic = {#奶酪窖基础
+		recon_factor = 0.05
+		army_attack_factor = 0.05
+		planning_speed = 0.2
+	}
+}

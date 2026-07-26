@@ -1,0 +1,225 @@
+add_namespace = SA_DSI_event
+
+country_event = {#走马灯的回忆
+	id = SA_DSI_event.00000
+	title = SA_DSI_event.00000.t
+	desc = SA_DSI_event.00000.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00001
+				days = 2
+			}
+
+			DSI = {
+				every_owned_state = {
+					add_core_of = ZIM
+				}
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00000.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#昙花一现的希望
+	id = SA_DSI_event.00001
+	title = SA_DSI_event.00001.t
+	desc = SA_DSI_event.00001.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00002
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00001.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#熄灭的火焰
+	id = SA_DSI_event.00002
+	title = SA_DSI_event.00002.t
+	desc = SA_DSI_event.00002.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00003
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00002.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#丧心病狂的报复
+	id = SA_DSI_event.00003
+	title = SA_DSI_event.00003.t
+	desc = SA_DSI_event.00003.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00004
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00003.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#最后时刻
+	id = SA_DSI_event.00004
+	title = SA_DSI_event.00004.t
+	desc = SA_DSI_event.00004.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00005
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00004.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#奇怪的现象
+	id = SA_DSI_event.00005
+	title = SA_DSI_event.00005.t
+	desc = SA_DSI_event.00005.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00006
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00005.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#诡异的空间
+	id = SA_DSI_event.00006
+	title = SA_DSI_event.00006.t
+	desc = SA_DSI_event.00006.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00007
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00006.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {#与神秘存在的交易
+	id = SA_DSI_event.00007
+	title = SA_DSI_event.00007.t
+	desc = SA_DSI_event.00007.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = SA_DSI_event.00008
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = SA_DSI_event.00007.a
+		ai_chance = {
+			base = 1
+		}
+
+		complete_national_focus = DSI_Awake
+	}
+}
+
+country_event = {#在苦难上种出怨恨……
+	id = SA_DSI_event.00008
+	title = SA_DSI_event.00008.t
+	desc = SA_DSI_event.00008.d
+	#picture = GFX_SA_FRA_event.0000
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SA_DSI_event.00008.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}

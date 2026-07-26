@@ -1,0 +1,9 @@
+
+spriteTypes =
+{	   				
+	spriteType =
+	{
+		name = GFX_MY_EMPTY
+		texturefile = "gfx/guis/TEST.dds"
+	}
+}

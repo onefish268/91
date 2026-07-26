@@ -1,0 +1,21 @@
+state = {
+	id = 971
+	name = "STATE_971"
+	manpower = 1720964
+	state_category = four
+
+	history = {
+		owner = COG
+		add_core_of = COG
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		1993 11012 13599
+	}
+}
+#Chad-Kamerun population. 466000
+#CAR-Kamerun population. 254964
+

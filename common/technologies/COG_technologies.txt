@@ -1,0 +1,48 @@
+technologies = {
+    sect_tech_0 = {
+
+        enable_equipment_modules = { 
+            thunderclap_spirit_vein 
+            primal_source_spirit_vein
+			hundred_flowers_spirit_vein
+			scorching_blaze_spirit_vein
+			bedrock_spirit_vein
+
+            thunderclap_mental_art
+			primal_source_mental_art
+			hundred_flowers_mental_art
+			scorching_blaze_mental_art
+			bedrock_mental_art
+
+            qi_gathering_method
+			burning_heart_art
+			innate_steel_qi
+			still_water_art
+
+            sword_control_art
+			power_storing_art
+			jade_shadow_art
+			bowstring_control_technique
+
+            cloud_trace_step 
+			thousand_mile_dash
+			limitless_step
+        }
+
+		allow_branch = { tag = COG }
+		research_cost = 2
+		start_year = 1934
+		folder = {
+			name = infantry_folder
+			position = {
+				x = 9
+				y = 2
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+    }
+
+}

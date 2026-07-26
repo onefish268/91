@@ -1,0 +1,20 @@
+
+
+categories =  {
+	
+	Glowforest = {  #  荧光森林
+		color = { 10 133 51 }
+		movement_cost = 3.0
+		ai_terrain_importance_factor = 0.2
+		combat_width = 50
+		combat_support_width = 25
+		match_value = 4
+		sound_type = plains
+		units = {
+			attack = -0.3
+		}
+		supply_flow_penalty_factor = 0.25
+		enemy_army_bonus_air_superiority_factor = -0.95
+	}
+}
+

@@ -1,0 +1,1545 @@
+focus_tree =
+{
+	id = COG_focus_tree
+	country =
+	{
+		factor = 0
+
+		modifier =
+		{
+			add = 50
+			tag = COG
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position =
+	{
+		x = 1500
+		y = 2300
+	}
+
+
+	focus = {##新的一年
+		id = COG_Prepare_new_year
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		x = 2
+		y = 10
+		select_effect = {
+			FRA = {
+				country_event = SA_FRA_event.00000
+			}
+		}
+
+		cancelable = no
+
+		completion_reward = {
+			custom_effect_tooltip = COG_Prepare_new_year_tip
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+
+	focus = {#视察地方
+		id = COG_Inspect_local_areas
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 5
+
+		relative_position_id = COG_Prepare_new_year
+		x = 3
+		y = 0
+
+		allow_branch = {
+			has_completed_focus = COG_Prepare_new_year
+		}
+
+		prerequisite = { 
+			focus = COG_Prepare_new_year 
+		}
+
+		select_effect = {
+			country_event = {
+				id = SA_COG_event.00000
+				days = 7
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = COG_Inspect_local_areas_tip
+		}
+	}
+
+	focus = {#检查荧光森林
+		id = COG_Check_forest
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Inspect_local_areas
+		x = 0
+		y = -2
+
+		prerequisite = { 
+			focus = COG_Inspect_local_areas
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00100
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {#世界的小变化
+		id = COG_Small_change
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Inspect_local_areas
+		x = 3
+		y = 0
+
+		allow_branch = {
+			has_completed_focus = COG_Check_forest
+		}
+
+		prerequisite = { 
+			focus = COG_Inspect_local_areas
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00200
+			set_country_flag = COG_new_plan
+			mark_focus_tree_layout_dirty = yes
+			#recruit_character = 
+		}
+	}
+
+	focus = {#应付宗主国的压力
+		id = COG_Resolve_pressure
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		x = 3
+		y = 12
+
+		allow_branch = {
+			has_completed_focus = COG_Small_change
+		}
+
+		completion_reward = {
+			add_ideas = {
+				COG_Lower_exploitation
+			}
+		}
+	}
+
+	focus = {#买入宗主国囤积的货物
+		id = COG_Buy_product
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Resolve_pressure
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Resolve_pressure
+		}
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+
+	focus = {#允许劳工转移
+		id = COG_Allow_labor
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Resolve_pressure
+		x = -2
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Resolve_pressure
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_manpower = 75000
+		}
+	}
+
+	focus = {#上缴更多的财政收入
+		id = COG_More_tax
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Resolve_pressure
+		x = 2
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Resolve_pressure
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { ubs_save = -50 }
+####################event
+			} 
+			custom_effect_tooltip = COG_Pay_50_change
+		}
+	}
+
+	focus = {#建议也是干预
+		id = COG_Suggesting_is_intervening
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Small_change
+		x = 0
+		y = 1.5
+
+		allow_branch = {
+			has_completed_focus = COG_Small_change
+		}
+
+		prerequisite = { 
+			focus = COG_Small_change
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00300
+		}
+	}
+
+	focus = {#绮罗生产
+		id = COG_Kiiro_production
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Suggesting_is_intervening
+		x = 2.5
+		y = 0
+
+		prerequisite = { 
+			focus = COG_Suggesting_is_intervening
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00403
+		}
+	}
+
+	focus = {#蝾螈秘籍
+		id = COG_MoeLotl_books
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Suggesting_is_intervening
+		x = -2.5
+		y = 0
+
+		prerequisite = { 
+			focus = COG_Suggesting_is_intervening
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00404
+		}
+	}
+
+	focus = {#猫和老鼠
+		id = COG_Kiiro_and_ratkin
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Suggesting_is_intervening
+		x = -1.5
+		y = 1.5
+
+
+		prerequisite = { 
+			focus = COG_Suggesting_is_intervening
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00402
+		}
+	}
+
+	focus = {#另一种修行方式
+		id = COG_Another_method
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Kiiro_production
+		x = -1
+		y = 1.5
+
+		prerequisite = { 
+			focus = COG_Suggesting_is_intervening
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00405
+		}
+	}
+
+	focus = {#美味叶花糕
+		id = COG_Delicious_cake
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		relative_position_id = COG_Suggesting_is_intervening
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = COG_Suggesting_is_intervening
+		}
+
+		completion_reward = {
+			country_event = SA_COG_event.00405
+		}
+	}
+	
+	focus = {#魔界溪谷的未来
+		id = COG_The_future_of_us
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+
+		x = 30
+		y = 2
+
+		available = {
+			OR = {
+				has_country_flag = COG_Mima_has_awared
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#谋求政治变革
+		id = COG_Political_reform
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_The_future_of_us
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = COG_The_future_of_us
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#冷和平
+		id = COG_Aloof_peace
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Political_reform
+		x = -0
+		y = 3
+
+		prerequisite = {
+			focus = COG_Splintered_realm
+			focus = COG_Slave_court_oppression
+			focus = COG_Lonely_dragonian
+			focus = COG_Remain_moral
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#分裂的邦国
+		id = COG_Splintered_realm
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Political_reform
+		x = -2
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#松散的政权
+		id = COG_Overreaching_lords
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Splintered_realm
+		x = -1
+		y = -1
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Overreaching_lords_error
+				}
+				custom_effect_tooltip = COG_ratkin_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_ratkin
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Splintered_realm
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#明争暗斗的领主们
+		id = COG_Lordly_rivalries
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Splintered_realm
+		x = -2.5
+		y = 0
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Lordly_rivalries_error
+				}
+				custom_effect_tooltip = COG_ratkin_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_ratkin
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Splintered_realm
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#贪婪的守财奴
+		id = COG_Greedy_misers
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Splintered_realm
+		x = -1
+		y = 1
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Greedy_misers_error
+				}
+				custom_effect_tooltip = COG_ratkin_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_ratkin
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Splintered_realm
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#奴役的国度
+		id = COG_Slave_court_oppression
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Political_reform
+		x = 2
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#残酷的压迫
+		id = COG_Rigid_tyranny
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Slave_court_oppression
+		x = 1
+		y = 1
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Rigid_tyranny_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_MoeLotl
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Slave_court_oppression
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#僵化的秩序
+		id = COG_Frozen_hierarchy
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Slave_court_oppression
+		x = 1
+		y = -1
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Frozen_hierarchy_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_MoeLotl
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Slave_court_oppression
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#极端的排外思想
+		id = COG_Extreme_xenophobia
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Slave_court_oppression
+		x = 2.5
+		y = 0
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Extreme_xenophobia_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_MoeLotl
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Slave_court_oppression
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#孤独的龙娘
+		id = COG_Lonely_dragonian 
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Aloof_peace
+		x = 0
+		y = -1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#活着,吃点好的
+		id = COG_Alive_and_eat
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Lonely_dragonian
+		x = 0
+		y = -1
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Alive_and_eat_error
+				}
+				custom_effect_tooltip = COG_dragonian_warning
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_dragonian
+				always = no
+			}
+		}
+
+		prerequisite = {
+			focus = COG_Lonely_dragonian
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {#以和为贵的家伙们
+		id = COG_Remain_moral
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Aloof_peace
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#热情拥抱科技
+		id = COG_Steadfast_tribes
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Remain_moral
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Remain_moral
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#糟糕的交通
+		id = COG_Terrible_transport
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Remain_moral
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Remain_moral
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#政治去中心化
+		id = COG_Decentralized_governance
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1264
+		relative_position_id = COG_Remain_moral
+		x = 0
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Remain_moral
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#建设与发展
+		id = COG_Build_and_grow
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_The_future_of_us
+		x = -15
+		y = 2
+
+		prerequisite = {
+			focus = COG_The_future_of_us
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#矿场扩建
+		id = COG_Mine_expansion
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗银行成立
+		id = COG_Mine_expansion
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#更大的雕像
+		id = COG_Greater_statue
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#更宏伟的宫殿
+		id = COG_Grander_palace
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#把金子埋给未来
+		id = COG_Gold_for_tomorrow
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#商路翻新
+		id = COG_Trade_route_renovation
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#广种翠玉竹
+		id = COG_Jadeglow_grove
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = -5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#庆祝天灯节
+		id = COG_Sky_lantern_festival
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = -4
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {#城乡扩建
+		id = COG_City_country_expansion
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#增添更多的
+		id = COG_City_country_expansion
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#扩大农业投资
+		id = COG_Agri_investment_boost
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 4
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#扩大农业投资
+		id = COG_Agri_investment_boost
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 4
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗工业的扩张
+		id = COG_Kiiro_industry_growth
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#一条神奇的天路
+		id = COG_A_magic_sky_road
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Build_and_grow
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#和领主们的谈判
+		id = COG_Negotiating_with_lords
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_A_magic_sky_road
+		x = -2
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_A_magic_sky_road
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#筹备资金
+		id = COG_Fundraising
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_A_magic_sky_road
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_A_magic_sky_road
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#与萌螈们妥协
+		id = COG_Compromising_with_Moelotls
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_A_magic_sky_road
+		x = 2
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_A_magic_sky_road
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#联系王国内部的铁路
+		id = COG_Our_connecting_railway
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Fundraising
+		x = 0
+		y = 1.5
+
+		available = {
+			has_country_flag = has_completed_the_first_road
+		}
+
+		prerequisite = {
+			focus = COG_A_magic_sky_road
+			focus = COG_Fundraising
+			focus = COG_Negotiating_with_lords
+			focus = COG_Compromising_with_Moelotls
+		}
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#联系王国内部的铁路
+		id = COG_Our_conneway
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Fundraising
+		x = 0
+		y = 4.5
+
+		available = {
+			has_country_flag = has_completed_the_first_road
+		}
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#开办技校
+		id = COG_Technical_training_courses
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Our_connecting_railway
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#义务教育普及
+		id = COG_Compulsory_education
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Our_connecting_railway
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#工业西迁
+		id = COG_Westward_industry
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Our_connecting_railway
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#重组国防
+		id = COG_Defense_reform
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_The_future_of_us
+		x = 15
+		y = 2
+
+		prerequisite = {
+			focus = COG_The_future_of_us
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#魅魔，统帅一切
+		id = COG_Endless_power_of_Mima
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = 0
+		y = 2
+
+		available = {
+			has_country_flag = COG_Mima_has_awared
+		}
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#划分合适的战区
+		id = COG_War_zone_demarcation
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = 3
+		y = 2
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#制服规范
+		id = COG_Uniform_regulations
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = -3
+		y = 2
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#统一军官体系
+		id = COG_Officer_unification
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = -5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#规定将官名额
+		id = COG_Officer_quotas
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Officer_unification
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = COG_Officer_unification
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#整编地方武装
+		id = COG_Local_force_integration
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = 5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#裁撤冗余军队
+		id = COG_Army_reduction
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Local_force_integration
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = COG_Local_force_integration
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#科技赋能
+		id = COG_Tech_empowerment
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = 1
+		y = 3
+
+		mutually_exclusive = {
+			focus = COG_Magical_pursuit
+		}
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#向宗主国学习
+		id = COG_Study_from_our_lord
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = 3
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#翱翔天地的绮罗
+		id = COG_Sky_soaring_Kiiro
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = 5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#配发眼镜
+		id = COG_Prepare_glasses
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Ratkin_shipping
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = COG_Ratkin_shipping
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#军事理论改进
+		id = COG_Military_theory_upgrade
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#鼠鼠托运
+		id = COG_Ratkin_shipping
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = -1
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#
+		id = COG_Ratki
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Ratkin_shipping
+		x = -2
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Ratkin_shipping
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗特供食品
+		id = COG_kiiro_rations
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = 1.5
+		y = 2
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#特战化绮罗
+		id = COG_Elite_Kiiro
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Tech_empowerment
+		x = 4
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#丛林特战
+		id = COG_Jungle_training
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Elite_Kiiro
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Elite_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#夜战精英
+		id = COG_Night_elite
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Elite_Kiiro
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Elite_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#敏捷身姿
+		id = COG_Agile_movement
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Elite_Kiiro
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = COG_Elite_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#与时俱进的特化装备
+		id = COG_Advanced_gear
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Elite_Kiiro
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = COG_Elite_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+
+	focus = {#魔法追求
+		id = COG_Magical_pursuit
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Defense_reform
+		x = -1
+		y = 3
+
+		mutually_exclusive = {
+			focus = COG_Tech_empowerment
+		}
+
+		prerequisite = {
+			focus = COG_Defense_reform
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#改进原来的修行方法
+		id = COG_Cultivation_reform
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Magical_pursuit
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#
+		id = COG_
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Magical_pursuit
+		x = -3
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#萌螈修士
+		id = COG_E
+		icon = GFX_ideas_CPC_over_the_sky
+		cost = 1
+		relative_position_id = COG_Magical_pursuit
+		x = -4
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Tech_empowerment
+			focus = COG_Magical_pursuit
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	
+}
+#           hidden_effect = {
+#				add_to_variable = { ubs_save = 200 } 攒钱靠动态变量
+#			} 
+#			custom_effect_tooltip = SOV_get_200_add_to_reserve 提醒钱得靠文本补充
+
+
+#			custom_effect_tooltip = available_political_advisor 提示文本：可用政治顾问
+#			show_ideas_tooltip = DEN_Michiru
+#			show_ideas_tooltip = DEN_Nana
+#			custom_effect_tooltip = available_designer 提示文本： 可用设计商
+#			show_ideas_tooltip = novo_lab

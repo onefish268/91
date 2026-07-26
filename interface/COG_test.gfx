@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_test_button"
+		texturefile = "gfx/guis/button_window/button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_test_the_main_window"
+		texturefile = "gfx/guis/button_window/the_main_window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_png_the_main_window"
+		texturefile = "gfx/guis/button_window/the_main_window.png"
+	}
+}

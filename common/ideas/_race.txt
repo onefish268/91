@@ -1,0 +1,921 @@
+ideas = {
+    leadership = {
+        law = yes
+        race_mankind = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = generic_spy_political
+            modifier = {
+                research_speed_factor = 0.05
+            }
+            ai_will_do = {
+                factor = 1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            default = yes
+            cancel_if_invalid = no
+        }
+        race_Undead = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = air_war_plans_division_focus
+            modifier = {
+                land_night_attack = 0.15
+                attrition = -0.1
+            }
+            ai_will_do = {
+                factor = 1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_Heroic_Spirit = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = ENG_the_war_to_end_all_wars
+            modifier = {
+                war_support_factor = 0.15
+                offensive_war_stability_factor = 0.15
+                defensive_war_stability_factor = 0.1
+                justify_war_goal_time = 0.25
+            }
+            ai_will_do = {
+                factor = 1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_ship_girl = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = generic_coastal_navy
+            modifier = {
+                sortie_efficiency = 0.1
+                land_doctrine_cost_factor = 0.15
+            }
+            equipment_bonus = {
+                ship_hull_heavy = {
+                    max_organisation = 0.2
+                    instant = yes
+                }
+                ship_hull_submarine = {
+                    max_organisation = 0.2
+                    surface_detection = 0.1
+                    instant = yes
+                }
+                ship_hull_cruiser = {
+                    max_organisation = 0.2
+                    surface_detection = 0.1
+                    instant = yes
+                }
+                ship_hull_light = {
+                    max_organisation = 0.2
+                    surface_detection = 0.1
+                    instant = yes
+                }
+                ship_hull_carrier = {
+                    max_organisation = 0.2
+                    instant = yes
+                }
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_elf  = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = race_elf
+            removal_cost = -1
+            modifier = {
+                experience_loss_factor = -0.2
+                monthly_population = -0.25
+                terrain_trait_xp_gain_factor = 0.1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_youkai  = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = 1_yaozu
+            removal_cost = -1
+            modifier = {
+                conscription = 0.01
+                political_power_cost = 0.1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_angel = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = air_support_focus
+            removal_cost = -1
+            modifier = {
+                air_ace_generation_chance_factor = 0.25
+                air_agility_factor = 0.1
+                air_doctrine_cost_factor = -0.15
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_fairy = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = usa_department_of_defense
+            removal_cost = -1
+            modifier = {
+                special_forces_attack_factor = 0.05
+                special_forces_defence_factor = 0.05
+                experience_loss_factor = -0.10
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_god = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_victors_of_ww1
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.25
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_magic_girl = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            #picture = race_mofashaonv
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.1
+                stability_factor = -0.1
+            }
+            research_bonus = {
+                magic_army_tech = 0.2
+                magic_airforce_tech = 0.2
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_asitelang = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = Asitelang_race
+            modifier = {
+                political_power_gain = 0.1
+                custom_modifier_tooltip = race_asitelang_tt
+                #casualty_trickleback = 0.30
+            }
+            research_bonus = {
+                electronics = 0.08
+            }
+            ai_will_do = {
+                factor = 1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_yyzx = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            picture = PAO_yyqs
+            modifier = {
+                army_morale = 0.1
+                attrition = -0.1
+                land_night_attack = 0.05
+            }
+            research_bonus = {
+				infantry_weapons = 0.1
+            }
+            ai_will_do = {
+                factor = 1
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+        race_demon_name = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = race_demon
+            removal_cost = -1
+            modifier = {
+                conscription_factor = 0.1
+                recon_factor = 0.1
+            }
+            research_bonus = {
+                magic_army_tech = 0.05
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }      
+		race_baqi = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = race_qiren
+            removal_cost = -1
+            modifier = {
+                hcp_outcome_factor_monthly = 0.25
+				consumer_goods_factor = 0.05
+				resistance_target = -0.2
+				resistance_decay = 0.15
+				compliance_growth = 0.05
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cancel_if_invalid = no
+        }
+    }
+    keyan_qingxiang = {
+        mofa = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = nakajima
+            removal_cost = -1
+            available = {
+                always = no
+            }
+            modifier = {
+                research_speed_factor = -0.1
+                recon_factor = 0.1
+                acclimatization_hot_climate_gain_factor = 0.05
+                acclimatization_cold_climate_gain_factor = 0.05
+                army_bonus_air_superiority_factor = 0.05
+                naval_hit_chance = 0.05
+            }
+            research_bonus = {
+                magic_tank = 0.25
+                magic_airforce_tech = 0.25
+                magic_army_tech = 0.25
+            }
+            ai_will_do = {
+                factor = 0
+            }
+            allowed_to_remove = {
+                always = no
+            }
+            cost = 0
+            level = 5
+            cancel_if_invalid = no
+        }
+        keyan_jingfei_0 = {
+            default = yes
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_research_bonus
+            ai_will_do = {
+                factor = 2
+            }
+            removal_cost = -1
+            modifier = {
+            }
+            research_bonus = {
+                magic_tank = -0.1
+                magic_airforce_tech = -0.1
+                magic_army_tech = -0.1
+            }
+            cost = 100
+            level = 4
+            cancel_if_invalid = no
+        }
+        Land_of_Magic_Gears_and_Steam = {  ##魔法、齿轮与蒸汽之国
+            allowed = {
+                tag = DEN
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = Land_of_Magic_Gears_and_Steam
+            ai_will_do = {
+                factor = 2
+            }
+            removal_cost = -1
+            modifier = {
+            }
+            research_bonus = {
+                magic_tech = 0.2
+                industry = 0.2
+                steampunk = 0.2
+            }
+            cost = 100
+            level = 4
+            cancel_if_invalid = no
+        }
+        # keyan_jingfei_1 = {
+        # 	allowed = {
+        # 		always = yes
+        # 	}
+        # 	allowed_civil_war = {
+        # 		always = yes
+        # 	}
+        # 	ai_will_do = {
+        # 		factor = 2
+        # 		modifier = {
+        # 			factor = 1
+        # 			OR = {
+        # 				has_idea = partial_economic_mobilisation
+        # 				has_idea = war_economy
+        # 				has_idea = tot_economic_mobilisation
+        # 			}
+        # 		}
+        # 		modifier = {
+        # 			factor = 2
+        # 			has_war = no
+        # 		}
+        # 		modifier = {
+        # 			factor = 0
+        # 			amount_research_slots < 3
+        # 		}
+        # 	}
+        # 	picture = generic_research_bonus
+        # 	removal_cost = -1
+        # 	modifier = {
+        # 		research_speed_factor = 0.1
+        # 		consumer_goods_factor = 0.03
+        # 		political_power_cost = 0.25
+        # 	}
+        # 	cost = 100
+        # 	level = 3
+        # 	cancel_if_invalid = no
+        # }
+        # keyan_jingfei_2 = {
+        # 	allowed = {
+        # 		always = yes
+        # 	}
+        # 	allowed_civil_war = {
+        # 		always = yes
+        # 	}
+        # 	ai_will_do = {
+        # 		factor = 1
+        # 		modifier = {
+        # 			factor = 1
+        # 			has_idea = partial_economic_mobilisation
+        # 		}
+        # 		modifier = {
+        # 			factor = 3
+        # 			OR = {
+        # 				has_idea = war_economy
+        # 				has_idea = tot_economic_mobilisation
+        # 			}
+        # 		}
+        # 		modifier = {
+        # 			factor = 3
+        # 			amount_research_slots > 3
+        # 		}
+        # 		modifier = {
+        # 			factor = 2
+        # 			political_power_daily > 2.5
+        # 		}
+        # 	}
+        # 	picture = generic_research_bonus
+        # 	removal_cost = -1
+        # 	modifier = {
+        # 		research_speed_factor = 0.15
+        # 		political_power_cost = 0.32
+        # 		consumer_goods_factor = 0.06
+        # 	}
+        # 	cost = 100
+        # 	level = 2
+        # 	cancel_if_invalid = no
+        # }
+        # keyan_jingfei_3 = {
+        # 	allowed = {
+        # 		always = yes
+        # 	}
+        # 	allowed_civil_war = {
+        # 		always = yes
+        # 	}
+        # 	ai_will_do = {
+        # 		factor = 1
+        # 		modifier = {
+        # 			factor = 3
+        # 			amount_research_slots > 4
+        # 		}
+        # 		modifier = {
+        # 			factor = 2
+        # 			political_power_daily > 2.7
+        # 		}
+        # 		modifier = {
+        # 			factor = 2
+        # 			OR = {
+        # 				has_idea = war_economy
+        # 				has_idea = tot_economic_mobilisation
+        # 			}
+        # 		}
+        # 	}
+        # 	picture = generic_research_bonus
+        # 	removal_cost = -1
+        # 	modifier = {
+        # 		research_speed_factor = 0.2
+        # 		political_power_cost = 0.35
+        # 		consumer_goods_factor = 0.1
+        # 		production_speed_buildings_factor = -0.1
+        # 	}
+        # 	cost = 100
+        # 	level = 1
+        # 	cancel_if_invalid = no
+        # }
+    }
+    National_center_of_gravity = {
+        National_center_of_gravity_not = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = National_center_of_gravity_not
+            removal_cost = -1
+            available = {
+                always = no
+            }
+            modifier = {
+            }
+            ai_will_do = {
+                factor = 0.5
+            }
+            default = yes
+            cancel_if_invalid = no
+        }
+        Produced_for_country_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            #picture = weiquanzhuyi
+            cost = 300
+            available = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = POL
+                        original_tag = CHI
+                        original_tag = RAJ
+                        original_tag = BRA
+                        original_tag = GER
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_war = no
+                }
+            }
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                industrial_capacity_factory = 0.1
+                political_power_cost = 0.3
+            }
+        }
+        War_propaganda_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            #picture = War_propaganda_gravity
+            cost = 300
+            available = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.1
+                max_planning = 0.2
+                opinion_gain_monthly_factor = -0.5
+                improve_relations_maintain_cost_factor = 0.5
+                generate_wargoal_tension = -0.2
+                justify_war_goal_time = -0.35
+                war_support_factor = 0.15
+                conscription_factor = -0.1
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        #original_tag = DVL
+                        original_tag = SOV
+                        original_tag = ARA
+                        original_tag = PER
+                        original_tag = HUN
+                        original_tag = USA
+                        original_tag = FRA
+                        original_tag = NFA
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_war = yes
+                    has_war_support < 0.5
+                }
+                modifier = {
+                    add = 10
+                    has_army_manpower = {
+                        size > 799999
+                    }
+                }
+            }
+        }
+        army_comes_first_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            #picture = army_comes_first_gravity
+            cost = 300
+            available = {
+                OR = {
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+            modifier = {
+                conscription_factor = 0.18
+                mobilization_speed = 0.3
+                army_org_factor = 0.1
+                training_time_factor = -0.15
+                political_advisor_cost_factor = 0.25
+                army_attack_factor = 0.08
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = JAP
+                        original_tag = SAU
+                        original_tag = ENG
+                        original_tag = CAN
+                        original_tag = ITA
+                        original_tag = AST
+                        original_tag = INS
+                        original_tag = DVL
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_offensive_war = yes
+                }
+            }
+        }
+        People_Red_Army_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = communism
+            }
+            picture = People_Red_Army_gravity
+            cost = 300
+            available = {
+                has_government = communism
+            }
+            modifier = {
+                conscription = 0.01
+                industrial_capacity_factory = -0.05
+                max_command_power = 20
+                army_attack_factor = 0.08
+                army_defence_factor = 0.04
+                army_morale_factor = 0.1
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = CAN
+                        original_tag = ENG
+                        original_tag = FRA
+                        original_tag = SAU
+                        original_tag = RAJ
+                    }
+                }
+                modifier = {
+                    add = 10
+                    manpower_per_military_factory < 2500
+                }
+            }
+        }
+        Industrial_center_of_gravity_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = communism
+            }
+            picture = Industrial_center_of_gravity_gravity
+            cost = 300
+            available = {
+                has_government = communism
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = SOV
+                        original_tag = USA
+                        original_tag = PRC
+                        original_tag = JAP
+                        original_tag = POL
+                        original_tag = DEN
+                    }
+                }
+                modifier = {
+                    add = 10
+                    num_of_factories < 50
+                }
+                modifier = {
+                    add = 10
+                    has_defensive_war = yes
+                }
+            }
+            modifier = {
+                political_power_factor = -0.15
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                global_building_slots_factor = 0.15
+            }
+        }
+        International_columns_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = communism
+            }
+            picture = International_columns_gravity
+            available = {
+                has_government = communism
+            }
+            modifier = {
+                conscription_factor = 0.2
+                subversive_activites_upkeep = -0.2
+                send_volunteer_size = 5
+                send_volunteer_divisions_required = -0.5
+                send_volunteers_tension = -0.5
+                justify_war_goal_time = -0.35
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 50
+                    has_country_leader = {
+                        ruling_only = yes
+                        name = "Leon Trotsky"
+                    }
+                }
+            }
+        }
+        Safeguard_people_livelihood_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = democratic
+            }
+            picture = Safeguard_people_livelihood_gravity
+            cost = 300
+            available = {
+                has_government = democratic
+            }
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.075
+                global_building_slots_factor = 0.1
+                consumer_goods_factor = 0.05
+                stability_factor = 0.1
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = JAP
+                        original_tag = GXC
+                        original_tag = FRA
+                        original_tag = DVL
+                        original_tag = CAN
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_stability < 0.5
+                }
+                modifier = {
+                    add = -20
+                    OR = {
+                        has_idea = undisturbed_isolation
+                        has_idea = isolation
+                        has_idea = civilian_economy
+                        has_idea = low_economic_mobilisation
+                    }
+                }
+            }
+        }
+        Democratic_Barracks_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = democratic
+            }
+            picture = Democratic_Barracks_gravity
+            cost = 300
+            available = {
+                has_government = democratic
+            }
+            modifier = {
+                conscription = 0.01
+                mobilization_speed = 0.25
+                #opinion_gain_monthly_factor = 0.25
+                #improve_relations_maintain_cost_factor = -0.5
+                trade_opinion_factor = 0.5
+                army_attack_factor = 0.03
+                army_defence_factor = 0.05
+                experience_gain_army_factor = 0.15
+                army_leader_start_level = 1
+                war_support_factor = 0.1
+                #min_export = 0.1
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = ENG
+                        original_tag = AST
+                        original_tag = USA
+                        original_tag = ITA
+                        original_tag = GRE
+                        original_tag = GXC
+                    }
+                }
+                modifier = {
+                    add = 10
+                    has_idea = free_trade
+                }
+            }
+        }
+        Maintain_course_gravity = {
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                has_government = democratic
+            }
+            picture = Maintain_course_gravity
+            cost = 300
+            available = {
+                has_government = democratic
+            }
+            modifier = {
+                consumer_goods_factor = -0.12
+                foreign_subversive_activites = -0.8
+                production_factory_max_efficiency_factor = 0.1
+                #conscription_factor = -0.1
+                mobilization_speed = -0.25
+                defensive_war_stability_factor = 0.3
+                drift_defence_factor = 0.5
+                war_support_factor = -0.1
+                stability_factor = 0.15
+                production_speed_bunker_factor = 0.1
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    add = 20
+                    OR = {
+                        original_tag = SOV
+                        original_tag = SAU
+                    }
+                }
+                modifier = {
+                    add = 10
+                    manpower_per_military_factory > 8000
+                }
+            }
+        }
+    }
+}
