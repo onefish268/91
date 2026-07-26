@@ -10,3 +10,293 @@ country_event = {
 	}
 }
 
+country_event = {#清理标记有关招募的事件
+	id = invisible_event.001
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		clr_country_flag = employ_days
+	}
+}
+
+country_event = {#配帕洛尼自动走国策
+	id = invisible_event.002
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_completed_focus = three_focus_Endless_fight
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_22
+			}
+			complete_national_focus = {
+				focus = three_focus_Endless_fight
+				use_side_message = yes
+				originator_name = "配帕洛尼"
+			}
+			deactivate_shine_on_focus = three_focus_Endless_fight
+			clr_country_flag = seven_time
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_17
+			}
+			complete_national_focus = {
+				focus = three_focus_22
+				use_side_message = yes
+				originator_name = "配帕洛尼"
+			}
+			deactivate_shine_on_focus = three_focus_22
+			clr_country_flag = seven_time
+		}
+		else = {
+			complete_national_focus = {
+				focus = three_focus_17
+				use_side_message = yes
+				originator_name = "配帕洛尼"
+			}
+			activate_shine_on_focus = three_focus_22
+			deactivate_shine_on_focus = three_focus_17
+			country_event = {
+				id = invisible_event.002
+				days = 140
+			}
+			set_country_flag = {
+				flag = seven_time
+				days = 141
+				value = 1
+			}
+		}
+	}
+}
+
+
+country_event = {#卡尔帕乔自动走国策
+	id = invisible_event.003
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_completed_focus = three_focus_Total_war_economy
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_23
+			}
+			complete_national_focus = {
+				focus = three_focus_Total_war_economy
+				use_side_message = yes
+				originator_name = "卡尔帕乔"
+			}
+			deactivate_shine_on_focus = three_focus_Total_war_economy
+			clr_country_flag = seven_time
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_18
+			}
+			complete_national_focus = {
+				focus = three_focus_23
+				use_side_message = yes
+				originator_name = "卡尔帕乔"
+			}
+			deactivate_shine_on_focus = three_focus_23
+			clr_country_flag = four_time
+		}
+		else = {
+			complete_national_focus = {
+				focus = three_focus_18
+				use_side_message = yes
+				originator_name = "卡尔帕乔"
+			}
+			activate_shine_on_focus = three_focus_23
+			deactivate_shine_on_focus = three_focus_18
+			country_event = {
+				id = invisible_event.003
+				days = 140
+			}
+			set_country_flag = {
+				flag = four_time
+				days = 141
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {#"得力干将齐亚诺"
+	id = invisible_event.004
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_completed_focus = three_focus_Neo_African_union
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_24
+			}
+			complete_national_focus = {
+				focus = three_focus_Neo_African_union
+				use_side_message = yes
+				originator_name = "齐亚诺"
+			}
+			deactivate_shine_on_focus = three_focus_Neo_African_union
+			clr_country_flag = seven_time
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_19
+			}
+			complete_national_focus = {
+				focus = three_focus_24
+				use_side_message = yes
+				originator_name = "齐亚诺"
+			}
+			deactivate_shine_on_focus = three_focus_24
+			clr_country_flag = five_time
+		}
+		else = {
+			complete_national_focus = {
+				focus = three_focus_19
+				use_side_message = yes
+				originator_name = "齐亚诺"
+			}
+			activate_shine_on_focus = three_focus_24
+			deactivate_shine_on_focus = three_focus_19
+			country_event = {
+				id = invisible_event.004
+				days = 140
+			}
+			set_country_flag = {
+				flag = five_time
+				days = 141
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {#斯塔拉切自动走国策
+	id = invisible_event.005
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_completed_focus = three_focus_Rhodesian_culture
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_25
+			}
+			complete_national_focus = {
+				focus = three_focus_Rhodesian_culture
+				use_side_message = yes
+				originator_name = "斯塔拉切"
+			}
+			deactivate_shine_on_focus = three_focus_Rhodesian_culture
+			clr_country_flag = seven_time
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_20
+			}
+			complete_national_focus = {
+				focus = three_focus_25
+				use_side_message = yes
+				originator_name = "斯塔拉切"
+			}
+			deactivate_shine_on_focus = three_focus_25
+			clr_country_flag = six_time
+		}
+		else = {
+			complete_national_focus = {
+				focus = three_focus_20
+				use_side_message = yes
+				originator_name = "斯塔拉切"
+			}
+			activate_shine_on_focus = three_focus_25
+			deactivate_shine_on_focus = three_focus_20
+			country_event = {
+				id = invisible_event.005
+				days = 140
+			}
+			set_country_flag = {
+				flag = six_time
+				days = 141
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {#帕沃利尼自动走国策
+	id = invisible_event.006
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_completed_focus = three_focus_Veni_vidi_vici
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_26
+			}
+			complete_national_focus = {
+				focus = three_focus_Veni_vidi_vici
+				use_side_message = yes
+				originator_name = "帕沃利尼"
+			}
+			deactivate_shine_on_focus = three_focus_Veni_vidi_vici
+			clr_country_flag = seven_time
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = three_focus_21
+			}
+			complete_national_focus = {
+				focus = three_focus_26
+				use_side_message = yes
+				originator_name = "帕沃利尼"
+			}
+			deactivate_shine_on_focus = three_focus_26
+			clr_country_flag = eight_time
+		}
+		else = {
+			complete_national_focus = {
+				focus = three_focus_21
+				use_side_message = yes
+				originator_name = "帕沃利尼"
+			}
+			activate_shine_on_focus = three_focus_26
+			deactivate_shine_on_focus = three_focus_21
+			country_event = {
+				id = invisible_event.006
+				days = 140
+			}
+			set_country_flag = {
+				flag = eight_time
+				days = 141
+				value = 1
+			}
+		}
+	}
+}

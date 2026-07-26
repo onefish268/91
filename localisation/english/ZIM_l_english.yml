@@ -15,6 +15,7 @@ l_english:
   #COG_his_page_02_title: ""
   #COG_Country_History_Page_02: ""
   #COG_his_page_03_title: ""
+  #COG_his_page_0three_title: ""
   #COG_Country_History_Page_03: "" 
 
 
@@ -194,4 +195,8 @@ l_english:
   ZIM_Expend_army: "招兵买马"
   ZIM_Expend_army_desc: "快速从国家里拉出两个民兵师来打仗，填补我们兵线缺口。"
   ZIM_Expend_army_tip: "完成该决议之后过20天才可以再次使用。"
+  comment: "aaaaaaaaa"
+  comment2: "bbbbbbbbbbb"
 
+  the_first: "bbbbbbbbbbbbbbadasdas"
+  the_first_desc: "bbbbbbbbbbbbbbadasdas"

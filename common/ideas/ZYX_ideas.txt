@@ -1,0 +1,739 @@
+ideas = {
+	country = {
+		#建军大业
+		ZYX_Army_founding = {
+			picture = ARG_war_division
+			research_bonus = {
+				infantry_weapons = 0.05
+				support_tech = 0.05
+				artillery = 0.05
+				armor = 0.05
+				air_equipment = 0.05
+			}
+			modifier = {
+				experience_gain_air_factor = 0.1
+				experience_gain_army_factor = 0.1
+				experience_gain_navy_factor = 0.1
+			}
+		}
+		#武器弹药委员会
+		ZYX_War_materiel_board = {
+			picture = AST_cabinet_trust5_idea
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				artillery = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		#统一弹药口径
+		ZYX_Standard_ammo = {
+			picture = AUS_treaty_of_saint_germain_en_laye
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.075
+					instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.075
+					instant = yes
+				}
+			}
+		}
+		#装备改进
+		ZYX_Gear_upgrade = {
+			picture = CHL_carabineros_de_chile_neutrality
+			research_bonus = {
+				infantry_weapons = 0.05
+				support_tech = 0.05
+				artillery = 0.05
+			}
+		}
+		#快速坦克
+		ZYX_Speedy_tanks = {
+			picture = man_five_year_plan_tank
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.1
+					reliability = -0.05
+					build_cost_ic = -0.10
+					instant = yes
+
+				}
+			}
+		}
+		#精简化生产
+		ZYX_Lean_production = {
+			picture = generic_improved_industries
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.05
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.025
+					instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.025
+					instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.025
+					instant = yes
+				}
+			}
+		}	
+		#对接产业
+		ZYX_Industry_linkup = {
+			picture = ARG_rapid_militarization
+			modifier = {
+				military_industrial_organization_funds_gain = 0.25
+				military_industrial_organization_research_bonus = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		#改善补给系统
+		ZYX_Supply_boost = {
+			picture = INS_cheap_sugar
+			modifier = {
+				supply_consumption_factor = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+				attrition = -0.05
+			}
+		}
+		#大兵团作战
+		ZYX_Mass_army_warfare = {
+			picture = MEX_politicised_army_2
+			modifier = {
+				conscription_factor = 0.15
+				training_time_factor = -0.1
+				army_org_factor = 0.1
+			}
+		}
+		#中央军校
+		ZYX_Central_war_college = {
+			picture = HUN_wuw_HUN_hungarian_national_defense_association
+			modifier = {
+				air_doctrine_cost_factor = -0.25
+				land_doctrine_cost_factor = -0.25
+				naval_doctrine_cost_factor = -0.25
+				experience_gain_factor = 0.1
+			}
+		}
+		#妇女卫队
+		ZYX_Female_guard = {
+			picture = AUS_women_in_academia
+			modifier = {
+				conscription_factor = 0.1
+				supply_consumption_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		#建立军事检查局
+		ZYX_Military_justice_bureau = {
+			picture = ETH_corrupt_bureaucracy
+			modifier = {
+				army_retreat_speed_factor = -0.1
+				army_morale_factor = 0.15
+				army_org_factor = 0.1
+				breakthrough_factor = 0.025
+			}
+		}
+		#提升军官素质
+		ZYX_Enhancing_officer_quality = {
+			picture = tur_kemalist_officers
+			modifier = {
+				army_leader_start_level = 2
+				experience_gain_factor = 0.1
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+				army_leader_start_planning_level = 1
+			}
+		}
+		#全军统一指挥
+		ZYX_Unified_command = {
+			picture = CZE_planning_bonus
+			modifier = {
+				max_planning_factor = 0.2
+				army_strength_factor = 0.05
+			}
+		}
+		#大规模武器列装
+		ZYX_Arms_deployment = {
+			picture = ARG_war_division
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		#新锐雄师
+		ZYX_Elite_vanguard = {
+			picture = RAJ_private_military_complex
+			modifier = {
+				conscription_factor = -0.1
+				training_time_factor = 0.15
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
+		#领袖的火枪手
+		ZYX_Leader_marksmen = {
+			picture = ETH_peacekeeping_forces
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					attack = 0.1
+					defence = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.15
+				}
+			}
+		}
+		#保持军官独立性
+		ZYX_Officer_autonomy = {
+			picture = tur_kemalist_army_officers_minimal_power_loyal
+			modifier = {
+				initiative_factor = 0.1
+				planning_speed = 0.15
+				max_command_power = 50
+				command_abilities_cost_factor = -0.2
+			}
+		}
+		#特种兵团
+		ZYX_Elite_special_forces = {
+			picture = raj_indian_gentlemen_officers
+			modifier = {
+				special_forces_attack_factor = 0.1
+				special_forces_cap = 0.2
+				special_forces_no_supply_grace = 24
+				modifier_army_sub_unit_category_special_forces_max_org_factor = 0.1
+			}
+		}
+		#侦察分队
+		ZYX_Recon_units = {
+			picture = PRC_the_internal_enemy
+			modifier = {
+				recon_factor = 0.2
+				terrain_penalty_reduction = 0.05
+				army_attack_speed_factor = 0.05
+			}
+		}
+		#航空工程兵团
+		ZYX_Aero_engineers = {
+			picture = ITA_regia_aeronautica_1
+			modifier = {
+				air_accidents_factor = -0.25
+				air_cas_present_factor = 0.15
+			}
+		}
+		#航空学院
+		ZYX_Flight_school = {
+			picture = AUS_women_in_academia
+			modifier = {
+				air_training_xp_gain_factor = 0.15
+				air_untrained_pilots_penalty_factor = -0.15
+				air_wing_xp_loss_when_killed_factor = -0.15
+			}
+		}
+		#驾驭天空
+		ZYX_Sky_masters = {
+			picture = JAP_air_services
+			modifier = {
+				air_range_factor = 0.1
+				air_agility_factor = 0.1
+				air_defence_factor = 0.05
+			}
+		}
+		#战斗机研发
+		ZYX_Fighter_dev = {
+			picture = NORDIC_airforce_democratic
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_superiority_efficiency = 0.1
+			}
+		}
+		#轰炸机研发
+		ZYX_Bomber_dev = {
+			picture = AST_government_aircraft_factories
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.2
+				air_strategic_bomber_night_penalty = 0.1
+			}
+		}
+		#空中利剑
+		ZYX_Aerial_blades = {
+			picture = BRA_air_force
+			modifier = {
+				air_night_penalty = -0.2
+				air_attack_factor = 0.2
+				air_ace_generation_chance_factor = 0.25
+			}
+		}
+		#空中堡垒
+		ZYX_Air_castles = {
+			picture = SWE_marauder_bombers
+			modifier = {
+				air_defence_factor = 0.2
+			}
+		}
+		#国土防空大队
+		ZYX_Air_defense_squad = {
+			picture = generic_fighter_production_diverted
+			modifier = {
+				air_home_defence_factor = 0.2
+				air_intercept_efficiency = 0.2
+				air_interception_detect_factor = 0.2
+			}
+		}
+		#绿水海军
+		ZYX_Green_water_navy = {
+			picture = JAP_hikari_naval_arsenal
+			modifier = {
+				naval_torpedo_cooldown_factor = -0.1
+				naval_torpedo_hit_chance_factor = 0.1
+			}
+		}
+		#重建海军大学
+		ZYX_Rebuilding_naval_academy = {
+			picture = ARG_arsenal_naval_buenos_aires
+			modifier = {
+				experience_gain_navy_unit_factor = 0.2
+				naval_mission_xp_factor = 0.2
+				headquarters_experience_gain_factor = 0.2
+			}
+		}
+		#巡洋舰艇
+		ZYX_Cruiser_force = {
+			picture = AUS_naval_efficiency_idea
+			modifier = {
+				navy_max_range_factor = 0.1
+				naval_supply_consumption_factor = 0.1
+			}
+		}
+		#改良舰炮
+		ZYX_Gun_upgrade = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				naval_heavy_gun_hit_chance_factor = 0.15
+				naval_light_gun_hit_chance_factor = 0.15
+				naval_damage_factor = 0.05
+			}
+		}
+		#高速战舰
+		ZYX_High_speed_warships = {
+			picture = AUS_navy
+			modifier = {
+				naval_speed_factor = 0.2
+				naval_retreat_speed = 0.2
+				positioning = 0.05
+			}
+		}
+		#海军航空力量
+		ZYX_Naval_air_force = {
+			picture = generic_navy_carrier_bonus
+			modifier = {
+				sortie_efficiency = 0.1
+				fighter_sortie_efficiency = 0.1
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.1
+				navy_carrier_air_agility_factor = 0.1
+			}
+		}
+		#采用雷达战术
+		ZYX_Radar_tactics = {
+			picture = generic_radar
+			modifier = {
+				naval_detection = 0.1
+				spotting_chance = 0.1
+			}
+		}
+		#造船计划
+		ZYX_Ship_construction = {
+			picture = liberty_ships_focus
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+				production_speed_dockyard_factor = 0.3
+				repair_speed_factor = 0.1
+			}
+		}
+		#警惕反革命（你们这是哪门子革命（））
+		ZYX_Counterrevolution_watch = {
+			picture = CHI_protracted_warfare
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.20
+				intelligence_agency_defense = 1
+			}
+		}
+		#统一思想
+		ZYX_Ideological_unification = {
+			picture = POL_ideology_drift_defence
+			modifier = {
+				fascism_drift = 0.05
+				democratic_drift = -0.01
+				communism_drift = -0.01
+				neutrality_drift = -0.01
+			}
+		}
+		#动员大会
+		ZYX_Rally_mobilization = {
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				conscription_factor = 0.1
+				minimum_training_level = -0.05
+			}
+		}
+		#战斗！法西斯
+		ZYX_Forward_fascists = {
+			picture = generic_fascist_workers
+			modifier = {
+				training_time_factor = -0.2
+				air_training_xp_gain_factor = 0.2
+				initiative_factor = 0.05
+			}
+		}
+		#描述前景
+		ZYX_Describing_the_prospect = {
+			picture = AST_country_party_influence_spirit
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		#运用党员
+		ZYX_Party_member_deployment = {
+			picture = saf_ossewabrandwag_fascism
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#光明的未来
+		ZYX_Better_future = {
+			picture = DEN_danish_produce
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		#建设褐衫军
+		ZYX_Brownshirt_formation = {
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		#保持斗争
+		ZYX_Sustaining_struggle = {
+			picture = HUN_rapid_army_expansion
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				drift_defence_factor = 0.2
+				intelligence_agency_defense = 0.1
+			}
+		}
+		#企业掌控
+		ZYX_Control_company = {
+			picture = jap_zaibatsu_control
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		#提供订单
+		ZYX_Provide_profit = {
+			picture = ARG_roca_runciman_new_partner
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		#平等原则
+		ZYX_Equal_principle= {
+			picture = ARG_no_gods_no_masters
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		#团结一致
+		ZYX_Unite_together = {
+			picture = SIA_order_discipline_and_unity
+			modifier = {
+				army_attack_factor = 0.05
+				army_attack_against_major_factor = 0.05
+				stability_weekly = 0.001
+				offensive_war_stability_factor = 0.15
+				defensive_war_stability_factor = 0.15
+			}
+		}
+		#党的领导
+		ZYX_Lead_of_party = {
+			picture = ETH_italian_settlers
+			modifier = {
+				party_popularity_stability_factor = 0.5
+				fascism_drift = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		#节约行动
+		ZYX_Conservation_action = {
+			picture = ITA_devaluated_lira
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#青年团的建设
+		ZYX_Youth_league_building = {
+			picture = ITA_hardened_irregular_bands
+			modifier = {
+				recruitable_population_factor = 0.1
+				weekly_manpower = 500
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		#弘扬罗马精神
+		ZYX_Promoting_Roman_spirit = {
+			picture = ITA_new_roman_empire_ns
+			modifier = {
+				army_non_core_attack_factor = 0.2
+				army_non_core_defence_factor = 0.2
+				breakthrough_factor = 0.1
+			}
+		}
+		#领导人集团
+		ZYX_Leading_circle = {
+			picture = AST_cabinet_trust5_idea
+			modifier = {
+				max_command_power = 50
+				grant_medal_cost_factor = -0.5
+			}
+		}
+		#罗德西亚式文化
+		ZYX_Rhodesian_culture = {
+			picture = SWE_vin_och_sprit_ab
+			modifier = {
+				consumer_goods_factor = -0.15
+				monthly_population = 0.2
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#生命不息、战斗不止
+		ZYX_Endless_fight = {
+			picture = generic_intel_bonus
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		#我来，我见，我征服
+		ZYX_Veni_vidi_vici = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			modifier = {
+				justify_war_goal_time = -0.5
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+			}
+		}
+		#新非洲共同体
+		ZYX_Neo_African_union = {
+			picture = ETH_military_communism
+			modifier = {
+				compliance_growth = 0.1
+				resistance_decay = 0.1
+				resistance_activity = -0.1
+			}
+		}
+		#全面战争经济
+		ZYX_Total_war_economy = {
+			picture = totaler_krieg_economy
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		#牢大
+		ZYX_Duce = {
+			picture = ITA_shadow_of_mussolini
+			modifier = {
+				grant_medal_cost_factor = -0.2
+				automatic_grant_medal_chance = 0.2
+			}
+		}
+		#重视外交
+		ZYX_Emphasizing_diplomacy = {
+			picture = generic_deal_with_the_devil
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		#突然袭击
+		ZYX_Suddenly_attack = {
+			picture = CHI_decisive_battle
+			modifier = {
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+		}
+		#圣杯的制裁
+		ZYX_Punish_of_england = {
+			picture = ARG_envoy_to_london
+			modifier = {
+				consumer_goods_factor = 0.1
+				trade_opinion_factor = -0.3
+			}
+		}
+		#圣杯的合作
+		ZYX_Respect_of_england = {
+			picture = ARG_british_influences
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 3
+				min_export = 0.1
+			}
+		}
+		#脆弱的合作
+		ZYX_weekly_cooperate = {
+			picture = generic_deal_with_the_devil2
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				min_export = 0.05
+			}
+		}
+		#世界秩序的维护者
+		ZYX_World_order_keeper = {
+			picture = AFG_republic_idea
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.5
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+		#德国的合作
+		ZYX_Respect_of_germany = {
+			picture = AFG_work_with_ger_intel_bonus
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 2
+				research_speed_factor = 0.03
+				min_export = 0.1
+			}
+		}
+		#精灵的黄金资助
+		ZYX_Gold_of_fairy = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		#一心会的回礼
+		ZYX_Gift_from_ZYX = {
+			picture = AST_liberty_loans
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		#精灵的合作
+		ZYX_Respect_of_fairy = {
+			picture = ARG_american_allyship
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 3
+				min_export = 0.1
+			}
+		}
+		#中国的合作
+		ZYX_Respect_of_china = {
+			picture = CHI_military_affairs_commission
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 2
+				min_export = 0.1
+			}
+		}
+		#一心会的合作
+		ZYX_Respect_of_ZYX = {
+			picture = RAJ_issue_bonds_on_the_stock_market
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+				min_export = 0.05
+				resource_trade_cost_bonus_per_factory = 1
+			}
+		}
+		#与日本佬的战俘贸易
+		ZYX_Slave_from_japan = {
+			picture = JAP_senbu_organizations
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		#与日本佬的合作
+		ZYX_Respect_of_japan = {
+			picture = JAP_advance_one_hundred_million_fireballs
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 2
+				min_export = 0.1
+			}
+		}
+		#中国的合作
+		ZYX_Respect_of_china = {
+			picture = CHI_lend_lease_soviet
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 3
+				min_export = 0.1
+			}
+		}
+		#泛非思潮的影响
+		ZYX_Influence_of_great_africa = {
+			picture = ETH_military_communism
+			modifier = {
+				compliance_growth = 0.1
+				resistance_decay = 0.1
+				resistance_activity = -0.1
+			}
+		}
+		#归乡的影响
+		ZYX_Influence_of_back_to_italy = {
+			picture = ITA_italia_irredenta_achieved
+			modifier = {
+				compliance_growth = 0.1
+				resistance_decay = 0.1
+				resistance_activity = -0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+debug_test_categories = {
+
+	the_first = {
+		name = the_first
+		icon = generic_construction
+		
+		cost = 10
+
+		complete_effect = {
+			set_country_flag = test_of_core_circle
+		}
+	}
+
+	the_second = {
+		name = the_second
+		icon = generic_construction
+		
+		cost = 10
+
+		complete_effect = {
+			clr_country_flag = test_of_core_circle
+		}
+	}
+
+}

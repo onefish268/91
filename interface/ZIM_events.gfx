@@ -14,6 +14,8 @@ spriteTypes = {
     spriteType = {
         name = "GFX_ZIM3_event"
         texturefile = "gfx\interface\events\ZIM3_event.png"
+        name = "GFX_ZIMthree_event"
+        texturefile = "gfx\interface\events\ZIMthree_event.png"
     }
     spriteType = {
         name = "GFX_news_2"

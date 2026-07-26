@@ -1,0 +1,44 @@
+add_namespace = ZYX
+
+country_event = {
+    id = ZYX.1
+    title = ZYX.1.t
+    desc = ZYX.1.desc
+
+    is_triggered_only = yes
+
+    option = {#给魅魔的警告
+        name = ZYX.1.a
+        ai_chance = { 
+			factor = 100 
+			trigger = {
+				limit = {
+					ZYX = {
+						has_army_size = { size > 50 }
+					}
+				}
+                factor = 0
+			}
+		}
+    }
+
+	option = {
+        name = ZYX.1.b
+        ai_chance = { factor = 1 }
+
+        set_country_flag = COG_Mima_has_awared
+    }
+}
+
+country_event = {#给南非的警告
+    id = ZYX.2
+    title = ZYX.2.t
+    desc = ZYX.2.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZYX.2.a
+        ai_chance = { base = 50 }
+    }
+}
