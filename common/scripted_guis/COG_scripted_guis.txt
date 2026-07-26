@@ -55,24 +55,7 @@ scripted_gui = {
 	#		}
 	#	}
 	#}
-	ShowInformation = {
-		window_name = "Information_menu"
-		context_type = player_context
-		parent_window_token = politics_tab
-		# 只有人类玩家能看到
-		visible = {
-			#ROOT = {
-			#	is_ai = no
-			always = no
-			}
-		}
-		# 按钮点击效果
-		effects = {
-			btn_add_pp_click = {
-				add_political_power = 10
-			}
-		}
-	}
+	
 	# common/scripted_guis/my_equipment_designer.txt
 	
 }
