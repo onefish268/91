@@ -150,7 +150,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 3_focus_5
+		id = three_focus_5
 		x = -11
 		y = 1
 		cost = 5
@@ -547,7 +547,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 3_focus_18
+		id = three_focus_18
 		x = -13
 		y = 3
 		cost = 20
@@ -726,7 +726,7 @@ focus_tree = {
 		id = three_focus_22
 		x = -15
 		y = 5
-		cost = 0
+		cost = 20
 		icon = GFX_focus_ITA_cavalry_charge
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -937,7 +937,7 @@ focus_tree = {
 		id = three_focus_Endless_fight
 		x = -15
 		y = 7
-		cost = 0
+		cost = 20
 		icon = GFX_focus_AST_from_picket_line_to_front_line
 		continue_if_invalid = no
 		cancel_if_invalid = yes
