@@ -191,6 +191,15 @@ ideas = {
 				army_org_factor = 0.1
 			}
 		}
+		#神射手
+		ZYX_Sniper_regiment = {
+			picture = ETH_peacekeeping_forces
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
 		#领袖的火枪手
 		ZYX_Leader_marksmen = {
 			picture = ETH_peacekeeping_forces
