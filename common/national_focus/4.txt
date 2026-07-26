@@ -3829,60 +3829,127 @@ focus_tree = {
 		id = three_focus_140
 		x = 49
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SOV_father_of_nations
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_130
+			focus = three_focus_130
+		}
+		available = {
+			SOV = {
+				exists = yes
+			}
+		}
+		bypass = {
+			SOV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_141
+		id = three_focus_141
 		x = 57
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_135
+			focus = three_focus_135
+		}
+		available = {
+			ROC = {
+				exists = yes
+			}
+		}
+
+		completion_reward = {
+			ROC = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = ZYX
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = ZYX
+			}
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_142
+		id = three_focus_142
 		x = 59
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_JAP_resource_security
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_136
+			focus = three_focus_136
+		}
+		available = {
+			JAP = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = ZYX_Respect_of_japan
+			JAP = {
+				add_ideas = ZYX_Respect_of_ZYX
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_143
+		id = three_focus_143
 		x = 57
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_central_planning
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_141
+			focus = three_focus_141
+		}
+		available = {
+			ROC = {
+				exists = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = ZYX_Respect_of_china
+			JAP = {
+				add_ideas = ZYX_Respect_of_ZYX
+			}
 		}
 	}
 	focus = {
-		id = 3_focus_144
+		id = three_focus_144
 		x = 59
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_full_employment
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_142
+			focus = three_focus_142
+		}
+		available = {
+			JAP = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = ZYX_Slave_from_japan
 		}
 	}
 	focus = {
