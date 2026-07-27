@@ -8,6 +8,12 @@ focus_tree = {
 		}
 	}
 	default = no
+	reset_on_civilwar = no
+	continuous_focus_position =
+	{
+		x = 1500
+		y = 1500
+	}
 	focus = {
 		id = 3_focus_1
 		x = 0
@@ -2448,7 +2454,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = {
-				ZYX_War_Mass_army_warfare
+				ZYX_Mass_army_warfare
 			}
 		}
 	}
@@ -2667,7 +2673,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = {
-				ZYX_War_Military_justice_bureau
+				ZYX_Military_justice_bureau
 			}
 		}
 	}
