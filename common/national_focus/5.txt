@@ -10,8 +10,8 @@ focus_tree = {
 	default = no
 	focus = {
 		id = 4_focus_1
-		x = 21
-		y = -25
+		x = 11
+		y = 0
 		cost = 0
 		icon = GFX_focus_lixiangshenyuan
 		continue_if_invalid = no
@@ -19,8 +19,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_2
-		x = 19
-		y = -24
+		x = 9
+		y = 1
 		cost = 0
 		icon = GFX_focus_jiubandi
 		continue_if_invalid = no
@@ -31,8 +31,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_3
-		x = 23
-		y = -24
+		x = 13
+		y = 1
 		cost = 0
 		icon = GFX_focus_canqi
 		continue_if_invalid = no
@@ -43,8 +43,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_4
-		x = 25
-		y = -23
+		x = 15
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -54,8 +54,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_5
-		x = 15
-		y = -23
+		x = 5
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -65,13 +65,21 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_6
-		x = 20
-		y = -23
+		x = 10
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_2
 		}
+	}
+	focus = {
+		id = 4_focus_9999
+		x = 21
+		y = -10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 	}
 }
