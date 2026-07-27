@@ -1,0 +1,77 @@
+focus_tree = {
+	id = ZSB_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZSB
+		}
+	}
+	default = no
+	focus = {
+		id = 4_focus_1
+		x = 21
+		y = -25
+		cost = 0
+		icon = GFX_focus_lixiangshenyuan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = 4_focus_2
+		x = 19
+		y = -24
+		cost = 0
+		icon = GFX_focus_jiubandi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_1
+		}
+	}
+	focus = {
+		id = 4_focus_3
+		x = 23
+		y = -24
+		cost = 0
+		icon = GFX_focus_canqi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_1
+		}
+	}
+	focus = {
+		id = 4_focus_4
+		x = 25
+		y = -23
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_3
+		}
+	}
+	focus = {
+		id = 4_focus_5
+		x = 15
+		y = -23
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_2
+		}
+	}
+	focus = {
+		id = 4_focus_6
+		x = 20
+		y = -23
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_2
+		}
+	}
+}
