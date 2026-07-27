@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Steadfast_tribes"
+	progress = 0
+}

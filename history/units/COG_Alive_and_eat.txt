@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Alive_and_eat"
+	progress = 0
+}

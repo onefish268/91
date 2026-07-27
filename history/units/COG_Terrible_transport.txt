@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Terrible_transport"
+	progress = 0
+}
