@@ -64,8 +64,8 @@
   ZYX_Aero_engineers: "航空工程团"
   ZYX_Flight_school: "飞行学校"
   ZYX_Sky_masters: "天空大师"
-  ZYX_Fighter_development: "战斗机研发"
-  ZYX_Bomber_development: "轰炸机研发"
+  ZYX_Fighter_dev: "战斗机研发"
+  ZYX_Bomber_dev: "轰炸机研发"
   ZYX_Aerial_blades: "空中利刃"
   ZYX_Air_castles: "空中堡垒"
   ZYX_Air_defense_squad: "空防小队"
@@ -132,6 +132,7 @@
   story_zhengfengzhe_trait:0 "内部整风者"
   story_qingnianzuzhi_trait:0 "青年组织负责人"
   story_shengruxiongshi_trait:0 "生如雄狮"
+  ZYX_Our_duce_trait:0 "我们的duce\n这位统治者是法西斯党的创始人，她的意志就是法西斯党的意志"
 #城市名称
   VICTORY_POINTS_13646:0 "本凯亚城"
   VICTORY_POINTS_8183:0 "青年城"
