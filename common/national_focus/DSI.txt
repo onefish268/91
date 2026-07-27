@@ -23,7 +23,7 @@ focus_tree =
 
 	focus = {#苏醒于虚空
 		id = DSI_Awake
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = 
 		cost = 10
 		x = 10
 		y = 10
@@ -42,7 +42,7 @@ focus_tree =
 
 	focus = {#华丽果树
 		id = DSI_Fruiter
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = 
 		cost = 2
 		relative_position_id = DSI_Awake
 		x = 0
@@ -58,7 +58,7 @@ focus_tree =
 
 	focus = {#扑克兵
 		id = DSI_Card_Soldiers
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = 
 		cost = 2
 		relative_position_id = DSI_Awake
 		x = -4
@@ -74,7 +74,7 @@ focus_tree =
 
 	focus = {#邪恶
 		id = DSI_Obsession
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = 
 		cost = 2
 		relative_position_id = DSI_Awake
 		x = 0

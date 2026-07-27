@@ -9,8 +9,8 @@ spriteTypes = {
 #国策图标系列引用
 
 	spriteType = {
-		name = "GFX_ideas_CPC_over_the_sky"
-		texturefile = "gfx/interface/goals/GFX_ideas_CPC_over_the_sky.dds"			
+		name = ""
+		texturefile = "gfx/interface/goals/.dds"			
 	}
 
 #事件图片系列引用
