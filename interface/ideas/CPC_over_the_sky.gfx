@@ -2,7 +2,7 @@ spriteTypes =
 {	   				
 	spriteType =
 	{
-		name = GFX_ideas_CPC_over_the_sky
-		texturefile = "gfx/interface/ideas/GFX_ideas_CPC_over_the_sky.dds"
+		name = 
+		texturefile = "gfx/interface/ideas/.dds"
 	}
 }

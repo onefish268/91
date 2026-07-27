@@ -23,7 +23,7 @@ focus_tree =
 
 	focus = {##新的一年
 		id = COG_Prepare_new_year
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_world_peace
 		cost = 1
 		x = 2
 		y = 10
@@ -45,7 +45,7 @@ focus_tree =
 
 	focus = {#视察地方
 		id = COG_Inspect_local_areas
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 5
 
 		relative_position_id = COG_Prepare_new_year
@@ -74,7 +74,7 @@ focus_tree =
 
 	focus = {#检查荧光森林
 		id = COG_Check_forest
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Inspect_local_areas
@@ -93,7 +93,7 @@ focus_tree =
 
 	focus = {#世界的小变化
 		id = COG_Small_change
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Inspect_local_areas
@@ -118,7 +118,7 @@ focus_tree =
 
 	focus = {#应付宗主国的压力
 		id = COG_Resolve_pressure
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		x = 3
@@ -137,7 +137,7 @@ focus_tree =
 
 	focus = {#买入宗主国囤积的货物
 		id = COG_Buy_product
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Resolve_pressure
@@ -155,7 +155,7 @@ focus_tree =
 
 	focus = {#允许劳工转移
 		id = COG_Allow_labor
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Resolve_pressure
@@ -174,7 +174,7 @@ focus_tree =
 
 	focus = {#上缴更多的财政收入
 		id = COG_More_tax
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Resolve_pressure
@@ -196,7 +196,7 @@ focus_tree =
 
 	focus = {#建议也是干预
 		id = COG_Suggesting_is_intervening
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Small_change
@@ -218,7 +218,7 @@ focus_tree =
 
 	focus = {#绮罗生产
 		id = COG_Kiiro_production
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Suggesting_is_intervening
@@ -236,7 +236,7 @@ focus_tree =
 
 	focus = {#蝾螈秘籍
 		id = COG_MoeLotl_books
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Suggesting_is_intervening
@@ -254,7 +254,7 @@ focus_tree =
 
 	focus = {#猫和老鼠
 		id = COG_Kiiro_and_ratkin
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Suggesting_is_intervening
@@ -273,7 +273,7 @@ focus_tree =
 
 	focus = {#另一种修行方式
 		id = COG_Another_method
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Kiiro_production
@@ -291,7 +291,7 @@ focus_tree =
 
 	focus = {#美味叶花糕
 		id = COG_Delicious_cake
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 
 		relative_position_id = COG_Suggesting_is_intervening
@@ -309,7 +309,7 @@ focus_tree =
 	
 	focus = {#魔界溪谷的未来
 		id = COG_The_future_of_us
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_goal_unknown
 		cost = 1
 
 		x = 30
@@ -328,7 +328,7 @@ focus_tree =
 
 	focus = {#谋求政治变革
 		id = COG_Political_reform
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_goal_generic_political_pressure
 		cost = 1
 		relative_position_id = COG_The_future_of_us
 		x = 0
@@ -345,7 +345,7 @@ focus_tree =
 
 	focus = {#冷和平
 		id = COG_Aloof_peace
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 1
 		relative_position_id = COG_Political_reform
 		x = -0
@@ -365,7 +365,7 @@ focus_tree =
 
 	focus = {#分裂的邦国
 		id = COG_Splintered_realm
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Political_reform
 		x = -2
@@ -378,7 +378,7 @@ focus_tree =
 
 	focus = {#松散的政权
 		id = COG_Overreaching_lords
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_BEL_national_redoubt_at_antwerp
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
 		x = -1
@@ -408,7 +408,7 @@ focus_tree =
 
 	focus = {#明争暗斗的领主们
 		id = COG_Lordly_rivalries
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_union_busting
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
 		x = -2.5
@@ -436,9 +436,9 @@ focus_tree =
 		}
 	}
 
-	focus = {#贪婪的守财奴
+	focus = {#贪婪的腐败者们
 		id = COG_Greedy_misers
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
 		x = -1
@@ -468,7 +468,7 @@ focus_tree =
 
 	focus = {#奴役的国度
 		id = COG_Slave_court_oppression
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Political_reform
 		x = 2
@@ -481,7 +481,7 @@ focus_tree =
 
 	focus = {#残酷的压迫
 		id = COG_Rigid_tyranny
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_seven_shackles
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
 		x = 1
@@ -511,7 +511,7 @@ focus_tree =
 
 	focus = {#僵化的秩序
 		id = COG_Frozen_hierarchy
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SIA_sacred_hierarchy
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
 		x = 1
@@ -541,7 +541,7 @@ focus_tree =
 
 	focus = {#极端的排外思想
 		id = COG_Extreme_xenophobia
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
 		x = 2.5
@@ -571,7 +571,7 @@ focus_tree =
 
 	focus = {#孤独的龙娘
 		id = COG_Lonely_dragonian 
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Aloof_peace
 		x = 0
@@ -584,7 +584,7 @@ focus_tree =
 
 	focus = {#活着,吃点好的
 		id = COG_Alive_and_eat
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_HUN_goulash_communism
 		cost = 1264
 		relative_position_id = COG_Lonely_dragonian
 		x = 0
@@ -614,7 +614,7 @@ focus_tree =
 
 	focus = {#以和为贵的家伙们
 		id = COG_Remain_moral
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Aloof_peace
 		x = 0
@@ -625,9 +625,9 @@ focus_tree =
 		}
 	}
 
-	focus = {#热情拥抱科技
+	focus = {#维持底线的部族
 		id = COG_Steadfast_tribes
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_JAP_ally_the_dragon_king
 		cost = 1264
 		relative_position_id = COG_Remain_moral
 		x = 1
@@ -644,7 +644,7 @@ focus_tree =
 
 	focus = {#糟糕的交通
 		id = COG_Terrible_transport
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 1264
 		relative_position_id = COG_Remain_moral
 		x = -1
@@ -661,7 +661,7 @@ focus_tree =
 
 	focus = {#政治去中心化
 		id = COG_Decentralized_governance
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_industrialists
 		cost = 1264
 		relative_position_id = COG_Remain_moral
 		x = 0
@@ -678,7 +678,7 @@ focus_tree =
 
 	focus = {#建设与发展
 		id = COG_Build_and_grow
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 		cost = 1
 		relative_position_id = COG_The_future_of_us
 		x = -15
@@ -695,7 +695,7 @@ focus_tree =
 
 	focus = {#矿场扩建
 		id = COG_Mine_expansion
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 1
@@ -712,7 +712,7 @@ focus_tree =
 
 	focus = {#绮罗银行成立
 		id = COG_Mine_expansion
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_PER_national_bank
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 1
@@ -729,7 +729,7 @@ focus_tree =
 
 	focus = {#更大的雕像
 		id = COG_Greater_statue
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SIA_ascend_the_throne
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = -1
@@ -746,7 +746,7 @@ focus_tree =
 
 	focus = {#更宏伟的宫殿
 		id = COG_Grander_palace
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_JAP_promote_pan_asianism
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = -3
@@ -763,7 +763,7 @@ focus_tree =
 
 	focus = {#把金子埋给未来
 		id = COG_Gold_for_tomorrow
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CONGO_gold_and_diamonds
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = -2
@@ -780,7 +780,7 @@ focus_tree =
 
 	focus = {#商路翻新
 		id = COG_Trade_route_renovation
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_improve_roads
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 3
@@ -797,7 +797,7 @@ focus_tree =
 
 	focus = {#广种翠玉竹
 		id = COG_Jadeglow_grove
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = -5
@@ -814,7 +814,7 @@ focus_tree =
 
 	focus = {#庆祝天灯节
 		id = COG_Sky_lantern_festival
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_JAP_the_shuilikeng_power_plant
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = -4
@@ -832,7 +832,7 @@ focus_tree =
 
 	focus = {#城乡扩建
 		id = COG_City_country_expansion
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 2
@@ -849,7 +849,7 @@ focus_tree =
 
 	focus = {#增添更多的
 		id = COG_City_country_expansion
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_PHI_philippine_independent_church
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 2
@@ -866,7 +866,7 @@ focus_tree =
 
 	focus = {#扩大农业投资
 		id = COG_Agri_investment_boost
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 4
@@ -883,7 +883,7 @@ focus_tree =
 
 	focus = {#扩大农业投资
 		id = COG_Agri_investment_boost
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_farmland
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 4
@@ -900,7 +900,7 @@ focus_tree =
 
 	focus = {#绮罗工业的扩张
 		id = COG_Kiiro_industry_growth
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_industry_investment
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 5
@@ -917,7 +917,7 @@ focus_tree =
 
 	focus = {#一条神奇的天路
 		id = COG_A_magic_sky_road
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_railroad
 		cost = 1
 		relative_position_id = COG_Build_and_grow
 		x = 0
@@ -934,7 +934,7 @@ focus_tree =
 
 	focus = {#和领主们的谈判
 		id = COG_Negotiating_with_lords
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
 		cost = 1
 		relative_position_id = COG_A_magic_sky_road
 		x = -2
@@ -951,7 +951,7 @@ focus_tree =
 
 	focus = {#筹备资金
 		id = COG_Fundraising
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		cost = 1
 		relative_position_id = COG_A_magic_sky_road
 		x = 0
@@ -968,7 +968,7 @@ focus_tree =
 
 	focus = {#与萌螈们妥协
 		id = COG_Compromising_with_Moelotls
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SIA_the_midnight_meeting
 		cost = 1
 		relative_position_id = COG_A_magic_sky_road
 		x = 2
@@ -985,7 +985,7 @@ focus_tree =
 
 	focus = {#联系王国内部的铁路
 		id = COG_Our_connecting_railway
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_supply_line
 		cost = 1
 		relative_position_id = COG_Fundraising
 		x = 0
@@ -1010,7 +1010,7 @@ focus_tree =
 
 	focus = {#联系王国内部的铁路
 		id = COG_Our_conneway
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SOV_south_manchuria_railway
 		cost = 1
 		relative_position_id = COG_Fundraising
 		x = 0
@@ -1032,7 +1032,7 @@ focus_tree =
 
 	focus = {#开办技校
 		id = COG_Technical_training_courses
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_education
 		cost = 1
 		relative_position_id = COG_Our_connecting_railway
 		x = 1
@@ -1049,7 +1049,7 @@ focus_tree =
 
 	focus = {#义务教育普及
 		id = COG_Compulsory_education
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_AUS_womens_education_initiative
 		cost = 1
 		relative_position_id = COG_Our_connecting_railway
 		x = -1
@@ -1066,7 +1066,7 @@ focus_tree =
 
 	focus = {#工业西迁
 		id = COG_Westward_industry
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_military_industry
 		cost = 1
 		relative_position_id = COG_Our_connecting_railway
 		x = -2
@@ -1083,7 +1083,7 @@ focus_tree =
 
 	focus = {#重组国防
 		id = COG_Defense_reform
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CZE_army_reform
 		cost = 1
 		relative_position_id = COG_The_future_of_us
 		x = 15
@@ -1100,7 +1100,7 @@ focus_tree =
 
 	focus = {#魅魔，统帅一切
 		id = COG_Endless_power_of_Mima
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = 0
@@ -1121,7 +1121,7 @@ focus_tree =
 
 	focus = {#划分合适的战区
 		id = COG_War_zone_demarcation
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CONGO_regional_specialization
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = 3
@@ -1138,7 +1138,7 @@ focus_tree =
 
 	focus = {#制服规范
 		id = COG_Uniform_regulations
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_military_into_the_workforce
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = -3
@@ -1155,7 +1155,7 @@ focus_tree =
 
 	focus = {#统一军官体系
 		id = COG_Officer_unification
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CONGO_chefs_coutumiers
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = -5
@@ -1172,7 +1172,7 @@ focus_tree =
 
 	focus = {#规定将官名额
 		id = COG_Officer_quotas
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_ETH_empower_the_ras
 		cost = 1
 		relative_position_id = COG_Officer_unification
 		x = 0
@@ -1189,7 +1189,7 @@ focus_tree =
 
 	focus = {#整编地方武装
 		id = COG_Local_force_integration
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_CONGO_force_publique
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = 5
@@ -1206,7 +1206,7 @@ focus_tree =
 
 	focus = {#裁撤冗余军队
 		id = COG_Army_reduction
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_COG_force_publique_mutiny
 		cost = 1
 		relative_position_id = COG_Local_force_integration
 		x = 0
@@ -1223,7 +1223,7 @@ focus_tree =
 
 	focus = {#科技赋能
 		id = COG_Tech_empowerment
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_NORDIC_com_research
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = 1
@@ -1244,7 +1244,7 @@ focus_tree =
 
 	focus = {#向宗主国学习
 		id = COG_Study_from_our_lord
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_advanced_military_studies
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = 3
@@ -1262,7 +1262,7 @@ focus_tree =
 
 	focus = {#翱翔天地的绮罗
 		id = COG_Sky_soaring_Kiiro
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_PER_luftwaffe_planes
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = 5
@@ -1280,7 +1280,7 @@ focus_tree =
 
 	focus = {#配发眼镜
 		id = COG_Prepare_glasses
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Ratkin_shipping
 		x = 0
@@ -1297,7 +1297,7 @@ focus_tree =
 
 	focus = {#军事理论改进
 		id = COG_Military_theory_upgrade
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_goal_generic_military_sphere
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = 0
@@ -1315,7 +1315,7 @@ focus_tree =
 
 	focus = {#鼠鼠托运
 		id = COG_Ratkin_shipping
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = -1
@@ -1333,7 +1333,7 @@ focus_tree =
 
 	focus = {#
 		id = COG_Ratki
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Ratkin_shipping
 		x = -2
@@ -1351,7 +1351,7 @@ focus_tree =
 
 	focus = {#绮罗特供食品
 		id = COG_kiiro_rations
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_tea_exports
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = 1.5
@@ -1369,7 +1369,7 @@ focus_tree =
 
 	focus = {#特战化绮罗
 		id = COG_Elite_Kiiro
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_GER_demonstration_of_military_achievements
 		cost = 1
 		relative_position_id = COG_Tech_empowerment
 		x = 4
@@ -1387,7 +1387,7 @@ focus_tree =
 
 	focus = {#丛林特战
 		id = COG_Jungle_training
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_generic_jungle_training
 		cost = 1
 		relative_position_id = COG_Elite_Kiiro
 		x = -2
@@ -1404,7 +1404,7 @@ focus_tree =
 
 	focus = {#夜战精英
 		id = COG_Night_elite
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SIA_night_time_training
 		cost = 1
 		relative_position_id = COG_Elite_Kiiro
 		x = 2
@@ -1421,7 +1421,7 @@ focus_tree =
 
 	focus = {#敏捷身姿
 		id = COG_Agile_movement
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_SIA_united_against_aggresion
 		cost = 1
 		relative_position_id = COG_Elite_Kiiro
 		x = -1
@@ -1438,7 +1438,7 @@ focus_tree =
 
 	focus = {#与时俱进的特化装备
 		id = COG_Advanced_gear
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_FIN_weapon_caches
 		cost = 1
 		relative_position_id = COG_Elite_Kiiro
 		x = 1
@@ -1457,7 +1457,7 @@ focus_tree =
 
 	focus = {#魔法追求
 		id = COG_Magical_pursuit
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_the_sun_sets
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = -1
@@ -1478,7 +1478,7 @@ focus_tree =
 
 	focus = {#改进原来的修行方法
 		id = COG_Cultivation_reform
-		icon = GFX_ideas_CPC_over_the_sky
+		icon = GFX_focus_RAJ_i_am_death
 		cost = 1
 		relative_position_id = COG_Magical_pursuit
 		x = 0
@@ -1496,7 +1496,7 @@ focus_tree =
 
 	focus = {#
 		id = COG_
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Magical_pursuit
 		x = -3
@@ -1514,7 +1514,7 @@ focus_tree =
 
 	focus = {#萌螈修士
 		id = COG_E
-		icon = GFX_ideas_CPC_over_the_sky
+		 
 		cost = 1
 		relative_position_id = COG_Magical_pursuit
 		x = -4
