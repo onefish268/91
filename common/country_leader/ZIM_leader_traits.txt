@@ -81,7 +81,7 @@ leader_traits = {
         drift_defence_factor = 0.1
         stability_weekly = 0.003
         war_support_weekly = 0.003
-        political_power_cost = -30
+        political_power_cost = -0.3
         repair_speed_factor = 0.2
 
 
