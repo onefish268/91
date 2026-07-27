@@ -212,5 +212,14 @@ ideas = {
 			}
 		}
 		
+		COG_Defense_reform_idea = {
+			name = COG_Defense_reform_idea_name
+			#picture = ""
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+			}
+		}
 	}
 }

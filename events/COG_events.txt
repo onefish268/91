@@ -531,3 +531,60 @@ country_event = {#新家园
 		#custom_effect_tooltip = SA_COG_event.00100.a_tip
 	}
 }
+
+country_event = {#鼠族反对——松散的政权造成的困境
+	id = SA_COG_event.01000
+	title = SA_COG_event.01000.t
+	desc = SA_COG_event.01000.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = SA_COG_event.01000.a
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			load_oob = "COG_Overreaching_lords"
+		}
+	}
+
+	option = {
+		name = SA_COG_event.01000.b
+		ai_chance = {
+			base = 1
+		}
+		/
+	}
+}
+
+country_event = {#强行忽视松散的政权带来的阻力
+	id = SA_COG_event.01001
+	title = SA_COG_event.01001.t
+	desc = SA_COG_event.01001.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			has_country_flag = COG_Mima_has_awared
+		}
+		name = SA_COG_event.01000.a
+		ai_chance = {
+			base = 1
+		}
+		/
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_country_flag = COG_Mima_has_awared }
+			has_country_flag = COG_
+		}
+		name = SA_COG_event.01000.b
+		ai_chance = {
+			base = 1
+		}
+		/
+	}
+}

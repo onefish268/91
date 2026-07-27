@@ -390,6 +390,7 @@ focus_tree =
 					has_country_flag = COG_Overreaching_lords_error
 				}
 				custom_effect_tooltip = COG_ratkin_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_ratkin
@@ -420,6 +421,7 @@ focus_tree =
 					has_country_flag = COG_Lordly_rivalries_error
 				}
 				custom_effect_tooltip = COG_ratkin_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_ratkin
@@ -436,7 +438,7 @@ focus_tree =
 		}
 	}
 
-	focus = {#贪婪的腐败者们
+	focus = {#贪婪的小人们
 		id = COG_Greedy_misers
 		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 1264
@@ -450,6 +452,7 @@ focus_tree =
 					has_country_flag = COG_Greedy_misers_error
 				}
 				custom_effect_tooltip = COG_ratkin_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_ratkin
@@ -493,6 +496,7 @@ focus_tree =
 					has_country_flag = COG_Rigid_tyranny_error
 				}
 				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_MoeLotl
@@ -523,12 +527,15 @@ focus_tree =
 					has_country_flag = COG_Frozen_hierarchy_error
 				}
 				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_MoeLotl
 				always = no
 			}
 		}
+
+
 
 		prerequisite = {
 			focus = COG_Slave_court_oppression
@@ -553,6 +560,7 @@ focus_tree =
 					has_country_flag = COG_Extreme_xenophobia_error
 				}
 				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_MoeLotl
@@ -596,12 +604,15 @@ focus_tree =
 					has_country_flag = COG_Alive_and_eat_error
 				}
 				custom_effect_tooltip = COG_dragonian_warning
+				always = yes
 			}
 			else = {
 				custom_effect_tooltip = COG_political_influence_of_dragonian
 				always = no
 			}
 		}
+
+		
 
 		prerequisite = {
 			focus = COG_Lonely_dragonian
@@ -633,6 +644,20 @@ focus_tree =
 		x = 1
 		y = 1
 
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Terrible_transport_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_Kiiro
+				always = no
+			}
+		}
+
 		prerequisite = {
 			focus = COG_Remain_moral
 		}
@@ -650,6 +675,20 @@ focus_tree =
 		x = -1
 		y = 1
 
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Terrible_transport_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_Kiiro
+				always = no
+			}
+		}
+
 		prerequisite = {
 			focus = COG_Remain_moral
 		}
@@ -666,6 +705,20 @@ focus_tree =
 		relative_position_id = COG_Remain_moral
 		x = 0
 		y = 2.5
+
+		available = {
+			if = {
+				limit = {
+					has_country_flag = COG_Decentralized_governance_error
+				}
+				custom_effect_tooltip = COG_MoeLotl_warning
+				always = yes
+			}
+			else = {
+				custom_effect_tooltip = COG_political_influence_of_Kiiro
+				always = no
+			}
+		}
 
 		prerequisite = {
 			focus = COG_Remain_moral
@@ -1100,7 +1153,7 @@ focus_tree =
 
 	focus = {#魅魔，统帅一切
 		id = COG_Endless_power_of_Mima
-		 
+		icon = GFX_focus_RAJ_red_in_the_shadows
 		cost = 1
 		relative_position_id = COG_Defense_reform
 		x = 0
