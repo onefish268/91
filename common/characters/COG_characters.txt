@@ -77,11 +77,11 @@ characters = {
 
 			
 			on_add = {
-				set_country_flag = Dragon_girl_study
+				set_country_flag = COG_Dragon_girl_study
 			}
 
 			on_remove = {
-				clr_country_flag = Dragon_girl_study
+				clr_country_flag = COG_Dragon_girl_study
 			}
 		}
 	}	

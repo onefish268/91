@@ -334,6 +334,13 @@ focus_tree =
 			focus = COG_The_future_of_us
 		}
 
+		select_effect = {
+			country_event = {
+				id = SA_COG_event.01000
+				days = 3
+			}
+		}
+
 		completion_reward = {
 			
 		}
@@ -342,7 +349,7 @@ focus_tree =
 	focus = {#冷和平
 		id = COG_Aloof_peace
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = -0
 		y = 3
@@ -362,7 +369,7 @@ focus_tree =
 	focus = {#分裂的邦国
 		id = COG_Splintered_realm
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = -2
 		y = 3
@@ -468,7 +475,7 @@ focus_tree =
 	focus = {#奴役的国度
 		id = COG_Slave_court_oppression
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = 2
 		y = 3
@@ -576,7 +583,7 @@ focus_tree =
 	focus = {#孤独的龙娘
 		id = COG_Lonely_dragonian 
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Aloof_peace
 		x = 0
 		y = -1
@@ -622,7 +629,7 @@ focus_tree =
 	focus = {#以和为贵的家伙们
 		id = COG_Remain_moral
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Aloof_peace
 		x = 0
 		y = 1
@@ -884,7 +891,7 @@ focus_tree =
 		 
 		cost = 2
 		relative_position_id = COG_Build_and_grow
-		x = 2
+		x = -7
 		y = 2
 
 		prerequisite = {
@@ -1041,7 +1048,7 @@ focus_tree =
 	}
 
 	focus = {#联系王国内部的铁路
-		id = COG_Our_conneway
+		id = over_the_hill_over_the_river
 		icon = GFX_focus_SOV_south_manchuria_railway
 		cost = 2
 		relative_position_id = COG_Fundraising

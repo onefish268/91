@@ -1,4 +1,4 @@
 focus = {
-	current = "COG_Prepare_new_year"
+	current = "COG_Overreaching_lords"
 	progress = 0
 }

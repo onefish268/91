@@ -539,13 +539,25 @@ country_event = {#鼠族反对——松散的政权造成的困境
 	#picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_flag = test_of_core_circle
+				has_country_flag = COG_Dragon_girl_study
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			load_oob = "COG_Overreaching_lords"
+		}
+	}
+
 	option = {
 		name = SA_COG_event.01000.a
 		ai_chance = {
 			base = 1
-		}
-		hidden_effect = {
-			load_oob = "COG_Overreaching_lords"
 		}
 	}
 
@@ -554,7 +566,6 @@ country_event = {#鼠族反对——松散的政权造成的困境
 		ai_chance = {
 			base = 1
 		}
-		/
 	}
 }
 
