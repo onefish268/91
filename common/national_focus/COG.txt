@@ -896,8 +896,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#增添更多的
-		id = COG_City_country_expansion
+	focus = {#
+		id = COG_
 		icon = GFX_focus_PHI_philippine_independent_church
 		cost = 2
 		relative_position_id = COG_Build_and_grow
@@ -916,23 +916,6 @@ focus_tree =
 	focus = {#扩大农业投资
 		id = COG_Agri_investment_boost
 		 
-		cost = 2
-		relative_position_id = COG_Build_and_grow
-		x = 4
-		y = 2
-
-		prerequisite = {
-			focus = COG_Build_and_grow
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#扩大农业投资
-		id = COG_Agri_investment_boost
-		icon = GFX_focus_generic_farmland
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 4
