@@ -759,13 +759,13 @@ focus_tree =
 		}
 	}
 
-	focus = {#绮罗银行成立
-		id = COG_Mine_expansion
+	focus = {#联合银行成立
+		id = COG_United_bank_founding
 		icon = GFX_focus_PER_national_bank
 		cost = 2
 		relative_position_id = COG_Build_and_grow
-		x = 1
-		y = 1
+		x = 6
+		y = 2
 
 		prerequisite = {
 			focus = COG_Build_and_grow
