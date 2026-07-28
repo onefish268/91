@@ -14,3 +14,14 @@ defined_text = {
 		localization_key = COG_Country_History_Page_03
 	}
 }
+
+
+#变动的国策完成\失败文本
+
+defined_text = {
+	name = COG_focus_complete_situation
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 1 } }
+		localization_key = COG_Country_History_Page_01
+	}
+}
