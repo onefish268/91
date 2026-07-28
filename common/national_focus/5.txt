@@ -19,7 +19,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_2
-		x = 9
+		x = 8
 		y = 1
 		cost = 0
 		icon = GFX_focus_jiubandi
@@ -31,7 +31,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_3
-		x = 13
+		x = 14
 		y = 1
 		cost = 0
 		icon = GFX_focus_canqi
@@ -43,9 +43,10 @@ focus_tree = {
 	}
 	focus = {
 		id = 4_focus_4
-		x = 15
+		x = 16
 		y = 2
 		cost = 0
+		icon = GFX_focus_TGI_chaos_inside_ones_heart
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -57,6 +58,7 @@ focus_tree = {
 		x = 5
 		y = 2
 		cost = 0
+		icon = GFX_focus_SGL_dispatch_intelligence_department
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -68,6 +70,7 @@ focus_tree = {
 		x = 10
 		y = 2
 		cost = 0
+		icon = GFX_focus_PHI_the_red_sun_over_manila
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -78,6 +81,212 @@ focus_tree = {
 		id = 4_focus_9999
 		x = 21
 		y = -10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = 4_focus_7
+		x = 3
+		y = 3
+		cost = 0
+		icon = GFX_focus_NGL_temporary_friends
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_5
+		}
+	}
+	focus = {
+		id = 4_focus_8
+		x = 5
+		y = 3
+		cost = 0
+		icon = GFX_focus_NGL_new_trade_network
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_5
+		}
+	}
+	focus = {
+		id = 4_focus_9
+		x = 7
+		y = 3
+		cost = 0
+		icon = GFX_focus_USS_imperial_parliament
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_5
+		}
+	}
+	focus = {
+		id = 4_focus_10
+		x = 5
+		y = 4
+		cost = 0
+		icon = GFX_focus_TRB_9
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_7
+		}
+		prerequisite = {
+			focus = 4_focus_8
+		}
+		prerequisite = {
+			focus = 4_focus_9
+		}
+	}
+	focus = {
+		id = 4_focus_11
+		x = 9
+		y = 3
+		cost = 0
+		icon = GFX_focus_NGL_start_reform
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_6
+		}
+	}
+	focus = {
+		id = 4_focus_12
+		x = 9
+		y = 4
+		cost = 0
+		icon = GFX_focus_USS_northwest_mine
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_11
+		}
+	}
+	focus = {
+		id = 4_focus_13
+		x = 11
+		y = 3
+		cost = 0
+		icon = GFX_focus_USS_investigate_internal_security
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_6
+		}
+	}
+	focus = {
+		id = 4_focus_14
+		x = 11
+		y = 4
+		cost = 0
+		icon = GFX_focus_NGL_rally_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_13
+		}
+	}
+	focus = {
+		id = 4_focus_15
+		x = 7
+		y = 5
+		cost = 0
+		icon = GFX_focus_NGL_everything_will_be_fine
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_10
+		}
+		prerequisite = {
+			focus = 4_focus_12
+		}
+		prerequisite = {
+			focus = 4_focus_14
+		}
+	}
+	focus = {
+		id = 4_focus_16
+		x = 15
+		y = 3
+		cost = 0
+		icon = GFX_focus_TGI_peace
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_4
+		}
+	}
+	focus = {
+		id = 4_focus_17
+		x = 15
+		y = 4
+		cost = 0
+		icon = GFX_focus_TGI_together_fuckall_act
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_16
+		}
+	}
+	focus = {
+		id = 4_focus_18
+		x = 17
+		y = 3
+		cost = 0
+		icon = GFX_focus_NGL_rally_people
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_4
+		}
+	}
+	focus = {
+		id = 4_focus_19
+		x = 17
+		y = 4
+		cost = 0
+		icon = GFX_focus_TGI_reformation_for_labor_act
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_18
+		}
+	}
+	focus = {
+		id = 4_focus_20
+		x = 16
+		y = 5
+		cost = 0
+		icon = GFX_focus_TGI_pain_from_the_illness
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_17
+		}
+		prerequisite = {
+			focus = 4_focus_19
+		}
+	}
+	focus = {
+		id = 4_focus_21
+		x = 11
+		y = 6
+		cost = 0
+		icon = GFX_focus_tanxun
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 4_focus_15
+		}
+		prerequisite = {
+			focus = 4_focus_20
+		}
+	}
+	focus = {
+		id = 4_focus_9998
+		x = 21
+		y = 15
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
