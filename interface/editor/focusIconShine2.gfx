@@ -97,6 +97,48 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_tanxun"
+		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
 				x = 0.0
 				y = 0.0
 			}
@@ -106,7 +148,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
