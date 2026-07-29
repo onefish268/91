@@ -100,7 +100,7 @@ ideas = {
 		} 
 
 		COG_Absent_rule_0 = {#缺席的统治0级
-			name = COG_Absent_rule_0_name
+			name = COG_Absent_rule_name
 			#picture = ""
 			modifier = {
 			    production_speed_buildings_factor = -0.3
@@ -111,7 +111,7 @@ ideas = {
 		}
 
 		COG_Absent_rule_1 = {#缺席的统治1级
-			name = COG_Absent_rule_1_name
+			name = COG_Absent_rule_name
 			#picture = ""
 			modifier = {
 			    production_speed_buildings_factor = -0.2
@@ -122,13 +122,34 @@ ideas = {
 		}
 
 		COG_Absent_rule_2 = {#缺席的统治2级
-			name = COG_Absent_rule_2_name
+			name = COG_Absent_rule_name
 			#picture = ""
 			modifier = {
 			    production_speed_buildings_factor = -0.1
     			industrial_capacity_factory =  -0.1
     			political_power_gain =  -0.1
     			consumer_goods_factor = 0.1
+			}
+		}
+
+		COG_Military_disarray = {#混乱的军队
+			name = COG_Military_disarray_name
+			#picture = ""
+			modifier = {
+			    army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_org_factor = -0.5
+			}
+		}
+
+		COG_Command_chaos = {#指挥混乱
+			name = COG_Military_disarray_name
+			#picture = ""
+			modifier = {
+			    army_speed_factor = -0.5
+				command_power_gain_mult = -0.2
+				army_retreat_speed_factor = -0.3
+				army_attack_speed_factor = -0.3
 			}
 		}
 
@@ -212,7 +233,7 @@ ideas = {
 			}
 		}
 		
-		COG_Defense_reform_idea = {
+		COG_Defense_reform_idea = {#军事重组
 			name = COG_Defense_reform_idea_name
 			#picture = ""
 			modifier = {
