@@ -1,0 +1,28 @@
+add_namespace = ZSB
+
+country_event = {#深夜的市长府邸
+    id = ZSB.1
+    title = ZSB.1.t
+    desc = ZSB.1.desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = ZSB.1.a
+        scoped_play_song = "ZSB_effect_1"
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#给南非的警告
+    id = ZSB.2
+    title = ZSB.2.t
+    desc = ZSB.2.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.2.a
+        ai_chance = { base = 50 }
+    }
+}

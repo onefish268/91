@@ -1,0 +1,11 @@
+music_station = "Adorable_heart_superevents"
+
+music = {
+    song = "ZSB_effect_1"
+    chance = {
+        modifier = {
+            factor = 0
+            has_war = no
+        }
+    }
+}

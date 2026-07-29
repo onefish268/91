@@ -71,4 +71,40 @@ spriteTypes = {
         name = "lgly"
         texturefile = "gfx/leaders/ZIM/lgly.png"
     }
+    spriteType = {
+        name = "xielaode"
+        texturefile = "gfx/leaders/ZIM/xielaode.png"
+    }
+    spriteType = {
+        name = "wwa"
+        texturefile = "gfx/leaders/ZIM/wwa.png"
+    }
+    spriteType = {
+        name = "kll"
+        texturefile = "gfx/leaders/ZIM/kll.png"
+    }
+    spriteType = {
+        name = "btl"
+        texturefile = "gfx/leaders/ZIM/btl.png"
+    }
+    spriteType = {
+        name = "ht"
+        texturefile = "gfx/leaders/ZIM/ht.png"
+    }
+    spriteType = {
+        name = "wet"
+        texturefile = "gfx/leaders/ZIM/wet.png"
+    }
+    spriteType = {
+        name = "nwe"
+        texturefile = "gfx/leaders/ZIM/nwe.png"
+    }
+    spriteType = {
+        name = "aml"
+        texturefile = "gfx/leaders/ZIM/aml.png"
+    }
+    spriteType = {
+        name = "xlk"
+        texturefile = "gfx/leaders/ZIM/xlk.png"
+    }
 }

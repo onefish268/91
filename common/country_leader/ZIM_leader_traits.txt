@@ -115,6 +115,103 @@ leader_traits = {
             factor = 10
         }    
     }
+    story_qinmizhanyou_trait = {
+        random = no
+        political_power_cost = -0.1
+        war_support_factor = 0.1
+        political_power_gain = 0.5
+        political_advisor_cost_factor = -0.2
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_caizhengbuzhang_trait = {
+        random = no
+        consumer_goods_factor = -0.35
+        production_speed_industrial_complex_factor = 0.15
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_zhimindiguanliao_trait = {
+        random = no
+        consumer_goods_factor = 0.1
+        required_garrison_factor = -0.2
+        non_core_manpower = 0.1
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_shangyedaheng_trait = {
+        random = no
+        production_speed_buildings_factor = 0.1
+        industrial_capacity_factory = 0.15
+        trade_opinion_factor = 0.35
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_xuezhe_trait = {
+        random = no
+        research_speed_factor = 0.15
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_qinggongyezhuanjia_trait = {
+        random = no
+        industrial_capacity_factory = 0.15
+        production_speed_industrial_complex_factor = 0.25
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_junbeichongzhengzhe_trait = {
+        random = no
+        production_speed_arms_factory_factor = 0.15
+        industrial_capacity_factory = 0.1
+        industry_free_repair_factor = 0.2
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_tudiceliangyuan_trait = {
+        random = no
+        local_building_slots_factor = 0.25
+        local_resources_factor = 0.25
+        weekly_manpower = 500
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
+    story_laojunguan_trait = {
+        random = no
+        ai_focus_aggressive_factor = 0.25
+        army_attack_factor = 0.15
+        army_speed_factor = 0.1
+        army_org_factor = 0.3
+
+
+        ai_will_do = {
+            factor = 10
+        }    
+    }
     story_shengruxiongshi_trait = {
         random = no
         production_factory_max_efficiency_factor = 0.1
