@@ -1,7 +1,7 @@
 state = {##魔界溪谷领地的首都
 	id = 295
 	name = "STATE_295"
-	manpower = 3603965
+	manpower = 1603965
 	state_category = three
 	local_supplies = 1.0
 

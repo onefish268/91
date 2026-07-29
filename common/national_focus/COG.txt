@@ -1189,6 +1189,23 @@ focus_tree =
 		}
 	}
 
+	focus = {#
+		id = COG_A_magi
+		icon = GFX_focus_generic_military_industry
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {#重组国防
 		id = COG_Defense_reform
 		icon = GFX_focus_CZE_army_reform

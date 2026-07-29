@@ -1,7 +1,7 @@
 state = {
 	id = 297
 	name = "STATE_297" # Equatorial Guinea
-	manpower = 985000
+	manpower = 3585000
 	state_category = ten
 
 	resources = {
