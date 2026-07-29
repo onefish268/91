@@ -315,7 +315,7 @@ focus_tree =
 		x = 30
 		y = 2
 
-		
+		cancelable = yes
 
 		completion_reward = {
 			
@@ -334,6 +334,15 @@ focus_tree =
 			focus = COG_The_future_of_us
 		}
 
+		select_effect = {
+			country_event = {
+				id = SA_COG_event.01000
+				days = 3
+			}
+		}
+
+		cancelable = yes
+
 		completion_reward = {
 			
 		}
@@ -342,7 +351,7 @@ focus_tree =
 	focus = {#冷和平
 		id = COG_Aloof_peace
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = -0
 		y = 3
@@ -362,7 +371,7 @@ focus_tree =
 	focus = {#分裂的邦国
 		id = COG_Splintered_realm
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = -2
 		y = 3
@@ -468,7 +477,7 @@ focus_tree =
 	focus = {#奴役的国度
 		id = COG_Slave_court_oppression
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Political_reform
 		x = 2
 		y = 3
@@ -576,7 +585,7 @@ focus_tree =
 	focus = {#孤独的龙娘
 		id = COG_Lonely_dragonian 
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Aloof_peace
 		x = 0
 		y = -1
@@ -622,7 +631,7 @@ focus_tree =
 	focus = {#以和为贵的家伙们
 		id = COG_Remain_moral
 		 
-		cost = 2
+		cost = 1264
 		relative_position_id = COG_Aloof_peace
 		x = 0
 		y = 1
@@ -759,13 +768,13 @@ focus_tree =
 		}
 	}
 
-	focus = {#绮罗银行成立
-		id = COG_Mine_expansion
+	focus = {#联合银行成立
+		id = COG_United_bank_founding
 		icon = GFX_focus_PER_national_bank
 		cost = 2
 		relative_position_id = COG_Build_and_grow
-		x = 1
-		y = 1
+		x = 6
+		y = 2
 
 		prerequisite = {
 			focus = COG_Build_and_grow
@@ -844,12 +853,45 @@ focus_tree =
 		}
 	}
 
+	focus = {#猫薄荷的广泛种植
+		id = COG_Catmint_plantation
+		cost = 2
+		relative_position_id = COG_Build_and_grow
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {#广种翠玉竹
 		id = COG_Jadeglow_grove
 		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = -5
+		y = 1
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#劳动力协议与关税协议重订
+		id = COG_Labor_tariff_redo
+		icon = GFX_focus_generic_education
+		cost = 2
+		relative_position_id = COG_Build_and_grow
+		x = -7
 		y = 1
 
 		prerequisite = {
@@ -881,28 +923,28 @@ focus_tree =
 
 	focus = {#城乡扩建
 		id = COG_City_country_expansion
-		 
-		cost = 2
-		relative_position_id = COG_Build_and_grow
-		x = 2
-		y = 2
-
-		prerequisite = {
-			focus = COG_Build_and_grow
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#增添更多的
-		id = COG_City_country_expansion
 		icon = GFX_focus_PHI_philippine_independent_church
 		cost = 2
 		relative_position_id = COG_Build_and_grow
-		x = 2
+		x = -6
 		y = 2
+
+		prerequisite = {
+			focus = COG_Build_and_grow
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗工程队
+		id = COG_Engineering_corps_formation
+		
+		cost = 2
+		relative_position_id = COG_Build_and_grow
+		x = 7
+		y = 1
 
 		prerequisite = {
 			focus = COG_Build_and_grow
@@ -916,23 +958,6 @@ focus_tree =
 	focus = {#扩大农业投资
 		id = COG_Agri_investment_boost
 		 
-		cost = 2
-		relative_position_id = COG_Build_and_grow
-		x = 4
-		y = 2
-
-		prerequisite = {
-			focus = COG_Build_and_grow
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#扩大农业投资
-		id = COG_Agri_investment_boost
-		icon = GFX_focus_generic_farmland
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 4
@@ -964,7 +989,7 @@ focus_tree =
 		}
 	}
 
-	focus = {#一条神奇的天路
+	focus = {#一条神奇的铁路
 		id = COG_A_magic_sky_road
 		icon = GFX_focus_generic_railroad
 		cost = 2
@@ -1058,7 +1083,7 @@ focus_tree =
 	}
 
 	focus = {#联系王国内部的铁路
-		id = COG_Our_conneway
+		id = over_the_hill_over_the_river
 		icon = GFX_focus_SOV_south_manchuria_railway
 		cost = 2
 		relative_position_id = COG_Fundraising
@@ -1085,6 +1110,40 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
 		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#开垦铁路沿线的荒地
+		id = COG_Railside_development
+		icon = GFX_focus_generic_education
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#站台网络扩张
+		id = COG_Railway_radiance_expansion
+		icon = GFX_focus_generic_education
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = 3
 		y = 1
 
 		prerequisite = {
@@ -1130,6 +1189,23 @@ focus_tree =
 		}
 	}
 
+	focus = {#
+		id = COG_A_magi
+		icon = GFX_focus_generic_military_industry
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {#重组国防
 		id = COG_Defense_reform
 		icon = GFX_focus_CZE_army_reform
@@ -1143,7 +1219,10 @@ focus_tree =
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				id = COG_Defense_reform_idea
+				days = 365
+			}
 		}
 	}
 
@@ -1327,23 +1406,6 @@ focus_tree =
 		}
 	}
 
-	focus = {#配发眼镜
-		id = COG_Prepare_glasses
-		 
-		cost = 2
-		relative_position_id = COG_Ratkin_shipping
-		x = 0
-		y = 1
-
-		prerequisite = {
-			focus = COG_Ratkin_shipping
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
 	focus = {#军事理论改进
 		id = COG_Military_theory_upgrade
 		icon = GFX_goal_generic_military_sphere
@@ -1362,8 +1424,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#鼠鼠托运
-		id = COG_Ratkin_shipping
+	focus = {#鼠族部队重组
+		id = COG_Ratkin_force_reorganization
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 2
 		relative_position_id = COG_Tech_empowerment
@@ -1380,17 +1442,69 @@ focus_tree =
 		}
 	}
 
-	focus = {#
-		id = COG_Ratki
-		 
+	focus = {#鼠族后勤部署
+		id = COG_Ratkin_rear_deployment
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 2
-		relative_position_id = COG_Ratkin_shipping
-		x = -2
-		y = 2.5
+		relative_position_id = COG_Ratkin_force_reorganization
+		x = -1
+		y = 1
 
 		prerequisite = {
-			focus = COG_Ratkin_shipping
+			focus = COG_Ratkin_force_reorganization
 
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#改进军粮储存
+		id = COG_Army_rations_preservation
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		cost = 2
+		relative_position_id = COG_Ratkin_rear_deployment
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Ratkin_rear_deployment
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#配发眼镜
+		id = COG_Prepare_glasses
+		 
+		cost = 2
+		relative_position_id = COG_Ratkin_force_reorganization
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Ratkin_force_reorganization
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#鼠族专用设备
+		id = COG_Ratkin_fit_gear
+		 
+		cost = 2
+		relative_position_id = COG_Prepare_glasses
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = COG_Prepare_glasses
 		}
 
 		completion_reward = {
@@ -1543,13 +1657,13 @@ focus_tree =
 		}
 	}
 
-	focus = {#
-		id = COG_
+	focus = {#修士灵团的扩编
+		id = COG_Cultivator_corps_expansion
 		 
 		cost = 2
 		relative_position_id = COG_Magical_pursuit
-		x = -3
-		y = 1.5
+		x = -4
+		y = 2.5
 
 		prerequisite = {
 			focus = COG_Tech_empowerment
@@ -1561,13 +1675,81 @@ focus_tree =
 		}
 	}
 
-	focus = {#萌螈修士
-		id = COG_E
+	focus = {#修士典籍整理
+		id = COG_Cultivation_classics_compilation
+		 
+		cost = 2
+		relative_position_id = COG_Cultivator_corps_expansion
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Cultivator_corps_expansion
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#从博杂到宗派化
+		id = COG_From_eclectic_to_sectarian
+		 
+		cost = 2
+		relative_position_id = COG_Cultivator_corps_expansion
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = COG_Cultivator_corps_expansion
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#更好的修行环境
+		id = COG_Cultivation_upgrade
+		 
+		cost = 2
+		relative_position_id = COG_Cultivator_corps_expansion
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = COG_Cultivator_corps_expansion
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#发掘富有修行潜质的人才
+		id = COG_Talent_prospecting
+		 
+		cost = 2
+		relative_position_id = COG_Cultivator_corps_expansion
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Cultivator_corps_expansion
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#魔法知识公理化
+		id = COG_Magical_research_systematization
 		 
 		cost = 2
 		relative_position_id = COG_Magical_pursuit
-		x = -4
-		y = 2.5
+		x = -3
+		y = 1.5
 
 		prerequisite = {
 			focus = COG_Tech_empowerment
