@@ -29,6 +29,15 @@ set_popularities = {
 } 
 
 recruit_character = ZSB_sitanli
+recruit_character = ZSB_xielaode
+recruit_character = ZSB_wwa
+recruit_character = ZSB_kll
+recruit_character = ZSB_btl
+recruit_character = ZSB_ht
+recruit_character = ZSB_wet
+recruit_character = ZSB_nwe
+recruit_character = ZSB_aml
+recruit_character = ZSB_xlk
 
 
 

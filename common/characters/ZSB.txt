@@ -13,5 +13,151 @@ characters = {
 	        }
 			id= -1
 		}
+	}
+	
+	#顾问	
+	ZSB_xielaode = {
+		name = "谢劳德"
+		portraits = {
+			civilian = {
+				small = "xielaode"
+			}
+		}
+		advisor = { 	
+			traits = {
+				story_qinmizhanyou_trait
+			}
+			idea_token = ZSB_xielaode
+			slot = political_advisor
+			cost = 50
+		}
+	}
+	ZSB_wwa = {
+		name = "薇薇安"
+		portraits = {
+			civilian = {
+				small = "wwa"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_caizhengbuzhang_trait
+			}
+			idea_token = ZSB_wwa
+			slot = political_advisor
+			cost = 150
+		}
+	}
+	ZSB_kll = {
+		name = "卡罗琳"
+		portraits = {
+			civilian = {
+				small = "kll"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_zhimindiguanliao_trait
+			}
+			idea_token = ZSB_kll
+			slot = political_advisor
+			cost = 150
+		}
 	}	
+	ZSB_btl = {
+		name = "巴图露"
+		portraits = {
+			civilian = {
+				small = "btl"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_shangyedaheng_trait
+			}
+			idea_token = ZSB_btl
+			slot = political_advisor
+			cost = 150
+		}
+	}	
+	ZSB_ht = {
+		name = "怀特"
+		portraits = {
+			civilian = {
+				small = "ht"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_xuezhe_trait
+			}
+			idea_token = ZSB_ht
+			slot = political_advisor
+			cost = 150
+		}
+	}	
+	ZSB_wet = {
+		name = "瓦尔特"
+		portraits = {
+			civilian = {
+				small = "wet"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_qinggongyezhuanjia_trait
+			}
+			idea_token = ZSB_wet
+			slot = political_advisor
+			cost = 150
+		}
+	}	
+	ZSB_nwe = {
+		name = "内维尔"
+		portraits = {
+			civilian = {
+				small = "nwe"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_junbeichongzhengzhe_trait
+			}
+			idea_token = ZSB_nwe
+			slot = political_advisor
+			cost = 150
+		}
+	}	
+	ZSB_aml = {
+		name = "艾米露"
+		portraits = {
+			civilian = {
+				small = "aml"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_tudiceliangyuan_trait
+			}
+			idea_token = ZSB_aml
+			slot = political_advisor
+			cost = 150
+		}
+	}	
+	ZSB_xlk = {
+		name = "西莉卡"
+		portraits = {
+			civilian = {
+				small = "xlk"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_laojunguan_trait
+			}
+			idea_token = ZSB_xlk
+			slot = political_advisor
+			cost = 150
+		}
+	}		
 }

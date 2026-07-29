@@ -12,33 +12,47 @@ focus_tree = {
 		id = 4_focus_1
 		x = 11
 		y = 0
-		cost = 0
+		cost = 1
 		icon = GFX_focus_lixiangshenyuan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		completion_reward = {
+			country_event = {
+				id = ZSB.1
+				days = 5
+			}
+			add_stability = -0.35
+			add_war_support = -0.3
+		}
 	}
 	focus = {
 		id = 4_focus_2
 		x = 8
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_jiubandi
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_1
 		}
+		completion_reward = {
+			add_political_power = 200
+		}
 	}
 	focus = {
 		id = 4_focus_3
 		x = 14
 		y = 1
-		cost = 0
+		cost = 2
 		icon = GFX_focus_canqi
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_1
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 	focus = {

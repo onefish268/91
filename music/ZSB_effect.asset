@@ -1,0 +1,5 @@
+music = {
+    name = "ZSB_effect_1"
+    file = "ZSB_effect_1.ogg"
+    volume = 0.7
+}
