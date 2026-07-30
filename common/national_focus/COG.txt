@@ -748,6 +748,9 @@ focus_tree =
 
 		completion_reward = {
 			custom_effect_tooltip = COG_Build_and_grow_tip
+			hidden_effect = {
+				set_country_flag = COG_Build_and_grow_flag
+			}
 		}
 	}
 
