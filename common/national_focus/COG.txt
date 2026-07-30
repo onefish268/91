@@ -747,13 +747,13 @@ focus_tree =
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = COG_Build_and_grow_tip
 		}
 	}
 
 	focus = {#矿场扩建
 		id = COG_Mine_expansion
-		 
+		icon = GFX_focus_generic_mineral_prospecting
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 1
@@ -855,6 +855,7 @@ focus_tree =
 
 	focus = {#猫薄荷的广泛种植
 		id = COG_Catmint_plantation
+		icon = GFX_focus_PHI_pro_hacendados
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 2
@@ -888,7 +889,7 @@ focus_tree =
 
 	focus = {#劳动力协议与关税协议重订
 		id = COG_Labor_tariff_redo
-		icon = GFX_focus_generic_education
+		icon = GFX_focus_SIA_the_yellow_dossier
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = -7
@@ -940,7 +941,7 @@ focus_tree =
 
 	focus = {#绮罗工程队
 		id = COG_Engineering_corps_formation
-		
+		icon = GFX_focus_ITA_workers_unions
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 7
@@ -957,7 +958,7 @@ focus_tree =
 
 	focus = {#扩大农业投资
 		id = COG_Agri_investment_boost
-		 
+		icon = GFX_focus_generic_modernizing_agriculture
 		cost = 2
 		relative_position_id = COG_Build_and_grow
 		x = 4
@@ -1106,7 +1107,7 @@ focus_tree =
 
 	focus = {#开办技校
 		id = COG_Technical_training_courses
-		icon = GFX_focus_generic_education
+		icon = GFX_focus_generic_pilot_training
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
 		x = 1
@@ -1123,7 +1124,7 @@ focus_tree =
 
 	focus = {#开垦铁路沿线的荒地
 		id = COG_Railside_development
-		icon = GFX_focus_generic_education
+		icon = GFX_focus_generic_industral_devlopment_bucket
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
 		x = 2
@@ -1140,7 +1141,7 @@ focus_tree =
 
 	focus = {#站台网络扩张
 		id = COG_Railway_radiance_expansion
-		icon = GFX_focus_generic_education
+		icon = GFX_focus_JAP_manchuria_airplane_manufacturing_company
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
 		x = 3
@@ -1426,7 +1427,7 @@ focus_tree =
 
 	focus = {#鼠族部队重组
 		id = COG_Ratkin_force_reorganization
-		icon = GFX_focus_generic_reinforcing_the_supply_network
+		icon = GFX_focus_PRC_develop_the_army
 		cost = 2
 		relative_position_id = COG_Tech_empowerment
 		x = -1
@@ -1462,7 +1463,7 @@ focus_tree =
 
 	focus = {#改进军粮储存
 		id = COG_Army_rations_preservation
-		icon = GFX_focus_generic_reinforcing_the_supply_network
+		icon = GFX_focus_SIA_pad_thai
 		cost = 2
 		relative_position_id = COG_Ratkin_rear_deployment
 		x = -1
@@ -1480,7 +1481,7 @@ focus_tree =
 
 	focus = {#配发眼镜
 		id = COG_Prepare_glasses
-		 
+		icon = GFX_focus_SIA_war_fervor
 		cost = 2
 		relative_position_id = COG_Ratkin_force_reorganization
 		x = 1
@@ -1497,7 +1498,7 @@ focus_tree =
 
 	focus = {#鼠族专用设备
 		id = COG_Ratkin_fit_gear
-		 
+		icon = GFX_focus_PRC_equipment_from_copper_coins
 		cost = 2
 		relative_position_id = COG_Prepare_glasses
 		x = 1
@@ -1659,7 +1660,7 @@ focus_tree =
 
 	focus = {#修士灵团的扩编
 		id = COG_Cultivator_corps_expansion
-		 
+		icon = GFX_focus_RAJ_a_private_military
 		cost = 2
 		relative_position_id = COG_Magical_pursuit
 		x = -4
@@ -1677,7 +1678,7 @@ focus_tree =
 
 	focus = {#修士典籍整理
 		id = COG_Cultivation_classics_compilation
-		 
+		icon = GFX_focus_SIA_the_purge
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = -2
@@ -1694,7 +1695,7 @@ focus_tree =
 
 	focus = {#从博杂到宗派化
 		id = COG_From_eclectic_to_sectarian
-		 
+		icon = GFX_focus_SWI_dissolve_the_federal_council
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = -1
@@ -1711,7 +1712,7 @@ focus_tree =
 
 	focus = {#更好的修行环境
 		id = COG_Cultivation_upgrade
-		 
+		icon = GFX_focus_TUR_the_sun_language_theory
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = 1
@@ -1728,7 +1729,7 @@ focus_tree =
 
 	focus = {#发掘富有修行潜质的人才
 		id = COG_Talent_prospecting
-		 
+		icon = GFX_focus_SIA_steel_arteries
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = 2
@@ -1745,7 +1746,7 @@ focus_tree =
 
 	focus = {#魔法知识公理化
 		id = COG_Magical_research_systematization
-		 
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
 		cost = 2
 		relative_position_id = COG_Magical_pursuit
 		x = -3
