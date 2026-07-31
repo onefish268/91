@@ -38,6 +38,15 @@ recruit_character = ZSB_wet
 recruit_character = ZSB_nwe
 recruit_character = ZSB_aml
 recruit_character = ZSB_xlk
+recruit_character = ZSB_nwellj
+recruit_character = ZSB_stlbj
+recruit_character = ZSB_ktxy
+recruit_character = ZSB_szj
+recruit_character = ZSB_blt
+recruit_character = ZSB_adl
+recruit_character = ZSB_ktln
+recruit_character = ZSB_pln
+recruit_character = ZSB_awl
 
 
 

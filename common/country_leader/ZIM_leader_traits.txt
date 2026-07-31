@@ -212,6 +212,28 @@ leader_traits = {
             factor = 10
         }    
     }
+    story_jianyuezhuangbeigongchengshi_trait = {
+        random = no
+        production_lack_of_resource_penalty_factor = -0.1
+        land_equipment_upgrade_xp_cost = -0.5
+        equipment_bonus = {
+            infantry_equipment = { 
+                soft_attack = 0.10
+                build_cost_ic = -0.15
+                reliability = 0.05
+                instant = yes 
+            }
+            artillery_equipment = { 
+                soft_attack = 0.10
+                build_cost_ic = -0.15
+                reliability = 0.05
+                instant = yes 
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }    
+    }
     story_shengruxiongshi_trait = {
         random = no
         production_factory_max_efficiency_factor = 0.1

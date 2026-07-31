@@ -159,5 +159,145 @@ characters = {
 			slot = political_advisor
 			cost = 150
 		}
-	}		
+	}
+	
+#理论家
+	ZSB_nwellj = {
+		name = "内维尔"
+		portraits = {
+			civilian = {
+				small = "nwe"
+			}
+		}
+		advisor = { 
+			traits = {
+				story_jianyuezhuangbeigongchengshi_trait
+			}
+			idea_token = ZSB_nwellj
+			slot = theorist
+			cost = 150
+		}
+	}	
+
+	#将军
+	ZSB_stlbj = {
+		name = "斯坦利伯爵"
+		portraits = {
+			army = {
+				large = "stlbj"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}	
+	ZSB_ktxy = {
+		name = "卡提西亚"
+		portraits = {
+			army = {
+				large = "ktxy"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}	
+	ZSB_szj = {
+		name = "十字军"
+		portraits = {
+			army = {
+				large = "szj"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
+	ZSB_blt = {
+		name = "波莱塔"
+		portraits = {
+			army = {
+				large = "blt"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}	
+	ZSB_adl = {
+		name = "安德烈"
+		portraits = {
+			army = {
+				large = "adl"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}	
+	ZSB_ktln = {
+		name = "卡特琳娜"
+		portraits = {
+			army = {
+				large = "ktln"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
+	ZSB_pln = {
+		name = "佩里纽"
+		portraits = {
+			army = {
+				large = "pln"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}	
+	ZSB_awl = {
+		name = "阿瓦莱"
+		portraits = {
+			army = {
+				large = "awl"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
 }
