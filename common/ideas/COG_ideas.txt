@@ -18,13 +18,28 @@ ideas = {
 				#取消判定
 		#		exists = no
 		#	}
-		#	on_add = {
+		#	on_add = {            这是支出钱的效果，on-add要求
 				#获得精神的同时给的东西
 		#		add_political_power = 100
+		#		on_add = {
+		#		add_to_variable = {
+					#额外开支
+		#			exoutcome = 10
+		#		}
+		#	}
 		#	}
 		#	on_remove = {
 				#移除后的效果
 		#		add_political_power = -100
+		#	on_remove = {
+		#		add_to_variable = {
+					#额外开支
+		#			exoutcome = -10
+		#		}
+		#	}
+		#modifier = {         这是收入的效果
+		#		hcp_exincome_monthly = 5
+		#	}
 		#	}
 		#	do_effect = {
 				#似乎无效的生效判定
