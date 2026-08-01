@@ -63,4 +63,16 @@ spriteTypes = {
         name = "GFX_idea_shehuixianzhuang"
         texturefile = "gfx/interface/ideas/shehuixianzhuang.png"
     }
+    spriteType = {
+        name = "GFX_idea_ziligengsheng"
+        texturefile = "gfx/interface/ideas/ziligengsheng.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zhongzhichengcheng"
+        texturefile = "gfx/interface/ideas/zhongzhichengcheng.png"
+    }
+    spriteType = {
+        name = "GFX_idea_tuanjiedejundui"
+        texturefile = "gfx/interface/ideas/tuanjiedejundui.png"
+    }
 }

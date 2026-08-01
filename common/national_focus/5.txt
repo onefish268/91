@@ -21,8 +21,8 @@ focus_tree = {
 				id = ZSB.1
 				days = 5
 			}
-			add_stability = -0.35
-			add_war_support = -0.3
+			add_stability = -0.55
+			add_war_support = -0.5
 		}
 	}
 	focus = {
@@ -59,36 +59,45 @@ focus_tree = {
 		id = 4_focus_4
 		x = 16
 		y = 2
-		cost = 0
+		cost = 1
 		icon = GFX_focus_TGI_chaos_inside_ones_heart
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_3
 		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
 	}
 	focus = {
 		id = 4_focus_5
 		x = 5
 		y = 2
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SGL_dispatch_intelligence_department
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_2
 		}
+		completion_reward = {
+			custom_effect_tooltip = "联邦将开始尝试与外界沟通"
+		}
 	}
 	focus = {
 		id = 4_focus_6
 		x = 10
 		y = 2
-		cost = 0
+		cost = 2
 		icon = GFX_focus_PHI_the_red_sun_over_manila
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = "我们将开始处理内部事务"
 		}
 	}
 	focus = {
@@ -103,43 +112,61 @@ focus_tree = {
 		id = 4_focus_7
 		x = 3
 		y = 3
-		cost = 0
+		cost = 1
 		icon = GFX_focus_NGL_temporary_friends
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_5
 		}
+		completion_reward = {
+			country_event = {
+				id = ZSB.2
+				days = 10
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_8
 		x = 5
 		y = 3
-		cost = 0
+		cost = 1
 		icon = GFX_focus_NGL_new_trade_network
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_5
 		}
+		completion_reward = {
+			country_event = {
+				id = ZSB.3
+				days = 10
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_9
 		x = 7
 		y = 3
-		cost = 0
+		cost = 1
 		icon = GFX_focus_USS_imperial_parliament
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_5
 		}
+		completion_reward = {
+			country_event = {
+				id = ZSB.4
+				days = 10
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_10
 		x = 5
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_TRB_9
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -152,60 +179,95 @@ focus_tree = {
 		prerequisite = {
 			focus = 4_focus_9
 		}
+		completion_reward = {
+			add_ideas = ZSB_1
+		}
 	}
 	focus = {
 		id = 4_focus_11
 		x = 9
 		y = 3
-		cost = 0
+		cost = 2
 		icon = GFX_focus_NGL_start_reform
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_6
 		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = 4_focus_12
 		x = 9
 		y = 4
-		cost = 0
+		cost = 4
 		icon = GFX_focus_USS_northwest_mine
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_11
 		}
+		completion_reward = {
+			813 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			813 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_13
 		x = 11
 		y = 3
-		cost = 0
+		cost = 2
 		icon = GFX_focus_USS_investigate_internal_security
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_6
 		}
+		completion_reward = {
+			country_event = {
+				id = ZSB.5
+				days = 5
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_14
 		x = 11
 		y = 4
-		cost = 0
+		cost = 4
 		icon = GFX_focus_NGL_rally_army
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_13
 		}
+		completion_reward = {
+			country_event = {
+				id = ZSB.6
+				days = 5
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_15
 		x = 7
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_NGL_everything_will_be_fine
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -218,60 +280,86 @@ focus_tree = {
 		prerequisite = {
 			focus = 4_focus_14
 		}
+		completion_reward = {
+			add_ideas = ZSB_2
+		}
 	}
 	focus = {
 		id = 4_focus_16
 		x = 15
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_TGI_peace
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_4
 		}
+		completion_reward = {
+			load_oob = "default_devision"
+			capital_scope = {
+				create_unit = {
+					division = "name = \"殖民地武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					owner = ROOT
+					count = 7
+				}
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_17
 		x = 15
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_TGI_together_fuckall_act
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_16
 		}
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = 4_focus_18
 		x = 17
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NGL_rally_people
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_4
 		}
+		completion_reward = {
+			add_manpower = 15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
 	}
 	focus = {
 		id = 4_focus_19
 		x = 17
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_TGI_reformation_for_labor_act
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 4_focus_18
 		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = 4_focus_20
 		x = 16
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_TGI_pain_from_the_illness
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -281,12 +369,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 4_focus_19
 		}
+		completion_reward = {
+			add_ideas = ZSB_3
+		}
 	}
 	focus = {
 		id = 4_focus_21
 		x = 11
 		y = 6
-		cost = 0
+		cost = 2
 		icon = GFX_focus_tanxun
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -295,6 +386,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 4_focus_20
+		}
+		completion_reward = {
+			load_focus_tree = ZSB2_focus_tree
 		}
 	}
 	focus = {

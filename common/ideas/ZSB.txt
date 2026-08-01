@@ -1,0 +1,35 @@
+ideas = {
+
+	country = {
+		ZSB_1 = {
+			picture = ziligengsheng
+			modifier = {
+				ai_desired_divisions_factor = 20
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				training_time_army_factor = -0.4
+				experience_gain_army_factor = 0.1
+				stability_weekly_factor = 0.03
+				conscription_factor = 0.3
+			}
+		}
+		ZSB_2 = {
+			picture = zhongzhichengcheng
+			modifier = {
+				local_resources_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				army_org_factor = 0.1 
+				army_morale_factor = 0.1
+			}
+		}
+		ZSB_3 = {
+			picture = tuanjiedejundui
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				surrender_limit = 0.15 
+				mobilization_speed = 0.15
+			}
+		}
+	}
+}

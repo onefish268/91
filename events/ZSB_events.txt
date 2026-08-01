@@ -14,7 +14,7 @@ country_event = {#深夜的市长府邸
     }
 }
 
-country_event = {#给南非的警告
+country_event = {#加丹加
     id = ZSB.2
     title = ZSB.2.t
     desc = ZSB.2.desc
@@ -23,6 +23,62 @@ country_event = {#给南非的警告
 
 	option = {
         name = ZSB.2.a
+        add_resource = { 
+        steel = 20
+        tungsten = 15
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#总督府
+    id = ZSB.3
+    title = ZSB.3.t
+    desc = ZSB.3.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.3.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#南非
+    id = ZSB.4
+    title = ZSB.4.t
+    desc = ZSB.4.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.4.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#沟通
+    id = ZSB.5
+    title = ZSB.5.t
+    desc = ZSB.5.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.5.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#议会
+    id = ZSB.6
+    title = ZSB.6.t
+    desc = ZSB.6.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.6.a
         ai_chance = { base = 50 }
     }
 }
