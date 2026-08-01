@@ -51,8 +51,13 @@ bookmarks = {
             ideology = neutrality
             ideas = {
                 ZIM_a
+                ZIM_b
+                ZIM_2
             }
             focuses = {
+                new_focus_9
+                2_focus_18
+                4_focus_1
             }
         }
         "ALS" = {

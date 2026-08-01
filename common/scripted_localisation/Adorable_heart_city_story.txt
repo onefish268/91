@@ -1,0 +1,374 @@
+defined_text = {##标题（城市名）
+	name = Adorable_heart_city_story_title
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_title_Okhema
+	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = Adorable_heart_city_story_title_Salisbury
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+		}
+		localization_key = Adorable_heart_city_story_title_Lusaka
+	}
+# 柏林
+	text = {
+		trigger = {
+			state = 64
+			not = { has_global_flag = GER_build_Centre_Germania }
+		}
+		localization_key = Adorable_heart_city_story_title_Berlin
+	}
+	text = {
+		trigger = {
+			state = 64
+			has_global_flag = GER_build_Centre_Germania
+		}
+		localization_key = Adorable_heart_city_story_title_Germania
+	}
+# 纳萨力克（新德意志）
+	text = {
+		trigger = {
+			state = 1158
+			not = { has_global_flag = New_German }
+		}
+		localization_key = Adorable_heart_city_story_title_Nasalik
+	}
+	text = {
+		trigger = {
+			state = 1158
+			has_global_flag = New_German
+		}
+		localization_key = Adorable_heart_city_story_title_New_German
+	}
+# 崇宫澪-生命之树特区
+	text = {
+		trigger = {
+			state = 361
+		}
+		localization_key = Adorable_heart_city_story_title_Cabala
+	}
+# 莫斯科
+	text = {
+		trigger = {
+			state = 219
+			owner = {
+				tag = SOV
+				has_government = communism
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_title_Moscow_SOV
+	}
+	text = {
+		trigger = {
+			state = 219
+			owner = {
+				not = {
+					or = {
+						tag = SOV
+						has_government = communism
+						is_subject = no
+					}
+				}
+			}
+		}
+		localization_key = Adorable_heart_city_story_title_Moscow
+	}
+# 北京
+	text = {
+		trigger = {
+			state = 608
+			owner = {
+				tag = CHI
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_title_BeiJing
+	}
+	text = {
+		trigger = {
+			state = 608
+			owner = {
+				tag = ROC
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_title_BeiPing
+	}
+	text = {
+		trigger = {
+			state = 608
+		}
+		localization_key = Adorable_heart_city_story_title_BeiJing_generic
+	}
+#  通用
+	text = {
+		localization_key = Adorable_heart_city_story_title_generic
+	}
+}
+
+defined_text = {##文字介绍
+	name = Adorable_heart_city_story_desc
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_desc_Okhema
+	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = Adorable_heart_city_story_desc_Salisbury
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+			owner = {
+				tag = ZIM
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
+	}
+	text = {
+		trigger = {
+			state = 813
+			owner = {
+				tag = ZSB
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZSB_Lusaka
+	}
+# 柏林
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				tag = DVL
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_DVL_Berlin
+	}
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				tag = GER
+				or = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				is_subject = no
+			}
+			not = { has_global_flag = GER_build_Centre_Germania }
+		}
+		localization_key = Adorable_heart_city_story_desc_GER_Berlin_Nazi
+	}
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				tag = GER
+				or = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				is_subject = no
+			}
+			has_global_flag = GER_build_Centre_Germania
+		}
+		localization_key = Adorable_heart_city_story_desc_Germania
+	}
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				is_germany_tag = yes
+				or = {
+					has_government = democratic
+					has_government = communism
+				}
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_GER_Berlin_Free
+	}
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				is_germany_tag = yes
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_GER_Berlin
+	}
+	text = {
+		trigger = {
+			state = 64
+			owner = {
+				or = {
+					is_germany_tag = no
+					is_subject = yes
+				}
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_Berlin
+	}
+# 纳萨力克（新德意志）
+	text = {
+		trigger = {
+			state = 1158
+			not = { has_global_flag = New_German }
+		}
+		localization_key = Adorable_heart_city_story_desc_Nasalik
+	}
+	text = {
+		trigger = {
+			state = 1158
+			has_global_flag = New_German
+		}
+		localization_key = Adorable_heart_city_story_desc_New_German
+	}
+# 崇宫澪-生命之树特区
+	text = {
+		trigger = {
+			state = 361
+		}
+		localization_key = Adorable_heart_city_story_desc_Cabala
+	}
+# 莫斯科
+	text = {
+		trigger = {
+			state = 219
+		}
+		localization_key = Adorable_heart_city_story_desc_Moscow
+	}
+# 北京
+	text = {
+		trigger = {
+			state = 608
+			owner = {
+				tag = CHI
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_BeiJing
+	}
+	text = {
+		trigger = {
+			state = 608
+			owner = {
+				tag = ROC
+				is_subject = no
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_BeiPing
+	}
+	text = {
+		trigger = {
+			state = 608
+		}
+		localization_key = Adorable_heart_city_story_desc_BeiJing_generic
+	}
+#  通用
+	text = {
+		localization_key = Adorable_heart_city_story_desc_generic
+	}
+}
+
+defined_text = {##图片
+	name = Adorable_heart_city_pic
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = GFX_Okhema_city_pic
+	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = GFX_Salisbury_city_pic
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+		}
+		localization_key = GFX_Lusaka_city_pic
+	}
+# 柏林
+	text = {
+		trigger = {
+			state = 64
+			not = { has_global_flag = GER_build_Centre_Germania }
+		}
+		localization_key = GFX_Berlin_city_pic
+	}
+	text = {
+		trigger = {
+			state = 64
+			has_global_flag = GER_build_Centre_Germania
+		}
+		localization_key = GFX_Germania_city_pic
+	}
+# 纳萨力克（新德意志）
+	text = {
+		trigger = {
+			state = 1158
+			not = { has_global_flag = New_German }
+		}
+		localization_key = GFX_Nasalik_city_pic
+	}
+	text = {
+		trigger = {
+			state = 1158
+			has_global_flag = New_German
+		}
+		localization_key = GFX_Generic_city_pic
+	}
+# 崇宫澪-生命之树特区
+	text = {
+		trigger = {
+			state = 361
+		}
+		localization_key = GFX_Cabala_city_pic
+	}
+# 莫斯科
+	text = {
+		trigger = {
+			state = 219
+		}
+		localization_key = GFX_Moscow_city_pic
+	}
+# 北京
+	text = {
+		trigger = {
+			state = 608
+		}
+		localization_key = GFX_Beijing_city_pic
+	}
+#  通用
+	text = {
+		localization_key = GFX_Generic_city_pic
+	}
+}
+

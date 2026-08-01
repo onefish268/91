@@ -21,6 +21,7 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = { 7003 30 } #Harare/Salisbury
+		set_state_flag = has_city_story
 	}
 
 	provinces = {

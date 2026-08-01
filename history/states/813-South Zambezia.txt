@@ -21,6 +21,7 @@ state = {
 			7872
 			1
 		}
+		set_state_flag = has_city_story
 		buildings = {
 			infrastructure = 1
 			air_base = 1
