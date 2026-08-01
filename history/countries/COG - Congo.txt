@@ -21,6 +21,8 @@ add_ideas = {
 	COG_Kiiro_race
 	COG_Dragon_girl_race
 	COG_Lack_technology
+	COG_Colonial_boom
+	COG_Regional_oppression
 }
 
 #变量
@@ -40,6 +42,9 @@ FRA = {
 		target = COG
 		autonomous_state = autonomy_colony
 		freedom_level = 0.15
+	}
+	add_ideas = {
+		COG_Due_obligations
 	}
 }
 set_politics = {

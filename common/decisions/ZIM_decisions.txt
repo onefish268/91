@@ -12,7 +12,9 @@ ZIM_categories_0 = {
 		target_trigger = {
 			AND = {
 				ROOT = {
-					NOT = { tag = ZIM }
+					NOT = {
+						tag = ZIM
+					}
 				}
 				FROM = {
 					is_neighbor_of = ROOT
@@ -61,7 +63,6 @@ ZIM_categories_0 = {
 					owner = ROOT
 					count = 3
 				}
-			}
 			}
 			hidden_effect = {
 				set_country_flag = Expanding_army
