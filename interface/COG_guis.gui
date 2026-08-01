@@ -49,4 +49,33 @@ guiTypes = {
     	}
 	}
 
+	containerWindowType = {
+		name = "COG_situation_of_country"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 500 }
+
+		#标题栏
+		instantTextBoxType = {
+			name = "COG_title"
+			position = { x = 45 y = 0 }
+			font = "hoi_24header" #字体样式
+			text = "[COG_title]"
+			maxWidth = 400
+			maxHeight = 24
+			format = center	#对齐方式
+		}
+
+		#内容
+		instantTextBoxType = {
+			name = "COG_introduction"
+			position = { x = 50 y = 40 }
+			font = "hoi_20b"
+			text = "[COG_introduction]"
+			maxWidth = 500
+			maxHeight = 240
+			format = left
+		}
+
+	}
+
 }

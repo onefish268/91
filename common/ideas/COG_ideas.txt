@@ -37,7 +37,7 @@ ideas = {
 		#			exoutcome = -10
 		#		}
 		#	}
-		#modifier = {         这是收入的效果
+		#modifier = {         这是收入的效果   !!!
 		#		hcp_exincome_monthly = 5
 		#	}
 		#	}
@@ -95,7 +95,40 @@ ideas = {
     			army_attack_factor = -0.3
     			army_defence_factor = -0.3
 			}
-		} 
+		}
+
+		COG_Colonial_boom = {#旺盛发展的殖民地
+			name = COG_Colonial_boom_name
+			#picture = ""
+			modifier = {
+				hcp_exincome_monthly = 50
+				monthly_population = 0.20
+				hcp_exoutcome_monthly = 10
+			}
+			targeted_modifier = {
+				tag = FRA
+				cic_to_target_factor = 0.10
+				trade_cost_for_target_factor = -0.20
+			}
+		}
+
+		COG_Due_obligations = {#应尽的义务
+			name = COG_Due_obligations_name
+			#picture = ""
+			modifier = {
+				hcp_exincome_monthly = 10
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		COG_Regional_oppression = {#地方的盘剥
+			name = COG_Regional_oppression_name
+			#picture = ""
+			modifier = {
+				political_power_gain = -0.5
+				hcp_exoutcome_monthly = 40
+			}
+		}
 
 		COG_Lower_exploitation = {#部分的剥削
 			name = COG_Lower_exploitation_name

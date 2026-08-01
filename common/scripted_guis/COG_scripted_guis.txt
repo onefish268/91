@@ -55,7 +55,14 @@ scripted_gui = {
 	#		}
 	#	}
 	#}
-	
 	# common/scripted_guis/my_equipment_designer.txt
-	
+
+
+	#政治运动激进度决议 参考POL\DEN
+		#决议面板
+		COG_situation_of_country_decisions = {
+			context_type = decision_category
+			parent_window_token = decision_tab
+			window_name = "COG_situation_of_country"
+		}
 }
