@@ -50,16 +50,16 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "COG_situation_of_country"
+		name = "COG_race_of_country"
 		position = { x = 0 y = 0 }
 		size = { width = 500 height = 500 }
 
 		#标题栏
 		instantTextBoxType = {
-			name = "COG_title"
+			name = "COG_race_of_country_title"
 			position = { x = 45 y = 0 }
 			font = "hoi_24header" #字体样式
-			text = COG_title
+			text = COG_race_of_country_title
 			maxWidth = 400
 			maxHeight = 24
 			format = center	#对齐方式
@@ -67,23 +67,108 @@ guiTypes = {
 
 		#内容
 		instantTextBoxType = {
-			name = "COG_introduction"
+			name = "COG_race_of_country_introduction"
 			position = { x = 50 y = 40 }
 			font = "hoi_20b"
-			text = COG_introduction
+			text = COG_race_of_country_introduction
 			maxWidth = 400 
-			maxHeight = 240
+			maxHeight = 340
 			format = left
 		}
+	}
 
-		iconType = {
-			name = "DEN_political_movement_leader"
-			position = { x = 235 y = 40 }
-			centerposition = no
-			pdx_tooltip = "[DEN_political_movement_illustration_tooltip]"
-			tooltipText = "[DEN_political_movement_illustration_tooltip]"
+	containerWindowType = {
+		name = "COG_situation_of_country"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 500 }
+
+		#标题栏
+		instantTextBoxType = {
+			name = "COG_situation_of_country_title"
+			position = { x = 45 y = 0 }
+			font = "hoi_24header" #字体样式
+			text = COG_situation_of_country_title
+			maxWidth = 400
+			maxHeight = 24
+			format = center	#对齐方式
 		}
 
+		containerWindowType = {#地图
+			name = "COG_Mine_expansion_situation_of_country"
+			position = { x = 10 y = 30 }
+
+			iconType = {
+				name = "COG_Mine_expansion_situation_of_country_border"
+				spriteType = COG_region_border
+				position = { x=0 y=0 }
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Ratkin_region"
+				position = { x = 13 y = 120 }
+        		spriteType = COG_Ratkin_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_MoeLotl_region"
+				position = { x = 123 y = 115 }
+        		spriteType = COG_MoeLotl_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Kiiro_region"
+				position = { x = 103 y = 10 }
+        		spriteType = COG_Kiiro_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Businessman_region"
+				position = { x = 80 y = 56 }
+        		spriteType = COG_Businessman_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Glowforest_region"
+				position = { x = 65 y = 270 }
+        		spriteType = COG_Glowforest_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Dragonian_region"
+				position = { x = 23 y = 275 }
+        		spriteType = COG_Dragonian_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_Mima_region"
+				position = { x = 142 y = 360 }
+        		spriteType = COG_Mima_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+
+			buttonType = {
+				name = "COG_Mine_expansion_situation_of_country_various_region"
+				position = { x = 87 y = 413 }
+        		spriteType = COG_various_region
+    	    	pdx_tooltip = menu_button_tip
+        		clicksound = click_default
+			}
+		}
+
+		
 	}
 
 }

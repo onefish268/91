@@ -60,6 +60,12 @@ scripted_gui = {
 
 	#政治运动激进度决议 参考POL\DEN
 		#决议面板
+		COG_race_of_country_decisions = {
+			context_type = decision_category
+			parent_window_token = decision_tab
+			window_name = "COG_race_of_country"
+		}
+
 		COG_situation_of_country_decisions = {
 			context_type = decision_category
 			parent_window_token = decision_tab

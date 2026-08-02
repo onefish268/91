@@ -1,4 +1,4 @@
-#!gfx:gfx/guis/button_window/my_gfx_file.dds
+#!gfx:gfx/guis/COG/button_window/my_gfx_file.dds
 
 guiTypes = {
 
