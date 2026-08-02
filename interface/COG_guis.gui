@@ -59,7 +59,7 @@ guiTypes = {
 			name = "COG_title"
 			position = { x = 45 y = 0 }
 			font = "hoi_24header" #字体样式
-			text = "[COG_title]"
+			text = COG_title
 			maxWidth = 400
 			maxHeight = 24
 			format = center	#对齐方式
@@ -70,10 +70,18 @@ guiTypes = {
 			name = "COG_introduction"
 			position = { x = 50 y = 40 }
 			font = "hoi_20b"
-			text = "[COG_introduction]"
-			maxWidth = 500
+			text = COG_introduction
+			maxWidth = 400 
 			maxHeight = 240
 			format = left
+		}
+
+		iconType = {
+			name = "DEN_political_movement_leader"
+			position = { x = 235 y = 40 }
+			centerposition = no
+			pdx_tooltip = "[DEN_political_movement_illustration_tooltip]"
+			tooltipText = "[DEN_political_movement_illustration_tooltip]"
 		}
 
 	}

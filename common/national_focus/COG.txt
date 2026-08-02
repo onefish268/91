@@ -1240,6 +1240,9 @@ focus_tree =
 
 		available = {
 			has_country_flag = COG_Mima_has_awared
+			123 = {
+				is_control
+			}
 		}
 
 		prerequisite = {
