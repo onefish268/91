@@ -106,65 +106,65 @@ guiTypes = {
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Ratkin_region"
 				position = { x = 13 y = 120 }
-        		spriteType = COG_Ratkin_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Ratkin_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Ratkin_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_MoeLotl_region"
 				position = { x = 123 y = 115 }
-        		spriteType = COG_MoeLotl_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_MoeLotl_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_MoeLotl_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Kiiro_region"
 				position = { x = 103 y = 10 }
-        		spriteType = COG_Kiiro_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Kiiro_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Kiiro_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Businessman_region"
 				position = { x = 80 y = 56 }
-        		spriteType = COG_Businessman_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Businessman_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Businessman_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Glowforest_region"
 				position = { x = 65 y = 270 }
-        		spriteType = COG_Glowforest_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Glowforest_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Glowforest_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Dragonian_region"
 				position = { x = 23 y = 275 }
-        		spriteType = COG_Dragonian_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Dragonian_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Dragonian_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_Mima_region"
 				position = { x = 142 y = 360 }
-        		spriteType = COG_Mima_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_Mima_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_Mima_region_tip
+				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "COG_Mine_expansion_situation_of_country_various_region"
 				position = { x = 87 y = 413 }
-        		spriteType = COG_various_region
-    	    	pdx_tooltip = menu_button_tip
-        		clicksound = click_default
+				spriteType = COG_various_region
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_various_region_tip
+				clicksound = click_default
 			}
 		}
 
