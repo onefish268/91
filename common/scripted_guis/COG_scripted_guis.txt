@@ -70,5 +70,18 @@ scripted_gui = {
 			context_type = decision_category
 			parent_window_token = decision_tab
 			window_name = "COG_situation_of_country"
+
+			visible = {
+				check_variable = { COG_situation_of_country_array[$array_number] = 0 }
+			}
+		}
+
+		COG_Mine_expansion_situation_of_country_decisions = {
+			context_type = decision_category
+			parent_window_token = decision_tab
+			window_name = "COG_Mine_expansion_situation_of_country"
+			visible = {
+				check_variable = { COG_situation_of_country_array[$array_number] = 1 }
+			}
 		}
 }

@@ -2,13 +2,10 @@ COG_MoeLoel_industry = {
 
 	include = generic_spirit_suit_organization
 
-	icon = GFX_MY_EMPTY
+	icon = COG_Dragonian_region
 
 	allowed = {
 		tag = COG
-	}
-	available = {
-
 	}
 
 	add_trait = {

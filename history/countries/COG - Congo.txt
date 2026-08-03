@@ -27,6 +27,8 @@ add_ideas = {
 
 #变量
 set_variable = { another_country_leader_group = 66 } #副领袖
+add_to_array = {
+}
 
 set_convoys = 5
 

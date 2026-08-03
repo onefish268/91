@@ -841,6 +841,16 @@
 
   COG_categories_situation_of_country: "关于魔界溪谷的开发"
 
+  COG_situation_of_country_Ratkin_region: "铁鼠王国地区"
+  COG_situation_of_country_Kiiro_region: "绮罗隐居乡地区"
+  COG_situation_of_country_MoeLotl_region: "萌螈朝廷地区"
+  COG_situation_of_country_Dragonian_region: "龙憩之地地区"
+  COG_situation_of_country_Businessman_region: "旅鼠旅邦地区"
+  COG_situation_of_country_various_region: "“闲置区”地区"
+  COG_situation_of_country_Glowforest_region: "荧光森林地区"
+  COG_situation_of_country_Mima_region: "幻梦界地区"
+  COG_situation_of_country_empty_region: "空"
+
   COG_situation_of_country_Ratkin_region_tip: "这里是§S鼠族领主们§!的地盘，也是魔界溪谷人口最为稠密的地区。"
   COG_situation_of_country_MoeLotl_region_tip: "这些是§S萌螈们§!的王庭与王朝管辖的地区，里面大部分地区都是雨林。"
   COG_situation_of_country_Kiiro_region_tip: "这里是§S绮罗们§!逃避战乱聚集的地区，远离海滨既给她们带来了安全，也限制了她们的发展。"
