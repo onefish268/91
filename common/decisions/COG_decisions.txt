@@ -23,25 +23,9 @@ COG_categories = {
 }
 
 COG_categories_situation_of_country = {#决议及其下属的名字不可以一样，会出事
-	the_firstt = {
-		name = the_first
-		icon = generic_construction
-		
-		cost = 10
+	
+	# ↓ ↓ ↓ COG_situation_of_country的内容 ↓ ↓ ↓
 
-		complete_effect = {
-			set_country_flag = test_of_gui
-		}
-	}
-
-	the_secondd = {
-		name = the_second
-		icon = generic_construction
-		
-		cost = 10
-
-		complete_effect = {
-			clr_country_flag = test_of_gui
-		}
-	}
+	# ↓ ↓ ↓ COG_Mine_expansion_situation_of_country的内容 ↓ ↓ ↓
+	
 }

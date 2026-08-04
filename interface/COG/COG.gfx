@@ -63,22 +63,10 @@ spriteTypes = {
 		transparencecheck = yes #启用透明检测？		
 	}
 
-	spriteType = {
-		name = COG_Businessman_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Businessman_region_highlight.dds"		
-		transparencecheck = yes	
-	}
-
 	spriteType = {#龙娘地区
 		name = COG_Dragonian_region
 		texturefile = "gfx/guis/COG/decisions/COG_Dragonian_region.dds"		
 		transparencecheck = yes	
-	}
-
-	spriteType = {
-		name = COG_Dragonian_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Dragonian_region_highlight.dds"	
-		transparencecheck = yes		
 	}
 
 	spriteType = {#荧光森林地区
@@ -87,33 +75,15 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
-	spriteType = {
-		name = COG_Glowforest_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Glowforest_region_highlight.dds"	
-		transparencecheck = yes		
-	}
-
 	spriteType = {#绮罗地区
 		name = COG_Kiiro_region
 		texturefile = "gfx/guis/COG/decisions/COG_Kiiro_region.dds"			
 		transparencecheck = yes
 	}
 
-	spriteType = {
-		name = COG_Kiiro_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Kiiro_region_highlight.dds"		
-		transparencecheck = yes	
-	}
-
 	spriteType = {#魅魔地区
 		name = COG_Mima_region
 		texturefile = "gfx/guis/COG/decisions/COG_Mima_region.dds"			
-		transparencecheck = yes
-	}
-
-	spriteType = {
-		name = COG_Mima_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Mima_region_highlight.dds"			
 		transparencecheck = yes
 	}
 
@@ -123,33 +93,15 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
-	spriteType = {
-		name = COG_MoeLotl_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_MoeLotl_region_highlight.dds"			
-		transparencecheck = yes
-	}
-
 	spriteType = {#鼠族领主地区
 		name = COG_Ratkin_region
 		texturefile = "gfx/guis/COG/decisions/COG_Ratkin_region.dds"		
 		transparencecheck = yes	
 	}
 
-	spriteType = {
-		name = COG_Ratkin_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_Ratkin_region_highlight.dds"			
-		transparencecheck = yes
-	}
-
 	spriteType = {#“闲置区”地区
 		name = COG_various_region
 		texturefile = "gfx/guis/COG/decisions/COG_various_region.dds"			
-		transparencecheck = yes
-	}
-
-	spriteType = {
-		name = COG_various_region_highlight
-		texturefile = "gfx/guis/COG/decisions/COG_various_region_highlight.dds"			
 		transparencecheck = yes
 	}
 
