@@ -31,5 +31,23 @@ ideas = {
 				mobilization_speed = 0.15
 			}
 		}
+
+		ZSB_Build_faster = {
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+
+		ZSB_Spy_action = {
+			
+			modifier = {
+				airforce_intel_factor = 0.1
+				army_intel_factor = 0.1
+				navy_intel_factor = 0.1
+				civilian_intel_factor = 0.1
+			}
+		}
 	}
 }
