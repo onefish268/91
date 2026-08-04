@@ -16,12 +16,317 @@ defined_text = {
 }
 
 
-#变动的国策完成\失败文本
+#变动的决议文本
 
-defined_text = {
-	name = COG_focus_complete_situation
+
+defined_text = {#旅鼠模块
+	name = COG_situation_of_country_Businessman_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Businessman_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Businessman_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Businessman_region_clear_tip
+	}
 	text = {
-		trigger = { check_variable = { Country_History_Page_Var = 1 } }
-		localization_key = COG_Country_History_Page_01
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Businessman_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Businessman_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Businessman_region_tip
+	}
+}
+
+defined_text = {#萌螈模块
+	name = COG_situation_of_country_MoeLotl_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_MoeLotl_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_MoeLotl_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_MoeLotl_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_MoeLotl_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_MoeLotl_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_MoeLotl_region_tip
+	}
+}
+
+defined_text = {#鼠族模块
+	name = COG_situation_of_country_Ratkin_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Ratkin_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Ratkin_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Ratkin_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Ratkin_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Ratkin_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Ratkin_region_tip
+	}
+}
+
+defined_text = {#龙娘模块
+	name = COG_situation_of_country_Dragonian_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Dragonian_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Dragonian_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Dragonian_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Dragonian_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Dragonian_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Dragonian_region_tip
+	}
+}
+
+defined_text = {#绮罗模块
+	name = COG_situation_of_country_Kiiro_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Kiiro_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Kiiro_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Kiiro_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Kiiro_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Kiiro_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Kiiro_region_tip
+	}
+}
+
+defined_text = {#荧光森林模块
+	name = COG_situation_of_country_Glowforest_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Glowforest_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Glowforest_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Glowforest_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Glowforest_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Glowforest_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Glowforest_region_tip
+	}
+}
+
+defined_text = {#幻梦界模块
+	name = COG_situation_of_country_Mima_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_Mima_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_Mima_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_Mima_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_Mima_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_Mima_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_Mima_region_tip
+	}
+}
+
+defined_text = {#“闲置区”模块
+	name = COG_situation_of_country_various_region_tips
+	text = {#常规界面
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_various_region_tip
+	}
+
+	text = {#矿业界面
+		trigger = { #探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			has_country_flag = COG_various_region_Mine_expansion_clear
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_various_region_clear_tip
+	}
+	text = {
+		trigger = { #未探明
+			check_variable = { COG_Mine_expansion_situation_of_country_chosen_mode_number = 1 }
+			NOT = { has_country_flag = COG_various_region_Mine_expansion_clear }
+		}
+		localization_key = COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip
+	}
+
+	text = {#农业界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_various_region_tip
+	}
+
+	text = {#建设界面
+		trigger = { check_variable = { COG_Agri_investment_boost_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_various_region_tip
+	}
+}
+
+defined_text = {#提示选择了什么地块
+	name = COG_situation_of_country_chosen_region
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = -1 } }
+		localization_key = COG_situation_of_country_empty_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 0 } }
+		localization_key = COG_situation_of_country_Glowforest_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 1 } }
+		localization_key = COG_situation_of_country_Mima_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 2 } }
+		localization_key = COG_situation_of_country_Ratkin_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 3 } }
+		localization_key = COG_situation_of_country_MoeLotl_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 4 } }
+		localization_key = COG_situation_of_country_Kiiro_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 5 } }
+		localization_key = COG_situation_of_country_Dragonian_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 6 } }
+		localization_key = COG_situation_of_country_Businessman_region
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 7 } }
+		localization_key = COG_situation_of_country_various_region
 	}
 }

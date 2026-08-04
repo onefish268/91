@@ -36,6 +36,12 @@ guiTypes = {#MoeLotl_Cultivaltor
 						spriteType = GFX_MY_EMPTY
 						position = { x=0 y=0 }
 					}
+
+					iconType = {
+						name = "blueprint"
+						spriteType = GFX_MY_EMPTY
+						position = { x=0 y=0 }
+					}
 				}
 			}
 			################# MODULE SLOT: internal_energy_slot_1 #################
@@ -60,6 +66,8 @@ guiTypes = {#MoeLotl_Cultivaltor
 						spriteType = GFX_MY_EMPTY
 						position = { x=0 y=0 }
 					}
+
+					
 				}
 			}
 

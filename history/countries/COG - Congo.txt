@@ -27,6 +27,10 @@ add_ideas = {
 
 #变量
 set_variable = { another_country_leader_group = 66 } #副领袖
+set_variable = { COG_situation_of_country_chosen_region_number = -1 }#决议选择地块：初始化-1空
+set_variable = { COG_situation_of_country_chosen_mode_number = 0 }#决议选择模式：初始化0常规状态
+#数组
+
 
 set_convoys = 5
 

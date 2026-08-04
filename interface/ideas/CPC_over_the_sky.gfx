@@ -1,8 +1,0 @@
-spriteTypes =
-{	   				
-	spriteType =
-	{
-		name = 
-		texturefile = "gfx/interface/ideas/.dds"
-	}
-}

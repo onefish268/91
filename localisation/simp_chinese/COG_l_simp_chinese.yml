@@ -757,8 +757,153 @@
 
   #协调各部族的决议
   COG_categories: "协调起魔界溪谷的大家"
-  COG_title: "魔界溪谷各部族的情况简述"
-  COG_introduction: "鼠族领主们：这些鼠鼠小领主们是破碎的铁鼠王国下真正的统治阶层，她们大多贪得无厌，还对权力爱不释手，只要利益分配到位，也许拉拢她们不是什么坏事。\n\n鼠族旅商们：这些不受领主们控制的旅鼠们在魔界溪谷的各处都建立了她们的旅邦，她们将各地的资源流动起来，并给自己赚多多的钱，她们会抓住各种发财的机会。\n\n萌螈修士们：那些居住在雨林深处的萌螈修士总是介意其他外族人打扰她们的生活，因此和她们打交道并不是一件特别简单的事情，又因为她们历史遗留问题，她们在魔法和外族的问题上比较敏感。\n\n绮罗们：这些小家伙们特别擅长学习她人，即便是曾经作为殖民者伤害她们的敌人，她们希望将魔界溪谷落后的面貌一扫而空，因此，她们会对于发展的建议表示赞同。\n\n龙娘们：她们今天要吃什么呢…"
+  COG_race_of_country_title: "魔界溪谷各部族的情况简述"
+  COG_race_of_country_introduction: "鼠族领主们：这些鼠鼠小领主们是破碎的铁鼠王国下真正的统治阶层，她们大多贪得无厌，还对权力爱不释手，只要利益分配到位，也许拉拢她们不是什么坏事。\n\n鼠族旅商们：这些不受领主们控制的旅鼠们在魔界溪谷的各处都建立了她们的旅邦，她们将各地的资源流动起来，并给自己赚多多的钱，她们会抓住各种发财的机会。\n\n萌螈修士们：那些居住在雨林深处的萌螈修士总是介意其他外族人打扰她们的生活，因此和她们打交道并不是一件特别简单的事情，又因为她们历史遗留问题，她们在魔法和外族的问题上比较敏感。\n\n绮罗们：这些小家伙们特别擅长学习她人，即便是曾经作为殖民者伤害她们的敌人，她们希望将魔界溪谷落后的面貌一扫而空，因此，她们会对于发展的建议表示赞同。\n\n龙娘们：她们今天要吃什么呢…"
+
+  COG_MoeLotl_attitude_0: "极力反对"
+  COG_MoeLotl_attitude_1: "暗中掣肘"
+  COG_MoeLotl_attitude_2: "阳奉阴违"
+  COG_MoeLotl_attitude_3: "不冷不热"
+  COG_MoeLotl_attitude_4: "有限支持"
+  COG_MoeLotl_attitude_5: "赞赏有加"
+  COG_MoeLotl_attitude_6: "鼎力帮助"
+  COG_MoeLotl_power_0: "完全消逝"
+  COG_MoeLotl_power_1: "沦落九流"
+  COG_MoeLotl_power_2: "影响式微"
+  COG_MoeLotl_power_3: "初具影响"
+  COG_MoeLotl_power_4: "举足轻重"
+  COG_MoeLotl_power_5: "一言九鼎"
+
+  COG_Ratkin_attitude_0: "极力反对"
+  COG_Ratkin_attitude_1: "暗中掣肘"
+  COG_Ratkin_attitude_2: "阳奉阴违"
+  COG_Ratkin_attitude_3: "不冷不热"
+  COG_Ratkin_attitude_4: "有限支持"
+  COG_Ratkin_attitude_5: "赞赏有加"
+  COG_Ratkin_attitude_6: "鼎力帮助"
+  COG_Ratkin_power_0: "完全消逝"
+  COG_Ratkin_power_1: "沦落九流"
+  COG_Ratkin_power_2: "影响式微"
+  COG_Ratkin_power_3: "初具影响"
+  COG_Ratkin_power_4: "举足轻重"
+  COG_Ratkin_power_5: "一言九鼎"
+
+  COG_Kiiro_attitude_0: "彻底失望"
+  COG_Kiiro_attitude_1: "心灰意冷"
+  COG_Kiiro_attitude_2: "鼓足干劲"
+  COG_Kiiro_attitude_3: "踌躇满志"
+  COG_Kiiro_power_0: "完全消逝"
+  COG_Kiiro_power_1: "沦落九流"
+  COG_Kiiro_power_2: "影响式微"
+  COG_Kiiro_power_3: "初具影响"
+  COG_Kiiro_power_4: "举足轻重"
+  COG_Kiiro_power_5: "一言九鼎"
+
+  COG_Dragonian_attitude_0: "不满意！"
+  COG_Dragonian_attitude_1: "还行"
+  COG_Dragonian_attitude_2: "满意！"
+  COG_Dragonian_power_0: "完全消逝"
+  COG_Dragonian_power_1: "沦落九流"
+  COG_Dragonian_power_2: "影响式微"
+  COG_Dragonian_power_3: "初具影响"
+  COG_Dragonian_power_4: "举足轻重"
+  COG_Dragonian_power_5: "一言九鼎"
+
+  COG_ask_MoeLotl_for_help: "向萌螈修士们寻求帮助"
+  COG_ask_MoeLotl_for_help_desc: "我们会向萌螈修士们寻求帮助，至于帮助的内容是什么，则取决于我们和她们之间的关系、她们的影响力、以及她们地区开发程度的高低来共同决定的。"
+  COG_promise_to_MoeLotl: "向萌螈修士们许诺"
+  COG_promise_to_MoeLotl_desc: "我们会向萌螈修士们许诺好处，然后她们会尝试支持我们的政策。在这之后，她们会要求我们给予她们一定的“回报”，也许是工厂的建设、也许是法令的修改……"
+  COG_against_MoeLotl: "抨击萌螈修士们"
+  COG_against_MoeLotl_desc: "我们会抨击萌螈修士们，让她们的影响力和实力遭到一定的打击，当然，我们的打击必须有据可依，我们需要从她们的政治、经济、文化等各种建设方面找到一个被大伙认可的错误，然后指责她们。当然，我们不能把人家逼得太急了……"
+
+  COG_ask_Ratkin_for_help: "向鼠族领主们寻求帮助"
+  COG_ask_Ratkin_for_help_desc: "我们会向鼠族领主们寻求帮助，至于帮助的内容是什么，则取决于我们和她们之间的关系、她们的影响力、以及她们地区开发程度的高低来共同决定的。"
+  COG_promise_to_Ratkin: "向鼠族领主们许诺"
+  COG_promise_to_Ratkin_desc: "我们会向鼠族领主们许诺好处，然后她们会尝试支持我们的政策。在这之后，她们会要求我们给予她们一定的“回报”，也许是工厂的建设、也许是法令的修改……"
+  COG_against_Ratkin: "抨击鼠族领主们"
+  COG_against_Ratkin_desc: "我们会抨击鼠族领主们，让她们的影响力和实力遭到一定的打击，当然，我们的打击必须有据可依，我们需要从她们的政治、经济、文化等各种建设方面找到一个被大伙认可的错误，然后指责她们。当然，我们不能把人家逼得太急了……"
+
+  COG_ask_Businessman_for_help: "向旅鼠商人们寻求帮助"
+  COG_ask_Businessman_for_help_desc: "我们会向旅鼠商人们寻求帮助，至于帮助的内容是什么，则取决于我们和她们之间的关系、她们的影响力、以及她们地区开发程度的高低来共同决定的。"
+  COG_promise_to_Businessman: "向旅鼠商人们许诺"
+  COG_promise_to_Businessman_desc: "我们会向旅鼠商人们许诺好处，然后她们会尝试支持我们的政策。在这之后，她们会要求我们给予她们一定的“回报”，也许是工厂的建设、也许是法令的修改……"
+  COG_against_Businessman: "抨击旅鼠商人们"
+  COG_against_Businessman_desc: "我们会抨击旅鼠商人们，让她们的影响力和实力遭到一定的打击，当然，我们的打击必须有据可依，我们需要从她们的政治、经济、文化等各种建设方面找到一个被大伙认可的错误，然后指责她们。当然，我们不能把人家逼得太急了……"
+
+  COG_ask_Dragonian_for_help: "向龙娘们寻求帮助…？"
+  COG_ask_Dragonian_for_help_desc: "我们会向龙娘们寻求帮助，至于帮助的内容是什么，则取决于我们和她们之间的关系、她们的影响力、以及她们地区开发程度的高低来共同决定的。不过，这些家伙真的能帮上什么手吗…"
+  COG_promise_to_Dragonian: "向龙娘们许诺"
+  COG_promise_to_Dragonian_desc: "我们会向旅鼠商人们许诺好处，比如吃的、用的、住的、玩的，很好满足，然后她们会尝试支持我们的政策。虽然不太清楚能够帮多少就是了…"
+  COG_against_Dragonian: "抨击龙娘们"
+  COG_against_Dragonian_desc: "我们会抨击这些吃白饭的龙娘们，她们霸占着一块这么大的地盘，却只是在里面过着采摘狩猎的简单日子，也许，我们应该让她们认识到，她们浪费了这么好的资源。"
+
+  #COG_categories_situation_of_country启用的决议
+  COG_situation_of_country_button_tip: "点击切换到常规界面"
+  COG_Mine_expansion_situation_of_country_button_tip: "点击切换到矿业界面"
+  COG_Agri_investment_boost_situation_of_country_button_tip: "点击切换到农业界面"
+  COG_Build_and_grow_situation_of_country_button_tip: "点击切换到建设界面"
+
+  COG_categories_situation_of_country: "关于魔界溪谷的开发"
+
+  COG_situation_of_country_Ratkin_region: "铁鼠王国地区"
+  COG_situation_of_country_Kiiro_region: "绮罗隐居乡地区"
+  COG_situation_of_country_MoeLotl_region: "萌螈朝廷地区"
+  COG_situation_of_country_Dragonian_region: "龙憩之地地区"
+  COG_situation_of_country_Businessman_region: "旅鼠旅邦地区"
+  COG_situation_of_country_various_region: "“闲置区”地区"
+  COG_situation_of_country_Glowforest_region: "荧光森林地区"
+  COG_situation_of_country_Mima_region: "幻梦界地区"
+  COG_situation_of_country_empty_region: "空"
+
+  COG_situation_of_country_Ratkin_region_tip: "这里是§S鼠族领主们§!的地盘，也是魔界溪谷人口最为稠密的地区。"
+  COG_situation_of_country_MoeLotl_region_tip: "这些是§S萌螈们§!的王庭与王朝管辖的地区，里面大部分地区都是雨林。"
+  COG_situation_of_country_Kiiro_region_tip: "这里是§S绮罗们§!逃避战乱聚集的地区，远离海滨既给她们带来了安全，也限制了她们的发展。"
+  COG_situation_of_country_Businessman_region_tip: "这些是§S旅鼠商人们§主导的旅邦地区，她们撑起了魔界溪谷的运输职能，将各地的物资流通在了殖民地的各地。"
+  COG_situation_of_country_Glowforest_region_tip: "这里是§G魅魔§!划出的荧光森林保护区，§G魅魔§!对这些散发魔力的地区很感兴趣，于是禁止其他人随意进出她的“乐园”。"
+  COG_situation_of_country_Dragonian_region_tip: "这里是§G魅魔§给§S龙娘§!随意划出的保护区，§G魅魔§!认为这些§S龙娘§!也许蕴含惊人的魔法，便将她们保护于此。"
+  COG_situation_of_country_Mima_region_tip: "这是魔界溪谷的“政治中心”——幻梦界，虽然魅魔早已在殖民地的治理上懈怠了许久，但是所有人都潜意识地认为这里还是那个掌控了全殖民地的命运的首府。"
+  COG_situation_of_country_various_region_tip: "这是§G魅魔§!曾经希望建设一些东西划分的区域，后面因为§S魅魔§!的懈怠而不了了之，许多原住民便陆陆续续来到了这个空白的天地，直到今日，“闲置区”的名字仍旧是这里的官方名称。"
+
+  COG_situation_of_country_title: "魔界溪谷内部情况"
+
+  #COG_Mine_expansion启用的决议和信息     #你说得对，这是“刚果的、矿场扩建的、国家建设的、鼠族地区的、已知的提示”
+  COG_Mine_expansion_situation_of_country_Ratkin_region_clear_tip: "王国内的矿藏早在很久以前就已经被殖民者们和原住民们探察完了，在铁鼠王国西港地区，那里分布大量的优质铁矿，在铁鼠王国都城的东边，则有许多人预测这里应当埋藏了不少铝矿。只不过受限于技术，这些矿产我们迟迟没有让它们被最大限度为我们所用。"
+  COG_Mine_expansion_situation_of_country_MoeLotl_region_clear_tip: "萌螈们终于肯让我们进来勘探了，好家伙，这里的源翠石矿藏分布极其夸张，在萌螈的地盘里，这些源翠石在极其浅的地方就开始大量分布和生长了，获取它们简直不要太容易。除此之外，万穗王庭境内也有不少矿藏等着我们去开采。"
+  COG_Mine_expansion_situation_of_country_Kiiro_region_clear_tip: "绮罗们居住的地方比较一般般，这里除了有发现石油的迹象，和一些其他的黄金和金刚石，就没有太多的矿产可言了，那些战略上急需的锰矿、铬矿都是不成规模的，开发难度大不说，效益也不是很高。"
+  COG_Mine_expansion_situation_of_country_Businessman_region_clear_tip: "这些商人们居住的小地方居然还真发现了点玩意，除了盐风旅邦的少许金矿与煤矿，涌泉旅邦那里的钨矿和其他矿物什么的也挺丰富。"
+  COG_Mine_expansion_situation_of_country_Glowforest_region_clear_tip: "魅魔大人终于默许了我们进入她的小天地，这些荧光森林，恰恰是受到源翠石影响最为深刻的地方，这里不仅有菌子，还有很多裸露的源翠石。"
+  COG_Mine_expansion_situation_of_country_Dragonian_region_clear_tip: "龙娘们居住的区域被发现是拥有大量沿海油田和内陆锰矿的，这些矿产的开发对我们的发展而言是非常有帮助的。"
+  COG_Mine_expansion_situation_of_country_Mima_region_clear_tip: "这里什么都没有！太陋野（弱）了！总督大人住的什么地方啊！"
+  COG_Mine_expansion_situation_of_country_various_region_clear_tip: "不出所料，这片小天地并没有什么资源可言……"
+
+  COG_Mine_expansion_situation_of_country_all_race_region_unknown_tip: "该地区暂未勘察，我们对此处的矿藏一无所知，也许下面有丰厚的宝藏，也许没有。"
+
+  COG_Mine_expansion_of_ratkin_0: "吱吱大矿山的进一步投资"
+  COG_Mine_expansion_of_ratkin_0_desc: "吱吱大矿山的建设由来已久，这是魔界溪谷为数不多的现有矿场。如果对其进行进一步的扩建，这其中增产的钢铁，将能很大程度上够满足魔界溪谷的前期工业发展的需要。"
+
+  COG_Mine_expansion_of_ratkin_1: "在万穗王庭旧区的钨矿开发"
+  COG_Mine_expansion_of_ratkin_1_desc: "在萌螈们的批准下，同铁路一同进入万穗王庭的还有一些勘探队，她们通过仪器测试和经验推理，判断此处定然埋藏了一处关于钨矿的大矿脉，只要能够开采，就会有成吨成吨的钨矿从这里的矿场运出。只不过，在这里开发，难的不仅仅是天气和地形，还有萌螈们的疑虑，只有打消她们的疑虑才有助于我们顺利地推进矿产开发。"
+  
+  COG_Mine_expansion_of_ratkin_2: "在万穗王庭内矿区的进一步投资"
+  COG_Mine_expansion_of_ratkin_2_desc: "我们第一次开采的钨矿仍然没法满足我们国家的需求，我们还可以进一步投资来扩大矿场规模，进一步开采出更多的钨矿。"
+
+  COG_Mine_expansion_of_ratkin_3: "龙憩之地沿海的石油"
+  COG_Mine_expansion_of_ratkin_3_desc: "根据勘测的结果，丰富的石油储藏大致沿着龙憩之地狭长的海岸线分布，只要进行适当的开发，想必就会有源源不断的石油从地里喷涌而出，带来可观的收益并提高魔界溪谷发展的潜力。龙娘们不住海边，应该不会打扰到她们，不过，贸然进去开发，也许会招惹意想不到的灾难——魅魔曾经要求这里是龙娘的保护区。也许，可以试着和总督大人沟通一下？"
+
+  COG_Mine_expansion_of_ratkin_4: "龙憩之地沿海石油的进一步投资"
+  COG_Mine_expansion_of_ratkin_4_desc: "之前龙憩之地开采出来的石油很可观，但还不够，这一次，我们希望能够从中获得更多这些地底下的黑宝藏。"
+
+  COG_Mine_expansion_of_ratkin_5: "零零散散的铬矿"
+  COG_Mine_expansion_of_ratkin_5_desc: "南非的铬矿几乎垄断了世界的铬矿市场，因此，没有太多人有意愿来魔界溪谷开发当地的品质较差的伴生铬矿——它们分布在万穗王庭南区与幻梦界的交界处、还有万穗王庭旧区、以及其他地方，太过分散了。如果是追求极致的发展，那我们大概率是用不上的，但是，谁知道我们明天会不会还从南方的邻居们那里进口铬矿呢？"
+
+  COG_Mine_expansion_of_ratkin_6: "铬矿的进一步投资"
+  COG_Mine_expansion_of_ratkin_6_desc: "虽然魔界溪谷内铬矿的品质和数量都比不过邻居们，但是这些好歹是自家产的，有保障，进一步开采它们，"
+
+  COG_Mine_expansion_of_ratkin_7: "稀少的煤矿"
+  COG_Mine_expansion_of_ratkin_7_desc: "在盐风旅邦，那里分布着一些品质和数量都算不上好的低下煤矿，如果不是万不得已，应该没有什么人回去投资这个项目……"
+
+
+
   menu_button_tip: "点击获得§Y 10 §!政治点数"
 
   #萌螈修士界面

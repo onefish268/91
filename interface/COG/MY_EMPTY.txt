@@ -4,6 +4,6 @@ spriteTypes =
 	spriteType =
 	{
 		name = GFX_MY_EMPTY
-		texturefile = "gfx/guis/TEST.dds"
+		texturefile = "gfx/guis/COG/TEST.dds"
 	}
 }
