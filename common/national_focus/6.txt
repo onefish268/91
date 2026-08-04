@@ -18,11 +18,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			create_wargoal = {
-				create_wargoal = {
-					target = ZHJ
-					type = annex_everything
-				}
+			add_collaboration = {
+				target = ZHJ
+				value = 0.05
 			}
 		}
 	}
@@ -36,9 +34,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			ZDM = {
-				country_event = ZSB.7
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
 			}
+
+			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -52,18 +53,15 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 10000
+				amount = 2500
 				producer = EAS
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 1500
+				amount = 800
 				producer = EAS
 			}
 			add_political_power = -50
-			EAS = {
-				add_political_power = 25
-			}
 		}
 	}
 	focus = {
@@ -99,42 +97,11 @@ focus_tree = {
 		completion_reward = {
 			#这些是合作政府
 			add_collaboration = {
-				target = ZIM
-				value = 0.15
-			}
-			add_collaboration = {
-				target = ZDM
-				value = 0.15
-			}
-			add_collaboration = {
-				target = ZSH
-				value = 0.15
-			}
-			add_collaboration = {
-				target = ZXS
-				value = 0.15
-			}
-			add_collaboration = {
-				target = ZSB
-				value = 0.15
-			}
-			add_collaboration = {
-				target = ZCS
-				value = 0.15
-			}
-			add_collaboration = {
 				target = ZHJ
 				value = 0.15
 			}
-			add_collaboration = {
-				target = ZYX
-				value = 0.15
-			}
 
-			add_timed_idea = {
-				idea = ZSB_Spy_action
-				days = 180
-			}
+			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -151,6 +118,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_1
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.05
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_7
@@ -162,6 +138,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_5
+		}
+
+		
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.20
+			}
+
+			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -175,6 +161,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_6
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.10
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_9
@@ -187,6 +182,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_7
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.20
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_10
@@ -198,6 +202,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_8
+		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.10
+			}
+
+			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -212,6 +225,35 @@ focus_tree = {
 			focus = 5_focus_9
 			focus = 5_focus_10
 		}
+
+		completion_reward = {
+			custom_effect_tooltip = ZSB_result_tip
+
+			hidden_effect = {
+				if = {
+					limit = { has_completed_focus = 5_focus_9 }
+
+					random_list = {
+						60 = {
+							country_event = ZSB.8
+						}
+						40 = {
+							country_event = ZSB.9
+						}
+					}
+				}
+				else = {
+					random_list = {
+						30 = {
+							country_event = ZSB.8
+						}
+						70 = {
+							country_event = ZSB.9
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_12
@@ -224,6 +266,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_13
@@ -236,6 +286,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_14
@@ -248,6 +306,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_16
@@ -260,6 +326,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_13
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_15
@@ -272,6 +346,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_12
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_17
@@ -290,6 +372,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_14
 		}
+
+		completion_reward = {
+			custom_effect_tooltip = ZSB_result_tip
+
+			hidden_effect = {
+				ZDM = {
+					country_event = ZSB.7
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_18
@@ -301,6 +393,20 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_3
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = EAS
+			}
+			add_political_power = -30
 		}
 	}
 	focus = {
@@ -314,6 +420,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_18
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = EAS
+			}
+			add_political_power = -30
+		}
 	}
 	focus = {
 		id = 5_focus_20
@@ -325,6 +445,20 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_19
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+				producer = EAS
+			}
+			add_political_power = -30
 		}
 	}
 	focus = {
@@ -338,6 +472,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_4
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Representative
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_22
@@ -349,6 +489,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_4
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Ensure_supply
+			}
 		}
 	}
 	focus = {
@@ -362,6 +508,38 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_21
 		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_24
@@ -373,6 +551,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_22
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_More_talent
+			}
 		}
 	}
 	focus = {
@@ -386,6 +570,27 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_23
 		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_ideas = {
+				ZSB_arms_factory_construction
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_26
@@ -397,6 +602,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_24
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Resources_control
+			}
 		}
 	}
 	focus = {
@@ -428,6 +639,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_29
@@ -439,6 +655,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_27
+		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZSH
+				value = 0.1
+			}
 		}
 	}
 	focus = {
@@ -452,6 +675,13 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZYX
+				value = 0.1
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_31
@@ -463,6 +693,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_27
+		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZCS
+				value = 0.9
+			}
 		}
 	}
 	focus = {
@@ -476,6 +713,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_28
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -75
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_33
@@ -487,6 +735,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_28
+		}
+
+		completion_reward = {
+			add_manpower = -250
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -500,6 +753,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_32
 		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_35
@@ -511,6 +769,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_33
+		}
+
+		completion_reward = {
+			add_manpower = -2500
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -524,6 +787,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_29
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.10
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_37
@@ -536,6 +805,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_30
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.10
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_38
@@ -547,6 +822,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_31
+		}
+
+		completion_reward = {
+			ZCS = {
+				country_event = ZSB.11
+			}
 		}
 	}
 	focus = {
@@ -563,6 +844,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_35
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.7
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_40
@@ -574,6 +861,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_36
+		}
+
+		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -587,6 +878,10 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_37
 		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = 5_focus_42
@@ -598,6 +893,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_38
+		}
+
+		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
