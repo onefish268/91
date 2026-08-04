@@ -842,6 +842,15 @@
   COG_Mine_expansion_situation_of_country_button_tip: "点击切换到矿业界面"
   COG_Agri_investment_boost_situation_of_country_button_tip: "点击切换到农业界面"
   COG_Build_and_grow_situation_of_country_button_tip: "点击切换到建设界面"
+  COG_situation_of_country_various_region_information: "[COG_situation_of_country_various_region_tips]"
+  COG_situation_of_country_Ratkin_region_information: "[COG_situation_of_country_Ratkin_region_tips]"
+  COG_situation_of_country_MoeLotl_region_information: "[COG_situation_of_country_MoeLotl_region_tips]"
+  COG_situation_of_country_Kiiro_region_information: "[COG_situation_of_country_Kiiro_region_tips]"
+  COG_situation_of_country_Businessman_region_information: "[COG_situation_of_country_Businessman_region_tips]"
+  COG_situation_of_country_Glowforest_region_information: "[COG_situation_of_country_Glowforest_region_tips]"
+  COG_situation_of_country_Dragonian_region_information: "[COG_situation_of_country_Dragonian_region_tips]"
+  COG_situation_of_country_Mima_region_information: "[COG_situation_of_country_Mima_region_tips]"
+  COG_situation_of_country_various_region_information: "[COG_situation_of_country_various_region_tips]"
 
   COG_categories_situation_of_country: "关于魔界溪谷的开发"
 
@@ -858,11 +867,11 @@
   COG_situation_of_country_Ratkin_region_tip: "这里是§S鼠族领主们§!的地盘，也是魔界溪谷人口最为稠密的地区。"
   COG_situation_of_country_MoeLotl_region_tip: "这些是§S萌螈们§!的王庭与王朝管辖的地区，里面大部分地区都是雨林。"
   COG_situation_of_country_Kiiro_region_tip: "这里是§S绮罗们§!逃避战乱聚集的地区，远离海滨既给她们带来了安全，也限制了她们的发展。"
-  COG_situation_of_country_Businessman_region_tip: "这些是§S旅鼠商人们§主导的旅邦地区，她们撑起了魔界溪谷的运输职能，将各地的物资流通在了殖民地的各地。"
+  COG_situation_of_country_Businessman_region_tip: "这些是§S旅鼠商人们§!主导的旅邦地区，她们撑起了魔界溪谷的运输职能，将各地的物资流通在了殖民地的各地。"
   COG_situation_of_country_Glowforest_region_tip: "这里是§G魅魔§!划出的荧光森林保护区，§G魅魔§!对这些散发魔力的地区很感兴趣，于是禁止其他人随意进出她的“乐园”。"
-  COG_situation_of_country_Dragonian_region_tip: "这里是§G魅魔§给§S龙娘§!随意划出的保护区，§G魅魔§!认为这些§S龙娘§!也许蕴含惊人的魔法，便将她们保护于此。"
-  COG_situation_of_country_Mima_region_tip: "这是魔界溪谷的“政治中心”——幻梦界，虽然魅魔早已在殖民地的治理上懈怠了许久，但是所有人都潜意识地认为这里还是那个掌控了全殖民地的命运的首府。"
-  COG_situation_of_country_various_region_tip: "这是§G魅魔§!曾经希望建设一些东西划分的区域，后面因为§S魅魔§!的懈怠而不了了之，许多原住民便陆陆续续来到了这个空白的天地，直到今日，“闲置区”的名字仍旧是这里的官方名称。"
+  COG_situation_of_country_Dragonian_region_tip: "这里是§G魅魔§!给§S龙娘§!随意划出的保护区，§G魅魔§!认为这些§S龙娘§!也许蕴含惊人的魔法，便将她们保护于此。"
+  COG_situation_of_country_Mima_region_tip: "这是魔界溪谷的“政治中心”——幻梦界，虽然§G魅魔§!早已在殖民地的治理上懈怠了许久，但是所有人都潜意识地认为这里还是那个掌控了全殖民地的命运的首府。"
+  COG_situation_of_country_various_region_tip: "这是§G魅魔§!曾经希望建设一些东西而被划分出来的区域，后面因为§G魅魔§!的懈怠而不了了之，许多原住民便陆陆续续来到了这个空白的天地，直到今日，“闲置区”的名字仍旧是这里的官方名称。"
 
   COG_situation_of_country_title: "魔界溪谷内部情况"
 
@@ -901,8 +910,24 @@
 
   COG_Mine_expansion_of_ratkin_7: "稀少的煤矿"
   COG_Mine_expansion_of_ratkin_7_desc: "在盐风旅邦，那里分布着一些品质和数量都算不上好的低下煤矿，如果不是万不得已，应该没有什么人回去投资这个项目……"
-
-
+  #COG_Agri_investment_boost启用的决议和信息
+  COG_Agri_investment_boost_situation_of_country_Ratkin_region_tip: "铁鼠王国地区的人口数量占据了殖民地几乎一半的量，其上发展的农业也是极其繁荣。在鼠鼠们的辛勤建设下，这里已经成为了供养魔界溪谷的巨大粮仓，也有许多粮食从此出口。这里也有相当多的驯养动物在这片大草原上放牧，比如鼠族驯养的仓鼠大王就是当地的“驴子”，这种吃苦耐劳、装载量大的温顺动物很好地帮助了旅商们运送物资到殖民地各处，还有其他动物，则为鼠鼠们提供大量的肉蛋奶产品。如果，我们能够推动当地的机械化和现代化的农业建设，想必能够让这里的农业得到更好的发展。"
+  COG_Agri_investment_boost_situation_of_country_MoeLotl_region_tip: "在雨林里的萌螈们更倾向于种植她们钟爱的作物——翠玉竹，这种耐腐蚀耐湿热的植物在她们的聚集地里到处都是，这些竹子在萌螈眼里，哪里都是宝，砍伐下来的竹子可以通过提取加工成为仿佛镶金纤维——这些纤维的颜色如同镀了金一般，竹子本身也是极好的建筑材料和观赏作物。她们还驯养了一种当地十分特殊的动物——叶羊，这些可以高效光合作用的家伙们能够提供一种美味可口的凝胶。如果能够开发雨林里的这些农牧资源，对我们的未来一定会有巨大的帮助。"
+  COG_Agri_investment_boost_situation_of_country_Kiiro_region_tip: "绮罗隐居乡地区较为恶劣的水热条件原本是不适合发展太多农业的，但是绮罗们凭借祖传的改良土地的技艺，能够将贫瘠的红土变得肥沃，她们还格外注重精耕细作，在山穷水恶的地方开垦出了一片又一片金色的田野。到了近代，她们也开始在隐居乡里的那些雨林地区大片大片种植橡胶这种工业时代急需的资源，希望能够对未来的工业发展提供一定的帮助。"
+  COG_Agri_investment_boost_situation_of_country_Businessman_region_tip: "旅鼠城邦地区对于当地的种植并不是很上心，一方面，狭小的平原和广泛分布的河湖、雨林使得可耕地极其零散，难以大规模耕作；另一方面，当地拥有更有利可图的贸易路线和港口资源，她们更愿意把精力放在商品流通上。粮食主要依赖从铁鼠王国进口，这也是旅鼠商人们的主要贸易商品之一。"
+  COG_Agri_investment_boost_situation_of_country_Glowforest_region_tip: "荧光森林地区千百年来都是覆盖满了蘑菇，很少有人尝试开发这些地区——一方面这些地方一般处在雨林地区内，另一方面即使能够进去，开发的成本和收获的回报也让人提不起半点开发的兴趣，除非，有朝一日，有人能够从这些蘑菇身上发现什么奥秘。"
+  COG_Agri_investment_boost_situation_of_country_Dragonian_region_tip: "龙憩之地地区始终大雨连绵，是典型的热带雨林地区，在加上龙娘本身没有什么种植的经验，这里想要发展农业是比较差劲的，除非种点热带作物或者花费大力气改造这里。"
+  COG_Agri_investment_boost_situation_of_country_Mima_region_tip: "幻梦界地区的土地曾经被魅魔改造过，希望能够将魔界河对面的荧光森林移植到她的灵魔殿旁，也许是幻梦界缺少源翠石塑造的魔法环境，移植过来的树木与蘑菇似乎放不开手脚成长，相比于它们的前辈，它们通常要矮小那么一大截，瘦那么一大圈，这让魅魔感到很奇怪。后来，这些被改造的土地长出了各种野生的灌木与野果，许多原住民便在旁边定居了下来，并试探性地种上了自己的东西——魅魔早就放弃了她的计划，根本没人拦着她们用那片土地。所以，当下的幻梦界农业发展也是有所成就的。"
+  COG_Agri_investment_boost_situation_of_country_various_region_tip: "“闲置区”地区作为少有的平原地区，曾经因为魅魔建设的需要而被空出，又因为魅魔的懒政放开了。各种部族都在这里杂居生活着，土地上也出现了一些有趣的景象：鼠鼠们在低洼处种了低杆玉米——不然她们采摘不到，绮罗们在向阳的坡地上栽了草药和香料，萌螈从家乡捎来了翠玉竹的竹鞭以及连在上面的潮土，在客家种下了她们心心念念的翠玉竹。在这片新土地上，有无数中发展的可能。"
+  #COG_Build_and_grow启用的决议和信息
+  COG_Build_and_grow_situation_of_country_Ratkin_region_tip: "作为人口最为稠密的地区，铁鼠王国内有太多太多可以实施的项目也有太多太多可以投入的劳动力，日渐扩大的城邦里，一座座拔地而起的粮仓、工坊、水渠，与熙熙攘攘的街道，很好地诠释了当下铁鼠王国的发展样貌。"
+  COG_Build_and_grow_situation_of_country_MoeLotl_region_tip: "萌螈的建设往往是修缮旧有的而很少建设新的，一方面，人口的缓慢增加并不需要扩建什么房屋，鲜少和外界贸易也不用修建什么道路，比起在修仙领域上达到更深的境界，她们很少往这一方面去考虑。"
+  COG_Build_and_grow_situation_of_country_Kiiro_region_tip: "绮罗地区的建设是比较困难的，当地的矿业和农业并不算发达，人口较少也是一大劣势，甚至连当地的绮罗都在思考：要不咱们还是西迁吧。"
+  COG_Build_and_grow_situation_of_country_Businessman_region_tip: "在旅鼠城邦里，这些旅商们十分乐意畅谈关于建设的各种消息，她们往往把持了交通的关键节点，总是希望升级一番当地的基建和各种配套设施，好让自己从中大赚一笔：让港口塞得下更多船，让托运部能够停下更多的仓鼠大王，让客栈住下更多的游商……总之，在这一方面，她们也是很乐意参与建设的。"
+  COG_Build_and_grow_situation_of_country_Glowforest_region_tip: "在荧光森林地区里建设？你怕不是疯了吧，没有魅魔大人的允许，没人敢轻易对这些奇幻的森林动手动脚，说不准会被魅魔总督变成青蛙来惩罚。"
+  COG_Build_and_grow_situation_of_country_Dragonian_region_tip: "龙憩之地地区除了在河边玩泥巴的龙娘，就没有什么基建可言，除了从此修建一条铁路，似乎也没有人想过这里能够建设成怎样的城市了。"
+  COG_Build_and_grow_situation_of_country_Mima_region_tip: "幻梦界地区的建设几乎是围绕魅魔的想法而实施的，当魅魔停止了改造魔界溪谷的想法，那幻梦界的建设也便跟着陷入了停滞。"
+  COG_Build_and_grow_situation_of_country_various_region_tip: "作为新兴的聚集地，“闲置区”地区的基础设施建设是比较落后的，但也是充满活力的，这里的人们得以一种崭新的姿态投入生活，她们不再受到传统秩序的控制，得以在这片几乎完全自由的天地大展身手。"
 
   menu_button_tip: "点击获得§Y 10 §!政治点数"
 

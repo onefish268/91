@@ -57,6 +57,27 @@ spriteTypes = {
 		texturefile = "gfx/guis/COG/SA_scorching_blaze_spirit_vein.dds"			
 	}
 	#决议
+	spriteType = {#常规界面
+		name = COG_situation_of_country_button
+		texturefile = "gfx/guis/COG/decisions/COG_situation_of_country_button.dds"	
+		transparencecheck = yes #启用透明检测	
+	}
+	spriteType = {#矿业界面
+		name = COG_Mine_expansion_situation_of_country_button
+		texturefile = "gfx/guis/COG/decisions/COG_Mine_expansion_situation_of_country_button.dds"	
+		transparencecheck = yes #启用透明检测	
+	}
+	spriteType = {#农业界面
+		name = COG_Agri_investment_boost_situation_of_country_button
+		texturefile = "gfx/guis/COG/decisions/COG_Agri_investment_boost_situation_of_country_button.dds"	
+		transparencecheck = yes #启用透明检测	
+	}
+	spriteType = {#建设界面
+		name = COG_Build_and_grow_situation_of_country_button
+		texturefile = "gfx/guis/COG/decisions/COG_Build_and_grow_situation_of_country_button.dds"	
+		transparencecheck = yes #启用透明检测	
+	}
+
 	spriteType = {#旅鼠商人地区
 		name = COG_Businessman_region
 		texturefile = "gfx/guis/COG/decisions/COG_Businessman_region.dds"	
