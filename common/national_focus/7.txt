@@ -1,0 +1,35 @@
+focus_tree = {
+	id = ZSB3_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ZSB
+		}
+	}
+	default = no
+	focus = {
+		id = 6_focus_1
+		x = 10
+		y = -4
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = 6_focus_2
+		x = 4
+		y = -4
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+	focus = {
+		id = 6_focus_3
+		x = 16
+		y = -4
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+}
