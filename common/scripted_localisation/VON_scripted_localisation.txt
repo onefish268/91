@@ -18,9 +18,6 @@ defined_text = {
 
 #变动的决议文本
 
-defined_text = {
-	name = COG_situation_of_country_Businessman_region_tips
-}
 
 defined_text = {#旅鼠模块
 	name = COG_situation_of_country_Businessman_region_tips

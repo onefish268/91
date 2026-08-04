@@ -103,11 +103,45 @@ guiTypes = {
 				position = { x=0 y=0 }
 			}
 
+			#切换按键
+			buttonType = {#常规
+				name = "COG_situation_of_country_button"
+				position = { x = 0 y = 0 }
+				spriteType = generic_political_support
+				pdx_tooltip = COG_situation_of_country_button_tip
+				clicksound = click_default
+			}
+
+			buttonType = {#矿业
+				name = "COG_Mine_expansion_situation_of_country_button"
+				position = { x = 0 y = 420 }
+				spriteType = generic_exploit_mines
+				pdx_tooltip = COG_Mine_expansion_situation_of_country_button_tip
+				clicksound = click_default
+			}
+
+			buttonType = {#农业
+				name = "COG_Agri_investment_boost_situation_of_country_button"
+				position = { x = 340 y = 420 }
+				spriteType = AST_country_party_influence_spirit
+				pdx_tooltip = COG_Agri_investment_boost_situation_of_country_button_tip
+				clicksound = click_default
+			}
+
+			buttonType = {#建设
+				name = "COG_Build_and_grow_situation_of_country_button"
+				position = { x = 340 y = 0 }
+				spriteType = SOV_rebuild_the_nation_ccp_sov_compatibility
+				pdx_tooltip = COG_Build_and_grow_situation_of_country_button_tip
+				clicksound = click_default
+			}
+
+
 			buttonType = {
 				name = "COG_situation_of_country_Ratkin_region"
 				position = { x = 13 y = 120 }
 				spriteType = COG_Ratkin_region
-				pdx_tooltip = COG_situation_of_country_Ratkin_region_tip
+				pdx_tooltip = COG_situation_of_country_Ratkin_region_tips
 				clicksound = click_default
 			}
 
@@ -115,7 +149,7 @@ guiTypes = {
 				name = "COG_situation_of_country_MoeLotl_region"
 				position = { x = 123 y = 115 }
 				spriteType = COG_MoeLotl_region
-				pdx_tooltip = COG_situation_of_country_MoeLotl_region_tip
+				pdx_tooltip = COG_situation_of_country_MoeLotl_region_tips
 				clicksound = click_default
 			}
 
@@ -123,7 +157,7 @@ guiTypes = {
 				name = "COG_situation_of_country_Kiiro_region"
 				position = { x = 103 y = 10 }
 				spriteType = COG_Kiiro_region
-				pdx_tooltip = COG_situation_of_country_Kiiro_region_tip
+				pdx_tooltip = COG_situation_of_country_Kiiro_region_tips
 				clicksound = click_default
 			}
 
@@ -131,7 +165,7 @@ guiTypes = {
 				name = "COG_situation_of_country_Businessman_region"
 				position = { x = 80 y = 56 }
 				spriteType = COG_Businessman_region
-				pdx_tooltip = COG_situation_of_country_Businessman_region_tip
+				pdx_tooltip = COG_situation_of_country_Businessman_region_tips
 				clicksound = click_default
 			}
 
@@ -139,7 +173,7 @@ guiTypes = {
 				name = "COG_situation_of_country_Glowforest_region"
 				position = { x = 65 y = 270 }
 				spriteType = COG_Glowforest_region
-				pdx_tooltip = COG_situation_of_country_Glowforest_region_tip
+				pdx_tooltip = COG_situation_of_country_Glowforest_region_tips
 				clicksound = click_default
 			}
 
@@ -147,7 +181,7 @@ guiTypes = {
 				name = "COG_situation_of_country_Dragonian_region"
 				position = { x = 23 y = 275 }
 				spriteType = COG_Dragonian_region
-				pdx_tooltip = COG_situation_of_country_Dragonian_region_tip
+				pdx_tooltip = COG_situation_of_country_Dragonian_region_tips
 				clicksound = click_default
 			}
 
@@ -155,7 +189,7 @@ guiTypes = {
 				name = "COG_situation_of_country_Mima_region"
 				position = { x = 142 y = 360 }
 				spriteType = COG_Mima_region
-				pdx_tooltip = COG_situation_of_country_Mima_region_tip
+				pdx_tooltip = COG_situation_of_country_Mima_region_tips
 				clicksound = click_default
 			}
 
@@ -163,7 +197,7 @@ guiTypes = {
 				name = "COG_situation_of_country_various_region"
 				position = { x = 87 y = 413 }
 				spriteType = COG_various_region
-				pdx_tooltip = COG_situation_of_country_various_region_tip
+				pdx_tooltip = COG_situation_of_country_various_region_tips
 				clicksound = click_default
 			}
 
@@ -171,7 +205,7 @@ guiTypes = {
 				name = "COG_situation_of_country_chosen_region"
 				position = { x = 45 y = 500 }
 				font = "hoi_24header" #字体样式
-				text = COG_race_of_country_chosen_region
+				text = COG_situation_of_country_chosen_region
 				maxWidth = 400
 				maxHeight = 24
 				format = center	#对齐方式
