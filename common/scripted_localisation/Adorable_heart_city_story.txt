@@ -148,6 +148,15 @@ defined_text = {##文字介绍
 		trigger = {
 			state = 813
 			owner = {
+				tag = ZYX
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
+	}
+	text = {
+		trigger = {
+			state = 813
+			owner = {
 				tag = ZSB
 			}
 		}
