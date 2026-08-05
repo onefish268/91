@@ -73,16 +73,40 @@ scripted_gui = {
 
 			effects = {
 				COG_situation_of_country_button_click = {
-					set_variable = { COG_situation_of_country_mode_number = 0 }
+					set_variable = { COG_situation_of_country_chosen_mode_number = 0 }
 				}
 				COG_Mine_expansion_situation_of_country_button_click = {
-					set_variable = { COG_situation_of_country_mode_number = 1 }
+					set_variable = { COG_situation_of_country_chosen_mode_number = 1 }
 				}
 				COG_Agri_investment_boost_situation_of_country_button_click = {
-					set_variable = { COG_situation_of_country_mode_number = 2 }
+					set_variable = { COG_situation_of_country_chosen_mode_number = 2 }
 				}
 				COG_Build_and_grow_situation_of_country_button_click = {
-					set_variable = { COG_situation_of_country_mode_number = 3 }
+					set_variable = { COG_situation_of_country_chosen_mode_number = 3 }
+				}
+				COG_situation_of_country_Glowforest_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 0 }
+				}
+				COG_situation_of_country_Mima_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 1 }
+				}
+				COG_situation_of_country_Ratkin_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 2 }
+				}
+				COG_situation_of_country_MoeLotl_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 3 }
+				}
+				COG_situation_of_country_Kiiro_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 4 }
+				}
+				COG_situation_of_country_Dragonian_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 5 }
+				}
+				COG_situation_of_country_Businessman_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 6 }
+				}
+				COG_situation_of_country_various_region_click = {
+					set_variable = { COG_situation_of_country_chosen_region_number = 7 }
 				}
 			}
 		}

@@ -88,3 +88,145 @@ country_event = {#议会
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#和杜马的通牒
+    id = ZSB.7
+    title = ZSB.7.t
+    desc = ZSB.7.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.7.a
+        ai_chance = { base = 100 }
+
+        ZSB = {
+            annex_country = {
+                target = ZDM
+            }
+        }
+    }
+    option = {
+        name = ZSB.7.b
+        ai_chance = { base = 0 }
+        ZSB = {
+            country_event = ZSB.12
+            create_wargoal = {
+                target = ZDM
+                type = annex_everything
+            }
+        }
+    }
+}
+
+country_event = {#对皇家勘探公司的行动成功
+    id = ZSB.8
+    title = ZSB.8.t
+    desc = ZSB.8.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.8.a
+        ai_chance = { base = 50 }
+
+        ZSB = {
+            annex_country = {
+                target = ZHJ
+            }
+        }
+    }
+}
+
+country_event = {#对皇家勘探公司的行动失败
+    id = ZSB.9
+    title = ZSB.9.t
+    desc = ZSB.9.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.9.a
+        ai_chance = { base = 50 }
+
+        ZSB = {
+            create_wargoal = {
+            target = ZHJ
+            type = annex_everything
+        }
+        }
+    }
+}
+
+country_event = {#给共产党、民族主义的事件
+    id = ZSB.10
+    title = ZSB.10.t
+    desc = ZSB.10.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.10.a
+        ai_chance = { base = 10 }
+
+        ZSB = {
+            annex_country = {
+                target = ZDM
+            }
+        }
+    }
+    option = {
+        name = ZSB.10.b
+        ai_chance = { base = 90 }
+        ZSB = {
+            country_event = ZSB.12
+            create_wargoal = {
+                target = ZDM
+                type = annex_everything
+            }
+        }
+    }
+}
+
+country_event = {#给小势力的事件
+    id = ZSB.11
+    title = ZSB.11.t
+    desc = ZSB.11.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.11.a
+        ai_chance = { base = 90 }
+
+        ZSB = {
+            annex_country = {
+                target = ZDM
+            }
+        }
+    }
+    option = {
+        name = ZSB.11.b
+        ai_chance = { base = 10 }
+        ZSB = {
+            country_event = ZSB.12
+            create_wargoal = {
+                target = ZDM
+                type = annex_everything
+            }
+        }
+    }
+}
+
+country_event = {#来自他国的拒绝
+    id = ZSB.12
+    title = ZSB.12.t
+    desc = ZSB.12.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.12.a
+        ai_chance = { base = 50 }
+    }
+}

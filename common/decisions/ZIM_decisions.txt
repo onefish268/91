@@ -19,14 +19,14 @@ ZIM_categories_0 = {
 				FROM = {
 					is_neighbor_of = ROOT
 					OR = {
-						tag = ZDM
-						tag = ZRD
-						#tag = ZIM
-						tag = ZSB
-						tag = ZYX
-						tag = ZHJ
-						tag = ZCS
-						tag = ZXS
+						tag = ZDM #杜马
+						tag = ZSH #津巴布韦尔
+						#tag = ZIM 津巴布韦本体
+						tag = ZSB #圣杯
+						tag = ZYX #一心
+						tag = ZHJ #皇家勘探
+						tag = ZCS #城市
+						tag = ZXS #邪神
 					}
 				}
 			}

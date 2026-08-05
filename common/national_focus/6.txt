@@ -11,43 +11,78 @@ focus_tree = {
 	focus = {
 		id = 5_focus_1
 		x = 1
-		y = -8
+		y = 1
 		cost = 0
 		icon = GFX_focus_TGI_get_the_fxxk_outa_here
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.05
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_2
 		x = -5
-		y = -8
+		y = 1
 		cost = 0
 		icon = GFX_focus_TGI_land_of_pain
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_3
 		x = 7
-		y = -8
+		y = 1
 		cost = 0
 		icon = GFX_focus_PHI_fortify_corregidor
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 800
+				producer = EAS
+			}
+			add_political_power = -50
+		}
 	}
 	focus = {
 		id = 5_focus_4
 		x = 13
-		y = -8
+		y = 1
 		cost = 0
 		icon = GFX_focus_NORDIC_com_selector_material
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Build_faster
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_5
 		x = 0
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_TGI_northern_border_base
 		continue_if_invalid = no
@@ -58,11 +93,21 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_1
 		}
+
+		completion_reward = {
+			#这些是合作政府
+			add_collaboration = {
+				target = ZHJ
+				value = 0.15
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_6
 		x = 2
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_NGL_set_out
 		continue_if_invalid = no
@@ -73,11 +118,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_1
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.05
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_7
 		x = 0
-		y = -5
+		y = 4
 		cost = 0
 		icon = GFX_focus_NGL_civil_used
 		continue_if_invalid = no
@@ -85,11 +139,21 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_5
 		}
+
+		
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.20
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_8
 		x = 2
-		y = -5
+		y = 4
 		cost = 0
 		icon = GFX_focus_NGL_imperial_intelligence_agency
 		continue_if_invalid = no
@@ -97,11 +161,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_6
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.10
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_9
 		x = 0
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_NGL_end_the_struggle
 		continue_if_invalid = no
@@ -109,11 +182,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_7
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.20
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_10
 		x = 2
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_TGI_farther_land
 		continue_if_invalid = no
@@ -121,11 +203,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_8
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.10
+			}
+
+			custom_effect_tooltip = ZSB_tip
+		}
 	}
 	focus = {
 		id = 5_focus_11
 		x = 1
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_NGL_aristocracy_admit_their_mistakes
 		continue_if_invalid = no
@@ -134,11 +225,40 @@ focus_tree = {
 			focus = 5_focus_9
 			focus = 5_focus_10
 		}
+
+		completion_reward = {
+			custom_effect_tooltip = ZSB_result_tip
+
+			hidden_effect = {
+				if = {
+					limit = { has_completed_focus = 5_focus_9 }
+
+					random_list = {
+						60 = {
+							country_event = ZSB.8
+						}
+						40 = {
+							country_event = ZSB.9
+						}
+					}
+				}
+				else = {
+					random_list = {
+						30 = {
+							country_event = ZSB.8
+						}
+						70 = {
+							country_event = ZSB.9
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_12
 		x = -6
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_generic_treaty
 		continue_if_invalid = no
@@ -146,11 +266,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_13
 		x = -4
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
 		continue_if_invalid = no
@@ -158,11 +286,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_14
 		x = -5
-		y = -6
+		y = 3
 		cost = 0
 		icon = GFX_focus_PRC_promote_paper_bills
 		continue_if_invalid = no
@@ -170,11 +306,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_16
 		x = -4
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_TUR_ratify_the_six_arrows
 		continue_if_invalid = no
@@ -182,11 +326,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_13
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_15
 		x = -6
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_generic_university_2
 		continue_if_invalid = no
@@ -194,11 +346,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_12
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZDM
+				value = 0.15
+			}
+		}
+
 	}
 	focus = {
 		id = 5_focus_17
 		x = -5
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_generic_surrender
 		continue_if_invalid = no
@@ -212,11 +372,21 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_14
 		}
+
+		completion_reward = {
+			custom_effect_tooltip = ZSB_result_tip
+
+			hidden_effect = {
+				ZDM = {
+					country_event = ZSB.7
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_18
 		x = 7
-		y = -6
+		y = 3
 		cost = 0
 		icon = GFX_focus_focus_fra_maquis
 		continue_if_invalid = no
@@ -224,11 +394,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_3
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = EAS
+			}
+			add_political_power = -30
+		}
 	}
 	focus = {
 		id = 5_focus_19
 		x = 7
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_INS_peg_indies_guilder_to_us_dollar
 		continue_if_invalid = no
@@ -236,11 +420,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_18
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = EAS
+			}
+			add_political_power = -30
+		}
 	}
 	focus = {
 		id = 5_focus_20
 		x = 7
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_generic_expropriate_industrialist
 		continue_if_invalid = no
@@ -248,11 +446,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_19
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = EAS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+				producer = EAS
+			}
+			add_political_power = -30
+		}
 	}
 	focus = {
 		id = 5_focus_21
 		x = 11
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_INS_license_dutch_weapon_blueprints
 		continue_if_invalid = no
@@ -260,11 +472,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_4
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Representative
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_22
 		x = 15
-		y = -7
+		y = 2
 		cost = 0
 		icon = GFX_focus_AFG_sugar_factory
 		continue_if_invalid = no
@@ -272,11 +490,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_4
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Ensure_supply
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_23
 		x = 11
-		y = -5
+		y = 4
 		cost = 0
 		icon = GFX_focus_AST_new_south_wales_government_railways
 		continue_if_invalid = no
@@ -284,11 +508,43 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_21
 		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_24
 		x = 15
-		y = -5
+		y = 4
 		cost = 0
 		icon = GFX_focus_AST_stephensen
 		continue_if_invalid = no
@@ -296,11 +552,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_22
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_More_talent
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_25
 		x = 11
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_FIN_weapon_caches
 		continue_if_invalid = no
@@ -308,11 +570,32 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_23
 		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_ideas = {
+				ZSB_arms_factory_construction
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_26
 		x = 15
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_RAJ_special_economic_zones
 		continue_if_invalid = no
@@ -320,11 +603,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_24
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Resources_control
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_27
 		x = 4
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_NGL_future_goals
 		continue_if_invalid = no
@@ -342,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_28
 		x = -5
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_GER_fuhrerprinzip_goring
 		continue_if_invalid = no
@@ -350,11 +639,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_29
 		x = 1
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_ITA_peasants_rise
 		continue_if_invalid = no
@@ -362,11 +656,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZSH
+				value = 0.1
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_30
 		x = 7
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_BUL_destroy_the_zveno
 		continue_if_invalid = no
@@ -374,11 +675,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZYX
+				value = 0.1
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_31
 		x = 13
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_NGL_children_of_motherland
 		continue_if_invalid = no
@@ -386,11 +694,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
+
+		completion_reward = {
+			add_collaboration = {
+				target = ZCS
+				value = 0.9
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_32
 		x = -6
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_NPT_crackdown_on_cracking_of_associations
 		continue_if_invalid = no
@@ -398,11 +713,22 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_28
 		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -75
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_33
 		x = -4
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_generic_crush_the_military
 		continue_if_invalid = no
@@ -410,11 +736,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_28
 		}
+
+		completion_reward = {
+			add_manpower = -250
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_34
 		x = -6
-		y = 4
+		y = 13
 		cost = 0
 		icon = GFX_focus_SOV_military_purge
 		continue_if_invalid = no
@@ -422,11 +753,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_32
 		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_35
 		x = -4
-		y = 4
+		y = 13
 		cost = 0
 		icon = GFX_focus_AFG_royal_guard
 		continue_if_invalid = no
@@ -434,11 +770,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_33
 		}
+
+		completion_reward = {
+			add_manpower = -2500
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = 5_focus_36
 		x = 1
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_NGL_not_the_life_of_royal
 		continue_if_invalid = no
@@ -446,11 +787,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_29
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.10
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_37
 		x = 7
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_USS_expand_empire_sojy
 		continue_if_invalid = no
@@ -458,11 +805,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_30
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.10
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_38
 		x = 13
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		continue_if_invalid = no
@@ -470,11 +823,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_31
 		}
+
+		completion_reward = {
+			ZCS = {
+				country_event = ZSB.11
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_39
 		x = -5
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_PER_rally_behind_mosaddegh
 		continue_if_invalid = no
@@ -485,11 +844,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_35
 		}
+
+		completion_reward = {
+			ZYX = {
+				country_event = ZSB.7
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_40
 		x = 1
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		continue_if_invalid = no
@@ -497,11 +862,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_36
 		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = 5_focus_41
 		x = 7
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		continue_if_invalid = no
@@ -509,11 +878,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_37
 		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = 5_focus_42
 		x = 13
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_PHI_utang_na_loob
 		continue_if_invalid = no
@@ -521,11 +894,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_38
 		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = 5_focus_43
 		x = 4
-		y = 6
+		y = 15
 		cost = 0
 		icon = GFX_focus_NGL_imperial_glory
 		continue_if_invalid = no
@@ -550,7 +927,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_44
 		x = -18
-		y = -8
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes

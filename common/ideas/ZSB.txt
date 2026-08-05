@@ -31,5 +31,57 @@ ideas = {
 				mobilization_speed = 0.15
 			}
 		}
+
+		ZSB_Build_faster = {
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+
+		ZSB_arms_factory_construction = {
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				global_building_slots_factor = 0.15
+			}
+		}
+
+		ZSB_Representative = {
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		ZSB_Ensure_supply = {
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		ZSB_More_talent = {
+			
+			modifier = {
+				political_advisor_cost_factor = -0.33
+				political_power_factor = 0.1
+				party_popularity_stability_factor = 0.2
+			}
+		}
+
+		ZSB_Resources_control = {
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.15
+			}
+		}
 	}
 }
