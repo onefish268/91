@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Slave_court_oppression"
+	progress = 0
+}

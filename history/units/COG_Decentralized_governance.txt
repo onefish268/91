@@ -1,4 +1,0 @@
-focus = {
-	current = "COG_Decentralized_governance"
-	progress = 0
-}

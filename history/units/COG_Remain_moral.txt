@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Remain_moral"
+	progress = 0
+}

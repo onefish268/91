@@ -1,4 +1,0 @@
-focus = {
-	current = "COG_Frozen_hierarchy"
-	progress = 0
-}

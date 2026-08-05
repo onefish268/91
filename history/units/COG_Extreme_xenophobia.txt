@@ -1,4 +1,0 @@
-focus = {
-	current = "COG_Extreme_xenophobia"
-	progress = 0
-}

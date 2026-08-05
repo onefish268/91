@@ -14,7 +14,7 @@
 
   05_AdorableHeart_achievements_africa: "钢铁萌心成就-非洲"
   AH_achievements_Welcome_to_the_wild_wild_world_NAME: "欢迎来到狂野的世界！"
-  AH_achievements_Welcome_to_the_wild_wild_world_DESC: "游玩《狂野法则》制作的两个国家中的其中一个作为初始国家（刚果、罗德西亚）"
+  AH_achievements_Welcome_to_the_wild_wild_world_DESC: "选择《狂野法则》制作的两个国家中的一个作为初始国家（刚果、罗德西亚）"
 
 #设定
   ############################################################################################################
@@ -843,6 +843,20 @@
   COG_against_Dragonian: "抨击龙娘们"
   COG_against_Dragonian_desc: "我们会抨击这些吃白饭的龙娘们，她们霸占着一块这么大的地盘，却只是在里面过着采摘狩猎的简单日子，也许，我们应该让她们认识到，她们浪费了这么好的资源。"
 
+  COG_Ratkin_word: "鼠鼠们"
+  COG_Businessman_word: "旅鼠们"
+  COG_MoeLotl_word: "萌螈们"
+  COG_Kiiro_word: "绮罗们"
+  COG_Dragonian_word: "龙娘们"
+
+  COG_relation_word: "与其他部族的关系"
+  COG_influence_word: "在魔界溪谷的影响力"
+  COG_add_word: "§O增加了§!"
+  COG_cut_word: "§O减少了§!"
+
+  COG_categories_add_information: "§P$RACE_NAME$§!$EVENT$$CHANGE$§G$CHANGE_NUMBER$§!"
+  COG_categories_cut_information: "§P$RACE_NAME$§!$EVENT$$CHANGE$§S$CHANGE_NUMBER$§!"
+
   #COG_categories_situation_of_country启用的决议
   COG_situation_of_country_button_tip: "点击切换到常规界面"
   COG_Mine_expansion_situation_of_country_button_tip: "点击切换到矿业界面"
@@ -925,6 +939,8 @@
   COG_Agri_investment_boost_situation_of_country_Dragonian_region_tip: "龙憩之地地区始终大雨连绵，是典型的热带雨林地区，在加上龙娘本身没有什么种植的经验，这里想要发展农业是比较差劲的，除非种点热带作物或者花费大力气改造这里。"
   COG_Agri_investment_boost_situation_of_country_Mima_region_tip: "幻梦界地区的土地曾经被魅魔改造过，希望能够将魔界河对面的荧光森林移植到她的灵魔殿旁，也许是幻梦界缺少源翠石塑造的魔法环境，移植过来的树木与蘑菇似乎放不开手脚成长，相比于它们的前辈，它们通常要矮小那么一大截，瘦那么一大圈，这让魅魔感到很奇怪。后来，这些被改造的土地长出了各种野生的灌木与野果，许多原住民便在旁边定居了下来，并试探性地种上了自己的东西——魅魔早就放弃了她的计划，根本没人拦着她们用那片土地。所以，当下的幻梦界农业发展也是有所成就的。"
   COG_Agri_investment_boost_situation_of_country_various_region_tip: "“闲置区”地区作为少有的平原地区，曾经因为魅魔建设的需要而被空出，又因为魅魔的懒政放开了。各种部族都在这里杂居生活着，土地上也出现了一些有趣的景象：鼠鼠们在低洼处种了低杆玉米——不然她们采摘不到，绮罗们在向阳的坡地上栽了草药和香料，萌螈从家乡捎来了翠玉竹的竹鞭以及连在上面的潮土，在客家种下了她们心心念念的翠玉竹。在这片新土地上，有无数中发展的可能。"
+
+
   #COG_Build_and_grow启用的决议和信息
   COG_Build_and_grow_situation_of_country_Ratkin_region_tip: "作为人口最为稠密的地区，铁鼠王国内有太多太多可以实施的项目也有太多太多可以投入的劳动力，日渐扩大的城邦里，一座座拔地而起的粮仓、工坊、水渠，与熙熙攘攘的街道，很好地诠释了当下铁鼠王国的发展样貌。"
   COG_Build_and_grow_situation_of_country_MoeLotl_region_tip: "萌螈的建设往往是修缮旧有的而很少建设新的，一方面，人口的缓慢增加并不需要扩建什么房屋，鲜少和外界贸易也不用修建什么道路，比起在修仙领域上达到更深的境界，她们很少往这一方面去考虑。"

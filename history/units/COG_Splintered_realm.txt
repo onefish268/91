@@ -1,0 +1,4 @@
+focus = {
+	current = "COG_Splintered_realm"
+	progress = 0
+}

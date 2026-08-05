@@ -532,7 +532,7 @@ country_event = {#新家园
 	}
 }
 
-country_event = {#鼠族反对——松散的政权造成的困境
+country_event = {#鼠族反对
 	id = SA_COG_event.01000
 	title = SA_COG_event.01000.t
 	desc = SA_COG_event.01000.d
@@ -540,17 +540,12 @@ country_event = {#鼠族反对——松散的政权造成的困境
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			OR = {
-				has_country_flag = test_of_core_circle
-				has_country_flag = COG_Dragon_girl_study
-			}
-		}
+		check_variable = { COG_relation_with_Ratkin < 0 }
 	}
 
 	immediate = {
 		hidden_effect = {
-			load_oob = "COG_Overreaching_lords"
+			load_oob = "COG_Splintered_realm"
 		}
 	}
 
@@ -566,6 +561,39 @@ country_event = {#鼠族反对——松散的政权造成的困境
 		ai_chance = {
 			base = 1
 		}
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = COG_categories_add_information
+				RACE_NAME = COG_Ratkin_word
+				EVENT = COG_relation_word
+				CHANGE = COG_cut_word
+				CHANGE_NUMBER = "[?COG_relation_with_Ratkin]"
+			}
+
+			tooltip = {
+				localization_key = COG_categories_cut_information
+				RACE_NAME = COG_Ratkin_word
+				EVENT = COG_relation_word
+				CHANGE = COG_cut_word
+				CHANGE_NUMBER = [?COG_relation_with_Ratkin]
+			}
+		}
+
+		add_to_variable = { COG_agreement_of_Ratkin = 1 }
+		add_to_variable = { COG_relation_with_Ratkin = -20 }
+	}
+
+	option = {
+		name = SA_COG_event.01000.c
+		ai_chance = {
+			base = 1
+		}
+
+		trigger = {
+			has_country_flag = COG_Mima_has_awared
+		}
+
+		add_to_variable = { COG_agreement_of_Ratkin = 1 }
 	}
 }
 

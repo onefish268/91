@@ -1,4 +1,0 @@
-focus = {
-	current = "COG_Rigid_tyranny"
-	progress = 0
-}
