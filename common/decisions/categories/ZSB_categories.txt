@@ -1,4 +1,4 @@
-debug_test_categories = {
+ZSB_categories = {
     icon = generic_construction
     visible = {
         OR = {

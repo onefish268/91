@@ -1527,7 +1527,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 10
-		icon = GFX_focus_ARG_develop_the_electricity_sector
+		icon = GFX_focus_ARG_develop_the_electricity_Sector
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -2498,13 +2498,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = 3_focus_81
+				name = 3_focus_81_0
 				bonus = 0.25
 				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
-				name = 3_focus_81
+				name = 3_focus_81_1
 				bonus = 0.25
 				uses = 1
 				category = infantry_weapons
@@ -2546,7 +2546,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = 3_focus_81
+				name = 3_focus_83
 				bonus = 0.50
 				uses = 1
 				category = armor
@@ -2769,20 +2769,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = 3_focus_95
+				name = 3_focus_95_0
 				bonus = 0.5
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
-				name = 3_focus_95
+				name = 3_focus_95_1
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
-				name = 3_focus_95
+				name = 3_focus_95_2
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
@@ -2951,14 +2951,14 @@ focus_tree = {
 				ZYX_Fighter_dev
 			}
 			add_tech_bonus = {
-				name = 3_focus_104
+				name = 3_focus_104_0
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = cat_light_fighter
 			}
 			add_tech_bonus = {
-				name = 3_focus_104
+				name = 3_focus_104_1
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
@@ -3029,7 +3029,7 @@ focus_tree = {
 				ZYX_Air_castles
 			}
 			add_tech_bonus = {
-				name = 3_focus_105
+				name = 3_focus_107
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
@@ -3087,7 +3087,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_throne_of_ocean
+				name = 3_focus_110
 				bonus = 1
 				uses = 2
 				category = cv_tech

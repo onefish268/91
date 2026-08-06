@@ -70,6 +70,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_4
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Sector_of_war
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_6
@@ -82,6 +88,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_5
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Federal_army
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_7
@@ -93,6 +105,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_5
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_force
+			}
 		}
 	}
 	focus = {
@@ -778,7 +796,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				id = ZSB_Supply_from_ENG
+				idea = ZSB_Supply_from_ENG
 				days = 180
 			}
 		}
@@ -908,19 +926,19 @@ focus_tree = {
 			}
 			add_daily_mastery = { #精通
                     amount = 0.5
-                    days = 365
+                    days = 100
                     name = 3_focus_77
                     folder = land
             }
 			add_daily_mastery = { #精通
                     amount = 0.5
-                    days = 365
+                    days = 100
                     name = 3_focus_77
                     folder = naval
             }
 			add_daily_mastery = { #精通
                     amount = 0.5
-                    days = 365
+                    days = 100
                     name = 3_focus_77
                     folder = air
             }
@@ -974,7 +992,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = {
-				ZSB_Sector_of_war
+				ZSB_Sector_of_war_planning
 			}
 		}
 	}
@@ -1001,6 +1019,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_6
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Construction_of_the_Hexagon
+			}
+			custom_effect_tooltip = "我们将会在180天后竣工！"
+			hidden_effect = {
+				country_event = {
+					id = ZSB.13
+					days = 180
+				}
+			}
+		}
+		
 	}
 	focus = {
 		id = 6_focus_71
@@ -1012,6 +1044,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_6
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Conscription_act
+			}
 		}
 	}
 	focus = {
@@ -1028,6 +1066,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = ZSB_purple_plan
+			custom_effect_tooltip = "我们将会获得针对一些极端国家采取军事行动的决议。"
 		}
 	}
 	focus = {
@@ -1044,6 +1083,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = ZSB_yellow_plan
+			custom_effect_tooltip = "我们将会获得针对一些共产主义国家采取军事行动的决议。"
 		}
 	}
 	focus = {
@@ -1060,7 +1100,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = ZSB_blue_plan
-			custom_effect_tooltip = "我们将会获得对一些国家采取军事行动的决议。"
+			custom_effect_tooltip = "我们将会获得针对一些法西斯国家采取军事行动的决议。"
 		}
 	}
 	focus = {
@@ -1074,6 +1114,13 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_70
 		}
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = ZSB_Sector_of_war
+					add_idea = ZSB_Sector_of_war_defence
+				}
+		}
 	}
 	focus = {
 		id = 6_focus_76
@@ -1085,6 +1132,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_71
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = {
+				ZSB_Women_also_as_soilder
+			}
 		}
 	}
 	focus = {
@@ -1101,6 +1155,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Common_trainning_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_78
@@ -1115,6 +1175,27 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 6_focus_71
+		}
+
+		completion_reward = {
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = land
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = naval
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = air
+            }
 		}
 	}
 	focus = {
@@ -1131,6 +1212,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_National_guard
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_80
@@ -1145,6 +1232,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 6_focus_78
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_War_industry_complex
+			}
 		}
 	}
 	focus = {
@@ -1161,6 +1254,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Veteran_association
+		}
+		}
 	}
 	focus = {
 		id = 6_focus_82
@@ -1176,6 +1275,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_mastery_bonus = {
+                bonus = 0.15
+                days = 720
+                name = 6_focus_82
+            }
+		}
 	}
 	focus = {
 		id = 6_focus_83
@@ -1187,6 +1294,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_82
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_83
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
@@ -1200,6 +1317,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_82
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_83
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_85
@@ -1211,6 +1338,23 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_82
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_85_0
+				bonus = 0.25
+				ahead_reduction = 2
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = 6_focus_85_1
+				bonus = 0.25
+				ahead_reduction = 2
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -1227,6 +1371,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_84
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Ranger_warfare
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_87
@@ -1242,6 +1392,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_85
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Firepower_synergy
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_88
@@ -1253,6 +1409,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_7
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_war_planning
+			}
 		}
 	}
 	focus = {
@@ -1295,6 +1457,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_88
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Strategic_bombing
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_90
@@ -1306,6 +1474,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_88
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_support
+			}
 		}
 	}
 	focus = {
@@ -1319,6 +1493,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_90
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Low_bombing
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_93
@@ -1331,6 +1511,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_88
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Emergency_aviation_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_94
@@ -1342,6 +1528,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_91
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Escort_squadrons
+			}
 		}
 	}
 	focus = {
