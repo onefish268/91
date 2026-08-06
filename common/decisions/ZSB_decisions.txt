@@ -1,0 +1,203 @@
+ZSB_categories = {
+	
+	ZSB_fight_with_DVL = {
+		name = ZSB_fight_with_DVL
+		icon = generic_construction
+		visible = {
+			DVL = { exists = yes }
+			has_country_flag = ZSB_purple_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = DVL
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_PAQ = {
+		name = ZSB_fight_with_PAQ
+		icon = generic_construction
+		visible = {
+			PAQ = { exists = yes }
+			has_country_flag = ZSB_purple_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = PAQ
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_ITA = {
+		name = ZSB_fight_with_ITA
+		icon = generic_construction
+		visible = {
+			ITA = {
+				exists = yes
+				has_government = fascism
+			}
+			has_country_flag = ZSB_blue_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_GER = {
+		name = ZSB_fight_with_GER
+		icon = generic_construction
+		visible = {
+			GER = {
+				exists = yes
+				has_government = fascism
+			}
+			has_country_flag = ZSB_blue_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_PAM = {
+		name = ZSB_fight_with_PAM
+		icon = generic_construction
+		visible = {
+			PAM = {
+				exists = yes
+				has_government = fascism
+			}
+			has_country_flag = ZSB_blue_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = PAM
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_JAP = {
+		name = ZSB_fight_with_JAP
+		icon = generic_construction
+		visible = {
+			JAP = {
+				exists = yes
+				has_government = fascism
+			}
+			has_country_flag = ZSB_blue_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_USA = {
+		name = ZSB_fight_with_USA
+		icon = generic_construction
+		visible = {
+			USA = {
+				exists = yes
+				has_government = communism
+			}
+			has_country_flag = ZSB_yellow_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_LHS = {
+		name = ZSB_fight_with_LHS
+		icon = generic_construction
+		visible = {
+			LHS = {
+				exists = yes
+				has_government = communism
+			}
+			has_country_flag = ZSB_yellow_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = LHS
+				type = annex_everything
+			}
+		}
+	}
+
+	ZSB_fight_with_SOV = {
+		name = ZSB_fight_with_SOV
+		icon = generic_construction
+		visible = {
+			SOV = {
+				exists = yes
+				has_government = communism
+			}
+			has_country_flag = ZSB_yellow_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+}

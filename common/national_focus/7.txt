@@ -118,6 +118,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_4
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = 6_focus_10
@@ -129,6 +134,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_9
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -742,6 +751,10 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_9
 		}
+
+		completion_reward = {
+			add_war_support = 0.075
+		}
 	}
 	focus = {
 		id = 6_focus_61
@@ -751,8 +764,23 @@ focus_tree = {
 		icon = GFX_focus_theworld
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_9
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				id = ZSB_Supply_from_ENG
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -766,6 +794,10 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_9
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = 6_focus_63
@@ -775,8 +807,22 @@ focus_tree = {
 		icon = GFX_focus_TRB_economy_circle
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_61
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Oriented_trade
+			}
 		}
 	}
 	focus = {
@@ -787,8 +833,27 @@ focus_tree = {
 		icon = GFX_focus_TRB_99
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_61
+		}
+
+		completion_reward = {
+			load_oob = "ZSB_model_army"
+			capital_scope = {
+				create_unit = {
+					division = "name = \"教导总队\" division_template = \"教导总队\" start_experience_factor = 0.4"
+					owner = ROOT
+					count = 3
+				}
+			}
 		}
 	}
 	focus = {
@@ -799,8 +864,22 @@ focus_tree = {
 		icon = GFX_focus_TRB_46
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_63
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Economic_expert_from_ENG
+			}
 		}
 	}
 	focus = {
@@ -811,8 +890,40 @@ focus_tree = {
 		icon = GFX_focus_HUN_hungarian_tradition
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_64
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Haver_Military_academy
+			}
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = land
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = naval
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = air
+            }
 		}
 	}
 	focus = {
@@ -823,8 +934,30 @@ focus_tree = {
 		icon = GFX_focus_TRB_war_money
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ROC = {
+				exists = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_10
+		}
+
+		completion_reward = {
+			ROC = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = ZYX
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = ZYX
+			}
+			}
 		}
 	}
 	focus = {
@@ -837,6 +970,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_62
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Sector_of_war
+			}
 		}
 	}
 	focus = {
@@ -886,6 +1025,10 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
+
+		completion_reward = {
+			set_country_flag = ZSB_purple_plan
+		}
 	}
 	focus = {
 		id = 6_focus_73
@@ -898,6 +1041,10 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
+
+		completion_reward = {
+			set_country_flag = ZSB_yellow_plan
+		}
 	}
 	focus = {
 		id = 6_focus_74
@@ -909,6 +1056,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_68
+		}
+
+		completion_reward = {
+			set_country_flag = ZSB_blue_plan
+			custom_effect_tooltip = "我们将会获得对一些国家采取军事行动的决议。"
 		}
 	}
 	focus = {
@@ -1111,11 +1263,25 @@ focus_tree = {
 		icon = GFX_focus_generic_democratic_asia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_65
 		}
 		prerequisite = {
 			focus = 6_focus_66
+		}
+
+		completion_reward = {
+			ENG = {
+				add_to_faction = ROOT
+			}
 		}
 	}
 	focus = {

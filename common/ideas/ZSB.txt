@@ -33,7 +33,7 @@ ideas = {
 		}
 
 		ZSB_Build_faster = {
-			
+			picture = ARG_construction_guilds
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				industry_repair_factor = 0.15
@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		ZSB_arms_factory_construction = {
-			
+			picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				global_building_slots_factor = 0.15
@@ -49,7 +49,7 @@ ideas = {
 		}
 
 		ZSB_Representative = {
-			
+			picture = AST_cabinet_trust1_idea
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.05
@@ -58,7 +58,7 @@ ideas = {
 		}
 
 		ZSB_Ensure_supply = {
-			
+			picture = CHI_corruption_armed_forces
 			modifier = {
 				consumer_goods_factor = 0.1
 				stability_factor = 0.1
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		ZSB_More_talent = {
-			
+			picture = ARG_social_welfare_fund_ns
 			modifier = {
 				political_advisor_cost_factor = -0.33
 				political_power_factor = 0.1
@@ -77,10 +77,74 @@ ideas = {
 		}
 
 		ZSB_Resources_control = {
-			
+			picture = ARG_resource_extration_focus
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.15
 				local_resources_factor = 0.15
+			}
+		}
+
+		ZSB_Economic_expert_from_ENG = {
+			picture 
+			modifier = {
+				hcp_income_factor_monthly = 0.20 #
+				consumer_goods_expected_value = -0.20
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		ZSB_Oriented_trade = {
+			picture 
+			modifier = {
+				min_export = 0.1
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.15
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		ZSB_Haver_Military_academy = {
+			picture 
+			modifier = {
+				army_leader_start_level = 2
+				experience_gain_factor = 0.25
+			}
+		}
+
+		ZSB_Supply_from_ENG = {
+			picture
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		ZSB_Global_categories = {
+			picture
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.5
+				justify_war_goal_time = -0.2
+				enemy_justify_war_goal_time = 0.2
+			}
+		}
+
+		ZSB_Sector_of_war = {
+			picture
+			modifier = {
+				mobilization_speed = 0.25
+				war_support_reduction_on_damage = -0.25
+				weekly_convoys_war_support = -0.001
+				weekly_casualties_war_support = -0.001
+				weekly_bombing_war_support = -0.001
+			}
+		}
+
+		ZSB_Fight_with = {
+			targeted_modifier = {
+				tag = 
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
 			}
 		}
 	}
