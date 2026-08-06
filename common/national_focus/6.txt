@@ -17,6 +17,12 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZHJ
@@ -32,6 +38,12 @@ focus_tree = {
 		icon = GFX_focus_TGI_land_of_pain
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 
 		completion_reward = {
 			add_collaboration = {
@@ -94,6 +106,12 @@ focus_tree = {
 			focus = 5_focus_1
 		}
 
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			#这些是合作政府
 			add_collaboration = {
@@ -119,6 +137,12 @@ focus_tree = {
 			focus = 5_focus_1
 		}
 
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZHJ
@@ -140,6 +164,11 @@ focus_tree = {
 			focus = 5_focus_5
 		}
 
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			add_collaboration = {
@@ -160,6 +189,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_6
+		}
+
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -183,6 +218,12 @@ focus_tree = {
 			focus = 5_focus_7
 		}
 
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZHJ
@@ -202,6 +243,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_8
+		}
+
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -224,6 +271,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_9
 			focus = 5_focus_10
+		}
+
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -267,6 +320,12 @@ focus_tree = {
 			focus = 5_focus_2
 		}
 
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
@@ -285,6 +344,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_2
+		}
+
+		bypass = {
+			ZDM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -307,6 +372,12 @@ focus_tree = {
 			focus = 5_focus_2
 		}
 
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
@@ -327,6 +398,12 @@ focus_tree = {
 			focus = 5_focus_13
 		}
 
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
@@ -345,6 +422,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_12
+		}
+
+		bypass = {
+			ZDM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -371,6 +454,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 5_focus_14
+		}
+
+		bypass = {
+			ZDM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -640,6 +729,12 @@ focus_tree = {
 			focus = 5_focus_27
 		}
 
+		bypass = {
+			ZIM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.05
@@ -655,6 +750,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_27
+		}
+
+		bypass = {
+			ZSH = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -676,6 +777,12 @@ focus_tree = {
 			focus = 5_focus_27
 		}
 
+		bypass = {
+			ZYX = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZYX
@@ -695,6 +802,12 @@ focus_tree = {
 			focus = 5_focus_27
 		}
 
+		bypass = {
+			ZCS = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_collaboration = {
 				target = ZCS
@@ -712,6 +825,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_28
+		}
+
+		bypass = {
+			ZIM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -737,6 +856,12 @@ focus_tree = {
 			focus = 5_focus_28
 		}
 
+		bypass = {
+			ZIM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_manpower = -250
 			add_stability = 0.05
@@ -752,6 +877,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_32
+		}
+
+		bypass = {
+			ZIM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -771,6 +902,12 @@ focus_tree = {
 			focus = 5_focus_33
 		}
 
+		bypass = {
+			ZIM = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			add_manpower = -2500
 			add_stability = 0.05
@@ -786,6 +923,14 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_29
+		}
+
+		
+
+		bypass = {
+			ZSH = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -806,6 +951,12 @@ focus_tree = {
 			focus = 5_focus_30
 		}
 
+		bypass = {
+			ZYX = {
+				exists = no
+			}
+		}
+
 		completion_reward = {
 			ZYX = {
 				country_event = ZSB.10
@@ -822,6 +973,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_31
+		}
+
+		bypass = {
+			ZCS = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -843,6 +1000,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 5_focus_35
+		}
+
+		bypass = {
+			ZIM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -893,6 +1056,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 5_focus_38
+		}
+
+		bypass = {
+			ZCS = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
