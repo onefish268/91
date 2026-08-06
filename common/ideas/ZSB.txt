@@ -402,7 +402,8 @@ ideas = {
 			picture = liberty_ships_focus
 			modifier = {
 				industrial_capacity_dockyard = 0.2
-				consumer_goods_factor = -0.1
+				production_speed_dockyard_factor = 0.2
+				consumer_goods_factor = 0.1
 			}
 		}
 	}
