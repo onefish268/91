@@ -33,7 +33,7 @@ ideas = {
 		}
 
 		ZSB_Build_faster = {
-			
+			#picture = ARG_construction_guilds
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				industry_repair_factor = 0.15
@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		ZSB_arms_factory_construction = {
-			
+			#picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				global_building_slots_factor = 0.15
@@ -49,7 +49,7 @@ ideas = {
 		}
 
 		ZSB_Representative = {
-			
+			#picture = AST_cabinet_trust1_idea
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.05
@@ -58,7 +58,7 @@ ideas = {
 		}
 
 		ZSB_Ensure_supply = {
-			
+			#picture = CHI_corruption_armed_forces
 			modifier = {
 				consumer_goods_factor = 0.1
 				stability_factor = 0.1
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		ZSB_More_talent = {
-			
+			#picture = ARG_social_welfare_fund_ns
 			modifier = {
 				political_advisor_cost_factor = -0.33
 				political_power_factor = 0.1
@@ -77,10 +77,322 @@ ideas = {
 		}
 
 		ZSB_Resources_control = {
-			
+			#picture = ARG_resource_extration_focus
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.15
 				local_resources_factor = 0.15
+			}
+		}
+		#圣杯经济专家
+		ZSB_Economic_expert_from_ENG = {
+			#picture 
+			modifier = {
+				hcp_income_factor_monthly = 0.20 #
+				consumer_goods_expected_value = -0.20
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		#导向式贸易法案
+		ZSB_Oriented_trade = {
+			#picture 
+			modifier = {
+				min_export = 0.1
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.15
+				trade_opinion_factor = 0.2
+			}
+		}
+		#哈弗尔军校
+		ZSB_Haver_Military_academy = {
+			#picture 
+			modifier = {
+				army_leader_start_level = 2
+				experience_gain_factor = 0.25
+			}
+		}
+		#来自母国的援助
+		ZSB_Supply_from_ENG = {
+			#picture
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		#对外策略
+		ZSB_Global_categories = {
+			#picture
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.5
+				justify_war_goal_time = -0.2
+				enemy_justify_war_goal_time = 0.2
+			}
+		}
+		#战争计划部
+		ZSB_Sector_of_war_planning = {
+			#picture
+			modifier = {
+				mobilization_speed = 0.25
+				war_support_reduction_on_damage = -0.25
+				weekly_convoys_war_support = 0.001
+				weekly_casualties_war_support = 0.001
+				weekly_bombing_war_support = 0.01
+			}
+		}
+		#战争部
+		ZSB_Sector_of_war = {
+			#picture
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+			}
+		}
+		#国防部
+		ZSB_Sector_of_war_defence = {
+			#picture
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+				army_non_core_attack_factor = 0.1
+				army_non_core_defence_factor = 0.1
+			}
+		}
+		#联邦陆军
+		ZSB_Federal_army = {
+			#picture
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		#国民兵役法案
+		ZSB_Conscription_act = {
+			#picture
+			modifier = {
+				conscription_factor = 0.15
+				mobilization_speed = 0.1
+			}
+		}
+		#妇女也是战士
+		ZSB_Women_also_as_soilder = {
+			#picture
+			modifier = {
+				conscription_factor = 0.30
+			}
+		}
+		#一体化训练方案
+		ZSB_Common_trainning_act = {
+			#picture
+			modifier = {
+				training_time_factor = -0.15
+				experience_gain_army_unit_factor = 0.15
+			}
+		}
+		#六角大厦工程
+		ZSB_Construction_of_the_Hexagon = {
+			#picture
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.2
+				political_power_factor = -0.1
+			}
+		}
+		#六角大厦
+		ZSB_The_Hexagon = {
+			#picture
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				max_planning = 0.1
+				planning_speed = 0.1
+			}
+		}
+		#国民警卫队
+		ZSB_National_guard = {
+			#picture
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		#军工复合体
+		ZSB_War_industry_complex = {
+			#picture
+			modifier = {
+				military_industrial_organization_funds_gain = 0.1
+				military_industrial_organization_research_bonus = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		#老兵俱乐部
+		ZSB_Veteran_association = {
+			#picture
+			modifier = {
+				experience_loss_factor = -0.1
+				air_untrained_pilots_penalty_factor = -0.15
+				experience_gain_army_unit_factor = 0.1
+			}
+		}
+		#火力协同
+		ZSB_Firepower_synergy = {
+			#picture
+			modifier = {
+				army_attack_factor = 0.15
+			}
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.15
+					hard_attack = 0.15
+					instant = yes
+				}
+				artillery = {
+					soft_attack = 0.15
+					hard_attack = 0.15
+					instant = yes
+				}
+			}
+		}
+		#游骑兵战术
+		ZSB_Ranger_warfare = {
+			#picture
+			modifier = {
+				army_speed_factor = 0.15
+				terrain_penalty_reduction = -0.15
+			}
+		}
+
+		#空中支援
+		ZSB_Air_support = {
+			picture = ITA_regia_aeronautica_1
+			modifier = {
+				air_accidents_factor = -0.25
+				air_cas_present_factor = 0.15
+			}
+		}
+		#空战计划部
+		ZSB_Air_war_planning = {
+			picture = AUS_women_in_academia
+			modifier = {
+				air_training_xp_gain_factor = 0.15
+				air_untrained_pilots_penalty_factor = -0.15
+				air_wing_xp_loss_when_killed_factor = -0.15
+			}
+		}
+		#联邦空军
+		ZSB_Air_force = {
+			picture = JAP_air_services
+			modifier = {
+				air_range_factor = 0.1
+				air_agility_factor = 0.1
+				air_defence_factor = 0.05
+			}
+		}
+		#战略轰炸
+		ZSB_Strategic_bombing = {
+			picture = AST_government_aircraft_factories
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.2
+				air_strategic_bomber_night_penalty = -0.1
+			}
+		}
+		#贴地轰炸
+		ZSB_Low_bombing = {
+			picture = BRA_air_force
+			modifier = {
+				air_night_penalty = -0.1
+				air_cas_present_factor = 0.15
+			}
+		}
+		#紧急航空法案
+		ZSB_Emergency_aviation_act = {
+			picture = SWE_marauder_bombers
+			modifier = {
+				air_defence_factor = 0.2
+			}
+		}
+		#护航编队
+		ZSB_Escort_squadrons = {
+			picture = generic_fighter_production_diverted
+			modifier = {
+				air_home_defence_factor = 0.2
+				air_intercept_efficiency = 0.2
+				air_interception_detect_factor = 0.2
+			}
+		}
+
+		#绿水海军
+		ZYX_Green_water_navy = {
+			picture = JAP_hikari_naval_arsenal
+			modifier = {
+				naval_torpedo_cooldown_factor = -0.1
+				naval_torpedo_hit_chance_factor = 0.1
+			}
+		}
+		#联邦海军
+		ZYX_ = {
+			picture = ARG_arsenal_naval_buenos_aires
+			modifier = {
+				experience_gain_navy_unit_factor = 0.2
+				naval_mission_xp_factor = 0.2
+				headquarters_experience_gain_factor = 0.2
+			}
+		}
+		#远洋客轮
+		ZYX_ = {
+			picture = AUS_naval_efficiency_idea
+			modifier = {
+				navy_max_range_factor = 0.1
+				naval_supply_consumption_factor = 0.1
+			}
+		}
+		#改良舰炮
+		ZYX_Gun_upgrade = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				naval_heavy_gun_hit_chance_factor = 0.15
+				naval_light_gun_hit_chance_factor = 0.15
+				naval_damage_factor = 0.05
+			}
+		}
+		#自由轮
+		ZYX_ = {
+			picture = AUS_navy
+			modifier = {
+				naval_speed_factor = 0.2
+				naval_retreat_speed = 0.2
+				positioning = 0.05
+			}
+		}
+		#海军航空力量
+		ZYX_Naval_air_force = {
+			picture = generic_navy_carrier_bonus
+			modifier = {
+				sortie_efficiency = 0.1
+				fighter_sortie_efficiency = 0.1
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.1
+				navy_carrier_air_agility_factor = 0.1
+			}
+		}
+		#采用雷达战术
+		ZYX_Radar_tactics = {
+			picture = generic_radar
+			modifier = {
+				naval_detection = 0.1
+				spotting_chance = 0.1
+			}
+		}
+		#扩大海军基地
+		ZYX_ = {
+			picture = liberty_ships_focus
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+				production_speed_dockyard_factor = 0.3
+				repair_speed_factor = 0.1
 			}
 		}
 	}

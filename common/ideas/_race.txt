@@ -32,7 +32,8 @@ ideas = {
             removal_cost = -1
             picture = air_war_plans_division_focus
             modifier = {
-                land_night_attack = 0.15
+                land_night_soft_attack = 0.15
+hard_attack = 0.15
                 attrition = -0.1
             }
             ai_will_do = {

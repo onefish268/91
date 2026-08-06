@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_1
 		x = 10
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_JAP_suggest_for_election
 		continue_if_invalid = no
@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_2
 		x = 7
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_sitanli
 		continue_if_invalid = no
@@ -38,7 +38,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_3
 		x = 13
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_kaluo
 		continue_if_invalid = no
@@ -53,7 +53,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_4
 		x = 10
-		y = -8
+		y = 1
 		cost = 0
 		icon = GFX_focus_NGL_the_glory_of_the_republic
 		continue_if_invalid = no
@@ -62,7 +62,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_5
 		x = 29
-		y = -6
+		y = 3
 		cost = 0
 		icon = GFX_focus_EST_republican_defence_league
 		continue_if_invalid = no
@@ -70,11 +70,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_4
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Sector_of_war
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_6
 		x = 22
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_usa_honor_the_confederacy
 		continue_if_invalid = no
@@ -82,11 +88,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_5
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Federal_army
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_7
 		x = 29
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_usa_escort_fighters
 		continue_if_invalid = no
@@ -94,11 +106,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_5
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_force
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_8
 		x = 36
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_USA_fleet_alp
 		continue_if_invalid = no
@@ -110,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_9
 		x = -7
-		y = -6
+		y = 3
 		cost = 0
 		icon = GFX_focus_JAP_scales
 		continue_if_invalid = no
@@ -118,11 +136,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_4
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = 6_focus_10
 		x = -7
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_CHI_victory_over_the_invaders
 		continue_if_invalid = no
@@ -130,11 +153,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_9
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = 6_focus_12
 		x = 16
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_kaluofangan
 		continue_if_invalid = no
@@ -146,7 +173,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_11
 		x = 4
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_stlfangan
 		continue_if_invalid = no
@@ -158,7 +185,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_13
 		x = -1
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_FIU_bank
 		continue_if_invalid = no
@@ -170,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_14
 		x = -2
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_POL_agrarian_reform
 		continue_if_invalid = no
@@ -182,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_15
 		x = 0
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_generic_gold
 		continue_if_invalid = no
@@ -194,7 +221,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_16
 		x = 11
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_TRB_invest_gddt
 		continue_if_invalid = no
@@ -206,7 +233,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_17
 		x = 10
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_TRB_96
 		continue_if_invalid = no
@@ -218,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_18
 		x = 12
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_TRB_sell_bill
 		continue_if_invalid = no
@@ -230,7 +257,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_19
 		x = -2
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_TRB_57
 		continue_if_invalid = no
@@ -242,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_20
 		x = 0
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_JAP_new_government_cherry
 		continue_if_invalid = no
@@ -254,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_21
 		x = -2
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_JAP_populism
 		continue_if_invalid = no
@@ -266,7 +293,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_22
 		x = 0
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_NGL_relief_bank
 		continue_if_invalid = no
@@ -278,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_23
 		x = -2
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_JAP_election_everyone
 		continue_if_invalid = no
@@ -290,7 +317,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_24
 		x = 0
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_ALP_6
 		continue_if_invalid = no
@@ -302,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_25
 		x = 10
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_JAP_social_reconciliation
 		continue_if_invalid = no
@@ -314,7 +341,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_26
 		x = 10
-		y = -6
+		y = 3
 		cost = 0
 		icon = GFX_focus_JAP_writing_new_law
 		continue_if_invalid = no
@@ -326,7 +353,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_27
 		x = 12
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_TRB_coal
 		continue_if_invalid = no
@@ -338,7 +365,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_28
 		x = 2
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_JAP_building_argument
 		continue_if_invalid = no
@@ -350,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_29
 		x = 6
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_TRB_60
 		continue_if_invalid = no
@@ -362,7 +389,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_30
 		x = 2
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_JAP_government_bill_pass
 		continue_if_invalid = no
@@ -374,7 +401,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_31
 		x = 6
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_TRB_gold_stock_up
 		continue_if_invalid = no
@@ -386,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_32
 		x = 4
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_JAP_entrepreneur_spirt
 		continue_if_invalid = no
@@ -398,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_33
 		x = 4
-		y = 4
+		y = 13
 		cost = 0
 		icon = GFX_focus_JAP_money_industry
 		continue_if_invalid = no
@@ -410,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_34
 		x = 2
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_JAP_openness
 		continue_if_invalid = no
@@ -422,7 +449,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_35
 		x = 6
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_TRB_41
 		continue_if_invalid = no
@@ -434,7 +461,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_36
 		x = 4
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_JAP_friend_speak
 		continue_if_invalid = no
@@ -446,7 +473,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_38
 		x = 4
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_TRB_90
 		continue_if_invalid = no
@@ -461,7 +488,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_37
 		x = 2
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_TRB_58
 		continue_if_invalid = no
@@ -476,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_39
 		x = 6
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_ALP_7
 		continue_if_invalid = no
@@ -488,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_40
 		x = 10
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_TRB_miracle
 		continue_if_invalid = no
@@ -500,7 +527,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_41
 		x = 12
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_rus_industry2
 		continue_if_invalid = no
@@ -512,7 +539,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_42
 		x = 10
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_JAP_give_power_industry_union
 		continue_if_invalid = no
@@ -524,7 +551,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_43
 		x = 12
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_RUS_agency
 		continue_if_invalid = no
@@ -536,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_44
 		x = 3
-		y = 6
+		y = 15
 		cost = 0
 		icon = GFX_focus_JAP_government_bill
 		continue_if_invalid = no
@@ -551,7 +578,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_45
 		x = 14
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_rus_ruble
 		continue_if_invalid = no
@@ -563,7 +590,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_46
 		x = 10
-		y = 9
+		y = 18
 		cost = 0
 		icon = GFX_focus_JAP_liberalism
 		continue_if_invalid = no
@@ -575,7 +602,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_47
 		x = 12
-		y = 9
+		y = 18
 		cost = 0
 		icon = GFX_focus_RUS_generic_controlled_board
 		continue_if_invalid = no
@@ -587,7 +614,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_48
 		x = 11
-		y = 11
+		y = 20
 		cost = 0
 		icon = GFX_focus_TRB_9
 		continue_if_invalid = no
@@ -602,7 +629,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_49
 		x = 16
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_rus_vozhd2
 		continue_if_invalid = no
@@ -614,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_50
 		x = 16
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_RUS_generic_bastion_of_democracy
 		continue_if_invalid = no
@@ -626,7 +653,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_51
 		x = 14
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_rus_organic_solidarity
 		continue_if_invalid = no
@@ -638,7 +665,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_52
 		x = 16
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_propaganda_soviet
 		continue_if_invalid = no
@@ -650,7 +677,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_53
 		x = 18
-		y = 3
+		y = 12
 		cost = 0
 		icon = GFX_focus_PHI_uncouple_the_peso_and_dollar
 		continue_if_invalid = no
@@ -662,7 +689,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_54
 		x = 14
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_SWI_establish_pro_helvetia
 		continue_if_invalid = no
@@ -674,7 +701,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_55
 		x = 16
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_RUS_generic_council
 		continue_if_invalid = no
@@ -686,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_56
 		x = 18
-		y = 5
+		y = 14
 		cost = 0
 		icon = GFX_focus_TEX_banks_for_america
 		continue_if_invalid = no
@@ -698,7 +725,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_57
 		x = 14
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_generic_support_the_left_right
 		continue_if_invalid = no
@@ -710,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_58
 		x = 16
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_JAP_economic_zone
 		continue_if_invalid = no
@@ -722,7 +749,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_59
 		x = 18
-		y = 7
+		y = 16
 		cost = 0
 		icon = GFX_focus_NGL_humane_care
 		continue_if_invalid = no
@@ -734,7 +761,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_60
 		x = -11
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_AST_call_that_a_knife
 		continue_if_invalid = no
@@ -742,23 +769,42 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_9
 		}
+
+		completion_reward = {
+			add_war_support = 0.075
+		}
 	}
 	focus = {
 		id = 6_focus_61
 		x = -4
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_theworld
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_9
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ZSB_Supply_from_ENG
+				days = 180
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_62
 		x = -9
-		y = -4
+		y = 5
 		cost = 0
 		icon = GFX_focus_TRB_71
 		continue_if_invalid = no
@@ -766,71 +812,176 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_9
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = 6_focus_63
 		x = -5
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_TRB_economy_circle
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_61
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Oriented_trade
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_64
 		x = -3
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_TRB_99
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_61
+		}
+
+		completion_reward = {
+			load_oob = "ZSB_model_army"
+			capital_scope = {
+				create_unit = {
+					division = "name = \"教导总队\" division_template = \"教导总队\" start_experience_factor = 0.4"
+					owner = ROOT
+					count = 3
+				}
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_65
 		x = -5
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_TRB_46
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_63
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Economic_expert_from_ENG
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_66
 		x = -3
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_HUN_hungarian_tradition
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_64
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Haver_Military_academy
+			}
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 100
+                    name = 3_focus_77
+                    folder = land
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 100
+                    name = 3_focus_77
+                    folder = naval
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 100
+                    name = 3_focus_77
+                    folder = air
+            }
 		}
 	}
 	focus = {
 		id = 6_focus_67
 		x = -7
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_TRB_war_money
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ROC = {
+				exists = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_10
+		}
+
+		completion_reward = {
+			ROC = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = ZYX
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = ZYX
+			}
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_68
 		x = -9
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_TRB_8
 		continue_if_invalid = no
@@ -838,11 +989,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_62
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Sector_of_war_planning
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_69
 		x = -11
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_PHI_philippine_army_orchestra
 		continue_if_invalid = no
@@ -854,7 +1011,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_70
 		x = 21
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_usa_build_the_pentagon
 		continue_if_invalid = no
@@ -862,11 +1019,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_6
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Construction_of_the_Hexagon
+			}
+			custom_effect_tooltip = "我们将会在180天后竣工！"
+			hidden_effect = {
+				country_event = {
+					id = ZSB.13
+					days = 180
+				}
+			}
+		}
+		
 	}
 	focus = {
 		id = 6_focus_71
 		x = 23
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_usa_union_representation_act
 		continue_if_invalid = no
@@ -874,11 +1045,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_6
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Conscription_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_72
 		x = -11
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_USS_eighth_group_army
 		continue_if_invalid = no
@@ -886,11 +1063,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
+
+		completion_reward = {
+			set_country_flag = ZSB_purple_plan
+			custom_effect_tooltip = "我们将会获得针对一些极端国家采取军事行动的决议。"
+		}
 	}
 	focus = {
 		id = 6_focus_73
 		x = -9
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_USS_fifth_group_army
 		continue_if_invalid = no
@@ -898,11 +1080,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
+
+		completion_reward = {
+			set_country_flag = ZSB_yellow_plan
+			custom_effect_tooltip = "我们将会获得针对一些共产主义国家采取军事行动的决议。"
+		}
 	}
 	focus = {
 		id = 6_focus_74
 		x = -7
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_USS_sixth_group_army
 		continue_if_invalid = no
@@ -910,11 +1097,16 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
+
+		completion_reward = {
+			set_country_flag = ZSB_blue_plan
+			custom_effect_tooltip = "我们将会获得针对一些法西斯国家采取军事行动的决议。"
+		}
 	}
 	focus = {
 		id = 6_focus_75
 		x = 18
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_usa_recruit_the_free_corps
 		continue_if_invalid = no
@@ -922,11 +1114,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_70
 		}
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = ZSB_Sector_of_war
+					add_idea = ZSB_Sector_of_war_defence
+				}
+		}
 	}
 	focus = {
 		id = 6_focus_76
 		x = 25
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_USA_uncle_sam
 		continue_if_invalid = no
@@ -934,11 +1133,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = {
+				ZSB_Women_also_as_soilder
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_77
 		x = 20
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_USS_thousand_years_of_aristocracy
 		continue_if_invalid = no
@@ -949,11 +1155,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Common_trainning_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_78
 		x = 22
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_generic_american_investments
 		continue_if_invalid = no
@@ -964,11 +1176,32 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
+
+		completion_reward = {
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = land
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = naval
+            }
+			add_daily_mastery = { #精通
+                    amount = 0.5
+                    days = 365
+                    name = 3_focus_77
+                    folder = air
+            }
+		}
 	}
 	focus = {
 		id = 6_focus_79
 		x = 19
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_generic_soldier_salute
 		continue_if_invalid = no
@@ -979,11 +1212,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_National_guard
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_80
 		x = 21
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_JAP_crush_the_internal_factions
 		continue_if_invalid = no
@@ -994,11 +1233,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_War_industry_complex
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_81
 		x = 23
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		continue_if_invalid = no
@@ -1009,11 +1254,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Veteran_association
+		}
+		}
 	}
 	focus = {
 		id = 6_focus_82
 		x = 21
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_generic_armored_air_support
 		continue_if_invalid = no
@@ -1024,11 +1275,19 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
+
+		completion_reward = {
+			add_mastery_bonus = {
+                bonus = 0.15
+                days = 720
+                name = 6_focus_82
+            }
+		}
 	}
 	focus = {
 		id = 6_focus_83
 		x = 19
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_INS_oweralwagen
 		continue_if_invalid = no
@@ -1036,11 +1295,21 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_82
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_83
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = motorized_equipment
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_84
 		x = 21
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_BRA_acquire_german_tanks
 		continue_if_invalid = no
@@ -1048,11 +1317,21 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_82
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_83
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_85
 		x = 23
-		y = 1
+		y = 10
 		cost = 0
 		icon = GFX_focus_PHI_battalion_combat_teams
 		continue_if_invalid = no
@@ -1060,11 +1339,28 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_82
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = 6_focus_85_0
+				bonus = 0.25
+				ahead_reduction = 2
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = 6_focus_85_1
+				bonus = 0.25
+				ahead_reduction = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_86
 		x = 20
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_BEL_the_european_crusade
 		continue_if_invalid = no
@@ -1075,11 +1371,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_84
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Ranger_warfare
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_87
 		x = 22
-		y = 2
+		y = 11
 		cost = 0
 		icon = GFX_focus_SIA_war_fervor
 		continue_if_invalid = no
@@ -1090,11 +1392,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_85
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Firepower_synergy
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_88
 		x = 29
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_PRC_establish_pla_air_force
 		continue_if_invalid = no
@@ -1102,26 +1410,46 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_7
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_war_planning
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_89
 		x = -4
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_generic_democratic_asia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
+			}
+		}
+
 		prerequisite = {
 			focus = 6_focus_65
 		}
 		prerequisite = {
 			focus = 6_focus_66
 		}
+
+		completion_reward = {
+			ENG = {
+				add_to_faction = ROOT
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_91
 		x = 30
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_generic_multi_role_aircraft
 		continue_if_invalid = no
@@ -1129,11 +1457,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_88
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Strategic_bombing
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_90
 		x = 28
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_generic_tank_air_support
 		continue_if_invalid = no
@@ -1141,11 +1475,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_88
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Air_support
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_92
 		x = 27
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_FIN_expand_air_force_academy
 		continue_if_invalid = no
@@ -1153,11 +1493,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_90
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Low_bombing
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_93
 		x = 29
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_CHI_effectivize_ground_crew_usage
 		continue_if_invalid = no
@@ -1165,11 +1511,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_88
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Emergency_aviation_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_94
 		x = 31
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_CZE_the_air_is_our_sea
 		continue_if_invalid = no
@@ -1177,11 +1529,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_91
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Escort_squadrons
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_95
 		x = 36
-		y = -3
+		y = 6
 		cost = 0
 		icon = GFX_focus_USA_fleet
 		continue_if_invalid = no
@@ -1193,7 +1551,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_96
 		x = 34
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_PHI_gunboat_diplomacy
 		continue_if_invalid = no
@@ -1205,7 +1563,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_97
 		x = 38
-		y = -2
+		y = 7
 		cost = 0
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		continue_if_invalid = no
@@ -1217,7 +1575,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_98
 		x = 33
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_GER_high_seas_fleet
 		continue_if_invalid = no
@@ -1229,7 +1587,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_99
 		x = 35
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		continue_if_invalid = no
@@ -1241,7 +1599,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_100
 		x = 37
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_PHI_usaffe_headquarters
 		continue_if_invalid = no
@@ -1253,7 +1611,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_101
 		x = 39
-		y = -1
+		y = 8
 		cost = 0
 		icon = GFX_focus_TRB_sea_trade
 		continue_if_invalid = no
@@ -1265,7 +1623,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_102
 		x = 37
-		y = 0
+		y = 9
 		cost = 0
 		icon = GFX_focus_CHL_the_popular_freedom_alliance
 		continue_if_invalid = no
@@ -1277,7 +1635,7 @@ focus_tree = {
 	focus = {
 		id = 6_focus_9999
 		x = -28
-		y = -8
+		y = 1
 		cost = 0
 		cancel_if_invalid = yes
 		continue_if_invalid = no

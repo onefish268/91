@@ -1,0 +1,11 @@
+ZSB_categories = {
+    icon = generic_construction
+    visible = {
+        OR = {
+			has_country_flag = ZSB_blue_plan
+			has_country_flag = ZSB_yellow_plan
+			has_country_flag = ZSB_purple_plan
+		}
+    }
+}
+

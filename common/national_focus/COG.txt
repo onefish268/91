@@ -1224,7 +1224,7 @@ focus_tree =
 
 		completion_reward = {
 			add_timed_idea = {
-				id = COG_Defense_reform_idea
+				idea = COG_Defense_reform_idea
 				days = 365
 			}
 		}

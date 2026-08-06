@@ -230,3 +230,19 @@ country_event = {#来自他国的拒绝
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#六角大楼的建设
+    id = ZSB.13
+    title = ZSB.13.t
+    desc = ZSB.13.desc
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        swap_ideas = {
+            remove_idea = ZSB_Construction_of_the_Hexagon
+            add_idea = ZSB_The_Hexagon
+        }
+    }
+}
