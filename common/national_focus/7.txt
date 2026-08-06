@@ -1274,4 +1274,12 @@ focus_tree = {
 			focus = 6_focus_100
 		}
 	}
+	focus = {
+		id = 6_focus_9999
+		x = -28
+		y = -8
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
 }
