@@ -567,14 +567,6 @@ country_event = {#鼠族反对
 				RACE_NAME = COG_Ratkin_word
 				EVENT = COG_relation_word
 				CHANGE = COG_cut_word
-				CHANGE_NUMBER = "[?COG_relation_with_Ratkin]"
-			}
-
-			tooltip = {
-				localization_key = COG_categories_cut_information
-				RACE_NAME = COG_Ratkin_word
-				EVENT = COG_relation_word
-				CHANGE = COG_cut_word
 				CHANGE_NUMBER = [?COG_relation_with_Ratkin]
 			}
 		}
@@ -597,33 +589,81 @@ country_event = {#鼠族反对
 	}
 }
 
-country_event = {#强行忽视松散的政权带来的阻力
-	id = SA_COG_event.01001
-	title = SA_COG_event.01001.t
+country_event = {#向鼠族求助
+	id =
+	title = COG_ask_Ratkin_for_help
+	desc =.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name =.a
+		ai_chance = { base = 1 }
+	}
+}
+
+country_event = {#向鼠族陈述的问题
+	id = SA_COG_event.01002
+	title = COG_ask_Ratkin_for_help
+	desc = SA_COG_event.01002.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = SA_COG_event.01002.a
+		ai_chance = { base = 1 }
+	}
+}
+
+country_event = {#期望从鼠鼠们那里获得什么
+	id = SA_COG_event.01003
+	title = COG_ask_Ratkin_for_help
+	desc = SA_COG_event.01003.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = SA_COG_event.01003.a
+		ai_chance = { base = 1 }
+	}
+}
+
+country_event = {#向旅商求助
+	id = SA_COG_event.01002
+	title = COG_ask_Businessman_for_help
 	desc = SA_COG_event.01001.d
 	#picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
-		trigger = {
-			has_country_flag = COG_Mima_has_awared
-		}
-		name = SA_COG_event.01000.a
-		ai_chance = {
-			base = 1
-		}
-		/
+		name = SA_COG_event.01001.a
+		ai_chance = { base = 1 }
 	}
+}
+
+country_event = {#向萌螈求助
+	id = SA_COG_event.01003
+	title = COG_ask_MoeLotl_for_help
+	desc = SA_COG_event.01001.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
 
 	option = {
-		trigger = {
-			NOT = { has_country_flag = COG_Mima_has_awared }
-			has_country_flag = COG_
-		}
-		name = SA_COG_event.01000.b
-		ai_chance = {
-			base = 1
-		}
-		/
+		name = SA_COG_event.01001.a
+		ai_chance = { base = 1 }
+
+	}
+}
+
+country_event = {#向龙娘求助
+	id = SA_COG_event.01001
+	title = COG_ask_Ratkin_for_help
+	desc = SA_COG_event.01001.d
+	#picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = SA_COG_event.01001.a
+		ai_chance = { base = 1 }
 	}
 }

@@ -102,7 +102,7 @@ country_event = {#和杜马的通牒
 
         ZSB = {
             annex_country = {
-                target = ZDM
+                target = ROOT
             }
         }
     }
@@ -112,7 +112,7 @@ country_event = {#和杜马的通牒
         ZSB = {
             country_event = ZSB.12
             create_wargoal = {
-                target = ZDM
+                target = ROOT
                 type = annex_everything
             }
         }
@@ -171,7 +171,7 @@ country_event = {#给共产党、民族主义的事件
 
         ZSB = {
             annex_country = {
-                target = ZDM
+                target = ROOT
             }
         }
     }
@@ -181,7 +181,7 @@ country_event = {#给共产党、民族主义的事件
         ZSB = {
             country_event = ZSB.12
             create_wargoal = {
-                target = ZDM
+                target = ROOT
                 type = annex_everything
             }
         }
@@ -195,13 +195,13 @@ country_event = {#给小势力的事件
 
     is_triggered_only = yes
 
-	option = {
+    option = {
         name = ZSB.11.a
         ai_chance = { base = 90 }
 
         ZSB = {
             annex_country = {
-                target = ZDM
+                target = ROOT
             }
         }
     }
@@ -211,7 +211,7 @@ country_event = {#给小势力的事件
         ZSB = {
             country_event = ZSB.12
             create_wargoal = {
-                target = ZDM
+                target = ROOT
                 type = annex_everything
             }
         }

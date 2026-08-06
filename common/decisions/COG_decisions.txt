@@ -5,9 +5,8 @@ COG_categories = {
 		desc = COG_ask_Ratkin_for_help_desc
 		cost = 10
 
-		
-
 		complete_effect = {
+			country_event = SA_COG_event.1000
 		}
 	}
 
