@@ -333,8 +333,8 @@ ideas = {
 		ZYX_Cruiser_force = {
 			picture = AUS_naval_efficiency_idea
 			modifier = {
-				navy_max_range_factor = 0.1
-				naval_supply_consumption_factor = 0.1
+				navy_max_range_factor = 0.20
+				naval_supply_consumption_factor = 0.05
 			}
 		}
 		#改良舰炮

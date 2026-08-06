@@ -124,6 +124,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_5
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Federal_navy
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_9
@@ -1547,6 +1553,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_8
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Two_ocean_act
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_96
@@ -1558,6 +1570,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_95
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Naval_bureau
+			}
 		}
 	}
 	focus = {
@@ -1571,6 +1589,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_95
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Maritime_commission
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_98
@@ -1582,6 +1606,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_96
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Naval_base_expansion
+			}
 		}
 	}
 	focus = {
@@ -1595,6 +1625,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_96
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Order_contracts
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_100
@@ -1606,6 +1642,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_97
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Shipping_agency
+			}
 		}
 	}
 	focus = {
@@ -1619,6 +1661,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_97
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Ocean_liners
+			}
+		}
 	}
 	focus = {
 		id = 6_focus_102
@@ -1630,6 +1678,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_100
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ZSB_Liberty_ships
+			}
 		}
 	}
 	focus = {

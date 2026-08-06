@@ -324,16 +324,8 @@ ideas = {
 			}
 		}
 
-		#绿水海军
-		ZYX_Green_water_navy = {
-			picture = JAP_hikari_naval_arsenal
-			modifier = {
-				naval_torpedo_cooldown_factor = -0.1
-				naval_torpedo_hit_chance_factor = 0.1
-			}
-		}
 		#联邦海军
-		ZYX_ = {
+		ZSB_Federal_navy = {
 			picture = ARG_arsenal_naval_buenos_aires
 			modifier = {
 				experience_gain_navy_unit_factor = 0.2
@@ -342,24 +334,15 @@ ideas = {
 			}
 		}
 		#远洋客轮
-		ZYX_ = {
+		ZSB_Ocean_liners = {
 			picture = AUS_naval_efficiency_idea
 			modifier = {
-				navy_max_range_factor = 0.1
-				naval_supply_consumption_factor = 0.1
-			}
-		}
-		#改良舰炮
-		ZYX_Gun_upgrade = {
-			picture = generic_navy_cruiser_warfare
-			modifier = {
-				naval_heavy_gun_hit_chance_factor = 0.15
-				naval_light_gun_hit_chance_factor = 0.15
-				naval_damage_factor = 0.05
+				navy_max_range_factor = 0.20
+				naval_supply_consumption_factor = 0.05
 			}
 		}
 		#自由轮
-		ZYX_ = {
+		ZSB_Liberty_ships = {
 			picture = AUS_navy
 			modifier = {
 				naval_speed_factor = 0.2
@@ -367,32 +350,59 @@ ideas = {
 				positioning = 0.05
 			}
 		}
-		#海军航空力量
-		ZYX_Naval_air_force = {
-			picture = generic_navy_carrier_bonus
-			modifier = {
-				sortie_efficiency = 0.1
-				fighter_sortie_efficiency = 0.1
-				navy_carrier_air_attack_factor = 0.1
-				navy_carrier_air_targetting_factor = 0.1
-				navy_carrier_air_agility_factor = 0.1
-			}
-		}
-		#采用雷达战术
-		ZYX_Radar_tactics = {
-			picture = generic_radar
-			modifier = {
-				naval_detection = 0.1
-				spotting_chance = 0.1
-			}
-		}
 		#扩大海军基地
-		ZYX_ = {
+		ZSB_Naval_base_expansion = {
 			picture = liberty_ships_focus
 			modifier = {
 				industrial_capacity_dockyard = 0.3
 				production_speed_dockyard_factor = 0.3
 				repair_speed_factor = 0.1
+			}
+		}
+		#两洋海军方案
+		ZSB_Two_ocean_act = {
+			picture = liberty_ships_focus
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+			research_bonus = {
+                naval = 0.1
+            }
+		}
+		#海军船务局
+		ZSB_Naval_bureau = {
+			picture = liberty_ships_focus
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+				repair_speed_factor = 0.3
+			}
+		}
+		#海事委员会
+		ZSB_Maritime_commission = {
+			picture = liberty_ships_focus
+			modifier = {
+				naval_torpedo_cooldown_factor = -0.05
+				naval_torpedo_hit_chance_factor = 0.05
+				naval_heavy_gun_hit_chance_factor = 0.05
+				naval_light_gun_hit_chance_factor = 0.05
+				naval_damage_factor = 0.05
+			}
+		}
+		#轮船招商局
+		ZSB_Shipping_agency = {
+			picture = liberty_ships_focus
+			modifier = {
+				naval_supply_consumption_factor = -0.25
+				refit_speed = 0.3
+			}
+		}
+		#订单约定
+		ZSB_Order_contracts = {
+			picture = liberty_ships_focus
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				consumer_goods_factor = -0.1
 			}
 		}
 	}
