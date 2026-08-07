@@ -311,7 +311,11 @@ ideas = {
 		ZSB_Emergency_aviation_act = {
 			picture = SWE_marauder_bombers
 			modifier = {
-				air_defence_factor = 0.2
+				hcp_exoutcome_monthly = 15
+				air_equipment_upgrade_xp_cost = -0.25
+			}
+			research_bonus = {
+				air_equipment = 0.25
 			}
 		}
 		#护航编队
@@ -367,7 +371,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.2
 			}
 			research_bonus = {
-                naval = 0.1
+                naval_equipment = 0.15
             }
 		}
 		#海军船务局
