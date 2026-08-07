@@ -18,6 +18,33 @@ defined_text = {
 
 #变动的决议文本
 
+defined_text = {#鼠族模块
+	name = COG_Ratkin_race_of_country_button_tips
+	text = {#常规界面
+		localization_key = COG_Ratkin_race_of_country_button_tip
+	}
+}
+
+defined_text = {#萌螈模块
+	name = COG_MoeLotl_race_of_country_button_tips
+	text = {#常规界面
+		localization_key = COG_MoeLotl_race_of_country_button_tip
+	}
+}
+
+defined_text = {#绮罗模块
+	name = COG_Kiiro_race_of_country_button_tips
+	text = {
+		localization_key = COG_Kiiro_race_of_country_button_tip
+	}
+}
+
+defined_text = {#龙娘模块
+	name = COG_Dragonian_race_of_country_button_tips
+	text = {#常规界面
+		localization_key = COG_Dragonian_race_of_country_button_tip
+	}
+}
 
 defined_text = {#旅鼠模块
 	name = COG_situation_of_country_Businessman_region_tips

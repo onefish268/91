@@ -601,18 +601,13 @@ country_event = {#向鼠族求助
 		ai_chance = { base = 1 }
 
 		hidden_effect = {
+			set_variable = { COG_basic_willing_factor = -0.5 }
+			set_variable = { COG_deciding_region_number = 0 }
+
+			COG_return_race_attitude = yes
+			
 			if = {
-				set_variable = { COG_basic_willing_factor = -0.5 }
-				set_variable = { COG_deciding_region_number = 0 }
-				limit = {#基础情愿系数 -0.5
-					set_temp_variable = { total_willing = COG_influence_of_Ratkin }
-					multiply_temp_variable = { var = total_willing  value = -0.5  }
-
-				}
-
-				#奖励
-
-				country_event = {  }
+				limit = { check_variable = { COG_race_attitude = 0 } }
 			}
 		}
 	}

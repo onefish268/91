@@ -1,7 +1,7 @@
 COG_return_race_attitude = {
 	#float willing_factor = -0.5
 	#float final_willing_factor = willing_factor + ( ( COG_relation_with_race ^ 0.5 ) / 10 )
-	#float total = COG_influence_of_Kiiro*COG_race_region_influent_fector - COG_influence_of_race*final_willing_factor/COG_race_region_influent_fector
+	#float total = COG_influence_of_Kiiro*COG_race_region_influent_factor - COG_influence_of_race*final_willing_factor/COG_race_region_influent_factor
 	#if( total>0 ) return true;else return false;
 	if = {
 		limit = { check_variable = { COG_deciding_region_number = 0 } }#在鼠族地区时候
@@ -202,9 +202,9 @@ COG_return_race_attitude = {
 		set_temp_variable = { COG_temp_influence_of_Ratkin = COG_influence_of_Ratkin }
 		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
 		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
-		multiply_temp_variable = { COG_temp_influence_of_total = COG_Ratkin_region_influent_fector }
-		divide_temp_variable = { COG_temp_influence_of_Ratkin = COG_Ratkin_region_influent_fector }
-		set_variable = { COG_influence_of_partner = 0 }  #双方影响力通过地区修正完毕
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Ratkin_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Ratkin = COG_Ratkin_region_influent_factor }
+		  #双方影响力通过地区修正完毕
 
 		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Ratkin }
 		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
@@ -446,9 +446,9 @@ COG_return_race_attitude = {
 		set_temp_variable = { COG_temp_influence_of_Businessman = COG_influence_of_Businessman }
 		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
 		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
-		multiply_temp_variable = { COG_temp_influence_of_total = COG_Businessman_region_influent_fector }
-		divide_temp_variable = { COG_temp_influence_of_Businessman = COG_Businessman_region_influent_fector }
-		set_variable = { COG_influence_of_partner = 0 }  #双方影响力通过地区修正完毕
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Businessman_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Businessman = COG_Businessman_region_influent_factor }
+		  #双方影响力通过地区修正完毕
 
 		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Businessman }
 		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
@@ -690,9 +690,9 @@ COG_return_race_attitude = {
 		set_temp_variable = { COG_temp_influence_of_MoeLotl = COG_influence_of_MoeLotl }
 		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
 		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
-		multiply_temp_variable = { COG_temp_influence_of_total = COG_MoeLotl_region_influent_fector }
-		divide_temp_variable = { COG_temp_influence_of_MoeLotl = COG_MoeLotl_region_influent_fector }
-		set_variable = { COG_influence_of_partner = 0 }  #双方影响力通过地区修正完毕
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_MoeLotl_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_MoeLotl = COG_MoeLotl_region_influent_factor }
+		  #双方影响力通过地区修正完毕
 
 		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_MoeLotl }
 		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
@@ -938,9 +938,9 @@ COG_return_race_attitude = {
 		set_temp_variable = { COG_temp_influence_of_Dragonian = COG_influence_oDragoniantl }
 		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
 		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
-		multiply_temp_variable = { COG_temp_influence_of_total = COG_Dragonian_region_influent_fector }
-		divide_temp_variable = { COG_temp_influence_of_Dragonian = CODragoniantl_region_influent_fector }
-		set_variable = { COG_influence_of_partner = 0 }  #双方影响力通过地区修正完毕
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Dragonian_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Dragonian = CODragoniantl_region_influent_factor }
+		  #双方影响力通过地区修正完毕
 
 		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Dragonian }
 		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }

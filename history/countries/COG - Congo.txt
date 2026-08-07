@@ -53,11 +53,11 @@ set_variable = { COG_race_attitude = 0 }#其他部族的合作态度
 	#部族地区影响力系数：给定一个系数X，本族和她族在该地区散播影响时，
 	#假设造成的影响值为Y，本族造成的影响为( Y/X )，她族造成的影响值为 ( X·Y )
 	#越保守的地区，X越小，越开放的地区，X越大（取值范围0~1）
-set_variable = { COG_Ratkin_region_influent_fector = 0.5 } #鼠族地区的影响力系数
-set_variable = { COG_Businessman_region_influent_fector = 0.8 } #旅鼠地区的影响力系数
-set_variable = { COG_MoeLotl_region_influent_fector = 0.2 } #萌螈地区的影响力系数
-set_variable = { COG_Kiiro_region_influent_fector = 1 } #绮罗地区的影响力系数
-set_variable = { COG_Dragonian_region_influent_fector = 1 } #龙娘地区的影响力系数
+set_variable = { COG_Ratkin_region_influent_factor = 0.5 } #鼠族地区的影响力系数
+set_variable = { COG_Businessman_region_influent_factor = 0.8 } #旅鼠地区的影响力系数
+set_variable = { COG_MoeLotl_region_influent_factor = 0.2 } #萌螈地区的影响力系数
+set_variable = { COG_Kiiro_region_influent_factor = 1 } #绮罗地区的影响力系数
+set_variable = { COG_Dragonian_region_influent_factor = 1 } #龙娘地区的影响力系数
 	#来自部族的认可：用以消耗推进国策、政策
 set_variable = { COG_agreement_of_Ratkin = 0 } #鼠族领主们的认可
 set_variable = { COG_agreement_of_Businessman = 0 } #旅鼠们的认可
