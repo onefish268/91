@@ -90,7 +90,7 @@ guiTypes = {
 			name = "COG_situation_of_country_title"
 			position = { x = 45 y = 0 }
 			font = "hoi_24header" #字体样式
-			text = COG_situation_of_country_title
+			text = COG_situation_of_country_chosen_mode
 			maxWidth = 400
 			maxHeight = 24
 			format = center	#对齐方式

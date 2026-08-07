@@ -590,14 +590,83 @@ country_event = {#鼠族反对
 }
 
 country_event = {#向鼠族求助
-	id =
+	id = SA_COG_event.01001
 	title = COG_ask_Ratkin_for_help
-	desc =.d
+	desc = SA_COG_event.01001.d
 	#picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
+	option = {#施工许可
+		name = SA_COG_event.01001.a
+		ai_chance = { base = 1 }
+
+		hidden_effect = {
+			if = {
+				set_variable = { COG_basic_willing_factor = -0.5 }
+				set_variable = { COG_deciding_region_number = 0 }
+				limit = {#基础情愿系数 -0.5
+					set_temp_variable = { total_willing = COG_influence_of_Ratkin }
+					multiply_temp_variable = { var = total_willing  value = -0.5  }
+
+				}
+
+				#奖励
+
+				country_event = {  }
+			}
+		}
+	}
+
 	option = {
-		name =.a
+		name = SA_COG_event.01001.b
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.c
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.e
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.f
+
+		trigger = {
+			has_country_flag = COG_Mima_has_awared
+		}
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.g
+
+		trigger = {
+			has_completed_focus = COG_Compulsory_education
+		}
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.h
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.i
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.j
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = SA_COG_event.01001.k
 		ai_chance = { base = 1 }
 	}
 }

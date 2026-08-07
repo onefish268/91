@@ -45,22 +45,28 @@ set_variable = { COG_influence_of_Businessman = 35 }# 旅鼠影响力
 set_variable = { COG_influence_of_MoeLotl = 10 }# 萌螈影响力）
 set_variable = { COG_influence_of_Kiiro = 50 }# 绮罗影响力
 set_variable = { COG_influence_of_Dragonian = 5 }# 龙娘影响力
+
+set_variable = { COG_influence_of_partner = 0 }#拉拢来的盟友的影响力（一次性）
+set_variable = { COG_influence_of_total = 0 }#拢共的影响力（拿去判断）
+set_variable = { COG_race_attitude = 0 }#其他部族的合作态度
+
 	#部族地区影响力系数：给定一个系数X，本族和她族在该地区散播影响时，
 	#假设造成的影响值为Y，本族造成的影响为( Y/X )，她族造成的影响值为 ( X·Y )
 	#越保守的地区，X越小，越开放的地区，X越大（取值范围0~1）
-set_variable = { Ratkin_region_influent_fector = 0.5 } #鼠族地区的影响力系数
-set_variable = { Ratkin_region_influent_fector = 0.8 } #旅鼠地区的影响力系数
-set_variable = { Ratkin_region_influent_fector = 0.2 } #萌螈地区的影响力系数
-set_variable = { Ratkin_region_influent_fector = 1 } #绮罗地区的影响力系数
-set_variable = { Ratkin_region_influent_fector = 1 } #龙娘地区的影响力系数
+set_variable = { COG_Ratkin_region_influent_fector = 0.5 } #鼠族地区的影响力系数
+set_variable = { COG_Businessman_region_influent_fector = 0.8 } #旅鼠地区的影响力系数
+set_variable = { COG_MoeLotl_region_influent_fector = 0.2 } #萌螈地区的影响力系数
+set_variable = { COG_Kiiro_region_influent_fector = 1 } #绮罗地区的影响力系数
+set_variable = { COG_Dragonian_region_influent_fector = 1 } #龙娘地区的影响力系数
 	#来自部族的认可：用以消耗推进国策、政策
 set_variable = { COG_agreement_of_Ratkin = 0 } #鼠族领主们的认可
 set_variable = { COG_agreement_of_Businessman = 0 } #旅鼠们的认可
 set_variable = { COG_agreement_of_MoeLotl = 0 } #萌螈们的认可
-set_variable = { COG_agreement_of_Ratkin = 0 } #绮罗领主们的认可
+set_variable = { COG_agreement_of_Kiiro = 0 } #绮罗们的认可
 set_variable = { COG_agreement_of_Dragonian = 0 } #龙娘们的认可
 
-#数组
+
+#数组 暂停！！！太疯狂了！！！
 	#部族关系：0是基准线，大于40会提供帮助，大于80为盟友，小于-40将会找茬，小于-80为宿敌
 	#（绮罗的小于-40为拒绝帮助，-80为彻底失望）
 	#鼠族同其他盟友的关系

@@ -283,6 +283,29 @@ defined_text = {#“闲置区”模块
 	}
 }
 
+defined_text = {#提示选择了什么模式
+	name = COG_situation_of_country_chosen_mode
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 0 } }
+		localization_key = COG_situation_of_country_mode
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 1 } }
+		localization_key = COG_Mine_expansion_situation_of_country_mode
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 2 } }
+		localization_key = COG_Agri_investment_boost_situation_of_country_mode
+	}
+
+	text = {
+		trigger = { check_variable = { COG_situation_of_country_chosen_mode_number = 3 } }
+		localization_key = COG_Build_and_grow_situation_of_country_mode
+	}
+}
+
 defined_text = {#提示选择了什么地块
 	name = COG_situation_of_country_chosen_region
 	text = {
