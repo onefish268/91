@@ -13,235 +13,259 @@ guiTypes = {
 	containerWindowType = {
 		name = "ZSB_internal_factions_decision_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 1200 }
-		clipping = no
+		size = { width = 500 height= 650 }
+		#clipping = no
 
 		iconType = {
 			name = "ZSB_faction_panel_banner"
-			spriteType = "GFX_ZSB_faction_panel_banner" # 替换为你自己的sprite名称
-			position = { x = 0 y = @BANNER_Y }
-			size = { width = 100% height = @BANNER_HEIGHT }
+			spriteType = GFX_ZSB_faction_panel_banner # 替换为你自己的sprite名称
+			position = { x = 0 y = 10 }
 		}
 
 		instantTextBoxType = {
 			name = "ZSB_faction_panel_banner_desc"
-			position = { x = 0 y = @BANNER_DESC_Y_OFFSET }
+			position = { x = 0 y = 135 }
 			font = "hoi_18mbs"
-			text = "BUL_faction_panel_banner_desc" # 在本地化填写图片注释文字
+			text = BUL_faction_panel_banner_desc # 在本地化填写图片注释文字
 			format = center
-			max_width = 100%
-			max_height = 30
+			
 		}
 
-		#ICONS
-		iconType = {
-			name ="zveno_icon"
-			spriteType = "GFX_decision_faction_bul_zveno"
-			position = { x = @FACTION_ICONS_X y = 270 }
-		}
+		containerWindowType = {#党派组
+			name = party_block
+			position = { x = 0 y = 320 }
+			size = { width = 230 height = 205 }
 
-		instantTextBoxType = {
-			name ="zveno_name_text"
-			position = { x = @FACTION_NAMES_X y = 280 }
-			font = "hoi_18mbs"
-			text = "BUL_zveno_name_text"
-			format = left
-			maxHeight = 24
-		}
+			#ICONS
+			iconType = {
+				name ="zveno_icon"
+				spriteType = "GFX_decision_faction_bul_zveno"
+				position = { x = 0 y = 30 }
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="zveno_tooltip_fake"
-			position = { x = @FACTION_ICONS_X y = 270 }
-			maxwidth = 230
-			maxHeight = 38
-			pdx_tooltip = BUL_ZVENO_TOOLTIP
-		}
+			instantTextBoxType = {
+				name ="zveno_name_text"
+				position = { x = 50 y = 40 }
+				font = "hoi_18mbs"
+				text = "BUL_zveno_name_text"
+				format = left
+				maxHeight = 24
+				maxWidth = 200
+			}
 
-		iconType = {
-			name ="bs_icon"
-			spriteType = "GFX_decision_faction_bul_bs"
-			position = { x = @FACTION_ICONS_X y = 315 }
-		}
+			#Tooltip
+			instantTextBoxType = {
+				name ="zveno_tooltip_fake"
+				position = { x = 0 y = 30 }
+				maxwidth = 230
+				maxHeight = 38
+				pdx_tooltip = BUL_ZVENO_TOOLTIP
+			}
 
-		instantTextBoxType = {
-			name ="bs_name_text"
-			position = { x = @FACTION_NAMES_X y = 325 }
-			font = "hoi_18mbs"
-			text = "BUL_bs_name_text"
-			format = left
-			maxHeight = 24
-		}
+			iconType = {
+				name ="bs_icon"
+				spriteType = "GFX_decision_faction_bul_bs"
+				position = { x = 0 y = 75 }
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="bs_tooltip_fake"
-			position = { x = @FACTION_ICONS_X y = 315 }
-			maxwidth = 230
-			maxHeight = 38
-			pdx_tooltip = BUL_BS_TOOLTIP
-		}
+			instantTextBoxType = {
+				name ="bs_name_text"
+				position = { x = 50 y = 85 }
+				font = "hoi_18mbs"
+				text = "BUL_bs_name_text"
+				format = left
+				maxHeight = 24
+				maxWidth = 200
+			}
 
-		iconType = {
-			name ="bzns_icon"
-			spriteType = "GFX_decision_faction_bul_bzns"
-			position = { x = @FACTION_ICONS_X y = 360 }
-		}
+			#Tooltip
+			instantTextBoxType = {
+				name ="bs_tooltip_fake"
+				position = { x = 0 y = 75 }
+				maxwidth = 230
+				maxHeight = 38
+				pdx_tooltip = BUL_BS_TOOLTIP
+			}
 
-		instantTextBoxType = {
-			name ="bzns_name_text"
-			position = { x = @FACTION_NAMES_X y = 370 }
-			font = "hoi_18mbs"
-			text = "BUL_bzns_name_text"
-			format = left
-			maxHeight = 24
-		}
+			iconType = {
+				name ="bzns_icon"
+				spriteType = "GFX_decision_faction_bul_bzns"
+				position = { x = 0 y = 120 }
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="bzns_tooltip_fake"
-			position = { x = @FACTION_ICONS_X y = 360 }
-			maxwidth = 230
-			maxHeight = 38
-			pdx_tooltip = BUL_BZNS_TOOLTIP
-		}
+			instantTextBoxType = {
+				name ="bzns_name_text"
+				position = { x = 50 y = 130 }
+				font = "hoi_18mbs"
+				text = "BUL_bzns_name_text"
+				format = left
+				maxHeight = 24
+				maxWidth = 200
+			}
 
-		iconType = {
-			name ="nsm_icon"
-			spriteType = "GFX_decision_faction_bul_nsm"
-			position = { x = @FACTION_ICONS_X y = 405 }
-		}
+			#Tooltip
+			instantTextBoxType = {
+				name ="bzns_tooltip_fake"
+				position = { x = 0 y = 120 }
+				maxwidth = 230
+				maxHeight = 38
+				pdx_tooltip = BUL_BZNS_TOOLTIP
+			}	
 
-		instantTextBoxType = {
-			name ="nsm_name_text"
-			position = { x = @FACTION_NAMES_X y = 415 }
-			font = "hoi_18mbs"
-			text = "BUL_nsm_name_text"
-			format = left
-			maxHeight = 24
-		}
+			iconType = {
+				name ="nsm_icon"
+				spriteType = "GFX_decision_faction_bul_nsm"
+				position = { x = 0 y = 165 }
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="nsm_tooltip_fake"
-			position = { x = @FACTION_ICONS_X y = 405 }
-			maxwidth = 230
-			maxHeight = 38
-			pdx_tooltip = BUL_NSM_TOOLTIP
+			instantTextBoxType = {
+				name ="nsm_name_text"
+				position = { x = 50 y = 175 }
+				font = "hoi_18mbs"
+				text = "BUL_nsm_name_text"
+				format = left
+				maxHeight = 24
+				maxWidth = 200
+			}
+
+			#Tooltip
+			instantTextBoxType = {
+				name ="nsm_tooltip_fake"
+				position = { x = 0 y = 165 }
+				maxwidth = 230
+				maxHeight = 38
+				pdx_tooltip = BUL_NSM_TOOLTIP
+			}
 		}
 
 		#LOYALTY
-		instantTextBoxType = {
-			name ="loyalty_header"
-			position = { x = @LOYALTY_TEXT_X y = 240 }
-			font = "hoi_18mbs"
-			text = "BUL_ui_loyalty_header"
-			format = center
-			maxHeight = 24
-			maxwidth = 110
-		}
 
-		instantTextBoxType = {
-			name ="BUL_zveno_loyalty_status"
-			position = { x = @LOYALTY_TEXT_X y = 280 }
-			font = "hoi_18mbs"
-			text = "BUL_zveno_loyalty_status"
-			format = center
-			maxwidth = 110
-		}
+		containerWindowType = {#忠诚组
+			name = loyalty_block
+			position = { x = 240 y = 320 }
+			size = { width = 120 height = 215 }
 
-		instantTextBoxType = {
-			name ="BUL_bs_loyalty_status"
-			position = { x = @LOYALTY_TEXT_X y = 325 }
-			font = "hoi_18mbs"
-			text = "BUL_bs_loyalty_status"
-			format = center
-			maxwidth = 110
-		}
+			instantTextBoxType = {
+				name ="loyalty_header"
+				position = { x = 0 y = 0 }
+				font = "hoi_18mbs"
+				text = "BUL_ui_loyalty_header"
+				format = center
+				maxHeight = 24
+				maxwidth = 110
+			}
 
-		instantTextBoxType = {
-			name ="BUL_bzns_loyalty_status"
-			position = { x = @LOYALTY_TEXT_X y = 370 }
-			font = "hoi_18mbs"
-			text = "BUL_bzns_loyalty_status"
-			format = center
-			maxwidth = 110
-		}
+			instantTextBoxType = {
+				name ="BUL_zveno_loyalty_status"
+				position = { x = 0 y = 40 }
+				font = "hoi_18mbs"
+				text = "BUL_zveno_loyalty_status"
+				format = center
+				maxwidth = 110
+			}
 
-		instantTextBoxType = {
-			name ="BUL_nsm_loyalty_status"
-			position = { x = @LOYALTY_TEXT_X y = 415 }
-			font = "hoi_18mbs"
-			text = "BUL_nsm_loyalty_status"
-			format = center
-			maxwidth = 110
-		}
+			instantTextBoxType = {
+				name ="BUL_bs_loyalty_status"
+				position = { x = 0 y = 85 }
+				font = "hoi_18mbs"
+				text = "BUL_bs_loyalty_status"
+				format = center
+				maxwidth = 110
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="loyalty_tooltip_fake"
-			position = { x = @LOYALTY_TEXT_X y = 240 }
-			format = center
-			maxwidth = 110
-			maxHeight = 205
-			pdx_tooltip = BUL_LOYALTY_TOOLTIP
+			instantTextBoxType = {
+				name ="BUL_bzns_loyalty_status"
+				position = { x = 0  y = 130 }
+				font = "hoi_18mbs"
+				text = "BUL_bzns_loyalty_status"
+				format = center
+				maxwidth = 110
+			}
+
+			instantTextBoxType = {
+				name ="BUL_nsm_loyalty_status"
+				position = { x = 0 y = 175 }
+				font = "hoi_18mbs"
+				text = "BUL_nsm_loyalty_status"
+				format = center
+				maxwidth = 110
+			}
+
+			#Tooltip
+			instantTextBoxType = {
+				name ="loyalty_tooltip_fake"
+				position = { x = 0 y = 0 }
+				format = center
+				maxwidth = 110
+				maxHeight = 205
+				pdx_tooltip = BUL_LOYALTY_TOOLTIP
+			}
 		}
 
 		#POPULARITY
-		instantTextBoxType = {
-			name ="popularity_header"
-			position = { x = @POPULARITY_TEXT_X y = 240 }
-			font = "hoi_18mbs"
-			text = "BUL_ui_popularity_header"
-			format = center
-			maxHeight = 24
-			maxwidth = 120
-		}
 
-		instantTextBoxType = {
-			name ="BUL_zveno_popularity_status"
-			position = { x = @POPULARITY_TEXT_X y = 280 }
-			font = "hoi_18mbs"
-			text = "BUL_zveno_popularity_status"
-			format = center
-			maxwidth = 120
-		}
+		containerWindowType = {#支持率组
+			name = popularity_block
+			position = { x = 380 y = 320 }
+			size = { width = 120 height = 215 }
 
-		instantTextBoxType = {
-			name ="BUL_bs_popularity_status"
-			position = { x = @POPULARITY_TEXT_X y = 325 }
-			font = "hoi_18mbs"
-			text = "BUL_bs_popularity_status"
-			format = center
-			maxwidth = 120
-		}
+			instantTextBoxType = {
+				name ="popularity_header"
+				position = { x = 0 y = 0 }
+				font = "hoi_18mbs"
+				text = "BUL_ui_popularity_header"
+				format = center
+				maxHeight = 24
+				maxwidth = 120
 
-		instantTextBoxType = {
-			name ="BUL_bzns_popularity_status"
-			position = { x = @POPULARITY_TEXT_X y = 370 }
-			font = "hoi_18mbs"
-			text = "BUL_bzns_popularity_status"
-			format = center
-			maxwidth = 120
-		}
+				
+			}
 
-		instantTextBoxType = {
-			name ="BUL_nsm_popularity_status"
-			position = { x = @POPULARITY_TEXT_X y = 415 }
-			font = "hoi_18mbs"
-			text = "BUL_nsm_popularity_status"
-			format = center
-			maxwidth = 120
-		}
+			instantTextBoxType = {
+				name ="BUL_zveno_popularity_status"
+				position = { x = 0 y = 40 }
+				font = "hoi_18mbs"
+				text = "BUL_zveno_popularity_status"
+				format = center
+				maxwidth = 120
+			}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="popularity_tooltip_fake"
-			position = { x = @POPULARITY_TEXT_X y = 240 }
-			format = center
-			maxwidth = 110
-			maxHeight = 205
-			pdx_tooltip = BUL_POPULARITY_TOOLTIP
+			instantTextBoxType = {
+				name ="BUL_bs_popularity_status"
+				position = { x = 0 y = 85 }
+				font = "hoi_18mbs"
+				text = "BUL_bs_popularity_status"
+				format = center
+				maxwidth = 120
+			}
+
+			instantTextBoxType = {
+				name ="BUL_bzns_popularity_status"
+				position = { x = 0 y = 130 }
+				font = "hoi_18mbs"
+				text = "BUL_bzns_popularity_status"
+				format = center
+				maxwidth = 120
+			}
+
+			instantTextBoxType = {
+				name ="BUL_nsm_popularity_status"
+				position = { x = 0 y = 175 }
+				font = "hoi_18mbs"
+				text = "BUL_nsm_popularity_status"
+				format = center
+				maxwidth = 120
+			}
+
+			#Tooltip
+			instantTextBoxType = {
+				name ="popularity_tooltip_fake"
+				position = { x = 0 y = 0 }
+				format = center
+				maxwidth = 110
+				maxHeight = 205
+				pdx_tooltip = BUL_POPULARITY_TOOLTIP
+			}
 		}
 	}
 }
