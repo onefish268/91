@@ -205,6 +205,7 @@ ZSB_categories = {
 ZSB_xuanju_category = {
     ZSB_decision_01 = {
         icon = GFX_decision_default
+		priority = 99
 		days_mission_timeout = 90
 		available = { 
 			always = no

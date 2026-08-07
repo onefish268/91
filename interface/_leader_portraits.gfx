@@ -139,4 +139,8 @@ spriteTypes = {
         name = "stlbj"
         texturefile = "gfx/leaders/ZIM/stlbj.png"
     }
+    spriteType = {
+        name = "GFX_ZSB_faction_panel_banner"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_panel_banner.png"
+    }
 }

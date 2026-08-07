@@ -39,3 +39,6 @@
  ZSB_gold: "正在恢复的联邦"
  #国策注释
  fig_shoufu: "§C圣杯联邦统一了罗德西亚§!"
+ #决议注释
+ ZSB_xuanju_category: "总统大选"
+ ZSB_decision_01: "计算投票倒计时"
