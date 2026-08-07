@@ -37,4 +37,13 @@ debug_test_categories = {
 		}
 	}
 
+	add_decision_mission = {
+		icon = generic_construction
+		
+		cost = 10
+
+		complete_effect = {
+			activate_mission = ZSB_decision_01
+		}
+	}
 }
