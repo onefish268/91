@@ -283,6 +283,11 @@ focus_tree = {
 			custom_effect_tooltip = ZSB_result_tip
 
 			hidden_effect = {
+				ZHJ = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
 				if = {
 					limit = { has_completed_focus = 5_focus_9 }
 
@@ -466,6 +471,11 @@ focus_tree = {
 			custom_effect_tooltip = ZSB_result_tip
 
 			hidden_effect = {
+				ZDM = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
 				ZDM = {
 					country_event = ZSB.7
 				}
@@ -941,6 +951,14 @@ focus_tree = {
 			ZSH = {
 				country_event = ZSB.10
 			}
+
+			hidden_effect = {
+				ZSH = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -965,6 +983,14 @@ focus_tree = {
 			ZYX = {
 				country_event = ZSB.10
 			}
+
+			hidden_effect = {
+				ZYX = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -988,6 +1014,14 @@ focus_tree = {
 		completion_reward = {
 			ZCS = {
 				country_event = ZSB.11
+			}
+
+			hidden_effect = {
+				ZCS = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -1015,6 +1049,14 @@ focus_tree = {
 		completion_reward = {
 			ZIM = {
 				country_event = ZSB.7
+			}
+
+			hidden_effect = {
+				ZIM = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
 			}
 		}
 	}
