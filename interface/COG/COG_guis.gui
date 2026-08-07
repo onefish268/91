@@ -68,6 +68,13 @@ guiTypes = {
 			format = center	#对齐方式
 		}
 
+		#iconType = {
+		#	name = "ZSB_faction_panel_banner"
+		#	spriteType = GFX_ZSB_faction_panel_banner # 替换为你自己的sprite名称
+		#	position = { x = 0 y = @BANNER_Y }
+		#	
+		#}
+
 		#内容
 		instantTextBoxType = {
 			name = "COG_race_of_country_introduction"
