@@ -206,6 +206,8 @@ ZSB_xuanju_category = {
     ZSB_decision_01 = {
         icon = GFX_decision_default
 		days_mission_timeout = 90
+		available = { 
+			always = no
 		} ###关键
 		show_timeout = yes
 		selectable_mission = no
