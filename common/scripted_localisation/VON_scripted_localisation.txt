@@ -381,28 +381,3 @@ defined_text = {#提示选择了什么地块
 	}
 }
 
-test_of_core_circle
-
-defined_text = {
-	#魔界溪谷国家介绍
-	name = I_am_scripted_title
-	text = {
-		trigger = { has_country_flag = test_of_core_circle }
-		localization_key = scripted_title_1
-	}
-	text = {
-		localization_key = scripted_title_2
-	}
-}
-
-defined_text = {
-	#魔界溪谷国家介绍
-	name = I_am_scripted_content
-	text = {
-		trigger = { has_country_flag = test_of_core_circle }
-		localization_key = scripted_content_1
-	}
-	text = {
-		localization_key = scripted_content_2
-	}
-}
