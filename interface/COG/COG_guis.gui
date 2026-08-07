@@ -55,7 +55,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "COG_race_of_country"
 		position = { x = 0 y = 0 }
-		size = { width = 500 height = 500 }
+		size = { width = 500 height = 800 }
 
 		#标题栏
 		instantTextBoxType = {
@@ -78,6 +78,38 @@ guiTypes = {
 			maxHeight = 340
 			format = left
 		}
+
+		buttonType = {#鼠族
+				name = "COG_Ratkin_race_of_country_button"
+				position = { x = 50 y = 600 }
+				spriteType = COG_situation_of_country_button
+				pdx_tooltip = COG_Ratkin_race_of_country_button_information
+				clicksound = click_default
+			}
+
+			buttonType = {#萌螈
+				name = "COG_MoeLotl_race_of_country_button"
+				position = { x = 166 y = 600 }
+				spriteType = COG_Mine_expansion_situation_of_country_button
+				pdx_tooltip = COG_MoeLotl_race_of_country_button_information
+				clicksound = click_default
+			}
+
+			buttonType = {#绮罗
+				name = "COG_Kiiro_of_country_button"
+				position = { x = 284 y = 600 }
+				spriteType = COG_Agri_investment_boost_situation_of_country_button
+				pdx_tooltip = COG_Kiiro_race_of_country_button_information
+				clicksound = click_default
+			}
+
+			buttonType = {#龙娘
+				name = "COG_Dragonian_race_of_country_button"
+				position = { x = 400 y = 600 }
+				spriteType = COG_Build_and_grow_situation_of_country_button
+				pdx_tooltip = COG_Dragonian_race_of_country_button_information
+				clicksound = click_default
+			}
 	}
 
 	containerWindowType = {
@@ -90,7 +122,7 @@ guiTypes = {
 			name = "COG_situation_of_country_title"
 			position = { x = 45 y = 0 }
 			font = "hoi_24header" #字体样式
-			text = COG_situation_of_country_title
+			text = "[COG_situation_of_country_chosen_mode]"
 			maxWidth = 400
 			maxHeight = 24
 			format = center	#对齐方式

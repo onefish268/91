@@ -1,0 +1,986 @@
+COG_return_race_attitude = {
+	#float willing_factor = -0.5
+	#float final_willing_factor = willing_factor + ( ( COG_relation_with_race ^ 0.5 ) / 10 )
+	#float total = COG_influence_of_Kiiro*COG_race_region_influent_factor - COG_influence_of_race*final_willing_factor/COG_race_region_influent_factor
+	#if( total>0 ) return true;else return false;
+	if = {
+		limit = { check_variable = { COG_deciding_region_number = 0 } }#在鼠族地区时候
+		if = {
+			limit = { check_variable = { COG_relation_with_Ratkin >0 }  }#整体大于0时
+			if = { 
+				limit = { 
+					OR = {#(0,5]
+						check_variable = { COG_relation_with_Ratkin = 5 }
+						check_variable = { COG_relation_with_Ratkin < 5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(5,15]
+						check_variable = { COG_relation_with_Ratkin = 15 }
+						check_variable = { COG_relation_with_Ratkin < 15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(15,25]
+						check_variable = { COG_relation_with_Ratkin = 25 }
+						check_variable = { COG_relation_with_Ratkin < 25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(25,35]
+						check_variable = { COG_relation_with_Ratkin = 35 }
+						check_variable = { COG_relation_with_Ratkin < 35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(35,45]
+						check_variable = { COG_relation_with_Ratkin = 45 }
+						check_variable = { COG_relation_with_Ratkin < 45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(45,55]
+						check_variable = { COG_relation_with_Ratkin = 55 }
+						check_variable = { COG_relation_with_Ratkin < 55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(55,65]
+						check_variable = { COG_relation_with_Ratkin = 65 }
+						check_variable = { COG_relation_with_Ratkin < 65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(65,75]
+						check_variable = { COG_relation_with_Ratkin = 75 }
+						check_variable = { COG_relation_with_Ratkin < 75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(75,85]
+						check_variable = { COG_relation_with_Ratkin = 85 }
+						check_variable = { COG_relation_with_Ratkin < 85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(85,95]
+						check_variable = { COG_relation_with_Ratkin = 95 }
+						check_variable = { COG_relation_with_Ratkin < 95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = 1.0 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { COG_relation_with_Ratkin < 0 } }#整体小于0时
+			if = { 
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -5 }
+						check_variable = { COG_relation_with_Ratkin > -5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -15 }
+						check_variable = { COG_relation_with_Ratkin > -15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -25 }
+						check_variable = { COG_relation_with_Ratkin > -25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -35 }
+						check_variable = { COG_relation_with_Ratkin > -35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -45 }
+						check_variable = { COG_relation_with_Ratkin > -45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -55 }
+						check_variable = { COG_relation_with_Ratkin > -55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -65 }
+						check_variable = { COG_relation_with_Ratkin > -65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -75 }
+						check_variable = { COG_relation_with_Ratkin > -75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -85 }
+						check_variable = { COG_relation_with_Ratkin > -85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Ratkin = -95 }
+						check_variable = { COG_relation_with_Ratkin > -95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = -1.0 }
+			}
+		}
+
+		#计算情愿因数后，计算总数
+		set_temp_variable = { COG_temp_influence_of_Ratkin = COG_influence_of_Ratkin }
+		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Ratkin_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Ratkin = COG_Ratkin_region_influent_factor }
+		  #双方影响力通过地区修正完毕
+
+		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Ratkin }
+		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
+
+		if = {
+			limit = { check_variable = { COG_temp_influence_compare > 1.5 } }
+			set_country_flag = COG_region_over_Kiiro
+		}
+		else = {
+			clr_country_flag = COG_region_over_Kiiro
+		}
+
+		multiply_temp_variable = { COG_temp_influence_of_Ratkin = COG_basic_willing_factor }  #意向修正
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_temp_influence_of_Ratkin } #最后的比较
+		if = {#愿意
+			limit = { check_variable = { COG_temp_influence_of_total > 20 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 12 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 2 }
+			}
+		}
+		else_if = {#一般般
+			limit = { check_variable = { COG_temp_influence_of_total > 0 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 11 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 1 }
+			}
+		}
+		else_if = {#婉拒
+			limit = { check_variable = { COG_temp_influence_of_total > -20 } }
+			set_variable = { COG_race_attitude = 0 }
+		}
+		else = {#去你的！
+			set_variable = { COG_race_attitude = -1 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { COG_deciding_region_number = 1 } }#在旅鼠地区时候
+		if = {
+			limit = { check_variable = { COG_relation_with_Businessman >0 }  }#整体大于0时
+			if = { 
+				limit = { 
+					OR = {#(0,5]
+						check_variable = { COG_relation_with_Businessman = 5 }
+						check_variable = { COG_relation_with_Businessman < 5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(5,15]
+						check_variable = { COG_relation_with_Businessman = 15 }
+						check_variable = { COG_relation_with_Businessman < 15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(15,25]
+						check_variable = { COG_relation_with_Businessman = 25 }
+						check_variable = { COG_relation_with_Businessman < 25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(25,35]
+						check_variable = { COG_relation_with_Businessman = 35 }
+						check_variable = { COG_relation_with_Businessman < 35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(35,45]
+						check_variable = { COG_relation_with_Businessman = 45 }
+						check_variable = { COG_relation_with_Businessman < 45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(45,55]
+						check_variable = { COG_relation_with_Businessman = 55 }
+						check_variable = { COG_relation_with_Businessman < 55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(55,65]
+						check_variable = { COG_relation_with_Businessman = 65 }
+						check_variable = { COG_relation_with_Businessman < 65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(65,75]
+						check_variable = { COG_relation_with_Businessman = 75 }
+						check_variable = { COG_relation_with_Businessman < 75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(75,85]
+						check_variable = { COG_relation_with_Businessman = 85 }
+						check_variable = { COG_relation_with_Businessman < 85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(85,95]
+						check_variable = { COG_relation_with_Businessman = 95 }
+						check_variable = { COG_relation_with_Businessman < 95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = 1.0 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { COG_relation_with_Businessman < 0 } }#整体小于0时
+			if = { 
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -5 }
+						check_variable = { COG_relation_with_Businessman > -5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -15 }
+						check_variable = { COG_relation_with_Businessman > -15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -25 }
+						check_variable = { COG_relation_with_Businessman > -25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -35 }
+						check_variable = { COG_relation_with_Businessman > -35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -45 }
+						check_variable = { COG_relation_with_Businessman > -45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -55 }
+						check_variable = { COG_relation_with_Businessman > -55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -65 }
+						check_variable = { COG_relation_with_Businessman > -65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -75 }
+						check_variable = { COG_relation_with_Businessman > -75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -85 }
+						check_variable = { COG_relation_with_Businessman > -85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Businessman = -95 }
+						check_variable = { COG_relation_with_Businessman > -95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = -1.0 }
+			}
+		}
+
+		#计算情愿因数后，计算总数
+		set_temp_variable = { COG_temp_influence_of_Businessman = COG_influence_of_Businessman }
+		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Businessman_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Businessman = COG_Businessman_region_influent_factor }
+		  #双方影响力通过地区修正完毕
+
+		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Businessman }
+		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
+
+		if = {
+			limit = { check_variable = { COG_temp_influence_compare > 1.5 } }
+			set_country_flag = COG_region_over_Kiiro
+		}
+		else = {
+			clr_country_flag = COG_region_over_Kiiro
+		}
+
+		multiply_temp_variable = { COG_temp_influence_of_Businessman = COG_basic_willing_factor }  #意向修正
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_temp_influence_of_Businessman } #最后的比较
+		if = {#愿意
+			limit = { check_variable = { COG_temp_influence_of_total > 20 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 12 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 2 }
+			}
+		}
+		else_if = {#一般般
+			limit = { check_variable = { COG_temp_influence_of_total > 0 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 11 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 1 }
+			}
+		}
+		else_if = {#婉拒
+			limit = { check_variable = { COG_temp_influence_of_total > -20 } }
+			set_variable = { COG_race_attitude = 0 }
+		}
+		else = {#去你的！
+			set_variable = { COG_race_attitude = -1 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { COG_deciding_region_number = 2 } }#在萌螈地区时候
+		if = {
+			limit = { check_variable = { COG_relation_with_MoeLotl >0 }  }#整体大于0时
+			if = { 
+				limit = { 
+					OR = {#(0,5]
+						check_variable = { COG_relation_with_MoeLotl = 5 }
+						check_variable = { COG_relation_with_MoeLotl < 5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(5,15]
+						check_variable = { COG_relation_with_MoeLotl = 15 }
+						check_variable = { COG_relation_with_MoeLotl < 15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(15,25]
+						check_variable = { COG_relation_with_MoeLotl = 25 }
+						check_variable = { COG_relation_with_MoeLotl < 25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(25,35]
+						check_variable = { COG_relation_with_MoeLotl = 35 }
+						check_variable = { COG_relation_with_MoeLotl < 35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(35,45]
+						check_variable = { COG_relation_with_MoeLotl = 45 }
+						check_variable = { COG_relation_with_MoeLotl < 45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(45,55]
+						check_variable = { COG_relation_with_MoeLotl = 55 }
+						check_variable = { COG_relation_with_MoeLotl < 55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(55,65]
+						check_variable = { COG_relation_with_MoeLotl = 65 }
+						check_variable = { COG_relation_with_MoeLotl < 65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(65,75]
+						check_variable = { COG_relation_with_MoeLotl = 75 }
+						check_variable = { COG_relation_with_MoeLotl < 75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(75,85]
+						check_variable = { COG_relation_with_MoeLotl = 85 }
+						check_variable = { COG_relation_with_MoeLotl < 85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(85,95]
+						check_variable = { COG_relation_with_MoeLotl = 95 }
+						check_variable = { COG_relation_with_MoeLotl < 95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = 1.0 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { COG_relation_with_MoeLotl < 0 } }#整体小于0时
+			if = { 
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -5 }
+						check_variable = { COG_relation_with_MoeLotl > -5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -15 }
+						check_variable = { COG_relation_with_MoeLotl > -15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -25 }
+						check_variable = { COG_relation_with_MoeLotl > -25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -35 }
+						check_variable = { COG_relation_with_MoeLotl > -35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -45 }
+						check_variable = { COG_relation_with_MoeLotl > -45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -55 }
+						check_variable = { COG_relation_with_MoeLotl > -55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -65 }
+						check_variable = { COG_relation_with_MoeLotl > -65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -75 }
+						check_variable = { COG_relation_with_MoeLotl > -75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -85 }
+						check_variable = { COG_relation_with_MoeLotl > -85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_MoeLotl = -95 }
+						check_variable = { COG_relation_with_MoeLotl > -95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = -1.0 }
+			}
+		}
+
+		#计算情愿因数后，计算总数
+		set_temp_variable = { COG_temp_influence_of_MoeLotl = COG_influence_of_MoeLotl }
+		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_MoeLotl_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_MoeLotl = COG_MoeLotl_region_influent_factor }
+		  #双方影响力通过地区修正完毕
+
+		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_MoeLotl }
+		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
+
+		if = {
+			limit = { check_variable = { COG_temp_influence_compare > 1.5 } }
+			set_country_flag = COG_region_over_Kiiro
+		}
+		else = {
+			clr_country_flag = COG_region_over_Kiiro
+		}
+
+		multiply_temp_variable = { COG_temp_influence_of_MoeLotl = COG_basic_willing_factor }  #意向修正
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_temp_influence_of_MoeLotl } #最后的比较
+		if = {#愿意
+			limit = { check_variable = { COG_temp_influence_of_total > 20 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 12 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 2 }
+			}
+		}
+		else_if = {#一般般
+			limit = { check_variable = { COG_temp_influence_of_total > 0 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 11 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 1 }
+			}
+		}
+		else_if = {#婉拒
+			limit = { check_variable = { COG_temp_influence_of_total > -20 } }
+			set_variable = { COG_race_attitude = 0 }
+		}
+		else = {#去你的！
+			set_variable = { COG_race_attitude = -1 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { COG_deciding_region_number = 3 } }#在绮罗地区时候(幻梦界、“闲置区”也搬过来吧（）)
+		set_variable = { COG_race_attitude = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { COG_deciding_region_number = 4 } }#在龙娘地区时候
+		if = {
+			limit = { check_variable = { COG_relation_with_Dragonian >0 }  }#整体大于0时
+			if = { 
+				limit = { 
+					OR = {#(0,5]
+						check_variable = { COG_relation_with_Dragonian = 5 }
+						check_variable = { COG_relation_with_Dragonian < 5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(5,15]
+						check_variable = { COG_relation_with_Dragonian = 15 }
+						check_variable = { COG_relation_with_Dragonian < 15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(15,25]
+						check_variable = { COG_relation_with_Dragonian = 25 }
+						check_variable = { COG_relation_with_Dragonian < 25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(25,35]
+						check_variable = { COG_relation_with_Dragonian = 35 }
+						check_variable = { COG_relation_with_Dragonian < 35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(35,45]
+						check_variable = { COG_relation_with_Dragonian = 45 }
+						check_variable = { COG_relation_with_Dragonian < 45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(45,55]
+						check_variable = { COG_relation_with_Dragonian = 55 }
+						check_variable = { COG_relation_with_Dragonian < 55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(55,65]
+						check_variable = { COG_relation_with_Dragonian = 65 }
+						check_variable = { COG_relation_with_Dragonian < 65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(65,75]
+						check_variable = { COG_relation_with_Dragonian = 75 }
+						check_variable = { COG_relation_with_Dragonian < 75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(75,85]
+						check_variable = { COG_relation_with_Dragonian = 85 }
+						check_variable = { COG_relation_with_Dragonian < 85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {#(85,95]
+						check_variable = { COG_relation_with_Dragonian = 95 }
+						check_variable = { COG_relation_with_Dragonian < 95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = 0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = 1.0 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { COG_relation_with_Dragonian < 0 } }#整体小于0时
+			if = { 
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -5 }
+						check_variable = { COG_relation_with_Dragonian > -5 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = 0.0 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -15 }
+						check_variable = { COG_relation_with_Dragonian > -15 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.11 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -25 }
+						check_variable = { COG_relation_with_Dragonian > -25 }
+					}
+				}
+				add_to_variable = { COG_basic_willing_factor = -0.14 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -35 }
+						check_variable = { COG_relation_with_Dragonian > -35 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.19 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -45 }
+						check_variable = { COG_relation_with_Dragonian > -45 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.24 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -55 }
+						check_variable = { COG_relation_with_Dragonian > -55 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.25 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -65 }
+						check_variable = { COG_relation_with_Dragonian > -65 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.36 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -75 }
+						check_variable = { COG_relation_with_Dragonian > -75 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.49 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -85 }
+						check_variable = { COG_relation_with_Dragonian > -85 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.64 }
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { COG_relation_with_Dragonian = -95 }
+						check_variable = { COG_relation_with_Dragonian > -95 }
+					}
+				} 
+				add_to_variable = { COG_basic_willing_factor = -0.81 }
+			}
+			else = {
+				add_to_variable = { COG_basic_willing_factor = -1.0 }
+			}
+		}
+
+				#计算情愿因数后，计算总数
+		set_temp_variable = { COG_temp_influence_of_Dragonian = COG_influence_oDragoniantl }
+		set_temp_variable = { COG_temp_influence_of_total = COG_influence_of_Kiiro }
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_influence_of_partner }
+		multiply_temp_variable = { COG_temp_influence_of_total = COG_Dragonian_region_influent_factor }
+		divide_temp_variable = { COG_temp_influence_of_Dragonian = CODragoniantl_region_influent_factor }
+		  #双方影响力通过地区修正完毕
+
+		set_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_Dragonian }
+		divide_temp_variable = { COG_temp_influence_compare = COG_temp_influence_of_total }
+
+		if = {
+			limit = { check_variable = { COG_temp_influence_compare > 1.5 } }
+			set_country_flag = COG_region_over_Kiiro
+		}
+		else = {
+			clr_country_flag = COG_region_over_Kiiro
+		}
+
+		multiply_temp_variable = { COG_temp_influence_of_Dragonian = COG_basic_willing_factor }  #意向修正
+		add_to_temp_variable = { COG_temp_influence_of_total = COG_temp_influence_of_Dragonian } #最后的比较
+		if = {#愿意
+			limit = { check_variable = { COG_temp_influence_of_total > 20 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 12 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 2 }
+			}
+		}
+		else_if = {#一般般
+			limit = { check_variable = { COG_temp_influence_of_total > 0 } }
+			if = {
+				limit = { has_country_flag = COG_region_over_Kiiro }
+				set_variable = { COG_race_attitude = 11 }
+			}
+			else = {
+				set_variable = { COG_race_attitude = 1 }
+			}
+		}
+		else_if = {#婉拒
+			limit = { check_variable = { COG_temp_influence_of_total > -20 } }
+			set_variable = { COG_race_attitude = 0 }
+		}
+		else = {#去你的！
+			set_variable = { COG_race_attitude = -1 }
+		}
+	}
+}

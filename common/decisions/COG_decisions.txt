@@ -6,7 +6,7 @@ COG_categories = {
 		cost = 10
 
 		complete_effect = {
-			country_event = SA_COG_event.1000
+			country_event = SA_COG_event.01001
 		}
 	}
 
