@@ -75,4 +75,8 @@ spriteTypes = {
         name = "GFX_idea_tuanjiedejundui"
         texturefile = "gfx/interface/ideas/tuanjiedejundui.png"
     }
+    spriteType = {
+        name = "GFX_idea_daxiaotiao"
+        texturefile = "gfx/interface/ideas/daxiaotiao.png"
+    }
 }

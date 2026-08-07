@@ -1,0 +1,13 @@
+ZSB_gold = {
+	icon = "GFX_idea_daxiaotiao"
+
+	consumer_goods_factor = ZSB_gold_1 #消费品
+	stability_weekly_factor = ZSB_gold_2 #每周稳定度
+	war_support_weekly_factor = ZSB_gold_3 #每周战争支持度
+	global_building_slots_factor = ZSB_gold_4 #当地最大工厂数
+	monthly_population = ZSB_gold_5 #月度人口增长
+	global_building_slots_factor = ZSB_gold_6 #建筑建造槽位上限
+	production_speed_buildings_factor = ZSB_gold_7 #建造速度
+	industrial_capacity_factory = ZSB_gold_8 #工厂产出
+	local_factories = ZSB_gold_9 #当地工厂值
+}
