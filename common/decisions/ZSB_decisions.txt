@@ -201,3 +201,81 @@ ZSB_categories = {
 		}
 	}
 }
+
+ZSB_xuanju_category = {
+    ZSB_decision_01 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 90
+		show_timeout = yes
+		selectable_mission = no
+		activation = {
+            ZSB = { exists = yes }
+        }
+        timeout_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_02 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_03 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_04 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_05 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_06 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_07 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_08 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_09 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+	ZSB_decision_10 = {
+        icon = GFX_decision_default
+        cost = 50
+        complete_effect = {
+            add_political_power = 20
+        }
+    }
+}

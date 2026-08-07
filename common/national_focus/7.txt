@@ -19,6 +19,9 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_26
 		}
+		completion_reward = {
+			custom_effect_tooltip = "联邦将通过民意选举来举出总统"
+		}
 	}
 	focus = {
 		id = 6_focus_2
