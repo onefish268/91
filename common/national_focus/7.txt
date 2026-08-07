@@ -12,7 +12,7 @@ focus_tree = {
 		id = 6_focus_1
 		x = 10
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_JAP_suggest_for_election
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -28,12 +28,14 @@ focus_tree = {
 		icon = GFX_focus_sitanli
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = { always = no }
 		mutually_exclusive = {
 			focus = 6_focus_3
 		}
 		prerequisite = {
 			focus = 6_focus_1
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -44,12 +46,14 @@ focus_tree = {
 		icon = GFX_focus_kaluo
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = { always = no }
 		mutually_exclusive = {
 			focus = 6_focus_2
 		}
 		prerequisite = {
 			focus = 6_focus_1
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -60,8 +64,10 @@ focus_tree = {
 		icon = GFX_focus_NGL_the_glory_of_the_republic
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
 		completion_reward = {
+			remove_ideas = ZSB_1
+			remove_ideas = ZSB_2
+			remove_ideas = ZSB_3
 			add_war_support = 0.2
 			add_stability = 0.2
 		}
@@ -70,14 +76,13 @@ focus_tree = {
 		id = 6_focus_5
 		x = 29
 		y = 3
-		cost = 3
+		cost = 5
 		icon = GFX_focus_EST_republican_defence_league
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_4
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Sector_of_war
@@ -88,14 +93,13 @@ focus_tree = {
 		id = 6_focus_6
 		x = 22
 		y = 5
-		cost = 3
+		cost = 6
 		icon = GFX_focus_usa_honor_the_confederacy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_5
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Federal_army
@@ -106,14 +110,13 @@ focus_tree = {
 		id = 6_focus_7
 		x = 29
 		y = 5
-		cost = 4
+		cost = 6
 		icon = GFX_focus_usa_escort_fighters
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_5
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Air_force
@@ -124,14 +127,13 @@ focus_tree = {
 		id = 6_focus_8
 		x = 36
 		y = 5
-		cost = 4
+		cost = 6
 		icon = GFX_focus_USA_fleet_alp
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_5
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Federal_navy
@@ -149,7 +151,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_4
 		}
-
 		completion_reward = {
 			add_political_power = 50
 			add_war_support = 0.1
@@ -159,14 +160,13 @@ focus_tree = {
 		id = 6_focus_10
 		x = -7
 		y = 5
-		cost = 2
+		cost = 5
 		icon = GFX_focus_CHI_victory_over_the_invaders
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_9
 		}
-
 		completion_reward = {
 			add_war_support = 0.05
 		}
@@ -355,12 +355,46 @@ focus_tree = {
 		id = 6_focus_26
 		x = 10
 		y = 3
-		cost = 0
+		cost = 2
 		icon = GFX_focus_JAP_writing_new_law
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_4
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = ZSB_gold
+				scope = ZSB
+			}
+			add_to_variable = {
+				ZSB_gold_1 = 0.7
+			}
+			add_to_variable = {
+				ZSB_gold_2 = -0.005
+			}
+			add_to_variable = {
+				ZSB_gold_3 = -0.003
+			}
+			add_to_variable = {
+				ZSB_gold_4 = -0.25
+			}
+			add_to_variable = {
+				ZSB_gold_5 = -0.6
+			}
+			add_to_variable = {
+				ZSB_gold_6 = -0.45
+			}
+			add_to_variable = {
+				ZSB_gold_7 = -0.4
+			}
+			add_to_variable = {
+				ZSB_gold_8 = -0.35
+			}
+			add_to_variable = {
+				ZSB_gold_9 = -0.2
+			}
+			custom_effect_tooltip = "联邦将对全国进行全方面调查"
 		}
 	}
 	focus = {
@@ -775,14 +809,13 @@ focus_tree = {
 		id = 6_focus_60
 		x = -11
 		y = 5
-		cost = 2
+		cost = 5
 		icon = GFX_focus_AST_call_that_a_knife
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_9
 		}
-
 		completion_reward = {
 			add_war_support = 0.075
 		}
@@ -791,26 +824,23 @@ focus_tree = {
 		id = 6_focus_61
 		x = -4
 		y = 5
-		cost = 4
+		cost = 6
 		icon = GFX_focus_theworld
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = {
-			ENG = {
-				exists = yes
-				is_faction_leader = yes
-			}
-		}
-
 		prerequisite = {
 			focus = 6_focus_9
 		}
-
 		completion_reward = {
 			add_timed_idea = {
 				idea = ZSB_Supply_from_ENG
 				days = 180
+			}
+		}
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
 			}
 		}
 	}
@@ -818,14 +848,13 @@ focus_tree = {
 		id = 6_focus_62
 		x = -9
 		y = 5
-		cost = 2
+		cost = 5
 		icon = GFX_focus_TRB_71
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_9
 		}
-
 		completion_reward = {
 			add_war_support = 0.05
 		}
@@ -834,25 +863,22 @@ focus_tree = {
 		id = 6_focus_63
 		x = -5
 		y = 6
-		cost = 4
+		cost = 5
 		icon = GFX_focus_TRB_economy_circle
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
+		prerequisite = {
+			focus = 6_focus_61
+		}
+		completion_reward = {
+			add_ideas = {
+				ZSB_Oriented_trade
+			}
+		}
 		available = {
 			ENG = {
 				exists = yes
 				is_faction_leader = yes
-			}
-		}
-
-		prerequisite = {
-			focus = 6_focus_61
-		}
-
-		completion_reward = {
-			add_ideas = {
-				ZSB_Oriented_trade
 			}
 		}
 	}
@@ -864,18 +890,9 @@ focus_tree = {
 		icon = GFX_focus_TRB_99
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = {
-			ENG = {
-				exists = yes
-				is_faction_leader = yes
-			}
-		}
-
 		prerequisite = {
 			focus = 6_focus_61
 		}
-
 		completion_reward = {
 			load_oob = "ZSB_model_army"
 			capital_scope = {
@@ -886,30 +903,33 @@ focus_tree = {
 				}
 			}
 		}
-	}
-	focus = {
-		id = 6_focus_65
-		x = -5
-		y = 7
-		cost = 4
-		icon = GFX_focus_TRB_46
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-
 		available = {
 			ENG = {
 				exists = yes
 				is_faction_leader = yes
 			}
 		}
-
+	}
+	focus = {
+		id = 6_focus_65
+		x = -5
+		y = 7
+		cost = 5
+		icon = GFX_focus_TRB_46
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_63
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Economic_expert_from_ENG
+			}
+		}
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
 			}
 		}
 	}
@@ -917,77 +937,74 @@ focus_tree = {
 		id = 6_focus_66
 		x = -3
 		y = 7
-		cost = 4
+		cost = 5
 		icon = GFX_focus_HUN_hungarian_tradition
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
+		prerequisite = {
+			focus = 6_focus_64
+		}
+		completion_reward = {
+			add_ideas = {
+				ZSB_Haver_Military_academy
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = 3_focus_77
+				folder = land
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = 3_focus_77
+				folder = naval
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = 3_focus_77
+				folder = air
+			}
+		}
 		available = {
 			ENG = {
 				exists = yes
 				is_faction_leader = yes
 			}
 		}
-
-		prerequisite = {
-			focus = 6_focus_64
-		}
-
-		completion_reward = {
-			add_ideas = {
-				ZSB_Haver_Military_academy
-			}
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 100
-                    name = 3_focus_77
-                    folder = land
-            }
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 100
-                    name = 3_focus_77
-                    folder = naval
-            }
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 100
-                    name = 3_focus_77
-                    folder = air
-            }
-		}
 	}
 	focus = {
 		id = 6_focus_67
 		x = -7
 		y = 7
-		cost = 3
+		cost = 5
 		icon = GFX_focus_TRB_war_money
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = {
-			ROC = {
-				exists = yes
-			}
-		}
-
 		prerequisite = {
 			focus = 6_focus_10
 		}
-
 		completion_reward = {
 			ROC = {
 				add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 10000
-				producer = ZYX
+					type = infantry_equipment
+					amount = 10000
+					producer = ZYX
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 1500
+					producer = ZYX
+				}
 			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = 1500
-				producer = ZYX
-			}
+		}
+		available = {
+			ROC = {
+				exists = yes
 			}
 		}
 	}
@@ -995,14 +1012,13 @@ focus_tree = {
 		id = 6_focus_68
 		x = -9
 		y = 7
-		cost = 3
+		cost = 8
 		icon = GFX_focus_TRB_8
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_62
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Sector_of_war_planning
@@ -1013,7 +1029,7 @@ focus_tree = {
 		id = 6_focus_69
 		x = -11
 		y = 7
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PHI_philippine_army_orchestra
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1025,14 +1041,13 @@ focus_tree = {
 		id = 6_focus_70
 		x = 21
 		y = 6
-		cost = 5
+		cost = 6
 		icon = GFX_focus_usa_build_the_pentagon
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_6
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Construction_of_the_Hexagon
@@ -1045,20 +1060,18 @@ focus_tree = {
 				}
 			}
 		}
-		
 	}
 	focus = {
 		id = 6_focus_71
 		x = 23
 		y = 6
-		cost = 4
+		cost = 10
 		icon = GFX_focus_usa_union_representation_act
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_6
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Conscription_act
@@ -1076,7 +1089,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
-
 		completion_reward = {
 			set_country_flag = ZSB_purple_plan
 			custom_effect_tooltip = "我们将会获得针对一些极端国家采取军事行动的决议。"
@@ -1093,7 +1105,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
-
 		completion_reward = {
 			set_country_flag = ZSB_yellow_plan
 			custom_effect_tooltip = "我们将会获得针对一些共产主义国家采取军事行动的决议。"
@@ -1110,7 +1121,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_68
 		}
-
 		completion_reward = {
 			set_country_flag = ZSB_blue_plan
 			custom_effect_tooltip = "我们将会获得针对一些法西斯国家采取军事行动的决议。"
@@ -1120,33 +1130,31 @@ focus_tree = {
 		id = 6_focus_75
 		x = 18
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_usa_recruit_the_free_corps
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_70
 		}
-
 		completion_reward = {
 			swap_ideas = {
-					remove_idea = ZSB_Sector_of_war
-					add_idea = ZSB_Sector_of_war_defence
-				}
+				remove_idea = ZSB_Sector_of_war
+				add_idea = ZSB_Sector_of_war_defence
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_76
 		x = 25
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_USA_uncle_sam
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_71
 		}
-
 		completion_reward = {
 			add_stability = -0.05
 			add_ideas = {
@@ -1158,7 +1166,7 @@ focus_tree = {
 		id = 6_focus_77
 		x = 20
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_USS_thousand_years_of_aristocracy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1168,7 +1176,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Common_trainning_act
@@ -1179,7 +1186,7 @@ focus_tree = {
 		id = 6_focus_78
 		x = 22
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_generic_american_investments
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1189,33 +1196,35 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_71
 		}
-
 		completion_reward = {
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 365
-                    name = 3_focus_77
-                    folder = land
-            }
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 365
-                    name = 3_focus_77
-                    folder = naval
-            }
-			add_daily_mastery = { #精通
-                    amount = 0.5
-                    days = 365
-                    name = 3_focus_77
-                    folder = air
-            }
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 365
+				name = 3_focus_77
+				folder = land
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 365
+				name = 3_focus_77
+				folder = naval
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 365
+				name = 3_focus_77
+				folder = air
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_79
 		x = 19
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_generic_soldier_salute
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1225,7 +1234,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_National_guard
@@ -1236,7 +1244,7 @@ focus_tree = {
 		id = 6_focus_80
 		x = 21
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_JAP_crush_the_internal_factions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1246,7 +1254,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_War_industry_complex
@@ -1257,7 +1264,7 @@ focus_tree = {
 		id = 6_focus_81
 		x = 23
 		y = 8
-		cost = 3
+		cost = 10
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1267,18 +1274,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Veteran_association
-		}
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_82
 		x = 21
 		y = 9
-		cost = 3
+		cost = 10
 		icon = GFX_focus_generic_armored_air_support
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1288,27 +1294,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_78
 		}
-
 		completion_reward = {
 			add_mastery_bonus = {
-                bonus = 0.15
-                days = 720
-                name = 6_focus_82
-            }
+				bonus = 0.15
+				days = 720
+				name = 6_focus_82
+			}
 		}
 	}
 	focus = {
 		id = 6_focus_83
 		x = 19
 		y = 10
-		cost = 4
+		cost = 10
 		icon = GFX_focus_INS_oweralwagen
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_82
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = 6_focus_83
@@ -1323,14 +1327,13 @@ focus_tree = {
 		id = 6_focus_84
 		x = 21
 		y = 10
-		cost = 4
+		cost = 10
 		icon = GFX_focus_BRA_acquire_german_tanks
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_82
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = 6_focus_83
@@ -1345,14 +1348,13 @@ focus_tree = {
 		id = 6_focus_85
 		x = 23
 		y = 10
-		cost = 4
+		cost = 10
 		icon = GFX_focus_PHI_battalion_combat_teams
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_82
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = 6_focus_85_0
@@ -1374,7 +1376,7 @@ focus_tree = {
 		id = 6_focus_86
 		x = 20
 		y = 11
-		cost = 4
+		cost = 10
 		icon = GFX_focus_BEL_the_european_crusade
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1384,7 +1386,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_84
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Ranger_warfare
@@ -1395,7 +1396,7 @@ focus_tree = {
 		id = 6_focus_87
 		x = 22
 		y = 11
-		cost = 8
+		cost = 10
 		icon = GFX_focus_SIA_war_fervor
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1405,7 +1406,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_85
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Firepower_synergy
@@ -1416,14 +1416,13 @@ focus_tree = {
 		id = 6_focus_88
 		x = 29
 		y = 6
-		cost = 4
+		cost = 10
 		icon = GFX_focus_PRC_establish_pla_air_force
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_7
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Air_war_planning
@@ -1438,24 +1437,21 @@ focus_tree = {
 		icon = GFX_focus_generic_democratic_asia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = {
-			ENG = {
-				exists = yes
-				is_faction_leader = yes
-			}
-		}
-
 		prerequisite = {
 			focus = 6_focus_65
 		}
 		prerequisite = {
 			focus = 6_focus_66
 		}
-
 		completion_reward = {
 			ENG = {
 				add_to_faction = ROOT
+			}
+		}
+		available = {
+			ENG = {
+				exists = yes
+				is_faction_leader = yes
 			}
 		}
 	}
@@ -1463,14 +1459,13 @@ focus_tree = {
 		id = 6_focus_91
 		x = 30
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_generic_multi_role_aircraft
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_88
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Strategic_bombing
@@ -1481,14 +1476,13 @@ focus_tree = {
 		id = 6_focus_90
 		x = 28
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_generic_tank_air_support
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_88
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Air_support
@@ -1499,14 +1493,13 @@ focus_tree = {
 		id = 6_focus_92
 		x = 27
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_FIN_expand_air_force_academy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_90
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Low_bombing
@@ -1517,14 +1510,13 @@ focus_tree = {
 		id = 6_focus_93
 		x = 29
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_CHI_effectivize_ground_crew_usage
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_88
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Emergency_aviation_act
@@ -1535,14 +1527,13 @@ focus_tree = {
 		id = 6_focus_94
 		x = 31
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_CZE_the_air_is_our_sea
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_91
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Escort_squadrons
@@ -1553,14 +1544,13 @@ focus_tree = {
 		id = 6_focus_95
 		x = 36
 		y = 6
-		cost = 4
+		cost = 10
 		icon = GFX_focus_USA_fleet
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_8
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Two_ocean_act
@@ -1571,14 +1561,13 @@ focus_tree = {
 		id = 6_focus_96
 		x = 34
 		y = 7
-		cost = 4
+		cost = 12
 		icon = GFX_focus_PHI_gunboat_diplomacy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_95
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Naval_bureau
@@ -1589,14 +1578,13 @@ focus_tree = {
 		id = 6_focus_97
 		x = 38
 		y = 7
-		cost = 4
+		cost = 10
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_95
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Maritime_commission
@@ -1607,14 +1595,13 @@ focus_tree = {
 		id = 6_focus_98
 		x = 33
 		y = 8
-		cost = 4
+		cost = 8
 		icon = GFX_focus_GER_high_seas_fleet
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_96
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Naval_base_expansion
@@ -1625,14 +1612,13 @@ focus_tree = {
 		id = 6_focus_99
 		x = 35
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_96
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Order_contracts
@@ -1643,14 +1629,13 @@ focus_tree = {
 		id = 6_focus_100
 		x = 37
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_PHI_usaffe_headquarters
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_97
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Shipping_agency
@@ -1661,14 +1646,13 @@ focus_tree = {
 		id = 6_focus_101
 		x = 39
 		y = 8
-		cost = 4
+		cost = 10
 		icon = GFX_focus_TRB_sea_trade
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_97
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Ocean_liners
@@ -1679,14 +1663,13 @@ focus_tree = {
 		id = 6_focus_102
 		x = 37
 		y = 9
-		cost = 4
+		cost = 10
 		icon = GFX_focus_CHL_the_popular_freedom_alliance
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_100
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Liberty_ships
@@ -1698,7 +1681,7 @@ focus_tree = {
 		x = -28
 		y = 1
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 	}
 }
