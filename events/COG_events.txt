@@ -608,6 +608,7 @@ country_event = {#向鼠族求助
 			
 			if = {
 				limit = { check_variable = { COG_race_attitude = 0 } }
+				
 			}
 		}
 	}

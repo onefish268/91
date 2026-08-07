@@ -22,4 +22,19 @@ debug_test_categories = {
 		}
 	}
 
+	add_a_scripted_idea = {
+		name = the_second
+		icon = generic_construction
+		
+		cost = 10
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = Absent_rule
+			}
+			set_variable = { Absent_rule__political_gain = 0.1 }
+			set_variable = { Absent_rule__customer_goods_extent = 0.2 }
+		}
+	}
+
 }

@@ -20,14 +20,14 @@ defined_text = {
 
 defined_text = {#鼠族模块
 	name = COG_Ratkin_race_of_country_button_tips
-	text = {#常规界面
+	text = {#
 		localization_key = COG_Ratkin_race_of_country_button_tip
 	}
 }
 
 defined_text = {#萌螈模块
 	name = COG_MoeLotl_race_of_country_button_tips
-	text = {#常规界面
+	text = {#
 		localization_key = COG_MoeLotl_race_of_country_button_tip
 	}
 }
@@ -41,7 +41,7 @@ defined_text = {#绮罗模块
 
 defined_text = {#龙娘模块
 	name = COG_Dragonian_race_of_country_button_tips
-	text = {#常规界面
+	text = {#
 		localization_key = COG_Dragonian_race_of_country_button_tip
 	}
 }
@@ -378,5 +378,31 @@ defined_text = {#提示选择了什么地块
 	text = {
 		trigger = { check_variable = { COG_situation_of_country_chosen_region_number = 7 } }
 		localization_key = COG_situation_of_country_various_region
+	}
+}
+
+test_of_core_circle
+
+defined_text = {
+	#魔界溪谷国家介绍
+	name = I_am_scripted_title
+	text = {
+		trigger = { has_country_flag = test_of_core_circle }
+		localization_key = scripted_title_1
+	}
+	text = {
+		localization_key = scripted_title_2
+	}
+}
+
+defined_text = {
+	#魔界溪谷国家介绍
+	name = I_am_scripted_content
+	text = {
+		trigger = { has_country_flag = test_of_core_circle }
+		localization_key = scripted_content_1
+	}
+	text = {
+		localization_key = scripted_content_2
 	}
 }

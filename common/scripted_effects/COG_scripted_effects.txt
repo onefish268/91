@@ -984,3 +984,6 @@ COG_return_race_attitude = {
 		}
 	}
 }
+
+
+COG_reward_of_Ratkin_0

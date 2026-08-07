@@ -1,0 +1,29 @@
+
+Absent_rule = { #“缺席”的统治
+    icon = GFX_idea_generic_army          # 在界面显示的图标
+    enable = { always = yes }             # 总是启用
+    production_speed_buildings_factor = Absent_rule__produce
+    industrial_capacity_factory =  Absent_rule__produce
+    political_power_gain =  Absent_rule__political_gain
+    consumer_goods_factor = Absent_rule__customer_goods_extent
+
+}
+
+#Tolerate_exploitation = { #承受剥削
+#    icon = GFX_idea_generic_army          # 在界面显示的图标
+#    enable = { always = yes }             # 总是启用
+#    remove_trigger = {
+#        check_variable = {
+#            Tolerate_exploitation__political_gain > -0.05
+#        }
+#    }
+#    production_speed_buildings_factor = Tolerate_exploitation__produce
+#    industrial_capacity_factory = Tolerate_exploitation__produce
+#    political_power_gain = Tolerate_exploitation__political_gain
+#    cic_to_overlord_factor = Tolerate_exploitation__factory_number
+#    mic_to_overlord_factor = Tolerate_exploitation__factory_number
+#    army_attack_factor = Tolerate_exploitation__army_extent
+#    army_defence_factor = Tolerate_exploitation__army_extent
+#}
+
+#非必要，不要用动态精神，能省点性能就省

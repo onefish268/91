@@ -829,8 +829,8 @@
 
   COG_Ratkin_race_of_country_button_tip: "鼠族在殖民地的影响力是§Y[?COG_influence_of_Ratkin]§!，同我们的关系是§Y[?COG_relation_with_Ratkin]§!，她们的地区影响力系数是§Y[?COG_Ratkin_region_influent_factor|2]§!。"
   COG_MoeLotl_race_of_country_button_tip: "萌螈在殖民地的影响力是§Y[?COG_influence_of_MoeLotl]§!，同我们的关系是§Y[?COG_relation_with_MoeLotl]§!，她们的地区影响力系数是§Y[?COG_MoeLotl_region_influent_factor|2]§!。"
-  COG_Kiiro_race_of_country_button_tip: "阉割的功能"
-  COG_Dragonian_race_of_country_button_tip: "龙娘在殖民地的影响力是§Y[?COG_influence_of_Dragonian]§!，同我们的关系是§Y[?COG_relation_with_Dragonian]§!，她们的地区影响力系数是§Y[?COG_Dragonian_region_influent_factor|2]%§!。"
+  COG_Kiiro_race_of_country_button_tip: "（阉割的功能）"
+  COG_Dragonian_race_of_country_button_tip: "龙娘在殖民地的影响力是§Y[?COG_influence_of_Dragonian]§!，同我们的关系是§Y[?COG_relation_with_Dragonian]§!，她们的地区影响力系数是§Y[?COG_Dragonian_region_influent_factor|2]§!。"
   COG_Ratkin_race_of_country_button_information: "[COG_Ratkin_race_of_country_button_tips]" 
   COG_MoeLotl_race_of_country_button_information: "[COG_MoeLotl_race_of_country_button_tips]"
   COG_Kiiro_race_of_country_button_information: "[COG_Kiiro_race_of_country_button_tips]" 
@@ -1101,3 +1101,15 @@
 
   #MIO军工组织 
 
+
+
+
+  #测试
+  scripted_title_1: "我是动态标题1"
+  scripted_title_2: "我是动态标题2"
+  scripted_content_1: "我是动态内容1"
+  scripted_content_2: "我是动态内容2"
+  I_am_scripted: "[COG_situation_of_country_chosen_mode]"
+  I_am_scripted_desc: "[COG_situation_of_country_various_region_tips]"
+  Absent_rule: "[COG_situation_of_country_chosen_mode]"
+  Absent_rule_desc: "[COG_situation_of_country_various_region_tips]"
