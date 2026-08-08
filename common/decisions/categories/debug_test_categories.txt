@@ -3,5 +3,7 @@ debug_test_categories = {
     visible = {
 		is_debug = yes
     }
+
+    scripted_gui = COG_debug_test
 }
 

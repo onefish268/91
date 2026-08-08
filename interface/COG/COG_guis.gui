@@ -257,4 +257,48 @@ guiTypes = {
 		
 	}
 
+		containerWindowType = {
+		name = "COG_debug_windows"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 400 }
+
+		#测试，删除
+
+		iconType = {
+			name = COG_number_test_hundreds
+			position = { x = 1 y = 50 }
+			spriteType = COG_digital_number
+		}
+
+		iconType = {
+			name = COG_number_test_hundreds
+			position = { x = 1 y = 50 }
+			spriteType = COG_digital_number
+		}
+
+		iconType = {
+			name = COG_number_test_tens
+			position = { x = 171 y = 50 }
+			spriteType = COG_digital_number
+		}
+
+		iconType = {
+			name = COG_number_test_ones
+			position = { x = 350 y = 50 }
+			spriteType = COG_digital_number
+		}
+
+		instantTextBoxType = {
+			position = { x = 0 y = 300 }
+			name = COG_debug_number_show
+			text = COG_change_number_content
+			font = "hoi_24header"
+			maxWidth = 500
+			maxHeight = 120
+		}
+
+
+		#测试，删除
+
+	}
 }
