@@ -41,4 +41,15 @@
  fig_shoufu: "§C圣杯联邦统一了罗德西亚§!"
  #决议注释
  ZSB_xuanju_category: "总统大选"
- ZSB_decision_01: "计算投票倒计时"
+ ZSB_decision_01: "§R计算投票倒计时§!"
+ ZSB_decision_02: "斯坦利伯爵通过免费物资发放来捞取政治资本"
+ #gui文本
+ BUL_faction_panel_banner_desc: "统一之后的§Y联邦§!迫切需要一个强有力的领导人来成为这艘崭新的§C航船§!的§Y掌舵人§!，而军政府时期的老资历§Y斯坦利伯爵§!带领的§C大罗德西亚党§!以及本土原住民代言人§Y卡洛§!带领的§R国民大会党§!成为最有希望赢得选举的§Y政党§!。如果我们想要让这两个§Y党派§!中的其中一个脱颖而出，那我们就要在选票结算前为其准备好充足的§G政治资源§!以及§G民间声望§!。"
+ ZSB_zveno_name_text: "§C大罗德西亚党§!"
+ ZSB_bzns_name_text: "§R国民大会党§!"
+ ZSB_shuziyi_name_text: "§Y45§!%"
+ ZSB_shuzier_name_text: "§R20§!%"
+ ZSB_shuzisan_name_text: "§G75§!%"
+ ZSB_of_country_xuanju_tips: "§R0§!%"
+ ZSB1_LOYALTY_TOOLTIP: "该数字代表着这个§Y政党§!在联邦的§G受欢迎度§!以及总的§G支持率§!，§Y政党§!需要在这个数字上超越对手才能获得最终的§R胜利果实§!。"
+ ZSB2_LOYALTY_TOOLTIP: "该数字代表着这个§Y政党§!在联邦的§G受欢迎度§!以及总的§G支持率§!，§Y政党§!需要在这个数字上超越对手才能获得最终的§R胜利果实§!。"

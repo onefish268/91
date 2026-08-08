@@ -221,9 +221,10 @@ ZSB_xuanju_category = {
     }
 	ZSB_decision_02 = {
         icon = GFX_decision_default
-        cost = 50
+        cost = 0
         complete_effect = {
             add_political_power = 20
+			set_country_flag = ZSB_clear
         }
     }
 	ZSB_decision_03 = {

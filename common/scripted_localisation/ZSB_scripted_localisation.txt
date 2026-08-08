@@ -1,3 +1,21 @@
-defined_text = {
-
+defined_text = {#支持率模块
+	name = ZSB_of_country_xuanju_tips
+	text = {
+		trigger = { #低支持率
+            has_country_flag = ZSB_clear
+		}
+		localization_key = ZSB_shuzier_name_text
+	}
+	text = {
+		trigger = { #焦灼
+			has_country_flag = ZSB1_clear
+		}
+		localization_key = ZSB_shuziyi_name_text
+	}
+    text = {
+		trigger = { #领先
+			has_country_flag = ZSB2_clear
+		}
+		localization_key = ZSB_shuzisan_name_text
+	}
 }

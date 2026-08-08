@@ -143,4 +143,12 @@ spriteTypes = {
         name = "GFX_ZSB_faction_panel_banner"
         texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_panel_banner.png"
     }
+    spriteType = {
+        name = "GFX_decision_faction_ZSB_bzns"
+        texturefile = "gfx/leaders/ZIM/GFX_decision_faction_ZSB_bzns.png"
+    }
+    spriteType = {
+        name = "GFX_decision_faction_ZSB_zveno"
+        texturefile = "gfx/leaders/ZIM/GFX_decision_faction_ZSB_zveno.png"
+    }
 }
