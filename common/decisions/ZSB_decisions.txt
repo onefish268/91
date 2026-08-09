@@ -207,10 +207,11 @@ ZSB_xuanju_category = {
         icon = GFX_decision_default
 		priority = 99
 		days_mission_timeout = 90
-		available = { 
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
 			always = no
 		} ###关键
-		show_timeout = yes
+		#我没有找到引用这个代码的例子，可能没有用→  show_timeout = yes
 		selectable_mission = no
 		activation = {
             ZSB = { exists = yes }
@@ -219,69 +220,305 @@ ZSB_xuanju_category = {
             add_political_power = 20
         }
     }
+
+	ZSB_for_see = {
+		icon = generic_construction
+
+		complete_effect = {
+		}
+	}
+
 	ZSB_decision_02 = {
-        icon = GFX_decision_default
-        cost = 0
-        complete_effect = {
-            add_political_power = 20
-			set_country_flag = ZSB_clear
-        }
+       	icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_02_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.16
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_03 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_03_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.17
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_04 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+		name = ZSB_decision_04
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_04_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.18
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_05 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_05_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.19
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_06 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_06_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.20
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_07 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+       	icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_07_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.21
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_08 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_08_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.22
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_09 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_09_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.23
+					days = 14
+				}
+			}
+		}
     }
 	ZSB_decision_10 = {
-        icon = GFX_decision_default
-        cost = 50
-        complete_effect = {
-            add_political_power = 20
-        }
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_10_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.24
+					days = 14
+				}
+			}
+		}
+    }
+
+	ZSB_decision_11 = {
+        icon = generic_construction
+		days_mission_timeout = 14
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			has_country_flag = ZSB_the_vote_has_over
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = var:ZSB_decision_11_var
+			}
+		}
+
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = {
+				#country_event = ZSB.15
+				country_event = {
+					id = ZSB.25
+					days = 14
+				}
+			}
+		}
     }
 }
 

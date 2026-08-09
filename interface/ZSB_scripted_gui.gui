@@ -71,42 +71,88 @@ guiTypes = {
 				maxWidth = 200
 			}
 
-			instantTextBoxType = {
-				name ="shuziyi_name_text"
-				position = { x = 75 y = 250 }
-				font = "hoi_36header"
-				text = "ZSB_of_country_xuanju_tips"
-				format = left
-				maxHeight = 240
-				maxWidth = 400
+			#instantTextBoxType = {
+			#	name ="shuziyi_name_text"
+			#	position = { x = 75 y = 250 }
+			#	font = "hoi_36header"
+			#	text = "ZSB_of_country_xuanju_tips"
+			#	format = left
+			#	maxHeight = 240
+			#	maxWidth = 400
+			#}
+
+			#instantTextBoxType = {
+			#	name ="shuzier_name_text"
+			#	position = { x = 395 y = 250 }
+			#	font = "hoi_36header"
+			#	text = "ZSB_of_country_xuanju_tips"
+			#	format = left
+			#	maxHeight = 240
+			#	maxWidth = 400
+			#}
+
+			#instantTextBoxType = {
+			#	name ="loyalty1_tooltip_fake"
+			#	position = { x = 75 y = 250 }
+			#	format = center
+			#	maxwidth = 240
+			#	maxHeight = 400
+			#	pdx_tooltip = ZSB1_LOYALTY_TOOLTIP
+			#}
+
+			#instantTextBoxType = {
+			#	name ="loyalty2_tooltip_fake"
+			#	position = { x = 395 y = 250 }
+			#	format = center
+			#	maxwidth = 240
+			#	maxHeight = 400
+			#	pdx_tooltip = ZSB2_LOYALTY_TOOLTIP
+			#}
+		}
+
+		containerWindowType = {
+			name = STL_support_block
+			position = { x = 0 y = 480 }
+			size = { width = 500 height = 200 }
+
+			iconType = {
+				name = "STL_hundreds"
+				spriteType = COG_digital_number_white
+				position = { x = 0 y = 0 }
 			}
 
-			instantTextBoxType = {
-				name ="shuzier_name_text"
-				position = { x = 395 y = 250 }
-				font = "hoi_36header"
-				text = "ZSB_of_country_xuanju_tips"
-				format = left
-				maxHeight = 240
-				maxWidth = 400
+			iconType = {
+				name = "STL_tens"
+				#spriteType = COG_digital_number_green
+				position = { x = 70 y = 0 }
+			}
+			iconType = {
+				name = "STL_ones"
+				spriteType = COG_digital_number_red
+				position = { x = 140 y = 0 }
+			}
+		}
+
+		containerWindowType = {
+			name = KL_support_block
+			position = { x = 300 y = 480 }
+			size = { width = 500 height = 200 }
+
+			iconType = {
+				name = "KL_hundreds"
+				spriteType = COG_digital_number_white
+				position = { x = 0 y = 0 }
 			}
 
-			instantTextBoxType = {
-				name ="loyalty1_tooltip_fake"
-				position = { x = 75 y = 250 }
-				format = center
-				maxwidth = 240
-				maxHeight = 400
-				pdx_tooltip = ZSB1_LOYALTY_TOOLTIP
+			iconType = {
+				name = "KL_tens"
+				spriteType = COG_digital_number_green
+				position = { x = 70 y = 0 }
 			}
-
-			instantTextBoxType = {
-				name ="loyalty2_tooltip_fake"
-				position = { x = 395 y = 250 }
-				format = center
-				maxwidth = 240
-				maxHeight = 400
-				pdx_tooltip = ZSB2_LOYALTY_TOOLTIP
+			iconType = {
+				name = "KL_ones"
+				spriteType = COG_digital_number_red
+				position = { x = 140 y = 0 }
 			}
 		}
 	}
