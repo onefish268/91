@@ -272,124 +272,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_14
-		x = -2
-		y = 10
-		cost = 10
-		icon = GFX_focus_POL_agrarian_reform
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 6_focus_13
-		}
-		completion_reward = {
-			add_to_variable = {
-				ZSB_gold_2 = 0.001
-			}
-			add_to_variable = {
-				ZSB_gold_3 = 0.001
-			}
-			add_to_variable = {
-				ZSB_gold_1 = -0.1
-			}
-			add_to_variable = {
-				ZSB_gold_4 = 0.05
-			}
-			add_to_variable = {
-				ZSB_gold_5 = 0.1
-			}
-			add_to_variable = {
-				ZSB_gold_6 = 0.15
-			}
-			add_to_variable = {
-				ZSB_gold_7 = 0.05
-			}
-			add_to_variable = {
-				ZSB_gold_9 = 0.05
-			}
-			if = {
-				limit = {
-					917 = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-				917 = {
-					set_state_category = large_city
-				}
-			}
-			if = {
-				limit = {
-					813 = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-				813 = {
-					set_state_category = large_city
-				}
-			}
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				random_select_amount = 2
-				add_extra_state_shared_building_slots = 5
-			}
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				random_select_amount = 4
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = fayu2
-		}
-	}
-	focus = {
-		id = 6_focus_15
-		x = 0
-		y = 10
-		cost = 10
-		icon = GFX_focus_generic_gold
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 6_focus_13
-		}
-		completion_reward = {
-			add_to_variable = {
-				ZSB_gold_1 = -0.1
-			}
-			add_to_variable = {
-				ZSB_gold_4 = 0.05
-			}
-			add_to_variable = {
-				ZSB_gold_5 = 0.1
-			}
-			add_to_variable = {
-				ZSB_gold_9 = 0.05
-			}
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				random_select_amount = 4
-				set_state_category = large_town
-			}
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				random_select_amount = 4
-				add_extra_state_shared_building_slots = 3
-			}
-			custom_effect_tooltip = fayu1
-		}
-	}
-	focus = {
 		id = 6_focus_16
 		x = 11
 		y = 9
@@ -549,7 +431,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_19
+		id = ZSB_focus_shijiu
 		x = -2
 		y = 12
 		cost = 10
@@ -557,7 +439,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_14
+			focus = ZSB_focus_shisi
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -576,7 +458,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_20
+		id = ZSB_focus_ershi
 		x = 0
 		y = 12
 		cost = 10
@@ -584,7 +466,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_15
+			focus = ZSB_focus_shiwu
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -614,7 +496,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_21
+		id = zsb_focus_ershiyi
 		x = -2
 		y = 14
 		cost = 10
@@ -622,7 +504,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_19
+			focus = ZSB_focus_shijiu
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -647,7 +529,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_22
+		id = zsb_focus_ershier
 		x = 0
 		y = 14
 		cost = 10
@@ -655,7 +537,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_20
+			focus = ZSB_focus_ershi
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -691,7 +573,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_23
+		id = zsb_focus_ershisan
 		x = -2
 		y = 16
 		cost = 10
@@ -699,7 +581,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_21
+			focus = zsb_focus_ershiyi
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -718,7 +600,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_24
+		id = zsb_focus_ershisi
 		x = 0
 		y = 16
 		cost = 10
@@ -726,7 +608,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_22
+			focus = zsb_focus_ershier
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -935,12 +817,12 @@ focus_tree = {
 			focus = 6_focus_28
 		}
 		completion_reward = {
-			custom_effect_tooltip = "这将减少通过法案的政治点花费"
+			custom_effect_tooltip = "这将减少通过部分法案的政治点花费"
 			custom_effect_tooltip = fayu2
 		}
 	}
 	focus = {
-		id = 6_focus_31
+		id = zsb_focus_sanshiyi
 		x = 6
 		y = 12
 		cost = 10
@@ -959,7 +841,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_32
+		id = zsb_focus_sanshier
 		x = 4
 		y = 11
 		cost = 10
@@ -1006,7 +888,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_32
+			focus = zsb_focus_sanshier
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -1081,7 +963,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_35
+		id = zsb_focus_sanshiwu
 		x = 6
 		y = 14
 		cost = 10
@@ -1239,7 +1121,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_35
+			focus = zsb_focus_sanshiwu
 		}
 		completion_reward = {
 			custom_effect_tooltip = "解锁可重复使用的发掘矿产决议"
@@ -2143,7 +2025,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_71
+		id = zsb_focus_qishiyi
 		x = 23
 		y = 6
 		cost = 10
@@ -2226,7 +2108,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_76
+		id = zsb_focus_qishiliu
 		x = 25
 		y = 7
 		cost = 10
@@ -2234,7 +2116,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_71
+			focus = zsb_focus_qishiyi
 		}
 		completion_reward = {
 			add_stability = -0.05
@@ -2244,7 +2126,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_77
+		id = zsb_focus_qishiqi
 		x = 20
 		y = 7
 		cost = 10
@@ -2255,7 +2137,7 @@ focus_tree = {
 			focus = 6_focus_70
 		}
 		prerequisite = {
-			focus = 6_focus_71
+			focus = zsb_focus_qishiyi
 		}
 		completion_reward = {
 			add_ideas = {
@@ -2275,7 +2157,7 @@ focus_tree = {
 			focus = 6_focus_70
 		}
 		prerequisite = {
-			focus = 6_focus_71
+			focus = zsb_focus_qishiyi
 		}
 		completion_reward = {
 			add_daily_mastery = {
@@ -2310,7 +2192,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_77
+			focus = zsb_focus_qishiqi
 		}
 		prerequisite = {
 			focus = 6_focus_78
@@ -2330,7 +2212,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_77
+			focus = zsb_focus_qishiqi
 		}
 		prerequisite = {
 			focus = 6_focus_78
@@ -2361,7 +2243,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_77
+			focus = zsb_focus_qishiqi
 		}
 		prerequisite = {
 			focus = 6_focus_78
@@ -2381,7 +2263,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_77
+			focus = zsb_focus_qishiqi
 		}
 		prerequisite = {
 			focus = 6_focus_78
@@ -2599,7 +2481,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_93
+		id = zsb_focus_jiushisan
 		x = 29
 		y = 8
 		cost = 10
@@ -2633,7 +2515,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 6_focus_95
+		id = zsb_focus_jiushiwu
 		x = 36
 		y = 6
 		cost = 10
@@ -2658,7 +2540,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_95
+			focus = zsb_focus_jiushiwu
 		}
 		completion_reward = {
 			add_ideas = {
@@ -2675,7 +2557,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 6_focus_95
+			focus = zsb_focus_jiushiwu
 		}
 		completion_reward = {
 			add_ideas = {
@@ -2775,5 +2657,123 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+	}
+	focus = {
+		id = ZSB_focus_shisi
+		x = -2
+		y = 10
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_POL_agrarian_reform
+		prerequisite = {
+			focus = 6_focus_13
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			if = {
+				limit = {
+					917 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				917 = {
+					set_state_category = large_city
+				}
+			}
+			if = {
+				limit = {
+					813 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				813 = {
+					set_state_category = large_city
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 5
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu2
+		}
+	}
+	focus = {
+		id = ZSB_focus_shiwu
+		x = 0
+		y = 10
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_generic_gold
+		prerequisite = {
+			focus = 6_focus_13
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 }

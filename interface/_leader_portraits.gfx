@@ -155,4 +155,8 @@ spriteTypes = {
         name = "kaluo"
         texturefile = "gfx/leaders/ZIM/kaluo.png"
     }
+    spriteType = {
+        name = "GFX_ZSB_faction_fayuan_banner"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_fayuan_banner.png"
+    }
 }

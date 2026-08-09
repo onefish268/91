@@ -1,0 +1,36 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+@BANNER_Y = 10                # 大图距离窗口顶部的Y偏移
+@BANNER_HEIGHT = 120          # 顶部大图片高度
+@BANNER_DESC_Y_OFFSET = 130   # 注释文本相对banner Y的偏移
+@PANEL_CONTENT_START_Y = 240  # 原有派系内容整体从这个Y开始
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZSB_fayuan_factions_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 500 }
+		#clipping = no
+
+		iconType = {
+			name = "ZSB_faction_panel_banner"
+			spriteType = GFX_ZSB_faction_fayuan_banner # 替换为你自己的sprite名称
+			position = { x = 15 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "ZSB_faction_panel_banner_desc"
+			position = { x = 5 y = 345 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = ZSB_faction_fayuan_banner_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+	}
+}

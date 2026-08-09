@@ -359,3 +359,222 @@ ZSB_wajue_category = {
         }
     }
 }
+
+ZSB_zuigaofayuan_category = {
+	ZSB2_decision_1 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = ZSB_focus_shisi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_2 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = ZSB_focus_shijiu
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_3 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_ershiyi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_4 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_ershisan
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_5 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_sanshier
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_6 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_sanshiwu
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_7 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_qishiliu
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_8 = {
+        icon = GFX_decision_default
+        cost = 50
+		fire_only_once = yes
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_jiushiwu
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_20 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = ZSB_focus_shiwu
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_21 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = ZSB_focus_ershi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_22 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_ershier
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_23 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_ershisi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_24 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_qishiyi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_25 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_jiushisan
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB2_decision_26 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_completed_focus = 6_focus_30
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_qishiqi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+}
