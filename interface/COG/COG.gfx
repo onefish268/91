@@ -139,6 +139,20 @@ spriteTypes = {
 		transparencecheck = yes	
 	}
 
+	spriteType = {#测试用的数字
+		name = COG_digital_number
+		texturefile = "gfx/guis/COG/COG_digital_number.dds"		
+		transparencecheck = yes	
+		noOfFrames = 10
+	}
+
+	spriteType = {#测试用的数字?
+		name = COG_digital_number_1
+		texturefile = "gfx/guis/COG/COG_digital_number_1.dds"		
+		transparencecheck = yes	
+		noOfFrames = 10
+	}
+
 #地形系列引用
 
 	spriteType = {#荧光森林

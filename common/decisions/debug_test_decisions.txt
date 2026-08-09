@@ -46,4 +46,94 @@ debug_test_categories = {
 			activate_mission = ZSB_decision_01
 		}
 	}
+
+	strat_to_set_a_variable = {
+		complete_effect = {
+			set_variable = { debug_test_number = 0 }
+			set_variable = { debug_test_number_ones = 1 }
+			set_variable = { debug_test_number_tens = 1 }
+			set_variable = { debug_test_number_hundreds = 1 }
+
+			set_country_flag = have_debug_test_number
+		}
+	}
+
+	add_the_variable_1 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { debug_test_number_ones = 10 } }
+				set_variable = { debug_test_number_ones = 1 }
+				add_to_variable = { debug_test_number_tens = 1 }
+			}
+			else = {
+				add_to_variable = { debug_test_number_ones = 1 }
+			}
+
+			add_to_variable = { debug_test_number = 1 }
+		}
+	}
+
+	add_the_variable_10 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { debug_test_number_tens = 10 } }
+				set_variable = { debug_test_number_tens = 1 }
+				add_to_variable = { debug_test_number_hundreds = 1 }
+			}
+			else = {
+				add_to_variable = { debug_test_number_tens = 1 }
+			}
+			add_to_variable = { debug_test_number = 10 }
+		}
+	}
+
+	cut_the_variable_1 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+
+			if = {
+				limit = { check_variable = { debug_test_number_ones = 0 } }
+				set_variable = { debug_test_number_ones = 9 }
+				add_to_variable = { debug_test_number_tens = -1 }
+			}
+			else = {
+				add_to_variable = { debug_test_number_ones = -1 }
+			}
+
+			add_to_variable = { debug_test_number = -1 }
+
+
+		}
+	}
+
+	cut_the_variable_10 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { debug_test_number_tens = 1 } }
+				set_variable = { debug_test_number_tens = 10 }
+				add_to_variable = { debug_test_number_hundreds = -1 }
+			}
+			else = {
+				add_to_variable = { debug_test_number_tens = -1 }
+			}
+			add_to_variable = { debug_test_number = -10 }
+		}
+	}
+
+	multiply_the_variable_3 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+			multiply_variable = { debug_test_number = 3 }
+		}
+	}
+
+	devide_the_variable_3 = {
+		visible = { has_country_flag = have_debug_test_number }
+		complete_effect = {
+			divide_variable = { debug_test_number = 3 }
+		}
+	}
 }

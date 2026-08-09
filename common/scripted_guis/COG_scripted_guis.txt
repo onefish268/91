@@ -66,6 +66,24 @@ scripted_gui = {
 			window_name = "COG_race_of_country"
 		}
 
+		COG_debug_test = {
+			context_type = decision_category
+			parent_window_token = decision_tab
+			window_name = "COG_debug_windows"
+
+			properties = {
+				COG_number_test_hundreds = {
+					frame = debug_test_number_hundreds
+				}
+				COG_number_test_tens = {
+					frame = debug_test_number_tens
+				}
+				COG_number_test_ones = {
+					frame = debug_test_number_ones
+				}
+			}
+		}
+
 		COG_situation_of_country_decisions = {
 			context_type = decision_category
 			parent_window_token = decision_tab
