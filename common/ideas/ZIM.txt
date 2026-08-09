@@ -182,5 +182,47 @@ ideas = {
 			    mobilization_speed = 0.3
 	        }
         }
+
+		ZSB_diantai = { 
+		    picture = diantai
+		    ai_will_do = {
+			    base = 1
+		    }
+	        visible = {
+			    or = {
+				    tag = ZSB
+			    }
+		    }
+		    available = {
+			    has_completed_focus = 6_focus_45
+		    }
+	        cost = 150
+    	    traits = { electronics_concern }
+	        modifier = {
+			    stability_weekly_factor = 0.001
+				war_support_weekly_factor = 0.0015
+				surrender_limit = 0.25
+	        }
+        }
+
+		ZSB_yinhang = { 
+		    picture = yinhang
+		    ai_will_do = {
+			    base = 1
+		    }
+	        visible = {
+			    or = {
+				    tag = ZSB
+			    }
+		    }
+		    available = {
+			    has_completed_focus = 6_focus_40
+		    }
+	        cost = 150
+    	    traits = { industrial_concern }
+	        modifier = {
+			    consumer_goods_factor = -0.15
+	        }
+        }
 	}
 }

@@ -9,7 +9,22 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			traits = { 
-		    story_ganshezhe_trait	
+		        story_ganshezhe_trait	
+	        }
+			id= -1
+		}
+	}
+	ZSB_kaluo = {
+		name = "卡洛"
+		portraits = {
+			civilian = {
+				large = "kaluo"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { 
+		        ZSB_liwankuanglanzhe_trait	
 	        }
 			id= -1
 		}

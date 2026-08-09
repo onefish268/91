@@ -151,4 +151,8 @@ spriteTypes = {
         name = "GFX_decision_faction_ZSB_zveno"
         texturefile = "gfx/leaders/ZIM/GFX_decision_faction_ZSB_zveno.png"
     }
+    spriteType = {
+        name = "kaluo"
+        texturefile = "gfx/leaders/ZIM/kaluo.png"
+    }
 }

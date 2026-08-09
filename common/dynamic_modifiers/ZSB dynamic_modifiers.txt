@@ -10,4 +10,5 @@ ZSB_gold = {
 	production_speed_buildings_factor = ZSB_gold_7 #建造速度
 	industrial_capacity_factory = ZSB_gold_8 #工厂产出
 	local_factories = ZSB_gold_9 #当地工厂值
+	political_power_gain = ZSB_gold_10 #政治点获取
 }

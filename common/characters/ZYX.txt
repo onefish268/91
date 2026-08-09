@@ -85,7 +85,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -106,7 +106,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -127,7 +127,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -148,7 +148,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -169,7 +169,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -190,7 +190,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}
@@ -211,7 +211,7 @@ characters = {
 			}
 		}
 		advisor = { 
-			available = {
+			vailable = {
 				has_completed_focus = 2_focus_19
 			}
 		}

@@ -37,6 +37,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_1
 		}
+		completion_reward = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = "大罗德西亚党"
+				name = "大罗德西亚党"
+			}
+			swap_ruler_traits = {
+				remove = story_ganshezhe_trait
+				add = ZSB_daquanzaiwo_trait
+			}
+		}
 		available = {
 			always = no
 		}
@@ -54,6 +65,32 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 6_focus_1
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "国民大会党"
+				name = "国民大会党"
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+			add_country_leader_role = {
+				character = ZSB_kaluo
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = {
+						ZSB_liwankuanglanzhe_trait
+					}
+				}
+			}
 		}
 		available = {
 			always = no
@@ -178,180 +215,580 @@ focus_tree = {
 		id = 6_focus_12
 		x = 16
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_kaluofangan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_3
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_10 = 0.5
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_11
 		x = 4
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_stlfangan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_2
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_10 = 0.5
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_13
 		x = -1
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_FIU_bank
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_11
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_14
 		x = -2
 		y = 10
-		cost = 0
+		cost = 10
 		icon = GFX_focus_POL_agrarian_reform
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_13
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			if = {
+				limit = {
+					917 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				917 = {
+					set_state_category = large_city
+				}
+			}
+			if = {
+				limit = {
+					813 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				813 = {
+					set_state_category = large_city
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 5
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_15
 		x = 0
 		y = 10
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_gold
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_13
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_16
 		x = 11
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_TRB_invest_gddt
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_12
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = -0.003
+			}
+			add_to_variable = {
+				ZSB_gold_3 = -0.003
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_research_slot = 1
+			custom_effect_tooltip = "这将改善我国的总体发展，当然也会对现有生态造成打击"
+		}
 	}
 	focus = {
 		id = 6_focus_17
 		x = 10
 		y = 10
-		cost = 0
+		cost = 9
 		icon = GFX_focus_TRB_96
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_16
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_18
 		x = 12
 		y = 10
-		cost = 0
+		cost = 9
 		icon = GFX_focus_TRB_sell_bill
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_16
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			if = {
+				limit = {
+					545 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				545 = {
+					set_state_category = large_city
+				}
+			}
+			if = {
+				limit = {
+					813 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				813 = {
+					set_state_category = large_city
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 5
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_19
 		x = -2
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_57
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_14
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_20
 		x = 0
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_new_government_cherry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_15
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_21
 		x = -2
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_populism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_19
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_22
 		x = 0
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_NGL_relief_bank
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_20
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_23
 		x = -2
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_election_everyone
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_21
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_24
 		x = 0
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ALP_6
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_22
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_25
 		x = 10
 		y = 12
-		cost = 0
+		cost = 9
 		icon = GFX_focus_JAP_social_reconciliation
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_17
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
 		}
 	}
 	focus = {
@@ -389,13 +826,16 @@ focus_tree = {
 				ZSB_gold_6 = -0.45
 			}
 			add_to_variable = {
-				ZSB_gold_7 = -0.4
+				ZSB_gold_7 = -0.45
 			}
 			add_to_variable = {
 				ZSB_gold_8 = -0.35
 			}
 			add_to_variable = {
 				ZSB_gold_9 = -0.2
+			}
+			add_to_variable = {
+				ZSB_gold_10 = -0.35
 			}
 			custom_effect_tooltip = "联邦将对全国进行全方面调查"
 		}
@@ -404,127 +844,314 @@ focus_tree = {
 		id = 6_focus_27
 		x = 12
 		y = 12
-		cost = 0
+		cost = 9
 		icon = GFX_focus_TRB_coal
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_18
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_28
 		x = 2
 		y = 10
-		cost = 0
+		cost = 8
 		icon = GFX_focus_JAP_building_argument
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_11
 		}
+		completion_reward = {
+			custom_effect_tooltip = "解锁最高法院决议"
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_29
 		x = 6
 		y = 10
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_60
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_11
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = 6_focus_30
 		x = 2
 		y = 12
-		cost = 0
+		cost = 5
 		icon = GFX_focus_JAP_government_bill_pass
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_28
 		}
+		completion_reward = {
+			custom_effect_tooltip = "这将减少通过法案的政治点花费"
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_31
 		x = 6
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_gold_stock_up
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_29
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_research_slot = 1
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_32
 		x = 4
 		y = 11
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_entrepreneur_spirt
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_11
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_33
 		x = 4
 		y = 13
-		cost = 0
+		cost = 8
 		icon = GFX_focus_JAP_money_industry
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_32
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_34
 		x = 2
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_openness
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_33
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 2
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_35
 		x = 6
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_41
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_33
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_36
 		x = 4
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_friend_speak
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_33
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 2
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_38
 		x = 4
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_90
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -534,12 +1161,32 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_44
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_37
 		x = 2
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_58
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -549,72 +1196,187 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_44
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_39
 		x = 6
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_ALP_7
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_35
 		}
+		completion_reward = {
+			custom_effect_tooltip = "解锁可重复使用的发掘矿产决议"
+		}
 	}
 	focus = {
 		id = 6_focus_40
 		x = 10
 		y = 14
-		cost = 0
+		cost = 9
 		icon = GFX_focus_TRB_miracle
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_25
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+			custom_effect_tooltip = keyong2
+		}
 	}
 	focus = {
 		id = 6_focus_41
 		x = 12
 		y = 14
-		cost = 0
+		cost = 9
 		icon = GFX_focus_rus_industry2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_27
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_42
 		x = 10
 		y = 16
-		cost = 0
+		cost = 9
 		icon = GFX_focus_JAP_give_power_industry_union
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_40
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_43
 		x = 12
 		y = 16
-		cost = 0
+		cost = 9
 		icon = GFX_focus_RUS_agency
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_41
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_44
 		x = 3
 		y = 15
-		cost = 0
+		cost = 2
 		icon = GFX_focus_JAP_government_bill
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -624,48 +1386,106 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_36
 		}
+		completion_reward = {
+			custom_effect_tooltip = "这将决定我国的发展策略"
+		}
 	}
 	focus = {
 		id = 6_focus_45
 		x = 14
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_rus_ruble
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_12
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			custom_effect_tooltip = fayu1
+			custom_effect_tooltip = keyong1
+		}
 	}
 	focus = {
 		id = 6_focus_46
 		x = 10
 		y = 18
-		cost = 0
+		cost = 9
 		icon = GFX_focus_JAP_liberalism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_42
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_47
 		x = 12
 		y = 18
-		cost = 0
+		cost = 9
 		icon = GFX_focus_RUS_generic_controlled_board
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_43
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_48
 		x = 11
 		y = 20
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TRB_9
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -675,137 +1495,392 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_47
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu2
+		}
 	}
 	focus = {
 		id = 6_focus_49
 		x = 16
 		y = 9
-		cost = 0
+		cost = 10
 		icon = GFX_focus_rus_vozhd2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_12
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_50
 		x = 16
 		y = 11
-		cost = 0
+		cost = 10
 		icon = GFX_focus_RUS_generic_bastion_of_democracy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_49
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_2 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_3 = 0.001
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_51
 		x = 14
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_rus_organic_solidarity
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_50
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_1 = -0.1
+			}
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_52
 		x = 16
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_propaganda_soviet
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_50
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_53
 		x = 18
 		y = 12
-		cost = 0
+		cost = 10
 		icon = GFX_focus_PHI_uncouple_the_peso_and_dollar
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_50
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				set_state_category = large_town
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_54
 		x = 14
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_SWI_establish_pro_helvetia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_51
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_55
 		x = 16
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_RUS_generic_council
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_52
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_6 = 0.15
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_56
 		x = 18
 		y = 14
-		cost = 0
+		cost = 10
 		icon = GFX_focus_TEX_banks_for_america
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_53
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_57
 		x = 14
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_generic_support_the_left_right
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_54
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_58
 		x = 16
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_JAP_economic_zone
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_55
 		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 3
+			}
+			custom_effect_tooltip = fayu1
+		}
 	}
 	focus = {
 		id = 6_focus_59
 		x = 18
 		y = 16
-		cost = 0
+		cost = 10
 		icon = GFX_focus_NGL_humane_care
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 6_focus_56
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZSB_gold_4 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_5 = 0.1
+			}
+			add_to_variable = {
+				ZSB_gold_7 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_8 = 0.05
+			}
+			add_to_variable = {
+				ZSB_gold_9 = 0.05
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_research_slot = 1
+			custom_effect_tooltip = fayu2
 		}
 	}
 	focus = {
@@ -1039,6 +2114,9 @@ focus_tree = {
 		prerequisite = {
 			focus = 6_focus_60
 		}
+		completion_reward = {
+			custom_effect_tooltip = "解锁大棒主义决议"
+		}
 	}
 	focus = {
 		id = 6_focus_70
@@ -1260,6 +2338,17 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = {
 				ZSB_War_industry_complex
+			}
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
