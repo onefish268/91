@@ -154,15 +154,15 @@
  ZSB3_decision_1: "要求国会授权特别军事行动"
  ZSB3_decision_2: "正式启动大棒外交政策"
  ZSB_the_vote_has_over: "选举已经结束！"
- ZSB_decision_02: "斯坦利伯爵在通过免费物资发放来捞取政治资本"
+ ZSB_decision_02: "斯坦利伯爵在通过免费物资发放来捞取政治资本" #
  ZSB_decision_03: "卡洛正在通过对兽人原住民宣传来获取她们的支持"
- ZSB_decision_04: "斯坦利伯爵正在[?var:ZSB_decision_04_var.GetName]地区进行大型演讲"
+ ZSB_decision_04: "斯坦利伯爵正在[?var:ZSB_decision_04_var.GetName]地区进行大型演讲" #
  ZSB_decision_05: "卡洛正在[?var:ZSB_decision_05_var.GetName]地区进行街头游行"
- ZSB_decision_06: "大罗德西亚党正在[?var:ZSB_decision_06_var.GetName]地区的路边散发传单"
+ ZSB_decision_06: "大罗德西亚党正在[?var:ZSB_decision_06_var.GetName]地区的路边散发传单" #
  ZSB_decision_07: "国民大会党正在[?var:ZSB_decision_07_var.GetName]地区的乡间访问农民"
- ZSB_decision_08: "斯坦利伯爵正在[?var:ZSB_decision_08_var.GetName]地区争取市民的支持"
+ ZSB_decision_08: "斯坦利伯爵正在[?var:ZSB_decision_08_var.GetName]地区争取市民的支持" #
  ZSB_decision_09: "卡洛正在[?var:ZSB_decision_09_var.GetName]地区与民意代表讲解国民大会党的基本理念"
- ZSB_decision_10: "斯坦利伯爵正在[?var:ZSB_decision_10_var.GetName]地区公开发放食物"
+ ZSB_decision_10: "斯坦利伯爵正在[?var:ZSB_decision_10_var.GetName]地区公开发放食物" #
  ZSB_decision_11: "卡洛正在[?var:ZSB_decision_11_var.GetName]地区的民众面前表明国民大会党的治理方案"
  #gui文本
  BUL_faction_panel_banner_desc: "统一之后的§Y联邦§!迫切需要一个强有力的领导人来成为这艘崭新的§C航船§!的§Y掌舵人§!，而军政府时期的老资历§Y斯坦利伯爵§!带领的§C大罗德西亚党§!以及本土原住民代言人§Y卡洛§!带领的§R国民大会党§!成为最有希望赢得选举的§Y政党§!。如果我们想要让这两个§Y党派§!中的其中一个脱颖而出，那我们就要在选票结算前为其准备好充足的§G政治资源§!以及§G民间声望§!。"

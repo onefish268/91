@@ -147,8 +147,8 @@ spriteTypes = {
 	}
 
 	spriteType = {#测试用的数字——白字
-		name = COG_digital_number_white
-		texturefile = "gfx/guis/COG/COG_digital_number_white.dds"		
+		name = COG_digital_number_yellow
+		texturefile = "gfx/guis/COG/COG_digital_number_yellow.dds"		
 		transparencecheck = yes	
 		noOfFrames = 10
 	}

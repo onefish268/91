@@ -129,7 +129,10 @@ COG_categories_situation_of_country = {#决议及其下属的名字不可以一�
 
 		#鼠族地区
 
-		COG
+	ZIM_for_see = {
+		cost = 10
+		
+	}
 
 		
 	

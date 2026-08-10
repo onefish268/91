@@ -21,6 +21,19 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = "联邦将通过民意选举来举出总统"
+
+			hidden_effect = { #触发地块收集、宣讲等任务
+				country_event = ZSB.14
+				
+								#变量开始设置 显示的数字起始是1，不是0（悲）
+				set_variable = { ZSB_STL_hundreds_number = 1 } #斯坦莉
+				set_variable = { ZSB_STL_tens_number = 1 }
+				set_variable = { ZSB_STL_ones_number = 1 }
+
+				set_variable = { ZSB_KL_hundreds_number = 1 } #卡洛
+				set_variable = { ZSB_KL_tens_number = 1 }
+				set_variable = { ZSB_KL_ones_number = 1 }
+			}
 		}
 	}
 	focus = {

@@ -111,47 +111,71 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = STL_support_block
-			position = { x = 0 y = 480 }
+			name = STL_support_block_0
+			position = { x = -35 y = 480 }
 			size = { width = 500 height = 200 }
 
 			iconType = {
-				name = "STL_hundreds"
-				spriteType = COG_digital_number_white
-				position = { x = 0 y = 0 }
-			}
-
-			iconType = {
-				name = "STL_tens"
-				#spriteType = COG_digital_number_green
+				name = "STL_tens_0"
 				position = { x = 70 y = 0 }
 			}
 			iconType = {
-				name = "STL_ones"
-				spriteType = COG_digital_number_red
+				name = "STL_ones_0"
 				position = { x = 140 y = 0 }
 			}
 		}
 
 		containerWindowType = {
-			name = KL_support_block
-			position = { x = 300 y = 480 }
+			name = STL_support_block_1
+			position = { x = 0 y = 480 }
 			size = { width = 500 height = 200 }
 
 			iconType = {
-				name = "KL_hundreds"
-				spriteType = COG_digital_number_white
+				name = "STL_hundreds_1"
 				position = { x = 0 y = 0 }
 			}
 
 			iconType = {
-				name = "KL_tens"
-				spriteType = COG_digital_number_green
+				name = "STL_tens_1"
 				position = { x = 70 y = 0 }
 			}
 			iconType = {
-				name = "KL_ones"
-				spriteType = COG_digital_number_red
+				name = "STL_ones_1"
+				position = { x = 140 y = 0 }
+			}
+		}
+
+		containerWindowType = {
+			name = KL_support_block_0
+			position = { x = 266 y = 480 }
+			size = { width = 500 height = 200 }
+
+			iconType = {
+				name = "KL_tens_0"
+				position = { x = 70 y = 0 }
+			}
+			iconType = {
+				name = "KL_ones_0"
+				position = { x = 140 y = 0 }
+			}
+		}
+
+		containerWindowType = {
+			name = KL_support_block_1
+			position = { x = 300 y = 480 }
+			size = { width = 500 height = 200 }
+
+			iconType = {
+				name = "KL_hundreds_1"
+				position = { x = 0 y = 0 }
+			}
+
+			iconType = {
+				name = "KL_tens_1"
+				position = { x = 70 y = 0 }
+			}
+			iconType = {
+				name = "KL_ones_1"
 				position = { x = 140 y = 0 }
 			}
 		}
