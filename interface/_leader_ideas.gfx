@@ -87,4 +87,8 @@ spriteTypes = {
         name = "GFX_idea_yinhang"
         texturefile = "gfx/interface/ideas/yinhang.png"
     }
+    spriteType = {
+        name = "GFX_idea_dabang"
+        texturefile = "gfx/interface/ideas/dabang.png"
+    }
 }

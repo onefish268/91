@@ -12,3 +12,18 @@ ZSB_gold = {
 	local_factories = ZSB_gold_9 #当地工厂值
 	political_power_gain = ZSB_gold_10 #政治点获取
 }
+
+ZSB_dabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_dabang_1 #消费品
+	army_attack_factor = ZSB_dabang_2 #陆军进攻
+	army_defence_factor = ZSB_dabang_3 #陆军防御
+	global_building_slots_factor = ZSB_dabang_4 #当地最大工厂数
+	monthly_population = ZSB_dabang_5 #月度人口增长
+	local_resources_factor = ZSB_dabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_dabang_7 #建造速度
+	industrial_capacity_factory = ZSB_dabang_8 #工厂产出
+	local_factories = ZSB_dabang_9 #当地工厂值
+	political_power_gain = ZSB_dabang_10 #政治点获取
+}
