@@ -22,8 +22,24 @@ debug_test_categories = {
 		}
 	}
 
+	the_third = {
+		icon = generic_construction
+
+		complete_effect = {
+			set_country_flag = test_of_second_flag
+		}
+	}
+
+	the_fourth = {
+		icon = generic_construction
+
+		complete_effect = {
+			clr_country_flag = test_of_second_flag
+		}
+	}
+
 	add_a_scripted_idea = {
-		name = the_second
+		name = add_a_scripted_idea
 		icon = generic_construction
 		
 		cost = 10

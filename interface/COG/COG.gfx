@@ -146,9 +146,23 @@ spriteTypes = {
 		noOfFrames = 10
 	}
 
-	spriteType = {#测试用的数字?
-		name = COG_digital_number_1
-		texturefile = "gfx/guis/COG/COG_digital_number_1.dds"		
+	spriteType = {#测试用的数字——白字
+		name = COG_digital_number_white
+		texturefile = "gfx/guis/COG/COG_digital_number_white.dds"		
+		transparencecheck = yes	
+		noOfFrames = 10
+	}
+
+	spriteType = {#测试用的数字——红字
+		name = COG_digital_number_red
+		texturefile = "gfx/guis/COG/COG_digital_number_red.dds"		
+		transparencecheck = yes	
+		noOfFrames = 10
+	}
+
+	spriteType = {#测试用的数字——绿字
+		name = COG_digital_number_green
+		texturefile = "gfx/guis/COG/COG_digital_number_green.dds"		
 		transparencecheck = yes	
 		noOfFrames = 10
 	}

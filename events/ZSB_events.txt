@@ -235,14 +235,236 @@ country_event = {#六角大楼的建设
     id = ZSB.13
     title = ZSB.13.t
     desc = ZSB.13.desc
-    hidden = yes
+    hidden = no
 
     is_triggered_only = yes
 
     immediate = {
         swap_ideas = {
             remove_idea = ZSB_Construction_of_the_Hexagon
-            add_idea = ZSB_The_Hexagon
+            add_ideas = {
+                ZSB_The_Hexagon
+            }
         }
+    }
+}
+
+country_event = {#自动管理数组
+    id = ZSB.14
+    hidden = yes
+
+    immediate = {
+        every_owned_state = {
+            PREV = { add_to_array = { ZSB_all_regions = PREV } }
+        }
+
+        country_event = ZSB.15
+    }
+}
+
+country_event = {#分配任务
+    id = ZSB.15
+    hidden = yes
+
+    immediate = {
+        
+        if = {
+            limit = { NOT = { has_country_flag = ZSB_the_vote_has_over } }
+
+            random_scope_in_array = {#从数组中选取一个地区
+                array = ZSB_all_regions
+                PREV = { set_variable = { ZSB_random_region = PREV } }
+            }
+
+            remove_from_array = {#去除原有的地区（防止连续重复发生同一地区决议）
+				array = ZSB_all_regions
+				value = ZSB_random_region
+			}
+
+            random_list = {
+                10 = {
+                    modifier = {
+			    		factor = 0
+			    		NOT = { check_variable = { ZSB_decision_02_var = 0 } }
+	    			}
+                    set_variable = { ZSB_decision_02_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_02
+                }
+                10 = {
+                    modifier = {
+    					factor = 0
+						NOT = { check_variable = { ZSB_decision_03_var = 0 } }
+		    		}
+                    set_variable = { ZSB_decision_03_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_03
+                }
+                10 = {
+                    modifier = {
+						factor = 0
+						NOT = { check_variable = { ZSB_decision_04_var = 0 } }
+    				}
+                    set_variable = { ZSB_decision_04_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_04
+                }
+                10 = {
+                    modifier = {
+						factor = 0
+						NOT = { check_variable = { ZSB_decision_05_var = 0 } }
+    				}
+                    set_variable = { ZSB_decision_05_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_05
+                }
+                10 = {
+                    modifier = {
+				    	factor = 0
+					    NOT = { check_variable = { ZSB_decision_06_var = 0 } }
+    				}
+                    set_variable = { ZSB_decision_06_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_06
+                }
+                10 = {
+                    modifier = {
+						factor = 0
+						NOT = { check_variable = { ZSB_decision_07_var = 0 } }
+    				}
+                    set_variable = { ZSB_decision_07_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_07
+                }
+                10 = {
+                    modifier = {
+				    	factor = 0
+					    NOT = { check_variable = { ZSB_decision_08_var = 0 } }
+    				}
+                    set_variable = { ZSB_decision_08_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_08
+                }
+                10 = {
+                    modifier = {
+			    		factor = 0
+						NOT = { check_variable = { ZSB_decision_09_var = 0 } }
+				    }
+                    set_variable = { ZSB_decision_09_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_09
+                }
+                10 = {
+                    modifier = {
+						factor = 0
+						NOT = { check_variable = { ZSB_decision_10_var = 0 } }
+				    }
+                    set_variable = { ZSB_decision_10_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_10
+                }
+                10 = {
+                    modifier = {
+						factor = 0
+						NOT = { check_variable = { ZSB_decision_11_var = 0 } }
+				    }
+                    set_variable = { ZSB_decision_11_var = ZSB_random_region }
+                    activate_mission = ZSB_decision_11
+                }
+            }
+        }
+
+        
+    }
+}
+
+country_event = {#决议02的回收
+    id = ZSB.16
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_02_var }#选择地区返回
+        set_variable = { ZSB_decision_02_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议03的回收
+    id = ZSB.17
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_03_var }#选择地区返回
+        set_variable = { ZSB_decision_03_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议04的回收
+    id = ZSB.18
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_04_var }#选择地区返回
+        set_variable = { ZSB_decision_04_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议05的回收
+    id = ZSB.19
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_05_var }#选择地区返回
+        set_variable = { ZSB_decision_05_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议06的回收
+    id = ZSB.20
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_06_var }#选择地区返回
+        set_variable = { ZSB_decision_06_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议07的回收
+    id = ZSB.21
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_07_var }#选择地区返回
+        set_variable = { ZSB_decision_07_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议08的回收
+    id = ZSB.22
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_08_var }#选择地区返回
+        set_variable = { ZSB_decision_08_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议09的回收
+    id = ZSB.23
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_09_var }#选择地区返回
+        set_variable = { ZSB_decision_09_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议10的回收
+    id = ZSB.24
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_10_var }#选择地区返回
+        set_variable = { ZSB_decision_10_var = 0 }#变量初始化，参与回选举活动
+    }
+}
+
+country_event = {#决议11的回收
+    id = ZSB.25
+    hidden = yes
+
+    immediate = {
+        add_to_array = { ZSB_all_regions = ZSB_decision_11_var }#选择地区返回
+        set_variable = { ZSB_decision_11_var = 0 }#变量初始化，参与回选举活动
     }
 }

@@ -3,12 +3,20 @@ scripted_gui = {
 	ZSB_xuanju_ui = {
 		context_type = decision_category
 		window_name = "ZSB_internal_factions_decision_ui_window"
+
+		properties = {
+			STL_tens = {
+				image = "[ZSB_vote_pictrue]"
+				frame = debug_test_number
+			}
+		}
 	}
 
 	ZSB_zuigaofayuan_ui = {
 		context_type = decision_category
 		window_name = "ZSB_fayuan_factions_decision_ui_window"
 	}
+	
 	
 }
 

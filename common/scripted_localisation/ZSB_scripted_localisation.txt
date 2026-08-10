@@ -19,3 +19,15 @@ defined_text = {#支持率模块
 		localization_key = ZSB_shuzisan_name_text
 	}
 }
+
+defined_text = {#数字颜色的改变，数字大小的改变不在这里调控，去interface那里
+	name = ZSB_vote_pictrue
+	text = {
+		trigger = { has_country_flag = test_of_core_circle }
+		localization_key = COG_digital_number_green
+	}
+
+	text = {
+		localization_key = COG_digital_number_white
+	}
+}
