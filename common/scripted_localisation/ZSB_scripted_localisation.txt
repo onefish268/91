@@ -20,14 +20,36 @@ defined_text = {#支持率模块
 	}
 }
 
-defined_text = {#数字颜色的改变，数字大小的改变不在这里调控，去interface那里
-	name = ZSB_vote_pictrue
+defined_text = {#斯坦莉数字颜色的改变，数字大小的改变不在这里调控，去interface那里
+	name = ZSB_STL_vote_pictrue
 	text = {
-		trigger = { has_country_flag = test_of_core_circle }
+		trigger = { check_variable = { ZSB_STL_tens_number > 8 } }
 		localization_key = COG_digital_number_green
 	}
 
 	text = {
-		localization_key = COG_digital_number_white
+		trigger = { check_variable = { ZSB_STL_tens_number > 2 } }
+		localization_key = COG_digital_number_yellow
+	}
+
+	text = {
+		localization_key = COG_digital_number_red
+	}
+}
+
+defined_text = {#卡洛数字颜色的改变，数字大小的改变不在这里调控，去interface那里
+	name = ZSB_KL_vote_pictrue
+	text = {
+		trigger = { check_variable = { ZSB_KL_tens_number > 8 } }
+		localization_key = COG_digital_number_green
+	}
+
+	text = {
+		trigger = { check_variable = { ZSB_KL_tens_number > 2 } }
+		localization_key = COG_digital_number_yellow
+	}
+
+	text = {
+		localization_key = COG_digital_number_red
 	}
 }

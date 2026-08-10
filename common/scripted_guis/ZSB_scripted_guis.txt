@@ -5,10 +5,76 @@ scripted_gui = {
 		window_name = "ZSB_internal_factions_decision_ui_window"
 
 		properties = {
-			STL_tens = {
-				image = "[ZSB_vote_pictrue]"
-				frame = debug_test_number
+			#斯坦莉的分数显示
+			STL_tens_0 = {
+				image = "[ZSB_STL_vote_pictrue]"
+				frame = ZSB_STL_tens_number
 			}
+
+			STL_ones_0 = {
+				image = "[ZSB_STL_vote_pictrue]"
+				frame = ZSB_STL_ones_number
+			}
+
+			STL_hundreds_1 = {
+				image = "[ZSB_STL_vote_pictrue]"
+				frame = ZSB_STL_hundreds_number
+			}
+
+			STL_tens_1 = {
+				image = "[ZSB_STL_vote_pictrue]"
+				frame = ZSB_STL_tens_number
+			}
+			
+			STL_ones_1 = {
+				image = "[ZSB_STL_vote_pictrue]"
+				frame = ZSB_STL_ones_number
+			}
+
+
+			#卡洛的分数显示
+			KL_tens_0 = {
+				image = "[ZSB_KL_vote_pictrue]"
+				frame = ZSB_KL_tens_number
+			}
+
+			KL_ones_0 = {
+				image = "[ZSB_KL_vote_pictrue]"
+				frame = ZSB_KL_ones_number
+			}
+
+			KL_hundreds_1 = {
+				image = "[ZSB_KL_vote_pictrue]"
+				frame = ZSB_KL_hundreds_number
+			}
+
+			KL_tens_1 = {
+				image = "[ZSB_KL_vote_pictrue]"
+				frame = ZSB_KL_tens_number
+			}
+			
+			KL_ones_1 = {
+				image = "[ZSB_KL_vote_pictrue]"
+				frame = ZSB_KL_ones_number
+			}
+		}
+
+		triggers = {
+			STL_support_block_0_visible = {
+                check_variable = { ZSB_STL_hundreds_number = 1 }
+            }
+            STL_support_block_1_visible = {
+                check_variable = { ZSB_STL_hundreds_number = 2 }
+            }
+		}
+
+		triggers = {
+			KL_support_block_0_visible = {
+                check_variable = { ZSB_STL_hundreds_number = 1 }
+            }
+            KL_support_block_1_visible = {
+                check_variable = { ZSB_STL_hundreds_number = 2 }
+            }
 		}
 	}
 
@@ -16,7 +82,5 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "ZSB_fayuan_factions_decision_ui_window"
 	}
-	
-	
 }
 
