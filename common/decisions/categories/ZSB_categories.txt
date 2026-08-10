@@ -36,3 +36,13 @@ ZSB_zuigaofayuan_category = {
         tag = ZSB   # 仅某国能看见这个决议分类，换成你需要的国家tag
     }
 }
+
+ZSB_dabang_category = {
+    picture = GFX_decision_cat_default
+    priority = 98
+    scripted_gui = ZSB_dabang_ui  # 关键！挂载scripted_gui ID
+    visible = {
+        has_completed_focus = 6_focus_69
+        tag = ZSB   # 仅某国能看见这个决议分类，换成你需要的国家tag
+    }
+}

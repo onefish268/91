@@ -1,0 +1,218 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+@BANNER_Y = 10                # 大图距离窗口顶部的Y偏移
+@BANNER_HEIGHT = 120          # 顶部大图片高度
+@BANNER_DESC_Y_OFFSET = 130   # 注释文本相对banner Y的偏移
+@PANEL_CONTENT_START_Y = 240  # 原有派系内容整体从这个Y开始
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZSB_dabang_factions_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 600 }
+		#clipping = no
+
+		iconType = {
+			name = "ZSB_faction_dabang_banner"
+			spriteType = GFX_ZSB_faction_dabang_banner # 替换为你自己的sprite名称
+			position = { x = 30 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "ZSB_faction_dabang_banner_desc"
+			position = { x = 5 y = 290 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = ZSB_faction_dabang_banner_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+
+		buttonType = {
+    	    name = "ZSB_situation_of_country_button_click" # 对应 scripted_gui 中的 effects 按钮名
+			spriteType = GFX_ZSB_faction_flag1
+    	    position = { x = 0 y = 445 }       
+    	    clicksound = click_default
+    	    scale = 1
+    	}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag1"
+			position = { x = 0 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP1
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag2"
+			spriteType = GFX_ZSB_faction_flag2 # 替换为你自己的sprite名称
+			position = { x = 79 y = 445 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag2"
+			position = { x = 79 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP2
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag3"
+			spriteType = GFX_ZSB_faction_flag3 # 替换为你自己的sprite名称
+			position = { x = 163 y = 445 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag3"
+			position = { x = 163 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP3
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag4"
+			spriteType = GFX_ZSB_faction_flag4 # 替换为你自己的sprite名称
+			position = { x = 257 y = 445 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag4"
+			position = { x = 257 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP4
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag5"
+			spriteType = GFX_ZSB_faction_flag5 # 替换为你自己的sprite名称
+			position = { x = 351 y = 445 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag5"
+			position = { x = 351 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP5
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag6"
+			spriteType = GFX_ZSB_faction_flag6 # 替换为你自己的sprite名称
+			position = { x = 445 y = 445 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag6"
+			position = { x = 445 y = 445 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP6
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag7"
+			spriteType = GFX_ZSB_faction_flag7 # 替换为你自己的sprite名称
+			position = { x = 0 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag7"
+			position = { x = 0 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP7
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag8"
+			spriteType = GFX_ZSB_faction_flag8 # 替换为你自己的sprite名称
+			position = { x = 79 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag8"
+			position = { x = 79 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP8
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag9"
+			spriteType = GFX_ZSB_faction_flag9 # 替换为你自己的sprite名称
+			position = { x = 163 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag9"
+			position = { x = 163 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP9
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag10"
+			spriteType = GFX_ZSB_faction_flag10 # 替换为你自己的sprite名称
+			position = { x = 257 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag10"
+			position = { x = 257 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP10
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag11"
+			spriteType = GFX_ZSB_faction_flag11 # 替换为你自己的sprite名称
+			position = { x = 351 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag11"
+			position = { x = 351 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP11
+		}
+
+		iconType = {
+			name = "ZSB_faction_flag12"
+			spriteType = GFX_ZSB_faction_flag12 # 替换为你自己的sprite名称
+			position = { x = 445 y = 515 }
+		}
+
+		instantTextBoxType = {
+			name ="ZSB_tooltip_flag12"
+			position = { x = 445 y = 515 }
+			format = center
+			maxwidth = 66
+			maxHeight = 37
+			pdx_tooltip = ZSB_flag_TOOLTIP12
+		}
+	}
+}

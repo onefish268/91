@@ -159,4 +159,56 @@ spriteTypes = {
         name = "GFX_ZSB_faction_fayuan_banner"
         texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_fayuan_banner.png"
     }
+    spriteType = {
+        name = "GFX_ZSB_faction_dabang_banner"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_dabang_banner.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag1"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag1.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag2"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag2.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag3"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag3.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag4"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag4.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag5"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag5.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag6"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag6.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag7"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag7.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag8"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag8.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag9"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag9.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag10"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag10.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag11"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag11.png"
+    }
+    spriteType = {
+        name = "GFX_ZSB_faction_flag12"
+        texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag12.png"
+    }
 }

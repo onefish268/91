@@ -885,3 +885,37 @@ ZSB_zuigaofayuan_category = {
         }
     }
 }
+
+ZSB_dabang_category = {
+	ZSB3_decision_1 = {
+        icon = GFX_decision_default
+        cost = 30
+		fire_only_once = yes
+		visible = {
+            has_decision = ZSB3_decision_2
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        complete_effect = {
+            reduce_focus_completion_cost = {
+                focus = zsb_focus_qishiqi
+                cost = 15
+            }
+			custom_effect_tooltip = buman
+			add_stability = -0.003
+        }
+    }
+	ZSB3_decision_2 = {
+        icon = GFX_decision_default
+        cost = 0
+		fire_only_once = yes
+        complete_effect = {
+            add_dynamic_modifier = {
+				modifier = ZSB_dabang
+				scope = ZSB
+			}
+			add_to_variable = {
+				ZSB_dabang_10 = 0.15
+			}
+        }
+    }
+}
