@@ -50,11 +50,13 @@ guiTypes = {
 			pdx_tooltip = ZSB_flag_TOOLTIP1
 		}
 
-		iconType = {
-			name = "ZSB_faction_flag2"
-			spriteType = GFX_ZSB_faction_flag2 # 替换为你自己的sprite名称
-			position = { x = 79 y = 445 }
-		}
+		buttonType = {
+    	    name = "ZSB1_situation_of_country_button" # 对应 scripted_gui 中的 effects 按钮名
+			spriteType = GFX_ZSB_faction_flag2
+    	    position = { x = 79 y = 445 }       
+    	    clicksound = click_default
+    	    scale = 1
+    	}
 
 		instantTextBoxType = {
 			name ="ZSB_tooltip_flag2"
