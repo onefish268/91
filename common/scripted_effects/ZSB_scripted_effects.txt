@@ -1,0 +1,37 @@
+ZSB_count_STL_number = {
+	if = {
+		limit = { check_variable = { ZSB_STL_ones_number > 10 } }
+		set_variable = { ZSB_STL_ones_number = 1 }
+		add_to_variable = { ZSB_STL_tens_number = 1 }
+	}
+	if = {
+		limit = { check_variable = { ZSB_STL_tens_number > 10 } }
+		set_variable = { ZSB_STL_tens_number = 1 }
+		add_to_variable = { ZSB_STL_hundreds_number = 1 }
+	}
+	if = {
+		limit = { check_variable = { ZSB_STL_hundreds_number > 1 } }
+		set_variable = { ZSB_STL_ones_number = 1 }
+		set_variable = { ZSB_STL_tens_number = 1 }
+		set_variable = { ZSB_STL_hundreds_number = 2 }
+	}
+}
+
+ZSB_count_KL_number = {
+	if = {
+		limit = { check_variable = { ZSB_KL_ones_number > 10 } }
+		set_variable = { ZSB_KL_ones_number = 1 }
+		add_to_variable = { ZSB_KL_tens_number = 1 }
+	}
+	if = {
+		limit = { check_variable = { ZSB_KL_tens_number > 10 } }
+		set_variable = { ZSB_KL_tens_number = 1 }
+		add_to_variable = { ZSB_KL_hundreds_number = 1 }
+	}
+	if = {
+		limit = { check_variable = { ZSB_KL_hundreds_number > 1 } }
+		set_variable = { ZSB_KL_ones_number = 1 }
+		set_variable = { ZSB_KL_tens_number = 1 }
+		set_variable = { ZSB_KL_hundreds_number = 2 }
+	}
+}

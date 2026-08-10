@@ -506,3 +506,30 @@ country_event = {#决议11的回收
         set_variable = { ZSB_decision_11_var = 0 }#变量初始化，参与回选举活动
     }
 }
+
+country_event = {#检查选举结果
+    id = ZSB.27
+
+    is_triggered_only = yes
+
+    option = {
+        set_temp_variable = { ZSB_STL_total_number = ZSB_STL_hundreds_number }
+	    multiply_temp_variable = { ZSB_STL_total_number = 10 }
+	    add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_tens_number }
+    	multiply_temp_variable = { ZSB_STL_total_number = 10 }
+	    add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_ones_number }
+
+	    set_temp_variable = { ZSB_KL_total_number = ZSB_KL_hundreds_number }
+    	multiply_temp_variable = { ZSB_KL_total_number = 10 }
+	    add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_tens_number }
+    	multiply_temp_variable = { ZSB_KL_total_number = 10 }
+	    add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_ones_number }
+
+        if = {
+            limit = { check_variable = { temp_var:ZSB_STL_total_number < temp_var:ZSB_KL_total_number } }
+        }
+        else = {
+
+        }
+    }
+}
