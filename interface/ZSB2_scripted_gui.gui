@@ -34,7 +34,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-    	    name = "ZSB_situation_of_country_button_click" # 对应 scripted_gui 中的 effects 按钮名
+    	    name = "ZSB_situation_of_country_button" # 对应 scripted_gui 中的 effects 按钮名
 			spriteType = GFX_ZSB_faction_flag1
     	    position = { x = 0 y = 445 }       
     	    clicksound = click_default
