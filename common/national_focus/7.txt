@@ -108,6 +108,12 @@ focus_tree = {
 			remove_ideas = ZSB_1
 			remove_ideas = ZSB_2
 			remove_ideas = ZSB_3
+			remove_ideas = ZSB_Build_faster
+			remove_ideas = ZSB_arms_factory_construction
+			remove_ideas = ZSB_Representative
+			remove_ideas = ZSB_Ensure_supply
+			remove_ideas = ZSB_More_talent
+			remove_ideas = ZSB_Resources_control
 			add_war_support = 0.2
 			add_stability = 0.2
 		}

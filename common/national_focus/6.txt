@@ -16,17 +16,15 @@ focus_tree = {
 		icon = GFX_focus_TGI_get_the_fxxk_outa_here
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		bypass = {
-			ZHJ = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZHJ
 				value = 0.05
+			}
+		}
+		bypass = {
+			ZHJ = {
+				exists = no
 			}
 		}
 	}
@@ -38,20 +36,17 @@ focus_tree = {
 		icon = GFX_focus_TGI_land_of_pain
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
-
 			custom_effect_tooltip = ZSB_tip
+		}
+		bypass = {
+			ZDM = {
+				exists = no
+			}
 		}
 	}
 	focus = {
@@ -84,7 +79,6 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_com_selector_material
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Build_faster
@@ -105,21 +99,18 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_1
 		}
-
-		bypass = {
-			ZHJ = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			#这些是合作政府
 			add_collaboration = {
 				target = ZHJ
 				value = 0.15
 			}
-
 			custom_effect_tooltip = ZSB_tip
+		}
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
 		}
 	}
 	focus = {
@@ -136,20 +127,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_1
 		}
-
-		bypass = {
-			ZHJ = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZHJ
 				value = 0.05
 			}
-
 			custom_effect_tooltip = ZSB_tip
+		}
+		bypass = {
+			ZHJ = {
+				exists = no
+			}
 		}
 	}
 	focus = {
@@ -163,20 +151,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_5
 		}
-
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.2
+			}
+			custom_effect_tooltip = ZSB_tip
+		}
 		bypass = {
 			ZHJ = {
 				exists = no
 			}
-		}
-		
-		completion_reward = {
-			add_collaboration = {
-				target = ZHJ
-				value = 0.20
-			}
-
-			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -190,20 +175,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_6
 		}
-
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.1
+			}
+			custom_effect_tooltip = ZSB_tip
+		}
 		bypass = {
 			ZHJ = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_collaboration = {
-				target = ZHJ
-				value = 0.10
-			}
-
-			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -217,20 +199,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_7
 		}
-
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.2
+			}
+			custom_effect_tooltip = ZSB_tip
+		}
 		bypass = {
 			ZHJ = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_collaboration = {
-				target = ZHJ
-				value = 0.20
-			}
-
-			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -244,20 +223,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_8
 		}
-
+		completion_reward = {
+			add_collaboration = {
+				target = ZHJ
+				value = 0.1
+			}
+			custom_effect_tooltip = ZSB_tip
+		}
 		bypass = {
 			ZHJ = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_collaboration = {
-				target = ZHJ
-				value = 0.10
-			}
-
-			custom_effect_tooltip = ZSB_tip
 		}
 	}
 	focus = {
@@ -272,16 +248,8 @@ focus_tree = {
 			focus = 5_focus_9
 			focus = 5_focus_10
 		}
-
-		bypass = {
-			ZHJ = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = ZSB_result_tip
-
 			hidden_effect = {
 				ZHJ = {
 					every_controlled_state = {
@@ -289,27 +257,45 @@ focus_tree = {
 					}
 				}
 				if = {
-					limit = { has_completed_focus = 5_focus_9 }
-
+					limit = {
+						has_completed_focus = 5_focus_9
+					}
 					random_list = {
 						60 = {
-							country_event = ZSB.8
+							country_event = {
+								id = ZSB.8
+								days = 5
+							}
 						}
 						40 = {
-							country_event = ZSB.9
+							country_event = {
+								id = ZSB.9
+								days = 5
+							}
 						}
 					}
 				}
 				else = {
 					random_list = {
 						30 = {
-							country_event = ZSB.8
+							country_event = {
+								id = ZSB.8
+								days = 5
+							}
 						}
 						70 = {
-							country_event = ZSB.9
+							country_event = {
+								id = ZSB.9
+								days = 5
+							}
 						}
 					}
 				}
+			}
+		}
+		bypass = {
+			ZHJ = {
+				exists = no
 			}
 		}
 	}
@@ -324,20 +310,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
 		}
-
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_13
@@ -350,20 +333,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
 		}
-
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_14
@@ -376,20 +356,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_2
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
 		}
-
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_16
@@ -402,20 +379,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_13
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
 		}
-
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_15
@@ -428,20 +402,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_12
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZDM
 				value = 0.15
 			}
 		}
-
+		bypass = {
+			ZDM = {
+				exists = no
+			}
+		}
 	}
 	focus = {
 		id = 5_focus_17
@@ -460,16 +431,8 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_14
 		}
-
-		bypass = {
-			ZDM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = ZSB_result_tip
-
 			hidden_effect = {
 				ZDM = {
 					every_controlled_state = {
@@ -477,8 +440,16 @@ focus_tree = {
 					}
 				}
 				ZDM = {
-					country_event = ZSB.7
+					country_event = {
+						id = ZSB.7
+						days = 10
+					}
 				}
+			}
+		}
+		bypass = {
+			ZDM = {
+				exists = no
 			}
 		}
 	}
@@ -493,7 +464,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_3
 		}
-
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -519,7 +489,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_18
 		}
-
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -545,7 +514,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_19
 		}
-
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -571,7 +539,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_4
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Representative
@@ -589,7 +556,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_4
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Ensure_supply
@@ -607,7 +573,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_21
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -623,7 +588,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -651,7 +615,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_22
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_More_talent
@@ -669,7 +632,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_23
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -685,7 +647,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			add_ideas = {
 				ZSB_arms_factory_construction
 			}
@@ -702,7 +663,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_24
 		}
-
 		completion_reward = {
 			add_ideas = {
 				ZSB_Resources_control
@@ -726,9 +686,8 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_20
 		}
-
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = "我们将进一步统一全国"
 		}
 	}
 	focus = {
@@ -742,16 +701,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
-
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
 		bypass = {
 			ZIM = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -765,17 +722,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
-
-		bypass = {
-			ZSH = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZSH
 				value = 0.1
+			}
+		}
+		bypass = {
+			ZSH = {
+				exists = no
 			}
 		}
 	}
@@ -790,17 +745,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
-
-		bypass = {
-			ZYX = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZYX
 				value = 0.1
+			}
+		}
+		bypass = {
+			ZYX = {
+				exists = no
 			}
 		}
 	}
@@ -815,17 +768,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_27
 		}
-
-		bypass = {
-			ZCS = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_collaboration = {
 				target = ZCS
 				value = 0.9
+			}
+		}
+		bypass = {
+			ZCS = {
+				exists = no
 			}
 		}
 	}
@@ -840,13 +791,6 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_28
 		}
-
-		bypass = {
-			ZIM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -855,6 +799,11 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = -75
+			}
+		}
+		bypass = {
+			ZIM = {
+				exists = no
 			}
 		}
 	}
@@ -869,16 +818,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_28
 		}
-
+		completion_reward = {
+			add_manpower = -250
+			add_stability = 0.05
+		}
 		bypass = {
 			ZIM = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_manpower = -250
-			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -892,16 +839,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_32
 		}
-
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
 		bypass = {
 			ZIM = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -915,16 +860,14 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_33
 		}
-
+		completion_reward = {
+			add_manpower = -2500
+			add_stability = 0.05
+		}
 		bypass = {
 			ZIM = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_manpower = -2500
-			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -938,26 +881,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_29
 		}
-
-		
-
+		completion_reward = {
+			ZSH = {
+				country_event = {
+					id = ZSB.10
+					days = 10
+				}
+			}
+		}
 		bypass = {
 			ZSH = {
 				exists = no
-			}
-		}
-
-		completion_reward = {
-			ZSH = {
-				country_event = ZSB.10
-			}
-
-			hidden_effect = {
-				ZSH = {
-					every_controlled_state = {
-						add_core_of = ROOT
-					}
-				}
 			}
 		}
 	}
@@ -972,24 +906,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_30
 		}
-
+		completion_reward = {
+			ZYX = {
+				country_event = {
+					id = ZSB.10
+					days = 12
+				}
+			}
+		}
 		bypass = {
 			ZYX = {
 				exists = no
-			}
-		}
-
-		completion_reward = {
-			ZYX = {
-				country_event = ZSB.10
-			}
-
-			hidden_effect = {
-				ZYX = {
-					every_controlled_state = {
-						add_core_of = ROOT
-					}
-				}
 			}
 		}
 	}
@@ -1004,24 +931,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_31
 		}
-
+		completion_reward = {
+			ZCS = {
+				country_event = {
+					id = ZSB.11
+					days = 15
+				}
+			}
+		}
 		bypass = {
 			ZCS = {
 				exists = no
-			}
-		}
-
-		completion_reward = {
-			ZCS = {
-				country_event = ZSB.11
-			}
-
-			hidden_effect = {
-				ZCS = {
-					every_controlled_state = {
-						add_core_of = ROOT
-					}
-				}
 			}
 		}
 	}
@@ -1039,24 +959,24 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_35
 		}
-
-		bypass = {
-			ZIM = {
-				exists = no
-			}
-		}
-
 		completion_reward = {
 			ZIM = {
-				country_event = ZSB.7
+				country_event = {
+					id = ZSB.7
+					days = 5
+				}
 			}
-
 			hidden_effect = {
 				ZIM = {
 					every_controlled_state = {
 						add_core_of = ROOT
 					}
 				}
+			}
+		}
+		bypass = {
+			ZIM = {
+				exists = no
 			}
 		}
 	}
@@ -1071,9 +991,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_36
 		}
-
 		completion_reward = {
-			add_political_power = 100
+			hidden_effect = {
+				ZSH = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
+			custom_effect_tooltip = "我们将巩固东部的统治"
 		}
 	}
 	focus = {
@@ -1087,9 +1013,15 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_37
 		}
-
 		completion_reward = {
-			add_political_power = 100
+			hidden_effect = {
+				ZYX = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
+			custom_effect_tooltip = "我们将巩固对这片地区的统治"
 		}
 	}
 	focus = {
@@ -1103,15 +1035,20 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_38
 		}
-
+		completion_reward = {
+			hidden_effect = {
+				ZCS = {
+					every_controlled_state = {
+						add_core_of = ROOT
+					}
+				}
+			}
+			custom_effect_tooltip = "我们将巩固对这些地区的统治"
+		}
 		bypass = {
 			ZCS = {
 				exists = no
 			}
-		}
-
-		completion_reward = {
-			add_political_power = 100
 		}
 	}
 	focus = {
