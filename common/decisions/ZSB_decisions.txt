@@ -1006,9 +1006,10 @@ ZSB_zuigaofayuan_category = {
 }
 
 ZSB_dabang_category = {
-	ZSB3_decision_1 = {
+	ZSB3_decision_1_1 = { #刚果
         icon = GFX_decision_default
-        cost = 30
+        cost = 70
+		days_remove = 30
 		fire_only_once = yes
 		available = {
             has_decision = ZSB3_decision_2
@@ -1016,18 +1017,328 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
-        complete_effect = {
-            reduce_focus_completion_cost = {
-                focus = zsb_focus_qishiqi
-                cost = 15
+        remove_effect = {
+            declare_war_on = {
+                target = COG
+                type = annex_everything
             }
-			custom_effect_tooltip = buman
-			add_stability = -0.003
+			add_to_variable = {
+				ZSB_dabang_1 = -0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_5 = -0.1
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = 0.07
+			    }
+			}
+			add_to_variable = {
+				ZSB_dabang_2 = -0.03
+			}
+			add_to_variable = {
+				ZSB_dabang_3 = -0.03
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_2 = -0.05
+			    }
+			    add_to_variable = {
+				    ZSB_dedabang_3 = -0.05
+			    }
+			}
+			add_to_variable = {
+				ZSB_dabang_1 = -0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_7 = -0.1
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = 0.05
+			    }
+			}
+			add_to_variable = {
+				ZSB_dabang_1 = -0.05
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = 0.15
+			    }
+			}
+			add_to_variable = {
+				ZSB_dabang_1 = -0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_5 = -0.3
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = 0.1
+			    }
+			}
+			add_to_variable = {
+				ZSB_dabang_4 = -0.15
+			}
+			add_to_variable = {
+				ZSB_dabang_9 = -0.3
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = 0.1
+			    }
+			}
+			custom_effect_tooltip = xiaoshibuff
         }
     }
-	ZSB3_decision_2 = {
+	ZSB3_decision_1_2 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_1 = 0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_5 = 0.1
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = -0.07
+			    }
+			}
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_3 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            custom_effect_tooltip = "我们将在当地进行实地考察，以期发现对我国有用的东西"
+        }
+    }
+	ZSB3_decision_1_4 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_1_3
+        }
+        remove_effect = {
+            add_resource = {
+                type = rubber
+                amount = 30
+                state = 813
+            }
+			add_resource = {
+                type = rubber
+                amount = 35
+                state = 295
+            }
+        }
+    }
+	ZSB3_decision_1_5 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_2 = 0.03
+			}
+			add_to_variable = {
+				ZSB_dabang_3 = 0.03
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_2 = 0.05
+			    }
+			    add_to_variable = {
+				    ZSB_dedabang_3 = 0.05
+			    }
+			}
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_6 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_1_3
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_1 = 0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_7 = 0.1
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = -0.05
+			    }
+			}
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_7 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_1 = 0.05
+			}
+			add_manpower = 30000
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = -0.15
+			    }
+			}
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_8 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            army_experience = 30
+            navy_experience = 30
+            air_experience = 30
+			COG = {
+				army_experience = 30
+                navy_experience = 30
+                air_experience = 30
+			}
+        }
+    }
+	ZSB3_decision_1_9 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_1_3
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_1 = 0.05
+			}
+			add_to_variable = {
+				ZSB_dabang_5 = 0.3
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = -0.1
+			    }
+			}
+			custom_effect_tooltip = "叶羊是一种能够高效光合作用的动物，并且还能够大范围人工养殖，这会大大减少我国的粮食消耗，还会促使我国的人口瓶颈松动。"
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_10 = { #刚果
+        icon = GFX_decision_default
+        cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_1_3
+        }
+        remove_effect = {
+            add_to_variable = {
+				ZSB_dabang_4 = 0.15
+			}
+			add_to_variable = {
+				ZSB_dabang_9 = 0.3
+			}
+			COG = {
+				add_to_variable = {
+				    ZSB_dedabang_1 = -0.1
+			    }
+			}
+			custom_effect_tooltip = "翠玉竹是一种耐腐蚀耐潮湿的草本植物，结构强悍，如果我国拥有了这种植物，那么一些不适宜建造工厂地方将会被我们重新考虑在内。"
+			custom_effect_tooltip = bianhua
+        }
+    }
+	ZSB3_decision_1_11 = { #刚果
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_1_1
+        }
+        remove_effect = {
+			COG = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_2 = { #大棒基础
         icon = GFX_decision_default
         cost = 0
+		days_remove = 1500
 		fire_only_once = yes
         complete_effect = {
             add_dynamic_modifier = {
@@ -1037,11 +1348,68 @@ ZSB_dabang_category = {
 			add_to_variable = {
 				ZSB_dabang_10 = 0.15
 			}
+			COG = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_dedabang
+			    }
+			}
+			EAS = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_adedabang
+			    }
+			}
+			ETH = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_bdedabang
+			    }
+			}
+			AFA = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_cdedabang
+			    }
+			}
+			AOI = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_ddedabang
+			    }
+			}
+			YEM = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_ededabang
+			    }
+			}
+			EGY = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_fdedabang
+			    }
+			}
+			SAF = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_gdedabang
+			    }
+			}
+			LIB = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_hdedabang
+			    }
+			}
+			LBA = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_idedabang
+			    }
+			}
+			MOR = {
+				add_dynamic_modifier = {
+				    modifier = ZSB_jdedabang
+			    }
+			}
+			set_major = yes
         }
     }
-	ZSB3_decision_3 = {
+	ZSB3_decision_3_1 = { #南非
         icon = GFX_decision_default
-        cost = 30
+        cost = 70
+		days_remove = 30
 		fire_only_once = yes
 		available = {
             has_decision = ZSB3_decision_2
@@ -1049,13 +1417,421 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB1_situation_of_country_chosen_mode_number
         }
-        complete_effect = {
-            reduce_focus_completion_cost = {
-                focus = zsb_focus_qishiqi
-                cost = 15
+        remove_effect = {
+            declare_war_on = {
+                target = EAS
+                type = annex_everything
             }
-			custom_effect_tooltip = buman
-			add_stability = -0.003
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_3_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB1_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_3_1
+        }
+        remove_effect = {
+			EAS = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_4_1 = { #丰饶
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB2_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = ZXS
+                type = annex_everything
+            }
+        }
+    }
+	ZSB3_decision_4_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB2_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_4_1
+        }
+        remove_effect = {
+			ZXS = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_5_1 = { #埃塞
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB3_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = ETH
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_5_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB3_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_5_1
+        }
+        remove_effect = {
+			ETH = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_6_1 = { #东自
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB4_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = AFA
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_6_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB4_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_6_1
+        }
+        remove_effect = {
+			AFA = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_7_1 = { #意非
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB5_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = AOI
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_7_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB5_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_7_1
+        }
+        remove_effect = {
+			AOI = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_8_1 = { #中油
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB6_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = YEM
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_8_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB6_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_8_1
+        }
+        remove_effect = {
+			YEM = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_9_1 = { #埃及
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB7_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = EGY
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_9_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB7_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_9_1
+        }
+        remove_effect = {
+			EGY = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_10_1 = { #莫领
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB8_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = SAF
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_10_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB8_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_10_1
+        }
+        remove_effect = {
+			SAF = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_11_1 = { #妖联
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB9_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = LIB
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_11_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB9_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_11_1
+        }
+        remove_effect = {
+			LIB = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_12_1 = { #利比亚
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB10_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = LBA
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_12_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB10_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_12_1
+        }
+        remove_effect = {
+			LBA = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
+        }
+    }
+	ZSB3_decision_13_1 = { #游汐
+        icon = GFX_decision_default
+        cost = 70
+		days_remove = 30
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB11_situation_of_country_chosen_mode_number
+        }
+        remove_effect = {
+            declare_war_on = {
+                target = MOR
+                type = annex_everything
+            }
+			custom_effect_tooltip = xiaoshibuff
+        }
+    }
+	ZSB3_decision_13_2 = { 
+        icon = GFX_decision_default
+        cost = 50
+		days_remove = 120
+		fire_only_once = yes
+		available = {
+            has_decision = ZSB3_decision_2
+		}
+		visible = {
+			has_variable = ZSB11_situation_of_country_chosen_mode_number
+			has_decision = ZSB3_decision_13_1
+        }
+        remove_effect = {
+			MOR = {
+				every_core_state = {
+				    add_core_of = ZSB
+			    }
+			}
         }
     }
 }

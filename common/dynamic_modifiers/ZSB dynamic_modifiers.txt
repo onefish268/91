@@ -27,3 +27,168 @@ ZSB_dabang = {
 	local_factories = ZSB_dabang_9 #当地工厂值
 	political_power_gain = ZSB_dabang_10 #政治点获取
 }
+
+ZSB_dedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_dedabang_1 #消费品
+	army_attack_factor = ZSB_dedabang_2 #陆军进攻
+	army_defence_factor = ZSB_dedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_dedabang_4 #当地最大工厂数
+	monthly_population = ZSB_dedabang_5 #月度人口增长
+	local_resources_factor = ZSB_dedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_dedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_dedabang_8 #工厂产出
+	local_factories = ZSB_dedabang_9 #当地工厂值
+	political_power_gain = ZSB_dedabang_10 #政治点获取
+}
+
+ZSB_adedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_adedabang_1 #消费品
+	army_attack_factor = ZSB_adedabang_2 #陆军进攻
+	army_defence_factor = ZSB_adedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_adedabang_4 #当地最大工厂数
+	monthly_population = ZSB_adedabang_5 #月度人口增长
+	local_resources_factor = ZSB_adedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_adedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_adedabang_8 #工厂产出
+	local_factories = ZSB_adedabang_9 #当地工厂值
+	political_power_gain = ZSB_adedabang_10 #政治点获取
+}
+
+ZSB_bdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_bdedabang_1 #消费品
+	army_attack_factor = ZSB_bdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_bdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_bdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_bdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_bdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_bdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_bdedabang_8 #工厂产出
+	local_factories = ZSB_bdedabang_9 #当地工厂值
+	political_power_gain = ZSB_bdedabang_10 #政治点获取
+}
+
+ZSB_cdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_cdedabang_1 #消费品
+	army_attack_factor = ZSB_cdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_cdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_cdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_cdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_cdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_cdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_cdedabang_8 #工厂产出
+	local_factories = ZSB_cdedabang_9 #当地工厂值
+	political_power_gain = ZSB_cdedabang_10 #政治点获取
+}
+
+ZSB_ddedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_ddedabang_1 #消费品
+	army_attack_factor = ZSB_ddedabang_2 #陆军进攻
+	army_defence_factor = ZSB_ddedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_ddedabang_4 #当地最大工厂数
+	monthly_population = ZSB_ddedabang_5 #月度人口增长
+	local_resources_factor = ZSB_ddedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_ddedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_ddedabang_8 #工厂产出
+	local_factories = ZSB_ddedabang_9 #当地工厂值
+	political_power_gain = ZSB_ddedabang_10 #政治点获取
+}
+
+ZSB_ededabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_ededabang_1 #消费品
+	army_attack_factor = ZSB_ededabang_2 #陆军进攻
+	army_defence_factor = ZSB_ededabang_3 #陆军防御
+	global_building_slots_factor = ZSB_ededabang_4 #当地最大工厂数
+	monthly_population = ZSB_ededabang_5 #月度人口增长
+	local_resources_factor = ZSB_ededabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_ededabang_7 #建造速度
+	industrial_capacity_factory = ZSB_ededabang_8 #工厂产出
+	local_factories = ZSB_ededabang_9 #当地工厂值
+	political_power_gain = ZSB_ededabang_10 #政治点获取
+}
+
+ZSB_fdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_fdedabang_1 #消费品
+	army_attack_factor = ZSB_fdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_fdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_fdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_fdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_fdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_fdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_fdedabang_8 #工厂产出
+	local_factories = ZSB_fdedabang_9 #当地工厂值
+	political_power_gain = ZSB_fdedabang_10 #政治点获取
+}
+
+ZSB_gdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_gdedabang_1 #消费品
+	army_attack_factor = ZSB_gdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_gdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_gdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_gdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_gdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_gdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_gdedabang_8 #工厂产出
+	local_factories = ZSB_gdedabang_9 #当地工厂值
+	political_power_gain = ZSB_gdedabang_10 #政治点获取
+}
+
+ZSB_hdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_hdedabang_1 #消费品
+	army_attack_factor = ZSB_hdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_hdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_hdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_hdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_hdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_hdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_hdedabang_8 #工厂产出
+	local_factories = ZSB_hdedabang_9 #当地工厂值
+	political_power_gain = ZSB_hdedabang_10 #政治点获取
+}
+
+ZSB_idedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_idedabang_1 #消费品
+	army_attack_factor = ZSB_idedabang_2 #陆军进攻
+	army_defence_factor = ZSB_idedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_idedabang_4 #当地最大工厂数
+	monthly_population = ZSB_idedabang_5 #月度人口增长
+	local_resources_factor = ZSB_idedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_idedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_idedabang_8 #工厂产出
+	local_factories = ZSB_idedabang_9 #当地工厂值
+	political_power_gain = ZSB_idedabang_10 #政治点获取
+}
+
+ZSB_jdedabang = {
+	icon = "GFX_idea_dabang"
+
+	consumer_goods_factor = ZSB_jdedabang_1 #消费品
+	army_attack_factor = ZSB_jdedabang_2 #陆军进攻
+	army_defence_factor = ZSB_jdedabang_3 #陆军防御
+	global_building_slots_factor = ZSB_jdedabang_4 #当地最大工厂数
+	monthly_population = ZSB_jdedabang_5 #月度人口增长
+	local_resources_factor = ZSB_jdedabang_6 #资源获取效率
+	production_speed_buildings_factor = ZSB_jdedabang_7 #建造速度
+	industrial_capacity_factory = ZSB_jdedabang_8 #工厂产出
+	local_factories = ZSB_jdedabang_9 #当地工厂值
+	political_power_gain = ZSB_jdedabang_10 #政治点获取
+}
