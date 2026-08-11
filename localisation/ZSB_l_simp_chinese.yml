@@ -164,6 +164,18 @@
  ZSB_decision_09: "卡洛正在[?var:ZSB_decision_09_var.GetName]地区与民意代表讲解国民大会党的基本理念"
  ZSB_decision_10: "斯坦利伯爵正在[?var:ZSB_decision_10_var.GetName]地区公开发放食物" #
  ZSB_decision_11: "卡洛正在[?var:ZSB_decision_11_var.GetName]地区的民众面前表明国民大会党的治理方案"
+ ZSB_STL_propaganda_offensive_with_newspapers: "斯坦莉加大了报纸的宣传攻势"
+ ZSB_KL_promise_better_life_to_people: "卡洛向人们描绘美好的未来愿景"
+ ZSB_STL_point_out_rival_flaws: "斯坦莉指出了竞争对手的不足之处和政策漏洞"
+ ZSB_KL_promote_political_ideas_to_race_leaders: "卡洛打算向各个部族领袖推广她的政治观点"
+ ZSB_STL_promise_rise_from_ruins: "斯坦莉承诺给人们带来一个强大的国家"
+ ZSB_KL_propaganda_in_plain_language: "卡洛尝试用更加贴合底层的语言鼓动群众"
+ ZSB_STL_little_vote_rise_tip: "为斯坦莉拉取§Y小部分§!选票"
+ ZSB_KL_little_vote_rise_tip: "为卡洛拉取§Y小部分§!选票"
+ ZSB_STL_vote_rise_tip: "这会为斯坦莉拉取§Y小部分§!选票"
+ ZSB_KL_vote_rise_tip: "这会为卡洛拉取§Y小部分§!选票"
+
+
  #gui文本
  BUL_faction_panel_banner_desc: "统一之后的§Y联邦§!迫切需要一个强有力的领导人来成为这艘崭新的§C航船§!的§Y掌舵人§!，而军政府时期的老资历§Y斯坦利伯爵§!带领的§C大罗德西亚党§!以及本土原住民代言人§Y卡洛§!带领的§R国民大会党§!成为最有希望赢得选举的§Y政党§!。如果我们想要让这两个§Y党派§!中的其中一个脱颖而出，那我们就要在选票结算前为其准备好充足的§G政治资源§!以及§G民间声望§!。"
  ZSB_zveno_name_text: "§C大罗德西亚党§!"
