@@ -104,7 +104,7 @@ ideas = {
 		}
 		#哈弗尔军校
 		ZSB_Haver_Military_academy = {
-			picture =  Haver_Military_academy_idea
+			picture =  ZSB_Haver_Military_academy_idea
 			modifier = {
 				army_leader_start_level = 2
 				experience_gain_factor = 0.25
@@ -339,7 +339,7 @@ ideas = {
 		}
 		#远洋客轮
 		ZSB_Ocean_liners = {
-			picture = AUS_naval_efficiency
+			picture = AUS_naval_efficiency_idea
 			modifier = {
 				navy_max_range_factor = 0.20
 				naval_supply_consumption_factor = 0.05

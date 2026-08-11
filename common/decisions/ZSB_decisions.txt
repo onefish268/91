@@ -2,7 +2,7 @@ ZSB_categories = {
 	
 	ZSB_fight_with_DVL = {
 		name = ZSB_fight_with_DVL
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			DVL = { exists = yes }
 			has_country_flag = ZSB_purple_plan
@@ -12,6 +12,7 @@ ZSB_categories = {
 		}
 		cost = 25
 		days_remove = 30
+
 		complete_effect = {
 			create_wargoal = {
 				target = DVL
@@ -22,7 +23,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_PAQ = {
 		name = ZSB_fight_with_PAQ
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			PAQ = { exists = yes }
 			has_country_flag = ZSB_purple_plan
@@ -30,6 +31,7 @@ ZSB_categories = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		cost = 25
 		days_remove = 30
 		complete_effect = {
@@ -42,7 +44,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_ITA = {
 		name = ZSB_fight_with_ITA
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			ITA = {
 				exists = yes
@@ -53,6 +55,7 @@ ZSB_categories = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		cost = 25
 		days_remove = 30
 		complete_effect = {
@@ -65,7 +68,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_GER = {
 		name = ZSB_fight_with_GER
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			GER = {
 				exists = yes
@@ -88,7 +91,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_PAM = {
 		name = ZSB_fight_with_PAM
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			PAM = {
 				exists = yes
@@ -111,7 +114,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_JAP = {
 		name = ZSB_fight_with_JAP
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			JAP = {
 				exists = yes
@@ -134,7 +137,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_USA = {
 		name = ZSB_fight_with_USA
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			USA = {
 				exists = yes
@@ -157,7 +160,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_LHS = {
 		name = ZSB_fight_with_LHS
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			LHS = {
 				exists = yes
@@ -168,6 +171,7 @@ ZSB_categories = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		cost = 25
 		days_remove = 30
 		complete_effect = {
@@ -180,7 +184,7 @@ ZSB_categories = {
 
 	ZSB_fight_with_SOV = {
 		name = ZSB_fight_with_SOV
-		icon = generic_construction
+		icon = generic_civil_support
 		visible = {
 			SOV = {
 				exists = yes
@@ -191,6 +195,7 @@ ZSB_categories = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		cost = 25
 		days_remove = 30
 		complete_effect = {
@@ -635,7 +640,7 @@ ZSB_xuanju_category = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
 
-		cost = 15
+		cost = 25
 
 		days_remove = 14
 
@@ -673,7 +678,7 @@ ZSB_xuanju_category = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
 
-		cost = 15
+		cost = 25
 
 		days_remove = 14
 
@@ -711,7 +716,7 @@ ZSB_xuanju_category = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
 
-		cost = 15
+		cost = 25
 
 		days_remove = 14
 
