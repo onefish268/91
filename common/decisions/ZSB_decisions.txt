@@ -220,6 +220,28 @@ ZSB_xuanju_category = {
             add_political_power = 20
 			set_country_flag = ZSB_the_vote_has_over
 
+			set_temp_variable = { ZSB_STL_total_number = ZSB_STL_hundreds_number }
+	    	multiply_temp_variable = { ZSB_STL_total_number = 10 }
+	    	add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_tens_number }
+    		multiply_temp_variable = { ZSB_STL_total_number = 10 }
+		    add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_ones_number }
+
+		    set_temp_variable = { ZSB_KL_total_number = ZSB_KL_hundreds_number }
+    		multiply_temp_variable = { ZSB_KL_total_number = 10 }
+	    	add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_tens_number }
+	    	multiply_temp_variable = { ZSB_KL_total_number = 10 }
+		    add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_ones_number }
+
+        	if = {
+            	limit = { check_variable = { temp_var:ZSB_STL_total_number < temp_var:ZSB_KL_total_number } }
+				set_country_flag = ZSB_KL_win_the_vote
+	        }
+
+			country_event = {
+				id = ZSB.27
+				days = 1
+			}
+
 			clear_array = ZSB_all_regions	#清除所有和选举有关的变量和数组，防止之后作用或者占用
 			clear_variable = ZSB_decision_02_var
 			clear_variable = ZSB_decision_03_var
@@ -253,6 +275,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_STL_vote_rise_tip
 			add_to_variable = { ZSB_STL_ones_number = 7 }
 			ZSB_count_STL_number = yes
 			
@@ -287,6 +310,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_KL_vote_rise_tip
 			add_to_variable = { ZSB_KL_ones_number = 5 }
 			ZSB_count_KL_number = yes
 
@@ -322,6 +346,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_STL_vote_rise_tip
 			add_to_variable = { ZSB_STL_ones_number = 7 }
 			ZSB_count_STL_number = yes
 
@@ -356,6 +381,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_KL_vote_rise_tip
 			add_to_variable = { ZSB_KL_ones_number = 5 }
 			ZSB_count_KL_number = yes
 
@@ -390,6 +416,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_STL_vote_rise_tip
 			add_to_variable = { ZSB_STL_ones_number = 7 }
 			ZSB_count_STL_number = yes
 
@@ -424,6 +451,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_KL_vote_rise_tip
 			add_to_variable = { ZSB_KL_ones_number = 5 }
 			ZSB_count_KL_number = yes
 			
@@ -458,6 +486,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_STL_vote_rise_tip
 			add_to_variable = { ZSB_STL_ones_number = 7 }
 			ZSB_count_STL_number = yes
 
@@ -492,6 +521,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_KL_vote_rise_tip
 			add_to_variable = { ZSB_KL_ones_number = 5 }
 			ZSB_count_KL_number = yes
 
@@ -526,6 +556,7 @@ ZSB_xuanju_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = ZSB_STL_vote_rise_tip
 			add_to_variable = { ZSB_STL_ones_number = 7 }
 			ZSB_count_STL_number = yes
 			hidden_effect = {
@@ -561,7 +592,7 @@ ZSB_xuanju_category = {
 
 		timeout_effect = {
 			hidden_effect = {
-
+				custom_effect_tooltip = ZSB_KL_vote_rise_tip
 				add_to_variable = { ZSB_KL_ones_number = 5 }
 				ZSB_count_KL_number = yes
 
@@ -577,19 +608,107 @@ ZSB_xuanju_category = {
 		}
     }
 
-	ZSB_add_vote_to_STL = {
-        complete_effect = {
-			add_to_variable = { ZSB_STL_tens_number = 3 }
+	ZSB_STL_propaganda_offensive_with_newspapers = {
+		
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+
+		cost = 25
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_STL_little_vote_rise_tip
+			add_to_variable = { ZSB_STL_ones_number = 5 }
 				ZSB_count_STL_number = yes
 		}
-    }
+	}
 
-	ZSB_add_vote_to_KL = {
-        complete_effect = {
-			add_to_variable = { ZSB_KL_tens_number = 3 }
+	ZSB_KL_promise_better_life_to_people = {
+		
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+
+		cost = 15
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_KL_little_vote_rise_tip
+			add_to_variable = { ZSB_KL_ones_number = 3 }
 				ZSB_count_KL_number = yes
 		}
-    }
+	}
+
+	ZSB_STL_point_out_rival_flaws = {
+		
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+
+		cost = 25
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_STL_little_vote_rise_tip
+			add_to_variable = { ZSB_STL_ones_number = 5 }
+				ZSB_count_STL_number = yes
+		}
+	}
+
+	ZSB_KL_promote_political_ideas_to_race_leaders = {
+
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+
+		cost = 15
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_KL_little_vote_rise_tip
+			add_to_variable = { ZSB_KL_ones_number = 3 }
+				ZSB_count_KL_number = yes
+		}
+	}
+
+	ZSB_STL_promise_rise_from_ruins = {
+		
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+		
+		cost = 25
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_STL_little_vote_rise_tip
+			add_to_variable = { ZSB_STL_ones_number = 5 }
+				ZSB_count_STL_number = yes
+		}
+	}
+
+	ZSB_KL_propaganda_in_plain_language = {
+
+		available = {
+			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+
+		cost = 15
+
+		days_remove = 14
+
+		remove_effect = {
+			custom_effect_tooltip = ZSB_KL_little_vote_rise_tip
+			add_to_variable = { ZSB_KL_ones_number = 3 }
+				ZSB_count_KL_number = yes
+		}
+	}
 }
 
 ZSB_wajue_category = {

@@ -513,23 +513,14 @@ country_event = {#检查选举结果
     is_triggered_only = yes
 
     option = {
-        set_temp_variable = { ZSB_STL_total_number = ZSB_STL_hundreds_number }
-	    multiply_temp_variable = { ZSB_STL_total_number = 10 }
-	    add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_tens_number }
-    	multiply_temp_variable = { ZSB_STL_total_number = 10 }
-	    add_to_temp_variable = { ZSB_STL_total_number = ZSB_STL_ones_number }
+        trigger = { has_country_flag = ZSB_KL_win_the_vote }
 
-	    set_temp_variable = { ZSB_KL_total_number = ZSB_KL_hundreds_number }
-    	multiply_temp_variable = { ZSB_KL_total_number = 10 }
-	    add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_tens_number }
-    	multiply_temp_variable = { ZSB_KL_total_number = 10 }
-	    add_to_temp_variable = { ZSB_KL_total_number = ZSB_KL_ones_number }
+        complete_national_focus = 6_focus_3
+    }
 
-        if = {
-            limit = { check_variable = { temp_var:ZSB_STL_total_number < temp_var:ZSB_KL_total_number } }
-        }
-        else = {
+    option = {
+        trigger = { NOT = { has_country_flag = ZSB_KL_win_the_vote } }
 
-        }
+        complete_national_focus = 6_focus_2
     }
 }
