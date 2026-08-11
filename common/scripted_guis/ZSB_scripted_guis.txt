@@ -107,10 +107,170 @@ scripted_gui = {
 			ZSB_situation_of_country_button_click = {
 			    set_variable = { ZSB_situation_of_country_chosen_mode_number = 1 }
 				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
 			}
 			ZSB1_situation_of_country_button_click = {
 			    set_variable = { ZSB1_situation_of_country_chosen_mode_number = 1 }
 				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB2_situation_of_country_button_click = {
+			    set_variable = { ZSB2_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB3_situation_of_country_button_click = {
+			    set_variable = { ZSB3_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB4_situation_of_country_button_click = {
+			    set_variable = { ZSB4_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB5_situation_of_country_button_click = {
+			    set_variable = { ZSB5_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB6_situation_of_country_button_click = {
+			    set_variable = { ZSB6_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB7_situation_of_country_button_click = {
+			    set_variable = { ZSB7_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB8_situation_of_country_button_click = {
+			    set_variable = { ZSB8_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB9_situation_of_country_button_click = {
+			    set_variable = { ZSB9_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB10_situation_of_country_button_click = {
+			    set_variable = { ZSB10_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB11_situation_of_country_chosen_mode_number
+			}
+			ZSB11_situation_of_country_button_click = {
+			    set_variable = { ZSB11_situation_of_country_chosen_mode_number = 1 }
+				clear_variable = ZSB_situation_of_country_chosen_mode_number
+				clear_variable = ZSB1_situation_of_country_chosen_mode_number
+				clear_variable = ZSB2_situation_of_country_chosen_mode_number
+				clear_variable = ZSB3_situation_of_country_chosen_mode_number
+				clear_variable = ZSB4_situation_of_country_chosen_mode_number
+				clear_variable = ZSB5_situation_of_country_chosen_mode_number
+				clear_variable = ZSB6_situation_of_country_chosen_mode_number
+				clear_variable = ZSB7_situation_of_country_chosen_mode_number
+				clear_variable = ZSB8_situation_of_country_chosen_mode_number
+				clear_variable = ZSB9_situation_of_country_chosen_mode_number
+				clear_variable = ZSB10_situation_of_country_chosen_mode_number
 			}
 		}
 	}
