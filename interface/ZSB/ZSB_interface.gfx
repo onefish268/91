@@ -1,178 +1,178 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZSB_idea_54"
+		name = ZSB_54
 		texturefile = "gfx/interface/ideas/54.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_61"
+		name = ZSB_61
 		texturefile = "gfx/interface/ideas/61.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_233"
+		name = ZSB_233
 		texturefile = "gfx/interface/ideas/233.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_322"
+		name = ZSB_322
 		texturefile = "gfx/interface/ideas/322.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_344"
+		name = ZSB_344
 		texturefile = "gfx/interface/ideas/344.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_666"
+		name = ZSB_666
 		texturefile = "gfx/interface/ideas/666.png"
 	}
 	spriteType = {
-		name = "ZSB_Build_faster"
-		texturefile = "gfx/interface/ideas/ZSB_Build_faster.png"
+		name = "GFX_idea_ZSB_Build_faster_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Build_faster_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Common_trainning_act"
-		texturefile = "gfx/interface/ideas/ZSB_Common_trainning_act.png"
+		name = "GFX_idea_ZSB_Common_trainning_act_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Common_trainning_act_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Conscription_act"
-		texturefile = "gfx/interface/ideas/ZSB_Conscription_act.png"
+		name = "GFX_idea_ZSB_Conscription_act_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Conscription_act_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Construction_of_the_Hexagon"
-		texturefile = "gfx/interface/ideas/ZSB_Construction_of_the_Hexagon.png"
+		name = "GFX_idea_ZSB_Construction_of_the_Hexagon_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Construction_of_the_Hexagon_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Ensure_supply"
-		texturefile = "gfx/interface/ideas/ZSB_Ensure_supply.png"
+		name = "GFX_idea_ZSB_Ensure_supply_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Ensure_supply_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Federal_army"
-		texturefile = "gfx/interface/ideas/ZSB_Federal_army.png"
+		name = "GFX_idea_ZSB_Federal_army_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Federal_army_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Firepower_synergy"
-		texturefile = "gfx/interface/ideas/ZSB_Firepower_synergy.png"
+		name = "GFX_idea_ZSB_Firepower_synergy_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Firepower_synergy_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Global_categories"
-		texturefile = "gfx/interface/ideas/ZSB_Global_categories.png"
+		name = "GFX_idea_ZSB_Global_categories_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Global_categories_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Haver_Military_academy"
-		texturefile = "gfx/interface/ideas/ZSB_Haver_Military_academy.png"
+		name = "GFX_idea_ZSB_Haver_Military_academy_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Haver_Military_academy_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_KL_vote"
+		name = ZSB_KL_vote
 		texturefile = "gfx/interface/ideas/ZSB_KL_vote.png"
 	}
 	spriteType = {
-		name = "ZSB_Maritime_commission"
-		texturefile = "gfx/interface/ideas/ZSB_Maritime_commission.png"
+		name = "GFX_idea_ZSB_Maritime_commission_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Maritime_commission_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_More_talent"
-		texturefile = "gfx/interface/ideas/ZSB_More_talent.png"
+		name = "GFX_idea_ZSB_More_talent_idea"
+		texturefile = "gfx/interface/ideas/ZSB_More_talent_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_National_guard"
-		texturefile = "gfx/interface/ideas/ZSB_National_guard.png"
+		name = "GFX_idea_ZSB_National_guard_idea"
+		texturefile = "gfx/interface/ideas/ZSB_National_guard_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Naval_base_expansion"
-		texturefile = "gfx/interface/ideas/ZSB_Naval_base_expansion.png"
+		name = "GFX_idea_ZSB_Naval_base_expansion_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Naval_base_expansion_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Naval_bureau"
-		texturefile = "gfx/interface/ideas/ZSB_Naval_bureau.png"
+		name = "GFX_idea_ZSB_Naval_bureau_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Naval_bureau_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Order_contracts"
-		texturefile = "gfx/interface/ideas/ZSB_Order_contracts.png"
+		name = "GFX_idea_ZSB_Order_contracts_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Order_contracts_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Oriented_trade"
-		texturefile = "gfx/interface/ideas/ZSB_Oriented_trade.png"
+		name = "GFX_idea_ZSB_Oriented_trade_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Oriented_trade_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Ranger_warfare"
-		texturefile = "gfx/interface/ideas/ZSB_Ranger_warfare.png"
+		name = "GFX_idea_ZSB_Ranger_warfare_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Ranger_warfare_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Representative"
-		texturefile = "gfx/interface/ideas/ZSB_Representative.png"
+		name = "GFX_idea_ZSB_Representative_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Representative_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Resources_control"
-		texturefile = "gfx/interface/ideas/ZSB_Resources_control.png"
+		name = "GFX_idea_ZSB_Resources_control_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Resources_control_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_STL_vote"
+		name = ZSB_STL_vote
 		texturefile = "gfx/interface/ideas/ZSB_STL_vote.png"
 	}
 	spriteType = {
-		name = "ZSB_Sector_of_war"
-		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war.png"
+		name = "GFX_idea_ZSB_Sector_of_war_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Sector_of_war_defence"
-		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_defence.png"
+		name = "GFX_idea_ZSB_Sector_of_war_defence_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_defence_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Sector_of_war_planning"
-		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_planning.png"
+		name = "GFX_idea_ZSB_Sector_of_war_planning_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_planning_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Shipping_agency"
-		texturefile = "gfx/interface/ideas/ZSB_Shipping_agency.png"
+		name = "GFX_idea_ZSB_Shipping_agency_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Shipping_agency_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Supply_from_ENG"
-		texturefile = "gfx/interface/ideas/ZSB_Supply_from_ENG.png"
+		name = "GFX_idea_ZSB_Supply_from_ENG_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Supply_from_ENG_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_The_Hexagon"
-		texturefile = "gfx/interface/ideas/ZSB_The_Hexagon.png"
+		name = "GFX_idea_ZSB_The_Hexagon_idea"
+		texturefile = "gfx/interface/ideas/ZSB_The_Hexagon_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Two_ocean_act"
-		texturefile = "gfx/interface/ideas/ZSB_Two_ocean_act.png"
+		name = "GFX_idea_ZSB_Two_ocean_act_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Two_ocean_act_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Veteran_association"
-		texturefile = "gfx/interface/ideas/ZSB_Veteran_association.png"
+		name = "GFX_idea_ZSB_Veteran_association_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Veteran_association_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_War_industry_complex"
-		texturefile = "gfx/interface/ideas/ZSB_War_industry_complex.png"
+		name = "GFX_idea_ZSB_War_industry_complex_idea"
+		texturefile = "gfx/interface/ideas/ZSB_War_industry_complex_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_Women_also_as_soilder"
-		texturefile = "gfx/interface/ideas/ZSB_Women_also_as_soilder.png"
+		name = "GFX_idea_ZSB_Women_also_as_soilder_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Women_also_as_soilder_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_economic_expert_from_ENG"
-		texturefile = "gfx/interface/ideas/ZSB_economic_expert_from_ENG.png"
+		name = "GFX_idea_ZSB_Economic_expert_from_ENG_idea"
+		texturefile = "gfx/interface/ideas/ZSB_Economic_expert_from_ENG_idea.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_biubiu"
+		name = ZSB_biubiu
 		texturefile = "gfx/interface/ideas/biubiu.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_hu"
+		name = ZSB_hu
 		texturefile = "gfx/interface/ideas/hu.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_huoli"
+		name = ZSB_huoli
 		texturefile = "gfx/interface/ideas/huoli.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_jinji"
+		name = ZSB_jinji
 		texturefile = "gfx/interface/ideas/jinji.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_OIP-C_2_fuben"
+		name = ZSB_OIP-C_2_fuben
 		texturefile = "gfx/interface/ideas/OIP-C.png"
 	}
 	spriteType = {
-		name = "ZSB_idea_weimingming1_fuben"
+		name = ZSB_weimingming1_fuben
 		texturefile = "gfx/interface/ideas/what_is_that.png"
 	}
 }

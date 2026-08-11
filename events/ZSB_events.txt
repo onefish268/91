@@ -509,16 +509,20 @@ country_event = {#决议11的回收
 
 country_event = {#检查选举结果
     id = ZSB.27
+    name = ZSB.27
+    desc = ZSB.27_desc
 
     is_triggered_only = yes
 
     option = {
+        name = ZSB.27_a
         trigger = { has_country_flag = ZSB_KL_win_the_vote }
 
         complete_national_focus = 6_focus_3
     }
 
     option = {
+        name = ZSB.27_b
         trigger = { NOT = { has_country_flag = ZSB_KL_win_the_vote } }
 
         complete_national_focus = 6_focus_2

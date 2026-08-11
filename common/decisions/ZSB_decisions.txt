@@ -239,7 +239,7 @@ ZSB_xuanju_category = {
 
 			country_event = {
 				id = ZSB.27
-				days = 1
+				days = 2
 			}
 
 			clear_array = ZSB_all_regions	#清除所有和选举有关的变量和数组，防止之后作用或者占用
