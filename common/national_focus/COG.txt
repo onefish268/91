@@ -1392,24 +1392,7 @@ focus_tree =
 		}
 	}
 
-	focus = {#翱翔天地的绮罗
-		id = COG_Sky_soaring_Kiiro
-		icon = GFX_focus_PER_luftwaffe_planes
-		cost = 2
-		relative_position_id = COG_Tech_empowerment
-		x = 5
-		y = 1
-
-		prerequisite = {
-			focus = COG_Tech_empowerment
-			focus = COG_Magical_pursuit
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
+	
 	focus = {#军事理论改进
 		id = COG_Military_theory_upgrade
 		icon = GFX_goal_generic_military_sphere
@@ -1470,11 +1453,36 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Ratkin_rear_deployment
 		x = -1
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Ratkin_rear_deployment
 
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#重定鼠族的战争定位
+		id = COG_Ratkin_war_role_redefined
+		icon = GFX_focus_SIA_war_fervor
+		cost = 2
+		relative_position_id = COG_Shining_standards
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = COG_Ratkin_fit_gear
+		}
+
+		prerequisite = {
+			focus = COG_Shining_standards
+		}
+
+		prerequisite = {
+			focus = COG_Army_rations_preservation
 		}
 
 		completion_reward = {
@@ -1505,10 +1513,28 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Prepare_glasses
 		x = 1
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Prepare_glasses
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#“闪耀世界”的标准
+		id = COG_Shining_standards
+		icon = GFX_focus_SIA_pad_thai
+		cost = 2
+		relative_position_id = COG_Ratkin_force_reorganization
+		x = 0
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Ratkin_force_reorganization
+
 		}
 
 		completion_reward = {
@@ -1558,7 +1584,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Elite_Kiiro
 		x = -2
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Elite_Kiiro
@@ -1575,7 +1601,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Elite_Kiiro
 		x = 2
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Elite_Kiiro
@@ -1592,7 +1618,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Elite_Kiiro
 		x = -1
-		y = 2
+		y = 1
 
 		prerequisite = {
 			focus = COG_Elite_Kiiro
@@ -1609,7 +1635,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Elite_Kiiro
 		x = 1
-		y = 2
+		y = 1
 
 		prerequisite = {
 			focus = COG_Elite_Kiiro
@@ -1620,7 +1646,34 @@ focus_tree =
 		}
 	}
 
+	focus = {#绮罗精英特战队
+		id = COG_Kiiro_commando
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 2
+		relative_position_id = COG_Elite_Kiiro
+		x = 0
+		y = 3.5
 
+		prerequisite = {
+			focus = COG_Jungle_training
+		}
+
+		prerequisite = {
+			focus = COG_Agile_movement
+		}
+
+		prerequisite = {
+			focus = COG_Advanced_gear
+		}
+
+		prerequisite = {
+			focus = COG_Night_elite
+		}
+
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {#魔法追求
 		id = COG_Magical_pursuit
@@ -1685,7 +1738,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = -2
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Cultivator_corps_expansion
@@ -1702,7 +1755,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = -1
-		y = 2
+		y = 1
 
 		prerequisite = {
 			focus = COG_Cultivator_corps_expansion
@@ -1719,7 +1772,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = 1
-		y = 2
+		y = 1
 
 		prerequisite = {
 			focus = COG_Cultivator_corps_expansion
@@ -1736,7 +1789,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Cultivator_corps_expansion
 		x = 2
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Cultivator_corps_expansion
@@ -1765,7 +1818,359 @@ focus_tree =
 		}
 	}
 
-	
+	focus = {#发扬传统
+		id = COG_Tradition_uplift
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 2
+		relative_position_id = COG_Cultivator_corps_expansion
+		x = 0
+		y = 3.5
+
+		prerequisite = {
+			focus = COG_Cultivation_classics_compilation
+		}
+
+		prerequisite = {
+			focus = COG_From_eclectic_to_sectarian
+		}
+
+		prerequisite = {
+			focus = COG_Cultivation_upgrade
+		}
+
+		prerequisite = {
+			focus = COG_Talent_prospecting
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#兽耳娘军队
+		id = COG_Kemonomimi_army
+		icon = GFX_focus_SIA_war_fervor
+		cost = 2
+		relative_position_id = COG_Ratkin_war_role_redefined
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Ratkin_war_role_redefined
+		}
+
+		prerequisite = {
+			focus = COG_Kiiro_commando
+		}
+
+		prerequisite = {
+			focus = COG_Tradition_uplift
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#修炼的大变革
+		id = COG_Cultivation_upheaval
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Kemonomimi_army
+		x = -7
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Kemonomimi_army
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#大胆创新、另辟蹊径
+		id = COG_Bold_new_path
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = 4
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Cultivation_upheaval
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#发掘源翠石更多的奥秘
+		id = COG_Originium_mysteries
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = -4
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Cultivation_upheaval
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#王庭统筹修炼书籍
+		id = COG_National_cultivation_library
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = -1.5
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Cultivation_upheaval
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#新的修炼设施和方法
+		id = COG_New_cultivation_ways
+
+
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = 1.5
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Cultivation_upheaval
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#新时代修士
+		id = COG_New_era_cultivators
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = 0
+		y = 3
+
+		prerequisite = {
+			focus = COG_Originium_mysteries
+			focus = COG_National_cultivation_library
+			focus = COG_New_cultivation_ways
+			focus = COG_Bold_new_path
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#翱翔天地的绮罗
+		id = COG_Sky_soaring_Kiiro
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Kemonomimi_army
+		x = 7
+		y = 1
+
+		prerequisite = {
+			focus = COG_Kemonomimi_army
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#极致的敏捷
+		id = COG_Ultimate_agility
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#难逃猫眼
+		id = COG_Cat_eye_hunt
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = 1
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#更符合绮罗的设备设计
+		id = COG_Ultimate_agility
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#极致的敏捷
+		id = COG_Ultimate_agility
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#夜战噩梦
+		id = COG_Night_demons
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = -1
+		y = 2.5
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#极致的敏捷
+		id = COG_Ultimate_agility
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = 0
+		y = 1.5
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#适配绮罗的飞机
+		id = COG_Kiiro_fit_aircraft
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#适配绮罗的飞机
+		id = COG_Kiiro_fit_aircraft
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#空战训练规划
+		id = COG_Air_training_plan
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Sky_soaring_Kiiro
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = COG_Sky_soaring_Kiiro
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#空战传奇
+		id = COG_Air_war_legends
+		icon = GFX_focus_PER_luftwaffe_planes
+		cost = 2
+		relative_position_id = COG_Ultimate_agility
+		x = 0
+		y = 3
+
+		prerequisite = {
+			focus = COG_Night_demons
+		}
+		prerequisite = {
+			focus = COG_Ultimate_agility
+		}
+		prerequisite = {
+			focus = COG_Cat_eye_hunt
+		}
+
+		completion_reward = {
+			
+		}
+	}
 }
 #           hidden_effect = {
 #				add_to_variable = { ubs_save = 200 } 攒钱靠动态变量

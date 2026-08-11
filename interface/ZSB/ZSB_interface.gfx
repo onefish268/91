@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_AH_achievements_Welcome_to_the_wild_wild_world"
+		texturefile = "gfx/leaders/COG/AH_achievements_Welcome_to_the_wild_wild_world.dds"
+	}
+}
