@@ -257,7 +257,7 @@ ZSB_xuanju_category = {
     }
 
 	ZSB_decision_02 = {
-       	icon = generic_construction
+       	icon = ZSB_STL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -292,7 +292,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_03 = {
-        icon = generic_construction
+        icon = ZSB_KL_vote
 		days_mission_timeout = 21
 
 		activation = {
@@ -328,7 +328,7 @@ ZSB_xuanju_category = {
     }
 	ZSB_decision_04 = {
 		name = ZSB_decision_04
-        icon = generic_construction
+        icon = ZSB_STL_vote
 		days_mission_timeout = 21
 
 		activation = {
@@ -363,7 +363,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_05 = {
-        icon = generic_construction
+        icon = ZSB_KL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -398,7 +398,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_06 = {
-        icon = generic_construction
+        icon = ZSB_STL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -433,7 +433,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_07 = {
-       	icon = generic_construction
+       	icon = ZSB_KL_vote
 		days_mission_timeout = 21
 
 		activation = {
@@ -468,7 +468,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_08 = {
-        icon = generic_construction
+        icon = ZSB_STL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -503,7 +503,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_09 = {
-        icon = generic_construction
+        icon = ZSB_KL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -538,7 +538,7 @@ ZSB_xuanju_category = {
 		}
     }
 	ZSB_decision_10 = {
-        icon = generic_construction
+        icon = ZSB_STL_vote
 		days_mission_timeout = 21
 
 		activation = {
@@ -573,7 +573,7 @@ ZSB_xuanju_category = {
     }
 
 	ZSB_decision_11 = {
-        icon = generic_construction
+        icon = ZSB_KL_vote
 		days_mission_timeout = 14
 
 		activation = {
@@ -610,6 +610,8 @@ ZSB_xuanju_category = {
 
 	ZSB_STL_propaganda_offensive_with_newspapers = {
 		
+		icon = ZSB_STL_vote
+
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
@@ -626,6 +628,8 @@ ZSB_xuanju_category = {
 	}
 
 	ZSB_KL_promise_better_life_to_people = {
+
+		icon = ZSB_KL_vote
 		
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
@@ -644,6 +648,8 @@ ZSB_xuanju_category = {
 
 	ZSB_STL_point_out_rival_flaws = {
 		
+		icon = ZSB_STL_vote
+		
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
@@ -661,6 +667,8 @@ ZSB_xuanju_category = {
 
 	ZSB_KL_promote_political_ideas_to_race_leaders = {
 
+		icon = ZSB_KL_vote
+
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
@@ -677,6 +685,8 @@ ZSB_xuanju_category = {
 	}
 
 	ZSB_STL_promise_rise_from_ruins = {
+
+		icon = ZSB_STL_vote
 		
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
@@ -694,6 +704,8 @@ ZSB_xuanju_category = {
 	}
 
 	ZSB_KL_propaganda_in_plain_language = {
+
+		icon = ZSB_KL_vote
 
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
