@@ -129,6 +129,7 @@ focus_tree = {
 			remove_ideas = ZSB_Resources_control
 			add_war_support = 0.2
 			add_stability = 0.2
+			news_event = { id = ZIM.news.3 hours = 24 }
 		}
 	}
 	focus = {
