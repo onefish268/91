@@ -33,7 +33,7 @@ ideas = {
 		}
 
 		ZSB_Build_faster = {
-			#picture = ARG_construction_guilds
+			picture = ZSB_Build_faster
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				industry_repair_factor = 0.15
@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		ZSB_arms_factory_construction = {
-			#picture = ARG_economic_reactivation
+			picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				global_building_slots_factor = 0.15
@@ -49,7 +49,7 @@ ideas = {
 		}
 
 		ZSB_Representative = {
-			#picture = AST_cabinet_trust1_idea
+			picture = ZSB_Representative
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.05
@@ -58,7 +58,7 @@ ideas = {
 		}
 
 		ZSB_Ensure_supply = {
-			#picture = CHI_corruption_armed_forces
+			picture = ZSB_Ensure_supply
 			modifier = {
 				consumer_goods_factor = 0.1
 				stability_factor = 0.1
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		ZSB_More_talent = {
-			#picture = ARG_social_welfare_fund_ns
+			picture = ZSB_More_talent
 			modifier = {
 				political_advisor_cost_factor = -0.33
 				political_power_factor = 0.1
@@ -77,7 +77,7 @@ ideas = {
 		}
 
 		ZSB_Resources_control = {
-			#picture = ARG_resource_extration_focus
+			picture = ZSB_Resources_control
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.15
 				local_resources_factor = 0.15
@@ -85,7 +85,7 @@ ideas = {
 		}
 		#圣杯经济专家
 		ZSB_Economic_expert_from_ENG = {
-			#picture 
+			picture = ZSB_economic_expert_from_ENG
 			modifier = {
 				hcp_income_factor_monthly = 0.20 #
 				consumer_goods_expected_value = -0.20
@@ -94,7 +94,7 @@ ideas = {
 		}
 		#导向式贸易法案
 		ZSB_Oriented_trade = {
-			#picture 
+			picture = ZSB_Oriented_trade 
 			modifier = {
 				min_export = 0.1
 				research_speed_factor = 0.05
@@ -104,7 +104,7 @@ ideas = {
 		}
 		#哈弗尔军校
 		ZSB_Haver_Military_academy = {
-			#picture 
+			picture =  ZSB_Haver_Military_academy
 			modifier = {
 				army_leader_start_level = 2
 				experience_gain_factor = 0.25
@@ -112,7 +112,7 @@ ideas = {
 		}
 		#来自母国的援助
 		ZSB_Supply_from_ENG = {
-			#picture
+			picture = ZSB_Supply_from_ENG
 			modifier = {
 				consumer_goods_factor = -0.2
 				political_power_factor = 0.2
@@ -121,7 +121,7 @@ ideas = {
 		}
 		#对外策略
 		ZSB_Global_categories = {
-			#picture
+			picture = ZSB_Global_categories
 			modifier = {
 				improve_relations_maintain_cost_factor = -0.5
 				justify_war_goal_time = -0.2
@@ -130,7 +130,7 @@ ideas = {
 		}
 		#战争计划部
 		ZSB_Sector_of_war_planning = {
-			#picture
+			picture = ZSB_Sector_of_war_planning
 			modifier = {
 				mobilization_speed = 0.25
 				war_support_reduction_on_damage = -0.25
@@ -141,7 +141,7 @@ ideas = {
 		}
 		#战争部
 		ZSB_Sector_of_war = {
-			#picture
+			picture = ZSB_Sector_of_war
 			modifier = {
 				experience_gain_army = 0.05
 				experience_gain_air = 0.05
@@ -150,7 +150,7 @@ ideas = {
 		}
 		#国防部
 		ZSB_Sector_of_war_defence = {
-			#picture
+			picture = ZSB_Sector_of_war_defence
 			modifier = {
 				experience_gain_army = 0.05
 				experience_gain_air = 0.05
@@ -161,7 +161,7 @@ ideas = {
 		}
 		#联邦陆军
 		ZSB_Federal_army = {
-			#picture
+			picture = ZSB_Federal_army
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -170,7 +170,7 @@ ideas = {
 		}
 		#国民兵役法案
 		ZSB_Conscription_act = {
-			#picture
+			picture = ZSB_Conscription_act
 			modifier = {
 				conscription_factor = 0.15
 				mobilization_speed = 0.1
@@ -178,14 +178,14 @@ ideas = {
 		}
 		#妇女也是战士
 		ZSB_Women_also_as_soilder = {
-			#picture
+			picture = ZSB_Women_also_as_soilder
 			modifier = {
 				conscription_factor = 0.30
 			}
 		}
 		#一体化训练方案
 		ZSB_Common_trainning_act = {
-			#picture
+			picture = ZSB_Common_trainning_act
 			modifier = {
 				training_time_factor = -0.15
 				experience_gain_army_unit_factor = 0.15
@@ -193,7 +193,7 @@ ideas = {
 		}
 		#六角大厦工程
 		ZSB_Construction_of_the_Hexagon = {
-			#picture
+			picture = ZSB_Construction_of_the_Hexagon
 			modifier = {
 				production_speed_buildings_factor = -0.2
 				consumer_goods_factor = 0.2
@@ -202,7 +202,7 @@ ideas = {
 		}
 		#六角大厦
 		ZSB_The_Hexagon = {
-			#picture
+			picture = ZSB_The_Hexagon
 			modifier = {
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
@@ -212,7 +212,7 @@ ideas = {
 		}
 		#国民警卫队
 		ZSB_National_guard = {
-			#picture
+			picture = ZSB_National_guard
 			modifier = {
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
@@ -220,7 +220,7 @@ ideas = {
 		}
 		#军工复合体
 		ZSB_War_industry_complex = {
-			#picture
+			picture = ZSB_War_industry_complex
 			modifier = {
 				military_industrial_organization_funds_gain = 0.1
 				military_industrial_organization_research_bonus = 0.1
@@ -230,7 +230,7 @@ ideas = {
 		}
 		#老兵俱乐部
 		ZSB_Veteran_association = {
-			#picture
+			picture = ZSB_Veteran_association
 			modifier = {
 				experience_loss_factor = -0.1
 				air_untrained_pilots_penalty_factor = -0.15
@@ -239,7 +239,7 @@ ideas = {
 		}
 		#火力协同
 		ZSB_Firepower_synergy = {
-			#picture
+			picture = ZSB_Firepower_synergy
 			modifier = {
 				army_attack_factor = 0.15
 			}
@@ -258,7 +258,7 @@ ideas = {
 		}
 		#游骑兵战术
 		ZSB_Ranger_warfare = {
-			#picture
+			picture = ZSB_Ranger_warfare
 			modifier = {
 				army_speed_factor = 0.15
 				terrain_penalty_reduction = -0.15
@@ -356,7 +356,7 @@ ideas = {
 		}
 		#扩大海军基地
 		ZSB_Naval_base_expansion = {
-			picture = liberty_ships_focus
+			picture = ZSB_Naval_base_expansion
 			modifier = {
 				industrial_capacity_dockyard = 0.3
 				production_speed_dockyard_factor = 0.3
@@ -365,7 +365,7 @@ ideas = {
 		}
 		#两洋海军方案
 		ZSB_Two_ocean_act = {
-			picture = liberty_ships_focus
+			picture = ZSB_Two_ocean_act
 			modifier = {
 				industrial_capacity_dockyard = 0.2
 				production_speed_dockyard_factor = 0.2
@@ -376,7 +376,7 @@ ideas = {
 		}
 		#海军船务局
 		ZSB_Naval_bureau = {
-			picture = liberty_ships_focus
+			picture = ZSB_Naval_bureau
 			modifier = {
 				production_speed_dockyard_factor = 0.2
 				repair_speed_factor = 0.3
@@ -384,7 +384,7 @@ ideas = {
 		}
 		#海事委员会
 		ZSB_Maritime_commission = {
-			picture = liberty_ships_focus
+			picture = ZSB_Maritime_commission
 			modifier = {
 				naval_torpedo_cooldown_factor = -0.05
 				naval_torpedo_hit_chance_factor = 0.05
@@ -395,7 +395,7 @@ ideas = {
 		}
 		#轮船招商局
 		ZSB_Shipping_agency = {
-			picture = liberty_ships_focus
+			picture = ZSB_Shipping_agency
 			modifier = {
 				naval_supply_consumption_factor = -0.25
 				refit_speed = 0.3
@@ -403,7 +403,7 @@ ideas = {
 		}
 		#订单约定
 		ZSB_Order_contracts = {
-			picture = liberty_ships_focus
+			picture = ZSB_Order_contracts
 			modifier = {
 				industrial_capacity_dockyard = 0.2
 				production_speed_dockyard_factor = 0.2

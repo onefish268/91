@@ -1,6 +1,178 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_AH_achievements_Welcome_to_the_wild_wild_world"
-		texturefile = "gfx/leaders/COG/AH_achievements_Welcome_to_the_wild_wild_world.dds"
+		name = "ZSB_idea_54"
+		texturefile = "gfx/interface/ideas/54.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_61"
+		texturefile = "gfx/interface/ideas/61.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_233"
+		texturefile = "gfx/interface/ideas/233.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_322"
+		texturefile = "gfx/interface/ideas/322.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_344"
+		texturefile = "gfx/interface/ideas/344.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_666"
+		texturefile = "gfx/interface/ideas/666.png"
+	}
+	spriteType = {
+		name = "ZSB_Build_faster"
+		texturefile = "gfx/interface/ideas/ZSB_Build_faster.png"
+	}
+	spriteType = {
+		name = "ZSB_Common_trainning_act"
+		texturefile = "gfx/interface/ideas/ZSB_Common_trainning_act.png"
+	}
+	spriteType = {
+		name = "ZSB_Conscription_act"
+		texturefile = "gfx/interface/ideas/ZSB_Conscription_act.png"
+	}
+	spriteType = {
+		name = "ZSB_Construction_of_the_Hexagon"
+		texturefile = "gfx/interface/ideas/ZSB_Construction_of_the_Hexagon.png"
+	}
+	spriteType = {
+		name = "ZSB_Ensure_supply"
+		texturefile = "gfx/interface/ideas/ZSB_Ensure_supply.png"
+	}
+	spriteType = {
+		name = "ZSB_Federal_army"
+		texturefile = "gfx/interface/ideas/ZSB_Federal_army.png"
+	}
+	spriteType = {
+		name = "ZSB_Firepower_synergy"
+		texturefile = "gfx/interface/ideas/ZSB_Firepower_synergy.png"
+	}
+	spriteType = {
+		name = "ZSB_Global_categories"
+		texturefile = "gfx/interface/ideas/ZSB_Global_categories.png"
+	}
+	spriteType = {
+		name = "ZSB_Haver_Military_academy"
+		texturefile = "gfx/interface/ideas/ZSB_Haver_Military_academy.png"
+	}
+	spriteType = {
+		name = "ZSB_KL_vote"
+		texturefile = "gfx/interface/ideas/ZSB_KL_vote.png"
+	}
+	spriteType = {
+		name = "ZSB_Maritime_commission"
+		texturefile = "gfx/interface/ideas/ZSB_Maritime_commission.png"
+	}
+	spriteType = {
+		name = "ZSB_More_talent"
+		texturefile = "gfx/interface/ideas/ZSB_More_talent.png"
+	}
+	spriteType = {
+		name = "ZSB_National_guard"
+		texturefile = "gfx/interface/ideas/ZSB_National_guard.png"
+	}
+	spriteType = {
+		name = "ZSB_Naval_base_expansion"
+		texturefile = "gfx/interface/ideas/ZSB_Naval_base_expansion.png"
+	}
+	spriteType = {
+		name = "ZSB_Naval_bureau"
+		texturefile = "gfx/interface/ideas/ZSB_Naval_bureau.png"
+	}
+	spriteType = {
+		name = "ZSB_Order_contracts"
+		texturefile = "gfx/interface/ideas/ZSB_Order_contracts.png"
+	}
+	spriteType = {
+		name = "ZSB_Oriented_trade"
+		texturefile = "gfx/interface/ideas/ZSB_Oriented_trade.png"
+	}
+	spriteType = {
+		name = "ZSB_Ranger_warfare"
+		texturefile = "gfx/interface/ideas/ZSB_Ranger_warfare.png"
+	}
+	spriteType = {
+		name = "ZSB_Representative"
+		texturefile = "gfx/interface/ideas/ZSB_Representative.png"
+	}
+	spriteType = {
+		name = "ZSB_Resources_control"
+		texturefile = "gfx/interface/ideas/ZSB_Resources_control.png"
+	}
+	spriteType = {
+		name = "ZSB_STL_vote"
+		texturefile = "gfx/interface/ideas/ZSB_STL_vote.png"
+	}
+	spriteType = {
+		name = "ZSB_Sector_of_war"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war.png"
+	}
+	spriteType = {
+		name = "ZSB_Sector_of_war_defence"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_defence.png"
+	}
+	spriteType = {
+		name = "ZSB_Sector_of_war_planning"
+		texturefile = "gfx/interface/ideas/ZSB_Sector_of_war_planning.png"
+	}
+	spriteType = {
+		name = "ZSB_Shipping_agency"
+		texturefile = "gfx/interface/ideas/ZSB_Shipping_agency.png"
+	}
+	spriteType = {
+		name = "ZSB_Supply_from_ENG"
+		texturefile = "gfx/interface/ideas/ZSB_Supply_from_ENG.png"
+	}
+	spriteType = {
+		name = "ZSB_The_Hexagon"
+		texturefile = "gfx/interface/ideas/ZSB_The_Hexagon.png"
+	}
+	spriteType = {
+		name = "ZSB_Two_ocean_act"
+		texturefile = "gfx/interface/ideas/ZSB_Two_ocean_act.png"
+	}
+	spriteType = {
+		name = "ZSB_Veteran_association"
+		texturefile = "gfx/interface/ideas/ZSB_Veteran_association.png"
+	}
+	spriteType = {
+		name = "ZSB_War_industry_complex"
+		texturefile = "gfx/interface/ideas/ZSB_War_industry_complex.png"
+	}
+	spriteType = {
+		name = "ZSB_Women_also_as_soilder"
+		texturefile = "gfx/interface/ideas/ZSB_Women_also_as_soilder.png"
+	}
+	spriteType = {
+		name = "ZSB_economic_expert_from_ENG"
+		texturefile = "gfx/interface/ideas/ZSB_economic_expert_from_ENG.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_biubiu"
+		texturefile = "gfx/interface/ideas/biubiu.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_hu"
+		texturefile = "gfx/interface/ideas/hu.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_huoli"
+		texturefile = "gfx/interface/ideas/huoli.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_jinji"
+		texturefile = "gfx/interface/ideas/jinji.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_OIP-C_2_fuben"
+		texturefile = "gfx/interface/ideas/OIP-C.png"
+	}
+	spriteType = {
+		name = "ZSB_idea_weimingming1_fuben"
+		texturefile = "gfx/interface/ideas/what_is_that.png"
 	}
 }
