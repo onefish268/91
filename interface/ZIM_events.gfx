@@ -21,4 +21,8 @@ spriteTypes = {
         name = "GFX_news_2"
         texturefile = "gfx\interface\events\news_2.png"
     }
+    spriteType = {
+        name = "GFX_news_3"
+        texturefile = "gfx\interface\events\news_3.png"
+    }
 }
