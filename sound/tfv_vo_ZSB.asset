@@ -22,347 +22,347 @@ category = {
 sound =
 {
 	name = "ZSB_Idle_001"
-	file = /ZSB_Idle_001.wav"
+	file = "ZSB_Idle_001.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_002"
-	file = /ZSB_Idle_002.wav"
+	file = "ZSB_Idle_002.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_003"
-	file = /ZSB_Idle_003.wav"
+	file = "ZSB_Idle_003.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_004"
-	file = /ZSB_Idle_004.wav"
+	file = "ZSB_Idle_004.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_005"
-	file = /ZSB_Idle_005.wav"
+	file = "ZSB_Idle_005.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_006"
-	file = /ZSB_Idle_006.wav"
+	file = "ZSB_Idle_006.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_007"
-	file = /ZSB_Idle_007.wav"
+	file = "ZSB_Idle_007.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_008"
-	file = /ZSB_Idle_008.wav"
+	file = "ZSB_Idle_008.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_009"
-	file = /ZSB_Idle_009.wav"
+	file = "ZSB_Idle_009.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_010"
-	file = /ZSB_Idle_010.wav"
+	file = "ZSB_Idle_010.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_011"
-	file = /ZSB_Idle_011.wav"
+	file = "ZSB_Idle_011.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_012"
-	file = /ZSB_Idle_012.wav"
+	file = "ZSB_Idle_012.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_013"
-	file = /ZSB_Idle_013.wav"
+	file = "ZSB_Idle_013.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_014"
-	file = /ZSB_Idle_014.wav"
+	file = "ZSB_Idle_014.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_015"
-	file = /ZSB_Idle_015.wav"
+	file = "ZSB_Idle_015.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_016"
-	file = /ZSB_Idle_016.wav"
+	file = "ZSB_Idle_016.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_017"
-	file = /ZSB_Idle_017.wav"
+	file = "ZSB_Idle_017.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_018"
-	file = /ZSB_Idle_018.wav"
+	file = "ZSB_Idle_018.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_019"
-	file = /ZSB_Idle_019.wav"
+	file = "ZSB_Idle_019.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_020"
-	file = /ZSB_Idle_020.wav"
+	file = "ZSB_Idle_020.wav"
 }
 sound =
 {
 	name = "ZSB_Idle_021"
-	file = /ZSB_Idle_021.wav"
+	file = "ZSB_Idle_021.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_001"
-	file = /ZSB_Neutral_001.wav"
+	file = "ZSB_Neutral_001.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_002"
-	file = /ZSB_Neutral_002.wav"
+	file = "ZSB_Neutral_002.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_003"
-	file = /ZSB_Neutral_003.wav"
+	file = "ZSB_Neutral_003.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_004"
-	file = /ZSB_Neutral_004.wav"
+	file = "ZSB_Neutral_004.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_005"
-	file = /ZSB_Neutral_005.wav"
+	file = "ZSB_Neutral_005.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_006"
-	file = /ZSB_Neutral_006.wav"
+	file = "ZSB_Neutral_006.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_007"
-	file = /ZSB_Neutral_007.wav"
+	file = "ZSB_Neutral_007.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_008"
-	file = /ZSB_Neutral_008.wav"
+	file = "ZSB_Neutral_008.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_009"
-	file = /ZSB_Neutral_009.wav"
+	file = "ZSB_Neutral_009.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_010"
-	file = /ZSB_Neutral_010.wav"
+	file = "ZSB_Neutral_010.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_011"
-	file = /ZSB_Neutral_011.wav"
+	file = "ZSB_Neutral_011.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_012"
-	file = /ZSB_Neutral_012.wav"
+	file = "ZSB_Neutral_012.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_013"
-	file = /ZSB_Neutral_013.wav"
+	file = "ZSB_Neutral_013.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_014"
-	file = /ZSB_Neutral_014.wav"
+	file = "ZSB_Neutral_014.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_015"
-	file = /ZSB_Neutral_015.wav"
+	file = "ZSB_Neutral_015.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_016"
-	file = /ZSB_Neutral_016.wav"
+	file = "ZSB_Neutral_016.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_017"
-	file = /ZSB_Neutral_017.wav"
+	file = "ZSB_Neutral_017.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_018"
-	file = /ZSB_Neutral_018.wav"
+	file = "ZSB_Neutral_018.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_019"
-	file = /ZSB_Neutral_019.wav"
+	file = "ZSB_Neutral_019.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_020"
-	file = /ZSB_Neutral_020.wav"
+	file = "ZSB_Neutral_020.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_021"
-	file = /ZSB_Neutral_021.wav"
+	file = "ZSB_Neutral_021.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_022"
-	file = /ZSB_Neutral_022.wav"
+	file = "ZSB_Neutral_022.wav"
 }
 sound =
 {
 	name = "ZSB_Neutral_023"
-	file = /ZSB_Neutral_023.wav"
+	file = "ZSB_Neutral_023.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_001"
-	file = /ZSB_Positive_001.wav"
+	file = "ZSB_Positive_001.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_002"
-	file = /ZSB_Positive_002.wav"
+	file = "ZSB_Positive_002.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_003"
-	file = /ZSB_Positive_003.wav"
+	file = "ZSB_Positive_003.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_004"
-	file = /ZSB_Positive_004.wav"
+	file = "ZSB_Positive_004.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_005"
-	file = /ZSB_Positive_005.wav"
+	file = "ZSB_Positive_005.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_006"
-	file = /ZSB_Positive_006.wav"
+	file = "ZSB_Positive_006.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_007"
-	file = /ZSB_Positive_007.wav"
+	file = "ZSB_Positive_007.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_008"
-	file = /ZSB_Positive_008.wav"
+	file = "ZSB_Positive_008.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_009"
-	file = /ZSB_Positive_009.wav"
+	file = "ZSB_Positive_009.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_010"
-	file = /ZSB_Positive_010.wav"
+	file = "ZSB_Positive_010.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_011"
-	file = /ZSB_Positive_011.wav"
+	file = "ZSB_Positive_011.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_012"
-	file = /ZSB_Positive_012.wav"
+	file = "ZSB_Positive_012.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_013"
-	file = /ZSB_Positive_013.wav"
+	file = "ZSB_Positive_013.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_014"
-	file = /ZSB_Positive_014.wav"
+	file = "ZSB_Positive_014.wav"
 }
 sound =
 {
 	name = "ZSB_Positive_015"
-	file = /ZSB_Positive_015.wav"
+	file = "ZSB_Positive_015.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_001"
-	file = /ZSB_Retreat_001.wav"
+	file = "ZSB_Retreat_001.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_002"
-	file = /ZSB_Retreat_002.wav"
+	file = "ZSB_Retreat_002.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_003"
-	file = /ZSB_Retreat_003.wav"
+	file = "ZSB_Retreat_003.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_004"
-	file = /ZSB_Retreat_004.wav"
+	file = "ZSB_Retreat_004.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_005"
-	file = /ZSB_Retreat_005.wav"
+	file = "ZSB_Retreat_005.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_006"
-	file = /ZSB_Retreat_006.wav"
+	file = "ZSB_Retreat_006.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_007"
-	file = /ZSB_Retreat_007.wav"
+	file = "ZSB_Retreat_007.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_008"
-	file = /ZSB_Retreat_008.wav"
+	file = "ZSB_Retreat_008.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_009"
-	file = /ZSB_Retreat_009.wav"
+	file = "ZSB_Retreat_009.wav"
 }
 sound =
 {
 	name = "ZSB_Retreat_010"
-	file = /ZSB_Retreat_010.wav"
+	file = "ZSB_Retreat_010.wav"
 }
 
 ########## ZSB
