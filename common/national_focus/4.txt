@@ -2395,10 +2395,6 @@ focus_tree = {
 			focus = 3_focus_1
 		}
 
-		available = {
-			has_global_flag = second_weltkrieg_has_started
-		}
-
 		completion_reward = {
 			add_timed_idea = {
 				idea = ZYX_Army_founding
@@ -3226,6 +3222,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_100
 		}
+
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+
 		completion_reward = {
 			add_war_support = 0.075
 		}
@@ -3241,6 +3242,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_100
 		}
+
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+		
 		completion_reward = {
 			add_war_support = 0.05
 		}

@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		ZSB_arms_factory_construction = {
-			picture = ARG_economic_reactivation_idea
+			picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				global_building_slots_factor = 0.15
