@@ -322,6 +322,10 @@ focus_tree =
 		}
 	}
 
+	###################################################################################
+	####################################################政治往下
+	###################################################################################
+
 	focus = {#谋求政治变革
 		id = COG_Political_reform
 		icon = GFX_goal_generic_political_pressure
@@ -733,6 +737,161 @@ focus_tree =
 			
 		}
 	}
+
+	focus = {#对苛捐杂税的日益不满
+		id = COG_11
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 26
+		y = 9
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#领主日渐丧失的掌控力
+		id = COG_12
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 24
+		y = 10
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#
+		id = COG_13
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 26
+		y = 10
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#
+		id = COG_14
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 28
+		y = 10
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#质疑老修士的绝对地位
+		id = COG_
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 36
+		y = 10
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#修士-权力体系的解体
+		id = COG_1
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 34
+		y = 11
+
+		cancelable = yes
+
+		prerequisite = {
+			focus = COG_2
+		}
+
+		prerequisite = {
+			focus = COG_
+		}
+
+		prerequisite = {
+			focus = COG_4
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#放开朝廷的封闭政策
+		id = COG_2
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 32
+		y = 10
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#新兴修士的权力分配事宜
+		id = COG_4
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 34
+		y = 9
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#修士政治光环的暗淡
+		id = COG_5
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 34
+		y = 13
+
+		prerequisite = {
+			focus = COG_1
+		}
+
+		cancelable = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	###################################################################################
+	####################################################建设往下
+	###################################################################################
 
 	focus = {#建设与发展
 		id = COG_Build_and_grow
@@ -1193,9 +1352,9 @@ focus_tree =
 		}
 	}
 
-	focus = {#
+	focus = {#兴修水利
 		id = COG_A_magi
-		icon = GFX_focus_generic_military_industry
+		icon = GFX_focus_BEL_dam_the_consequences
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
 		x = -3
@@ -1209,6 +1368,10 @@ focus_tree =
 			
 		}
 	}
+
+	###################################################################################
+	####################################################军事往下
+	###################################################################################
 
 	focus = {#重组国防
 		id = COG_Defense_reform
