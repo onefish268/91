@@ -2523,9 +2523,6 @@ focus_tree = {
 				folder = air
 			}
 		}
-		available = {
-			has_global_flag = second_weltkrieg_has_started
-		}
 	}
 	focus = {
 		id = 3_focus_78
