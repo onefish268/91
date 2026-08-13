@@ -314,5 +314,101 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 		}
+	}
+	ZSB_guwen1 = {
+		name = "洛林"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen1.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_chief_drill_3
+			}
+			idea_token = ZSB_guwen1
+			slot = army_chief
+			cost = 150
+		}
+	}
+	ZSB_guwen2 = {
+		name = "威尔逊"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen2.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			idea_token = ZSB_guwen2
+			slot = navy_chief
+			cost = 150
+		}
+	}
+	ZSB_guwen3 = {
+		name = "萝丝芙"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen3.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				air_chief_reform_3
+			}
+			idea_token = ZSB_guwen3
+			slot = air_chief
+			cost = 150
+		}
+	}
+	ZSB_guwen4 = {
+		name = "林"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen4.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_armored_2
+			}
+			idea_token = ZSB_guwen4
+			slot = high_command
+			cost = 150
+		}
+	}
+	ZSB_guwen5 = {
+		name = "格兰特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen5.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_infantry_2
+			}
+			idea_token = ZSB_guwen5
+			slot = high_command
+			cost = 150
+		}
+	}
+	ZSB_guwen6 = {
+		name = "马歇尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/ZSB_guwen6.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_regrouping_1
+			}
+			idea_token = ZSB_guwen6
+			slot = high_command
+			cost = 150
+		}
 	}	
 }

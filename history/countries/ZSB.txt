@@ -49,6 +49,12 @@ recruit_character = ZSB_ktln
 recruit_character = ZSB_pln
 recruit_character = ZSB_awl
 recruit_character = ZSB_kaluo
+recruit_character = ZSB_guwen1
+recruit_character = ZSB_guwen2
+recruit_character = ZSB_guwen3
+recruit_character = ZSB_guwen4
+recruit_character = ZSB_guwen5
+recruit_character = ZSB_guwen6
 
 
 
