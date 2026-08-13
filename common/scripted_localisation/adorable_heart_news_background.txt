@@ -1,0 +1,122 @@
+defined_text = {
+    name = news_event_spec_logo
+    text = {
+        trigger = {
+            tag = SOV
+        }
+        localization_key = SOV_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = KNM
+                tag = FRA
+                tag = KMK
+            }
+
+        }
+        localization_key = KNM_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = LHS
+                tag = CHL
+            }
+
+        }
+        localization_key = LHS_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = PAM
+            }
+
+        }
+        localization_key = PAM_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = PAO
+            }
+
+        }
+        localization_key = PAO_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = DVL
+                tag = GER
+            }
+        }
+        localization_key = GER_news_event_background
+    }
+    text = {
+        trigger = {
+            tag = GEU
+        }
+        localization_key = GEU_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                tag = CHI
+                tag = ROC
+                tag = MAN
+                tag = YUN
+                tag = XSM
+                tag = TIB
+                tag = SIK
+                tag = MON
+            }
+        }
+        localization_key = CHI_news_event_background
+    }
+    text = {
+        trigger = {
+            tag = ENG
+            tag = ZIM
+        }
+        localization_key = ENG_news_event_background
+    }
+    text = {
+        trigger = {
+            Kivotos_is_kivotos_country = yes
+        }
+        localization_key = kronos_news_event_background
+    }
+    text = {
+        trigger = {
+            tag = PRC
+        }
+        localization_key = PRC_news_event_background
+    }
+    ###通用
+    text = {
+        trigger = {
+            is_in_ally = yes
+        }
+        localization_key = ENG_news_event_background
+    }
+    text = {
+        trigger = {
+            is_in_third_international = yes
+        }
+        localization_key = SOV_news_event_background
+    }
+    text = {
+        trigger = {
+            or = {
+                is_in_axis = yes
+                is_in_Imperial_Front = yes
+            }
+        }
+        localization_key = GER_news_event_background
+    }
+    text = {
+        localization_key = generic_news_event_background
+    }
+}

@@ -76,7 +76,7 @@ spriteTypes = {
 		}
 		spriteType = {
 			name = "GFX_ZIM_Side_Picture"
-			textureFile = "gfx/welcome/Side_Picture/ZIM_Side_Picture.dds"
+			textureFile = "gfx/welcome/Side_Picture/ZIM_Side_Picture.png"
 		}
 		spriteType = {
 			name = "GFX_ENG_Side_Picture"
@@ -298,6 +298,31 @@ spriteTypes = {
 			spriteType = {
 				name = "GFX_Route_Guide_Button_SOV"
 				texturefile = "gfx/welcome/button/SOV/Route_Guide_Button_SOV.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 罗德西亚 - ###	
+			spriteType = {
+				name = "GFX_Country_History_Button_ZIM"
+				texturefile = "gfx/welcome/button/Country_History_Button_ZIM.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_ZIM"
+				texturefile = "gfx/welcome/button/Local_History_Button_ZIM.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_ZIM"
+				texturefile = "gfx/welcome/button/World_History_Button_ZIM.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_ZIM"
+				texturefile = "gfx/welcome/button/Route_Guide_Button_ZIM.png"
 				noOfFrames = 2
 				transparencecheck = yes
 			}

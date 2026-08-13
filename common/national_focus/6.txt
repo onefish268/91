@@ -1059,6 +1059,36 @@ focus_tree = {
 		icon = GFX_focus_NGL_imperial_glory
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		available = {
+			ZCS = {
+				exists = no
+			}
+		}
+		available = {
+			ZSH = {
+				exists = no
+			}
+		}
+		available = {
+			ZDM = {
+				exists = no
+			}
+		}
+		available = {
+			ZHJ = {
+				exists = no
+			}
+		}
+		available = {
+			ZYX = {
+				exists = no
+			}
+		}
+		available = {
+			ZIM = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = 5_focus_39
 		}
