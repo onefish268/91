@@ -988,6 +988,9 @@ focus_tree = {
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = { ZSH = { exists = no } }
+
 		prerequisite = {
 			focus = 5_focus_36
 		}
@@ -1013,6 +1016,9 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_37
 		}
+
+		available = { ZYX = { exists = no } }
+
 		completion_reward = {
 			hidden_effect = {
 				ZYX = {
@@ -1032,6 +1038,9 @@ focus_tree = {
 		icon = GFX_focus_PHI_utang_na_loob
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+
+		available = { ZCS = { exists = no } }
+
 		prerequisite = {
 			focus = 5_focus_38
 		}

@@ -13,6 +13,11 @@ ZSB_xuanju_category = {
     picture = GFX_decision_cat_default
     priority = 100
     scripted_gui = ZSB_xuanju_ui  # 关键！挂载scripted_gui ID
+
+    allowed = {
+        tag = ZSB
+    }
+
     visible = {
         has_completed_focus = 6_focus_1
         tag = ZSB   # 仅某国能看见这个决议分类，换成你需要的国家tag
