@@ -76,6 +76,266 @@ characters = {
 		}
 	}
 
+	ZYX_guwen1 = {
+		name = "黑铁量仪"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen1.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_chief_drill_2
+			}
+			idea_token = ZYX_guwen1
+			slot = army_chief
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen7 = {
+		name = "维多利"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen7.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_chief_offensive_2
+			}
+			idea_token = ZYX_guwen7
+			slot = army_chief
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen8 = {
+		name = "卡利亚里"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen8.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_chief_organizational_2
+			}
+			idea_token = ZYX_guwen8
+			slot = army_chief
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen2 = {
+		name = "维特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen2.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			idea_token = ZYX_guwen2
+			slot = navy_chief
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen3 = {
+		name = "九条禅"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen3.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				air_chief_reform_2
+			}
+			idea_token = ZYX_guwen3
+			slot = air_chief
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen4 = {
+		name = "施特雷泽"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen4.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_armored_3
+			}
+			idea_token = ZYX_guwen4
+			slot = high_command
+			cost = 200
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen9 = {
+		name = "卡尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen9.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_infantry_2
+			}
+			idea_token = ZYX_guwen9
+			slot = high_command
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen10 = {
+		name = "杜布瓦"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen10.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_regrouping_2
+			}
+			idea_token = ZYX_guwen10
+			slot = high_command
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen5 = {
+		name = "莫罗"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen5.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				ah_military_theorist
+			}
+			idea_token = ZYX_guwen5
+			slot = theorist
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen6 = {
+		name = "玛尔塔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen6.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				Captain_of_Industry
+			}
+			idea_token = ZYX_guwen6
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen11 = {
+		name = "金巴"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen11.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				Armaments_Organizer
+			}
+			idea_token = ZYX_guwen11
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen12 = {
+		name = "达科"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen12.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				National_Integralist
+			}
+			idea_token = ZYX_guwen12
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
+	ZYX_guwen13 = {
+		name = "范德梅尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen13.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				War_Industrialist
+			}
+			idea_token = ZYX_guwen13
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+		}
+	}
+
 	#将军
 	ZYX_ppln = {
 		name = "佩帕罗妮"

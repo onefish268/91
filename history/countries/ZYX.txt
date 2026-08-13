@@ -39,7 +39,25 @@ recruit_character = ZYX_mglt
 recruit_character = ZYX_plxt
 recruit_character = ZYX_blny
 recruit_character = ZYX_tskn
-recruit_character = ZYX_lgly
+recruit_character = ZYX_guwen1
+recruit_character = ZYX_guwen2
+recruit_character = ZYX_guwen3
+recruit_character = ZYX_guwen4
+recruit_character = ZYX_guwen5
+recruit_character = ZYX_guwen6
+recruit_character = ZYX_guwen7
+recruit_character = ZYX_guwen8
+recruit_character = ZYX_guwen9
+recruit_character = ZYX_guwen10
+recruit_character = ZYX_guwen11
+recruit_character = ZYX_guwen12
+recruit_character = ZYX_guwen13
+
+
+
+
+
+
 
 
 
