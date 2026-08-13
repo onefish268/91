@@ -1,3 +1,4 @@
+objectTypes = {
 ##############################################
 ###### 	  BELGIAN DEFAULT INFANTRY 	   #######
 ##############################################
@@ -257,3 +258,165 @@
 			shader = "PdxMeshAdvanced"
 		}
 	}
+
+
+#################################################
+#ZYX 的坦克
+
+#雷诺
+
+
+
+#CV33
+	pdxmesh = {
+		name = "ZYX_l3_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	
+		variant = { weight = 1.0 pdxmesh = "geo_l3_normal_mesh" }
+		variant = { weight = 1.0 pdxmesh = "geo_l3_normal_mesh" }
+		variant = { weight = 1.0 pdxmesh = "geo_l3_camo_mesh" }
+	}
+	pdxmesh = {
+		name = "geo_l3_normal_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	}
+	pdxmesh = {
+		name = "geo_l3_camo_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	
+		meshsettings = {
+			name = "geo_l3"
+			index = 0
+			texture_diffuse = "geo_l3_camo_diffuse.dds"
+			texture_normal = "geo_l3_normal.dds"
+			texture_specular = "geo_l3_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+	pdxmesh = {
+		name = "geo_l3c_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3c.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	
+		variant = { weight = 1.0 pdxmesh = "geo_l3c_normal_mesh" }
+		variant = { weight = 1.0 pdxmesh = "geo_l3c_normal_mesh" }
+		variant = { weight = 1.0 pdxmesh = "geo_l3c_camo_mesh" }
+	}
+	pdxmesh = {
+		name = "geo_l3c_normal_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3c.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	}
+	pdxmesh = {
+		name = "geo_l3c_camo_mesh"
+		file = "gfx/models/units/ZYX_models/geo_l3c.mesh"
+		
+		animation = { id = "idle"			type = "geo_l3_idle_animation" }
+		animation = { id = "move"			type = "geo_l3_move_animation" }
+		animation = { id = "attack"			type = "geo_l3_attack_animation" }
+	
+			meshsettings = {
+			name = "geo_l3"
+			index = 0
+			texture_diffuse = "geo_l3c_camo_diffuse.dds"
+			texture_normal = "geo_l3c_normal.dds"
+			texture_specular = "geo_l3c_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+#T26？
+	pdxmesh = {
+		name = "ZYX_t26obr1933_mesh"
+		file = "gfx/models/units/ZYX_models/geo_t26obr1933.mesh"
+		
+		animation = { id = "attack"			type = "geo_vickers6t_attack_animation" }		
+		animation = { id = "idle"			type = "geo_vickers6t_idle_animation" }
+		animation = { id = "move"			type = "geo_vickers6t_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_t26obr1933_FIN_mesh"
+		file = "gfx/models/units/ZYX_models/geo_t26obr1933_FIN.mesh"
+		
+		animation = { id = "attack"			type = "geo_vickers6t_attack_animation" }		
+		animation = { id = "idle"			type = "geo_vickers6t_idle_animation" }
+		animation = { id = "move"			type = "geo_vickers6t_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_t26obr1933_PRC_mesh"
+		file = "gfx/models/units/ZYX_models/geo_t26obr1933_PRC.mesh"
+		
+		animation = { id = "attack"			type = "geo_vickers6t_attack_animation" }		
+		animation = { id = "idle"			type = "geo_vickers6t_idle_animation" }
+		animation = { id = "move"			type = "geo_vickers6t_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_t26obr1933_CHI_mesh"
+		file = "gfx/models/units/ZYX_models/geo_t26obr1933_CHI.mesh"
+		
+		animation = { id = "attack"			type = "geo_vickers6t_attack_animation" }		
+		animation = { id = "idle"			type = "geo_vickers6t_idle_animation" }
+		animation = { id = "move"			type = "geo_vickers6t_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_t26obr1933_TUR_mesh"
+		file = "gfx/models/units/ZYX_models/geo_t26obr1933_TUR.mesh"
+		
+		animation = { id = "attack"			type = "geo_vickers6t_attack_animation" }		
+		animation = { id = "idle"			type = "geo_vickers6t_idle_animation" }
+		animation = { id = "move"			type = "geo_vickers6t_move_animation" }
+	}
+
+	#94式
+
+	pdxmesh = {
+		name = "ZYX_type94_mesh"
+		file = "gfx/models/units/ZYX_models/geo_type94.mesh"
+		
+		animation = { id = "attack"			type = "geo_type94_attack_animation" }		
+		animation = { id = "idle"			type = "geo_type94_idle_animation" }
+		animation = { id = "move"			type = "geo_type94_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_type94_Generic_mesh"
+		file = "gfx/models/units/ZYX_models/geo_type94_Generic.mesh"
+		
+		animation = { id = "attack"			type = "geo_type94_attack_animation" }		
+		animation = { id = "idle"			type = "geo_type94_idle_animation" }
+		animation = { id = "move"			type = "geo_type94_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_type94_MAN_mesh"
+		file = "gfx/models/units/ZYX_models/geo_type94_MAN.mesh"
+		
+		animation = { id = "attack"			type = "geo_type94_attack_animation" }		
+		animation = { id = "idle"			type = "geo_type94_idle_animation" }
+		animation = { id = "move"			type = "geo_type94_move_animation" }
+	}
+
+}

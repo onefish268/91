@@ -15,6 +15,8 @@ COG_categories = {
 		desc = COG_promise_to_Ratkin_desc
 		cost = 10
 
+		cost = 10
+
 		complete_effect = {
 		}
 	}
