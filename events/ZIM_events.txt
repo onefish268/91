@@ -19,14 +19,11 @@ country_event = {
     picture = GFX_ZIM1_event
     is_triggered_only = yes
 
-    immediate = {
-        news_event = { id = ZIM.news.1 days = 0 }
-    }
-
     option = {
         name = ZIM.2.a
         load_focus_tree = ZIM_2_tree
         mark_focus_tree_layout_dirty = yes
+        news_event = { id = ZIM.news.1 days = 0 }
         ai_chance = { base = 50 }
     }
 }

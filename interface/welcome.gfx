@@ -1,0 +1,743 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_welcome_window_close_button"
+		texturefile = "gfx/interface/button_221x34.dds"
+		animation = {
+			animationmaskfile = "gfx/interface/play_button_mask.dds"
+			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
+			animationrotation = -90			# -90 clockwise 90 counterclockwise (by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"		# add, multiply, overlay
+			animationtype = "scrolling"		# scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 1 y = 1 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_welcome_background"
+		textureFile = "gfx/welcome/welcome_background.dds"
+	}
+	spriteType = {
+		name = "GFX_EARTH_button"
+		textureFile = "gfx/welcome/EARTH_button.dds"
+	}
+	spriteType = {
+		name = "GFX_shuaxin"
+		textureFile = "gfx/welcome/shuaxin.dds"
+	}
+	spriteType = {
+		name = "GFX_GDP_rank"
+		textureFile = "gfx/welcome/GDP_rank.dds"
+	}
+	spriteType = {
+		name = "GFX_industy_rank"
+		textureFile = "gfx/welcome/industy_rank.dds"
+	}
+	spriteType = {
+		name = "GFX_QQ_logo"
+		texturefile = "gfx//welcome//adorable_heart_QQ.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_bilibili_logo"
+		textureFile = "gfx/welcome/adorable_heart_bilibili.dds"
+	}
+	spriteType = {
+		name = "GFX_aifadian_logo"
+		textureFile = "gfx/welcome/adorable_heart_aifadian.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tab_4"
+		textureFile = "gfx/welcome/button_tab_4.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tab_5"
+		textureFile = "gfx/welcome/button_tab_5.dds"
+	}
+	spriteType = {
+		name = "GFX_splash_intro"
+		textureFile = "gfx/welcome/background.dds"
+	}
+	spriteType = {
+		name = "GFX_WWI"
+		textureFile = "gfx/welcome/wwi.dds"
+	}
+	#### - 右侧图片 - ####
+		spriteType = {
+			name = "GFX_TRB_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/TRB_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_GER_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/GER_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_ZIM_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/ZIM_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_ENG_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/ENG_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_SOV_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/SOV_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_CHI_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/CHI_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_RJE_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/RJE_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_FRA_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/FRA_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_KMK_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/KMK_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_DVL_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/DVL_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_PAN_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PAN_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_PAJ_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PAJ_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_LAN_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/LAN_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_TUR_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/TUR_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_TRY_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/TRY_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_ABY_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/ABY_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_PER_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PER_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_BAL_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/BAL_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_USA_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/USA_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_GEU_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/GEU_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_NFA_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/NFA_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_POL_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/POL_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_PRC_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PRC_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_ROC_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/ROC_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_ROM_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/ROM_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_MAL_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/MAL_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_GUA_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/GUA_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_SWE_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/SWE_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_FRG_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/FRG_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_UKR_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/UKR_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_PAL_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PAL_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_NPT_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/NPT_Side_Picture.dds"
+		}
+		spriteType = {
+			name = "GFX_MOR_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/MOR_Side_Picture.dds"
+		}
+		#远洋
+		spriteType = {
+			name = "GFX_NGD_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/NGD_Side_Picture.dds"
+		}
+		#满洲
+		spriteType = {
+			name = "GFX_MAN_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/MAN_Side_Picture.dds"
+		}
+		#魔联
+		spriteType = {
+			name = "GFX_MGU_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/MGU_Side_Picture.dds"
+		}
+		#露格尼卡王国
+		spriteType = {
+			name = "GFX_GRE_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/GRE_Side_Picture.dds"
+		}
+		#阿德莱希帝国
+		spriteType = {
+			name = "GFX_PAQ_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PAQ_Side_Picture.png"
+		}		
+		#蒙古
+		spriteType = {
+			name = "GFX_MON_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/MON_Side_Picture.dds"
+		}
+		#翁法罗斯
+		spriteType = {
+			name = "GFX_PAW_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/PAW_Side_Picture.png"
+		}
+		spriteType = {
+			name = "GFX_PAW_Side_Picture_true"
+			textureFile = "gfx/welcome/Side_Picture/PAW_Side_Picture_true.png"
+		}
+		#通用
+		spriteType = {
+			name = "GFX_Generic_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/Generic_Side_Picture.dds"
+		}
+	#### - 右侧图片 - ####
+	spriteType = {
+		name = "GFX_Adorable_Heart_Logo"
+		textureFile = "gfx/welcome/Adorable_Heart_Logo.dds"
+	}
+	spriteType = {
+		name = "GFX_welcome_title"
+		textureFile = "gfx/welcome/welcome_title.dds"
+	}
+	spriteType = {
+		name = "GFX_Country_History_Button"
+		texturefile = "gfx/welcome/button/Country_History_Button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Local_History_Button"
+		texturefile = "gfx/welcome/button/Local_History_Button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_World_History_Button"
+		texturefile = "gfx/welcome/button/World_History_Button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Route_Guide_Button"
+		texturefile = "gfx/welcome/button/Route_Guide_Button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#### - 左侧图片 - ####
+		### - 苏联 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_SOV"
+				texturefile = "gfx/welcome/button/SOV/Country_History_Button_SOV.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_SOV"
+				texturefile = "gfx/welcome/button/SOV/Local_History_Button_SOV.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_SOV"
+				texturefile = "gfx/welcome/button/SOV/World_History_Button_SOV.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_SOV"
+				texturefile = "gfx/welcome/button/SOV/Route_Guide_Button_SOV.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 苏联 - ###
+		### - 德国 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_GER"
+				texturefile = "gfx/welcome/button/GER/Country_History_Button_GER.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_GER"
+				texturefile = "gfx/welcome/button/GER/Local_History_Button_GER.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_GER"
+				texturefile = "gfx/welcome/button/GER/World_History_Button_GER.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_GER"
+				texturefile = "gfx/welcome/button/GER/Route_Guide_Button_GER.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 德国 - ###
+		### - 幻想乡 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_FRA"
+				texturefile = "gfx/welcome/button/FRA/Country_History_Button_FRA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_FRA"
+				texturefile = "gfx/welcome/button/FRA/Local_History_Button_FRA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_FRA"
+				texturefile = "gfx/welcome/button/FRA/World_History_Button_FRA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_FRA"
+				texturefile = "gfx/welcome/button/FRA/Route_Guide_Button_FRA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 幻想乡 - ###
+		### - 魔导 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_DVL"
+				texturefile = "gfx/welcome/button/DVL/Country_History_Button_DVL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_DVL"
+				texturefile = "gfx/welcome/button/DVL/Local_History_Button_DVL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_DVL"
+				texturefile = "gfx/welcome/button/DVL/World_History_Button_DVL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_DVL"
+				texturefile = "gfx/welcome/button/DVL/Route_Guide_Button_DVL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 魔导 - ###
+		### - 中共 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_PRC"
+				texturefile = "gfx/welcome/button/PRC/Country_History_Button_PRC.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_PRC"
+				texturefile = "gfx/welcome/button/PRC/Local_History_Button_PRC.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_PRC"
+				texturefile = "gfx/welcome/button/PRC/World_History_Button_PRC.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_PRC"
+				texturefile = "gfx/welcome/button/PRC/Route_Guide_Button_PRC.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 中共 - ###
+		### - 执念 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_POL"
+				texturefile = "gfx/welcome/button/POL/Country_History_Button_POL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_POL"
+				texturefile = "gfx/welcome/button/POL/Local_History_Button_POL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_POL"
+				texturefile = "gfx/welcome/button/POL/World_History_Button_POL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_POL"
+				texturefile = "gfx/welcome/button/POL/Route_Guide_Button_POL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 中共 - ###
+		### - 精灵 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_USA"
+				texturefile = "gfx/welcome/button/USA/Country_History_Button_USA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_USA"
+				texturefile = "gfx/welcome/button/USA/Local_History_Button_USA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_USA"
+				texturefile = "gfx/welcome/button/USA/World_History_Button_USA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_USA"
+				texturefile = "gfx/welcome/button/USA/Route_Guide_Button_USA.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 精灵 - ###
+		### - 远洋 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_NGD"
+				texturefile = "gfx/welcome/button/NGD/Country_History_Button_NGD.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_NGD"
+				texturefile = "gfx/welcome/button/NGD/Local_History_Button_NGD.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_NGD"
+				texturefile = "gfx/welcome/button/NGD/World_History_Button_NGD.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_NGD"
+				texturefile = "gfx/welcome/button/NGD/Route_Guide_Button_NGD.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 远洋 - ###
+		### - 满洲 - ###
+			# spriteType = {
+			# 	name = "GFX_Country_History_Button_MAN"
+			# 	texturefile = "gfx/welcome/button/MAN/Country_History_Button_MAN.dds"
+			# 	noOfFrames = 2
+			# 	transparencecheck = yes
+			# }
+			# spriteType = {
+			# 	name = "GFX_Local_History_Button_MAN"
+			# 	texturefile = "gfx/welcome/button/MAN/Local_History_Button_MAN.dds"
+			# 	noOfFrames = 2
+			# 	transparencecheck = yes
+			# }
+			# spriteType = {
+			# 	name = "GFX_World_History_Button_MAN"
+			# 	texturefile = "gfx/welcome/button/MAN/World_History_Button_MAN.dds"
+			# 	noOfFrames = 2
+			# 	transparencecheck = yes
+			# }
+			# spriteType = {
+			# 	name = "GFX_Route_Guide_Button_MAN"
+			# 	texturefile = "gfx/welcome/button/MAN/Route_Guide_Button_MAN.dds"
+			# 	noOfFrames = 2
+			# 	transparencecheck = yes
+			# }
+		### - 满洲 - ###
+		### - 卡兹戴尔 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_PAL"
+				texturefile = "gfx/welcome/button/PAL/Country_History_Button_PAL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_PAL"
+				texturefile = "gfx/welcome/button/PAL/Local_History_Button_PAL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_PAL"
+				texturefile = "gfx/welcome/button/PAL/World_History_Button_PAL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_PAL"
+				texturefile = "gfx/welcome/button/PAL/Route_Guide_Button_PAL.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 卡兹戴尔 - ###
+		### - 红魔馆 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_KMK"
+				texturefile = "gfx/welcome/button/KMK/Country_History_Button_KMK.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_KMK"
+				texturefile = "gfx/welcome/button/KMK/Local_History_Button_KMK.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_KMK"
+				texturefile = "gfx/welcome/button/KMK/World_History_Button_KMK.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_KMK"
+				texturefile = "gfx/welcome/button/KMK/Route_Guide_Button_KMK.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 红魔馆 - ###
+		### - 露格尼卡王国 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_GRE"
+				texturefile = "gfx/welcome/button/GRE/Country_History_Button_GRE.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_GRE"
+				texturefile = "gfx/welcome/button/GRE/Local_History_Button_GRE.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_GRE"
+				texturefile = "gfx/welcome/button/GRE/World_History_Button_GRE.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_GRE"
+				texturefile = "gfx/welcome/button/GRE/Route_Guide_Button_GRE.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 露格尼卡王国 - ###
+		### - 魔法少女联盟 魔联 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_MGU"
+				texturefile = "gfx/welcome/button/MGU/Country_History_Button_MGU.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_MGU"
+				texturefile = "gfx/welcome/button/MGU/Local_History_Button_MGU.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_MGU"
+				texturefile = "gfx/welcome/button/MGU/World_History_Button_MGU.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_MGU"
+				texturefile = "gfx/welcome/button/MGU/Route_Guide_Button_MGU.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}		
+			### - 蒙古 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_MON"
+				texturefile = "gfx/welcome/button/MON/Country_History_Button_MON.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_MON"
+				texturefile = "gfx/welcome/button/MON/Local_History_Button_MON.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_MON"
+				texturefile = "gfx/welcome/button/MON/World_History_Button_MON.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_MON"
+				texturefile = "gfx/welcome/button/MON/Route_Guide_Button_MON.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 魔法少女联盟 魔联 - ###
+		### - 神州 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_CHI"
+				texturefile = "gfx/welcome/button/CHI/Country_History_Button_CHI.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_CHI"
+				texturefile = "gfx/welcome/button/CHI/Local_History_Button_CHI.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_CHI"
+				texturefile = "gfx/welcome/button/CHI/World_History_Button_CHI.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_CHI"
+				texturefile = "gfx/welcome/button/CHI/Route_Guide_Button_CHI.dds"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 神州 - ###
+		### - 翁法罗斯 - ###
+			spriteType = {
+				name = "GFX_Country_History_Button_PAW"
+				texturefile = "gfx/welcome/button/PAW/Country_History_Button_PAW.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_PAW"
+				texturefile = "gfx/welcome/button/PAW/Local_History_Button_PAW.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_PAW"
+				texturefile = "gfx/welcome/button/PAW/World_History_Button_PAW.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_PAW"
+				texturefile = "gfx/welcome/button/PAW/Route_Guide_Button_PAW.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+		### - 翁法罗斯 - ###
+	#### - 左侧图片 - ####
+	spriteType = {
+		name = "GFX_welcome_window_line"
+		textureFile = "gfx/welcome/welcome_window_line.dds"
+	}
+	spriteType = {
+		name = "GFX_Welcome_Window_Flag_Flame"
+		textureFile = "gfx/welcome/Welcome_Window_Flag_Flame.dds"
+	}
+	spriteType = {
+		name = "GFX_Welcome_Window_Button"
+		textureFile = "gfx/welcome/Welcome_Window_Button.dds"
+	}
+	spriteType = {
+		name = "GFX_Histroy_Bookmark_Title_Button"
+		texturefile = "gfx/welcome/Histroy_Bookmark_Title_Button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_welcome_background_left"
+		textureFile = "gfx/welcome/welcome_background_left.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_welcome_background_right"
+		textureFile = "gfx/welcome/welcome_background_right.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_button_contact_us"
+		textureFile = "gfx/welcome/button_contact_us.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_adorable_heart_aifadian_pic"
+		textureFile = "gfx/welcome/adorable_heart_aifadian_pic.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_adorable_heart_bilibili_pic"
+		textureFile = "gfx/welcome/adorable_heart_bilibili_pic.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_adorable_heart_QQ_pic"
+		textureFile = "gfx/welcome/adorable_heart_QQ_pic.dds"
+		transparencecheck = yes
+	}
+}

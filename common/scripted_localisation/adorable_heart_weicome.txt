@@ -9,6 +9,12 @@ defined_text = {
     }
     text = {
         trigger = {
+            tag = ZIM
+        }
+        localization_key = ZIM_start_game_text
+    }
+    text = {
+        trigger = {
             tag = GER
         }
         localization_key = GER_start_game_text
