@@ -1,5 +1,20 @@
 music = {
     name = "ZSB_effect_1"
     file = "ZSB_effect_1.ogg"
-    volume = 0.7
+    volume = 1
+}
+music = {
+    name = "ZSB_effect_2"
+    file = "ZSB_effect_2.ogg"
+    volume = 1
+}
+music = {
+    name = "ZIM_effect_1"
+    file = "ZIM_effect_1.ogg"
+    volume = 1
+}
+music = {
+    name = "ZYX_effect_1"
+    file = "ZYX_effect_1.ogg"
+    volume = 1
 }
