@@ -1,0 +1,42 @@
+animation = {
+	name = "geo_l3_idle_animation"
+	file = "gfx/models/units/ZYX_models/geo_l3_idle.anim"
+}
+animation = {
+	name = "geo_l3_move_animation"
+	file = "gfx/models/units/ZYX_models/geo_l3_move.anim"
+}
+animation = {
+	name = "geo_l3_attack_animation"
+	file = "gfx/models/units/ZYX_models/geo_l3_attack.anim"
+}
+
+
+animation = {
+	name = "geo_vickers6t_idle_animation"
+	file = "gfx/models/units/ZYX_models/geo_vickers6t_idle.anim"
+}
+
+animation = {
+	name = "geo_vickers6t_move_animation"
+	file = "gfx/models/units/ZYX_models/geo_vickers6t_move.anim"
+}
+
+animation = {
+	name = "geo_vickers6t_attack_animation"
+	file = "gfx/models/units/ZYX_models/geo_vickers6t_attack.anim"
+}
+
+
+animation = {
+	name = "geo_type94_idle_animation"
+	file = "gfx/models/units/ZYX_models/geo_type94_idle.anim"	
+}
+animation = {
+	name = "geo_type94_move_animation"
+	file = "gfx/models/units/ZYX_models/geo_type94_move.anim"
+}
+animation = {
+	name = "geo_type94_attack_animation"
+	file = "gfx/models/units/ZYX_models/geo_type94_attack.anim"
+}

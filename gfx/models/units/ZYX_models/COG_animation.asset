@@ -1,0 +1,48 @@
+#################################################
+# COG 坦克动画类型声明
+# 此文件必须放在 gfx/models/units/tanks/ 目录下
+# file 路径为相对路径，指向同目录下的 .anim 文件
+# .anim 文件由 Workshop mod (3132985068) 或 TEST mod 自身提供
+#################################################
+
+# CV33 (geo_l3) 动画
+animation = {
+	name = "geo_l3_idle_animation"
+	file = "geo_l3_idle.anim"
+}
+animation = {
+	name = "geo_l3_move_animation"
+	file = "geo_l3_move.anim"
+}
+animation = {
+	name = "geo_l3_attack_animation"
+	file = "geo_l3_attack.anim"
+}
+
+# T26 (geo_vickers6t) 动画
+animation = {
+	name = "geo_vickers6t_idle_animation"
+	file = "geo_vickers6t_idle.anim"
+}
+animation = {
+	name = "geo_vickers6t_move_animation"
+	file = "geo_vickers6t_move.anim"
+}
+animation = {
+	name = "geo_vickers6t_attack_animation"
+	file = "geo_vickers6t_attack.anim"
+}
+
+# 94式 (geo_type94) 动画
+animation = {
+	name = "geo_type94_idle_animation"
+	file = "geo_type94_idle.anim"
+}
+animation = {
+	name = "geo_type94_move_animation"
+	file = "geo_type94_move.anim"
+}
+animation = {
+	name = "geo_type94_attack_animation"
+	file = "geo_type94_attack.anim"
+}
