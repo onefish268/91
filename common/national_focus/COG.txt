@@ -202,10 +202,6 @@ focus_tree =
 		x = -3
 		y = 2
 
-		allow_branch = {
-			has_completed_focus = COG_Small_change
-		}
-
 		completion_reward = {
 			
 		}
@@ -216,11 +212,48 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = -5
-		y = 3
+		x = -4
+		y = 4
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_0113
+			focus = COG_0112
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#宗主国的专业技术指导
+		id = COG_0116
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -5
+		y = 5
+
+		prerequisite = {
+			focus = COG_0111
+			focus = COG_011
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#培育更多的技术员
+		id = COG_0117
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -7
+		y = 5
+
+		prerequisite = {
+			focus = COG_0111
+			focus = COG_011
 		}
 
 		completion_reward = {
@@ -233,11 +266,29 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = -7
-		y = 3
+		x = -2
+		y = 4
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_0113
+			focus = COG_0112
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#拒绝更多的幻想乡官员进驻
+		id = COG_0110
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -9
+		y = 4
+
+		prerequisite = {
+			focus = COG_0113
 		}
 
 		completion_reward = {
@@ -250,11 +301,30 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = -1
-		y = 3
+		x = -6
+		y = 4
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_0113
+			focus = COG_0112
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#宗主国的科研支持
+		id = COG_0114
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 0
+		y = 4
+
+		prerequisite = {
+			focus = COG_0113
+			focus = COG_0112
 		}
 
 		completion_reward = {
@@ -267,11 +337,11 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 1
-		y = 3
+		x = 3
+		y = 4
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_0112
 		}
 
 		completion_reward = {
@@ -285,7 +355,7 @@ focus_tree =
 		cost = 2
 
 		x = -2
-		y = 4
+		y = 3
 
 		mutually_exclusive = {
 			focus = COG_0113
@@ -306,7 +376,7 @@ focus_tree =
 		cost = 2
 
 		x = -4
-		y = 4
+		y = 3
 
 		mutually_exclusive = {
 			focus = COG_0112
@@ -321,18 +391,17 @@ focus_tree =
 		}
 	}
 
-	focus = {#维持现状
-		id = COG_0114
+	focus = {#先进的勘探技术
+		id = COG_01125
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = -2
+		x = -3
 		y = 5
 
-
 		prerequisite = {
-			focus = COG_0112
-			focus = COG_0113
+			focus = COG_011111
+			focus = COG_011
 		}
 
 		completion_reward = {
@@ -340,21 +409,39 @@ focus_tree =
 		}
 	}
 
-	focus = {#维持现状
-		id = COG_0115
+	focus = {#幻想乡-魔界溪谷魔法研究
+		id = COG_01122
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = -4
+		x = -1
 		y = 5
 
 		prerequisite = {
-			focus = COG_0112
-			focus = COG_0113
+			focus = COG_011111
+			focus = COG_0114
 		}
 
 		completion_reward = {
-	
+			
+		}
+	}
+
+	focus = {#引入魔界溪谷的奇幻生物
+		id = COG_01123
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 1
+		y = 5
+
+		prerequisite = {
+			focus = COG_011111
+			focus = COG_0114
+		}
+
+		completion_reward = {
+			
 		}
 	}
 
@@ -496,7 +583,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_The_future_of_us
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = {
 			focus = COG_The_future_of_us
@@ -521,14 +608,12 @@ focus_tree =
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 1264
 		relative_position_id = COG_Political_reform
-		x = -0
-		y = 3
+		x = 0
+		y = 1
 
 		prerequisite = {
 			focus = COG_Splintered_realm
 			focus = COG_Slave_court_oppression
-			focus = COG_Lonely_dragonian
-			focus = COG_Remain_moral
 		}
 
 		completion_reward = {
@@ -541,8 +626,8 @@ focus_tree =
 		 
 		cost = 1264
 		relative_position_id = COG_Political_reform
-		x = -2
-		y = 3
+		x = -5
+		y = 2
 
 		completion_reward = {
 			
@@ -555,7 +640,7 @@ focus_tree =
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
 		x = -1
-		y = -1
+		y = 1
 
 		available = {
 			if = {
@@ -585,8 +670,8 @@ focus_tree =
 		icon = GFX_focus_RAJ_union_busting
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
-		x = -2.5
-		y = 0
+		x = 0
+		y = 2
 
 		available = {
 			if = {
@@ -616,7 +701,7 @@ focus_tree =
 		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 1264
 		relative_position_id = COG_Splintered_realm
-		x = -1
+		x = 1
 		y = 1
 
 		available = {
@@ -647,8 +732,8 @@ focus_tree =
 		 
 		cost = 1264
 		relative_position_id = COG_Political_reform
-		x = 2
-		y = 3
+		x = 6
+		y = 2
 
 		completion_reward = {
 			
@@ -660,7 +745,7 @@ focus_tree =
 		icon = GFX_focus_RAJ_seven_shackles
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
-		x = 1
+		x = -1
 		y = 1
 
 		available = {
@@ -692,7 +777,7 @@ focus_tree =
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
 		x = 1
-		y = -1
+		y = 1
 
 		available = {
 			if = {
@@ -724,8 +809,8 @@ focus_tree =
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 1264
 		relative_position_id = COG_Slave_court_oppression
-		x = 2.5
-		y = 0
+		x = 0
+		y = 2
 
 		available = {
 			if = {
@@ -755,8 +840,8 @@ focus_tree =
 		 
 		cost = 1264
 		relative_position_id = COG_Aloof_peace
-		x = 0
-		y = -1
+		x = -2
+		y = 2
 
 		completion_reward = {
 			
@@ -769,7 +854,7 @@ focus_tree =
 		cost = 1264
 		relative_position_id = COG_Lonely_dragonian
 		x = 0
-		y = -1
+		y = 2.5
 
 		available = {
 			if = {
@@ -801,8 +886,8 @@ focus_tree =
 		 
 		cost = 1264
 		relative_position_id = COG_Aloof_peace
-		x = 0
-		y = 1
+		x = 2
+		y = 2
 
 		completion_reward = {
 			
@@ -907,8 +992,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 26
-		y = 11
+		x = 25
+		y = 9
 
 		cancelable = yes
 
@@ -922,8 +1007,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 24
-		y = 12
+		x = 23
+		y = 10
 
 		cancelable = yes
 
@@ -937,8 +1022,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 28
-		y = 12
+		x = 27
+		y = 10
 
 		cancelable = yes
 
@@ -952,8 +1037,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 26
-		y = 13
+		x = 25
+		y = 11
 
 		cancelable = yes
 
@@ -967,8 +1052,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 36
-		y = 12
+		x = 35
+		y = 11
 
 		cancelable = yes
 
@@ -982,8 +1067,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 34
-		y = 13
+		x = 33
+		y = 12
 
 		cancelable = yes
 
@@ -1009,8 +1094,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 32
-		y = 12
+		x = 31
+		y = 11
 
 		cancelable = yes
 
@@ -1024,8 +1109,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 34
-		y = 11
+		x = 33
+		y = 10
 
 		cancelable = yes
 
@@ -1039,8 +1124,8 @@ focus_tree =
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 34
-		y = 15
+		x = 33
+		y = 14
 
 		prerequisite = {
 			focus = COG_1
@@ -1846,7 +1931,7 @@ focus_tree =
 		cost = 2
 
 		x = 18
-		y = 19
+		y = 18
 
 		prerequisite = {
 			focus = COG_1551
@@ -1967,6 +2052,29 @@ focus_tree =
 		}
 	}
 
+	focus = {#真正的小镇
+		id = COG_1295
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 7
+		y = 23
+
+		prerequisite = {
+			focus = COG_129
+		}
+		prerequisite = {
+			focus = COG_1291
+		}
+		prerequisite = {
+			focus = COG_1293
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {#连接西南角
 		id = COG_1298
 		icon = GFX_goal_unknown
@@ -1990,7 +2098,7 @@ focus_tree =
 		cost = 2
 
 		x = 11
-		y = 22
+		y = 23
 
 		prerequisite = {
 			focus = COG_1298
@@ -2007,7 +2115,7 @@ focus_tree =
 		cost = 2
 
 		x = 12
-		y = 23
+		y = 22
 
 		prerequisite = {
 			focus = COG_1298
@@ -2024,10 +2132,50 @@ focus_tree =
 		cost = 2
 
 		x = 13
-		y = 22
+		y = 23
 
 		prerequisite = {
 			focus = COG_1298
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#充分就业
+		id = COG_129866
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 24
+
+		prerequisite = {
+			focus = COG_12982
+		}
+		prerequisite = {
+			focus = COG_12981
+		}
+		prerequisite = {
+			focus = COG_129811
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#总督府前的建设
+		id = COG_1298112
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 18
+		y = 21
+
+		prerequisite = {
+			focus = COG_over_t
 		}
 
 		completion_reward = {
@@ -2903,8 +3051,8 @@ focus_tree =
 		icon = GFX_focus_PER_luftwaffe_planes
 		cost = 2
 		relative_position_id = COG_Sky_soaring_Kiiro
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
@@ -2921,41 +3069,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Sky_soaring_Kiiro
 		x = 1
-		y = 2.5
-
-		prerequisite = {
-			focus = COG_Sky_soaring_Kiiro
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#更符合绮罗的设备设计
-		id = COG_Ultimate_agility
-		icon = GFX_focus_PER_luftwaffe_planes
-		cost = 2
-		relative_position_id = COG_Sky_soaring_Kiiro
-		x = -2
-		y = 1
-
-		prerequisite = {
-			focus = COG_Sky_soaring_Kiiro
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#极致的敏捷
-		id = COG_Ultimate_agility
-		icon = GFX_focus_PER_luftwaffe_planes
-		cost = 2
-		relative_position_id = COG_Sky_soaring_Kiiro
-		x = -2
-		y = 1
+		y = 3
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
@@ -2972,24 +3086,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Sky_soaring_Kiiro
 		x = -1
-		y = 2.5
-
-		prerequisite = {
-			focus = COG_Sky_soaring_Kiiro
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#极致的敏捷
-		id = COG_Ultimate_agility
-		icon = GFX_focus_PER_luftwaffe_planes
-		cost = 2
-		relative_position_id = COG_Sky_soaring_Kiiro
-		x = 0
-		y = 1.5
+		y = 3
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
@@ -3023,7 +3120,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Sky_soaring_Kiiro
 		x = 3
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
@@ -3040,7 +3137,7 @@ focus_tree =
 		cost = 2
 		relative_position_id = COG_Sky_soaring_Kiiro
 		x = -3
-		y = 1
+		y = 2
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
