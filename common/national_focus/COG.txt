@@ -17,7 +17,7 @@ focus_tree =
 	continuous_focus_position =
 	{
 		x = 1500
-		y = 3300
+		y = 4300
 	}
 
 
@@ -25,8 +25,8 @@ focus_tree =
 		id = COG_Prepare_new_year
 		icon = GFX_focus_generic_world_peace
 		cost = 1
-		x = 2
-		y = 10
+		x = -14
+		y = 3
 		select_effect = {
 			FRA = {
 				country_event = SA_FRA_event.00000
@@ -49,8 +49,8 @@ focus_tree =
 		cost = 5
 
 		relative_position_id = COG_Prepare_new_year
-		x = 3
-		y = 0
+		x = 0
+		y = 2
 
 		allow_branch = {
 			has_completed_focus = COG_Prepare_new_year
@@ -79,7 +79,7 @@ focus_tree =
 
 		relative_position_id = COG_Inspect_local_areas
 		x = 0
-		y = -2
+		y = 2
 
 		prerequisite = { 
 			focus = COG_Inspect_local_areas
@@ -97,8 +97,8 @@ focus_tree =
 		cost = 1
 
 		relative_position_id = COG_Inspect_local_areas
-		x = 3
-		y = 0
+		x = 0
+		y = 4
 
 		allow_branch = {
 			has_completed_focus = COG_Check_forest
@@ -121,8 +121,8 @@ focus_tree =
 		 
 		cost = 2
 
-		x = 3
-		y = 12
+		x = -14
+		y = 14
 
 		allow_branch = {
 			has_completed_focus = COG_Small_change
@@ -191,6 +191,170 @@ focus_tree =
 ####################event
 			} 
 			custom_effect_tooltip = COG_Pay_50_change
+		}
+	}
+
+	focus = {#我们同宗主国的关系
+		id = COG_01
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -3
+		y = 2
+
+		allow_branch = {
+			has_completed_focus = COG_Small_change
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#继续派遣留学生
+		id = COG_011
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -5
+		y = 3
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#满足宗主国的资源需要
+		id = COG_011111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -7
+		y = 3
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#宗主国工业设备购置
+		id = COG_0111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -1
+		y = 3
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {#同幻想乡公司签订更多合作事宜
+		id = COG_01111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 1
+		y = 3
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#放开幻想乡对魔界溪谷的投资
+		id = COG_0112
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -2
+		y = 4
+
+		mutually_exclusive = {
+			focus = COG_0113
+		}
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#维持现状
+		id = COG_0113
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -4
+		y = 4
+
+		mutually_exclusive = {
+			focus = COG_0112
+		}
+
+		prerequisite = {
+			focus = COG_01
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#维持现状
+		id = COG_0114
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -2
+		y = 5
+
+
+		prerequisite = {
+			focus = COG_0112
+			focus = COG_0113
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#维持现状
+		id = COG_0115
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = -4
+		y = 5
+
+		prerequisite = {
+			focus = COG_0112
+			focus = COG_0113
+		}
+
+		completion_reward = {
+	
 		}
 	}
 
@@ -744,7 +908,7 @@ focus_tree =
 		cost = 2
 
 		x = 26
-		y = 9
+		y = 11
 
 		cancelable = yes
 
@@ -759,7 +923,7 @@ focus_tree =
 		cost = 2
 
 		x = 24
-		y = 10
+		y = 12
 
 		cancelable = yes
 
@@ -768,13 +932,13 @@ focus_tree =
 		}
 	}
 
-	focus = {#
+	focus = {#权力的集中
 		id = COG_13
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 26
-		y = 10
+		x = 28
+		y = 12
 
 		cancelable = yes
 
@@ -783,13 +947,13 @@ focus_tree =
 		}
 	}
 
-	focus = {#
+	focus = {#传统秩序的瓦解
 		id = COG_14
 		icon = GFX_goal_unknown
 		cost = 2
 
-		x = 28
-		y = 10
+		x = 26
+		y = 13
 
 		cancelable = yes
 
@@ -804,7 +968,7 @@ focus_tree =
 		cost = 2
 
 		x = 36
-		y = 10
+		y = 12
 
 		cancelable = yes
 
@@ -819,7 +983,7 @@ focus_tree =
 		cost = 2
 
 		x = 34
-		y = 11
+		y = 13
 
 		cancelable = yes
 
@@ -846,7 +1010,7 @@ focus_tree =
 		cost = 2
 
 		x = 32
-		y = 10
+		y = 12
 
 		cancelable = yes
 
@@ -861,7 +1025,7 @@ focus_tree =
 		cost = 2
 
 		x = 34
-		y = 9
+		y = 11
 
 		cancelable = yes
 
@@ -876,7 +1040,7 @@ focus_tree =
 		cost = 2
 
 		x = 34
-		y = 13
+		y = 15
 
 		prerequisite = {
 			focus = COG_1
@@ -1229,7 +1393,7 @@ focus_tree =
 		y = 1.5
 
 		available = {
-			has_country_flag = has_completed_the_first_road
+			has_country_flag = COG_has_completed_the_first_road
 		}
 
 		prerequisite = {
@@ -1237,28 +1401,6 @@ focus_tree =
 			focus = COG_Fundraising
 			focus = COG_Negotiating_with_lords
 			focus = COG_Compromising_with_Moelotls
-		}
-
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#联系王国内部的铁路
-		id = over_the_hill_over_the_river
-		icon = GFX_focus_SOV_south_manchuria_railway
-		cost = 2
-		relative_position_id = COG_Fundraising
-		x = 0
-		y = 4.5
-
-		available = {
-			has_country_flag = has_completed_the_first_road
-		}
-
-		prerequisite = {
-			focus = COG_Our_connecting_railway
 		}
 
 
@@ -1289,11 +1431,45 @@ focus_tree =
 		icon = GFX_focus_generic_industral_devlopment_bucket
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
-		x = 2
+		x = 3
 		y = 2
 
 		prerequisite = {
 			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#火车拉来的城市
+		id = COG_Rail
+		icon = GFX_focus_generic_industral_devlopment_bucket
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = 1
+		y = 3
+
+		prerequisite = {
+			focus = COG_Railside_development
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#沸沸扬扬的城市热
+		id = COG_Rail1
+		icon = GFX_focus_generic_industral_devlopment_bucket
+		cost = 2
+		relative_position_id = COG_Our_connecting_railway
+		x = 5
+		y = 3
+
+		prerequisite = {
+			focus = COG_Railside_development
 		}
 
 		completion_reward = {
@@ -1306,7 +1482,7 @@ focus_tree =
 		icon = GFX_focus_JAP_manchuria_airplane_manufacturing_company
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
-		x = 3
+		x = 5
 		y = 1
 
 		prerequisite = {
@@ -1335,16 +1511,50 @@ focus_tree =
 		}
 	}
 
-	focus = {#工业西迁
-		id = COG_Westward_industry
+	focus = {#工业结构的调整
+		id = COG_Westwar
 		icon = GFX_focus_generic_military_industry
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
-		x = -2
+		x = -3
 		y = 2
 
 		prerequisite = {
 			focus = COG_Our_connecting_railway
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#扩大销路
+		id = COG_Westwardustry
+		icon = GFX_focus_generic_military_industry
+		cost = 2
+		relative_position_id = COG_Westwar
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Westwar
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#工业西迁
+		id = COG_Westward_industry
+		icon = GFX_focus_generic_military_industry
+		cost = 2
+		relative_position_id = COG_Westwar
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = COG_Westwar
 		}
 
 		completion_reward = {
@@ -1357,12 +1567,490 @@ focus_tree =
 		icon = GFX_focus_BEL_dam_the_consequences
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
-		x = -3
+		x = -5
 		y = 1
 
 		prerequisite = {
 			focus = COG_Our_connecting_railway
 		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#越过俊山与川流
+		id = COG_over_the_hill_over_the_river
+		icon = GFX_focus_SOV_south_manchuria_railway
+		cost = 2
+		
+		x = 15
+		y = 14
+
+		available = {
+			has_country_flag = COG_has_completed_the_second_road
+		}
+
+		prerequisite = {
+			focus = COG_Our_connecting_railway
+		}
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#重新丈量土地
+		id = COG_121
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 10
+		y = 18
+
+		prerequisite = {
+			focus = COG_12411111
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗大迁徙
+		id = COG_122
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 18
+
+		prerequisite = {
+			focus = COG_12411111
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗工业转移
+		id = COG_1221
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 14
+		y = 18
+
+		prerequisite = {
+			focus = COG_12411111
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#聘请绮罗专家
+		id = COG_123
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 19
+
+		prerequisite = {
+			focus = COG_122
+		}
+		prerequisite = {
+			focus = COG_121
+		}
+		prerequisite = {
+			focus = COG_1221
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗商店开设
+		id = COG_124
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 14
+		y = 19
+
+		prerequisite = {
+			focus = COG_122
+		}
+		prerequisite = {
+			focus = COG_121
+		}
+		prerequisite = {
+			focus = COG_1221
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#进一步合作关系
+		id = COG_125
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 10
+		y = 19
+
+		prerequisite = {
+			focus = COG_122
+		}
+		prerequisite = {
+			focus = COG_121
+		}
+		prerequisite = {
+			focus = COG_1221
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗的工业计划
+		id = COG_1241
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 15
+
+		prerequisite = {
+			focus = COG_over_the_hill_over_the_river
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#绮罗们的去向……
+		id = COG_12411
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 14
+		y = 16
+
+		prerequisite = {
+			focus = COG_1241
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#工业用地的来源……
+		id = COG_124111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 10
+		y = 16
+
+		prerequisite = {
+			focus = COG_1241
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#领主老爷们的态度……
+		id = COG_12411111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 17
+
+		prerequisite = {
+			focus = COG_1241
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#工业建设的步骤……
+		id = COG_1241111
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 16
+
+		prerequisite = {
+			focus = COG_1241
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#隐居乡的未来
+		id = COG_155
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 18
+		y = 15
+
+		prerequisite = {
+			focus = COG_over_the_hill_over_the_river
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#产业转型
+		id = COG_1551
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 16
+		y = 16
+
+		prerequisite = {
+			focus = COG_155
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#沉默的隐居乡
+		id = COG_1552
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 18
+		y = 19
+
+		prerequisite = {
+			focus = COG_1551
+		}
+		prerequisite = {
+			focus = COG_1553
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#远走高飞
+		id = COG_1553
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 20
+		y = 16
+
+		prerequisite = {
+			focus = COG_155
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#向南进发
+		id = COG_over_t
+		icon = GFX_focus_SOV_south_manchuria_railway
+		cost = 2
+
+		x = 15
+		y = 20
+
+		available = {
+			has_country_flag = COG_has_completed_the_third_road
+		}
+
+		prerequisite = {
+			focus = COG_over_the_hill_over_the_river
+		}
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#开发龙憩之地
+		id = COG_129
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 7
+		y = 21
+
+		prerequisite = {
+			focus = COG_over_t
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#对龙娘们开展教育
+		id = COG_1291
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 5
+		y = 22
+
+		prerequisite = {
+			focus = COG_129
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#建造漂亮的“窝”
+		id = COG_1292
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 7
+		y = 22
+
+		prerequisite = {
+			focus = COG_129
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#很基础的生产建设
+		id = COG_1293
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 9
+		y = 22
+
+		prerequisite = {
+			focus = COG_129
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#连接西南角
+		id = COG_1298
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 21
+
+		prerequisite = {
+			focus = COG_over_t
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#闲置区的工业起步
+		id = COG_12981
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 11
+		y = 22
+
+		prerequisite = {
+			focus = COG_1298
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#更多的人口流入
+		id = COG_129811
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 12
+		y = 23
+
+		prerequisite = {
+			focus = COG_1298
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#西南角的配套基建
+		id = COG_12982
+		icon = GFX_goal_unknown
+		cost = 2
+
+		x = 13
+		y = 22
+
+		prerequisite = {
+			focus = COG_1298
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#雨林里的铁路
+		id = COG_over
+		icon = GFX_focus_SOV_south_manchuria_railway
+		cost = 2
+
+		x = 15
+		y = 25
+
+		available = {
+			has_country_flag = COG_has_completed_the_third_road
+		}
+
+		prerequisite = {
+			focus = COG_over_t
+		}
+
 
 		completion_reward = {
 			
@@ -2135,6 +2823,57 @@ focus_tree =
 			focus = COG_National_cultivation_library
 			focus = COG_New_cultivation_ways
 			focus = COG_Bold_new_path
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#修仙亦是科学
+		id = COG_N1
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = -2
+		y = 4
+
+		prerequisite = {
+			focus = COG_New_era_cultivators
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#唯我所用
+		id = COG_N2
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = 0
+		y = 5
+
+		prerequisite = {
+			focus = COG_New_era_cultivators
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {#五感归一
+		id = COG_N3
+		icon = GFX_focus_RAJ_uranium_tipped_bullets
+		cost = 2
+		relative_position_id = COG_Cultivation_upheaval
+		x = 2
+		y = 4
+
+		prerequisite = {
+			focus = COG_New_era_cultivators
 		}
 
 		completion_reward = {
