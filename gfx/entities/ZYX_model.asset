@@ -10,7 +10,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node = "BEL_infantry_weapon_rifle_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 = "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -23,7 +23,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node 	= "BEL_infantry_weapon_mg_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 	= "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -36,7 +36,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node 	= "BEL_infantry_weapon_mg_2_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 	= "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 ##############################################
@@ -53,7 +53,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node = "BEL_infantry_weapon_rifle_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 = "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -66,7 +66,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node 	= "BEL_infantry_weapon_mg_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 	= "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -79,7 +79,7 @@ entity = {
 	attach = { 	name = "rifle3"	mid_back_node 	= "BEL_infantry_weapon_mg_2_long_idle_entity" }
 	attach = { 	name = "rifle4"	Root_node_2 	= "BEL_infantry_weapon_rifle_right_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 ####################################
@@ -116,7 +116,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" animation = "still" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -133,7 +133,7 @@ entity = {
 
 	attach = { 	name = "rider"	bike_center = "BEL_bicycle_rider_rifle_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -198,7 +198,7 @@ entity = {
 
 	attach = { 	name = "rider"	bike_center = "BEL_bicycle_rider_mg_entity" }
 
-	scale = 0.8
+	scale = 1.5
 }
 
 entity = {
@@ -264,7 +264,7 @@ entity = {
 		event = { time = 0 node="exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes }
 	}
 	
-	scale = 0.85
+	scale = 1.55
 
 	game_data = {
 		texture_anim_speed = 0.5
@@ -357,7 +357,7 @@ entity = {
 		event = { time = 0 node="right_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes }
 	}
 	
-	scale = 0.8
+	scale = 1.5
 
 	game_data = {
 		texture_anim_speed = 0.5

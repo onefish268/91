@@ -1,0 +1,138 @@
+
+ZYX_focus_plan = {
+	name = "earlier stage focus"
+
+	allowed = {
+		original_tag = ZYX
+	}
+
+	enable = {
+		is_ZYX_always_path_plan = yes
+	}
+
+	abort = {
+		any_enemy_country = {
+			is_major = yes
+		}
+	}
+
+	ai_national_focuses = {
+		2_focus_1
+		2_focus_6
+		2_focus_20
+		2_focus_19
+		2_focus_21
+		2_focus_22
+		2_focus_23
+		2_focus_2
+		2_focus_4
+        2_focus_8
+		2_focus_7
+		2_focus_10
+		2_focus_13
+		2_focus_3
+		2_focus_11
+		2_focus_12
+		2_focus_5
+		2_focus_15
+		2_focus_16
+		2_focus_18
+		2_focus_17
+		2_focus_24
+		2_focus_25
+		2_focus_27
+		2_focus_29
+		2_focus_30
+		2_focus_26
+		2_focus_32
+		2_focus_33
+		2_focus_34
+		2_focus_35
+		2_focus_36
+		2_focus_37
+		2_focus_38
+		2_focus_39
+		2_focus_40
+		2_focus_41
+		2_focus_45
+		2_focus_42
+		2_focus_43
+		2_focus_44
+		2_focus_46
+
+        #统一后
+		3_focus_1
+		3_focus_2
+		3_focus_3
+		three_focus_7
+		three_focus_4
+		three_focus_5
+		three_focus_6
+		three_focus_8
+		3_focus_29
+		3_focus_30
+		3_focus_32
+		3_focus_34
+		3_focus_31
+		3_focus_33
+		3_focus_35
+		3_focus_36
+		3_focus_28
+		3_focus_9
+		3_focus_10
+		3_focus_11
+		3_focus_12
+		3_focus_14
+		3_focus_13
+		3_focus_15
+		3_focus_16
+		3_focus_37
+		3_focus_38
+		3_focus_39
+		3_focus_40
+		3_focus_41
+		3_focus_42
+		3_focus_43
+		3_focus_44
+		3_focus_46
+		3_focus_47
+		3_focus_49
+		3_focus_51
+		3_focus_50
+		3_focus_52
+		3_focus_48
+		3_focus_60
+		3_focus_61
+		3_focus_62
+		3_focus_64
+		3_focus_67
+		3_focus_54
+		3_focus_55
+		3_focus_56
+		3_focus_57
+		3_focus_58
+		3_focus_59
+		3_focus_45
+		3_focus_65
+		3_focus_63
+		3_focus_145
+		3_focus_66
+		3_focus_70
+		3_focus_72
+		3_focus_68
+		3_focus_71
+		3_focus_69
+		3_focus_73
+		3_focus_74
+		3_focus_75
+		3_focus_76
+		3_focus_77
+		3_focus_79
+		3_focus_100
+	}
+
+	weight = {
+		factor = 50.0
+	}
+
+}
