@@ -90,9 +90,6 @@ characters = {
 			idea_token = ZYX_guwen1
 			slot = army_chief
 			cost = 150
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
@@ -110,9 +107,6 @@ characters = {
 			idea_token = ZYX_guwen7
 			slot = army_chief
 			cost = 150
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
@@ -130,9 +124,6 @@ characters = {
 			idea_token = ZYX_guwen8
 			slot = army_chief
 			cost = 150
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
@@ -190,9 +181,6 @@ characters = {
 			idea_token = ZYX_guwen4
 			slot = high_command
 			cost = 200
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
@@ -210,9 +198,6 @@ characters = {
 			idea_token = ZYX_guwen9
 			slot = high_command
 			cost = 150
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
@@ -230,9 +215,6 @@ characters = {
 			idea_token = ZYX_guwen10
 			slot = high_command
 			cost = 150
-			available = {
-				has_completed_focus = 3_focus_1
-			}
 		}
 	}
 
