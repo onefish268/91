@@ -1,13 +1,13 @@
 
-SOV_focus_plan = {
+ZSB_focus_plan = {
 	name = "earlier stage focus"
 
 	allowed = {
-		original_tag = SOV
+		original_tag = ZSB
 	}
 
 	enable = {
-		is_SOV_always_path_plan = yes
+		is_ZSB_always_path_plan = yes
 	}
 
 	abort = {
@@ -17,168 +17,105 @@ SOV_focus_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_Establish_Council_for_Mutual_Economic_Assistance
-		SOV_International_Economic_Division_of_Labor
-		SOV_Expand_Council_for_Mutual_Economic_Assistance
-		SOV_Afanasyeva_Academy_of_Sciences
-		SOV_Svarog_plan
-		SOV_support_Sakura_path
-		SOV_public_health_commission
-		SOV_universit_of_life_sciences
-		SOV_look_for_investment
-		SOV_magic_mine_research
-		SOV_strengthen_intervention
-		SOV_medical_socialization
-		SOV_magic_life_sciences
-		SOV_popularize_magical_knowledge
-		SOV_secularization_of_potions
-		SOV_defense_mobilization_commission
-		SOV_political_committee_member
-		SOV_ultimatum_to_Kiev
-		SOV_Revolutionary_Organization_Building
-		SOV_Establish_international_brigades
-		SOV_Forge_revolutionary_army
-		SOV_western_front_strategy
-		SOV_Baltic_Revolution
-		SOV_Secure_Zestadt_Kingdom
-		SOV_restore_Kiev
-		SOV_defeat_of_Kiev
-		SOV_great_game_of_Minsk
-		SOV_Host_Comintern_Congresses
-		SOV_restore_german_alliance #苏德条约
-		SOV_earth_security_policy
-		SOV_concentrate_on_heavy_industry
-		SOV_the_eighteenth_central_Conference
-		SOV_magic_and_agriculture
-		SOV_reorganize_committee_of_agriculture
-		SOV_eliminate_redundant_departments
-		SOV_purchase_department
-		SOV_tractor_station_plan
-		SOV_invite_elf_experts
-		SOV_establish_propaganda_front
-		SOV_red_academy_of_magic
-		SOV_rural_construction
-		SOV_frozen_sprout
-		SOV_enterprise_planning
-		SOV_modern_management
-		SOV_night_school_for_workers
-		SOV_investment_research_institute
-		SOV_planned_economy_committee
-		SOV_central_development_plan
-		SOV_steel_complex
-		SOV_construction_of_machinery_factory
-		SOV_build_tank_city #坦克城
-		SOV_renovate_old_army
-		SOV_democracy_in_military
-		SOV_reorganization_of_military
-		SOV_adaptable_army
-		SOV_begin_third_five_year_plan
-		SOV_defense_industry_commission
-		SOV_military_engineer_technology
-		SOV_veritas_military_university
-		SOV_Soviet_artillery
-		SOV_armor_production_line #装甲生产线
-		SOV_national_economic_plan
-		SOV_migration_of_industries
-		SOV_far_east_security_policy
-		SOV_two_red_flags
-		
-		
-		SOV_claim_Minsk
-		SOV_middle_eas_policy
-		SOV_claim_Bessarabia
-		SOV_deal_with_Turkey
-		SOV_protect_Afghanistan
-		SOV_balance_armament_production
-		SOV_new_rifle
-		SOV_value_corps_of_engineers
-		SOV_lightweight_communication
-		SOV_youjun_girl
-		SOV_control_Iran_first
-		SOV_synthetic_rubber
-		SOV_production_of_oil
-		SOV_central_city_construction
-		SOV_develop_eastern_region
-		SOV_great_patriotic_war
-		SOV_guerrilla_forces
-		SOV_industrial_mobilization
-		SOV_fourth_five_year_project
-		SOV_continue_with_electrification
-		SOV_compulsory_education
-		SOV_transpolar_flights
-		SOV_expand_the_aircraft_industry
-		SOV_Imported_aircraft_design
-		SOV_Expanded_aircraft_plant
-		SOV_vivio_aviation_group
+		4_focus_1
+		4_focus_3
+		4_focus_4
+		4_focus_16
+		4_focus_17
+		4_focus_18
+		4_focus_19
+		4_focus_20
+		4_focus_2
+		4_focus_6
+		4_focus_11
+		4_focus_12
+		4_focus_13
+		4_focus_14
+		4_focus_5
+		4_focus_7
+		4_focus_8
+		4_focus_9
+		4_focus_10
+		4_focus_15
+		4_focus_21
+		5_focus_2
+		5_focus_12
+		5_focus_15
+		5_focus_14
+		5_focus_13
+		5_focus_16
+		5_focus_17
+		5_focus_1
+		5_focus_6
+		5_focus_8
+		5_focus_10
+		5_focus_11
+		5_focus_4
+		5_focus_21
+		5_focus_23
+		5_focus_25
+		5_focus_22
+		5_focus_24
+		5_focus_26
+		5_focus_3
+		5_focus_18
+		5_focus_19
+		5_focus_20
+		5_focus_27
+		5_focus_28
+		5_focus_32
+		5_focus_34
+		5_focus_33
+		5_focus_35
+		5_focus_39
+		5_focus_29
+		5_focus_36
+		5_focus_40
+		5_focus_31
+		5_focus_38
+		5_focus_42
+		5_focus_30
+		5_focus_37
+		5_focus_41
+		5_focus_43
+		6_focus_4
+		6_focus_26
+		6_focus_1
+		6_focus_9
+		6_focus_61
+		6_focus_63
+		6_focus_65
+		6_focus_64
+		6_focus_66
+		6_focus_60
+		6_focus_69
+		6_focus_11
+		6_focus_28
+		6_focus_30
+		6_focus_13
+		ZSB_focus_shisi
+		ZSB_focus_shijiu
+		zsb_focus_ershiyi
+		zsb_focus_ershisan
+		ZSB_focus_shiwu
+		ZSB_focus_ershi
+		zsb_focus_ershier
+		zsb_focus_ershisi
+		6_focus_29
+		zsb_focus_sanshiyi
+		zsb_focus_sanshier
+		6_focus_33
+		zsb_focus_sanshiwu
+		6_focus_39
+		6_focus_34
+		6_focus_36
+		6_focus_44
+		6_focus_38
+		6_focus_89
+		6_focus_5
 	}
 
 	weight = {
 		factor = 50.0
 	}
-
 }
-
-SOV_focus_plan = {
-	name = "earlier stage focus"
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		any_enemy_country = {
-			is_major = yes
-		}
-	}
-
-	abort = {
-		has_completed_focus = SOV_fight_in_great_depth
-	}
-
-	ai_national_focuses = {
-		SOV_great_patriotic_war
-		SOV_guerrilla_forces
-		SOV_superintendant_of_war
-		SOV_extraordinary_measures
-		SOV_industrial_mobilization
-		SOV_emergency_arms_production
-		SOV_way_of_life
-		SOV_centralized_command
-		SOV_Keep_assault
-		SOV_artillery_bombardment
-		SOV_fight_in_great_depth
-	}
-
-	weight = {
-		factor = 50.0
-	}
-
-}
-
-
-#法案
-	SOV_law_plan = {
-		name = "sovit law"
-
-		allowed = {
-			original_tag = SOV
-		}
-		enable = {
-			date < 1939.1.1
-			NOT = {
-				has_idea = limited_conscription
-			}
-		}
-
-		abort = {
-			date > 1939.1.1
-		}
-
-		ideas = {
-			limited_conscription = 100
-		}
-
-		weight = {
-			factor = 10.0
-		}
-	}

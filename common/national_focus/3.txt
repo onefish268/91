@@ -944,13 +944,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		available = {
-			ZHJ = { exists = no }
-			ZSB = { exists = no }
-			ZDM = { exists = no }
-			ZIM = { exists = no }
-		}
-
-		available = {
 			ZXS = {
 				exists = no
 			}
@@ -977,11 +970,6 @@ focus_tree = {
 		}
 		available = {
 			ZSB = {
-				exists = no
-			}
-		}
-		available = {
-			ZIM = {
 				exists = no
 			}
 		}
