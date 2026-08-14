@@ -9,7 +9,9 @@ country_event = {#深夜的市长府邸
 
     option = {
         name = ZSB.1.a
-        scoped_play_song = "ZSB_effect_1"
+        hidden_effect = {
+            scoped_play_song = "ZSB_effect_1"
+        }
         ai_chance = { base = 50 }
     }
 }

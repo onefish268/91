@@ -5,7 +5,30 @@ music = {
     chance = {
         modifier = {
             factor = 0
-            has_war = no
+        }
+    }
+}
+music = {
+    song = "ZSB_effect_2"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "ZIM_effect_1"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "ZYX_effect_1"
+    chance = {
+        modifier = {
+            factor = 0
         }
     }
 }
