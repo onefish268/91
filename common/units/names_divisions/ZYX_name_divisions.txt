@@ -177,7 +177,7 @@ ZYX_RAT_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "infantry" }
+	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FRA_INF_01 }
@@ -203,7 +203,7 @@ ZYX_MOE_00 =
 
 	can_use = { always = yes }
 
-	division_types = { "infantry" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FRA_INF_01 }
@@ -230,7 +230,7 @@ ZYX_KII_00 =
 
 	can_use = { always = yes }
 
-	division_types = { "infantry" }
+	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FRA_INF_01 }

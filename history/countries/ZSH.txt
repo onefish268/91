@@ -7,10 +7,18 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
+	basic_train = 1
+	the_red_army_tech = 1
 }
 set_convoys = 100
 
 add_ideas = {
+	ZSH_people_support_1
+	ZSH_industrial_system_behind
+	a_troop_with_conviction
+	planned_economy
+	political_propaganda
+	State_run_trade
 }
 
 set_politics = {

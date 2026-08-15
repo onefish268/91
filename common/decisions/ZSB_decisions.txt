@@ -219,8 +219,10 @@ ZSB_xuanju_category = {
 		#我没有找到引用这个代码的例子，可能没有用→  show_timeout = yes
 		selectable_mission = no
 		activation = {
-            ZSB = { exists = yes }
-        }
+			ZSB = { exists = yes }
+			has_completed_focus = 6_focus_1
+		}
+		fire_only_once = yes
         timeout_effect = {
             add_political_power = 20
 			set_country_flag = ZSB_the_vote_has_over
@@ -620,6 +622,9 @@ ZSB_xuanju_category = {
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
+		ai_will_do = {
+			factor = 1
+		}
 
 		cost = 25
 
@@ -657,6 +662,9 @@ ZSB_xuanju_category = {
 		
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
+		}
+		ai_will_do = {
+			factor = 1
 		}
 
 		cost = 25
@@ -696,6 +704,9 @@ ZSB_xuanju_category = {
 		available = {
 			NOT = { has_country_flag = ZSB_the_vote_has_over }
 		}
+		ai_will_do = {
+			factor = 1
+		}
 		
 		cost = 25
 
@@ -733,6 +744,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = steel
@@ -745,6 +759,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = tungsten
@@ -757,6 +774,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = chromium
@@ -769,6 +789,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = aluminum
@@ -781,6 +804,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = coal
@@ -793,6 +819,9 @@ ZSB_wajue_category = {
         icon = GFX_decision_default
         cost = 50
 		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             add_resource = {
                 type = rubber
@@ -808,6 +837,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = ZSB_focus_shisi
@@ -821,6 +853,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = ZSB_focus_shijiu
@@ -834,6 +869,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_ershiyi
@@ -847,6 +885,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_ershisan
@@ -860,6 +901,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_sanshier
@@ -873,6 +917,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_sanshiwu
@@ -886,6 +933,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_qishiliu
@@ -899,6 +949,9 @@ ZSB_zuigaofayuan_category = {
         icon = GFX_decision_default
         cost = 50
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_jiushiwu
@@ -915,6 +968,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = ZSB_focus_shiwu
@@ -931,6 +987,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = ZSB_focus_ershi
@@ -947,6 +1006,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_ershier
@@ -963,6 +1025,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_ershisi
@@ -979,6 +1044,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_qishiyi
@@ -995,6 +1063,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_jiushisan
@@ -1011,6 +1082,9 @@ ZSB_zuigaofayuan_category = {
 		visible = {
             has_completed_focus = 6_focus_30
         }
+		ai_will_do = {
+			factor = 1
+		}
         complete_effect = {
             reduce_focus_completion_cost = {
                 focus = zsb_focus_qishiqi
@@ -1034,6 +1108,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 0
+		}
         remove_effect = {
             declare_war_on = {
                 target = COG
@@ -1119,6 +1196,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_1 = 0.05
@@ -1145,6 +1225,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             custom_effect_tooltip = "我们将在当地进行实地考察，以期发现对我国有用的东西"
         }
@@ -1161,6 +1244,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_1_3
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_resource = {
                 type = rubber
@@ -1185,6 +1271,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_2 = 0.03
@@ -1215,6 +1304,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_1_3
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_1 = 0.05
@@ -1241,6 +1333,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_1 = 0.05
@@ -1265,6 +1360,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             army_experience = 30
             navy_experience = 30
@@ -1288,6 +1386,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_1_3
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_1 = 0.05
@@ -1316,6 +1417,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_1_3
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
             add_to_variable = {
 				ZSB_dabang_4 = 0.15
@@ -1344,6 +1448,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_1_1
         }
+		ai_will_do = {
+			factor = 5
+		}
         remove_effect = {
 			COG = {
 				every_core_state = {
@@ -1357,6 +1464,9 @@ ZSB_dabang_category = {
         cost = 0
 		days_remove = 1500
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
         complete_effect = {
             add_dynamic_modifier = {
 				modifier = ZSB_dabang
@@ -1434,6 +1544,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB1_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 1
+		}
         remove_effect = {
             declare_war_on = {
                 target = EAS
@@ -1454,6 +1567,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB1_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_3_1
         }
+		ai_will_do = {
+			factor = 1
+		}
         remove_effect = {
 			EAS = {
 				every_core_state = {
@@ -1473,6 +1589,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB2_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 1
+		}
         remove_effect = {
             declare_war_on = {
                 target = ZXS
@@ -1492,6 +1611,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB2_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_4_1
         }
+		ai_will_do = {
+			factor = 1
+		}
         remove_effect = {
 			ZXS = {
 				every_core_state = {
@@ -1511,6 +1633,9 @@ ZSB_dabang_category = {
 		visible = {
 			has_variable = ZSB3_situation_of_country_chosen_mode_number
         }
+		ai_will_do = {
+			factor = 3
+		}
         remove_effect = {
             declare_war_on = {
                 target = ETH
@@ -1531,6 +1656,9 @@ ZSB_dabang_category = {
 			has_variable = ZSB3_situation_of_country_chosen_mode_number
 			has_decision = ZSB3_decision_5_1
         }
+		ai_will_do = {
+			factor = 3
+		}
         remove_effect = {
 			ETH = {
 				every_core_state = {

@@ -42,3 +42,45 @@ country_event = {#给南非的警告
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#德国收到消息
+    id = ZYX.3
+    title = ZYX.3.t
+    desc = ZYX.3.desc
+
+    trigger = {
+        tag = GER
+        ZYX = {
+	        exists = yes
+        }
+    }
+    target = GER
+    fire_only_once = yes
+
+	option = {
+        name = ZYX.3.a
+        hidden_effect = {
+			country_event = {
+				id = ZYX.4
+			}
+		}
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#回复
+    id = ZYX.4
+    title = ZYX.4.t
+    desc = ZYX.4.desc
+
+    target = ZYX
+    fire_only_once = yes
+    trigger = {
+        tag = ZYX
+    }
+
+	option = {
+        name = ZYX.4.a
+        ai_chance = { base = 50 }
+    }
+}

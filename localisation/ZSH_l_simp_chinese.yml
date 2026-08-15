@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+#名族精神
+ ZSH_people_support_1: "不信任的群众"
+ ZSH_people_support_2: "动摇的群众"
+ ZSH_people_support_3: "信任的群众"
+ ZSH_people_support_4: "完全信任的群众"
+ ZSH_people_support_5: "军民一体"
+ ZSH_industrial_system_behind: "落后的工业体系"
+ ZSH_industrial_system_half_modern: "半现代化的工业体系"
+ ZSH_industrial_system_modern: "现代化的工业体系"
+ ZSH_industrial_system_advanced: "先进的工业体系"
+ a_troop_with_conviction: "有信念的军队"
+#经济法案
+ planned_economy: "不完善的计划经济"
+ semi_developed_planned_economy: "半完善的计划经济"
+ well_developed_planned_economy: "完善的计划经济"
+#贸易法案
+ State_run_trade: "国营贸易"
+#征兵法案
+ political_propaganda: "政治宣传"
+#兵种
+ the_red_army_infantry: "红军"

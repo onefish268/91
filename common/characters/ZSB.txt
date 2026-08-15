@@ -46,6 +46,9 @@ characters = {
 			slot = political_advisor
 			cost = 50
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	ZSB_wwa = {
 		name = "薇薇安"
@@ -192,6 +195,9 @@ characters = {
 			slot = theorist
 			cost = 150
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}	
 
 	#将军
@@ -330,6 +336,9 @@ characters = {
 			slot = army_chief
 			cost = 150
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	ZSB_guwen2 = {
 		name = "威尔逊"
@@ -378,6 +387,9 @@ characters = {
 			slot = high_command
 			cost = 150
 		}
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	ZSB_guwen5 = {
 		name = "格兰特"
@@ -394,6 +406,9 @@ characters = {
 			slot = high_command
 			cost = 150
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	ZSB_guwen6 = {
 		name = "马歇尔"
@@ -409,6 +424,9 @@ characters = {
 			idea_token = ZSB_guwen6
 			slot = high_command
 			cost = 150
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}	
 }

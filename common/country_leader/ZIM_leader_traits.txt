@@ -57,6 +57,13 @@ leader_traits = {
     }
     story_mao_trait = {
         random = no
+        political_power_factor = 0.15                    # 政治点获取+15%
+        consumer_goods_factor = -0.2                     # 消费品消耗-20%
+        pocket_penalty = -0.15                           # 口袋惩罚-15%
+        party_popularity_stability_factor = 0.2          # 党派受欢迎度+20%
+        production_factory_efficiency_gain_factor = 0.15 # 工厂效率增长+15%
+        production_factory_max_efficiency_factor = 0.1   # 工厂最大效率+10%
+
         ai_will_do = {
             factor = 10
         }    
