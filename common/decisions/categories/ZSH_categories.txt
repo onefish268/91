@@ -1,0 +1,15 @@
+ZSH_stabilize_country = { #稳定国内
+	allowed = {
+		original_tag = ZSH
+	}
+	visible = {
+		has_completed_focus = ZSH_stabilize_the_country
+	}
+	priority = 1000
+}
+ZSH_Bandit_troubles_rampant = { #匪患猖獗
+	allowed = {
+		original_tag = ZSH
+	}
+	priority = 999
+}
