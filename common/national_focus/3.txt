@@ -327,7 +327,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = ZIM_5
-				days = 150
+				days = 450
 			}
 			add_offsite_building = {
 				type = arms_factory
