@@ -220,6 +220,7 @@ ZSB_xuanju_category = {
 		selectable_mission = no
 		activation = {
 			ZSB = { exists = yes }
+			has_completed_focus = 6_focus_1
 		}
         timeout_effect = {
             add_political_power = 20
