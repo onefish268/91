@@ -47,24 +47,39 @@ country_event = {#德国收到消息
     id = ZYX.3
     title = ZYX.3.t
     desc = ZYX.3.desc
+    #target = GER
 
-    trigger = {
-        tag = GER
-        ZYX = {
-	        exists = yes
-        }
-    }
-    target = GER
+    #trigger = {
+    #    tag = GER
+    #    ZYX = { exists = yes }
+    #}
+    
+
+    #immediate = {
+    #    hidden_effect = {
+    #        ZYX = {
+    #            country_event = {
+    #                id = ZYX.4
+    #                days = 7
+    #            }
+    #        }
+    #    }
+    #}
+
+    is_triggered_only = yes
+
     fire_only_once = yes
 
 	option = {
         name = ZYX.3.a
-        hidden_effect = {
-			country_event = {
-				id = ZYX.4
-			}
-		}
         ai_chance = { base = 50 }
+
+        ZYX = {
+                country_event = {
+                    id = ZYX.4
+                    days = 7
+                }
+            }
     }
 }
 
@@ -73,14 +88,31 @@ country_event = {#回复
     title = ZYX.4.t
     desc = ZYX.4.desc
 
-    target = ZYX
-    fire_only_once = yes
-    trigger = {
-        tag = ZYX
-    }
+    is_triggered_only = yes
 
 	option = {
         name = ZYX.4.a
         ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#接收器
+    id = ZYX.5
+    hidden = yes    
+
+    trigger = {
+        ZYX = {
+	        exists = yes
+        }
+    }
+    fire_only_once = yes
+
+	immediate = {
+        GER = {
+            country_event = {
+                id = ZYX.3
+                days = 7
+            }
+        }
     }
 }

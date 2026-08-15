@@ -18,45 +18,32 @@ ZYX_focus_plan = {
 
 	ai_national_focuses = {
 		2_focus_1
-		2_focus_6
-		2_focus_20
-		2_focus_19
-		2_focus_21
-		2_focus_22
-		2_focus_23
 		2_focus_2
-		2_focus_4
-        2_focus_8
-		2_focus_7
+		2_focus_8
+		2_focus_3
 		2_focus_10
 		2_focus_13
-		2_focus_3
-		2_focus_11
-		2_focus_12
 		2_focus_5
-		2_focus_15
-		2_focus_16
+		2_focus_20
 		2_focus_18
-		2_focus_17
+        2_focus_6
+		2_focus_21
+		2_focus_22
 		2_focus_24
-		2_focus_25
 		2_focus_27
-		2_focus_29
-		2_focus_30
-		2_focus_26
 		2_focus_32
+		2_focus_28
+		2_focus_31
 		2_focus_33
-		2_focus_34
 		2_focus_35
-		2_focus_36
 		2_focus_37
 		2_focus_38
 		2_focus_39
 		2_focus_40
 		2_focus_41
 		2_focus_45
-		2_focus_42
 		2_focus_43
+		2_focus_42
 		2_focus_44
 		2_focus_46
 

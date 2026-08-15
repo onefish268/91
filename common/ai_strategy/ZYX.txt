@@ -667,10 +667,10 @@
 			original_tag = ZYX
 		}
 		enable = {
-			num_divisions < 6
+			num_divisions < 5
 		}
 		abort = {
-			num_divisions > 6
+			num_divisions > 5
 		}
 		ai_strategy = {
 			type = declare_war
@@ -684,10 +684,10 @@
 			original_tag = ZYX
 		}
 		enable = {
-			num_divisions < 6
+			num_divisions < 5
 		}
 		abort = {
-			num_divisions > 6
+			num_divisions > 5
 		}
 		ai_strategy = {
 			type = declare_war
@@ -995,10 +995,9 @@
 
 	ZYX_send_volunteers = { # Reverse strategy
 
-		reversed = yes
 
 		allowed = {
-			original_tag = ZYX
+			original_tag = GER
 		}
 
 		enable = {			
