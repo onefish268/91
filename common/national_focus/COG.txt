@@ -194,8 +194,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#我们同宗主国的关系
-		id = COG_01
+	focus = {#幻想乡情结
+		id = COG_Gensokyo_ties
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -207,8 +207,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#继续派遣留学生
-		id = COG_011
+	focus = {#重启幻想乡留学生项目
+		id = COG_Student_exchange_support
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -216,8 +216,8 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0113
-			focus = COG_0112
+			focus = COG_Status_quo_content
+			focus = COG_Open_to_Gensokyo
 		}
 
 		completion_reward = {
@@ -225,8 +225,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#宗主国的专业技术指导
-		id = COG_0116
+	focus = {#宗主国技术指导
+		id = COG_Gensokyo_tech_guidance
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -234,8 +234,8 @@ focus_tree =
 		y = 5
 
 		prerequisite = {
-			focus = COG_0111
-			focus = COG_011
+			focus = COG_Equipment_import
+			focus = COG_Student_exchange_support
 		}
 
 		completion_reward = {
@@ -243,8 +243,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#培育更多的技术员
-		id = COG_0117
+	focus = {#培育更多技术员
+		id = COG_Tech_training
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -252,8 +252,8 @@ focus_tree =
 		y = 5
 
 		prerequisite = {
-			focus = COG_0111
-			focus = COG_011
+			focus = COG_Equipment_import
+			focus = COG_Student_exchange_support
 		}
 
 		completion_reward = {
@@ -261,8 +261,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#满足宗主国的资源需要
-		id = COG_011111
+	focus = {#满足宗主国资源需要
+		id = COG_Gensokyo_resource_needs
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -270,8 +270,8 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0113
-			focus = COG_0112
+			focus = COG_Status_quo_content
+			focus = COG_Open_to_Gensokyo
 		}
 
 		completion_reward = {
@@ -279,8 +279,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#拒绝更多的幻想乡官员进驻
-		id = COG_0110
+	focus = {#婉拒幻想乡影响
+		id = COG_Declining_Gensokyo_interference
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -288,7 +288,7 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0113
+			focus = COG_Status_quo_content
 		}
 
 		completion_reward = {
@@ -297,7 +297,7 @@ focus_tree =
 	}
 
 	focus = {#宗主国工业设备购置
-		id = COG_0111
+		id = COG_Equipment_import
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -305,8 +305,8 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0113
-			focus = COG_0112
+			focus = COG_Status_quo_content
+			focus = COG_Open_to_Gensokyo
 		}
 
 		completion_reward = {
@@ -314,8 +314,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#宗主国的科研支持
-		id = COG_0114
+	focus = {#宗主国科研合作
+		id = COG_Tech_cooperation
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -323,8 +323,8 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0113
-			focus = COG_0112
+			focus = COG_Status_quo_content
+			focus = COG_Open_to_Gensokyo
 		}
 
 		completion_reward = {
@@ -332,8 +332,8 @@ focus_tree =
 		}
 	}
 	
-	focus = {#同幻想乡公司签订更多合作事宜
-		id = COG_01111
+	focus = {#更多的合作
+		id = COG_More_contracts
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -341,7 +341,7 @@ focus_tree =
 		y = 4
 
 		prerequisite = {
-			focus = COG_0112
+			focus = COG_Open_to_Gensokyo
 		}
 
 		completion_reward = {
@@ -349,8 +349,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#放开幻想乡对魔界溪谷的投资
-		id = COG_0112
+	focus = {#向幻想乡开放
+		id = COG_Open_to_Gensokyo
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -358,11 +358,11 @@ focus_tree =
 		y = 3
 
 		mutually_exclusive = {
-			focus = COG_0113
+			focus = COG_Status_quo_content
 		}
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_Gensokyo_ties
 		}
 
 		completion_reward = {
@@ -370,8 +370,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#维持现状
-		id = COG_0113
+	focus = {#安于现状
+		id = COG_Status_quo_content
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -379,11 +379,11 @@ focus_tree =
 		y = 3
 
 		mutually_exclusive = {
-			focus = COG_0112
+			focus = COG_Open_to_Gensokyo
 		}
 
 		prerequisite = {
-			focus = COG_01
+			focus = COG_Gensokyo_ties
 		}
 
 		completion_reward = {
@@ -391,8 +391,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#先进的勘探技术
-		id = COG_01125
+	focus = {#先进勘探技术
+		id = COG_Advanced_prospecting
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -400,8 +400,8 @@ focus_tree =
 		y = 5
 
 		prerequisite = {
-			focus = COG_011111
-			focus = COG_011
+			focus = COG_Gensokyo_resource_needs
+			focus = COG_Student_exchange_support
 		}
 
 		completion_reward = {
@@ -410,7 +410,9 @@ focus_tree =
 	}
 
 	focus = {#幻想乡-魔界溪谷魔法研究
-		id = COG_01122
+		id = COG_Gensokyo_VON_magic_studies
+
+
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -418,8 +420,8 @@ focus_tree =
 		y = 5
 
 		prerequisite = {
-			focus = COG_011111
-			focus = COG_0114
+			focus = COG_Gensokyo_resource_needs
+			focus = COG_Tech_cooperation
 		}
 
 		completion_reward = {
@@ -427,8 +429,8 @@ focus_tree =
 		}
 	}
 
-	focus = {#引入魔界溪谷的奇幻生物
-		id = COG_01123
+	focus = {#奇幻生物的引进
+		id = COG_VON_creatures_import
 		icon = GFX_goal_unknown
 		cost = 2
 
@@ -436,8 +438,8 @@ focus_tree =
 		y = 5
 
 		prerequisite = {
-			focus = COG_011111
-			focus = COG_0114
+			focus = COG_Gensokyo_resource_needs
+			focus = COG_Tech_cooperation
 		}
 
 		completion_reward = {

@@ -1114,3 +1114,6 @@
   Absent_rule: "[COG_situation_of_country_chosen_mode]"
   Absent_rule_desc: "[COG_situation_of_country_various_region_tips]"
   COG_change_number_content: "百位上的计数是[?debug_test_number_hundreds]，十位上的计数是[?debug_test_number_tens]，个位上的计数是[?debug_test_number_ones]"
+
+
+  #啊，我死了
