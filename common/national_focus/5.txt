@@ -333,6 +333,7 @@ focus_tree = {
 			focus = 4_focus_4
 		}
 		completion_reward = {
+			army_experience = 50
 			add_manpower = 15000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -370,6 +371,7 @@ focus_tree = {
 			focus = 4_focus_19
 		}
 		completion_reward = {
+			army_experience = 50
 			add_ideas = ZSB_3
 		}
 	}
