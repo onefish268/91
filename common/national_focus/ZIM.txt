@@ -11,7 +11,7 @@ focus_tree = {
 				#tag = ZSB				#圣杯联邦(中部)
 				#tag = ZYX #一心会(卢旺达)
 				tag = ZHJ				#皇家矿业公司(加丹加)
-				tag = ZCS				#城市自治委员会(乌伦迪)
+				#tag = ZCS				#城市自治委员会(乌伦迪)
 				tag = ZXS				#邪神教会(最北边)
 			}
 		}
