@@ -214,12 +214,13 @@ ZSB_xuanju_category = {
 		days_mission_timeout = 90
 		available = {
 			has_country_flag = ZSB_the_vote_has_over
+			always = no
 		} ###关键
 		#我没有找到引用这个代码的例子，可能没有用→  show_timeout = yes
 		selectable_mission = no
 		activation = {
-            ZSB = { exists = yes }
-        }
+			ZSB = { exists = yes }
+		}
         timeout_effect = {
             add_political_power = 20
 			set_country_flag = ZSB_the_vote_has_over

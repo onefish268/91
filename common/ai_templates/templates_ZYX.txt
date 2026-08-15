@@ -47,7 +47,7 @@ infantry_ZYX = {
 
 	infantry_default_a = {
 		upgrade_prio = {
-			factor = 15
+			factor = 40
 		}
 		custom_icon = 0
 		target_template = {

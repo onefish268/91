@@ -967,16 +967,14 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				ZIM = {
-					every_controlled_state = {
-						add_core_of = ROOT
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ZIM
+						}
 					}
+					add_core_of = ZSB
 				}
-			}
-		}
-		bypass = {
-			ZIM = {
-				exists = no
 			}
 		}
 	}
@@ -988,21 +986,26 @@ focus_tree = {
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = { ZSH = { exists = no } }
-
 		prerequisite = {
 			focus = 5_focus_36
 		}
 		completion_reward = {
 			hidden_effect = {
-				ZSH = {
-					every_controlled_state = {
-						add_core_of = ROOT
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ZSH
+						}
 					}
+					add_core_of = ZSB
 				}
 			}
 			custom_effect_tooltip = "我们将巩固东部的统治"
+		}
+		available = {
+			ZSH = {
+				exists = no
+			}
 		}
 	}
 	focus = {
@@ -1016,18 +1019,23 @@ focus_tree = {
 		prerequisite = {
 			focus = 5_focus_37
 		}
-
-		available = { ZYX = { exists = no } }
-
 		completion_reward = {
 			hidden_effect = {
-				ZYX = {
-					every_controlled_state = {
-						add_core_of = ROOT
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ZYX
+						}
 					}
+					add_core_of = ZSB
 				}
 			}
 			custom_effect_tooltip = "我们将巩固对这片地区的统治"
+		}
+		available = {
+			ZYX = {
+				exists = no
+			}
 		}
 	}
 	focus = {
@@ -1038,23 +1046,23 @@ focus_tree = {
 		icon = GFX_focus_PHI_utang_na_loob
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-
-		available = { ZCS = { exists = no } }
-
 		prerequisite = {
 			focus = 5_focus_38
 		}
 		completion_reward = {
 			hidden_effect = {
-				ZCS = {
-					every_controlled_state = {
-						add_core_of = ROOT
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ZCS
+						}
 					}
+					add_core_of = ZSB
 				}
 			}
 			custom_effect_tooltip = "我们将巩固对这些地区的统治"
 		}
-		bypass = {
+		available = {
 			ZCS = {
 				exists = no
 			}
@@ -1068,36 +1076,6 @@ focus_tree = {
 		icon = GFX_focus_NGL_imperial_glory
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			ZCS = {
-				exists = no
-			}
-		}
-		available = {
-			ZSH = {
-				exists = no
-			}
-		}
-		available = {
-			ZDM = {
-				exists = no
-			}
-		}
-		available = {
-			ZHJ = {
-				exists = no
-			}
-		}
-		available = {
-			ZYX = {
-				exists = no
-			}
-		}
-		available = {
-			ZIM = {
-				exists = no
-			}
-		}
 		prerequisite = {
 			focus = 5_focus_39
 		}
@@ -1113,6 +1091,11 @@ focus_tree = {
 		completion_reward = {
 			load_focus_tree = ZSB3_focus_tree
 			custom_effect_tooltip = fig_shoufu
+		}
+		available = {
+			ZIM = {
+				exists = no
+			}
 		}
 	}
 	focus = {

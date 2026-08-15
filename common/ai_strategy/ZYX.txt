@@ -1271,6 +1271,7 @@
 			original_tag = ZYX
 		}
 		enable = {
+			date > 1939.1.1
 			has_tech = improved_light_tank_chassis
 		}
 		ai_strategy = { #轻型坦克底盘

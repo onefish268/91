@@ -15,7 +15,6 @@ ZSB_xuanju_category = {
     scripted_gui = ZSB_xuanju_ui  # 关键！挂载scripted_gui ID
 
     allowed = {
-        has_completed_focus = 6_focus_1
         tag = ZSB
     }
 
