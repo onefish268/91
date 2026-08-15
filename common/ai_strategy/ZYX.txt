@@ -701,6 +701,23 @@
 			original_tag = ZYX
 		}
 		enable = {
+			num_divisions < 30
+		}
+		abort = {
+			num_divisions > 30
+		}
+		ai_strategy = {
+			type = declare_war
+			id = "ZSB"
+			value = -1000
+		}
+	}
+
+	ZYX_not_for_war_with_ZSB = { 
+		allowed = {
+			original_tag = ZYX
+		}
+		enable = {
 			ZSB = {
 					has_war_with = ZHJ
 				}
@@ -733,6 +750,25 @@
 		}
 		ai_strategy = {
 			type = offensive
+			id = "ZSH"
+			value = 1000
+		}
+	}
+
+	ZYX_has_war_with_ZSH = { 
+		allowed = {
+			original_tag = ZYX
+		}
+		enable = {
+			has_focus_tree = 2_focus_37
+		}
+		abort = {
+			or = {
+				not = { country_exists = ZSH }
+			}
+		}
+		ai_strategy = {
+			type = declare_war
 			id = "ZSH"
 			value = 1000
 		}
@@ -795,6 +831,25 @@
 			type = prepare_for_war
 			id = "ZCS"
 			value = 100
+		}
+	}
+
+	ZYX_prepare_for_war_with_ZSH = { #警惕魔导
+		allowed = {
+			original_tag = ZYX
+		}
+		abort = {
+			or = {
+				not = { country_exists = ZSH }
+				ZSH = {
+					is_in_faction_with = ZYX
+				}
+			}
+		}
+		ai_strategy = {
+			type = prepare_for_war
+			id = "ZSH"
+			value = 1000
 		}
 	}
 
