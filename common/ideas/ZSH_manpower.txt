@@ -1,0 +1,21 @@
+ideas = {
+	mobilization_laws = {
+		law = yes
+		political_propaganda = { #政治宣传
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				conscription = 0.025
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+}
