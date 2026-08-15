@@ -1,5 +1,5 @@
 sub_units = {
-	the_red_army_infantry = { #红军步兵
+	the_red_army_infantry = { #红军
 
 		sprite = infantry
 
@@ -13,8 +13,8 @@ sub_units = {
         can_be_parachuted = no #能不能空投
         affects_speed = yes  #是否影响速度，多用于支援连
 		
-		priority = 999 #一个营占整个师的权重，影响兵牌图标
-		ai_priority = 10 #暂不明确
+		priority = 800 #一个营占整个师的权重，影响兵牌图标
+		ai_priority = 400 #暂不明确
 
 		type = {#营类型
 			infantry
