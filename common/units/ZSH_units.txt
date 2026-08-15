@@ -1,0 +1,97 @@
+sub_units = {
+	the_red_army_infantry = { #红军步兵
+
+		sprite = infantry
+
+		map_icon_category = infantry
+
+		active = no #写no就是需要科技激活兵种，写yes就是开局就有 
+        cavalry = no #是不是骑兵
+        special_forces = no #是不是特种部队
+        marines = no #是不是海军陆战队
+        mountaineers = no #是不是山地师
+        can_be_parachuted = no #能不能空投
+        affects_speed = yes  #是否影响速度，多用于支援连
+		
+		priority = 999 #一个营占整个师的权重，影响兵牌图标
+		ai_priority = 10 #暂不明确
+
+		type = {#营类型
+			infantry
+		}
+		#在哪个编制分类下
+		group = infantry
+		
+		categories = {
+			category_army #陆军
+			category_front_line #所有前线部队
+
+			category_all_infantry #所有普通步兵及摩托化/机械化步兵
+			category_light_infantry #徒步步兵
+			#category_support_battalions #支援连
+			#category_recon #侦查
+			#category_line_artillery #牵引火炮
+			#category_artillery #牵引火炮及轻型火炮
+
+			#category_all_armor #坦克及衍生装甲车辆
+			#category_tanks #坦克
+			#category_special_forces #特种部队
+		}
+
+		combat_width = 1.5 #战场宽度
+		
+		max_strength = 30 #HP
+		max_organisation = 70 #组织度
+		default_morale = 0.5 #组织度恢复
+		manpower = 1000 #一个营的人力
+
+		training_time = 40 #训练时间
+		suppression = 2 #镇压值
+		weight = 0.5    #重量，1=需要1艘运输船
+		supply_consumption = 0.04 #补给消耗
+
+		need = { #需要的装备
+			infantry_equipment = 100
+		}
+		forest = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		hills = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		mountain = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		plains = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		urban = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		jungle = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		marsh = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+		desert = {
+			attack = 0.1
+			defense = 0.1
+			movement = 0.1
+		}
+	}
+}
