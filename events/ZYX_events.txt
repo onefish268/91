@@ -54,7 +54,10 @@ country_event = {#德国收到消息
 	        exists = yes
         }
     }
-    target = GER
+    #target = GER
+
+    is_triggered_only = yes
+
     fire_only_once = yes
 
 	option = {
@@ -82,5 +85,26 @@ country_event = {#回复
 	option = {
         name = ZYX.4.a
         ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#德国收到消息
+    id = ZYX.5
+    hidden = yes    
+
+    trigger = {
+        ZYX = {
+	        exists = yes
+        }
+    }
+    fire_only_once = yes
+
+	immediate = {
+        GER = {
+            country_event = {
+                id = ZYX.3
+                days = 7
+            }
+        }
     }
 }
