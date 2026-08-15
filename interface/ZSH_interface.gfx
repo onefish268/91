@@ -1,0 +1,56 @@
+spriteTypes = {
+
+	#兵种引用
+
+    spriteType = {
+		name = "GFX_unit_the_red_army_infantry_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/red_army_infantry.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_the_red_army_infantry_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/red_army_infantry.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_the_red_army_infantry_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/red_army_infantry.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	#名族精神引用
+
+	spriteType = {
+		name = "GFX_idea_ZSH_people_support_1"
+		textureFile = "gfx/interface/ideas/ZSH/ZSH_people_support_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ZSH_industrial_system_behind"
+		textureFile = "gfx/interface/ideas/ZSH/ZSH_industrial_system_behind.png"
+	}
+	spriteType = {
+		name = "GFX_idea_a_troop_with_conviction"
+		textureFile = "gfx/interface/ideas/ZSH/a_troop_with_conviction.png"
+	}
+
+	#经济法案引用
+
+	spriteType = {
+		name = "GFX_idea_planned_economy"
+		textureFile = "gfx/interface/ideas/ZSH/planned_economy.png"
+	}
+
+	#贸易法案引用
+
+	spriteType = {
+		name = "GFX_idea_State_run_trade"
+		textureFile = "gfx/interface/ideas/ZSH/State_run_trade.png"
+	}
+
+	#征兵法案引用
+	spriteType = {
+		name = "GFX_idea_political_propaganda"
+		textureFile = "gfx/interface/ideas/ZSH/political_propaganda.png"
+	}
+}
