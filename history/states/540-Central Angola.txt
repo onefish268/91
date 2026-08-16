@@ -14,6 +14,7 @@ state = {
 			8248 = {
 				naval_base = 1
 			}
+			industrial_complex = 2
 		}
 		victory_points = { 8248 5 }
 	}
