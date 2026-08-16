@@ -1,0 +1,29 @@
+focus_tree = {
+	id = zsh_neizhan_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = ZSH
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 2000
+		y = 1500
+	}
+
+	focus = { #稳定国内
+		id = ZSH_stabilize_the_country
+		#icon = 
+		cost = 3
+		x = 10
+		y = 0
+		completion_reward = {
+			add_political_power = 150
+			unlock_decision_category_tooltip = ZSH_stabilize_country
+		}
+	}
+}

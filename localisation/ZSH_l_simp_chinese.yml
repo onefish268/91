@@ -20,3 +20,12 @@
  political_propaganda: "政治宣传"
 #兵种
  the_red_army_infantry: "红军"
+#决议需要
+ Finish_the_bandit: "已终结匪患"
+ Bandits_causing_trouble: "匪患正在发起破坏中"
+ Finish_bandits: "打击终结匪患"
+ ZSH_stabilize_country: "稳定国内"
+ ZSH_Bandit_troubles_rampant: "匪患猖獗"
+ infantry_equipment_cost: "£infantry_equipment_text_icon  §H1000§!"
+ infantry_equipment_cost_blocked: "£infantry_equipment_text_icon  §R1000§!"
+ infantry_equipment_cost_tooltip: "这个决议需要消耗$infantry_equipment_cost_blocked$" 
