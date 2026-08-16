@@ -789,7 +789,7 @@ focus_tree = {
 			ZSB = {
 				exists = no
 			}
-			ZIM = {
+			ZSH = {
 				exists = no
 			}
 			ZCS = {
