@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	shared_focus = zg_1
 	focus = {
 		id = 2_focus_1
 		x = 16
