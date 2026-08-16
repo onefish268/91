@@ -91,4 +91,72 @@ spriteTypes = {
         name = "GFX_idea_dabang"
         texturefile = "gfx/interface/ideas/dabang.png"
     }
+    spriteType = {
+        name = "GFX_idea_ZIM_daimler_benz"
+        texturefile = "gfx/mio/GFX_idea_ZIM_daimler_benz.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_steyr_mannlicher"
+        texturefile = "gfx/mio/GFX_idea_ZIM_steyr_mannlicher.png"
+    }
+    spriteType = {
+        name = "GFX_idea_HSF_ZIM"
+        texturefile = "gfx/mio/GFX_idea_HSF_ZIM.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_sea"
+        texturefile = "gfx/mio/GFX_idea_ZIM_sea.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_air"
+        texturefile = "gfx/mio/GFX_idea_ZIM_air.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_gun"
+        texturefile = "gfx/mio/GFX_idea_ZIM_gun.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_pao2"
+        texturefile = "gfx/mio/GFX_idea_ZIM_pao2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_tank1"
+        texturefile = "gfx/mio/GFX_idea_ZIM_tank1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_tank2"
+        texturefile = "gfx/mio/GFX_idea_ZIM_tank2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_gun2"
+        texturefile = "gfx/mio/GFX_idea_ZIM_gun2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_gun3"
+        texturefile = "gfx/mio/GFX_idea_ZIM_gun3.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_gun4"
+        texturefile = "gfx/mio/GFX_idea_ZIM_gun4.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_pao"
+        texturefile = "gfx/mio/GFX_idea_ZIM_pao.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_zhiyuan"
+        texturefile = "gfx/mio/GFX_idea_ZIM_zhiyuan.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_mot"
+        texturefile = "gfx/mio/GFX_idea_ZIM_mot.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_mot2"
+        texturefile = "gfx/mio/GFX_idea_ZIM_mot2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ZIM_train"
+        texturefile = "gfx/mio/GFX_idea_ZIM_train.png"
+    }
 }
