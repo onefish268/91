@@ -3,7 +3,6 @@ ZSH_stabilize_country = { #稳定国内
 }
 ZSH_Bandit_troubles_rampant = { #匪患猖獗
 	Bandits_causing_trouble = { #匪患正在发起破坏
-		fire_only_once = yes
 		days_mission_timeout = 30
 		available = {
 			hidden_trigger = {
@@ -11,7 +10,7 @@ ZSH_Bandit_troubles_rampant = { #匪患猖獗
 			}
 		}
 		activation = {
-			always = yes
+			always = no
 		}
 		selectable_mission = yes
 		cancel_trigger = {
