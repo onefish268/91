@@ -1,0 +1,22 @@
+state = {
+	id = 1228
+	name = "STATE_1228"
+	manpower = 956800
+	state_category = two
+	local_supplies = 3.0
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		1874 2216 4205 4851 7842 10000 10929 12207 13654 13801 2151
+	}
+}
+

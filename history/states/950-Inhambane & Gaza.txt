@@ -1,0 +1,21 @@
+state = {
+	id = 950
+	name = "STATE_950" # Southern Mozambique
+	manpower = 1236300
+	state_category = four
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+	}
+
+	provinces = {
+		5155 13811 13814
+	}
+}
+

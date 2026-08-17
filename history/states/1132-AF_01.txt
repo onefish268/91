@@ -1,0 +1,28 @@
+state = {
+	id = 1132
+	name = "STATE_1132"
+	manpower = 367754
+	state_category = one
+	resources = {
+	}
+	history = {
+		owner = EAS
+		add_core_of = EAS
+		add_to_array = {
+			state_victory_points = 8245
+		}
+		victory_points = {
+			8245
+			15
+		}
+		buildings = {
+			infrastructure = 1
+			8245 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		13719 8245
+	}
+}

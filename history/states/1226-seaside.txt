@@ -1,0 +1,25 @@
+state = {
+	id = 1226
+	name = "STATE_1226" 
+	manpower = 636300
+	state_category = four
+
+	history = {
+		owner = ZIM
+		add_core_of = ZIM
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+
+	2120 = { naval_base = 1 }
+
+        victory_points = { 2120 1 }
+	}
+
+	provinces = {
+		2120 12935
+	}
+}
+

@@ -215,6 +215,14 @@ focus_tree =
 		x = -4
 		y = 4
 
+		available = {
+				custom_trigger_tooltip = {
+					tooltip = COG_FRA_has_recover_a_lot
+					check_variable = { FRA_degree_of_economic_crisis_var < 50 }
+					has_global_flag = THE_BIG_DEPRESSION_has_come
+				}
+		}
+
 		prerequisite = {
 			focus = COG_Status_quo_content
 			focus = COG_Open_to_Gensokyo
@@ -1531,7 +1539,7 @@ focus_tree =
 	}
 
 	focus = {#火车拉来的城市
-		id = COG_Rail
+		id = COG_Railway_city
 		icon = GFX_focus_generic_industral_devlopment_bucket
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
@@ -1548,7 +1556,7 @@ focus_tree =
 	}
 
 	focus = {#沸沸扬扬的城市热
-		id = COG_Rail1
+		id = COG_Urban_buzz
 		icon = GFX_focus_generic_industral_devlopment_bucket
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
@@ -1599,7 +1607,7 @@ focus_tree =
 	}
 
 	focus = {#工业结构的调整
-		id = COG_Westwar
+		id = COG_Industry_reshuffle
 		icon = GFX_focus_generic_military_industry
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
@@ -1616,15 +1624,15 @@ focus_tree =
 	}
 
 	focus = {#扩大销路
-		id = COG_Westwardustry
+		id = COG_Market_expansion
 		icon = GFX_focus_generic_military_industry
 		cost = 2
-		relative_position_id = COG_Westwar
+		relative_position_id = COG_Industry_reshuffle
 		x = 2
 		y = 1
 
 		prerequisite = {
-			focus = COG_Westwar
+			focus = COG_Industry_reshuffle
 		}
 
 		completion_reward = {
@@ -1636,12 +1644,12 @@ focus_tree =
 		id = COG_Westward_industry
 		icon = GFX_focus_generic_military_industry
 		cost = 2
-		relative_position_id = COG_Westwar
+		relative_position_id = COG_Industry_reshuffle
 		x = -2
 		y = 1
 
 		prerequisite = {
-			focus = COG_Westwar
+			focus = COG_Industry_reshuffle
 		}
 
 		completion_reward = {
@@ -1650,7 +1658,7 @@ focus_tree =
 	}
 
 	focus = {#兴修水利
-		id = COG_A_magi
+		id = COG_Water_works
 		icon = GFX_focus_BEL_dam_the_consequences
 		cost = 2
 		relative_position_id = COG_Our_connecting_railway
@@ -1667,7 +1675,7 @@ focus_tree =
 	}
 
 	focus = {#越过俊山与川流
-		id = COG_over_the_hill_over_the_river
+		id = COG_Over_the_hill_over_the_river
 		icon = GFX_focus_SOV_south_manchuria_railway
 		cost = 2
 		
@@ -1817,7 +1825,7 @@ focus_tree =
 		y = 15
 
 		prerequisite = {
-			focus = COG_over_the_hill_over_the_river
+			focus = COG_Over_the_hill_over_the_river
 		}
 
 		completion_reward = {
@@ -1902,7 +1910,7 @@ focus_tree =
 		y = 15
 
 		prerequisite = {
-			focus = COG_over_the_hill_over_the_river
+			focus = COG_Over_the_hill_over_the_river
 		}
 
 		completion_reward = {
@@ -1977,7 +1985,7 @@ focus_tree =
 		}
 
 		prerequisite = {
-			focus = COG_over_the_hill_over_the_river
+			focus = COG_Over_the_hill_over_the_river
 		}
 
 
@@ -3089,23 +3097,6 @@ focus_tree =
 		relative_position_id = COG_Sky_soaring_Kiiro
 		x = -1
 		y = 3
-
-		prerequisite = {
-			focus = COG_Sky_soaring_Kiiro
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {#适配绮罗的飞机
-		id = COG_Kiiro_fit_aircraft
-		icon = GFX_focus_PER_luftwaffe_planes
-		cost = 2
-		relative_position_id = COG_Sky_soaring_Kiiro
-		x = 3
-		y = 1
 
 		prerequisite = {
 			focus = COG_Sky_soaring_Kiiro
