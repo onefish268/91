@@ -17,6 +17,8 @@ ZYX_focus_plan = {
 	}
 
 	ai_national_focuses = {
+		zg_3
+		zg_31
 		2_focus_1
 		2_focus_2
 		2_focus_8

@@ -1,0 +1,724 @@
+adorable_heart_magic_equipment_organization = {
+	icon = GFX_idea_magic_equipment
+
+	allowed = {
+		always = no  #在相应国家的企业中引用
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+
+	equipment_type = { magic_assault_equipment magic_artillery_equipment }
+	research_categories = { mio_cat_tech_all_magic_and_modules }
+
+	tree_header_text = {
+		text = mio_material_and_purification
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_production_improvement
+		x = 5
+	}
+
+	
+	initial_trait = {
+		name = adorable_heart_magic_equipment_organization
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+	
+	trait = {
+		token = adorable_heart_mio_trait_improving_purification_technology
+		name = adorable_heart_mio_trait_improving_purification_technology
+		icon = GFX_generic_mio_trait_icon_detection
+		
+		position = { x=1 y=0 }
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+
+	
+	trait = {
+		token = adorable_heart_mio_trait_energy_circuit
+		name = adorable_heart_mio_trait_energy_circuit
+		icon = GFX_generic_mio_trait_icon_air_agility
+		
+		position = { x=5 y=0 }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+
+	trait = {
+		token = adorable_heart_mio_trait_production_outsource
+		name = adorable_heart_mio_trait_production_outsource
+		icon = GFX_generic_mio_department_icon_facilities
+
+		relative_position_id = adorable_heart_mio_trait_improving_purification_technology
+		all_parents = { adorable_heart_mio_trait_improving_purification_technology }
+		position = { x=-1 y=1 }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.10
+		}
+	}
+	
+	trait = {
+		token = adorable_heart_mio_trait_crystal_block_form
+		name = adorable_heart_mio_trait_crystal_block_form
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		relative_position_id = adorable_heart_mio_trait_improving_purification_technology
+		all_parents = { adorable_heart_mio_trait_improving_purification_technology }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+		
+	trait = {
+		token = adorable_heart_mio_trait_rune_burn
+		name = adorable_heart_mio_trait_rune_burn
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		relative_position_id = adorable_heart_mio_trait_energy_circuit
+		all_parents = { adorable_heart_mio_trait_energy_circuit }
+		position = { x=0 y=1 }
+
+		production_bonus = {
+			production_capacity_factor = 0.10
+		}
+	}
+			
+	trait = {
+		token = adorable_heart_mio_trait_high_encapsulation_magazine
+		name = adorable_heart_mio_trait_high_encapsulation_magazine
+		icon = GFX_generic_mio_trait_icon_defense
+
+		relative_position_id = adorable_heart_mio_trait_production_outsource
+		all_parents = { adorable_heart_mio_trait_production_outsource }
+		all_parents = { adorable_heart_mio_trait_crystal_block_form }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			defense = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.05
+		}
+	}
+				
+	trait = {
+		token = adorable_heart_mio_trait_cast_efficiency
+		name = adorable_heart_mio_trait_cast_efficiency
+		icon = GFX_generic_mio_department_icon_infantry_line_efficiency
+
+		relative_position_id = adorable_heart_mio_trait_rune_burn
+		all_parents = { adorable_heart_mio_trait_rune_burn }
+		position = { x=-1 y=1 }
+
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+					
+	trait = {
+		token = adorable_heart_mio_trait_quality_control
+		name = adorable_heart_mio_trait_quality_control
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		relative_position_id = adorable_heart_mio_trait_rune_burn
+		all_parents = { adorable_heart_mio_trait_rune_burn }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+						
+	trait = {
+		token = adorable_heart_mio_trait_chaotic_element_separation
+		name = adorable_heart_mio_trait_chaotic_element_separation
+		icon = GFX_generic_mio_trait_icon_max_strength
+
+		relative_position_id = adorable_heart_mio_trait_high_encapsulation_magazine
+		all_parents = { adorable_heart_mio_trait_high_encapsulation_magazine }
+		position = { x=0 y=1 }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
+							
+	trait = {
+		token = adorable_heart_mio_trait_waste_recycle
+		name = adorable_heart_mio_trait_waste_recycle
+		icon = GFX_generic_mio_trait_icon_resources
+
+		relative_position_id = adorable_heart_mio_trait_high_encapsulation_magazine
+		all_parents = { adorable_heart_mio_trait_high_encapsulation_magazine }
+		all_parents = { adorable_heart_mio_trait_cast_efficiency }
+		position = { x=2 y=1 }
+
+		production_bonus = {
+			production_resource_need_factor = -0.15
+		}
+	}
+								
+	trait = {
+		token = adorable_heart_mio_trait_fire_delivery_calibration
+		name = adorable_heart_mio_trait_fire_delivery_calibration
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		relative_position_id = adorable_heart_mio_trait_high_encapsulation_magazine
+		all_parents = { adorable_heart_mio_trait_cast_efficiency }
+		all_parents = { adorable_heart_mio_trait_quality_control }
+		position = { x=4 y=1 }
+
+		equipment_bonus = {
+			hard_attack = 0.10
+		}
+	}
+									
+	trait = {
+		token = adorable_heart_mio_trait_environment_facility
+		name = adorable_heart_mio_trait_environment_facility
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		relative_position_id = adorable_heart_mio_trait_quality_control
+		all_parents = { adorable_heart_mio_trait_quality_control }
+		position = { x=1 y=1 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+										
+	trait = {
+		token = adorable_heart_mio_trait_order_priority
+		name = adorable_heart_mio_trait_order_priority
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		relative_position_id = adorable_heart_mio_trait_chaotic_element_separation
+		all_parents = { adorable_heart_mio_trait_chaotic_element_separation }
+		mutually_exclusive = { adorable_heart_mio_trait_chaos_worship }
+		position = { x=-1 y=1 }
+
+		equipment_bonus = {
+			soft_attack = 0.10
+		}
+	}
+											
+	trait = {
+		token = adorable_heart_mio_trait_chaos_worship
+		name = adorable_heart_mio_trait_chaos_worship
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		relative_position_id = adorable_heart_mio_trait_chaotic_element_separation
+		all_parents = { adorable_heart_mio_trait_chaotic_element_separation }
+		mutually_exclusive = { adorable_heart_mio_trait_order_priority }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			ap_attack = 0.15
+		}
+	}
+	
+}
+
+adorable_heart_AUTO_META_equipment_organization = {
+	icon = GFX_idea_magic_equipment
+
+	allowed = {
+		always = no  #在相应国家的企业中引用
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+
+	equipment_type = { auto_meta_equipments support_equipment }
+	research_categories = { AUTO_META support_tech }
+
+	tree_header_text = {
+		text = mio_production_improvement
+		x = 2
+	}
+
+	tree_header_text = {
+		text = mio_personnel_and_tactical_training
+		x = 5
+	}
+
+	
+	initial_trait = {
+		name = adorable_heart_AUTO_META_equipment_organization
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+	
+	trait = {
+		token = adorable_heart_mio_trait_part_workshop
+		name = adorable_heart_mio_trait_part_workshop
+		icon = GFX_generic_mio_trait_icon_reliability
+		
+		position = { x=2 y=0 }
+
+		equipment_bonus = {
+			reliability = -0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+		}
+	}
+		
+	trait = {
+		token = adorable_heart_mio_trait_school_of_electrical_engineering
+		name = adorable_heart_mio_trait_school_of_electrical_engineering
+		icon = GFX_generic_mio_trait_icon_naval_strike_targetting
+		
+		position = { x=4 y=0 }
+
+		limit_to_equipment_type = { auto_meta_equipments }
+
+		equipment_bonus = {
+			reliability = 0.05
+			default_morale = 0.05
+		}
+	}
+			
+	trait = {
+		token = adorable_heart_mio_trait_battlefield_emergency_repair_training
+		name = adorable_heart_mio_trait_battlefield_emergency_repair_training
+		icon = GFX_generic_mio_department_icon_support_production
+		
+		position = { x=6 y=0 }
+
+		limit_to_equipment_type = { auto_meta_equipments }
+
+		equipment_bonus = {
+			breakthrough = 0.10
+		}
+	}
+				
+	trait = {
+		token = adorable_heart_mio_trait_mold_casting
+		name = adorable_heart_mio_trait_mold_casting
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		
+		relative_position_id = adorable_heart_mio_trait_part_workshop
+		all_parents = { adorable_heart_mio_trait_part_workshop }
+		position = { x=-1 y=1 }
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+					
+	trait = {
+		token = adorable_heart_mio_trait_energy_circuit
+		name = adorable_heart_mio_trait_energy_circuit
+		icon = GFX_generic_mio_trait_icon_air_range
+
+		limit_to_equipment_type = { auto_meta_equipments }
+		
+		relative_position_id = adorable_heart_mio_trait_part_workshop
+		all_parents = { adorable_heart_mio_trait_part_workshop adorable_heart_mio_trait_school_of_electrical_engineering }
+		position = { x=1 y=1 }
+		equipment_bonus = {
+			maximum_speed = 0.25
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.10
+		}
+	}
+					
+	trait = {
+		token = adorable_heart_mio_trait_tactical_team_formation
+		name = adorable_heart_mio_trait_tactical_team_formation
+		icon = GFX_generic_mio_trait_icon_unique
+		
+		relative_position_id = adorable_heart_mio_trait_battlefield_emergency_repair_training
+		all_parents = { adorable_heart_mio_trait_battlefield_emergency_repair_training adorable_heart_mio_trait_school_of_electrical_engineering }
+		position = { x=-1 y=1 }
+
+		equipment_bonus = {
+			reliability = 0.05
+			soft_attack = 0.10
+		}
+	}
+						
+	trait = {
+		token = adorable_heart_mio_trait_batch_heat_treatment
+		name = adorable_heart_mio_trait_batch_heat_treatment
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+
+		limit_to_equipment_type = { auto_meta_equipments }
+		
+		relative_position_id = adorable_heart_mio_trait_mold_casting
+		all_parents = { adorable_heart_mio_trait_mold_casting }
+		position = { x=-1 y=1 }
+
+		equipment_bonus = {
+			hardness = 0.10
+			armor_value = 0.15
+		}
+	}
+							
+	trait = {
+		token = adorable_heart_mio_trait_lightweight_elastic_chain
+		name = adorable_heart_mio_trait_lightweight_elastic_chain
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		limit_to_equipment_type = { auto_meta_equipments }
+		
+		relative_position_id = adorable_heart_mio_trait_mold_casting
+		all_parents = { adorable_heart_mio_trait_mold_casting adorable_heart_mio_trait_energy_circuit }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			soft_attack = 0.10
+		}
+	}
+								
+	trait = {
+		token = adorable_heart_mio_trait_assembly_factory
+		name = adorable_heart_mio_trait_assembly_factory
+		icon = GFX_generic_mio_department_icon_facilities
+		
+		relative_position_id = adorable_heart_mio_trait_tactical_team_formation
+		all_parents = { adorable_heart_mio_trait_tactical_team_formation }
+		mutually_exclusive = { adorable_heart_mio_trait_quality_control }
+		position = { x=-1 y=1 }
+
+		equipment_bonus = {
+			reliability = -0.10
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+			production_capacity_factor = 0.10
+		}
+	}
+									
+	trait = {
+		token = adorable_heart_mio_trait_quality_control
+		name = adorable_heart_mio_trait_quality_control
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		
+		relative_position_id = adorable_heart_mio_trait_tactical_team_formation
+		all_parents = { adorable_heart_mio_trait_tactical_team_formation }
+		mutually_exclusive = { adorable_heart_mio_trait_assembly_factory }
+		position = { x=1 y=1 }
+		ai_will_do = {
+			base = 0
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.10
+			production_efficiency_cap_factor = 0.20
+		}
+	}
+										
+	trait = {
+		token = adorable_heart_mio_trait_auxiliary_track_wheel
+		name = adorable_heart_mio_trait_auxiliary_track_wheel
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		limit_to_equipment_type = { auto_meta_equipments }
+		
+		relative_position_id = adorable_heart_mio_trait_batch_heat_treatment
+		all_parents = { adorable_heart_mio_trait_batch_heat_treatment }
+		position = { x=0 y=1 }
+
+		equipment_bonus = {
+			breakthrough = 0.10
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+											
+	trait = {
+		token = adorable_heart_mio_trait_tactical_firepower_deployment
+		name = adorable_heart_mio_trait_tactical_firepower_deployment
+		icon = GFX_generic_mio_department_icon_infantry_offense
+		
+		limit_to_equipment_type = { auto_meta_equipments }
+
+		relative_position_id = adorable_heart_mio_trait_lightweight_elastic_chain
+		all_parents = { adorable_heart_mio_trait_lightweight_elastic_chain }
+		position = { x=0 y=1 }
+
+		equipment_bonus = {
+			defense = 0.15
+			reliability = 0.10
+		}
+	}
+												
+	trait = {
+		token = adorable_heart_mio_trait_anti_armor_strategy
+		name = adorable_heart_mio_trait_anti_armor_strategy
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		
+		limit_to_equipment_type = { auto_meta_equipments }
+		
+		relative_position_id = adorable_heart_mio_trait_assembly_factory
+		any_parent = { adorable_heart_mio_trait_assembly_factory adorable_heart_mio_trait_quality_control }
+		position = { x=1 y=1 }
+
+		equipment_bonus = {
+			hard_attack = 0.15
+			ap_attack = 0.20	
+		}
+	}
+	
+}
+
+SOV_space_and_time_management_bureau_organization = {
+	include = adorable_heart_magic_equipment_organization
+	icon = GFX_idea_SOV_space_and_time_management_bureau
+	
+	allowed = {	
+		is_russia_tag = yes
+	}
+
+	add_trait = { 
+		token = SOV_mio_trait_merge_plant_no_622
+		name = SOV_merge_materiel_plant_1_infantry
+		icon = GFX_generic_mio_department_icon_infantry_production
+		special_trait_background = yes
+
+		position = { x=8 y=0 }
+		
+		visible = {
+			FROM = { original_tag = SOV }
+		}
+
+		available = {
+			FROM = {
+				has_full_control_of_state = 399 #UDMURTIA (Izhevsk)
+			}
+			FROM = {
+				has_completed_focus = SOV_enterprise_planning
+			}
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.15
+		}
+	}
+
+	add_trait = { 
+		token = SOV_mio_trait_merge_nkmz_plant
+		name = SOV_merge_materiel_plant_2
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		special_trait_background = yes
+
+		position = { x=8 y=1 }
+		
+		visible = {
+			FROM = { original_tag = SOV }
+		}
+
+		available = {
+			FROM = {
+				has_full_control_of_state = 217 #STALINO
+			}
+			FROM = {
+				has_completed_focus = SOV_enterprise_planning
+			}
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.10
+		}
+	}
+
+	add_trait = { 
+		token = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
+		name = SOV_merge_materiel_plant_3
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		special_trait_background = yes
+
+		position = { x=8 y=2 }
+		
+		visible = {
+			FROM = { original_tag = SOV }
+		}
+
+		available = {
+			FROM = {
+				has_full_control_of_state = 582 #MAGNITOGORSK
+			}
+			FROM = {
+				has_completed_focus = SOV_enterprise_planning
+			}
+		}
+
+		equipment_bonus = {
+			reliability = 0.05
+			soft_attack = 0.10
+		}
+	}
+}
+
+DEN_ocean_of_star_organization = {
+    include = adorable_heart_magic_equipment_organization
+    icon = GFX_idea_DEN_ocean_of_star
+    allowed = { 
+        tag = DEN
+        has_dlc = "Arms Against Tyranny"
+    }
+}
+
+NOR_zhula_organization = {
+    include = adorable_heart_magic_equipment_organization
+    icon = GFX_idea_NORDIC_nordic_council
+    allowed = { 
+        tag = NOR
+        has_dlc = "Arms Against Tyranny"
+    }
+	available = {
+		FROM = { has_completed_focus = NOR_increase_research_funding1 }
+	}
+}
+
+DEN_Breguet_organization = {
+    include = adorable_heart_AUTO_META_equipment_organization
+    icon = GFX_idea_DEN_Breguet
+    allowed = { 
+        tag = DEN
+    }
+
+	add_trait = { 
+		token = DEN_mio_trait_advanced_production
+		name = DEN_mio_trait_advanced_production
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=8 y=0 }
+		
+		visible = {
+			FROM = { original_tag = DEN }
+		}
+		
+		available = {
+			FROM = {
+				has_completed_focus = DEN_develop_Breguet_company
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			auto_meta_equipments
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.10
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = DEN_mio_trait_juliet_institute
+		name = DEN_mio_trait_juliet_institute
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		special_trait_background = yes
+
+		position = { x=8 y=1 }
+		
+		visible = {
+			FROM = { original_tag = DEN }
+		}
+		
+		available = {
+			FROM = {
+				has_completed_focus = DEN_integrate_enterprise_research_institute
+			}
+		}
+
+		limit_to_equipment_type = {
+			auto_meta_equipments
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+	}
+
+	add_trait = { 
+		token = DEN_mio_trait_Naoto_institute
+		name = DEN_mio_trait_Naoto_institute
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=8 y=2 }
+		
+		visible = {
+			FROM = { original_tag = DEN }
+		}
+		
+		available = {
+			FROM = {
+				has_completed_focus = DEN_integrate_enterprise_research_institute
+			}
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}
+
+	add_trait = { 
+		token = DEN_mio_trait_Akane_institute
+		name = DEN_mio_trait_Akane_institute
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=8 y=3 }
+		
+		visible = {
+			FROM = { original_tag = DEN }
+		}
+		
+		available = {
+			FROM = {
+				has_completed_focus = DEN_integrate_enterprise_research_institute
+			}
+		}
+
+		limit_to_equipment_type = {
+			auto_meta_equipments
+		}
+
+		equipment_bonus = {
+			maximum_speed = 0.25
+			reliability = -0.10
+		}
+	}
+}

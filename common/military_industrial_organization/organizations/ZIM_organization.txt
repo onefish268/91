@@ -1,0 +1,569 @@
+ZIM_steyr_mannlicher_organization = {
+	name = AUS_steyr_mannlicher
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ZIM_steyr_mannlicher
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	initial_trait = {
+		name = generic_mio_initial_trait_infantry_manufacturer
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+		limit_to_equipment_type = { 
+			infantry_equipment
+		}
+		equipment_bonus = { 
+			reliability = 0.05 # Maybe IC cost but not sure how to put that in		
+			soft_attack = 0.03		
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 545
+		}
+	}
+}
+
+ZIM_daimler_benz_organization = {
+	name = ZIM_daimler
+	include = generic_tank_organization
+	icon = GFX_idea_ZIM_daimler_benz
+	
+	allowed = {	
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+
+	available = {
+		owner = {
+			owns_state = 917
+		}
+	}
+
+	tree_header_text = {
+		text = mio_header_tank_construction
+		x = 2
+	}
+
+	tree_header_text = {
+		text = mio_header_equipment_and_specialization
+		x = 6
+	}
+
+	tree_header_text = {
+		text = mio_header_armor
+		x = 8
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	override_trait = {
+		token = generic_mio_trait_simplified_suspension
+		
+		position = { x=0 y=0 }
+	}
+
+	override_trait = {
+    	token = generic_mio_trait_improved_tooling
+
+    	relative_position_id = GER_mio_trait_versatile_chassis
+		
+		all_parents = { generic_mio_trait_improved_tracks generic_mio_trait_command_upgrades GER_mio_trait_versatile_chassis }
+
+    	position = { x=0 y=1 }
+  	}
+    #override_trait = {
+    #    token = generic_mio_trait_crew_ergonomics
+    #    position = { x=3 y=0 }
+    #}
+
+	add_trait = {  
+		token = GER_mio_trait_hotrolled_armor
+		name = GER_mio_trait_hotrolled_armor
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		position = { x=8 y=0 }  
+		
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_multilayer_armour
+		name = GER_mio_trait_multilayer_armour
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+		relative_position_id = GER_mio_trait_hotrolled_armor
+		
+		any_parent = { GER_mio_trait_hotrolled_armor }
+		
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		
+		equipment_bonus = {
+			armor_value = 0.1
+		} 
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_versatile_chassis
+		name = GER_mio_trait_versatile_chassis
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_standardized_components
+		
+		all_parents = {  generic_mio_trait_standardized_components }
+
+		position = { x=0 y=1 }  
+		
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_tungsten_tipped_rounds
+		name = GER_mio_trait_tungsten_tipped_rounds
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		
+		all_parents = {  generic_mio_trait_long_barreled_guns }
+
+		position = { x=0 y=1 }  
+
+		available = {
+            FROM = {
+                has_tech = antitank2
+            }
+        }
+		
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+}
+
+HSF_ZIM = {
+	include = generic_infantry_tank_organization
+	name = HSF_ZIM
+	icon = GFX_idea_HSF_ZIM
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 965
+		}
+	}
+	add_trait = {
+		##联合生产线
+		token = Deutsche_United_production_line
+		name = ZIM_United_production_line
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		special_trait_background = yes
+		position = { x = 9 y = 0 }
+		available = {
+		}
+		equipment_bonus = {
+			reliability = 0.1
+			build_cost_ic = -0.1
+		}
+	}
+}
+
+ZIM_air = {
+	include = generic_general_aircraft_organization
+	name = ZIM_air
+	icon = GFX_idea_ZIM_air
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 813
+		}
+	}
+}
+
+ZIM_sea = {
+	include = generic_task_force_ship_organization
+	name = ZIM_sea
+	icon = GFX_idea_ZIM_sea
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 917
+		}
+	}
+}
+
+ZIM_gun = {
+	include = generic_assault_guns_organization
+	name = ZIM_gun
+	icon = GFX_idea_ZIM_gun
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 546
+		}
+	}
+}
+
+ZIM_tank1 = {
+	include = generic_mobile_tank_organization
+	name = ZIM_tank1
+	icon = GFX_idea_ZIM_tank1
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 870
+		}
+	}
+}
+
+ZIM_tank2 = {
+	include = generic_tank_refurbishment_plant_organization
+	name = ZIM_tank2
+	icon = GFX_idea_ZIM_tank2
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 546
+		}
+	}
+}
+
+ZIM_gun2 = {
+	include = generic_infantry_equipment_organization
+	name = ZIM_gun2
+	icon = GFX_idea_ZIM_gun2
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 869
+		}
+	}
+}
+
+ZIM_gun3 = {
+	include = generic_infantry_equipment_organization
+	name = ZIM_gun3
+	icon = GFX_idea_ZIM_gun3
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 813
+		}
+	}
+}
+
+ZIM_gun4 = {
+	include = generic_infantry_equipment_organization
+	name = ZIM_gun4
+	icon = GFX_idea_ZIM_gun4
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 1032
+		}
+	}
+}
+
+ZIM_pao = {
+	include = generic_artillery_organization
+	name = ZIM_pao
+	icon = GFX_idea_ZIM_pao
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 870
+		}
+	}
+}
+
+ZIM_pao2 = {
+	include = generic_artillery_organization
+	name = ZIM_pao2
+	icon = GFX_idea_ZIM_pao2
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 546
+		}
+	}
+}
+
+ZIM_zhiyuan = {
+	include = generic_support_equipment_organization
+	name = ZIM_zhiyuan
+	icon = GFX_idea_ZIM_zhiyuan
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 545
+		}
+	}
+}
+
+ZIM_mot = {
+	include = generic_motorized_mechanized_organization
+	name = ZIM_mot
+	icon = GFX_idea_ZIM_mot
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 813
+		}
+	}
+}
+
+ZIM_mot2 = {
+	include = generic_armored_car_organization
+	name = ZIM_mot2
+	icon = GFX_idea_ZIM_mot2
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 813
+		}
+	}
+}
+
+ZIM_train = {
+	include = generic_train_organization
+	name = ZIM_train
+	icon = GFX_idea_ZIM_train
+	allowed = {
+		OR = {
+			tag = ZIM
+			tag = ZYX
+			tag = ZSB
+			tag = ZCS
+			tag = ZHJ
+			tag = ZSH
+			tag = ZXS
+			tag = ZDM
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 546
+		}
+	}
+}

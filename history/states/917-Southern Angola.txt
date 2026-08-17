@@ -1,8 +1,8 @@
 state = {
 	id = 917
 	name = "STATE_917"
-	manpower = 1403503
-	state_category = two
+	manpower = 4403503
+	state_category = three
 
 	history = {
 		owner = ZIM
@@ -17,6 +17,7 @@ state = {
 			12958 = {
 				naval_base = 2
 			}
+			industrial_complex = 3
 		}
 		victory_points = { 10966 25 }
 		victory_points = { 12958 15 }
