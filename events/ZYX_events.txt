@@ -106,3 +106,43 @@ country_event = {#接收器
         }
     }
 }
+
+#苦行东南山
+country_event = {#牢大收到丽莎要去了的消息
+    id = ZYX.6
+    title = ZYX.6.t
+    desc = ZYX.6.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZYX.6.a
+        mark_focus_tree_layout_dirty = yes
+        unlock_national_focus = cks_1
+        complete_national_focus = cks_1
+        custom_effect_tooltip = ZG_chance
+        ai_chance = { base = 50 }
+    }
+
+}
+
+country_event = {#接收器
+    id = ZYX.7
+    hidden = yes    
+
+    trigger = {
+        GER = {
+			has_war_with = DVL
+		}
+    }
+    fire_only_once = yes
+
+	immediate = {
+        ZYX = {
+            country_event = {
+                id = ZYX.6
+                days = 7
+            }
+        }
+    }
+}
