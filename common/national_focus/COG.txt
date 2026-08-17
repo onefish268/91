@@ -2951,8 +2951,6 @@ focus_tree =
 
 	focus = {#新的修炼设施和方法
 		id = COG_New_cultivation_ways
-
-
 		icon = GFX_focus_RAJ_uranium_tipped_bullets
 		cost = 2
 		relative_position_id = COG_Cultivation_upheaval
