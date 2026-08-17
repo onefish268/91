@@ -1,0 +1,18 @@
+state = {
+	id = 1230
+	name = "STATE_1230"
+	manpower = 167783
+	state_category = one
+	resources = {
+	}
+	history = {
+		owner = EAS
+		add_core_of = EAS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces = {
+		13205 13636 10525 #13809 2193
+	}
+}
