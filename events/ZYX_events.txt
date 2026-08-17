@@ -62,9 +62,6 @@ country_event = {#德国收到消息
                 days = 7
             }
         }
-        mark_focus_tree_layout_dirty = yes
-        unlock_national_focus = zg_1
-        complete_national_focus = zg_1
     }
 }
 
@@ -77,6 +74,14 @@ country_event = {#回复
 
 	option = {
         name = ZYX.4.a
+        mark_focus_tree_layout_dirty = yes
+        unlock_national_focus = zg_1
+        complete_national_focus = zg_1
+        ai_chance = { base = 50 }
+    }
+
+    option = {
+        name = ZYX.4.b
         ai_chance = { base = 50 }
     }
 }

@@ -1,8 +1,8 @@
 joint_focus = {
 	id = zg_1
-	icon = GFX_focus_ARG_join_the_allies
+	icon = GFX_focus_GER_befriend_italy
 
-	text_icon = ABDACOM_focus_style
+	text_icon = ZG_focus_style
 
 	x = -1
 	y = 12
@@ -19,7 +19,7 @@ joint_focus = {
 
 	available_if_capitulated = no
 
-	ai_will_do = { base = 2 }
+	ai_will_do = { base = 1 }
 
 	allow_branch = {
 		OR = {
@@ -49,20 +49,17 @@ joint_focus = {
 	id = zg_2
 	icon = GFX_focus_chi_british_cooperation
 	prerequisite = { focus = zg_1 }
-	relative_position_id = ABDA_abdacom
+	relative_position_id = zg_1
 
-	text_icon = ENG_focus_style
 
-	x = -4
-	y = 13
-
-    offset = {
-		x = 25
-		y = 0
-		trigger = {
-			tag = GER
-		}
+	text_icon = G_focus_style
+	joint_trigger = {  
+		ZG_joint_trigger = yes		
 	}
+
+	x = -2
+	y = 1
+
 
 	cost = 0
 
@@ -75,8 +72,190 @@ joint_focus = {
 
 	available_if_capitulated = no
 
-	ai_will_do = { factor = 10 }
+	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_originator = {
+		custom_effect_tooltip = ZG_jiaotan
+		set_country_flag = {
+			flag = load_time
+			days = 35
+			value = 1
+		}
+	}
+	completion_reward_joint_member = {
+		custom_effect_tooltip = ZG_jiaotan1
+	}
+}
+
+joint_focus = {
+	id = zg_21
+	icon = GFX_focus_GER_total_control_over_domestic_affairs
+	prerequisite = { focus = zg_2 }
+	relative_position_id = zg_1
+
+
+	text_icon = G_focus_style
+	joint_trigger = {  
+		ZG_joint_trigger = yes		
+	}
+
+	x = -3
+	y = 2
+
+
+	cost = 0
+
+	available = {
+		tag = GER
+        NOT = {
+			has_country_flag = load_time
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_member = {
+		add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 5000
+            producer = GER
+		}
+		add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2000
+            producer = GER
+		}
+	}
+	completion_reward_joint_originator = {
+		set_country_flag = {
+			flag = load_time
+			days = 35
+			value = 1
+		}
+	}
+}
+
+joint_focus = {
+	id = zg_22
+	icon = GFX_focus_GER_support_the_proletarian_uprising
+	prerequisite = { focus = zg_2 }
+	relative_position_id = zg_1
+
+
+	text_icon = G_focus_style
+
+	x = -1
+	y = 2
+
+
+	cost = 0
+
+	available = {
+		tag = GER
+        NOT = {
+			has_country_flag = load_time
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		GER = {
+			add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+		}
+		set_country_flag = {
+			flag = load_time
+			days = 35
+			value = 1
+		}
+	}
+}
+
+joint_focus = {
+	id = zg_3
+	icon = GFX_focus_GER_customs_union
+	prerequisite = { focus = zg_1 }
+	relative_position_id = zg_1
+
+
+	text_icon = Z_focus_style
+
+	x = 2
+	y = 1
+
+
+	cost = 0
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_country_flag = load_time
+        }
+		has_completed_focus = zg_2
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		869 = {
+			add_extra_state_shared_building_slots = 4
+	        add_building_construction = {
+		        type = industrial_complex
+		        level = 2
+		        instant_build = yes
+		    }
+			add_building_construction = {
+		        type = arms_factory
+		        level = 2
+		        instant_build = yes
+		    }
+		}
+		set_country_flag = {
+			flag = load_time
+			days = 35
+			value = 1
+		}
+	}
+}
+
+joint_focus = {
+	id = zg_31
+	icon = GFX_focus_GER_all_for_the_front
+	prerequisite = { focus = zg_3 }
+	relative_position_id = zg_1
+
+
+	text_icon = Z_focus_style
+
+	x = 2
+	y = 2
+
+
+	cost = 0
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_country_flag = load_time
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		add_manpower = 40000
+		set_country_flag = {
+			flag = load_time
+			days = 35
+			value = 1
+		}
 	}
 }
