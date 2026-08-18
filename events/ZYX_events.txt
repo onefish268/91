@@ -1152,7 +1152,7 @@ country_event = {#老大向丽莎邮寄索尔兹伯里的照片
     }
 }
 
-country_event = {#老大向丽莎们
+country_event = {#老大向丽莎
     id = ZYX.34
     title = ZYX.34.t
     desc = ZYX.34.desc
