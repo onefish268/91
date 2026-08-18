@@ -50,6 +50,11 @@ ZYX_focus_plan = {
 		2_focus_46
 
         #统一后
+		cks_1
+		cks_2
+		cks_21
+		cks_22
+		cks_23
 		3_focus_1
 		3_focus_2
 		3_focus_3

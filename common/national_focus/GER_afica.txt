@@ -1,0 +1,19 @@
+focus_tree = {
+	id = GER_afica_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 9
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = 7_focus_1
+		x = 13
+		y = 0
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+	}
+}

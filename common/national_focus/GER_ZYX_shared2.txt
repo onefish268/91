@@ -1,11 +1,11 @@
 joint_focus = {
 	id = cks_1
-	icon = GFX_focus_GER_befriend_italy
+	icon = GFX_DKB_glavvoyensovet
 
-	text_icon = ZG_focus_style
+	text_icon = Z_focus_style
 
-	x = -2
-	y = 7
+	x = 15
+	y = 0
 
 
     cost = 10
@@ -16,23 +16,25 @@ joint_focus = {
 
 	allow_branch = {
 		OR = {
-			original_tag = GER
 			original_tag = ZYX
 		}
         GER = {
-			has_war_with = DVL
 			has_completed_focus = zg_1
 		}
 	}
 
 	available = {
 		always = no
+		GER = {
+			has_war_with = DVL
+			has_completed_focus = zg_1
+		}
 	}
 
 	completion_reward_joint_originator = {
         set_country_flag = {
-			flag = load_time
-			days = 35
+			flag = load_time_g
+			days = 15
 			value = 1
 		}
 		custom_effect_tooltip = ABDA_faction_membership_requirement_tt
@@ -41,12 +43,12 @@ joint_focus = {
 
 joint_focus = {
 	id = cks_2
-	icon = GFX_focus_chi_british_cooperation
+	icon = GFX_focus_GER_panzerschiff
 	prerequisite = { focus = cks_1 }
 	relative_position_id = cks_1
 
 
-	text_icon = G_focus_style
+	text_icon = Z_focus_style
 	joint_trigger = {  
 		ZG_joint_trigger = yes		
 	}
@@ -58,9 +60,15 @@ joint_focus = {
 	cost = 0
 
 	available = {
-		tag = GER
+		tag = ZYX
         NOT = {
-			has_country_flag = load_time
+			has_country_flag = load_time_g
+        }
+		GER = {
+			surrender_progress > 0.6
+		}
+		GER = {
+	        exists = yes
         }
 	}
 
@@ -69,26 +77,26 @@ joint_focus = {
 	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_originator = {
-		custom_effect_tooltip = ZG_jiaotan
+		custom_effect_tooltip = cks_lunchuan
 		set_country_flag = {
-			flag = load_time
-			days = 35
+			flag = load_time_g
+			days = 15
 			value = 1
 		}
 	}
 	completion_reward_joint_member = {
-		custom_effect_tooltip = ZG_jiaotan1
+		custom_effect_tooltip = cks_lunchuan1
 	}
 }
 
 joint_focus = {
 	id = cks_21
-	icon = GFX_focus_GER_total_control_over_domestic_affairs
+	icon = GFX_focus_GER_reorganize_the_wehrmacht_historical
 	prerequisite = { focus = cks_2 }
 	relative_position_id = cks_1
 
 
-	text_icon = G_focus_style
+	text_icon = Z_focus_style
 	joint_trigger = {  
 		ZG_joint_trigger = yes		
 	}
@@ -100,9 +108,12 @@ joint_focus = {
 	cost = 0
 
 	available = {
-		tag = GER
+		tag = ZYX
         NOT = {
-			has_country_flag = load_time
+			has_country_flag = load_time_g
+        }
+		GER = {
+	        exists = yes
         }
 	}
 
@@ -111,34 +122,26 @@ joint_focus = {
 	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_member = {
-		add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 5000
-            producer = GER
-		}
-		add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 2000
-            producer = GER
-		}
+		custom_effect_tooltip = cks_lunchuan2
 	}
 	completion_reward_joint_originator = {
 		set_country_flag = {
-			flag = load_time
-			days = 35
+			flag = load_time_g
+			days = 15
 			value = 1
 		}
+		custom_effect_tooltip = cks_lunchuan2
 	}
 }
 
 joint_focus = {
 	id = cks_22
-	icon = GFX_focus_GER_support_the_proletarian_uprising
+	icon = GFX_focus_AFG_work_with_german_inteligence
 	prerequisite = { focus = cks_2 }
 	relative_position_id = cks_1
 
 
-	text_icon = G_focus_style
+	text_icon = Z_focus_style
 
 	x = -1
 	y = 2
@@ -147,9 +150,12 @@ joint_focus = {
 	cost = 0
 
 	available = {
-		tag = GER
+		tag = ZYX
         NOT = {
-			has_country_flag = load_time
+			has_country_flag = load_time_g
+        }
+		GER = {
+	        exists = yes
         }
 	}
 
@@ -158,12 +164,10 @@ joint_focus = {
 	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_originator = {
-		GER = {
-			add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-		}
+		custom_effect_tooltip = cks_lunchuan3
 		set_country_flag = {
-			flag = load_time
-			days = 35
+			flag = load_time_g
+			days = 15
 			value = 1
 		}
 	}
@@ -171,13 +175,13 @@ joint_focus = {
 
 joint_focus = {
 	id = cks_23
-	icon = GFX_focus_GER_support_the_proletarian_uprising
+	icon = GFX_focus_GER_kriegslokomotive
 	prerequisite = { focus = cks_21 }
 	prerequisite = { focus = cks_22 }
 	relative_position_id = cks_1
 
 
-	text_icon = G_focus_style
+	text_icon = Z_focus_style
 
 	x = -2
 	y = 3
@@ -186,9 +190,12 @@ joint_focus = {
 	cost = 0
 
 	available = {
-		tag = GER
+		tag = ZYX
         NOT = {
-			has_country_flag = load_time
+			has_country_flag = load_time_g
+        }
+		GER = {
+	        exists = no
         }
 	}
 
@@ -197,14 +204,94 @@ joint_focus = {
 	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						controller = { is_subject_of = ROOT }
+					}
+					controller = { has_full_control_of_state = PREV }
+				    is_core_of_ZIM = yes
+					NOT = { 
+						state = 540
+						state = 917
+						state = 959
+						state = 879
+						state = 958
+						state = 956
+						state = 813
+						state = 954
+						state = 955
+						state = 871
+						state = 544
+						state = 899
+						state = 965
+						state = 1225
+						state = 546
+						state = 1032
+						state = 869
+						state = 870
+						state = 918
+						state = 548
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				transfer_state_to = GER
+				add_compliance = 25
+			}
+			every_state = {	
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						controller = { is_subject_of = ROOT }
+					}
+					controller = { has_full_control_of_state = PREV }
+					is_core_of_ZIM = yes
+					NOT = { 
+					    state = 540
+						state = 917
+						state = 959
+						state = 879
+						state = 958
+						state = 956
+						state = 813
+						state = 954
+						state = 955
+						state = 871
+						state = 544
+						state = 899
+						state = 965
+						state = 1225
+						state = 546
+						state = 1032
+						state = 869
+						state = 870
+						state = 918
+						state = 548 
+					}
+					NOT = {
+						OR = {
+							is_owned_by = ROOT
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				add_contested_owner = GER
+				set_state_controller_to = GER
+				add_compliance = 25
+			}
+		}
 		GER = {
-			add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+			load_focus_tree = GER_afica_focus_tree
 		}
-		set_country_flag = {
-			flag = load_time
-			days = 35
-			value = 1
-		}
+		custom_effect_tooltip = cks_lunchuan4		
 	}
 }
 
@@ -226,9 +313,11 @@ joint_focus = {
 	available = {
 		tag = ZYX
         NOT = {
-			has_country_flag = load_time
+			has_country_flag = load_time_g
         }
-		has_completed_focus = zg_2
+		GER = {
+			surrender_progress > 0.6
+		}
 	}
 
 	available_if_capitulated = no
@@ -236,29 +325,48 @@ joint_focus = {
 	ai_will_do = { factor = 1000 }
 
 	completion_reward_joint_originator = {
-		869 = {
-			add_extra_state_shared_building_slots = 4
-	        add_building_construction = {
-		        type = industrial_complex
-		        level = 2
-		        instant_build = yes
-		    }
-			add_building_construction = {
-		        type = arms_factory
-		        level = 2
-		        instant_build = yes
-		    }
-		}
-		set_country_flag = {
-			flag = load_time
-			days = 35
-			value = 1
-		}
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
 	}
 }
 
 joint_focus = {
 	id = cks_31
+	icon = GFX_AUS_Information_on_Hesse
+	prerequisite = { focus = cks_3 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 1
+	y = 2
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
+	}
+}
+
+joint_focus = {
+	id = cks_32
 	icon = GFX_focus_GER_all_for_the_front
 	prerequisite = { focus = cks_3 }
 	relative_position_id = cks_1
@@ -266,7 +374,7 @@ joint_focus = {
 
 	text_icon = Z_focus_style
 
-	x = 2
+	x = 3
 	y = 2
 
 
@@ -290,5 +398,180 @@ joint_focus = {
 			days = 35
 			value = 1
 		}
+	}
+}
+
+joint_focus = {
+	id = cks_32
+	icon = GFX_goal_constitution
+	prerequisite = { focus = cks_3 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 3
+	y = 2
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
+	}
+}
+
+joint_focus = {
+	id = cks_33
+	icon = GFX_goal_generic_munitions_factories
+	prerequisite = { focus = cks_3 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 5
+	y = 2
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
+	}
+}
+
+joint_focus = {
+	id = cks_34
+	icon = GFX_focus_generic_reinforcing_the_supply_network
+	prerequisite = { focus = cks_31 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 1
+	y = 3
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
+	}
+}
+
+joint_focus = {
+	id = cks_35
+	icon = GFX_focus_generic_reinforcing_the_supply_network
+	prerequisite = { focus = cks_32 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 3
+	y = 3
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
+	}
+}
+
+joint_focus = {
+	id = cks_36
+	icon = GFX_focus_generic_reinforcing_the_supply_network
+	prerequisite = { focus = cks_33 }
+	relative_position_id = cks_1
+
+
+	text_icon = Z_focus_style
+
+	x = 5
+	y = 3
+
+
+	cost = 1
+
+	available = {
+		tag = ZYX
+        NOT = {
+			has_completed_focus = cks_23
+        }
+		GER = {
+	        exists = yes
+        }
+	}
+
+	available_if_capitulated = no
+
+	ai_will_do = { factor = 1000 }
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = cks_zhuanyi
+		custom_effect_tooltip = cks_jieshu
 	}
 }

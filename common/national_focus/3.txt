@@ -353,6 +353,9 @@ focus_tree = {
 				target = ZXS
 				type = annex_everything
 			}
+			ZXS = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
 		}
 		bypass = {
 			ZXS = {
@@ -480,6 +483,9 @@ focus_tree = {
 				target = ZCS
 				type = annex_everything
 			}
+			ZCS = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
 		}
 		bypass = {
 			ZXS = {
@@ -568,6 +574,9 @@ focus_tree = {
 			create_wargoal = {
 				target = ZSH
 				type = annex_everything
+			}
+			ZSH = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
 			}
 		}
 		bypass = {
@@ -662,6 +671,15 @@ focus_tree = {
 			focus = 2_focus_40
 		}
 		completion_reward = {
+			ZSB = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
+			ZDM = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
+			ZHJ = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
 			custom_effect_tooltip = fight_tongyi
 		}
 	}

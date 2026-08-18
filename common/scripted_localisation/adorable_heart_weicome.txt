@@ -890,6 +890,11 @@ defined_text = {
     }
 
     text = {
+        trigger = { tag = ZIM }
+        localization_key = [GET_ZIM_Country_History]
+    }
+
+    text = {
         localization_key = coming_soon
     }
 }
@@ -900,6 +905,10 @@ defined_text = {
     text = {
         trigger = { tag = SOV }
         localization_key = SOV_his_page_01_title
+    }
+    text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_his_page_01_title
     }
     text = {
         trigger = { tag = ENG }
@@ -1040,6 +1049,10 @@ defined_text = {
         localization_key = SOV_his_page_02_title
     }
     text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_his_page_02_title
+    }
+    text = {
         trigger = { tag = ENG }
         localization_key = ENG_his_page_02_title
     }
@@ -1176,6 +1189,10 @@ defined_text = {
     text = {
         trigger = { tag = SOV }
         localization_key = SOV_his_page_03_title
+    }
+    text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_his_page_03_title
     }
     text = {
         trigger = { tag = ENG }
@@ -1345,6 +1362,10 @@ defined_text = {
     text = {
         trigger = { tag = ALS }
         localization_key = ITA_Local_History_Title
+    }
+    text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_Local_History_Title
     }
     text = {
         trigger = { tag = ENG }
@@ -1612,6 +1633,10 @@ defined_text = {
     text = {
         trigger = { tag = TRB }
         localization_key = TRB_route_guide_desc
+    }
+    text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_route_guide_desc
     }
     text = {
         trigger = { tag = ENG }
