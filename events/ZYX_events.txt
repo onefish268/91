@@ -1269,16 +1269,16 @@ country_event = {#老大向丽莎赠送各种非洲的奇珍异兽
     }
 }
 
-country_event = {#老大向丽莎
-    id = ZYX.34
-    title = ZYX.34.t
-    desc = ZYX.34.desc
+country_event = { #老大向丽莎吹嘘自己统一经历
+    id = ZYX.37
+    title = ZYX.37.t
+    desc = ZYX.37.desc
 
     is_triggered_only = yes
 
 
 	option = {
-        name = ZYX.34.a
+        name = ZYX.37.a
         ai_chance = { base = 50 }
         trigger = {
 			tag = ZYX			
@@ -1286,14 +1286,14 @@ country_event = {#老大向丽莎
 
         ZYX = {
             country_event = {
-                id = ZYX.35
+                id = ZYX.38
                 days = 40
             }
         }
     }
 
     option = {
-        name = ZYX.34.b
+        name = ZYX.37.b
         ai_chance = { base = 50 }
         trigger = {
 			tag = GER			
@@ -1301,23 +1301,23 @@ country_event = {#老大向丽莎
 
         GER = {
             country_event = {
-                id = ZYX.35
+                id = ZYX.38
                 days = 40
             }
         }
     }
 }
 
-country_event = {#老大向丽莎
-    id = ZYX.34
-    title = ZYX.34.t
-    desc = ZYX.34.desc
+country_event = {#老大向丽莎询问美食 #丽莎应该不会反对吧……
+    id = ZYX.38
+    title = ZYX.38.t
+    desc = ZYX.38.desc
 
     is_triggered_only = yes
 
 
 	option = {
-        name = ZYX.34.a
+        name = ZYX.38.a
         ai_chance = { base = 50 }
         trigger = {
 			tag = ZYX			
@@ -1325,14 +1325,14 @@ country_event = {#老大向丽莎
 
         ZYX = {
             country_event = {
-                id = ZYX.35
+                id = ZYX.39
                 days = 40
             }
         }
     }
 
     option = {
-        name = ZYX.34.b
+        name = ZYX.38.b
         ai_chance = { base = 50 }
         trigger = {
 			tag = GER			
@@ -1340,17 +1340,17 @@ country_event = {#老大向丽莎
 
         GER = {
             country_event = {
-                id = ZYX.35
+                id = ZYX.39
                 days = 40
             }
         }
     }
 }
 
-country_event = {#老大向丽莎
-    id = ZYX.34
-    title = ZYX.34.t
-    desc = ZYX.34.desc
+country_event = {#老大向丽莎抱怨
+    id = ZYX.39
+    title = ZYX.39.t
+    desc = ZYX.39.desc
 
     is_triggered_only = yes
 
