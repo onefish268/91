@@ -1152,6 +1152,123 @@ country_event = {#老大向丽莎邮寄索尔兹伯里的照片
     }
 }
 
+country_event = {#老大同丽莎一起讨论未来的世界格局
+    id = ZYX.34
+    title = ZYX.34.t
+    desc = ZYX.34.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.34.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.35
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.34.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.35
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向丽莎谈及外星人的事情
+    id = ZYX.35
+    title = ZYX.35.t
+    desc = ZYX.35.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.35.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.36
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.35.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.36
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向丽莎赠送各种非洲的奇珍异兽
+    id = ZYX.36
+    title = ZYX.36.t
+    desc = ZYX.36.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.36.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.37
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.36.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.37
+                days = 40
+            }
+        }
+    }
+}
+
 country_event = {#老大向丽莎
     id = ZYX.34
     title = ZYX.34.t
@@ -1188,5 +1305,63 @@ country_event = {#老大向丽莎
                 days = 40
             }
         }
+    }
+}
+
+country_event = {#老大向丽莎
+    id = ZYX.34
+    title = ZYX.34.t
+    desc = ZYX.34.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.34.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.35
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.34.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.35
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向丽莎
+    id = ZYX.34
+    title = ZYX.34.t
+    desc = ZYX.34.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.34.a
+        ai_chance = { base = 50 }
+    }
+
+    option = {
+        name = ZYX.34.b
+        ai_chance = { base = 50 }
     }
 }
