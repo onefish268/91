@@ -1004,7 +1004,6 @@ country_event = {#有关宣传鼓动部
 
     is_triggered_only = yes
 
-
 	option = {
         name = ZYX.30.a
         ai_chance = { base = 50 }
@@ -1030,6 +1029,162 @@ country_event = {#有关宣传鼓动部
         GER = {
             country_event = {
                 id = ZYX.31
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向希尔等人展示兽耳娘的成就
+    id = ZYX.31
+    title = ZYX.31.t
+    desc = ZYX.31.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.31.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.32
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.31.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.32
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大同希尔共同检阅黑小将
+    id = ZYX.32
+    title = ZYX.32.t
+    desc = ZYX.32.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.32.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.33
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.32.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.33
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向丽莎邮寄索尔兹伯里的照片
+    id = ZYX.33
+    title = ZYX.33.t
+    desc = ZYX.33.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.33.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.34
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.33.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.34
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#老大向丽莎们
+    id = ZYX.34
+    title = ZYX.34.t
+    desc = ZYX.34.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.34.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.35
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.34.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.35
                 days = 40
             }
         }
