@@ -489,3 +489,549 @@ country_event = {#对极端的看法
         }
     }
 }
+
+country_event = {#莉莎没理duce，duce生气了
+    id = ZYX.17
+    title = ZYX.17.t
+    desc = ZYX.17.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.17.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.18
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.17.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.18
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#duce：希尔，交个朋友？
+    id = ZYX.18
+    title = ZYX.18.t
+    desc = ZYX.18.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.18.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.19
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.18.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.19
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#远程看电影
+    id = ZYX.19
+    title = ZYX.19.t
+    desc = ZYX.19.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.19.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.20
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.19.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.20
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#莉莎：机枪阵地向左平移5cm
+    id = ZYX.20
+    title = ZYX.20.t
+    desc = ZYX.20.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.20.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.21
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.20.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.21
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#莉莎：展示德意志坦克 duce：造不起
+    id = ZYX.21
+    title = ZYX.21.t
+    desc = ZYX.21.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.21.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.22
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.21.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.22
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#论种族歧视
+    id = ZYX.22
+    title = ZYX.22.t
+    desc = ZYX.22.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.22.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.23
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.22.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.23
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#莉莎忘了带伞
+    id = ZYX.23
+    title = ZYX.23.t
+    desc = ZYX.23.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.23.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.24
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.23.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.24
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#谈及魔导国
+    id = ZYX.24
+    title = ZYX.24.t
+    desc = ZYX.24.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.24.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.25
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.24.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.25
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#下中国象棋
+    id = ZYX.25
+    title = ZYX.25.t
+    desc = ZYX.25.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.25.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.26
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.25.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.26
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#duce去游泳
+    id = ZYX.26
+    title = ZYX.26.t
+    desc = ZYX.26.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.26.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.27
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.26.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.27
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#莉莎梦见在地堡自杀
+    id = ZYX.27
+    title = ZYX.27.t
+    desc = ZYX.27.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.27.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.28
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.27.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.28
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#希尔前来非洲，谈论犹太人问题
+    id = ZYX.28
+    title = ZYX.28.t
+    desc = ZYX.28.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.28.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.29
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.28.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.29
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#duce梦见倒挂金钩
+    id = ZYX.29
+    title = ZYX.29.t
+    desc = ZYX.29.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.29.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.30
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.29.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.30
+                days = 40
+            }
+        }
+    }
+}
+
+country_event = {#有关宣传鼓动部
+    id = ZYX.30
+    title = ZYX.30.t
+    desc = ZYX.30.desc
+
+    is_triggered_only = yes
+
+
+	option = {
+        name = ZYX.30.a
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = ZYX			
+		}
+
+        ZYX = {
+            country_event = {
+                id = ZYX.31
+                days = 40
+            }
+        }
+    }
+
+    option = {
+        name = ZYX.30.b
+        ai_chance = { base = 50 }
+        trigger = {
+			tag = GER			
+		}
+
+        GER = {
+            country_event = {
+                id = ZYX.31
+                days = 40
+            }
+        }
+    }
+}
