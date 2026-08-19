@@ -294,6 +294,9 @@ focus_tree = {
 		prerequisite = {
 			focus = 3_focus_2
 		}
+		completion_reward = {
+			custom_effect_tooltip = cks_lunchuan5
+		}
 	}
 	focus = {
 		id = 3_focus_2
