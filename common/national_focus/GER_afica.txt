@@ -40,6 +40,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_1
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_3
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_4
@@ -52,6 +57,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_2
 		}
+		available = {
+            NOT = {
+			    has_completed_focus = 7_focus_5
+			    has_completed_focus = 7_focus_6
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_5
@@ -64,6 +75,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_2
 		}
+		available = {
+            NOT = {
+			    has_completed_focus = 7_focus_4
+			    has_completed_focus = 7_focus_6
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_6
@@ -76,6 +93,12 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_2
 		}
+		available = {
+            NOT = {
+			    has_completed_focus = 7_focus_5
+			    has_completed_focus = 7_focus_4
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_7
@@ -160,6 +183,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_3
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_31
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_14
@@ -172,6 +200,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_13
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_34
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_15
@@ -184,6 +217,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_3
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_32
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_16
@@ -196,6 +234,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_15
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_35
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_17
@@ -208,6 +251,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_3
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_33
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_18
@@ -220,6 +268,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 7_focus_17
 		}
+		available = {
+            ZYX = {
+			    has_completed_focus = cks_36
+            }
+	    }
 	}
 	focus = {
 		id = 7_focus_19
