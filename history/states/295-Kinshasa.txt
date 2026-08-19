@@ -15,7 +15,7 @@ state = {##魔界溪谷领地的首都
 		add_to_array = { state_victory_points = 5117 }
 
 		victory_points = { 
-			5117 10
+			5117 50
 		}
 
 		buildings = {

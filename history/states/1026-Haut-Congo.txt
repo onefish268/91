@@ -10,7 +10,7 @@ state = {
 		add_core_of = COG
 		add_to_array = { state_victory_points = 1950 }
 
-		victory_points = { 1950 3 }
+		victory_points = { 1950 20 }
 
 		buildings = {
 			infrastructure = 3
