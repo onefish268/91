@@ -1,0 +1,51 @@
+add_namespace = GER
+
+country_event = {
+    id = GER_afica.1
+    title = GER_afica.1.t
+    desc = GER_afica.1.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.1.a
+        ENG = {
+            country_event = {
+                id = GER_afica.2
+                days = 7
+            }
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.2
+    title = GER_afica.2.t
+    desc = GER_afica.2.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.2.a
+        GER = {
+            complete_national_focus = 7_focus_24
+            transfer_state = 1030
+            transfer_state = 1031
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.3
+    title = GER_afica.3.t
+    desc = GER_afica.3.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.3.a
+        GER = {
+            transfer_state = 1227
+        }
+        ai_chance = { base = 50 }
+    }
+}
