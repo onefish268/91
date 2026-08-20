@@ -1,4 +1,4 @@
-add_namespace = GER
+add_namespace = GER_afica
 
 country_event = {
     id = GER_afica.1

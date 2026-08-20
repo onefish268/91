@@ -439,7 +439,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_timed_idea = {
-				idea = GER_strengthened_supply_lines_ns
+				idea = GER_strengthened_supply_lines_ns#没效果，得重新写一个
 				days = 730
 			}
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					1030 = {
+					1230 = {
 						controller = {
 							NOT = {
 								tag = ROOT
@@ -467,11 +467,11 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_claim = 1030
+				add_state_claim = 1230
 			}
 			if = {
 				limit = {
-					1031 = {
+					1231 = {
 						controller = {
 							NOT = {
 								tag = ROOT
@@ -480,7 +480,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_claim = 1031
+				add_state_claim = 1231
 			}
 		}
 		
@@ -626,7 +626,39 @@ focus_tree = {
 			has_completed_focus = 7_focus_31
 		}
 		completion_reward = {
-			add_idea = triumphant_will
+			if = {
+				limit = {
+					has_country_leader_with_trait = GER_supreme_commander_armed_forces
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_supreme_commander_armed_forces
+						add = GER_supreme_leader
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_completed_focus = GER_an_invincible_army }
+				}
+				effect_tooltip = {
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						swap_country_leader_traits = {
+							remove = GER_supreme_commander_armed_forces
+							add = GER_supreme_leader
+						}
+					}
+				}
+			}
+			else = {
+				add_country_leader_trait = GER_supreme_leader
+			}
 		}
 	}
 	focus = {
