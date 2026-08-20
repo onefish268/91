@@ -1,0 +1,119 @@
+music_station = "Adorable_heart_superevents"
+
+music = {
+    song = "启航"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "宣告"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "迷途"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "duce！"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "正步走"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "漫漫长路"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "飞向太空"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "登上火车"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "紧迫"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "耐心"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "暖阳"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "舞曲"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "小提琴"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "战争恶魔"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+
+
+
+

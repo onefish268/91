@@ -17,6 +17,9 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
+			hidden_effect = {
+                scoped_play_song = "正步走"
+            }
 			add_stability = -1
 			add_war_support = -1
 			add_country_leader_trait = GER_afica_quexi_trait
@@ -438,6 +441,9 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
+			hidden_effect = {
+                scoped_play_song = "漫漫长路"
+            }
 			add_timed_idea = {
 				idea = GER_defend_the_vaterland_idea
 				days = 730
@@ -1474,6 +1480,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 7_focus_78
+		}
+		completion_reward = {
+			hidden_effect = {
+                scoped_play_song = "小提琴"
+            }
 		}
 	}
 	focus = {

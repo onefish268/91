@@ -514,6 +514,9 @@ focus_tree = {
 			add_ideas = {
 				ZYX_Better_future
 			}
+			hidden_effect = {
+                scoped_play_song = "暖阳"
+            }
 		}
 	}
 	focus = {
@@ -3943,6 +3946,9 @@ focus_tree = {
 				target = SOV
 				type = annex_everything
 			}
+			hidden_effect = {
+                scoped_play_song = "战争恶魔"
+            }
 		}
 		available = {
 			SOV = {

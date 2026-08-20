@@ -10,7 +10,7 @@ country_event = {#深夜的市长府邸
     option = {
         name = ZSB.1.a
         hidden_effect = {
-            scoped_play_song = "ZSB_effect_1"
+            scoped_play_song = "启航"
         }
         ai_chance = { base = 50 }
     }
@@ -521,6 +521,9 @@ country_event = {#检查选举结果
         trigger = { has_country_flag = ZSB_KL_win_the_vote }
 
         complete_national_focus = 6_focus_3
+        hidden_effect = {
+            scoped_play_song = "舞曲"
+        }
     }
 
     option = {
@@ -528,5 +531,8 @@ country_event = {#检查选举结果
         trigger = { NOT = { has_country_flag = ZSB_KL_win_the_vote } }
 
         complete_national_focus = 6_focus_2
+        hidden_effect = {
+            scoped_play_song = "耐心"
+        }
     }
 }

@@ -41,6 +41,9 @@ joint_focus = {
 			days = 35
 			value = 1
 		}
+		hidden_effect = {
+                scoped_play_song = "紧迫"
+        }
 		custom_effect_tooltip = ABDA_faction_membership_requirement_tt
 	}
 }

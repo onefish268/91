@@ -1744,6 +1744,9 @@ focus_tree = {
 			focus = 6_focus_56
 		}
 		completion_reward = {
+			hidden_effect = {
+                scoped_play_song = "飞向太空"
+            }
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}

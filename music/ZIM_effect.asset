@@ -1,0 +1,70 @@
+music = {
+    name = "启航"
+    file = "启航.ogg"
+    volume = 1
+}
+music = {
+    name = "宣告"
+    file = "宣告.ogg"
+    volume = 1
+}
+music = {
+    name = "迷途"
+    file = "迷途.ogg"
+    volume = 1
+}
+music = {
+    name = "duce！"
+    file = "duce！.ogg"
+    volume = 1
+}
+music = {
+    name = "正步走"
+    file = "正步走.ogg"
+    volume = 1
+}
+music = {
+    name = "漫漫长路"
+    file = "漫漫长路.ogg"
+    volume = 1
+}
+music = {
+    name = "飞向太空"
+    file = "飞向太空.ogg"
+    volume = 1
+}
+music = {
+    name = "登上火车"
+    file = "登上火车.ogg"
+    volume = 1
+}
+music = {
+    name = "紧迫"
+    file = "紧迫.ogg"
+    volume = 1
+}
+music = {
+    name = "耐心"
+    file = "耐心.ogg"
+    volume = 1
+}
+music = {
+    name = "暖阳"
+    file = "暖阳.ogg"
+    volume = 1
+}
+music = {
+    name = "舞曲"
+    file = "舞曲.ogg"
+    volume = 1
+}
+music = {
+    name = "小提琴"
+    file = "小提琴.ogg"
+    volume = 1
+}
+music = {
+    name = "战争恶魔"
+    file = "战争恶魔.ogg"
+    volume = 1
+}
