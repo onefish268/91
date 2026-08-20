@@ -60,6 +60,7 @@ country_event = {
 
     option = {
         name = ZIM.5.a
+        custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
 }
@@ -72,6 +73,7 @@ country_event = {
 
     option = {
         name = ZIM.6.a
+        custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
 }
@@ -84,6 +86,7 @@ country_event = {
 
     option = {
         name = ZIM.7.a
+        custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
 }
