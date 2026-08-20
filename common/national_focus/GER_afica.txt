@@ -439,7 +439,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_timed_idea = {
-				idea = GER_strengthened_supply_lines_ns#没效果，得重新写一个
+				idea = GER_defend_the_vaterland_idea
 				days = 730
 			}
 		}
@@ -449,7 +449,7 @@ focus_tree = {
 		icon = GFX_focus_GER_anschluss
 		x = 10
 		y = 7
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -490,7 +490,7 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_czechoslovakia
 		x = 9
 		y = 8
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -508,7 +508,7 @@ focus_tree = {
 		icon = GFX_focus_GER_demonstration_of_military_achievements
 		x = 11
 		y = 8
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -531,14 +531,14 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 13
 		y = 8
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 7_focus_20
 		}
 		completion_reward = {
-			
+			ENG = { country_event = GER_afica.6 }
 		}
 	}
 	focus = {
@@ -546,7 +546,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		x = 9
 		y = 9
-		cost = 0
+		cost = 10
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -564,7 +564,7 @@ focus_tree = {
 		icon = GFX_focus_GER_german_army_invincible
 		x = 11
 		y = 9
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -615,7 +615,7 @@ focus_tree = {
 		icon = GFX_focus_GER_the_supreme_leader
 		x = 11
 		y = 10
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -666,7 +666,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 9
 		y = 10
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -684,7 +684,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 9
 		y = 11
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -694,7 +694,7 @@ focus_tree = {
 			focus = 7_focus_27
 		}
 		completion_reward = {
-			
+			EAS = { country_event = GER_afica.4 }
 		}
 	}
 	focus = {
@@ -702,7 +702,7 @@ focus_tree = {
 		icon = GFX_goal_generic_authority
 		x = 13
 		y = 11
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -712,7 +712,7 @@ focus_tree = {
 			focus = 7_focus_23
 		}
 		completion_reward = {
-			
+			EAS = { country_event = GER_afica.9 }
 		}
 	}
 	focus = {
@@ -720,14 +720,14 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		x = 9
 		y = 12
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 7_focus_28
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = cks_lunchuan13
 		}
 	}
 	focus = {
@@ -735,7 +735,7 @@ focus_tree = {
 		icon = GFX_focus_GER_propaganda_master
 		x = 11
 		y = 12
-		cost = 0
+		cost = 6
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -743,7 +743,10 @@ focus_tree = {
 			focus = 7_focus_28
 		}
 		completion_reward = {
-			
+			EAS = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
 		}
 	}
 	focus = {
@@ -751,7 +754,7 @@ focus_tree = {
 		icon = GFX_focus_por_recover_latin_america
 		x = 10
 		y = 13
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -759,7 +762,62 @@ focus_tree = {
 			focus = 7_focus_29
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				target = ELF
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LFC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MGU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LHS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAQ
+				type = annex_everything
+			}
+			ELF = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			LFC = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			MGU = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			LHS = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			PAM = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			PAO = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
+			PAQ = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
 		}
 	}
 	focus = {
@@ -767,7 +825,7 @@ focus_tree = {
 		icon = GFX_focus_GER_re_establish_german_control_over_qingdao
 		x = 12
 		y = 13
-		cost = 0
+		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -775,7 +833,9 @@ focus_tree = {
 			focus = 7_focus_29
 		}
 		completion_reward = {
-			
+			GER = {
+				add_to_faction = CHI
+			}
 		}
 	}
 	focus = {
@@ -783,14 +843,21 @@ focus_tree = {
 		icon = GFX_focus_ger_reichskommisariats
 		x = 15
 		y = 8
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 7_focus_20
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+				name = GER_autonomy_in_the_kriegsschulen
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -798,14 +865,57 @@ focus_tree = {
 		icon = GFX_focus_generic_fascist_troops
 		x = 15
 		y = 9
-		cost = 0
+		cost = 5
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 7_focus_34
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = { has_template = "Waffen-SS Division" }
+				}
+				division_template = {
+					name = "Waffen-SS Division"
+					priority = 2
+					division_names_group = GER_SS_01
+					template_counter = 101
+					is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+					
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 2 }
+					}
+					override_model = GER_militia
+				}
+			}
+			if = {
+				limit = {
+					545 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				545 = {
+					custom_effect_tooltip = GER_create_four_militia_units_tt
+					hidden_effect = {
+						create_unit = {
+							division = "division_template =\"Waffen-SS Division\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+							owner = ROOT
+							count = 11
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {

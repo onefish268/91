@@ -301,8 +301,8 @@ leader_traits = {
     GER_afica_zhongcheng2_trait = {
         random = no
 
-        stability_weekly = 0.07
-        war_support_weekly = 0.07
+        stability_weekly = 0.03
+        war_support_weekly = 0.03
         weekly_manpower = 800
     }
 

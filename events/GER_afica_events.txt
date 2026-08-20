@@ -28,8 +28,8 @@ country_event = {
         name = GER_afica.2.a
         GER = {
             complete_national_focus = 7_focus_24
-            transfer_state = 1030
-            transfer_state = 1031
+            transfer_state = 1230
+            transfer_state = 1231
         }
         ai_chance = { base = 50 }
     }
@@ -49,3 +49,220 @@ country_event = {
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {
+    id = GER_afica.4
+    title = GER_afica.4.t
+    desc = GER_afica.4.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.4.a
+        GER = {
+            country_event = {
+                id = GER_afica.5
+                days = 7
+            }
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.5
+    title = GER_afica.5.t
+    desc = GER_afica.5.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.5.a
+        GER = {
+            transfer_state = 1227
+        }
+        custom_option_tooltip = cks_lunchuan12
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.6
+    title = GER_afica.6.t
+    desc = GER_afica.6.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.6.a
+        GER = {
+            country_event = {
+                id = GER_afica.7
+                days = 7
+            }
+        }
+        ai_chance = { 
+            base = 1 
+            modifier = {
+                factor = 90
+                has_completed_focus = 7_focus_30
+            }
+        }
+    }
+
+    option = {
+        name = GER_afica.6.b
+        GER = {
+            country_event = {
+                id = GER_afica.8
+                days = 7
+            }
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.7
+    title = GER_afica.7.t
+    desc = GER_afica.7.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.7.a
+        GER = {
+            transfer_state = 543
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.8
+    title = GER_afica.8.t
+    desc = GER_afica.8.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.8.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.9
+    title = GER_afica.9.t
+    desc = GER_afica.9.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.9.a
+        GER = {
+            country_event = {
+                id = GER_afica.10
+                days = 7
+            }
+        }
+        ai_chance = { base = 10 }
+    }
+
+    option = {
+        name = GER_afica.9.b
+        GER = {
+            country_event = {
+                id = GER_afica.11
+                days = 7
+            }
+        }
+        ai_chance = { base = 90 }
+    }
+}
+
+country_event = {
+    id = GER_afica.10
+    title = GER_afica.10.t
+    desc = GER_afica.10.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.10.a
+        GER = {
+            transfer_state = 1229
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.11
+    title = GER_afica.11.t
+    desc = GER_afica.11.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.11.a
+        declare_war_on = {
+            target = EAS  
+            type = annex_everything  
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#接收器
+    id = GER_afica.12
+    hidden = yes    
+
+    trigger = {
+        ENG = {
+	        exists = yes
+        }
+        EAS = {
+			surrender_progress > 0.9
+		}
+    }
+    fire_only_once = yes
+
+	immediate = {
+        GER = {
+            country_event = {
+                id = GER_afica.13
+                days = 7
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GER_afica.13
+    title = GER_afica.13.t
+    desc = GER_afica.13.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.13.a
+        GER = {
+            white_peace = ENG
+            annex_country = { target = EAS transfer_troops = yes }
+        }
+        GER = {
+            transfer_state = 1127
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.14
+    title = GER_afica.14.t
+    desc = GER_afica.14.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.14.a
+        GER = {
+            change_tag_from = ZYX
+        }       
+        ai_chance = { base = 50 }
+    }
+}
+
+
+

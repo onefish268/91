@@ -287,6 +287,10 @@ joint_focus = {
 				set_state_controller_to = GER
 				add_compliance = 25
 			}
+			country_event = {
+				id = GER_afica.14
+				days = 7
+			}
 		}
 		GER = {
 			load_focus_tree = GER_afica_focus_tree
