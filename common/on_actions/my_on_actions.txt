@@ -9,12 +9,16 @@ on_actions = {
     on_capitulation_immediate = {
 		effect = {
 			if = {
-				#一心会击败敌人
+				limit = {
+                    FROM = { tag = ZCS }     
+                    ROOT = { tag = ZYX }   
+                }
 				ZYX = {
 					white_peace = {
 						tag = ZCS
 						message = ZYX_win_ZCS
 					}
+					annex_country = { target = ZCS transfer_troops = yes }
 				}
 			}
 		}
@@ -22,12 +26,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
-				#一心会击败敌人
+				limit = {
+                    FROM = { tag = ZXS }     
+                    ROOT = { tag = ZYX }   
+                }
                 ZYX = {
 					white_peace = {
 						tag = ZXS
 						message = ZYX_win_ZXS
 					}
+					annex_country = { target = ZXS transfer_troops = yes }
 				}
 			}
 		}
@@ -35,12 +43,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
-				#一心会击败敌人
+				limit = {
+                    FROM = { tag = ZSH }     
+                    ROOT = { tag = ZYX }   
+                }
                 ZYX = {
 					white_peace = {
 						tag = ZSH
 						message = ZYX_win_ZSH
 					}
+					annex_country = { target = ZSH transfer_troops = yes }
 				}
 			}
 		}
@@ -48,11 +60,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
+				limit = {
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZYX }   
+                }
 				ZYX = {
 					white_peace = {
 						tag = ZSB
 						message = ZYX_win_ZSB
 					}
+					annex_country = { target = ZSB transfer_troops = yes }
 				}
 			}
 		}
@@ -60,11 +77,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
+				limit = {
+                    FROM = { tag = ZHJ }     
+                    ROOT = { tag = ZSB }   
+                }
 				ZSB = {
 					white_peace = {
 						tag = ZHJ
 						message = ZSB_win_ZHJ
 					}
+					annex_country = { target = ZHJ transfer_troops = yes }
 				}
 			}
 		}
@@ -72,11 +94,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
+				limit = {
+                    FROM = { tag = ZSH }     
+                    ROOT = { tag = ZSB }   
+                }
 				ZSB = {
 					white_peace = {
 						tag = ZSH
 						message = ZSB_win_ZSH
 					}
+					annex_country = { target = ZHJ transfer_troops = yes }
 				}
 			}
 		}
@@ -84,11 +111,16 @@ on_actions = {
 	on_capitulation_immediate = {
 		effect = {
 			if = {
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZSB }   
+                }
 				ZSB = {
 					white_peace = {
 						tag = ZYX
 						message = ZSB_win_ZYX
 					}
+					annex_country = { target = ZYX transfer_troops = yes }
 				}
 			}
 		}
