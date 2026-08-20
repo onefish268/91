@@ -6,4 +6,54 @@ on_actions = {
             }
         }
     }
+    on_capitulation_immediate = {
+		effect = {
+			if = {
+				#一心会击败敌人
+				ZYX = {
+					white_peace = {
+						tag = ZCS
+						message = ZYX_win_ZCS
+					}
+				}
+                ZYX = {
+					white_peace = {
+						tag = ZXS
+						message = ZYX_win_ZXS
+					}
+				}
+                ZYX = {
+					white_peace = {
+						tag = ZSH
+						message = ZYX_win_ZSH
+					}
+				}
+                ZYX = {
+					white_peace = {
+						tag = ZSB
+						message = ZYX_win_ZSB
+					}
+				}
+                #圣杯联邦击败敌人
+                ZSB = {
+					white_peace = {
+						tag = ZHJ
+						message = ZSB_win_ZHJ
+					}
+				}
+                ZSB = {
+					white_peace = {
+						tag = ZSH
+						message = ZSB_win_ZSH
+					}
+				}
+                ZSB = {
+					white_peace = {
+						tag = ZYX
+						message = ZSB_win_ZYX
+					}
+				}
+			}
+		}
+	}
 }

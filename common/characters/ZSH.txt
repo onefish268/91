@@ -1,6 +1,6 @@
 characters = {
 	ZSH_liemao = {
-		name = "列宁*毛"
+		name = "姆比里·伊里奇"
 		portraits = {
 			civilian = {
 				large = "liemao"
