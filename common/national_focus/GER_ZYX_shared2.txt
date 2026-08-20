@@ -116,7 +116,7 @@ joint_focus = {
 			has_country_flag = load_time_g
         }
 		GER = {
-	        exists = yes
+	        exists = no
         }
 	}
 
@@ -158,7 +158,7 @@ joint_focus = {
 			has_country_flag = load_time_g
         }
 		GER = {
-	        exists = yes
+	        exists = no
         }
 	}
 

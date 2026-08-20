@@ -1,0 +1,286 @@
+German_Foreign_Office = {  ##德国外交部
+	icon = GFX_decision_category_generic_political_actions
+	priority = 120
+	picture = GFX_German_Foreign_Office
+	allowed = {
+		tag = GER
+	}
+	visible = {
+	}
+}
+
+GER_Customs_Union = {  ##关税同盟
+	icon = GFX_Customs_Union_decision
+	priority = 120
+	allowed = {
+		is_germany_tag = yes
+	}
+	visible = {
+		has_completed_focus = GER_Central_European_fortress
+	}
+}
+
+AUS_pl_cat = {  ##政治宣传部门
+	icon = generic_research
+	priority = 110
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = AUS_pl_cat
+		not = {
+			has_global_flag = GER_REBUILD_ALREADY
+		}
+	}
+	scripted_gui = AUS_pl_cat_gui
+}
+
+GER_Renaissance_War = {  ##复国战争
+	icon = GFX_decision_category_border_conflicts
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = start_GER_Renaissance_War
+		not = {
+			4 = {
+				is_controlled_by = GER
+			}
+		}
+	}
+	priority = 999
+}
+
+GER_GREAT_GERMANIA_PLAN = { #光复大德意志
+	priority = 109
+	icon = generic_formable_nations
+	picture = GFX_decision_G_ger
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		or = {
+			has_completed_focus = GER_She_won_t_leave
+			has_completed_focus = GER_generic_03
+		}
+	}
+	on_map_area = {
+		name = control_of_these_states_is_required_to_form_the_nation
+		zoom = 1000
+		target_array = global.ah_formables_states_array
+		target_trigger = {
+			FROM = {
+				has_state_flag = G_GER
+			}
+		}
+	}
+}
+
+GER_Greater_Germania_Plan = {  ##大日耳曼妮娅计划
+	priority = 108
+	icon = GFX_decision_category_ger_reichskommissariats
+	picture = GFX_GREAT_GERMANIA
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		or = {
+			has_completed_focus = GER_She_won_t_leave
+			has_completed_focus = GER_generic_04
+		}
+	}
+}
+
+GER_mefo_bills_category = {  ##梅福券
+	icon = ger_mefo_bills
+	picture = GFX_decision_cat_generic_mefo_bills
+	allowed = {
+		original_tag = GER
+	}
+	priority = 70
+}
+
+GER_LIVE_SPARE = {  ##拓展德意志生存空间
+	priority = 250
+	icon = GFX_decision_category_gre_faction_management
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		or = {
+			has_completed_focus = GER_She_won_t_leave
+			has_completed_focus = GER_generic_05
+		}
+	}
+}
+
+GER_black_sun_plan = {  ##黑日计划
+	icon = GFX_SS_black_sun
+	priority = 500
+	scripted_gui = GER_black_sun_window
+	visible_when_empty = yes
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_himmler_01
+	}
+}
+
+GER_unit_HRR = {  ##重建神圣罗马帝国
+	#icon = army_reform
+	priority = 130
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_WW_55
+	}
+	on_map_area = {
+		name = control_of_these_states_is_required_to_form_the_nation
+		zoom = 1000
+		target_array = global.ah_formables_states_array
+		target_trigger = {
+			FROM = {
+				has_state_flag = HRR
+			}
+		}
+	}
+}
+
+Soviet_German_conflict = {  ##苏德冲突
+	icon = GFX_decision_category_border_conflicts
+	priority = 150
+	allowed = {
+		or = {
+			original_tag = GER
+			original_tag = GEU
+			original_tag = SOV
+		}
+	}
+	visible = {
+		or = {
+			original_tag = GER
+			original_tag = GEU
+			original_tag = SOV
+		}
+	}
+}
+
+GER_reich_Diplomacy_decisions = {  ##恢复欧洲君主制
+	priority = 105
+	icon = generic_formable_nations
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		original_tag = GER
+		is_subject = no
+	}
+}
+
+GER_Eye_of_Rebirth_Project = {  ##重生之眼
+	priority = 500
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_Lisa_will_definitely_return
+	}
+}
+
+GER_European_Union_decision_cate = {  ##欧洲联盟
+	icon = GFX_decision_category_generic_foreign_policy
+	scripted_gui = GER_European_Union_gui
+	priority = 999
+	visible_when_empty = yes
+	visible = {
+		is_in_array = {
+			array = global.GER_European_Union_members_array
+			value = THIS
+		}
+		is_subject = no
+	}
+	allowed = {
+	}
+}
+
+GER_special_tank = {  ##特别研究部门
+	icon = GFX_science_decision
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_army_18
+	}
+}
+
+Build_germany_decision_cate = {  ##统一德意志
+	icon = generic_formable_nations
+	picture = GFX_decision_L_ger
+	priority = 150
+	allowed = {
+		is_germany_tag = yes
+		NOT = {
+			or = {
+				tag = GER
+				tag = GEU
+				tag = DVL
+				tag = WGR
+			}
+		}
+	}
+	visible = {
+	}
+	on_map_area = {
+		name = control_of_these_states_is_required_to_form_the_nation
+		zoom = 1000
+		target_array = global.ah_formables_states_array
+		target_trigger = {
+			FROM = { has_state_flag = L_GER }
+		}
+	}
+}
+
+GER_Danube_Conflict = {  ##多瑙河冲突
+	icon = GFX_decision_category_hol_war_on_pacifism
+	priority = 999
+	visible = {
+		has_global_flag = GER_Closeted_With_SLO
+	}
+	allowed = {
+		or = {
+			tag = GER
+			tag = HUN
+			tag = SLO
+		}
+	}
+}
+
+Caught_xier = {  ##监狱中的元首
+	icon = GFX_decision_category_adorable_heart_prison
+	picture = GFX_Caught_xier
+	priority = 50
+	allowed = {
+	}
+	visible = {
+		has_country_flag = Caught_xier
+		not = {
+			has_country_flag = xier_join
+		}
+	}
+}
+
+
+GER_debug = {
+	priority = 999
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		is_debug = yes
+	}
+}
+
+
+

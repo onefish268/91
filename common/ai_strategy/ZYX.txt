@@ -774,12 +774,54 @@
 		}
 	}
 
+	ZYX_has_friend_with_GER = { 
+		allowed = {
+			original_tag = ZYX
+		}
+		enable = {
+			ZYX = {
+				is_ai = yes
+			}
+		}
+		abort = {
+			or = {
+				not = { country_exists = GER }
+			}
+		}
+		ai_strategy = {
+			type = declare_war
+			id = "GER"
+			value = -1000
+		}
+	}
+
+	ZYX_has_war_with_ZSB = { 
+		allowed = {
+			original_tag = ZYX
+		}
+		enable = {
+			has_focus_tree = 2_focus_43
+		}
+		abort = {
+			or = {
+				not = { country_exists = ZSB }
+			}
+		}
+		ai_strategy = {
+			type = declare_war
+			id = "ZSB"
+			value = 1000
+		}
+	}
+
 	ZYX_prepare_for_war_with_DVL = { #警惕魔导
 		allowed = {
 			original_tag = ZYX
 		}
 		enable = {
-			has_focus_tree = 3_focus_123
+			ZYX = {
+				has_focus_tree = 3_focus_123
+			}
 		}
 		abort = {
 			or = {
@@ -849,6 +891,25 @@
 		ai_strategy = {
 			type = prepare_for_war
 			id = "ZSH"
+			value = 1000
+		}
+	}
+
+	ZYX_prepare_for_war_with_ZSB = { 
+		allowed = {
+			original_tag = ZYX
+		}
+		abort = {
+			or = {
+				not = { country_exists = ZSB }
+				ZSB = {
+					is_in_faction_with = ZYX
+				}
+			}
+		}
+		ai_strategy = {
+			type = prepare_for_war
+			id = "ZSB"
 			value = 1000
 		}
 	}
