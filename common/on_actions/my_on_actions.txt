@@ -10,8 +10,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZCS }     
-                    ROOT = { tag = ZYX }   
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZCS }   
                 }
 				ZYX = {
 					white_peace = {
@@ -27,8 +27,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZXS }     
-                    ROOT = { tag = ZYX }   
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZXS }   
                 }
                 ZYX = {
 					white_peace = {
@@ -44,8 +44,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZSH }     
-                    ROOT = { tag = ZYX }   
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZSH }   
                 }
                 ZYX = {
 					white_peace = {
@@ -61,8 +61,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZSB }     
-                    ROOT = { tag = ZYX }   
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZSB }   
                 }
 				ZYX = {
 					white_peace = {
@@ -78,8 +78,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZHJ }     
-                    ROOT = { tag = ZSB }   
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZHJ }   
                 }
 				ZSB = {
 					white_peace = {
@@ -95,8 +95,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZSH }     
-                    ROOT = { tag = ZSB }   
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZSH }   
                 }
 				ZSB = {
 					white_peace = {
@@ -112,8 +112,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-                    FROM = { tag = ZYX }     
-                    ROOT = { tag = ZSB }   
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZYX }   
                 }
 				ZSB = {
 					white_peace = {
