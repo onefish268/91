@@ -736,3 +736,37 @@ country_event = {#向龙娘求助
 		ai_chance = { base = 1 }
 	}
 }
+
+
+
+#add_days_mission_timeout = {
+#				mission = UKR_eastern_reinforcements
+#				days = 45
+#			}
+
+#build_railway = {
+#				level = 2
+#				build_only_on_allied = yes
+#				fallback = yes
+#				path = { 6521 11505 9496 3572 6595 552 9570 }
+#				start_province = 6521
+#				target_province = 9570
+#			}
+
+#melee_weapons_enable_tech = {
+#		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech melee_weapons_enable_tech"}
+#		research_cost = 1
+#
+#		allow = {
+#			always = no
+#		}
+#
+#		infantry = { need = { scalping_equipment = 50 } }
+#		bicycle_battalion = { need = { scalping_equipment = 50 } }
+#		marine = { need = { scalping_equipment = 50 } }
+#		paratrooper = { need = { scalping_equipment = 50 } }
+#		motorized = { need = { scalping_equipment = 50 } }
+#		mechanized = { need = { scalping_equipment = 50 } }
+#		militia = { need = { scalping_equipment = 50 } }
+#		cavalry = { need = { scalping_equipment = 50 } }
+#	}
