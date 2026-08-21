@@ -1,0 +1,158 @@
+ideas = {
+	country = {
+		GER_unite_together = {#德意志人，团结起来！
+			picture = GER_iron_front
+			modifier = {
+				compliance_growth_on_our_occupied_states = -0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.05
+				resistance_decay_on_our_occupied_states = -0.1
+				resistance_growth_on_our_occupied_states = 0.05
+				resistance_target_on_our_occupied_states = 0.05
+			}
+		}
+
+		GER_we_come_back = {#我们，回家！
+			picture = anti_soviet_pact
+			targeted_modifier = {
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				tag = DVL
+			}
+		}
+
+		GER_restore_the_determination = {#重燃斗志
+			picture = chi_war_of_resistance
+			modifier = {
+				stability_weekly_factor = 0.25
+				war_support_weekly_factor = 0.25
+			}
+		}
+
+		GER_important_situation = {#关键时刻
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.2
+			}
+		}
+
+		GER_rebuild_the_Axis = {#重建轴心
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				fascism_drift = 0.1
+			}
+		}
+
+		GER_rebirth_of_army = {#重组最高统帅部
+			picture = FIN_german_threat
+			modifier = {
+				command_power_gain_mult = 0.2
+				army_org_factor = 0.1
+				navy_org_factor = 0.1
+				air_equipment_upgrade_xp_cost = -0.25
+			}
+		}
+
+		GER_rebirth_of_army = {#国防军重组
+			picture = GFX_idea_GER_army
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				planning_speed = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		GER_rebirth_of_navy = {#海军重组
+			picture = GFX_idea_GER_navy
+			modifier = {
+				screening_efficiency = 0.1
+				navy_max_range_factor = 0.1
+				naval_hit_chance = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+
+		GER_rebirth_of_airforce = {#空军重组
+			picture = GFX_idea_GER_airforce
+			modifier = {
+				air_accidents_factor = -0.1
+				air_agility_factor = 0.1
+				air_range_factor = 0.1
+				air_fuel_consumption_factor = -0.1
+			}
+		}
+
+		GER_the_glory_of_brave = {
+			picture = CZE_army_bop_plus_1
+			modifier = {
+				automatic_grant_medal_chance = 0.2
+				grant_medal_cost_factor = -0.25
+				unit_medal_effectiveness = 0.1
+			}
+		}
+
+		GER_lighting_war_of_GER = {
+			picture = FRA_motorized_focus
+			modifier = {
+				 army_speed_factor = 0.1
+				army_attack_speed_factor = 1
+			}
+		}
+
+		GER_depress_of_war = {
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription_factor = 0.05
+				experience_gain_army_factor = 0.1
+				army_leader_cost_factor = -0.2
+				training_time_factor = -0.1
+			}
+		}
+
+		GER_more_club_more_talent = {
+			picture = generic_anti_air
+			modifier = { 
+				air_agility_factor = 0.1
+				air_ace_bonuses_factor = 0.15
+				air_ace_generation_chance_factor = 0.15
+			}
+		}
+
+		GER_supply_for_air = {
+			picture = generic_bomber_production_diverted
+			modifier = {
+				air_manpower_requirement_factor = -0.2
+				air_fuel_consumption_factor = -0.1
+				air_range_factor = 0.1
+			}
+		}
+
+		GER_sector_of_navy = {
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+			 	navy_org_factor = 0.1
+				navy_max_range_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+
+		GER_rule_the_sea = {
+		 	picture = GER_seeherrschaft
+
+			modifier = {
+			 	navy_org_factor = 0.1
+			 	spotting_chance = 0.1
+			 	repair_speed_factor = 0.15
+			 	refit_speed = 0.15
+			 	navy_fuel_consumption_factor = -0.1
+			}
+		}
+	}
+}
