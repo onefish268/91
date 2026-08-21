@@ -2496,7 +2496,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = { GER_rebuild_the_Axis }
+
+			create_faction_from_template = faction_template_axis
+			
+
+			if = {
+				limit = {
+					ZYX = { 
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+					}
+					NOT = { has_war_with = ZYX }				
+				}
+				add_to_faction = ZYX
+			}
 		}
 	}
 	focus = {
