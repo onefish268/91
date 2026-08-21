@@ -264,5 +264,241 @@ country_event = {
     }
 }
 
+country_event = { #莉莎意志消沉
+    id = GER_afica.15
+    title = GER_afica.15.t
+    desc = GER_afica.15.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.15.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.16
+                    days = 30
+                }
+            }     
+        }
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.16
+    title = GER_afica.16.t
+    desc = GER_afica.16.desc
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.16.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.17
+                    days = 15
+                }
+            } 
+        }      
+        ai_chance = { base = 50 }
+    }
+
+    option = {
+        name = GER_afica.16.b  
+        hidden_effect = { 
+            GER = {
+                country_event = {
+                    id = GER_afica.18
+                    days = 15
+                }
+            }  
+        }   
+        ai_chance = { base = 50 }
+    }
+
+    option = {
+        name = GER_afica.16.c 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.19
+                    days = 15
+                }
+            }   
+        }  
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.17
+    title = GER_afica.17.t
+    desc = GER_afica.17.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.17.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.20
+                    days = 3
+                }
+            }   
+        }       
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.18
+    title = GER_afica.18.t
+    desc = GER_afica.18.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.18.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.21
+                    days = 3
+                }
+            }   
+        }        
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#希尔失败
+    id = GER_afica.19
+    title = GER_afica.19.t
+    desc = GER_afica.19.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.19.a  
+        custom_option_tooltip = lisha_comeing_no    
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.20
+    title = GER_afica.20.t
+    desc = GER_afica.20.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.20.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.22
+                    days = 40
+                }
+            }   
+        }        
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.21
+    title = GER_afica.21.t
+    desc = GER_afica.21.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.21.a
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.23
+                    days = 40
+                }
+            }   
+        }         
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.22
+    title = GER_afica.22.t
+    desc = GER_afica.22.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.22.a 
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.24
+                    days = 3
+                }
+            }   
+        }         
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.23
+    title = GER_afica.23.t
+    desc = GER_afica.23.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.23.a  
+        hidden_effect = {
+            GER = {
+                country_event = {
+                    id = GER_afica.25
+                    days = 3
+                }
+            }   
+        }      
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.24
+    title = GER_afica.24.t
+    desc = GER_afica.24.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.24.a
+        set_country_flag = {
+            flag = lisha_comeing
+			days = 750
+			value = 1
+        } 
+        remove_country_leader_trait = GER_afica_quexi_trait     
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = GER_afica.25
+    title = GER_afica.25.t
+    desc = GER_afica.25.d
+    is_triggered_only = yes
+
+    option = {
+        name = GER_afica.25.a 
+        custom_option_tooltip = lisha_comeing_no     
+        ai_chance = { base = 50 }
+    }
+}
+
+
+
+
+
+
+
 
 
