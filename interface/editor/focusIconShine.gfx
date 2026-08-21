@@ -1,6 +1,6 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_focus_yanjiang"
+		name = "GFX_focus_yanjiang_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_yanjiang.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -42,7 +42,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_lingxiu"
+		name = "GFX_focus_lingxiu_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_lingxiu.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -84,7 +84,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_ZXS"
+		name = "GFX_focus_ZXS_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_ZXS.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -126,7 +126,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_ZXSa"
+		name = "GFX_focus_ZXSa_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_ZXSa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -168,7 +168,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_zcsa"
+		name = "GFX_focus_zcsa_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_zcsa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -210,7 +210,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_he1"
+		name = "GFX_focus_he1_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_he1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -252,7 +252,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_he2"
+		name = "GFX_focus_he2_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_he2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -294,7 +294,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_he3"
+		name = "GFX_focus_he3_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_he3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -336,7 +336,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_he4"
+		name = "GFX_focus_he4_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_he4.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -378,7 +378,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_he5"
+		name = "GFX_focus_he5_shine"
 		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_he5.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -420,7 +420,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_zsh1"
+		name = "GFX_focus_zsh1_shine"
 		texturefile = "gfx/focus_icon/GFX_focus_zsh1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -443,6 +443,510 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh2_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh3_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh4_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh4.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh5_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh5.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh6_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh5.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zsh6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim1_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim2_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim3_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim4_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim4.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim5_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim5.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim6_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim6.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_zim7_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_zim7.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim7.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_zim7.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no

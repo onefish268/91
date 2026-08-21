@@ -54,3 +54,12 @@ style = {
 	available = GFX_focus_can_start_joint_Z
 	current = GFX_focus_current_joint_Z
 }
+
+style = {
+	name = ZIM_focus_style
+
+	unavailable = GFX_focus_unavailable_zim
+	completed = GFX_focus_completed_zim
+	available = GFX_focus_can_start_zim
+	current = GFX_focus_current_zim
+}

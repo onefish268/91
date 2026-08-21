@@ -7,9 +7,17 @@ spriteTypes = {
 		name = "GFX_focus_can_start_joint_ZG"
 		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_ZG.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_current_joint_ZG"
+		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_ZG.png"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_joint_ZG"
+		textureFile = "gfx/interface/texticon/GFX_focus_completed_joint_ZG.png"
+	}
 
 	SpriteType = {
-		name = "GFX_focus_current_joint_ZG"
+		name = "GFX_focus_current_joint_ZG_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_can_start_joint_ZG.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
@@ -43,7 +51,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_completed_joint_ZG"
+		name = "GFX_focus_completed_joint_ZG_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_completed_joint_ZG.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
@@ -74,9 +82,17 @@ spriteTypes = {
 		name = "GFX_focus_can_start_joint_G"
 		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_G.png"
 	}
+	spriteType = {
+		name = "GFX_focus_current_joint_G"
+		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_G.png"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_joint_G"
+		textureFile = "gfx/interface/texticon/GFX_focus_completed_joint_G.png"
+	}
 
 	SpriteType = {
-		name = "GFX_focus_current_joint_G"
+		name = "GFX_focus_current_joint_G_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_can_start_joint_G.png"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
@@ -110,7 +126,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_completed_joint_G"
+		name = "GFX_focus_completed_joint_G_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_completed_joint_G.png"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
@@ -141,9 +157,17 @@ spriteTypes = {
 		name = "GFX_focus_can_start_joint_Z"
 		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_Z.png"
 	}
+	spriteType = {
+		name = "GFX_focus_current_joint_Z"
+		textureFile = "gfx/interface/texticon/GFX_focus_can_start_joint_Z.png"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_joint_Z"
+		textureFile = "gfx/interface/texticon/GFX_focus_completed_joint_Z.png"
+	}
 
 	SpriteType = {
-		name = "GFX_focus_current_joint_Z"
+		name = "GFX_focus_current_joint_Z_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_can_start_joint_Z.png"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
@@ -177,8 +201,82 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_completed_joint_Z"
+		name = "GFX_focus_completed_joint_Z_shine"
 		texturefile = "gfx/interface/texticon/GFX_focus_completed_joint_Z.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+#			animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+}
+#ZIM
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_unavailable_zim"
+		textureFile = "gfx/interface/texticon/GFX_focus_unavailable_zim.png"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_zim"
+		textureFile = "gfx/interface/texticon/GFX_focus_can_start_zim.png"
+	}
+	spriteType = {
+		name = "GFX_focus_current_zim"
+		textureFile = "gfx/interface/texticon/GFX_focus_can_start_zim.png"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_zim"
+		textureFile = "gfx/interface/texticon/GFX_focus_completed_zim.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_current_zim_shine"
+		texturefile = "gfx/interface/texticon/GFX_focus_can_start_zim.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating_ccw"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_zim_shine"
+		texturefile = "gfx/interface/texticon/GFX_focus_completed_zim.png"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
