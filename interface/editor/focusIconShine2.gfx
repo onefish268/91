@@ -1,10 +1,10 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_lixiangshenyuan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_lixiangshenyuan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_lixiangshenyuan.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_lixiangshenyuan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_lixiangshenyuan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -22,7 +22,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_lixiangshenyuan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_lixiangshenyuan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -43,10 +43,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_jiubandi"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_jiubandi.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_jiubandi.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_jiubandi.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_jiubandi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -64,7 +64,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_jiubandi.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_jiubandi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -85,10 +85,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_canqi"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_canqi.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_canqi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -106,7 +106,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_canqi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -127,10 +127,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_tanxun"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_tanxun.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_tanxun.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -148,7 +148,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_tanxun.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -169,10 +169,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_sitanli"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_sitanli.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_sitanli.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_sitanli.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_sitanli.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -190,7 +190,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_sitanli.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_sitanli.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -211,10 +211,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_kaluo"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_kaluo.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_kaluo.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_kaluo.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_kaluo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -232,7 +232,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_kaluo.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_kaluo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -253,10 +253,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_kaluofangan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_kaluofangan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_kaluofangan.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_kaluofangan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_kaluofangan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -274,7 +274,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_kaluofangan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_kaluofangan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -295,10 +295,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_stlfangan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_stlfangan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_stlfangan.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_stlfangan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_stlfangan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -316,7 +316,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\GFX_focus_stlfangan.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/GFX_focus_stlfangan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no

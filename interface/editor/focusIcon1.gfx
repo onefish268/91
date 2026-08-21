@@ -1,34 +1,34 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_lixiangshenyuan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_lixiangshenyuan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_lixiangshenyuan.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_jiubandi"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_jiubandi.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_jiubandi.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_canqi"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_canqi.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_canqi.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_tanxun"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_tanxun.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_tanxun.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_sitanli"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_sitanli.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_sitanli.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_kaluo"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_kaluo.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_kaluo.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_kaluofangan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_kaluofangan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_kaluofangan.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_stlfangan"
-		texturefile = "gfx\editor\interface\focusIcon\GFX_focus_stlfangan.dds"
+		texturefile = "gfx/editor/interface/focusIcon/GFX_focus_stlfangan.dds"
 	}
 }
