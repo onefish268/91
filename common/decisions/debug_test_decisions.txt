@@ -22,6 +22,17 @@ debug_test_categories = {
 		}
 	}
 
+	lord_GER_focus = {
+		name = "强制德国国策加载"
+		icon = generic_construction
+		
+		cost = 10
+
+		complete_effect = {
+			GER = { load_focus_tree = GER_afica_focus_tree }
+		}
+	}
+
 	the_third = {
 		icon = generic_construction
 
