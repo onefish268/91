@@ -77,9 +77,9 @@ country_event = {
     option = {
         name = GER_afica.5.a
         GER = {
-            transfer_state = 1227
+            transfer_state = 1229
         }
-        custom_option_tooltip = cks_lunchuan12
+        custom_event_tooltip = cks_lunchuan12
         ai_chance = { base = 50 }
     }
 }
@@ -378,7 +378,7 @@ country_event = {#希尔失败
 
     option = {
         name = GER_afica.19.a  
-        custom_option_tooltip = lisha_comeing_no    
+        custom_effect_tooltip = lisha_comeing_no    
         ai_chance = { base = 50 }
     }
 }
@@ -489,7 +489,7 @@ country_event = {
 
     option = {
         name = GER_afica.25.a 
-        custom_option_tooltip = lisha_comeing_no     
+        custom_effect_tooltip = lisha_comeing_no     
         ai_chance = { base = 50 }
     }
 }
