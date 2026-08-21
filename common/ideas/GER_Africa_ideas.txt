@@ -46,7 +46,7 @@ ideas = {
 			}
 		}
 
-		GER_rebirth_of_army = {#重组最高统帅部
+		GER_rebirth_of_my = {#重组最高统帅部
 			picture = FIN_german_threat
 			modifier = {
 				command_power_gain_mult = 0.2
