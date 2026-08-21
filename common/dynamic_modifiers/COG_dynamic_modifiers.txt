@@ -26,4 +26,4 @@ Absent_rule = { #“缺席”的统治
 #    army_defence_factor = Tolerate_exploitation__army_extent
 #}
 
-#非必要，不要用动态精神，能省点性能就省
+#非必要，不要用动态精神，能省点性能就省 OMO
