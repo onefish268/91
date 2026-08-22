@@ -155,4 +155,312 @@ spriteTypes = {
 		name = "GFX_focus_zsh22"
 		texturefile = "gfx/focus_icon/GFX_focus_zsh22.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zsh23"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh23.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh24"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh24.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh25"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh25.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh26"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh26.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh27"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh27.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh28"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh28.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh29"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh29.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh30"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh30.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh31"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh31.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh32"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh32.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh33"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh33.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh34"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh34.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh35"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh35.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh36"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh36.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh37"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh37.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh38"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh38.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh39"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh39.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh40"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh40.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh41"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh41.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh42"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh42.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh43"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh43.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh44"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh44.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh45"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh45.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh46"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh46.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh47"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh47.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh48"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh48.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh49"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh49.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh50"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh50.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh51"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh51.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh52"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh52.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh53"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh53.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh54"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh54.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh55"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh55.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh56"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh56.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh57"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh57.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh58"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh58.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh59"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh59.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh60"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh60.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh61"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh61.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh62"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh62.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh63"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh63.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh64"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh64.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh65"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh65.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh66"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh66.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh67"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh67.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh68"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh68.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh69"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh69.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh70"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh70.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh71"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh71.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh72"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh72.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh73"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh73.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh74"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh74.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh75"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh75.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh76"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh76.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh77"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh77.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh78"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh78.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh79"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh79.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh80"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh80.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh81"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh81.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh82"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh82.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh83"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh83.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh84"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh84.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh85"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh85.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh86"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh86.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh87"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh87.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh88"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh88.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh89"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh89.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh90"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh90.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh91"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh91.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh92"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh92.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh93"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh93.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh94"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh94.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh95"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh95.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh96"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh96.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh97"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh97.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh98"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh98.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh99"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh99.png"
+	}
 }
