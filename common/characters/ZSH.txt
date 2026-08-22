@@ -3,7 +3,7 @@ characters = {
 		name = "姆比里·伊里奇"
 		portraits = {
 			civilian = {
-				large = "liemao"
+				large = GFX_ZSH_liemao
 			}
 		}
 		country_leader = {

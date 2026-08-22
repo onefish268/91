@@ -20,10 +20,6 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZIM/sitanli.png"
     }
     spriteType = {
-        name = "liemao"
-        texturefile = "gfx/leaders/ZIM/liemao.png"
-    }
-    spriteType = {
         name = "fengrao"
         texturefile = "gfx/leaders/ZIM/fengrao.png"
     }

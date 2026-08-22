@@ -1,0 +1,18 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+		name = "GFX_ZSH_liemao"
+		texturefile = "gfx/leaders/ZIM/liemao.dds"
+		noOfFrames = 43
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.75
+		#alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ZSH_liemao_test"
+		textureFile = "gfx/leaders/ZIM/liemao.dds"
+		effectFile = "gfx/FX/sprite_animation_speed.shader"
+		noOfFrames = 1
+	}
+}
