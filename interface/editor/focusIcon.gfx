@@ -99,4 +99,20 @@ spriteTypes = {
 		name = "GFX_focus_zsh8"
 		texturefile = "gfx/focus_icon/GFX_focus_zsh8.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zsh9"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh9.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh10"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh10.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh11"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh11.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh12"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh12.png"
+	}
 }
