@@ -115,4 +115,44 @@ spriteTypes = {
 		name = "GFX_focus_zsh12"
 		texturefile = "gfx/focus_icon/GFX_focus_zsh12.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zsh13"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh13.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh14"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh14.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh15"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh15.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh16"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh16.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh17"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh17.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh18"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh18.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh19"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh19.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh20"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh20.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh21"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh21.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh22"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh22.png"
+	}
 }
