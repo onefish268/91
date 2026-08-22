@@ -63,3 +63,48 @@ style = {
 	available = GFX_focus_can_start_zim
 	current = GFX_focus_current_zim
 }
+
+style = {
+	name = ZYX_focus_style
+
+	unavailable = GFX_focus_unavailable_zyx
+	completed = GFX_focus_completed_zyx
+	available = GFX_focus_can_start_zyx
+	current = GFX_focus_current_zyx
+}
+
+style = {
+	name = GER_afica_focus_style
+
+	unavailable = GFX_focus_unavailable_gf
+	completed = GFX_focus_completed_gf
+	available = GFX_focus_can_start_gf
+	current = GFX_focus_current_gf
+}
+
+style = {
+	name = ZSB_focus_style
+
+	unavailable = GFX_focus_unavailable_zsb
+	completed = GFX_focus_completed_zsb
+	available = GFX_focus_can_start_zsb
+	current = GFX_focus_current_zsb
+}
+
+style = {
+	name = ZSB_v_focus_style
+
+	unavailable = GFX_focus_unavailable_zsb_v
+	completed = GFX_focus_completed_zsb_v
+	available = GFX_focus_can_start_zsb_v
+	current = GFX_focus_current_zsb_v
+}
+
+style = {
+	name = ZSH_focus_style
+
+	unavailable = GFX_focus_unavailable_zsh
+	completed = GFX_focus_completed_zsh
+	available = GFX_focus_can_start_zsh
+	current = GFX_focus_current_zsh
+}

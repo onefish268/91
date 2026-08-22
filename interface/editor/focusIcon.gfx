@@ -91,4 +91,12 @@ spriteTypes = {
 		name = "GFX_focus_zim7"
 		texturefile = "gfx/focus_icon/GFX_focus_zim7.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zsh7"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh7.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zsh8"
+		texturefile = "gfx/focus_icon/GFX_focus_zsh8.png"
+	}
 }
