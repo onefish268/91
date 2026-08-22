@@ -13,6 +13,13 @@ defined_text = {
 		}
 		localization_key = GFX_COG_Cat_warrior
 	}
+	#ZDM
+	text = {
+		trigger = {
+			has_idea = ZDM_luomu_1
+		}
+		localization_key = GFX_ZDM_luomu
+	}
 	##通用
 	text = {
 		localization_key = GFX_leader_unknown
@@ -33,6 +40,12 @@ defined_text = {
 			tag = ZIM
 		}
 		localization_key = COG_Cat_warrior_name
+	}
+	text = {
+		trigger = {
+			has_idea = ZDM_luomu_1
+		}
+		localization_key = ZDM_luomu_name
 	}
 	##通用
 	text = {
@@ -55,6 +68,12 @@ defined_text = {
 		}
 		localization_key = COG_Cat_warrior_DESC_1
 	}
+	text = {
+		trigger = {
+			has_idea = ZDM_luomu_1
+		}
+		localization_key = ZDM_luomu_DESC_1
+	}
 }
 
 ####另外一位国家领袖介绍--姓名及buff--外交界面
@@ -72,6 +91,12 @@ defined_text = {
 		}
 		localization_key = COG_Cat_warrior_Diplomacy_desc
 	}
+	text = {
+		trigger = {
+			has_idea = ZDM_luomu_1
+		}
+		localization_key = ZDM_luomu_Diplomacy_desc
+	}
 }
 
 ##另外一位国家领袖介绍--生平
@@ -88,5 +113,11 @@ defined_text = {
 			tag = ZIM
 		}
 		localization_key = COG_Cat_warrior_desc
+	}
+	text = {
+		trigger = {
+			has_idea = ZDM_luomu_1
+		}
+		localization_key = ZDM_luomu_warrior_desc
 	}
 }
