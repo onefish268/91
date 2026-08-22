@@ -1143,6 +1143,7 @@ focus_tree = {
 		x = -18
 		y = 1
 		cost = 0
+		text_icon = ZSB_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 	}
