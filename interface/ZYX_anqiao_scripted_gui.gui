@@ -1,0 +1,138 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZYX_anqiao_factions_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 380 }
+		#clipping = no
+
+		iconType = {
+			name = "ZYX_anqiao_big_photo"
+			spriteType = GFX_ZYX_anqiao_big_photo # 替换为你自己的sprite名称
+			position = { x = 5 y = 0 }
+		}
+
+		iconType = {
+			name = "ZYX_anqiao_small_photo"
+			spriteType = GFX_ZYX_anqiao_small_photo # 替换为你自己的sprite名称
+			position = { x = 350 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "ZYX_anqiao_big_photo_desc"
+			position = { x = 5 y = 345 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = ZYX_anqiao_big_photo_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZYX_tankgaol_factions_decision_ui_window"
+		orientation = center_right
+		position = { x = -200 y = -400 }
+		size = { width = 213 height = 142 }
+		#clipping = no
+
+		buttonType = {
+			name = "ZYX_tankgoal_button"
+			spriteType = GFX_ZYX_tankgoal_photo # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			clicksound = click_default
+    	    scale = 1
+		}
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZYX_tankgaol_factions_ui_window"
+		orientation = center_right
+		position = { x = -2500 y = -400 }
+		size = { width = 2400 height = 800 }
+		#clipping = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_bookmark_tankgoal_bg"
+			clicksound = click_checkbox
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_backgrounnd"
+			spriteType = GFX_ZYX_tankgoal_photo # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_out_button"
+			spriteType = GFX_ZYX_tankgoal_out_button # 替换为你自己的sprite名称
+			position = { x = 2320 y = 15 }
+			clicksound = click_default
+    	    scale = 1
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_eng"
+			spriteType = GFX_ZYX_tankgoal_eng # 替换为你自己的sprite名称
+			position = { x = 300 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_ita"
+			spriteType = GFX_ZYX_tankgoal_ita # 替换为你自己的sprite名称
+			position = { x = 500 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_ger"
+			spriteType = GFX_ZYX_tankgoal_ger # 替换为你自己的sprite名称
+			position = { x = 750 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_xi"
+			spriteType = GFX_ZYX_tankgoal_xi # 替换为你自己的sprite名称
+			position = { x = 1000 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_sov"
+			spriteType = GFX_ZYX_tankgoal_sov # 替换为你自己的sprite名称
+			position = { x = 1250 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_usa"
+			spriteType = GFX_ZYX_tankgoal_usa # 替换为你自己的sprite名称
+			position = { x = 1500 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_fra"
+			spriteType = GFX_ZYX_tankgoal_fra # 替换为你自己的sprite名称
+			position = { x = 1750 y = 15 }
+			scale = 0.4
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_jap"
+			spriteType = GFX_ZYX_tankgoal_jap # 替换为你自己的sprite名称
+			position = { x = 2000 y = 15 }
+			scale = 0.4
+		}
+	}
+}
