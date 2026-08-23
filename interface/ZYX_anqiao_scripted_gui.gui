@@ -58,6 +58,7 @@ guiTypes = {
 		position = { x = -2500 y = -400 }
 		size = { width = 2400 height = 800 }
 		#clipping = no
+		moveable = yes
 
 		background = {
 			name = "background"
