@@ -79,5 +79,29 @@ guiTypes = {
 			clicksound = click_default
     	    scale = 1
 		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_game_button"
+			spriteType = GFX_ZYX_tankgoal_game_button # 替换为你自己的sprite名称
+			position = { x = 1100 y = 175 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_kards_button"
+			spriteType = GFX_ZYX_tankgoal_kards_button # 替换为你自己的sprite名称
+			position = { x = 1100 y = 425 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_commender_button"
+			spriteType = GFX_ZYX_tankgoal_commender_button # 替换为你自己的sprite名称
+			position = { x = 1100 y = 600 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
 	}
 }
