@@ -231,4 +231,16 @@ spriteTypes = {
         name = "GFX_ZYX_tankgoal_out_button"
         texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_out_button.png"
     }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_game_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_game_button.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_kards_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_kards_button.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_commender_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_commender_button.png"
+    }
 }
