@@ -56,7 +56,7 @@ guiTypes = {
 		name = "ZYX_tankgaol_factions_ui_window"
 		orientation = center_right
 		position = { x = -2500 y = -400 }
-		size = { width = 2400 height = 800 }
+		size = { width = 1600 height = 533 }
 		#clipping = no
 		moveable = yes
 
@@ -75,7 +75,7 @@ guiTypes = {
 		buttonType = {
 			name = "ZYX_tankgoal_out_button"
 			spriteType = GFX_ZYX_tankgoal_out_button # 替换为你自己的sprite名称
-			position = { x = 2320 y = 15 }
+			position = { x = 1525 y = 15 }
 			clicksound = click_default
     	    scale = 1
 		}
@@ -83,7 +83,7 @@ guiTypes = {
 		buttonType = {
 			name = "ZYX_tankgoal_game_button"
 			spriteType = GFX_ZYX_tankgoal_game_button # 替换为你自己的sprite名称
-			position = { x = 1100 y = 175 }
+			position = { x = 650 y = 75 }
 			clicksound = click_default
     	    scale = 0.5
 		}
@@ -91,7 +91,7 @@ guiTypes = {
 		buttonType = {
 			name = "ZYX_tankgoal_kards_button"
 			spriteType = GFX_ZYX_tankgoal_kards_button # 替换为你自己的sprite名称
-			position = { x = 1100 y = 425 }
+			position = { x = 650 y = 225 }
 			clicksound = click_default
     	    scale = 0.5
 		}
@@ -99,7 +99,7 @@ guiTypes = {
 		buttonType = {
 			name = "ZYX_tankgoal_commender_button"
 			spriteType = GFX_ZYX_tankgoal_commender_button # 替换为你自己的sprite名称
-			position = { x = 1100 y = 600 }
+			position = { x = 650 y = 375 }
 			clicksound = click_default
     	    scale = 0.5
 		}
