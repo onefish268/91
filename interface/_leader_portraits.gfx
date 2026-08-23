@@ -231,36 +231,4 @@ spriteTypes = {
         name = "GFX_ZYX_tankgoal_out_button"
         texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_out_button.png"
     }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_eng"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_eng.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_ita"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_ita.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_ger"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_ger.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_xi"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_xi.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_sov"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_sov.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_usa"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_usa.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_fra"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_fra.png"
-    }
-    spriteType = {
-        name = "GFX_ZYX_tankgoal_jap"
-        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_jap.png"
-    }
 }
