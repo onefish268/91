@@ -9,6 +9,7 @@ country_event = {
 
     option = {
         name = ZIM.1.a
+        add_stability = 0.01
         ai_chance = { base = 50 }
     }
 }
@@ -254,6 +255,20 @@ country_event = {
 
     option = {
         name = ZIM.12.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = ZIM.13
+    title = ZIM.13.t
+    desc = ZIM.13.desc
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.13.a
+        set_country_flag = kaiju
+        complete_national_focus = new_focus_1
         ai_chance = { base = 50 }
     }
 }

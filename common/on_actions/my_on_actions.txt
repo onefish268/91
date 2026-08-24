@@ -125,4 +125,14 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			ZIM = {
+				country_event = {
+				    id = ZIM.13
+					days = 5
+			    }
+			}
+		}
+	}
 }

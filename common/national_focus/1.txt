@@ -17,9 +17,13 @@ focus_tree = {
 		text_icon = ZIM_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+		    has_country_flag = kaiju
+	    }
 		completion_reward = {
 			country_event = {
 				id = ZIM.1
+				days = 4
 			}
 		}
 	}
