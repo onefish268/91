@@ -1,0 +1,103 @@
+
+#指挥官头像切换 静动变化
+defined_text = {
+	name = GFX_ZYX_daxi_type
+	text = {
+		trigger = { check_variable = { ZYX_select_commander_number = 1 } }
+		localization_key = GFX_ZYX_daxi
+	}
+	text = {
+		localization_key = GFX_ZYX_daxi_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_dajilin_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 2 }
+			has_country_flag = dajilin_has_unlocked
+		}
+		localization_key = GFX_ZYX_dajilin
+	}
+	text = {
+		localization_key = GFX_ZYX_dajilin_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_ducs_type
+	text = {
+		trigger = { 
+			check_variable = { ZYX_select_commander_number = 3 }
+			has_country_flag = ducs_has_unlocked
+		}
+		localization_key = GFX_ZYX_ducs
+	}
+	text = {
+		localization_key = GFX_ZYX_ducs_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_ger_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 4 }
+			has_country_flag = ger_has_unlocked
+		}
+		localization_key = GFX_ZYX_ger
+	}
+	text = {
+		localization_key = GFX_ZYX_ger_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_kaqiusha_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 5 }
+			has_country_flag = kaqiusha_has_unlocked
+		}
+		localization_key = GFX_ZYX_kaqiusha
+	}
+	text = {
+		localization_key = GFX_ZYX_kaqiusha_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_mari_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 6 }
+			has_country_flag = mari_has_unlocked
+		}
+		localization_key = GFX_ZYX_mari
+	}
+	text = {
+		localization_key = GFX_ZYX_mari_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_usa_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 7 }
+			has_country_flag = usa_has_unlocked
+		}
+		localization_key = GFX_ZYX_usa
+	}
+	text = {
+		localization_key = GFX_ZYX_usa_unselect
+	}
+}
+defined_text = {
+	name = GFX_ZYX_zdb_type
+	text = {
+		trigger = {
+			check_variable = { ZYX_select_commander_number = 8 }
+			has_country_flag = zdb_has_unlocked
+		}
+		localization_key = GFX_ZYX_zdb
+	}
+	text = {
+		localization_key = GFX_ZYX_zdb_unselect
+	}
+}
