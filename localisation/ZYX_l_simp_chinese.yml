@@ -204,7 +204,11 @@
   ZYX_anqiao_category: "安淇奥战车道"
   ZYX_1: "为战车道筹建资金"
 
+#tankgoal
 
+  warning_of_no_commander: "§R注意！目前你没有携带一个有效的指挥官！§!"
+  reload_commander: "清除已选择的指挥官。"
+  leave_the_commander_console: "离开选择指挥官的界面"
 
 
 

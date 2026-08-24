@@ -98,43 +98,7 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "ZSB_fayuan_factions_decision_ui_window"
 	}
-
-	ZYX_anqiao_ui = {
-		context_type = decision_category
-		window_name = "ZYX_anqiao_factions_decision_ui_window"
-	}
-
-	ZYX_tankgoal_flag_ui = {
-		context_type = player_context
-		window_name = "ZYX_tankgaol_factions_decision_ui_window"
-		visible = {
-			original_tag = ZYX
-			ZYX = {
-				has_completed_focus = 3_focus_1
-				has_country_flag = ZYX_tankdoal
-			}
-	    }
-		effects = {
-			ZYX_tankgoal_button_click = {
-				set_variable = { ZYX_of_country_chosen_mode_number = 1 }
-			}
-		}
-	}
-
-	ZYX_tankgoal_ui = {
-		context_type = player_context
-		window_name = "ZYX_tankgaol_factions_ui_window"
-		visible = {
-			original_tag = ZYX
-			has_variable = ZYX_of_country_chosen_mode_number
-	    }
-		effects = {
-			ZYX_tankgoal_out_button_click = {
-				clear_variable = ZYX_of_country_chosen_mode_number
-			}
-		}
-	}
-
+	
 	ZSB_dabang_ui = {
 		context_type = decision_category
 		window_name = "ZSB_dabang_factions_decision_ui_window"
