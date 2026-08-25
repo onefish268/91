@@ -6,6 +6,7 @@ country_event = {
     desc = ZIM.1.desc
     picture = GFX_ZIM1_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.1.a
@@ -19,12 +20,13 @@ country_event = {
     desc = ZIM.2.desc
     picture = GFX_ZIM1_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.2.a
         load_focus_tree = ZIM_2_tree
         mark_focus_tree_layout_dirty = yes
-        news_event = { id = ZIM.news.1 days = 0 }
+        news_event = { id = ZIM.news.1 days = 3 }
         ai_chance = { base = 50 }
     }
 }
@@ -34,9 +36,11 @@ country_event = {
     desc = ZIM.3.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.3.a
+        custom_effect_tooltip = zim3
         ai_chance = { base = 50 }
     }
 }
@@ -46,9 +50,11 @@ country_event = {
     desc = ZIM.4.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.4.a
+        add_stability = -0.05
         ai_chance = { base = 50 }
     }
 }
@@ -58,9 +64,11 @@ country_event = {
     desc = ZIM.5.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.5.a
+        add_stability = -0.03
         custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
@@ -71,9 +79,11 @@ country_event = {
     desc = ZIM.6.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.6.a
+        add_stability = -0.03
         custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
@@ -84,9 +94,11 @@ country_event = {
     desc = ZIM.7.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.7.a
+        add_stability = -0.03
         custom_effect_tooltip = daxiaotiao
         ai_chance = { base = 50 }
     }
@@ -97,9 +109,11 @@ country_event = {
     desc = ZIM.8.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.8.a
+        custom_effect_tooltip = zim4
         ai_chance = { base = 50 }
     }
 }
@@ -109,9 +123,11 @@ country_event = {
     desc = ZIM.9.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.9.a
+        custom_effect_tooltip = zim5
         ai_chance = { base = 50 }
     }
 }
@@ -121,6 +137,7 @@ country_event = {
     desc = ZIM.10.desc
     picture = GFX_ZIM2_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.10.a
@@ -248,6 +265,7 @@ country_event = {
     desc = ZIM.12.desc
     picture = GFX_ZIM3_event
     is_triggered_only = yes
+    fire_only_once = yes
 
     immediate = {
         news_event = { id = ZIM.news.2 days = 3 }
@@ -264,6 +282,7 @@ country_event = {
     title = ZIM.13.t
     desc = ZIM.13.desc
     is_triggered_only = yes
+    fire_only_once = yes
 
     option = {
         name = ZIM.13.a
@@ -272,3 +291,31 @@ country_event = {
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {
+    id = ZIM.14
+    title = ZIM.14.t
+    desc = ZIM.14.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = ZIM.14.a
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {
+    id = ZIM.15
+    title = ZIM.15.t
+    desc = ZIM.15.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = ZIM.15.a
+        ai_chance = { base = 50 }
+    }
+}
+
+

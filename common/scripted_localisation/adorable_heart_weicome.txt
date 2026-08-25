@@ -1421,6 +1421,10 @@ defined_text = {
         localization_key = [GET_ITA_Local_History]
     }
     text = {
+        trigger = { tag = ZIM }
+        localization_key = [GET_ZIM_Local_History]
+    }
+    text = {
         trigger = { tag = ALS }
         localization_key = [GET_ITA_Local_History]
     }
@@ -1481,6 +1485,10 @@ defined_text = {
         localization_key = ITA_loca_his_t_01
     }
     text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_loca_his_t_01
+    }
+    text = {
         trigger = { tag = ALS }
         localization_key = ITA_loca_his_t_01
     }
@@ -1538,6 +1546,10 @@ defined_text = {
         localization_key = ITA_loca_his_t_02
     }
     text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_loca_his_t_02
+    }
+    text = {
         trigger = { tag = ALS }
         localization_key = ITA_loca_his_t_02
     }
@@ -1593,6 +1605,10 @@ defined_text = {
     text = {
         trigger = { tag = ITA }
         localization_key = ITA_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = ZIM }
+        localization_key = ZIM_loca_his_t_03
     }
     text = {
         trigger = { tag = ALS }

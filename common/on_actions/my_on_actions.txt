@@ -135,4 +135,100 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.3
+					days = 9
+			    }
+            }
+        }
+    }
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_4
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.5
+					days = 10
+			    }
+            }
+        }
+    }
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_5
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.6
+					days = 10
+			    }
+            }
+        }
+    }
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_7
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.7
+					days = 10
+			    }
+            }
+        }
+    }
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 1_focus_1
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.14
+					days = 4
+			    }
+            }
+        }
+    }
+	on_daily_ZIM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 1_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.15
+					days = 5
+			    }
+            }
+        }
+    }
 }
