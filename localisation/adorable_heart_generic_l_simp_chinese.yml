@@ -4,7 +4,7 @@
   generic.1999.t: "$news_event_background$第二次“伟大战争”"
   generic.1999.d.1: "统治德意志的魔导王安兹乌尔恭终于露出真面目！就在刚才，[second_weltkrieg_invaded.Getname]外交部向全世界公开了魔导国军队入侵的证据并号召各国抵御魔导国的侵略行为。对此，魔导王安兹乌尔恭厚颜无耻的承认了他不宣而战的行为。伟大战争后二十年，欧洲大陆再一次燃起战火，这会是另一场世界大战的开端吗？人们忧心忡忡。"
   generic.1999.d.2: "也许是出于对东方威胁的恐惧——抑或是对自身军事力量的自信，[FROM.Getname]在昨日向柏林发送了一封措辞严厉的外交照会，指出“魔导国近期在博丽大结界周边进行的军事活动已经达到了频繁的程度。”以魔导国在今年进行的一系列明目张胆的军事行动为借口。[FROM.Getname]的领导人[FROM.Getleader]宣布将发动一场对魔导国的惩罚性战争。这场军事行动的最终目标将是“在博丽大结界与魔导国之间建立起足以杜绝潜在冲突的非军事区”。\n尽管官方仍然在极力渲染战争的有限性，但局势的严重性显而易见：两国均以开始动员，因为博丽大结界的存在，大多数人都认为这将成为一场旷日持久的长期战争，但考虑到魔导国在边境愈发频繁的军事活动，相当一部分国际评论者指出后者极有可能具备突破结界防线的能力，这场战争的走向难以预测。"
-  generic.1999.d.3: "(待填充)"
+  generic.1999.d.3: "昨日，随着德意志国与魔导国的边境军队的交火，轴心国与帝国阵线的战争正式爆发，这也标志着欧洲持续了20年的稳定被打破--第二次“伟大战争”正式爆发。\n时隔数年，德意志国的流亡者们再次举起武器向侵略者反击，阿道夫·莉莎也发表声明，全地球应该联合起来对抗魔导国，这是一场“正义之战”。而魔导国方面则宣称奥地利不过是叛乱省份，奥地利的叛徒必须被绳之以法。"
   generic.1999.d.4: "(待填充)"
   generic.1999.a: "凡人之视，岂能长远？"
   generic.1999.b: "寸土不让！"
@@ -194,6 +194,8 @@
   AHM_Yamada_Ryo: "山田凉"
   AHM_Kita_Ikuyo: "喜多郁代"
 
+  AHM_Shimada_Arisu: "岛田爱里寿"
+
   Financial_enterprises: "金融企业"
 
 #game rule
@@ -272,6 +274,13 @@
   not_in_any_economy_faction_tt: "不在任何经济阵营"
 
   load_generic_focus2: "载入通用国策"
+
+  diversify_special_forces2: "$diversify_special_forces$"
+  diversify_special_forces3: "$diversify_special_forces$"
+  can_unlock_third_track_special_forces_doctrine_yes: "特种部队§H分支专业化§!条件满足"
+  can_unlock_third_track_special_forces_doctrine_no: "需要额外特种部队§H分支专业化§!"
+  can_unlock_fourth_track_special_forces_doctrine_yes: "特种部队§H分支专业化§!条件满足"
+  can_unlock_fourth_track_special_forces_doctrine_no: "需要额外特种部队§H分支专业化§!"
 
  #太空竞赛
   sp_satellite: "人造卫星"
@@ -353,6 +362,10 @@
   OEM_up_button_desc: "§G点击§!§Y+1§!\n§GCtrl+点击§!§Y+10§!\n§GShift+点击§!§Y+100§!\n\n完成科技§Y体系化魔法研究§!以解锁§Y源翠石能源机制§!§L（允许花费源翠石产生等量煤的能源）§!\n\n§L如果透支的源翠石数量超过5，将会立刻归零§!"
   OEM_down_button_desc: "§G点击§!减去§Y1§!\n§GCtrl+点击§!减去§Y10§!\n§GShift+点击§!减去§Y100§!\n\n完成科技§Y体系化魔法研究§!以解锁§Y源翠石能源机制§!§L（允许花费源翠石产生等量煤的能源）§!\n\n§L如果透支的源翠石数量超过5，将会立刻归零§!"
 
+  Generic_complete_if_focus_var_up_to_1: "[Get_Generic_complete_if_focus_var_up_to_1]"
+  character_dead_tt: "§R死亡§!"
+  character_retire_tt: "§O退休§!"
+
 #地图模式
  #核心与宣传
   MAPMODE_CORES_CLAIMS_MAP_MODE: "§Y$MAPMODE_CORES_CLAIMS_MAP_MODE_NAME$§!地图模式"
@@ -411,6 +424,17 @@
   modifier_army_sub_unit_mot_magic_artillery_speed_factor: "£GFX_unit_mot_magic_artillery_icon_small 摩托化魔炮速度"
   modifier_army_sub_unit_mot_magic_artillery_max_org_factor: "£GFX_unit_mot_magic_artillery_icon_small 摩托化魔炮组织度"
 
+  modifier_army_sub_unit_category_magic_attack_factor: "£GFX_attack_category_magic_texticon $category_magic$攻击"
+  modifier_army_sub_unit_category_magic_attack_factor_tt: "$modifier_army_sub_unit_category_magic_attack_factor$：$RIGHT|+=%1$"
+  modifier_army_sub_unit_category_magic_defence_factor: "£GFX_defence_category_magic_texticon $category_magic$防御"
+  modifier_army_sub_unit_category_magic_defence_factor_tt: "$modifier_army_sub_unit_category_magic_defence_factor$：$RIGHT|+=%1$"
+  modifier_army_sub_unit_category_magic_speed_factor: "£GFX_speed_category_magic_texticon $category_magic$速度"
+  modifier_army_sub_unit_category_magic_speed_factor_tt: "$modifier_army_sub_unit_category_magic_speed_factor$：$RIGHT|+=%1$"
+  modifier_army_sub_unit_category_magic_max_org_factor: "£GFX_organisation_category_magic_texticon $category_magic$组织度"
+  modifier_army_sub_unit_category_magic_max_org_factor_tt: "$modifier_army_sub_unit_category_magic_max_org_factor$：$RIGHT|+=%1$"
+  modifier_army_sub_unit_category_magic_org_recovery_cap_factor: "£GFX_organisation_category_magic_texticon $category_magic$组织度恢复上限"
+  modifier_army_sub_unit_category_magic_org_recovery_cap_factor_tt: "$modifier_army_sub_unit_category_magic_org_recovery_cap_factor$：$RIGHT|+=%1$"
+
   modifier_army_sub_unit_silverspear_pegasus_attack_factor: "£GFX_unit_silverspear_pegasus_icon_medium_white 银枪天马攻击"
   modifier_army_sub_unit_silverspear_pegasus_defence_factor: "£GFX_unit_silverspear_pegasus_icon_medium_white 银枪天马防御"
   modifier_army_sub_unit_silverspear_pegasus_speed_factor: "£GFX_unit_silverspear_pegasus_icon_medium_white 银枪天马速度"
@@ -452,34 +476,21 @@
   country_resource_cost_originium: "源翠石消耗"
 
 #学说
-  magic_attack_DOCTRINE_LABEL: "灵装作战学说"
-  magic_attack_DOCTRINE_DESC: "将有限的魔法能量瞬间转化为压倒性的物理破坏力。"
-  special_forces_magic: "魔法同调"
-  special_forces_magic_desc: "士兵们要让魔力回路和制式武器完美同步。只有呼吸一致了，手中的枪炮才不会仅仅是冰冷的铁块。"
-  Magic_idea: "魔法同调"
-  Magic_idea2: "疾风步伐"
-  Magic_idea3: "绝对结界"
-  Magic_idea4: "心念感应"
-  Magic_idea5: "心之共鸣"
-  Magic_idea6: "月之封印"
-  Magic_idea7: "终末的交响曲"
-  special_forces_Magic2: "疾风步伐"
-  special_forces_Magic2_desc: "为什么要傻傻地站在原地挨打呢？我们要像风一样，呼地一下飞到敌人的侧面，然后再嗖地一下穿过去！"
-  special_forces_Magic3: "绝对结界"
-  special_forces_Magic3_desc: "我们要在这里扎根，将魔力化作拒绝一切恶意的叹息之墙。无论是炮弹还是恐惧，都别想越过这条线。"
-  special_forces_Magic4: "魔力后勤"
-  special_forces_Magic4_desc: "使用魔法的力量把补给和能量源源不断地送过去。只要后勤跟得上，大家就能一直精神满满地努力了！"
-  special_forces_Magic4_tt:0 "魔法步兵部队: -§Y灵想兵装§!需求：§G-10§!\n魔炮营: -§Y魔炮§!需求：§G-5§!"
-  special_forces_Magic5: "心念感应"
-  special_forces_Magic5_desc: "隐藏着黑暗力量的……啊不对，是隐藏着潜能的新型灵装啊，请在我们的面前显示你真正的力量！"
-  special_forces_Magic6: "心之共鸣"
-  special_forces_Magic6_desc: "一个人是无法完成所有事情的，但是大家在一起的话，就会发生奇迹！步兵、坦克、飞机……大家要像好朋友一样手拉手！当你进攻的时候，我来掩护；当你防守的时候，我来支援。只要我们的心连在一起，这股力量就是无敌的！"
-  special_forces_Magic7: "粉碎星辰的一击"
-  special_forces_Magic7_desc: "汇聚所有的力量，集中在一点！不要犹豫，不要迷茫，把所有的希望都赌在这一击上！就像流星划破夜空一样，瞬间贯穿敌人的核心。只要这一下打得够准、够狠，所有的黑暗都会被瞬间驱散！这是最后的、也是最闪耀的必杀技！"
-  special_forces_Magic8: "月之封印"
-  special_forces_Magic8_desc: "不需要把坏东西都打碎，只要让他们动弹不得就好啦！我们要像温柔的月光一样，悄悄地、全面地包围她们，切断她们的退路，封锁她们的希望。等到她们发现自己无路可逃的时候，除了乖乖变回原来的样子（投降），就没有别的办法了！"
-  special_forces_Magic9: "终末的交响曲"
-  special_forces_Magic9_desc: "大家，把力量借给我吧！这已经是最后了，不需要再保留什么。所有的灵装同时全功率输出，让魔力的光辉像盛大的烟火一样覆盖整个战场！虽然会很吵闹，但这样就能一瞬间让敌人失去战斗意志，让和平快点到来！绝对没问题的！"
+  MAGIC_SUBDOCTRINE_1: "魔法协同战术"
+  MAGIC_SUBDOCTRINE_1_DESC: "将魔法力量转换为单兵战术灵装，确立标准的能量输出与防线展开规范。通过战术灵装的协同运作，使小规模快速反应部队获得跨时代的防御力与单兵突破效能。"
+  MAGIC_SUBDOCTRINE_1_magic_reward_1: "单兵灵装整备"
+  MAGIC_SUBDOCTRINE_1_magic_reward_2: "构筑魔法屏障"
+  MAGIC_SUBDOCTRINE_1_magic_reward_3: "灵能超载"
+  MAGIC_SUBDOCTRINE_1_magic_reward_4: "相位转移装置"
+  MAGIC_SUBDOCTRINE_1_magic_reward_5: "魔法轰炸"
+
+  AUTOMATE_SUBDOCTRINE: "自动机械学说"
+  AUTOMATE_SUBDOCTRINE_DESC: "精密而昂贵的单兵护甲与强大火力，使自动机械成为我军稳固而可靠的中坚力量。"
+  AUTOMATE_SUBDOCTRINE_automate_reward_1: "建立通讯体系"
+  AUTOMATE_SUBDOCTRINE_automate_reward_2: "优良传统"
+  AUTOMATE_SUBDOCTRINE_automate_reward_3: "厚甲防御"
+  AUTOMATE_SUBDOCTRINE_automate_reward_4: "建立医疗体系"
+  AUTOMATE_SUBDOCTRINE_automate_reward_5: "战场适应"
 
   magic_attack_subtitle1: "机动步兵"
   magic_attack_subtitle2: "魔法支援"
@@ -830,6 +841,8 @@
   helicoptery_commander: "空输指挥官"
   unit_helicoptery: "空中突击部队"
   unit_helicoptery_support: "武装直升机支援连"
+  category_helicoptery: "直升机部队"
+  helicoptery_air_unit: "直升机（空军单位）"
   siege_helicoptery_equipment: "武装直升机装备"
   siege_helicoptery_equipment_desc: "一种新型飞行器，可以用于低空作战与地面支援"
   siege_helicopter_equipment_0: "基础型武装直升机"
@@ -853,6 +866,12 @@
   Siege_helicopter_3_desc: "改进了装甲厚度、防御与反坦克能力。"
   Siege_helicopter_4: "先进型现代武装直升机"
   Siege_helicopter_4_desc: "改进了火力支援与对空攻击的能力。"
+
+  air_cavalry_special_forces_airborne_observers: "直升机载观察员"
+  air_cavalry_special_forces_service_and_support: "保障与支援"
+  air_cavalry_special_forces_rescue_liasions: "救援联络"
+  air_cavalry_special_forces_transport_assault: "运输-突击协同"
+  air_cavalry_special_forces_intervention_units: "干涉部队"
 
  #龙骑兵
   dragon_rider_equipment: "飞龙"
@@ -947,11 +966,11 @@
   country_leader_picture_name_desc: "[Country_leader_picture_name_desc]"
 
  #主页
-  start_announcement_title: "§Y版本§!「§S旧梦新生§!」§Y公告§!"
-  start_announcement_desc: "§R主要更新内容§!§b：\n\n1.§Y蒙古（安北都指挥使司）§!\n\n2.§C魔法少女联盟§!\n\n3.§F杜伦布共和国§!\n\n4.§R野火革命军§!\n\n5.§G罗德西亚自治领地§!"
-  mainpage_picture_pic_1_desc: "§L天苍苍，野茫茫，弯弓射雕起朔方。\n铁骑踏破千山雪，雄风万里牧牛羊。§!"
-  mainpage_picture_pic_2_desc: "§L你不必为抛弃我而感到内疚。\n因为我一直都在你身边。§!"
-  mainpage_picture_pic_3_desc:0 "§L其实一点都不想当什么威风的首领。只想等大家醒过来，琪露诺大人继续当那个神气活现的天才，大酱依旧在后面拉着她的裙角。而我，只要当那个一看见你们，就会大喊“春天来啦！”然后飞快跑开的笨蛋，就好了……§!"
+  start_announcement_title: "§Y版本§!「§P永劫轮回§!」§Y公告§!"
+  start_announcement_desc: "§R主要更新内容§!§b：\n\n1.§P翁法罗斯§!\n\n2.§R雾之湖联盟§!\n\n3.§g莉兰迪亚王国§!\n\n4.§t艾尔孚利登王国§!\n\n5.§F黎那汐塔§!§!\n\n6.§G罗德西亚自治领地§!"
+  mainpage_picture_pic_1_desc: "§L微风吹起麦浪，女孩抱着空白的手记，漫步其中。\n在哀丽秘榭之外，在陌生又似曾相识的城邦，形形色色的伙伴将彼此结识，如歌如梦的旅途将要开始……\n「这次，与我一起……」\n麦田的尽头，等待已久的女孩合上书页，向「未来」伸出邀请的手——\n「为故事写下新的篇章吧♪」§!"
+  mainpage_picture_pic_2_desc: "§L一起走吧，祖国的子女们，光荣的一天已经到来，暴政面对着我们，已经升起血腥的旗帜，你可听见，在旷野上，凶残的兵士正在咆哮，他们来到我们的臂膀间，屠杀我们的孩子，我们的伴侣！拿起武器，公民们，组织起你们的军队，前进，前进，用敌人的不洁之血，灌溉我们的田野，前进，前进！§!"
+  mainpage_picture_pic_3_desc: "§L莉莉安娜……你看到了吗？这里的太阳，真的好耀眼啊……我遇到很好很好的同伴了，我也找到能够留下来的家了。§!"
 
  #太空竞赛
   Space_race_Research_funding_title: "§C科研经费§!"
@@ -1070,6 +1089,10 @@
   TheresaBot_modifier_icon_max_planning_text: "[?THIS.modifier@max_planning|=+%]"
   TheresaBot_modifier_icon_land_reinforce_rate_text: "[?THIS.modifier@land_reinforce_rate|=+%]"
 
+ #历史记录
+  superevents_note_window_title: "历史记录"
+  superevents_note_open_button_tt: "打开/关闭历史记录界面"
+
 #新闻logo
   SOV_news_event_background: "£SOV_news"
   GEU_news_event_background: "£GEU_news"
@@ -1159,8 +1182,6 @@
   jidi_desc: "乌拉！！！！！"
   hongjiu: "良好的伙食"
   hongjiu_desc: "士兵们，带上我们的面条、红酒还有冰激凌，准备出发"
-  junxiao: "黄埔军校"
-  junxiao_desc: "黄埔军校是中国近代最著名的一所军事学校，培养了许多在抗樱战争和国共内战中闻名的指挥官，主要将领出自第一次国共合作时期的一至六期，军校在创立目的是为国民革命训练军官，是国民政府北伐战争统一中国的主要军力。"
   ASF_panni_qishi: "叛逆骑士"
   zuigaoyuanshuai: "伟大领袖"
   zuizhong_wushi: "武士之灵"
@@ -1440,5 +1461,7 @@
   var_down_65_red: "$CHARACTER$：§R-65§!"
 
   when_complete_this_sp: "当完成该特殊项目时，"
+
+  complete_focus_if_focus_var_up_to_1: "可以消耗1点£GFX_adorable_heart_focus_var_icon §Y国策点数§!，§Y直接完成§!该国策\n§L（目前的£GFX_adorable_heart_focus_var_icon 国策点数：[?focus_point_var]）§!\n§W--------------§!\n"
 
   test_text: "测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本\n测试文本"

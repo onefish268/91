@@ -243,4 +243,12 @@ spriteTypes = {
         name = "GFX_ZYX_tankgoal_commender_button"
         texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_commender_button.png"
     }
+    SpriteType = {
+		name = "GFX_Salisbury_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/Salisbury_city_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_Lusaka_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/Lusaka_city_pic.dds"
+	}
 }
