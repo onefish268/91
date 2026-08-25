@@ -30,6 +30,20 @@ bookmarks = {
                 DVL_prime_ministers_Sebas_Tian				#宰相塞巴斯·蒂安
             }
         }
+        "ZIM" = {
+            history = "ZIM_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                ZIM_a
+                ZIM_b
+                ZIM_2
+            }
+            focuses = {
+                new_focus_9
+                2_focus_18
+                4_focus_1
+            }
+        }
         XXA = {
             ideology = fascism
             history = ""
