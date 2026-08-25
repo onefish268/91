@@ -10,22 +10,23 @@ focus_tree = {
 	default = no
 	focus = {
 		id = new_focus_1
-		x = 19
+		x = 13
 		y = 0
 		cost = 1
 		icon = GFX_focus_zim1
 		text_icon = ZIM_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+		    has_country_flag = kaiju
+	    }
 		completion_reward = {
-			country_event = {
-				id = ZIM.1
-			}
+			custom_effect_tooltip = ZIM1
 		}
 	}
 	focus = {
 		id = new_focus_2
-		x = 16
+		x = 10
 		y = 1
 		cost = 3
 		icon = GFX_focus_zim2
@@ -36,14 +37,12 @@ focus_tree = {
 			focus = new_focus_1
 		}
 		completion_reward = {
-			country_event = {
-				id = ZIM.3
-			}
+			custom_effect_tooltip = ZIM2
 		}
 	}
 	focus = {
 		id = new_focus_3
-		x = 22
+		x = 17
 		y = 1
 		cost = 0
 		icon = GFX_focus_zim5
@@ -61,12 +60,13 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = ZIM.4
+				days = 5
 			}
 		}
 	}
 	focus = {
 		id = new_focus_4
-		x = 13
+		x = 7
 		y = 3
 		cost = 2
 		icon = GFX_focus_zim3
@@ -77,14 +77,12 @@ focus_tree = {
 			focus = new_focus_2
 		}
 		completion_reward = {
-			country_event = {
-				id = ZIM.5
-			}
+			custom_effect_tooltip = ZIM3
 		}
 	}
 	focus = {
 		id = new_focus_5
-		x = 16
+		x = 10
 		y = 3
 		cost = 2
 		icon = GFX_focus_zim3
@@ -95,14 +93,12 @@ focus_tree = {
 			focus = new_focus_2
 		}
 		completion_reward = {
-			country_event = {
-				id = ZIM.6
-			}
+			custom_effect_tooltip = ZIM3
 		}
 	}
 	focus = {
 		id = new_focus_6
-		x = 22
+		x = 17
 		y = 3
 		cost = 0
 		icon = GFX_focus_zim6
@@ -115,12 +111,13 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = ZIM.8
+				days = 6
 			}
 		}
 	}
 	focus = {
 		id = new_focus_7
-		x = 19
+		x = 13
 		y = 3
 		cost = 2
 		icon = GFX_focus_zim3
@@ -131,14 +128,12 @@ focus_tree = {
 			focus = new_focus_2
 		}
 		completion_reward = {
-			country_event = {
-				id = ZIM.7
-			}
+			custom_effect_tooltip = ZIM3
 		}
 	}
 	focus = {
 		id = new_focus_8
-		x = 22
+		x = 17
 		y = 5
 		cost = 0
 		icon = GFX_focus_zim7
@@ -151,12 +146,13 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = ZIM.9
+				days = 7
 			}
 		}
 	}
 	focus = {
 		id = new_focus_9
-		x = 19
+		x = 13
 		y = 7
 		cost = 3
 		icon = GFX_focus_zim4

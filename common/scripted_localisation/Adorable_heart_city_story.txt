@@ -1,26 +1,5 @@
 defined_text = {##标题（城市名）
 	name = Adorable_heart_city_story_title
-# 奥赫玛
-	text = {
-		trigger = {
-			state = 822
-		}
-		localization_key = Adorable_heart_city_story_title_Okhema
-	}
-# 索尔兹伯里
-    text = {
-		trigger = {
-			state = 545
-		}
-		localization_key = Adorable_heart_city_story_title_Salisbury
-	}
-# 卢萨卡
-    text = {
-		trigger = {
-			state = 813
-		}
-		localization_key = Adorable_heart_city_story_title_Lusaka
-	}
 # 柏林
 	text = {
 		trigger = {
@@ -35,6 +14,20 @@ defined_text = {##标题（城市名）
 			has_global_flag = GER_build_Centre_Germania
 		}
 		localization_key = Adorable_heart_city_story_title_Germania
+	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = Adorable_heart_city_story_title_Salisbury
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+		}
+		localization_key = Adorable_heart_city_story_title_Lusaka
 	}
 # 纳萨力克（新德意志）
 	text = {
@@ -112,6 +105,48 @@ defined_text = {##标题（城市名）
 		}
 		localization_key = Adorable_heart_city_story_title_BeiJing_generic
 	}
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_title_Okhema
+	}
+# 悬锋城
+	text = {
+		trigger = {
+			state = 823
+		}
+		localization_key = Adorable_heart_city_story_title_CastrumKremnos
+	}
+# 哀丽秘榭
+	text = {
+		trigger = {
+			state = 749
+		}
+		localization_key = Adorable_heart_city_story_title_AedesElysiae
+	}
+# 神悟树庭
+	text = {
+		trigger = {
+			state = 831
+		}
+		localization_key = Adorable_heart_city_story_title_GroveofEpiphany
+	}
+# 斯缇科西亚
+	text = {
+		trigger = {
+			state = 289
+		}
+		localization_key = Adorable_heart_city_story_title_Styxia
+	}
+# 晨昏之眼
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = Adorable_heart_city_story_title_EyeofTwilight
+	}
 #  通用
 	text = {
 		localization_key = Adorable_heart_city_story_title_generic
@@ -120,48 +155,6 @@ defined_text = {##标题（城市名）
 
 defined_text = {##文字介绍
 	name = Adorable_heart_city_story_desc
-# 奥赫玛
-	text = {
-		trigger = {
-			state = 822
-		}
-		localization_key = Adorable_heart_city_story_desc_Okhema
-	}
-# 索尔兹伯里
-    text = {
-		trigger = {
-			state = 545
-		}
-		localization_key = Adorable_heart_city_story_desc_Salisbury
-	}
-# 卢萨卡
-    text = {
-		trigger = {
-			state = 813
-			owner = {
-				tag = ZIM
-			}
-		}
-		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
-	}
-	text = {
-		trigger = {
-			state = 813
-			owner = {
-				tag = ZYX
-			}
-		}
-		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
-	}
-	text = {
-		trigger = {
-			state = 813
-			owner = {
-				tag = ZSB
-			}
-		}
-		localization_key = Adorable_heart_city_story_desc_ZSB_Lusaka
-	}
 # 柏林
 	text = {
 		trigger = {
@@ -239,6 +232,41 @@ defined_text = {##文字介绍
 		}
 		localization_key = Adorable_heart_city_story_desc_Berlin
 	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = Adorable_heart_city_story_desc_Salisbury
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+			owner = {
+				tag = ZIM
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
+	}
+	text = {
+		trigger = {
+			state = 813
+			owner = {
+				tag = ZYX
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZIM_Lusaka
+	}
+	text = {
+		trigger = {
+			state = 813
+			owner = {
+				tag = ZSB
+			}
+		}
+		localization_key = Adorable_heart_city_story_desc_ZSB_Lusaka
+	}
 # 纳萨力克（新德意志）
 	text = {
 		trigger = {
@@ -295,6 +323,48 @@ defined_text = {##文字介绍
 		}
 		localization_key = Adorable_heart_city_story_desc_BeiJing_generic
 	}
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_desc_Okhema
+	}
+# 悬锋城
+	text = {
+		trigger = {
+			state = 823
+		}
+		localization_key = Adorable_heart_city_story_desc_CastrumKremnos
+	}
+# 哀丽秘榭
+	text = {
+		trigger = {
+			state = 749
+		}
+		localization_key = Adorable_heart_city_story_desc_AedesElysiae
+	}
+# 神悟树庭
+	text = {
+		trigger = {
+			state = 831
+		}
+		localization_key = Adorable_heart_city_story_desc_GroveofEpiphany
+	}
+# 斯缇科西亚
+	text = {
+		trigger = {
+			state = 289
+		}
+		localization_key = Adorable_heart_city_story_desc_Styxia
+	}
+# 晨昏之眼
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = Adorable_heart_city_story_desc_EyeofTwilight
+	}
 #  通用
 	text = {
 		localization_key = Adorable_heart_city_story_desc_generic
@@ -303,27 +373,6 @@ defined_text = {##文字介绍
 
 defined_text = {##图片
 	name = Adorable_heart_city_pic
-# 奥赫玛
-	text = {
-		trigger = {
-			state = 822
-		}
-		localization_key = GFX_Okhema_city_pic
-	}
-# 索尔兹伯里
-    text = {
-		trigger = {
-			state = 545
-		}
-		localization_key = GFX_Salisbury_city_pic
-	}
-# 卢萨卡
-    text = {
-		trigger = {
-			state = 813
-		}
-		localization_key = GFX_Lusaka_city_pic
-	}
 # 柏林
 	text = {
 		trigger = {
@@ -338,6 +387,20 @@ defined_text = {##图片
 			has_global_flag = GER_build_Centre_Germania
 		}
 		localization_key = GFX_Germania_city_pic
+	}
+# 索尔兹伯里
+    text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = GFX_Salisbury_city_pic
+	}
+# 卢萨卡
+    text = {
+		trigger = {
+			state = 813
+		}
+		localization_key = GFX_Lusaka_city_pic
 	}
 # 纳萨力克（新德意志）
 	text = {
@@ -374,6 +437,114 @@ defined_text = {##图片
 			state = 608
 		}
 		localization_key = GFX_Beijing_city_pic
+	}
+# 奥赫玛
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = GFX_Okhema_city_pic
+	}
+# 悬锋城
+	text = {
+		trigger = {
+			state = 823
+		}
+		localization_key = GFX_CastrumKremnos_city_pic
+	}
+# 哀丽秘榭
+	text = {
+		trigger = {
+			state = 749
+		}
+		localization_key = GFX_AedesElysiae_city_pic
+	}
+# 神悟树庭
+	text = {
+		trigger = {
+			state = 831
+		}
+		localization_key = GFX_GroveofEpiphany_city_pic
+	}
+# 斯缇科西亚
+	text = {
+		trigger = {
+			state = 289
+		}
+		localization_key = GFX_Styxia_city_pic
+	}
+# 晨昏之眼
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = GFX_EyeofTwilight_city_pic
+	}
+#  通用
+	text = {
+		localization_key = GFX_Generic_city_pic
+	}
+}
+
+defined_text = {##标题（城市名）
+	name = Adorable_heart_city_story_title_2
+# 雅努萨波利斯
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_title_Janusopolis
+	}
+# 创世涡心
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = Adorable_heart_city_story_title_VortexofGenesis
+	}
+#  通用
+	text = {
+		localization_key = Adorable_heart_city_story_title_generic
+	}
+}
+
+defined_text = {##文字介绍
+	name = Adorable_heart_city_story_desc_2
+# 雅努萨波利斯
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = Adorable_heart_city_story_desc_Janusopolis
+	}
+# 创世涡心
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = Adorable_heart_city_story_desc_VortexofGenesis
+	}
+#  通用
+	text = {
+		localization_key = Adorable_heart_city_story_desc_VortexofGenesis
+	}
+}
+
+defined_text = {##图片
+	name = Adorable_heart_city_pic_2
+# 雅努萨波利斯
+	text = {
+		trigger = {
+			state = 822
+		}
+		localization_key = GFX_Janusopolis_city_pic
+	}
+# 创世涡心
+	text = {
+		trigger = {
+			state = 824
+		}
+		localization_key = GFX_VortexofGenesis_city_pic
 	}
 #  通用
 	text = {

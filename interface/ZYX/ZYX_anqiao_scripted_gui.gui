@@ -1,0 +1,295 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ZYX_anqiao_factions_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 380 }
+		#clipping = no
+
+		iconType = {
+			name = "ZYX_anqiao_big_photo"
+			spriteType = GFX_ZYX_anqiao_big_photo # 替换为你自己的sprite名称
+			position = { x = 5 y = 0 }
+		}
+
+		iconType = {
+			name = "ZYX_anqiao_small_photo"
+			spriteType = GFX_ZYX_anqiao_small_photo # 替换为你自己的sprite名称
+			position = { x = 350 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "ZYX_anqiao_big_photo_desc"
+			position = { x = 5 y = 345 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = ZYX_anqiao_big_photo_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+	}
+
+	containerWindowType = {
+		name = "ZYX_tankgaol_factions_decision_ui_window"
+		orientation = center_right
+		position = { x = -200 y = -300 }
+		size = { width = 213 height = 142 }
+		clipping = no
+
+		buttonType = {
+			name = "ZYX_tankgoal_button"
+			spriteType = GFX_ZYX_tankgoal_photo # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			clicksound = click_default
+    	    scale = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "ZYX_tankgaol_factions_ui_window"
+		orientation = center_right
+		position = { x = -2500 y = -400 }
+		size = { width = 1600 height = 533 }
+		#clipping = no
+		moveable = yes
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_bookmark_tankgoal_bg"
+			clicksound = click_checkbox
+		}
+
+		iconType = {
+			name = "ZYX_tankgoal_backgrounnd"
+			spriteType = GFX_ZYX_tankgoal_photo # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_out_button"
+			spriteType = GFX_ZYX_tankgoal_out_button # 替换为你自己的sprite名称
+			position = { x = 1525 y = 15 }
+			clicksound = click_default
+    	    scale = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "tankgoal_console"
+		
+		buttonType = {
+			name = "ZYX_tankgoal_game_button"
+			spriteType = GFX_ZYX_tankgoal_game_button # 替换为你自己的sprite名称
+			position = { x = 650 y = 75 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_kards_button"
+			spriteType = GFX_ZYX_tankgoal_kards_button # 替换为你自己的sprite名称
+			position = { x = 650 y = 225 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "ZYX_tankgoal_commender_button"
+			spriteType = GFX_ZYX_tankgoal_commender_button # 替换为你自己的sprite名称
+			position = { x = 650 y = 375 }
+			clicksound = click_default
+    	    scale = 0.5
+		}
+	}
+
+	containerWindowType = {#总体指挥官界面
+		name = "commander_console"
+
+		containerWindowType = {
+			name = "dajilin_kard"
+
+			iconType = {
+				name = "ZYX_dajilin_commander"
+				position = { x = 270 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_dajilin"
+				spriteType = GFX_ZYX_locked
+				position = { x = 270 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_dajilin_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 320 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "daxi_kard"
+			iconType = {
+				name = "ZYX_daxi_commander"
+				position = { x = 100 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_daxi_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 150 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "ducs_kard"
+			iconType = {
+				name = "ZYX_ducs_commander"
+				position = { x = 440 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_ducs"
+				spriteType = GFX_ZYX_locked
+				position = { x = 440 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_ducs_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 490 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "ger_kard"
+
+			iconType = {
+				name = "ZYX_ger_commander"
+				position = { x = 610 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_ger"
+				spriteType = GFX_ZYX_locked
+				position = { x = 610 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_ger_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 660 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "kaqiusha_kard"
+
+			iconType = {
+				name = "ZYX_kaqiusha_commander"
+				position = { x = 780 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_kaqiusha"
+				spriteType = GFX_ZYX_locked
+				position = { x = 780 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_kaqiusha_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 830 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "mari_kard"
+
+			iconType = {
+				name = "ZYX_mari_commander"
+				position = { x = 950 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_mari"
+				spriteType = GFX_ZYX_locked
+				position = { x = 950 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_mari_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x =1000 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "usa_kard"
+
+			iconType = {
+				name = "ZYX_usa_commander"
+				position = { x = 1120 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_usa"
+				spriteType = GFX_ZYX_locked
+				position = { x = 1120 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_usa_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 1170 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		containerWindowType = {
+			name = "zdb_kard"
+
+			iconType = {
+				name = "ZYX_zdb_commander"
+				position = { x = 1290 y = 140 }
+			}
+			iconType = {
+				name = "lock_of_zdb"
+				spriteType = GFX_ZYX_locked
+				position = { x = 1290 y = 140 }
+			}
+			buttonType = {
+				name = "ZYX_zdb_invite"
+				spriteType = GFX_ZYX_invite
+				position = { x = 1340 y = 350 }
+
+				scale = 0.1
+			}
+		}
+
+		instantTextBoxType = {
+			name = "warning_no_commander"
+			position = { x = 570 y = 100 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = warning_of_no_commander
+		}
+
+		buttonType = { #shuaxin
+				name = "reload_commander_button"
+				position = { x = 600 y = 400 }
+				scale = 2
+				quadTextureSprite = "GFX_shuaxin"
+				pdx_tooltip = reload_commander
+		}
+
+		buttonType = {
+			name = "leave_the_commander_console_button"
+			position = { x = 820 y = 410 }
+			quadTextureSprite ="GFX_production_line_arrow_right"
+			pdx_tooltip = leave_the_commander_console
+			scale = 3
+		}
+	}
+}

@@ -1,0 +1,120 @@
+spriteTypes = {
+    
+	#指挥官们 commanders模块
+	spriteType = {
+        name = "GFX_ZYX_invite"
+		texturefile = "gfx/tankgoal/commanders/invite.png"
+    }
+
+    frameAnimatedSpriteType = {
+		name = "GFX_ZYX_dajilin"
+		texturefile = "gfx/tankgoal/commanders/dajilin.png"
+		noOfFrames = 32
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_daxi"
+		texturefile = "gfx/tankgoal/commanders/daxi.png"
+		noOfFrames = 32
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_ducs"
+		texturefile = "gfx/tankgoal/commanders/ducs.png"
+		noOfFrames = 32
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_ger"
+		texturefile = "gfx/tankgoal/commanders/ger.png"
+		noOfFrames = 32
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_kaqiusha"
+		texturefile = "gfx/tankgoal/commanders/kaqiusha.png"
+		noOfFrames = 33
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_mari"
+		texturefile = "gfx/tankgoal/commanders/mari.png"
+		noOfFrames = 33
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_usa"
+		texturefile = "gfx/tankgoal/commanders/usa.png"
+		noOfFrames = 33
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ZYX_zdb"
+		texturefile = "gfx/tankgoal/commanders/zdb.png"
+		noOfFrames = 32
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.1
+	}
+
+	#未选择↓↓↓↓↓↓↓↓↓↓↓↓↓
+	spriteType = {
+        name = "GFX_ZYX_dajilin_unselect"
+		texturefile = "gfx/tankgoal/commanders/dajilin_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_daxi_unselect"
+		texturefile = "gfx/tankgoal/commanders/daxi_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_ducs_unselect"
+		texturefile = "gfx/tankgoal/commanders/ducs_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_ger_unselect"
+		texturefile = "gfx/tankgoal/commanders/ger_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_kaqiusha_unselect"
+		texturefile = "gfx/tankgoal/commanders/kaqiusha_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_mari_unselect"
+		texturefile = "gfx/tankgoal/commanders/mari_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_usa_unselect"
+		texturefile = "gfx/tankgoal/commanders/usa_unselect.png"
+    }
+	spriteType = {
+        name = "GFX_ZYX_zdb_unselect"
+		texturefile = "gfx/tankgoal/commanders/zdb_unselect.png"
+    }
+
+	spriteType = {
+        name = "GFX_ZYX_locked"
+		texturefile = "gfx/tankgoal/commanders/locked.png"
+    }
+}

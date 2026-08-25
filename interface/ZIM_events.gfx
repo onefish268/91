@@ -14,8 +14,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_ZIM3_event"
         texturefile = "gfx\interface\events\ZIM3_event.png"
-        name = "GFX_ZIMthree_event"
-        texturefile = "gfx\interface\events\ZIMthree_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM4_event"
+        texturefile = "gfx\interface\events\ZIM4_event.png"
     }
     spriteType = {
         name = "GFX_news_2"
@@ -24,5 +26,25 @@ spriteTypes = {
     spriteType = {
         name = "GFX_news_3"
         texturefile = "gfx\interface\events\news_3.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM5_event"
+        texturefile = "gfx\interface\events\ZIM5_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM6_event"
+        texturefile = "gfx\interface\events\ZIM6_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM7_event"
+        texturefile = "gfx\interface\events\ZIM7_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM8_event"
+        texturefile = "gfx\interface\events\ZIM8_event.dds"
+    }
+    spriteType = {
+        name = "GFX_ZIM9_event"
+        texturefile = "gfx\interface\events\ZIM9_event.png"
     }
 }

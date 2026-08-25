@@ -98,7 +98,7 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "ZSB_fayuan_factions_decision_ui_window"
 	}
-
+	
 	ZSB_dabang_ui = {
 		context_type = decision_category
 		window_name = "ZSB_dabang_factions_decision_ui_window"

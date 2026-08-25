@@ -136,6 +136,10 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZIM/stlbj.png"
     }
     spriteType = {
+        name = "GFX_ZDM_luomu"
+        texturefile = "gfx/leaders/ZIM/luomu.png"
+    }
+    spriteType = {
         name = "GFX_ZSB_faction_panel_banner"
         texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_panel_banner.png"
     }
@@ -207,4 +211,44 @@ spriteTypes = {
         name = "GFX_ZSB_faction_flag12"
         texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_flag12.png"
     }
+    spriteType = {
+        name = "GFX_ZYX_anqiao_big_photo"
+        texturefile = "gfx/leaders/ZIM/GFX_ZYX_anqiao_big_photo.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_anqiao_small_photo"
+        texturefile = "gfx/leaders/ZIM/GFX_ZYX_anqiao_small_photo.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_photo"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_photo.png"
+    }
+    spriteType = {
+        name = "GFX_bookmark_tankgoal_bg"
+        texturefile = "gfx/tankgoal/GFX_bookmark_tankgoal_bg.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_out_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_out_button.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_game_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_game_button.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_kards_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_kards_button.png"
+    }
+    spriteType = {
+        name = "GFX_ZYX_tankgoal_commender_button"
+        texturefile = "gfx/tankgoal/GFX_ZYX_tankgoal_commender_button.png"
+    }
+    SpriteType = {
+		name = "GFX_Salisbury_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/Salisbury_city_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_Lusaka_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/Lusaka_city_pic.dds"
+	}
 }

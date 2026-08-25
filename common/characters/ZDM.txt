@@ -13,5 +13,18 @@ characters = {
 	        }
 			id= -1
 		}
+	}
+	ZDM_luomu = { #副领袖罗姆
+		name = ZDM_luomu
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZIM/luomu.png"
+			}
+		}
+		country_leader = {
+			#desc = ENG_Misumi_Uika_desc_leader
+			ideology = liberalism
+			expire = "2000.1.1.1"
+		}
 	}	
 }

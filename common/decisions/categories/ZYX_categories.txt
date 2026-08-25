@@ -1,0 +1,9 @@
+ZYX_anqiao_category = {
+    picture = GFX_decision_cat_default
+    priority = 98
+    scripted_gui = ZYX_anqiao_ui  # 关键！挂载scripted_gui ID
+    visible = {
+        has_completed_focus = 3_focus_1
+        tag = ZYX   
+    }
+}

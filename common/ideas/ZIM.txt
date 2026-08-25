@@ -126,6 +126,26 @@ ideas = {
 			}
 		}
 	}
+
+	hidden_ideas = {
+		ZDM_luomu_1 = {
+			name = ZDM_luomu
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = ZDM_luomu
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+	}
 }
 
 

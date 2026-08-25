@@ -3,22 +3,780 @@ bookmarks = {
 		name = "bookmark_east_eu_name"
 		desc = "bookmark_east_eu_desc"
 		date = 1936.1.1.12
-		picture = "GFX_bookmark_east_eu"
-		default_country = "SOV"
-		default = yes
-		"SOV" = {
-			version = base_game
-			history = "SOV_ADO_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		# minors from DLC ####
-		effect = {
-			randomize_weather = 22345			# <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
-		}
-	}
+        picture = "GFX_bookmark_west_eu"
+        default_country = "MON"
+        default = yes
+		filters = { label }
+        ##  new_content_label  更新国家
+        ##  recommended_label  推荐国家
+        ##  recommended_label  推荐国家
+        ###魔导国###
+        "DVL" = {
+			label = { new_content_label recommended_label }
+            version = base_game
+            history = "DVL_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                race_Undead				#种族
+                DVL_Gradually_accepted_rule				#逐渐被接纳的统治
+                DVL_open_showdown_between_prime_ministers				#公开化的宰相对决
+            }
+            focuses = {
+                DVL_prime_ministers_Demiurge				#宰相迪米乌哥斯
+                DVL_prime_ministers_Albedo				#宰相雅儿贝德
+                DVL_prime_ministers_Sebas_Tian				#宰相塞巴斯·蒂安
+            }
+        }
+        # XXA = {
+		# 	assume_not_played_if_missing_data = no
+        #     version = base_game
+        #     ideology = fascism
+        #     history = ""
+        # }
+        ###轴心国###
+        "GER" = {
+
+            version = base_game
+            history = "GER_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                broken_army				#受损的国防军
+                touxiangzhuyi				#泛滥的失败主义
+                GER_Unit_font_idea				#德意志统一战线
+            }
+            focuses = {
+                AUS_country_of_Fuhrer
+                AUS_industrial_marvel_of_Danube
+                AUS_Germany_is_ready
+            }
+        }
+        "ALS" = {
+
+            version = base_game
+            #minor = yes
+            history = "ALS_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                ALS_ghgzhihun
+                ALS_reqingzuzhi
+                ALS_xxldlwj
+            }
+            focuses = {
+                ALS_158
+                ALS_118
+                ALS_178
+            }
+        }
+        "BAY" = {
+
+            version = base_game
+            minor = yes
+            history = "GEU_BLITZKRIEG_DESC"
+            ideology = communism
+            ideas = {
+                GEU_German_Spark
+                GEU_Backward_Bavarian_countryside
+                GER_Unit_font_idea
+            }
+            focuses = {
+                BAY_SPD
+                BAY_KPD_Asuka
+                BAY_KPD_Lenin
+            }
+        }
+        "ITA" = {
+
+            version = base_game
+            minor = yes
+            history = "ITA_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                victor_emmanuel
+                ita_bendannvshen
+                ITA_buchengshudefatuanjingji
+            }
+            focuses = {
+                ITA_1
+                ITA_14
+                ITA_34
+            }
+        }
+        ###圣杯###
+        "ENG" = {
+
+            version = base_game
+            history = "ENG_GATHERING_STORM_DESC"
+            ideology = democratic
+			override_leader_portrait = ENG_Arthur_Pendragon
+            ideas = {
+                ENG_idea_wdzzdslz
+                ENG_idea_hjhj
+                ENG_idea_jjcxzz
+            }
+            focuses = {
+                ENG_1_hjsd
+                ENG_7_jrms
+                ENG_8_wzxh
+            }
+        }
+        "FRA" = {
+
+            version = base_game
+            history = "FRA_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                FRA_Step_in_Democratization				#迈入民主化
+                FRA_Financial_spree				#金融狂欢
+                FRA_developed_industry				#实业发达
+            }
+            focuses = {
+                FRA_GFN_Raid_the_Council
+                FRA_moonlight_purifies_world
+                FRA_Liberty_equality_fraternity_and_king
+            }
+        }
+        "NPT" = {
+
+            version = base_game
+            minor = yes
+            history = "NPT_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                NPT_compact_of_solidarity
+                NPT_Iberian_civil_war
+                NPT_all_dimensional_red_army
+            }
+            focuses = {
+                NPT_arfoire_awakening_of_all_dimensions
+                NPT_respond_to_consensus_on_Earth_conservation
+                NPT_neptune_era_of_handheld_computers
+            }
+        }
+        "MOR" = {
+
+            version = base_game
+            minor = yes
+            history = "MOR_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                MOR_supreme_court2
+                MOR_class_struggle
+                MOR_punitive_army
+            }
+            focuses = {
+                MOR_light_up_lighthouse
+                MOR_god_king_and_country
+                MOR_awakening_of_all_dimensions
+            }
+        }
+        # "KMK" = {
+		# 	assume_not_played_if_missing_data = no
+        #     version = base_game
+        #     minor = yes
+        #     history = "KMK_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #         KMK_gold_age
+        #         KMK_Black_tea
+        #         KMK_kaiming_zhuangzhi
+        #     }
+        #     focuses = {
+        #         KMK_Koakuma_01
+        #         KMK_ensemble_dedicated_to_deceased_princess
+        #         KMK_HRR_last_wish
+        #     }
+        # }
+        "POL" = {
+
+            version = base_game
+            minor = yes
+            history = "POL_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                POL_unyielding_regret
+                POL_apartheid_policy
+                POL_victory_of_intervention
+            }
+            focuses = {
+                POL_reform_of_Eleshkigal
+                POL_three_great_obsessions
+                POL_world_revolution
+            }
+        }
+        "PAL" = {
+
+            version = base_game
+            minor = yes
+            history = "PAL_BLITZKRIEG_DESC"
+            ideology = neutrality
+            ideas = {
+                PAL_Covenant_of_Royal_Court
+                PAL_Food_shortages
+                HEB_AH_special_economy_3
+            }
+            focuses = {
+                PAL_Government_Reorganization
+                PAL_Salvationian
+                PAL_Theresia_vision
+            }
+        }
+        ###中间###
+        "MON" = {
+
+            version = base_game
+            history = "MON_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+	MON_changshengtian_1
+	MON_chengjisihanchongbai_idea_2
+	MON_hanhuazhilu_idea_5
+            }
+            focuses = {
+	MON_mengguzhixiadeheping
+	MON_shengshiyuzhishi
+	MON_buwangguangfudaye
+            }
+        }
+        "DEN" = {
+
+            version = base_game
+            #minor = yes
+            history = DEN_GATHERING_STORM_DESC
+            ideology = democratic
+            ideas = {
+                DEN_limiting_superpowers
+                DEN_develop_Iceland_focus
+                DEN_research_foundation3
+            }
+            focuses = {
+                DEN_the_fourth_war
+                DEN_pacify_various_feudal_domain
+                DEN_comrade_have_come_from_afar
+            }
+        }
+        # XXA = {
+        #     ideology = fascism
+        #     history = ""
+        # }
+        ###美洲
+        "MGU" = {
+
+            version = base_game
+            #minor = yes
+            history = "MGU_BLITZKRIEG_DESC"
+            ideology = neutrality
+            ideas = {
+                mahoushojo_tradition
+                witch_transform
+                disordered_army_0
+            }
+            focuses = {
+                MGU_yuki_show
+                MTK_com_show
+                MGU_H_003
+            }
+        }
+        "LHS" = {
+            #minor = yes
+
+            history = "LHS_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                LHS_liangshi
+                LHS_tongji
+                LHS_huozhong
+            }
+            focuses = {
+                LHS_Steel_With_Heartbeat
+                LHS_Melt_The_Guns_Feed_The_World
+                LHS_Carnival_Never_Ends
+            }
+        }
+        # "KNM" = {
+		# 	assume_not_played_if_missing_data = no
+        #     version = base_game
+        #     #minor = yes
+        #     history = "KNM_GATHERING_STORM_DESC"
+        #     ideology = communism
+        #     ideas = {
+        #         KNM_djdbxdnj
+	    #         KNM_bxjtxydq
+	    #         KNM_dbzsmhy 
+        #     }
+        #     focuses = {
+        #         KNM_ylcg
+        #         KNM_ctll
+        #         KNM_tygq
+        #     }
+        # }
+        "PAM" = {
+
+            version = base_game
+            minor = yes
+            history = "PAM_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                PAM_royal_co_op
+                PAM_Flesh_golem
+                PAM_hjbz2
+            }
+            focuses = {
+                PAM_zsdsy
+                PAM_lqslzs
+                PAM_devour_the_old_world
+            }
+        }
+        "PAQ" = {
+
+            version = base_game
+            minor = yes
+            history = "PAQ_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                PAQ_Iron_cross_afterglow1
+                PAQ_mechanical1_buff
+            }
+            focuses = {
+                PAQ_013
+                PAQ_65
+                PAQ_31
+            }
+        }
+        "USA" = {
+
+            version = base_game
+            minor = yes
+            history = "USA_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                USA_Prosperity_since_the_war
+                USA_Lost_Adjacent_engineering_technology
+                USA_Freedom_sanctuary
+            }
+            focuses = {
+                USA_Expose_the_lie
+                USA_Wake_up
+                USA_Fire_alone
+            }
+        }
+        "NFA" = {
+
+            version = base_game
+            minor = yes
+            history = "NFA_BLITZKRIEG_DESC"
+            ideology = neutrality
+            ideas = {
+                NFA_zfbk
+                NFA_killkillkill
+            }
+            focuses = {
+                NFA_4
+                NFA_85
+                NFA_111
+            }
+        }
+        "FRG" = {
+
+            version = base_game
+            minor = yes
+            history = "FRG_BLITZKRIEG_DESC"
+            ideology = democratic
+            ideas = {
+                FRG_home_of_the_free_1
+                FRG_juntuanyundong
+                FRG_meidiguozhuyi_idea_2
+            }
+            focuses = {
+                FRG_hezhongweiyi
+                FRG_rushandianbanguilai
+                FRG_xianxuenvwang
+            }
+        }
+        "NGD" = {
+
+            version = base_game
+            minor = yes
+            history = "NGD_BLITZKRIEG_DESC"
+            ideology = democratic
+            ideas = {
+                #衣冠东渡
+                NGD_refuge_in_the_east_idea
+                #咆哮年代
+                NGD_roaring_age_idea
+                #僵化的政治体制
+                NGD_Rigid_political_system
+            }
+            focuses = {
+                #风雨欲来
+                NGD_storm_is_approaching
+                #进步党执政
+                NGD_Progressive_Party_governance
+                #支援我们的同胞
+                NGD_support_our_compatriots
+            }
+        }
+        "CUB" = {
+
+            version = base_game
+            minor = yes
+            history = "CUB_BLITZKRIEG_DESC"
+            ideology = communism
+            ideas = {
+                huanling
+                baisheshendejiahu
+                haidao
+            }
+            focuses = {
+                ACUBA_5
+                ACUBA_53
+                ACUBA_76
+            }
+        }
+        "PAJ" = {
+
+            version = base_game
+            minor = yes
+            history = "PAJ_BLITZKRIEG_DESC"
+            ideology = neutrality
+            ideas = {
+                PAJ_chao
+                PAJ_ducai
+                PAJ_yuyan
+            }
+            focuses = {
+                PAJ_41
+                PAJ_68
+                PAJ_60
+            }
+        }
+        "GUA" = {
+
+            version = base_game
+            minor = yes
+            history = "GUA_BLITZKRIEG_DESC"
+            ideology = fascism
+            ideas = {
+                baisheshendejiahu
+                huanling
+                gaojian
+            }
+            focuses = {
+                GUA_71
+                GUA_53
+                GUA_55
+            }
+        }
+        "PAY" = {
+
+            version = base_game
+            minor = yes
+            history = "PAY_BLITZKRIEG_DESC"
+            ideology = fascism
+            ideas = {
+                huanling
+                baisheshendejiahu
+                haidao
+            }
+            focuses = {
+                PAY_89
+                PAY_95
+                PAY_81
+            }
+        }
+        "PAN" = {
+
+            version = base_game
+            minor = yes
+            history = "PAN_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                shenshedebihu
+                youxiandekaizhi
+                Artifact3
+            }
+            focuses = {
+                PAN_23
+                PAN_73
+                PAN_80
+            }
+        }
+        ##亚洲###
+        "JAP" = {
+
+            version = base_game
+            #minor = yes
+            history = "JAP_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                dongyatiaoyue
+                jinv
+                caifa
+            }
+            focuses = {
+                JAP_new74
+                JAP_new72
+                JAP_new86
+            }
+        }
+        "CHI" = {
+
+            version = base_game
+            #minor = yes
+            history = "CHI_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                CHI_Uncertain_future  ##时局不安
+                CHI_Crisis_of_CHI_Dynasty_idea  ##中原王朝危机
+                CHI_Stagnant_modernization  ##停滞的现代化
+            }
+            focuses = {
+                CHI_focus_Imperial_comeback
+                CHI_focus_new_regent
+                CHI_focus_democracy_HanGeKi
+            }
+        }
+        # "GRE" = {
+        #     minor = yes
+        #     history = "GRE_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #         LUG_illness
+	    #         LUG_racism
+        #         LUG_Witch_Cult
+
+        #     }
+        #     focuses = {
+        #         LUG_unluck_Reinhard_van_Astrea
+        #         GRE_byzantine_themata
+        #         LUG_Witch_Cult_Purge_Operation
+        #     }
+        # }
+        "PRC" = {
+
+            version = base_game
+            minor = yes
+            history = "PRC_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                PRC_October_Secret_Talks
+                PRC_last_hope_of_Chinese_revolution
+                PRC_Tired_Red_Army_1
+            }
+            focuses = {
+                PRC_Guidance_from_Kremlin
+                PRC_new_China_of_Fuhrer_Zhang
+                PRC_The_red_sun_of_the_people
+            }
+        }
+        "ROC" = {
+
+            version = base_game
+            minor = yes
+            history = "ROC_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                ROC_blue_shirts
+                ROC_many_bandit
+                ROC_famine
+            }
+            focuses = {
+                ROC_Left_dominated
+                ROC_right_dominated
+                ROC_blue_coup
+            }
+        }
+        "MAN" = {
+
+            version = base_game
+            minor = yes
+            history = MAN_GATHERING_STORM_DESC
+            ideology = neutrality
+            ideas = {
+                MAN_zhongdonglutielu_idea
+                CHI_Corrupt_and_incompetent_army_1
+                CHI_Deformed_industry_1
+            }
+            focuses = {
+                MAN_Raiden_Ei_Governor
+                MAN_Mashiro_Kanon_Governor
+                MAN_Shirakami_Fubuki_Governor
+            }
+        }
+        "MAL" = {
+
+            version = base_game
+            minor = yes
+            history = MAL_GATHERING_STORM_DESC
+            ideology = democratic
+            ideas = {
+                MAL_jd5
+                MAL_lese8
+                MAL_jihuang5
+            }
+            focuses = {
+                MAL_126
+                MAL_195
+                MAL_225
+            }
+        }
+        "RYU" = {
+
+            version = base_game
+            minor = yes
+            history = ""
+            ideology = neutrality
+            ideas = {
+                RYU_guangyong
+                RYU_zmdbk
+            }
+            focuses = {
+                RYU_1
+                RYU_19
+                RYU_38
+            }
+        }
+        ###中东###
+        "TUR" = {
+
+            version = base_game
+            minor = yes
+            history = "TUR_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                TUR_recovering_from_the_war_for_independence
+                TUR_power_struggle
+                TUR_hope_from_father_of_nation
+            }
+            focuses = {
+                TUR_new_year
+                TUR_continue_the_policy_of_etatism_AH
+                TUR_dice_in_twice
+            }
+        }
+        "LAN" = {
+
+            version = base_game
+            minor = yes
+            history = "LAN_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                LAN_Astral
+                LAN_weak_population_identity
+                LAN_if_last_battle
+            }
+            focuses = {
+                LAN_solve_drought
+                LAN_if_the_last_battle
+                LAN_national_industrial_new_plan
+            }
+        }
+        ###第三国际###
+        "SOV" = {
+
+            version = base_game
+            history = "SOV_ADO_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                SOV_17th_party_congress
+                SOV_agricultural_progress
+                SOV_magical_society_Sakura2
+            }
+            focuses = {
+                SOV_intnachonel_must_realize
+                SOV_Host_Comintern_Congresses
+                SOV_great_game_of_Minsk
+            }
+        }
+        "BAL" = {
+
+            version = base_game
+            minor = yes
+            history = BAL_GATHERING_STORM_DESC
+            ideology = democratic
+            ideas = {
+                BAL_unyielding_regret
+                BAL_excellent_light_industry_focus3
+                BAL_shinto_rule8
+            }
+            focuses = {
+                BAL_taisya_step_aside
+                BAL_predestined_path
+                BAL_entry_into_Warsaw
+            }
+        }
+        "SWE" = {
+
+            version = base_game
+            minor = yes
+            history = "SWE_BLITZKRIEG_DESC"
+            ideology = neutrality
+            ideas = {
+                SWE_economic_growth
+                SWE_Karma_shame
+                SWE_Massive_military_expansion
+            }
+            focuses = {
+                SWE_Viking_Legion_is_in_power
+                SWE_Proletarian_paradise
+                SWE_Kristian_Restoration
+            }
+        }
+        "UKR" = {
+
+            version = base_game
+            minor = yes
+            history = "UKR_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                UKR_foreign_support
+                Ukrainian_revanchism
+                UKR_fight_to_death
+            }
+            focuses = {
+                UKR_eluosiyanfu
+                UKR_eluosicimu
+                UKR_minzufuxing
+            }
+        }
+        "FIN" = {
+
+            version = base_game
+            minor = yes
+            history = "FIN_ADO_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                Sisu_spirit
+                FIN_economic_cooperation_from_sovit3
+                # SUO_socialist_realism_focus3
+                SUO_nationalist_movement4
+            }
+            focuses = {
+                FIN_winter_turns_to_spring
+                SUO_northern_hegemony
+                SUO_dismiss_Kaede
+            }
+        }
+        "ROM" = {
+
+            version = base_game
+            minor = yes
+            history = "ROM_1_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                ROM_Alone_in_world
+                ROM_Chaotic_political_landscape
+                ROM_tiehuatuanzhanfa_idea_1
+            }
+            focuses = {
+                ROM_orga_live
+                ROM_Kudelia
+                ROM_McGillis
+            }
+        }
+        ######
+        effect = {
+            randomize_weather = 22345			# <- Obligatory in every bookmark !
+            #123 = { rain_light = yes }
+        }
+    }
 }

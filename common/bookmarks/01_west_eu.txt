@@ -4,15 +4,18 @@ bookmarks = {
         desc = "GATHERING_STORM_DESC"
         date = 1936.1.1.12
         picture = "GFX_bookmark_west_eu"
-        default_country = "MON"
+        default_country = "PAW"
         default = yes
+		#filters = { label }
+        ##  new_content_label  更新国家
+        ##  recommended_label  推荐国家
         sort_unplayed_first = no            # 默认值yes：拥有未游玩内容的国家条目优先排在列表前方
         include_majors_in_minor_list = no   # 默认值yes：启用筛选条件时，大国条目也会一并显示在侧边小型列表内
         apply_filter_to_majors = no        # 默认值no：设为yes后，大国主条目同样遵循筛选规则，仅展示匹配筛选条件的大国
         apply_filter_to_other_country = yes # 默认值no：默认“其他（---）”分类固定常驻显示；设为yes时该条目也会受筛选条件限制
         #label_order = { label_1 label_2 }   # 可选配置：强制设定标签筛选按钮的显示顺序
         scrollable_country_list = no       # 默认值no：小型国家列表使用自身垂直滚动条，而非弹出下拉溢出菜单
-        ###魔导国###
+###主要国家###
         "DVL" = {
             history = "DVL_GATHERING_STORM_DESC"
             ideology = fascism
@@ -31,81 +34,6 @@ bookmarks = {
             ideology = fascism
             history = ""
         }
-        ###轴心国###
-        "GER" = {
-            history = "GER_GATHERING_STORM_DESC"
-            ideology = fascism
-            ideas = {
-                broken_army				#受损的国防军
-                touxiangzhuyi				#泛滥的失败主义
-                GER_Unit_font_idea				#德意志统一战线
-            }
-            focuses = {
-                AUS_country_of_Fuhrer
-                AUS_industrial_marvel_of_Danube
-                AUS_Germany_is_ready
-            }
-        }
-        "ZIM" = {
-            history = "ZIM_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                ZIM_a
-                ZIM_b
-                ZIM_2
-            }
-            focuses = {
-                new_focus_9
-                2_focus_18
-                4_focus_1
-            }
-        }
-        "ALS" = {
-            #minor = yes
-            history = "ALS_GATHERING_STORM_DESC"
-            ideology = democratic
-            ideas = {
-                ALS_ghgzhihun
-                ALS_reqingzuzhi
-                ALS_xxldlwj
-            }
-            focuses = {
-                ALS_158
-                ALS_118
-                ALS_178
-            }
-        }
-        "BAY" = {
-            minor = yes
-            history = "GEU_BLITZKRIEG_DESC"
-            ideology = communism
-            ideas = {
-                GEU_German_Spark
-                GEU_Backward_Bavarian_countryside
-                GER_Unit_font_idea
-            }
-            focuses = {
-                BAY_SPD
-                BAY_KPD_Asuka
-                BAY_KPD_Lenin
-            }
-        }
-        "ITA" = {
-            minor = yes
-            history = "ITA_GATHERING_STORM_DESC"
-            ideology = fascism
-            ideas = {
-                victor_emmanuel
-                ita_bendannvshen
-                ITA_buchengshudefatuanjingji
-            }
-            focuses = {
-                ITA_1
-                ITA_14
-                ITA_34
-            }
-        }
-        ###圣杯###
         "ENG" = {
             history = "ENG_GATHERING_STORM_DESC"
             ideology = democratic
@@ -133,6 +61,201 @@ bookmarks = {
                 FRA_GFN_Raid_the_Council
                 FRA_moonlight_purifies_world
                 FRA_Liberty_equality_fraternity_and_king
+            }
+        }
+        "GRE" = {
+            #minor = yes
+            history = "GRE_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                GRE_Empire_Twilight
+                GRE_kuroshio_coming
+                GRE_4_year_plan
+            }
+            focuses = {
+                GRE_openfocus_1
+                GRE_Augusta_focus_15  
+                GRE_Augusta_focus_1
+            }
+        }
+        "GER" = {
+            history = "GER_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                broken_army				#受损的国防军
+                touxiangzhuyi				#泛滥的失败主义
+                GER_Unit_font_idea				#德意志统一战线
+            }
+            focuses = {
+                GER_lisha_11
+                AUS_industrial_marvel_of_Danube
+                AUS_Germany_is_ready
+            }
+        }
+        "PAW" = {
+            #minor = yes
+            history = "PAW_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                PAW_miwuzhizhong
+                #PAW_kaisatiejun_jia
+                PAW_zijizizu_jia
+                PAW_wflsjd_dynamic_modifier_idea
+            }
+            focuses = {
+                PAW_89
+                PAW_77
+                PAW_118
+            }
+        }
+        # "ROC" = {
+        #     #minor = yes
+        #     history = "ROC_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #         ROC_northern_expedition_regret
+        #         ROC_island_of_freedom_and_democracy
+        #         ROC_NRA_modifier_idea
+        #     }
+        #     focuses = {
+        #     }
+        # }
+        "KNM" = {
+            history = "KNM_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                KNM_djdbxdnj
+	            KNM_bxjtxydq
+	            KNM_dbzsmhy 
+            }
+            focuses = {
+                KNM_ylcg
+                KNM_cfcdsjjt2
+                KNM_tygq
+            }
+        }
+        # XXA = {
+        #     ideology = fascism
+        #     history = ""
+        # }
+        "PA1" = {
+            #minor = yes
+            history = "PA1_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                PA1_let_us_work_together
+                PA1_revolution_army_3
+                PA1_blood_and_life
+            }
+            focuses = {
+                PA1_show_1
+                PA1_show_2
+                PA1_show_3
+            }
+        }
+        "PAM" = {
+            #minor = yes
+            history = "PAM_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                PAM_royal_co_op
+                PAM_Flesh_golem
+                CHL_has_military_access
+            }
+            focuses = {
+                PAM_qqh
+                PAM_szndm
+                PAM_tzwyxkyl
+            }
+        }
+        "PRC" = {
+            #minor = yes
+            history = "PRC_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                PRC_October_Secret_Talks
+                PRC_last_hope_of_Chinese_revolution
+                PRC_Tired_Red_Army_1
+            }
+            focuses = {
+                PRC_Guidance_from_Kremlin
+                PRC_new_China_of_Fuhrer_Zhang
+                PRC_The_red_sun_of_the_people
+            }
+        }
+        "JAP" = {
+            #minor = yes
+            history = "JAP_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                dongyatiaoyue
+                jinv
+                caifa
+            }
+            focuses = {
+                JAP_new74
+                JAP_new72
+                JAP_new86
+            }
+        }
+        "SOV" = {
+            history = "SOV_ADO_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                SOV_17th_party_congress
+                SOV_agricultural_progress
+                SOV_magical_society_Sakura2
+            }
+            focuses = {
+                SOV_intnachonel_must_realize
+                SOV_Host_Comintern_Congresses
+                SOV_great_game_of_Minsk
+            }
+        }
+###次要国家###
+        "BAY" = {
+            minor = yes
+            history = "GEU_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                GEU_German_Spark
+                GEU_Backward_Bavarian_countryside
+                GER_Unit_font_idea
+            }
+            focuses = {
+                BAY_SPD
+                BAY_KPD_Asuka
+                BAY_KPD_Lenin
+            }
+        }
+        "ITA" = {
+            minor = yes
+            history = "ITA_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                victor_emmanuel
+                ita_bendannvshen
+                ITA_buchengshudefatuanjingji
+            }
+            focuses = {
+                ITA_1
+                ITA_14
+                ITA_34
+            }
+        }
+        "ALS" = {
+            minor = yes
+            history = "ALS_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                ALS_ghgzhihun
+                ALS_reqingzuzhi
+                ALS_xxldlwj
+            }
+            focuses = {
+                ALS_158
+                ALS_118
+                ALS_178
             }
         }
         "NPT" = {
@@ -180,6 +303,39 @@ bookmarks = {
                 KMK_HRR_last_wish
             }
         }
+        # "JSZ" = {
+        #     minor = yes
+        #     history = "JSZ_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #     }
+        #     focuses = {
+        #     }
+        # }
+        # "WUH" = {
+        #     minor = yes
+        #     history = "WUH_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #     }
+        #     focuses = {
+        #     }
+        # }
+        "DEN" = {
+            minor = yes
+            history = DEN_GATHERING_STORM_DESC
+            ideology = democratic
+            ideas = {
+                DEN_limiting_superpowers
+                DEN_develop_Iceland_focus
+                DEN_research_foundation3
+            }
+            focuses = {
+                DEN_the_fourth_war
+                DEN_pacify_various_feudal_domain
+                DEN_comrade_have_come_from_afar
+            }
+        }
         "POL" = {
             minor = yes
             history = "POL_GATHERING_STORM_DESC"
@@ -197,7 +353,7 @@ bookmarks = {
         }
         "PAL" = {
             minor = yes
-            history = "PAL_BLITZKRIEG_DESC"
+            history = "PAL_GATHERING_STORM_DESC"
             ideology = neutrality
             ideas = {
                 PAL_Covenant_of_Royal_Court
@@ -210,58 +366,8 @@ bookmarks = {
                 PAL_Theresia_vision
             }
         }
-        ###中间###
-        "MON" = {
-            history = "MON_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-	MON_changshengtian_1
-	MON_chengjisihanchongbai_idea_2
-	MON_hanhuazhilu_idea_5
-            }
-            focuses = {
-	MON_mengguzhixiadeheping
-	MON_shengshiyuzhishi
-	MON_buwangguangfudaye
-            }
-        }
-        "DEN" = {
-            #minor = yes
-            history = DEN_GATHERING_STORM_DESC
-            ideology = democratic
-            ideas = {
-                DEN_limiting_superpowers
-                DEN_develop_Iceland_focus
-                DEN_research_foundation3
-            }
-            focuses = {
-                DEN_the_fourth_war
-                DEN_pacify_various_feudal_domain
-                DEN_comrade_have_come_from_afar
-            }
-        }
-        # XXA = {
-        #     ideology = fascism
-        #     history = ""
-        # }
-        ###美洲
-        "MGU" = {
-            #minor = yes
-            history = "MGU_BLITZKRIEG_DESC"
-            ideology = neutrality
-            ideas = {
-                mahoushojo_tradition
-                witch_transform
-                disordered_army_0
-            }
-            focuses = {
-                MGU_yuki_show
-                MTK_com_show
-                MGU_H_003
-            }
-        }
         "LHS" = {
-            #minor = yes
+            minor = yes
             history = "LHS_GATHERING_STORM_DESC"
             ideology = communism
             ideas = {
@@ -273,21 +379,6 @@ bookmarks = {
                 LHS_Steel_With_Heartbeat
                 LHS_Melt_The_Guns_Feed_The_World
                 LHS_Carnival_Never_Ends
-            }
-        }
-        "PAM" = {
-            minor = yes
-            history = "PAM_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                PAM_royal_co_op
-                PAM_Flesh_golem
-                PAM_hjbz2
-            }
-            focuses = {
-                PAM_zsdsy
-                PAM_lqslzs
-                PAM_devour_the_old_world
             }
         }
         "PAQ" = {
@@ -321,7 +412,7 @@ bookmarks = {
         }
         "NFA" = {
             minor = yes
-            history = "NFA_BLITZKRIEG_DESC"
+            history = "NFA_GATHERING_STORM_DESC"
             ideology = neutrality
             ideas = {
                 NFA_zfbk
@@ -335,7 +426,7 @@ bookmarks = {
         }
         "FRG" = {
             minor = yes
-            history = "FRG_BLITZKRIEG_DESC"
+            history = "FRG_GATHERING_STORM_DESC"
             ideology = democratic
             ideas = {
                 FRG_home_of_the_free_1
@@ -350,7 +441,7 @@ bookmarks = {
         }
         "NGD" = {
             minor = yes
-            history = "NGD_BLITZKRIEG_DESC"
+            history = "NGD_GATHERING_STORM_DESC"
             ideology = democratic
             ideas = {
                 #衣冠东渡
@@ -369,9 +460,24 @@ bookmarks = {
                 NGD_support_our_compatriots
             }
         }
+        "MGU" = {
+            minor = yes
+            history = "MGU_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                mahoushojo_tradition
+                witch_transform
+                disordered_army_0
+            }
+            focuses = {
+                MGU_yuki_show
+                MTK_com_show
+                MGU_H_003
+            }
+        }
         "CUB" = {
             minor = yes
-            history = "CUB_BLITZKRIEG_DESC"
+            history = "CUB_GATHERING_STORM_DESC"
             ideology = communism
             ideas = {
                 huanling
@@ -386,7 +492,7 @@ bookmarks = {
         }
         "PAJ" = {
             minor = yes
-            history = "PAJ_BLITZKRIEG_DESC"
+            history = "PAJ_GATHERING_STORM_DESC"
             ideology = neutrality
             ideas = {
                 PAJ_chao
@@ -399,9 +505,36 @@ bookmarks = {
                 PAJ_60
             }
         }
+        # "FUJ" = {
+        #     minor = yes
+        #     history = "FUJ_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #     }
+        #     focuses = {
+        #     }
+        # }
+        # "YUN" = {
+        #     minor = yes
+        #     history = "YUN_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #     }
+        #     focuses = {
+        #     }
+        # }
+        # "GXC" = {
+        #     minor = yes
+        #     history = "GXC_GATHERING_STORM_DESC"
+        #     ideology = neutrality
+        #     ideas = {
+        #     }
+        #     focuses = {
+        #     }
+        # }
         "GUA" = {
             minor = yes
-            history = "GUA_BLITZKRIEG_DESC"
+            history = "GUA_GATHERING_STORM_DESC"
             ideology = fascism
             ideas = {
                 baisheshendejiahu
@@ -416,7 +549,7 @@ bookmarks = {
         }
         "PAY" = {
             minor = yes
-            history = "PAY_BLITZKRIEG_DESC"
+            history = "PAY_GATHERING_STORM_DESC"
             ideology = fascism
             ideas = {
                 huanling
@@ -442,98 +575,6 @@ bookmarks = {
                 PAN_23
                 PAN_73
                 PAN_80
-            }
-        }
-        ##亚洲###
-        "JAP" = {
-            #minor = yes
-            history = "JAP_GATHERING_STORM_DESC"
-            ideology = democratic
-            ideas = {
-                dongyatiaoyue
-                jinv
-                caifa
-            }
-            focuses = {
-                JAP_new74
-                JAP_new72
-                JAP_new86
-            }
-        }
-        "CHI" = {
-            #minor = yes
-            history = "CHI_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                CHI_Uncertain_future  ##时局不安
-                CHI_Crisis_of_CHI_Dynasty_idea  ##中原王朝危机
-                CHI_Stagnant_modernization  ##停滞的现代化
-            }
-            focuses = {
-                CHI_focus_Imperial_comeback
-                CHI_focus_new_regent
-                CHI_focus_democracy_HanGeKi
-            }
-        }
-        # "GRE" = {
-        #     minor = yes
-        #     history = "GRE_GATHERING_STORM_DESC"
-        #     ideology = neutrality
-        #     ideas = {
-        #         LUG_illness
-	    #         LUG_racism
-        #         LUG_Witch_Cult
-
-        #     }
-        #     focuses = {
-        #         LUG_unluck_Reinhard_van_Astrea
-        #         GRE_byzantine_themata
-        #         LUG_Witch_Cult_Purge_Operation
-        #     }
-        # }
-        "PRC" = {
-            minor = yes
-            history = "PRC_GATHERING_STORM_DESC"
-            ideology = communism
-            ideas = {
-                PRC_October_Secret_Talks
-                PRC_last_hope_of_Chinese_revolution
-                PRC_Tired_Red_Army_1
-            }
-            focuses = {
-                PRC_Guidance_from_Kremlin
-                PRC_new_China_of_Fuhrer_Zhang
-                PRC_The_red_sun_of_the_people
-            }
-        }
-        "ROC" = {
-            minor = yes
-            history = "ROC_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                ROC_blue_shirts
-                ROC_many_bandit
-                ROC_famine
-            }
-            focuses = {
-                ROC_Left_dominated
-                ROC_right_dominated
-                ROC_blue_coup
-            }
-        }
-        "MAN" = {
-            minor = yes
-            history = MAN_GATHERING_STORM_DESC
-            ideology = neutrality
-            ideas = {
-                MAN_zhongdonglutielu_idea
-                CHI_Corrupt_and_incompetent_army_1
-                CHI_Deformed_industry_1
-            }
-            focuses = {
-                MAN_Raiden_Ei_Governor
-                MAN_Mashiro_Kanon_Governor
-                MAN_Shirakami_Fubuki_Governor
             }
         }
         "MAL" = {
@@ -565,7 +606,6 @@ bookmarks = {
                 RYU_38
             }
         }
-        ###中东###
         "TUR" = {
             minor = yes
             history = "TUR_GATHERING_STORM_DESC"
@@ -596,21 +636,6 @@ bookmarks = {
                 LAN_national_industrial_new_plan
             }
         }
-        ###第三国际###
-        "SOV" = {
-            history = "SOV_ADO_GATHERING_STORM_DESC"
-            ideology = communism
-            ideas = {
-                SOV_17th_party_congress
-                SOV_agricultural_progress
-                SOV_magical_society_Sakura2
-            }
-            focuses = {
-                SOV_intnachonel_must_realize
-                SOV_Host_Comintern_Congresses
-                SOV_great_game_of_Minsk
-            }
-        }
         "BAL" = {
             minor = yes
             history = BAL_GATHERING_STORM_DESC
@@ -628,7 +653,7 @@ bookmarks = {
         }
         "SWE" = {
             minor = yes
-            history = "SWE_BLITZKRIEG_DESC"
+            history = "SWE_GATHERING_STORM_DESC"
             ideology = neutrality
             ideas = {
                 SWE_economic_growth
@@ -685,6 +710,51 @@ bookmarks = {
                 ROM_orga_live
                 ROM_Kudelia
                 ROM_McGillis
+            }
+        }
+        "MAN" = {
+            minor = yes
+            history = MAN_GATHERING_STORM_DESC
+            ideology = neutrality
+            ideas = {
+                MAN_zhongdonglutielu_idea
+                CHI_Corrupt_and_incompetent_army_1
+                CHI_Deformed_industry_1
+            }
+            focuses = {
+                MAN_Raiden_Ei_Governor
+                MAN_Mashiro_Kanon_Governor
+                MAN_Shirakami_Fubuki_Governor
+            }
+        }
+        "MON" = {
+            minor = yes
+            history = "MON_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                MON_changshengtian_1
+                MON_chengjisihanchongbai_idea_2
+                MON_hanhuazhilu_idea_5
+            }
+            focuses = {
+                MON_mengguzhixiadeheping
+                MON_shengshiyuzhishi
+                MON_buwangguangfudaye
+            }
+        }
+        "CHI" = {
+            minor = yes
+            history = "CHI_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                CHI_Uncertain_future  ##时局不安
+                CHI_Crisis_of_CHI_Dynasty_idea  ##中原王朝危机
+                CHI_Stagnant_modernization  ##停滞的现代化
+            }
+            focuses = {
+                CHI_focus_Imperial_comeback
+                CHI_focus_new_regent
+                CHI_focus_democracy_HanGeKi
             }
         }
         ######

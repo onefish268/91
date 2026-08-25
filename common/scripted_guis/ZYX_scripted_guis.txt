@@ -1,0 +1,174 @@
+scripted_gui = {
+	ZYX_anqiao_ui = {#决议
+		context_type = decision_category
+		window_name = "ZYX_anqiao_factions_decision_ui_window"
+	}
+
+	ZYX_tankgoal_flag_ui = {#按钮入口
+		context_type = player_context
+		window_name = "ZYX_tankgaol_factions_decision_ui_window"
+		visible = {
+			original_tag = ZYX
+			ZYX = {
+				has_completed_focus = 3_focus_1
+				has_country_flag = ZYX_tankdoal
+			}
+	    }
+		effects = {
+			ZYX_tankgoal_button_click = {
+				#set_variable = { ZYX_of_country_chosen_mode_number = 1 }
+				set_country_flag = ZYX_tankgoal_console
+				set_country_flag = ZYX_console_mode
+			}
+		}
+	}
+
+	ZYX_tankgoal_ui = {#游戏板子 主界面
+		context_type = player_context
+		window_name = "ZYX_tankgaol_factions_ui_window"
+		visible = {
+			original_tag = ZYX
+			#has_variable = ZYX_of_country_chosen_mode_number
+			has_country_flag = ZYX_tankgoal_console
+	    }
+		effects = {
+			ZYX_tankgoal_out_button_click = {
+				#clear_variable = ZYX_of_country_chosen_mode_number
+				clr_country_flag = ZYX_tankgoal_console
+				clr_country_flag = ZYX_commander_console
+				clr_country_flag = ZYX_console_mode
+			}
+		}
+	}
+
+	ZYX_tankgoal_console_gui = {# 初始布局
+		window_name = "tankgoal_console"
+		parent_window_name = "ZYX_tankgaol_factions_ui_window"
+
+		visible = { has_country_flag = ZYX_console_mode }
+
+		effects = {
+			ZYX_tankgoal_commender_button_click = {
+				clr_country_flag = ZYX_console_mode
+				set_country_flag = ZYX_commander_console
+			}
+		}
+	}
+
+	ZYX_commander_console_gui = {#指挥官布局
+		window_name = "commander_console"
+		parent_window_name = "ZYX_tankgaol_factions_ui_window"
+
+		visible = { has_country_flag = ZYX_commander_console }
+
+		properties = {
+			ZYX_dajilin_commander = {
+				image = "[GFX_ZYX_dajilin_type]"
+			}
+			ZYX_daxi_commander = {
+				image = "[GFX_ZYX_daxi_type]"
+			}
+			ZYX_ducs_commander = {
+				image = "[GFX_ZYX_ducs_type]"
+			}
+			ZYX_ger_commander = {
+				image = "[GFX_ZYX_ger_type]"
+			}
+			ZYX_kaqiusha_commander = {
+				image = "[GFX_ZYX_kaqiusha_type]"
+			}
+			ZYX_mari_commander = {
+				image = "[GFX_ZYX_mari_type]"
+			}
+			ZYX_usa_commander = {
+				image = "[GFX_ZYX_usa_type]"
+			}
+			ZYX_zdb_commander = {
+				image = "[GFX_ZYX_zdb_type]"
+			}
+		}
+
+		triggers = {
+			lock_of_dajilin_visible = { NOT = { has_country_flag = dajilin_has_unlocked } }
+			lock_of_ducs_visible = { NOT = { has_country_flag = ducs_has_unlocked } }
+			lock_of_kaqiusha_visible = { NOT = { has_country_flag = kaqiusha_has_unlocked } }
+			lock_of_mari_visible = { NOT = { has_country_flag = mari_has_unlocked } }
+			lock_of_usa_visible = { NOT = { has_country_flag = usa_has_unlocked } }
+			lock_of_ger_visible = { NOT = { has_country_flag = ger_has_unlocked } }
+			lock_of_zdb_visible = { NOT = { has_country_flag = zdb_has_unlocked } }
+			warning_no_commander_visible = { has_country_flag = ZYX_select_empty }
+		}
+
+		effects = {
+			leave_the_commander_console_button_click = {
+				clr_country_flag = ZYX_commander_console
+				set_country_flag = ZYX_console_mode
+			}
+			reload_commander_button_click = {
+				set_variable = { ZYX_select_commander_number = 0 }
+				set_country_flag = ZYX_select_empty
+			}
+			ZYX_daxi_invite_click = {
+				set_variable = { ZYX_select_commander_number = 1 }
+				clr_country_flag = ZYX_select_empty
+			}
+			ZYX_dajilin_invite_click = { 
+				set_variable = { ZYX_select_commander_number = 2 }
+				if = {
+					limit = { NOT = { has_country_flag = dajilin_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+			}
+			ZYX_ducs_invite_click = {
+				set_variable = { ZYX_select_commander_number = 3 }
+				if = {
+					limit = { NOT = { has_country_flag = ducs_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+			}
+			ZYX_ger_invite_click = { 
+				set_variable = { ZYX_select_commander_number = 4 }
+					if = {
+						limit = { NOT = { has_country_flag = ger_has_unlocked } }
+						set_country_flag = ZYX_select_empty
+					}
+					else = { clr_country_flag = ZYX_select_empty }
+		}
+			ZYX_kaqiusha_invite_click = { 
+				set_variable = { ZYX_select_commander_number = 5 }
+				if = {
+					limit = { NOT = { has_country_flag = kaqiusha_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+		}
+			ZYX_mari_invite_click = {
+				set_variable = { ZYX_select_commander_number = 6 }
+				if = {
+					limit = { NOT = { has_country_flag = mari_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+			}
+			ZYX_usa_invite_click = {
+				set_variable = { ZYX_select_commander_number = 7 }
+				if = {
+					limit = { NOT = { has_country_flag = usa_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+			}
+			ZYX_zdb_invite_click = {
+				set_variable = { ZYX_select_commander_number = 8 }
+				if = {
+					limit = { NOT = { has_country_flag = zdb_has_unlocked } }
+					set_country_flag = ZYX_select_empty
+				}
+				else = { clr_country_flag = ZYX_select_empty }
+			}
+		}
+	}
+
+}

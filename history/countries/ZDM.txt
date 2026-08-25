@@ -9,7 +9,7 @@ set_technology = {
 	gw_artillery = 1
 }
 set_convoys = 100
-
+add_ideas = ZDM_luomu_1
 add_ideas = {
 }
 
@@ -30,6 +30,9 @@ set_popularities = {
 } 
 
 recruit_character = ZDM_daiweisi
+recruit_character = ZDM_luomu
+
+set_variable = { another_country_leader_group = 66 }
 
 
 
