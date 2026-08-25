@@ -1,7 +1,6 @@
 ideas = {
 	country = {
 		ZSH_people_support_1 = { #不信任的群众
-			#picture = 111
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.2
@@ -9,7 +8,6 @@ ideas = {
 			}
 		}
 		ZSH_people_support_2 = { #动摇的群众
-			#picture = 111
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
@@ -17,7 +15,6 @@ ideas = {
 			}
 		}
 		ZSH_people_support_3 = { #信任的群众
-			#picture = 111
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
@@ -26,7 +23,6 @@ ideas = {
 			}
 		}
 		ZSH_people_support_4 = { #完全信任的群众
-			#picture = 111
 			modifier = {
 				stability_factor = 0.2
 				war_support_factor = 0.2
@@ -36,7 +32,6 @@ ideas = {
 			}
 		}
 		ZSH_people_support_5 = { #军民一体
-			#picture = 111
 			modifier = {
 				stability_factor = 0.2
 				war_support_factor = 0.2
@@ -47,7 +42,6 @@ ideas = {
 			}
 		}
 		ZSH_industrial_system_behind = { #落后的工业体系
-			#picture = 111
 			modifier = {
 				industrial_capacity_factory = -0.3
 				production_factory_efficiency_gain_factor = -0.2
@@ -55,7 +49,6 @@ ideas = {
 			}
 		}
 		ZSH_industrial_system_half_modern = { #半现代化的工业体系
-			#picture = 111
 			modifier = {
 				industrial_capacity_factory = -0.1
 				production_factory_efficiency_gain_factor = -0.1
@@ -63,7 +56,6 @@ ideas = {
 			}
 		}
 		ZSH_industrial_system_modern = { #现代化的工业体系
-			#picture = 111
 			modifier = {
 				industrial_capacity_factory = 0.15
 				production_factory_efficiency_gain_factor = 0.1
@@ -71,7 +63,6 @@ ideas = {
 			}
 		}
 		ZSH_industrial_system_advanced = { #先进的工业体系
-			#picture = 111
 			modifier = {
 				industrial_capacity_factory = 0.3
 				production_factory_efficiency_gain_factor = 0.2
@@ -79,12 +70,49 @@ ideas = {
 			}
 		}
 		a_troop_with_conviction = { #有信念的军队
-			#picture = 111
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				attrition = -0.1
 			}
+		}
+		widespread_illiteracy = { #普遍文盲
+			modifier = {
+				research_speed_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+		somewhat_effective_literacy_work = { #略有成效的扫盲工作
+			modifier = {
+				research_speed_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		literacy_gradually_improving = { #渐有起色的扫盲工作
+			modifier = {
+				research_speed_factor = -0.5
+			}
+		}
+		outstanding_literacy_work = { #卓有成效的扫盲工作
+			modifier = {
+				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		combat_readiness = { #战备状态
+			allowed = {
+				NOT ={
+					has_completed_focus = 8_focus_26
+				}
+			}
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		propaganda_war = { #宣传战
+
 		}
 	}
 }

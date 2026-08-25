@@ -10,6 +10,10 @@
  ZSH_industrial_system_modern: "现代化的工业体系"
  ZSH_industrial_system_advanced: "先进的工业体系"
  a_troop_with_conviction: "有信念的军队"
+ widespread_illiteracy: "普遍文盲"
+ somewhat_effective_literacy_work: "略有成效的扫盲工作"
+ literacy_gradually_improving: "渐有起色的扫盲工作"
+ outstanding_literacy_work: "卓有成效的扫盲工作"
 #经济法案
  planned_economy: "不完善的计划经济"
  semi_developed_planned_economy: "半完善的计划经济"
@@ -28,4 +32,5 @@
  ZSH_Bandit_troubles_rampant: "匪患猖獗"
  infantry_equipment_cost: "£infantry_equipment_text_icon  §H1000§!"
  infantry_equipment_cost_blocked: "£infantry_equipment_text_icon  §R1000§!"
- infantry_equipment_cost_tooltip: "这个决议需要消耗$infantry_equipment_cost_blocked$" 
+ infantry_equipment_cost_tooltip: "这个决议需要消耗$infantry_equipment_cost_blocked$"
+ carry_out_domestic_promotion: "进行国内宣传"

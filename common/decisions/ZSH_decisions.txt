@@ -1,5 +1,13 @@
 ZSH_stabilize_country = { #稳定国内
-
+	carry_out_domestic_promotion = { #进行国内宣传
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		remove_effect = {
+			remove_ideas = ZSH_people_support_1
+			add_ideas = ZSH_people_support_2
+		}
+	}
 }
 ZSH_Bandit_troubles_rampant = { #匪患猖獗
 	Bandits_causing_trouble = { #匪患正在发起破坏

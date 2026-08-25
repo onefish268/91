@@ -14,16 +14,14 @@ focus_tree = {
 		y = 1500
 	}
 	focus = {
-		id = ZSH_stabilize_the_country
-		icon = GFX_focus_zsh1
+		id = ZSH_stabilize_the_country #稳定国内
 		text_icon = ZSH_focus_style
-		x =9
+		icon = GFX_focus_zsh1
+		x = 9
 		y = 0
 		cost = 3
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		#稳定国内
-		#icon = 
 		completion_reward = {
 			add_political_power = 150
 			unlock_decision_category_tooltip = ZSH_stabilize_country
@@ -106,6 +104,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ZSH_stabilize_the_country
 		}
+		completion_reward = {
+			add_ideas = combat_readiness
+		}
 	}
 	focus = {
 		id = 8_focus_7
@@ -170,6 +171,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_6
+		}
+		completion_reward = {
+			add_ideas = propaganda_war
 		}
 	}
 	focus = {
