@@ -1,11 +1,9 @@
 ZSH_red_army_reform = { #红军改革
-	icon = 111
-	remove_trigger = {
-		ROOT ={
-			NOT = {
-				has_government = communism
-			}
-		}
-	}
+	#icon=111
+}
+
+ZSH_central_committee = { #中央委员会
+	#icon=111
+	stability_factor = ZSH_cc_1
 	
 }
