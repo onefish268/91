@@ -959,7 +959,7 @@ guiTypes = {
 		iconType = {
 		    name = "eigth_new_country_tip"
 		 	quadTextureSprite = "GFX_country_selection_entry_new_country"
-		 	position = { x = 290   y = 224 }
+		 	position = { x = 113   y = 224 }
 		 	pdx_tooltip = "ZIM_new_tips"
 		 	#alwaystransparent = yes
 		}

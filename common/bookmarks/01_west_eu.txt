@@ -92,20 +92,6 @@ bookmarks = {
                 AUS_Germany_is_ready
             }
         }
-        "ZIM" = {
-            history = "ZIM_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                ZIM_a
-                ZIM_b
-                ZIM_2
-            }
-            focuses = {
-                new_focus_9
-                2_focus_18
-                4_focus_1
-            }
-        }
         "PAW" = {
             #minor = yes
             history = "PAW_GATHERING_STORM_DESC"
