@@ -17,6 +17,7 @@ set_convoys = 100
 add_ideas = {
 	ZSH_people_support_1
 	ZSH_industrial_system_behind
+	widespread_illiteracy
 	a_troop_with_conviction
 	planned_economy
 	political_propaganda
