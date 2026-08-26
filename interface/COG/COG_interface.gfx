@@ -60,6 +60,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_SA_ERROR
+		texturefile = "gfx/guis/button_window/GFX_SA_ERROR.dds"			
+	}
+
+	spriteType = {
 		name = scorching_blaze_spirit_vein
 		texturefile = "gfx/guis/COG/SA_scorching_blaze_spirit_vein.dds"			
 	}

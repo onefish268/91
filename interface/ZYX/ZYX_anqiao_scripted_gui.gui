@@ -292,4 +292,113 @@ guiTypes = {
 			scale = 3
 		}
 	}
+
+	containerWindowType = {#卡牌选取、预览界面的小方块 由gridbox统一统辖
+		name = "small_show_kard"
+
+		buttonType = {
+			name = "kard_button"
+			spriteType = GFX_SA_ERROR #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+        	size = { width = 39 height = 52 }
+			scale = 0.25
+		}
+
+		iconType = {
+			name = "cost_of_unit"
+
+		}
+		iconType = {
+			name = "HP_of_unit"
+			
+		}
+		iconType = {
+			name = "attack_of_unit"
+			
+		}
+		iconType = {
+			name = "defence_of_unit"
+			
+		}
+	}
+
+	containerWindowType = {#卡牌选取、预览界面
+		name = "select_console"
+
+		iconType = {#展示被选中的卡牌
+			name = "show_selected_kard"
+			spriteType = Total_kards
+		}
+
+		buttonType = {#中国类型  我们真的能够把学院笼统地这样看待吗……
+			name = "tankgoal_show_CHI"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#美国类型
+			name = "tankgoal_show_USA"
+			spriteType = GFX_SA_ERROR 
+			
+		}
+		buttonType = {#英国类型
+			name = "tankgoal_show_ENG"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#法国类型
+			name = "tankgoal_show_FRA"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#俄国类型
+			name = "tankgoal_show_SOV"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#德国类型
+			name = "tankgoal_show_GER"
+			spriteType = GFX_SA_ERROR 
+			
+		}
+		buttonType = {#意大利类型
+			name = "tankgoal_show_ITA"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#日本佬类型
+			name = "tankgoal_show_JAP"
+			spriteType = GFX_SA_ERROR
+			
+		}
+
+		buttonType = {#步兵类型
+			name = "tankgoal_show_infantry"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#坦克类型
+			name = "tankgoal_show_tank"
+			spriteType = GFX_SA_ERROR
+			
+		}
+		buttonType = {#效果类型
+			name = "tankgoal_show_effect"
+			spriteType = GFX_SA_ERROR
+			
+		}
+
+		containerWindowType = {
+			name = "select_area"
+
+			gridBoxType = {
+				name = "show_kard"
+				size = { width = 1000 }
+	        	slotsize = { width = 156 height = 210 }
+	        	max_slots_horizontal = 30
+    		    max_slots_vertical = 4  # 10行，超出父容器高度
+        		add_horizontal = yes
+	        	format = "UPPER_LEFT"
+			}
+		}
+	}
 }
