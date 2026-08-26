@@ -29,6 +29,7 @@ focus_tree = {
 				long_name = "国家法西斯党"
 				name = "国家法西斯党"
 			}
+			set_major = yes
 			set_cosmetic_tag = ZYXTY
 		}
 	}
