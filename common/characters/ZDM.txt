@@ -7,6 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
+			desc = daiweisi_DESC
 			ideology = liberalism
 			traits = { 
 		    story_reaiheping_trait	
