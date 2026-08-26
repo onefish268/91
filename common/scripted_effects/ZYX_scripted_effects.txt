@@ -1,0 +1,111 @@
+#struct ={
+#int HP #血
+#int attack #伤害
+#int country_number #国家编号
+#int kind_of_army #兵种编号
+#vector< a (*func)(b,c,d,e……) > functions #自带函数、效果
+#}
+#运用多级索引 国家->兵种->遍历
+
+#我求求P🐍把STL容器、字典弄给我们吧，我什么都不会做的，但是我真的太需要这些了，没有它们的日子，我怎么活（）
+
+
+
+ZYX_tankgoal_effect_before_war = {
+	if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag =  }
+		if = {
+			limit = { check_variable = { kind_of_ready_unit = 0 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 1 } }
+		}
+		else_if = {
+			limit = { check_variable = { kind_of_ready_unit = 2 } }
+		}
+	}
+}
