@@ -203,7 +203,7 @@ scripted_gui = {
 		}
 
 		properties = {
-			kard_button = { image = "[Total_kards]"	}
+			kard_button = { image = "[Total__kards]"	}
 			kard_big_button = { image = "[Total_kards]" }
 			tankgoal_show_USA = { frame = tankgoal_show_USA_situation }
 			tankgoal_show_ENG = { frame = tankgoal_show_ENG_situation }
@@ -216,8 +216,6 @@ scripted_gui = {
 			tankgoal_show_effect = { frame = tankgoal_show_effect_situation }
 			tankgoal_show_infantry = { frame = tankgoal_show_infantry_situation }
 			tankgoal_show_tank = { frame = tankgoal_show_tank_situation }
-			#tankgoal_show_effect = { image = "[Total_kards]" }
-
 		}
 
 		effects = {
@@ -309,14 +307,44 @@ scripted_gui = {
 					ZYX_reload_tankgoal_kards = yes
 				}
 			}
+
+			tankgoal_show_effect_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_effect_situation = 2 } }
+					set_variable = { tankgoal_show_effect_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_effect_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_infantry_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_infantry_situation = 2 } }
+					set_variable = { tankgoal_show_infantry_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_infantry_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_tank_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_tank_situation = 2 } }
+					set_variable = { tankgoal_show_tank_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_tank_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
 			kard_button_click = {
 				clear_array = select_console_show_big_kard
 				add_to_array = { select_console_show_big_kard = picture_value }
 			}
 		}
-
-		triggers = {
-		}
 	}
-
 }
