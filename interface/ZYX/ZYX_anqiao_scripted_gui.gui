@@ -298,10 +298,37 @@ guiTypes = {
 
 		buttonType = {
 			name = "kard_button"
-			spriteType = GFX_SA_ERROR #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+			spriteType = Total_kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
-        	size = { width = 39 height = 52 }
-			scale = 0.25
+			pdx_tooltip = select_kards_mouse_tips
+		}
+
+		#iconType = {
+		#	name = "cost_of_unit"
+		#	
+		#}
+		#iconType = {
+		#	name = "HP_of_unit"
+		#	
+		#}
+		#iconType = {
+		#	name = "attack_of_unit"
+		#	
+		#}
+		#iconType = {
+		#	name = "defence_of_unit"
+		#	
+		#}
+	}
+
+	containerWindowType = {#卡牌选取、预览界面的大方块 由gridbox调出
+		name = "big_show_kard"
+
+		buttonType = {
+			name = "kard_big_button"
+			spriteType = Total_kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 1.5
 		}
 
 		iconType = {
@@ -325,78 +352,106 @@ guiTypes = {
 	containerWindowType = {#卡牌选取、预览界面
 		name = "select_console"
 
-		iconType = {#展示被选中的卡牌
-			name = "show_selected_kard"
-			spriteType = Total_kards
-		}
-
 		buttonType = {#中国类型  我们真的能够把学院笼统地这样看待吗……
 			name = "tankgoal_show_CHI"
-			spriteType = GFX_SA_ERROR
+			spriteType = GFX_ZYX_tankgoal_xi
+			position = { x = 634 y = 0 }
 			
 		}
 		buttonType = {#美国类型
 			name = "tankgoal_show_USA"
-			spriteType = GFX_SA_ERROR 
+			spriteType = GFX_ZYX_tankgoal_usa
+			position = { x = 250 y = 0 }
 			
 		}
 		buttonType = {#英国类型
 			name = "tankgoal_show_ENG"
-			spriteType = GFX_SA_ERROR
+			spriteType = GFX_ZYX_tankgoal_eng
+			position = { x = 378 y = 0 }
 			
 		}
 		buttonType = {#法国类型
 			name = "tankgoal_show_FRA"
-			spriteType = GFX_SA_ERROR
+			spriteType = GFX_ZYX_tankgoal_fra
+			position = { x = 506 y = 0 }
 			
 		}
 		buttonType = {#俄国类型
 			name = "tankgoal_show_SOV"
-			spriteType = GFX_SA_ERROR
+			spriteType = GFX_ZYX_tankgoal_sov
+			position = { x = 762 y = 0 }
 			
 		}
 		buttonType = {#德国类型
 			name = "tankgoal_show_GER"
-			spriteType = GFX_SA_ERROR 
+			spriteType = GFX_ZYX_tankgoal_ger
+			position = { x = 890 y = 0 }
 			
 		}
 		buttonType = {#意大利类型
 			name = "tankgoal_show_ITA"
-			spriteType = GFX_SA_ERROR
-			
+			spriteType = GFX_ZYX_tankgoal_ita
+			position = { x = 1146 y = 0 }
 		}
 		buttonType = {#日本佬类型
 			name = "tankgoal_show_JAP"
-			spriteType = GFX_SA_ERROR
-			
+			spriteType = GFX_ZYX_tankgoal_jap
+			position = { x = 1018 y = 0 }
 		}
 
 		buttonType = {#步兵类型
 			name = "tankgoal_show_infantry"
 			spriteType = GFX_SA_ERROR
-			
+			position = { x = 0 y = 270 }
+			scale = 0.75
 		}
 		buttonType = {#坦克类型
 			name = "tankgoal_show_tank"
 			spriteType = GFX_SA_ERROR
-			
+			position = { x = 0 y = 390 }
+			scale = 0.75
 		}
 		buttonType = {#效果类型
 			name = "tankgoal_show_effect"
 			spriteType = GFX_SA_ERROR
-			
+			position = { x = 0 y = 150 }
+			scale = 0.75
+		}
+
+		gridBoxType = {
+			name = "show_big_kard"
+			position = { x = 1280 y = 128 }
+			slotsize = { width = 312 height = 500 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 1
+			format = "UPPER_LEFT"
 		}
 
 		containerWindowType = {
 			name = "select_area"
+			position = { x = 256 y = 128 } #!
+			size = { width = 1000 height = 420 }
+			Orientation = upper_left
+    		verticalScrollbar = "right_vertical_slider"
+		    scroll_wheel_factor = 420
+	    	smooth_scrolling = yes
+	    	clipping = yes
+			margin = { top = 13 left = 13 bottom = 10 right = -300 }
+
+			background = {
+				name = "select_area_background"
+				spriteType = black_background
+				scale = 4
+			}
 
 			gridBoxType = {
 				name = "show_kard"
-				size = { width = 1000 }
-	        	slotsize = { width = 156 height = 210 }
-	        	max_slots_horizontal = 30
-    		    max_slots_vertical = 4  # 10行，超出父容器高度
-        		add_horizontal = yes
+				size = { width = 1000 height = 4496 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮只能换笨方法了
+				
+	        	slotsize = { width = 156 height = 250 }
+	        	max_slots_horizontal = 6
+    		    max_slots_vertical = 20  # 10行，超出父容器高度
+        		#add_horizontal = yes
 	        	format = "UPPER_LEFT"
 			}
 		}

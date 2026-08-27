@@ -32,11 +32,13 @@ scripted_gui = {
 			has_country_flag = ZYX_tankgoal_console
 	    }
 		effects = {
-			ZYX_tankgoal_out_button_click = {
+			ZYX_tankgoal_out_button_click = { #总的退出按键
 				#clear_variable = ZYX_of_country_chosen_mode_number
 				clr_country_flag = ZYX_tankgoal_console
 				clr_country_flag = ZYX_commander_console
 				clr_country_flag = ZYX_console_mode
+				clr_country_flag = ZYX_select_console
+				clear_array = select_console_show_big_kard
 			}
 		}
 	}
@@ -51,6 +53,12 @@ scripted_gui = {
 			ZYX_tankgoal_commender_button_click = {
 				clr_country_flag = ZYX_console_mode
 				set_country_flag = ZYX_commander_console
+			}
+			ZYX_tankgoal_kards_button_click = {
+				ZYX_reload_tankgoal_kards = yes
+				clr_country_flag = ZYX_console_mode
+				set_country_flag = ZYX_select_console
+				clear_array = select_console_show_big_kard
 			}
 		}
 	}
@@ -168,6 +176,146 @@ scripted_gui = {
 				}
 				else = { clr_country_flag = ZYX_select_empty }
 			}
+		}
+	}
+
+	ZYX_select_console_gui = {#选卡布局
+		window_name = "select_console"
+		parent_window_name = "ZYX_tankgaol_factions_ui_window"
+
+		visible = { has_country_flag = ZYX_select_console }
+
+		dynamic_lists = {
+			show_kard = {
+				array = select_console_show_array
+				change_scope = no
+				entry_container = small_show_kard
+				index = picture_number
+				value = picture_value
+			}
+			show_big_kard = {
+				array = select_console_show_big_kard
+				change_scope = no
+				entry_container = big_show_kard
+				index = picture_number
+				value = picture_value
+			}
+		}
+
+		properties = {
+			kard_button = { image = "[Total_kards]"	}
+			kard_big_button = { image = "[Total_kards]" }
+			tankgoal_show_USA = { frame = tankgoal_show_USA_situation }
+			tankgoal_show_ENG = { frame = tankgoal_show_ENG_situation }
+			tankgoal_show_FRA = { frame = tankgoal_show_FRA_situation }
+			tankgoal_show_CHI = { frame = tankgoal_show_CHI_situation }
+			tankgoal_show_SOV = { frame = tankgoal_show_SOV_situation }
+			tankgoal_show_GER = { frame = tankgoal_show_GER_situation }
+			tankgoal_show_JAP = { frame = tankgoal_show_JAP_situation }
+			tankgoal_show_ITA = { frame = tankgoal_show_ITA_situation }
+			tankgoal_show_effect = { frame = tankgoal_show_effect_situation }
+			tankgoal_show_infantry = { frame = tankgoal_show_infantry_situation }
+			tankgoal_show_tank = { frame = tankgoal_show_tank_situation }
+			#tankgoal_show_effect = { image = "[Total_kards]" }
+
+		}
+
+		effects = {
+			tankgoal_show_USA_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_USA_situation = 2 } }
+					set_variable = { tankgoal_show_USA_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_USA_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_ENG_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_ENG_situation = 2 } }
+					set_variable = { tankgoal_show_ENG_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_ENG_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_FRA_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_FRA_situation = 2 } }
+					set_variable = { tankgoal_show_FRA_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_FRA_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_CHI_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_CHI_situation = 2 } }
+					set_variable = { tankgoal_show_CHI_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_CHI_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_SOV_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_SOV_situation = 2 } }
+					set_variable = { tankgoal_show_SOV_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_SOV_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_GER_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_GER_situation = 2 } }
+					set_variable = { tankgoal_show_GER_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_GER_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_JAP_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_JAP_situation = 2 } }
+					set_variable = { tankgoal_show_JAP_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_JAP_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			tankgoal_show_ITA_click = {
+				if = {
+					limit = { check_variable = { tankgoal_show_ITA_situation = 2 } }
+					set_variable = { tankgoal_show_ITA_situation = 0 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_show_ITA_situation = 2 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+			}
+			kard_button_click = {
+				clear_array = select_console_show_big_kard
+				add_to_array = { select_console_show_big_kard = picture_value }
+			}
+		}
+
+		triggers = {
 		}
 	}
 

@@ -209,6 +209,7 @@
   warning_of_no_commander: "§R注意！目前你没有携带一个有效的指挥官！§!"
   reload_commander: "清除已选择的指挥官。"
   leave_the_commander_console: "离开选择指挥官的界面"
+  select_kards_mouse_tips: "左键点击查看进一步的信息，右键点击加入到卡组当中"
 
 
 

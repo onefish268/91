@@ -9,7 +9,215 @@
 
 #我求求P🐍把STL容器、字典弄给我们吧，我什么都不会做的，但是我真的太需要这些了，没有它们的日子，我怎么活（）
 
-
+ZYX_reload_tankgoal_kards = {
+	clear_array = select_console_show_array
+	if = {#添加美国佬
+		limit = { NOT = { check_variable = { tankgoal_show_USA_situation = 2 } } }
+		if = {#添加效果牌
+			limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+			add_to_array = { select_console_show_array = 1 }
+			add_to_array = { select_console_show_array = 2 }
+			add_to_array = { select_console_show_array = 3 }
+			add_to_array = { select_console_show_array = 4 }
+			add_to_array = { select_console_show_array = 5 }
+		}
+		if = {#添加步兵
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 6 }
+			add_to_array = { select_console_show_array = 7 }
+			add_to_array = { select_console_show_array = 8 }
+			add_to_array = { select_console_show_array = 9 }
+			add_to_array = { select_console_show_array = 10 }
+			add_to_array = { select_console_show_array = 11 }
+		}
+		if = {#添加坦克
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 12 }
+			add_to_array = { select_console_show_array = 13 }
+			add_to_array = { select_console_show_array = 14 }
+			add_to_array = { select_console_show_array = 15 }
+		}
+	}
+	if = {#添加英国
+		limit = { NOT = { check_variable = { tankgoal_show_ENG_situation = 2 } } }
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+			add_to_array = { select_console_show_array = 16 }
+			add_to_array = { select_console_show_array = 17 }
+			add_to_array = { select_console_show_array = 18 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 19 }
+			add_to_array = { select_console_show_array = 20 }
+			add_to_array = { select_console_show_array = 21 }
+			add_to_array = { select_console_show_array = 22 }
+			add_to_array = { select_console_show_array = 23 }
+			add_to_array = { select_console_show_array = 24 }
+			add_to_array = { select_console_show_array = 25 }
+			add_to_array = { select_console_show_array = 26 }
+			add_to_array = { select_console_show_array = 27 }
+			add_to_array = { select_console_show_array = 28 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 29 }
+			add_to_array = { select_console_show_array = 30 }
+			add_to_array = { select_console_show_array = 31 }
+			add_to_array = { select_console_show_array = 32 }
+		}
+	}
+	if = {#添加法国
+		limit = { NOT = { check_variable = { tankgoal_show_FRA_situation = 2 } } }
+		#if = {
+		#	limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+		#	
+		#
+		#}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 33 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 34 }
+			add_to_array = { select_console_show_array = 35 }
+			add_to_array = { select_console_show_array = 36 }
+		}
+	}
+	if = {#添加中国
+		limit = { NOT = { check_variable = { tankgoal_show_CHI_situation = 2 } } }
+		#if = {
+		#	limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+		#	
+		#}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 37 }
+			add_to_array = { select_console_show_array = 38 }
+			add_to_array = { select_console_show_array = 39 }
+			add_to_array = { select_console_show_array = 40 }
+			add_to_array = { select_console_show_array = 41 }
+			add_to_array = { select_console_show_array = 42 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 43 }
+			add_to_array = { select_console_show_array = 44 }
+			add_to_array = { select_console_show_array = 45 }
+			add_to_array = { select_console_show_array = 46 }
+			add_to_array = { select_console_show_array = 47 }
+			add_to_array = { select_console_show_array = 48 }
+			add_to_array = { select_console_show_array = 49 }
+			add_to_array = { select_console_show_array = 50 }
+			add_to_array = { select_console_show_array = 51 }
+			add_to_array = { select_console_show_array = 52 }
+			add_to_array = { select_console_show_array = 53 }
+			add_to_array = { select_console_show_array = 54 }
+			add_to_array = { select_console_show_array = 55 }
+			add_to_array = { select_console_show_array = 56 }
+			add_to_array = { select_console_show_array = 57 }
+			add_to_array = { select_console_show_array = 58 }
+			add_to_array = { select_console_show_array = 59 }
+		}
+	}
+	if = {#添加苏联
+		limit = { NOT = { check_variable = { tankgoal_show_SOV_situation = 2 } } }
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+			add_to_array = { select_console_show_array = 60 }
+			add_to_array = { select_console_show_array = 61 }
+			add_to_array = { select_console_show_array = 62 }
+			add_to_array = { select_console_show_array = 63 }
+			add_to_array = { select_console_show_array = 64 }
+			add_to_array = { select_console_show_array = 65 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 66 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 67 }
+			add_to_array = { select_console_show_array = 68 }
+			add_to_array = { select_console_show_array = 69 }
+			add_to_array = { select_console_show_array = 70 }
+		}
+	}
+	if = {#添加德国
+		limit = { NOT = { check_variable = { tankgoal_show_GER_situation = 2 } } }
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+			add_to_array = { select_console_show_array = 71 }
+			add_to_array = { select_console_show_array = 72 }
+			add_to_array = { select_console_show_array = 73 }
+			add_to_array = { select_console_show_array = 74 }
+			add_to_array = { select_console_show_array = 75 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 76 }
+			add_to_array = { select_console_show_array = 77 }
+			add_to_array = { select_console_show_array = 78 }
+			add_to_array = { select_console_show_array = 79 }
+			add_to_array = { select_console_show_array = 80 }
+			add_to_array = { select_console_show_array = 81 }
+			add_to_array = { select_console_show_array = 82 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 83 }
+			add_to_array = { select_console_show_array = 84 }
+			add_to_array = { select_console_show_array = 85 }
+			add_to_array = { select_console_show_array = 86 }
+			add_to_array = { select_console_show_array = 87 }
+			add_to_array = { select_console_show_array = 88 }
+			add_to_array = { select_console_show_array = 89 }
+			add_to_array = { select_console_show_array = 90 }
+			add_to_array = { select_console_show_array = 91 }
+			add_to_array = { select_console_show_array = 92 }
+		}
+	}
+	if = {#添加日本
+		limit = { NOT = { check_variable = { tankgoal_show_JAP_situation = 2 } } }
+		#if = {
+		#	limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+		#	
+		#}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 93 }
+			add_to_array = { select_console_show_array = 94 }
+			add_to_array = { select_console_show_array = 95 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 96 }
+			add_to_array = { select_console_show_array = 97 }
+			add_to_array = { select_console_show_array = 98 }
+		}
+	}
+	if = {#添加意大利
+		limit = { NOT = { check_variable = { tankgoal_show_ITA_situation = 2 } } }
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_effect_situation = 2 } } }
+			add_to_array = { select_console_show_array = 99 }
+			add_to_array = { select_console_show_array = 100 }
+			add_to_array = { select_console_show_array = 101 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_infantry_situation = 2 } } }
+			add_to_array = { select_console_show_array = 102 }
+			add_to_array = { select_console_show_array = 103 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { tankgoal_show_tank_situation = 2 } } }
+			add_to_array = { select_console_show_array = 104 }
+			add_to_array = { select_console_show_array = 105 }
+			add_to_array = { select_console_show_array = 106 }
+		}
+	}
+}
 
 ZYX_tankgoal_effect_before_war = {
 	if = {

@@ -1,4 +1,53 @@
 spriteTypes = {
+	#黑色背景
+
+	spriteType = {
+        name = black_background
+		texturefile = "gfx/tankgoal/black_background.png"
+    }
+
+	#学院们的图标
+
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_xi"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_xi.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_eng"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_eng.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_fra"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_fra.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_ger"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_ger.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_ita"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_ita.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_jap"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_jap.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_sov"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_sov.png"
+		noOfFrames = 2
+    }
+	spriteType = {
+        name = "GFX_ZYX_tankgoal_usa"
+		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_usa.png"
+		noOfFrames = 2
+    }
     
 	#指挥官们 commanders模块
 	spriteType = {
@@ -79,7 +128,7 @@ spriteTypes = {
 		pause_on_loop = 0.1
 	}
 
-	#未选择↓↓↓↓↓↓↓↓↓↓↓↓↓
+	#未选择的肖像↓↓↓↓↓↓↓↓↓↓↓↓↓
 	spriteType = {
         name = "GFX_ZYX_dajilin_unselect"
 		texturefile = "gfx/tankgoal/commanders/dajilin_unselect.png"
@@ -117,4 +166,487 @@ spriteTypes = {
         name = "GFX_ZYX_locked"
 		texturefile = "gfx/tankgoal/commanders/locked.png"
     }
+
+	#重量级区域↓(*Φ皿Φ*)↓！！！！！
+	
+	#USA_effect 1-5 ###############################################################################
+	spriteType = {
+        name = "USA_effect_ds"
+		texturefile = "gfx\tankgoal\select_cards\USA\effect\USA_effect_ds.png"
+    }
+	spriteType = {
+        name = "USA_effect_fb"
+		texturefile = "gfx\tankgoal\select_cards\USA\effect\USA_effect_fb.png"
+    }
+	spriteType = {
+        name = "USA_effect_hd"
+		texturefile = "gfx\tankgoal\select_cards\USA\effect\USA_effect_hd.png"
+    }
+	spriteType = {
+        name = "USA_effect_qc"
+		texturefile = "gfx\tankgoal\select_cards\USA\effect\USA_effect_qc.png"
+    }
+	spriteType = {
+        name = "USA_effect_qt"
+		texturefile = "gfx\tankgoal\select_cards\USA\effect\USA_effect_qt.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#USA_infantry  #######################
+	spriteType = {
+        name = "USA_infantry_dh"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_dh.png"
+    }
+	spriteType = {
+        name = "USA_infantry_lxzy"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_lxzy.png"
+    }
+	spriteType = {
+        name = "USA_infantry_lz"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_lz.png"
+    }
+	spriteType = {
+        name = "USA_infantry_sw"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_sw.png"
+    }
+	spriteType = {
+        name = "USA_infantry_swd"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_swd.png"
+    }
+	spriteType = {
+        name = "USA_infantry_sy"
+		texturefile = "gfx\tankgoal\select_cards\USA\infantry\USA_infantry_sy.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#USA_tank 7-23 ###########################
+	spriteType = {
+        name = "USA_tank_xem"
+		texturefile = "gfx\tankgoal\select_cards\USA\tanks\USA_tank_xem.png"
+    }
+	spriteType = {
+        name = "USA_tank_xf"
+		texturefile = "gfx\tankgoal\select_cards\USA\tanks\USA_tank_xf.png"
+    }
+	spriteType = {
+        name = "USA_tank_yhc"
+		texturefile = "gfx\tankgoal\select_cards\USA\tanks\USA_tank_yhc.png"
+    }
+	spriteType = {
+        name = "USA_tank_panxing"
+		texturefile = "gfx\tankgoal\select_cards\USA\tanks\USA_tank_panxing.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+
+		#ENG_effect / ###############################################################################
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	spriteType = {
+        name = "ENG_effect_dj"
+		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect_dj.png"
+    }
+	spriteType = {
+        name = "ENG_effect_hjkj"
+		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect_hjkj.png"
+    }	
+	spriteType = {
+        name = "ENG_effect_tp"
+		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect_tp.png"
+    }
+	#ENG_infantry 1-6 #######################
+	spriteType = {
+        name = "ENG_infantry_59"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_59.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_112"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_112.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_bld"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_bld.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_dlxj"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_dlxj.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_gw"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_gw.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_ld"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_ld.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_nw"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_nw.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_pdlg"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_pdlg.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_sgl"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_sgl.png"
+    }
+	spriteType = {
+        name = "ENG_infantry_wes"
+		texturefile = "gfx\tankgoal\select_cards\ENG\infantry\ENG_infantry_wes.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#ENG_tank 7-23 ###########################
+	spriteType = {
+        name = "ENG_tank_41"
+		texturefile = "gfx\tankgoal\select_cards\ENG\tanks\ENG_tank_41.png"
+    }
+	spriteType = {
+        name = "ENG_tank_mded"
+		texturefile = "gfx\tankgoal\select_cards\ENG\tanks\ENG_tank_mded.png"
+    }
+	spriteType = {
+        name = "ENG_tank_qje"
+		texturefile = "gfx\tankgoal\select_cards\ENG\tanks\ENG_tank_qje.png"
+    }
+	spriteType = {
+        name = "ENG_tank_szj"
+		texturefile = "gfx\tankgoal\select_cards\ENG\tanks\ENG_tank_szj.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#FRA_effect / ###############################################################################
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#FRA_infantry 1-6 #######################
+	spriteType = {
+        name = "FRA_infantry_1"
+		texturefile = "gfx\tankgoal\select_cards\FRA\infantry\FRA_infantry_1.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#FRA_tank 7-23 ###########################
+	spriteType = {
+        name = "FRA_tank_35"
+		texturefile = "gfx\tankgoal\select_cards\FRA\tanks\FRA_tank_35.png"
+    }
+	spriteType = {
+        name = "FRA_tank_44"
+		texturefile = "gfx\tankgoal\select_cards\FRA\tanks\FRA_tank_44.png"
+    }
+	spriteType = {
+        name = "FRA_tank_ln"
+		texturefile = "gfx\tankgoal\select_cards\FRA\tanks\FRA_tank_ln.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#CHI_effect / ###############################################################################
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#CHI_infantry 1-6 #######################
+	spriteType = {
+        name = "CHI_infantry_1j"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_1j.png"
+    }
+	spriteType = {
+        name = "CHI_infantry_10"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_10.png"
+    }
+	spriteType = {
+        name = "CHI_infantry_18"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_18.png"
+    }
+	spriteType = {
+        name = "CHI_infantry_74"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_74.png"
+    }
+	spriteType = {
+        name = "CHI_infantry_115"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_115.png"
+    }
+	spriteType = {
+        name = "CHI_infantry_hs"
+		texturefile = "gfx\tankgoal\select_cards\CHI\infantry\CHI_infantry_hs.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#CHI_tank 7-23 ###########################
+	spriteType = {
+        name = "CHI_tank_3tuji"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_3tuji.png"
+    }
+	spriteType = {
+        name = "CHI_tank_3shi"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_3shi.png"
+    }
+	spriteType = {
+        name = "CHI_tank_4h"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_4h.png"
+    }
+	spriteType = {
+        name = "CHI_tank_10shi"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_10shi.png"
+    }
+	spriteType = {
+        name = "CHI_tank_26"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_26.png"
+    }
+	spriteType = {
+        name = "CHI_tank_28"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_28.png"
+    }
+	spriteType = {
+        name = "CHI_tank_38t"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_38t.png"
+    }
+	spriteType = {
+        name = "CHI_tank_42"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_42.png"
+    }
+	spriteType = {
+        name = "CHI_tank_89"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_89.png"
+    }
+	spriteType = {
+        name = "CHI_tank_b1"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_b1.png"
+    }
+	spriteType = {
+        name = "CHI_tank_hup"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_hup.png"
+    }
+	spriteType = {
+        name = "CHI_tank_kaer"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_kaer.png"
+    }
+	spriteType = {
+        name = "CHI_tank_m3"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_m3.png"
+    }
+	spriteType = {
+        name = "CHI_tank_mk"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_mk.png"
+    }
+	spriteType = {
+        name = "CHI_tank_sihao"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_sihao.png"
+    }
+	spriteType = {
+        name = "CHI_tank_sihaod"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_sihaod.png"
+    }
+	spriteType = {
+        name = "CHI_tank_zlz"
+		texturefile = "gfx\tankgoal\select_cards\CHI\tanks\CHI_tank_zlz.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#SOV_effect / ###############################################################################
+	spriteType = {
+        name = "SOV_effect_gh"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_gh.png"
+    }
+	spriteType = {
+        name = "SOV_effect_gj"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_gj.png"
+    }
+	spriteType = {
+        name = "SOV_effect_glory"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_glory.png"
+    }
+	spriteType = {
+        name = "SOV_effect_hj"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_hj.png"
+    }
+	spriteType = {
+        name = "SOV_effect_tj"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_tj.png"
+    }
+	spriteType = {
+        name = "SOV_effect_zt"
+		texturefile = "gfx\tankgoal\select_cards\SOV\effect\SOV_effect_zt.png"
+    }
+		#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#SOV_infantry 1-6 #######################
+	spriteType = {
+        name = "SOV_infantry_bzb"
+		texturefile = "gfx\tankgoal\select_cards\SOV\infantry\SOV_infantry_bzb.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#SOV_tank 7-23 ###########################
+	spriteType = {
+        name = "SOV_tank_34-85"
+		texturefile = "gfx\tankgoal\select_cards\SOV\tanks\SOV_tank_34-85.png"
+    }
+	spriteType = {
+        name = "SOV_tank_85" #？？？
+		texturefile = "gfx\tankgoal\select_cards\SOV\tanks\SOV_tank_85.png"
+    }
+	spriteType = {
+        name = "SOV_tank_kv2"
+		texturefile = "gfx\tankgoal\select_cards\SOV\tanks\SOV_tank_kv2.png"
+    }
+	spriteType = {
+        name = "SOV_tank_t34"
+		texturefile = "gfx\tankgoal\select_cards\SOV\tanks\SOV_tank_t34.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#GER_effect / ###############################################################################
+	spriteType = {
+        name = "GER_effect_jf"
+		texturefile = "gfx\tankgoal\select_cards\GER\effect\GER_effect_jf.png"
+    }
+	spriteType = {
+        name = "GER_effect_pz"
+		texturefile = "gfx\tankgoal\select_cards\GER\effect\GER_effect_pz.png"
+    }
+	spriteType = {
+        name = "GER_effect_womenkeyi"
+		texturefile = "gfx\tankgoal\select_cards\GER\effect\GER_effect_womenkeyi.png"
+    }
+	spriteType = {
+        name = "GER_effect_xy"
+		texturefile = "gfx\tankgoal\select_cards\GER\effect\GER_effect_xy.png"
+    }
+	spriteType = {
+        name = "GER_effect_zl"
+		texturefile = "gfx\tankgoal\select_cards\GER\effect\GER_effect_zl.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#GER_infantry 1-6 #######################
+	spriteType = {
+        name = "GER_infantry_61"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_61.png"
+    }
+	spriteType = {
+        name = "GER_infantry_81"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_81.png"
+    }
+	spriteType = {
+        name = "GER_infantry_436"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_436.png"
+    }
+	spriteType = {
+        name = "GER_infantry_adf"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_adf.png"
+    }
+	spriteType = {
+        name = "GER_infantry_ddyz"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_ddyz.png"
+    }
+	spriteType = {
+        name = "GER_infantry_ls"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_ls.png"
+    }
+	spriteType = {
+        name = "GER_infantry_ogqw"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_ogqw.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#GER_tank 7-23 ###########################
+	spriteType = {
+        name = "GER_tank_2"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_2.png"
+    }
+	spriteType = {
+        name = "GER_tank_3j"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_3j.png"
+    }
+	spriteType = {
+        name = "GER_tank_4"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_4.png"
+    }
+	spriteType = {
+        name = "GER_tank_bao"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_bao.png"
+    }
+	spriteType = {
+        name = "GER_tank_hu1"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_hu1.png"
+    }
+	spriteType = {
+        name = "GER_tank_huwang"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_huwang.png"
+    }
+	spriteType = {
+        name = "GER_tank_lb"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_lb.png"
+    }
+	spriteType = {
+        name = "GER_tank_lh"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_lh.png"
+    }
+	spriteType = {
+        name = "GER_tank_pdn"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_pdn.png"
+    }
+	spriteType = {
+        name = "GER_tank_shushi"
+		texturefile = "gfx\tankgoal\select_cards\GER\tanks\GER_tank_shushi.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#JAP_effect / ###############################################################################
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#JAP_infantry 1-6 #######################
+	spriteType = {
+        name = "JAP_infantry_7"
+		texturefile = "gfx\tankgoal\select_cards\JAP\infantry\JAP_infantry_7.png"
+    }
+	spriteType = {
+        name = "JAP_infantry_13"
+		texturefile = "gfx\tankgoal\select_cards\JAP\infantry\JAP_infantry_13.png"
+    }
+	spriteType = {
+        name = "JAP_infantry_14"
+		texturefile = "gfx\tankgoal\select_cards\JAP\infantry\JAP_infantry_14.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#JAP_tank 7-23 ###########################
+	spriteType = {
+        name = "JAP_tank_95"
+		texturefile = "gfx\tankgoal\select_cards\JAP\tanks\JAP_tank_95.png"
+    }
+	spriteType = {
+        name = "JAP_tank_97"
+		texturefile = "gfx\tankgoal\select_cards\JAP\tanks\JAP_tank_97.png"
+    }
+	spriteType = {
+        name = "JAP_tank_t2"
+		texturefile = "gfx\tankgoal\select_cards\JAP\tanks\JAP_tank_t2.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+
+		#ITA_effect / ###############################################################################
+	spriteType = {
+        name = "ITA_effect_py"
+		texturefile = "gfx\tankgoal\select_cards\ITA\effect\ITA_effect_py.png"
+    }
+	spriteType = {
+        name = "ITA_effect_xs"
+		texturefile = "gfx\tankgoal\select_cards\ITA\effect\ITA_effect_xs.png"
+    }
+	spriteType = {
+        name = "ITA_effect_yjd"
+		texturefile = "gfx\tankgoal\select_cards\ITA\effect\ITA_effect_yjd.png"
+    }
+		#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#ITA_infantry 1-6 #######################
+	spriteType = {
+        name = "ITA_infantry_80"
+		texturefile = "gfx\tankgoal\select_cards\ITA\infantry\ITA_infantry_80.png"
+    }
+	spriteType = {
+        name = "ITA_infantry_sss"
+		texturefile = "gfx\tankgoal\select_cards\ITA\infantry\ITA_infantry_sss.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
+	#ITA_tank 7-23 ###########################
+	spriteType = {
+        name = "ITA_tank_cv"
+		texturefile = "gfx\tankgoal\select_cards\ITA\tanks\ITA_tank_cv.png"
+    }
+	spriteType = {
+        name = "ITA_tank_P"
+		texturefile = "gfx\tankgoal\select_cards\ITA\tanks\ITA_tank_P.png"
+    }
+	spriteType = {
+        name = "ITA_tank_smft"
+		texturefile = "gfx\tankgoal\select_cards\ITA\tanks\ITA_tank_smft.png"
+    }
+	#↑↑添加新卡牌，必须记得更改顶格处范围数字以及scripted-loc
 }

@@ -1,4 +1,3 @@
-
 #指挥官头像切换 静动变化
 defined_text = {
 	name = GFX_ZYX_daxi_type
@@ -99,5 +98,864 @@ defined_text = {
 	}
 	text = {
 		localization_key = GFX_ZYX_zdb_unselect
+	}
+}
+
+#多级索引机制构建的卡牌寻找机制
+#国家->兵种->遍历 期望 N/2 -> N/24
+#由"[]"实现多级索引的核心
+
+defined_text = {
+	name = Total_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 16 }#当前卡牌属于美国
+		}
+		localization_key = "[USA_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 33 }#当前卡牌属于英国
+		}
+		localization_key = "[ENG_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 37 }#当前卡牌属于法国
+		}
+		localization_key = "[FRA_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 60 }#当前卡牌属于中国
+		}
+		localization_key = "[CHI_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 71 }#当前卡牌属于俄国
+		}
+		localization_key = "[SOV_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 93 }#当前卡牌属于德国
+		}
+		localization_key = "[GER_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 99 }#当前卡牌属于日本
+		}
+		localization_key = "[JAP_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 107 }#当前卡牌属于意大力
+		}
+		localization_key = "[ITA_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#美国卡牌导向
+	name = USA_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 6 }#当前卡牌属于效果
+		}
+		localization_key = "[USA_effect_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 12 }#当前卡牌属于步兵
+		}
+		localization_key = "[USA_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 16 }#当前卡牌属于坦克
+		}
+		localization_key = "[USA_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#英国佬卡牌导向
+	name = ENG_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 19 }#当前卡牌属于效果
+		}
+		localization_key = "[ENG_effect_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 29 }#当前卡牌属于步兵
+		}
+		localization_key = "[ENG_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 33 }#当前卡牌属于坦克
+		}
+		localization_key = "[ENG_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#法国卡牌导向
+	name = FRA_kards
+	#text = {
+	#	trigger = {
+	#		check_variable = {  }#当前卡牌属于效果
+	#	}
+	#	localization_key = "[FRA_effect_kards]"
+	#}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 34 }#当前卡牌属于步兵
+		}
+		localization_key = "[FRA_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 37 }#当前卡牌属于坦克
+		}
+		localization_key = "[FRA_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#中国卡牌导向
+	name = CHI_kards
+	#text = {
+	#	trigger = {
+	#		check_variable = {  }#当前卡牌属于效果
+	#	}
+	#	localization_key = "[CHI_effect_kards]"
+	#}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 43 }#当前卡牌属于步兵
+		}
+		localization_key = "[CHI_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 60 }#当前卡牌属于坦克
+		}
+		localization_key = "[CHI_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#苏联卡牌导向
+	name = SOV_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 66 }#当前卡牌属于效果
+		}
+		localization_key = "[SOV_effect_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 67 }#当前卡牌属于步兵
+		}
+		localization_key = "[SOV_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 71 }#当前卡牌属于坦克
+		}
+		localization_key = "[SOV_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#德国卡牌导向
+	name = GER_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 76 }#当前卡牌属于效果
+		}
+		localization_key = "[GER_effect_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 83 }#当前卡牌属于步兵
+		}
+		localization_key = "[GER_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 93 }#当前卡牌属于坦克
+		}
+		localization_key = "[GER_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#日本佬卡牌导向
+	name = JAP_kards
+	#text = {
+	#	trigger = {
+	#		check_variable = {  }#当前卡牌属于效果
+	#	}
+	#	localization_key = "[JAP_effect_kards]"
+	#}
+	text = {
+		trigger = {
+			check_variable = { picture_value <96 }#当前卡牌属于步兵
+		}
+		localization_key = "[JAP_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 99 }#当前卡牌属于坦克
+		}
+		localization_key = "[JAP_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+defined_text = {#意大利卡牌导向
+	name = ITA_kards
+	text = {
+		trigger = {
+			check_variable = { picture_value < 102 }#当前卡牌属于效果
+		}
+		localization_key = "[ITA_effect_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 104 }#当前卡牌属于步兵
+		}
+		localization_key = "[ITA_infantry_kards]"
+	}
+	text = {
+		trigger = {
+			check_variable = { picture_value < 107 }#当前卡牌属于坦克
+		}
+		localization_key = "[ITA_tank_kards]"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== USA ====================
+# USA_effect 1-5
+defined_text = {
+	name = USA_effect_kards
+	text = {
+		trigger = { check_variable = { picture_value = 1 } }
+		localization_key = "USA_effect_ds"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 2 } }
+		localization_key = "USA_effect_fb"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 3 } }
+		localization_key = "USA_effect_hd"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 4 } }
+		localization_key = "USA_effect_qc"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 5 } }
+		localization_key = "USA_effect_qt"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# USA_infantry 6-11
+defined_text = {
+	name = USA_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 6 } }
+		localization_key = "USA_infantry_dh"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 7 } }
+		localization_key = "USA_infantry_lxzy"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 8 } }
+		localization_key = "USA_infantry_lz"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 9 } }
+		localization_key = "USA_infantry_sw"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 10 } }
+		localization_key = "USA_infantry_swd"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 11 } }
+		localization_key = "USA_infantry_sy"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# USA_tank 12-15
+defined_text = {
+	name = USA_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 12 } }
+		localization_key = "USA_tank_xem"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 13 } }
+		localization_key = "USA_tank_xf"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 14 } }
+		localization_key = "USA_tank_yhc"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 15 } }
+		localization_key = "USA_tank_panxing"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== ENG ====================
+# ENG_effect 16-18
+defined_text = {
+	name = ENG_effect_kards
+	text = {
+		trigger = { check_variable = { picture_value = 16 } }
+		localization_key = "ENG_effect_dj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 17 } }
+		localization_key = "ENG_effect_hjkj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 18 } }
+		localization_key = "ENG_effect_tp"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# ENG_infantry 19-28
+defined_text = {
+	name = ENG_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 19 } }
+		localization_key = "ENG_infantry_59"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 20 } }
+		localization_key = "ENG_infantry_112"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 21 } }
+		localization_key = "ENG_infantry_bld"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 22 } }
+		localization_key = "ENG_infantry_dlxj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 23 } }
+		localization_key = "ENG_infantry_gw"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 24 } }
+		localization_key = "ENG_infantry_ld"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 25 } }
+		localization_key = "ENG_infantry_nw"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 26 } }
+		localization_key = "ENG_infantry_pdlg"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 27 } }
+		localization_key = "ENG_infantry_sgl"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 28 } }
+		localization_key = "ENG_infantry_wes"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# ENG_tank 29-32
+defined_text = {
+	name = ENG_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 29 } }
+		localization_key = "ENG_tank_41"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 30 } }
+		localization_key = "ENG_tank_mded"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 31 } }
+		localization_key = "ENG_tank_qje"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 32 } }
+		localization_key = "ENG_tank_szj"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== FRA ====================
+# FRA_infantry 33
+defined_text = {
+	name = FRA_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 33 } }
+		localization_key = "FRA_infantry_1"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# FRA_tank 34-36
+defined_text = {
+	name = FRA_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 34 } }
+		localization_key = "FRA_tank_35"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 35 } }
+		localization_key = "FRA_tank_44"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 36 } }
+		localization_key = "FRA_tank_ln"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== CHI ====================
+# CHI_infantry 37-42
+defined_text = {
+	name = CHI_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 37 } }
+		localization_key = "CHI_infantry_1j"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 38 } }
+		localization_key = "CHI_infantry_10"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 39 } }
+		localization_key = "CHI_infantry_18"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 40 } }
+		localization_key = "CHI_infantry_74"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 41 } }
+		localization_key = "CHI_infantry_115"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 42 } }
+		localization_key = "CHI_infantry_hs"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# CHI_tank 43-59
+defined_text = {
+	name = CHI_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 43 } }
+		localization_key = "CHI_tank_3tuji"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 44 } }
+		localization_key = "CHI_tank_3shi"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 45 } }
+		localization_key = "CHI_tank_4h"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 46 } }
+		localization_key = "CHI_tank_10shi"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 47 } }
+		localization_key = "CHI_tank_26"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 48 } }
+		localization_key = "CHI_tank_28"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 49 } }
+		localization_key = "CHI_tank_38t"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 50 } }
+		localization_key = "CHI_tank_42"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 51 } }
+		localization_key = "CHI_tank_89"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 52 } }
+		localization_key = "CHI_tank_b1"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 53 } }
+		localization_key = "CHI_tank_hup"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 54 } }
+		localization_key = "CHI_tank_kaer"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 55 } }
+		localization_key = "CHI_tank_m3"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 56 } }
+		localization_key = "CHI_tank_mk"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 57 } }
+		localization_key = "CHI_tank_sihao"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 58 } }
+		localization_key = "CHI_tank_sihaod"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 59 } }
+		localization_key = "CHI_tank_zlz"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== SOV ====================
+# SOV_effect 60-65
+defined_text = {
+	name = SOV_effect_kards
+	text = {
+		trigger = { check_variable = { picture_value = 60 } }
+		localization_key = "SOV_effect_gh"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 61 } }
+		localization_key = "SOV_effect_gj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 62 } }
+		localization_key = "SOV_effect_glory"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 63 } }
+		localization_key = "SOV_effect_hj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 64 } }
+		localization_key = "SOV_effect_tj"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 65 } }
+		localization_key = "SOV_effect_zt"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# SOV_infantry 66
+defined_text = {
+	name = SOV_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 66 } }
+		localization_key = "SOV_infantry_bzb"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# SOV_tank 67-70
+defined_text = {
+	name = SOV_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 67 } }
+		localization_key = "SOV_tank_34-85"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 68 } }
+		localization_key = "SOV_tank_85"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 69 } }
+		localization_key = "SOV_tank_kv2"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 70 } }
+		localization_key = "SOV_tank_t34"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== GER ====================
+# GER_effect 71-75
+defined_text = {
+	name = GER_effect_kards
+	text = {
+		trigger = { check_variable = { picture_value = 71 } }
+		localization_key = "GER_effect_jf"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 72 } }
+		localization_key = "GER_effect_pz"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 73 } }
+		localization_key = "GER_effect_womenkeyi"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 74 } }
+		localization_key = "GER_effect_xy"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 75 } }
+		localization_key = "GER_effect_zl"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# GER_infantry 76-82
+defined_text = {
+	name = GER_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 76 } }
+		localization_key = "GER_infantry_61"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 77 } }
+		localization_key = "GER_infantry_81"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 78 } }
+		localization_key = "GER_infantry_436"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 79 } }
+		localization_key = "GER_infantry_adf"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 80 } }
+		localization_key = "GER_infantry_ddyz"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 81 } }
+		localization_key = "GER_infantry_ls"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 82 } }
+		localization_key = "GER_infantry_ogqw"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# GER_tank 83-92
+defined_text = {
+	name = GER_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 83 } }
+		localization_key = "GER_tank_2"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 84 } }
+		localization_key = "GER_tank_3j"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 85 } }
+		localization_key = "GER_tank_4"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 86 } }
+		localization_key = "GER_tank_bao"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 87 } }
+		localization_key = "GER_tank_hu1"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 88 } }
+		localization_key = "GER_tank_huwang"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 89 } }
+		localization_key = "GER_tank_lb"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 90 } }
+		localization_key = "GER_tank_lh"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 91 } }
+		localization_key = "GER_tank_pdn"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 92 } }
+		localization_key = "GER_tank_shushi"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== JAP ====================
+# JAP_infantry 93-95
+defined_text = {
+	name = JAP_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 93 } }
+		localization_key = "JAP_infantry_7"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 94 } }
+		localization_key = "JAP_infantry_13"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 95 } }
+		localization_key = "JAP_infantry_14"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# JAP_tank 96-98
+defined_text = {
+	name = JAP_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 96 } }
+		localization_key = "JAP_tank_95"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 97 } }
+		localization_key = "JAP_tank_97"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 98 } }
+		localization_key = "JAP_tank_t2"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+
+# ==================== ITA ====================
+# ITA_effect 99-101
+defined_text = {
+	name = ITA_effect_kards
+	text = {
+		trigger = { check_variable = { picture_value = 99 } }
+		localization_key = "ITA_effect_py"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 100 } }
+		localization_key = "ITA_effect_xs"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 101 } }
+		localization_key = "ITA_effect_yjd"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# ITA_infantry 102-103
+defined_text = {
+	name = ITA_infantry_kards
+	text = {
+		trigger = { check_variable = { picture_value = 102 } }
+		localization_key = "ITA_infantry_80"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 103 } }
+		localization_key = "ITA_infantry_sss"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
+	}
+}
+
+# ITA_tank 104-106
+defined_text = {
+	name = ITA_tank_kards
+	text = {
+		trigger = { check_variable = { picture_value = 104 } }
+		localization_key = "ITA_tank_cv"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 105 } }
+		localization_key = "ITA_tank_P"
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 106 } }
+		localization_key = "ITA_tank_smft"
+	}
+	text = {
+		localization_key = GFX_SA_ERROR
 	}
 }
