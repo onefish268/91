@@ -15,5 +15,13 @@ focus_tree = {
 		cost = 0
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		completion_reward = {
+			set_power_balance = {
+				id = ZDM_power_balance
+				left_side = dws_left_side # will keep the last set side if not specified
+				right_side = romu_right_side # will keep the last set side if not specified
+				set_default = yes # whether or not to reset the power balance to the initial value, default = no
+			}
+		}
 	}
 }

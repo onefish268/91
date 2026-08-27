@@ -251,4 +251,12 @@ spriteTypes = {
 		name = "GFX_Lusaka_city_pic"
 		texturefile = "gfx/interface/gui/city_pic/Lusaka_city_pic.dds"
 	}
+    SpriteType = {
+		name = "GFX_idea_dws_society"
+		texturefile = "gfx/focus_icon/GFX_idea_dws_society.png"
+	}
+    SpriteType = {
+		name = "GFX_idea_romu_society"
+		texturefile = "gfx/focus_icon/GFX_idea_romu_society.png"
+	}
 }
