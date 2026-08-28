@@ -165,21 +165,6 @@ country_event = {
         ai_chance = { base = 20 }
     }
     option = {
-        name = ZIM.11.b
-        retire_character = ZIM_yifeier
-        release = ZCS
-        release = ZDM
-        release = ZHJ
-        release = ZSB
-        release = ZSH
-        release = ZXS
-        release = ZYX
-        ZCS = {
-        change_tag_from = ZIM
-        }  
-        ai_chance = { base = 20 }
-    }
-    option = {
         name = ZIM.11.c
         retire_character = ZIM_yifeier
         release = ZCS
@@ -193,21 +178,6 @@ country_event = {
         change_tag_from = ZIM
         }  
         ai_chance = { base = 20 }
-    }
-    option = {
-        name = ZIM.11.d
-        retire_character = ZIM_yifeier
-        release = ZCS
-        release = ZDM
-        release = ZHJ
-        release = ZSB
-        release = ZSH
-        release = ZXS
-        release = ZYX
-        ZHJ = {
-        change_tag_from = ZIM
-        }  
-        ai_chance = { base = 0 }
     }
     option = {
         name = ZIM.11.e
@@ -238,21 +208,6 @@ country_event = {
         change_tag_from = ZIM
         }  
         ai_chance = { base = 20 }
-    }
-    option = {
-        name = ZIM.11.g
-        retire_character = ZIM_yifeier
-        release = ZCS
-        release = ZDM
-        release = ZHJ
-        release = ZSB
-        release = ZSH
-        release = ZXS
-        release = ZYX
-        ZXS = {
-        change_tag_from = ZIM
-        }  
-        ai_chance = { base = 0 }
     }
 }
 country_event = {
