@@ -495,4 +495,36 @@ spriteTypes = {
 		name = "GFX_focus_zdm8"
 		texturefile = "gfx/focus_icon/GFX_focus_zdm8.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zdm9"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm9.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm10"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm10.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm11"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm11.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm12"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm12.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm13"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm13.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm14"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm14.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm15"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm15.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zdm16"
+		texturefile = "gfx/focus_icon/GFX_focus_zdm16.png"
+	}
 }
