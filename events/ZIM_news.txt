@@ -104,3 +104,28 @@ news_event = {
 		}		
 	}		
 }
+
+news_event = {
+    id = ZIM.news.4
+    title = ZIM.news.4.t
+    desc = ZIM.news.4.d
+    picture = GFX_news_4
+    major = yes 
+    is_triggered_only = yes
+
+    option = {
+        name = ZIM.news.4.a
+        trigger = {
+				tag = EAS
+        }
+    }
+	
+	option = {
+		name = ZIM.news.4.b				
+		trigger = {
+			NOT = {	
+				tag = EAS					
+			}			
+		}		
+	}		
+}

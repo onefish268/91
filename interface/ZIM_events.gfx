@@ -28,6 +28,10 @@ spriteTypes = {
         texturefile = "gfx\interface\events\news_3.png"
     }
     spriteType = {
+        name = "GFX_news_4"
+        texturefile = "gfx\interface\events\news_4.png"
+    }
+    spriteType = {
         name = "GFX_ZIM5_event"
         texturefile = "gfx\interface\events\ZIM5_event.png"
     }
@@ -46,5 +50,13 @@ spriteTypes = {
     spriteType = {
         name = "GFX_ZIM9_event"
         texturefile = "gfx\interface\events\ZIM9_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZNT1_event"
+        texturefile = "gfx\interface\events\GFX_ZNT1_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZNT2_event"
+        texturefile = "gfx\interface\events\GFX_ZNT2_event.png"
     }
 }
