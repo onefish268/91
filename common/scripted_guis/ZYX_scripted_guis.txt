@@ -59,6 +59,7 @@ scripted_gui = {
 				clr_country_flag = ZYX_console_mode
 				set_country_flag = ZYX_select_console
 				clear_array = select_console_show_big_kard
+				set_variable = { show_tip_number = 0 }
 			}
 		}
 	}
@@ -203,7 +204,7 @@ scripted_gui = {
 		}
 
 		properties = {
-			kard_button = { image = "[Total__kards]"	}
+			kard_button = { image = "[Total__kards]" }
 			kard_big_button = { image = "[Total_kards]" }
 			tankgoal_show_USA = { frame = tankgoal_show_USA_situation }
 			tankgoal_show_ENG = { frame = tankgoal_show_ENG_situation }
@@ -225,9 +226,37 @@ scripted_gui = {
 					set_variable = { tankgoal_show_USA_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_USA_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 1 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_USA_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+
+				set_temp_variable_to_random = {
+					var = random_tip_number
+					min = 3
+					max = 9 #!!!注意!!!P社的min、max区间为[min,max)左闭右开
+					integer = yes
+				}
+				set_variable = { show_tip_number = random_tip_number }
+			}
+			tankgoal_show_USA_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_USA_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_USA_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 1 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_ENG_click = {
@@ -236,9 +265,36 @@ scripted_gui = {
 					set_variable = { tankgoal_show_ENG_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_ENG_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 2 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_ENG_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_temp_variable_to_random = {
+					var = random_tip_number
+					min = 3
+					max = 9 #!!!注意!!!P社的min、max区间为[min,max)左闭右开
+					integer = yes
+				}
+				set_variable = { show_tip_number = temp_var:random_tip_number }
+			}
+			tankgoal_show_ENG_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_ENG_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_ENG_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 2 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_FRA_click = {
@@ -247,9 +303,30 @@ scripted_gui = {
 					set_variable = { tankgoal_show_FRA_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_FRA_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 3 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_FRA_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_variable = { show_tip_number = 2 }
+			}
+			tankgoal_show_FRA_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_FRA_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_FRA_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 3 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_CHI_click = {
@@ -258,9 +335,30 @@ scripted_gui = {
 					set_variable = { tankgoal_show_CHI_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_CHI_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 4 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_CHI_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_variable = { show_tip_number = 1 }
+			}
+			tankgoal_show_CHI_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_CHI_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_CHI_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 4 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_SOV_click = {
@@ -269,9 +367,36 @@ scripted_gui = {
 					set_variable = { tankgoal_show_SOV_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_SOV_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 5 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_SOV_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_temp_variable_to_random = {
+					var = random_tip_number
+					min = 3
+					max = 9 #!!!注意!!!P社的min、max区间为[min,max)左闭右开
+					integer = yes
+				}
+				set_variable = { show_tip_number = random_tip_number }
+			}
+			tankgoal_show_SOV_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_SOV_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_SOV_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 5 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_GER_click = {
@@ -280,9 +405,36 @@ scripted_gui = {
 					set_variable = { tankgoal_show_GER_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_GER_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 6 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_GER_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_temp_variable_to_random = {
+					var = random_tip_number
+					min = 3
+					max = 9 #!!!注意!!!P社的min、max区间为[min,max)左闭右开
+					integer = yes
+				}
+				set_variable = { show_tip_number = random_tip_number }
+			}
+			tankgoal_show_GER_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_GER_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_GER_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 6 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_JAP_click = {
@@ -291,9 +443,30 @@ scripted_gui = {
 					set_variable = { tankgoal_show_JAP_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_JAP_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 7 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_JAP_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_variable = { show_tip_number = 2 }
+			}
+			tankgoal_show_JAP_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_JAP_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_JAP_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 7 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 			tankgoal_show_ITA_click = {
@@ -302,9 +475,36 @@ scripted_gui = {
 					set_variable = { tankgoal_show_ITA_situation = 0 }
 					ZYX_reload_tankgoal_kards = yes
 				}
+				else_if = {
+					limit = { check_variable = { tankgoal_show_ITA_situation = 3 } }
+					set_variable = { tankgoal_chosen_country = 8 }
+					#清理卡组（全部清理？还是部分？）
+				}
 				else = {
 					set_variable = { tankgoal_show_ITA_situation = 2 }
 					ZYX_reload_tankgoal_kards = yes
+				}
+				set_temp_variable_to_random = {
+					var = random_tip_number
+					min = 3
+					max = 9 #!!!注意!!!P社的min、max区间为[min,max)左闭右开
+					integer = yes
+				}
+				set_variable = { show_tip_number = random_tip_number }
+			}
+			tankgoal_show_ITA_right_click = {
+				if = {
+					limit = {
+						check_variable = { tankgoal_total_selected_country < 2 }
+						NOT = { check_variable = { tankgoal_show_ITA_situation = 3 } }
+					}
+					set_variable = { tankgoal_show_ITA_situation = 3 }
+					add_to_variable = { tankgoal_total_selected_country = 1 }
+					ZYX_reload_tankgoal_kards = yes
+				}
+				else = {
+					set_variable = { tankgoal_chosen_country = 8 }
+					#清理卡组（全部清理？还是部分？）
 				}
 			}
 
@@ -344,6 +544,83 @@ scripted_gui = {
 			kard_button_click = {
 				clear_array = select_console_show_big_kard
 				add_to_array = { select_console_show_big_kard = picture_value }
+			}
+		}
+	}
+
+	ZYX_select_cancel_block = {#取消方块
+		window_name = "select_cancel_block"
+		parent_window_name = "select_console"
+
+		visible = { NOT = { check_variable = { tankgoal_chosen_country = 0 } } }
+
+		effects = {
+			refuse_button_click = { set_variable = { tankgoal_chosen_country = 0 } }
+			accept_button_click = {
+				if = {
+					limit = { check_variable = { tankgoal_chosen_country = 1 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_USA_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 2 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_ENG_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 3 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_FRA_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 4 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_CHI_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 5 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_SOV_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 6 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_GER_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 7 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_JAP_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
+				else_if = {
+					limit = { check_variable = { tankgoal_chosen_country = 8 } }
+					set_variable = { tankgoal_chosen_country = 0 }
+					set_variable = { tankgoal_show_ITA_situation = 2 }
+					add_to_variable = { tankgoal_total_selected_country = -1 }
+					ZYX_reload_tankgoal_kards = yes
+					#对卡组操作
+				}
 			}
 		}
 	}

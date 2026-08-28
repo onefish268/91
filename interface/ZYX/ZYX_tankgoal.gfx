@@ -11,42 +11,42 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_ZYX_tankgoal_xi"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_xi.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_eng"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_eng.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_fra"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_fra.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_ger"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_ger.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_ita"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_ita.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_jap"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_jap.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_sov"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_sov.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 	spriteType = {
         name = "GFX_ZYX_tankgoal_usa"
 		texturefile = "gfx/tankgoal/school/GFX_ZYX_tankgoal_usa.png"
-		noOfFrames = 2
+		noOfFrames = 3
     }
 
 	spriteType = {
@@ -531,7 +531,7 @@ spriteTypes = {
     }
 	spriteType = {
         name = "GER_infantry_112"
-		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_436.png"
+		texturefile = "gfx\tankgoal\select_cards\GER\infantry\GER_infantry_112.png"
     }
 	spriteType = {
         name = "GER_infantry_436"

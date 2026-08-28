@@ -7,8 +7,10 @@
 #}
 #运用多级索引 国家->兵种->遍历
 
-#我求求P🐍把STL容器、字典弄给我们吧，我什么都不会做的，但是我真的太需要这些了，没有它们的日子，我怎么活（）
+#我求求P🐍把结构体、STL容器、字典弄给我们吧，我什么都不会做的，但是我真的太需要这些了，没有它们的日子，我怎么活（）
 
+
+#卡牌选取界面的重载
 ZYX_reload_tankgoal_kards = {
 	clear_array = select_console_show_array
 	if = {#添加美国 (1-16)
@@ -211,6 +213,14 @@ ZYX_reload_tankgoal_kards = {
 	}
 }
 
+#卡牌加入卡组的代码
+ZYX_add_kard_to_kards = {
+	
+}
+
+#路纵崎岖，亦不怕受磨练，愿一生中苦痛快乐也体验
+
+#卡牌进入战场的即时效果
 ZYX_tankgoal_effect_before_war = {
 	if = {
 		limit = { has_country_flag =  }

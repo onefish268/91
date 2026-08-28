@@ -396,20 +396,28 @@ guiTypes = {
 			buttonType = {#步兵类型
 				name = "tankgoal_show_infantry"
 				spriteType = GFX_ZYX_tankgoal_infantry
-				position = { x = 40 y = 270 }
+				position = { x = 20 y = 270 }
 				scale = 0.75
 			}
 			buttonType = {#坦克类型
 				name = "tankgoal_show_tank"
 				spriteType = GFX_ZYX_tankgoal_tank
-				position = { x = 40 y = 390 }
+				position = { x = 20 y = 390 }
 				scale = 0.75
 			}
 			buttonType = {#效果类型
 				name = "tankgoal_show_effect"
 				spriteType = GFX_ZYX_tankgoal_effect
-				position = { x = 40 y = 150 }
+				position = { x = 20 y = 150 }
 				scale = 0.75
+			}
+
+			instantTextBoxType = {
+				name = "tips_in_show_kard_console"
+				position = { x = 120 y = 120 }
+				maxWidth = 140
+				font = "hoi_24header"
+				text = "[some_tips_to_player]"
 			}
 
 			gridBoxType = {
@@ -447,6 +455,112 @@ guiTypes = {
     	    		#add_horizontal = yes
 	    	    	format = "UPPER_LEFT"
 				}
+			}
+	}
+
+	containerWindowType = {#取消选择
+		name = "select_cancel_block"
+		size = { width = 480 height=382 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
 		}
+
+		instantTextBoxType = {
+			name = "select_cancel_block_title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = select_cancel_block_t
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "select_cancel_block_desc"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = select_cancel_block_d
+			maxWidth = 430
+			maxHeight = 215
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "refuse_button"
+			position = { x=80 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {#卡组查看方块 由gridbox管理
+		name = "selected_kard"
+
+		buttonType = {
+			name = "kard_big_button"
+			spriteType = Total_kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 1
+		}
+	}
+
+	containerWindowType = {#卡组查看界面
+		name = "selected_console"
+
+		containerWindowType = {
+				name = "selected_area"
+				position = { x = 256 y = 128 } #!
+				size = { width = 1000 height = 400 }
+				Orientation = upper_left
+    			verticalScrollbar = "right_vertical_slider"
+		    	scroll_wheel_factor = 420
+		    	smooth_scrolling = yes
+		    	clipping = yes
+				margin = { top = 13 left = 13 bottom = 10 right = -300 }
+
+				background = {
+					name = "selected_area_background"
+					spriteType = black_background
+					scale = 4
+				}
+
+				gridBoxType = {
+					name = "selected_kards"
+					size = { width = 1000 height = 4496 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+	        		slotsize = { width = 156 height = 250 }
+	        		max_slots_horizontal = 6
+	    		    max_slots_vertical = 20  # 10行，超出父容器高度
+    	    		#add_horizontal = yes
+	    	    	format = "UPPER_LEFT"
+				}
+			}
 	}
 }
