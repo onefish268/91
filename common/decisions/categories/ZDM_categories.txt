@@ -1,0 +1,7 @@
+ZDM_pingheng_categories = {
+    icon = generic_construction
+    visible = {
+        tag = ZDM
+    }
+}
+

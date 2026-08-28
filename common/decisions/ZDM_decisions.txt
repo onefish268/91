@@ -1,0 +1,158 @@
+ZDM_pingheng_categories = {
+	
+	ZDM_1 = {
+		name = ZDM_1
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		available = {
+			has_power_balance = {
+                id = ZDM_power_balance
+            }
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.1
+                tooltip_side = dws_left_side
+            }
+		}
+	}
+	ZDM_2 = {
+		name = ZDM_2
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 30
+		available = {
+			has_power_balance = {
+                id = ZDM_power_balance
+            }
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.1
+                tooltip_side = romu_right_side
+            }
+		}
+	}
+	ZDM_3 = {
+		name = ZDM_3
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 30
+		days_remove = 30
+		available = {
+		    is_power_balance_in_range = {
+                id = ZDM_power_balance
+                range > right_small_side_range
+            }
+		}
+
+		remove_effect = {
+			add_manpower = 4000
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.15
+                tooltip_side = romu_right_side
+            }
+		}
+	}
+	ZDM_4 = {
+		name = ZDM_4
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 30
+		days_remove = 30
+		available = {
+		    is_power_balance_in_range = {
+                id = ZDM_power_balance
+                range < left_small_side_range
+            }
+		}
+
+		remove_effect = {
+			add_resource = {
+                type = oil              #steel钢 aluminium铝 tungsten钨 chromium铬 coal煤炭 rubber橡胶
+                amount = 10
+                state = 917
+            }
+			add_resource = {
+                type = steel
+                amount = 10
+                state = 917
+            }
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.15
+                tooltip_side = dws_left_side
+            }
+		}
+	}
+	ZDM_5 = {
+		name = ZDM_5
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 45
+		days_remove = 30
+		available = {
+		    is_power_balance_in_range = {
+                id = ZDM_power_balance
+                range < left_small_side_range
+            }
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.15
+                tooltip_side = dws_left_side
+            }
+		}
+	}
+	ZDM_6 = {
+		name = ZDM_6
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 45
+		days_remove = 30
+		available = {
+		    is_power_balance_in_range = {
+                id = ZDM_power_balance
+                range > right_small_side_range
+            }
+		}
+
+		remove_effect = {
+			917 = {
+			    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.15
+                tooltip_side = romu_right_side
+            }
+		}
+	}
+}
