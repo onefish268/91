@@ -3,24 +3,52 @@ ZDM_power_balance = {
 	initial_value = 0
 	left_side = dws_left_side
 	right_side = romu_right_side
-#	decision_category = #GER_mefo_bills_category
+	decision_category = ZDM_pingheng_categories
 	range = {
-		id = mid_range
+		id = ZDM_mid_range
 		min = -0.1
 		max = 0.1
 		modifier = {
-			war_support_weekly = 0.5
+			political_power_factor = 0.1
+			stability_factor = 0.05
+			war_support_factor = 0.05
 		}
 	}
 	side = {
 		id = dws_left_side
 		icon = GFX_idea_dws_society
 		range = {
-			id = left_side_range
-			min = -1
+			id = left_small_side_range
+			min = -0.4
 			max = -0.1
 			modifier = {
-				war_support_weekly = 0.1
+				political_power_factor = 0.2
+				stability_weekly = 0.03
+				monthly_population = 1.25
+			}
+		}
+		range = {
+			id = left_med_side_range
+			min = -0.7
+			max = -0.4
+			modifier = {
+				global_building_slots_factor = 0.25
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		range = {
+			id = left_win_side_range
+			min = -1
+			max = -0.7
+			modifier = {
+				global_building_slots_factor = 0.5
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.2
 			}
 		}
 	}
@@ -28,11 +56,37 @@ ZDM_power_balance = {
 		id = romu_right_side
 		icon = GFX_idea_romu_society
 		range = {
-			id = right_side_range
+			id = right_small_side_range
 			min = 0.1
+			max = 0.4
+			modifier = {
+				war_support_weekly = 0.03
+				training_time_army_factor = -0.3
+				conscription_factor = 0.25
+			}
+		}
+		range = {
+			id = right_med_side_range
+			min = 0.4
+			max = 0.7
+			modifier = {
+				army_armor_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_attack_factor = 0.07
+				attrition_for_controller = -0.03
+				supply_node_range = 0.15
+			}
+		}
+		range = {
+			id = right_win_side_range
+			min = 0.7
 			max = 1
 			modifier = {
-				war_support_weekly = 0.9
+				army_armor_speed_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_attack_factor = 0.15
+				attrition_for_controller = -0.06
+				supply_node_range = 0.3
 			}
 		}
 	}

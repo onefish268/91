@@ -1,0 +1,127 @@
+add_namespace = znt
+
+country_event = {
+    id = znt.1
+    title = znt.1.t
+    desc = znt.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_ZNT1_event
+
+    option = {
+        name = znt.1.a
+        SAF = {
+            country_event = {
+                id = znt.2
+                days = 7
+            }
+        }
+        ai_chance = { base = 100 }
+    }
+
+    option = {
+        name = znt.1.b
+        ai_chance = { base = 0 }
+    }
+}
+
+country_event = {
+    id = znt.2
+    title = znt.2.t
+    desc = znt.2.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_ZNT2_event
+
+    option = {
+        name = znt.2.a
+        EAS = {
+            country_event = {
+                id = znt.4
+                days = 30
+            }
+        }
+        ai_chance = { base = 100 }
+    }
+
+    option = {
+        name = znt.2.b
+        ai_chance = { base = 0 }
+    }
+}
+
+country_event = {
+    id = znt.3
+    title = znt.3.t
+    desc = znt.3.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = znt.3.a
+        ai_chance = { base = 100 }
+    }
+
+    option = {
+        name = znt.3.b
+        ENG = {
+            country_event = {
+                id = znt.1
+                days = 5
+            }
+        }
+        ai_chance = { base = 0 }
+    }
+}
+
+country_event = {
+    id = znt.4
+    title = znt.4.t
+    desc = znt.4.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = znt.4.a
+        EAS = {
+            country_event = {
+                id = znt.5
+                days = 30
+            }
+        }
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = znt.5
+    title = znt.5.t
+    desc = znt.5.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = znt.5.a
+        EAS = {
+            country_event = {
+                id = znt.6
+                days = 30
+            }
+        }
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = znt.6
+    title = znt.6.t
+    desc = znt.6.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = znt.6.a
+        news_event = { id = ZIM.news.4 days = 3 }
+        ai_chance = { base = 100 }
+    }
+}

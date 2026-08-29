@@ -108,3 +108,12 @@ style = {
 	available = GFX_focus_can_start_zsh
 	current = GFX_focus_current_zsh
 }
+
+style = {
+	name = ZDM_focus_style
+
+	unavailable = GFX_focus_unavailable_zdm
+	completed = GFX_focus_completed_zdm
+	available = GFX_focus_can_start_zdm
+	current = GFX_focus_current_zdm
+}
