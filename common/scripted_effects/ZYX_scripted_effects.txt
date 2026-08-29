@@ -213,9 +213,62 @@ ZYX_reload_tankgoal_kards = {
 	}
 }
 
+ZYX_tankgoal_count_number = {#显示选择卡片数量
+	if = {
+		limit = { check_variable = { tankgoal_ones_number > 10 } }
+		add_to_variable = { tankgoal_ones_number = -10 }
+		add_to_variable = { tankgoal_tens_number = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { tankgoal_ones_number = 0 } }
+		add_to_variable = { tankgoal_ones_number = 10 }
+		add_to_variable = { tankgoal_tens_number = -1 }
+	}
+}
+
+#清理已经选好的卡组
+ZYX_clean_chosen_kards = {
+	clear_array = chosen_kind_of_kard
+	resize_array = {
+		array = chosen_kind_of_kard
+		value = 1
+		size = 107 #wasted（浪费了（））
+	}
+}
+
+
+#数组插入、修改删除的一些碎碎念
+#数组插入——add_to_array,要求存在一array，当其大小为x(x>=0)时，插入仅支持在0~(x+1)的位置执行
+#当我们向0~x插入时，设为y下标，加入的元素成为y(0<=y<=x)，y~x则后置为(y+1)~(x+1)
+#数组指定下标访问，通过array^number实现，number为下标，0号开始编号
+#array^number可作为variable处理，支持set_variable = { array^number = x }(x要求为有效的数字，且array存在下标为
+#number的元素)
+#add_to_variable也可处理数组的元素(同样要求下标number存在)
+#删除，用的是remove_from_array，要求number和value两个其中一个作为指引，如果是value，remove_from_array会默认将多个
+#value元素的第一个移除，比如array = {1，2，3，4，5，6，6，6}，处理移除6的操作变成array = {1，2，3，4，5，6，6}
+#for_each_loop搭配remove去剔除所有相同value会有bug，因为正向剔除元素时TM下标会随着删改而改变从而让一些元素漏了
+#你写个反向会死吗，P🐍（恼）
+#喜报，array_name^num可以访问array_name的长度！妈妈再也不用担心我拿P社提供的幽默正序代码去删改啦（）
+
+
+
 #卡牌加入卡组的代码
 ZYX_add_kard_to_kards = {
-	
+	clear_array = selected_console_show_array
+	for_each_loop = {
+		array = chosen_kind_of_kard
+		value = array_value
+		index = array_number
+		if = {
+			limit = { chosen_kind_of_kard^array_number > 1 }
+			set_temp_variable = { i = array_value }
+			while_loop_effect = {
+				limit = { check_variable = { i > 1 } }
+				add_to_temp_variable = { i = -1 }
+				add_to_array = { selected_console_show_array = array_number }
+			}
+		}		
+	}
 }
 
 #路纵崎岖，亦不怕受磨练，愿一生中苦痛快乐也体验

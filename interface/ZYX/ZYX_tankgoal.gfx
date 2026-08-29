@@ -1,10 +1,29 @@
 spriteTypes = {
-	#黑色背景
 
-	spriteType = {
+	spriteType = {#删减符号
+        name = reduce_sign
+		texturefile = "gfx/tankgoal/reduce_sign.png"
+    }
+
+	spriteType = {#白色数码数字
+        name = white_digital_number
+		texturefile = "gfx/tankgoal/white_digital_number.png"
+		noOfFrames = 10
+    }
+	
+	spriteType = {#黑色背景
         name = black_background
 		texturefile = "gfx/tankgoal/black_background.png"
     }
+
+	spriteType = {#选卡界面按钮
+		name = tankgoal_select_console_button
+		texturefile = "gfx/tankgoal/select_cards/tankgoal_select_console_button.png"
+	}
+	spriteType = {#卡组界面按钮
+		name = tankgoal_selected_console_button
+		texturefile = "gfx/tankgoal/select_cards/tankgoal_selected_console_button.png"
+	}
 
 	#学院们、兵种们的图标
 

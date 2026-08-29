@@ -13,6 +13,14 @@ ZYX_anqiao_category = {
 		complete_effect = {
 			set_country_flag = ZYX_tankdoal
 			set_variable = { ZYX_select_commander_number = 1 }
+
+			resize_array = {
+				array = chosen_kind_of_kard
+				value = 1
+				size = 107
+			}
+			set_variable = { tankgoal_ones_number = 1 }
+			set_variable = { tankgoal_tens_number = 1 }
 		}
 	}
 }
