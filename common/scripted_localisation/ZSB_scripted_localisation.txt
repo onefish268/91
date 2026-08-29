@@ -21,7 +21,7 @@ defined_text = {#支持率模块
 }
 
 defined_text = {#斯坦莉数字颜色的改变，数字大小的改变不在这里调控，去interface那里
-	name = ZSB_STL_vote_pictrue
+	name = ZSB_STL_vote_picture
 	text = {
 		trigger = {
 			OR = {
@@ -43,7 +43,7 @@ defined_text = {#斯坦莉数字颜色的改变，数字大小的改变不在这
 }
 
 defined_text = {#卡洛数字颜色的改变，数字大小的改变不在这里调控，去interface那里
-	name = ZSB_KL_vote_pictrue
+	name = ZSB_KL_vote_picture
 	text = {
 		trigger = { 
 			OR = {
