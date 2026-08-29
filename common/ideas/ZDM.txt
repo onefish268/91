@@ -1,0 +1,163 @@
+ideas = {
+	country = {
+		zdm_minzhong = {#邦联民众热情
+			picture = GFX_idea_zdm_minzhong
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		zdm1_1 = {#邦联民众热情
+			picture = GFX_idea_zdm1_1
+			modifier = {
+				stability_factor = -0.25
+			}
+		}
+		zdm1_2 = {#邦联民众热情
+			picture = GFX_idea_zdm1_2
+			modifier = {
+				stability_factor = -0.2
+				global_building_slots_factor = 0.1
+			}
+		}
+		zdm1_3 = {#邦联民众热情
+			picture = GFX_idea_zdm1_3
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+			}
+		}
+		zdm1_4 = {#邦联民众热情
+			picture = GFX_idea_zdm1_4
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly_factor = 0.1
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		zdm1_5 = {#邦联民众热情
+			picture = GFX_idea_zdm1_5
+			modifier = {
+				stability_factor = -0.05
+				weekly_manpower = 800
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.05
+				stability_weekly_factor = 0.1
+			}
+		}
+		zdm1_6 = {#邦联民众热情
+			picture = GFX_idea_zdm1_6
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory_powered = 0.1
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.05
+				stability_weekly_factor = 0.1
+				weekly_manpower = 800
+			}
+		}
+		zdm1_7 = {#邦联民众热情
+			picture = GFX_idea_zdm1_7
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory_powered = 0.15
+				industry_repair_factor = 0.1
+				production_speed_buildings_factor = 0.25
+				weekly_manpower = 1200
+				global_building_slots_factor = 0.25
+				stability_weekly_factor = 0.15
+			}
+		}
+		zdm_zhanzheng = {#邦联战争热衷
+			picture = GFX_idea_zdm_zhanzheng
+			modifier = {
+				war_support_factor = -0.25
+			}
+		}
+		zdm_zhanzheng_gai = {#zz
+			picture = GFX_idea_zdm_zhanzheng_gai
+			modifier = {
+				war_support_factor = -0.2
+				conscription_factor = 0.1
+			}
+		}
+		zdm2_1 = {#qy
+			picture = GFX_idea_zdm2_2_2
+			modifier = {
+				war_support_factor = -0.2
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		zdm2_2 = {#gc
+			picture = GFX_idea_zdm2_2
+			modifier = {
+				war_support_factor = -0.15
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		zdm2_3 = {#ht
+			picture = GFX_idea_zdm2_3
+			modifier = {
+				war_support_factor = -0.1
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		zdm2_4 = {#sz
+			picture = GFX_idea_zdm2_4
+			modifier = {
+				war_support_factor = -0.05
+				army_infantry_attack_factor = 0.05
+				army_morale_factor = 0.1
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		zdm2_5 = {#xl
+			picture = GFX_idea_zdm2_5
+			modifier = {
+				war_support_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_morale_factor = 0.1
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		zdm2_6 = {#tj
+			picture = GFX_idea_zdm2_6
+			modifier = {
+				war_support_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		zdm2_7 = {#邦联战争热衷
+			picture = GFX_idea_zdm2_7
+			modifier = {
+				war_support_factor = 0.2
+				army_armor_attack_factor = 0.15
+				army_infantry_attack_factor = 0.15
+				army_morale_factor = 0.15
+				breakthrough_factor = 0.15
+				conscription_factor = 0.2
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+	}
+}

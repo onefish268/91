@@ -11,6 +11,8 @@ set_technology = {
 set_convoys = 100
 add_ideas = ZDM_luomu_1
 add_ideas = {
+	zdm_minzhong
+	zdm_zhanzheng
 }
 
 set_politics = {

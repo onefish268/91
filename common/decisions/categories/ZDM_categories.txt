@@ -4,4 +4,11 @@ ZDM_pingheng_categories = {
         tag = ZDM
     }
 }
-
+ZDM_xuanzhan_categories = {
+    icon = generic_construction
+    priority = 100
+    visible = {
+        tag = ZDM
+        has_completed_focus = 9_focus_16
+    }
+}

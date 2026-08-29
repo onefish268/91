@@ -92,6 +92,74 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/dabang.png"
     }
     spriteType = {
+        name = "GFX_idea_zdm1_1"
+        texturefile = "gfx/interface/ideas/zdm1_1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm_minzhong"
+        texturefile = "gfx/interface/ideas/zdm1_1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_2"
+        texturefile = "gfx/interface/ideas/zdm1_2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_3"
+        texturefile = "gfx/interface/ideas/zdm1_3.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_4"
+        texturefile = "gfx/interface/ideas/zdm1_4.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_5"
+        texturefile = "gfx/interface/ideas/zdm1_5.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_6"
+        texturefile = "gfx/interface/ideas/zdm1_6.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm1_7"
+        texturefile = "gfx/interface/ideas/zdm1_7.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm_zhanzheng_gai"
+        texturefile = "gfx/interface/ideas/zdm2_1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm_zhanzheng"
+        texturefile = "gfx/interface/ideas/zdm2_1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_2"
+        texturefile = "gfx/interface/ideas/zdm2_2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_2_2"
+        texturefile = "gfx/interface/ideas/zdm2_2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_3"
+        texturefile = "gfx/interface/ideas/zdm2_3.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_4"
+        texturefile = "gfx/interface/ideas/zdm2_4.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_5"
+        texturefile = "gfx/interface/ideas/zdm2_5.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_6"
+        texturefile = "gfx/interface/ideas/zdm2_6.png"
+    }
+    spriteType = {
+        name = "GFX_idea_zdm2_7"
+        texturefile = "gfx/interface/ideas/zdm2_7.png"
+    }
+    spriteType = {
         name = "GFX_idea_ZIM_daimler_benz"
         texturefile = "gfx/mio/GFX_idea_ZIM_daimler_benz.png"
     }

@@ -156,3 +156,98 @@ ZDM_pingheng_categories = {
 		}
 	}
 }
+
+ZDM_xuanzhan_categories = {
+	ZDM_7 = {
+		name = ZDM_7
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes				# 如果当前国家正在战争中，factor 乘以 0 = 不会选择这个决议
+			}
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = ZHJ
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	ZDM_8 = {
+		name = ZDM_8
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes				# 如果当前国家正在战争中，factor 乘以 0 = 不会选择这个决议
+			}
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = ZSB
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	ZDM_9 = {
+		name = ZDM_9
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes				# 如果当前国家正在战争中，factor 乘以 0 = 不会选择这个决议
+			}
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = ZSH
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	ZDM_10 = {
+		name = ZDM_10
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes				# 如果当前国家正在战争中，factor 乘以 0 = 不会选择这个决议
+			}
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = ZYX
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}

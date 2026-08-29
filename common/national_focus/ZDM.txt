@@ -38,6 +38,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm_minzhong
+				add_idea = zdm1_1
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_3
@@ -50,6 +61,20 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_1
+		}
+		available = {
+		    has_completed_focus = 9_focus_6
+	    }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_3
+				add_idea = zdm1_4
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
 		}
 	}
 	focus = {
@@ -64,6 +89,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_2
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_1
+				add_idea = zdm1_2
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_5
@@ -76,6 +112,17 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_4
+				add_idea = zdm1_5
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
 		}
 	}
 	focus = {
@@ -90,6 +137,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_4
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_2
+				add_idea = zdm1_3
+			}
+			917 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_7
@@ -102,6 +168,17 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_5
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_5
+				add_idea = zdm1_6
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
 		}
 	}
 	focus = {
@@ -120,7 +197,17 @@ focus_tree = {
 			focus = 9_focus_7
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm1_6
+				add_idea = zdm1_7
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = -0.05
+                tooltip_side = dws_left_side
+            }
 			set_country_flag = romu_was_do
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -137,6 +224,17 @@ focus_tree = {
 			    has_country_flag = romu_was_do
 		    }
 	    }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm_zhanzheng
+				add_idea = zdm_zhanzheng_gai
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_10
@@ -149,6 +247,20 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_9
+		}
+		available = {
+		    has_completed_focus = 9_focus_15
+	    }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_3
+				add_idea = zdm2_4
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
 		}
 	}
 	focus = {
@@ -163,6 +275,25 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_9
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm_zhanzheng_gai
+				add_idea = zdm2_1
+			}
+			917 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_12
@@ -175,6 +306,17 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_4
+				add_idea = zdm2_5
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
 		}
 	}
 	focus = {
@@ -189,6 +331,32 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_11
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_1
+				add_idea = zdm2_2
+			}
+			mio:ZIM_daimler_benz_organization = {
+				add_mio_funds = 3000
+			}
+			set_technology = {
+				gwtank_chassis = 1
+				basic_light_tank_chassis = 1
+            }
+			917 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+                    type = arms_factory
+                    level = 6
+                    instant_build = yes
+                }
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_14
@@ -202,6 +370,17 @@ focus_tree = {
 		prerequisite = {
 			focus = 9_focus_12
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_5
+				add_idea = zdm2_6
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
+		}
 	}
 	focus = {
 		id = 9_focus_15
@@ -214,6 +393,25 @@ focus_tree = {
 		continue_if_invalid = no
 		prerequisite = {
 			focus = 9_focus_13
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_2
+				add_idea = zdm2_3
+			}
+			917 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
 		}
 	}
 	focus = {
@@ -230,6 +428,18 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 9_focus_15
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zdm2_6
+				add_idea = zdm2_7
+			}
+			add_power_balance_value = {
+                id = ZDM_power_balance
+                value = 0.05
+                tooltip_side = romu_right_side
+            }
+			custom_effect_tooltip = ZDM_jiesuo
 		}
 	}
 }
