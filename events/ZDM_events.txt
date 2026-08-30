@@ -13,3 +13,28 @@ country_event = {
     }
 }
 
+country_event = {
+    id = zdm.2
+    title = zdm.2.t
+    desc = zdm.2.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.2.a
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = zdm.3
+    title = zdm.3.t
+    desc = zdm.3.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.3.a
+        ai_chance = { base = 100 }
+    }
+}
