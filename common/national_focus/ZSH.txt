@@ -310,7 +310,7 @@ focus_tree = {
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
-				ZSH_cc_4 = 0.5
+				ZSH_cc_4 = 0.05
 				tooltip = party_popularity_stability_factor_tt
 			}
 		}
