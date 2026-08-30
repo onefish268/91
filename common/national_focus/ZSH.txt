@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 0
+			add = 200
 			tag = ZSH
 		}
 	}
@@ -93,12 +93,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 8_focus_6
+		id = 8_focus_6 #进入战备状态
 		icon = GFX_focus_zsh2
 		text_icon = ZSH_focus_style
 		x =9
 		y = 2
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -109,107 +109,183 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 8_focus_7
+		id = 8_focus_7 #整风运动
 		icon = GFX_focus_zsh4
 		text_icon = ZSH_focus_style
 		x =7
 		y = 5
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_13
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_1 = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_2 = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_3 = 0.05
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_8
+		id = 8_focus_8 #批判左倾主义
 		icon = GFX_focus_zsh5
 		text_icon = ZSH_focus_style
 		x =6
 		y = 6
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_7
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_1 = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_2 = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_4 = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_9
+		id = 8_focus_9 #掐断右倾苗头
 		icon = GFX_focus_zsh6
 		text_icon = ZSH_focus_style
 		x =8
 		y = 6
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_7
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_1 = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_3 = 0.05
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_4 = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_12
+		id = 8_focus_12 #团结一切力量
 		text_icon = ZSH_focus_style
 		x =11
 		y = 6
-		cost = 0
+		cost = 2
 		icon = GFX_focus_zsh8
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_13
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_1 = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_4 = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_13
+		id = 8_focus_13 #宣传战
 		icon = GFX_focus_zsh3
 		text_icon = ZSH_focus_style
 		x =9
 		y = 4
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_6
 		}
 		completion_reward = {
-			add_ideas = propaganda_war
+			ZYX = { add_ideas = falling_apart }
+			ZSB = { add_ideas = falling_apart }
+			ZDM = { add_ideas = falling_apart }
 			add_stability = 0.1
 			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = 8_focus_15
+		id = 8_focus_15 #团结小资产阶级
 		text_icon = ZSH_focus_style
 		x =10
 		y = 7
-		cost = 0
+		cost = 2
 		icon = GFX_focus_zsh9
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_12
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_5 = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_16
+		id = 8_focus_16 #拉拢敌后工会组织
 		text_icon = ZSH_focus_style
 		x =12
 		y = 7
-		cost = 0
+		cost = 2
 		icon = GFX_focus_zsh10
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_12
 		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_6 = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_7 = 0.1
+				tooltip = industrial_capacity_factory_tt
+			}
+		}
 	}
 	focus = {
-		id = 8_focus_14
+		id = 8_focus_14 #暂时结束党内纷争
 		text_icon = ZSH_focus_style
 		x =7
 		y = 7
-		cost = 0
+		cost = 2
 		icon = GFX_focus_zsh7
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -218,6 +294,25 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 8_focus_9
+		}
+		completion_reward = {
+			custom_effect_tooltip = ZSH_central_committee_tt
+			add_to_variable = {
+				ZSH_cc_1 = 0.1
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_2 = 0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_3 = 0.1
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				ZSH_cc_4 = 0.5
+				tooltip = party_popularity_stability_factor_tt
+			}
 		}
 	}
 	focus = {

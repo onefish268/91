@@ -1,9 +1,13 @@
-ZSH_red_army_reform = { #红军改革
-	#icon=111
-}
+#ZSH_red_army_reform = { #红军改革
+#	#icon=111
+#}
 
 ZSH_central_committee = { #中央委员会
-	#icon=111
-	stability_factor = ZSH_cc_1
-	
+	political_power_factor = ZSH_cc_1 #政治点数
+	stability_factor = ZSH_cc_2 #稳定度
+	war_support_factor = ZSH_cc_3 #战争支持度
+	party_popularity_stability_factor = ZSH_cc_4 #党派稳定
+	consumer_goods_factor = ZSH_cc_5 #生活消费品系数
+	production_factory_efficiency_gain_factor =ZSH_cc_6 #效率增长
+	industrial_capacity_factory = ZSH_cc_7 #工厂产出
 }

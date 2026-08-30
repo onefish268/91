@@ -24,8 +24,20 @@ add_ideas = {
 	State_run_trade
 }
 
-set_politics = {
+add_dynamic_modifier = {
+	modifier = ZSH_central_committee
+}
 
+#中央委员会开局修正
+set_variable = { ZSH_cc_1 = -0.15} #政治点数
+set_variable = { ZSH_cc_2 = -0.1} #稳定度
+set_variable = { ZSH_cc_3 = -0.1} #战争支持度
+set_variable = { ZSH_cc_4 = -0.1} #党派稳定
+set_variable = { ZSH_cc_5 = 0} #生活消费品系数
+set_variable = { ZSH_cc_6 = 0} #效率增长
+set_variable = { ZSH_cc_7 = 0} #工厂产出
+
+set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48

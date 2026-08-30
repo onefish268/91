@@ -14,8 +14,11 @@
  somewhat_effective_literacy_work: "略有成效的扫盲工作"
  literacy_gradually_improving: "渐有起色的扫盲工作"
  outstanding_literacy_work: "卓有成效的扫盲工作"
- propaganda_war: "宣传战"
+ falling_apart: "军心涣散"
  combat_readiness: "战备状态"
+#动态名族精神
+ ZSH_central_committee: "中央委员会"
+ ZSH_central_committee_tt: "$ZSH_central_committee$追加修正:"
 #经济法案
  planned_economy: "不完善的计划经济"
  semi_developed_planned_economy: "半完善的计划经济"

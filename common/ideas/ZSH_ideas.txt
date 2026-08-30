@@ -111,15 +111,11 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
-		propaganda_war = { #宣传战
-			allowed = {
-				NOT = {
-					has_completed_focus = 8_focus_26
-				}
-			}
-			modifier = {
-				army_non_core_attack_factor = 0.1
-				army_defence_factor = 0.1
+		falling_apart = { #军心涣散
+			targeted_modifier = {
+				tag = ZSH
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
 			}
 		}
 	}
