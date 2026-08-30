@@ -241,4 +241,36 @@ on_actions = {
             }
         }
     }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.1
+					days = 5
+			    }
+            }
+        }
+    }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.2
+					days = 18
+			    }
+            }
+        }
+    }
 }
