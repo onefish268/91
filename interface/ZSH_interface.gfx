@@ -33,6 +33,18 @@ spriteTypes = {
 		name = "GFX_idea_a_troop_with_conviction"
 		textureFile = "gfx/interface/ideas/ZSH/a_troop_with_conviction.png"
 	}
+	spriteType = {
+		name = "GFX_idea_widespread_illiteracy"
+		textureFile = "gfx/interface/ideas/ZSH/widespread_illiteracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_combat_readiness"
+		textureFile = "gfx/interface/ideas/ZSH/combat_readiness.png"
+	}
+	spriteType = {
+		name = "GFX_idea_falling_apart"
+		textureFile = "gfx/interface/ideas/ZSH/falling_apart.png"
+	}
 
 	#经济法案引用
 
