@@ -229,6 +229,7 @@ focus_tree = {
 				remove_idea = zdm_zhanzheng
 				add_idea = zdm_zhanzheng_gai
 			}
+			army_experience = 50
 			add_power_balance_value = {
                 id = ZDM_power_balance
                 value = 0.05
