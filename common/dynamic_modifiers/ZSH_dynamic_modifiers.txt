@@ -3,6 +3,8 @@
 #}
 
 ZSH_central_committee = { #中央委员会
+    icon = "GFX_idea_zywyh"
+
 	political_power_factor = ZSH_cc_1 #政治点数
 	stability_factor = ZSH_cc_2 #稳定度
 	war_support_factor = ZSH_cc_3 #战争支持度
