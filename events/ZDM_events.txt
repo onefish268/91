@@ -38,3 +38,61 @@ country_event = {
         ai_chance = { base = 100 }
     }
 }
+
+country_event = {
+    id = zdm.4
+    title = zdm.4.t
+    desc = zdm.4.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.4.a
+        set_country_flag = yehuozhizhi
+        mark_focus_tree_layout_dirty = yes
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = zdm.5
+    title = zdm.5.t
+    desc = zdm.5.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.5.a
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = zdm.6
+    title = zdm.6.t
+    desc = zdm.6.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.6.a
+        add_equipment_to_stockpile = {
+            type = convoys
+            amount = -50
+        }
+        ai_chance = { base = 100 }
+    }
+}
+
+country_event = {
+    id = zdm.7
+    title = zdm.7.t
+    desc = zdm.7.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = zdm.7.a
+        ai_chance = { base = 100 }
+    }
+}

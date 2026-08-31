@@ -10,13 +10,13 @@ focus_tree = {
 	default = no
 	focus = {
 		id = 9_focus_1
-		icon = GFX_focus_zdm1
-		text_icon = ZDM_focus_style
 		x = 11
 		y = 0
 		cost = 3
+		icon = GFX_focus_zdm1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		completion_reward = {
 			set_power_balance = {
 				id = ZDM_power_balance
@@ -28,13 +28,13 @@ focus_tree = {
 	}
 	focus = {
 		id = 9_focus_2
-		icon = GFX_focus_zdm2
-		text_icon = ZDM_focus_style
 		x = 10
 		y = 2
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm2
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_1
 		}
@@ -44,48 +44,48 @@ focus_tree = {
 				add_idea = zdm1_1
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_3
-		icon = GFX_focus_zdm5
-		text_icon = ZDM_focus_style
 		x = 12
 		y = 2
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm5
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_1
 		}
-		available = {
-		    has_completed_focus = 9_focus_6
-	    }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = zdm1_3
 				add_idea = zdm1_4
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
+		}
+		available = {
+			has_completed_focus = 9_focus_6
 		}
 	}
 	focus = {
 		id = 9_focus_4
-		icon = GFX_focus_zdm3
-		text_icon = ZDM_focus_style
 		x = 10
 		y = 4
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm3
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_2
 		}
@@ -95,21 +95,21 @@ focus_tree = {
 				add_idea = zdm1_2
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_5
-		icon = GFX_focus_zdm6
-		text_icon = ZDM_focus_style
 		x = 12
 		y = 4
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm6
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_3
 		}
@@ -119,21 +119,21 @@ focus_tree = {
 				add_idea = zdm1_5
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_6
-		icon = GFX_focus_zdm4
-		text_icon = ZDM_focus_style
 		x = 10
 		y = 6
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm4
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_4
 		}
@@ -145,27 +145,27 @@ focus_tree = {
 			917 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_7
-		icon = GFX_focus_zdm7
-		text_icon = ZDM_focus_style
 		x = 12
 		y = 6
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm7
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_5
 		}
@@ -175,21 +175,21 @@ focus_tree = {
 				add_idea = zdm1_6
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_8
-		icon = GFX_focus_zdm8
-		text_icon = ZDM_focus_style
 		x = 11
 		y = 8
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm8
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_6
 		}
@@ -202,28 +202,28 @@ focus_tree = {
 				add_idea = zdm1_7
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = -0.05
-                tooltip_side = dws_left_side
-            }
+				id = ZDM_power_balance
+				value = -0.05
+				tooltip_side = dws_left_side
+			}
 			set_country_flag = romu_was_do
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
 		id = 9_focus_9
-		icon = GFX_focus_zdm9
-		text_icon = ZDM_focus_style
 		x = 17
 		y = 0
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm9
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		allow_branch = {
-            ZDM = {
-			    has_country_flag = romu_was_do
-		    }
-	    }
+			ZDM = {
+				has_country_flag = romu_was_do
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = zdm_zhanzheng
@@ -231,48 +231,48 @@ focus_tree = {
 			}
 			army_experience = 50
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_10
-		icon = GFX_focus_zdm10
-		text_icon = ZDM_focus_style
 		x = 16
 		y = 2
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm10
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_9
 		}
-		available = {
-		    has_completed_focus = 9_focus_15
-	    }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = zdm2_3
 				add_idea = zdm2_4
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
+		}
+		available = {
+			has_completed_focus = 9_focus_15
 		}
 	}
 	focus = {
 		id = 9_focus_11
-		icon = GFX_focus_zdm13
-		text_icon = ZDM_focus_style
 		x = 18
 		y = 2
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm13
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_9
 		}
@@ -284,27 +284,27 @@ focus_tree = {
 			917 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-                    type = arms_factory
-                    level = 3
-                    instant_build = yes
-                }
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_12
-		icon = GFX_focus_zdm11
-		text_icon = ZDM_focus_style
 		x = 16
 		y = 4
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm11
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_10
 		}
@@ -314,21 +314,21 @@ focus_tree = {
 				add_idea = zdm2_5
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_13
-		icon = GFX_focus_zdm14
-		text_icon = ZDM_focus_style
 		x = 18
 		y = 4
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm14
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_11
 		}
@@ -343,31 +343,31 @@ focus_tree = {
 			set_technology = {
 				gwtank_chassis = 1
 				basic_light_tank_chassis = 1
-            }
+			}
 			917 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
-                    type = arms_factory
-                    level = 6
-                    instant_build = yes
-                }
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_14
-		icon = GFX_focus_zdm12
-		text_icon = ZDM_focus_style
 		x = 16
 		y = 6
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm12
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_12
 		}
@@ -377,21 +377,21 @@ focus_tree = {
 				add_idea = zdm2_6
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_15
-		icon = GFX_focus_zdm15
-		text_icon = ZDM_focus_style
 		x = 18
 		y = 6
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm15
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_13
 		}
@@ -403,27 +403,27 @@ focus_tree = {
 			917 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-                    type = arms_factory
-                    level = 3
-                    instant_build = yes
-                }
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 		}
 	}
 	focus = {
 		id = 9_focus_16
-		icon = GFX_focus_zdm16
-		text_icon = ZDM_focus_style
 		x = 17
 		y = 8
 		cost = 3
-		cancel_if_invalid = yes
+		icon = GFX_focus_zdm16
 		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = ZDM_focus_style
 		prerequisite = {
 			focus = 9_focus_14
 		}
@@ -436,11 +436,67 @@ focus_tree = {
 				add_idea = zdm2_7
 			}
 			add_power_balance_value = {
-                id = ZDM_power_balance
-                value = 0.05
-                tooltip_side = romu_right_side
-            }
+				id = ZDM_power_balance
+				value = 0.05
+				tooltip_side = romu_right_side
+			}
 			custom_effect_tooltip = ZDM_jiesuo
+		}
+	}
+	focus = {
+		id = 9_focus_17
+		x = 13
+		y = 9
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_ARG_no_gods_no_masters
+		text_icon = ZDM_focus_style
+		allow_branch = {
+			ZDM = {
+				has_country_flag = yehuozhizhi
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = "我们将派出船队来支援野火革命军"
+		}
+	}
+	focus = {
+		id = 9_focus_18
+		x = 13
+		y = 11
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_INS_import_sugar
+		text_icon = ZDM_focus_style
+		prerequisite = {
+			focus = 9_focus_17
+		}
+		completion_reward = {
+			custom_effect_tooltip = "我们将送出物资"
+		}
+	}
+	focus = {
+		id = 9_focus_19
+		x = 13
+		y = 13
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_AST_owen_gun
+		text_icon = ZDM_focus_style
+		prerequisite = {
+			focus = 9_focus_18
+		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+				    id = zdm.6
+				    days = 30
+			    }
+			}
+			custom_effect_tooltip = "我们将送出物资"
 		}
 	}
 }

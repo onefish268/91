@@ -252,7 +252,7 @@ on_actions = {
 				}
                 country_event = {
 				    id = zdm.1
-					days = 5
+					days = 15
 			    }
             }
         }
@@ -262,13 +262,77 @@ on_actions = {
             if = {
                 limit = { 
 					focus_progress = {
-                        focus = 9_focus_2
+                        focus = 9_focus_7
                         progress > 0
                     }
 				}
                 country_event = {
 				    id = zdm.2
 					days = 18
+			    }
+            }
+        }
+    }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_4
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.3
+					days = 15
+			    }
+            }
+        }
+    }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_5
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.4
+					days = 15
+			    }
+            }
+        }
+    }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_19
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.5
+					days = 10
+			    }
+            }
+        }
+    }
+	on_daily_ZDM = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_14
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.7
+					days = 10
 			    }
             }
         }

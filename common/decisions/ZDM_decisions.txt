@@ -179,6 +179,10 @@ ZDM_xuanzhan_categories = {
 					type = puppet_wargoal_focus
 				}
 			}
+			ZHJ = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
 		}
 	}
 	ZDM_8 = {
@@ -201,6 +205,10 @@ ZDM_xuanzhan_categories = {
 					target = ZSB
 					type = puppet_wargoal_focus
 				}
+			}
+			ZSB = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
 			}
 		}
 	}
@@ -225,6 +233,10 @@ ZDM_xuanzhan_categories = {
 					type = puppet_wargoal_focus
 				}
 			}
+			ZSH = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
+			}
 		}
 	}
 	ZDM_10 = {
@@ -247,6 +259,10 @@ ZDM_xuanzhan_categories = {
 					target = ZYX
 					type = puppet_wargoal_focus
 				}
+			}
+			ZYX = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+				enable_country_integration_50_compliance = yes
 			}
 		}
 	}
