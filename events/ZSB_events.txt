@@ -100,7 +100,7 @@ country_event = {#和杜马的通牒
 
 	option = {
         name = ZSB.7.a
-        ai_chance = { base = 100 }
+        ai_chance = { base = 50 }
 
         ZSB = {
             annex_country = {
@@ -110,7 +110,7 @@ country_event = {#和杜马的通牒
     }
     option = {
         name = ZSB.7.b
-        ai_chance = { base = 0 }
+        ai_chance = { base = 50 }
         ZSB = {
             country_event = ZSB.12
             create_wargoal = {
