@@ -366,6 +366,265 @@ characters = {
 		}
 	}
 
+	ZYX_guwen14 = {
+		name = "科斯塔格・科塔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen14.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				GER_reich_minister_of_propaganda
+			}
+			idea_token = ZYX_guwen14
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen15 = {
+		name = "伊斯梅特・克鲁耶齐乌"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen15.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				appeasing_technocrat
+			}
+			idea_token = ZYX_guwen15
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen16 = {
+		name = "菲契里・迪内"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen16.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				PRC_multi_talented_diplomat_no_lar
+			}
+			idea_token = ZYX_guwen16
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen17 = {
+		name = "齐米特尔・贝拉蒂"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen17.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				quartermaster_trainee
+			}
+			idea_token = ZYX_guwen17
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen18 = {
+		name = "贝伊・德尔维纳"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen18.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				IRQ_minister_of_education
+			}
+			idea_token = ZYX_guwen18
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen19 = {
+		name = "贝伊・德尔维纳"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen19.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				GER_reich_minister_of_armaments_todt
+			}
+			idea_token = ZYX_guwen19
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen20 = {
+		name = "希森・弗里奥尼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen20.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				BBA_ALB_fascist_lawyer
+			}
+			idea_token = ZYX_guwen20
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen21 = {
+		name = "科斯塔・切克雷齐"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen21.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				ecomonist_publicist
+			}
+			idea_token = ZYX_guwen21
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen22 = {
+		name = "科乔・塔什科"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen22.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				AFG_director_of_public_health
+			}
+			idea_token = ZYX_guwen22
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen23 = {
+		name = "杰米尔・迪诺"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen23.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				CHI_president_of_examination_yuan
+			}
+			idea_token = ZYX_guwen23
+			slot = political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = 3_focus_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZYX_guwen24 = {
+		name = "谢夫克特・斯特林加"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen24.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				army_chief_entrenchment_2
+			}
+			idea_token = ZYX_guwen24
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	ZYX_guwen25 = {
+		name = "哈利姆・斯帕希亚"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen25.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				navy_chief_decisive_battle_3
+			}
+			idea_token = ZYX_guwen25
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
 	#将军
 	ZYX_ppln = {
 		name = "佩帕罗妮"

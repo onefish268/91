@@ -33,6 +33,15 @@ set_popularities = {
 
 recruit_character = ZDM_daiweisi
 recruit_character = ZDM_luomu
+recruit_character = ZDM_guwen26
+recruit_character = ZDM_guwen27
+recruit_character = ZDM_guwen28
+recruit_character = ZDM_guwen29
+recruit_character = ZDM_guwen30
+recruit_character = ZDM_guwen31
+recruit_character = ZDM_guwen32
+recruit_character = ZDM_guwen33
+recruit_character = ZDM_guwen34
 
 set_variable = { another_country_leader_group = 66 }
 

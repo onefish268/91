@@ -28,4 +28,179 @@ characters = {
 			expire = "2000.1.1.1"
 		}
 	}	
+	#顾问
+	ZDM_guwen26 = {
+		name = "切马尔・卡拉奥斯曼尼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen26.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				cultural_preserver
+			}
+			idea_token = ZDM_guwen26
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen27 = {
+		name = "塞菲・弗拉马西"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen27.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_housing_front_champion
+			}
+			idea_token = ZDM_guwen27
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen28 = {
+		name = "科尔・米耶达"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen28.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_housing_front_champion
+			}
+			idea_token = ZDM_guwen28
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen29 = {
+		name = "迈扎特・弗拉舍里"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen29.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_father_of_industrialization
+			}
+			idea_token = ZDM_guwen29
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen30 = {
+		name = "马利奇・布沙蒂"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen30.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_popular_lawyer
+			}
+			idea_token = ZDM_guwen30
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen31 = {
+		name = "埃克雷姆・利博霍瓦"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen31.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_president_of_the_senate
+			}
+			idea_token = ZDM_guwen31
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen32 = {
+		name = "梅达尔・什图拉"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen32.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_miniter_of_economy_and_commerce
+			}
+			idea_token = ZDM_guwen32
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen33 = {
+		name = "斯皮罗・巴卡利"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen33.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				JUNO_conservative_businessman
+			}
+			idea_token = ZDM_guwen33
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZDM_guwen34 = {
+		name = "康斯坦丁・波斯尼亚库"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZIM/guwen34.png"
+			}
+		}
+		advisor = { 
+			traits = {
+				fascist_council_trait
+			}
+			idea_token = ZDM_guwen34
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#军队
+	#理论家
+	#将军
 }

@@ -1,0 +1,143 @@
+﻿#圣杯兽耳交流领
+capital = 275
+set_oob = "EAS_1936"
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		##basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+		pre_dreadnoughts = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_cosmetic_tag = EAS_ENG
+	# add_to_tech_sharing_group = commonwealth_research
+}
+
+set_technology = {
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+set_convoys = 100
+###oob = "ABK_1936"
+
+set_research_slots = 1
+
+set_stability = 0.2
+set_war_support = 0.6
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 77
+	fascism = 7
+	communism = 5
+	neutrality = 11
+}
+
+
+recruit_character = EAS_xialuote
+
+set_variable = { another_country_leader_group = 66 }
+
+create_equipment_variant = {
+	name = "缅因猫级"
+	type = ship_hull_pre_dreadnought
+	# name_group = NAF_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "狸花猫级"			
+	type = ship_hull_light_1
+	# name_group = NAF_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+}
+# Light Cruisers #
+create_equipment_variant = {
+	name = "英短级"					
+	type = ship_hull_cruiser_coastal_defense_ship
+	# name_group = NAF_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "布偶猫级"
+	type = ship_hull_cruiser_coastal_defense_ship
+	# name_group = NAF_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "新加坡猫级"
+	type = ship_hull_submarine_1
+	# name_group = NAF_SS_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+}
