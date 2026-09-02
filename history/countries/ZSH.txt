@@ -55,6 +55,7 @@ set_popularities = {
 activate_mission = Bandits_causing_trouble
 
 recruit_character = ZSH_liemao
+recruit_character = ZSH_Mingjiu
 
 
 

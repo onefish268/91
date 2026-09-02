@@ -2735,3 +2735,26 @@ defined_text = {
 		localization_key = GFX_SA_ERROR
 	}
 }
+
+#开始战斗前的文本提示
+
+defined_text = {
+	name = ready_to_start_block_d
+
+	text = {
+		trigger = {
+			has_country_flag = ZYX_select_empty
+			check_variable = { tankgoal_tens_number < 4 }
+		}
+		localization_key = ready_to_start_block_d_0
+	}
+	text = {
+		trigger = { has_country_flag = ZYX_select_empty }
+		localization_key = ready_to_start_block_d_1
+	}
+	text = {
+		trigger = { check_variable = { tankgoal_tens_number < 4 } }
+		localization_key = ready_to_start_block_d_2
+	}
+	text = { localization_key = ready_to_start_block_d_3 }
+}

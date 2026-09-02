@@ -49,7 +49,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ZYX_tankgaol_factions_ui_window"
 		orientation = center_right
-		position = { x = -2500 y = -400 }
+		position = { x = -1100 y = -400 }
 		size = { width = 1600 height = 533 }
 		#clipping = no
 		moveable = yes
@@ -61,7 +61,7 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "ZYX_tankgoal_backgrounnd"
+			name = "ZYX_tankgoal_background"
 			spriteType = GFX_ZYX_tankgoal_photo # 替换为你自己的sprite名称
 			position = { x = 0 y = 0 }
 		}
@@ -543,6 +543,76 @@ guiTypes = {
 		}
 	}
 
+	containerWindowType = {#先后手选择弹窗（附带开战提示）
+		name = "ready_to_start_block"
+		size = { width = 480 height=382 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "select_cancel_block_title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = ready_to_start_block_t
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "select_cancel_block_desc"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[ready_to_start_block_d]"
+			maxWidth = 430
+			maxHeight = 215
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "first_button"
+			position = { x=20 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = first_button_d
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "cancel_button"
+			position = { x=310 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "last_button"
+			position = { x=165 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = last_button_d
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+		}
+	}
+
 	containerWindowType = {#卡组查看方块 由gridbox管理
 		name = "selected_kard"
 
@@ -596,7 +666,7 @@ guiTypes = {
 
 					gridBoxType = {
 						name = "selected_kards"
-						size = { width = 4000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+						size = { width = 4700 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
 	        			slotsize = { width = 156 height = 250 }
 	    	    		max_slots_horizontal = 30
 		    		    max_slots_vertical = 1  # 10行，超出父容器高度
@@ -612,6 +682,71 @@ guiTypes = {
 			quadTextureSprite ="GFX_production_line_arrow_right"
 			pdx_tooltip = leave_the_selected_console
 			scale = 2.5
+		}
+	}
+
+	containerWindowType = {#战斗界面
+		name = "fight_console"
+		position = { x = 100 y = 300 }
+		size = { width = 1200 height = 800 }
+		clipping = no
+		moveable = yes
+
+		background = {
+			position = { x = 200 y = 0 }
+			name = "fight_console_background"
+			spriteType = tankgoal_background
+			scale = 1
+		}
+
+		buttonType = {
+			name = "leave_fight_button"
+			position = { x = 1300 y = 0 }
+			spriteType = GFX_ZYX_tankgoal_out_button
+		}
+		
+
+		gridBoxType = {
+			name = "player_kards"
+			position = { x = 0 y = 380 }
+			size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+	        slotsize = { width = 80 height = 250 }
+    		max_slots_horizontal = 30
+   		    max_slots_vertical = 1  # 10行，超出父容器高度
+	   		#add_horizontal = yes
+	   		format = "UPPER_LEFT"
+		}
+
+		gridBoxType = {
+			name = "AI_kards"
+			position = { x = 300 y = 0 }
+			size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+   			slotsize = { width = 80 height = 250 }
+    		max_slots_horizontal = 30
+   		    max_slots_vertical = 1  # 10行，超出父容器高度
+    		#add_horizontal = yes
+    		format = "UPPER_LEFT"
+		}
+	}
+
+	containerWindowType = {#战斗玩家持卡方块
+		name = "player_kard"
+
+		buttonType = {
+			name = "player_kard_button"
+			spriteType = Total__kards #Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.8
+		}
+	}
+	containerWindowType = {#战斗AI持卡方块
+		name = "AI_kard"
+
+		buttonType = {
+			name = "AI_kard_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.8
 		}
 	}
 }

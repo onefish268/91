@@ -10,6 +10,12 @@ spriteTypes = {
 		texturefile = "gfx/tankgoal/white_digital_number.png"
 		noOfFrames = 10
     }
+
+	spriteType = {#黑色数码数字
+        name = black_digital_number
+		texturefile = "gfx/tankgoal/black_digital_number.png"
+		noOfFrames = 10
+    }
 	
 	spriteType = {#黑色背景
         name = black_background
@@ -23,6 +29,11 @@ spriteTypes = {
 	spriteType = {#卡组界面按钮
 		name = tankgoal_selected_console_button
 		texturefile = "gfx/tankgoal/select_cards/tankgoal_selected_console_button.png"
+	}
+
+	spriteType = {#战斗界面背景
+		name = tankgoal_background
+		texturefile = "gfx/tankgoal/tankgoal_background.png"
 	}
 
 	#学院们、兵种们的图标
@@ -772,22 +783,27 @@ spriteTypes = { #展示设定
 	spriteType = {
         name = "ENG_effect__bld"
 		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect__bld.png"
+		#noOfFrames = 2
     }
 	spriteType = {
         name = "ENG_effect__dj"
 		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect__dj.png"
+		#noOfFrames = 2
     }
 	spriteType = {
         name = "ENG_effect__hjkj"
 		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect__hjkj.png"
+		#noOfFrames = 2
     }	
 	spriteType = {
         name = "ENG_effect__tp"
 		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect__tp.png"
+		#noOfFrames = 2
     }
 	spriteType = {
         name = "ENG_effect__zuji"
 		texturefile = "gfx\tankgoal\select_cards\ENG\effect\ENG_effect__zuji.png"
+		#noOfFrames = 2
     }
 	#ENG_infantry  #######################
 	spriteType = {

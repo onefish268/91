@@ -224,6 +224,13 @@
   tip_to_player_8: "如果出现了任何图片重复、错位、崩坏，可以及时向我们反馈，我们会尽快作出回答并修正（）"
   select_cancel_block_t: "是否决定执行§R取消§!的操作？"
   select_cancel_block_d: "注意！该操作会让你之前选取的卡组全部失效！请你再三考虑是否接受这个后果！"
+  ready_to_start_block_t: "开战前的准备"
+  ready_to_start_block_d_0: "注意！你目前缺少指派一名指挥官，并且牌数未能达到30张，这是没有办法开一局的。"
+  ready_to_start_block_d_1: "注意！你目前缺少指派一名指挥官，这对于你的对局可能带有一定的劣势。\n你希望是先手（开局四张牌，对手五张）还是后手（开局五张牌，对手四张）？"
+  ready_to_start_block_d_2: "注意！你的牌数未能达到30张，这是没有办法开一局的。"
+  ready_to_start_block_d_3: "你希望是先手（开局四张牌，对手五张）还是后手（开局五张牌，对手四张）？"
+  first_button_d: "选择§R先手§!"
+  last_button_d: "选择§G后手§!"
 
 
 

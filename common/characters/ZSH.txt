@@ -14,4 +14,26 @@ characters = {
 			id= -1
 		}
 	}	
+
+	ZSH_Mingjiu = {
+		name = "茗·旧"
+		portraits = {
+			army = {
+				large = GFX_ZSH_Mingjiu
+				small = GFX_ZSH_Mingjiu_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				organizer
+				trickster
+				skilled_staffer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
 }

@@ -847,7 +847,146 @@ ZYX_add_kard_to_kards = {
 	}
 }
 
+#P社，我草泥马 你给的随机函数随机性太TM乐色了，丢数学里算正态分布算怀疑值都有99.9999999999% 我不信我是那0.0000000001% 绝对不可能！
+#这样的代码简直是耻辱，耻辱啊！！！！
+ZYX_get_random_number = {
+	hidden_effect = {
+		random_list = {
+			1 = { modifier = { check_variable = { ZYX_max_number < 1 } factor = 0 } set_variable = { ZYX_random_number = 0 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 2 } factor = 0 } set_variable = { ZYX_random_number = 1 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 3 } factor = 0 } set_variable = { ZYX_random_number = 2 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 4 } factor = 0 } set_variable = { ZYX_random_number = 3 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 5 } factor = 0 } set_variable = { ZYX_random_number = 4 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 6 } factor = 0 } set_variable = { ZYX_random_number = 5 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 7 } factor = 0 } set_variable = { ZYX_random_number = 6 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 8 } factor = 0 } set_variable = { ZYX_random_number = 7 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 9 } factor = 0 } set_variable = { ZYX_random_number = 8 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 10 } factor = 0 } set_variable = { ZYX_random_number = 9 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 11 } factor = 0 } set_variable = { ZYX_random_number = 10 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 12 } factor = 0 } set_variable = { ZYX_random_number = 11 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 13 } factor = 0 } set_variable = { ZYX_random_number = 12 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 14 } factor = 0 } set_variable = { ZYX_random_number = 13 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 15 } factor = 0 } set_variable = { ZYX_random_number = 14 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 16 } factor = 0 } set_variable = { ZYX_random_number = 15 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 17 } factor = 0 } set_variable = { ZYX_random_number = 16 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 18 } factor = 0 } set_variable = { ZYX_random_number = 17 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 19 } factor = 0 } set_variable = { ZYX_random_number = 18 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 20 } factor = 0 } set_variable = { ZYX_random_number = 19 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 21 } factor = 0 } set_variable = { ZYX_random_number = 20 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 22 } factor = 0 } set_variable = { ZYX_random_number = 21 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 23 } factor = 0 } set_variable = { ZYX_random_number = 22 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 24 } factor = 0 } set_variable = { ZYX_random_number = 23 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 25 } factor = 0 } set_variable = { ZYX_random_number = 24 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 26 } factor = 0 } set_variable = { ZYX_random_number = 25 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 27 } factor = 0 } set_variable = { ZYX_random_number = 26 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 28 } factor = 0 } set_variable = { ZYX_random_number = 27 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 29 } factor = 0 } set_variable = { ZYX_random_number = 28 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 30 } factor = 0 } set_variable = { ZYX_random_number = 29 } }
+		}
+	}
+}
+
 #路纵崎岖，亦不怕受磨练，愿一生中苦痛快乐也体验
+
+#随机给AI发一组卡组
+ZYX_tankgoal_random_kards_to_AI = {
+	random_list = {
+		1 = {
+			clear_array = tankgoal_AI_kards
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 13 }
+			add_to_array = { tankgoal_AI_kards = 13 }
+		}
+	}
+}
+
+#给双方分发初始卡牌
+ZYX_default_kards_deliver = {
+	ZYX_add_kard_to_kards = yes
+	ZYX_tankgoal_random_kards_to_AI = yes
+	clear_array = player_kards_array
+	clear_array = AI_kards_array
+	set_temp_variable = { i = 5 }
+	set_temp_variable = { ii = 4 }
+	if = {
+		limit = { has_country_flag = player_first }
+		while_loop_effect = {
+			limit = { check_variable = { ii > 0 } }
+			set_variable = {  ZYX_max_number = selected_console_show_array^num }
+			ZYX_get_random_number = yes
+			add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
+			remove_from_array = {
+				array = selected_console_show_array
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { ii = -1 }
+		}
+		while_loop_effect = {
+			limit = { check_variable = { i > 0 } }
+			set_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+			ZYX_get_random_number = yes
+			add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
+			remove_from_array = {
+				array = tankgoal_AI_kards
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { i = -1 }
+		}
+	}
+	else = {
+		while_loop_effect = {
+			limit = { check_variable = { i > 0 } }
+			check_variable = {  ZYX_max_number = selected_console_show_array^num }
+			ZYX_get_random_number = yes
+			add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
+			remove_from_array = {
+				array = selected_console_show_array
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { i = -1 }
+		}
+		while_loop_effect = {
+			limit = { check_variable = { ii > 0 } }
+			check_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+			ZYX_get_random_number = yes
+			add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
+			remove_from_array = {
+				array = tankgoal_AI_kards
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { ii = -1 }
+		}
+	}
+}
+
+ZYX_AI_movement = {}
 
 #卡牌进入战场的即时效果
 ZYX_tankgoal_effect_before_war = {

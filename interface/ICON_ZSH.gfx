@@ -15,4 +15,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/sprite_animation_speed.shader"
 		noOfFrames = 1
 	}
+
+	spriteType = {
+		name = GFX_ZSH_Mingjiu
+		textureFile = "gfx/leaders/ZSH/ZSH_Mingjiu.png"
+	}
+	spriteType = {
+		name = GFX_ZSH_Mingjiu_small
+		textureFile = "gfx/leaders/ZSH/ZSH_Mingjiu_small.png"
+	}
 }
