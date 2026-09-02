@@ -140,6 +140,10 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZIM/luomu.png"
     }
     spriteType = {
+        name = "GFX_YSS_mlhm"
+        texturefile = "gfx/leaders/YSS/mlhm.png"
+    }
+    spriteType = {
         name = "GFX_EAS_anan"
         texturefile = "gfx/leaders/ZIM/anan.png"
     }
