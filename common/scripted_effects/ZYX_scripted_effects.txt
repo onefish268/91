@@ -6,8 +6,584 @@
 #vector< a (*func)(b,c,d,e……) > functions #自带函数、效果
 #}
 #运用多级索引 国家->兵种->遍历
-
 #我求求P🐍把结构体、STL容器、字典弄给我们吧，我什么都不会做的，但是我真的太需要这些了，没有它们的日子，我怎么活（）
+#硬编码导致的究极屎山代码
+ZYX_add_all_units_number = {#添加106个卡牌的所有！数值！
+	ZYX_add_all_units_HP = yes
+	ZYX_add_all_units_attack = yes
+	ZYX_add_all_units_defence = yes
+	ZYX_add_all_units_action = yes
+}
+
+ZYX_add_all_units_HP = {#生命
+	# ==================== HP ====================
+	# ==================== USA (1-16) ====================
+	# USA_effect (1-5) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# USA_infantry (6-12) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# USA_tank (13-16) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== ENG (17-32) ====================
+	# ENG_effect (17-21) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# ENG_infantry (22-28) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# ENG_tank (29-32) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== FRA (33-37) ====================
+	# FRA_effect (33) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# FRA_infantry (34) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# FRA_tank (35-37) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== CHI (38-58) ====================
+	# CHI_infantry (38-43) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# CHI_tank (44-58) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== SOV (59-68) ====================
+	# SOV_effect (59-63) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# SOV_infantry (64) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# SOV_tank (65-68) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== GER (69-93) ====================
+	# GER_effect (69-74) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# GER_infantry (75-82) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# GER_tank (83-93) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== JAP (94-99) ====================
+	# JAP_infantry (94-96) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# JAP_tank (97-99) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+
+	# ==================== ITA (100-106) ====================
+	# ITA_effect (100) HP=-1 attack=-1 defence=-1
+	add_to_array = { tankgoal_unit_HP = -1 }
+	# ITA_infantry (101-103) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	# ITA_tank (104-106) HP=1 attack=1 defence=1
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 1 }
+}
+ZYX_add_all_units_attack = {#攻击
+	# ==================== ATTACK ====================
+	# USA_effect (1-5) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# USA_infantry (6-12) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# USA_tank (13-16) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# ENG_effect (17-21) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# ENG_infantry (22-28) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# ENG_tank (29-32) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# FRA_effect (33) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# FRA_infantry (34) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# FRA_tank (35-37) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# CHI_infantry (38-43) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# CHI_tank (44-58) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# SOV_effect (59-63) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# SOV_infantry (64) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# SOV_tank (65-68) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# GER_effect (69-74) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# GER_infantry (75-82) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# GER_tank (83-93) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# JAP_infantry (94-96) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# JAP_tank (97-99) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+
+	# ITA_effect (100) attack=-1
+	add_to_array = { tankgoal_unit_attack = -1 }
+	# ITA_infantry (101-103) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	# ITA_tank (104-106) attack=1
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 1 }
+}
+ZYX_add_all_units_defence = {#防御
+	# ==================== DEFENCE ====================
+	# USA_effect (1-5) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# USA_infantry (6-12) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# USA_tank (13-16) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# ENG_effect (17-21) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# ENG_infantry (22-28) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# ENG_tank (29-32) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# FRA_effect (33) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# FRA_infantry (34) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# FRA_tank (35-37) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# CHI_infantry (38-43) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# CHI_tank (44-58) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# SOV_effect (59-63) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# SOV_infantry (64) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# SOV_tank (65-68) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# GER_effect (69-74) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# GER_infantry (75-82) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# GER_tank (83-93) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# JAP_infantry (94-96) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# JAP_tank (97-99) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+
+	# ITA_effect (100) defence=-1
+	add_to_array = { tankgoal_unit_defence = -1 }
+	# ITA_infantry (101-103) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	# ITA_tank (104-106) defence=1
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 1 }
+}
+ZYX_add_all_units_action = {#行动
+	# ==================== ACTION ====================
+	# ==================== USA (1-16) ====================
+	# USA_effect (1-5) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# USA_infantry (6-12) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# USA_tank (13-16) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== ENG (17-32) ====================
+	# ENG_effect (17-21) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# ENG_infantry (22-28) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# ENG_tank (29-32) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== FRA (33-37) ====================
+	# FRA_effect (33) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	# FRA_infantry (34) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	# FRA_tank (35-37) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== CHI (38-58) ====================
+	# CHI_infantry (38-43) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# CHI_tank (44-58) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== SOV (59-68) ====================
+	# SOV_effect (59-63) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# SOV_infantry (64) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	# SOV_tank (65-68) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== GER (69-93) ====================
+	# GER_effect (69-74) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# GER_infantry (75-82) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# GER_tank (83-93) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== JAP (94-99) ====================
+	# JAP_infantry (94-96) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# JAP_tank (97-99) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+
+	# ==================== ITA (100-106) ====================
+	# ITA_effect (100) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	# ITA_infantry (101-103) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	# ITA_tank (104-106) action=1
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+	add_to_array = { tankgoal_unit_action = 1 }
+}
+
 
 
 #卡牌选取界面的重载
@@ -271,7 +847,146 @@ ZYX_add_kard_to_kards = {
 	}
 }
 
+#P社，我草泥马 你给的随机函数随机性太TM乐色了，丢数学里算正态分布算怀疑值都有99.9999999999% 我不信我是那0.0000000001% 绝对不可能！
+#这样的代码简直是耻辱，耻辱啊！！！！
+ZYX_get_random_number = {
+	hidden_effect = {
+		random_list = {
+			1 = { modifier = { check_variable = { ZYX_max_number < 1 } factor = 0 } set_variable = { ZYX_random_number = 0 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 2 } factor = 0 } set_variable = { ZYX_random_number = 1 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 3 } factor = 0 } set_variable = { ZYX_random_number = 2 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 4 } factor = 0 } set_variable = { ZYX_random_number = 3 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 5 } factor = 0 } set_variable = { ZYX_random_number = 4 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 6 } factor = 0 } set_variable = { ZYX_random_number = 5 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 7 } factor = 0 } set_variable = { ZYX_random_number = 6 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 8 } factor = 0 } set_variable = { ZYX_random_number = 7 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 9 } factor = 0 } set_variable = { ZYX_random_number = 8 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 10 } factor = 0 } set_variable = { ZYX_random_number = 9 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 11 } factor = 0 } set_variable = { ZYX_random_number = 10 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 12 } factor = 0 } set_variable = { ZYX_random_number = 11 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 13 } factor = 0 } set_variable = { ZYX_random_number = 12 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 14 } factor = 0 } set_variable = { ZYX_random_number = 13 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 15 } factor = 0 } set_variable = { ZYX_random_number = 14 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 16 } factor = 0 } set_variable = { ZYX_random_number = 15 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 17 } factor = 0 } set_variable = { ZYX_random_number = 16 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 18 } factor = 0 } set_variable = { ZYX_random_number = 17 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 19 } factor = 0 } set_variable = { ZYX_random_number = 18 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 20 } factor = 0 } set_variable = { ZYX_random_number = 19 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 21 } factor = 0 } set_variable = { ZYX_random_number = 20 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 22 } factor = 0 } set_variable = { ZYX_random_number = 21 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 23 } factor = 0 } set_variable = { ZYX_random_number = 22 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 24 } factor = 0 } set_variable = { ZYX_random_number = 23 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 25 } factor = 0 } set_variable = { ZYX_random_number = 24 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 26 } factor = 0 } set_variable = { ZYX_random_number = 25 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 27 } factor = 0 } set_variable = { ZYX_random_number = 26 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 28 } factor = 0 } set_variable = { ZYX_random_number = 27 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 29 } factor = 0 } set_variable = { ZYX_random_number = 28 } }
+			1 = { modifier = { check_variable = { ZYX_max_number < 30 } factor = 0 } set_variable = { ZYX_random_number = 29 } }
+		}
+	}
+}
+
 #路纵崎岖，亦不怕受磨练，愿一生中苦痛快乐也体验
+
+#随机给AI发一组卡组
+ZYX_tankgoal_random_kards_to_AI = {
+	random_list = {
+		1 = {
+			clear_array = tankgoal_AI_kards
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 6 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 7 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 8 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 9 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 10 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 11 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 12 }
+			add_to_array = { tankgoal_AI_kards = 13 }
+			add_to_array = { tankgoal_AI_kards = 13 }
+		}
+	}
+}
+
+#给双方分发初始卡牌
+ZYX_default_kards_deliver = {
+	ZYX_add_kard_to_kards = yes
+	ZYX_tankgoal_random_kards_to_AI = yes
+	clear_array = player_kards_array
+	clear_array = AI_kards_array
+	set_temp_variable = { i = 5 }
+	set_temp_variable = { ii = 4 }
+	if = {
+		limit = { has_country_flag = player_first }
+		while_loop_effect = {
+			limit = { check_variable = { ii > 0 } }
+			set_variable = {  ZYX_max_number = selected_console_show_array^num }
+			ZYX_get_random_number = yes
+			add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
+			remove_from_array = {
+				array = selected_console_show_array
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { ii = -1 }
+		}
+		while_loop_effect = {
+			limit = { check_variable = { i > 0 } }
+			set_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+			ZYX_get_random_number = yes
+			add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
+			remove_from_array = {
+				array = tankgoal_AI_kards
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { i = -1 }
+		}
+	}
+	else = {
+		while_loop_effect = {
+			limit = { check_variable = { i > 0 } }
+			check_variable = {  ZYX_max_number = selected_console_show_array^num }
+			ZYX_get_random_number = yes
+			add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
+			remove_from_array = {
+				array = selected_console_show_array
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { i = -1 }
+		}
+		while_loop_effect = {
+			limit = { check_variable = { ii > 0 } }
+			check_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+			ZYX_get_random_number = yes
+			add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
+			remove_from_array = {
+				array = tankgoal_AI_kards
+				index = ZYX_random_number
+			}
+			add_to_temp_variable = { ii = -1 }
+		}
+	}
+}
+
+ZYX_AI_movement = {}
 
 #卡牌进入战场的即时效果
 ZYX_tankgoal_effect_before_war = {
