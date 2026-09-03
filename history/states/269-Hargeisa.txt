@@ -2,7 +2,7 @@ state = {
 	id = 269
 	name = "STATE_269"
 	manpower = 2264700
-	state_category = two
+	state_category = eleven
 
 	history = {
 		owner = YSS
@@ -22,6 +22,7 @@ state = {
 			industrial_complex = 2
 			arms_factory = 2
 		}
+		set_state_flag = has_city_story
 	}
 
 	provinces = {

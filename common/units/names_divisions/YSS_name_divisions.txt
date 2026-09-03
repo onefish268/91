@@ -1,0 +1,139 @@
+YSS_MIMA_00 = 
+{
+	name = "索维耶特地方部队战斗序列"
+
+	for_countries = { YSS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" "militia" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "联盟红军第%d地方师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "联盟红军第%d地方师" }
+    	2 = { "联盟红军第%d地方师" }
+    	3 = { "联盟红军第%d地方师" }
+    	4 = { "联盟红军第%d地方师" }
+    	5 = { "联盟红军第%d地方师" }
+    	6 = { "联盟红军第%d地方师" }
+    	7 = { "联盟红军第%d地方师" }
+	}
+}
+
+YSS_RAT_00 = 
+{
+	name = "联盟红军战斗序列"
+
+	for_countries = { YSS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "联盟红军第%d步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "联盟红军第%d步兵师" }
+    	2 = { "联盟红军第%d步兵师" }
+    	3 = { "联盟红军第%d步兵师" }
+    	4 = { "联盟红军第%d步兵师" }
+    	5 = { "联盟红军第%d步兵师" }
+    	6 = { "联盟红军第%d步兵师" }
+    	7 = { "联盟红军第%d步兵师" }
+	}
+}
+
+YSS_RAT_01 = 
+{
+	name = "联盟红军机动单位战斗序列"
+
+	for_countries = { YSS }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "联盟红军第%d机动军团"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "联盟红军第%d机动军团" }
+		2 = { "联盟红军第%d机动军团" }
+	}
+}
+
+
+
+YSS_MOE_00 = 
+{
+	name = "联盟红军装甲战斗序列"
+
+	for_countries = { YSS }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "联盟红军第%d坦克军"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+    	1 = { "联盟红军第%d坦克军" }
+    	2 = { "联盟红军第%d坦克军" }
+    	3 = { "联盟红军第%d坦克军" }
+    	4 = { "联盟红军第%d坦克军" }
+    	5 = { "联盟红军第%d坦克军" }
+	}	
+}
+
+YSS_KII_00 = 
+{
+	name = "联盟红军近卫兵战斗序列"
+
+	for_countries = { YSS }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "联盟红军第%d近卫师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "联盟红军第%d近卫师" }
+		2 = { "联盟红军第%d近卫师" }
+		3 = { "联盟红军第%d近卫师" }
+    	4 = { "联盟红军第%d近卫师" }
+    	5 = { "联盟红军第%d近卫师" }
+    	6 = { "联盟红军第%d近卫师" }
+    	7 = { "联盟红军第%d近卫师" }
+	}
+}

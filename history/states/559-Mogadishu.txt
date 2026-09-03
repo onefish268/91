@@ -2,7 +2,7 @@ state = {
 	id = 559
 	name = "STATE_559"
 	manpower = 2854895
-	state_category = four
+	state_category = eleven
 	history = {
 		owner = YSS
 		add_core_of = YSS
@@ -26,10 +26,12 @@ state = {
 			air_base = 1
 			industrial_complex = 1
 			arms_factory = 1
+			dockyard = 3
 			10928 = {
 				naval_base = 2
 			}
 		}
+		set_state_flag = has_city_story
 	}
 	provinces = { 10928 }
 }

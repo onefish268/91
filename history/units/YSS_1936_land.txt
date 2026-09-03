@@ -1,0 +1,875 @@
+division_template = {
+    name = "索维耶特地方军区兵团"
+
+	division_names_group = YSS_MIMA_00
+
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 1 y = 0 }
+    }
+}
+division_template = {
+    name = "联盟红军步兵师序列"
+
+	division_names_group = YSS_RAT_00
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+}
+division_template = {
+    name = "联盟红军近卫军步兵师序列"
+
+	division_names_group = YSS_KII_00
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+    }
+}
+
+
+units = {#单位
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 1
+		}
+		#位置(城市ID)
+		location = 5010
+		#模板名称
+		division_template = "联盟红军近卫军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.5
+		#装备数量(%)
+		start_equipment_factor = 1
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 2
+		}
+		#位置(城市ID)
+		location = 5010
+		#模板名称
+		division_template = "联盟红军近卫军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.5
+		#装备数量(%)
+		start_equipment_factor = 1
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 3
+		}
+		#位置(城市ID)
+		location = 5010
+		#模板名称
+		division_template = "联盟红军近卫军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.5
+		#装备数量(%)
+		start_equipment_factor = 1
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 4
+		}
+		#位置(城市ID)
+		location = 5010
+		#模板名称
+		division_template = "联盟红军近卫军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.5
+		#装备数量(%)
+		start_equipment_factor = 1
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 5
+		}
+		#位置(城市ID)
+		location = 5010
+		#模板名称
+		division_template = "联盟红军近卫军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.5
+		#装备数量(%)
+		start_equipment_factor = 1
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 1
+		}
+		#位置(城市ID)
+		location = 4954
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 2
+		}
+		#位置(城市ID)
+		location = 1984
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 3
+		}
+		#位置(城市ID)
+		location = 1984
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 4
+		}
+		#位置(城市ID)
+		location = 12766
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 5
+		}
+		#位置(城市ID)
+		location = 12766
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 6
+		}
+		#位置(城市ID)
+		location = 12766
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 7
+		}
+		#位置(城市ID)
+		location = 12806
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 8
+		}
+		#位置(城市ID)
+		location = 12806
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 9
+		}
+		#位置(城市ID)
+		location = 8124
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 10
+		}
+		#位置(城市ID)
+		location = 5068
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 11
+		}
+		#位置(城市ID)
+		location = 5068
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 12
+		}
+		#位置(城市ID)
+		location = 1939
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 13
+		}
+		#位置(城市ID)
+		location = 10928
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 14
+		}
+		#位置(城市ID)
+		location = 10928
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 15
+		}
+		#位置(城市ID)
+		location = 10928
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 16
+		}
+		#位置(城市ID)
+		location = 5210
+		#模板名称
+		division_template = "联盟红军步兵师序列"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.6
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 1
+		}
+		#位置(城市ID)
+		location = 12806
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.1
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 2
+		}
+		#位置(城市ID)
+		location = 12806
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 3
+		}
+		#位置(城市ID)
+		location = 12806
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 4
+		}
+		#位置(城市ID)
+		location = 12826
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 20
+		}
+		#位置(城市ID)
+		location = 12826
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 5
+		}
+		#位置(城市ID)
+		location = 10126
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 6
+		}
+		#位置(城市ID)
+		location = 10126
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 7
+		}
+		#位置(城市ID)
+		location = 5047
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 21
+		}
+		#位置(城市ID)
+		location = 5047
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 8
+		}
+		#位置(城市ID)
+		location = 2040
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 22
+		}
+		#位置(城市ID)
+		location = 2040
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 9
+		}
+		#位置(城市ID)
+		location = 13544
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 30
+		}
+		#位置(城市ID)
+		location = 13544
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 10
+		}
+		#位置(城市ID)
+		location = 8124
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 23
+		}
+		#位置(城市ID)
+		location = 8124
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 11
+		}
+		#位置(城市ID)
+		location = 8124
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 12
+		}
+		#位置(城市ID)
+		location = 8124
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 13
+		}
+		#位置(城市ID)
+		location = 13496
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 14
+		}
+		#位置(城市ID)
+		location = 10921
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 24
+		}
+		#位置(城市ID)
+		location = 10921
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 15
+		}
+		#位置(城市ID)
+		location = 8036
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 16
+		}
+		#位置(城市ID)
+		location = 2066
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 25
+		}
+		#位置(城市ID)
+		location = 2066
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 17
+		}
+		#位置(城市ID)
+		location = 1964
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 18
+		}
+		#位置(城市ID)
+		location = 6020
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 26
+		}
+		#位置(城市ID)
+		location = 6020
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 19
+		}
+		#位置(城市ID)
+		location = 1939
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 27
+		}
+		#位置(城市ID)
+		location = 1939
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 28
+		}
+		#位置(城市ID)
+		location = 1939
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+	division= {#模板
+		division_name = {#师名称
+			#史实番号
+			is_name_ordered = yes
+			#顺序位置
+			name_order = 29
+		}
+		#位置(城市ID)
+		location = 1939
+		#模板名称
+		division_template = "索维耶特地方军区兵团"
+		#经验等级(0.9为骷髅师)
+		start_experience_factor = 0.3
+		#装备数量(%)
+		start_equipment_factor = 0.2
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "YSS"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 20
+	}
+}

@@ -260,6 +260,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/gui/city_pic/Lusaka_city_pic.dds"
 	}
     SpriteType = {
+		name = "GFX_ydsybb_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/ydsybb_city_pic.dds"
+	}
+    SpriteType = {
+		name = "GFX_hegs_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/hegs_city_pic.dds"
+	}
+    SpriteType = {
+		name = "GFX_ktm_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/ktm_city_pic.dds"
+	}
+    SpriteType = {
+		name = "GFX_mjds_city_pic"
+		texturefile = "gfx/interface/gui/city_pic/mjds_city_pic.dds"
+	}
+    SpriteType = {
 		name = "GFX_idea_dws_society"
 		texturefile = "gfx/focus_icon/GFX_idea_dws_society.png"
 	}

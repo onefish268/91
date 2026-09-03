@@ -1,6 +1,6 @@
 ﻿capital = 271
 
-set_oob = "ETH_1936"
+set_oob = "YSS_1936_land"
 
 set_stability = 0.21
 set_war_support = 0.3

@@ -29,6 +29,34 @@ defined_text = {##标题（城市名）
 		}
 		localization_key = Adorable_heart_city_story_title_Lusaka
 	}
+# 亚的斯亚贝巴
+    text = {
+		trigger = {
+			state = 271
+		}
+		localization_key = Adorable_heart_city_story_title_ydsybb
+	}
+# 哈尔格萨
+    text = {
+		trigger = {
+			state = 269
+		}
+		localization_key = Adorable_heart_city_story_title_hegs
+	}
+# 喀土穆
+    text = {
+		trigger = {
+			state = 551
+		}
+		localization_key = Adorable_heart_city_story_title_ktm
+	}
+# 摩加迪沙
+    text = {
+		trigger = {
+			state = 559
+		}
+		localization_key = Adorable_heart_city_story_title_mjds
+	}
 # 纳萨力克（新德意志）
 	text = {
 		trigger = {
@@ -267,6 +295,34 @@ defined_text = {##文字介绍
 		}
 		localization_key = Adorable_heart_city_story_desc_ZSB_Lusaka
 	}
+# 亚的斯亚贝巴
+    text = {
+		trigger = {
+			state = 271
+		}
+		localization_key = Adorable_heart_city_story_desc_ydsybb
+	}
+# 哈尔格萨
+    text = {
+		trigger = {
+			state = 269
+		}
+		localization_key = Adorable_heart_city_story_desc_hegs
+	}
+# 喀土穆
+    text = {
+		trigger = {
+			state = 551
+		}
+		localization_key = Adorable_heart_city_story_desc_ktm
+	}
+# 摩加迪沙
+    text = {
+		trigger = {
+			state = 559
+		}
+		localization_key = Adorable_heart_city_story_desc_mjds
+	}
 # 纳萨力克（新德意志）
 	text = {
 		trigger = {
@@ -401,6 +457,34 @@ defined_text = {##图片
 			state = 813
 		}
 		localization_key = GFX_Lusaka_city_pic
+	}
+# 亚的斯亚贝巴
+    text = {
+		trigger = {
+			state = 271
+		}
+		localization_key = GFX_ydsybb_city_pic
+	}
+# 哈尔格萨
+    text = {
+		trigger = {
+			state = 269
+		}
+		localization_key = GFX_hegs_city_pic
+	}
+# 喀土穆
+    text = {
+		trigger = {
+			state = 551
+		}
+		localization_key = GFX_ktm_city_pic
+	}
+# 摩加迪沙
+    text = {
+		trigger = {
+			state = 559
+		}
+		localization_key = GFX_mjds_city_pic
 	}
 # 纳萨力克（新德意志）
 	text = {
