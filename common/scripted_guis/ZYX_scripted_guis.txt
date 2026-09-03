@@ -909,14 +909,14 @@ scripted_gui = {
 		
 
 		dynamic_lists = {
-			player_kards = {
+			player_kards = {#玩家手牌
 				array = player_kards_array
 				change_scope = no
 				entry_container = player_kard
 				index = picture_number
 				value = picture_value
 			}
-			AI_kards = {
+			AI_kards = {#AI手牌
 				array = AI_kards_array
 				change_scope = no
 				entry_container = AI_kard
@@ -926,7 +926,7 @@ scripted_gui = {
 		}
 
 		effects = {
-			ZYX_tankgoal_out_button_click = { #总的退出按键
+			leave_fight_button_click = { #总的退出按键
 				#clear_variable = ZYX_of_country_chosen_mode_number
 				clr_country_flag = ZYX_tankgoal_console
 				clr_country_flag = ZYX_commander_console
@@ -942,6 +942,58 @@ scripted_gui = {
 			player_kard_button = { image = "[Total__kards]" }
 			#player_kard_button = { image = tankgoal_background }
 			AI_kard_button = { image = "[Total__kards]" }
+		}
+	}
+
+	ZYX_attack_AI_block_gui = {#打击AI的方块
+		window_name = "attack_AI_block"
+		parent_window_name = "fight_console"
+
+		dynamic_lists = {
+			attack_AI_unit = {#选择要进攻AI的牌
+				array = fight_console_attack_AI_unit
+				change_scope = no
+				entry_container = selected_in_war_block
+				index = picture_number
+				value = picture_value
+			}
+			player_attack_unit = {#选择玩家要行动的牌
+				array = fight_console_player_attack_unit
+				change_scope = no
+				entry_container = selected_in_war_block
+				index = picture_number
+				value = picture_value
+			}
+		}
+
+		properties = {
+			kard_big_button = { image = "[Total__kards]" }
+		}
+	}
+
+	ZYX_AI_attack_block_gui = {#打击AI的方块
+		window_name = "AI_attack_block"
+		parent_window_name = "fight_console"
+
+		dynamic_lists = {
+			attack_player_unit = {#AI选择要进攻的牌
+				array = fight_console_attack_player_unit
+				change_scope = no
+				entry_container = selected_in_war_block
+				index = picture_number
+				value = picture_value
+			}
+			AI_attack_unit = {#AI选择要行动的牌
+				array = fight_console_AI_attack_unit
+				change_scope = no
+				entry_container = selected_in_war_block
+				index = picture_number
+				value = picture_value
+			}
+		}
+
+		properties = {
+			kard_big_button = { image = "[Total__kards]" }
 		}
 	}
 }

@@ -1,0 +1,27 @@
+state = {
+
+	id = 1232
+	name = "STATE_1232"
+	manpower = 1022425
+	state_category = four
+
+	history = {
+		owner = YSS
+		add_core_of = YSS
+		add_dynamic_modifier = {
+            modifier = YSS_province_xingzheng_1
+        }
+		add_dynamic_modifier = {
+            modifier = YSS_province_kaifa_1
+        }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		12856 13555 13556
+	}
+}
+

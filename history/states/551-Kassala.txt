@@ -1,21 +1,19 @@
 state = {
 	id = 551
 	name = "STATE_551"
-	manpower = 5402208
+	manpower = 4402208
 	state_category = four
 
 	history = {
 		owner = YSS
 		add_core_of = YSS
 		add_to_array = { state_victory_points = 12806 }
-		add_to_array = { state_victory_points = 7925 }
 		victory_points = { 12806 20 } #Khartoum
-		victory_points = { 7925 2 } #Omdurman
 		add_dynamic_modifier = {
-            modifier = YSS_province_xingzheng_1
+            modifier = YSS_province_xingzheng_2
         }
 		add_dynamic_modifier = {
-            modifier = YSS_province_kaifa_1
+            modifier = YSS_province_kaifa_2
         }
 
 		buildings = {
@@ -26,7 +24,7 @@ state = {
 	}
 
 	provinces = {
-		1914 2088 4918 7925 10126 10743 10784 10795 12002 12806 12826 12862 12881 12887
+		12806
 	}
 }
 

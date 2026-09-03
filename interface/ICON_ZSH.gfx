@@ -24,4 +24,12 @@ spriteTypes = {
 		name = GFX_ZSH_Mingjiu_small
 		textureFile = "gfx/leaders/ZSH/ZSH_Mingjiu_small.png"
 	}
+	spriteType = {
+		name = GFX_ZSH_Mingjiu_1
+		textureFile = "gfx/leaders/ZSH/ZSH_Mingjiu_1.png"
+	}
+	spriteType = {
+		name = GFX_ZSH_Mingjiu_small_1
+		textureFile = "gfx/leaders/ZSH/ZSH_Mingjiu_1_small.png"
+	}
 }

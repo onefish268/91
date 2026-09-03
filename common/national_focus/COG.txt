@@ -2999,7 +2999,7 @@ focus_tree =
 		}
 
 		completion_reward = {
-			
+			recruit_character = 
 		}
 	}
 

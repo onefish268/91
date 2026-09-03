@@ -19,6 +19,7 @@ ZYX_anqiao_category = {
 				value = 1
 				size = 107
 			}
+			ZYX_add_all_units_number = yes
 			set_variable = { tankgoal_ones_number = 1 }
 			set_variable = { tankgoal_tens_number = 1 }
 		}
