@@ -7,6 +7,7 @@
  YSS_democratic_party: "蒙尼利克党"
  YSS_fascism_party: "民族党"
  YSS_communism_party: "特瓦赫多-共"
+#地方修正
  YSS_province_xingzheng_1: "地方行政等级-§R最低级§!"
  YSS_province_xingzheng_2: "地方行政等级-§L初级§!"
  YSS_province_xingzheng_3: "地方行政等级-§C中级§!"
@@ -17,3 +18,9 @@
  YSS_province_kaifa_3: "地方开发程度等级-§C中级§!"
  YSS_province_kaifa_4: "地方开发程度等级-§G高级§!"
  YSS_province_kaifa_5: "地方开发程度等级-§O最高级§!"
+#省份名称
+ STATE_1233: "卡萨拉-森奈尔"
+ STATE_1232: "中央大区"
+ STATE_1234: "北索马里特别区"
+ STATE_1235: "索马里大区"
+ STATE_551: "喀土穆"
