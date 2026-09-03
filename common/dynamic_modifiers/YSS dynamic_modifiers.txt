@@ -1,0 +1,90 @@
+YSS_province_xingzheng_1 = { #State Modifer  地方行政等级
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_immigration_promoted
+    supply_factor = -0.25 #补给效率
+	local_manpower = -0.6 #当地人力
+	state_production_speed_buildings_factor = -0.15 #当地建设速度
+	recruitable_population_factor = -0.3 #可征募人口
+	monthly_population = -0.45 #月度人口增长
+}
+YSS_province_xingzheng_2 = { #State Modifer  地方行政等级
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_immigration_promoted
+    supply_factor = -0.15 #补给效率
+	local_manpower = -0.4 #当地人力
+	state_production_speed_buildings_factor = -0.1 #当地建设速度
+	recruitable_population_factor = -0.2 #可征募人口
+	monthly_population = -0.3 #月度人口增长
+}
+YSS_province_xingzheng_3 = { #State Modifer  地方行政等级
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_immigration_promoted
+    supply_factor = -0.05 #补给效率
+	local_manpower = -0.2 #当地人力
+	state_production_speed_buildings_factor = -0.05 #当地建设速度
+	recruitable_population_factor = -0.1 #可征募人口
+	monthly_population = -0.15 #月度人口增长
+}
+YSS_province_xingzheng_4 = { #State Modifer  地方行政等级
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_immigration_promoted
+    supply_factor = 0.1 #补给效率
+	local_manpower = 0.15 #当地人力
+	state_production_speed_buildings_factor = 0.1 #当地建设速度
+	recruitable_population_factor = 0.15 #可征募人口
+	monthly_population = 0.15 #月度人口增长
+}
+YSS_province_xingzheng_5 = { #State Modifer  地方行政等级
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_immigration_promoted
+    supply_factor = 0.3 #补给效率
+	local_manpower = 0.4 #当地人力
+	state_production_speed_buildings_factor = 0.25 #当地建设速度
+	recruitable_population_factor = 0.35 #可征募人口
+	monthly_population = 0.35 #月度人口增长
+}
+
+YSS_province_kaifa_1 = { #State Modifer  地方开发程度等级
+	enable = { always = yes }
+	icon = GFX_modifiers_CZE_economic_investment_in_state
+    local_building_slots_factor = -0.4 #当地最大工厂数
+	local_factories = -0.2 #当地工厂数
+	local_resource_gain_efficiency_per_infrastructure = -0.2 #每基础设施的资源获取
+	local_resources_factor = -0.15 #战略资源获取效率
+	state_production_speed_rail_way_factor = -0.5 #铁路建设速度
+}
+YSS_province_kaifa_2 = { #State Modifer  地方开发程度等级
+	enable = { always = yes }
+	icon = GFX_modifiers_CZE_economic_investment_in_state
+    local_building_slots_factor = -0.3 #当地最大工厂数
+	local_factories = -0.15 #当地工厂数
+	local_resource_gain_efficiency_per_infrastructure = -0.15 #每基础设施的资源获取
+	local_resources_factor = -0.1 #战略资源获取效率
+	state_production_speed_rail_way_factor = -0.3 #铁路建设速度
+}
+YSS_province_kaifa_3 = { #State Modifer  地方开发程度等级
+	enable = { always = yes }
+	icon = GFX_modifiers_CZE_economic_investment_in_state
+    local_building_slots_factor = -0.2 #当地最大工厂数
+	local_factories = -0.1 #当地工厂数
+	local_resource_gain_efficiency_per_infrastructure = -0.1 #每基础设施的资源获取
+	local_resources_factor = -0.05 #战略资源获取效率
+	state_production_speed_rail_way_factor = -0.25 #铁路建设速度
+}
+YSS_province_kaifa_4 = { #State Modifer  地方开发程度等级
+	enable = { always = yes }
+	icon = GFX_modifiers_CZE_economic_investment_in_state
+    local_building_slots_factor = 0.15 #当地最大工厂数
+	local_factories = 0.1 #当地工厂数
+	local_resource_gain_efficiency_per_infrastructure = 0.1 #每基础设施的资源获取
+	local_resources_factor = 0.05 #战略资源获取效率
+	state_production_speed_rail_way_factor = -0.1 #铁路建设速度
+}
+YSS_province_kaifa_5 = { #State Modifer  地方开发程度等级
+	enable = { always = yes }
+	icon = GFX_modifiers_CZE_economic_investment_in_state
+    local_building_slots_factor = 0.4 #当地最大工厂数
+	local_factories = 0.25 #当地工厂数
+	local_resource_gain_efficiency_per_infrastructure = 0.25 #每基础设施的资源获取
+	local_resources_factor = 0.15 #战略资源获取效率
+}

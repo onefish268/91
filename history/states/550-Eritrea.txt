@@ -1,0 +1,44 @@
+state = {
+	id = 550
+	name = "STATE_550"
+	manpower = 4706600
+	state_category = two
+
+	resources = {
+		steel = 18
+	}
+
+	history = {
+		owner = YSS
+		add_core_of = YSS
+		add_dynamic_modifier = {
+            modifier = YSS_province_xingzheng_1
+        }
+		add_dynamic_modifier = {
+            modifier = YSS_province_kaifa_2
+        }
+		add_to_array = {
+			state_victory_points = 12766
+		}
+		victory_points = {
+			12766
+			15
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+			12766 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces = {
+		5017
+		5047
+		5091
+		8043
+		12723
+		12766
+	}
+}

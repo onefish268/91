@@ -1,0 +1,19 @@
+characters = {
+	YSS_mlhm = {
+		name = "门格斯图·海尔·马里亚姆"
+		portraits = {
+			civilian = {
+				large = GFX_YSS_mlhm
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { 
+		    communist_theorist	
+			AFG_general_secretary
+			PHI_nation_builder
+	        }
+			id= -1
+		}
+	}	
+}

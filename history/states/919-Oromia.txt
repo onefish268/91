@@ -1,0 +1,32 @@
+state = {
+	id = 919
+	name = "STATE_919"
+	manpower = 1699730
+	state_category = two
+
+
+	resources = {
+		steel = 20
+	}
+
+	history = {
+		owner = YSS
+		add_core_of = YSS
+		add_dynamic_modifier = {
+            modifier = YSS_province_xingzheng_2
+        }
+		add_dynamic_modifier = {
+            modifier = YSS_province_kaifa_1
+        }
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		8036 8062
+	}
+}
+

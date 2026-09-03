@@ -1,5 +1,9 @@
 #reload countrycolors
 
+GER = {
+    color = HSV { 0.1 0.15 0.4 }
+    color_ui = rgb { 138 155 116 }
+}
 ZCS = {
     color = rgb { 128 128 128 }
     color_ui = rgb { 128 128 128 }
@@ -20,6 +24,10 @@ ZSH = {
     color = rgb { 259 -14 -14 }
     color_ui = rgb { 259 -14 -14 }
 }
+YSS = {
+    color = rgb { 142 45 38 }
+    color_ui = rgb { 142 45 38 }
+}
 ZXS = {
     color = rgb { 58 28 3 }
     color_ui = rgb { 58 28 3 }
@@ -27,10 +35,6 @@ ZXS = {
 ZYX = {
     color = rgb { 255 98 0 }
     color_ui = rgb { 255 98 0 }
-}
-GER = {
-    color = HSV { 0.1 0.15 0.4 }
-    color_ui = rgb { 138 155 116 }
 }
 ENG = {
     color = rgb { 0 34 124 }
@@ -875,7 +879,10 @@ KFL = {#小妖精联军
     color = rgb { 237 113 113 }
     color_ui = rgb { 35 210 247 }
 }
-
+LGZ = {#莉兰迪亚皇室
+    color = rgb { 245 203 203 }
+    color_ui = rgb { 179 201 206 }
+}
 PES = {#地灵殿
     color = rgb { 85 96 99 }
     color_ui = rgb { 85 96 99 }
@@ -1379,4 +1386,12 @@ HRA = {
 WST = {
     color = rgb{ 0 0 0 }
     color_ui = rgb{ 0 0 0}
+}
+SKW = {
+    color = rgb { 254 57 108 }
+    color_ui = rgb { 254 57 108 }
+}
+SHN = {
+    color = rgb { 37 118 199 }
+    color_ui = rgb { 37 118 199 }
 }

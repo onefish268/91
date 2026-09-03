@@ -1,0 +1,32 @@
+state = {
+	id = 551
+	name = "STATE_551"
+	manpower = 5402208
+	state_category = four
+
+	history = {
+		owner = YSS
+		add_core_of = YSS
+		add_to_array = { state_victory_points = 12806 }
+		add_to_array = { state_victory_points = 7925 }
+		victory_points = { 12806 20 } #Khartoum
+		victory_points = { 7925 2 } #Omdurman
+		add_dynamic_modifier = {
+            modifier = YSS_province_xingzheng_1
+        }
+		add_dynamic_modifier = {
+            modifier = YSS_province_kaifa_1
+        }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+
+	provinces = {
+		1914 2088 4918 7925 10126 10743 10784 10795 12002 12806 12826 12862 12881 12887
+	}
+}
+
