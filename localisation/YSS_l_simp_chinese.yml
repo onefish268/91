@@ -48,6 +48,17 @@
  YSS_tank: "阿克苏姆坦克工厂"
  YSS_refurbishment_plant: "联合国家改造厂"
  YSS_train: "国家民用机器制造厂"
+#工业企业
+ YSS_kafe: "国家咖啡供给局"
+ YSS_yhang: "联盟中央银行"
+ YSS_goal: "联盟铁道"
+ YSS_tigel: "提格雷钢铁"
+ YSS_ghang: "国家工商银行"
+ YSS_byener: "贝耶尼电子开发局"
+ YSS_oil: "人民牌石油"
+ YSS_steel: "国家资源调配局"
+ YSS_set: "国家建筑局"
+#人物介绍
  YSS_byner_name: "阿勒姆沃·贝耶尼"
  YSS_byner_DESC_1: "阿勒姆沃·贝耶尼\n@YSS§Y索维耶特联盟§!的§O国家主席§!"
  YSS_byner_Diplomacy_desc: "阿勒姆沃·贝耶尼\n@YSS§Y索维耶特联盟§!的§O国家名誉主席§!"

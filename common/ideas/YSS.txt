@@ -77,7 +77,7 @@ ideas = {
 				country_resource_steel = 15
 		    }
 			research_bonus = {
-			    industrial = 0.15
+			    industry = 0.15
 		    }
 	    }
 		YSS_ghang = {#国家工商银行
@@ -130,7 +130,7 @@ ideas = {
 				country_resource_cost_oil = -5
 		    }
 			research_bonus = {
-			    synthetic_resources = 0.15
+			    excavation_tech = 0.15
 		    }
 	    }
 		YSS_steel = {#国家资源调配局
@@ -150,8 +150,8 @@ ideas = {
 				min_export = -0.05
 		    }
 			research_bonus = {
-			    synthetic_resources = 0.1
-				industrial = 0.1
+			    excavation_tech = 0.1
+				industry = 0.1
 		    }
 	    }
 		YSS_set = {#国家建筑局
