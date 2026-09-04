@@ -24,6 +24,9 @@ state = {
 			3
 		}
 	}
+	resources = {
+		tungsten = 25
+	}
 	provinces = {
 		1939
 		2066

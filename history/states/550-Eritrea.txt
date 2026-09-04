@@ -6,6 +6,8 @@ state = {
 
 	resources = {
 		steel = 18
+		oil = 26
+		tungsten = 31
 	}
 
 	history = {

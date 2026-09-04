@@ -22,6 +22,10 @@ state = {
 			industrial_complex = 1
 		}
 	}
+	resources = {
+		aluminium = 25
+		chromium = 35
+	}
 
 	provinces = {
 		1984 2009 2040 4954 7944 13137
