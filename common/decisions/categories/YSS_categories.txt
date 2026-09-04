@@ -1,0 +1,17 @@
+YSS_states_category = {
+    picture = GFX_decision_cat_default
+    priority = 98
+    scripted_gui = YSS_states_ui  # 关键！挂载scripted_gui ID
+    visible = {
+        tag = YSS  
+    }
+}
+
+YSS_yisiland_category = {
+    picture = GFX_decision_cat_default
+    priority = 98
+    scripted_gui = YSS_yisiland_ui  # 关键！挂载scripted_gui ID
+    visible = {
+        tag = YSS  
+    }
+}

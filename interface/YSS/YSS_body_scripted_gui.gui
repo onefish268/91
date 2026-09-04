@@ -73,3 +73,88 @@ guiTypes = {
 
 	}
 }
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_states_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 577 }
+		#clipping = no
+
+		iconType = {
+			name = "YSS_states_icon"
+			spriteType = GFX_YSS_states_icon
+			position = { x = 0 y = 0 }
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "YSS_man_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 35 y = 130 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man1_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 132 y = 10 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man2_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 245 y = 130 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man3_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 275 y = 0 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man4_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 405 y = 140 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man5_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 380 y = 320 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man6_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 240 y = 380 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_yisiland_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 610 }
+		#clipping = no
+
+		iconType = {
+			name = "YSS_yisiland_icon"
+			spriteType = GFX_YSS_yisiland_icon
+			position = { x = 20 y = 0 }
+    	    scale = 1
+		}
+
+	}
+}

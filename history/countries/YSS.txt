@@ -29,16 +29,60 @@ set_popularities = {
 
 	democratic = 5
 	fascism = 0
-	communism = 15
-	neutrality = 80
+	communism = 80
+	neutrality = 15
 
 } 
 
 recruit_character = YSS_mlhm
-
-
-
-
-
-
-
+recruit_character = YSS_1_1
+recruit_character = YSS_1_2
+recruit_character = YSS_1_3
+recruit_character = YSS_1_4
+recruit_character = YSS_1_5
+recruit_character = YSS_1_6
+recruit_character = YSS_1_7
+recruit_character = YSS_1_8
+recruit_character = YSS_1_9
+recruit_character = YSS_1_10
+recruit_character = YSS_1_11
+recruit_character = YSS_1_12
+recruit_character = YSS_1_13
+recruit_character = YSS_1_14
+recruit_character = YSS_1_15
+recruit_character = YSS_2_1
+recruit_character = YSS_2_2
+recruit_character = YSS_2_3
+recruit_character = YSS_3_1
+recruit_character = YSS_3_2
+recruit_character = YSS_3_3
+recruit_character = YSS_3_4
+recruit_character = YSS_4_1
+recruit_character = YSS_4_2
+recruit_character = YSS_4_3
+recruit_character = YSS_4_4
+recruit_character = YSS_5_1
+recruit_character = YSS_5_2
+recruit_character = YSS_6_1
+recruit_character = YSS_6_2
+recruit_character = YSS_6_3
+recruit_character = YSS_6_4
+recruit_character = YSS_6_5
+recruit_character = YSS_6_6
+recruit_character = YSS_6_7
+recruit_character = YSS_6_8
+recruit_character = YSS_8_1
+recruit_character = YSS_8_2
+recruit_character = YSS_8_3
+recruit_character = YSS_7_1
+recruit_character = YSS_7_2
+recruit_character = YSS_7_3
+recruit_character = YSS_7_4
+recruit_character = YSS_7_5
+recruit_character = YSS_7_6
+recruit_character = YSS_7_7
+recruit_character = YSS_7_8
+recruit_character = YSS_7_9
+recruit_character = YSS_7_10
+recruit_character = YSS_7_11
+recruit_character = YSS_7_habu

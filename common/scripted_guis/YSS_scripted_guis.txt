@@ -35,6 +35,82 @@ scripted_gui = {
 			original_tag = YSS
 	    }
 	}
+
+	YSS_states_ui = { #国家行政拓展与地区开发项目
+		context_type = decision_category
+		window_name = "YSS_states_ui_window"
+
+		effects = {
+			YSS_man_button_click = {
+			    set_variable = { YSS_man_icon_mode_number = 1 }
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man1_button_click = {
+			    set_variable = { YSS_1_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man2_button_click = {
+			    set_variable = { YSS_2_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man3_button_click = {
+			    set_variable = { YSS_3_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man4_button_click = {
+			    set_variable = { YSS_4_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man5_button_click = {
+			    set_variable = { YSS_5_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_6_man_icon_mode_number
+			}
+			YSS_man6_button_click = {
+			    set_variable = { YSS_6_man_icon_mode_number = 1 }
+				clear_variable = YSS_man_icon_mode_number
+				clear_variable = YSS_1_man_icon_mode_number
+				clear_variable = YSS_2_man_icon_mode_number
+				clear_variable = YSS_3_man_icon_mode_number
+				clear_variable = YSS_4_man_icon_mode_number
+				clear_variable = YSS_5_man_icon_mode_number
+			}
+		}
+	}
+
+	YSS_yisiland_ui = { #国家宗教事务委员会
+		context_type = decision_category
+		window_name = "YSS_yisiland_ui_window"
+	}
 	
 }
 
