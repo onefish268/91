@@ -92,6 +92,42 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/yinhang.png"
     }
     spriteType = {
+        name = "GFX_idea_YSS_kafe"
+        texturefile = "gfx/interface/ideas/YSS_kafe.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_yhang"
+        texturefile = "gfx/interface/ideas/YSS_yhang.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_goal"
+        texturefile = "gfx/interface/ideas/YSS_goal.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_tigel"
+        texturefile = "gfx/interface/ideas/YSS_tigel.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_ghang"
+        texturefile = "gfx/interface/ideas/YSS_ghang.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_byener"
+        texturefile = "gfx/interface/ideas/YSS_byener.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_oil"
+        texturefile = "gfx/interface/ideas/YSS_oil.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_steel"
+        texturefile = "gfx/interface/ideas/YSS_steel.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_set"
+        texturefile = "gfx/interface/ideas/YSS_set.png"
+    }
+    spriteType = {
         name = "GFX_idea_dabang"
         texturefile = "gfx/interface/ideas/dabang.png"
     }

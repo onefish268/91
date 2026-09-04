@@ -14,6 +14,7 @@ set_technology = {
 	the_red_army_tech = 1
 }
 set_convoys = 306
+set_variable = { another_country_leader_group = 66 }
 
 add_ideas = {
 }

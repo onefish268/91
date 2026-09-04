@@ -164,6 +164,10 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZIM/anan.png"
     }
     spriteType = {
+        name = "GFX_YSS_byner"
+        texturefile = "gfx/leaders/YSS/byner.png"
+    }
+    spriteType = {
         name = "GFX_ZSB_faction_panel_banner"
         texturefile = "gfx/leaders/ZIM/GFX_ZSB_faction_panel_banner.png"
     }

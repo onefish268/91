@@ -1,0 +1,172 @@
+ideas = {
+	#国家层面
+	country = {
+		YSS_1 = {
+			picture = 
+			modifier = {				
+			}
+		}
+	}
+}
+
+
+ideas = {
+	#工业企业
+    industrial_concern = {
+	    designer = yes
+		
+	    YSS_kafe = {#国家咖啡供给局
+		    picture = YSS_kafe
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { industrial_concern }
+		    modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+		    }
+	    }
+		YSS_yhang = {#联盟中央银行
+		    picture = YSS_yhang
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { central_bank }
+		    modifier = {
+				consumer_goods_factor = -0.15
+				political_power_factor = 0.1
+		    }
+	    }
+		YSS_goal = {#联盟铁道
+		    picture = YSS_goal
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { railway_company }
+		    modifier = {
+				coordination_bonus = 0.05
+				out_of_supply_factor = -0.1
+				org_damage_multiplier = -0.05
+		    }
+	    }
+		YSS_tigel = {#提格雷钢铁
+		    picture = YSS_tigel
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { industrial_concern }
+		    modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				country_resource_steel = 15
+		    }
+			research_bonus = {
+			    industrial = 0.15
+		    }
+	    }
+		YSS_ghang = {#国家工商银行
+		    picture = YSS_ghang
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { central_bank }
+		    modifier = {
+				consumer_goods_factor = -0.1
+				energy_gain_factor = 0.1
+				factory_energy_consumption = -0.05
+		    }
+	    }
+		YSS_byener = {#贝耶尼电子开发局
+		    picture = YSS_byener
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { electronics_concern }
+		    modifier = {
+				production_speed_buildings_powered_factor = 0.2
+				research_speed_factor = 0.15
+		    }
+		    research_bonus = {
+			    electronics = 0.15
+		    }
+	    }
+		YSS_oil = {#人民牌石油
+		    picture = YSS_oil
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { refining_concern }
+		    modifier = {
+				base_fuel_gain_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.1
+				country_resource_cost_oil = -5
+		    }
+			research_bonus = {
+			    synthetic_resources = 0.15
+		    }
+	    }
+		YSS_steel = {#国家资源调配局
+		    picture = YSS_steel
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { industrial_concern }
+		    modifier = {
+				attrition = -0.05
+				supply_consumption_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.15
+				min_export = -0.05
+		    }
+			research_bonus = {
+			    synthetic_resources = 0.1
+				industrial = 0.1
+		    }
+	    }
+		YSS_set = {#国家建筑局
+		    picture = YSS_set
+		    ai_will_do = {
+			    base = 10
+		    }
+		    visible = {
+				tag = YSS
+		    }
+		    cost = 150
+		    traits = { construction_company }
+		    modifier = {
+				production_speed_buildings_factor = 0.15
+		    }
+	    }
+	}
+}
