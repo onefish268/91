@@ -49,7 +49,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ZYX_tankgaol_factions_ui_window"
 		orientation = center_right
-		position = { x = -1100 y = -400 }
+		position = { x = -1600 y = -400 }
 		size = { width = 1600 height = 533 }
 		#clipping = no
 		moveable = yes
@@ -498,13 +498,13 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "select_cancel_block_title"
 			position = { x = 10 y = 16 }
-			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 10}
 			text = select_cancel_block_t
 			maxWidth = 450
 			maxHeight = 40
 			fixedsize = yes
+			textureFile = ""
 			vertical_alignment = center
 			format = centre
 		}
@@ -688,21 +688,21 @@ guiTypes = {
 	containerWindowType = {#战斗界面
 		name = "fight_console"
 		position = { x = 100 y = 150 }
-		size = { width = 1530 height = 660 }
+		size = { width = 1330 height = 660 }
 		#clipping = yes
 		moveable = yes
 
 		#margin = { top = 0 left = -100 right = 0 bottom = 0 }
 
 		background = {
-			position = { x = 200 y = 0 }
+			position = { x = 0 y = 0 }
 			name = "fight_console_background"
 			spriteType = GFX_browser_bg
 		}
 
 		buttonType = {
 			name = "leave_fight_button"
-			position = { x = 1240 y = 0 }
+			position = { x = 1040 y = 0 }
 			spriteType = GFX_ZYX_tankgoal_out_button
 			
 		}
@@ -716,14 +716,14 @@ guiTypes = {
 
 			iconType = {
 				name = "battle_ground"
-				position = { x = 270  y = 40 }
+				position = { x = 70  y = 40 }
 				spriteType = tankgoal_background
 				scale = 0.8
 			}
 
 			gridBoxType = {
 				name = "player_kards"
-				position = { x = 220 y = 520 }
+				position = { x = 20 y = 520 }
 				size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
 	    	    slotsize = { width = 80 height = 250 }
     			max_slots_horizontal = 30
@@ -734,7 +734,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "AI_kards"
-				position = { x = 220 y = -130 }
+				position = { x = 20 y = -130 }
 				margin = { top = 300 left = 0 bottom = 0 right = 0 }
 				size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
    				slotsize = { width = 80 height = 250 }
@@ -746,25 +746,25 @@ guiTypes = {
 
 			iconType = {
 				name = "back_line_ai" #AI后方
-				position = { x = 200 y = 45 }
+				position = { x = 0 y = 45 }
 				spriteType = ENG_effect__tp
 				scale = 0.5
 			}
 			iconType = {
 				name = "forward_line_ai" #AI前线
-				position = { x = 200 y = 155 }
+				position = { x = 0 y = 155 }
 				spriteType = ENG_effect__tp
 				scale = 0.5
 			}
 			iconType = {
 				name = "back_line_player" #玩家后方
-				position = { x = 200 y = 295 }
+				position = { x = 0 y = 295 }
 				spriteType = ENG_effect__tp
 				scale = 0.5
 			}
 			iconType = {
 				name = "forward_line_player" #玩家前线
-				position = { x = 200 y = 405 }
+				position = { x = 0 y = 405 }
 				spriteType = ENG_effect__tp
 				scale = 0.5
 			}
@@ -794,7 +794,7 @@ guiTypes = {
 
 	containerWindowType = {#攻击敌人的方块
 		name = "attack_AI_block"
-		position = { x = -25 y = 100 }
+		position = { x = 1030 y = 100 }
 		size = { width = 300 height = 450 }
 
 		background = {
@@ -805,9 +805,11 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "attack_AI_text"
 			position = { x = 15 y = 40 }
+			font = "hoi_32header"
+			text = "这是中文测试：this is test of Chinese"
+			#text = first_button_d  #attack_AI_d
 			maxWidth = 240
-			text = attack_AI_tip
-			font = "hoi4_32header"
+			maxHeight = 100
 		}
 
 		#iconType = {
@@ -819,7 +821,7 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "attack_AI_unit"
-			position = { x = 80 y = 90 }
+			position = { x = 100 y = 90 }
 			slotsize = { width = 78 height = 105 }
 			max_slots_horizontal = 1
 			max_slots_vertical = 1
@@ -830,7 +832,7 @@ guiTypes = {
 			name = "player_attack_text"
 			position = { x = 15 y = 220 }
 			maxWidth = 240
-			text = player_attack_tip
+			text = player_attack_d
 			font = "hoi4_32header"
 		}
 
@@ -845,7 +847,7 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "player_attack_unit"
-			position = { x = 80 y = 270 }
+			position = { x = 100 y = 270 }
 			slotsize = { width = 78 height = 105 }
 			max_slots_horizontal = 1
 			max_slots_vertical = 1
@@ -855,13 +857,15 @@ guiTypes = {
 		buttonType = {
 			name = "ready_to_attack_button"
 			position = { x = 70 y = 400 }
-			quadTextureSprite ="GFX_button_148x34"
-			text = "OK!"
+			spriteType = "GFX_button_148x34"
+			buttonText = "OK!"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
 		}
 	}
 	containerWindowType = {#敌人攻击的方块
 		name = "AI_attack_block"
-		position = { x = 1230 y = 100 }
+		position = { x = 1030 y = 100 }
 		size = { width = 300 height = 450 }
 
 		background = {
@@ -873,13 +877,14 @@ guiTypes = {
 			name = "attack_player_text"
 			position = { x = 15 y = 40 }
 			maxWidth = 240
-			text = attack_player_tip
+			maxHeight = 100
+			text = attack_player_d
 			font = "hoi4_32header"
 		}
 
 		gridBoxType = {
 			name = "attack_player_unit"
-			position = { x = 80 y = 90 }
+			position = { x = 100 y = 90 }
 			slotsize = { width = 78 height = 105 }
 			max_slots_horizontal = 1
 			max_slots_vertical = 1
@@ -890,13 +895,13 @@ guiTypes = {
 			name = "AI_attack_text"
 			position = { x = 15 y = 220 }
 			maxWidth = 240
-			text = AI_attack_tip
+			text = AI_attack_d
 			font = "hoi4_32header"
 		}
 
 		gridBoxType = {
 			name = "AI_attack_unit"
-			position = { x = 80 y = 270 }
+			position = { x = 100 y = 270 }
 			slotsize = { width = 78 height = 105 }
 			max_slots_horizontal = 1
 			max_slots_vertical = 1
@@ -911,30 +916,58 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {#战场选择展示的方块
-		name = "selected_in_war_block"
+	containerWindowType = {#战场选择展示的方块——上
+		name = "selected_in_war_block_0"
 
-		iconType = {
-			name = "kard_big_button"
+		buttonType = {
+			name = "kard_big_button_0"
 			spriteType = Total_kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
 			scale = 0.5
 		}
 
 		iconType = {
-			name = "cost_of_unit"
+			name = "cost_of_unit_0"
 
 		}
 		iconType = {
-			name = "HP_of_unit"
+			name = "HP_of_unit_0"
 			
 		}
 		iconType = {
-			name = "attack_of_unit"
+			name = "attack_of_unit_0"
 			
 		}
 		iconType = {
-			name = "defence_of_unit"
+			name = "defence_of_unit_0"
+			
+		}
+	}
+
+	containerWindowType = {#战场选择展示的方块——下
+		name = "selected_in_war_block_1"
+
+		buttonType = {
+			name = "kard_big_button_1"
+			spriteType = Total_kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+
+		iconType = {
+			name = "cost_of_unit_1"
+
+		}
+		iconType = {
+			name = "HP_of_unit_1"
+			
+		}
+		iconType = {
+			name = "attack_of_unit_1"
+			
+		}
+		iconType = {
+			name = "defence_of_unit_1"
 			
 		}
 	}

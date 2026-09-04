@@ -582,6 +582,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 16 }
 						check_variable = { picture_value < 33 }
 						check_variable = { tankgoal_show_ENG_situation = 3 }
 					}
@@ -597,6 +598,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 32 }
 						check_variable = { picture_value < 38 }
 						check_variable = { tankgoal_show_FRA_situation = 3 }
 					}
@@ -612,6 +614,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 37 }
 						check_variable = { picture_value < 59 }
 						check_variable = { tankgoal_show_CHI_situation = 3 }
 					}
@@ -627,6 +630,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 58 }
 						check_variable = { picture_value < 69 }
 						check_variable = { tankgoal_show_SOV_situation = 3 }
 					}
@@ -642,6 +646,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 68 }
 						check_variable = { picture_value < 94 }
 						check_variable = { tankgoal_show_GER_situation = 3 }
 					}
@@ -657,6 +662,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 93 }
 						check_variable = { picture_value < 100 }
 						check_variable = { tankgoal_show_JAP_situation = 3 }
 					}
@@ -672,6 +678,7 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
+						check_variable = { picture_value > 99 }
 						check_variable = { picture_value < 107 }
 						check_variable = { tankgoal_show_ITA_situation = 3 }
 					}
@@ -936,6 +943,11 @@ scripted_gui = {
 				clr_country_flag = ZYX_fight_console
 				clear_array = select_console_show_big_kard
 			}
+
+			player_kard_button_click = {#玩家手牌点击
+				clear_array = fight_console_player_attack_unit
+				add_to_array = { fight_console_player_attack_unit = picture_value }
+			}
 		}
 
 		properties = {
@@ -953,25 +965,42 @@ scripted_gui = {
 			attack_AI_unit = {#选择要进攻AI的牌
 				array = fight_console_attack_AI_unit
 				change_scope = no
-				entry_container = selected_in_war_block
+				entry_container = selected_in_war_block_0
 				index = picture_number
 				value = picture_value
 			}
 			player_attack_unit = {#选择玩家要行动的牌
 				array = fight_console_player_attack_unit
 				change_scope = no
-				entry_container = selected_in_war_block
+				entry_container = selected_in_war_block_1
 				index = picture_number
 				value = picture_value
 			}
 		}
 
+		visible = {
+			OR = {
+				check_variable = { fight_console_attack_AI_unit^num > 0 }
+				check_variable = { fight_console_player_attack_unit^num > 0 }
+			}
+		}
+
+		effects = {
+			kard_big_button_0_click = {
+				clear_array = fight_console_attack_AI_unit
+			}
+			kard_big_button_1_click = {
+				clear_array = fight_console_player_attack_unit
+			}
+		}
+
 		properties = {
-			kard_big_button = { image = "[Total__kards]" }
+			kard_big_button_0 = { image = "[Total__kards]" }
+			kard_big_button_1 = { image = "[Total__kards]" }
 		}
 	}
 
-	ZYX_AI_attack_block_gui = {#打击AI的方块
+	ZYX_AI_attack_block_gui = {#AI打击的方块
 		window_name = "AI_attack_block"
 		parent_window_name = "fight_console"
 
@@ -979,21 +1008,37 @@ scripted_gui = {
 			attack_player_unit = {#AI选择要进攻的牌
 				array = fight_console_attack_player_unit
 				change_scope = no
-				entry_container = selected_in_war_block
+				entry_container = selected_in_war_block_0
 				index = picture_number
 				value = picture_value
 			}
 			AI_attack_unit = {#AI选择要行动的牌
 				array = fight_console_AI_attack_unit
 				change_scope = no
-				entry_container = selected_in_war_block
+				entry_container = selected_in_war_block_1
 				index = picture_number
 				value = picture_value
 			}
 		}
 
+		visible = {
+			OR = {
+				check_variable = { fight_console_attack_player_unit^num > 0 }
+				check_variable = { fight_console_AI_attack_unit^num > 0 }
+			}
+		}
+
+		kard_big_button_0_click = {
+				clear_array = fight_console_attack_player_unit
+			}
+			kard_big_button_1_click = {
+				clear_array = fight_console_AI_attack_unit
+			}
+		}
+
 		properties = {
-			kard_big_button = { image = "[Total__kards]" }
+			kard_big_button_0 = { image = "[Total__kards]" }
+			kard_big_button_1 = { image = "[Total__kards]" }
 		}
 	}
 }

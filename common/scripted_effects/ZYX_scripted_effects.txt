@@ -826,7 +826,14 @@ ZYX_clean_chosen_kards = {
 #你写个反向会死吗，P🐍（恼）
 #喜报，array_name^num可以访问array_name的长度！妈妈再也不用担心我拿P社提供的幽默正序代码去删改啦（）
 
+ZYX_prepare_for_fight = {#战前准备，清理各种变量、数组、标签
+	clear_array = fight_console_player_attack_unit
+	clear_array = fight_console_AI_attack_unit
+	clear_array = fight_console_attack_player_unit
+	claer_array = fight_console_attack_AI_unit		#清理双方选中的牌
 
+	#清理战场上存在的牌，顺便恢复总部血量
+}
 
 #卡牌加入卡组的代码
 ZYX_add_kard_to_kards = {

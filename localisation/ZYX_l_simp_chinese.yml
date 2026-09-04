@@ -231,10 +231,10 @@
   ready_to_start_block_d_3: "你希望是先手（开局四张牌，对手五张）还是后手（开局五张牌，对手四张）？"
   first_button_d: "选择§R先手§!"
   last_button_d: "选择§G后手§!"
-  attack_AI_tip: "你选择的敌方单位："
-  player_attack_tip: "你选择的攻击单位："
-  attack_player_tip: "AI选择的敌方单位："
-  AI_attack_tip: "AI选择的攻击单位："
+  attack_AI_d: "你选择的敌方单位："
+  player_attack_d: "你选择的攻击单位："
+  attack_player_d: "AI选择的敌方单位："
+  AI_attack_d: "AI选择的攻击单位："
 
 
 
