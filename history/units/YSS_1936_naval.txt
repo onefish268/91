@@ -1,0 +1,195 @@
+
+units = {
+
+	fleet = { #战列队
+		name = "红海军国防舰队"
+		naval_base = 10928
+		task_force = {
+			name = "红海军国防舰队"
+			location = 10928	
+		 #战列		
+			ship = {
+				name = "联盟号"
+				definition = battleship
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "伊丽莎白级"
+					}
+				}
+			}			
+		 #轻巡
+			ship = {
+				name = "阿克苏姆号"
+				definition = light_cruiser
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = ENG
+						version_name = "郡级"
+					}
+				}
+			}
+			ship = {
+				name = "团结号"
+				definition = light_cruiser
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = ENG
+						version_name = "郡级"
+					}
+				}
+			}
+			ship = {
+				name = "胜利号"
+				definition = light_cruiser
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = ENG
+						version_name = "郡级"
+					}
+				}
+			}
+		 #驱逐
+			ship = {
+				name = "无产阶级号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "先锋号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "革命号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "解放号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "红旗号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "铁拳号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "驼峰号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "阿卜杜勒号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "哈尔格萨号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "索马里号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+			ship = {
+				name = "雅克曼拉号"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ENG
+						version_name = "A/B/C/D 级"
+					}
+				}
+			}
+		}
+	}
+}

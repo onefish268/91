@@ -19,6 +19,11 @@ state = {
 			infrastructure = 1
 		}
 	}
+	resources = {
+		aluminium = 35
+		chromium = 21
+		coal = 38
+	}
 
 	provinces = {
 		12856 13555 13556

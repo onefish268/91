@@ -16,6 +16,9 @@ state = {
 			infrastructure = 1
 		}
 	}
+	resources = {
+		steel = 7
+	}
 	provinces = {
 		8133
 		10761

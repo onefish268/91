@@ -1,0 +1,179 @@
+YSS_bbtank = {#步兵坦克
+	include = generic_infantry_tank_organization
+	name = YSS_bbtank
+	icon = GFX_idea_YSS_bbtank
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_air = {#飞机
+	include = generic_general_aircraft_organization
+	name = YSS_air
+	icon = GFX_idea_YSS_air
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_artillery = {#火炮
+	include = generic_artillery_organization
+	name = YSS_artillery
+	icon = GFX_idea_YSS_artillery
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_assault_guns = {#自行火炮
+	include = generic_assault_guns_organization
+	name = YSS_assault_guns
+	icon = GFX_idea_YSS_assault_guns
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_battle_line_ship = {#大船
+	include = generic_battle_line_ship_organization
+	name = YSS_battle_line_ship
+	icon = GFX_idea_YSS_battle_line_ship
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_cas_aircraft = {#近距支援机
+	include = generic_cas_aircraft_organization
+	name = YSS_cas_aircraft
+	icon = GFX_idea_YSS_cas_aircraft
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_escort_ship = {#护卫舰
+	include = generic_escort_ship_organization
+	name = YSS_escort_ship
+	icon = GFX_idea_YSS_escort_ship
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_infantry_equipment = {#步枪
+	include = generic_infantry_equipment_organization
+	name = YSS_infantry_equipment
+	icon = GFX_idea_YSS_infantry_equipment
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_light_aircraft = {#轻型飞机
+	include = generic_light_aircraft_organization
+	name = YSS_light_aircraft
+	icon = GFX_idea_YSS_light_aircraft
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_motorized = {#卡车
+	include = generic_motorized_mechanized_organization
+	name = YSS_motorized
+	icon = GFX_idea_YSS_motorized
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_refurbishment_repair = {#舰船翻新
+	include = generic_refurbishment_repair_organization
+	name = YSS_refurbishment_repair
+	icon = GFX_idea_YSS_refurbishment_repair
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_support_equipment = {#支援装备
+	include = generic_support_equipment_organization
+	name = YSS_support_equipment
+	icon = GFX_idea_YSS_support_equipment
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_tank = {#标准化坦克
+	include = generic_tank_organization
+	name = YSS_tank
+	icon = GFX_idea_YSS_tank
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_refurbishment_plant = {#拖拉机装配厂
+	include = generic_tank_refurbishment_plant_organization
+	name = YSS_refurbishment_plant
+	icon = GFX_idea_YSS_refurbishment_plant
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}
+
+YSS_train = {#火车
+	include = generic_train_organization
+	name = YSS_train
+	icon = GFX_idea_YSS_train
+	allowed = {
+		tag = YSS
+	}
+	available = {
+		
+	}
+}

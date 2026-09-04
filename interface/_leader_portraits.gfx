@@ -144,6 +144,22 @@ spriteTypes = {
         texturefile = "gfx/leaders/YSS/mlhm.png"
     }
     spriteType = {
+        name = "GFX_YSS_body_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_days_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_days_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_paper_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_paper_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_machine_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_machine_icon.png"
+    }
+    spriteType = {
         name = "GFX_EAS_anan"
         texturefile = "gfx/leaders/ZIM/anan.png"
     }

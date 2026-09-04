@@ -23,6 +23,10 @@ state = {
 		}
 		set_state_flag = has_city_story
 	}
+	resources = {
+		steel = 41
+		rubber = 10
+	}
 
 	provinces = {
 		12806

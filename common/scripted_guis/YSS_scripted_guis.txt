@@ -1,0 +1,40 @@
+scripted_gui = {
+		
+	YSS_body_ui = { #总书记身体状况
+	    parent_window_token = politics_tab
+		context_type = player_context
+		window_name = "YSS_body_ui_window"
+		visible = {
+			original_tag = YSS
+	    }
+	}
+
+	YSS_days_ui = { #年度报告
+	    parent_window_token = politics_tab
+		context_type = player_context
+		window_name = "YSS_days_ui_window"
+		visible = {
+			original_tag = YSS
+	    }
+	}
+
+	YSS_paper_ui = { #求知报
+	    parent_window_token = politics_tab
+		context_type = player_context
+		window_name = "YSS_paper_ui_window"
+		visible = {
+			original_tag = YSS
+	    }
+	}
+
+	YSS_machine_ui = { #国家经济统筹委员会
+	    parent_window_token = politics_tab
+		context_type = player_context
+		window_name = "YSS_machine_ui_window"
+		visible = {
+			original_tag = YSS
+	    }
+	}
+	
+}
+

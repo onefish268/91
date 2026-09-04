@@ -20,6 +20,11 @@ state = {
 			infrastructure = 1
 		}
 	}
+	resources = {
+		steel = 62
+		oil = 68
+		rubber = 15
+	}
 
 	provinces = {
 		1914 2088 4918 7925 10126 10743 10784 10795 12002 12826 12862 12881 12887

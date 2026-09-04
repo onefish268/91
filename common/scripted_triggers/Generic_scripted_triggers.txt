@@ -460,6 +460,7 @@ is_Iberian_country = {
 
 has_special_mio_tag = {
     or = {
+        tag = YSS
         tag = ZIM
 		tag = ZYX
 		tag = ZSB

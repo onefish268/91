@@ -231,4 +231,64 @@ spriteTypes = {
         name = "GFX_idea_ZIM_train"
         texturefile = "gfx/mio/GFX_idea_ZIM_train.png"
     }
+    spriteType = {
+        name = "GFX_idea_YSS_artillery"
+        texturefile = "gfx/mio/GFX_idea_YSS_artillery.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_bbtank"
+        texturefile = "gfx/mio/GFX_idea_YSS_bbtank.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_air"
+        texturefile = "gfx/mio/GFX_idea_YSS_air.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_assault_guns"
+        texturefile = "gfx/mio/GFX_idea_YSS_assault_guns.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_battle_line_ship"
+        texturefile = "gfx/mio/GFX_idea_YSS_battle_line_ship.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_cas_aircraft"
+        texturefile = "gfx/mio/GFX_idea_YSS_cas_aircraft.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_escort_ship"
+        texturefile = "gfx/mio/GFX_idea_YSS_escort_ship.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_infantry_equipment"
+        texturefile = "gfx/mio/GFX_idea_YSS_infantry_equipment.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_light_aircraft"
+        texturefile = "gfx/mio/GFX_idea_YSS_light_aircraft.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_motorized"
+        texturefile = "gfx/mio/GFX_idea_YSS_motorized.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_refurbishment_repair"
+        texturefile = "gfx/mio/GFX_idea_YSS_refurbishment_repair.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_support_equipment"
+        texturefile = "gfx/mio/GFX_idea_YSS_support_equipment.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_tank"
+        texturefile = "gfx/mio/GFX_idea_YSS_tank.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_refurbishment_plant"
+        texturefile = "gfx/mio/GFX_idea_YSS_refurbishment_plant.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_train"
+        texturefile = "gfx/mio/GFX_idea_YSS_train.png"
+    }
 }

@@ -1,0 +1,75 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_body_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 201 height= 185 }
+		#clipping = no
+
+		buttonType = {
+			name = "YSS_body_icon"
+			spriteType = GFX_YSS_body_icon
+			position = { x = 340 y = 57 }
+			clicksound = click_default
+    	    scale = 1
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_days_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 201 height= 198 }
+		#clipping = no
+
+		buttonType = {
+			name = "YSS_days_icon"
+			spriteType = GFX_YSS_days_icon
+			position = { x = 390 y = 300 }
+			clicksound = click_default
+    	    scale = 0.25
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_paper_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 201 height= 198 }
+		#clipping = no
+
+		buttonType = {
+			name = "YSS_paper_icon"
+			spriteType = GFX_YSS_paper_icon
+			position = { x = 475 y = 385 }
+			clicksound = click_default
+    	    scale = 0.1
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_machine_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 201 height= 198 }
+		#clipping = no
+
+		buttonType = {
+			name = "YSS_machine_icon"
+			spriteType = GFX_YSS_machine_icon
+			position = { x = 0 y = 1040 }
+			clicksound = click_default
+    	    scale = 0.9
+		}
+
+	}
+}
