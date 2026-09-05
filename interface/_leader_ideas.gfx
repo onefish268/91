@@ -128,6 +128,46 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/YSS_set.png"
     }
     spriteType = {
+        name = "GFX_idea_YSS_1"
+        texturefile = "gfx/interface/ideas/YSS/YSS_1.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_2"
+        texturefile = "gfx/interface/ideas/YSS/YSS_2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_3"
+        texturefile = "gfx/interface/ideas/YSS/YSS_3.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_4"
+        texturefile = "gfx/interface/ideas/YSS/YSS_4.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_5"
+        texturefile = "gfx/interface/ideas/YSS/YSS_5.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_6"
+        texturefile = "gfx/interface/ideas/YSS/YSS_6.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_7"
+        texturefile = "gfx/interface/ideas/YSS/YSS_7.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_8"
+        texturefile = "gfx/interface/ideas/YSS/YSS_8.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_9"
+        texturefile = "gfx/interface/ideas/YSS/YSS_9.png"
+    }
+    spriteType = {
+        name = "GFX_idea_YSS_10"
+        texturefile = "gfx/interface/ideas/YSS/YSS_10.png"
+    }
+    spriteType = {
         name = "GFX_idea_dabang"
         texturefile = "gfx/interface/ideas/dabang.png"
     }

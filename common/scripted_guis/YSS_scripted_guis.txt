@@ -52,6 +52,64 @@ scripted_gui = {
 		visible = {
 			original_tag = YSS
 	    }
+		triggers = {
+			YSS_23_icon_visible = { NOT = { has_country_flag = sansan_plan_has_unlocked } }
+			YSS_33_icon_visible = { has_country_flag = sansan_plan_has_unlocked }
+			YSS_1_icon_visible = { 
+				NOT = { 
+					has_country_flag = jindu_has_more
+					has_country_flag = jindu1_has_more
+					has_country_flag = jindu2_has_more
+					has_country_flag = jindu3_has_more 
+					has_country_flag = jindu4_has_more
+				} 
+			}
+			YSS_2_icon_visible = { 
+				NOT = { 
+				    has_country_flag = jindu1_has_more
+					has_country_flag = jindu2_has_more
+					has_country_flag = jindu3_has_more 
+					has_country_flag = jindu4_has_more 
+			    } 
+				has_country_flag = jindu_has_more
+		    }
+			YSS_3_icon_visible = {
+				NOT = { 
+				    has_country_flag = jindu_has_more 
+					has_country_flag = jindu2_has_more
+					has_country_flag = jindu3_has_more 
+					has_country_flag = jindu4_has_more
+			    }
+				has_country_flag = jindu1_has_more
+			}
+			YSS_4_icon_visible = {
+				NOT = { 
+				    has_country_flag = jindu_has_more
+					has_country_flag = jindu1_has_more
+					has_country_flag = jindu3_has_more 
+					has_country_flag = jindu4_has_more 
+			    }
+				has_country_flag = jindu2_has_more
+			}
+			YSS_5_icon_visible = {
+				NOT = { 
+				    has_country_flag = jindu_has_more
+					has_country_flag = jindu1_has_more
+					has_country_flag = jindu2_has_more
+					has_country_flag = jindu4_has_more 
+			    }
+				has_country_flag = jindu3_has_more
+			}
+			YSS_6_icon_visible = {
+				NOT = { 
+				    has_country_flag = jindu_has_more
+					has_country_flag = jindu1_has_more
+					has_country_flag = jindu2_has_more
+					has_country_flag = jindu3_has_more  
+			    }
+				has_country_flag = jindu4_has_more
+			}
+		}
 	}
 
 	YSS_states_ui = { #国家行政拓展与地区开发项目

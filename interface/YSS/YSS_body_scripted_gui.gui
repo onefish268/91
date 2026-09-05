@@ -192,18 +192,63 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "YSS_machine_ui_window"
-		position = { x = 0 y = 0 }
-		size = { width = 201 height= 198 }
+		position = { x = 0 y = 1040 }
+		size = { width = 500 height = 522 }
 		#clipping = no
 
-		buttonType = {
-			name = "YSS_machine_button"
-			spriteType = GFX_YSS_machine_icon
-			position = { x = 0 y = 1040 }
-			clicksound = click_default
-    	    scale = 0.9
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_YSS_machine_icon"
+			clicksound = click_checkbox
 		}
-
+		iconType = {
+			name = "YSS_23_icon"
+			spriteType = GFX_YSS_23_icon
+			position = { x = 80 y = 130 }
+    	    scale = 0.6
+		}
+		iconType = {
+			name = "YSS_33_icon"
+			spriteType = GFX_YSS_33_icon
+			position = { x = 80 y = 130 }
+    	    scale = 0.6
+		}
+		iconType = {
+			name = "YSS_1_icon"
+			spriteType = GFX_YSS_1_icon
+			position = { x = 120 y = 300 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_2_icon"
+			spriteType = GFX_YSS_2_icon
+			position = { x = 120 y = 300 }
+    	    scale = 0.3
+		}
+		iconType = {
+			name = "YSS_3_icon"
+			spriteType = GFX_YSS_3_icon
+			position = { x = 120 y = 300 }
+    	    scale = 0.3
+		}
+		iconType = {
+			name = "YSS_4_icon"
+			spriteType = GFX_YSS_4_icon
+			position = { x = 120 y = 300 }
+    	    scale = 0.3
+		}
+		iconType = {
+			name = "YSS_5_icon"
+			spriteType = GFX_YSS_5_icon
+			position = { x = 120 y = 300 }
+    	    scale = 0.3
+		}
+		iconType = {
+			name = "YSS_6_icon"
+			spriteType = GFX_YSS_6_icon
+			position = { x = 120 y = 300 }
+    	    scale = 0.3
+		}
 	}
 }
 

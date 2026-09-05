@@ -1,9 +1,118 @@
 ideas = {
 	#国家层面
 	country = {
-		YSS_1 = {
-			picture = 
-			modifier = {				
+		YSS_1 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {	
+				army_org_factor = -0.15	
+				army_morale_factor = -0.1
+				cannot_retreat_while_attacking	
+				supply_combat_penalties_on_core_factor = -0.15	
+				stability_weekly = -0.03
+				war_support_weekly = 0.02
+			}
+		}
+		YSS_2 = {#联盟红军
+			picture = YSS_2
+			modifier = {		
+				army_armor_speed_factor = -0.1
+				army_artillery_attack_factor = 0.05
+				army_attack_against_major_factor = 0.03
+				army_attack_against_minor_factor = -0.05
+				army_infantry_attack_factor = -0.05		
+				heat_attrition_factor = -0.15
+				mechanized_attack_factor = -0.25
+				motorized_attack_factor = -0.25
+				supply_consumption_factor = 0.2
+				army_attack_speed_factor = -0.1
+				army_defence_factor = 0.1
+				army_strength_factor = 0.15
+				max_army_group_size = 5
+			}
+		}
+		YSS_3 = {#联盟海军
+			picture = YSS_3
+			modifier = {			
+				convoy_raiding_efficiency_factor = -0.1	
+				fighter_sortie_efficiency = -0.15
+				naval_critical_score_chance_factor = -0.05
+				naval_damage_factor = 0.05
+				naval_hit_chance = -0.1
+				navy_capital_ship_attack_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_submarine_attack_factor = -0.15
+			}
+		}
+		YSS_4 = {#联盟空军
+			picture = YSS_4
+			modifier = {			
+				ground_attack_factor = -0.1	
+				static_anti_air_damage_factor = -0.25
+				air_accidents_factor = 0.35
+				air_attack_factor = -0.15
+				air_defence_factor = -0.15
+			}
+		}
+		YSS_5 = {#小农经济主导
+			picture = YSS_5
+			modifier = {		
+				conscription_factor = -0.15
+				consumer_goods_factor = -0.1	
+				monthly_population = 0.25	
+			}
+		}
+		YSS_6 = {#过于开放的外贸
+			picture = YSS_6
+			modifier = {		
+				consumer_goods_factor = -0.25
+				foreign_subversive_activites = 0.15	
+				research_speed_factor = -0.15
+				intelligence_agency_defense = -0.35	
+			}
+		}
+		YSS_7 = {#中央政治局
+			picture = YSS_7
+			modifier = {		
+				command_power_gain_mult = -0.15		
+				defensive_war_stability_factor = 0.15
+				forced_surrender_limit = 0.05
+				offensive_war_stability_factor = 0.1
+				political_power_cost = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_weekly = 0.01
+				drift_defence_factor = 0.15
+			}
+		}
+		YSS_8 = {#经济统筹委员会
+			picture = YSS_8
+			modifier = {	
+				army_fuel_consumption_factor = -0.05	
+				civilian_factory_use = -1	
+				consumer_goods_factor = 0.2	
+				energy_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industry_repair_factor = 0.05
+				line_change_production_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		YSS_9 = {#不纯洁的党组织
+			picture = YSS_9
+			modifier = {	
+				party_popularity_stability_factor = -0.25
+				political_power_factor = -0.25		
+				stability_weekly = -0.01	
+				drift_defence_factor = -0.25
+			}
+		}
+		YSS_10 = {#严峻的国际局势
+			picture = YSS_10
+			modifier = {	
+				enemy_declare_war_tension = 0.15	
+				improve_relations_maintain_cost_factor = 0.25	
+				join_faction_tension = 0.25	
+				lend_lease_tension = -0.1
 			}
 		}
 	}

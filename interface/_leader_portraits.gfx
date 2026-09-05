@@ -168,6 +168,38 @@ spriteTypes = {
         texturefile = "gfx/leaders/YSS/GFX_YSS_machine_icon.png"
     }
     spriteType = {
+        name = "GFX_YSS_23_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_23_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_33_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_33_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_1_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_1_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_2_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_2_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_3_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_3_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_4_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_4_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_5_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_5_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_6_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_6_icon.png"
+    }
+    spriteType = {
         name = "GFX_YSS_states_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_states_icon.png"
     }

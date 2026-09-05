@@ -17,6 +17,16 @@ set_convoys = 306
 set_variable = { another_country_leader_group = 66 }
 
 add_ideas = {
+	YSS_1
+	YSS_2
+	YSS_3
+	YSS_4
+	YSS_5
+	YSS_6
+	YSS_7
+	YSS_8
+	YSS_9
+	YSS_10
 }
 
 set_politics = {
