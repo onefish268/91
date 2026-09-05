@@ -7,6 +7,8 @@
  YSS_democratic_party: "蒙尼利克党"
  YSS_fascism_party: "民族党"
  YSS_communism_party: "特瓦赫多-共"
+ YSS_GATHERING_STORM_DESC: "索维耶特社会主义共和国联盟"
+ YSS_new_tips: "@YSS§O索维耶特社会主义共和国联盟§!的全新内容"
 #地方修正
  YSS_province_xingzheng_1: "地方行政等级-§R最低级§!"
  YSS_province_xingzheng_2: "地方行政等级-§L初级§!"

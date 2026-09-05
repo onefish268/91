@@ -970,13 +970,13 @@ guiTypes = {
 			pdx_tooltip = "GER_new_tips"
 			#alwaystransparent = yes
 		}
-		# iconType = {
-		# 	name = "tenth_new_country_tip"
-		# 	quadTextureSprite = "GFX_country_selection_entry_new_country"
-		# 	position = { x = 984   y = 224 }
-		# 	pdx_tooltip = "GRE_new_tips"
-		# 	#alwaystransparent = yes
-		# }
+		iconType = {
+		 	name = "tenth_new_country_tip"
+		 	quadTextureSprite = "GFX_country_selection_entry_new_country"
+		 	position = { x = 1170   y = 130 }
+		 	pdx_tooltip = "YSS_new_tips"
+		 	#alwaystransparent = yes
+		}
 		# iconType = {
 		# 	name = "eleventh_new_country_tip"
 		# 	quadTextureSprite = "GFX_country_selection_entry_new_country"

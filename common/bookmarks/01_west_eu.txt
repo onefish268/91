@@ -197,19 +197,16 @@ bookmarks = {
                 PRC_The_red_sun_of_the_people
             }
         }
-        "JAP" = {
+        "YSS" = {
             #minor = yes
-            history = "JAP_GATHERING_STORM_DESC"
-            ideology = democratic
+            history = "YSS_GATHERING_STORM_DESC"
+            ideology = communism
             ideas = {
-                dongyatiaoyue
-                jinv
-                caifa
+                YSS_1
+                YSS_9
+                YSS_10
             }
             focuses = {
-                JAP_new74
-                JAP_new72
-                JAP_new86
             }
         }
         "SOV" = {
