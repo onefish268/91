@@ -9,13 +9,31 @@ scripted_gui = {
 	    }
 	}
 
-	YSS_days_ui = { #年度报告
+	YSS_days_ui = { #年度报告启动器
 	    parent_window_token = politics_tab
 		context_type = player_context
 		window_name = "YSS_days_ui_window"
 		visible = {
 			original_tag = YSS
 	    }
+		effects = {
+			YSS_days_button_click = {
+			    set_country_flag = YSS_set_days_new
+			}
+		}
+	}
+	YSS_days_start_ui = { #年度报告具体内容
+		context_type = player_context
+		window_name = "YSS_days_start_ui_window"
+		visible = {
+			original_tag = YSS
+			has_country_flag = YSS_set_days_new
+	    }
+		effects = {
+			YSS_days_out_button_click = {
+			    clr_country_flag = YSS_set_days_new
+			}
+		}
 	}
 
 	YSS_paper_ui = { #求知报
