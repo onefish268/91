@@ -1,0 +1,6 @@
+ZG_joint_trigger = {
+    or = {
+        original_tag = ZYX
+        original_tag = GER
+    }
+}
