@@ -26,6 +26,12 @@ defined_text = {
 		}
 		localization_key = GFX_EAS_anan
 	}
+	text = {
+		trigger = {
+			tag = YSS
+		}
+		localization_key = GFX_YSS_byner
+	}
 	##通用
 	text = {
 		localization_key = GFX_leader_unknown
@@ -58,6 +64,12 @@ defined_text = {
 			tag = EAS
 		}
 		localization_key = EAS_anan_name
+	}
+	text = {
+		trigger = {
+			tag = YSS
+		}
+		localization_key = YSS_byner_name
 	}
 	##通用
 	text = {
@@ -92,6 +104,12 @@ defined_text = {
 		}
 		localization_key = EAS_anan_DESC_1
 	}
+	text = {
+		trigger = {
+			tag = YSS
+		}
+		localization_key = YSS_byner_DESC_1
+	}
 }
 
 ####另外一位国家领袖介绍--姓名及buff--外交界面
@@ -120,6 +138,12 @@ defined_text = {
 			tag = EAS
 		}
 		localization_key = EAS_anan_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			tag = YSS
+		}
+		localization_key = YSS_byner_Diplomacy_desc
 	}
 }
 

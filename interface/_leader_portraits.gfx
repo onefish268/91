@@ -156,12 +156,36 @@ spriteTypes = {
         texturefile = "gfx/leaders/YSS/GFX_YSS_paper_icon.png"
     }
     spriteType = {
+        name = "GFX_YSS_days_start_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_days_start_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_days_out_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_days_out_icon.png"
+    }
+    spriteType = {
         name = "GFX_YSS_machine_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_machine_icon.png"
     }
     spriteType = {
+        name = "GFX_YSS_states_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_states_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_man_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_man_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_yisiland_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_yisiland_icon.png"
+    }
+    spriteType = {
         name = "GFX_EAS_anan"
         texturefile = "gfx/leaders/ZIM/anan.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_byner"
+        texturefile = "gfx/leaders/YSS/byner.png"
     }
     spriteType = {
         name = "GFX_ZSB_faction_panel_banner"

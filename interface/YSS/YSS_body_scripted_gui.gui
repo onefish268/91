@@ -7,7 +7,7 @@ guiTypes = {
 		#clipping = no
 
 		buttonType = {
-			name = "YSS_body_icon"
+			name = "YSS_body_button"
 			spriteType = GFX_YSS_body_icon
 			position = { x = 340 y = 57 }
 			clicksound = click_default
@@ -26,13 +26,146 @@ guiTypes = {
 		#clipping = no
 
 		buttonType = {
-			name = "YSS_days_icon"
+			name = "YSS_days_button"
 			spriteType = GFX_YSS_days_icon
 			position = { x = 390 y = 300 }
 			clicksound = click_default
     	    scale = 0.25
 		}
 
+	}
+}
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_days_start_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 658 height= 776 }
+		#clipping = no
+		moveable = yes
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_YSS_days_start_icon"
+			clicksound = click_checkbox
+		}
+		buttonType = {
+			name = "YSS_days_out_button"
+			spriteType = GFX_YSS_days_out_icon
+			position = { x = 200 y = 620 }
+			clicksound = click_default
+    	    scale = 0.07
+		}
+		instantTextBoxType = {
+			name = "YSS_days_tt_desc"
+			position = { x = 300 y = 130 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_tt_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_out_desc"
+			position = { x = 135 y = 170 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_out_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_industry_desc"
+			position = { x = 265 y = 200 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_industry_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_factory_desc"
+			position = { x = 265 y = 240 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_factory_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_jijian_desc"
+			position = { x = 265 y = 290 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_jijian_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_manpower_desc"
+			position = { x = 265 y = 340 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_manpower_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_boat_desc"
+			position = { x = 265 y = 390 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_boat_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_yunshu_desc"
+			position = { x = 265 y = 440 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_yunshu_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_army_desc"
+			position = { x = 265 y = 490 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_army_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_keyan_desc"
+			position = { x = 265 y = 540 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_keyan_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_days_tielu_desc"
+			position = { x = 265 y = 590 }
+			maxHeight = 20
+			maxWidth = 500
+			font = "hoi_18mbs"
+			text = YSS_days_tielu_desc # 在本地化填写图片注释文字
+			format = left
+			
+		}
 	}
 }
 
@@ -45,7 +178,7 @@ guiTypes = {
 		#clipping = no
 
 		buttonType = {
-			name = "YSS_paper_icon"
+			name = "YSS_paper_button"
 			spriteType = GFX_YSS_paper_icon
 			position = { x = 475 y = 385 }
 			clicksound = click_default
@@ -64,11 +197,96 @@ guiTypes = {
 		#clipping = no
 
 		buttonType = {
-			name = "YSS_machine_icon"
+			name = "YSS_machine_button"
 			spriteType = GFX_YSS_machine_icon
 			position = { x = 0 y = 1040 }
 			clicksound = click_default
     	    scale = 0.9
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_states_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 577 }
+		#clipping = no
+
+		iconType = {
+			name = "YSS_states_icon"
+			spriteType = GFX_YSS_states_icon
+			position = { x = 0 y = 0 }
+    	    scale = 0.5
+		}
+
+		buttonType = {
+			name = "YSS_man_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 35 y = 130 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man1_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 132 y = 10 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man2_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 245 y = 130 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man3_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 275 y = 0 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man4_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 405 y = 140 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man5_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 380 y = 320 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+		buttonType = {
+			name = "YSS_man6_button"
+			spriteType = GFX_YSS_man_icon
+			position = { x = 240 y = 380 }
+			clicksound = click_default
+    	    scale = 0.3
+		}
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_yisiland_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 610 }
+		#clipping = no
+
+		iconType = {
+			name = "YSS_yisiland_icon"
+			spriteType = GFX_YSS_yisiland_icon
+			position = { x = 20 y = 0 }
+    	    scale = 1
 		}
 
 	}

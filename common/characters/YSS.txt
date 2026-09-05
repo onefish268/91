@@ -1,4 +1,5 @@
 characters = {
+	#领导人
 	YSS_mlhm = {
 		name = "门格斯图·海尔·马里亚姆"
 		portraits = {
@@ -15,5 +16,1096 @@ characters = {
 	        }
 			id= -1
 		}
-	}	
+	}
+	#顾问
+	YSS_1_1 = {
+		name = "贝吉龙德・特克勒"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/1.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_minister_of_defense_emilio
+			}
+			idea_token = YSS_1_1
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_2 = {
+		name = "伊姆鲁・海尔・塞拉西"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/2.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_minister_of_public_works
+			}
+			idea_token = YSS_1_2
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_3 = {
+		name = "卡萨・海尔・达格"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/3.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_militant_communist
+			}
+			idea_token = YSS_1_3
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_4 = {
+		name = "阿贝贝・阿拉盖"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/4.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_socialist_economist
+			}
+			idea_token = YSS_1_4
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_5 = {
+		name = "马克南・恩德勒卡杰沃"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/5.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_reformist_minister_of_health
+			}
+			idea_token = YSS_1_5
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_6 = {
+		name = "赫鲁伊・沃尔德・赛"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/6.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_national_socialist_vanguard
+			}
+			idea_token = YSS_1_6
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_7 = {
+		name = "格塔丘・阿巴特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/7.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_revolutionary_writer
+			}
+			idea_token = YSS_1_7
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_8 = {
+		name = "伊尔马・德雷萨"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/8.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				TAOG_home_affairs
+			}
+			idea_token = YSS_1_8
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_9 = {
+		name = "梅嫩・阿斯富"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/9.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				GER_reich_engineer
+			}
+			idea_token = YSS_1_9
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_10 = {
+		name = "格特耶·马孔嫩"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/10.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				ICE_revolutionary_educator
+			}
+			idea_token = YSS_1_10
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_11 = {
+		name = "斯图尔特・西姆斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/11.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				COG_trade_unionist
+			}
+			idea_token = YSS_1_11
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_12 = {
+		name = "阿布纳・亚伯拉罕"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/12.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				political_commissar
+			}
+			idea_token = YSS_1_12
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_13 = {
+		name = "阿布纳・切雷罗斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/13.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				renaissance_man
+			}
+			idea_token = YSS_1_13
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_14 = {
+		name = "塔德塞・比鲁"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/14.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				AST_steelworks_businessman
+			}
+			idea_token = YSS_1_14
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_1_15 = {
+		name = "沃克内・埃希特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/15.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				INS_returned_from_moscow
+			}
+			idea_token = YSS_1_15
+			slot = political_advisor
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	#理论家
+	YSS_2_1 = {
+		name = "特克勒・哈瓦里亚"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/16.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				AST_vindicated_realist
+			}
+			idea_token = YSS_2_1
+			slot = theorist
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_2_2 = {
+		name = "德米西埃·玛丽亚姆"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/17.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SIA_artillery_enthusiast
+			}
+			idea_token = YSS_2_2
+			slot = theorist
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_2_3 = {
+		name = "利奥波德・鲁尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/18.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				TAOG_engineer
+			}
+			idea_token = YSS_2_3
+			slot = theorist
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	#陆军部长
+	YSS_3_1 = {
+		name = "克贝德"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/19.png"
+				large = "gfx/leaders/YSS/52.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_organizational_2
+			}
+			idea_token = YSS_3_1
+			slot = army_chief
+			cost = 150
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist #天才的战略家
+				offensive_doctrine #进攻大师
+				armor_officer #装甲军官
+				panzer_leader #装甲专家
+				trickster #奇袭专家
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_3_2 = {
+		name = "翁多森・卡萨"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/20.png"
+				large = "gfx/leaders/YSS/53.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_entrenchment_2
+			}
+			idea_token = YSS_3_2
+			slot = army_chief
+			cost = 150
+		}
+		field_marshal = {
+			traits = {
+				trickster #奇袭专家
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_3_3 = {
+		name = "维京・塔姆"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/21.png"
+				large = "gfx/leaders/YSS/54.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_planning_2
+			}
+			idea_token = YSS_3_3
+			slot = army_chief
+			cost = 150
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_3_4 = {
+		name = "加布里埃尔・扎沃德・吉拉内"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/22.png"
+				large = "gfx/leaders/YSS/55.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_reform_2
+			}
+			idea_token = YSS_3_4
+			slot = army_chief
+			cost = 150
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	#空军部长
+	YSS_4_1 = {
+		name = "阿齐兹・埃扎特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/23.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_ground_support_2
+			}
+			idea_token = YSS_4_1
+			slot = air_chief
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_4_2 = {
+		name = "穆卢盖塔・耶加祖"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/24.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_night_operations_2
+			}
+			idea_token = YSS_4_2
+			slot = air_chief
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_4_3 = {
+		name = "利杰·约翰内斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/25.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				master_of_politics
+			}
+			idea_token = YSS_4_3
+			slot = air_chief
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_4_4 = {
+		name = "塞尤姆・曼加沙"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/26.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_all_weather_2
+			}
+			idea_token = YSS_4_4
+			slot = air_chief
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	#海军部长
+	YSS_5_1 = {
+		name = "梅斯芬・西莱希"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/27.png"
+				large = "gfx/leaders/YSS/56.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			idea_token = YSS_5_1
+			slot = navy_chief
+			cost = 150
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_5_2 = {
+		name = "约翰・罗宾逊"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/28.png"
+				large = "gfx/leaders/YSS/57.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_chief_maneuver_2
+			}
+			idea_token = YSS_5_2
+			slot = navy_chief
+			cost = 150
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	#统帅部（总司令）	
+	YSS_6_1 = {
+		name = "卡尔・古斯塔夫"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/29.png"
+				large = "gfx/leaders/YSS/58.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			idea_token = YSS_6_1
+			slot = high_command
+			cost = 150
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_2 = {
+		name = "韦希布"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/30.png"
+				large = "gfx/leaders/YSS/59.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_morale_3
+			}
+			idea_token = YSS_6_2
+			slot = high_command
+			cost = 150
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_3 = {
+		name = "费奥多尔・科诺瓦洛夫"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/31.png"
+				large = "gfx/leaders/YSS/60.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_CombinedArms_3
+			}
+			idea_token = YSS_6_3
+			slot = high_command
+			cost = 150
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_4 = {
+		name = "沃尔德梅斯卡尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/32.png"
+				large = "gfx/leaders/YSS/61.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_concealment_2
+			}
+			idea_token = YSS_6_4
+			slot = high_command
+			cost = 150
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_5 = {
+		name = "德贾・兹纳奇・纳德翁"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/33.png"
+				large = "gfx/leaders/YSS/62.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_air_combat_training_2
+			}
+			idea_token = YSS_6_5
+			slot = high_command
+			cost = 150
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_6 = {
+		name = "海尔・阿巴・梅尔萨"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/34.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_reform_2
+			}
+			idea_token = YSS_6_6
+			slot = high_command
+			cost = 150
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_7 = {
+		name = "利杰阿比耶・阿贝贝"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/35.png"
+				large = "gfx/leaders/YSS/63.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_radio_intelligence_2
+			}
+			idea_token = YSS_6_7
+			slot = high_command
+			cost = 150
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_6_8 = {
+		name = "菲塔乌里・扎沃德"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/36.png"
+				large = "gfx/leaders/YSS/64.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_amphibious_assault_2
+			}
+			idea_token = YSS_6_8
+			slot = high_command
+			cost = 150
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+#陆军将军
+    YSS_7_1 = {
+		name = "阿里・马赫"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/40.png"
+				large = "gfx/leaders/YSS/68.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_2 = {
+		name = "阿布德・帕"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/41.png"
+				large = "gfx/leaders/YSS/69.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_3 = {
+		name = "侯赛因・西里"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/42.png"
+				large = "gfx/leaders/YSS/70.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_4 = {
+		name = "穆罕默德・马哈茂"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/43.png"
+				large = "gfx/leaders/YSS/71.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_5 = {
+		name = "穆罕默德・阿里"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/44.png"
+				large = "gfx/leaders/YSS/72.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_6 = {
+		name = "塔哈・侯赛因"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/45.png"
+				large = "gfx/leaders/YSS/73.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_7 = {
+		name = "赛义德・库特布"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/46.png"
+				large = "gfx/leaders/YSS/74.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_8 = {
+		name = "萨拉马・穆萨"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/47.png"
+				large = "gfx/leaders/YSS/75.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_9 = {
+		name = "法莉妲"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/48.png"
+				large = "gfx/leaders/YSS/76.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_10 = {
+		name = "多丽亚・沙菲克"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/49.png"
+				large = "gfx/leaders/YSS/77.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_11 = {
+		name = "艾哈迈德・侯赛因"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/50.png"
+				large = "gfx/leaders/YSS/78.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_7_habu = {
+		name = "塔拉特・哈布"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/51.png"
+				large = "gfx/leaders/YSS/79.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+#海军将官
+    YSS_8_1 = {
+		name = "阿卜杜勒・拉赫曼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/37.png"
+				large = "gfx/leaders/YSS/65.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_8_2 = {
+		name = "扎卡里亚・莫希丁"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/38.png"
+				large = "gfx/leaders/YSS/66.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	YSS_8_3 = {
+		name = "穆罕默德・纳吉布"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/39.png"
+				large = "gfx/leaders/YSS/67.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }
