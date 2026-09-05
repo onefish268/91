@@ -2758,3 +2758,21 @@ defined_text = {
 	}
 	text = { localization_key = ready_to_start_block_d_3 }
 }
+
+#打仗时，玩家选卡文本及其图片样式的改变
+
+defined_text = {
+	name = player_attack_block_picture
+
+	text = {
+		trigger = {
+			has_country_flag = has_selected_line
+			has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+		#localization_key = set_in_back_line
+		localization_key = set_in_back_line
+	}
+	text = {
+		localization_key = "[Total__kards]"
+	}
+}

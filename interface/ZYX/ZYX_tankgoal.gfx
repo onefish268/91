@@ -36,6 +36,21 @@ spriteTypes = {
 		texturefile = "gfx/tankgoal/tankgoal_background.png"
 	}
 
+	spriteType = {#基地
+		name = tankgoal_base
+		textureFile = "gfx/tankgoal/tankgoal_base.png"
+	}
+
+	spriteType = {#范围
+		name = tankgoal_range
+		textureFile = "gfx/tankgoal/tankgoal_range.png"
+	}
+
+	spriteType = {#进攻（通用图片）
+		name = set_in_back_line
+		textureFile = "gfx/tankgoal/set_in_back_line.png"
+	}
+
 	#学院们、兵种们的图标
 
 	spriteType = {

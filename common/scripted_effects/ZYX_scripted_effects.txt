@@ -26,17 +26,17 @@ ZYX_add_all_units_HP = {#生命
 	add_to_array = { tankgoal_unit_HP = -1 }
 	# USA_infantry (6-12) HP=1 attack=1 defence=1
 	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 2 }
+	add_to_array = { tankgoal_unit_HP = 3 }
+	add_to_array = { tankgoal_unit_HP = 4 }
+	add_to_array = { tankgoal_unit_HP = 5 }
+	add_to_array = { tankgoal_unit_HP = 6 }
+	add_to_array = { tankgoal_unit_HP = 7 }
 	# USA_tank (13-16) HP=1 attack=1 defence=1
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
-	add_to_array = { tankgoal_unit_HP = 1 }
+	add_to_array = { tankgoal_unit_HP = 8 }
+	add_to_array = { tankgoal_unit_HP = 9 }
+	add_to_array = { tankgoal_unit_HP = 10 }
+	add_to_array = { tankgoal_unit_HP = 11 }
 
 	# ==================== ENG (17-32) ====================
 	# ENG_effect (17-21) HP=-1 attack=-1 defence=-1
@@ -992,6 +992,141 @@ ZYX_default_kards_deliver = {
 		}
 	}
 }
+
+#检测该手牌类型是效果还是兵种
+ZYX_check_kards_is_effect_or_not = {
+	if = {
+		limit = { check_variable = { picture_value < 17 } }
+		if = {
+			limit = { check_variable = { picture_value < 6 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 33 } }
+		if = {
+			limit = { check_variable = { picture_value < 22 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 38 } }
+		if = {
+			limit = { check_variable = { picture_value < 34 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 59 } }
+		#if = {
+		#	limit = { check_variable = { picture_value < 6 } }
+		#	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		#	set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		#}
+		#else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		#}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 69 } }
+		if = {
+			limit = { check_variable = { picture_value < 64 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 94 } }
+		if = {
+			limit = { check_variable = { picture_value < 75 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 100 } }
+		#if = {
+		#	limit = { check_variable = { picture_value < 6 } }
+		#	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		#	set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		#}
+		#else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		#}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 107 } }
+		if = {
+			limit = { check_variable = { picture_value < 101 } }
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else = {
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+		}
+	}
+}
+
+ZYX_change_your_kard = {#手牌切换时，清空原有的所有状态
+	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect     # 手牌且为效果牌
+	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect # 手牌且非效果牌
+	clr_country_flag = select_back_line_unit #选中了后线单位
+	clr_country_flag = select_forward_line_unit #选中了前线单位
+	clr_country_flag = has_selected_line #已选择战线/移动
+	clr_country_flag = the_left_side #选择战线左侧方向
+	clr_country_flag = in_left_side #选择了左侧的士兵
+	clr_country_flag = select_target #选择作用域
+	clear_variable = chosen_index_of_array_0
+	clear_variable = chosen_index_of_array_1
+
+	#数组的清理，TMD，我们的数组简直是一团糟
+	clear_array = fight_console_attack_AI_unit #这个名字根本不符合，应该叫：我们选择卡牌的作用域
+	clear_array = fight_console_player_attack_unit #我们选择的卡牌
+}
+
+ZYX_change_kard_scope = {
+	clr_country_flag = has_selected_line #已选择战线/移动
+	clr_country_flag = the_left_side #选择战线左侧方向
+	clr_country_flag = select_target #选择作用域
+	clear_variable = chosen_index_of_array_1 #选择的敌方士兵
+
+	#clear_array = fight_console_attack_AI_unit 
+}
+
+ZYX_clean_array_in_war = {
+	clear_array = player_back_line_0_array
+	clear_array = player_back_line_1_array
+	clear_array = player_forward_line_0_array
+	clear_array = player_forward_line_1_array
+}
+
+#呐呐呐，现在我是写得头昏眼花了（）awsl
 
 ZYX_AI_movement = {}
 

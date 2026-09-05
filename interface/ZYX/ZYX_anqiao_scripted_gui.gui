@@ -315,7 +315,6 @@ guiTypes = {
         	position = { x = 0 y = 0 }
 			pdx_tooltip = select_kards_mouse_tips
 		}
-
 	}
 
 	containerWindowType = {#卡牌选取、预览界面的大方块 由gridbox调出
@@ -704,7 +703,6 @@ guiTypes = {
 			name = "leave_fight_button"
 			position = { x = 1040 y = 0 }
 			spriteType = GFX_ZYX_tankgoal_out_button
-			
 		}
 
 		containerWindowType = {
@@ -724,7 +722,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "player_kards"
 				position = { x = 20 y = 520 }
-				size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+				size = { width = 1000 height = 400 }
 	    	    slotsize = { width = 80 height = 250 }
     			max_slots_horizontal = 30
 	   		    max_slots_vertical = 1  # 10行，超出父容器高度
@@ -736,10 +734,68 @@ guiTypes = {
 				name = "AI_kards"
 				position = { x = 20 y = -130 }
 				margin = { top = 300 left = 0 bottom = 0 right = 0 }
-				size = { width = 1000 height = 400 }  #我没能找到好的方式去实现契合卡牌堆实际高度的滑轮,只能换笨方法了——提前定义最大值
+				size = { width = 1000 height = 400 } 
    				slotsize = { width = 80 height = 250 }
     			max_slots_horizontal = 30
    			    max_slots_vertical = 1  # 10行，超出父容器高度
+	    		#add_horizontal = yes
+    			format = "UPPER_LEFT"
+			}
+
+			buttonType = {#AI基地
+				name = "base_of_AI"
+				spriteType = tankgoal_base
+				position = { x = 506 y = 45 }
+				scale = 0.5
+			}
+
+			buttonType = {#玩家基地
+				name = "base_of_player"
+				spriteType = tankgoal_base
+				position = { x = 506 y = 405 }
+				scale = 0.5
+			}
+
+			gridBoxType = {#玩家后方0左侧数组
+				name = "player_back_line_0"
+				position = { x = 400 y = 406 }
+				size = { width = 1000 height = 400 }
+   				slotsize = { width = -690 height = 250 }
+    			max_slots_horizontal = 5
+   			    max_slots_vertical = 1
+	    		#add_horizontal = yes
+    			format = "UPPER_LEFT"
+			}
+
+			gridBoxType = {
+				name = "player_back_line_1"
+				position = { x = 610 y = 406 }
+				size = { width = 1000 height = 400 }
+   				slotsize = { width = 90 height = 250 }
+    			max_slots_horizontal = 5
+   			    max_slots_vertical = 1
+	    		#add_horizontal = yes
+    			format = "UPPER_LEFT"
+			}
+
+			gridBoxType = {#玩家前方0左侧数组
+				name = "player_forward_line_0"
+				position = { x = 416 y = 295 }
+				size = { width = 1000 height = 400 }
+   				slotsize = { width = -690 height = 250 }
+    			max_slots_horizontal = 5
+   			    max_slots_vertical = 1
+	    		#add_horizontal = yes
+    			format = "UPPER_LEFT"
+			}
+
+			gridBoxType = {
+				name = "player_forward_line_1"
+				position = { x = 506 y = 295 }
+				size = { width = 1000 height = 400 }
+   				slotsize = { width = 90 height = 250 }
+    			max_slots_horizontal = 5
+   			    max_slots_vertical = 1 
 	    		#add_horizontal = yes
     			format = "UPPER_LEFT"
 			}
@@ -756,18 +812,55 @@ guiTypes = {
 				spriteType = ENG_effect__tp
 				scale = 0.5
 			}
-			iconType = {
-				name = "back_line_player" #玩家后方
-				position = { x = 0 y = 295 }
-				spriteType = ENG_effect__tp
-				scale = 0.5
-			}
-			iconType = {
-				name = "forward_line_player" #玩家前线
-				position = { x = 0 y = 405 }
-				spriteType = ENG_effect__tp
-				scale = 0.5
-			}
+		}
+	}
+
+	containerWindowType = {#战线后方
+		name = "fake_select_back_line_block"
+		size = { width = 1100 height = 398 }
+		position = { x = 0 y = 60 }
+
+		buttonType = { #玩家的后线0左侧
+			name = "select_back_line_0"
+			spriteType = tankgoal_range
+			position = { x = 70 y = 390 }
+			scale = 0.8
+		}
+		buttonType = {#玩家的后线1右侧
+			name = "select_back_line_1"
+			spriteType = tankgoal_range
+			position = { x = 550 y = 390 }
+			scale = 0.8
+		}
+	}
+
+	containerWindowType = {#战线前方
+		name = "fake_select_forward_line_block"
+		size = { width = 1100 height = 398 }
+		position = { x = 0 y = 60 }
+		clipping = yes
+
+		iconType = {
+			name = "fake_select_forward_line"
+			spriteType = tankgoal_range
+			position = { x = 70 y = 140 }
+			scale = 1.63
+		}
+
+		buttonType = {
+			size = { width = 463 height = 291 }
+			name = "select_forward_line_0"
+			position = { x = 70 y = 140 }
+			spriteType = black_background
+			scale = 0.5
+		}
+
+		buttonType = {
+			size = { width = 463 height = 291 }
+			name = "select_forward_line_1"
+			position = { x = 463 y = 140 }
+			spriteType = black_background
+			scale = 0.69
 		}
 	}
 
@@ -789,6 +882,104 @@ guiTypes = {
 			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
 			scale = 0.8
+		}
+	}
+
+	containerWindowType = {#玩家后方战场上显示的方块0
+		name = "player_kard_at_back_line_0"
+		buttonType = {
+			name = "player_kard_at_back_line_0_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+
+		instantTextBoxType = {
+			name = "player_kard_at_back_line_0_text"
+
+			text = player_kard_at_back_line_0_text
+		}
+	}
+	containerWindowType = {#玩家后方战场上显示的方块1
+		name = "player_kard_at_back_line_1"
+		buttonType = {
+			name = "player_kard_at_back_line_1_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+
+		instantTextBoxType = {
+			name = "player_kard_at_back_line_1_text"
+
+			text = player_kard_at_back_line_1_text
+		}
+	}
+	containerWindowType = {#玩家前线上显示的方块0
+		name = "player_kard_at_forward_line_0"
+		buttonType = {
+			name = "player_kard_at_forward_line_0_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+
+		instantTextBoxType = {
+			name = "player_kard_at_forward_line_0_text"
+
+			text = player_kard_at_forward_line_0_text
+		}
+	}
+	containerWindowType = {#玩家前线上显示的方块1
+		name = "player_kard_at_forward_line_1"
+		buttonType = {
+			name = "player_kard_at_forward_line_1_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+
+		instantTextBoxType = {
+			name = "player_kard_at_forward_line_1_text"
+
+			text = player_kard_at_forward_line_1_text
+		}
+	}
+
+	containerWindowType = {#AI后方战场上显示的方块0
+		name = "AI_kard_at_back_line_0"
+		buttonType = {
+			name = "AI_kard_at_back_line_0_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+	}
+	containerWindowType = {#AI后方战场上显示的方块1
+		name = "AI_kard_at_back_line_1"
+		buttonType = {
+			name = "AI_kard_at_back_line_1_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+	}
+	containerWindowType = {#AI前线上显示的方块0
+		name = "AI_kard_at_forward_line_0"
+		buttonType = {
+			name = "AI_kard_at_forward_line_0_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
+		}
+	}
+	containerWindowType = {#AI前线上显示的方块1
+		name = "AI_kard_at_forward_line_1"
+		buttonType = {
+			name = "AI_kard_at_forward_line_1_button"
+			spriteType = Total__kards #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.5
 		}
 	}
 
@@ -857,6 +1048,7 @@ guiTypes = {
 		buttonType = {
 			name = "ready_to_attack_button"
 			position = { x = 70 y = 400 }
+			#spriteType = set_in_back_line
 			spriteType = "GFX_button_148x34"
 			buttonText = "OK!"
 			buttonFont = "hoi_16mbs"

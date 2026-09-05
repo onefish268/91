@@ -881,6 +881,10 @@ scripted_gui = {
 
 		effects = {
 			first_button_click = {
+				ZYX_change_your_kard = yes
+				ZYX_change_kard_scope = yes
+				ZYX_clean_array_in_war = yes
+
 				clr_country_flag = ZYX_ready_to_start
 				clr_country_flag = ZYX_console_mode
 				set_country_flag = ZYX_fight_console
@@ -889,6 +893,10 @@ scripted_gui = {
 				clr_country_flag = ZYX_tankgoal_console
 			}
 			last_button_click = {
+				ZYX_change_your_kard = yes
+				ZYX_change_kard_scope = yes
+				ZYX_clean_array_in_war = yes
+
 				clr_country_flag = ZYX_ready_to_start
 				clr_country_flag = ZYX_console_mode
 				set_country_flag = ZYX_fight_console
@@ -930,6 +938,64 @@ scripted_gui = {
 				index = picture_number
 				value = picture_value
 			}
+
+			player_back_line_0 = {#玩家后方0左侧
+				array = player_back_line_0_array
+				change_scope = no
+				entry_container = player_kard_at_back_line_0
+				index = picture_number
+				value = picture_value
+			}
+			player_back_line_1 = {#玩家后方1右侧
+				array = player_back_line_1_array
+				change_scope = no
+				entry_container = player_kard_at_back_line_1
+				index = picture_number
+				value = picture_value
+			}
+			player_forward_line_0 = {#玩家前线0
+				array = player_forward_line_0_array
+				change_scope = no
+				entry_container = player_kard_at_forward_line_0
+				index = picture_number
+				value = picture_value
+			}
+			player_forward_line_1 = {#玩家前线1
+				array = player_forward_line_1_array
+				change_scope = no
+				entry_container = player_kard_at_forward_line_1
+				index = picture_number
+				value = picture_value
+			}
+
+			AI_back_line_0 = {#AI后方0左侧
+				array = AI_back_line_0_array
+				change_scope = no
+				entry_container = AI_kard_at_back_line_0
+				index = picture_number
+				value = picture_value
+			}
+			AI_back_line_1 = {#AI后方1右侧
+				array = AI_back_line_1_array
+				change_scope = no
+				entry_container = AI_kard_at_back_line_1
+				index = picture_number
+				value = picture_value
+			}
+			AI_forward_line_0 = {#AI前线0
+				array = AI_forward_line_0_array
+				change_scope = no
+				entry_container = AI_kard_at_forward_line_0
+				index = picture_number
+				value = picture_value
+			}
+			AI_forward_line_1 = {#AI前线1
+				array = AI_forward_line_1_array
+				change_scope = no
+				entry_container = AI_kard_at_forward_line_1
+				index = picture_number
+				value = picture_value
+			}
 		}
 
 		effects = {
@@ -945,15 +1011,106 @@ scripted_gui = {
 			}
 
 			player_kard_button_click = {#玩家手牌点击
-				clear_array = fight_console_player_attack_unit
+				ZYX_change_your_kard = yes
+
+				add_to_array = { fight_console_attack_AI_unit = 0 }
 				add_to_array = { fight_console_player_attack_unit = picture_value }
+				ZYX_check_kards_is_effect_or_not = yes
+			}
+
+			select_back_line_0_click = {#选择后方0左
+				ZYX_change_kard_scope = yes
+
+				set_country_flag = has_selected_line
+				set_country_flag = select_to_back
+				set_country_flag = the_left_side
+			}
+			select_back_line_1_click = {#选择后方1右
+				ZYX_change_kard_scope = yes
+
+				set_country_flag = has_selected_line
+				set_country_flag = select_to_back
+				clr_country_flag = the_left_side
+			}
+
+			player_kard_at_back_line_0_button_click = {#后方士兵点击0
+				ZYX_change_your_kard = yes
+
+				set_country_flag = select_back_line_unit
+				set_country_flag = in_left_side
+				add_to_array = { fight_console_attack_AI_unit = 0 }
+				add_to_array = { fight_console_player_attack_unit = picture_value }
+				set_variable = { chosen_index_of_array_0 = picture_number }
+
+			}
+			player_kard_at_back_line_1_button_click = {#后方士兵点击1
+				ZYX_change_your_kard = yes
+
+				set_country_flag = select_back_line_unit
+				add_to_array = { fight_console_attack_AI_unit = 0 }
+				add_to_array = { fight_console_player_attack_unit = picture_value }
+				set_variable = { chosen_index_of_array_0 = picture_number }
+			}
+
+			player_kard_at_forward_line_0_button_click = {#前方士兵点击0
+				ZYX_change_your_kard = yes
+
+				set_country_flag = select_forward_line_unit
+				set_country_flag = in_left_side
+				add_to_array = { fight_console_attack_AI_unit = 0 }
+				add_to_array = { fight_console_player_attack_unit = picture_value }
+				set_variable = { chosen_index_of_array_0 = picture_number }
+
+			}
+			player_kard_at_forward_line_1_button_click = {#前方士兵点击1
+				ZYX_change_your_kard = yes
+
+				set_country_flag = select_forward_line_unit
+				add_to_array = { fight_console_attack_AI_unit = 0 }
+				add_to_array = { fight_console_player_attack_unit = picture_value }
+				set_variable = { chosen_index_of_array_0 = picture_number }
+			}
+
+			#选择AI单位
+			base_of_AI_click = {#打击敌方基地
+				if = {
+					limit = { has_country_flag = select_forward_line_unit }
+					ZYX_change_kard_scope = yes
+					clear_array = fight_console_attack_AI_unit
+
+					set_country_flag = select_target
+					add_to_array = { fight_console_attack_AI_unit = 100 }
+					set_variable = { chosen_index_of_array_1 = 666 }
+				}
+			}
+		}
+
+		triggers = {
+			select_back_line_0_visible = {
+				check_variable = { fight_console_player_attack_unit^num > 0 }
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			}
+			select_back_line_1_visible = {
+				check_variable = { fight_console_player_attack_unit^num > 0 }
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
 			}
 		}
 
 		properties = {
+			kard_big_button_0 = { image = "[player_attack_block_picture]" }
 			player_kard_button = { image = "[Total__kards]" }
 			#player_kard_button = { image = tankgoal_background }
 			AI_kard_button = { image = "[Total__kards]" }
+
+			player_kard_at_back_line_0_button = { image = "[Total__kards]" }
+			player_kard_at_back_line_1_button = { image = "[Total__kards]" }
+			player_kard_at_forward_line_0_button = { image = "[Total__kards]" }
+			player_kard_at_forward_line_1_button = { image = "[Total__kards]" }
+
+			AI_kard_at_back_line_0_button = { image = "[Total__kards]" }
+			AI_kard_at_back_line_1_button = { image = "[Total__kards]" }
+			AI_kard_at_forward_line_0_button = { image = "[Total__kards]" }
+			AI_kard_at_forward_line_1_button = { image = "[Total__kards]" }
 		}
 	}
 
@@ -987,16 +1144,188 @@ scripted_gui = {
 
 		effects = {
 			kard_big_button_0_click = {
+				ZYX_change_kard_scope = yes
 				clear_array = fight_console_attack_AI_unit
 			}
 			kard_big_button_1_click = {
-				clear_array = fight_console_player_attack_unit
+				ZYX_change_your_kard = yes
+			}
+
+			ready_to_attack_button_click = {#开始行动
+				if = {
+					limit = { has_country_flag = has_selected_line }
+					if = {
+						limit = { has_country_flag = select_back_line_unit }
+						if = {
+							limit = { has_country_flag = the_left_side }
+							if = {
+								limit = { has_country_flag = in_left_side }
+								add_to_array = { player_forward_line_0_array = player_back_line_0_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
+								
+								remove_from_array = {
+									array = player_back_line_0_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_HP_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_attack_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_defence_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_action_array
+									index = chosen_index_of_array_0
+								}
+							}
+							else = {
+								add_to_array = { player_forward_line_0_array = player_back_line_1_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_0_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
+								
+								remove_from_array = {
+									array = player_back_line_1_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_HP_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_attack_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_defence_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_action_array
+									index = chosen_index_of_array_0
+								}
+							}
+						}
+						else = {
+							if = {
+								limit = { has_country_flag = in_left_side }
+								add_to_array = { player_forward_line_1_array = player_back_line_0_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
+								
+								remove_from_array = {
+									array = player_back_line_0_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_HP_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_attack_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_defence_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_0_action_array
+									index = chosen_index_of_array_0
+								}
+							}
+							else = {
+								add_to_array = { player_forward_line_1_array = player_back_line_1_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
+								add_to_array = { player_forward_line_1_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
+								
+								remove_from_array = {
+									array = player_back_line_1_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_HP_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_attack_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_defence_array
+									index = chosen_index_of_array_0
+								}
+								remove_from_array = {
+									array = player_back_line_1_action_array
+									index = chosen_index_of_array_0
+								}
+							}
+						}
+					}
+					else = {
+						if = {
+							limit = { has_country_flag = the_left_side }
+							set_temp_variable = { value_of_kard = fight_console_player_attack_unit^0 }
+							add_to_array = { player_back_line_0_array = value_of_kard }
+							add_to_array = { player_back_line_0_HP_array = tankgoal_unit_HP^value_of_kard }
+							add_to_array = { player_back_line_0_attack_array = tankgoal_unit_attack^value_of_kard }
+							add_to_array = { player_back_line_0_defence_array = tankgoal_unit_defence^value_of_kard }
+							add_to_array = { player_back_line_0_action_array = tankgoal_unit_action^value_of_kard }
+
+							remove_from_array = {
+								array = player_kards_array
+								value = value_of_kard
+							}
+						}
+						else = {
+							set_temp_variable = { value_of_kard = fight_console_player_attack_unit^0 }
+							add_to_array = { player_back_line_1_array = value_of_kard }
+							add_to_array = { player_back_line_1_HP_array = tankgoal_unit_HP^value_of_kard }
+							add_to_array = { player_back_line_1_attack_array = tankgoal_unit_attack^value_of_kard }
+							add_to_array = { player_back_line_1_defence_array = tankgoal_unit_defence^value_of_kard }
+							add_to_array = { player_back_line_1_action_array = tankgoal_unit_action^value_of_kard }
+
+							remove_from_array = {
+								array = player_kards_array
+								value = value_of_kard
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = select_target }
+					
+				}
+				ZYX_change_your_kard = yes
 			}
 		}
 
 		properties = {
-			kard_big_button_0 = { image = "[Total__kards]" }
+			kard_big_button_0 = { image = "[player_attack_block_picture]" }
 			kard_big_button_1 = { image = "[Total__kards]" }
+		}
+
+		triggers = {
+			ready_to_attack_button_visible = {
+				OR = {
+					has_country_flag = has_selected_line
+					has_country_flag = select_target
+				}
+			}
 		}
 	}
 
@@ -1028,17 +1357,58 @@ scripted_gui = {
 			}
 		}
 
-		kard_big_button_0_click = {
-				clear_array = fight_console_attack_player_unit
-			}
-			kard_big_button_1_click = {
-				clear_array = fight_console_AI_attack_unit
-			}
-		}
-
 		properties = {
 			kard_big_button_0 = { image = "[Total__kards]" }
 			kard_big_button_1 = { image = "[Total__kards]" }
+		}
+	}
+
+	select_forward_line_block_gui = {#前线选择
+		window_name = "fake_select_forward_line_block"
+		parent_window_name = "fight_console"
+
+		visible = {
+			has_country_flag = select_back_line_unit
+		}
+
+		effects = {
+			select_forward_line_0_click = {#前线0左侧
+				ZYX_change_kard_scope = yes
+
+				set_country_flag = the_left_side
+				set_country_flag = has_selected_line
+			}
+			select_forward_line_1_click = {#前线1右
+				ZYX_change_kard_scope = yes
+				
+				set_country_flag = has_selected_line
+			}
+		}
+	}
+
+	select_back_line_block_gui = {#后线选择
+		window_name = "fake_select_back_line_block"
+		parent_window_name = "fight_console"
+
+		visible = {
+			OR = {
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			}
+		}
+
+		effects = {
+			select_back_line_0_click = {#后线0左侧
+				ZYX_change_kard_scope = yes
+
+				set_country_flag = the_left_side
+				set_country_flag = has_selected_line
+			}
+			select_back_line_1_click = {#后线1右
+				ZYX_change_kard_scope = yes
+				
+				set_country_flag = has_selected_line
+			}
 		}
 	}
 }

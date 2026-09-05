@@ -237,6 +237,12 @@
   AI_attack_d: "AI选择的攻击单位："
 
 
+  player_kard_at_back_line_0_text: "§R[?player_back_line_0_HP_array^picture_number]§!/§Y[?player_back_line_0_attack_array^picture_number]§!/[?player_back_line_0_defence_array^picture_number]/§G[?player_back_line_0_action_array^picture_number]§!"
+  player_kard_at_back_line_1_text: "§R[?player_back_line_1_HP_array^picture_number]§!/§Y[?player_back_line_1_attack_array^picture_number]§!/[?player_back_line_1_defence_array^picture_number]/§G[?player_back_line_1_action_array^picture_number]§!"
+  player_kard_at_forward_line_0_text: "§R[?player_forward_line_0_HP_array^picture_number]§!/§Y[?player_forward_line_0_attack_array^picture_number]§!/[?player_forward_line_0_defence_array^picture_number]/§G[?player_forward_line_0_action_array^picture_number]§!"
+  player_kard_at_forward_line_1_text: "§R[?player_forward_line_1_HP_array^picture_number]§!/§Y[?player_forward_line_1_attack_array^picture_number]§!/[?player_forward_line_1_defence_array^picture_number]/§G[?player_forward_line_1_action_array^picture_number]§!"
+
+
 
 
 
