@@ -12,6 +12,52 @@ ideas = {
 				war_support_weekly = 0.02
 			}
 		}
+		YSS_1_0 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {	
+				army_org_factor = -0.12	
+				army_morale_factor = -0.1
+				cannot_retreat_while_attacking	
+				supply_combat_penalties_on_core_factor = -0.15	
+				stability_weekly = -0.02
+				war_support_weekly = 0.02
+			}
+		}
+		YSS_1_1 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {	
+				army_org_factor = -0.1	
+				army_morale_factor = -0.05
+				cannot_retreat_while_attacking	
+				supply_combat_penalties_on_core_factor = -0.1	
+				stability_weekly = -0.02
+				war_support_weekly = 0.02
+			}
+		}
+		YSS_1_2 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {	
+				army_org_factor = -0.05	
+				cannot_retreat_while_attacking	
+				supply_combat_penalties_on_core_factor = -0.05	
+				stability_weekly = -0.02
+				war_support_weekly = 0.02
+			}
+		}
+		YSS_1_3 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {				
+				stability_weekly = -0.02
+				war_support_weekly = 0.02
+			}
+		}
+		YSS_1_4 = {#一团乱麻的宗教信仰
+			picture = YSS_1
+			modifier = {	
+				stability_weekly = 0.02			
+				war_support_weekly = 0.02
+			}
+		}
 		YSS_2 = {#联盟红军
 			picture = YSS_2
 			modifier = {		
