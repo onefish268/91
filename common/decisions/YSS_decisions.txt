@@ -1347,8 +1347,8 @@ YSS_states_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 31
+		cost = 70
+		days_remove = 62
 		fire_only_once = yes
 		visible = {
 			has_variable = YSS_2_man_icon_mode_number
@@ -1358,6 +1358,89 @@ YSS_states_category = {
 		}
 
 		remove_effect = {
+			1232 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+			922 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+			919 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+			944 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_3_2 = {
+		name = YSS_2_3_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 65
+		days_remove = 100
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_2_man_icon_mode_number
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1232 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+			922 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+			919 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+			944 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
 		}
 	}
 
@@ -1372,12 +1455,857 @@ YSS_states_category = {
 		fire_only_once = yes
 		visible = {
 			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
         }
 		available = {
             has_country_flag = YSS_states_oning
 		}
 
 		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_4_2 = {
+		name = YSS_2_4_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_4_3 = {
+		name = YSS_2_4_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_4_4 = {
+		name = YSS_2_4_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_4_5 = {
+		name = YSS_2_4_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_4_6 = {
+		name = YSS_2_4_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_4_7 = {
+		name = YSS_2_4_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			921 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			921 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_4_8 = {
+		name = YSS_2_4_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_4_9 = {
+		name = YSS_2_4_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_4_10 = {
+		name = YSS_2_4_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_4_11 = {
+		name = YSS_2_4_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_4_12 = {
+		name = YSS_2_4_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_4_13 = {
+		name = YSS_2_4_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			920 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			920 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_4_14 = {
+		name = YSS_2_4_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_4_15 = {
+		name = YSS_2_4_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_4_16 = {
+		name = YSS_2_4_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_4_17 = {
+		name = YSS_2_4_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_4_18 = {
+		name = YSS_2_4_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_4_19 = {
+		name = YSS_2_4_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_4_20 = {
+		name = YSS_2_4_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			923 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			923 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_4_21 = {
+		name = YSS_2_4_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_4_22 = {
+		name = YSS_2_4_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_4_23 = {
+		name = YSS_2_4_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_4_24 = {
+		name = YSS_2_4_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_4_25 = {
+		name = YSS_2_4_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_4_26 = {
+		name = YSS_2_4_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_4_27 = {
+		name = YSS_2_4_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_3_man_icon_mode_number
+			550 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			550 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
 		}
 	}
 
@@ -1392,12 +2320,857 @@ YSS_states_category = {
 		fire_only_once = yes
 		visible = {
 			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
         }
 		available = {
             has_country_flag = YSS_states_oning
 		}
 
 		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_5_2 = {
+		name = YSS_2_5_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_5_3 = {
+		name = YSS_2_5_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_5_4 = {
+		name = YSS_2_5_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_5_5 = {
+		name = YSS_2_5_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_5_6 = {
+		name = YSS_2_5_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_5_7 = {
+		name = YSS_2_5_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_5_8 = {
+		name = YSS_2_5_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			906 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			906 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_5_9 = {
+		name = YSS_2_5_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			269 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			269 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_5_10 = {
+		name = YSS_2_5_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			269 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			269 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_5_11 = {
+		name = YSS_2_5_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			269 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			269 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_5_12 = {
+		name = YSS_2_5_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			269 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			269 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_5_13 = {
+		name = YSS_2_5_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			269 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			269 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_5_14 = {
+		name = YSS_2_5_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_5_15 = {
+		name = YSS_2_5_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_5_16 = {
+		name = YSS_2_5_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_5_17 = {
+		name = YSS_2_5_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_5_18 = {
+		name = YSS_2_5_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_5_19 = {
+		name = YSS_2_5_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_5_20 = {
+		name = YSS_2_5_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_5_21 = {
+		name = YSS_2_5_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			1234 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			1234 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_5_22 = {
+		name = YSS_2_5_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_5_23 = {
+		name = YSS_2_5_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_5_24 = {
+		name = YSS_2_5_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_5_25 = {
+		name = YSS_2_5_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_5_26 = {
+		name = YSS_2_5_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_5_27 = {
+		name = YSS_2_5_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_4_man_icon_mode_number
+			268 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			268 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
 		}
 	}
 
@@ -1925,12 +3698,793 @@ YSS_states_category = {
 		fire_only_once = yes
 		visible = {
 			has_variable = YSS_6_man_icon_mode_number
+			970 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
         }
 		available = {
             has_country_flag = YSS_states_oning
 		}
 
 		remove_effect = {
+			970 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_7_2 = {
+		name = YSS_2_7_2d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			970 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			970 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_7_3 = {
+		name = YSS_2_7_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_7_4 = {
+		name = YSS_2_7_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_7_5 = {
+		name = YSS_2_7_3d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_7_6 = {
+		name = YSS_2_7_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_7_7 = {
+		name = YSS_2_7_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_7_8 = {
+		name = YSS_2_7_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_7_9 = {
+		name = YSS_2_7_4d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			547 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			547 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_7_10 = {
+		name = YSS_2_7_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_7_11 = {
+		name = YSS_2_7_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_7_12 = {
+		name = YSS_2_7_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_7_13 = {
+		name = YSS_2_7_5d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_7_14 = {
+		name = YSS_2_7_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_7_15 = {
+		name = YSS_2_7_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_7_16 = {
+		name = YSS_2_7_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_7_17 = {
+		name = YSS_2_7_6d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			969 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			969 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
+		}
+	}
+	YSS_2_7_18 = {
+		name = YSS_2_7_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+		}
+	}
+	YSS_2_7_19 = {
+		name = YSS_2_7_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+		}
+	}
+	YSS_2_7_20 = {
+		name = YSS_2_7_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+		}
+	}
+	YSS_2_7_21 = {
+		name = YSS_2_7_7d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_kaifa_5
+                }
+			}
+		}
+	}
+	YSS_2_7_22 = {
+		name = YSS_2_7_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_1
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+		}
+	}
+	YSS_2_7_23 = {
+		name = YSS_2_7_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_2
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+		}
+	}
+	YSS_2_7_24 = {
+		name = YSS_2_7_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_3
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+		}
+	}
+	YSS_2_7_25 = {
+		name = YSS_2_7_8d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		visible = {
+			has_variable = YSS_6_man_icon_mode_number
+			892 = {
+				has_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+			}
+        }
+		available = {
+            has_country_flag = YSS_states_oning
+		}
+
+		remove_effect = {
+			892 = {
+				remove_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_4
+                }
+				add_dynamic_modifier = {
+                    modifier = YSS_province_xingzheng_5
+                }
+			}
 		}
 	}
 }
