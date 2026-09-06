@@ -117,3 +117,12 @@ style = {
 	available = GFX_focus_can_start_zdm
 	current = GFX_focus_current_zdm
 }
+
+style = {
+	name = YSS_focus_style
+
+	unavailable = GFX_focus_unavailable_yss
+	completed = GFX_focus_completed_yss
+	available = GFX_focus_can_start_yss
+	current = GFX_focus_current_yss
+}

@@ -1,0 +1,1285 @@
+focus_tree = {
+	id = YSS_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = YSS
+		}
+	}
+	default = no
+	focus = {
+		id = YSS_focus_1
+		x = 32
+		y = 0
+		cost = 0
+		icon = GFX_focus_NGL_in_the_ruins
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+	}
+	focus = {
+		id = YSS_focus_2
+		x = 32
+		y = 2
+		cost = 0
+		icon = GFX_focus_GER_legacy_of_the_spartacus_league
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_1
+		}
+	}
+	focus = {
+		id = YSS_focus_3
+		x = 32
+		y = 3
+		cost = 0
+		icon = GFX_focus_PER_constitutional_monarchy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_2
+		}
+	}
+	focus = {
+		id = YSS_focus_4
+		x = 30
+		y = 3
+		cost = 0
+		icon = GFX_focus_PHI_return_of_the_exiles
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_2
+		}
+	}
+	focus = {
+		id = YSS_focus_5
+		x = 34
+		y = 3
+		cost = 0
+		icon = GFX_focus_ETH_african_wildfire
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_2
+		}
+	}
+	focus = {
+		id = YSS_focus_6
+		x = 32
+		y = 4
+		cost = 0
+		icon = GFX_focus_hol_the_foundations_of_defense
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_4
+		}
+		prerequisite = {
+			focus = YSS_focus_3
+		}
+		prerequisite = {
+			focus = YSS_focus_5
+		}
+	}
+	focus = {
+		id = YSS_focus_7
+		x = 31
+		y = 5
+		cost = 0
+		icon = GFX_focus_SGL_search_elders_house
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		mutually_exclusive = {
+			focus = YSS_focus_8
+		}
+		prerequisite = {
+			focus = YSS_focus_6
+		}
+	}
+	focus = {
+		id = YSS_focus_8
+		x = 33
+		y = 5
+		cost = 0
+		icon = GFX_focus_TGI_cooperation_with_non_infected
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		mutually_exclusive = {
+			focus = YSS_focus_7
+		}
+		prerequisite = {
+			focus = YSS_focus_6
+		}
+	}
+	focus = {
+		id = YSS_focus_9
+		x = 31
+		y = 7
+		cost = 0
+		icon = GFX_focus_SGL_palpable_lies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_7
+		}
+	}
+	focus = {
+		id = YSS_focus_10
+		x = 33
+		y = 7
+		cost = 0
+		icon = GFX_focus_USS_investigate_internal_security
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_8
+		}
+	}
+	focus = {
+		id = YSS_focus_11
+		x = 31
+		y = 9
+		cost = 0
+		icon = GFX_focus_BRA_repeale_national_security_law
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_9
+		}
+	}
+	focus = {
+		id = YSS_focus_12
+		x = 33
+		y = 9
+		cost = 0
+		icon = GFX_focus_USS_sunset_canyon_commandment
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_10
+		}
+	}
+	focus = {
+		id = YSS_focus_13
+		x = 31
+		y = 11
+		cost = 0
+		icon = GFX_focus_USS_search_warrant
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_11
+		}
+	}
+	focus = {
+		id = YSS_focus_14
+		x = 33
+		y = 11
+		cost = 0
+		icon = GFX_focus_USS_expand_empire_sojy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_12
+		}
+	}
+	focus = {
+		id = YSS_focus_15
+		x = 26
+		y = 0
+		cost = 0
+		icon = GFX_focus_TGI_land_of_pain
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+	}
+	focus = {
+		id = YSS_focus_16
+		x = 26
+		y = 2
+		cost = 0
+		icon = GFX_focus_CHI_invoke_the_nine_powers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_15
+		}
+	}
+	focus = {
+		id = YSS_focus_17
+		x = 26
+		y = 4
+		cost = 0
+		icon = GFX_focus_GER_rally_the_industrialists
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_16
+		}
+	}
+	focus = {
+		id = YSS_focus_18
+		x = 25
+		y = 5
+		cost = 0
+		icon = GFX_focus_SWE_attack_landsorganisationen
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_17
+		}
+	}
+	focus = {
+		id = YSS_focus_19
+		x = 27
+		y = 5
+		cost = 0
+		icon = GFX_focus_AFG_revive_the_1923_constitution
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_17
+		}
+	}
+	focus = {
+		id = YSS_focus_20
+		x = 26
+		y = 6
+		cost = 0
+		icon = GFX_focus_TGI_proper_isolation
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_18
+		}
+		prerequisite = {
+			focus = YSS_focus_19
+		}
+	}
+	focus = {
+		id = YSS_focus_21
+		x = 26
+		y = 8
+		cost = 0
+		icon = GFX_focus_NOR_a_new_norway_SOV_communism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_20
+		}
+	}
+	focus = {
+		id = YSS_focus_22
+		x = 26
+		y = 10
+		cost = 0
+		icon = GFX_focus_SOV_the_supreme_soviet
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_21
+		}
+	}
+	focus = {
+		id = YSS_focus_23
+		x = 26
+		y = 12
+		cost = 0
+		icon = GFX_focus_TGI_get_the_fxxk_outa_here
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_22
+		}
+	}
+	focus = {
+		id = YSS_focus_24
+		x = 25
+		y = 13
+		cost = 0
+		icon = GFX_focus_PHI_the_red_sun_over_manila
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		mutually_exclusive = {
+			focus = YSS_focus_25
+		}
+		prerequisite = {
+			focus = YSS_focus_23
+		}
+	}
+	focus = {
+		id = YSS_focus_25
+		x = 27
+		y = 13
+		cost = 0
+		icon = GFX_focus_NGL_the_lost_man
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		mutually_exclusive = {
+			focus = YSS_focus_24
+		}
+		prerequisite = {
+			focus = YSS_focus_23
+		}
+	}
+	focus = {
+		id = YSS_focus_26
+		x = 25
+		y = 14
+		cost = 0
+		icon = GFX_focus_NGL_set_out
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_24
+		}
+	}
+	focus = {
+		id = YSS_focus_28
+		x = 25
+		y = 15
+		cost = 0
+		icon = GFX_focus_NGL_who_will_bring_destruction
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_26
+		}
+	}
+	focus = {
+		id = YSS_focus_29
+		x = 25
+		y = 16
+		cost = 0
+		icon = GFX_focus_USS_eliminate_threat
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_28
+		}
+	}
+	focus = {
+		id = YSS_focus_30
+		x = 29
+		y = 10
+		cost = 0
+		icon = GFX_focus_generic_phone
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+	}
+	focus = {
+		id = YSS_focus_31
+		x = 29
+		y = 11
+		cost = 0
+		icon = GFX_focus_NGL_take_up_arms
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_30
+		}
+	}
+	focus = {
+		id = YSS_focus_32
+		x = 29
+		y = 12
+		cost = 0
+		icon = GFX_focus_NGL_affirmative_action_for_infected
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_31
+		}
+	}
+	focus = {
+		id = YSS_focus_33
+		x = 17
+		y = 0
+		cost = 0
+		icon = GFX_focus_GER_establish_volkskommissariats
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+	}
+	focus = {
+		id = YSS_focus_34
+		x = 14
+		y = 1
+		cost = 0
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_33
+		}
+	}
+	focus = {
+		id = YSS_focus_35
+		x = 20
+		y = 1
+		cost = 0
+		icon = GFX_focus_SWE_landsverk
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_33
+		}
+	}
+	focus = {
+		id = YSS_focus_36
+		x = 13
+		y = 2
+		cost = 0
+		icon = GFX_focus_COG_the_ma_loango
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_34
+		}
+	}
+	focus = {
+		id = YSS_focus_37
+		x = 15
+		y = 2
+		cost = 0
+		icon = GFX_focus_BRA_the_polaca
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_34
+		}
+	}
+	focus = {
+		id = YSS_focus_38
+		x = 18
+		y = 2
+		cost = 0
+		icon = GFX_focus_BEL_engine_of_the_economy
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_35
+		}
+	}
+	focus = {
+		id = YSS_focus_39
+		x = 20
+		y = 2
+		cost = 0
+		icon = GFX_focus_INS_sideline_the_volksraad
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_35
+		}
+	}
+	focus = {
+		id = YSS_focus_40
+		x = 22
+		y = 2
+		cost = 0
+		icon = GFX_focus_INS_commander_sudirman
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_35
+		}
+	}
+	focus = {
+		id = YSS_focus_41
+		x = 17
+		y = 3
+		cost = 0
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_36
+		}
+		prerequisite = {
+			focus = YSS_focus_37
+		}
+		prerequisite = {
+			focus = YSS_focus_38
+		}
+		prerequisite = {
+			focus = YSS_focus_39
+		}
+		prerequisite = {
+			focus = YSS_focus_40
+		}
+	}
+	focus = {
+		id = YSS_focus_42
+		x = 17
+		y = 4
+		cost = 0
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_41
+		}
+	}
+	focus = {
+		id = YSS_focus_43
+		x = 24
+		y = 0
+		cost = 0
+		icon = GFX_focus_generic_communist
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_44
+		x = 24
+		y = 1
+		cost = 0
+		icon = GFX_focus_ARG_the_buenos_aires_conference
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_43
+		}
+	}
+	focus = {
+		id = YSS_focus_45
+		x = 24
+		y = 2
+		cost = 0
+		icon = GFX_focus_GER_loyalty_to_the_fuhrer
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_44
+		}
+	}
+	focus = {
+		id = YSS_focus_46
+		x = 13
+		y = 5
+		cost = 0
+		icon = GFX_focus_NORDIC_com_selector_material
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_42
+		}
+	}
+	focus = {
+		id = YSS_focus_47
+		x = 17
+		y = 5
+		cost = 0
+		icon = GFX_focus_NORDIC_com_civilian
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_42
+		}
+	}
+	focus = {
+		id = YSS_focus_48
+		x = 21
+		y = 5
+		cost = 0
+		icon = GFX_focus_AUS_agriculture
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_42
+		}
+	}
+	focus = {
+		id = YSS_focus_49
+		x = 12
+		y = 6
+		cost = 0
+		icon = GFX_focus_SWE_socialist_reforms
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_46
+		}
+	}
+	focus = {
+		id = YSS_focus_50
+		x = 14
+		y = 6
+		cost = 0
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_46
+		}
+	}
+	focus = {
+		id = YSS_focus_51
+		x = 16
+		y = 6
+		cost = 0
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_47
+		}
+	}
+	focus = {
+		id = YSS_focus_52
+		x = 18
+		y = 6
+		cost = 0
+		icon = GFX_focus_CHI_tongzi_jun
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_47
+		}
+	}
+	focus = {
+		id = YSS_focus_53
+		x = 20
+		y = 6
+		cost = 0
+		icon = GFX_focus_ETH_the_state_bank_of_ethiopia
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_48
+		}
+	}
+	focus = {
+		id = YSS_focus_54
+		x = 22
+		y = 6
+		cost = 0
+		icon = GFX_focus_JAP_approach_mitsubishi
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_48
+		}
+	}
+	focus = {
+		id = YSS_focus_55
+		x = 12
+		y = 8
+		cost = 0
+		icon = GFX_focus_PHI_battalion_combat_teams
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_49
+		}
+	}
+	focus = {
+		id = YSS_focus_56
+		x = 14
+		y = 8
+		cost = 0
+		icon = GFX_focus_ITA_banda_carita
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_50
+		}
+	}
+	focus = {
+		id = YSS_focus_57
+		x = 12
+		y = 10
+		cost = 0
+		icon = GFX_focus_JAP_approach_sumitomo
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_55
+		}
+	}
+	focus = {
+		id = YSS_focus_58
+		x = 14
+		y = 10
+		cost = 0
+		icon = GFX_focus_PRC_urbanization_two
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_56
+		}
+	}
+	focus = {
+		id = YSS_focus_59
+		x = 12
+		y = 12
+		cost = 0
+		icon = GFX_focus_SIA_the_yellow_dossier
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_57
+		}
+	}
+	focus = {
+		id = YSS_focus_60
+		x = 14
+		y = 12
+		cost = 0
+		icon = GFX_focus_PRC_urbanization
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_58
+		}
+	}
+	focus = {
+		id = YSS_focus_61
+		x = 16
+		y = 8
+		cost = 0
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_51
+		}
+	}
+	focus = {
+		id = YSS_focus_62
+		x = 18
+		y = 8
+		cost = 0
+		icon = GFX_focus_propaganda_soviet
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_52
+		}
+	}
+	focus = {
+		id = YSS_focus_63
+		x = 16
+		y = 10
+		cost = 0
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_61
+		}
+	}
+	focus = {
+		id = YSS_focus_64
+		x = 18
+		y = 10
+		cost = 0
+		icon = GFX_focus_HUN_reinstate_the_lenin_boys
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_62
+		}
+	}
+	focus = {
+		id = YSS_focus_65
+		x = 16
+		y = 12
+		cost = 0
+		icon = GFX_focus_SWE_rations
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_63
+		}
+	}
+	focus = {
+		id = YSS_focus_66
+		x = 18
+		y = 12
+		cost = 0
+		icon = GFX_focus_SOV_womens_fascist_movement
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_64
+		}
+	}
+	focus = {
+		id = YSS_focus_67
+		x = 20
+		y = 8
+		cost = 0
+		icon = GFX_focus_AUS_graf_und_stift_focus
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_53
+		}
+	}
+	focus = {
+		id = YSS_focus_68
+		x = 22
+		y = 8
+		cost = 0
+		icon = GFX_focus_RAJ_protest_against_the_howell_monument
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_54
+		}
+	}
+	focus = {
+		id = YSS_focus_69
+		x = 20
+		y = 10
+		cost = 0
+		icon = GFX_focus_INS_peg_indies_guilder_to_dutch_guilder
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_67
+		}
+	}
+	focus = {
+		id = YSS_focus_70
+		x = 22
+		y = 10
+		cost = 0
+		icon = GFX_focus_SIA_the_purge
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_68
+		}
+	}
+	focus = {
+		id = YSS_focus_71
+		x = 20
+		y = 12
+		cost = 0
+		icon = GFX_focus_NOR_moscows_education_centers
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_69
+		}
+	}
+	focus = {
+		id = YSS_focus_72
+		x = 22
+		y = 12
+		cost = 0
+		icon = GFX_focus_CHL_denounce_the_anarchy
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_70
+		}
+	}
+	focus = {
+		id = YSS_focus_73
+		x = 13
+		y = 13
+		cost = 0
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_59
+		}
+		prerequisite = {
+			focus = YSS_focus_60
+		}
+	}
+	focus = {
+		id = YSS_focus_74
+		x = 17
+		y = 13
+		cost = 0
+		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_65
+		}
+		prerequisite = {
+			focus = YSS_focus_66
+		}
+	}
+	focus = {
+		id = YSS_focus_75
+		x = 21
+		y = 13
+		cost = 0
+		icon = GFX_focus_IRQ_kurdish_form_the_peshmerga
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_71
+		}
+		prerequisite = {
+			focus = YSS_focus_72
+		}
+	}
+	focus = {
+		id = YSS_focus_76
+		x = 17
+		y = 19
+		cost = 0
+		icon = GFX_focus_PRC_guotao_ascends
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_86
+		}
+		prerequisite = {
+			focus = YSS_focus_88
+		}
+		prerequisite = {
+			focus = YSS_focus_87
+		}
+	}
+	focus = {
+		id = YSS_focus_77
+		x = 17
+		y = 15
+		cost = 0
+		icon = GFX_focus_generic_army_attack
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_73
+		}
+		prerequisite = {
+			focus = YSS_focus_74
+		}
+		prerequisite = {
+			focus = YSS_focus_75
+		}
+	}
+	focus = {
+		id = YSS_focus_78
+		x = 13
+		y = 17
+		cost = 0
+		icon = GFX_focus_generic_railway_gun
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_82
+		}
+	}
+	focus = {
+		id = YSS_focus_79
+		x = 15
+		y = 17
+		cost = 0
+		icon = GFX_focus_INS_military_equipment_contracts
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_82
+		}
+	}
+	focus = {
+		id = YSS_focus_80
+		x = 19
+		y = 17
+		cost = 0
+		icon = GFX_focus_generic_price_controls
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_83
+		}
+	}
+	focus = {
+		id = YSS_focus_81
+		x = 21
+		y = 17
+		cost = 0
+		icon = GFX_focus_PER_fund_imperial_excellency
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_83
+		}
+	}
+	focus = {
+		id = YSS_focus_82
+		x = 14
+		y = 16
+		cost = 0
+		icon = GFX_focus_DEN_sirius_patrol
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_77
+		}
+	}
+	focus = {
+		id = YSS_focus_83
+		x = 20
+		y = 16
+		cost = 0
+		icon = GFX_focus_BEL_the_grand_place
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_77
+		}
+	}
+	focus = {
+		id = YSS_focus_84
+		x = 17
+		y = 16
+		cost = 0
+		icon = GFX_focus_RAJ_a_private_military
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_77
+		}
+	}
+	focus = {
+		id = YSS_focus_85
+		x = 17
+		y = 17
+		cost = 0
+		icon = GFX_focus_CHI_weaponise_the_faithful
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_84
+		}
+	}
+	focus = {
+		id = YSS_focus_86
+		x = 14
+		y = 18
+		cost = 0
+		icon = GFX_focus_hol_philips
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_78
+		}
+		prerequisite = {
+			focus = YSS_focus_79
+		}
+	}
+	focus = {
+		id = YSS_focus_87
+		x = 20
+		y = 18
+		cost = 0
+		icon = GFX_focus_RUS_agency
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_80
+		}
+		prerequisite = {
+			focus = YSS_focus_81
+		}
+	}
+	focus = {
+		id = YSS_focus_88
+		x = 17
+		y = 18
+		cost = 0
+		icon = GFX_focus_PER_shiraz_university
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = YSS_focus_85
+		}
+	}
+	focus = {
+		id = YSS_focus_89
+		x = 40
+		y = 0
+		cost = 0
+		icon = GFX_focus_ARG_legitimize_the_PCA
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_90
+		x = 37
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_89
+		}
+	}
+	focus = {
+		id = YSS_focus_91
+		x = 40
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_89
+		}
+	}
+	focus = {
+		id = YSS_focus_92
+		x = 43
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_89
+		}
+	}
+	focus = {
+		id = YSS_focus_93
+		x = 40
+		y = 10
+		cost = 0
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_94
+		x = 4
+		y = 0
+		cost = 0
+		icon = GFX_focus_PRC_the_northeast_aviation_university_sea
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_95
+		x = 4
+		y = 11
+		cost = 0
+		icon = GFX_focus_PRC_form_central_social_affairs_department
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_96
+		x = -4
+		y = 0
+		cost = 0
+		icon = GFX_focus_JAP_raise_the_red_flag_high
+		text_icon = YSS_focus_style
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = YSS_focus_97
+		x = 37
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_90
+		}
+	}
+}

@@ -31,6 +31,22 @@ defined_text = {
 		localization_key = ZIM_Country_History_Page_03
 	}
 }
+defined_text = {
+	#索维耶特国家介绍
+	name = GET_YSS_Country_History
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 1 } }
+		localization_key = YSS_Country_History_Page_01
+	}
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 2 } }
+		localization_key = YSS_Country_History_Page_02
+	}
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 3 } }
+		localization_key = YSS_Country_History_Page_03
+	}
+}
 
 defined_text = {
 	#罗德西亚自治领地区介绍
@@ -46,6 +62,22 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { Local_History_Page_Var = 3 } }
 		localization_key = ZIM_Local_History_Page_03
+	}
+}
+defined_text = {
+	#索维耶特地区介绍
+	name = GET_YSS_Local_History
+	text = {
+		trigger = { check_variable = { Local_History_Page_Var = 1 } }
+		localization_key = YSS_Local_History_Page_01
+	}
+	text = {
+		trigger = { check_variable = { Local_History_Page_Var = 2 } }
+		localization_key = YSS_Local_History_Page_02
+	}
+	text = {
+		trigger = { check_variable = { Local_History_Page_Var = 3 } }
+		localization_key = YSS_Local_History_Page_03
 	}
 }
 

@@ -45,6 +45,12 @@ defined_text = {
     }
     text = {
         trigger = {
+            tag = YSS
+        }
+        localization_key = YSS_start_game_text
+    }
+    text = {
+        trigger = {
             tag = PRC
         }
         localization_key = PRC_start_game_text
@@ -244,6 +250,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_ZIM_Side_Picture
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = GFX_YSS_Side_Picture
     }
     text = {
         trigger = { tag = CHI }
@@ -792,6 +802,10 @@ defined_text = {
         localization_key = [GET_ZIM_Country_History]
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = [GET_YSS_Country_History]
+    }
+    text = {
         trigger = { tag = ENG }
         localization_key = [GET_ENG_Country_History]
     }
@@ -944,6 +958,10 @@ defined_text = {
         localization_key = ZIM_his_page_01_title
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_his_page_01_title
+    }
+    text = {
         trigger = { tag = ENG }
         localization_key = ENG_his_page_01_title
     }
@@ -1091,6 +1109,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = ZIM_his_page_02_title
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_his_page_02_title
     }
     text = {
         trigger = { tag = ENG }
@@ -1246,6 +1268,10 @@ defined_text = {
         localization_key = ZIM_his_page_03_title
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_his_page_03_title
+    }
+    text = {
         trigger = { tag = GER }
         localization_key = GER_his_page_03_title
     }
@@ -1398,6 +1424,10 @@ defined_text = {
         localization_key = ZIM_Local_History_Title
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_Local_History_Title
+    }
+    text = {
         trigger = { is_french_tag = yes NOT = { tag = KNM } }
         localization_key = French_Local_History_Title
     }
@@ -1461,6 +1491,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = [GET_ZIM_Local_History]
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = [GET_YSS_Local_History]
     }
     text = {
         trigger = { is_french_tag = yes NOT = { tag = KNM } }
@@ -1533,6 +1567,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = ZIM_loca_his_t_01
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_loca_his_t_01
     }
     text = {
         trigger = { is_french_tag = yes NOT = { tag = KNM } }
@@ -1608,6 +1646,10 @@ defined_text = {
         localization_key = ZIM_loca_his_t_02
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_loca_his_t_02
+    }
+    text = {
         trigger = { is_north_american_tag = yes }
         localization_key = North_America_Local_History_Title_02
     }
@@ -1675,6 +1717,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = ZIM_loca_his_t_03
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = YSS_loca_his_t_03
     }
     text = {
         trigger = { is_north_american_tag = yes }

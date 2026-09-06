@@ -79,6 +79,10 @@ spriteTypes = {
 			textureFile = "gfx/welcome/Side_Picture/ZIM_Side_Picture.png"
 		}
 		spriteType = {
+			name = "GFX_YSS_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/YSS_Side_Picture.png"
+		}
+		spriteType = {
 			name = "GFX_ENG_Side_Picture"
 			textureFile = "gfx/welcome/Side_Picture/ENG_Side_Picture.dds"
 		}
