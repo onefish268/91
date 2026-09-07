@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 100
+		x = 0
 		y = 2000
 	}
 	default = no
@@ -108,6 +108,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_6
 		}
+		allow_branch = {
+			has_country_flag = YSS_xianfa_mingque
+	    }
 	}
 	focus = {
 		id = YSS_focus_8
@@ -124,6 +127,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_6
 		}
+		allow_branch = {
+			has_country_flag = YSS_xianfa_mingque
+	    }
 	}
 	focus = {
 		id = YSS_focus_9
@@ -212,6 +218,9 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		allow_branch = {
+			has_country_flag = YSS_daqingxi_begin
+	    }
 	}
 	focus = {
 		id = YSS_focus_16
@@ -335,6 +344,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_23
 		}
+		allow_branch = {
+			has_country_flag = YSS_daqingxi_kuoda
+	    }
 	}
 	focus = {
 		id = YSS_focus_25
@@ -351,6 +363,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_23
 		}
+		allow_branch = {
+			has_country_flag = YSS_daqingxi_jieshu
+	    }
 	}
 	focus = {
 		id = YSS_focus_26
@@ -400,6 +415,9 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		allow_branch = {
+			has_country_flag = YSS_daqingxi_jiaoting
+	    }
 	}
 	focus = {
 		id = YSS_focus_31
@@ -475,6 +493,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_34
 		}
+		allow_branch = {
+			has_country_flag = YSS_jihua_baogao1
+	    }
 	}
 	focus = {
 		id = YSS_focus_37
@@ -488,6 +509,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_34
 		}
+		allow_branch = {
+			has_country_flag = YSS_jihua_baogao2
+	    }
 	}
 	focus = {
 		id = YSS_focus_38
@@ -501,6 +525,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_35
 		}
+		allow_branch = {
+			has_country_flag = YSS_jihua_baogao3
+	    }
 	}
 	focus = {
 		id = YSS_focus_39
@@ -514,6 +541,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_35
 		}
+		allow_branch = {
+			has_country_flag = YSS_jihua_baogao4
+	    }
 	}
 	focus = {
 		id = YSS_focus_40
@@ -527,6 +557,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_35
 		}
+		allow_branch = {
+			has_country_flag = YSS_jihua_baogao5
+	    }
 	}
 	focus = {
 		id = YSS_focus_41
@@ -575,6 +608,9 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		allow_branch = {
+			has_country_flag = YSS_daqingxi_jiaoting
+	    }
 	}
 	focus = {
 		id = YSS_focus_44
@@ -1549,6 +1585,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_116
 		}
+		allow_branch = {
+			has_country_flag = YSS_hongjun_baogao1
+	    }
 	}
 	focus = {
 		id = YSS_focus_118
@@ -1562,6 +1601,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_116
 		}
+		allow_branch = {
+			has_country_flag = YSS_hongjun_baogao2
+	    }
 	}
 	focus = {
 		id = YSS_focus_119
@@ -1630,6 +1672,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_118
 		}
+		allow_branch = {
+			has_country_flag = YSS_hongjun_baogao3
+	    }
 	}
 	focus = {
 		id = YSS_focus_124
@@ -1643,6 +1688,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_123
 		}
+		allow_branch = {
+			has_country_flag = YSS_hongjun_baogao4
+	    }
 	}
 	focus = {
 		id = YSS_focus_125
@@ -1656,6 +1704,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_124
 		}
+		allow_branch = {
+			has_country_flag = YSS_hongjun_baogao5
+	    }
 	}
 	focus = {
 		id = YSS_focus_126
@@ -1944,6 +1995,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_94
 		}
+		allow_branch = {
+			has_country_flag = YSS_haijun_baogao
+	    }
 	}
 	focus = {
 		id = YSS_focus_147
@@ -1957,6 +2011,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_94
 		}
+		allow_branch = {
+			has_country_flag = YSS_haijun_baogao
+	    }
 	}
 	focus = {
 		id = YSS_focus_148
@@ -1970,6 +2027,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_94
 		}
+		allow_branch = {
+			has_country_flag = YSS_haijun_baogao
+	    }
 	}
 	focus = {
 		id = YSS_focus_149
@@ -2096,6 +2156,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_95
 		}
+		allow_branch = {
+			has_country_flag = YSS_kongjun_baogao1
+	    }
 	}
 	focus = {
 		id = YSS_focus_159
@@ -2109,6 +2172,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_157
 		}
+		allow_branch = {
+			has_country_flag = YSS_kongjun_baogao3
+	    }
 	}
 	focus = {
 		id = YSS_focus_160
@@ -2122,6 +2188,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_157
 		}
+		allow_branch = {
+			has_country_flag = YSS_kongjun_baogao4
+	    }
 	}
 	focus = {
 		id = YSS_focus_161
@@ -2135,6 +2204,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_157
 		}
+		allow_branch = {
+			has_country_flag = YSS_kongjun_baogao5
+	    }
 	}
 	focus = {
 		id = YSS_focus_162
@@ -2296,5 +2368,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_157
 		}
+		allow_branch = {
+			has_country_flag = YSS_kongjun_baogao2
+	    }
 	}
 }

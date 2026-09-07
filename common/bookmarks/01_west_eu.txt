@@ -207,6 +207,9 @@ bookmarks = {
                 YSS_10
             }
             focuses = {
+                YSS_focus_2
+                YSS_focus_41
+                YSS_focus_116
             }
         }
         "SOV" = {
