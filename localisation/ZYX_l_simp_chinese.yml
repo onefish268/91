@@ -237,10 +237,19 @@
   AI_attack_d: "AI选择的攻击单位："
 
 
-  player_kard_at_back_line_0_text: "§R[?player_back_line_0_HP_array^picture_number]§!/§Y[?player_back_line_0_attack_array^picture_number]§!/[?player_back_line_0_defence_array^picture_number]/§G[?player_back_line_0_action_array^picture_number]§!"
-  player_kard_at_back_line_1_text: "§R[?player_back_line_1_HP_array^picture_number]§!/§Y[?player_back_line_1_attack_array^picture_number]§!/[?player_back_line_1_defence_array^picture_number]/§G[?player_back_line_1_action_array^picture_number]§!"
-  player_kard_at_forward_line_0_text: "§R[?player_forward_line_0_HP_array^picture_number]§!/§Y[?player_forward_line_0_attack_array^picture_number]§!/[?player_forward_line_0_defence_array^picture_number]/§G[?player_forward_line_0_action_array^picture_number]§!"
-  player_kard_at_forward_line_1_text: "§R[?player_forward_line_1_HP_array^picture_number]§!/§Y[?player_forward_line_1_attack_array^picture_number]§!/[?player_forward_line_1_defence_array^picture_number]/§G[?player_forward_line_1_action_array^picture_number]§!"
+  player_kard_at_back_line_0_text: "§R[?player_back_line_0_HP_array^picture_number]§!/§Y[?player_back_line_0_attack_array^picture_number]§!/[?player_back_line_0_defence_array^picture_number]/§G[?player_back_line_0_action_array^picture_number]§!  [?player_back_line_0_movement_array^picture_number]"
+  player_kard_at_back_line_1_text: "§R[?player_back_line_1_HP_array^picture_number]§!/§Y[?player_back_line_1_attack_array^picture_number]§!/[?player_back_line_1_defence_array^picture_number]/§G[?player_back_line_1_action_array^picture_number]§!  [?player_back_line_1_movement_array^picture_number]"
+  player_kard_at_forward_line_0_text: "§R[?player_forward_line_0_HP_array^picture_number]§!/§Y[?player_forward_line_0_attack_array^picture_number]§!/[?player_forward_line_0_defence_array^picture_number]/§G[?player_forward_line_0_action_array^picture_number]§!  [?player_forward_line_0_movement_array^picture_number]"
+  player_kard_at_forward_line_1_text: "§R[?player_forward_line_1_HP_array^picture_number]§!/§Y[?player_forward_line_1_attack_array^picture_number]§!/[?player_forward_line_1_defence_array^picture_number]/§G[?player_forward_line_1_action_array^picture_number]§!  [?player_forward_line_1_movement_array^picture_number]"
+  player_action_power_text: "当前的体力上限为§Y[?total_action_power]§!,剩余为§G[?player_action_power]§!"
+  AI_action_power_text: "当前的体力上限为§Y[?total_action_power]§!,剩余为§G[?AI_action_power]§!"
+  tankgoal_next_turn_tip: "我是下一回合的按钮，因为一些莫名其妙的原因，中文显示失效了！"
+
+  AI_kard_at_back_line_0_text: "§R[?AI_back_line_0_HP_array^picture_number]§!/§Y[?AI_back_line_0_attack_array^picture_number]§!/[?AI_back_line_0_defence_array^picture_number]/§G[?AI_back_line_0_action_array^picture_number]§! [?AI_back_line_0_movement_array^picture_number]"
+  AI_kard_at_back_line_1_text: "§R[?AI_back_line_1_HP_array^picture_number]§!/§Y[?AI_back_line_1_attack_array^picture_number]§!/[?AI_back_line_1_defence_array^picture_number]/§G[?AI_back_line_1_action_array^picture_number]§! [?AI_back_line_1_movement_array^picture_number]"
+  AI_kard_at_forward_line_0_text: "§R[?AI_forward_line_0_HP_array^picture_number]§!/§Y[?AI_forward_line_0_attack_array^picture_number]§!/[?AI_forward_line_0_defence_array^picture_number]/§G[?AI_forward_line_0_action_array^picture_number]§! [?AI_forward_line_0_movement_array^picture_number]"
+  AI_kard_at_forward_line_1_text: "§R[?AI_forward_line_1_HP_array^picture_number]§!/§Y[?AI_forward_line_1_attack_array^picture_number]§!/[?AI_forward_line_1_defence_array^picture_number]/§G[?AI_forward_line_1_action_array^picture_number]§! [?AI_forward_line_1_movement_array^picture_number]"
+
 
 
 

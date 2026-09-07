@@ -881,9 +881,7 @@ scripted_gui = {
 
 		effects = {
 			first_button_click = {
-				ZYX_change_your_kard = yes
-				ZYX_change_kard_scope = yes
-				ZYX_clean_array_in_war = yes
+				ZYX_prepare_for_fight = yes
 
 				clr_country_flag = ZYX_ready_to_start
 				clr_country_flag = ZYX_console_mode
@@ -893,9 +891,7 @@ scripted_gui = {
 				clr_country_flag = ZYX_tankgoal_console
 			}
 			last_button_click = {
-				ZYX_change_your_kard = yes
-				ZYX_change_kard_scope = yes
-				ZYX_clean_array_in_war = yes
+				ZYX_prepare_for_fight = yes
 
 				clr_country_flag = ZYX_ready_to_start
 				clr_country_flag = ZYX_console_mode
@@ -1015,22 +1011,51 @@ scripted_gui = {
 
 				add_to_array = { fight_console_attack_AI_unit = 0 }
 				add_to_array = { fight_console_player_attack_unit = picture_value }
-				ZYX_check_kards_is_effect_or_not = yes
+				ZYX_check_kards_is_what = yes
+				if = {
+					limit = {
+						OR = {
+							check_variable = { tankgoal_unit_action^picture_value < player_action_power }
+							check_variable = { tankgoal_unit_action^picture_value = player_action_power }
+						}
+					}
+					set_country_flag = unit_moveable
+				}
+				else = {
+					clr_country_flag = unit_moveable
+				}
 			}
 
-			select_back_line_0_click = {#选择后方0左
+			player_kard_at_back_line_0_range_click = {#挤开后方0地区的士兵
 				ZYX_change_kard_scope = yes
 
-				set_country_flag = has_selected_line
-				set_country_flag = select_to_back
 				set_country_flag = the_left_side
+				set_country_flag = has_selected_line
+
+				set_variable = { chosen_index_of_array_1 = picture_number }
 			}
-			select_back_line_1_click = {#选择后方1右
+			player_kard_at_back_line_1_range_click = {#挤开后方1地区的士兵
+				ZYX_change_kard_scope = yes
+				
+				set_country_flag = has_selected_line
+
+				set_variable = { chosen_index_of_array_1 = picture_number }
+			}
+
+			player_kard_at_forward_line_0_range_click = {#挤开前线0左侧
 				ZYX_change_kard_scope = yes
 
+				set_country_flag = the_left_side
 				set_country_flag = has_selected_line
-				set_country_flag = select_to_back
-				clr_country_flag = the_left_side
+
+				set_variable = { chosen_index_of_array_1 = picture_number }
+			}
+			player_kard_at_forward_line_1_range_click = {#挤开前线1右
+				ZYX_change_kard_scope = yes
+				
+				set_country_flag = has_selected_line
+
+				set_variable = { chosen_index_of_array_1 = picture_number }
 			}
 
 			player_kard_at_back_line_0_button_click = {#后方士兵点击0
@@ -1042,6 +1067,47 @@ scripted_gui = {
 				add_to_array = { fight_console_player_attack_unit = picture_value }
 				set_variable = { chosen_index_of_array_0 = picture_number }
 
+				ZYX_check_kards_is_what = yes
+				if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 2 }
+							}
+						}
+						set_country_flag = unit_moveable
+					}
+					else = {
+						clr_country_flag = unit_moveable
+					}
+
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 1 }
+							}
+						}
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+					if = {
+						limit = { check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 5 } }
+						set_country_flag = unit_can_attack
+						set_country_flag = unit_moveable
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+						clr_country_flag = unit_moveable
+					}
+				}
 			}
 			player_kard_at_back_line_1_button_click = {#后方士兵点击1
 				ZYX_change_your_kard = yes
@@ -1050,6 +1116,48 @@ scripted_gui = {
 				add_to_array = { fight_console_attack_AI_unit = 0 }
 				add_to_array = { fight_console_player_attack_unit = picture_value }
 				set_variable = { chosen_index_of_array_0 = picture_number }
+
+				ZYX_check_kards_is_what = yes
+				if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 2 }
+							}
+						}
+						set_country_flag = unit_moveable
+					}
+					else = {
+						clr_country_flag = unit_moveable
+					}
+
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 1 }
+							}
+						}
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+					if = {
+						limit = { check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 5 } }
+						set_country_flag = unit_can_attack
+						set_country_flag = unit_moveable
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+						clr_country_flag = unit_moveable
+					}
+				}
 			}
 
 			player_kard_at_forward_line_0_button_click = {#前方士兵点击0
@@ -1061,6 +1169,32 @@ scripted_gui = {
 				add_to_array = { fight_console_player_attack_unit = picture_value }
 				set_variable = { chosen_index_of_array_0 = picture_number }
 
+				ZYX_check_kards_is_what = yes
+				if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_forward_line_0_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_forward_line_0_movement_array^chosen_index_of_array_0 = 1 }
+							}
+						}
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+					if = {
+						limit = { check_variable = { player_forward_line_0_movement_array^chosen_index_of_array_0 = 5 } }
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
 			}
 			player_kard_at_forward_line_1_button_click = {#前方士兵点击1
 				ZYX_change_your_kard = yes
@@ -1069,6 +1203,33 @@ scripted_gui = {
 				add_to_array = { fight_console_attack_AI_unit = 0 }
 				add_to_array = { fight_console_player_attack_unit = picture_value }
 				set_variable = { chosen_index_of_array_0 = picture_number }
+
+				ZYX_check_kards_is_what = yes
+				if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+					if = {
+						limit = {
+							OR = {
+								check_variable = { player_forward_line_1_movement_array^chosen_index_of_array_0 = 3 }
+								check_variable = { player_forward_line_1_movement_array^chosen_index_of_array_0 = 1 }
+							}
+						}
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+					if = {
+						limit = { check_variable = { player_forward_line_1_movement_array^chosen_index_of_array_0 = 5 } }
+						set_country_flag = unit_can_attack
+					}
+					else = {
+						clr_country_flag = unit_can_attack
+					}
+				}
 			}
 
 			#选择AI单位
@@ -1083,16 +1244,37 @@ scripted_gui = {
 					set_variable = { chosen_index_of_array_1 = 666 }
 				}
 			}
+
+			tankgoal_next_turn_click = {#下一回合（到AI了）
+				ZYX_next_turn_to_AI = yes
+			}
 		}
 
 		triggers = {
-			select_back_line_0_visible = {
-				check_variable = { fight_console_player_attack_unit^num > 0 }
-				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+			player_kard_at_back_line_0_range_visible = {
+				OR = {
+					has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+					has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+				}
+				NOT = { has_country_flag = select_back_line_unit }
+				NOT = { has_country_flag = select_forward_line_unit }
 			}
-			select_back_line_1_visible = {
-				check_variable = { fight_console_player_attack_unit^num > 0 }
-				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
+
+			player_kard_at_back_line_1_range_visible = {
+				OR = {
+					has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+					has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+				}
+				NOT = { has_country_flag = select_back_line_unit }
+				NOT = { has_country_flag = select_forward_line_unit }
+			}
+
+			player_kard_at_forward_line_0_range_visible = {
+				has_country_flag = select_back_line_unit
+			}
+
+			player_kard_at_forward_line_1_range_visible = {
+				has_country_flag = select_back_line_unit
 			}
 		}
 
@@ -1153,164 +1335,549 @@ scripted_gui = {
 
 			ready_to_attack_button_click = {#开始行动
 				if = {
-					limit = { has_country_flag = has_selected_line }
+					set_temp_variable = { value_of_kard = fight_console_player_attack_unit^0 }
+					limit = {
+						OR = {
+							check_variable = { player_action_power > tankgoal_unit_action^value_of_kard  }
+							check_variable = { player_action_power = tankgoal_unit_action^value_of_kard  }
+						}
+					}
+					subtract_from_variable = { player_action_power = tankgoal_unit_action^value_of_kard }
 					if = {
-						limit = { has_country_flag = select_back_line_unit }
+						limit = { has_country_flag = has_selected_line } #涉及战场移动时
 						if = {
-							limit = { has_country_flag = the_left_side }
+							limit = { has_country_flag = select_back_line_unit } #是后方单位
 							if = {
-								limit = { has_country_flag = in_left_side }
-								add_to_array = { player_forward_line_0_array = player_back_line_0_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
+								limit = { has_country_flag = the_left_side } #左侧
+								if = {
+									limit = { has_country_flag = in_left_side }
+									if = {
+										limit = {
+											OR = {
+												check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 3 }
+												check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 2 }
+											}
+										}
+										add_to_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = -2 }
+									}
+									else_if = {
+										limit = { check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 5 } }
+										set_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 4 }
+									}
+
+									if = {
+										limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+										add_to_array = { player_forward_line_0_array = value_of_kard }
+										add_to_array = { player_forward_line_0_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
+										#add_to_array = { player_forward_line_0_skill_array = player_back_line_0_skill_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_movement_array = player_back_line_0_movement_array^chosen_index_of_array_0 }
+									}
+									else = {
+										add_to_array = {
+											array = player_forward_line_0_array
+											value = value_of_kard
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_HP_array
+											value = player_back_line_0_HP_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_attack_array
+											value = player_back_line_0_attack_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_defence_array
+											value = player_back_line_0_defence_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_action_array
+											value = player_back_line_0_action_array
+											index = chosen_index_of_array_1
+										}
+										#add_to_array = {
+										#	array = player_forward_line_0_skill_array
+										#	value = player_back_line_0_skill_array
+										#	index = chosen_index_of_array_1
+										#}
+										add_to_array = {
+											array = player_forward_line_0_movement_array
+											value = player_back_line_0_movement_array
+											index = chosen_index_of_array_1
+										}
+									}
 								
-								remove_from_array = {
-									array = player_back_line_0_array
-									index = chosen_index_of_array_0
+									remove_from_array = {
+										array = player_back_line_0_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_HP_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_attack_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_defence_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_action_array
+										index = chosen_index_of_array_0
+									}
+									#remove_from_array = {
+									#	array = player_back_line_0_skill_array
+									#	index = chosen_index_of_array_0
+									#}
+									remove_from_array = {
+										array = player_back_line_0_movement_array
+										index = chosen_index_of_array_0
+									}
 								}
-								remove_from_array = {
-									array = player_back_line_0_HP_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_0_attack_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_0_defence_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_0_action_array
-									index = chosen_index_of_array_0
+								else = {
+									if = {
+										limit = {
+											OR = {
+												check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 3 }
+												check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 2 }
+											}
+										}
+										add_to_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = -2 }
+									}
+									else_if = {
+										limit = { check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 5 } }
+										set_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 4 }
+									}
+
+									if = {
+										limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+										add_to_array = { player_forward_line_0_array = value_of_kard }
+										add_to_array = { player_forward_line_0_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
+										#add_to_array = { player_forward_line_0_skill_array = player_back_line_1_skill_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_0_movement_array = player_back_line_1_movement_array^chosen_index_of_array_0 }
+									}
+									else = {
+										add_to_array = {
+											array = player_forward_line_0_array
+											value = value_of_kard
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_HP_array
+											value = player_back_line_1_HP_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_attack_array
+											value = player_back_line_1_attack_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_defence_array
+											value = player_back_line_1_defence_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_0_action_array
+											value = player_back_line_1_action_array
+											index = chosen_index_of_array_1
+										}
+										#add_to_array = {
+										#	array = player_forward_line_0_skill_array
+										#	value = player_back_line_1_skill_array
+										#	index = chosen_index_of_array_1
+										#}
+										add_to_array = {
+											array = player_forward_line_0_movement_array
+											value = player_back_line_1_movement_array
+											index = chosen_index_of_array_1
+										}
+									}
+								
+									remove_from_array = {
+										array = player_back_line_1_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_HP_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_attack_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_defence_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_action_array
+										index = chosen_index_of_array_0
+									}
+									#remove_from_array = {
+									#	array = player_back_line_1_skill_array
+									#	index = chosen_index_of_array_0
+									#}
+									remove_from_array = {
+										array = player_back_line_1_movement_array
+										index = chosen_index_of_array_0
+									}
 								}
 							}
 							else = {
-								add_to_array = { player_forward_line_0_array = player_back_line_1_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_0_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
+								if = {
+									limit = { has_country_flag = in_left_side }
+									if = {
+										limit = {
+											OR = {
+												check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 3 }
+												check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 2 }
+											}
+										}
+										add_to_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = -2 }
+									}
+									else_if = {
+										limit = { check_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 5 } }
+										set_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 4 }
+									}
+
+									if = {
+										limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+										add_to_array = { player_forward_line_1_array = value_of_kard }
+										add_to_array = { player_forward_line_1_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
+										#add_to_array = { player_forward_line_1_skill_array = player_back_line_0_skill_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_movement_array = player_back_line_0_movement_array^chosen_index_of_array_0 }
+									}
+									else = {
+										add_to_array = {
+											array = player_forward_line_1_array
+											value = value_of_kard
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_HP_array
+											value = player_back_line_0_HP_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_attack_array
+											value = player_back_line_0_attack_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_defence_array
+											value = player_back_line_0_defence_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_action_array
+											value = player_back_line_0_action_array
+											index = chosen_index_of_array_1
+										}
+										#add_to_array = {
+										#	array = player_forward_line_1_skill_array
+										#	value = player_back_line_0_skill_array
+										#	index = chosen_index_of_array_1
+										#}
+										add_to_array = {
+											array = player_forward_line_1_movement_array
+											value = player_back_line_0_movement_array
+											index = chosen_index_of_array_1
+										}
+									}
+									
+									remove_from_array = {
+										array = player_back_line_0_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_HP_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_attack_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_defence_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_0_action_array
+										index = chosen_index_of_array_0
+									}
+									#remove_from_array = {
+									#	array = player_back_line_0_skill_array
+									#	index = chosen_index_of_array_0
+									#}
+									remove_from_array = {
+										array = player_back_line_0_movement_array
+										index = chosen_index_of_array_0
+									}
+								}
+								else = {
+									if = {
+										limit = {
+											OR = {
+												check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 3 }
+												check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 2 }
+											}
+										}
+										add_to_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = -2 }
+									}
+									else_if = {
+										limit = { check_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 5 } }
+										set_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 4 }
+									}
+
+									if = {
+										limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+										add_to_array = { player_forward_line_1_array = value_of_kard }
+										add_to_array = { player_forward_line_1_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
+										#add_to_array = { player_forward_line_1_skill_array = player_back_line_1_skill_array^chosen_index_of_array_0 }
+										add_to_array = { player_forward_line_1_movement_array = player_back_line_1_movement_array^chosen_index_of_array_0 }
+									}
+									else = {
+										add_to_array = {
+											array = player_forward_line_1_array
+											value = value_of_kard
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_HP_array
+											value = player_back_line_1_HP_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_attack_array
+											value = player_back_line_1_attack_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_defence_array
+											value = player_back_line_1_defence_array
+											index = chosen_index_of_array_1
+										}
+										add_to_array = {
+											array = player_forward_line_1_action_array
+											value = player_back_line_1_action_array
+											index = chosen_index_of_array_1
+										}
+										#add_to_array = {
+										#	array = player_forward_line_1_skill_array
+										#	value = player_back_line_1_skill_array
+										#	index = chosen_index_of_array_1
+										#}
+										add_to_array = {
+											array = player_forward_line_1_movement_array
+											value = player_back_line_1_movement_array
+											index = chosen_index_of_array_1
+										}
+									}
 								
-								remove_from_array = {
-									array = player_back_line_1_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_HP_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_attack_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_defence_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_action_array
-									index = chosen_index_of_array_0
+									remove_from_array = {
+										array = player_back_line_1_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_HP_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_attack_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_defence_array
+										index = chosen_index_of_array_0
+									}
+									remove_from_array = {
+										array = player_back_line_1_action_array
+										index = chosen_index_of_array_0
+									}
+									#remove_from_array = {
+									#	array = player_back_line_1_skill_array
+									#	index = chosen_index_of_array_0
+									#}
+									remove_from_array = {
+										array = player_back_line_1_movement_array
+										index = chosen_index_of_array_0
+									}
 								}
 							}
 						}
 						else = {
 							if = {
-								limit = { has_country_flag = in_left_side }
-								add_to_array = { player_forward_line_1_array = player_back_line_0_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_HP_array = player_back_line_0_HP_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_attack_array = player_back_line_0_attack_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_defence_array = player_back_line_0_defence_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_action_array = player_back_line_0_action_array^chosen_index_of_array_0 }
-								
-								remove_from_array = {
-									array = player_back_line_0_array
-									index = chosen_index_of_array_0
+								limit = { has_country_flag = the_left_side }
+								if = {
+									limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+									add_to_array = { player_back_line_0_array = value_of_kard }
+									add_to_array = { player_back_line_0_HP_array = tankgoal_unit_HP^value_of_kard }
+									add_to_array = { player_back_line_0_attack_array = tankgoal_unit_attack^value_of_kard }
+									add_to_array = { player_back_line_0_defence_array = tankgoal_unit_defence^value_of_kard }
+									add_to_array = { player_back_line_0_action_array = tankgoal_unit_action^value_of_kard }
+									#add_to_array = { player_back_line_0_skill_array = tankgoal_unit_skill^value_of_kard }
+									if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+										add_to_array = { player_back_line_0_movement_array = 1 }#0、1、2、3
+									}
+									else_if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+										add_to_array = { player_back_line_0_movement_array = 4 }#4、5
+									}
 								}
-								remove_from_array = {
-									array = player_back_line_0_HP_array
-									index = chosen_index_of_array_0
+								else = {
+									add_to_array = {
+										array = player_back_line_0_array
+										value = value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_0_HP_array
+										value = tankgoal_unit_HP^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_0_attack_array
+										value = tankgoal_unit_attack^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_0_defence_array
+										value = tankgoal_unit_defence^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_0_action_array
+										value = tankgoal_unit_action^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									#add_to_array = {
+									#	array = player_back_line_0_skill_array
+									#	value = tankgoal_unit_skill^value_of_kard
+									#	index = chosen_index_of_array_1
+									#}
+									if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+										add_to_array = {
+											array = player_back_line_0_movement_array
+											value = 1
+											index = chosen_index_of_array_1
+										}#0、1、2、3
+									}
+									else_if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+										add_to_array = {
+											array = player_back_line_0_movement_array
+											value = 4
+											index = chosen_index_of_array_1
+										}#4、5
+									}
 								}
+
 								remove_from_array = {
-									array = player_back_line_0_attack_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_0_defence_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_0_action_array
-									index = chosen_index_of_array_0
+									array = player_kards_array
+									value = value_of_kard
 								}
 							}
 							else = {
-								add_to_array = { player_forward_line_1_array = player_back_line_1_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_HP_array = player_back_line_1_HP_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_attack_array = player_back_line_1_attack_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_defence_array = player_back_line_1_defence_array^chosen_index_of_array_0 }
-								add_to_array = { player_forward_line_1_action_array = player_back_line_1_action_array^chosen_index_of_array_0 }
-								
-								remove_from_array = {
-									array = player_back_line_1_array
-									index = chosen_index_of_array_0
+								if = {
+									limit = { check_variable = { chosen_index_of_array_1 = -1 } }
+									add_to_array = { player_back_line_1_array = value_of_kard }
+									add_to_array = { player_back_line_1_HP_array = tankgoal_unit_HP^value_of_kard }
+									add_to_array = { player_back_line_1_attack_array = tankgoal_unit_attack^value_of_kard }
+									add_to_array = { player_back_line_1_defence_array = tankgoal_unit_defence^value_of_kard }
+									add_to_array = { player_back_line_1_action_array = tankgoal_unit_action^value_of_kard }
+									#add_to_array = { player_back_line_1_skill_array = tankgoal_unit_skill^value_of_kard }
+									if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+										add_to_array = { player_back_line_1_movement_array = 1 }#0、1、2、3
+									}
+									else_if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+										add_to_array = { player_back_line_1_movement_array = 4 }#4、5
+									}
 								}
-								remove_from_array = {
-									array = player_back_line_1_HP_array
-									index = chosen_index_of_array_0
+								else = {
+									add_to_array = {
+										array = player_back_line_1_array
+										value = value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_1_HP_array
+										value = tankgoal_unit_HP^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_1_attack_array
+										value = tankgoal_unit_attack^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_1_defence_array
+										value = tankgoal_unit_defence^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									add_to_array = {
+										array = player_back_line_1_action_array
+										value = tankgoal_unit_action^value_of_kard
+										index = chosen_index_of_array_1
+									}
+									#add_to_array = {
+									#	array = player_back_line_1_skill_array
+									#	value = tankgoal_unit_skill^value_of_kard
+									#	index = chosen_index_of_array_1
+									#}
+									if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
+										add_to_array = {
+											array = player_back_line_1_movement_array
+											value = 1
+											index = chosen_index_of_array_1
+										}#0、1、2、3
+									}
+									else_if = {
+										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
+										add_to_array = {
+											array = player_back_line_1_movement_array
+											value = 4
+											index = chosen_index_of_array_1
+										}#4、5
+									}
 								}
+
 								remove_from_array = {
-									array = player_back_line_1_attack_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_defence_array
-									index = chosen_index_of_array_0
-								}
-								remove_from_array = {
-									array = player_back_line_1_action_array
-									index = chosen_index_of_array_0
+									array = player_kards_array
+									value = value_of_kard
 								}
 							}
 						}
 					}
-					else = {
-						if = {
-							limit = { has_country_flag = the_left_side }
-							set_temp_variable = { value_of_kard = fight_console_player_attack_unit^0 }
-							add_to_array = { player_back_line_0_array = value_of_kard }
-							add_to_array = { player_back_line_0_HP_array = tankgoal_unit_HP^value_of_kard }
-							add_to_array = { player_back_line_0_attack_array = tankgoal_unit_attack^value_of_kard }
-							add_to_array = { player_back_line_0_defence_array = tankgoal_unit_defence^value_of_kard }
-							add_to_array = { player_back_line_0_action_array = tankgoal_unit_action^value_of_kard }
-
-							remove_from_array = {
-								array = player_kards_array
-								value = value_of_kard
-							}
-						}
-						else = {
-							set_temp_variable = { value_of_kard = fight_console_player_attack_unit^0 }
-							add_to_array = { player_back_line_1_array = value_of_kard }
-							add_to_array = { player_back_line_1_HP_array = tankgoal_unit_HP^value_of_kard }
-							add_to_array = { player_back_line_1_attack_array = tankgoal_unit_attack^value_of_kard }
-							add_to_array = { player_back_line_1_defence_array = tankgoal_unit_defence^value_of_kard }
-							add_to_array = { player_back_line_1_action_array = tankgoal_unit_action^value_of_kard }
-
-							remove_from_array = {
-								array = player_kards_array
-								value = value_of_kard
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = { has_country_flag = select_target }
+					else_if = {
+						limit = { has_country_flag = select_target }
 					
-				}
-				ZYX_change_your_kard = yes
+					}
+					ZYX_change_your_kard = yes
+					ZYX_change_kard_scope = yes
+				}	
 			}
 		}
 
@@ -1322,7 +1889,10 @@ scripted_gui = {
 		triggers = {
 			ready_to_attack_button_visible = {
 				OR = {
-					has_country_flag = has_selected_line
+					AND = {
+						has_country_flag = has_selected_line
+						has_country_flag = unit_moveable
+					}
 					has_country_flag = select_target
 				}
 			}
@@ -1369,6 +1939,7 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = select_back_line_unit
+			NOT = { has_country_flag = unvisible_the_forward }
 		}
 
 		effects = {
@@ -1383,6 +1954,13 @@ scripted_gui = {
 				
 				set_country_flag = has_selected_line
 			}
+
+			select_forward_line_0_right_click = {#屏蔽后线
+				set_country_flag = unvisible_the_forward
+			}
+			select_forward_line_1_right_click = {#屏蔽后线
+				set_country_flag = unvisible_the_forward
+			}
 		}
 	}
 
@@ -1392,9 +1970,12 @@ scripted_gui = {
 
 		visible = {
 			OR = {
-				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+				has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
 			}
+			NOT = { has_country_flag = select_back_line_unit }
+			NOT = { has_country_flag = select_forward_line_unit }
+			NOT = { has_country_flag = unvisible_the_back }
 		}
 
 		effects = {
@@ -1408,6 +1989,13 @@ scripted_gui = {
 				ZYX_change_kard_scope = yes
 				
 				set_country_flag = has_selected_line
+			}
+
+			select_back_line_0_right_click = {#屏蔽后线
+				set_country_flag = unvisible_the_back
+			}
+			select_back_line_1_right_click = {#屏蔽后线
+				set_country_flag = unvisible_the_back
 			}
 		}
 	}
