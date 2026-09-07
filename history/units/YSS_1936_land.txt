@@ -1,3 +1,7 @@
+focus = {
+	current = "YSS_focus_1"
+	progress = 1
+}
 division_template = {
     name = "索维耶特地方军区兵团"
 
