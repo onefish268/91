@@ -13,10 +13,11 @@ ZYX_add_all_units_number = {#添加106个卡牌的所有！数值！
 	ZYX_add_all_units_attack = yes
 	ZYX_add_all_units_defence = yes
 	ZYX_add_all_units_action = yes
+	ZYX_add_all_units_skill = yes
 }
-
 ZYX_add_all_units_HP = {#生命
 	# ==================== HP ====================
+	add_to_array = { tankgoal_unit_HP = -1 }
 	# ==================== USA (1-16) ====================
 	# USA_effect (1-5) HP=-1 attack=-1 defence=-1
 	add_to_array = { tankgoal_unit_HP = -1 }
@@ -162,6 +163,7 @@ ZYX_add_all_units_HP = {#生命
 	add_to_array = { tankgoal_unit_HP = 1 }
 }
 ZYX_add_all_units_attack = {#攻击
+	add_to_array = { tankgoal_unit_attack = -1 }
 	# ==================== ATTACK ====================
 	# USA_effect (1-5) attack=-1
 	add_to_array = { tankgoal_unit_attack = -1 }
@@ -171,17 +173,17 @@ ZYX_add_all_units_attack = {#攻击
 	add_to_array = { tankgoal_unit_attack = -1 }
 	# USA_infantry (6-12) attack=1
 	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 2 }
+	add_to_array = { tankgoal_unit_attack = 3 }
+	add_to_array = { tankgoal_unit_attack = 4 }
+	add_to_array = { tankgoal_unit_attack = 5 }
+	add_to_array = { tankgoal_unit_attack = 6 }
+	add_to_array = { tankgoal_unit_attack = 7 }
 	# USA_tank (13-16) attack=1
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
-	add_to_array = { tankgoal_unit_attack = 1 }
+	add_to_array = { tankgoal_unit_attack = 8 }
+	add_to_array = { tankgoal_unit_attack = 9 }
+	add_to_array = { tankgoal_unit_attack = 10 }
+	add_to_array = { tankgoal_unit_attack = 11 }
 
 	# ENG_effect (17-21) attack=-1
 	add_to_array = { tankgoal_unit_attack = -1 }
@@ -301,6 +303,7 @@ ZYX_add_all_units_attack = {#攻击
 }
 ZYX_add_all_units_defence = {#防御
 	# ==================== DEFENCE ====================
+	add_to_array = { tankgoal_unit_defence = -1 }
 	# USA_effect (1-5) defence=-1
 	add_to_array = { tankgoal_unit_defence = -1 }
 	add_to_array = { tankgoal_unit_defence = -1 }
@@ -308,17 +311,17 @@ ZYX_add_all_units_defence = {#防御
 	add_to_array = { tankgoal_unit_defence = -1 }
 	add_to_array = { tankgoal_unit_defence = -1 }
 	# USA_infantry (6-12) defence=1
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 11 }
+	add_to_array = { tankgoal_unit_defence = 10 }
+	add_to_array = { tankgoal_unit_defence = 9 }
+	add_to_array = { tankgoal_unit_defence = 8 }
+	add_to_array = { tankgoal_unit_defence = 7 }
+	add_to_array = { tankgoal_unit_defence = 6 }
+	add_to_array = { tankgoal_unit_defence = 5 }
 	# USA_tank (13-16) defence=1
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
-	add_to_array = { tankgoal_unit_defence = 1 }
+	add_to_array = { tankgoal_unit_defence = 4 }
+	add_to_array = { tankgoal_unit_defence = 3 }
+	add_to_array = { tankgoal_unit_defence = 2 }
 	add_to_array = { tankgoal_unit_defence = 1 }
 
 	# ENG_effect (17-21) defence=-1
@@ -439,6 +442,7 @@ ZYX_add_all_units_defence = {#防御
 }
 ZYX_add_all_units_action = {#行动
 	# ==================== ACTION ====================
+	add_to_array = { tankgoal_unit_action = 1 }
 	# ==================== USA (1-16) ====================
 	# USA_effect (1-5) action=1
 	add_to_array = { tankgoal_unit_action = 1 }
@@ -583,8 +587,300 @@ ZYX_add_all_units_action = {#行动
 	add_to_array = { tankgoal_unit_action = 1 }
 	add_to_array = { tankgoal_unit_action = 1 }
 }
+ZYX_add_all_units_skill = {#技能
+	# ==================== skill ====================
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# ==================== USA (1-16) ====================
+	# USA_effect (1-5) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# USA_infantry (6-12) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# USA_tank (13-16) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
 
+	# ==================== ENG (17-32) ====================
+	# ENG_effect (17-21) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# ENG_infantry (22-28) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# ENG_tank (29-32) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
 
+	# ==================== FRA (33-37) ====================
+	# FRA_effect (33) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# FRA_infantry (34) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# FRA_tank (35-37) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+
+	# ==================== CHI (38-58) ====================
+	# CHI_infantry (38-43) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# CHI_tank (44-58) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+
+	# ==================== SOV (59-68) ====================
+	# SOV_effect (59-63) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# SOV_infantry (64) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# SOV_tank (65-68) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+
+	# ==================== GER (69-93) ====================
+	# GER_effect (69-74) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# GER_infantry (75-82) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# GER_tank (83-93) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+
+	# ==================== JAP (94-99) ====================
+	# JAP_infantry (94-96) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# JAP_tank (97-99) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+
+	# ==================== ITA (100-106) ====================
+	# ITA_effect (100) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# ITA_infantry (101-103) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	# ITA_tank (104-106) skill=1
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+	add_to_array = { tankgoal_unit_skill = 1 }
+}
+ZYX_add_all_units_cost = {#花费
+	# ==================== cost ====================
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# ==================== USA (1-16) ====================
+	# USA_effect (1-5) cost=1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# USA_infantry (6-12) 
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# USA_tank (13-16) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== ENG (17-32) ====================
+	# ENG_effect (17-21) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# ENG_infantry (22-28) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# ENG_tank (29-32) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== FRA (33-37) ====================
+	# FRA_effect (33) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# FRA_infantry (34) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# FRA_tank (35-37) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== CHI (38-58) ====================
+	# CHI_infantry (38-43) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# CHI_tank (44-58) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== SOV (59-68) ====================
+	# SOV_effect (59-63) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# SOV_infantry (64) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# SOV_tank (65-68) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== GER (69-93) ====================
+	# GER_effect (69-74) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# GER_infantry (75-82) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# GER_tank (83-93) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== JAP (94-99) ====================
+	# JAP_infantry (94-96) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# JAP_tank (97-99) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+
+	# ==================== ITA (100-106) ====================
+	# ITA_effect (100) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# ITA_infantry (101-103) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	# ITA_tank (104-106) cost1
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+	add_to_array = { tankgoal_unit_cost = 1 }
+}
 
 #卡牌选取界面的重载
 ZYX_reload_tankgoal_kards = {
@@ -789,6 +1085,160 @@ ZYX_reload_tankgoal_kards = {
 	}
 }
 
+#检测该手牌类型
+ZYX_check_kards_is_what = {
+	if = {
+		limit = { check_variable = { picture_value < 17 } }#美国 1-16
+		if = {
+			limit = { check_variable = { picture_value < 6 } }#效果 1-5
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 13 } }#步兵 6-12
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 13-16
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 33 } }#英国 17-32
+		if = {
+			limit = { check_variable = { picture_value < 22 } }#效果 17-21
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 29 } }#步兵 22-28
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 29-32
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 38 } }#法国 33-37
+		if = {
+			limit = { check_variable = { picture_value < 34 } }#效果 33
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 35 } }#步兵 34
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 35-37
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 59 } }#中国 38-58
+		#中国没有效果牌
+		if = {
+			limit = { check_variable = { picture_value < 44 } }#步兵 38-43
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 44-58
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 69 } }#苏联 59-68
+		if = {
+			limit = { check_variable = { picture_value < 64 } }#效果 59-63
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 65 } }#步兵 64
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 65-68
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 94 } }#德国 69-93
+		if = {
+			limit = { check_variable = { picture_value < 75 } }#效果 69-74
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 83 } }#步兵 75-82
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 83-93
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 100 } }#日本 94-99
+		#日本没有效果牌
+		if = {
+			limit = { check_variable = { picture_value < 97 } }#步兵 94-96
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 97-99
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+	else_if = {
+		limit = { check_variable = { picture_value < 107 } }#意大利 100-106
+		if = {
+			limit = { check_variable = { picture_value < 101 } }#效果 100
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+		}
+		else_if = {
+			limit = { check_variable = { picture_value < 104 } }#步兵 101-103
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+		}
+		else = {#坦克 104-106
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
+			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry
+			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank
+		}
+	}
+}
+
 ZYX_tankgoal_count_number = {#显示选择卡片数量
 	if = {
 		limit = { check_variable = { tankgoal_ones_number > 10 } }
@@ -827,12 +1277,15 @@ ZYX_clean_chosen_kards = {
 #喜报，array_name^num可以访问array_name的长度！妈妈再也不用担心我拿P社提供的幽默正序代码去删改啦（）
 
 ZYX_prepare_for_fight = {#战前准备，清理各种变量、数组、标签
-	clear_array = fight_console_player_attack_unit
-	clear_array = fight_console_AI_attack_unit
-	clear_array = fight_console_attack_player_unit
-	claer_array = fight_console_attack_AI_unit		#清理双方选中的牌
+	ZYX_clean_array_in_war = yes
+	ZYX_change_kard_scope = yes
+	ZYX_change_your_kard = yes
 
-	#清理战场上存在的牌，顺便恢复总部血量
+	set_variable = { base_of_player_HP = 20 }
+	set_variable = { base_of_AI_HP = 20 }
+	set_variable = { total_action_power = 1 }
+	set_variable = { player_action_power = 1 }
+	set_variable = { AI_action_power = 1 }
 }
 
 #卡牌加入卡组的代码
@@ -938,6 +1391,7 @@ ZYX_tankgoal_random_kards_to_AI = {
 ZYX_default_kards_deliver = {
 	ZYX_add_kard_to_kards = yes
 	ZYX_tankgoal_random_kards_to_AI = yes
+
 	clear_array = player_kards_array
 	clear_array = AI_kards_array
 	set_temp_variable = { i = 5 }
@@ -970,7 +1424,7 @@ ZYX_default_kards_deliver = {
 	else = {
 		while_loop_effect = {
 			limit = { check_variable = { i > 0 } }
-			check_variable = {  ZYX_max_number = selected_console_show_array^num }
+			set_variable = {  ZYX_max_number = selected_console_show_array^num }
 			ZYX_get_random_number = yes
 			add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
 			remove_from_array = {
@@ -981,7 +1435,7 @@ ZYX_default_kards_deliver = {
 		}
 		while_loop_effect = {
 			limit = { check_variable = { ii > 0 } }
-			check_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+			set_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
 			ZYX_get_random_number = yes
 			add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
 			remove_from_array = {
@@ -993,117 +1447,22 @@ ZYX_default_kards_deliver = {
 	}
 }
 
-#检测该手牌类型是效果还是兵种
-ZYX_check_kards_is_effect_or_not = {
-	if = {
-		limit = { check_variable = { picture_value < 17 } }
-		if = {
-			limit = { check_variable = { picture_value < 6 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 33 } }
-		if = {
-			limit = { check_variable = { picture_value < 22 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 38 } }
-		if = {
-			limit = { check_variable = { picture_value < 34 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 59 } }
-		#if = {
-		#	limit = { check_variable = { picture_value < 6 } }
-		#	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		#	set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		#}
-		#else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		#}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 69 } }
-		if = {
-			limit = { check_variable = { picture_value < 64 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 94 } }
-		if = {
-			limit = { check_variable = { picture_value < 75 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 100 } }
-		#if = {
-		#	limit = { check_variable = { picture_value < 6 } }
-		#	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		#	set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		#}
-		#else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		#}
-	}
-	else_if = {
-		limit = { check_variable = { picture_value < 107 } }
-		if = {
-			limit = { check_variable = { picture_value < 101 } }
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-		}
-		else = {
-			clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect
-			set_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect
-		}
-	}
-}
-
 ZYX_change_your_kard = {#手牌切换时，清空原有的所有状态
 	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_an_effect     # 手牌且为效果牌
-	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_not_an_effect # 手牌且非效果牌
+	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank # 手牌且为坦克牌
+	clr_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry # 手牌且为步兵牌
 	clr_country_flag = select_back_line_unit #选中了后线单位
 	clr_country_flag = select_forward_line_unit #选中了前线单位
 	clr_country_flag = has_selected_line #已选择战线/移动
-	clr_country_flag = the_left_side #选择战线左侧方向
-	clr_country_flag = in_left_side #选择了左侧的士兵
+	clr_country_flag = the_left_side #选择战线左侧方向(目标)
+	clr_country_flag = in_left_side #选择了左侧的士兵（自身）
 	clr_country_flag = select_target #选择作用域
+	clr_country_flag = unit_can_attack #确定攻击性
+	clr_country_flag = unit_moveable #确定移动性
+	clr_country_flag = unvisible_the_back #后线可见性
+	clr_country_flag = unvisible_the_forward #前线可见性
 	clear_variable = chosen_index_of_array_0
-	clear_variable = chosen_index_of_array_1
+	set_variable = { chosen_index_of_array_1 = -1 }
 
 	#数组的清理，TMD，我们的数组简直是一团糟
 	clear_array = fight_console_attack_AI_unit #这个名字根本不符合，应该叫：我们选择卡牌的作用域
@@ -1114,21 +1473,215 @@ ZYX_change_kard_scope = {
 	clr_country_flag = has_selected_line #已选择战线/移动
 	clr_country_flag = the_left_side #选择战线左侧方向
 	clr_country_flag = select_target #选择作用域
-	clear_variable = chosen_index_of_array_1 #选择的敌方士兵
+	set_variable = { chosen_index_of_array_1 = -1 } #选择的敌方士兵
 
 	#clear_array = fight_console_attack_AI_unit 
 }
 
-ZYX_clean_array_in_war = {
+ZYX_clean_array_in_war = { #清理所有涉及到的数组   P社！！！！！没有结构体，我怎么活啊！！！！！！！！！！！！！！！！！
 	clear_array = player_back_line_0_array
+	clear_array = player_back_line_0_HP_array
+	clear_array = player_back_line_0_attack_array
+	clear_array = player_back_line_0_defence_array
+	clear_array = player_back_line_0_action_array
+	clear_array = player_back_line_0_skill_array
+	clear_array = player_back_line_0_movement_array
 	clear_array = player_back_line_1_array
+	clear_array = player_back_line_1_HP_array
+	clear_array = player_back_line_1_attack_array
+	clear_array = player_back_line_1_defence_array
+	clear_array = player_back_line_1_action_array
+	clear_array = player_back_line_1_skill_array
+	clear_array = player_back_line_1_movement_array
+
 	clear_array = player_forward_line_0_array
+	clear_array = player_forward_line_0_HP_array
+	clear_array = player_forward_line_0_attack_array
+	clear_array = player_forward_line_0_defence_array
+	clear_array = player_forward_line_0_action_array
+	clear_array = player_forward_line_0_skill_array
+	clear_array = player_forward_line_0_movement_array
 	clear_array = player_forward_line_1_array
+	clear_array = player_forward_line_1_HP_array
+	clear_array = player_forward_line_1_attack_array
+	clear_array = player_forward_line_1_defence_array
+	clear_array = player_forward_line_1_action_array
+	clear_array = player_forward_line_1_skill_array
+	clear_array = player_forward_line_1_movement_array
+
+	#AI的东西👇
+	clear_array = AI_back_line_0_array
+	clear_array = AI_back_line_0_HP_array
+	clear_array = AI_back_line_0_attack_array
+	clear_array = AI_back_line_0_defence_array
+	clear_array = AI_back_line_0_action_array
+	clear_array = AI_back_line_0_skill_array
+	clear_array = AI_back_line_0_movement_array
+	clear_array = AI_back_line_1_array
+	clear_array = AI_back_line_1_HP_array
+	clear_array = AI_back_line_1_attack_array
+	clear_array = AI_back_line_1_defence_array
+	clear_array = AI_back_line_1_action_array
+	clear_array = AI_back_line_1_skill_array
+	clear_array = AI_back_line_1_movement_array
+
+	clear_array = AI_forward_line_0_array
+	clear_array = AI_forward_line_0_HP_array
+	clear_array = AI_forward_line_0_attack_array
+	clear_array = AI_forward_line_0_defence_array
+	clear_array = AI_forward_line_0_action_array
+	clear_array = AI_forward_line_0_skill_array
+	clear_array = AI_forward_line_0_movement_array
+	clear_array = AI_forward_line_1_array
+	clear_array = AI_forward_line_1_HP_array
+	clear_array = AI_forward_line_1_attack_array
+	clear_array = AI_forward_line_1_defence_array
+	clear_array = AI_forward_line_1_action_array
+	clear_array = AI_forward_line_1_skill_array
+	clear_array = AI_forward_line_1_movement_array
+}
+
+ZYX_next_turn_to_AI = {#跳到AI回合
+	if = {
+		limit = { has_country_flag = player_first }
+	}
+	else = {
+		add_to_variable = { total_action_power = 1 }
+	}
+	set_variable = { AI_action_power = total_action_power }
+
+	set_variable = {  ZYX_max_number = tankgoal_AI_kards^num }
+	ZYX_get_random_number = yes
+	add_to_array = { AI_kards_array = tankgoal_AI_kards^ZYX_random_number }
+	remove_from_array = {
+		array = tankgoal_AI_kards
+		index = ZYX_random_number
+	}
+
+	ZYX_AI_movement = yes
 }
 
 #呐呐呐，现在我是写得头昏眼花了（）awsl
 
-ZYX_AI_movement = {}
+ZYX_AI_movement = { #AI的各种变量检测
+	#if = {
+	#	limit = {
+
+	#	}
+	#}
+	ZYX_check_AI_movement = yes
+}
+
+ZYX_can_AI_move = {
+	set_temp_variable = { i = AI_kards_array^num }
+	while_loop_effect = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = AI_can_move }
+				check_variable = { i > 0 }
+			}
+		}
+		add_to_temp_variable = { i = -1 }
+
+		set_temp_variable = { value_of_picture = AI_kards_array^i }
+		if = {
+			limit = {
+				check_variable = { tankgoal_unit_action^value_of_picture < AI_action_power }
+				check_variable = { tankgoal_unit_action^value_of_picture = AI_action_power }
+			}
+		}
+	}
+}
+
+ZYX_check_AI_movement = { #最终决策比较
+	#ZYX_AI_movement = yes
+	random_list = {
+		5 = {
+			modifier = {
+
+			}
+			ZYX_next_turn_to_player = yes
+		}
+		0 = {
+			modifier = {
+				add = 500
+				has_country_flag = AI_can_move
+			}
+			random_list = {
+
+			}
+		}
+	}
+}
+
+ZYX_next_turn_to_player = {
+	if = {
+		limit = { has_country_flag = player_first }
+		add_to_variable = { total_action_power = 1 }
+	}
+	set_variable = { player_action_power = total_action_power }
+
+	set_variable = {  ZYX_max_number = selected_console_show_array^num }
+	ZYX_get_random_number = yes
+	add_to_array = { player_kards_array = selected_console_show_array^ZYX_random_number }
+	remove_from_array = {
+		array = selected_console_show_array
+		index = ZYX_random_number
+	}
+
+	set_temp_variable = { i = player_back_line_0_array^num }
+	while_loop_effect = {
+		limit = { check_variable = { i > 0 } }
+		add_to_temp_variable = { i = -1 }
+		if = {
+			limit = { check_variable = { 4 > player_back_line_0_movement_array^i } }
+			set_variable = { player_back_line_0_movement_array^i = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { 6 > player_back_line_0_movement_array^i } }
+			set_variable = { player_back_line_0_movement_array^i = 5 }
+		}
+	}
+	set_temp_variable = { i = player_back_line_1_array^num }
+	while_loop_effect = {
+		limit = { check_variable = { i > 0 } }
+		add_to_temp_variable = { i = -1 }
+		if = {
+			limit = { check_variable = { 4 > player_back_line_1_movement_array^i } }
+			set_variable = { player_back_line_1_movement_array^i = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { 6 > player_back_line_1_movement_array^i } }
+			set_variable = { player_back_line_1_movement_array^i = 5 }
+		}
+	}
+	set_temp_variable = { i = player_forward_line_0_array^num }
+	while_loop_effect = {
+		limit = { check_variable = { i > 0 } }
+		add_to_temp_variable = { i = -1 }
+		if = {
+			limit = { check_variable = { 4 > player_forward_line_0_movement_array^i } }
+			set_variable = { player_forward_line_0_movement_array^i = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { 6 > player_forward_line_0_movement_array^i } }
+			set_variable = { player_forward_line_0_movement_array^i = 5 }
+		}
+	}
+	set_temp_variable = { i = player_forward_line_1_array^num }
+	while_loop_effect = {
+		limit = { check_variable = { i > 0 } }
+		add_to_temp_variable = { i = -1 }
+		if = {
+			limit = { check_variable = { 4 > player_forward_line_1_movement_array^i } }
+			set_variable = { player_forward_line_1_movement_array^i = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { 6 > player_forward_line_1_movement_array^i } }
+			set_variable = { player_forward_line_1_movement_array^i = 5 }
+		}
+	}
+}
 
 #卡牌进入战场的即时效果
 ZYX_tankgoal_effect_before_war = {
