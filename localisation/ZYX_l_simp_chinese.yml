@@ -249,7 +249,8 @@
   AI_kard_at_back_line_1_text: "§R[?AI_back_line_1_HP_array^picture_number]§!/§Y[?AI_back_line_1_attack_array^picture_number]§!/[?AI_back_line_1_defence_array^picture_number]/§G[?AI_back_line_1_action_array^picture_number]§! [?AI_back_line_1_movement_array^picture_number]"
   AI_kard_at_forward_line_0_text: "§R[?AI_forward_line_0_HP_array^picture_number]§!/§Y[?AI_forward_line_0_attack_array^picture_number]§!/[?AI_forward_line_0_defence_array^picture_number]/§G[?AI_forward_line_0_action_array^picture_number]§! [?AI_forward_line_0_movement_array^picture_number]"
   AI_kard_at_forward_line_1_text: "§R[?AI_forward_line_1_HP_array^picture_number]§!/§Y[?AI_forward_line_1_attack_array^picture_number]§!/[?AI_forward_line_1_defence_array^picture_number]/§G[?AI_forward_line_1_action_array^picture_number]§! [?AI_forward_line_1_movement_array^picture_number]"
-
+  base_of_player_HP_text: "[?base_of_player_HP]"
+  base_of_AI_HP_text: "[?base_of_AI_HP]"
 
 
 

@@ -748,18 +748,38 @@ guiTypes = {
     			format = "UPPER_LEFT"
 			}
 
-			buttonType = {#AI基地
-				name = "base_of_AI"
-				spriteType = tankgoal_base
+			containerWindowType = {
 				position = { x = 506 y = 45 }
-				scale = 0.5
+				name = "base_of_AI_block"
+
+				buttonType = {#AI基地
+					name = "base_of_AI"
+					spriteType = tankgoal_base
+					scale = 0.5
+				}
+
+				instantTextBoxType = {
+					position = { x = 31 y = 58 }
+					name = "base_of_AI_HP_show"
+					text = base_of_AI_HP_text
+				}
 			}
 
-			buttonType = {#玩家基地
-				name = "base_of_player"
-				spriteType = tankgoal_base
+			containerWindowType = {
 				position = { x = 506 y = 405 }
-				scale = 0.5
+				name = "base_of_player_block"
+
+				buttonType = {#玩家基地
+					name = "base_of_player"
+					spriteType = tankgoal_base
+					scale = 0.5
+				}
+
+				instantTextBoxType = {
+					position = { x = 31 y = 58 }
+					name = "base_of_player_HP_show"
+					text = base_of_player_HP_text
+				}
 			}
 
 			gridBoxType = {#玩家后方0左侧数组
