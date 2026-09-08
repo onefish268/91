@@ -1254,4 +1254,109 @@ guiTypes = {
 			
 		}
 	}
+	containerWindowType = {#胜利弹窗
+		name = "victory_fight_console_block"
+		size = { width = 480 height=382 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "victory_fight_console_block_title"
+			position = { x = 10 y = 16 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = victory_fight_console_block_t
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			textureFile = ""
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "victory_fight_console_block_desc"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = victory_fight_console_block_d
+			maxWidth = 430
+			maxHeight = 215
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "victory_fight_console_accept_button"
+			position = { x=160 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {#失败の弹窗
+		name = "fail_fight_console_block"
+		size = { width = 480 height=382 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "fail_fight_console_block_title"
+			position = { x = 10 y = 16 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = fail_fight_console_block_t
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			textureFile = ""
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "fail_fight_console_block_desc"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = fail_fight_console_block_d
+			maxWidth = 430
+			maxHeight = 215
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "fail_fight_console_accept_button"
+			position = { x=160 y=310}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
 }
