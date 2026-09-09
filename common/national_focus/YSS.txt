@@ -22,6 +22,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_1
+		}
 	}
 	focus = {
 		id = YSS_focus_2
@@ -35,6 +38,13 @@ focus_tree = {
 		cancelable = no
 		prerequisite = {
 			focus = YSS_focus_1
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }  
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -50,6 +60,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_2
 		}
+		completion_reward = { 
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = YSS_focus_4
@@ -64,6 +77,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_2
 		}
+		completion_reward = { 
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = YSS_focus_5
@@ -77,6 +93,9 @@ focus_tree = {
 		cancelable = no
 		prerequisite = {
 			focus = YSS_focus_2
+		}
+		completion_reward = { 
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -98,6 +117,10 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_5
 		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_2
+			set_country_flag = YSS_xianfa_mingque
+		}
 	}
 	focus = {
 		id = YSS_focus_7
@@ -118,6 +141,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_xianfa_mingque
 	    }
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = YSS_focus_8
@@ -138,6 +164,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_xianfa_mingque
 	    }
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = YSS_focus_9

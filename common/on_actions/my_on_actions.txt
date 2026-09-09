@@ -337,4 +337,16 @@ on_actions = {
             }
         }
     }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					YSS = {
+						has_stability < 0.04 
+					}
+				}
+                country_event = YSS.2
+            }
+        }
+    }
 }

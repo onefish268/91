@@ -17,3 +17,23 @@ country_event = {#接收器
         }
     }
 }
+
+country_event = {#解体1
+    id = YSS.2
+    title = YSS.2.t
+    desc = YSS.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.2.a
+        ai_chance = { base = 50 }
+        release = ETH
+        ETH = {
+            annex_country = {
+                target = YSS
+                transfer_troops = yes
+            }
+        }
+    }
+}
