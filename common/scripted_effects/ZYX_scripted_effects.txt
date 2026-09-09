@@ -1782,3 +1782,5 @@ ZYX_tankgoal_effect_before_war = {
 		}
 	}
 }
+
+#只要不停下脚步，道路就会...不断延伸！

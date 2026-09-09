@@ -1953,11 +1953,11 @@ scripted_gui = {
 
 										if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-											subtract_from_variable = { player_back_line_0_movement_array^chosen_index_array_0 = 1 }
+											subtract_from_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 1 }
 										}
 										else_if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-											set_variable = { player_back_line_0_movement_array^chosen_index_array_0 = 4 }
+											set_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 4 }
 										}
 
 										if = {#如果可以一击必杀
@@ -2004,11 +2004,11 @@ scripted_gui = {
 
 										if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-											subtract_from_variable = { player_back_line_1_movement_array^chosen_index_array_0 = 1 }
+											subtract_from_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 1 }
 										}
 										else_if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-											set_variable = { player_back_line_1_movement_array^chosen_index_array_0 = 4 }
+											set_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 4 }
 										}
 
 										if = {#如果可以一击必杀
@@ -2058,11 +2058,11 @@ scripted_gui = {
 
 										if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-											subtract_from_variable = { player_back_line_0_movement_array^chosen_index_array_0 = 1 }
+											subtract_from_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 1 }
 										}
 										else_if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-											set_variable = { player_back_line_0_movement_array^chosen_index_array_0 = 4 }
+											set_variable = { player_back_line_0_movement_array^chosen_index_of_array_0 = 4 }
 										}
 
 										if = {#如果可以一击必杀
@@ -2109,11 +2109,11 @@ scripted_gui = {
 
 										if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-											subtract_from_variable = { player_back_line_1_movement_array^chosen_index_array_0 = 1 }
+											subtract_from_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 1 }
 										}
 										else_if = {
 											limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-											set_variable = { player_back_line_1_movement_array^chosen_index_array_0 = 4 }
+											set_variable = { player_back_line_1_movement_array^chosen_index_of_array_0 = 4 }
 										}
 
 										if = {#如果可以一击必杀
@@ -2333,41 +2333,43 @@ scripted_gui = {
 								}
 							}
 						}
-						else_if = {#确认是1打击基地
+						else_if = {#确认是打击基地
 							limit = { check_variable = { chosen_index_of_array_1 = 666 } }
 							if = {#确认我方单位位于左侧0
 								limit = { has_country_flag = in_left_side }
 								if = {
-									limit = { check_variable = { base_of_AI_HP > player_forward_line_0_attack_array^chosen_index_array_0 } }
-									subtract_from_variable = { base_of_AI_HP = player_forward_line_0_attack_array^chosen_index_array_0 }
+									limit = { check_variable = { base_of_AI_HP > player_forward_line_0_attack_array^chosen_index_of_array_0 } }
+									subtract_from_variable = { base_of_AI_HP = player_forward_line_0_attack_array^chosen_index_of_array_0 }
 									if = {
 										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-										subtract_from_variable = { player_forward_line_0_movement_array^chosen_index_array_0 = 1 }
+										subtract_from_variable = { player_forward_line_0_movement_array^chosen_index_of_array_0 = 1 }
 									}
 									else_if = {
 										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-										set_variable = { player_forward_line_0_movement_array^chosen_index_array_0 = 4 }
+										set_variable = { player_forward_line_0_movement_array^chosen_index_of_array_0 = 4 }
 									}
 								}
 								else = {
 									#胜利代码
+									set_country_flag = player_win
 								}
 							}
 							else = {
 								if = {
-									limit = { check_variable = { base_of_AI_HP > player_forward_line_1_attack_array^chosen_index_array_0 } }
-									subtract_from_variable = { base_of_AI_HP = player_forward_line_1_attack_array^chosen_index_array_0 }
+									limit = { check_variable = { base_of_AI_HP > player_forward_line_1_attack_array^chosen_index_of_array_0 } }
+									subtract_from_variable = { base_of_AI_HP = player_forward_line_1_attack_array^chosen_index_of_array_0 }
 									if = {
 										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_tank }
-										subtract_from_variable = { player_forward_line_1_movement_array^chosen_index_array_0 = 1 }
+										subtract_from_variable = { player_forward_line_1_movement_array^chosen_index_of_array_0 = 1 }
 									}
 									else_if = {
 										limit = { has_country_flag = tankgoal_this_kard_is_in_kards_and_it_is_infantry }
-										set_variable = { player_forward_line_1_movement_array^chosen_index_array_0 = 4 }
+										set_variable = { player_forward_line_1_movement_array^chosen_index_of_array_0 = 4 }
 									}
 								}
 								else = {
 									#胜利代码
+									set_country_flag = player_win
 								}
 							}
 						}
@@ -2399,7 +2401,7 @@ scripted_gui = {
 		}
 	}
 
-	ZYX_AI_attack_block_gui = {#AI打击的方块
+	ZYX_AI_attack_block_gui = {#AI打击的方块 AI的操作展示方块
 		window_name = "AI_attack_block"
 		parent_window_name = "fight_console"
 
@@ -2498,6 +2500,48 @@ scripted_gui = {
 			}
 			select_back_line_1_right_click = {#屏蔽后线
 				set_country_flag = unvisible_the_back
+			}
+		}
+	}
+
+	victory_fight_console_block_gui = {#胜利方块
+		window_name = "victory_fight_console_block"
+		parent_window_name = "fight_console"
+
+		visible = { has_country_flag = player_win }
+
+		effects = {
+			victory_fight_console_accept_button_click = {
+				clr_country_flag = player_win
+
+				set_country_flag = ZYX_tankgoal_console
+				clr_country_flag = ZYX_commander_console
+				set_country_flag = ZYX_console_mode
+				clr_country_flag = ZYX_select_console
+				clr_country_flag = ZYX_selected_console
+				clr_country_flag = ZYX_fight_console
+				clear_array = select_console_show_big_kard
+			}
+		}
+	}
+
+	fail_fight_console_block_gui = {#失败方块
+		window_name = "fail_fight_console_block"
+		parent_window_name = "fight_console"
+
+		visible = { has_country_flag = player_fail }
+
+		effects = {
+			victory_fight_console_accept_button_click = {
+				clr_country_flag = player_fail
+
+				set_country_flag = ZYX_tankgoal_console
+				clr_country_flag = ZYX_commander_console
+				set_country_flag = ZYX_console_mode
+				clr_country_flag = ZYX_select_console
+				clr_country_flag = ZYX_selected_console
+				clr_country_flag = ZYX_fight_console
+				clear_array = select_console_show_big_kard
 			}
 		}
 	}
