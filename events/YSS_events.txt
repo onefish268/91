@@ -18,12 +18,13 @@ country_event = {#接收器
     }
 }
 
-country_event = {#解体1
+country_event = {#解体
     id = YSS.2
     title = YSS.2.t
     desc = YSS.2.d
     is_triggered_only = yes
     fire_only_once = yes
+    picture = GFX_YSS4_event
 
 	option = {
         name = YSS.2.a
@@ -35,5 +36,265 @@ country_event = {#解体1
                 transfer_troops = yes
             }
         }
+    }
+}
+
+country_event = {#主线总结
+    id = YSS.3
+    title = YSS.3.t
+    desc = YSS.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS1_event
+
+	option = {
+        name = YSS.3.a
+        add_stability = 0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#主线报告1
+    id = YSS.4
+    title = YSS.4.t
+    desc = YSS.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS2_event
+
+	option = {
+        name = YSS.4.a
+        add_stability = 0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#主线报告2
+    id = YSS.5
+    title = YSS.5.t
+    desc = YSS.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS3_event
+
+	option = {
+        name = YSS.5.a
+        add_stability = 0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法触发节点
+    id = YSS.6
+    title = YSS.6.t
+    desc = YSS.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS5_event
+
+	option = {
+        name = YSS.6.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.8
+                days = 7
+            } 
+        }   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#信1
+    id = YSS.7
+    title = YSS.7.t
+    desc = YSS.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.7.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法1
+    id = YSS.8
+    title = YSS.8.t
+    desc = YSS.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.8.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.9
+                days = 7
+            } 
+        }   
+        add_stability = -0.05
+        complete_national_focus = YSS_focus_7
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法2
+    id = YSS.9
+    title = YSS.9.t
+    desc = YSS.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS7_event
+
+	option = {
+        name = YSS.9.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.10
+                days = 7
+            } 
+        }   
+        add_stability = -0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法3
+    id = YSS.10
+    title = YSS.10.t
+    desc = YSS.10.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.10.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.11
+                days = 7
+            } 
+        }   
+        add_stability = -0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法4
+    id = YSS.11
+    title = YSS.11.t
+    desc = YSS.11.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS7_event
+
+	option = {
+        name = YSS.11.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.12
+                days = 7
+            } 
+        }   
+        add_stability = -0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法5
+    id = YSS.12
+    title = YSS.12.t
+    desc = YSS.12.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.12.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.13
+                days = 7
+            } 
+        }   
+        add_stability = 0.15
+        complete_national_focus = YSS_focus_10
+        ai_chance = { base = 50 }
+    }
+    option = {
+        name = YSS.12.b
+        hidden_effect = {
+            country_event = {
+                id = YSS.14
+                days = 7
+            } 
+        }  
+        complete_national_focus = YSS_focus_9 
+        complete_national_focus = YSS_focus_11
+        add_stability = -0.05
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法6
+    id = YSS.13
+    title = YSS.13.t
+    desc = YSS.13.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS7_event
+
+	option = {
+        name = YSS.13.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.15
+                days = 7
+            } 
+        }   
+        add_stability = 0.1
+        complete_national_focus = YSS_focus_12
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法7
+    id = YSS.14
+    title = YSS.14.t
+    desc = YSS.14.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.14.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.16
+                days = 7
+            } 
+        }   
+        add_stability = 0.25
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法7
+    id = YSS.15
+    title = YSS.15.t
+    desc = YSS.15.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS7_event
+
+	option = {
+        name = YSS.15.a
+        add_stability = 0.15
+        complete_national_focus = YSS_focus_14
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#宪法7
+    id = YSS.16
+    title = YSS.16.t
+    desc = YSS.16.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.16.a
+        add_stability = 0.25
+        complete_national_focus = YSS_focus_13
+        ai_chance = { base = 50 }
     }
 }

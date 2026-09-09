@@ -119,14 +119,14 @@ ideas = {
 		YSS_7 = {#中央政治局
 			picture = YSS_7
 			modifier = {		
-				command_power_gain_mult = -0.15		
-				defensive_war_stability_factor = 0.15
-				forced_surrender_limit = 0.05
-				offensive_war_stability_factor = 0.1
-				political_power_cost = 0.55
-				production_speed_buildings_factor = 0.05
-				stability_weekly = 0.01
-				drift_defence_factor = 0.15
+				command_power_gain_mult = -0.15	#指挥点数获取倍率	
+				defensive_war_stability_factor = 0.15 #防御战稳定度惩罚
+				forced_surrender_limit = 0.05 #强制投降阈值
+				offensive_war_stability_factor = 0.1 #进攻战稳定度惩罚
+				political_power_cost = 0.55 #政治权力消耗
+				production_speed_buildings_factor = 0.05 #建筑建造速度
+				stability_weekly = 0.01 #每周稳定度
+				drift_defence_factor = 0.15 #意识形态抗漂移能力
 			}
 		}
 		YSS_8 = {#经济统筹委员会

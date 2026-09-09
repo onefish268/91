@@ -179,21 +179,6 @@ country_event = {
         }  
         ai_chance = { base = 20 }
     }
-    option = {
-        name = ZIM.11.f
-        retire_character = ZIM_yifeier
-        release = ZCS
-        release = ZDM
-        release = ZHJ
-        release = ZSB
-        release = ZSH
-        release = ZXS
-        release = ZYX
-        ZSH = {
-        change_tag_from = ZIM
-        }  
-        ai_chance = { base = 20 }
-    }
 }
 country_event = {
     id = ZIM.12

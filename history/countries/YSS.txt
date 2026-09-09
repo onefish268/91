@@ -3,7 +3,7 @@
 set_oob = "YSS_1936_land"
 set_naval_oob = "YSS_1936_naval"
 
-set_stability = 0.21
+set_stability = 0.45
 set_war_support = 0.3
 # Starting tech
 set_technology = {
