@@ -280,6 +280,7 @@ country_event = {#宪法7
         name = YSS.15.a
         add_stability = 0.15
         complete_national_focus = YSS_focus_14
+        custom_effect_tooltip = YSS_tootip_3
         ai_chance = { base = 50 }
     }
 }
