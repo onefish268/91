@@ -127,6 +127,7 @@
  YSS_2_4_8d: "改革厄立特里亚地区的行政体系"
  YSS_2_3_1d: "加大对中央地区的管控"
  YSS_2_3_2d: "中央核心城市圈计划"
+ YSS_renwu_category: "来自政治局的任务"
 #文本介绍
  YSS_days_tt_desc: "§Y报告§!"
  YSS_days_out_desc: "目前，联盟总共有"
@@ -139,6 +140,14 @@
  YSS_days_army_desc: "部署§G[?deployed_total_manpower_k]K§!军队"
  YSS_days_keyan_desc: "研发§G[?researched_techs]§!项科研项目"
  YSS_days_tielu_desc: "生产§G[?total_equipment_produced_infantry]§!条步枪"
+ YSS_renwu_false: "§R如果稳定度过低，将会造成意想不到的严重后果§!"
+ YSS_renwu_1: "完成《即将召开的第八次党大会》国策"
+ YSS_renwu_2: "完成《对于过去成果的总结》国策"
+ YSS_renwu_3: "完成《关于国内状况的报告》国策"
+ YSS_renwu_4: "完成《对于现今国际局势的报告》国策"
+ YSS_renwu_5: "完成《宣布新宪法的草案进度》国策"
+ YSS_tootip_1: "§Y英雄前进！§!"
+ YSS_tootip_2: "§R这将开始我们与顽固势力的博弈§!"
 #国家精神
  YSS_1: "一团乱麻的宗教信仰"
  YSS_1_desc: "社会主义？逊尼派？阿克苏姆教义？基督教？没人说的上来联盟到底信仰什么，古老且分裂的国家兴许自己都不知道自己应该用什么来凝聚起人民。"
@@ -171,3 +180,7 @@
  YSS_yisiland_3: "联盟的宗教事务来到了新的阶段"
  YSS_yisiland_4: "联盟的宗教事务来到了新的阶段"
  YSS_states_oning: "§Y中央正在聚焦地方建设§!"
+#事件介绍
+ YSS.2.t: "解体"
+ YSS.2.d: "由于我们没有妥善处理好国内，中央已经无法压制那些封建余孽，他们把修道院里的皇帝搬了出来，推翻了无产阶级的统治。"
+ YSS.2.a: "好吧，同志们，我们下个轮回再见。"

@@ -9,6 +9,6 @@ tags={
 	"Alternative History"
 }
 picture="thumbnail.png"
-name="萌心submod：罗德西亚的黑太阳"
+name="钢铁萌心：狂野法则"
 supported_version="1.19.2.0"
 remote_file_id="3772620704"

@@ -3,7 +3,7 @@ YSS_states_category = {
     priority = 98
     scripted_gui = YSS_states_ui  # 关键！挂载scripted_gui ID
     visible = {
-        tag = YSS  
+        original_tag = YSS  
     }
 }
 
@@ -12,6 +12,14 @@ YSS_yisiland_category = {
     priority = 98
     scripted_gui = YSS_yisiland_ui  # 关键！挂载scripted_gui ID
     visible = {
-        tag = YSS  
+        original_tag = YSS  
+    }
+}
+
+YSS_renwu_category = {
+    picture = GFX_decision_cat_default
+    priority = 99
+    visible = {
+        original_tag = YSS  
     }
 }
