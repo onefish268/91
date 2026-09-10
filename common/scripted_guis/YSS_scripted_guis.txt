@@ -52,6 +52,13 @@ scripted_gui = {
 			has_country_flag = YSS_super_event
 	    }
 
+		triggers = {
+			YSS_super_event_photo1_icon_visible = { has_country_flag = xianfa_no_tuoxie }
+			YSS_super_event_1_desc_visible = { has_country_flag = xianfa_no_tuoxie }
+			YSS_super_event_photo2_icon_visible = { has_country_flag = xianfa_tuoxie }
+			YSS_super_event_2_desc_visible = { has_country_flag = xianfa_tuoxie }
+		}
+
 		effects = {
 			YSS_super_event_out_button_click = {
 			    clr_country_flag = YSS_super_event
