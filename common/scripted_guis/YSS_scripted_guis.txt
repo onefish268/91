@@ -45,7 +45,7 @@ scripted_gui = {
 	    }
 	}
 
-	YSS_days_start_ui = { #阶段超事件
+	YSS_super_event_ui = { #阶段超事件
 		context_type = player_context
 		window_name = "YSS_super_event_ui_window"
 		visible = {
