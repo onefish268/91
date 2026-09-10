@@ -336,3 +336,62 @@ guiTypes = {
 
 	}
 }
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "YSS_super_event_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height= 0 }
+		orientation = left
+		moveable = yes
+		#clipping = no
+
+		iconType = {
+			name = "YSS_super_event_photo1_icon"
+			spriteType = GFX_YSS_super_event_photo1_icon
+			position = { x = 850 y = 450 }
+    	    scale = 1.8
+		}
+		iconType = {
+			name = "YSS_super_event_photo2_icon"
+			spriteType = GFX_YSS_super_event_photo2_icon
+			position = { x = 850 y = 450 }
+    	    scale = 1.8
+		}
+		iconType = {
+			name = "YSS_super_event_ui_icon"
+			spriteType = GFX_YSS_super_event_ui_icon
+			position = { x = 700 y = 350 }
+    	    scale = 1
+		}
+		buttonType = {
+			name = "YSS_super_event_out_button"
+			spriteType = GFX_YSS_super_event_out_icon
+			position = { x = 1155 y = 1090 }
+			clicksound = click_default
+    	    scale = 3
+		}
+		instantTextBoxType = {
+			name = "YSS_super_event_1_desc"
+			position = { x = 1685 y = 1140 }
+			maxHeight = 474
+			maxWidth = 350
+			font = "hoi_18mbs"
+			text = YSS_super_event_1_desc
+			format = left
+			
+		}
+		instantTextBoxType = {
+			name = "YSS_super_event_2_desc"
+			position = { x = 1685 y = 1140 }
+			maxHeight = 474
+			maxWidth = 350
+			font = "hoi_18mbs"
+			text = YSS_super_event_2_desc
+			format = left
+			
+		}
+
+	}
+}

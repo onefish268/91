@@ -164,8 +164,32 @@ spriteTypes = {
         texturefile = "gfx/leaders/YSS/GFX_YSS_days_out_icon.png"
     }
     spriteType = {
+        name = "GFX_YSS_super_event_photo1_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_photo1_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_super_event_photo2_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_photo2_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_super_event_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_icon.png"
+    }
+    spriteType = {
         name = "GFX_YSS_machine_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_machine_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_super_event_ui_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_ui_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_super_event_out_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_out_icon.png"
+    }
+    spriteType = {
+        name = "GFX_YSS_super_event_qianming_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_qianming_icon.png"
     }
     spriteType = {
         name = "GFX_YSS_23_icon"

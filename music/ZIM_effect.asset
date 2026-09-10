@@ -68,3 +68,13 @@ music = {
     file = "战争恶魔.ogg"
     volume = 1
 }
+music = {
+    name = "宪法妥协"
+    file = "宪法妥协.ogg"
+    volume = 1
+}
+music = {
+    name = "宪法不妥协"
+    file = "宪法不妥协.ogg"
+    volume = 1
+}

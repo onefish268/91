@@ -36,6 +36,7 @@ country_event = {#解体
                 transfer_troops = yes
             }
         }
+        custom_effect_tooltip = YSS_tootip_4
     }
 }
 
@@ -281,6 +282,11 @@ country_event = {#宪法7
         add_stability = 0.15
         complete_national_focus = YSS_focus_14
         custom_effect_tooltip = YSS_tootip_3
+        hidden_effect = {
+            set_country_flag = YSS_super_event
+            set_country_flag = xianfa_tuoxie
+            scoped_play_song = "宪法妥协"
+        } 
         ai_chance = { base = 50 }
     }
 }
@@ -296,6 +302,11 @@ country_event = {#宪法7
         name = YSS.16.a
         add_stability = 0.25
         complete_national_focus = YSS_focus_13
+        hidden_effect = {
+            set_country_flag = YSS_super_event
+            set_country_flag = xianfa_no_tuoxie
+            scoped_play_song = "宪法不妥协"
+        } 
         ai_chance = { base = 50 }
     }
 }

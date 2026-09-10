@@ -112,8 +112,30 @@ music = {
         }
     }
 }
-
-
+music = {
+    song = "战争恶魔"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "宪法妥协"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "宪法不妥协"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
 
 
 

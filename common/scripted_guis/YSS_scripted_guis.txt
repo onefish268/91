@@ -45,6 +45,28 @@ scripted_gui = {
 	    }
 	}
 
+	YSS_days_start_ui = { #阶段超事件
+		context_type = player_context
+		window_name = "YSS_super_event_ui_window"
+		visible = {
+			original_tag = YSS
+			has_country_flag = YSS_super_event
+	    }
+		triggers = {
+			YSS_super_event_photo1_icon_visible = { has_country_flag = xianfa_no_tuoxie }
+			YSS_super_event_1_desc_visible = { has_country_flag = xianfa_no_tuoxie }
+			YSS_super_event_photo2_icon_visible = { has_country_flag = xianfa_tuoxie }
+			YSS_super_event_2_desc_visible = { has_country_flag = xianfa_tuoxie }
+		}
+		effects = {
+			YSS_super_event_out_button_click = {
+			    clr_country_flag = YSS_super_event
+				clr_country_flag = xianfa_no_tuoxie
+				clr_country_flag = xianfa_tuoxie
+			}
+		}
+	}
+
 	YSS_machine_ui = { #国家经济统筹委员会
 	    parent_window_token = politics_tab
 		context_type = player_context
