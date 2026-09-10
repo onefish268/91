@@ -148,25 +148,6 @@ bookmarks = {
                 KNM_tygq
             }
         }
-        # XXA = {
-        #     ideology = fascism
-        #     history = ""
-        # }
-        "PA1" = {
-            #minor = yes
-            history = "PA1_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                PA1_let_us_work_together
-                PA1_revolution_army_3
-                PA1_blood_and_life
-            }
-            focuses = {
-                PA1_show_1
-                PA1_show_2
-                PA1_show_3
-            }
-        }
         "PAM" = {
             #minor = yes
             history = "PAM_GATHERING_STORM_DESC"
@@ -203,7 +184,7 @@ bookmarks = {
             ideology = communism
             ideas = {
                 YSS_1
-                YSS_9
+                YSS_5
                 YSS_10
             }
             focuses = {

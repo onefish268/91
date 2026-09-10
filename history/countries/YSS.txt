@@ -18,16 +18,29 @@ set_variable = { another_country_leader_group = 66 }
 
 add_ideas = {
 	YSS_1
-	YSS_2
-	YSS_3
-	YSS_4
 	YSS_5
 	YSS_6
 	YSS_7
-	YSS_8
-	YSS_9
 	YSS_10
 }
+
+#原民族精神（联盟红军/联盟海军/联盟空军/经济统筹委员会/不纯洁的党组织）已转换为动态修正
+add_dynamic_modifier = {
+	modifier = YSS_2 #联盟红军
+}
+add_dynamic_modifier = {
+	modifier = YSS_3 #联盟海军
+}
+add_dynamic_modifier = {
+	modifier = YSS_4 #联盟空军
+}
+add_dynamic_modifier = {
+	modifier = YSS_8 #经济统筹委员会
+}
+add_dynamic_modifier = {
+	modifier = YSS_9 #不纯洁的党组织
+}
+log = "[GetDateText]: [Root.GetName]: YSS国家精神转动态修正初始化完成"
 
 set_politics = {
 	ruling_party = communism

@@ -88,3 +88,59 @@ YSS_province_kaifa_5 = { #State Modifer  地方开发程度等级
 	local_resource_gain_efficiency_per_infrastructure = 0.25 #每基础设施的资源获取
 	local_resources_factor = 0.15 #战略资源获取效率
 }
+
+###以下为国家层面动态修正（由原民族精神转换）###
+YSS_2 = { #联盟红军
+	icon = GFX_idea_YSS_2
+	army_armor_speed_factor = -0.1 #装甲速度
+	army_artillery_attack_factor = 0.05 #炮兵攻击
+	army_attack_against_major_factor = 0.03 #对大国攻击
+	army_attack_against_minor_factor = -0.05 #对小国攻击
+	army_infantry_attack_factor = -0.05 #步兵攻击
+	heat_attrition_factor = -0.15 #炎热损耗
+	mechanized_attack_factor = -0.25 #机械化攻击
+	motorized_attack_factor = -0.25 #摩托化攻击
+	supply_consumption_factor = 0.2 #补给消耗
+	army_attack_speed_factor = -0.1 #进攻速度
+	army_defence_factor = 0.1 #陆军防御
+	army_strength_factor = 0.15 #陆军兵力
+	max_army_group_size = 5 #最大集团军数量
+}
+YSS_3 = { #联盟海军
+	icon = GFX_idea_YSS_3
+	convoy_raiding_efficiency_factor = -0.1 #破交效率
+	fighter_sortie_efficiency = -0.15 #战斗机出击效率
+	naval_critical_score_chance_factor = -0.05 #海军暴击率
+	naval_damage_factor = 0.05 #海军伤害
+	naval_hit_chance = -0.1 #海军命中率
+	navy_capital_ship_attack_factor = 0.05 #主力舰攻击
+	navy_screen_attack_factor = 0.05 #屏卫舰攻击
+	navy_submarine_attack_factor = -0.15 #潜艇攻击
+}
+YSS_4 = { #联盟空军
+	icon = GFX_idea_YSS_4
+	ground_attack_factor = -0.1 #对地攻击
+	static_anti_air_damage_factor = -0.25 #固定防空伤害
+	air_accidents_factor = 0.35 #飞行事故率
+	air_attack_factor = -0.15 #空军攻击
+	air_defence_factor = -0.15 #空军防御
+}
+YSS_8 = { #经济统筹委员会
+	icon = GFX_idea_YSS_8
+	army_fuel_consumption_factor = -0.05 #陆军燃油消耗
+	civilian_factory_use = -1 #民用工厂使用
+	consumer_goods_factor = 0.2 #生活消费品系数
+	energy_gain_factor = 0.05 #能源获取
+	industrial_capacity_factory = 0.05 #工厂产出
+	industry_repair_factor = 0.05 #工业修复
+	line_change_production_efficiency_factor = -0.1 #生产线切换效率
+	production_factory_efficiency_gain_factor = -0.1 #生产效率增长
+	production_factory_max_efficiency_factor = -0.1 #最大生产效率
+}
+YSS_9 = { #不纯洁的党组织
+	icon = GFX_idea_YSS_9
+	party_popularity_stability_factor = -0.25 #党派稳定
+	political_power_factor = -0.25 #政治点数
+	stability_weekly = -0.01 #每周稳定度
+	drift_defence_factor = -0.25 #意识形态抗漂移
+}
