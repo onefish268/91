@@ -155,10 +155,10 @@ ideas = {
 		YSS_10 = {#严峻的国际局势
 			picture = YSS_10
 			modifier = {	
-				enemy_declare_war_tension = 0.15	
-				improve_relations_maintain_cost_factor = 0.25	
-				join_faction_tension = 0.25	
-				lend_lease_tension = -0.1
+				enemy_declare_war_tension = 0.15 #敌方宣战带来的紧张度	
+				improve_relations_maintain_cost_factor = 0.25 #改善关系的维持消耗系数	
+				join_faction_tension = 0.25	#加入阵营带来的紧张度
+				lend_lease_tension = -0.1 #租借法案带来的紧张度
 			}
 		}
 	}

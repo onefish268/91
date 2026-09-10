@@ -1371,6 +1371,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_94
@@ -1537,6 +1539,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_93
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_107
@@ -1549,6 +1553,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_93
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1563,6 +1569,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_106
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_109
@@ -1575,6 +1583,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_106
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1589,6 +1599,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_107
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_111
@@ -1601,6 +1613,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_107
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1615,6 +1629,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_111
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_113
@@ -1627,6 +1643,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_110
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1641,6 +1659,10 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_108
 		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_5
+			remove_idea = YSS_10
+		}
 	}
 	focus = {
 		id = YSS_focus_115
@@ -1653,6 +1675,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_114
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
