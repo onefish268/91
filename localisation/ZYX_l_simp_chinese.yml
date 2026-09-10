@@ -205,6 +205,8 @@
   ZYX_1: "为战车道筹建资金"
 
 #tankgoal
+##############################################################################
+##############################################################################
 
   warning_of_no_commander: "§R注意！目前你没有携带一个有效的指挥官！§!"
   reload_commander: "清除已选择的指挥官。"
@@ -251,6 +253,8 @@
   AI_kard_at_forward_line_1_text: "§R[?AI_forward_line_1_HP_array^picture_number]§!/§Y[?AI_forward_line_1_attack_array^picture_number]§!/[?AI_forward_line_1_defence_array^picture_number]/§G[?AI_forward_line_1_action_array^picture_number]§! [?AI_forward_line_1_movement_array^picture_number]"
   base_of_player_HP_text: "[?base_of_player_HP]"
   base_of_AI_HP_text: "[?base_of_AI_HP]"
+
+
 
 
 
