@@ -3,11 +3,11 @@ characters = {
 		name = COG_Mima
 		portraits = {#指定其在哪些方面干活
 			civilian = {#政治顾问
-				large = "gfx/leaders/COG/COG_Mima.dds" #参考照片
+				large = "gfx/leaders/FRA/FRA_Mima.dds" #参考照片
 				#small = "gfx/interface/ideas/COG/COG_Mima.png"
 			}
 			army = {#军事顾问
-				large = "gfx/leaders/COG/COG_Mima.dds"
+				large = "gfx/leaders/FRA/FRA_Mima.dds"
 				#small = "gfx/interface/ideas/COG/COG_Mima.png"
 			}
 		}

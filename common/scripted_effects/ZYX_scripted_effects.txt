@@ -1275,6 +1275,7 @@ ZYX_clean_chosen_kards = {
 #for_each_loop搭配remove去剔除所有相同value会有bug，因为正向剔除元素时TM下标会随着删改而改变从而让一些元素漏了
 #你写个反向会死吗，P🐍（恼）
 #喜报，array_name^num可以访问array_name的长度！妈妈再也不用担心我拿P社提供的幽默正序代码去删改啦（）
+#喜报，有数据驱动的办法！！
 
 ZYX_prepare_for_fight = {#战前准备，清理各种变量、数组、标签
 	ZYX_clean_array_in_war = yes

@@ -90,7 +90,7 @@ guiTypes = {#MoeLotl_Cultivaltor
 
 					iconType = {
 						name = "blueprint"
-						spriteType = GFX_MY_EMPTY
+						spriteType = GFX_TM_medium_tank_artillery_chassis_main_armament_slot_fra
 						position = { x=0 y=0 }
 					}
 				}
