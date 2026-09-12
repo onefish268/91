@@ -88,3 +88,96 @@ YSS_province_kaifa_5 = { #State Modifer  地方开发程度等级
 	local_resource_gain_efficiency_per_infrastructure = 0.25 #每基础设施的资源获取
 	local_resources_factor = 0.15 #战略资源获取效率
 }
+
+###国家层面动态修正（由原民族精神转换，数值由变量驱动）###
+#联盟红军
+YSS_2 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_2
+	army_armor_speed_factor = YSS_red_army_army_armor_speed_factor   ##开始 -0.1
+	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##开始 0.05
+	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##开始 0.03
+	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##开始 -0.05
+	army_infantry_attack_factor = YSS_red_army_army_infantry_attack_factor   ##开始 -0.05
+	heat_attrition_factor = YSS_red_army_heat_attrition_factor   ##开始 -0.15
+	mechanized_attack_factor = YSS_red_army_mechanized_attack_factor   ##开始 -0.25
+	motorized_attack_factor = YSS_red_army_motorized_attack_factor   ##开始 -0.25
+	supply_consumption_factor = YSS_red_army_supply_consumption_factor   ##开始 0.2
+	army_attack_speed_factor = YSS_red_army_army_attack_speed_factor   ##开始 -0.1
+	army_defence_factor = YSS_red_army_army_defence_factor   ##开始 0.1
+	army_strength_factor = YSS_red_army_army_strength_factor   ##开始 0.15
+	max_army_group_size = YSS_red_army_max_army_group_size   ##开始 5
+}
+#联盟海军
+YSS_3 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_3
+	convoy_raiding_efficiency_factor = YSS_navy_convoy_raiding_efficiency_factor   ##开始 -0.1
+	fighter_sortie_efficiency = YSS_navy_fighter_sortie_efficiency   ##开始 -0.15
+	naval_critical_score_chance_factor = YSS_navy_naval_critical_score_chance_factor   ##开始 -0.05
+	naval_damage_factor = YSS_navy_naval_damage_factor   ##开始 0.05
+	naval_hit_chance = YSS_navy_naval_hit_chance   ##开始 -0.1
+	navy_capital_ship_attack_factor = YSS_navy_navy_capital_ship_attack_factor   ##开始 0.05
+	navy_screen_attack_factor = YSS_navy_navy_screen_attack_factor   ##开始 0.05
+	navy_submarine_attack_factor = YSS_navy_navy_submarine_attack_factor   ##开始 -0.15
+}
+#联盟空军
+YSS_4 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_4
+	ground_attack_factor = YSS_airforce_ground_attack_factor   ##开始 -0.1
+	static_anti_air_damage_factor = YSS_airforce_static_anti_air_damage_factor   ##开始 -0.25
+	air_accidents_factor = YSS_airforce_air_accidents_factor   ##开始 0.35
+	air_attack_factor = YSS_airforce_air_attack_factor   ##开始 -0.15
+	air_defence_factor = YSS_airforce_air_defence_factor   ##开始 -0.15
+}
+#经济统筹委员会
+YSS_8 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_8
+	army_fuel_consumption_factor = YSS_economy_committee_army_fuel_consumption_factor   ##开始 -0.05
+	civilian_factory_use = YSS_economy_committee_civilian_factory_use   ##开始 -1
+	consumer_goods_factor = YSS_economy_committee_consumer_goods_factor   ##开始 0.2
+	energy_gain_factor = YSS_economy_committee_energy_gain_factor   ##开始 0.05
+	industrial_capacity_factory = YSS_economy_committee_industrial_capacity_factory   ##开始 0.05
+	industry_repair_factor = YSS_economy_committee_industry_repair_factor   ##开始 0.05
+	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##开始 -0.1
+	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##开始 -0.1
+	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##开始 -0.1
+}
+#不纯洁的党组织
+YSS_9 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_9
+	party_popularity_stability_factor = YSS_impure_party_party_popularity_stability_factor   ##开始 -0.25
+	political_power_factor = YSS_impure_party_political_power_factor   ##开始 -0.25
+	stability_weekly = YSS_impure_party_stability_weekly   ##开始 -0.01
+	drift_defence_factor = YSS_impure_party_drift_defence_factor   ##开始 -0.25
+}
+#中央政治局
+YSS_7 = {
+    enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_7
+	modifier = {		
+		command_power_gain_mult = YSS_command_power_gain_mult	#指挥点数获取倍率	
+		defensive_war_stability_factor = YSS_defensive_war_stability_factor #防御战稳定度惩罚
+		forced_surrender_limit = YSS_forced_surrender_limit #强制投降阈值
+		offensive_war_stability_factor = YSS_offensive_war_stability_factor #进攻战稳定度惩罚
+		political_power_cost = YSS_political_power_cost #政治权力消耗
+		production_speed_buildings_factor = YSS_production_speed_buildings_factor #建筑建造速度
+		stability_weekly = YSS_stability_weekly #每周稳定度
+		drift_defence_factor = YSS_drift_defence_factor #意识形态抗漂移能力
+	}
+}
