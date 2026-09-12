@@ -18,14 +18,8 @@ set_variable = { another_country_leader_group = 66 }
 
 add_ideas = {
 	YSS_1
-	YSS_2
-	YSS_3
-	YSS_4
 	YSS_5
 	YSS_6
-	YSS_7
-	YSS_8
-	YSS_9
 	YSS_10
 }
 
@@ -84,6 +78,17 @@ set_variable = { YSS_impure_party_political_power_factor = -0.25 }
 set_variable = { YSS_impure_party_stability_weekly = -0.01 }
 set_variable = { YSS_impure_party_drift_defence_factor = -0.25 }
 add_dynamic_modifier = { modifier = YSS_9 }
+
+#中央政治局
+set_variable = { YSS_command_power_gain_mult = -0.15 }
+set_variable = { YSS_defensive_war_stability_factor = 0.15 }
+set_variable = { YSS_forced_surrender_limit = 0.05 }
+set_variable = { YSS_offensive_war_stability_factor = 0.1 }
+set_variable = { YSS_political_power_cost = 0.55 }
+set_variable = { YSS_production_speed_buildings_factor = 0.05 }
+set_variable = { YSS_stability_weekly = 0.01 }
+set_variable = { YSS_drift_defence_factor = 0.15 }
+add_dynamic_modifier = { modifier = YSS_7 }
 
 log = "[GetDateText]: [Root.GetName]: YSS国家精神转动态修正初始化完成"
 log = "[GetDateText]: [Root.GetName]: 动态修正变量检查 陆军兵力=[?YSS_red_army_army_strength_factor] 民用工厂占用=[?YSS_economy_committee_civilian_factory_use] 政治点数=[?YSS_impure_party_political_power_factor]"

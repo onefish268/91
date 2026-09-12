@@ -164,3 +164,20 @@ YSS_9 = {
 	stability_weekly = YSS_impure_party_stability_weekly   ##开始 -0.01
 	drift_defence_factor = YSS_impure_party_drift_defence_factor   ##开始 -0.25
 }
+#中央政治局
+YSS_7 = {
+    enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_7
+	modifier = {		
+		command_power_gain_mult = YSS_command_power_gain_mult	#指挥点数获取倍率	
+		defensive_war_stability_factor = YSS_defensive_war_stability_factor #防御战稳定度惩罚
+		forced_surrender_limit = YSS_forced_surrender_limit #强制投降阈值
+		offensive_war_stability_factor = YSS_offensive_war_stability_factor #进攻战稳定度惩罚
+		political_power_cost = YSS_political_power_cost #政治权力消耗
+		production_speed_buildings_factor = YSS_production_speed_buildings_factor #建筑建造速度
+		stability_weekly = YSS_stability_weekly #每周稳定度
+		drift_defence_factor = YSS_drift_defence_factor #意识形态抗漂移能力
+	}
+}
