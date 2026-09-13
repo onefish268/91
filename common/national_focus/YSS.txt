@@ -1429,6 +1429,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_97
@@ -1794,7 +1796,9 @@ focus_tree = {
 			focus = YSS_focus_110
 		}
 		completion_reward = {
-			add_to_faction = SOV
+			SOV = {
+				add_to_faction = YSS
+			}
 			add_faction_power_projection = 500
 			add_research_slot = 1
 			SOV = {
@@ -1847,6 +1851,8 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_96
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
