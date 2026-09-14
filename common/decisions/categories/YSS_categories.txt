@@ -32,3 +32,12 @@ YSS_dao_category = {
         has_completed_focus = YSS_focus_115 
     }
 }
+
+YSS_kj_buy_category = {
+    picture = GFX_decision_cat_default
+    priority = 97
+    visible = {
+        original_tag = YSS 
+        has_completed_focus = YSS_focus_167 
+    }
+}

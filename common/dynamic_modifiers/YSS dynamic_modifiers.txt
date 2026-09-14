@@ -136,6 +136,8 @@ YSS_4 = {
 	air_accidents_factor = YSS_airforce_air_accidents_factor   ##飞行事故系数
 	air_attack_factor = YSS_airforce_air_attack_factor   ##空中攻击系数
 	air_defence_factor = YSS_airforce_air_defence_factor   ##空中防御系数
+	air_training_xp_gain_factor = YSS_air_training_xp_gain_factor ##空军联队训练经验增长
+	air_mission_efficiency = YSS_air_mission_efficiency ##空军任务效率
 }
 #经济统筹委员会
 YSS_8 = {
