@@ -370,6 +370,12 @@ guiTypes = {
 	    	    scale = 1.8
 			}
 			iconType = {
+				name = "YSS_super_event_photo3_icon"
+				spriteType = GFX_YSS_super_event_photo3_icon
+				position = { x = 150 y = 100 }
+	    	    scale = 1.8
+			}
+			iconType = {
 				name = "YSS_super_event_ui_icon"
 				spriteType = GFX_YSS_super_event_ui_icon
 				position = { x = 0 y = 0 }
@@ -398,6 +404,15 @@ guiTypes = {
 				maxWidth = 350
 				font = "hoi_18mbs"
 				text = YSS_super_event_2_desc
+				format = left		
+			}
+			instantTextBoxType = {
+				name = "YSS_super_event_3_desc"
+				position = { x = 985 y = 790 }
+				maxHeight = 474
+				maxWidth = 350
+				font = "hoi_18mbs"
+				text = YSS_super_event_3_desc
 				format = left		
 			}
 		}

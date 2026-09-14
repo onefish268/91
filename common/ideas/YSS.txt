@@ -86,6 +86,12 @@ ideas = {
 				lend_lease_tension = -0.1 #租借法案带来的紧张度
 			}
 		}
+		YSS_11 = {#提供给圣杯的资金
+			picture = GFX_idea_nongyexianzhuang
+			modifier = {	
+				consumer_goods_factor = 0.15
+			}
+		}
 	}
 }
 

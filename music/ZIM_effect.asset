@@ -78,3 +78,8 @@ music = {
     file = "宪法不妥协.ogg"
     volume = 1
 }
+music = {
+    name = "朝阳"
+    file = "朝阳.ogg"
+    volume = 1
+}
