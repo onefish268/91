@@ -254,6 +254,76 @@
   base_of_player_HP_text: "[?base_of_player_HP]"
   base_of_AI_HP_text: "[?base_of_AI_HP]"
 
+  #灾难般的内容介绍、部署效果、平常效果、亡语效果……
+
+
+  #美国
+  kard_introduction_of_1: "效果：使用后，敌人获得的指挥点数-3。（只生效一次）"
+  kard_introduction_of_2: "效果：使场上所有的美国单位获得+2+1"
+  kard_introduction_of_3: "效果：使1个敌方单位失去守护、烟幕以及亡计，并对其造成2点伤害。"
+  kard_introduction_of_4: "效果：选中一个单位，使其获得冲击（如果该单位在战斗中能够一击消灭敌方单位，敌方单位将不会造成伤害）的增益。"
+  kard_introduction_of_5: "效果：选中一个后方单位，让其对随机的敌方前线单位进攻一次，之后，如果前线没有敌方士兵，则该单位直接移动到前线并获得+1+2增益。"
+
+  kard_introduction_of_6: "闪击：能够在一回合内同时移动并且进攻。"
+  kard_introduction_of_7: "烟幕：此单位不能被敌方单位攻击。如果一个单位移动或攻击，它将失去烟幕。"
+  kard_introduction_of_8: "对步兵的伤害+2"
+  kard_introduction_of_9: "守护：相邻的非守护单位无法被敌军攻击。"
+  kard_introduction_of_10: "闪击：能够在一回合内同时移动并且进攻。"
+  kard_introduction_of_11: "部署：消灭一个敌方前线单位。"
+  kard_introduction_of_12: "友方回合开始时，完全修复本单位。"
+
+  kard_introduction_of_13: "" #闪击、重甲2
+  kard_introduction_of_14: "部署：再添加一个“谢尔曼M1”进入后方。"
+  kard_introduction_of_15: "当其移动到前线时，抽一张牌。"
+  kard_introduction_of_16: "每次进攻，都会为自己+1攻击力。"
+
+
+  #英国
+  kard_introduction_of_17: "效果：使之后部署的所有英国单位+2HP，抽1张牌。"
+  kard_introduction_of_18: "效果：对敌方前线或者后方的所有单位造成2点伤害。"
+  kard_introduction_of_19: "效果：选择消灭一个坦克或者对一个敌方目标造成2点伤害。"
+  kard_introduction_of_20: "效果：使一个敌方单位受到压制（该单位），并抽取一张牌。"
+  kard_introduction_of_21: "效果：使一个守护单位获得+1+3。"
+
+  kard_introduction_of_22: "被进攻时，攻击力+1，战斗结束后该增益消失。"
+  kard_introduction_of_23: "当该单位在某一战线停驻的回合数达到3回合，+2+4，获得守护的技能，但失去移动和进攻的能力。"
+  kard_introduction_of_24: "" #骑士团，要极致的数值
+  kard_introduction_of_25: "当该单位受伤时，该单位+2+2。"
+  kard_introduction_of_26: "守护：相邻的非守护单位无法被敌军攻击。"
+  kard_introduction_of_27: "每一次效果牌的使用，都会使已部署在战场上的该单位的行动花费-1。"
+  kard_introduction_of_28: "守护：相邻的非守护单位无法被敌军攻击。"
+  #好烦好烦，我直接放飞自我！！！！！！！！！！
+  kard_introduction_of_29: "部署：对一个敌方步兵造成5点伤害。"
+  kard_introduction_of_30: "冲击：如果该单位在战斗中能够一击消灭敌方单位，敌方单位将不会造成伤害。"
+  kard_introduction_of_31: "守护：相邻的非守护单位无法被敌军攻击。"
+  kard_introduction_of_32: "友方使用英国效果牌时，抽一张牌。"
+
+
+  #法国
+  kard_introduction_of_33: "向敌方卡组里添加2张“抵抗”，我方此前被消灭x个单位，则额外增加（x/2）张“抵抗”（向下取整）。抽1张牌。"
+
+  kard_introduction_of_34: "敌方抽取到“抵抗”时，友方抽1张牌。"
+
+  kard_introduction_of_35: "每个回合，当友方第一次部署单位时，为该单位获得+1+1与-1行动花费增益。"
+  kard_introduction_of_36: "部署：获得冲击，并选择一个单位进行战斗。"
+  kard_introduction_of_37: "奋战：单位在一回合中可以攻击两次。"
+
+
+  #中国
+  kard_introduction_of_38: "战斗时，能够无视2防御值。" #美械师
+  kard_introduction_of_39: "守护。友方回合开始时，完全修复本单位。" #泰山师
+  kard_introduction_of_40: "当我方中国单位被消灭时，该单位+1HP。" #
+  kard_introduction_of_41: "隐蔽。如果下个友方回合开始时，该单位的隐蔽状态仍然存在，则令该单位+2+2，获得1次冲击效果，并立刻对随机敌方单位造成伤害。" #抗日铁军，奇袭
+  kard_introduction_of_42: "隐蔽。当敌方回合开始时，若该单位处于隐蔽状态，使敌方指挥点数获取-1。" #打平型关大捷的
+  kard_introduction_of_43: "隐蔽。部署：对一个敌方支援单位造成2点伤害。亡计：使一个随机友方单位获得+2+2。" #敌后袭扰
+
+  kard_introduction_of_35: "每个回合，当友方第一次部署单位时，为该单位获得+1+1与-1行动花费增益。"
+  kard_introduction_of_36: "部署：获得冲击，并选择一个单位进行战斗。"
+  kard_introduction_of_37: "奋战：单位在一回合中可以攻击两次。"
+
+
+
+
 
 
 
