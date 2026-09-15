@@ -4577,7 +4577,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_6 = {
         icon = GFX_decision_default
-		days_mission_timeout = 320
+		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
 		}
@@ -4594,7 +4594,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_7 = {
         icon = GFX_decision_default
-		days_mission_timeout = 320
+		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
 		}
@@ -4611,7 +4611,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_8 = {
         icon = GFX_decision_default
-		days_mission_timeout = 320
+		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
 		}
@@ -4628,7 +4628,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_9 = {
         icon = GFX_decision_default
-		days_mission_timeout = 320
+		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
 		}
@@ -4643,4 +4643,452 @@ YSS_renwu_category = {
 			add_stability = -0.15
 		}
     }
+}
+
+YSS_dao_category = {
+	YSS_dao_1 = {
+		name = YSS_dao_1
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			905 = {
+				is_owned_by = ENG
+			}
+		}
+		remove_effect = {
+			905 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 200
+			}
+		}
+	}
+	YSS_dao_2 = {
+		name = YSS_dao_2
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			548 = {
+				is_owned_by = ZIM
+			}
+		}
+		remove_effect = {
+			548 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 200
+			}
+		}
+	}
+	YSS_dao_3 = {
+		name = YSS_dao_3
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			1007 = {
+				is_owned_by = EGY
+			}
+		}
+		remove_effect = {
+			1007 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 200
+			}
+		}
+	}
+	YSS_dao_4 = {
+		name = YSS_dao_4
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			709 = {
+				is_owned_by = ENG
+			}
+		}
+		remove_effect = {
+			709 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 200
+			}
+		}
+	}
+	YSS_dao_5 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			281 = {
+				is_owned_by = ENG
+			}
+		}
+		remove_effect = {
+			281 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 200
+			}
+		}
+	}
+	YSS_dao_6 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			422 = {
+				is_owned_by = ENG
+			}
+		}
+		remove_effect = {
+			422 = {
+				set_state_controller_to = ROOT
+			}
+			add_timed_idea = {
+				idea = YSS_11
+				days = 400
+			}
+		}
+	}
+}
+
+YSS_kj_buy_category = {
+	YSS_kj_buy_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			ENG = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = ENG                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_1_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			ENG = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_cas_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = ENG                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_1_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			ENG = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = fighter_bomber_equipment      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = ENG                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			GER = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = GER                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_2_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			GER = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_cas_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = GER                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_2_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			GER = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = fighter_bomber_equipment      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = GER                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_3 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			FRA = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = FRA                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_3_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			FRA = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_cas_airframe_1      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = FRA                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_3_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			FRA = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = fighter_bomber_equipment      # 装备类型（必填）
+                amount = 30                   # 数量，正数增加，负数减少（必填）
+                producer = FRA                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_4 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			SOV = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_airframe_1      # 装备类型（必填）
+                amount = 40                   # 数量，正数增加，负数减少（必填）
+                producer = SOV                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_4_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			SOV = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = small_plane_cas_airframe_1      # 装备类型（必填）
+                amount = 40                   # 数量，正数增加，负数减少（必填）
+                producer = SOV                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
+	YSS_kj_buy_4_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			SOV = {
+				exists = yes
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = fighter_bomber_equipment      # 装备类型（必填）
+                amount = 40                   # 数量，正数增加，负数减少（必填）
+                producer = SOV                 # 生产国，可选，默认为当前国家
+            }
+			add_timed_idea = {
+				idea = YSS_11
+				days = 100
+			}
+		}
+	}
 }

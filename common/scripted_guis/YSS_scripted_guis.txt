@@ -57,6 +57,10 @@ scripted_gui = {
 			YSS_super_event_1_desc_visible = { has_country_flag = xianfa_no_tuoxie }
 			YSS_super_event_photo2_icon_visible = { has_country_flag = xianfa_tuoxie }
 			YSS_super_event_2_desc_visible = { has_country_flag = xianfa_tuoxie }
+			YSS_super_event_photo3_icon_visible = { has_country_flag = YSS_join_sov }
+			YSS_super_event_3_desc_visible = { has_country_flag = YSS_join_sov }
+			YSS_super_event_photo4_icon_visible = { has_country_flag = YSS_kj_back }
+			YSS_super_event_4_desc_visible = { has_country_flag = YSS_kj_back }
 		}
 
 		effects = {
@@ -64,6 +68,8 @@ scripted_gui = {
 			    clr_country_flag = YSS_super_event
 				clr_country_flag = xianfa_no_tuoxie
 				clr_country_flag = xianfa_tuoxie
+				clr_country_flag = YSS_join_sov
+				clr_country_flag = YSS_kj_back
 			}
 		}
 	}

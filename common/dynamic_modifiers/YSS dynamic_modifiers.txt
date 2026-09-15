@@ -96,19 +96,19 @@ YSS_2 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_2
-	army_armor_speed_factor = YSS_red_army_army_armor_speed_factor   ##开始 -0.1
-	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##开始 0.05
-	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##开始 0.03
-	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##开始 -0.05
-	army_infantry_attack_factor = YSS_red_army_army_infantry_attack_factor   ##开始 -0.05
-	heat_attrition_factor = YSS_red_army_heat_attrition_factor   ##开始 -0.15
-	mechanized_attack_factor = YSS_red_army_mechanized_attack_factor   ##开始 -0.25
-	motorized_attack_factor = YSS_red_army_motorized_attack_factor   ##开始 -0.25
-	supply_consumption_factor = YSS_red_army_supply_consumption_factor   ##开始 0.2
-	army_attack_speed_factor = YSS_red_army_army_attack_speed_factor   ##开始 -0.1
-	army_defence_factor = YSS_red_army_army_defence_factor   ##开始 0.1
-	army_strength_factor = YSS_red_army_army_strength_factor   ##开始 0.15
-	max_army_group_size = YSS_red_army_max_army_group_size   ##开始 5
+	army_armor_speed_factor = YSS_red_army_army_armor_speed_factor   ##装甲速度
+	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##攻击速度
+	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##火炮攻击
+	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##对主要目标攻击
+	army_infantry_attack_factor = YSS_red_army_army_infantry_attack_factor   ##对次要目标攻击
+	heat_attrition_factor = YSS_red_army_heat_attrition_factor   ##步兵攻击
+	mechanized_attack_factor = YSS_red_army_mechanized_attack_factor   ##机械化攻击
+	motorized_attack_factor = YSS_red_army_motorized_attack_factor   ##摩托化攻击
+	supply_consumption_factor = YSS_red_army_supply_consumption_factor   ##防御能力
+	army_attack_speed_factor = YSS_red_army_army_attack_speed_factor   ##攻击速度系数
+	army_defence_factor = YSS_red_army_army_defence_factor   ##防御系数
+	army_strength_factor = YSS_red_army_army_strength_factor   ##兵力系数
+	max_army_group_size = YSS_red_army_max_army_group_size   ##最大军团规模
 }
 #联盟海军
 YSS_3 = {
@@ -116,14 +116,14 @@ YSS_3 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_3
-	convoy_raiding_efficiency_factor = YSS_navy_convoy_raiding_efficiency_factor   ##开始 -0.1
-	fighter_sortie_efficiency = YSS_navy_fighter_sortie_efficiency   ##开始 -0.15
-	naval_critical_score_chance_factor = YSS_navy_naval_critical_score_chance_factor   ##开始 -0.05
-	naval_damage_factor = YSS_navy_naval_damage_factor   ##开始 0.05
-	naval_hit_chance = YSS_navy_naval_hit_chance   ##开始 -0.1
-	navy_capital_ship_attack_factor = YSS_navy_navy_capital_ship_attack_factor   ##开始 0.05
-	navy_screen_attack_factor = YSS_navy_navy_screen_attack_factor   ##开始 0.05
-	navy_submarine_attack_factor = YSS_navy_navy_submarine_attack_factor   ##开始 -0.15
+	convoy_raiding_efficiency_factor = YSS_navy_convoy_raiding_efficiency_factor   ##船队袭击效率
+	fighter_sortie_efficiency = YSS_navy_fighter_sortie_efficiency   ##战斗机出击效率
+	naval_critical_score_chance_factor = YSS_navy_naval_critical_score_chance_factor   ##海军暴击几率
+	naval_damage_factor = YSS_navy_naval_damage_factor   ##海军伤害系数
+	naval_hit_chance = YSS_navy_naval_hit_chance   ##海军命中率
+	navy_capital_ship_attack_factor = YSS_navy_navy_capital_ship_attack_factor   ##主力舰攻击系数
+	navy_screen_attack_factor = YSS_navy_navy_screen_attack_factor   ##屏卫舰攻击系数
+	navy_submarine_attack_factor = YSS_navy_navy_submarine_attack_factor   ##潜艇攻击系数
 }
 #联盟空军
 YSS_4 = {
@@ -131,11 +131,13 @@ YSS_4 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_4
-	ground_attack_factor = YSS_airforce_ground_attack_factor   ##开始 -0.1
-	static_anti_air_damage_factor = YSS_airforce_static_anti_air_damage_factor   ##开始 -0.25
-	air_accidents_factor = YSS_airforce_air_accidents_factor   ##开始 0.35
-	air_attack_factor = YSS_airforce_air_attack_factor   ##开始 -0.15
-	air_defence_factor = YSS_airforce_air_defence_factor   ##开始 -0.15
+	ground_attack_factor = YSS_airforce_ground_attack_factor   ##对地攻击系数
+	static_anti_air_damage_factor = YSS_airforce_static_anti_air_damage_factor   ##静态防空伤害系数
+	air_accidents_factor = YSS_airforce_air_accidents_factor   ##飞行事故系数
+	air_attack_factor = YSS_airforce_air_attack_factor   ##空中攻击系数
+	air_defence_factor = YSS_airforce_air_defence_factor   ##空中防御系数
+	air_training_xp_gain_factor = YSS_air_training_xp_gain_factor ##空军联队训练经验增长
+	air_mission_efficiency = YSS_air_mission_efficiency ##空军任务效率
 }
 #经济统筹委员会
 YSS_8 = {
@@ -143,15 +145,15 @@ YSS_8 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_8
-	army_fuel_consumption_factor = YSS_economy_committee_army_fuel_consumption_factor   ##开始 -0.05
-	civilian_factory_use = YSS_economy_committee_civilian_factory_use   ##开始 -1
-	consumer_goods_factor = YSS_economy_committee_consumer_goods_factor   ##开始 0.2
-	energy_gain_factor = YSS_economy_committee_energy_gain_factor   ##开始 0.05
-	industrial_capacity_factory = YSS_economy_committee_industrial_capacity_factory   ##开始 0.05
-	industry_repair_factor = YSS_economy_committee_industry_repair_factor   ##开始 0.05
-	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##开始 -0.1
-	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##开始 -0.1
-	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##开始 -0.1
+	army_fuel_consumption_factor = YSS_economy_committee_army_fuel_consumption_factor   ##军队燃油消耗系数
+	civilian_factory_use = YSS_economy_committee_civilian_factory_use   ##民用工厂使用
+	consumer_goods_factor = YSS_economy_committee_consumer_goods_factor   ##产线切换生产效率系数
+	energy_gain_factor = YSS_economy_committee_energy_gain_factor   ##生产工厂效率增益系数
+	industrial_capacity_factory = YSS_economy_committee_industrial_capacity_factory   ##生产工厂最大效率系数
+	industry_repair_factor = YSS_economy_committee_industry_repair_factor   ##消费品系数
+	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##能源增益系数
+	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##工业产能工厂
+	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##工业修复系数
 }
 #不纯洁的党组织
 YSS_9 = {
@@ -159,10 +161,10 @@ YSS_9 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_9
-	party_popularity_stability_factor = YSS_impure_party_party_popularity_stability_factor   ##开始 -0.25
-	political_power_factor = YSS_impure_party_political_power_factor   ##开始 -0.25
-	stability_weekly = YSS_impure_party_stability_weekly   ##开始 -0.01
-	drift_defence_factor = YSS_impure_party_drift_defence_factor   ##开始 -0.25
+	party_popularity_stability_factor = YSS_impure_party_party_popularity_stability_factor   ##政党人气稳定因子
+	political_power_factor = YSS_impure_party_political_power_factor   ##政治权力因子
+	stability_weekly = YSS_impure_party_stability_weekly   ##周度稳定性
+	drift_defence_factor = YSS_impure_party_drift_defence_factor   ##漂移防御因子
 }
 #中央政治局
 YSS_7 = {
@@ -178,4 +180,8 @@ YSS_7 = {
 	production_speed_buildings_factor = YSS_production_speed_buildings_factor #建筑建造速度
 	stability_weekly = YSS_stability_weekly #每周稳定度
 	drift_defence_factor = YSS_drift_defence_factor #意识形态抗漂移能力
+	industrial_capacity_factory = YSS_7_industrial_capacity_factory #工厂产出
+	monthly_population = YSS_7_monthly_population #每月人口
+	party_popularity_stability_factor = YSS_7_party_popularity_stability_factor #党派支持度对稳定度修正
+	conscription_factor = YSS_7_conscription_factor #征兵系数
 }

@@ -1,0 +1,53 @@
+focus_tree = {
+	id = FRA_new_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = FRA_focus_1
+		x = 25
+		y = 0
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_focus_2
+		x = 23
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = FRA_focus_1
+		}
+		mutually_exclusive = {
+			focus = FRA_focus_3
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_focus_3
+		x = 27
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = FRA_focus_1
+		}
+		mutually_exclusive = {
+			focus = FRA_focus_2
+		}
+		completion_reward = {
+		}
+	}
+}

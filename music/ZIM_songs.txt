@@ -136,6 +136,20 @@ music = {
         }
     }
 }
-
-
+music = {
+    song = "朝阳"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "空军终展翅"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
 

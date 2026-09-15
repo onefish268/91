@@ -212,7 +212,7 @@ country_event = {#宪法5
         }   
         add_stability = 0.15
         complete_national_focus = YSS_focus_10
-        ai_chance = { base = 50 }
+        ai_chance = { base = 100 }
     }
     option = {
         name = YSS.12.b
@@ -225,7 +225,7 @@ country_event = {#宪法5
         complete_national_focus = YSS_focus_9 
         complete_national_focus = YSS_focus_11
         add_stability = -0.05
-        ai_chance = { base = 50 }
+        ai_chance = { base = 0 }
     }
 }
 country_event = {#宪法6
@@ -307,6 +307,192 @@ country_event = {#宪法7
             set_country_flag = xianfa_no_tuoxie
             scoped_play_song = "宪法不妥协"
         } 
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#苏联1
+    id = YSS.17
+    title = YSS.17.t
+    desc = YSS.17.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.17.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.18
+                days = 7
+            } 
+        }   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#苏联2
+    id = YSS.18
+    title = YSS.18.t
+    desc = YSS.18.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_ZIM4_event
+
+	option = {
+        name = YSS.18.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.19
+                days = 7
+            } 
+        }   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#苏联3
+    id = YSS.19
+    title = YSS.19.t
+    desc = YSS.19.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_ZIM4_event
+
+	option = {
+        name = YSS.19.a
+        hidden_effect = {
+            country_event = {
+                id = YSS.20
+                days = 7
+            } 
+        }   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#苏联4
+    id = YSS.20
+    title = YSS.20.t
+    desc = YSS.20.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_ZIM4_event
+
+	option = {
+        name = YSS.20.a  
+        ai_chance = { base = 50 }
+        custom_effect_tooltip = YSS_tootip_13
+    }
+    option = {
+        name = YSS.20.b
+        complete_national_focus = YSS_focus_113
+        hidden_effect = {
+            set_country_flag = YSS_super_event
+            set_country_flag = YSS_join_sov
+            scoped_play_song = "朝阳"
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+
+country_event = {#空军
+    id = YSS.21
+    title = YSS.21.t
+    desc = YSS.21.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS8_event
+
+	option = {
+        name = YSS.21.a  
+        set_country_flag = YSS_kongjun_baogao1
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_157
+        hidden_effect = {
+            country_event = {
+                id = YSS.22
+                days = 8
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#空军
+    id = YSS.22
+    title = YSS.22.t
+    desc = YSS.22.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS9_event
+
+	option = {
+        name = YSS.22.a  
+        set_country_flag = YSS_kongjun_baogao2
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_158
+        hidden_effect = {
+            country_event = {
+                id = YSS.23
+                days = 8
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#空军
+    id = YSS.23
+    title = YSS.23.t
+    desc = YSS.23.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS10_event
+
+	option = {
+        name = YSS.23.a  
+        set_country_flag = YSS_kongjun_baogao3
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_159
+        hidden_effect = {
+            country_event = {
+                id = YSS.24
+                days = 8
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#空军
+    id = YSS.24
+    title = YSS.24.t
+    desc = YSS.24.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS11_event
+
+	option = {
+        name = YSS.24.a  
+        set_country_flag = YSS_kongjun_baogao4
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_160
+        hidden_effect = {
+            country_event = {
+                id = YSS.25
+                days = 8
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#空军
+    id = YSS.25
+    title = YSS.25.t
+    desc = YSS.25.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS12_event
+
+	option = {
+        name = YSS.25.a  
+        set_country_flag = YSS_kongjun_baogao5
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_161
         ai_chance = { base = 50 }
     }
 }

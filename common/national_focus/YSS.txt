@@ -145,6 +145,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_2
 			set_country_flag = YSS_xianfa_mingque
+			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
 				country_event = {
 				    id = YSS.6
@@ -552,6 +553,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_33
 		}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = YSS_focus_35
@@ -564,6 +568,9 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_33
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -1335,6 +1342,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_89
 		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_drift_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_91
@@ -1347,6 +1363,10 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_89
+		}
+		completion_reward = { 
+			add_political_power = 150
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -1361,6 +1381,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_89
 		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_drift_defence_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_7_party_popularity_stability_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_93
@@ -1372,6 +1404,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_7
 		}
 	}
 	focus = {
@@ -1393,6 +1426,15 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_14
+			hidden_effect = {
+				country_event = {
+				    id = YSS.21
+					days = 5
+			    }
+			}
+		}
 	}
 	focus = {
 		id = YSS_focus_96
@@ -1403,6 +1445,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_97
@@ -1418,6 +1462,16 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_stability = 0.05
+			add_to_variable = {
+				YSS_stability_weekly = 0.01
+			}
+			add_to_variable = {
+				YSS_production_speed_buildings_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_drift_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -1434,6 +1488,16 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_stability = 0.1
+			add_to_variable = {
+				YSS_stability_weekly = 0.01
+			}
+			add_to_variable = {
+				YSS_defensive_war_stability_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_offensive_war_stability_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -1448,6 +1512,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_91
 		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_7_conscription_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_7_industrial_capacity_factory = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_100
@@ -1460,6 +1533,19 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_91
+		}
+		completion_reward = { 
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_forced_surrender_limit = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -1474,6 +1560,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_91
 		}
+		completion_reward = { 
+			add_manpower = 30000
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_forced_surrender_limit = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_102
@@ -1486,6 +1582,15 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_99
+		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_7_monthly_population = 0.05
+			}
+			add_to_variable = {
+				YSS_stability_weekly = 0.01
+			}
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -1500,6 +1605,22 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_100
 		}
+		completion_reward = { 
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_forced_surrender_limit = 0.05
+			}
+			add_to_variable = {
+				YSS_production_speed_buildings_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_104
@@ -1512,6 +1633,19 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_92
+		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_7_industrial_capacity_factory = 0.05
+			}
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -1526,12 +1660,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_104
 		}
+		completion_reward = { 
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_7_industrial_capacity_factory = 0.05
+			}
+			add_to_variable = {
+				YSS_production_speed_buildings_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_106
 		x = 38
 		y = 11
-		cost = 5
+		cost = 3
 		icon = GFX_focus_SIA_intermediate_war_preparation
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1540,13 +1686,14 @@ focus_tree = {
 			focus = YSS_focus_93
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_9
 		}
 	}
 	focus = {
 		id = YSS_focus_107
 		x = 42
 		y = 11
-		cost = 5
+		cost = 3
 		icon = GFX_focus_ger_great_red_menace
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1555,13 +1702,14 @@ focus_tree = {
 			focus = YSS_focus_93
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_8
 		}
 	}
 	focus = {
 		id = YSS_focus_108
 		x = 37
 		y = 12
-		cost = 5
+		cost = 3
 		icon = GFX_focus_JAP_peace_rise
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1570,6 +1718,8 @@ focus_tree = {
 			focus = YSS_focus_106
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_11
+			add_threat = -5
 		}
 	}
 	focus = {
@@ -1585,6 +1735,10 @@ focus_tree = {
 			focus = YSS_focus_106
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = DVL
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1600,6 +1754,14 @@ focus_tree = {
 			focus = YSS_focus_107
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_10
+			give_market_access = SOV
+			hidden_effect = {
+				country_event = {
+				    id = YSS.17
+					days = 14
+			    }
+			}
 		}
 	}
 	focus = {
@@ -1615,6 +1777,7 @@ focus_tree = {
 			focus = YSS_focus_107
 		}
 		completion_reward = {
+			set_major = yes
 		}
 	}
 	focus = {
@@ -1630,6 +1793,22 @@ focus_tree = {
 			focus = YSS_focus_111
 		}
 		completion_reward = {
+			give_market_access = LHS
+			send_equipment = {
+                equipment = infantry_equipment
+                amount = 8000
+                target = LHS
+            }
+			add_equipment_subsidy = {
+                cic = 3000
+                equipment_type = support_equipment
+                seller_tags = { LHS }
+            }
+			add_equipment_subsidy = {
+                cic = 3000
+                equipment_type = infantry_equipment
+                seller_tags = { LHS }
+            }
 		}
 	}
 	focus = {
@@ -1644,7 +1823,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_110
 		}
+		available = {
+			has_country_flag = sov_has_agree
+		}
 		completion_reward = {
+			SOV = {
+				add_to_faction = YSS
+			}
+			add_faction_power_projection = 500
+			add_research_slot = 1
+			SOV = {
+				add_research_slot = 1
+			}
 		}
 	}
 	focus = {
@@ -1661,7 +1851,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_5
-			remove_idea = YSS_10
+			remove_ideas = YSS_10
+			give_market_access = ENG
+			add_threat = -10
 		}
 	}
 	focus = {
@@ -1677,6 +1869,7 @@ focus_tree = {
 			focus = YSS_focus_114
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_12
 		}
 	}
 	focus = {
@@ -1690,6 +1883,9 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_96
+		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_14
 		}
 	}
 	focus = {
@@ -2278,6 +2474,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_kongjun_baogao1
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_15
+		}
 	}
 	focus = {
 		id = YSS_focus_159
@@ -2294,6 +2493,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_kongjun_baogao3
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_15
+		}
 	}
 	focus = {
 		id = YSS_focus_160
@@ -2310,6 +2512,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_kongjun_baogao4
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_15
+		}
 	}
 	focus = {
 		id = YSS_focus_161
@@ -2326,12 +2531,15 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_kongjun_baogao5
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_15
+		}
 	}
 	focus = {
 		id = YSS_focus_162
 		x = 5
 		y = 17
-		cost = 0
+		cost = 5
 		icon = GFX_focus_CHI_formalise_training_regime
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2348,12 +2556,33 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_161
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_command_power_gain_mult = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_accidents_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_airforce_ground_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_static_anti_air_damage_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_163
 		x = 3
 		y = 18
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SWE_radiotjanst
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2361,12 +2590,23 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_162
 		}
+		completion_reward = {
+			add_stability = -0.05
+			add_command_power = 20
+			add_to_variable = {
+				YSS_airforce_air_accidents_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_attack_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_164
 		x = 2
 		y = 19
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SIA_the_kings_gambit
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2374,12 +2614,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_163
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_airforce_air_accidents_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_air_mission_efficiency = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_165
 		x = 7
 		y = 18
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PER_the_peoples_airforce
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2387,12 +2636,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_162
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_airforce_ground_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_air_training_xp_gain_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_166
 		x = 4
 		y = 19
-		cost = 0
+		cost = 5
 		icon = GFX_focus_generic_subjugation
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2400,12 +2658,23 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_163
 		}
+		completion_reward = {
+			add_stability = -0.05
+			add_command_power = 25
+			add_to_variable = {
+				YSS_air_training_xp_gain_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_air_mission_efficiency = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_167
 		x = 6
 		y = 19
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SMB_purchase_aircraft
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2413,12 +2682,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_165
 		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_17
+		}
 	}
 	focus = {
 		id = YSS_focus_168
 		x = 8
 		y = 19
-		cost = 0
+		cost = 5
 		icon = GFX_focus_generic_air_research_boost
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2426,12 +2698,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_165
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = YSS_focus_169
 		x = 3
 		y = 20
-		cost = 0
+		cost = 5
 		icon = GFX_focus_generic_communism_anti_fascism
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2442,12 +2717,26 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_166
 		}
+		completion_reward = {
+			add_stability = -0.05
+			remove_advisor_role = {
+                character = "YSS_4_3"  # 要修改的角色ID
+                slot = air_chief          # 要移除的顾问槽位
+            }
+			add_to_variable = {
+				YSS_command_power_gain_mult = 0.05
+			}
+			add_to_variable = {
+				YSS_air_mission_efficiency = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_170
 		x = 7
 		y = 20
-		cost = 0
+		cost = 5
 		icon = GFX_focus_CZE_the_air_is_our_sea
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2458,12 +2747,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_168
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_airforce_ground_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+		}
 	}
 	focus = {
 		id = YSS_focus_171
 		x = 5
 		y = 21
-		cost = 0
+		cost = 5
 		icon = GFX_focus_BRA_dec
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2473,6 +2774,20 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = YSS_focus_170
+		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_airforce_static_anti_air_damage_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_airforce_air_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_16
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_kj_back
+                scoped_play_song = "空军终展翅"
+            } 
 		}
 	}
 	focus = {
@@ -2490,5 +2805,8 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_kongjun_baogao2
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_15
+		}
 	}
 }
