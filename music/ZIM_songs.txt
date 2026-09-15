@@ -152,4 +152,12 @@ music = {
         }
     }
 }
+music = {
+    song = "三年计划完工"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
 

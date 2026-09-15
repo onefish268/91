@@ -540,6 +540,15 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_18
+			hidden_effect = {
+				country_event = {
+				    id = YSS.26
+					days = 5
+			    }
+			}
+		}
 	}
 	focus = {
 		id = YSS_focus_34
@@ -555,6 +564,9 @@ focus_tree = {
 		}
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
 		}
 	}
 	focus = {
@@ -572,6 +584,9 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_36
@@ -588,6 +603,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_jihua_baogao1
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_37
@@ -604,6 +622,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_jihua_baogao2
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_38
@@ -620,6 +641,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_jihua_baogao3
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_39
@@ -636,6 +660,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_jihua_baogao4
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_40
@@ -652,6 +679,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_jihua_baogao5
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_19
+		}
 	}
 	focus = {
 		id = YSS_focus_41
@@ -677,18 +707,33 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_40
 		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_stability = 0.05
+			clr_country_flag = jindu3_has_more
+			set_country_flag = jindu4_has_more
+			custom_effect_tooltip = YSS_tootip_20
+		}
 	}
 	focus = {
 		id = YSS_focus_42
 		x = 17
 		y = 4
-		cost = 0
+		cost = 1
 		icon = GFX_focus_NOR_empower_sivorg
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_41
+		}
+		completion_reward = {
+			add_stability = 0.05
+			clr_country_flag = jindu4_has_more
+			set_country_flag = sansan_plan_has_unlocked
+			custom_effect_tooltip = YSS_tootip_21
 		}
 	}
 	focus = {
@@ -734,7 +779,7 @@ focus_tree = {
 		id = YSS_focus_46
 		x = 13
 		y = 5
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NORDIC_com_selector_material
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -742,12 +787,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_42
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_47
 		x = 17
 		y = 5
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NORDIC_com_civilian
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -755,12 +802,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_42
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_48
 		x = 21
 		y = 5
-		cost = 0
+		cost = 3
 		icon = GFX_focus_AUS_agriculture
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -768,12 +817,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_42
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_49
 		x = 12
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SWE_socialist_reforms
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -781,12 +832,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_46
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_50
 		x = 14
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -794,12 +847,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_46
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_51
 		x = 16
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NORDIC_dem_capstone_research
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -807,12 +862,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_47
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_52
 		x = 18
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_CHI_tongzi_jun
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -820,12 +877,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_47
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_53
 		x = 20
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ETH_the_state_bank_of_ethiopia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -833,12 +892,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_48
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_54
 		x = 22
 		y = 6
-		cost = 0
+		cost = 3
 		icon = GFX_focus_JAP_approach_mitsubishi
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -846,12 +907,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_48
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_55
 		x = 12
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PHI_battalion_combat_teams
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -859,12 +922,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_49
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_56
 		x = 14
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_ITA_banda_carita
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -872,12 +937,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_50
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_57
 		x = 12
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_JAP_approach_sumitomo
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -885,12 +952,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_55
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_58
 		x = 14
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PRC_urbanization_two
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -898,12 +967,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_56
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_59
 		x = 12
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SIA_the_yellow_dossier
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -911,12 +982,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_57
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_60
 		x = 14
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PRC_urbanization
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -924,12 +997,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_58
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_61
 		x = 16
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -937,12 +1012,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_51
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_62
 		x = 18
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_propaganda_soviet
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -950,12 +1027,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_52
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_63
 		x = 16
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -963,12 +1042,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_61
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_64
 		x = 18
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_HUN_reinstate_the_lenin_boys
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -976,12 +1057,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_62
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_65
 		x = 16
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SWE_rations
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -989,12 +1072,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_63
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_66
 		x = 18
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SOV_womens_fascist_movement
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1002,12 +1087,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_64
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_67
 		x = 20
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_AUS_graf_und_stift_focus
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1015,12 +1102,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_53
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_68
 		x = 22
 		y = 8
-		cost = 0
+		cost = 3
 		icon = GFX_focus_RAJ_protest_against_the_howell_monument
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1028,12 +1117,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_54
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_69
 		x = 20
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_INS_peg_indies_guilder_to_dutch_guilder
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1041,12 +1132,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_67
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_70
 		x = 22
 		y = 10
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SIA_the_purge
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1054,12 +1147,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_68
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_71
 		x = 20
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NOR_moscows_education_centers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1067,12 +1162,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_69
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_72
 		x = 22
 		y = 12
-		cost = 0
+		cost = 3
 		icon = GFX_focus_CHL_denounce_the_anarchy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1080,12 +1177,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_70
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_73
 		x = 13
 		y = 13
-		cost = 0
+		cost = 2
 		icon = GFX_focus_SOV_organization_centralization_discipline
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1096,12 +1195,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_60
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_74
 		x = 17
 		y = 13
-		cost = 0
+		cost = 2
 		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1112,12 +1213,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_66
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_75
 		x = 21
 		y = 13
-		cost = 0
+		cost = 2
 		icon = GFX_focus_IRQ_kurdish_form_the_peshmerga
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1128,12 +1231,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_72
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_76
 		x = 17
 		y = 19
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PRC_guotao_ascends
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1147,12 +1252,19 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_87
 		}
+		completion_reward = {
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_sansan_complet
+                scoped_play_song = "三年计划完工"
+            }
+		}
 	}
 	focus = {
 		id = YSS_focus_77
 		x = 17
 		y = 15
-		cost = 0
+		cost = 2
 		icon = GFX_focus_generic_army_attack
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1166,12 +1278,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_75
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_78
 		x = 13
 		y = 17
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_railway_gun
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1179,12 +1293,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_82
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_79
 		x = 15
 		y = 17
-		cost = 0
+		cost = 3
 		icon = GFX_focus_INS_military_equipment_contracts
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1192,12 +1308,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_82
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_80
 		x = 19
 		y = 17
-		cost = 0
+		cost = 3
 		icon = GFX_focus_generic_price_controls
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1205,12 +1323,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_83
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_81
 		x = 21
 		y = 17
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PER_fund_imperial_excellency
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1218,12 +1338,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_83
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_82
 		x = 14
 		y = 16
-		cost = 0
+		cost = 3
 		icon = GFX_focus_DEN_sirius_patrol
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1231,12 +1353,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_77
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_83
 		x = 20
 		y = 16
-		cost = 0
+		cost = 3
 		icon = GFX_focus_BEL_the_grand_place
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1244,12 +1368,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_77
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_84
 		x = 17
 		y = 16
-		cost = 0
+		cost = 3
 		icon = GFX_focus_RAJ_a_private_military
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1257,12 +1383,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_77
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_85
 		x = 17
 		y = 17
-		cost = 0
+		cost = 3
 		icon = GFX_focus_CHI_weaponise_the_faithful
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1270,12 +1398,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_84
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_86
 		x = 14
 		y = 18
-		cost = 0
+		cost = 3
 		icon = GFX_focus_hol_philips
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1286,12 +1416,14 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_79
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_87
 		x = 20
 		y = 18
-		cost = 0
+		cost = 3
 		icon = GFX_focus_RUS_agency
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1302,18 +1434,22 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_81
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSS_focus_88
 		x = 17
 		y = 18
-		cost = 0
+		cost = 3
 		icon = GFX_focus_PER_shiraz_university
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_85
+		}
+		completion_reward = {
 		}
 	}
 	focus = {

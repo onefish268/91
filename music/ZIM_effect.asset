@@ -88,3 +88,8 @@ music = {
     file = "空军终展翅.ogg"
     volume = 1
 }
+music = {
+    name = "三年计划完工"
+    file = "三年计划完工.ogg"
+    volume = 1
+}

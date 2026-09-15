@@ -496,3 +496,205 @@ country_event = {#空军
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#经济
+    id = YSS.26
+    title = YSS.26.t
+    desc = YSS.26.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS13_event
+
+	option = {
+        name = YSS.26.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.27
+                days = 5
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.27
+    title = YSS.27.t
+    desc = YSS.27.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS14_event
+
+	option = {
+        name = YSS.27.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.28
+                days = 5
+            } 
+        } 
+        complete_national_focus = YSS_focus_34
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.28
+    title = YSS.28.t
+    desc = YSS.28.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS15_event
+
+	option = {
+        name = YSS.28.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.29
+                days = 5
+            } 
+        } 
+        set_country_flag = YSS_jihua_baogao1
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_36
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.29
+    title = YSS.29.t
+    desc = YSS.29.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS16_event
+
+	option = {
+        name = YSS.29.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.30
+                days = 5
+            } 
+        } 
+        set_country_flag = YSS_jihua_baogao2
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_37
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.30
+    title = YSS.30.t
+    desc = YSS.30.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.30.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.31
+                days = 5
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.31
+    title = YSS.31.t
+    desc = YSS.31.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS17_event
+
+	option = {
+        name = YSS.31.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.32
+                days = 5
+            } 
+        } 
+        complete_national_focus = YSS_focus_35
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.32
+    title = YSS.32.t
+    desc = YSS.32.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS18_event
+
+	option = {
+        name = YSS.32.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.33
+                days = 5
+            } 
+        } 
+        set_country_flag = YSS_jihua_baogao3
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_38
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.33
+    title = YSS.33.t
+    desc = YSS.33.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS19_event
+
+	option = {
+        name = YSS.33.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.34
+                days = 5
+            } 
+        } 
+        set_country_flag = YSS_jihua_baogao4
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_39
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.34
+    title = YSS.34.t
+    desc = YSS.34.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS20_event
+
+	option = {
+        name = YSS.34.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.35
+                days = 5
+            } 
+        } 
+        set_country_flag = YSS_jihua_baogao5
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_40
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#经济
+    id = YSS.35
+    title = YSS.35.t
+    desc = YSS.35.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS21_event
+
+	option = {
+        name = YSS.35.a  
+        complete_national_focus = YSS_focus_41
+        ai_chance = { base = 50 }
+    }
+}
