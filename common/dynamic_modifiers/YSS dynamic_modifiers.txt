@@ -124,6 +124,9 @@ YSS_3 = {
 	navy_capital_ship_attack_factor = YSS_navy_navy_capital_ship_attack_factor   ##主力舰攻击系数
 	navy_screen_attack_factor = YSS_navy_navy_screen_attack_factor   ##屏卫舰攻击系数
 	navy_submarine_attack_factor = YSS_navy_navy_submarine_attack_factor   ##潜艇攻击系数
+	industrial_capacity_dockyard = YSS_industrial_capacity_dockyard ##船坞工业产能
+	production_cost_max_ship_hull_heavy = YSS_production_cost_max_ship_hull_heavy ##战列舰成本
+	production_cost_max_ship_hull_cruiser = YSS_production_cost_max_ship_hull_cruiser ##轻巡成本
 }
 #联盟空军
 YSS_4 = {

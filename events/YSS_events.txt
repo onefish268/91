@@ -698,3 +698,60 @@ country_event = {#经济
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#海军
+    id = YSS.36
+    title = YSS.36.t
+    desc = YSS.36.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS22_event
+
+	option = {
+        name = YSS.36.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.37
+                days = 7
+            } 
+        } 
+        complete_national_focus = YSS_focus_146
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#海军
+    id = YSS.37
+    title = YSS.37.t
+    desc = YSS.37.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS23_event
+
+	option = {
+        name = YSS.37.a  
+        hidden_effect = {
+            country_event = {
+                id = YSS.38
+                days = 7
+            } 
+        } 
+        complete_national_focus = YSS_focus_147
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#海军
+    id = YSS.38
+    title = YSS.38.t
+    desc = YSS.38.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS24_event
+
+	option = {
+        name = YSS.38.a   
+        set_country_flag = YSS_haijun_baogao
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_148
+        ai_chance = { base = 50 }
+    }
+}

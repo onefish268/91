@@ -766,7 +766,7 @@ focus_tree = {
 		id = YSS_focus_45
 		x = 24
 		y = 2
-		cost = 0
+		cost = 3
 		icon = GFX_focus_AUS_danubian_socialist_communes
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1552,6 +1552,15 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_22
+			hidden_effect = {
+				country_event = {
+				    id = YSS.36
+					days = 7
+			    }
+			}
+		}
 	}
 	focus = {
 		id = YSS_focus_95
@@ -2449,6 +2458,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_haijun_baogao
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_22
+		}
 	}
 	focus = {
 		id = YSS_focus_147
@@ -2465,6 +2477,9 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_haijun_baogao
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_22
+		}
 	}
 	focus = {
 		id = YSS_focus_148
@@ -2481,12 +2496,15 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_haijun_baogao
 	    }
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_22
+		}
 	}
 	focus = {
 		id = YSS_focus_149
 		x = 5
 		y = 2
-		cost = 0
+		cost = 5
 		icon = GFX_focus_generic_trade_interdiction
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2500,12 +2518,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_148
 		}
+		completion_reward = {
+			navy_experience = 30
+			add_command_power = 20
+		}
 	}
 	focus = {
 		id = YSS_focus_150
 		x = 4
 		y = 3
-		cost = 0
+		cost = 5
 		icon = GFX_focus_generic_merchant_fleet
 		continue_if_invalid = no
 		text_icon = YSS_focus_style
@@ -2513,12 +2535,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_149
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_industrial_capacity_dockyard = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_23
+		}
 	}
 	focus = {
 		id = YSS_focus_151
 		x = 6
 		y = 3
-		cost = 0
+		cost = 5
 		icon = GFX_focus_CHI_the_hump
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2526,12 +2554,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_149
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_navy_fighter_sortie_efficiency = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_hit_chance = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_23
+		}
 	}
 	focus = {
 		id = YSS_focus_152
 		x = 4
 		y = 4
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SIA_the_hammers_that_strike
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2539,12 +2576,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_150
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_industrial_capacity_dockyard = 0.05
+			}
+			add_to_variable = {
+				YSS_production_cost_max_ship_hull_heavy = -800
+			}
+			add_to_variable = {
+				YSS_production_cost_max_ship_hull_cruiser = -500
+			}
+			custom_effect_tooltip = YSS_tootip_23
+		}
 	}
 	focus = {
 		id = YSS_focus_153
 		x = 6
 		y = 4
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PHI_mosquito_fleet
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2552,12 +2601,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_151
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_fighter_sortie_efficiency = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_hit_chance = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_23
+		}
 	}
 	focus = {
 		id = YSS_focus_154
 		x = 4
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_INS_continue_exclusive_rights
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2565,12 +2626,27 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_152
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_industrial_capacity_dockyard = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_critical_score_chance_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_damage_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_23
+		}
 	}
 	focus = {
 		id = YSS_focus_155
 		x = 6
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SMB_blue_water_fleet
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2578,12 +2654,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_153
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = YSS_focus_156
 		x = 5
 		y = 6
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PRC_the_pla_naval_school
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
@@ -2593,6 +2672,26 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = YSS_focus_155
+		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_industrial_capacity_dockyard = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_critical_score_chance_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_navy_naval_damage_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_23
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_hj_complet
+                scoped_play_song = "海军基本改善"
+            }
 		}
 	}
 	focus = {

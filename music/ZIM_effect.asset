@@ -93,3 +93,8 @@ music = {
     file = "三年计划完工.ogg"
     volume = 1
 }
+music = {
+    name = "海军基本改善"
+    file = "海军基本改善.ogg"
+    volume = 1
+}

@@ -189,6 +189,11 @@ spriteTypes = {
         transparencecheck = yes
     }
     spriteType = {
+        name = "GFX_YSS_super_event_photo6_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_photo6_icon.png"
+        transparencecheck = yes
+    }
+    spriteType = {
         name = "GFX_YSS_super_event_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_icon.png"
     }

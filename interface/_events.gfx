@@ -104,6 +104,18 @@ spriteTypes = {
         texturefile = "gfx\interface\events\YSS21_event.png"
     }
     spriteType = {
+        name = "GFX_YSS22_event"
+        texturefile = "gfx\interface\events\YSS22_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS23_event"
+        texturefile = "gfx\interface\events\YSS23_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS24_event"
+        texturefile = "gfx\interface\events\YSS24_event.png"
+    }
+    spriteType = {
         name = "GFX_news_2"
         texturefile = "gfx\interface\events\news_2.png"
     }

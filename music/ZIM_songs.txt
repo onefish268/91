@@ -160,4 +160,11 @@ music = {
         }
     }
 }
-
+music = {
+    song = "海军基本改善"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

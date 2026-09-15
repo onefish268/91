@@ -63,6 +63,8 @@ scripted_gui = {
 			YSS_super_event_4_desc_visible = { has_country_flag = YSS_kj_back }
 			YSS_super_event_photo5_icon_visible = { has_country_flag = YSS_sansan_complet }
 			YSS_super_event_5_desc_visible = { has_country_flag = YSS_sansan_complet }
+			YSS_super_event_photo6_icon_visible = { has_country_flag = YSS_hj_complet }
+			YSS_super_event_6_desc_visible = { has_country_flag = YSS_hj_complet }
 		}
 
 		effects = {
@@ -73,6 +75,7 @@ scripted_gui = {
 				clr_country_flag = YSS_join_sov
 				clr_country_flag = YSS_kj_back
 				clr_country_flag = YSS_sansan_complet
+				clr_country_flag = YSS_hj_complet
 			}
 		}
 	}
