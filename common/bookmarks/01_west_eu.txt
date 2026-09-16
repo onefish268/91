@@ -63,20 +63,6 @@ bookmarks = {
                 4_focus_1
             }
         }
-        "FRA" = {
-            history = "FRA_GATHERING_STORM_DESC"
-            ideology = democratic
-            ideas = {
-                FRA_Step_in_Democratization				#迈入民主化
-                FRA_Financial_spree				#金融狂欢
-                FRA_developed_industry				#实业发达
-            }
-            focuses = {
-                FRA_GFN_Raid_the_Council
-                FRA_moonlight_purifies_world
-                FRA_Liberty_equality_fraternity_and_king
-            }
-        }
         "GRE" = {
             #minor = yes
             history = "GRE_GATHERING_STORM_DESC"
@@ -148,6 +134,25 @@ bookmarks = {
                 KNM_tygq
             }
         }
+        # XXA = {
+        #     ideology = fascism
+        #     history = ""
+        # }
+        "PA1" = {
+            #minor = yes
+            history = "PA1_GATHERING_STORM_DESC"
+            ideology = neutrality
+            ideas = {
+                PA1_let_us_work_together
+                PA1_revolution_army_3
+                PA1_blood_and_life
+            }
+            focuses = {
+                PA1_show_1
+                PA1_show_2
+                PA1_show_3
+            }
+        }
         "PAM" = {
             #minor = yes
             history = "PAM_GATHERING_STORM_DESC"
@@ -158,9 +163,9 @@ bookmarks = {
                 CHL_has_military_access
             }
             focuses = {
-                PAM_qqh
-                PAM_szndm
-                PAM_tzwyxkyl
+                PAM_sln_zb_kf
+                PAM_xqjx_wmxs
+                PAM_cyghdyt
             }
         }
         "PRC" = {
@@ -176,6 +181,21 @@ bookmarks = {
                 PRC_Guidance_from_Kremlin
                 PRC_new_China_of_Fuhrer_Zhang
                 PRC_The_red_sun_of_the_people
+            }
+        }
+        "JAP" = {
+            #minor = yes
+            history = "JAP_GATHERING_STORM_DESC"
+            ideology = democratic
+            ideas = {
+                dongyatiaoyue
+                jinv
+                caifa
+            }
+            focuses = {
+                JAP_new74
+                JAP_new72
+                JAP_new86
             }
         }
         "YSS" = {
