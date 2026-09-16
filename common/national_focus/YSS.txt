@@ -2352,16 +2352,26 @@ focus_tree = {
 			focus = YSS_focus_126
 		}
 		completion_reward = {
-			add_to_variable = {
-				YSS_infantry_equipment_cost_factor = -0.1
-			}
-			add_to_variable = {
-				YSS_artillery_equipment_cost_factor = -0.1
-			}
-			add_to_variable = {
-				YSS_tank_equipment_cost_factor = -0.1
-			}
-			custom_effect_tooltip = YSS_tootip_27
+            add_equipment_bonus = {
+                bonus = {
+                    infantry_equipment = {
+                        build_cost_ic = -0.10
+                        instant = yes
+                    }
+                    artillery_equipment = {
+                        build_cost_ic = -0.10
+                        instant = yes
+                    }
+					light_tank_equipment = {
+                        build_cost_ic = -0.10
+                        instant = yes
+                    }
+					medium_tank_equipment = {
+                        build_cost_ic = -0.05
+                        instant = yes
+                    }
+                }
+            }
 		}
 	}
 	focus = {
@@ -2574,7 +2584,7 @@ focus_tree = {
 		}
 		completion_reward = {
             add_tech_bonus = { bonus = 0.5 uses = 1 category = radar_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry }
             add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.05

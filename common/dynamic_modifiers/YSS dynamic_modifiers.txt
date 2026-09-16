@@ -113,9 +113,6 @@ YSS_2 = {
 	army_org_factor = YSS_army_org_factor ##陆军师组织度
 	max_planning_factor = YSS_max_planning_factor ##计划加成上限系数
 	training_time_factor = YSS_training_time_factor ##训练时间
-	infantry_equipment_cost_factor = YSS_infantry_equipment_cost_factor
-	artillery_equipment_cost_factor = YSS_artillery_equipment_cost_factor
-	tank_equipment_cost_factor = YSS_tank_equipment_cost_factor
 }
 #联盟海军
 YSS_3 = {
