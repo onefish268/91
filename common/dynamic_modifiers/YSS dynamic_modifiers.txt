@@ -3,7 +3,7 @@ YSS_province_xingzheng_1 = { #State Modifer  地方行政等级
 	icon = GFX_modifiers_generic_immigration_promoted
     supply_factor = -0.25 #补给效率
 	local_manpower = -0.6 #当地人力
-	state_production_speed_buildings_factor = -0.15 #当地建设速度
+	state_production_speed_buildings_factor = -0.35 #当地建设速度
 	recruitable_population_factor = -0.3 #可征募人口
 	monthly_population = -0.45 #月度人口增长
 }
@@ -12,7 +12,7 @@ YSS_province_xingzheng_2 = { #State Modifer  地方行政等级
 	icon = GFX_modifiers_generic_immigration_promoted
     supply_factor = -0.15 #补给效率
 	local_manpower = -0.4 #当地人力
-	state_production_speed_buildings_factor = -0.1 #当地建设速度
+	state_production_speed_buildings_factor = -0.3 #当地建设速度
 	recruitable_population_factor = -0.2 #可征募人口
 	monthly_population = -0.3 #月度人口增长
 }
@@ -21,7 +21,7 @@ YSS_province_xingzheng_3 = { #State Modifer  地方行政等级
 	icon = GFX_modifiers_generic_immigration_promoted
     supply_factor = -0.05 #补给效率
 	local_manpower = -0.2 #当地人力
-	state_production_speed_buildings_factor = -0.05 #当地建设速度
+	state_production_speed_buildings_factor = -0.2 #当地建设速度
 	recruitable_population_factor = -0.1 #可征募人口
 	monthly_population = -0.15 #月度人口增长
 }
@@ -39,7 +39,7 @@ YSS_province_xingzheng_5 = { #State Modifer  地方行政等级
 	icon = GFX_modifiers_generic_immigration_promoted
     supply_factor = 0.3 #补给效率
 	local_manpower = 0.4 #当地人力
-	state_production_speed_buildings_factor = 0.25 #当地建设速度
+	state_production_speed_buildings_factor = 0.15 #当地建设速度
 	recruitable_population_factor = 0.35 #可征募人口
 	monthly_population = 0.35 #月度人口增长
 }
