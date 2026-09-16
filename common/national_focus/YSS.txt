@@ -734,6 +734,21 @@ focus_tree = {
 			clr_country_flag = jindu4_has_more
 			set_country_flag = sansan_plan_has_unlocked
 			custom_effect_tooltip = YSS_tootip_21
+
+			remove_ideas = {
+				YSS_5
+				YSS_6
+			}
+
+			add_to_variable = { YSS_economy_committee_conscription_factor = -0.15 }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.35 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.25 }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = 0.10 }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = -0.15 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = -0.25 }
+
+			custom_effect_tooltip = YSS_tootip_21_1
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -788,6 +803,10 @@ focus_tree = {
 			focus = YSS_focus_42
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_conscription_factor = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -803,6 +822,10 @@ focus_tree = {
 			focus = YSS_focus_42
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -818,6 +841,10 @@ focus_tree = {
 			focus = YSS_focus_42
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -833,6 +860,11 @@ focus_tree = {
 			focus = YSS_focus_46
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -848,6 +880,11 @@ focus_tree = {
 			focus = YSS_focus_46
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.05 }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -863,6 +900,9 @@ focus_tree = {
 			focus = YSS_focus_47
 		}
 		completion_reward = {
+			add_research_slot = 1
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -878,6 +918,10 @@ focus_tree = {
 			focus = YSS_focus_47
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -893,6 +937,11 @@ focus_tree = {
 			focus = YSS_focus_48
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -2 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -908,6 +957,11 @@ focus_tree = {
 			focus = YSS_focus_48
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -2 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -923,6 +977,24 @@ focus_tree = {
 			focus = YSS_focus_49
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = YSS_focus_46_0
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = YSS_focus_46_1
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = YSS_focus_46_2
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -938,6 +1010,11 @@ focus_tree = {
 			focus = YSS_focus_50
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -953,6 +1030,19 @@ focus_tree = {
 			focus = YSS_focus_55
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
 		}
 	}
 	focus = {
@@ -968,6 +1058,10 @@ focus_tree = {
 			focus = YSS_focus_56
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -983,6 +1077,10 @@ focus_tree = {
 			focus = YSS_focus_57
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -998,6 +1096,10 @@ focus_tree = {
 			focus = YSS_focus_58
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1013,6 +1115,22 @@ focus_tree = {
 			focus = YSS_focus_51
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 }
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1028,6 +1146,10 @@ focus_tree = {
 			focus = YSS_focus_52
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1043,6 +1165,10 @@ focus_tree = {
 			focus = YSS_focus_61
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1058,6 +1184,10 @@ focus_tree = {
 			focus = YSS_focus_62
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1073,6 +1203,10 @@ focus_tree = {
 			focus = YSS_focus_63
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor  = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1088,6 +1222,11 @@ focus_tree = {
 			focus = YSS_focus_64
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1103,6 +1242,11 @@ focus_tree = {
 			focus = YSS_focus_53
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -2 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1118,6 +1262,10 @@ focus_tree = {
 			focus = YSS_focus_54
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1133,6 +1281,10 @@ focus_tree = {
 			focus = YSS_focus_67
 		}
 		completion_reward = {
+			add_stability = 0.1
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1148,7 +1300,11 @@ focus_tree = {
 			focus = YSS_focus_68
 		}
 		completion_reward = {
-		}
+			add_stability = 0.1
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
+		custom_effect_tooltip =YSS_tootip_28
+	}
 	}
 	focus = {
 		id = YSS_focus_71
@@ -1163,6 +1319,8 @@ focus_tree = {
 			focus = YSS_focus_69
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.15 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1178,6 +1336,9 @@ focus_tree = {
 			focus = YSS_focus_70
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1196,6 +1357,11 @@ focus_tree = {
 			focus = YSS_focus_60
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_conscription_factor = 0.1 }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1214,6 +1380,14 @@ focus_tree = {
 			focus = YSS_focus_66
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1232,6 +1406,10 @@ focus_tree = {
 			focus = YSS_focus_72
 		}
 		completion_reward = {
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
@@ -1279,6 +1457,7 @@ focus_tree = {
 			focus = YSS_focus_75
 		}
 		completion_reward = {
+	
 		}
 	}
 	focus = {
@@ -1294,6 +1473,24 @@ focus_tree = {
 			focus = YSS_focus_82
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = YSS_focus_78_0
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = YSS_focus_78_1
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = YSS_focus_78_2
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2061,7 +2258,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.05
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_118
@@ -2085,7 +2282,7 @@ focus_tree = {
 				YSS_red_army_army_strength_factor = -0.05
 			}
 			custom_effect_tooltip = YSS_tootip_26
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_119
@@ -2210,7 +2407,7 @@ focus_tree = {
 				YSS_training_time_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_26
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_124
@@ -2234,7 +2431,7 @@ focus_tree = {
 				YSS_red_army_army_strength_factor = -0.05
 			}
 			custom_effect_tooltip = YSS_tootip_26
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_125
@@ -2267,7 +2464,7 @@ focus_tree = {
 				YSS_training_time_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_26
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_126
@@ -2794,7 +2991,7 @@ focus_tree = {
 	    }
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_22
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_147
@@ -2813,7 +3010,7 @@ focus_tree = {
 	    }
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_22
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_148
@@ -2832,7 +3029,7 @@ focus_tree = {
 	    }
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_22
-		}
+	    }
 	}
 	focus = {
 		id = YSS_focus_149

@@ -152,16 +152,22 @@ YSS_8 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_8
-	army_fuel_consumption_factor = YSS_economy_committee_army_fuel_consumption_factor   ##军队燃油消耗系数
-	civilian_factory_use = YSS_economy_committee_civilian_factory_use   ##民用工厂使用
-	consumer_goods_factor = YSS_economy_committee_consumer_goods_factor   ##产线切换生产效率系数
-	energy_gain_factor = YSS_economy_committee_energy_gain_factor   ##生产工厂效率增益系数
-	industrial_capacity_factory = YSS_economy_committee_industrial_capacity_factory   ##生产工厂最大效率系数
-	industry_repair_factor = YSS_economy_committee_industry_repair_factor   ##消费品系数
-	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##能源增益系数
-	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##工业产能工厂
-	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##工业修复系数
-}
+	army_fuel_consumption_factor = YSS_economy_committee_army_fuel_consumption_factor   ##陆军燃料消耗
+	civilian_factory_use = YSS_economy_committee_civilian_factory_use   ##民用工厂占用
+	consumer_goods_factor = YSS_economy_committee_consumer_goods_factor   ##生活消费品工厂系数
+	energy_gain_factor = YSS_economy_committee_energy_gain_factor   ##从煤炭获得的能量
+	industrial_capacity_factory = YSS_economy_committee_industrial_capacity_factory   ##工厂产出
+	industry_repair_factor = YSS_economy_committee_industry_repair_factor   ##工厂修复速度
+	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##生产效率保持
+	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##生产效率增长
+	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##生产效率上限
+	conscription_factor = YSS_economy_committee_conscription_factor  ##可征募人口
+	monthly_population = YSS_economy_committee_monthly_population  ##每月人口
+	foreign_subversive_activites = YSS_economy_committee_foreign_subversive_activites  ##外国颠覆活动效率
+	research_speed_factor = YSS_economy_committee_research_speed_factor  ##研究速度
+	intelligence_agency_defense = YSS_economy_committee_intelligence_agency_defense  ##反间谍
+	production_speed_buildings_factor = YSS_economy_committee_production_speed_buildings_factor  ##建设速度
+}	
 #不纯洁的党组织
 YSS_9 = {
 	enable = {
