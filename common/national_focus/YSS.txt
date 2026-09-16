@@ -1591,6 +1591,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = YSS_tootip_24
 		}
 	}
 	focus = {
@@ -2030,14 +2033,21 @@ focus_tree = {
 			focus = YSS_focus_96
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_25
 			custom_effect_tooltip = YSS_tootip_14
+			hidden_effect = {
+				country_event = {
+				    id = YSS.39
+					days = 14
+			    }
+			}
 		}
 	}
 	focus = {
 		id = YSS_focus_117
 		x = -6
 		y = 2
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NGL_military_academy
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2048,6 +2058,10 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao1
 	    }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = YSS_focus_118
@@ -2064,12 +2078,20 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao2
 	    }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = -0.05
+			}
+			custom_effect_tooltip = YSS_tootip_26
+		}
 	}
 	focus = {
 		id = YSS_focus_119
 		x = -6
 		y = 3
-		cost = 0
+		cost = 3
 		icon = GFX_focus_SGL_reshuffle
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2077,12 +2099,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_117
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_army_org_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_120
 		x = -7
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NGL_dont_be_lenient
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2090,12 +2118,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_119
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_training_time_factor = -0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_121
 		x = -5
 		y = 4
-		cost = 0
+		cost = 3
 		icon = GFX_focus_NGL_prohibition_of_discrimination
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2103,12 +2137,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_119
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_max_army_group_size = -5
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_122
 		x = -6
 		y = 5
-		cost = 0
+		cost = 5
 		icon = GFX_focus_USS_security_sector_restructuring
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2118,6 +2158,25 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = YSS_focus_121
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_to_variable = {
+				YSS_red_army_army_attack_against_major_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_against_minor_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_defence_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
 		}
 	}
 	focus = {
@@ -2135,6 +2194,23 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao3
 	    }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_to_variable = {
+				YSS_army_morale_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_training_time_factor = 0.1
+			}
+			custom_effect_tooltip = YSS_tootip_26
+		}
 	}
 	focus = {
 		id = YSS_focus_124
@@ -2151,6 +2227,14 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao4
 	    }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = -0.05
+			}
+			custom_effect_tooltip = YSS_tootip_26
+		}
 	}
 	focus = {
 		id = YSS_focus_125
@@ -2167,12 +2251,29 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao5
 	    }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_to_variable = {
+				YSS_army_morale_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = -0.05
+			}
+			add_to_variable = {
+				YSS_training_time_factor = 0.1
+			}
+			custom_effect_tooltip = YSS_tootip_26
+		}
 	}
 	focus = {
 		id = YSS_focus_126
 		x = -4
 		y = 6
-		cost = 0
+		cost = 5
 		icon = GFX_focus_NGL_tear_up_false_law
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2183,12 +2284,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_125
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_training_time_factor = -0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_127
 		x = -7
 		y = 7
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_restore_cossack_units
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2196,12 +2303,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_126
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_org_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_128
 		x = -4
 		y = 7
-		cost = 0
+		cost = 5
 		icon = GFX_SOV_desperate_measures_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2209,12 +2325,25 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_126
 		}
+		completion_reward = {
+			add_manpower = 30000
+			add_to_variable = {
+				YSS_red_army_army_infantry_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_supply_consumption_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_129
 		x = -1
 		y = 7
-		cost = 0
+		cost = 5
 		icon = GFX_focus_CONGO_copper_cartridges
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2222,12 +2351,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_126
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_infantry_equipment_cost_factor = -0.1
+			}
+			add_to_variable = {
+				YSS_artillery_equipment_cost_factor = -0.1
+			}
+			add_to_variable = {
+				YSS_tank_equipment_cost_factor = -0.1
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_130
 		x = -8
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PRC_invite_soviet_general
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2235,12 +2376,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_127
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_131
 		x = -6
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2248,12 +2398,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_127
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_army_org_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_132
 		x = -4
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_SOV_war_heroes_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2261,12 +2417,25 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_128
 		}
+		completion_reward = {
+			army_experience = 50
+			add_to_variable = {
+				YSS_red_army_army_infantry_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_training_time_factor = -0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_133
 		x = -2
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2274,12 +2443,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_129
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_armor_speed_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_134
 		x = -2
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2287,12 +2462,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_133
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_artillery_attack_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_135
 		x = -8
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_penal_battalions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2300,12 +2481,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_130
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_136
 		x = -6
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_YUG_pan_slavic_congress
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2313,12 +2506,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_131
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_org_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_137
 		x = -4
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_spr_class_war
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2326,12 +2528,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_132
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_138
 		x = 0
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_mobilization_plan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2339,12 +2550,21 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_129
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_mechanized_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_motorized_attack_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_139
 		x = 0
 		y = 9
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_organize_wreckers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2352,12 +2572,30 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_138
 		}
+		completion_reward = {
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = radar_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+			add_to_variable = {
+				YSS_red_army_army_armor_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_artillery_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_mechanized_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_motorized_attack_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_140
 		x = -8
 		y = 10
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_the_last_purge
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2365,12 +2603,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_135
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_141
 		x = -6
 		y = 10
-		cost = 0
+		cost = 5
 		icon = GFX_SOV_the_workers_dictatorship_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2378,12 +2628,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_136
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_142
 		x = -4
 		y = 10
-		cost = 0
+		cost = 5
 		icon = GFX_focus_por_workers_of_iberia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2391,12 +2653,28 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_137
 		}
+		completion_reward = {
+			army_experience = 50
+			add_to_variable = {
+				YSS_red_army_army_attack_against_major_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_against_minor_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_infantry_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_143
 		x = -2
 		y = 10
-		cost = 0
+		cost = 5
 		icon = GFX_focus_INS_oweralwagen
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2404,12 +2682,29 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_134
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = cat_mechanized_equipment
+            }
+			add_to_variable = {
+				YSS_red_army_army_armor_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_mechanized_attack_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_motorized_attack_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_144
 		x = 0
 		y = 10
-		cost = 0
+		cost = 5
 		icon = GFX_focus_SOV_the_road_of_life
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2417,12 +2712,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_139
 		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_supply_consumption_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+		}
 	}
 	focus = {
 		id = YSS_focus_145
 		x = -4
 		y = 12
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PRC_army_command
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2441,6 +2742,29 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = YSS_focus_144
+		}
+		completion_reward = {
+			add_to_variable = {
+				YSS_red_army_army_attack_against_major_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_against_minor_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_defence_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_max_planning_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_27
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_red_army_complet
+                scoped_play_song = "红军大步向前"
+            }
 		}
 	}
 	focus = {
@@ -2934,6 +3258,11 @@ focus_tree = {
 			focus = YSS_focus_165
 		}
 		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1.0          # 立即完成一次战斗机研究
+                uses = 1
+                category = light_air  # 轻型飞机类别
+            }
 			add_research_slot = 1
 		}
 	}

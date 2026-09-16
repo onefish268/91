@@ -98,3 +98,8 @@ music = {
     file = "海军基本改善.ogg"
     volume = 1
 }
+music = {
+    name = "红军大步向前"
+    file = "红军大步向前.ogg"
+    volume = 1
+}

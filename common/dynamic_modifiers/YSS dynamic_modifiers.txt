@@ -97,18 +97,25 @@ YSS_2 = {
 	}
 	icon = GFX_idea_YSS_2
 	army_armor_speed_factor = YSS_red_army_army_armor_speed_factor   ##装甲速度
-	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##攻击速度
-	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##火炮攻击
-	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##对主要目标攻击
-	army_infantry_attack_factor = YSS_red_army_army_infantry_attack_factor   ##对次要目标攻击
-	heat_attrition_factor = YSS_red_army_heat_attrition_factor   ##步兵攻击
+	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##火炮攻击
+	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##对主要目标攻击
+	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##对次要目标攻击
+	army_infantry_attack_factor = YSS_red_army_army_infantry_attack_factor   ##步兵攻击
+	heat_attrition_factor = YSS_red_army_heat_attrition_factor   ##炎热损耗
 	mechanized_attack_factor = YSS_red_army_mechanized_attack_factor   ##机械化攻击
 	motorized_attack_factor = YSS_red_army_motorized_attack_factor   ##摩托化攻击
-	supply_consumption_factor = YSS_red_army_supply_consumption_factor   ##防御能力
+	supply_consumption_factor = YSS_red_army_supply_consumption_factor   ##补给效率
 	army_attack_speed_factor = YSS_red_army_army_attack_speed_factor   ##攻击速度系数
 	army_defence_factor = YSS_red_army_army_defence_factor   ##防御系数
-	army_strength_factor = YSS_red_army_army_strength_factor   ##兵力系数
+	army_strength_factor = YSS_red_army_army_strength_factor   ##hp系数
 	max_army_group_size = YSS_red_army_max_army_group_size   ##最大军团规模
+	army_morale_factor = YSS_army_morale_factor ##陆军师组织度恢复速率
+	army_org_factor = YSS_army_org_factor ##陆军师组织度
+	max_planning_factor = YSS_max_planning_factor ##计划加成上限系数
+	training_time_factor = YSS_training_time_factor ##训练时间
+	infantry_equipment_cost_factor = YSS_infantry_equipment_cost_factor
+	artillery_equipment_cost_factor = YSS_artillery_equipment_cost_factor
+	tank_equipment_cost_factor = YSS_tank_equipment_cost_factor
 }
 #联盟海军
 YSS_3 = {

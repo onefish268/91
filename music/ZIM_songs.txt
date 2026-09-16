@@ -168,3 +168,11 @@ music = {
         }
     }
 }
+music = {
+    song = "红军大步向前"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
