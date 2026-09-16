@@ -1303,8 +1303,8 @@ focus_tree = {
 			add_stability = 0.1
 			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
-		custom_effect_tooltip =YSS_tootip_28
-	}
+		    custom_effect_tooltip =YSS_tootip_28
+	    }
 	}
 	focus = {
 		id = YSS_focus_71
@@ -1357,6 +1357,55 @@ focus_tree = {
 			focus = YSS_focus_60
 		}
 		completion_reward = {
+			if = {
+                limit = { 
+					YSS = {
+						NOT = { 
+				            has_country_flag = jindu1_has_more
+					        has_country_flag = jindu2_has_more
+					        has_country_flag = jindu3_has_more 
+					        has_country_flag = jindu4_has_more 
+			            } 
+					}
+				}
+                set_country_flag = jindu_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu_has_more 
+					}
+				}
+				clr_country_flag = jindu_has_more
+                set_country_flag = jindu1_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu1_has_more 
+					}
+				}
+				clr_country_flag = jindu1_has_more
+                set_country_flag = jindu2_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu2_has_more 
+					}
+				}
+				clr_country_flag = jindu2_has_more
+                set_country_flag = jindu3_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu3_has_more 
+					}
+				}
+				clr_country_flag = jindu3_has_more
+                set_country_flag = jindu4_has_more
+            }
 			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.1 }
 			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
@@ -1380,6 +1429,55 @@ focus_tree = {
 			focus = YSS_focus_66
 		}
 		completion_reward = {
+			if = {
+                limit = { 
+					YSS = {
+						NOT = { 
+				            has_country_flag = jindu1_has_more
+					        has_country_flag = jindu2_has_more
+					        has_country_flag = jindu3_has_more 
+					        has_country_flag = jindu4_has_more 
+			            } 
+					}
+				}
+                set_country_flag = jindu_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu_has_more 
+					}
+				}
+				clr_country_flag = jindu_has_more
+                set_country_flag = jindu1_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu1_has_more 
+					}
+				}
+				clr_country_flag = jindu1_has_more
+                set_country_flag = jindu2_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu2_has_more 
+					}
+				}
+				clr_country_flag = jindu2_has_more
+                set_country_flag = jindu3_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu3_has_more 
+					}
+				}
+				clr_country_flag = jindu3_has_more
+                set_country_flag = jindu4_has_more
+            }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
 			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 }
 			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
@@ -1406,6 +1504,55 @@ focus_tree = {
 			focus = YSS_focus_72
 		}
 		completion_reward = {
+			if = {
+                limit = { 
+					YSS = {
+						NOT = { 
+				            has_country_flag = jindu1_has_more
+					        has_country_flag = jindu2_has_more
+					        has_country_flag = jindu3_has_more 
+					        has_country_flag = jindu4_has_more 
+			            } 
+					}
+				}
+                set_country_flag = jindu_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu_has_more 
+					}
+				}
+				clr_country_flag = jindu_has_more
+                set_country_flag = jindu1_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu1_has_more 
+					}
+				}
+				clr_country_flag = jindu1_has_more
+                set_country_flag = jindu2_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu2_has_more 
+					}
+				}
+				clr_country_flag = jindu2_has_more
+                set_country_flag = jindu3_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu3_has_more 
+					}
+				}
+				clr_country_flag = jindu3_has_more
+                set_country_flag = jindu4_has_more
+            }
 			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
 			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 }
 			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
@@ -1431,6 +1578,8 @@ focus_tree = {
 			focus = YSS_focus_87
 		}
 		completion_reward = {
+			clr_country_flag = jindu3_has_more
+			set_country_flag = jindu4_has_more
 			hidden_effect = {
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_sansan_complet
@@ -1457,7 +1606,55 @@ focus_tree = {
 			focus = YSS_focus_75
 		}
 		completion_reward = {
-	
+			if = {
+                limit = { 
+					YSS = {
+						NOT = { 
+				            has_country_flag = jindu1_has_more
+					        has_country_flag = jindu2_has_more
+					        has_country_flag = jindu3_has_more 
+					        has_country_flag = jindu4_has_more 
+			            } 
+					}
+				}
+                set_country_flag = jindu_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu_has_more 
+					}
+				}
+				clr_country_flag = jindu_has_more
+                set_country_flag = jindu1_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu1_has_more 
+					}
+				}
+				clr_country_flag = jindu1_has_more
+                set_country_flag = jindu2_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu2_has_more 
+					}
+				}
+				clr_country_flag = jindu2_has_more
+                set_country_flag = jindu3_has_more
+            }
+			if = {
+                limit = { 
+					YSS = { 
+				        has_country_flag = jindu3_has_more 
+					}
+				}
+				clr_country_flag = jindu3_has_more
+                set_country_flag = jindu4_has_more
+            }
 		}
 	}
 	focus = {
