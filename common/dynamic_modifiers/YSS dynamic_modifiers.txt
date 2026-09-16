@@ -161,6 +161,11 @@ YSS_8 = {
 	line_change_production_efficiency_factor = YSS_economy_committee_line_change_production_efficiency_factor   ##能源增益系数
 	production_factory_efficiency_gain_factor = YSS_economy_committee_production_factory_efficiency_gain_factor   ##工业产能工厂
 	production_factory_max_efficiency_factor = YSS_economy_committee_production_factory_max_efficiency_factor   ##工业修复系数
+	conscription_factor = YSS_economy_committee_conscription_factor
+	monthly_population = YSS_economy_committee_monthly_population
+	foreign_subversive_activites = YSS_economy_committee_foreign_subversive_activites
+	research_speed_factor = YSS_economy_committee_research_speed_factor
+	intelligence_agency_defense = YSS_economy_committee_intelligence_agency_defense
 }
 #不纯洁的党组织
 YSS_9 = {
