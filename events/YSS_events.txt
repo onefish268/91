@@ -839,3 +839,232 @@ country_event = {#红军
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#风味事件
+    id = YSS.43
+    title = YSS.43.t
+    desc = YSS.43.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.43.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.44
+    title = YSS.44.t
+    desc = YSS.44.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.44.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.45
+    title = YSS.45.t
+    desc = YSS.45.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.45.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.46
+    title = YSS.46.t
+    desc = YSS.46.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.46.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.47
+    title = YSS.47.t
+    desc = YSS.47.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.47.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.48
+    title = YSS.48.t
+    desc = YSS.48.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.48.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.49
+    title = YSS.49.t
+    desc = YSS.49.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.49.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.50
+    title = YSS.50.t
+    desc = YSS.50.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.50.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.51
+    title = YSS.51.t
+    desc = YSS.51.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.51.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.52
+    title = YSS.52.t
+    desc = YSS.52.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.52.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.53
+    title = YSS.53.t
+    desc = YSS.53.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.53.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.54
+    title = YSS.54.t
+    desc = YSS.54.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.54.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.55
+    title = YSS.55.t
+    desc = YSS.55.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.55.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.56
+    title = YSS.56.t
+    desc = YSS.56.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.56.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.57
+    title = YSS.57.t
+    desc = YSS.57.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.57.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.58
+    title = YSS.58.t
+    desc = YSS.58.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.58.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.59
+    title = YSS.59.t
+    desc = YSS.59.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.59.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.60
+    title = YSS.60.t
+    desc = YSS.60.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.60.a   
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#风味事件
+    id = YSS.61
+    title = YSS.61.t
+    desc = YSS.61.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+        name = YSS.61.a   
+        ai_chance = { base = 50 }
+    }
+}
