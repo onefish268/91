@@ -168,4 +168,10 @@ defined_text = {
 		}
 		localization_key = ZDM_luomu_warrior_desc
 	}
+	text = {
+		trigger = {
+			tag = YSS
+		}
+		localization_key = YSS_byner_warrior_desc
+	}
 }
