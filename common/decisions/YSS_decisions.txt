@@ -4662,6 +4662,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			905 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
@@ -4686,6 +4687,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			548 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
@@ -4710,6 +4712,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			1007 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
@@ -4734,6 +4737,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			709 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
@@ -4757,6 +4761,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			281 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
@@ -4780,6 +4785,7 @@ YSS_dao_category = {
 		}
 		remove_effect = {
 			422 = {
+				transfer_state_to = ROOT
 				set_state_controller_to = ROOT
 			}
 			add_timed_idea = {
