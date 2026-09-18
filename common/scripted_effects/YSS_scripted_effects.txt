@@ -1,0 +1,45 @@
+YSS_upgrade_state_admin = {
+    if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_1 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_1 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_2 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_2 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_2 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_3 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_3 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_3 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_4 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_4 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_4 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_5 }
+    }
+}
+
+YSS_upgrade_state_dev = {
+    if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_1 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_1 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_2 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_2 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_2 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_3 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_3 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_3 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_4 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_4 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_4 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_5 }
+    }
+}
