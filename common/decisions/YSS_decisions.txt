@@ -4,7 +4,7 @@ YSS_yisiland_category = {
 		name = YSS_1_1d
 		icon = GFX_decision_default
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		cost = 35
 		days_remove = 31
@@ -22,7 +22,7 @@ YSS_yisiland_category = {
 		name = YSS_1_2d
 		icon = GFX_decision_default
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		cost = 50
 		days_remove = 93
@@ -43,7 +43,7 @@ YSS_yisiland_category = {
 		name = YSS_1_3d
 		icon = GFX_decision_default
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		cost = 50
 		days_remove = 93
@@ -64,7 +64,7 @@ YSS_yisiland_category = {
 		name = YSS_1_4d
 		icon = GFX_decision_default
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		cost = 50
 		days_remove = 93
@@ -85,7 +85,7 @@ YSS_yisiland_category = {
 		name = YSS_1_5d
 		icon = GFX_decision_default
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		cost = 50
 		days_remove = 93

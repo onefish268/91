@@ -24,7 +24,6 @@ YSS_focus_plan = {
 		YSS_focus_6
 		YSS_focus_33
 		YSS_focus_96
-		YSS_focus_116
 		YSS_focus_94
 		YSS_focus_95
 		YSS_focus_89
@@ -34,6 +33,7 @@ YSS_focus_plan = {
 		YSS_focus_91
 		YSS_focus_99
 		YSS_focus_102
+		YSS_focus_116
 	}
 
 	weight = {
