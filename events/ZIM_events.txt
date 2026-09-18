@@ -159,8 +159,10 @@ country_event = {
         release = ZSH
         release = ZXS
         release = ZYX
+        clr_country_flag = Adorable_heart_opinion_button_visible
         ZYX = {
-        change_tag_from = ZIM
+            set_country_flag = Adorable_heart_opinion_button_visible
+            change_tag_from = ZIM
         }       
         ai_chance = { base = 20 }
     }
@@ -174,8 +176,10 @@ country_event = {
         release = ZSH
         release = ZXS
         release = ZYX
+        clr_country_flag = Adorable_heart_opinion_button_visible
         ZSB = {
-        change_tag_from = ZIM
+            set_country_flag = Adorable_heart_opinion_button_visible
+            change_tag_from = ZIM
         }  
         ai_chance = { base = 20 }
     }

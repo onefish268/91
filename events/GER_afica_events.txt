@@ -258,6 +258,7 @@ country_event = {
     option = {
         name = GER_afica.14.a
         GER = {
+            set_country_flag = Adorable_heart_opinion_button_visible
             change_tag_from = ZYX
         }       
         ai_chance = { base = 50 }
