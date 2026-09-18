@@ -43,6 +43,12 @@ scripted_gui = {
 		visible = {
 			original_tag = YSS
 	    }
+
+		effects = {
+			YSS_paper_button_click = {
+				set_country_flag = YSS_launch_the_ui
+			}
+		}
 	}
 
 	YSS_super_event_ui = { #阶段超事件
@@ -84,11 +90,12 @@ scripted_gui = {
 	}
 
 	YSS_machine_ui = { #国家经济统筹委员会
-	    parent_window_token = politics_tab
+	    #parent_window_token = politics_tab
 		context_type = player_context
 		window_name = "YSS_machine_ui_window"
 		visible = {
 			original_tag = YSS
+			has_country_flag = YSS_launch_the_ui
 	    }
 		triggers = {
 			YSS_23_icon_visible = { NOT = { has_country_flag = sansan_plan_has_unlocked } }
@@ -116,6 +123,12 @@ scripted_gui = {
 			}
 			YSS_6_icon_visible = {
 				has_country_flag = jindu4_has_more
+			}
+		}
+
+		effects = {
+			YSS_leave_button_click = {
+				clr_country_flag = YSS_launch_the_ui
 			}
 		}
 	}
