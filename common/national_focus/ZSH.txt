@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 	continuous_focus_position = {
-		x =2000
+		x = 800
 		y = 1500
 	}
 	focus = {
@@ -25,6 +25,16 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			unlock_decision_category_tooltip = ZSH_stabilize_country
+			hidden_effect = {
+			    load_oob = "default_devision"
+			    capital_scope = {
+				    create_unit = {
+					    division = "name = \"民兵武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					    owner = ROOT
+					    count = 14
+				    }
+			    }
+			}
 		}
 	}
 	focus = {
@@ -36,6 +46,11 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_2
@@ -106,6 +121,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = combat_readiness
+			hidden_effect = {
+			    load_oob = "default_devision"
+			    capital_scope = {
+				    create_unit = {
+					    division = "name = \"民兵武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					    owner = ROOT
+					    count = 8
+				    }
+			    }
+			}
 		}
 	}
 	focus = {
@@ -320,7 +345,7 @@ focus_tree = {
 		text_icon = ZSH_focus_style
 		x =9
 		y = 8
-		cost = 0
+		cost = 5
 		icon = GFX_focus_zsh11
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -332,6 +357,34 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 8_focus_16
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZHJ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZYX
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZSB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZDM
+				type = annex_everything
+			}
+			hidden_effect = {
+			    load_oob = "default_devision"
+			    capital_scope = {
+				    create_unit = {
+					    division = "name = \"民兵武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					    owner = ROOT
+					    count = 10
+				    }
+			    }
+			}
 		}
 	}
 	focus = {
@@ -346,6 +399,11 @@ focus_tree = {
 		prerequisite = {
 			focus = 8_focus_10
 		}
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_17
@@ -358,6 +416,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 8_focus_10
+		}
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
 		}
 	}
 	focus = {
@@ -495,6 +558,11 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_28
@@ -530,6 +598,11 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_31
@@ -539,6 +612,11 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_32
@@ -549,6 +627,11 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ZSH = {
+				has_country_flag = chongqi
+			}
+		}
 	}
 	focus = {
 		id = 8_focus_33

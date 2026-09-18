@@ -24,6 +24,16 @@ focus_tree = {
 				right_side = romu_right_side				# will keep the last set side if not specified
 				set_default = yes				# whether or not to reset the power balance to the initial value, default = no
 			}
+			hidden_effect = {
+			    load_oob = "default_devision"
+			    capital_scope = {
+				    create_unit = {
+					    division = "name = \"民兵武装\" division_template = \"民兵师\" start_experience_factor = 0.4"
+					    owner = ROOT
+					    count = 14
+				    }
+			    }
+			}
 		}
 	}
 	focus = {
@@ -234,6 +244,16 @@ focus_tree = {
 				id = ZDM_power_balance
 				value = 0.05
 				tooltip_side = romu_right_side
+			}
+			hidden_effect = {
+			    load_oob = "default_devision"
+			    capital_scope = {
+				    create_unit = {
+					    division = "name = \"民兵装甲车武装\" division_template = \"装甲师\" start_experience_factor = 0.4"
+					    owner = ROOT
+					    count = 3
+				    }
+			    }
 			}
 		}
 	}

@@ -1,0 +1,36 @@
+
+YSS_focus_plan = {
+	name = "earlier stage focus"
+
+	allowed = {
+		original_tag = YSS
+	}
+
+	enable = {
+		is_YSS_always_path_plan = yes
+	}
+
+	abort = {
+		any_enemy_country = {
+			is_major = yes
+		}
+	}
+
+	ai_national_focuses = {
+		YSS_focus_2
+		YSS_focus_4
+		YSS_focus_3
+		YSS_focus_5
+		YSS_focus_6
+		YSS_focus_33
+		YSS_focus_96
+		YSS_focus_116
+		YSS_focus_94
+		YSS_focus_95
+	}
+
+	weight = {
+		factor = 50.0
+	}
+
+}

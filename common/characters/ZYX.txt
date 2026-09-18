@@ -1,12 +1,13 @@
 characters = {
 	ZYX_anqiubifei = {
-		name = "安丘比菲*duce"
+		name = "加布里埃尔·邓南遮"
 		portraits = {
 			civilian = {
 				large = "anqiubifei"
 			}
 		}
 		country_leader = {
+			desc = anqiubifei_DESC
 			ideology = nazism
 			traits = { 
 		    story_laoda_trait	

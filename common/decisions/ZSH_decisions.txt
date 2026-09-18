@@ -3,6 +3,9 @@ ZSH_stabilize_country = { #稳定国内
 		days_remove = 30
 		fire_only_once = yes
 		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
 		remove_effect = {
 			remove_ideas = ZSH_people_support_1
 			add_ideas = ZSH_people_support_2
@@ -42,6 +45,9 @@ ZSH_Bandit_troubles_rampant = { #匪患猖獗
 	}
 	Finish_bandits = { #终结匪患
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
 		custom_cost_text = infantry_equipment_cost
 		custom_cost_trigger = {
 			NOT = {

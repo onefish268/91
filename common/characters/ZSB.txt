@@ -7,6 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
+			desc = sitanli_DESC
 			ideology = despotism
 			traits = { 
 		        story_ganshezhe_trait	
