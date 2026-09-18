@@ -1,4 +1,4 @@
-version="1.19.30"
+version="1.19.3"
 dependencies={
 	"Adorable heart"
 }
