@@ -246,7 +246,7 @@ focus_tree = {
 				tooltip_side = romu_right_side
 			}
 			hidden_effect = {
-			    load_oob = "default_devision"
+				load_oob = "tank_devision"
 			    capital_scope = {
 				    create_unit = {
 					    division = "name = \"民兵装甲车武装\" division_template = \"装甲师\" start_experience_factor = 0.4"
