@@ -22,9 +22,9 @@ YSS_air = {#飞机
 	}
 }
 
-YSS_artillery = {#火炮
+YSS_artillery_org = {#火炮
 	include = generic_artillery_organization
-	name = YSS_artillery
+	name = YSS_artillery_org
 	icon = GFX_idea_YSS_artillery
 	allowed = {
 		tag = YSS
