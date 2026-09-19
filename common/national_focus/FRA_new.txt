@@ -2,10 +2,10 @@ focus_tree = {
 	id = FRA_new_focus_tree
 	country = {
 		factor = 0
-		modifier = {
-			add = 100
-			tag = FRA
-		}
+		#modifier = {
+		#	add = 100
+		#	tag = FRA
+		#}
 	}
 	default = no
 	focus = {

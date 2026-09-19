@@ -62,9 +62,8 @@ ideas = {
 				armor = {
 					maximum_speed = 0.1
 					reliability = -0.05
-					build_cost_ic = -0.10
+					build_cost_ic = -0.1
 					instant = yes
-
 				}
 			}
 		}
@@ -77,7 +76,7 @@ ideas = {
 			equipment_bonus = {
 				support_equipment = {
 					reliability = 0.05
-					build_cost_ic = -0.10
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				armor = {
@@ -93,7 +92,7 @@ ideas = {
 					instant = yes
 				}
 			}
-		}	
+		}
 		#对接产业
 		ZYX_Industry_linkup = {
 			picture = ARG_rapid_militarization
@@ -333,7 +332,7 @@ ideas = {
 		ZYX_Cruiser_force = {
 			picture = AUS_naval_efficiency_idea
 			modifier = {
-				navy_max_range_factor = 0.20
+				navy_max_range_factor = 0.2
 				naval_supply_consumption_factor = 0.05
 			}
 		}
@@ -388,7 +387,7 @@ ideas = {
 			picture = CHI_protracted_warfare
 			modifier = {
 				stability_factor = -0.05
-				war_support_factor = 0.20
+				war_support_factor = 0.2
 				intelligence_agency_defense = 1
 			}
 		}
@@ -479,7 +478,7 @@ ideas = {
 			}
 		}
 		#平等原则
-		ZYX_Equal_principle= {
+		ZYX_Equal_principle = {
 			picture = ARG_no_gods_no_masters
 			modifier = {
 				army_core_attack_factor = 0.1
@@ -742,6 +741,181 @@ ideas = {
 				compliance_growth = 0.1
 				resistance_decay = 0.1
 				resistance_activity = -0.1
+			}
+		}
+
+		ZYX_idea_focus = {
+			name = YSS_old_idea
+			modifier = {
+			}
+		}
+
+		ZYX_idea_focus_3_focus_47 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = 0.4
+				mobilization_speed = -0.4
+				land_reinforce_rate = -0.1
+				conscription_factor = -0.15
+				monthly_population = -0.4
+				global_building_slots_factor = -0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_48 = {
+			name = YSS_new_idea
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_factory_max_efficiency_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.3
+				line_change_production_efficiency_factor = -0.4
+				production_speed_infrastructure_factor = -0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_49 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_50 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_51 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.3
+				global_building_slots_factor = 0.3
+			}
+		}
+		ZYX_idea_focus_3_focus_52 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.3
+			}
+		}
+		ZYX_idea_focus_3_focus_53 = {
+			name = YSS_new_idea
+			modifier = {
+				mobilization_speed = 0.2
+				land_reinforce_rate = 0.2
+				conscription_factor = 0.2
+				monthly_population = 0.2
+				global_building_slots_factor = 0.1
+			}
+		}
+		ZYX_idea_focus_3_focus_57 = {
+			name = YSS_new_idea
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_58 = {
+			name = YSS_new_idea
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_59 = {
+			name = YSS_new_idea
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_60 = {
+			name = YSS_new_idea
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_61 = {
+			name = YSS_new_idea
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_62 = {
+			name = YSS_new_idea
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ZYX_idea_focus_3_focus_64 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.15
+				mobilization_speed = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_65 = {
+			name = YSS_new_idea
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_66 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = -0.15
+				army_org_factor = -0.1
+				army_morale_factor = -0.15
+				conscription_factor = -0.15
+				political_power_cost = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_67 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_68 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_70 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_71 = {
+			name = YSS_new_idea
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+		ZYX_idea_focus_3_focus_72 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.2
+			}
+		}
+		ZYX_idea_focus_3_focus_73 = {
+			name = YSS_new_idea
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 	}
