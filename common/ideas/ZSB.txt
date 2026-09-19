@@ -1,5 +1,4 @@
 ideas = {
-
 	country = {
 		ZSB_1 = {
 			picture = ziligengsheng
@@ -18,7 +17,7 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.1
 				production_speed_buildings_factor = 0.1
-				army_org_factor = 0.1 
+				army_org_factor = 0.1
 				army_morale_factor = 0.1
 			}
 		}
@@ -27,11 +26,10 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.15
 				army_defence_factor = 0.15
-				surrender_limit = 0.15 
+				surrender_limit = 0.15
 				mobilization_speed = 0.15
 			}
 		}
-
 		ZSB_Build_faster = {
 			picture = ZSB_Build_faster_idea
 			modifier = {
@@ -39,7 +37,6 @@ ideas = {
 				industry_repair_factor = 0.15
 			}
 		}
-
 		ZSB_arms_factory_construction = {
 			picture = ARG_economic_reactivation
 			modifier = {
@@ -47,7 +44,6 @@ ideas = {
 				global_building_slots_factor = 0.15
 			}
 		}
-
 		ZSB_Representative = {
 			picture = ZSB_Representative_idea
 			modifier = {
@@ -56,7 +52,6 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
-
 		ZSB_Ensure_supply = {
 			picture = ZSB_Ensure_supply_idea
 			modifier = {
@@ -66,7 +61,6 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
-
 		ZSB_More_talent = {
 			picture = ZSB_More_talent_idea
 			modifier = {
@@ -75,7 +69,6 @@ ideas = {
 				party_popularity_stability_factor = 0.2
 			}
 		}
-
 		ZSB_Resources_control = {
 			picture = ZSB_Resources_control_idea
 			modifier = {
@@ -87,8 +80,8 @@ ideas = {
 		ZSB_Economic_expert_from_ENG = {
 			picture = ZSB_Economic_expert_from_ENG_idea
 			modifier = {
-				hcp_income_factor_monthly = 0.20 #
-				consumer_goods_expected_value = -0.20
+				hcp_income_factor_monthly = 0.2				#
+				consumer_goods_expected_value = -0.2
 				production_speed_buildings_factor = 0.15
 			}
 		}
@@ -104,7 +97,7 @@ ideas = {
 		}
 		#哈弗尔军校
 		ZSB_Haver_Military_academy = {
-			picture =  ZSB_Haver_Military_academy_idea
+			picture = ZSB_Haver_Military_academy_idea
 			modifier = {
 				army_leader_start_level = 2
 				experience_gain_factor = 0.25
@@ -180,7 +173,7 @@ ideas = {
 		ZSB_Women_also_as_soilder = {
 			picture = ZSB_Women_also_as_soilder_idea
 			modifier = {
-				conscription_factor = 0.30
+				conscription_factor = 0.3
 			}
 		}
 		#一体化训练方案
@@ -264,7 +257,6 @@ ideas = {
 				terrain_penalty_reduction = -0.15
 			}
 		}
-
 		#空中支援
 		ZSB_Air_support = {
 			picture = ITA_regia_aeronautica_1
@@ -327,7 +319,6 @@ ideas = {
 				air_interception_detect_factor = 0.2
 			}
 		}
-
 		#联邦海军
 		ZSB_Federal_navy = {
 			picture = ARG_arsenal_naval_buenos_aires
@@ -341,7 +332,7 @@ ideas = {
 		ZSB_Ocean_liners = {
 			picture = AUS_naval_efficiency_idea
 			modifier = {
-				navy_max_range_factor = 0.20
+				navy_max_range_factor = 0.2
 				naval_supply_consumption_factor = 0.05
 			}
 		}
@@ -371,8 +362,8 @@ ideas = {
 				production_speed_dockyard_factor = 0.2
 			}
 			research_bonus = {
-                naval_equipment = 0.15
-            }
+				naval_equipment = 0.15
+			}
 		}
 		#海军船务局
 		ZSB_Naval_bureau = {
@@ -408,6 +399,398 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
 				production_speed_dockyard_factor = 0.2
 				consumer_goods_factor = 0.1
+			}
+		}
+
+		ZSB_idea_focus = {
+			name = YSS_old_idea
+			modifier = {
+			}
+		}
+
+		ZSB_idea_focus_6_focus_26 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = 0.7
+				stability_weekly = -0.005
+				war_support_weekly = -0.003
+				global_building_slots_factor = -0.7
+				monthly_population = -0.6
+				production_speed_buildings_factor = -0.45
+				industrial_capacity_factory = -0.35
+				local_factories = -0.2
+				political_power_gain = -0.35
+			}
+		}
+		ZSB_idea_focus_6_focus_11 = {
+			name = YSS_new_idea
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		ZSB_idea_focus_6_focus_12 = {
+			name = YSS_new_idea
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		ZSB_idea_focus_6_focus_13 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_16 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = -0.003
+				war_support_weekly = -0.003
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_17 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_18 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.2
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_25 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_27 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_33 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_34 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.15
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_36 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.15
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_37 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_38 = {
+			name = YSS_new_idea
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_40 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_41 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_42 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_43 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_45 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+		}
+		ZSB_idea_focus_6_focus_46 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_47 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_48 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_49 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_50 = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_51 = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_52 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_53 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.1
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_54 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_55 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.2
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_56 = {
+			name = YSS_new_idea
+			modifier = {
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_57 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_58 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_6_focus_59 = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_ZSB_focus_shisi = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.2
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_ZSB_focus_shiwu = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_ZSB_focus_shijiu = {
+			name = YSS_new_idea
+			modifier = {
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_ZSB_focus_ershi = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				monthly_population = 0.1
+			}
+		}
+		ZSB_idea_focus_zsb_focus_ershiyi = {
+			name = YSS_new_idea
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_ershier = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_ershisan = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_ershisi = {
+			name = YSS_new_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_factories = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_sanshiyi = {
+			name = YSS_new_idea
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_sanshier = {
+			name = YSS_new_idea
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZSB_idea_focus_zsb_focus_sanshiwu = {
+			name = YSS_new_idea
+			modifier = {
+				industrial_capacity_factory = 0.05
 			}
 		}
 	}

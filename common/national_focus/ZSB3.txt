@@ -258,6 +258,12 @@ focus_tree = {
 			focus = 6_focus_3
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_12
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_10 = 0.5
 			}
@@ -277,6 +283,12 @@ focus_tree = {
 			focus = 6_focus_2
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_11
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_10 = 0.5
 			}
@@ -296,6 +308,12 @@ focus_tree = {
 			focus = 6_focus_11
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_13
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -321,6 +339,12 @@ focus_tree = {
 			focus = 6_focus_12
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_16
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = -0.003
 			}
@@ -350,6 +374,12 @@ focus_tree = {
 			focus = 6_focus_16
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_17
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -415,6 +445,12 @@ focus_tree = {
 			focus = 6_focus_16
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_18
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -483,6 +519,12 @@ focus_tree = {
 			focus = ZSB_focus_shisi
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_ZSB_focus_shijiu
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -511,6 +553,12 @@ focus_tree = {
 			focus = ZSB_focus_shiwu
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_ZSB_focus_ershi
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -550,6 +598,12 @@ focus_tree = {
 			focus = ZSB_focus_shijiu
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_ershiyi
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -584,6 +638,12 @@ focus_tree = {
 			focus = ZSB_focus_ershi
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_ershier
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -629,6 +689,12 @@ focus_tree = {
 			focus = zsb_focus_ershiyi
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_ershisan
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -657,6 +723,12 @@ focus_tree = {
 			focus = zsb_focus_ershier
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_ershisi
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -691,6 +763,12 @@ focus_tree = {
 			focus = 6_focus_17
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_25
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -733,6 +811,7 @@ focus_tree = {
 			focus = 6_focus_4
 		}
 		completion_reward = {
+			add_ideas = { ZSB_idea_focus_6_focus_26 }
 			add_dynamic_modifier = {
 				modifier = ZSB_gold
 				scope = ZSB
@@ -783,6 +862,12 @@ focus_tree = {
 			focus = 6_focus_18
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_27
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -886,6 +971,12 @@ focus_tree = {
 			focus = 6_focus_29
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_sanshiyi
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_8 = 0.05
 			}
@@ -906,6 +997,12 @@ focus_tree = {
 			focus = 6_focus_11
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_sanshier
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_7 = 0.05
 			}
@@ -946,6 +1043,12 @@ focus_tree = {
 			focus = zsb_focus_sanshier
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_33
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -981,6 +1084,12 @@ focus_tree = {
 			focus = 6_focus_33
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_34
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_5 = 0.1
 			}
@@ -1031,6 +1140,12 @@ focus_tree = {
 			focus = 6_focus_33
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_zsb_focus_sanshiwu
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_8 = 0.05
 			}
@@ -1050,6 +1165,12 @@ focus_tree = {
 			focus = 6_focus_33
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_36
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_5 = 0.1
 			}
@@ -1103,6 +1224,12 @@ focus_tree = {
 			focus = 6_focus_44
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_38
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_7 = 0.05
 			}
@@ -1139,6 +1266,12 @@ focus_tree = {
 			focus = 6_focus_44
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_37
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_5 = 0.1
 			}
@@ -1201,6 +1334,12 @@ focus_tree = {
 			focus = 6_focus_25
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_40
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -1224,6 +1363,12 @@ focus_tree = {
 			focus = 6_focus_27
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_41
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -1246,6 +1391,12 @@ focus_tree = {
 			focus = 6_focus_40
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_42
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1301,6 +1452,12 @@ focus_tree = {
 			focus = 6_focus_41
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_43
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1351,6 +1508,12 @@ focus_tree = {
 			focus = 6_focus_12
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_45
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1374,6 +1537,12 @@ focus_tree = {
 			focus = 6_focus_42
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_46
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1411,6 +1580,12 @@ focus_tree = {
 			focus = 6_focus_43
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_47
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1448,6 +1623,12 @@ focus_tree = {
 			focus = 6_focus_47
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_48
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1496,6 +1677,12 @@ focus_tree = {
 			focus = 6_focus_12
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_49
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1524,6 +1711,12 @@ focus_tree = {
 			focus = 6_focus_49
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_50
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -1549,6 +1742,12 @@ focus_tree = {
 			focus = 6_focus_50
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_51
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}
@@ -1585,6 +1784,12 @@ focus_tree = {
 			focus = 6_focus_50
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_52
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -1607,6 +1812,12 @@ focus_tree = {
 			focus = 6_focus_50
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_53
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_5 = 0.1
 			}
@@ -1654,6 +1865,12 @@ focus_tree = {
 			focus = 6_focus_51
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_54
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -1676,6 +1893,12 @@ focus_tree = {
 			focus = 6_focus_52
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_55
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -1704,6 +1927,12 @@ focus_tree = {
 			focus = 6_focus_53
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_56
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_5 = 0.1
 			}
@@ -1744,6 +1973,12 @@ focus_tree = {
 			focus = 6_focus_54
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_57
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -1773,6 +2008,12 @@ focus_tree = {
 			focus = 6_focus_55
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_58
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_4 = 0.05
 			}
@@ -1805,6 +2046,12 @@ focus_tree = {
 			focus = 6_focus_56
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_6_focus_59
+				}
+			}
 			hidden_effect = {
                 scoped_play_song = "飞向太空"
             }
@@ -2790,6 +3037,12 @@ focus_tree = {
 			focus = 6_focus_13
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_ZSB_focus_shisi
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_2 = 0.001
 			}
@@ -2868,6 +3121,12 @@ focus_tree = {
 			focus = 6_focus_13
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZSB_idea_focus
+					add_idea = ZSB_idea_focus_ZSB_focus_shiwu
+				}
+			}
 			add_to_variable = {
 				ZSB_gold_1 = -0.1
 			}

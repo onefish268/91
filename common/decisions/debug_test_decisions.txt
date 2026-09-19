@@ -44,6 +44,23 @@ debug_test_categories = {
 		}
 	}
 
+	show_all_YSS_focus = {
+		complete_effect = {
+			set_country_flag = YSS_kongjun_baogao2
+			set_country_flag = YSS_kongjun_baogao3
+			set_country_flag = YSS_kongjun_baogao4
+			set_country_flag = YSS_kongjun_baogao5
+
+			set_country_flag = YSS_hongjun_baogao1
+			set_country_flag = YSS_hongjun_baogao2
+			set_country_flag = YSS_hongjun_baogao3
+			set_country_flag = YSS_hongjun_baogao4
+			set_country_flag = YSS_hongjun_baogao5
+
+			set_country_flag = YSS_haijun_baogao
+		}
+	}
+
 	the_third = {
 		icon = generic_construction
 

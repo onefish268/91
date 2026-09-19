@@ -1699,6 +1699,7 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
+			add_ideas = { ZYX_idea_focus_3_focus_47 }
 			add_dynamic_modifier = {
 				modifier = ZIM_10
 				scope = ZYX
@@ -1737,6 +1738,7 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
+			add_ideas = { ZYX_idea_focus_3_focus_48 }
 			add_dynamic_modifier = {
 				modifier = ZIM_11
 				scope = ZYX
@@ -1791,6 +1793,12 @@ focus_tree = {
 			focus = 3_focus_47
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_49
+				}
+			}
 			hidden_effect = {
 				add_to_variable = {
 					ZIM_10_1 = -0.2
@@ -1812,6 +1820,12 @@ focus_tree = {
 			focus = 3_focus_47
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_50
+				}
+			}
 			add_to_variable = {
 				ZIM_10_5 = 0.2
 			}
@@ -1831,6 +1845,12 @@ focus_tree = {
 			focus = 3_focus_49
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_51
+				}
+			}
 			add_to_variable = {
 				ZIM_10_1 = -0.3
 			}
@@ -1867,6 +1887,12 @@ focus_tree = {
 			focus = 3_focus_50
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_52
+				}
+			}
 			add_to_variable = {
 				ZIM_10_5 = 0.3
 			}
@@ -1889,6 +1915,12 @@ focus_tree = {
 			focus = 3_focus_52
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_53
+				}
+			}
 			add_to_variable = {
 				ZIM_10_2 = 0.2
 			}
@@ -2016,6 +2048,12 @@ focus_tree = {
 			focus = 3_focus_48
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_57
+				}
+			}
 			add_to_variable = {
 				ZIM_11_6 = 0.15
 			}
@@ -2035,6 +2073,12 @@ focus_tree = {
 			focus = 3_focus_57
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_58
+				}
+			}
 			add_to_variable = {
 				ZIM_11_6 = 0.15
 			}
@@ -2057,6 +2101,12 @@ focus_tree = {
 			focus = 3_focus_58
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_59
+				}
+			}
 			add_to_variable = {
 				ZIM_11_6 = 0.2
 			}
@@ -2089,6 +2139,12 @@ focus_tree = {
 			focus = 3_focus_48
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_60
+				}
+			}
 			add_to_variable = {
 				ZIM_11_4 = 0.15
 			}
@@ -2130,6 +2186,12 @@ focus_tree = {
 			focus = 3_focus_48
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_61
+				}
+			}
 			add_to_variable = {
 				ZIM_11_2 = 0.15
 			}
@@ -2167,6 +2229,12 @@ focus_tree = {
 			focus = 3_focus_61
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_62
+				}
+			}
 			add_to_variable = {
 				ZIM_11_4 = 0.15
 			}
@@ -2214,6 +2282,12 @@ focus_tree = {
 			focus = 3_focus_62
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_64
+				}
+			}
 			add_to_variable = {
 				ZIM_10_1 = -0.15
 			}
@@ -2263,6 +2337,12 @@ focus_tree = {
 			focus = 3_focus_62
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_65
+				}
+			}
 			add_to_variable = {
 				ZIM_11_3 = 0.15
 			}
@@ -2307,6 +2387,7 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
+			add_ideas = { ZYX_idea_focus_3_focus_66 }
 			add_dynamic_modifier = {
 				modifier = ZIM_12
 				scope = ZYX
@@ -2342,6 +2423,12 @@ focus_tree = {
 			focus = 3_focus_64
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_67
+				}
+			}
 			add_to_variable = {
 				ZIM_10_6 = 0.15
 			}
@@ -2387,6 +2474,12 @@ focus_tree = {
 			focus = 3_focus_66
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_68
+				}
+			}
 			add_to_variable = {
 				ZIM_12_1 = 0.2
 			}
@@ -2429,6 +2522,12 @@ focus_tree = {
 			focus = 3_focus_68
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_71
+				}
+			}
 			add_to_variable = {
 				ZIM_12_2 = 0.15
 			}
@@ -2454,6 +2553,12 @@ focus_tree = {
 			focus = 3_focus_70
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_72
+				}
+			}
 			add_to_variable = {
 				ZIM_12_6 = -0.1
 			}
@@ -2476,6 +2581,12 @@ focus_tree = {
 			focus = 3_focus_69
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_73
+				}
+			}
 			add_to_variable = {
 				ZIM_11_1 = 0.1
 			}
@@ -4221,6 +4332,12 @@ focus_tree = {
 			focus = 3_focus_66
 		}
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZYX_idea_focus
+					add_idea = ZYX_idea_focus_3_focus_70
+				}
+			}
 			add_to_variable = {
 				ZIM_12_6 = -0.15
 			}
