@@ -8,6 +8,10 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 900
+		y = 1100
+	}
 	focus = {
 		id = new_focus_1
 		x = 13

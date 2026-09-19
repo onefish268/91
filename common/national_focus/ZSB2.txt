@@ -8,6 +8,10 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 80
+		y = 2000
+	}
 	focus = {
 		id = 5_focus_1
 		x = 1
@@ -1137,14 +1141,5 @@ focus_tree = {
 				exists = no
 			}
 		}
-	}
-	focus = {
-		id = 5_focus_44
-		x = -18
-		y = 1
-		cost = 0
-		text_icon = ZSB_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
 	}
 }
