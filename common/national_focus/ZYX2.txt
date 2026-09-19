@@ -11,8 +11,8 @@ focus_tree = {
 	reset_on_civilwar = no
 	shared_focus = cks_1
 	continuous_focus_position = {
-		x = 1500
-		y = 1500
+		x = 60
+		y = 1200
 	}
 	focus = {
 		id = 3_focus_1

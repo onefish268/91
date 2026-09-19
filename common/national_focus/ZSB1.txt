@@ -8,6 +8,10 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 800
+		y = 1100
+	}
 	focus = {
 		id = 4_focus_1
 		x = 11
@@ -105,15 +109,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = "我们将开始处理内部事务"
 		}
-	}
-	focus = {
-		id = 4_focus_9999
-		x = 21
-		y = -10
-		cost = 0
-		text_icon = ZSB_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
 	}
 	focus = {
 		id = 4_focus_7
@@ -416,14 +411,5 @@ focus_tree = {
 		completion_reward = {
 			load_focus_tree = ZSB2_focus_tree
 		}
-	}
-	focus = {
-		id = 4_focus_9998
-		x = 21
-		y = 15
-		cost = 0
-		text_icon = ZSB_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
 	}
 }

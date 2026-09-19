@@ -8,6 +8,10 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 1860
+		y = 1600
+	}
 	focus = {
 		id = 7_focus_1
 		icon = GFX_UBR_heer
