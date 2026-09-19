@@ -28,13 +28,13 @@ ZYX_inner_circle_inlay_window = {
         }
         ZYX_inner_circle_person_4 = {
             inner_person_4 = {
-                has_completed_focus = three_focus_8
+                has_completed_focus = three_focus_6
             }
         }
 
         ZYX_inner_circle_person_5 = {
             inner_person_5 = {
-                has_completed_focus = three_focus_6
+                has_completed_focus = three_focus_8
             }
         }
     }
