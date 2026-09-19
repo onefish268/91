@@ -1365,3 +1365,22 @@ country_event = {#老大向丽莎抱怨
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#结语
+    id = ZYX.40
+    title = ZYX.40.t
+    desc = ZYX.40.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+        name = ZYX.40.a
+        hidden_effect = {
+            scoped_play_song = "一心会结语"
+        }
+        set_variable = { end_ui_var = 1 }
+        ai_chance = { base = 50 }
+    }
+}

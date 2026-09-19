@@ -349,4 +349,24 @@ on_actions = {
             }
         }
     }
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ALS }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = ALS
+					}
+					annex_country = { target = ALS transfer_troops = yes }
+					country_event = {
+				        id = ZYX.40
+					    days = 10
+			        }
+				}
+			}
+		}
+	}
 }

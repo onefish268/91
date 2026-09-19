@@ -103,3 +103,8 @@ music = {
     file = "红军大步向前.ogg"
     volume = 1
 }
+music = {
+    name = "一心会结语"
+    file = "一心会结语.ogg"
+    volume = 1
+}

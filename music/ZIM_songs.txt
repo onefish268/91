@@ -176,3 +176,11 @@ music = {
         }
     }
 }
+music = {
+    song = "一心会结语"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
