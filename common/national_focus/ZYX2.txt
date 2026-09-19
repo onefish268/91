@@ -1699,7 +1699,9 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = { ZYX_idea_focus_3_focus_47 }
+			effect_tooltip = {
+				add_ideas = { ZYX_idea_focus_3_focus_47 }
+			}
 			add_dynamic_modifier = {
 				modifier = ZIM_10
 				scope = ZYX
@@ -1738,7 +1740,9 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = { ZYX_idea_focus_3_focus_48 }
+			effect_tooltip = {
+				add_ideas = { ZYX_idea_focus_3_focus_48 }
+			}
 			add_dynamic_modifier = {
 				modifier = ZIM_11
 				scope = ZYX
@@ -2387,7 +2391,9 @@ focus_tree = {
 			focus = 3_focus_46
 		}
 		completion_reward = {
-			add_ideas = { ZYX_idea_focus_3_focus_66 }
+			effect_tooltip = {
+				add_ideas = { ZYX_idea_focus_3_focus_66 }
+			}
 			add_dynamic_modifier = {
 				modifier = ZIM_12
 				scope = ZYX

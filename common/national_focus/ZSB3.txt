@@ -807,7 +807,9 @@ focus_tree = {
 			focus = 6_focus_4
 		}
 		completion_reward = {
-			add_ideas = { ZSB_idea_focus_6_focus_26 }
+			effect_tooltip = {
+				add_ideas = { ZSB_idea_focus_6_focus_26 }
+			}
 			add_dynamic_modifier = {
 				modifier = ZSB_gold
 				scope = ZSB
