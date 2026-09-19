@@ -11,9 +11,15 @@ focus_tree = {
 	reset_on_civilwar = no
 	shared_focus = cks_1
 	continuous_focus_position = {
-		x = 60
+		x = 0
 		y = 1200
 	}
+
+	inlay_window = {
+		id = ZYX_inner_circle_inlay_window
+		position = { x = 790 y = 1330 }
+	}
+
 	focus = {
 		id = 3_focus_1
 		x = 0

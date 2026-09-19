@@ -47,7 +47,7 @@ ZYX_focus_plan = {
 		2_focus_43
 		2_focus_42
 		2_focus_44
-		2_focus_46
+		two_focus_46
 
         #统一后
 		cks_1

@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+        name = inner_circle_background
+		texturefile = "gfx/interface/gui/ZYX/665.png"
+    }
+	spriteType = {
+        name = inner_person_0
+		texturefile = "gfx/interface/gui/ZYX/666.png"
+    }
+	spriteType = {
+        name = inner_person_1
+		texturefile = "gfx/interface/gui/ZYX/667.png"
+    }
+	spriteType = {
+        name = inner_person_2
+		texturefile = "gfx/interface/gui/ZYX/668.png"
+    }
+	spriteType = {
+        name = inner_person_3
+		texturefile = "gfx/interface/gui/ZYX/669.png"
+    }
+	spriteType = {
+        name = inner_person_4
+		texturefile = "gfx/interface/gui/ZYX/670.png"
+    }
+	spriteType = {
+        name = inner_person_5
+		texturefile = "gfx/interface/gui/ZYX/671.png"
+    }
+}

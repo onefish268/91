@@ -1,0 +1,41 @@
+ZYX_inner_circle_inlay_window = {
+    window_name = ZYX_focus_window
+    internal = yes
+    visible = {
+    }
+
+    scripted_images = {
+        ZYX_inner_circle_person_0 = {
+            inner_person_0 = {
+                has_completed_focus = three_focus_7
+            }
+        }
+
+        ZYX_inner_circle_person_1 = {
+            inner_person_1 = {
+                has_completed_focus = three_focus_4
+            }
+        }
+        #ZYX_inner_circle_person_2 = {
+        #    inner_person_2 = {
+        #        has_completed_focus = two_focus_5
+        #    }
+        #}
+        ZYX_inner_circle_person_3 = {
+            inner_person_3 = {
+                has_completed_focus = three_focus_5
+            }
+        }
+        ZYX_inner_circle_person_4 = {
+            inner_person_4 = {
+                has_completed_focus = three_focus_8
+            }
+        }
+
+        ZYX_inner_circle_person_5 = {
+            inner_person_5 = {
+                has_completed_focus = three_focus_6
+            }
+        }
+    }
+}

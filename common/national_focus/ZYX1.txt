@@ -810,7 +810,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 2_focus_46
+		id = two_focus_46
 		x = 16
 		y = 18
 		cost = 3
