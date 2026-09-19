@@ -12,7 +12,7 @@ focus_tree = {
 	shared_focus = cks_1
 	continuous_focus_position = {
 		x = 60
-		y = 1100
+		y = 1200
 	}
 	focus = {
 		id = 3_focus_1

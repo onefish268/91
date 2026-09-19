@@ -111,15 +111,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = 4_focus_9999
-		x = 21
-		y = -10
-		cost = 0
-		text_icon = ZSB_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-	}
-	focus = {
 		id = 4_focus_7
 		x = 3
 		y = 3
