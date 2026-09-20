@@ -1,22 +1,24 @@
 state = {
-	id = 556
-	name = "STATE_556"	#French sudan
-	manpower = 552415
+	id = 809
+	name = "STATE_809"
+	manpower = 1024132
 	state_category = two
-	local_supplies = 2
+	local_supplies = 1
 	history = {
 		owner = SAF
 		add_core_of = SAF
+		
 		buildings = {
 			infrastructure = 1
 		}
 		start_resistance = yes
-		set_resistance = 56
-		set_compliance = 2
+		set_resistance = 34
+		set_compliance = 8
 	}
 	provinces = {
-		2012
-		10812
-		10915
+		8028
+		10758
+		10780
+		10805
 	}
 }

@@ -1,0 +1,33 @@
+state = {
+	id = 298
+	name = "STATE_298"
+	manpower = 608000
+	state_category = six
+	resources = {
+		oil = 36
+		rubber = 27
+	}
+	history = {
+		owner = SAF
+		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 13604
+		}
+		victory_points = {
+			13604
+			3
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+			13604 = {
+				naval_base = 6
+			}
+		}
+	}
+	provinces = {
+		7959
+		13604
+	}
+}

@@ -1,29 +1,30 @@
 state = {
-	id = 878
-	name = "STATE_878"
-	manpower = 2234755
+	id = 1244
+	name = "STATE_1244"
+	manpower = 1681809
 	state_category = two
 	history = {
-		owner = WDL
-		add_core_of = WDL
+		owner = SAF
 		add_core_of = SAF
 		add_to_array = {
-			state_victory_points = 13214
+			state_victory_points = 4889
 		}
 		#set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
-			13214
-			3
+			4889
+			1
 		}
-		#Kaduna
+		#Yola
 	}
 	provinces = {
-		4938
-		4972
-		12906
-		13214
+		4889
+		7978
+		8021
+		10820
+		10979
+		12936
 	}
 }

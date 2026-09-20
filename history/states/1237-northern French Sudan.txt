@@ -1,18 +1,12 @@
 state = {
 	id = 1237
 	name = "STATE_1237"
-	manpower = 1102415
+	manpower = 552415
 	state_category = one
 	history = {
 		owner = SAF
 		add_core_of = SAF
-		add_to_array = {
-			state_victory_points = 10788
-		}
-		victory_points = {
-			10788
-			1
-		}		#Timbuktu
+		
 		buildings = {
 			infrastructure = 1
 		}
@@ -23,8 +17,6 @@ state = {
 	provinces = {
 		7930
 		7954
-		2044
-		10788
 		5101
 	}
 }

@@ -1,12 +1,19 @@
 state = {
-	id = 556
-	name = "STATE_556"	#French sudan
+	id = 1240
+	name = "STATE_1240"	#French sudan
 	manpower = 552415
 	state_category = two
 	local_supplies = 2
 	history = {
 		owner = SAF
 		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 10788
+		}
+		victory_points = {
+			10788
+			1
+		}		#Bamako
 		buildings = {
 			infrastructure = 1
 		}
@@ -15,8 +22,7 @@ state = {
 		set_compliance = 2
 	}
 	provinces = {
-		2012
-		10812
-		10915
+		10788
+		2044
 	}
 }

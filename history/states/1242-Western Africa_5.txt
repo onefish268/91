@@ -1,0 +1,29 @@
+state = {
+	id = 1242
+	name = "STATE_1242"
+	manpower = 2024132
+	state_category = two
+	local_supplies = 1
+	history = {
+		owner = SAF
+		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 2056
+		}
+		victory_points = {
+			2056
+			1
+		}		#Niamey
+		buildings = {
+			infrastructure = 1
+		}
+		start_resistance = yes
+		set_resistance = 34
+		set_compliance = 8
+	}
+	provinces = {
+		1975
+		2056
+		12707
+	}
+}
