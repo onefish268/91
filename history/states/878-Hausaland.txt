@@ -1,0 +1,48 @@
+state = {
+	id = 878
+	name = "STATE_878"
+	manpower = 6634755
+	state_category = two
+	history = {
+		owner = WDL
+		add_core_of = WDL
+		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 13214
+		}
+		add_to_array = {
+			state_victory_points = 1969
+		}
+		add_to_array = {
+			state_victory_points = 1891
+		}
+		#set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13214
+			3
+		}
+		#Kaduna
+		victory_points = {
+			1969
+			2
+		}
+		#Katsena
+		victory_points = {
+			1891
+			1
+		}
+		#Sokoto
+	}
+	provinces = {
+		1891
+		1969
+		4938
+		4972
+		12906
+		13214
+		13494
+	}
+}

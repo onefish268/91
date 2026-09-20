@@ -241,6 +241,14 @@ SAF = {
     color = rgb { 254 242 60 }
     color_ui = rgb { 254 242 60 }
 }
+WDL = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
+LWY = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
 SAU = {
     color = rgb { 47 79 79 }
     color_ui = rgb { 47 79 79 }
