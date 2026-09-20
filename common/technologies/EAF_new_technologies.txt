@@ -5,7 +5,6 @@ technologies = {
 			always = no
 		}
 		enable_subunits = {
-			rangers_hideout
 			musketeer_garrison
 			holy_order
 			barbarian_hall
@@ -16,10 +15,6 @@ technologies = {
 			assassins_guild
 			knights_templar
 			necromancer_tower
-			archmage_tower
-			royal_archers
-			paladin_covenant
-			dune_sentinels
 		}
 	}
 	WDL_army_tech = {
@@ -28,16 +23,11 @@ technologies = {
 			always = no
 		}
 		enable_subunits = {
-			infernal_mage
+			shadow_archers
 			dark_knights_hall
-			melting_furnace
-			specters_mausoleum
-			bone_flingers
-			grim_cemetery
-			rotten_forest
 			blazing_gem
-			wicked_sisters
-			demon_pit
+			royal_archers
+			triple_cannon
 		}
 	}
 	SZL_army_tech = {
@@ -48,10 +38,8 @@ technologies = {
 		enable_subunits = {
 			arcane_archers
 			high_elven_mage
-			arch_druid_henge
-			tree_spirit_envoy
-			elven_stargazers
-			dragon_hatchery
+			rangers_hideout
+
 		}
 	}
 	BZL_army_tech = {
@@ -61,10 +49,7 @@ technologies = {
 		}
 		enable_subunits = {
 			wild_magus
-			weirdwood
-			shadow_archers
-			elite_harassers
-			spectral_wraith
+			dune_sentinels
 		}
 	}
 	LIO_army_tech = {
@@ -74,12 +59,12 @@ technologies = {
 		}
 		enable_subunits = {
 			orc_warriors_den
+			infernal_mage
 			goblin_rocket_riders
 			goblirangs
 			orc_shaman
 			goblin_war_zeppelin
 			deep_devils_reef
-			swamp_monster
 			ballista_outpost
 		}
 	}
@@ -89,15 +74,13 @@ technologies = {
 			always = no
 		}
 		enable_subunits = {
-			triple_cannon
-			dwarven_flamespitter
-			rocket_gunners
-			eldritch_channeler
-			dwarven_cannoneer_squad
 			big_bertha
 			tesla_x104
 			dwaarp
 			battle_mecha_t200
+			dwarven_flamespitter
+			rocket_gunners
+			dwarven_cannoneer_squad
 		}
 	}
 }

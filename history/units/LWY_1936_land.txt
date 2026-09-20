@@ -1,0 +1,10 @@
+
+division_template = {
+    name = "利尼维亚王国军"
+    regiments = {
+        holy_order = { x = 0 y = 0 }
+        holy_order = { x = 0 y = 1 }
+        holy_order = { x = 0 y = 2 }
+        holy_order = { x = 1 y = 0 }
+    }
+}
