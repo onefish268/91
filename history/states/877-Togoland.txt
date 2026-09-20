@@ -7,15 +7,9 @@ state = {
 		owner = LWY
         add_core_of = LWY
 		add_core_of = SAF
-		add_to_array = {
-			state_victory_points = 1951
-		}
+		
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			1951
-			3
 		}
 		victory_points = {
 			12843
@@ -23,7 +17,8 @@ state = {
 		}
 	}
 	provinces = {
-		1951
+		12762
+		12874
 		12785
 		12843
 	}

@@ -1,0 +1,20 @@
+state = {
+	id = 1238
+	name = "STATE_1238"	#French sudan
+	manpower = 512415
+	state_category = two
+	history = {
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 1
+		}
+		start_resistance = yes
+		set_resistance = 56
+		set_compliance = 2
+	}
+	provinces = {
+		5045
+		12794
+	}
+}

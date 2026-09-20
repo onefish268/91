@@ -1,14 +1,19 @@
 state = {
-	id = 809
-	name = "STATE_809"
-	manpower = 1024132
+	id = 1242
+	name = "STATE_1242"
+	manpower = 2024132
 	state_category = two
 	local_supplies = 1
 	history = {
-		owner = YOK
-		add_core_of = YOK
+		owner = SAF
 		add_core_of = SAF
-
+		add_to_array = {
+			state_victory_points = 2056
+		}
+		victory_points = {
+			2056
+			10
+		}		#Niamey
 		buildings = {
 			infrastructure = 1
 		}
@@ -17,9 +22,8 @@ state = {
 		set_compliance = 8
 	}
 	provinces = {
-		8028
-		10758
-		10780
-		10805
+		1975
+		2056
+		12707
 	}
 }

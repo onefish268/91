@@ -1,0 +1,35 @@
+state = {
+	id = 1243
+	name = "STATE_1243"
+	manpower = 3334755
+	state_category = two
+	history = {
+		owner = SAF
+		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 1969
+		}
+		add_to_array = {
+			state_victory_points = 1891
+		}
+		#set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1969
+			2
+		}
+		#Katsena
+		victory_points = {
+			1891
+			15
+		}
+		#Sokoto
+	}
+	provinces = {
+		1891
+		1969
+		13494
+	}
+}

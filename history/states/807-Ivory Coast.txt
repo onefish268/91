@@ -1,7 +1,7 @@
 state = {
 	id = 807
 	name = "STATE_807"
-	manpower = 3850734
+	manpower = 1850734
 	state_category = two
 	local_supplies = 1
 	history = {
@@ -34,11 +34,7 @@ state = {
 		set_compliance = 10
 	}
 	provinces = {
-		5013
-		5070
-		8065
 		8122
-		10762
 		10803
 	}
 }

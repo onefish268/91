@@ -1,25 +1,22 @@
 state = {
-	id = 809
-	name = "STATE_809"
-	manpower = 1024132
+	id = 1241
+	name = "STATE_1241"
+	manpower = 1121635
 	state_category = two
 	local_supplies = 1
 	history = {
-		owner = YOK
-		add_core_of = YOK
+		owner = SAF
 		add_core_of = SAF
-
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 		}
 		start_resistance = yes
-		set_resistance = 34
+		set_resistance = 29
 		set_compliance = 8
 	}
 	provinces = {
-		8028
-		10758
-		10780
-		10805
+		8008
+		5039
 	}
 }

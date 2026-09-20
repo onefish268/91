@@ -1,7 +1,7 @@
 state = {
 	id = 806
 	name = "STATE_806"
-	manpower = 2821635
+	manpower = 1821635
 	state_category = two
 	local_supplies = 1
 	history = {
@@ -31,7 +31,5 @@ state = {
 		12858
 		12802
 		4957
-		8008
-		5039
 	}
 }
