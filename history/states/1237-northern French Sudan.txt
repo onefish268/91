@@ -4,15 +4,20 @@ state = {
 	manpower = 1102415
 	state_category = one
 	history = {
-		owner = SAF
+		owner = YOK
+		add_core_of = YOK
 		add_core_of = SAF
 		add_to_array = {
 			state_victory_points = 10788
 		}
 		victory_points = {
 			10788
-			1
+			15
 		}		#Timbuktu
+		victory_points = {
+			7954
+			25
+		}
 		buildings = {
 			infrastructure = 1
 		}

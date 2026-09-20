@@ -22,7 +22,7 @@ state = {
 		}
 		victory_points = {
 			13214
-			3
+			20
 		}
 		#Kaduna
 		victory_points = {
@@ -32,7 +32,7 @@ state = {
 		#Katsena
 		victory_points = {
 			1891
-			1
+			15
 		}
 		#Sokoto
 	}

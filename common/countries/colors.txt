@@ -249,6 +249,22 @@ LWY = {
     color = rgb { 254 242 60 }
     color_ui = rgb { 254 242 60 }
 }
+SZL = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
+BZL = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
+YOK = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
+LIO = {
+    color = rgb { 254 242 60 }
+    color_ui = rgb { 254 242 60 }
+}
 SAU = {
     color = rgb { 47 79 79 }
     color_ui = rgb { 47 79 79 }
