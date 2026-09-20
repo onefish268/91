@@ -160,7 +160,11 @@ country_event = {
         release = ZXS
         release = ZYX
         clr_country_flag = Adorable_heart_opinion_button_visible
+        set_temp_variable = { transform_the_number_of_muisc_situation = adorable_heart_super_event_music_button_var }
+        set_temp_variable = { transform_the_number_of_Chinese_news_situation = Chinese_Secondary_News_button_var }
         ZYX = {
+            set_variable = { adorable_heart_super_event_music_button_var = transform_the_number_of_muisc_situation }
+            set_variable = { Chinese_Secondary_News_button_var = transform_the_number_of_Chinese_news_situation }
             set_country_flag = Adorable_heart_opinion_button_visible
             change_tag_from = ZIM
         }       
@@ -177,7 +181,11 @@ country_event = {
         release = ZXS
         release = ZYX
         clr_country_flag = Adorable_heart_opinion_button_visible
+        set_temp_variable = { transform_the_number_of_muisc_situation = adorable_heart_super_event_music_button_var }
+        set_temp_variable = { transform_the_number_of_Chinese_news_situation = Chinese_Secondary_News_button_var }
         ZSB = {
+            set_variable = { adorable_heart_super_event_music_button_var = transform_the_number_of_muisc_situation }
+            set_variable = { Chinese_Secondary_News_button_var = transform_the_number_of_Chinese_news_situation }
             set_country_flag = Adorable_heart_opinion_button_visible
             change_tag_from = ZIM
         }  

@@ -1,0 +1,21 @@
+state = {
+	id = 1236
+	name = "STATE_1236"
+	manpower = 1002415
+	state_category = one
+	history = {
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 1
+		}
+		start_resistance = yes
+		set_resistance = 56
+		set_compliance = 2
+	}
+	provinces = {
+		4927
+		8116
+		12838
+	}
+}
