@@ -60,7 +60,7 @@ bookmarks = {
             focuses = {
                 new_focus_9
                 2_focus_24
-                4_focus_1
+                6_focus_2
             }
         }
         "GRE" = {

@@ -1,0 +1,694 @@
+characters = {
+	SAF_j_b_m_hertzog = {
+		name = "J. B. M. Hertzog"
+		portraits = {
+			civilian = {
+				large = "GFX_SAF_james_hertzog"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_J_B_M_HERTZOG_DESC"
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	SAF_modeleite1 = {
+		name = "SAF_modeleite1"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/modeleite.png"
+			}
+			army = {
+				large = "gfx/leaders/SAF/modeleite.png"
+				small = "GFX_idea_SAF_modeleite1"
+			}
+		}
+		field_marshal = {
+			traits = {
+				harsh_leader
+				cavalry_officer
+				war_hero
+				qishi
+				desert_fox
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_DF_MALAN_DESC"
+			ideology = fascism_ideology
+			traits = {
+				ASF_panni_qishi
+			}
+			expire = "1985.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_PIXLEY_SEME_DESC"
+			ideology = centrism
+			traits = {
+				ASF_panni_qishi
+			}
+			expire = "1985.1.1.1"
+			id = -1
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = SAF_j_f_van_rensburg
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				ah_military_theorist
+			}
+		}
+	}
+	SAF_mina = {
+		name = "SAF_mina"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/mina.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_MOSES_KOTANE_DESC"
+			ideology = marxism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	SAF_fangjia = {
+		name = "SAF_fangjia"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/fangjia.dds"
+				small = "GFX_idea_SAF_fangjia"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				commando
+				desert_fox
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAF_leonard_beyers
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_meixu = {
+		name = "SAF_meixu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/meixu.dds"
+				small = "GFX_idea_SAF_meixu"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				commando
+				hill_fighter
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SAF_bisuopu = {
+		name = "SAF_bisuopu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/bisuopu.dds"
+				small = "GFX_idea_SAF_bisuopu"
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+				commando
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SAF_mina = {
+		name = "SAF_mina_a"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/mina.dds"
+				small = "GFX_idea_SAF_mina"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_cautious
+				infantry_officer
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SAF_geer = {
+		name = "SAF_geer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/geer.dds"
+				small = "GFX_idea_SAF_geer"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+				trait_mountaineer
+				ranger
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SAF_airuika = {
+		name = "SAF_airuika"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/airuika.dds"
+				small = "GFX_idea_SAF_airuika"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+				armor_officer
+				trait_mountaineer
+				ranger
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAF_c_de_weenburg_du_toit
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_fulanxisika = {
+		name = "SAF_fulanxisika"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/fulanxisika.dds"
+				small = "GFX_idea_SAF_fulanxisika"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless
+				harsh_leader
+				trait_mountaineer
+				ranger
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAF_robert_palmer
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SAF_saniya = {
+		name = "SAF_saniya"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/saniya.dds"
+				small = "GFX_idea_SAF_saniya"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				career_officer
+				naval_invader
+				hill_fighter
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAF_james_mitchell_baker
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_aila = {
+		name = "SAF_aila"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/aila.dds"
+				small = "GFX_idea_SAF_aila"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+				infantry_officer
+				trait_engineer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SAF_yiouna = {
+		name = "PAJ_lona"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/yiouna.dds"
+				small = "GFX_idea_SAF_yiouna"
+			}
+		}
+		navy_leader = {
+			traits = {
+				seawolf
+			}
+			skill = 5
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SAF_cornelis_van_zuigenbrogge
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_gaoxiong = {
+		name = "SAF_gaoxiong"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/gaoxiong.dds"
+				small = "GFX_idea_SAF_gaoxiong"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAF_moye = {
+		name = "SAF_moye"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/moye.dds"
+				small = "GFX_idea_SAF_moye"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAF_jingang = {
+		name = "SAF_jingang"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/jingang.dds"
+				small = "GFX_idea_SAF_jingang"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+			}
+			skill = 5
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAF_rixiang = {
+		name = "SAF_rixiang"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/rixiang.dds"
+				small = "GFX_idea_SAF_rixiang"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+			}
+			skill = 5
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAF_marinus_van_osterkamp
+			ledger = navy
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_birui = {
+		name = "SAF_birui"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/birui.dds"
+				small = "GFX_idea_SAF_birui"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAF_miaogao = {
+		name = "SAF_miaogao"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/miaogao.dds"
+				small = "GFX_idea_SAF_miaogao"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				spotter
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAF_nazhi = {
+		name = "SAF_nazhi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/nazhi.dds"
+				small = "GFX_idea_SAF_nazhi"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				spotter
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SAF_pierre_oliver_knoll
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_zubing = {
+		name = "SAF_zubing"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/zubing.dds"
+				small = "GFX_idea_SAF_zubing"
+			}
+		}
+		navy_leader = {
+			traits = {
+				blockade_runner
+				spotter
+				fly_swatter
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAF_jeannot_de_la_tourier
+			ledger = navy
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_s_p_le_roux = {
+		name = SAF_s_p_le_roux
+		portraits = {
+			army = {
+				small = "GFX_idea_SAF_s_p_le_roux"				#small="GFX_idea_generic_air_europe_1"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = SAF_s_p_le_roux
+			ledger = air
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				ah_air_warfare_theorist
+			}
+		}
+	}
+	SAF_adolf_malan = {
+		name = SAF_adolf_malan
+		portraits = {
+			army = {
+				small = "GFX_idea_SAF_adolf_malan"				#small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SAF_adolf_malan
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_pierre_van_ryneveld = {
+		name = SAF_pierre_van_ryneveld
+		portraits = {
+			army = {
+				small = "GFX_idea_SAF_pierre_van_ryneveld"				#small="GFX_idea_generic_air_europe_2"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SAF_pierre_van_ryneveld
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAF_nicolaas_havenga = {
+		name = SAF_nicolaas_havenga
+		portraits = {
+			army = {
+				small = "GFX_idea_SAF_nicolaas_havenga"				#small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SAF_nicolaas_havenga
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	SAF_e_g_jansen = {
+		name = SAF_e_g_jansen
+		portraits = {
+			army = {
+				small = "GFX_idea_SAF_e_g_jansen"				#small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SAF_e_g_jansen
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+}
