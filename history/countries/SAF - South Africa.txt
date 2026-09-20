@@ -36,6 +36,26 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = YOK
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = SZL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BZL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = LIO
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
 }
 
 if = {

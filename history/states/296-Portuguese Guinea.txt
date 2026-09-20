@@ -1,0 +1,28 @@
+state = {
+	id = 296
+	name = "STATE_296"	# Guinea-Bissau
+	manpower = 364900
+	state_category = two
+	history = {
+		owner = SZL
+		add_core_of = SZL
+		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 12747
+		}
+		victory_points = {
+			12747
+			10
+		}		# Bolama
+		buildings = {
+			infrastructure = 1
+			12891 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		12747
+		12891
+	}
+}

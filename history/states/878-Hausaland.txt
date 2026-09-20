@@ -16,7 +16,7 @@ state = {
 		}
 		victory_points = {
 			13214
-			3
+			20
 		}
 		#Kaduna
 	}

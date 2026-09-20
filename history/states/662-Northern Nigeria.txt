@@ -16,7 +16,7 @@ state = {
 		}
 		victory_points = {
 			12900
-			2
+			10
 		}
 		#Lokoja
 	}

@@ -25,7 +25,11 @@ state = {
         #Port Harcourt
         victory_points = {
             10831
-            1
+            10
+        }
+        victory_points = {
+            1498
+            20
         }
         #Calabar
     }

@@ -5,8 +5,16 @@ state = {
 	state_category = two
 	local_supplies = 2
 	history = {
-		owner = SAF
+		owner = LIO
+		add_core_of = LIO
 		add_core_of = SAF
+		add_to_array = {
+			state_victory_points = 10915
+		}
+		victory_points = {
+			10915
+			15
+		}
 		buildings = {
 			infrastructure = 1
 		}

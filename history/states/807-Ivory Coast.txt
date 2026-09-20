@@ -1,11 +1,12 @@
 state = {
 	id = 807
 	name = "STATE_807"
-	manpower = 2850734
+	manpower = 1850734
 	state_category = two
 	local_supplies = 1
 	history = {
-		owner = SAF
+		owner = BZL
+		add_core_of = BZL
 		add_core_of = SAF
 		add_to_array = {
 			state_victory_points = 10803
@@ -19,7 +20,7 @@ state = {
 		}		#Abidjan
 		victory_points = {
 			8122
-			1
+			15
 		}		#Bouake (created by effect)
 		buildings = {
 			infrastructure = 1
