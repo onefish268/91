@@ -12,7 +12,7 @@ state = {
 		}
 		victory_points = {
 			2056
-			1
+			10
 		}		#Niamey
 		buildings = {
 			infrastructure = 1

@@ -23,7 +23,7 @@ state = {
 		#Katsena
 		victory_points = {
 			1891
-			1
+			15
 		}
 		#Sokoto
 	}
