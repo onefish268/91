@@ -5,14 +5,15 @@ state = {
 	state_category = two
 	local_supplies = 2
 	history = {
-		owner = SAF
+		owner = YOK
+		add_core_of = YOK
 		add_core_of = SAF
 		add_to_array = {
 			state_victory_points = 10788
 		}
 		victory_points = {
 			10788
-			1
+			20
 		}		#Bamako
 		buildings = {
 			infrastructure = 1

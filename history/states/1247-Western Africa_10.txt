@@ -4,7 +4,8 @@ state = {
 	manpower = 1150734
 	state_category = two
 	history = {
-		owner = SAF
+		owner = BZL
+		add_core_of = BZL
 		add_core_of = SAF
 		buildings = {
 			infrastructure = 1
@@ -12,6 +13,10 @@ state = {
 		start_resistance = yes
 		set_resistance = 38
 		set_compliance = 10
+		victory_points = {
+			5070
+			10
+		}
 	}
 	provinces = {
 		5070
