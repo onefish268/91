@@ -44,6 +44,16 @@ debug_test_categories = {
 		}
 	}
 
+	give_me_tech = {
+		complete_effect = {
+			set_technology = {
+			    YOK_army_tech = 1
+				WDL_army_tech = 1
+			    popup = no
+			}
+		}
+	}
+
 	show_all_YSS_focus = {
 		complete_effect = {
 			set_country_flag = YSS_kongjun_baogao2
