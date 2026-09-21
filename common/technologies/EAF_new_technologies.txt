@@ -1,5 +1,5 @@
 technologies = {
-    LWY_army_tech = {
+    lwy_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -17,7 +17,7 @@ technologies = {
 			necromancer_tower
 		}
 	}
-	WDL_army_tech = {
+	wdl_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -30,7 +30,7 @@ technologies = {
 			triple_cannon
 		}
 	}
-	SZL_army_tech = {
+	szl_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -39,10 +39,9 @@ technologies = {
 			arcane_archers
 			high_elven_mage
 			rangers_hideout
-
 		}
 	}
-	BZL_army_tech = {
+	bzl_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -52,7 +51,7 @@ technologies = {
 			dune_sentinels
 		}
 	}
-	LIO_army_tech = {
+	lio_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -68,7 +67,7 @@ technologies = {
 			ballista_outpost
 		}
 	}
-	YOK_army_tech = {
+	yok_army_tech = {
 		research_cost = 1
 		allow = {
 			always = no

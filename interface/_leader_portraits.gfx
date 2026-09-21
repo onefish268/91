@@ -428,4 +428,593 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 1 #图片分成几份
 	}
+    spriteType = {
+		name = "GFX_unit_rangers_hideout_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/rangers_hideout.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_rangers_hideout_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/rangers_hideout.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_rangers_hideout_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/rangers_hideout.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+    spriteType = {
+		name = "GFX_unit_musketeer_garrison_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/musketeer_garrison.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_musketeer_garrison_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/musketeer_garrison.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_musketeer_garrison_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/musketeer_garrison.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+    spriteType = {
+		name = "GFX_unit_barbarian_hall_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/barbarian_hall.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_barbarian_hall_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/barbarian_hall.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_barbarian_hall_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/barbarian_hall.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+    spriteType = {
+		name = "GFX_unit_arcane_wizard_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_wizard.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_arcane_wizard_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_wizard.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_arcane_wizard_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_wizard.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+    spriteType = {
+		name = "GFX_unit_sorcerer_mage_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/sorcerer_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_sorcerer_mage_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/sorcerer_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_sorcerer_mage_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/sorcerer_mage.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+    	spriteType = {
+		name = "GFX_unit_big_bertha_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/big_bertha.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_big_bertha_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/big_bertha.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_big_bertha_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/big_bertha.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_tesla_x104_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/tesla_x104.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_tesla_x104_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/tesla_x104.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_tesla_x104_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/tesla_x104.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_crossbow_fort_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/crossbow_fort.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_crossbow_fort_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/crossbow_fort.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_crossbow_fort_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/crossbow_fort.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_tribal_axethrowers_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/tribal_axethrowers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_tribal_axethrowers_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/tribal_axethrowers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_tribal_axethrowers_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/tribal_axethrowers.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_assassins_guild_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/assassins_guild.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_assassins_guild_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/assassins_guild.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_assassins_guild_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/assassins_guild.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_knights_templar_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/knights_templar.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_knights_templar_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/knights_templar.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_knights_templar_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/knights_templar.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_necromancer_tower_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/necromancer_tower.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_necromancer_tower_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/necromancer_tower.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_necromancer_tower_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/necromancer_tower.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_archmage_tower_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/archmage_tower.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_archmage_tower_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/archmage_tower.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_archmage_tower_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/archmage_tower.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_dwaarp_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/dwaarp.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwaarp_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/dwaarp.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwaarp_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/dwaarp.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_battle_mecha_t200_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/battle_mecha_t200.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_battle_mecha_t200_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/battle_mecha_t200.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_battle_mecha_t200_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/battle_mecha_t200.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_arcane_archers_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_arcane_archers_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_arcane_archers_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/arcane_archers.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_high_elven_mage_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/high_elven_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_high_elven_mage_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/high_elven_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_high_elven_mage_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/high_elven_mage.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_wild_magus_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/wild_magus.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_wild_magus_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/wild_magus.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_wild_magus_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/wild_magus.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_shadow_archers_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/shadow_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_shadow_archers_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/shadow_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_shadow_archers_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/shadow_archers.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_orc_warriors_den_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/orc_warriors_den.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_orc_warriors_den_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/orc_warriors_den.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_orc_warriors_den_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/orc_warriors_den.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_infernal_mage_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/infernal_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_infernal_mage_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/infernal_mage.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_infernal_mage_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/infernal_mage.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_goblin_rocket_riders_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_rocket_riders.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblin_rocket_riders_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_rocket_riders.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblin_rocket_riders_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_rocket_riders.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_dark_knights_hall_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/dark_knights_hall.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dark_knights_hall_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/dark_knights_hall.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dark_knights_hall_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/dark_knights_hall.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_goblirangs_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/goblirangs.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblirangs_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/goblirangs.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblirangs_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/goblirangs.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_orc_shaman_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/orc_shaman.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_orc_shaman_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/orc_shaman.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_orc_shaman_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/orc_shaman.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_blazing_gem_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/blazing_gem.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_blazing_gem_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/blazing_gem.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_blazing_gem_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/blazing_gem.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_goblin_war_zeppelin_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_war_zeppelin.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblin_war_zeppelin_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_war_zeppelin.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_goblin_war_zeppelin_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/goblin_war_zeppelin.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_deep_devils_reef_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/deep_devils_reef.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_deep_devils_reef_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/deep_devils_reef.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_deep_devils_reef_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/deep_devils_reef.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_royal_archers_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/royal_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_royal_archers_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/royal_archers.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_royal_archers_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/royal_archers.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_triple_cannon_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/triple_cannon.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_triple_cannon_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/triple_cannon.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_triple_cannon_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/triple_cannon.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_ballista_outpost_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/ballista_outpost.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_ballista_outpost_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/ballista_outpost.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_ballista_outpost_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/ballista_outpost.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_dwarven_flamespitter_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_flamespitter.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwarven_flamespitter_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_flamespitter.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwarven_flamespitter_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_flamespitter.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_rocket_gunners_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/rocket_gunners.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_rocket_gunners_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/rocket_gunners.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_rocket_gunners_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/rocket_gunners.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_dune_sentinels_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/dune_sentinels.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dune_sentinels_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/dune_sentinels.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dune_sentinels_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/dune_sentinels.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
+
+	spriteType = {
+		name = "GFX_unit_dwarven_cannoneer_squad_icon_medium_white"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_cannoneer_squad.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwarven_cannoneer_squad_icon_medium"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_cannoneer_squad.png"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_dwarven_cannoneer_squad_icon_small"
+		textureFile = "gfx/interface/ideas/ZSH/dwarven_cannoneer_squad.png"
+		legacy_lazy_load = no
+		noOfFrames = 1 #图片分成几份
+	}
 }
