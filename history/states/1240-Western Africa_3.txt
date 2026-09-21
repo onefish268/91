@@ -1,7 +1,7 @@
 state = {
 	id = 1240
 	name = "STATE_1240"	#French sudan
-	manpower = 552415
+	manpower = 5524150
 	state_category = two
 	local_supplies = 2
 	history = {
