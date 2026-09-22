@@ -527,4 +527,8 @@ spriteTypes = {
 		name = "GFX_focus_zdm16"
 		texturefile = "gfx/focus_icon/GFX_focus_zdm16.png"
 	}
+	SpriteType = {
+		name = "GFX_ger_afica_1"
+		texturefile = "gfx/focus_icon/GFX_ger_afica_1.png"
+	}
 }
