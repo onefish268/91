@@ -1,0 +1,575 @@
+##另外一位国家领袖头像
+defined_text = {
+	name = Country_leader_picture07
+ ##红魔馆
+	text = {
+		trigger = {
+			has_idea = KMK_Sakuya_idea
+		}
+		localization_key = GFX_KMK_Sakuya
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Koakuma_idea
+		}
+		localization_key = GFX_KMK_Koakuma
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Bearn_idea
+		}
+		localization_key = GFX_KMK_Bearn
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Sayo_idea
+		}
+		localization_key = GFX_KMK_Sayo
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Beatrice1_idea
+		}
+		localization_key = GFX_KMK_Beatrice
+	}
+ ##自由幻想乡
+	text = {
+		trigger = {
+			has_idea = FRA_Ran_idea
+		}
+		localization_key = GFX_FRA_Ran
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Nishida_Satono_idea
+		}
+		localization_key = GFX_FRA_Nishida_Satono
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Teireida_Mai_idea
+		}
+		localization_key = GFX_FRA_Teireida_Mai
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Doremy_Sweet_idea
+		}
+		localization_key = GFX_FRA_Doremy_Sweet
+	}
+	text = {
+		trigger = {
+			has_idea = LIB_Reimu_idea
+		}
+		localization_key = GFX_FRA_Reimu
+	}
+ ##ww
+	text = {
+		trigger = {
+			has_idea = KMK_ww_idea
+		}
+		localization_key = GFX_NGD_Ganyu
+	}
+ ##黎那汐塔
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno
+		}
+		localization_key = GFX_GRE_Iuno
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno_1
+		}
+		localization_key = GFX_GRE_Iuno_1
+	}	
+
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia
+		}
+		localization_key = GFX_GRE_Cartethyia_1
+	}	
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia_1
+		}
+		localization_key = GFX_GRE_Cartethyia_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Rover
+		}
+		localization_key = GFX_GRE_Rover_silhouette
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_I_Find_You
+		}
+		localization_key = GFX_GRE_Rover
+	}
+
+	##通用
+	text = {
+		localization_key = GFX_leader_unknown
+	}
+}
+
+##另外一位国家领袖名字
+defined_text = {
+	name = country_leader_name_07
+ ##红魔馆
+	text = {
+		trigger = {
+			has_idea = KMK_Sakuya_idea
+		}
+		localization_key = KMK_Sakuya
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Koakuma_idea
+		}
+		localization_key = KMK_Koakuma
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Bearn_idea
+		}
+		localization_key = KMK_Bearn
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Sayo_idea
+		}
+		localization_key = KMK_Yasuda_Sayo
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Beatrice1_idea
+		}
+		localization_key = KMK_Beatrice
+	}
+ ##自由幻想乡
+	text = {
+		trigger = {
+			has_idea = FRA_Ran_idea
+		}
+		localization_key = FRA_Ran
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Nishida_Satono_idea
+		}
+		localization_key = FRA_Nishida_Satono
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Teireida_Mai_idea
+		}
+		localization_key = FRA_Teireida_Mai
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Doremy_Sweet_idea
+		}
+		localization_key = FRA_Doremy_Sweet_idea
+	}
+	text = {
+		trigger = {
+			has_idea = LIB_Reimu_idea
+		}
+		localization_key = FRA_Reimu
+	}
+ ##ww
+	text = {
+		trigger = {
+			has_idea = KMK_ww_idea
+		}
+		localization_key = NGD_Ganyu
+	}
+ ##黎那汐塔
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno
+		}
+		localization_key = GRE_Iuno
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno_1
+		}
+		localization_key = GRE_Iuno
+	}	
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia
+		}
+		localization_key = GRE_Cartethyia
+	}	
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia_1
+		}
+		localization_key = GRE_Furude_Rica
+	}	
+
+	text = {
+		trigger = {
+			has_country_flag = GRE_Rover
+		}
+		localization_key = "▇▇▇"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_I_Find_You
+		}
+		localization_key = NGD_Piaobozhe
+	}
+
+ ##通用
+	text = {
+		localization_key = none_another_leader
+	}
+}
+
+##另外一位国家领袖介绍--姓名及buff
+defined_text = {
+	name = Another_country_leader_desc_07
+ ##红魔馆
+	text = {
+		trigger = {
+			has_idea = KMK_Sakuya_idea
+		}
+		localization_key = KMK_Sakuya_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Koakuma_idea
+		}
+		localization_key = KMK_Koakuma_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Bearn_idea
+		}
+		localization_key = KMK_Bearn_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Sayo_idea
+		}
+		localization_key = KMK_Sayo_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Beatrice1_idea
+		}
+		localization_key = KMK_Beatrice_desc_1
+	}
+ ##自由幻想乡
+	text = {
+		trigger = {
+			has_idea = FRA_Ran_idea
+		}
+		localization_key = FRA_Ran_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Nishida_Satono_idea
+		}
+		localization_key = FRA_Nishida_Satono_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Teireida_Mai_idea
+		}
+		localization_key = FRA_Teireida_Mai_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Doremy_Sweet_idea
+		}
+		localization_key = FRA_Doremy_Sweet_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = LIB_Reimu_idea
+		}
+		localization_key = FRA_Reimu_desc_1
+	}
+ ##ww
+	text = {
+		trigger = {
+			has_idea = KMK_ww_idea
+		}
+		localization_key =  KMK_ww_desc_1
+	}
+ ##黎那汐塔
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno
+		}
+		localization_key = GRE_Iuno_desc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno_1
+		}
+		localization_key = GRE_Iuno_desc_3
+	}	
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia
+		}
+		localization_key = GRE_Cartethyia_desc_1
+	}	
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia_1
+		}
+		localization_key = GRE_Cartethyia_desc_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Rover
+		}
+		localization_key = GRE_Rover_desc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_I_Find_You
+		}
+		localization_key = GRE_Rover_desc_2
+	}
+
+}
+
+####另外一位国家领袖介绍--姓名及buff--外交界面
+defined_text = {
+	name = Another_country_leader_Diplomacy_desc_07
+ ##红魔馆
+	text = {
+		trigger = {
+			has_idea = KMK_Sakuya_idea
+		}
+		localization_key = KMK_Sakuya_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Koakuma_idea
+		}
+		localization_key = KMK_Koakuma_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Bearn_idea
+		}
+		localization_key = KMK_Bearn_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Sayo_idea
+		}
+		localization_key = KMK_Sayo_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Beatrice1_idea
+		}
+		localization_key = KMK_Beatrice_Diplomacy_desc
+	}
+ ##自由幻想乡
+	text = {
+		trigger = {
+			has_idea = FRA_Ran_idea
+		}
+		localization_key = FRA_Ran_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Nishida_Satono_idea
+		}
+		localization_key = FRA_Nishida_Satono_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Teireida_Mai_idea
+		}
+		localization_key = FRA_Teireida_Mai_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Doremy_Sweet_idea
+		}
+		localization_key = FRA_Doremy_Sweet_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_idea = LIB_Reimu_idea
+		}
+		localization_key = FRA_Reimu_Diplomacy_desc
+	}
+ ##ww
+	text = {
+		trigger = {
+			has_idea = KMK_ww_idea
+		}
+		localization_key = KMK_ww_Diplomacy_desc
+	}
+ ##黎那汐塔
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno
+		}
+		localization_key = GRE_Iuno_Diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno_1
+		}
+		localization_key = GRE_Iuno_Diplomacy_desc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia
+		}
+		localization_key = GRE_Cartethyia_Diplomacy_desc_1
+	}		
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia_1
+		}
+		localization_key = GRE_Cartethyia_Diplomacy_desc_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Rover
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_I_Find_You
+		}
+		localization_key = GRE_Rover_Diplomacy_desc
+	}
+		
+}
+
+##另外一位国家领袖介绍--生平
+defined_text = {
+	name = Another_country_leader_desc_2_07
+ ##红魔馆
+	text = {
+		trigger = {
+			has_idea = KMK_Sakuya_idea
+		}
+		localization_key = KMK_Sakuya_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Koakuma_idea
+		}
+		localization_key = KMK_Koakuma_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Bearn_idea
+		}
+		localization_key = KMK_Bearn_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Sayo_idea
+		}
+		localization_key = KMK_Sayo_desc
+	}
+	text = {
+		trigger = {
+			has_idea = KMK_Beatrice1_idea
+		}
+		localization_key = KMK_Beatrice_desc
+	}
+ ##自由幻想乡
+	text = {
+		trigger = {
+			has_idea = FRA_Ran_idea
+		}
+		localization_key = FRA_Ran_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Nishida_Satono_idea
+		}
+		localization_key = FRA_Nishida_Satono_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Teireida_Mai_idea
+		}
+		localization_key = FRA_Teireida_Mai_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_Doremy_Sweet_idea
+		}
+		localization_key = FRA_Doremy_Sweet_desc
+	}
+	text = {
+		trigger = {
+			has_idea = LIB_Reimu_idea
+		}
+		localization_key = FRA_Reimu_desc
+	}
+ #ww
+	text = {
+		trigger = {
+			has_idea = KMK_ww_idea
+		}
+		localization_key = KMK_ww_desc
+	}
+ ##黎那汐塔
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno
+		}
+		localization_key = GRE_Iuno_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Iuno_1
+		}
+		localization_key = GRE_Iuno_desc_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Lupa
+		}
+		localization_key = GRE_Lupa_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia_1
+		}
+		localization_key = GRE_Cartethyia_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_Cartethyia
+		}
+		localization_key = GRE_Cartethyia_desc
+	}		
+	text = {
+		trigger = {
+			has_country_flag = GRE_Rover
+		}
+		localization_key = GRE_Rover_desc_0
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRE_I_Find_You
+		}
+		localization_key = GRE_Rover_desc
+	}	
+
+}

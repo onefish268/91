@@ -218,6 +218,10 @@ defined_text = {
         localization_key = PA1_start_game_text
     }
     text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_start_game_text
+    }
+    text = {
         localization_key = FE_NEW
     }
 }
@@ -956,6 +960,10 @@ defined_text = {
         localization_key = [GET_PA1_Country_History]
     }
     text = {
+        trigger = { tag = LIB}
+        localization_key = [GET_LIB_Country_History]
+    }
+    text = {
         localization_key = coming_soon
     }
 }
@@ -1114,6 +1122,10 @@ defined_text = {
     text = {
         trigger = { tag = PA1 }
         localization_key = PA1_his_page_01_title
+    } 
+    text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_his_page_01_title
     } 
 }
 
@@ -2019,6 +2031,10 @@ defined_text = {
         }
         localization_key = PAW_route_guide_desc2
     }
+    text = {
+        trigger = { tag = LIB}
+        localization_key = LIB_route_guide_desc
+    } 
     text = { localization_key = coming_soon }
 }
 ###  路线指南  ###
