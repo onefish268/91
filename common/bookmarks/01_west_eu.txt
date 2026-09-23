@@ -58,8 +58,8 @@ bookmarks = {
                 ZIM_2
             }
             focuses = {
-                2_focus_24
-                6_focus_2
+                1_focus_1
+                2_focus_18
                 7_focus_1
             }
         }

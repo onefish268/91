@@ -17,7 +17,7 @@ focus_tree = {
 
 	inlay_window = {
 		id = ZYX_inner_circle_inlay_window
-		position = { x = 1690 y = 1130 }
+		position = { x = 1690 y = 1080 }
 	}
 
 	focus = {
