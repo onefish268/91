@@ -92,6 +92,26 @@ spriteTypes = {
 		texturefile = "gfx/focus_icon/GFX_focus_zim7.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_zim8"
+		texturefile = "gfx/focus_icon/GFX_focus_zim8.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zim9"
+		texturefile = "gfx/focus_icon/GFX_focus_zim9.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zim10"
+		texturefile = "gfx/focus_icon/GFX_focus_zim10.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zim11"
+		texturefile = "gfx/focus_icon/GFX_focus_zim11.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zim12"
+		texturefile = "gfx/focus_icon/GFX_focus_zim12.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_zsh7"
 		texturefile = "gfx/focus_icon/GFX_focus_zsh7.png"
 	}
@@ -526,5 +546,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_zdm16"
 		texturefile = "gfx/focus_icon/GFX_focus_zdm16.png"
+	}
+	SpriteType = {
+		name = "GFX_ger_afica_1"
+		texturefile = "gfx/focus_icon/GFX_ger_afica_1.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zyx1"
+		texturefile = "gfx/focus_icon/GFX_focus_zyx1.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zyx2"
+		texturefile = "gfx/focus_icon/GFX_focus_zyx2.png"
 	}
 }

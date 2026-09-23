@@ -14,7 +14,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 7_focus_1
-		icon = GFX_UBR_heer
+		icon = GFX_ger_afica_1
 		text_icon = GER_afica_focus_style
 		x = 13
 		y = 0
