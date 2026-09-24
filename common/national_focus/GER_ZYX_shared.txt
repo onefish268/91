@@ -180,7 +180,7 @@ joint_focus = {
 
 joint_focus = {
 	id = zg_3
-	icon = GFX_focus_GER_customs_union
+	icon = GFX_focus_zyx20
 	prerequisite = { focus = zg_1 }
 	relative_position_id = zg_1
 
@@ -229,7 +229,7 @@ joint_focus = {
 
 joint_focus = {
 	id = zg_31
-	icon = GFX_focus_GER_all_for_the_front
+	icon = GFX_focus_zyx21
 	prerequisite = { focus = zg_3 }
 	relative_position_id = zg_1
 
