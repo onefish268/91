@@ -19,4 +19,12 @@ spriteTypes = {
 		name = "GFX_LIB_FOCUS_JSZZ"
 		texturefile = "gfx/interface/goals/LIB/GC_JSZZ.png"
 	}
+	SpriteType = {
+		name = "GFX_LIB_FOCUS_CZJS"
+		texturefile = "gfx/interface/goals/LIB/GC_CZJS.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_FOCUS_JLSRZDD"
+		texturefile = "gfx/interface/goals/LIB/GC_JLSRZDD.png"
+	}
 }
