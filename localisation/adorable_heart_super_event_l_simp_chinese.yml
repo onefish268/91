@@ -1,0 +1,918 @@
+﻿l_simp_chinese:
+
+#伟大战争
+
+  super_event_1: "第二次“伟大战争”"
+  super_event_1_QUOTE_LOC: "§R幻想乡必须团结起来对付她的敌人！§!"
+  super_event_1_QUOTE_SOURCE_LOC: "——§G东风谷早苗§!"
+  super_event_1_CLOSED_LOC: "世界开始燃烧"
+
+  super_event_2: "第二次“伟大战争”"
+  super_event_2_QUOTE_LOC: "那么，由我建立彷佛沉浸甜美蜜汁中的世界吧。让所有人都希望永远受我支配。\n让世界知道，只有屈服于我魔导王之下的永久繁荣。"
+  super_event_2_QUOTE_SOURCE_LOC: "——§0安兹·乌尔·恭§!"
+  super_event_2_CLOSED_LOC: "世界开始燃烧"
+
+#魔导国
+  super_event_3: "最终圣战"
+  super_event_3_QUOTE_LOC: "（这个星球）闪闪发光，就像宝石箱一样。\n我来到这里，正是为了得到这谁都不曾得到的宝石箱。"
+  super_event_3_QUOTE_SOURCE_LOC: "——§0安兹·乌尔·恭§!"
+  super_event_3_CLOSED_LOC: "征服世界，或许会很有趣。"
+
+#苏联
+
+  super_event_4: "第二次“伟大战争”"
+  super_event_4_QUOTE_LOC: "失去的是不可能再回来的，所以生命才显得那么珍贵，所以活着就是幸福。"
+  super_event_4_QUOTE_SOURCE_LOC: "——§R木之本樱§!"
+  super_event_4_CLOSED_LOC: "保卫苏维埃，保卫革命"
+
+  super_event_5: "苏联介入大战"
+  super_event_5_QUOTE_LOC: "失去的是不可能再回来的，所以生命才显得那么珍贵，所以活着就是幸福。"
+  super_event_5_QUOTE_SOURCE_LOC: "——§R木之本樱§!"
+  super_event_5_CLOSED_LOC: "保卫苏维埃，保卫革命"
+
+  super_event_6: "苏联介入大战"
+  super_event_6_QUOTE_LOC: "请不要松开紧握之手。请留在我的眼睛能看到的地方。只要听到我的声音，请随时都要回应我……我已经不想再失去了。"
+  super_event_6_QUOTE_SOURCE_LOC: "——§R安娜斯塔西亚§!"
+  super_event_6_CLOSED_LOC: "为了革命！为了女皇！"
+
+  super_event_7: "苏联介入大战"
+  super_event_7_QUOTE_LOC: "战斗的那个人我不想她有任何的名字。因为我们每一个人都在战斗，我们所有人都是斗士。\n不要低头跟着斗士走，不要！"
+  super_event_7_QUOTE_SOURCE_LOC: "——§R塔露拉§!"
+  super_event_7_CLOSED_LOC: "为了革命！"
+
+  super_event_8: "苏联介入大战"
+  super_event_8_QUOTE_LOC: "§R一步也不许后退！§!"
+  super_event_8_QUOTE_SOURCE_LOC: "——§R（凛冬）索尼娅§!"
+  super_event_8_CLOSED_LOC: "为了革命！"
+
+  super_event_9: "苏联解体"
+  super_event_9_QUOTE_LOC: "永别了，我们的红旗。你曾经是敌人，也是兄弟。你曾是战壕里的同志，整个欧洲的希冀；但你也是一座红色的铁幕，那后面藏着可怕的劳改集中营。"
+  super_event_9_QUOTE_SOURCE_LOC: "——§Y叶夫图申科§!"
+  super_event_9_CLOSED_LOC: "红色齿轮停止了转动"
+
+  super_event_10: "团结在红旗下"
+  super_event_10_QUOTE_LOC: "全世界无产者，联合起来！"
+  super_event_10_QUOTE_SOURCE_LOC: "——§R卡尔·马克思§!"
+  super_event_10_CLOSED_LOC: "国际苏维埃共和国万岁！共产主义万岁！"
+
+  super_event_11: "苏维埃联盟挥师东进"
+  super_event_11_QUOTE_LOC: "现在是时候让我们的士兵自己决定实现正义的方式了。"
+  super_event_11_QUOTE_SOURCE_LOC: "——§R华西列芙酱§!"
+  super_event_11_CLOSED_LOC: "她们要在西伯利亚打陆战？"
+
+#罗马尼亚
+
+  super_event_12: "巴尔干统一"
+  super_event_12_QUOTE_LOC: "我宁愿活在大巴尔干的地狱里，也不愿活在小罗马尼亚的天堂里。"
+  super_event_12_QUOTE_SOURCE_LOC: "——§R奥尔加·伊兹卡§!"
+  super_event_12_CLOSED_LOC: "巴尔干之梦得以实现"
+
+#魔联（旧）
+
+  super_event_13: "苏联阴云"
+  super_event_13_QUOTE_LOC: "我保证，我一定会救你。\n无论重来多少次，我都一定会守护你！"
+  super_event_13_QUOTE_SOURCE_LOC: "——§R晓美焰§!"
+  super_event_13_CLOSED_LOC: "巨人间的博弈"
+
+  super_event_14: "伪世的物语"
+  super_event_14_QUOTE_LOC: "这才是人类感情的极致。比希望更加炙热，比绝望更加深沉--§R爱§!！"
+  super_event_14_QUOTE_SOURCE_LOC: "——§R晓美焰§!"
+  super_event_14_CLOSED_LOC: "她是疯了吗？"
+
+  super_event_15: "圆环之理降临"
+  super_event_15_QUOTE_LOC: "如果有人说怀有希望是错误，我会无数次反驳“不是这样的”，不管到什么时候。"
+  super_event_15_QUOTE_SOURCE_LOC: "——§R鹿目圆香§!"
+  super_event_15_CLOSED_LOC: "圆神能拯救魔联吗？"
+
+#日本
+
+  super_event_16: "超日本帝国建立"
+  super_event_16_QUOTE_LOC: "那么，不想一起看看吗。那天，与您所约定的那个未来…呐"
+  super_event_16_QUOTE_SOURCE_LOC: "——§Y柴神§!"
+  super_event_16_CLOSED_LOC: "不知道一些事情，就可以幸福生活下去"
+
+  super_event_17: "樱花帝国北进俄罗斯"
+  super_event_17_QUOTE_LOC: "使樱花天赋之类，传遍八纮一宇！"
+  super_event_17_QUOTE_SOURCE_LOC: ""
+  super_event_17_CLOSED_LOC: "她们要在西伯利亚打陆战？"
+
+#南美
+
+  super_event_18: "南美战争"
+  super_event_18_QUOTE_LOC: "我们需要的，不是一块面包！而是一个生存空间！一个民族的生存空间！这生存空间，不是靠乞求和抗议来实现的，而是靠铁和血来实现的！"
+  super_event_18_QUOTE_SOURCE_LOC: "——§Y世羽·波拿文都拉§!"
+  super_event_18_CLOSED_LOC: "谁又会关心南美？"
+  
+  super_event_19: "南美统一"
+  super_event_19_QUOTE_LOC: "智利万岁！\n人民万岁！\n工人万岁！"
+  super_event_19_QUOTE_SOURCE_LOC: "——§R萨尔瓦多·阿连德§!"
+  super_event_19_CLOSED_LOC: "团结的人民永不败！"
+
+#德国
+
+  super_event_20: "第二次“伟大战争”"
+  super_event_20_QUOTE_LOC: "我们不为奴役而战！我们为自由而战！我们不是机器，不是牛马，我们是人！是从来没有屈服过的日耳曼人！"
+  super_event_20_QUOTE_SOURCE_LOC: "——§Y阿道夫·莉莎§!"
+  super_event_20_CLOSED_LOC: "流亡者归来"
+
+  super_event_21: "轴心国介入大战"
+  super_event_21_QUOTE_LOC: "我们不为奴役而战！我们为自由而战！我们不是机器，不是牛马，我们是人！是从来没有屈服过的日耳曼人！"
+  super_event_21_QUOTE_SOURCE_LOC: "——§Y阿道夫·莉莎§!"
+  super_event_21_CLOSED_LOC: "流亡者归来"
+
+  super_event_22: "德意志归来"
+  super_event_22_QUOTE_LOC: "从马斯到梅梅尔，从埃施到贝尔特，德意志，德意志，高于一切，高于世间所有万物。"
+  super_event_22_QUOTE_SOURCE_LOC: "——§Y《德意志之歌》§!"
+  super_event_22_CLOSED_LOC: "Es lebe Deutschland!"
+
+  super_event_23: "大德意志统一"
+  super_event_23_QUOTE_LOC: "新德国不属于任何阶级、任何团体，而是属于德国全体人民。她将帮助肯与我们和平相处的民族。"
+  super_event_23_QUOTE_SOURCE_LOC: "——§Y阿道夫·莉莎§!"
+  super_event_23_CLOSED_LOC: "当人民呼唤恶魔，说明天堂已为谎言。"
+
+  super_event_24: "德意志之死"
+  super_event_24_QUOTE_LOC: "人类在永恒的斗争中壮大，\n在永恒的和平中毁灭。"
+  super_event_24_QUOTE_SOURCE_LOC: "——§Y阿道夫·莉莎§!"
+  super_event_24_CLOSED_LOC: "谁来救救德国？"
+
+  super_event_25: "德国革命"
+  super_event_25_QUOTE_LOC: "我承认我是反对饥饿与剥削的煽动者；\n我承认我是反对战争的簇拥者；\n我们的口号是：\n联合起来，再联合起来！"
+  super_event_25_QUOTE_SOURCE_LOC: "——§R惣流·明日香·兰格雷§!"
+  super_event_25_CLOSED_LOC: "太阳从未如此美丽,在德国照耀"
+
+  super_event_26: "欧洲统一"
+  super_event_26_QUOTE_LOC: "终有一日，幻想乡、意呆莉、圣杯、俄罗斯、德意志，所有的民族在不丧失她们特性的前提下，结合成超越一切的共同体。"
+  super_event_26_QUOTE_SOURCE_LOC: "——§R维克多·雨果§!"
+  super_event_26_CLOSED_LOC: "欧罗巴不再有压迫！"
+
+  super_event_27: "黑日计划"
+  super_event_27_QUOTE_LOC: "别露出那种绝望的表情呀……\n魔法少女的光辉，只有在被恐惧和愉悦反复蹂躏时，才会绽放出最凄绝的美感。\n来吧，让我看看你们还能坚持多久？"
+  super_event_27_QUOTE_SOURCE_LOC: "——§0柊舞缇娜§!"
+  super_event_27_CLOSED_LOC: "晚安，各位“正义的伙伴”。"
+
+#瑞典（旧）
+
+  super_event_28: "北欧联盟成立"
+  super_event_28_QUOTE_LOC: "你能否明白潜藏于内心的黑暗\n在那空无一物之中，我仍在不断寻找\n....你有梦想吗？\n很遗憾，我没有那种东西。"
+  super_event_28_QUOTE_SOURCE_LOC: "——哎？你问我吗？"
+  super_event_28_CLOSED_LOC: "我的名字是“不吉波普”"
+
+  super_event_29: "天启之国复辟"
+  super_event_29_QUOTE_LOC: "别去奢望什么，别去指望什么\n将今天染上青色的太阳\n将白天和时间停止吧..."
+  super_event_29_QUOTE_SOURCE_LOC: "——玛莉·蓓尔·布列格"
+  super_event_29_CLOSED_LOC: "命运的齿轮加快了转动"
+
+#圣杯
+
+  super_event_30: "大萧条"
+  super_event_30_QUOTE_LOC: "国王拉响汽笛，\n首相敲起钟。\n金融城发出信号，\n圣杯往地狱里冲！"
+  super_event_30_QUOTE_SOURCE_LOC: "——伦敦儿歌"
+  super_event_30_CLOSED_LOC: "千百万人必须像畜生一样才能活命"
+
+#幻想乡
+
+  super_event_31: "幻想乡统一"
+  super_event_31_QUOTE_LOC: "看吧，琪露诺果然是最强的！"
+  super_event_31_QUOTE_SOURCE_LOC: "——§R琪露诺§!"
+  super_event_31_CLOSED_LOC: "那个笨蛋？"
+
+  super_event_32: "幻想乡统一"
+  super_event_32_QUOTE_LOC: "那图案(红雾异变)是从一处延展出的数条纤维，要把幻想乡包住似的，如同天使的翅膀一般。"
+  super_event_32_QUOTE_SOURCE_LOC: ""
+  super_event_32_CLOSED_LOC: "斯卡蕾特的荣光重照幻想乡"
+
+  super_event_33: "幻想乡统一"
+  super_event_33_QUOTE_LOC: "万物都有个叫“目”的东西。在那里啪的捅一下的话就轰隆～的哦。\n所有的东西的“目”都在我的右手上，所以啪地一捏就可以……"
+  super_event_33_QUOTE_SOURCE_LOC: "——§Y芙兰朵露·斯卡蕾特§!"
+  super_event_33_CLOSED_LOC: "斯卡蕾特的荣光重照幻想乡"
+
+  super_event_34: "幻想乡统一"
+  super_event_34_QUOTE_LOC: "科学绝不是一种自私自利的享受。\n有幸能够致力于科学研究的人，首先应该拿自己的学识为人类服务。"
+  super_event_34_QUOTE_SOURCE_LOC: "——§R卡尔·马克思§!"
+  super_event_34_CLOSED_LOC: "我が河童の科学力は幻想乡一イイイイ！！"
+
+ #早苗加冕
+  super_event_35: "东风谷早苗加冕"
+  super_event_35_QUOTE_LOC: "在幻想乡被常识束缚可不行！"
+  super_event_35_QUOTE_SOURCE_LOC: "——§S东风谷早苗§!"
+  super_event_35_CLOSED_LOC: "皇帝万岁！帝国万岁！人民万岁！"
+
+ #灵梦
+  super_event_36: "百花月大革命"
+  super_event_36_QUOTE_LOC: "万里河山红烂漫，\n百花月革命胜利辉煌，\n工人阶级领导一切，\n七千万人民斗志昂扬。"
+  super_event_36_QUOTE_SOURCE_LOC: "——§R《我们走在大路上》§!"
+  super_event_36_CLOSED_LOC: "百花月大革命万岁！"
+
+##中国
+
+  super_event_37: "中原王朝危机"
+  super_event_37_QUOTE_LOC: "国破山河在，城春草木深。\n感时花溅泪，恨别鸟惊心。"
+  super_event_37_QUOTE_SOURCE_LOC: "——§Y杜甫§!"
+  super_event_37_CLOSED_LOC: "让雄狮就此长眠"
+
+  super_event_38: "中国统一"
+  super_event_38_QUOTE_LOC: "民为贵，社稷次之，君为轻。"
+  super_event_38_QUOTE_SOURCE_LOC: "——§Y孟子§!"
+  super_event_38_CLOSED_LOC: "古老帝国的前进"
+
+  super_event_39: "中国统一"
+  super_event_39_QUOTE_LOC: "秦王扫六合，虎视何雄哉！\n挥剑决浮云，诸侯尽西来。"
+  super_event_39_QUOTE_SOURCE_LOC: "——§Y李白§!"
+  super_event_39_CLOSED_LOC: "皇帝万岁！"
+
+  super_event_40: "中国统一"
+  super_event_40_QUOTE_LOC: "中华雄立宇宙间，廓八埏，华胄来从昆仑巅，江湖浩荡山绵连，共和五族开尧天，亿万年。"
+  super_event_40_QUOTE_SOURCE_LOC: "——§Y《中华雄立宇宙间》§!"
+  super_event_40_CLOSED_LOC: "大元帅万岁！"
+
+  super_event_41: "中国统一"
+  super_event_41_QUOTE_LOC: "只要站在民族的立场上，维护民族的大局，不管抱什么政治观点，包括骂帝国的人，都要大团结。"
+  super_event_41_QUOTE_SOURCE_LOC: "——§C黎星刻§!"
+  super_event_41_CLOSED_LOC: "和平建国，团结民主。"
+
+  super_event_42: "神州革命君主制"
+  super_event_42_QUOTE_LOC: "我深信君主社会主义最终是可行的。凡是实行君主社会主义的政治家都将会崭露头角。"
+  super_event_42_QUOTE_SOURCE_LOC: "——§Y奥托·冯·俾斯麦§!"
+  super_event_42_CLOSED_LOC: "中国人都疯了？"
+
+  super_event_43: "神州和平革命"
+  super_event_43_QUOTE_LOC: "改革是中国的第二次革命。\n这是一件很重要的必须做的事，\n尽管是有风险的事。"
+  super_event_43_QUOTE_SOURCE_LOC: "——§P周恩莱§!"
+  super_event_43_CLOSED_LOC: "谁主沉浮？人民。"
+
+  super_event_44: "中国统一"
+  super_event_44_QUOTE_LOC: "我对国内将来的事充满了理想和希望。我不能不想中国，更不能忘掉中国。我觉得，如果真的忘记祖国，人生该是多么没有趣啊！"
+  super_event_44_QUOTE_SOURCE_LOC: "——§Y宋庆龄§!"
+  super_event_44_CLOSED_LOC: "中国已如腾飞之龙"
+
+  super_event_45: "中国统一"
+  super_event_45_QUOTE_LOC: "各种勃勃生机，万物竞发的境界尤在眼前。"
+  super_event_45_QUOTE_SOURCE_LOC: "——§Y蒋介石§!"
+  super_event_45_CLOSED_LOC: "迈向新时代！"
+
+  super_event_46: "中国统一"
+  super_event_46_QUOTE_LOC: "积大胜而败,不如积小胜而大胜。"
+  super_event_46_QUOTE_SOURCE_LOC: "——§Y戴春风§!"
+  super_event_46_CLOSED_LOC: "迈向新时代！"
+
+  super_event_47: "中国再次陷入战火"
+  super_event_47_QUOTE_LOC: "一寸山河一寸血，十万青年十万兵！"
+  super_event_47_QUOTE_SOURCE_LOC: "——§Y蒋介石§!"
+  super_event_47_CLOSED_LOC: "中国不再软弱！"
+
+  super_event_48: "中国统一战线"
+  super_event_48_QUOTE_LOC: "为祖国生命而战！\n为民族生存而战！\n为国家独立而战！\n为领土完整而战！"
+  super_event_48_QUOTE_SOURCE_LOC: "——§Y《告全体同胞书》§!"
+  super_event_48_CLOSED_LOC: "宁为战死鬼，不作亡国奴。"
+
+ #大帅
+  super_event_49: "中国统一"
+  super_event_49_QUOTE_LOC: "忠之本义，忠于一国，非忠于一人也。人人以国为本位，勿以一身一家为本位，乃能屈小己以利大群"
+  super_event_49_QUOTE_SOURCE_LOC: "——§Y袁世凯§!"
+  super_event_49_CLOSED_LOC: "有恒心，然后有恒业"
+
+ #少帅
+  super_event_50: "中国统一"
+  super_event_50_QUOTE_LOC: "我们只愿在真理的圣坛之前低头，不愿在一切物质权威之前拜倒。真的猛士，敢于直面惨淡的人生，敢于正视淋漓的鲜血。"
+  super_event_50_QUOTE_SOURCE_LOC: "——§Y鲁迅§!"
+  super_event_50_CLOSED_LOC: "民主之梦，虽暗犹明"
+
+ #中国解放战争
+  super_event_51: "中国解放战争"
+  super_event_51_QUOTE_LOC: "中国必须独立，中国必须解放，\n中国的事情必须由中国人民自己作主张，\n自己来处理，不容许任何帝国主义国家再有一丝一毫的干涉。"
+  super_event_51_QUOTE_SOURCE_LOC: "——§R毛润芝§!"
+  super_event_51_CLOSED_LOC: "宜将剩勇追穷寇，不可沽名学霸王。"
+
+ #毛润芝
+  super_event_52: "中国统一"
+  super_event_52_QUOTE_LOC: "让那些内外反动派在我们面前发抖罢，让他们去说我们这也不行那也不行罢，中国人民的不屈不挠的努力必将稳步地达到自己的目的。"
+  super_event_52_QUOTE_SOURCE_LOC: "——§R毛润芝§!"
+  super_event_52_CLOSED_LOC: "虎踞龙盘今胜昔，天翻地覆慨而慷。"
+
+ #陈独秀
+  super_event_53: "中国统一"
+  super_event_53_QUOTE_LOC: "真的民主政治，绝不是和平方法可以实现的，只有工人贫农、一切劳苦大众以血来推翻整个的榨取阶级，实现立法权力和执行权力合一化的苏维埃政制，才能够表现出来。"
+  super_event_53_QUOTE_SOURCE_LOC: "——§R陈独秀§!"
+  super_event_53_CLOSED_LOC: "消灭一切压迫与榨取！"
+
+ #布
+  super_event_54: "中国统一"
+  super_event_54_QUOTE_LOC: "在共产国际所有一切支部前，摆着以下的首要任务：\n用所有力量和所有方法，来帮助巩固苏联，来反对苏联的敌人。"
+  super_event_54_QUOTE_SOURCE_LOC: "——§R千代桃§!"
+  super_event_54_CLOSED_LOC: "武装保卫苏维埃"
+
+ #陈世涛
+  super_event_55: "中国统一"
+  super_event_55_QUOTE_LOC: "......一边忍受她们的傲慢，一边等待时机。现在时机终于到了，让她们见识我们民族的伟大！"
+  super_event_55_QUOTE_SOURCE_LOC: ""
+  super_event_55_CLOSED_LOC: "西方的朋友，瞧好了"
+
+ #虎妞
+  super_event_56: "中国统一"
+  super_event_56_QUOTE_LOC: "我家父子如是,自非天崩地陷,当复何愁,但抱子弄孙日为乐耳！"
+  super_event_56_QUOTE_SOURCE_LOC: "——§Y石虎§!"
+  super_event_56_CLOSED_LOC: "乡愿，德之贼也"
+
+ #杀马特团长
+  super_event_57: "中国统一"
+  super_event_57_QUOTE_LOC: "一切伟大的世界历史事变和人物，可以说都出现两次，第一次是作为悲剧出现，第二次是作为笑剧出现。"
+  super_event_57_QUOTE_SOURCE_LOC: "——§Y黑格尔§!"
+  super_event_57_CLOSED_LOC: "夫学识幼稚之民，往往沐猴而冠，沾沾自喜。"
+
+ #东百烤馒头
+  super_event_58: "中国统一"
+  super_event_58_QUOTE_LOC: "血花飞舞,苦战兼旬,攻克昆仑寒敌胆;华表巍峨,扬威万里,待清倭寇慰忠魂。"
+  super_event_58_QUOTE_SOURCE_LOC: "——§Y杜雨茗§!"
+  super_event_58_CLOSED_LOC: "华夏之梦自长子而始"
+
+ #维新政府
+  super_event_59: "中华维新政府成立"
+  super_event_59_QUOTE_LOC: "薙除俗世芜杂的执妄，只为扭转生灭轮回的羁缠。\n不为人所真正理解，亦不屑为人所看破…将军殿下她，实在是一个很矛盾的人。"
+  super_event_59_QUOTE_SOURCE_LOC: "——§Y狐斋宫§!"
+  super_event_59_CLOSED_LOC: "中华自由之梦破碎"
+
+ #唐可可-红
+  super_event_60: "中国统一"
+  super_event_60_QUOTE_LOC: "人民、只有人民，才是创造世界历史的动力。"
+  super_event_60_QUOTE_SOURCE_LOC: "——§R毛润芝§!"
+  super_event_60_CLOSED_LOC: "不管风吹浪打，胜似闲庭信步！"
+
+ #唐可可-蓝
+  super_event_61: "中国统一"
+  super_event_61_QUOTE_LOC: "我融入了所有的感情，为你做了这个。我做这个是为了你，是为了C位的你。"
+  super_event_61_QUOTE_SOURCE_LOC: "——§C唐可可§!"
+  super_event_61_CLOSED_LOC: "古国终迎自由"
+
+ #第二次统一战线
+  super_event_62: "第二次大东亚战争"
+  super_event_62_QUOTE_LOC: "统一战线必须坚持下去；\n只有坚持统一战线，才能坚持战争；\n只有坚持统一战线和坚持战争，才能有最后胜利。"
+  super_event_62_QUOTE_SOURCE_LOC: "——§R毛润芝§!"
+  super_event_62_CLOSED_LOC: "哪里有压迫，哪里就有反抗。"
+
+#意大利
+ #亚平宁统一战争
+  super_event_63: "亚平宁统一战争"
+  super_event_63_QUOTE_LOC: "战争的目的必须是为了和平。"
+  super_event_63_QUOTE_SOURCE_LOC: "——§Y亚里士多德§!"
+  super_event_63_CLOSED_LOC: "爱情和战争是不择手段的。"
+
+ #阿库西斯信仰大革命
+  super_event_64: "阿库西斯信仰大革命"
+  super_event_64_QUOTE_LOC: "黎明带走的不只是夜晚，还有信徒和她的未来，\n城中异常的不只是人们，预示这一切仅是开始。"
+  super_event_64_QUOTE_SOURCE_LOC: "——§Y克拉西克尔·克雷门特§!"
+  super_event_64_CLOSED_LOC: "时代的车轮开始运转"
+
+#精灵
+ #精灵统一
+  super_event_65: "北美统一"
+  super_event_65_QUOTE_LOC: "敌人可以很快变成朋友，即使她们是来杀死我的；\n为了精灵、为了世界人民的幸福，我们会让更多的敌人成为朋友。"
+  super_event_65_QUOTE_SOURCE_LOC: "——§0夜刀神十香§!"
+  super_event_65_CLOSED_LOC: "自由与幸福重回精灵之乡"
+
+#法国
+  #欧洲统一
+  super_event_67: "欧洲统一"
+  super_event_67_QUOTE_LOC: "终有一日，幻想乡、意呆莉、圣杯、俄罗斯、德意志，所有的民族在不丧失她们特性的前提下，结合成超越一切的共同体。"
+  super_event_67_QUOTE_SOURCE_LOC: "——§Y维克多·雨果§"
+  super_event_67_CLOSED_LOC: "过去是姐妹，现在是姐妹，未来是姐妹。"
+  #北美统一
+  super_event_68: "法兰西结束北美战争"
+  super_event_68_QUOTE_LOC: "另一个（选择）则是荣耀与希望，这是我和我的同僚所选择的，我相信法兰西的荣耀就是与她的盟友一道战斗！"
+  super_event_68_QUOTE_SOURCE_LOC: "——§Y夏尔·戴高乐§!"
+  super_event_68_CLOSED_LOC: "荣耀的日子已到！"
+
+  super_event_69: "北美统一"
+  super_event_69_QUOTE_LOC: "另一个（选择）则是荣耀与希望，这是我和我的同僚所选择的，我相信法兰西的荣耀就是与她的盟友一道战斗！"
+  super_event_69_QUOTE_SOURCE_LOC: "——§Y夏尔·戴高乐§!"
+  super_event_69_CLOSED_LOC: "荣耀的日子已到！"
+
+  #回归
+  super_event_70: "法兰西归来"
+  super_event_70_QUOTE_LOC: "以绞杀或废除暴君为结局的起义，与暴君前一天任意处置臣民生命财产一样合法。暴力支持她，暴力也推翻她。"
+  super_event_70_QUOTE_SOURCE_LOC: "——§Y卢梭§!"
+  super_event_70_CLOSED_LOC: "时隔百年的复仇"
+
+#远洋
+  super_event_71: "北美统一"
+  super_event_71_QUOTE_LOC: "群众力量、集体力量才是创造世界和创造历史的伟大力量，个人的力量只是这个伟大力量中的“沧海一粟”。"
+  super_event_71_QUOTE_SOURCE_LOC: "——§R朱德§!"
+  super_event_71_CLOSED_LOC: "这是属于你与我的土地"
+  super_event_72: "北美统一"
+  super_event_72_QUOTE_LOC: "我们以各民族善良人民的名义并经他们授权，向全世界郑重宣布，一个由哥伦比亚全体人民组成的，民有、民治、民享的共和国，于今日成立！"
+  super_event_72_QUOTE_SOURCE_LOC: "——§C建国宣言§!"
+  super_event_72_CLOSED_LOC: "人人生而平等！"
+  super_event_73: "北美统一"
+  super_event_73_QUOTE_LOC: "我们成功征服了这片阳光下的土地，获得宝贵的生存空间，但这不是一个结束,这甚至不是一个结束的开始,这至多只能算是一个开始的结束"
+  super_event_73_QUOTE_SOURCE_LOC: "——§g告全体国民书§!"
+  super_event_73_CLOSED_LOC: "前进！"
+
+#决战犯罪神
+  super_event_74: "决战犯罪神"
+  super_event_74_QUOTE_LOC: "我们之所以诞生在人世间，其意义并非是屈从命运而被任意驱使。\n在迈向更美好的明天之时，人民自会选择正确的道路。"
+  super_event_74_QUOTE_SOURCE_LOC: "——§C《维尔达宣言》§!"
+  super_event_74_CLOSED_LOC: "追寻吧，那最崇高的理想"
+
+  super_event_75: "伊比利亚统一战线的胜利"
+  super_event_75_QUOTE_LOC: "“人民手牵手，不可拆散的战线迈过海峡，解放浪潮将拂遍故土久违的面容。”"
+  super_event_75_QUOTE_SOURCE_LOC: "——国际评论员：§Y叭叭啦啦嘣§!"
+  super_event_75_CLOSED_LOC: "“熔火炽热的生命呐”"
+
+  super_event_76: "百年返故乡"
+  super_event_76_QUOTE_LOC: "“替死去的水手唱响号子，撞开迷雾。八十年流浪终结，旧日的王国在此归航。”"
+  super_event_76_QUOTE_SOURCE_LOC: "——国际评论员：§Y叭叭啦啦嘣§!"
+  super_event_76_CLOSED_LOC: "“阴魂不散的幽灵呐”"
+
+#齐亚德
+  super_event_77: "北美统一"
+  super_event_77_QUOTE_LOC: "In God We Trust.\n（我们相信上帝。）"
+  super_event_77_QUOTE_SOURCE_LOC: "——§Y美国国家格言§!"
+  super_event_77_CLOSED_LOC: "合众为一。"
+  super_event_78: "北美统一"
+  super_event_78_QUOTE_LOC: "ALEA IACTA EST.\n（骰子已被掷下。）"
+  super_event_78_QUOTE_SOURCE_LOC: "——§Y尤利乌斯·恺撒§!"
+  super_event_78_CLOSED_LOC: "我来，我见，我征服。"
+  super_event_79: "罗马帝国浴火重生"
+  super_event_79_QUOTE_LOC: "为你的战斗，\n献上万雷般的喝彩！"
+  super_event_79_QUOTE_SOURCE_LOC: "——§Y尼禄·克劳狄乌斯§!"
+  super_event_79_CLOSED_LOC: "如闪电般归来！"
+  super_event_80: "北美统一"
+  super_event_80_QUOTE_LOC: "我的耳旁回响着，\n反复回响着：\n责任，荣誉，国家。"
+  super_event_80_QUOTE_SOURCE_LOC: "——§Y道格拉斯·麦克阿瑟§!"
+  super_event_80_CLOSED_LOC: "老兵不死。"
+  super_event_81: "北美统一"
+  super_event_81_QUOTE_LOC: "我跟随着自己的脚步漫游于世，\n漫游于钻石般闪耀的沙漠，\n一个声音环绕着我，\n“这是属于你与我的土地!”"
+  super_event_81_QUOTE_SOURCE_LOC: "——§R北美民谣§!"
+  super_event_81_CLOSED_LOC: "这是属于你与我的土地！"
+  super_event_82: "北美统一"
+  super_event_82_QUOTE_LOC: "他们说过，那是骄傲。\n除此之外，他们什么都还不知道。"
+  super_event_82_QUOTE_SOURCE_LOC: "——§Y奥古斯塔·芙蕾德利嘉·艾戴尔阿德勒§!"
+  super_event_82_CLOSED_LOC: "天佑女王！"
+
+#俄罗斯
+  super_event_83: "俄罗斯统一"
+  super_event_83_QUOTE_LOC: "终有一天，大俄罗斯共和国将会比旧沙皇俄国更强大、更富有、更自由，但不知为此要付出多少血的代价。"
+  super_event_83_QUOTE_SOURCE_LOC: "——§F鲍里斯·萨文科夫§!"
+  super_event_83_CLOSED_LOC: "俄罗斯走上了一条新的道路"
+
+  super_event_84: "俄罗斯统一"
+  super_event_84_QUOTE_LOC: "请不要松开紧握之手。请留在我的眼睛能看到的地方。只要听到我的声音，请随时都要回应我……我已经不想再失去了。"
+  super_event_84_QUOTE_SOURCE_LOC: "——§C阿纳斯塔西娅§!"
+  super_event_84_CLOSED_LOC: "俄罗斯走上了一条新的道路"
+
+  super_event_85: "俄罗斯统一"
+  super_event_85_QUOTE_LOC: "如果我能够活到二百岁，整个欧洲都将匍匐在我的脚下。"
+  super_event_85_QUOTE_SOURCE_LOC: "——§Y叶卡捷琳娜二世§!"
+  super_event_85_CLOSED_LOC: "俄罗斯走上了一条新的道路"
+
+  super_event_86: "俄罗斯统一"
+  super_event_86_QUOTE_LOC: "君主如果用雇佣兵作为依靠来保卫他的国家，那么他既不会稳固亦不会安全。因为这些雇佣兵涣散、有野心、无纪律……他们既不敬畏上帝，待人亦不讲信义……"
+  super_event_86_QUOTE_SOURCE_LOC: "——§Y尼科洛·马基雅维利§!"
+  super_event_86_CLOSED_LOC: "俄罗斯走上了一条新的道路"
+
+
+#蒙古
+  super_event_87: "中国统一"
+  super_event_87_QUOTE_LOC: "夫天下称诵周公，言其能论歌文武之德，宣周邵之风，达太王王季之思虑，爰及公刘，以尊后稷也。"
+  super_event_87_QUOTE_SOURCE_LOC: "——§Y司马迁§!"
+  super_event_87_CLOSED_LOC: "太师之治"
+  
+  super_event_88: "中国统一"
+  super_event_88_QUOTE_LOC: "亲，大国梦哦！"
+  super_event_88_QUOTE_SOURCE_LOC: "——§Y兔子§!"
+  super_event_88_CLOSED_LOC: "此生无悔入华夏，来生愿在种花家"  
+  
+  super_event_89: "中国统一"
+  super_event_89_QUOTE_LOC: "狼看似凶猛，但实际上更注重集体团结和合作。"
+  super_event_89_QUOTE_SOURCE_LOC: "——§Y杰克·伦敦§!"
+  super_event_89_CLOSED_LOC: "嫁人就嫁灰太狼"  
+  
+  super_event_90: "中国统一"
+  super_event_90_QUOTE_LOC: "在其道德哲学中，羊代表“奴隶道德”的载体——温顺、团结、求安，虽非强者，却是社会稳定的基石。"
+  super_event_90_QUOTE_SOURCE_LOC: "——§Y弗里德里希·威廉·尼采§!"
+  super_event_90_CLOSED_LOC: "羊儿的聪明难以想象"  
+  
+  super_event_91: "第二次红巾军起义"
+  super_event_91_QUOTE_LOC: "满城都是火，\n府官四散躲。\n城里无一人，\n红军府上坐。"
+  super_event_91_QUOTE_SOURCE_LOC: "——§Y红巾军军歌§!"
+  super_event_91_CLOSED_LOC: "驱逐胡虏，恢复中华！"  
+  
+  super_event_92: "蒙古帝国重生"
+  super_event_92_QUOTE_LOC: "我的最大快乐，就是击败敌人，夺取他们的财富，骑他们的马，拥抱他们的妻子。"
+  super_event_92_QUOTE_SOURCE_LOC: "——§Y孛儿只斤·铁木真§!"
+  super_event_92_CLOSED_LOC: "上帝之鞭回归了"  
+  
+  super_event_93: "蒙古走上扩张之路"
+  super_event_93_QUOTE_LOC: "他们从高原横冲到低谷，摧毁了当前的一切，又像一道爆发的山洪那样退得无影无踪——绝对没有什么固有的生存原则。"
+  super_event_93_QUOTE_SOURCE_LOC: "——§Y格奥尔格·威廉·弗里德里希·黑格尔§!"
+  super_event_93_CLOSED_LOC: "太哈人了"  
+  
+  super_event_94: "中国统一"
+  super_event_94_QUOTE_LOC: "太祖之孙以仁德著称，为世祖皇帝，混一天下，九夷八蛮、海外番国归于一统，百年之间，其恩德孰不思慕，号令孰不畏惧，是时四方无虞，民康物阜。"
+  super_event_94_QUOTE_SOURCE_LOC: "——§Y朱元璋§!"
+  super_event_94_CLOSED_LOC: "大哉乾元"  
+  
+  super_event_95: "大元再临"
+  super_event_95_QUOTE_LOC: "到二十岁，又听说‘我们’的成吉思汗征服欧洲，是‘我们’最阔气的时代。到二十五岁，才知道所谓这‘我们’最阔气的时代，其实是蒙古人征服了中国，我们做了奴才……"
+  super_event_95_QUOTE_SOURCE_LOC: "——§Y鲁迅§!"
+  super_event_95_CLOSED_LOC: "神州再次陆沉……"    
+  
+  super_event_96: "俄罗斯统一"
+  super_event_96_QUOTE_LOC: "我想要拯救，过去被我舍弃而逃离的人民，我想做我认为正确的事情。"
+  super_event_96_QUOTE_SOURCE_LOC: "——§Y帝弥托利·亚历山大·布雷达德§!"
+  super_event_96_CLOSED_LOC: "败而不馁"  
+  
+  super_event_97: "汉风再起"
+  super_event_97_QUOTE_LOC: "汉族素为伟大民族，其文化之高，历史之久，世界上无出其右者。"
+  super_event_97_QUOTE_SOURCE_LOC: "——§Y孙中山§!"
+  super_event_97_CLOSED_LOC: "龙的传人"  
+  
+  super_event_98: "华夏军国主义"
+  super_event_98_QUOTE_LOC: "吾中国民族，素以文弱闻于天下……今欲振之，非提倡尚武精神不可！"
+  super_event_98_QUOTE_SOURCE_LOC: "——§Y梁启超§!"
+  super_event_98_CLOSED_LOC: "犯我强汉者，虽远必诛！"
+
+  super_event_99: "第二次伟大战争"
+  super_event_99_QUOTE_LOC: "向着明亮那方，\n向着明亮那方。\n哪怕会烧焦翅膀，\n也要飞向灯火闪烁的方向。"
+  super_event_99_QUOTE_SOURCE_LOC: "——§9金子美铃§!"
+  super_event_99_CLOSED_LOC: "我们只能向前飞"
+
+  super_event_100: "世界之春"
+  super_event_100_QUOTE_LOC: "种一片草原吧。\n去找三叶草和小蜜蜂。\n三叶草、小蜜蜂，加一点白日梦。\n假如找不到蜜蜂，光有白日梦也行。"
+  super_event_100_QUOTE_SOURCE_LOC: "——§9艾米莉·狄金森§!"
+  super_event_100_CLOSED_LOC: "这是一个温柔的奇迹"
+
+ #莉兰迪亚革命
+  super_event_101: "莉兰迪亚革命战争"
+  super_event_101_QUOTE_LOC: "今日，我们只做一件事：\n——把黎明，\n从这黑夜的手中夺回来！"
+  super_event_101_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_101_CLOSED_LOC: "因为太阳会照常升起" 
+  #南美革命战争(雪伊)
+  super_event_102: "南美革命战争"
+  super_event_102_QUOTE_LOC: "凡挡路者，皆视同亡灵！\n凡同战者，当享清泉！"
+  super_event_102_QUOTE_SOURCE_LOC: "——§t雪伊§!"
+  super_event_102_CLOSED_LOC: "此战，不死不休"
+  #南美革命战争(木棉)
+  super_event_103: "南美革命战争"
+  super_event_103_QUOTE_LOC: "我们应当努力奋斗，有所作为。\n但我更希望，我们将来能平凡地生活，\n在那样的生活里，我们不需要记得我。"
+  super_event_103_QUOTE_SOURCE_LOC: "——§N木棉§!"
+  super_event_103_CLOSED_LOC: "同志，抓紧我的手"
+  #雪伊南美统一
+  super_event_104: "南美统一"
+  super_event_104_QUOTE_LOC: "我决不辞职\n我将用一切方式进行抗争\n哪怕以生命为代价！"
+  super_event_104_QUOTE_SOURCE_LOC: "——§R萨尔瓦多·阿连德·戈森斯§!"
+  super_event_104_CLOSED_LOC: "团结的人民永不败"
+    #东征战争
+  super_event_105: "东征战争"
+  super_event_105_QUOTE_LOC: "我们必胜！\n我们终将战胜法西斯！"
+  super_event_105_QUOTE_SOURCE_LOC: "——§R《我们必胜》§!"
+  super_event_105_CLOSED_LOC: "铭记最为勇敢的战士们"
+      #美洲人民大团结
+  super_event_106: "美洲人民大团结"
+  super_event_106_QUOTE_LOC: "当我长眠在异地，\n没有祖国，但也不是奴隶，\n只愿我的坟墓上，\n放着一束花、一面旗。"
+  super_event_106_QUOTE_SOURCE_LOC: "——§R何塞·马蒂§!"
+  super_event_106_CLOSED_LOC: "团结是全世界的语言"
+        #南美革命战争
+  super_event_107: "南美革命战争"
+  super_event_107_QUOTE_LOC: "那么现在，\n看看你们身边的人吧。\n看看那双……和你一样，\n握紧了拳头的手！"
+  super_event_107_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_107_CLOSED_LOC: "开枪！同志们"
+
+  #晓枫南美统一
+  super_event_108: "南美统一"
+  super_event_108_QUOTE_LOC: "别再跪着捡面包渣啦，同志！\n站起来，整片麦田都是我们的。"
+  super_event_108_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_108_CLOSED_LOC: "现在，看看世界吧"
+
+  #木棉南美统一
+  super_event_109: "南美统一"
+  super_event_109_QUOTE_LOC: "你可以砍掉所有的花朵,\n但你不能阻止春天的到来。"
+  super_event_109_QUOTE_SOURCE_LOC: "——§Y巴勃罗·聂鲁达§!"
+  super_event_109_CLOSED_LOC: "掸掉灰尘，大步向前！"
+
+ #黑日远征
+  super_event_110: "黑日远征"
+  super_event_110_QUOTE_LOC: "当天空被染成墨色，当大地只剩下哀嚎，\n总要有人，成为那划破永夜的第一道光。"
+  super_event_110_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_110_CLOSED_LOC: "为了生者，我们拔剑而战"
+
+ #世界革命战争
+  super_event_111: "世界革命战争"
+  super_event_111_QUOTE_LOC: "为了一个没有墓碑的世界，\n为了一个充满希望的明天！"
+  super_event_111_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_111_CLOSED_LOC: "此战之后，再无战火"
+
+#世界革命战争
+  super_event_112: "世界革命战争"
+  super_event_112_QUOTE_LOC: "这片海吞下了太多的名字，\n这片土记住了每一次眼泪。\n于是他们永远不会忘记每一滴，\n真真切切流在自己身上的血。"
+  super_event_112_QUOTE_SOURCE_LOC: "——§N木棉§!"
+  super_event_112_CLOSED_LOC: "这是我们的生活"
+
+ #世界人民大团结
+  super_event_113: "世界人民大团结"
+  super_event_113_QUOTE_LOC: "我们曾仰望不同的旗帜，\n如今，我们仰望同一片星空。"
+  super_event_113_QUOTE_SOURCE_LOC: "——§t晓枫§!"
+  super_event_113_CLOSED_LOC: "我们的故事，刚刚开始"
+
+  #春泥公社宣布全面撤军
+  super_event_114: "春泥公社宣布全面撤军"
+  super_event_114_QUOTE_LOC: "如果一个人为了一个想法而死，\n那么这种死就是最崇高的……\n但我们所追求的，是建立一个社会，\n在这个社会里……"
+  super_event_114_QUOTE_SOURCE_LOC: "——§N木棉§!"
+  super_event_114_CLOSED_LOC: "人们不再需要为了一个想法而死"
+
+ #故事的最后一页
+  super_event_115: "献给莉兰迪亚的葬礼"
+  super_event_115_QUOTE_LOC: "晓枫姐…雪伊姐……听到了吗？\n大家都在叫着你们的名字，\n这声音好难听，我好讨厌。\n可我…好像只能替你们听下去啊…"
+  super_event_115_QUOTE_SOURCE_LOC: "——§9禾果§!"
+  super_event_115_CLOSED_LOC: "晚安，莉兰迪亚"
+ #最后的暴雨
+  super_event_116: "南美革命战争"
+  super_event_116_QUOTE_LOC: "撑伞的孩子，\n淋着最大的雨。"
+  super_event_116_QUOTE_SOURCE_LOC: "——§9禾果§!"
+  super_event_116_CLOSED_LOC: "直到……雨过天晴"
+  #禾果南美统一
+  super_event_117: "南美统一"
+  super_event_117_QUOTE_LOC: "这片土地，\n很安静。\n安静得……\n能听见花开的声音了。"
+  super_event_117_QUOTE_SOURCE_LOC: "——§9禾果§!"
+  super_event_117_CLOSED_LOC: "下一个春天在哪里？"
+
+  #南美双子星
+  super_event_118: "南美双子星"
+  super_event_118_QUOTE_LOC: "嗯……好酸。\n这就是和平的味道吗？\n不……\n这是明天的味道。"
+  super_event_118_QUOTE_SOURCE_LOC: "——§9小圆&小果子§!"
+  super_event_118_CLOSED_LOC: "§R看，太阳——§!"
+
+  #献给所有未曾哭泣的你
+  super_event_119: "献给所有未曾哭泣的你"
+  super_event_119_QUOTE_LOC: "她们说，前面是无法战胜的风暴。\n没关系呀。\n因为这一次，\n你们的身后，站着整个世界。"
+  super_event_119_QUOTE_SOURCE_LOC: "——§9禾果§!"
+  super_event_119_CLOSED_LOC: "所以,我们一起！"
+  #对樱战争
+  super_event_120: "对樱战争"
+  super_event_120_QUOTE_LOC: "这场战争的意义？\n去问问每一颗，\n因为失去了孩子而流泪的、\n母亲的心跳声吧。"
+  super_event_120_QUOTE_SOURCE_LOC: "——§9禾果§!"
+  super_event_120_CLOSED_LOC: "起航！"
+
+  super_event_121: "‘瓦尔普吉斯’止于见泷原"
+  super_event_121_QUOTE_LOC: "在灾难面前，人本身—— 比传说或者神器重要得多。"
+  super_event_121_QUOTE_SOURCE_LOC: "——“§g风暴突击队§!”§Y号角§!"
+  super_event_121_CLOSED_LOC: "这世上，不该有所谓“命运”"
+
+  super_event_122: "巴别塔之陨"
+  super_event_122_QUOTE_LOC: "也许，该被审判的不是人类，而是在漫长岁月里被复仇变成怪物的魔女..."
+  super_event_122_QUOTE_SOURCE_LOC: "——月代雪"
+  super_event_122_CLOSED_LOC: "永别了"
+
+  super_event_123: "§R审判日§!"
+  super_event_123_QUOTE_LOC: "这是一场游戏，让我看看你到底能够，堕落的有多么肮脏呢。"
+  super_event_123_QUOTE_SOURCE_LOC: "——月代雪"
+  super_event_123_CLOSED_LOC: "丧钟敲响"
+
+  super_event_124: "南美战争结束"
+  super_event_124_QUOTE_LOC: "终于，你终于找到我了，你不必为抛弃我而感到愧疚，因为我一直在你身边。"
+  super_event_124_QUOTE_SOURCE_LOC: "——月代雪"
+  super_event_124_CLOSED_LOC: "但她说，这只是一个开始..."
+
+  super_event_125: "魔法少女联盟内战"
+  super_event_125_QUOTE_LOC: "谁都无法相信未来，谁都无法接受未来，我不再依靠任何人了，不需要任何人去理解。"
+  super_event_125_QUOTE_SOURCE_LOC: "——晓美焰"
+  super_event_125_CLOSED_LOC: "撕心裂肺"
+
+  #南美大灾变
+  super_event_126: "南美大围猎"
+  super_event_126_QUOTE_LOC: "现在，把灯熄灭，把门锁好。\n因为在这片漆黑的大陆上……\n只有猎手，和猎物！"
+  super_event_126_QUOTE_SOURCE_LOC: "——§O索拉娜§!"
+  super_event_126_CLOSED_LOC: "咬断她们的喉咙！"
+  #最后的晚餐
+  super_event_127: "最后一餐"
+  super_event_127_QUOTE_LOC: "把你们的神像砸碎，正好砌成长桌。\n把你们的皇冠熔掉，正好铸成饭碗。\n看啊，这旧世界燃烧的余晖……\n佐酒正好。"
+  super_event_127_QUOTE_SOURCE_LOC: "——§O索拉娜§!"
+  super_event_127_CLOSED_LOC: "这是……第一口！！"
+
+    #永世神选的加冕礼
+  super_event_128: "永世神选的加冕礼"
+  super_event_128_QUOTE_LOC: "看啊……当天空被撕裂，当大地化为腐肉。\n这崩溃的声音，\n难道不比你们那虚伪的宁静。\n要动听一万倍吗？"
+  super_event_128_QUOTE_SOURCE_LOC: "——§9永世神选·薇莉安§!"
+  super_event_128_CLOSED_LOC: "世界正在死去……"
+  
+
+  super_event_129: "中美洲的统一"
+  super_event_129_QUOTE_LOC: "圣遗物使用者之间不应该相互斗争"
+  super_event_129_QUOTE_SOURCE_LOC: "——九条都"
+  super_event_129_CLOSED_LOC: "中美洲暂时和平了"
+  super_event_130: "光之种照耀美洲大陆"
+  super_event_130_QUOTE_LOC: "图书馆将永存光耀，孤寂，无尽\N岿然不动满腹稀世书籍\N无用，不灭，隐秘"
+  super_event_130_QUOTE_SOURCE_LOC: "——Library Of Ruina"
+  super_event_130_CLOSED_LOC: "希望的火种会延续下去"
+  super_event_131: "GONE ANGELS"
+  super_event_131_QUOTE_LOC: "再明亮的星辰也终会暗淡。\N与其他的都市之星一样，终有陨落的那天。"
+  super_event_131_QUOTE_SOURCE_LOC: "——都市传闻"
+  super_event_131_CLOSED_LOC: "你的同僚们……书籍猎手们，死伤了多少？"
+  super_event_132: "解放美洲宣言"
+  super_event_132_QUOTE_LOC: "瓦尔哈拉将会贯穿邪恶！\NThe order...Punishment！\N美洲将会获得解放！"
+  super_event_132_QUOTE_SOURCE_LOC: "——结城希亚"
+  super_event_132_CLOSED_LOC: "这场战争的胜负变得未知了起来"
+
+  #直到永恒
+  super_event_133: "重返莉兰迪亚"
+  super_event_133_QUOTE_LOC: "世界，\n又变回了，\n我们初见时，\n那副可爱的模样了。"
+  super_event_133_QUOTE_SOURCE_LOC: "——§1莉莉安娜§!"
+  super_event_133_CLOSED_LOC: "欢迎回家，我的唯一"
+  #第二次莉兰迪亚革命
+  super_event_134: "第二次莉兰迪亚革命"
+  super_event_134_QUOTE_LOC: "来吧，用你们的怒火，烧尽我所有的罪孽。\n然后，在那片干净的灰烬上……\n为她，加冕！！！"
+  super_event_134_QUOTE_SOURCE_LOC: "——§O索拉娜§!"
+  super_event_134_CLOSED_LOC: "这是我最后的理想"
+  #南美解放战争
+  super_event_135: "骑士的远征"
+  super_event_135_QUOTE_LOC: "那么，各位坏蛋先生，你们准备好了吗？\n这一次的童话故事……\n轮到我来书写结局了。"
+  super_event_135_QUOTE_SOURCE_LOC: "——§t露西莉亚§!"
+  super_event_135_CLOSED_LOC: "出发！去寻找巨龙！"
+  #南美革命战争
+  super_event_136: "南美革命战争"
+  super_event_136_QUOTE_LOC: "曾为一人窃取时间的火焰，\n妄图点亮昨日的灰烬；\n如今我愿为众生献上此身，\n化作照亮明天的柴薪。"
+  super_event_136_QUOTE_SOURCE_LOC: "——§t露西莉亚§!"
+  super_event_136_CLOSED_LOC: "直至所有悲伤，都被燃尽"
+
+  super_event_137: "镇魂之战"
+  super_event_137_QUOTE_LOC: "剧作家死了，演员醒了。\n提线木偶将扯断丝线，走向她的神明，\n在戏剧的结尾，\n烧掉整个舞台。"
+  super_event_137_QUOTE_SOURCE_LOC: "——§t“露西莉亚”§!"
+  super_event_137_CLOSED_LOC: "我们的故事从未结束"
+  #北上战争
+  super_event_138: "北上战争"
+  super_event_138_QUOTE_LOC: "巨龙咆哮，\n只是为了让世界听到它的声音。\n骑士拔剑，\n仅是因为一只小小蚂蚁的悲鸣。"
+  super_event_138_QUOTE_SOURCE_LOC: "——§t露西莉亚§!"
+  super_event_138_CLOSED_LOC: "为无名者献上此剑"
+  #谢幕之战
+  super_event_139: "落幕战争"
+  super_event_139_QUOTE_LOC: "嘘……不要害怕。\n这只是……童话故事里，\n最华丽的其中一页而已。"
+  super_event_139_QUOTE_SOURCE_LOC: "——§1莉莉安娜§!"
+  super_event_139_CLOSED_LOC: "那么……入座吧"
+  #诀别之战
+  super_event_140: "诀别之战"
+  super_event_140_QUOTE_LOC: "我会站在这座城堡的最高处，\n在太阳即将落下时等着你们。\n直到爱着所有人的英雄们啊，\n带着那足以烧尽长夜的火焰…"
+  super_event_140_QUOTE_SOURCE_LOC: "——§t露西莉亚§!"
+  super_event_140_CLOSED_LOC: "来到我的面前"
+  #东征之战
+  super_event_141: "东征圣战"
+  super_event_141_QUOTE_LOC: "为你们千年的悲剧，\n献上最终的落幕。\n为你们腐朽的世界，\n带来盛大的葬礼。"
+  super_event_141_QUOTE_SOURCE_LOC: "——§O《美洲裁决阵线联合宣言》§!"
+  super_event_141_CLOSED_LOC: "黎明，将自西方升起"
+  #最后的圣战
+  super_event_142: "世界革命战争"
+  super_event_142_QUOTE_LOC: "你赐予少女以奇迹，代价是燃烧殆尽；\n你赐予亡灵以永恒，代价是彻底沉寂；\n你赐予英雄以宿命，代价是满身血迹；\n你赐予国王以冠冕，代价是背弃人民。"
+  super_event_142_QUOTE_SOURCE_LOC: "——§t露西莉亚§!"
+  super_event_142_CLOSED_LOC: "世界属于所有不完美的生灵"
+
+  super_event_143: "沙漠冲突"
+  super_event_143_QUOTE_LOC: "战争是一种手段而非目的。"
+  super_event_143_QUOTE_SOURCE_LOC: "——§Y卡尔·冯·克劳塞维茨§!"
+  super_event_143_CLOSED_LOC: "红沙漫天"
+
+#航天
+  super_event_144: "首颗人造卫星"  ##通用
+  super_event_144_QUOTE_LOC: "地球是人类的摇篮,\n但人类不能永远生活在摇篮里。\n起初,她们小心翼翼的飞出地球,\n然后就是太阳系,之后便是整个宇宙。"
+  super_event_144_QUOTE_SOURCE_LOC: "——§t齐奥尔科夫斯基§!"
+  super_event_144_CLOSED_LOC: "人类的一大步"
+
+  super_event_145: "首颗人造卫星"  ##苏联
+  super_event_145_QUOTE_LOC: "科学绝不是一种自私自利的享乐。\n有幸能够致力于科学研究的人，\n首先应该拿自己的学识为人类服务。"
+  super_event_145_QUOTE_SOURCE_LOC: "——§t卡尔·马克思§!"
+  super_event_145_CLOSED_LOC: "前进，无产者的胜利！"
+
+  super_event_146: "首颗人造卫星"  ##瑞典
+  super_event_146_QUOTE_LOC: "我，一直都想和外星人说上话，因为和外星人的交流是人类的浪漫啊！"
+  super_event_146_QUOTE_SOURCE_LOC: "——§t宝木遥乃§!"
+  super_event_146_CLOSED_LOC: "宇宙，波那呜（早安）！"
+
+  super_event_147: "“地平弧光计划”"  ##克丽斯腾
+  super_event_147_QUOTE_LOC: "如若此后百年千年，\n来人漫步于繁星身侧，\n人们便要赞颂她的名。"
+  super_event_147_QUOTE_SOURCE_LOC: ""
+  super_event_147_CLOSED_LOC: "晚安，宇宙。晚安，克丽斯腾。"
+
+  super_event_148: "首颗人造卫星"  ##GER
+  super_event_148_QUOTE_LOC: "地球是人类的摇篮,\n但人类不能永远生活在摇篮里。\n起初,她们小心翼翼的飞出地球,\n然后就是太阳系,之后便是整个宇宙。"
+  super_event_148_QUOTE_SOURCE_LOC: "——§t齐奥尔科夫斯基§!"
+  super_event_148_CLOSED_LOC: "人类的一大步"
+
+  super_event_149: "中国统一"
+  super_event_149_QUOTE_LOC: "我们解脱了帝国主义和殖民统治的束缚。我们铲除了封建制度。人民正走向新的、更光辉的高峰。\n敬礼！中国人民革命斗争胜利万岁！"
+  super_event_149_QUOTE_SOURCE_LOC: "——§P宋庆龄§!"
+  super_event_149_CLOSED_LOC: "向人民的胜利致敬！"
+
+  super_event_150: "中国统一"
+  super_event_150_QUOTE_LOC: "我知道我是专制者，但我会是最后一位。\n我以专制来结束专制。今后，只有国家、民族和三民主义的万岁，没有个人的万岁。"
+  super_event_150_QUOTE_SOURCE_LOC: "——§R蒋巾帼§!"
+  super_event_150_CLOSED_LOC: "苏维埃民国万岁！"
+
+  super_event_151: "中国统一"
+  super_event_151_QUOTE_LOC: "个人的生死毁誉并不足惜，重要的是国家、民族的命脉。"
+  super_event_151_QUOTE_SOURCE_LOC: "——§Y蒋巾帼§!"
+  super_event_151_CLOSED_LOC: "她赢了所有人，唯独赢不了自己的姓氏。"
+
+  super_event_152: "中国统一"
+  super_event_152_QUOTE_LOC: "先定宪法，后举总统。不能因人以法迁就之；也不能因人以法束缚之。"
+  super_event_152_QUOTE_SOURCE_LOC: "——§C宋教仁§!"
+  super_event_152_CLOSED_LOC: "路还很长"
+
+  super_event_153: "中国统一"
+  super_event_153_QUOTE_LOC: "龙，可是帝王之征啊。"
+  super_event_153_QUOTE_SOURCE_LOC: "——§Y陈千语§!"
+  super_event_153_CLOSED_LOC: "革命不是胜利了吗？"
+
+  super_event_154: "中国统一"
+  super_event_154_QUOTE_LOC: "革命是青年的义务，救国是青年的责任！"
+  super_event_154_QUOTE_SOURCE_LOC: "——§Y胡宗南§!"
+  super_event_154_CLOSED_LOC: "训政没有终点"
+
+  super_event_155: "中国统一"
+  super_event_155_QUOTE_LOC: "老胡说训政没完。我不知道还要多久。但我会继续学。"
+  super_event_155_QUOTE_SOURCE_LOC: "——§Y汤汤§!"
+  super_event_155_CLOSED_LOC: "训政没有终点"
+
+  super_event_156: "中国统一"
+  super_event_156_QUOTE_LOC: "孙科小姐每天早上八点会接到我的电话。她不需要知道别的事。"
+  super_event_156_QUOTE_SOURCE_LOC: "——§Y识之律者§!"
+  super_event_156_CLOSED_LOC: "早安，总统先生！"
+
+  super_event_157: "中国统一"
+  super_event_157_QUOTE_LOC: "战斗不只是为了胜利，更是为了保护我们所爱的人。"
+  super_event_157_QUOTE_SOURCE_LOC: "——§R东方铁心§!"
+  super_event_157_CLOSED_LOC: "神兵守华夏"
+
+  super_event_158: "中国统一"
+  super_event_158_QUOTE_LOC: "放心吧，坏人被赶跑了。"
+  super_event_158_QUOTE_SOURCE_LOC: "——§P南宫问雅§!"
+  super_event_158_CLOSED_LOC: "我有勇气我都不怕"
+
+  super_event_159: "中国统一"
+  super_event_159_QUOTE_LOC: "只要团结一致，就没有什么是我们做不到的。"
+  super_event_159_QUOTE_SOURCE_LOC: "——§C南宫问天§!"
+  super_event_159_CLOSED_LOC: "神兵守华夏"
+
+  super_event_160: "穗的复仇"
+  super_event_160_QUOTE_LOC: "良，之前杀了那么多人......你后悔吗？"
+  super_event_160_QUOTE_SOURCE_LOC: "——§0穗§!"
+  super_event_160_CLOSED_LOC: "让罪有应得之人付出代价"
+
+  super_event_7121:0 "南美北上战争"#PAM
+  super_event_7121_QUOTE_LOC:0 "闭上眼吧，\n我的乖孩子，\n明天的阿德莱希,\n会比以往都要幸福。"
+  super_event_7121_QUOTE_SOURCE_LOC:0 "——§1夜莺§!"
+  super_event_7121_CLOSED_LOC:0 "睡吧...睡吧......"
+
+  super_event_7122:0 "致以生者的抗争"#PAM
+  super_event_7122_QUOTE_LOC:0 "不管你还要跌倒多少次，不管你还要对着那些再也回不来的人哭多久。\n我都会站在你的身边，把那些围过来的黑暗一剑一剑劈开。"
+  super_event_7122_QUOTE_SOURCE_LOC:0 "——§9小果子§!和§t露西莉亚§!"
+  super_event_7122_CLOSED_LOC:0 "醒一醒！站起来！杀出去！"
+
+  super_event_7123:0 "审判之战"#PAM
+  super_event_7123_QUOTE_LOC:0 "不敢承认软弱的国王啊，\n你赢得了全天下的敬畏，\n却连一次真心的眼泪都不会流下。"
+  super_event_7123_QUOTE_SOURCE_LOC:0 "——§Y佚名§!"
+  super_event_7123_CLOSED_LOC:0 "所以……连您也会感到害怕吗？"
+  
+  super_event_7124:0 "在这世界尽头，我们彼此相拥"#PAM
+  super_event_7124_QUOTE_LOC:0 "手还冷吗？\n不冷了哦。\n那就抬起头，\n向前走吧。"
+  super_event_7124_QUOTE_SOURCE_LOC:0 "——§Y来自莉兰迪亚§!"
+  super_event_7124_CLOSED_LOC:0 "我们回家了哦"
+
+  super_event_161: "樱花国革命"
+  super_event_161_QUOTE_LOC: "我绝对不会拒绝。\n所以现在立刻对我说“跟我走”"
+  super_event_161_QUOTE_SOURCE_LOC: "——§R夏娜§!"
+  super_event_161_CLOSED_LOC: "听吧！万国的劳动者！"
+
+
+  super_event_162: "击溃神明之日"
+  super_event_162_QUOTE_LOC: "愿我们翱翔天际，         \n愿我们开辟前路。"
+  super_event_162_QUOTE_SOURCE_LOC: "——§O奥古斯塔§!"
+  super_event_162_CLOSED_LOC: "王冠即誓言 金石为开"
+  
+  #美德共和国统一南美
+  super_event_163: "南美共和元年"
+  super_event_163_QUOTE_LOC: "我要说，帝国主义者必须作为敌人受审，我们不是在审判他，我们是在和他做斗争"
+  super_event_163_QUOTE_SOURCE_LOC: "——§R四宫辉夜§!"
+  super_event_163_CLOSED_LOC: "美德，自由和革命"
+  #美洲大陆战争
+  super_event_164: "美洲大陆战争"
+  super_event_164_QUOTE_LOC: "想要拿起枪杀死别人的人，自己也要做好被杀死的觉悟"
+  super_event_164_QUOTE_SOURCE_LOC: "——时崎狂三"
+  super_event_164_CLOSED_LOC: "新大陆在燃烧"
+
+  super_event_165: "中国统一"
+  super_event_165_QUOTE_LOC: "新国民运动万岁！\n新东亚建设万岁！\n中国自由平等万岁！\n东亚解放万岁！"
+  super_event_165_QUOTE_SOURCE_LOC: "——§F汪兆铭§!"
+  super_event_165_CLOSED_LOC: "兴复中华！保卫东亚！"
+ #第二王国统一南美
+  super_event_166: "南美合众国成立"
+  super_event_166_QUOTE_LOC: "拥有无限仁慈与智慧的君主制可能是所有政体中最完美的"
+  super_event_166_QUOTE_SOURCE_LOC: "——埃兹拉·斯泰尔斯"
+  super_event_166_CLOSED_LOC: "自由的王国"
+ #D日计划
+  super_event_167: "D日行动"
+  super_event_167_QUOTE_LOC: "别坐在那哭，起来，去把那些对我们兄弟开火的家伙消灭掉！"
+  super_event_167_QUOTE_SOURCE_LOC: "——诺曼·科塔"
+  super_event_167_CLOSED_LOC: "来自新大陆"
+
+  AH_debug_se_text: "[adorable_heart_Get_Super_Event_Title]（[?adorable_heart_super_event_var]）"
+  adorable_heart_Super_Event_Title: "§b[adorable_heart_Get_Super_Event_Title]§!"
+  superevents_note_title: "§b[get_superevents_note_title]§!"
+  Adorable_heart_super_event_music_button_tt: "播放对应超事件音乐"
+  superevents_note_date_tt: "§b[?global.superevents_note_date_array^superevents_note_array_i.GetDateString]§!"

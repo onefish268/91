@@ -1,0 +1,30 @@
+spriteTypes = {
+    ###GUI
+    #民族精神
+    #超事件
+    #结语
+	#决议
+    #事件
+
+    #全球事件
+
+    #GUI
+
+    #国策
+   	SpriteType = {
+		name = "GFX_LIB_FOCUS_JXJSXRJZL"
+		texturefile = "gfx/interface/goals/LIB/GC_JXJSXRJZL.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_FOCUS_JSZZ"
+		texturefile = "gfx/interface/goals/LIB/GC_JSZZ.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_FOCUS_CZJS"
+		texturefile = "gfx/interface/goals/LIB/GC_CZJS.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_FOCUS_JLSRZDD"
+		texturefile = "gfx/interface/goals/LIB/GC_JLSRZDD.png"
+	}
+}

@@ -1,0 +1,8 @@
+defined_text = {
+	#新人间之里国家介绍
+	name = GET_LIB_Country_History
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 1 } }
+		localization_key = LIB_Country_History_Page_01
+	}
+}
