@@ -92,7 +92,7 @@ joint_focus = {
 
 joint_focus = {
 	id = zg_21
-	icon = GFX_focus_GER_total_control_over_domestic_affairs
+	icon = GFX_focus_zyx18
 	prerequisite = { focus = zg_2 }
 	relative_position_id = zg_1
 
@@ -142,7 +142,7 @@ joint_focus = {
 
 joint_focus = {
 	id = zg_22
-	icon = GFX_focus_GER_support_the_proletarian_uprising
+	icon = GFX_focus_zyx19
 	prerequisite = { focus = zg_2 }
 	relative_position_id = zg_1
 
