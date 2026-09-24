@@ -607,4 +607,412 @@ spriteTypes = {
 		name = "GFX_focus_zyx14"
 		texturefile = "gfx/focus_icon/GFX_focus_zyx14.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_zyx15"
+		texturefile = "gfx/focus_icon/GFX_focus_zyx15.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_zyx16"
+		texturefile = "gfx/focus_icon/GFX_focus_zyx16.png"
+	}
+	SpriteType = {
+    name = "GFX_focus_zyx17"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx17.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx18"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx18.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx19"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx19.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx20"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx20.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx21"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx21.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx22"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx22.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx23"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx23.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx24"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx24.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx25"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx25.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx26"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx26.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx27"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx27.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx28"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx28.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx29"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx29.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx30"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx30.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx31"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx31.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx32"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx32.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx33"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx33.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx34"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx34.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx35"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx35.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx36"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx36.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx37"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx37.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx38"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx38.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx39"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx39.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx40"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx40.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx41"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx41.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx42"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx42.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx43"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx43.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx44"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx44.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx45"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx45.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx46"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx46.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx47"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx47.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx48"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx48.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx49"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx49.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx50"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx50.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx51"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx51.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx52"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx52.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx53"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx53.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx54"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx54.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx55"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx55.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx56"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx56.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx57"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx57.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx58"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx58.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx59"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx59.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx60"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx60.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx61"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx61.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx62"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx62.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx63"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx63.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx64"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx64.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx65"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx65.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx66"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx66.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx67"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx67.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx68"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx68.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx69"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx69.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx70"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx70.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx71"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx71.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx72"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx72.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx73"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx73.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx74"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx74.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx75"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx75.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx76"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx76.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx77"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx77.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx78"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx78.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx79"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx79.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx80"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx80.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx81"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx81.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx82"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx82.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx83"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx83.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx84"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx84.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx85"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx85.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx86"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx86.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx87"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx87.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx88"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx88.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx89"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx89.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx90"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx90.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx91"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx91.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx92"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx92.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx93"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx93.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx94"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx94.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx95"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx95.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx96"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx96.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx97"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx97.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx98"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx98.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx99"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx99.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx100"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx100.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx101"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx101.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx102"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx102.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx103"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx103.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx104"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx104.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx105"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx105.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx106"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx106.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx107"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx107.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx108"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx108.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx109"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx109.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx110"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx110.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx111"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx111.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx112"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx112.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx113"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx113.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx114"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx114.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx115"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx115.png"
+}
+SpriteType = {
+    name = "GFX_focus_zyx116"
+    texturefile = "gfx/focus_icon/GFX_focus_zyx116.png"
+}
 }
