@@ -1,0 +1,86 @@
+characters = {
+	bzl_1 = {
+		name = "莉恩"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/bzl_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+	lio_1 = {
+		name = "维鲁克"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/lio_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+	lwy_1 = {
+		name = "迪纳斯国王"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/lwy_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+	szl_1 = {
+		name = "艾莉瑞雅·迅风"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/szl_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+	wdl_1 = {
+		name = "阿坎尼亚一世"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/wdl_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+	yok_1 = {
+		name = "巨人王雷林"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/yok_1.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 	
+	        }
+			id= -1
+		}
+	}	
+}

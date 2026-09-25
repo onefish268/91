@@ -18,6 +18,13 @@
  YOK: "尤金帝国"
  YOK_DEF: "矮人"
  YOK_ADJ: "矮人"
+#角色名称
+ LWY_dns_name: "迪纳斯一世"
+ WDL_wzn_name: "维兹南"
+ LWY_dns_Diplomacy_desc: "迪纳斯一世\n@LWY§C利尼维亚王国§!的§C老国王§!"
+ WDL_wzn_Diplomacy_desc: "维兹南\n@WDL§B瓦拉杜勒王国§!的§B大魔导师§!"
+ LWY_dns_DESC_1: "迪纳斯一世\n@LWY§C利尼维亚王国§!的§C老国王§!"
+ WDL_wzn_DESC_1: "维兹南\n@WDL§B瓦拉杜勒王国§!的§B大魔导师§!"
 #省份名称
  STATE_1236: "交界地"
  STATE_1237: "峦铁城"

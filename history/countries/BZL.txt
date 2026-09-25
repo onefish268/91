@@ -42,7 +42,7 @@ set_popularities = {
 
 } 
 
-
+recruit_character = bzl_1
 
 
 

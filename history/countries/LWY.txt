@@ -42,6 +42,9 @@ set_popularities = {
 
 } 
 
+set_variable = { another_country_leader_group = 66 }
+
+recruit_character = lwy_1
 
 
 
