@@ -307,6 +307,12 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_daqingxi_begin
 	    }
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			custom_effect_tooltip = YSS_tootip_25
+		}
 	}
 	focus = {
 		id = YSS_focus_16
@@ -319,6 +325,12 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_15
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			custom_effect_tooltip = YSS_tootip_25
 		}
 	}
 	focus = {
@@ -333,6 +345,13 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_16
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.05
+			custom_effect_tooltip = YSS_tootip_25
+		}
 	}
 	focus = {
 		id = YSS_focus_18
@@ -346,6 +365,13 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_17
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.03
+			custom_effect_tooltip = YSS_tootip_25
+		}
 	}
 	focus = {
 		id = YSS_focus_19
@@ -358,6 +384,13 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_17
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.03
+			custom_effect_tooltip = YSS_tootip_25
 		}
 	}
 	focus = {
@@ -375,6 +408,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_19
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.03
+			add_to_variable = {
+				YSS_impure_party_stability_weekly = 0.01
+			}
+			custom_effect_tooltip = YSS_tootip_29
+		}
 	}
 	focus = {
 		id = YSS_focus_21
@@ -387,6 +430,16 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_20
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.03
+			add_to_variable = {
+				YSS_impure_party_party_popularity_stability_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_29
 		}
 	}
 	focus = {
@@ -401,6 +454,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_21
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = 0.05
+			add_to_variable = {
+				YSS_impure_party_political_power_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_29
+		}
 	}
 	focus = {
 		id = YSS_focus_23
@@ -413,6 +476,16 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_22
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.05
+			add_to_variable = {
+				YSS_impure_party_drift_defence_factor = 0.05
+			}
+			custom_effect_tooltip = YSS_tootip_29
 		}
 	}
 	focus = {
@@ -433,6 +506,17 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_daqingxi_kuoda
 	    }
+		completion_reward = { 
+			remove_dynamic_modifier = {
+                modifier = YSS_9
+            }
+			custom_effect_tooltip = YSS_tootip_31
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_daqingxi
+                scoped_play_song = "当你在欢呼中死去"
+            }
+		}
 	}
 	focus = {
 		id = YSS_focus_25
@@ -452,6 +536,10 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_daqingxi_jieshu
 	    }
+		completion_reward = { 
+			custom_effect_tooltip = YSS_tootip_30
+			add_stability = 0.15
+		}
 	}
 	focus = {
 		id = YSS_focus_26
@@ -464,6 +552,21 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_24
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.05
+			add_to_variable = {
+				YSS_stability_weekly = 0.01
+			}
+			hidden_effect = {
+			    uncomplete_national_focus = {
+                    focus = YSS_focus_26
+                }   
+		    }
+			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -478,6 +581,24 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_26
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.05
+			add_to_variable = {
+				YSS_7_party_popularity_stability_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_7_industrial_capacity_factory = 0.05
+			}
+			hidden_effect = {
+			    uncomplete_national_focus = {
+                    focus = YSS_focus_28
+                }   
+		    }
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_29
@@ -491,11 +612,30 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_28
 		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			add_stability = -0.05
+			add_to_variable = {
+				YSS_drift_defence_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_production_speed_buildings_factor = 0.05
+			}
+			add_manpower = -3000
+			hidden_effect = {
+			    uncomplete_national_focus = {
+                    focus = YSS_focus_29
+                }   
+		    }
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_30
-		x = 29
-		y = 10
+		x = 30
+		y = 13
 		cost = 0
 		icon = GFX_focus_generic_phone
 		continue_if_invalid = no
@@ -504,12 +644,14 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_daqingxi_jiaoting
 	    }
+		completion_reward = { 
+		}
 	}
 	focus = {
 		id = YSS_focus_31
-		x = 29
-		y = 11
-		cost = 0
+		x = 30
+		y = 14
+		cost = 5
 		icon = GFX_focus_NGL_take_up_arms
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -517,18 +659,28 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_30
 		}
+		completion_reward = { 
+			add_stability = 0.05
+			remove_advisor_role = {
+                character = "YSS_1_8"  # 要修改的角色ID
+                slot = political_advisor          # 要移除的顾问槽位
+            }
+		}
 	}
 	focus = {
 		id = YSS_focus_32
-		x = 29
-		y = 12
-		cost = 0
+		x = 30
+		y = 15
+		cost = 5
 		icon = GFX_focus_NGL_affirmative_action_for_infected
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_31
+		}
+		completion_reward = { 
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -759,9 +911,9 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_43
-		x = 24
-		y = 0
-		cost = 0
+		x = 32
+		y = 13
+		cost = 5
 		icon = GFX_focus_generic_communist
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -769,12 +921,29 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = YSS_daqingxi_jiaoting
 	    }
+		prerequisite = {
+			focus = YSS_focus_32
+		}
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 100
+			add_to_variable = {
+				YSS_command_power_gain_mult = 0.05
+			}
+			add_to_variable = {
+				YSS_7_industrial_capacity_factory = 0.1
+			}
+			add_to_variable = {
+				YSS_7_conscription_factor = 0.1
+			}
+			custom_effect_tooltip = YSS_tootip_6
+		}
 	}
 	focus = {
 		id = YSS_focus_44
-		x = 24
-		y = 1
-		cost = 0
+		x = 33
+		y = 14
+		cost = 5
 		icon = GFX_focus_ARG_the_buenos_aires_conference
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -782,18 +951,40 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_43
 		}
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = YSS_focus_45
-		x = 24
-		y = 2
-		cost = 3
+		x = 33
+		y = 15
+		cost = 5
 		icon = GFX_focus_AUS_danubian_socialist_communes
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_44
+		}
+		completion_reward = { 
+			add_stability = 0.05
+			add_to_variable = {
+				YSS_command_power_gain_mult = 0.05
+			}
+			add_to_variable = {
+				YSS_political_power_cost = -0.05
+			}
+			add_to_variable = {
+				YSS_production_speed_buildings_factor = 0.1
+			}
+			custom_effect_tooltip = YSS_tootip_6
+			hidden_effect = {
+                set_country_flag = YSS_super_event
+                set_country_flag = YSS_daqingxiwu
+                scoped_play_song = "接着走吧"
+            }
 		}
 	}
 	focus = {

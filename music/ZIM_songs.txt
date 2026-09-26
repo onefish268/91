@@ -184,3 +184,19 @@ music = {
         }
     }
 }
+music = {
+    song = "接着走吧"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "当你在欢呼中死去"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
