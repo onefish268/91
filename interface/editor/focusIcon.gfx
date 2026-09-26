@@ -1015,4 +1015,40 @@ SpriteType = {
     name = "GFX_focus_zyx116"
     texturefile = "gfx/focus_icon/GFX_focus_zyx116.png"
 }
+SpriteType = {
+    name = "GFX_focus_lib1"
+    texturefile = "gfx/focus_icon/GFX_focus_lib1.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib2"
+    texturefile = "gfx/focus_icon/GFX_focus_lib2.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib3"
+    texturefile = "gfx/focus_icon/GFX_focus_lib3.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib4"
+    texturefile = "gfx/focus_icon/GFX_focus_lib4.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib5"
+    texturefile = "gfx/focus_icon/GFX_focus_lib5.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib6"
+    texturefile = "gfx/focus_icon/GFX_focus_lib6.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib7"
+    texturefile = "gfx/focus_icon/GFX_focus_lib7.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib8"
+    texturefile = "gfx/focus_icon/GFX_focus_lib8.png"
+}
+SpriteType = {
+    name = "GFX_focus_lib9"
+    texturefile = "gfx/focus_icon/GFX_focus_lib9.png"
+}
 }

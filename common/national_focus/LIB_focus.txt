@@ -66,7 +66,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib1
 		x = 2
 		y = 2
 		cost = 5
@@ -83,7 +83,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib5
 		x = 6
 		y = 2
 		cost = 5
@@ -100,7 +100,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib2
 		x = 0
 		y = 3
 		cost = 10
@@ -117,7 +117,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_6
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib3
 		x = 2
 		y = 3
 		cost = 5
@@ -134,7 +134,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_7
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib4
 		x = 2
 		y = 4
 		cost = 10
@@ -152,7 +152,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_8
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib7
 		x = 8
 		y = 3
 		cost = 10
@@ -169,7 +169,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_9
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib6
 		x = 6
 		y = 3
 		cost = 10
@@ -186,7 +186,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_10
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib8
 		x = 6
 		y = 4
 		cost = 10
@@ -204,7 +204,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_11
-		icon = GFX_goal_unknown
+		icon = GFX_focus_lib9
 		x = 4
 		y = 5
 		cost = 10
