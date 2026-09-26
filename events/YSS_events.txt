@@ -1068,3 +1068,324 @@ country_event = {#风味事件
         ai_chance = { base = 50 }
     }
 }
+
+country_event = {#接收器
+    id = YSS.62
+    hidden = yes    
+
+    trigger = {
+        YSS = {
+	        has_completed_focus = YSS_focus_126
+            has_completed_focus = YSS_focus_149
+            has_completed_focus = YSS_focus_162
+            has_completed_focus = YSS_focus_42
+        }
+    }
+    fire_only_once = yes
+
+	immediate = {
+        YSS = {
+            country_event = {
+                id = YSS.63
+                days = 7
+            }
+        }
+    }
+}
+country_event = {#大清洗
+    id = YSS.63
+    title = YSS.63.t
+    desc = YSS.63.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.63.a   
+        set_country_flag = YSS_daqingxi_begin
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = YSS_focus_15
+        hidden_effect = {
+            country_event = {
+                id = YSS.64
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.64
+    title = YSS.64.t
+    desc = YSS.64.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.64.a   
+        complete_national_focus = YSS_focus_16
+        hidden_effect = {
+            country_event = {
+                id = YSS.65
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.65
+    title = YSS.65.t
+    desc = YSS.65.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.65.a   
+        complete_national_focus = YSS_focus_17
+        hidden_effect = {
+            country_event = {
+                id = YSS.66
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.66
+    title = YSS.66.t
+    desc = YSS.66.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.66.a   
+        complete_national_focus = YSS_focus_18
+        hidden_effect = {
+            country_event = {
+                id = YSS.67
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.67
+    title = YSS.67.t
+    desc = YSS.67.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.67.a   
+        complete_national_focus = YSS_focus_19
+        hidden_effect = {
+            country_event = {
+                id = YSS.68
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.68
+    title = YSS.68.t
+    desc = YSS.68.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.68.a   
+        complete_national_focus = YSS_focus_20
+        hidden_effect = {
+            country_event = {
+                id = YSS.69
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.69
+    title = YSS.69.t
+    desc = YSS.69.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.69.a   
+        complete_national_focus = YSS_focus_21
+        hidden_effect = {
+            country_event = {
+                id = YSS.70
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.70
+    title = YSS.70.t
+    desc = YSS.70.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.70.a   
+        complete_national_focus = YSS_focus_22
+        hidden_effect = {
+            country_event = {
+                id = YSS.71
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.71
+    title = YSS.71.t
+    desc = YSS.71.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.71.a   
+        complete_national_focus = YSS_focus_23
+        hidden_effect = {
+            country_event = {
+                id = YSS.72
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.72
+    title = YSS.72.t
+    desc = YSS.72.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS6_event
+
+	option = {
+        name = YSS.72.a   
+        complete_national_focus = YSS_focus_25
+        set_country_flag = YSS_daqingxi_jieshu
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = YSS_tootip_30
+        ai_chance = { base = 50 }
+    }
+    option = {
+        name = YSS.72.b  
+        complete_national_focus = YSS_focus_24
+        set_country_flag = YSS_daqingxi_kuoda
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = YSS_tootip_31
+        hidden_effect = {
+            country_event = {
+                id = YSS.73
+                days = 7
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.73
+    title = YSS.73.t
+    desc = YSS.73.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS28_event
+
+	option = {
+        name = YSS.73.a   
+        complete_national_focus = YSS_focus_26
+        hidden_effect = {
+            country_event = {
+                id = YSS.74
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+    option = {
+        name = YSS.73.b   
+        complete_national_focus = YSS_focus_30
+        set_country_flag = YSS_daqingxi_jiaoting
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = YSS_tootip_30
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.74
+    title = YSS.74.t
+    desc = YSS.74.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS28_event
+
+	option = {
+        name = YSS.74.a   
+        complete_national_focus = YSS_focus_28
+        hidden_effect = {
+            country_event = {
+                id = YSS.75
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+    option = {
+        name = YSS.74.b   
+        complete_national_focus = YSS_focus_30
+        set_country_flag = YSS_daqingxi_jiaoting
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = YSS_tootip_30
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#大清洗
+    id = YSS.75
+    title = YSS.75.t
+    desc = YSS.75.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    picture = GFX_YSS28_event
+
+	option = {
+        name = YSS.75.a   
+        complete_national_focus = YSS_focus_29
+        hidden_effect = {
+            country_event = {
+                id = YSS.73
+                days = 35
+            } 
+        } 
+        ai_chance = { base = 50 }
+    }
+    option = {
+        name = YSS.75.b   
+        complete_national_focus = YSS_focus_30
+        set_country_flag = YSS_daqingxi_jiaoting
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = YSS_tootip_30
+        ai_chance = { base = 50 }
+    }
+}

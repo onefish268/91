@@ -73,6 +73,10 @@ scripted_gui = {
 			YSS_super_event_6_desc_visible = { has_country_flag = YSS_hj_complet }
 			YSS_super_event_photo7_icon_visible = { has_country_flag = YSS_red_army_complet }
 			YSS_super_event_7_desc_visible = { has_country_flag = YSS_red_army_complet }
+			YSS_super_event_photo8_icon_visible = { has_country_flag = YSS_daqingxi }
+			YSS_super_event_8_desc_visible = { has_country_flag = YSS_daqingxi }
+			YSS_super_event_photo9_icon_visible = { has_country_flag = YSS_daqingxiwu }
+			YSS_super_event_9_desc_visible = { has_country_flag = YSS_daqingxiwu }
 		}
 
 		effects = {
@@ -85,6 +89,8 @@ scripted_gui = {
 				clr_country_flag = YSS_sansan_complet
 				clr_country_flag = YSS_hj_complet
 				clr_country_flag = YSS_red_army_complet
+				clr_country_flag = YSS_daqingxi
+				clr_country_flag = YSS_daqingxiwu
 			}
 		}
 	}
