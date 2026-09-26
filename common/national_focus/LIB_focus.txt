@@ -16,9 +16,9 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_0
-		icon = GFX_goal_unknown
+		icon = GFX_FRA_Like_a_dream_its_like_a_fantasy
 		x = 4
-		y = -2
+		y = 0
 		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -34,7 +34,7 @@ focus_tree = {
 		id = LIB_new_focus_1
 		icon = GFX_LIB_FOCUS_JXJSXRJZL
 		x = 4
-		y = -1
+		y = 1
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_0 }
 		cancel_if_invalid = yes
@@ -51,9 +51,8 @@ focus_tree = {
 		id = LIB_new_focus_2
 		icon = GFX_LIB_FOCUS_JSZZ
 		x = 4
-		y = 1
+		y = 3
 		cost = 5
-		prerequisite = { focus = LIB_new_focus_1 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -68,7 +67,7 @@ focus_tree = {
 		id = LIB_new_focus_3
 		icon = GFX_goal_unknown
 		x = 2
-		y = 2
+		y = 4
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_2 }
 		cancel_if_invalid = yes
@@ -85,7 +84,7 @@ focus_tree = {
 		id = LIB_new_focus_4
 		icon = GFX_goal_unknown
 		x = 6
-		y = 2
+		y = 4
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_2 }
 		cancel_if_invalid = yes
@@ -102,7 +101,7 @@ focus_tree = {
 		id = LIB_new_focus_5
 		icon = GFX_goal_unknown
 		x = 0
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_3 }
 		cancel_if_invalid = yes
@@ -119,7 +118,7 @@ focus_tree = {
 		id = LIB_new_focus_6
 		icon = GFX_goal_unknown
 		x = 2
-		y = 3
+		y = 5
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_3 }
 		cancel_if_invalid = yes
@@ -136,7 +135,7 @@ focus_tree = {
 		id = LIB_new_focus_7
 		icon = GFX_goal_unknown
 		x = 2
-		y = 4
+		y = 6
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_6 }
 		prerequisite = { focus = LIB_new_focus_5 }
@@ -154,8 +153,8 @@ focus_tree = {
 		id = LIB_new_focus_8
 		icon = GFX_goal_unknown
 		x = 8
-		y = 3
-		cost = 10
+		y = 5
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_4 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -171,8 +170,8 @@ focus_tree = {
 		id = LIB_new_focus_9
 		icon = GFX_goal_unknown
 		x = 6
-		y = 3
-		cost = 10
+		y = 5
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_4 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -188,8 +187,8 @@ focus_tree = {
 		id = LIB_new_focus_10
 		icon = GFX_goal_unknown
 		x = 6
-		y = 4
-		cost = 10
+		y = 6
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_9 }
 		prerequisite = { focus = LIB_new_focus_8 }
 		cancel_if_invalid = yes
@@ -206,7 +205,7 @@ focus_tree = {
 		id = LIB_new_focus_11
 		icon = GFX_goal_unknown
 		x = 4
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_10 }
 		prerequisite = { focus = LIB_new_focus_7 }
@@ -224,7 +223,7 @@ focus_tree = {
 		id = LIB_new_focus_12
 		icon = GFX_goal_unknown
 		x = 13
-		y = 1
+		y = 3
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_3 }
 		prerequisite = { focus = LIB_new_focus_4 }
@@ -242,7 +241,7 @@ focus_tree = {
 		id = LIB_new_focus_13
 		icon = GFX_goal_unknown
 		x = 13
-		y = 2
+		y = 4
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
@@ -259,7 +258,7 @@ focus_tree = {
 		id = LIB_new_focus_14
 		icon = GFX_goal_unknown
 		x = 13
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_13 }
 		cancel_if_invalid = yes
@@ -276,7 +275,7 @@ focus_tree = {
 		id = LIB_new_focus_15
 		icon = GFX_goal_unknown
 		x = 11
-		y = 2
+		y = 4
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
@@ -293,8 +292,8 @@ focus_tree = {
 		id = LIB_new_focus_16
 		icon = GFX_goal_unknown
 		x = 15
-		y = 2
-		cost = 10
+		y = 4
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -310,7 +309,7 @@ focus_tree = {
 		id = LIB_new_focus_17
 		icon = GFX_goal_unknown
 		x = 11
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_15 }
 		cancel_if_invalid = yes
@@ -327,7 +326,7 @@ focus_tree = {
 		id = LIB_new_focus_18
 		icon = GFX_goal_unknown
 		x = 15
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_16 }
 		cancel_if_invalid = yes
@@ -344,7 +343,7 @@ focus_tree = {
 		id = LIB_new_focus_19
 		icon = GFX_goal_unknown
 		x = 11
-		y = 4
+		y = 6
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_17 }
 		cancel_if_invalid = yes
@@ -361,7 +360,7 @@ focus_tree = {
 		id = LIB_new_focus_20
 		icon = GFX_goal_unknown
 		x = 13
-		y = 4
+		y = 6
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_14 }
 		cancel_if_invalid = yes
@@ -378,7 +377,7 @@ focus_tree = {
 		id = LIB_new_focus_21
 		icon = GFX_goal_unknown
 		x = 15
-		y = 4
+		y = 6
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_18 }
 		cancel_if_invalid = yes
@@ -395,7 +394,7 @@ focus_tree = {
 		id = LIB_new_focus_22
 		icon = GFX_goal_unknown
 		x = 13
-		y = 5
+		y = 7
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_20 }
 		prerequisite = { focus = LIB_new_focus_21 }
@@ -414,7 +413,7 @@ focus_tree = {
 		id = LIB_new_focus_23
 		icon = GFX_goal_unknown
 		x = 9
-		y = 6
+		y = 8
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_11 }
 		prerequisite = { focus = LIB_new_focus_22 }
@@ -432,7 +431,7 @@ focus_tree = {
 		id = LIB_new_focus_24
 		icon = GFX_goal_unknown
 		x = 7
-		y = 7
+		y = 9
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_23 }
 		cancel_if_invalid = yes
@@ -449,7 +448,7 @@ focus_tree = {
 		id = LIB_new_focus_25
 		icon = GFX_goal_unknown
 		x = 11
-		y = 7
+		y = 9
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_23 }
 		cancel_if_invalid = yes
@@ -466,7 +465,7 @@ focus_tree = {
 		id = LIB_new_focus_26
 		icon = GFX_goal_unknown
 		x = 7
-		y = 8
+		y = 10
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_24 }
 		cancel_if_invalid = yes
@@ -483,7 +482,7 @@ focus_tree = {
 		id = LIB_new_focus_27
 		icon = GFX_goal_unknown
 		x = 11
-		y = 8
+		y = 10
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_25 }
 		cancel_if_invalid = yes
@@ -500,7 +499,7 @@ focus_tree = {
 		id = LIB_new_focus_28
 		icon = GFX_goal_unknown
 		x = 7
-		y = 9
+		y = 11
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_26 }
 		cancel_if_invalid = yes
@@ -517,7 +516,7 @@ focus_tree = {
 		id = LIB_new_focus_29
 		icon = GFX_goal_unknown
 		x = 11
-		y = 9
+		y = 11
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_27 }
 		cancel_if_invalid = yes
@@ -534,7 +533,7 @@ focus_tree = {
 		id = LIB_new_focus_30
 		icon = GFX_goal_unknown
 		x = 7
-		y = 10
+		y = 12
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_28 }
 		cancel_if_invalid = yes
@@ -551,7 +550,7 @@ focus_tree = {
 		id = LIB_new_focus_31
 		icon = GFX_goal_unknown
 		x = 11
-		y = 10
+		y = 12
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_29 }
 		cancel_if_invalid = yes
@@ -568,7 +567,7 @@ focus_tree = {
 		id = LIB_new_focus_32
 		icon = GFX_goal_unknown
 		x = 5
-		y = 13
+		y = 15
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -584,7 +583,7 @@ focus_tree = {
 		id = LIB_new_focus_33
 		icon = GFX_goal_unknown
 		x = 5
-		y = 14
+		y = 16
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_32 }
 		cancel_if_invalid = yes
@@ -601,7 +600,7 @@ focus_tree = {
 		id = LIB_new_focus_34
 		icon = GFX_goal_unknown
 		x = 5
-		y = 15
+		y = 17
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_33 }
 		cancel_if_invalid = yes
@@ -618,7 +617,7 @@ focus_tree = {
 		id = LIB_new_focus_35
 		icon = GFX_goal_unknown
 		x = 5
-		y = 16
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_34 }
 		cancel_if_invalid = yes
@@ -635,7 +634,7 @@ focus_tree = {
 		id = LIB_new_focus_36
 		icon = GFX_goal_unknown
 		x = 3
-		y = 17
+		y = 19
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
@@ -652,7 +651,7 @@ focus_tree = {
 		id = LIB_new_focus_37
 		icon = GFX_goal_unknown
 		x = 3
-		y = 18
+		y = 20
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_36 }
 		cancel_if_invalid = yes
@@ -669,7 +668,7 @@ focus_tree = {
 		id = LIB_new_focus_38
 		icon = GFX_goal_unknown
 		x = 7
-		y = 17
+		y = 19
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
@@ -686,7 +685,7 @@ focus_tree = {
 		id = LIB_new_focus_40
 		icon = GFX_goal_unknown
 		x = 7
-		y = 18
+		y = 20
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_38 }
 		cancel_if_invalid = yes
@@ -703,7 +702,7 @@ focus_tree = {
 		id = LIB_new_focus_42
 		icon = GFX_goal_unknown
 		x = 19
-		y = 7
+		y = 15
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -719,7 +718,7 @@ focus_tree = {
 		id = LIB_new_focus_43
 		icon = GFX_goal_unknown
 		x = 19
-		y = 8
+		y = 16
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
@@ -736,7 +735,7 @@ focus_tree = {
 		id = LIB_new_focus_44
 		icon = GFX_goal_unknown
 		x = 19
-		y = 9
+		y = 17
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_43 }
 		cancel_if_invalid = yes
@@ -753,7 +752,7 @@ focus_tree = {
 		id = LIB_new_focus_45
 		icon = GFX_goal_unknown
 		x = 17
-		y = 8
+		y = 16
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
@@ -770,7 +769,7 @@ focus_tree = {
 		id = LIB_new_focus_46
 		icon = GFX_goal_unknown
 		x = 21
-		y = 8
+		y = 16
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
@@ -787,7 +786,7 @@ focus_tree = {
 		id = LIB_new_focus_47
 		icon = GFX_goal_unknown
 		x = 17
-		y = 9
+		y = 17
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_45 }
 		cancel_if_invalid = yes
@@ -804,7 +803,7 @@ focus_tree = {
 		id = LIB_new_focus_48
 		icon = GFX_goal_unknown
 		x = 21
-		y = 9
+		y = 17
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_46 }
 		cancel_if_invalid = yes
@@ -821,7 +820,7 @@ focus_tree = {
 		id = LIB_new_focus_49
 		icon = GFX_goal_unknown
 		x = 15
-		y = 10
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
@@ -841,7 +840,7 @@ focus_tree = {
 		id = LIB_new_focus_50
 		icon = GFX_goal_unknown
 		x = 19
-		y = 10
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
@@ -861,7 +860,7 @@ focus_tree = {
 		id = LIB_new_focus_51
 		icon = GFX_goal_unknown
 		x = 17
-		y = 10
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
@@ -881,7 +880,7 @@ focus_tree = {
 		id = LIB_new_focus_52
 		icon = GFX_goal_unknown
 		x = 21
-		y = 10
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_47 }
@@ -901,7 +900,7 @@ focus_tree = {
 		id = LIB_new_focus_53
 		icon = GFX_goal_unknown
 		x = 23
-		y = 10
+		y = 18
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_47 }
@@ -921,7 +920,7 @@ focus_tree = {
 		id = LIB_new_focus_54
 		icon = GFX_goal_unknown
 		x = 23
-		y = -2
+		y = 0
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -937,7 +936,7 @@ focus_tree = {
 		id = LIB_new_focus_55
 		icon = GFX_goal_unknown
 		x = 19
-		y = 16
+		y = 24
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_49 focus = LIB_new_focus_50 focus = LIB_new_focus_51 focus = LIB_new_focus_52 focus = LIB_new_focus_53 }
 		prerequisite = { focus = LIB_new_focus_34 }
@@ -955,7 +954,7 @@ focus_tree = {
 		id = LIB_new_focus_56
 		icon = GFX_goal_unknown
 		x = 19
-		y = 17
+		y = 25
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_55 }
 		cancel_if_invalid = yes
@@ -972,7 +971,7 @@ focus_tree = {
 		id = LIB_new_focus_57
 		icon = GFX_goal_unknown
 		x = 19
-		y = 18
+		y = 26
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_56 }
 		cancel_if_invalid = yes
@@ -989,7 +988,7 @@ focus_tree = {
 		id = LIB_new_focus_58
 		icon = GFX_goal_unknown
 		x = 19
-		y = 19
+		y = 27
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_57 }
 		cancel_if_invalid = yes
@@ -1006,7 +1005,7 @@ focus_tree = {
 		id = LIB_new_focus_59
 		icon = GFX_goal_unknown
 		x = 22
-		y = -1
+		y = 1
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_54 }
 		cancel_if_invalid = yes
@@ -1023,7 +1022,7 @@ focus_tree = {
 		id = LIB_new_focus_60
 		icon = GFX_goal_unknown
 		x = 24
-		y = -1
+		y = 1
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_54 }
 		cancel_if_invalid = yes
@@ -1040,7 +1039,7 @@ focus_tree = {
 		id = LIB_new_focus_61
 		icon = GFX_goal_unknown
 		x = 22
-		y = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_59 }
 		cancel_if_invalid = yes
@@ -1057,7 +1056,7 @@ focus_tree = {
 		id = LIB_new_focus_62
 		icon = GFX_goal_unknown
 		x = 22
-		y = 1
+		y = 3
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_61 }
 		cancel_if_invalid = yes
@@ -1074,7 +1073,7 @@ focus_tree = {
 		id = LIB_new_focus_63
 		icon = GFX_goal_unknown
 		x = 24
-		y = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_60 }
 		cancel_if_invalid = yes
@@ -1091,7 +1090,7 @@ focus_tree = {
 		id = LIB_new_focus_64
 		icon = GFX_goal_unknown
 		x = 24
-		y = 1
+		y = 3
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_63 }
 		cancel_if_invalid = yes
@@ -1108,7 +1107,7 @@ focus_tree = {
 		id = LIB_new_focus_65
 		icon = GFX_goal_unknown
 		x = 26
-		y = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_60 }
 		cancel_if_invalid = yes
@@ -1125,7 +1124,7 @@ focus_tree = {
 		id = LIB_new_focus_66
 		icon = GFX_goal_unknown
 		x = 20
-		y = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_59 }
 		cancel_if_invalid = yes
@@ -1142,7 +1141,7 @@ focus_tree = {
 		id = LIB_new_focus_67
 		icon = GFX_goal_unknown
 		x = 32
-		y = -2
+		y = 0
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1158,7 +1157,7 @@ focus_tree = {
 		id = LIB_new_focus_68
 		icon = GFX_goal_unknown
 		x = 32
-		y = -1
+		y = 1
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_67 }
 		cancel_if_invalid = yes
@@ -1175,7 +1174,7 @@ focus_tree = {
 		id = LIB_new_focus_69
 		icon = GFX_goal_unknown
 		x = 32
-		y = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_68 }
 		cancel_if_invalid = yes
@@ -1192,7 +1191,7 @@ focus_tree = {
 		id = LIB_new_focus_71
 		icon = GFX_goal_unknown
 		x = 32
-		y = 1
+		y = 3
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_69 }
 		cancel_if_invalid = yes
@@ -1209,7 +1208,7 @@ focus_tree = {
 		id = LIB_new_focus_72
 		icon = GFX_goal_unknown
 		x = 30
-		y = 2
+		y = 4
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
@@ -1226,7 +1225,7 @@ focus_tree = {
 		id = LIB_new_focus_73
 		icon = GFX_goal_unknown
 		x = 32
-		y = 2
+		y = 4
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
@@ -1243,7 +1242,7 @@ focus_tree = {
 		id = LIB_new_focus_74
 		icon = GFX_goal_unknown
 		x = 34
-		y = 2
+		y = 4
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
@@ -1260,7 +1259,7 @@ focus_tree = {
 		id = LIB_new_focus_75
 		icon = GFX_goal_unknown
 		x = 31
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_73 }
 		cancel_if_invalid = yes
@@ -1277,7 +1276,7 @@ focus_tree = {
 		id = LIB_new_focus_76
 		icon = GFX_goal_unknown
 		x = 33
-		y = 3
+		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_73 }
 		cancel_if_invalid = yes
@@ -1294,7 +1293,7 @@ focus_tree = {
 		id = LIB_new_focus_77
 		icon = GFX_goal_unknown
 		x = 32
-		y = 4
+		y = 6
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_75 }
 		prerequisite = { focus = LIB_new_focus_76 }
