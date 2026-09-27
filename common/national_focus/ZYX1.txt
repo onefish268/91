@@ -622,11 +622,13 @@ focus_tree = {
 			focus = 2_focus_37
 		}
 		completion_reward = {
+			ZSH = {
 			every_character = {
 				limit = {
 					is_general_advisor = no
 				}
 				set_nationality = ZYX
+			}
 			}
 		}
 		available = {
