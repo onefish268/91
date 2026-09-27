@@ -5,6 +5,7 @@ YSS_states_category = {
     visible = {
         original_tag = YSS  
     }
+    visible_when_empty = yes
 }
 
 YSS_yisiland_category = {

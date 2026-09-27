@@ -145,67 +145,25 @@ scripted_gui = {
 
 		effects = {
 			YSS_man_button_click = {
-			    set_variable = { YSS_man_icon_mode_number = 1 }
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 0 }
 			}
 			YSS_man1_button_click = {
-			    set_variable = { YSS_1_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 1 }
 			}
 			YSS_man2_button_click = {
-			    set_variable = { YSS_2_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 2 }
 			}
 			YSS_man3_button_click = {
-			    set_variable = { YSS_3_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 3 }
 			}
 			YSS_man4_button_click = {
-			    set_variable = { YSS_4_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 4 }
 			}
 			YSS_man5_button_click = {
-			    set_variable = { YSS_5_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_6_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 5 }
 			}
 			YSS_man6_button_click = {
-			    set_variable = { YSS_6_man_icon_mode_number = 1 }
-				clear_variable = YSS_man_icon_mode_number
-				clear_variable = YSS_1_man_icon_mode_number
-				clear_variable = YSS_2_man_icon_mode_number
-				clear_variable = YSS_3_man_icon_mode_number
-				clear_variable = YSS_4_man_icon_mode_number
-				clear_variable = YSS_5_man_icon_mode_number
+			    set_variable = { YSS_man_icon_mode_number = 6 }
 			}
 		}
 	}

@@ -33,24 +33,9 @@ debug_test_categories = {
 		}
 	}
 
-	lord_GER_focus = {
-		name = "强制德国国策加载"
-		icon = generic_construction
-		
-		cost = 10
-
+	give_me_tech = { ##废止
 		complete_effect = {
-			GER = { load_focus_tree = GER_afica_focus_tree }
-		}
-	}
-
-	give_me_tech = {
-		complete_effect = {
-			set_technology = {
-			    YOK_army_tech = 1
-				WDL_army_tech = 1
-			    popup = no
-			}
+			set_variable = { YSS_man_icon_mode_number = 100 }
 		}
 	}
 

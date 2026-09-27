@@ -115,7 +115,7 @@ YSS_states_category = {
 		days_remove = 62
 		fire_only_once = yes
 		visible = {
-			has_variable = YSS_2_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 2 }
         }
 		available = {
             has_country_flag = YSS_states_oning
@@ -166,7 +166,7 @@ YSS_states_category = {
 		days_remove = 100
 		fire_only_once = yes
 		visible = {
-			has_variable = YSS_2_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 2 }
         }
 		available = {
             has_country_flag = YSS_states_oning
@@ -217,7 +217,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			549 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -233,7 +233,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			549 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -252,7 +252,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			549 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -280,7 +280,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			1010 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -296,7 +296,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			1010 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -315,7 +315,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			1010 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -343,7 +343,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			862 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -359,7 +359,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			862 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -378,7 +378,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 0 }
 			862 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -406,7 +406,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			1233 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -422,7 +422,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			1233 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -441,7 +441,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			1233 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -469,7 +469,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			551 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -485,7 +485,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			551 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -504,7 +504,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_1_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 1 }
 			551 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -532,7 +532,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			921 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -551,7 +551,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			921 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -577,7 +577,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			921 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -595,7 +595,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			920 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -614,7 +614,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			920 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -640,7 +640,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			920 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -658,7 +658,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			923 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -677,7 +677,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			923 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -703,7 +703,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			923 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -721,7 +721,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			550 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -740,7 +740,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			550 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -766,7 +766,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_3_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 3 }
 			550 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -784,7 +784,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			906 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -803,7 +803,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			906 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -829,7 +829,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			906 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -847,7 +847,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			269 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -866,7 +866,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			269 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -892,7 +892,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			269 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -910,7 +910,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			1234 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -929,7 +929,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			1234 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -955,7 +955,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			1234 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -973,7 +973,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			268 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -992,7 +992,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			268 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1018,7 +1018,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_4_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 4 }
 			268 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1036,7 +1036,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			559 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1055,7 +1055,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			559 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1081,7 +1081,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			559 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1099,7 +1099,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			1235 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1115,7 +1115,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			1235 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1134,7 +1134,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_5_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 5 }
 			1235 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1162,7 +1162,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			970 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1181,7 +1181,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			970 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1207,7 +1207,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			970 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1225,7 +1225,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			547 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1244,7 +1244,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			547 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1270,7 +1270,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			547 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1288,7 +1288,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			969 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1307,7 +1307,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			969 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1333,7 +1333,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			969 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
@@ -1351,7 +1351,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			892 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure > 4
@@ -1370,7 +1370,7 @@ YSS_states_category = {
 		days_remove = 60
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			892 = {
 				YSS_state_dev_upgradable = yes
 				infrastructure < 5
@@ -1396,7 +1396,7 @@ YSS_states_category = {
 		days_remove = 31
 		
 		visible = {
-			has_variable = YSS_6_man_icon_mode_number
+			check_variable = { YSS_man_icon_mode_number = 6 }
 			892 = { YSS_state_admin_upgradable = yes }
 		}
 		available = { has_country_flag = YSS_states_oning }
