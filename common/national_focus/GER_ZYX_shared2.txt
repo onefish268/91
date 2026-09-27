@@ -208,44 +208,7 @@ joint_focus = {
 
 	completion_reward_joint_originator = {
 		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						is_controlled_by = ROOT
-						controller = { is_subject_of = ROOT }
-					}
-					controller = { has_full_control_of_state = PREV }
-				    is_core_of_ZIM = yes
-					NOT = { 
-						state = 540
-						state = 917
-						state = 959
-						state = 879
-						state = 958
-						state = 956
-						state = 813
-						state = 954
-						state = 955
-						state = 871
-						state = 544
-						state = 899
-						state = 965
-						state = 1225
-						state = 546
-						state = 1032
-						state = 869
-						state = 870
-						state = 918
-						state = 548
-					}
-					OR = {
-						is_owned_by = ROOT
-						owner = { is_subject_of = ROOT }
-					}
-				}
-				transfer_state_to = GER
-				add_compliance = 25
-			}
+
 			every_state = {	
 				limit = {
 					OR = {
@@ -253,41 +216,35 @@ joint_focus = {
 						controller = { is_subject_of = ROOT }
 					}
 					controller = { has_full_control_of_state = PREV }
-					is_core_of_ZIM = yes
+					is_core_of = ZIM
 					NOT = { 
-					    state = 540
-						state = 917
-						state = 959
-						state = 879
-						state = 958
-						state = 956
-						state = 813
-						state = 954
-						state = 955
-						state = 871
-						state = 544
-						state = 899
-						state = 965
-						state = 1225
-						state = 546
-						state = 1032
-						state = 869
-						state = 870
-						state = 918
-						state = 548 
-					}
-					NOT = {
-						OR = {
-							is_owned_by = ROOT
-							any_country = {
-								is_subject_of = ROOT
-								owns_state = PREV
-							}
+					    OR = {
+							state = 540
+							state = 917
+							state = 959
+							state = 879
+							state = 958
+							state = 956
+							state = 813
+							state = 954
+							state = 955
+							state = 871
+							state = 544
+							state = 899
+							state = 965
+							state = 1225
+							state = 546
+							state = 1032
+							state = 869
+							state = 870
+							state = 918
+							state = 548 
 						}
 					}
 				}
 				add_contested_owner = GER
 				set_state_controller_to = GER
+				transfer_state_to = GER
 				add_compliance = 25
 			}
 			country_event = {
