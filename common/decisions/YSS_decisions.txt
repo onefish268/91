@@ -1574,17 +1574,18 @@ YSS_dao_category = {
 		fire_only_once = yes
 		available = {
 			905 = {
-				is_owned_by = ENG
+				controller = {
+					NOT = { tag = YSS }
+				}
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 905 }
+			
 			905 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 200
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}
@@ -1599,17 +1600,18 @@ YSS_dao_category = {
 		fire_only_once = yes
 		available = {
 			548 = {
-				is_owned_by = ZIM
+				controller = {
+					NOT = { tag = YSS }
+				}
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 548 }
+			
 			548 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 200
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}
@@ -1624,17 +1626,18 @@ YSS_dao_category = {
 		fire_only_once = yes
 		available = {
 			1007 = {
-				is_owned_by = EGY
+				controller = {
+					NOT = { tag = YSS }
+				}
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 1007 }
+			
 			1007 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 200
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}
@@ -1649,17 +1652,18 @@ YSS_dao_category = {
 		fire_only_once = yes
 		available = {
 			709 = {
-				is_owned_by = ENG
+				controller = {
+					NOT = { tag = YSS }
+				}
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 709 }
+			
 			709 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 200
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}
@@ -1673,17 +1677,18 @@ YSS_dao_category = {
 		fire_only_once = yes
 		available = {
 			281 = {
-				is_owned_by = ENG
+				controller = {
+					NOT = { tag = YSS }
+				}
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 281 }
+			
 			281 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 200
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}
@@ -1696,18 +1701,19 @@ YSS_dao_category = {
 		days_remove = 31
 		fire_only_once = yes
 		available = {
-			422 = {
-				is_owned_by = ENG
+			any_country = {
+				NOT = { tag = YSS }
+				owns_state = 422
+				controls_state = 422
 			}
 		}
 		remove_effect = {
+			set_variable = { YSS_the_land_we_buy = 422 }
+			
 			422 = {
-				transfer_state_to = ROOT
-				set_state_controller_to = ROOT
-			}
-			add_timed_idea = {
-				idea = YSS_11
-				days = 400
+				controller = {
+					country_event = YSS.76
+				}
 			}
 		}
 	}

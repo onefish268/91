@@ -1389,3 +1389,104 @@ country_event = {#大清洗
         ai_chance = { base = 50 }
     }
 }
+
+
+country_event = {#黄金购买土地的交互
+    id = YSS.76
+    title = YSS.76.t
+    desc = YSS.76.d
+    is_triggered_only = yes
+    picture = GFX_YSS28_event
+
+	option = {
+        name = YSS.76.a   
+
+        FROM = {
+            country_event = YSS.77
+        }
+
+        ai_chance = {
+            base = 50
+            modifier = {#如果领土持有者正在打仗
+                ROOT = {
+                    has_war = yes
+                }
+                factor = 2
+            }
+
+            modifier = {#如果领土持有者为民主
+                ROOT = {
+                    has_government = communism
+				    has_government = democratic
+                }
+                factor = 1.1
+            }
+
+            modifier = {#如果领土持有者军事不弱
+                ROOT = {
+                    strength_ratio = {
+                        tag = FROM
+                        ratio = 1.0
+                    }
+                }
+                factor = 0.75
+            }
+
+            modifier = {#如果领土持有者军事强大
+                ROOT = {
+                    strength_ratio = {
+                        tag = FROM
+                        ratio = 2
+                    }
+                }
+                factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = YSS.76.b   
+
+        FROM = {
+            country_event = YSS.78
+        }
+
+        ai_chance = {
+            base = 25
+        }
+    }
+}
+
+country_event = {#黄金购买土地的交互同意回信
+    id = YSS.77
+    title = YSS.77.t
+    desc = YSS.77.d
+    is_triggered_only = yes
+    picture = GFX_YSS28_event
+
+	option = {
+        name = YSS.77.a   
+        ai_chance = { base = 50 }
+
+        var:YSS_the_land_we_buy = {
+            transfer_state_to = ROOT
+			set_state_controller_to = ROOT
+        }
+        add_timed_idea = {
+			idea = YSS_11
+			days = 200
+		}
+    }
+}
+
+country_event = {#黄金购买土地的交互拒绝回信
+    id = YSS.78
+    title = YSS.78.t
+    desc = YSS.78.d
+    is_triggered_only = yes
+    picture = GFX_YSS28_event
+
+    option = {
+        name = YSS.78.a   
+        ai_chance = { base = 50 }
+    }
+}
