@@ -1272,30 +1272,13 @@ focus_tree = {
 		id = 3_focus_29
 		x = -4
 		y = 0
-		cost = 5
+		cost = 10
 		icon = GFX_focus_ITA_strengthen_ascari_corps
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_1
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = 3_focus_30
-		x = -5
-		y = 1
-		cost = 2
-		icon = GFX_focus_CZE_demonstration_of_military_achievements
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_29
 		}
 		completion_reward = {
 			if = {
@@ -1308,61 +1291,6 @@ focus_tree = {
 					set_state_category = large_city
 				}
 			}
-		}
-	}
-	focus = {
-		id = 3_focus_31
-		x = -3
-		y = 1
-		cost = 2
-		icon = GFX_focus_generic_soviet_politics
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_29
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					965 = {
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				965 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = 3_focus_32
-		x = -5
-		y = 3
-		cost = 2
-		icon = GFX_focus_NGL_reopen_university
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_30
-		}
-		completion_reward = {
 			if = {
 				limit = {
 					813 = {
@@ -1391,21 +1319,39 @@ focus_tree = {
 				}
 				add_core_of = ZYX
 			}
-		}
-	}
-	focus = {
-		id = 3_focus_33
-		x = -3
-		y = 3
-		cost = 2
-		icon = GFX_focus_CHI_initiate_gung_ho_movement
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_31
-		}
-		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZDM
+					}
+				}
+				add_core_of = ZYX
+			}
+			if = {
+				limit = {
+					965 = {
+						is_fully_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				965 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			if = {
 				limit = {
 					879 = {
@@ -1424,44 +1370,6 @@ focus_tree = {
 				}
 				add_core_of = ZYX
 			}
-		}
-	}
-	focus = {
-		id = 3_focus_34
-		x = -5
-		y = 5
-		cost = 2
-		icon = GFX_focus_NGL_face_up_to_it
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_32
-		}
-		completion_reward = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = ZDM
-					}
-				}
-				add_core_of = ZYX
-			}
-		}
-	}
-	focus = {
-		id = 3_focus_35
-		x = -3
-		y = 5
-		cost = 2
-		icon = GFX_focus_rus_for_faith
-		text_icon = ZYX_focus_style
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = 3_focus_33
-		}
-		completion_reward = {
 			every_state = {
 				limit = {
 					OR = {
@@ -1475,17 +1383,14 @@ focus_tree = {
 	focus = {
 		id = 3_focus_36
 		x = -4
-		y = 6
+		y = 2
 		cost = 2
 		icon = GFX_focus_JAP_writing_new_law
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 3_focus_34
-		}
-		prerequisite = {
-			focus = 3_focus_35
+			focus = 3_focus_29
 		}
 		completion_reward = {
 			set_capital = {
