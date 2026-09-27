@@ -119,7 +119,7 @@ YSS_3 = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_YSS_3
+	icon = GFX_idea_YSS_4
 	convoy_raiding_efficiency_factor = YSS_navy_convoy_raiding_efficiency_factor   ##船队袭击效率
 	fighter_sortie_efficiency = YSS_navy_fighter_sortie_efficiency   ##战斗机出击效率
 	naval_critical_score_chance_factor = YSS_navy_naval_critical_score_chance_factor   ##海军暴击几率
@@ -137,7 +137,7 @@ YSS_4 = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_YSS_4
+	icon = GFX_idea_YSS_3
 	ground_attack_factor = YSS_airforce_ground_attack_factor   ##对地攻击系数
 	static_anti_air_damage_factor = YSS_airforce_static_anti_air_damage_factor   ##静态防空伤害系数
 	air_accidents_factor = YSS_airforce_air_accidents_factor   ##飞行事故系数
