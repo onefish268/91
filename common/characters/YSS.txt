@@ -481,6 +481,33 @@ characters = {
 			logistics_skill = 1
 		}
 	}
+	YSS_3_5 = {
+		name = "克莱尔・因费特"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/82.png"
+				large = "gfx/leaders/YSS/80.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_offensive_2
+			}
+			idea_token = YSS_3_5
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 8
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	#空军部长
 	YSS_4_1 = {
 		name = "阿齐兹・埃扎特"
@@ -820,6 +847,33 @@ characters = {
 			defense_skill = 4
 			maneuvering_skill = 1
 			coordination_skill = 1
+		}
+	}
+	YSS_6_9 = {
+		name = "安塔利亚・巴希尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/83.png"
+				large = "gfx/leaders/YSS/81.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_infantry_3
+			}
+			idea_token = YSS_6_9
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
 		}
 	}
 #陆军将军
