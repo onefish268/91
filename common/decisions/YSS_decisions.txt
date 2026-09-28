@@ -105,6 +105,24 @@ YSS_yisiland_category = {
 
 YSS_states_category = {
 
+	YSS_2_0_1 = {
+		name = YSS_2_0_1d
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 30
+		days_remove = 80
+
+		complete_effect = {
+			set_country_flag = {
+                flag = YSS_states_oning
+			    days = 50
+			    value = 1
+            } 
+		}
+	}
+
 	YSS_2_3_1 = {
 		name = YSS_2_3_1d
 		icon = GFX_decision_default
