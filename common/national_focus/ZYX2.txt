@@ -4261,4 +4261,83 @@ focus_tree = {
 			custom_effect_tooltip = gaishansan
 		}
 	}
+	focus = {
+		id = 3_focus_150
+		text_icon = ZYX_focus_style
+		x = 51
+		y = 8
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_154
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 3_focus_151
+		text_icon = ZYX_focus_style
+		x = 50
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_150
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 3_focus_152
+		text_icon = ZYX_focus_style
+		x = 52
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_150
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 3_focus_153
+		text_icon = ZYX_focus_style
+		x = 51
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 3_focus_151
+		}
+		prerequisite = {
+			focus = 3_focus_152
+		}
+		completion_reward = {
+			country_event = {
+				id = ZYX.40
+				days = 10
+			}
+		}
+	}
+	focus = {
+		id = 3_focus_154
+		text_icon = ZYX_focus_style
+		x = 51
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		allow_branch = {
+			ZYX = {
+				owns_state = 161
+			}
+		}
+		completion_reward = {
+		}
+	}
 }

@@ -331,42 +331,6 @@ joint_focus = {
 
 joint_focus = {
 	id = cks_32
-	icon = GFX_focus_GER_all_for_the_front
-	prerequisite = { focus = cks_3 }
-	relative_position_id = cks_1
-
-
-	text_icon = Z_focus_style
-
-	x = 3
-	y = 2
-
-
-	cost = 0
-
-	available = {
-		tag = ZYX
-        NOT = {
-			has_country_flag = load_time
-        }
-	}
-
-	available_if_capitulated = no
-
-	ai_will_do = { factor = 1000 }
-
-	completion_reward_joint_originator = {
-		add_manpower = 40000
-		set_country_flag = {
-			flag = load_time
-			days = 35
-			value = 1
-		}
-	}
-}
-
-joint_focus = {
-	id = cks_32
 	icon = GFX_goal_constitution
 	prerequisite = { focus = cks_3 }
 	relative_position_id = cks_1
