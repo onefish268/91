@@ -160,3 +160,10 @@ recruit_character = YSS_7_9
 recruit_character = YSS_7_10
 recruit_character = YSS_7_11
 recruit_character = YSS_7_habu
+recruit_character = YSS_3_5
+recruit_character = YSS_6_9
+
+
+
+
+
