@@ -4334,7 +4334,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		allow_branch = {
 			ZYX = {
-				owns_state = 161
+				owns_state = 2
 			}
 		}
 		completion_reward = {
