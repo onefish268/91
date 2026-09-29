@@ -1,0 +1,13 @@
+l_simp_chinese: 
+  YSS.76.t: "[FROM.GetName]寻求和我们在[?var:YSS_the_land_we_buy.GetName]地区归属权问题的谈判"
+  YSS.76.d: "就在昨日，[FROM.GetName]代表希望我们同她们就[?var:YSS_the_land_we_buy.GetName]地区归属权展开公平谈判，她们认为，这块地在她们历史上是有法理依据可言的，如果可以，她们愿意通过黄金赎回这些祖地。"
+  YSS.76.a: "我们在[?var:YSS_the_land_we_buy.GetName]地区确实没有什么太重要的利益。"
+  YSS.76.b: "这些人是脑子进水了吗？"
+
+  YSS.77.t: "[FROM.GetName]同意了我们的购置土地谈判！"
+  YSS.77.d: "经过了很长一段时间的谈判协商，[FROM.GetName]出于当下本国国情、我国建设情况还有国际形势等多角度评估，认为[?var:YSS_the_land_we_buy.GetName]地区的归属权应当属于我国，就这样，这些土地成功归入联盟的大家庭。"
+  YSS.77.a: "这是好消息啊！"
+
+  YSS.78.t: "[FROM.GetName]拒绝了我们的购置土地谈判！"
+  YSS.78.d: "经过了很长一段时间的谈判协商，[FROM.GetName]断然否决了我们合理的领土诉求，认为[?var:YSS_the_land_we_buy.GetName]地区当下的归属权是毫无争议的，并表示完全没有兴趣进行接下来的谈判了，我们和[FROM.GetName]的谈判就这么告吹了。"
+  YSS.78.a: "有些事情不是能靠嘴皮子获得的……"

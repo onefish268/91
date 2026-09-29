@@ -1718,13 +1718,14 @@ focus_tree = {
 			focus = YSS_focus_69
 		}
 		completion_reward = {
+			add_research_slot = 1
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = YSS_idea_focus
 					add_idea = YSS_idea_focus_71
 				}
 			}
-			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.2 }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -4298,7 +4299,13 @@ focus_tree = {
 			focus = YSS_focus_153
 		}
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = YSS_focus_155_1
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				category = cv_tech
+			}
 		}
 	}
 	focus = {

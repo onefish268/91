@@ -295,7 +295,7 @@ ideas = {
 		YSS_idea_focus_71 = {
 			name = YSS_new_idea
 			modifier = {
-				research_speed_factor = 0.2
+				research_speed_factor = 0.05
 			}
 		}
 		YSS_idea_focus_72 = {
