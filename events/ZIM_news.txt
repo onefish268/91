@@ -8,7 +8,9 @@ news_event = {
     major = yes 
     is_triggered_only = yes
     immediate = {
-		scoped_play_song = "迷途"
+		hidden_effect = {
+			scoped_play_song = "迷途"
+		}
 	}
     option = {
         name = ZIM.news.1.a
@@ -42,7 +44,9 @@ news_event = {
     major = yes 
     is_triggered_only = yes
 	immediate = {
-		scoped_play_song = "duce！"
+		hidden_effect = {
+			scoped_play_song = "duce！"
+		}
 	}
 
     option = {
@@ -77,7 +81,9 @@ news_event = {
     major = yes 
     is_triggered_only = yes
 	immediate = {
-		scoped_play_song = "宣告"
+		hidden_effect = {
+			scoped_play_song = "宣告"
+		}
 	}
 
     option = {

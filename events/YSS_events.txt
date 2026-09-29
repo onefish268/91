@@ -1406,40 +1406,98 @@ country_event = {#黄金购买土地的交互
         }
 
         ai_chance = {
-            base = 50
-            modifier = {#如果领土持有者正在打仗
+            base = 15
+
+            # 正在打仗：压力大，愿意用土地换和平/支援
+            modifier = {
                 ROOT = {
                     has_war = yes
                 }
-                factor = 2
+                factor = 1.5
             }
 
-            modifier = {#如果领土持有者为民主
+            # 政府务实、重利益轻土地（民主/中立更容易谈）
+            modifier = {
                 ROOT = {
-                    has_government = communism
-				    has_government = democratic
+                    OR = {
+                        has_government = democratic
+                        has_government = neutrality
+                    }
                 }
-                factor = 1.1
+                factor = 1.3
             }
 
-            modifier = {#如果领土持有者军事不弱
-                ROOT = {
+            modifier = {
+                ROOT = {  #本国是否大于目标（埃塞）兵力0.5倍率
+                    strength_ratio = {
+                        tag = FROM
+                        ratio = 0.5
+                    }
+                }
+                factor = 0.9
+            }
+
+            modifier = {
+                ROOT = {  #本国是否大于目标（埃塞）兵力1.0倍率
                     strength_ratio = {
                         tag = FROM
                         ratio = 1.0
                     }
                 }
-                factor = 0.75
+                factor = 0.6
             }
 
-            modifier = {#如果领土持有者军事强大
-                ROOT = {
+            modifier = {
+                ROOT = {#本国是否大于目标（埃塞）兵力2.0倍率
                     strength_ratio = {
                         tag = FROM
-                        ratio = 2
+                        ratio = 2.0
                     }
                 }
-                factor = 0.25
+                factor = 0.3
+            }
+
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 905 }
+                }
+
+                factor = 1
+            }
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 548 }
+                }
+
+                factor = 1
+            }
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 1007 }
+                }
+
+                factor = 1
+            }
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 709 }
+                }
+
+                factor = 1
+            }
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 281 }
+                }
+
+                factor = 1
+            }
+            modifier = {
+                FROM = {
+                    check_variable = { YSS_the_land_we_buy = 422 }
+                }
+
+                factor = 1
             }
         }
     }
@@ -1451,7 +1509,7 @@ country_event = {#黄金购买土地的交互
         }
 
         ai_chance = {
-            base = 25
+            base = 80
         }
     }
 }
@@ -1475,6 +1533,12 @@ country_event = {#黄金购买土地的交互同意回信
 			idea = YSS_11
 			days = 200
 		}
+        FROM = {
+            add_timed_idea = {
+			    idea = YSS_11
+			    days = 200
+		    }
+        }
     }
 }
 

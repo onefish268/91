@@ -102,6 +102,15 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
+		YSS_12 = {
+			#圣杯获得的黄金
+			picture = GFX_idea_nongyexianzhuang
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+
+
 		YSS_idea_focus = {#空载
 			name = YSS_old_idea
 			modifier = {

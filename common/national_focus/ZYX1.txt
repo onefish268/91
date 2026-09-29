@@ -185,31 +185,31 @@ focus_tree = {
 	}
 	focus = {
 		id = 2_focus_10
-		x = 16
-		y = 5
+		x = 12
+		y = 6
 		cost = 2
 		icon = GFX_focus_zyx9
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 2_focus_3
+			focus = 2_focus_8
 		}
 		completion_reward = {
-			add_ideas = ZIM_3
+			add_ideas = ZIM_4
 		}
 	}
 	focus = {
 		id = 2_focus_13
-		x = 12
-		y = 6
+		x = 16
+		y = 5
 		cost = 1
 		icon = GFX_focus_zyx6
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = 2_focus_8
+			focus = 2_focus_3
 		}
 		completion_reward = {
 			add_war_support = 0.1
@@ -236,10 +236,7 @@ focus_tree = {
 			focus = 2_focus_9
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZIM_3
-				add_idea = ZIM_4
-			}
+			add_ideas = ZIM_3
 		}
 	}
 	focus = {
@@ -332,13 +329,13 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 2_focus_14
-			focus = 2_focus_13
+			focus = 2_focus_10
 		}
 		prerequisite = {
 			focus = 2_focus_22
 		}
 		prerequisite = {
-			focus = 2_focus_10
+			focus = 2_focus_13
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -708,6 +705,9 @@ focus_tree = {
 				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
 			}
 			ZHJ = {
+				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
+			}
+			ZIM = {
 				every_core_state = { add_claim_by_ROOT_if_has_no_core = yes }
 			}
 			custom_effect_tooltip = fight_tongyi

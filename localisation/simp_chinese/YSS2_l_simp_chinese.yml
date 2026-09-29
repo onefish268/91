@@ -1,5 +1,6 @@
-l_simp_chinese: 
-  YSS.76.t: "[FROM.GetName]寻求和我们在[?var:YSS_the_land_we_buy.GetName]地区归属权问题的谈判"
+﻿l_simp_chinese: 
+  YSS_12: "我们从土地交易中获得的黄金"
+  YSS.76.t: "[FROM.GetName]寻求和我们就地区归属权问题进行谈判"
   YSS.76.d: "就在昨日，[FROM.GetName]代表希望我们同她们就[?var:YSS_the_land_we_buy.GetName]地区归属权展开公平谈判，她们认为，这块地在她们历史上是有法理依据可言的，如果可以，她们愿意通过黄金赎回这些祖地。"
   YSS.76.a: "我们在[?var:YSS_the_land_we_buy.GetName]地区确实没有什么太重要的利益。"
   YSS.76.b: "这些人是脑子进水了吗？"

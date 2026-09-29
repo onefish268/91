@@ -1878,7 +1878,8 @@ focus_tree = {
 				amount = 32
 			}
 			add_resource = {
-				type = aluminum
+					  #aluminium
+				type = aluminium
 				state = 879
 				amount = 37
 			}
@@ -3583,17 +3584,52 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = "我们要在最短的时间内打倒敌人！"			#ZYX_3_focus_123
-			create_wargoal = {
-				target = EAS
-				type = annex_everything
-			}
+
 			hidden_effect = {
 				EAS = {
-					add_timed_idea = {
-						idea = ZYX_Suddenly_attack
-						days = 60
+					if = {
+						limit = {
+							is_subject = yes
+						}
+						OVERLORD = {
+
+							set_country_flag = the_lord_of_EAS
+
+							set_autonomy = {
+								target = EAS
+								autonomy_state = autonomy_free
+								end_wars  = yes
+								end_civil_wars = yes
+							}
+						}
 					}
 				}
+			}
+
+			declare_war_on = {
+            	target = EAS
+            	type = annex_everything
+        	}
+
+			EAS = {
+				add_timed_idea = {
+					idea = ZYX_Suddenly_attack
+					days = 120
+				}
+			}
+
+			hidden_effect = {
+				random_country = {
+		        	limit = {
+		        		has_country_flag = was_congos_overlord_when_cw_started_flag
+		        	}
+		        	set_autonomy = {
+		        	    target = EAS
+		        	    autonomous_state = autonomy_colony
+		        	    end_wars = no
+		        	    end_civil_wars = no
+			    	}
+			    }
 			}
 		}
 		bypass = {
