@@ -1384,3 +1384,60 @@ country_event = {#结语
         ai_chance = { base = 50 }
     }
 }
+country_event = {#结语
+    id = ZYX.41
+    title = ZYX.41.t
+    desc = ZYX.41.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+        name = ZYX.41.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#结语
+    id = ZYX.42
+    title = ZYX.42.t
+    desc = ZYX.42.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+        name = ZYX.42.a
+        custom_effect_tooltip = ZYX_tootip_end_1
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#结语
+    id = ZYX.43
+    title = ZYX.43.t
+    desc = ZYX.43.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+        name = ZYX.43.a
+        ai_chance = { base = 50 }
+    }
+}
+country_event = {#结语
+    id = ZYX.44
+    title = ZYX.44.t
+    desc = ZYX.44.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+        name = ZYX.44.a
+        ai_chance = { base = 50 }
+    }
+}

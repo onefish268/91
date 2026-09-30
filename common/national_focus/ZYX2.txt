@@ -4302,13 +4302,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 8
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_154
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.42
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4316,13 +4320,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 50
 		y = 9
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_150
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.43
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4330,13 +4338,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 52
 		y = 9
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_150
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.44
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4344,7 +4356,7 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 10
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -4365,7 +4377,7 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 7
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
@@ -4374,6 +4386,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.41
+				days = 5
+			}
 		}
 	}
 }
