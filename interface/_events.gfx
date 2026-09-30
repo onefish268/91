@@ -164,11 +164,51 @@ spriteTypes = {
         texturefile = "gfx\interface\events\ZIM9_event.png"
     }
     spriteType = {
+        name = "GFX_ZIM10_event"
+        texturefile = "gfx\interface\events\ZIM10_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM11_event"
+        texturefile = "gfx\interface\events\ZIM11_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM12_event"
+        texturefile = "gfx\interface\events\ZIM12_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM13_event"
+        texturefile = "gfx\interface\events\ZIM13_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM14_event"
+        texturefile = "gfx\interface\events\ZIM14_event.png"
+    }
+    spriteType = {
+        name = "GFX_ZIM15_event"
+        texturefile = "gfx\interface\events\ZIM15_event.png"
+    }
+    spriteType = {
         name = "GFX_ZNT1_event"
         texturefile = "gfx\interface\events\GFX_ZNT1_event.png"
     }
     spriteType = {
         name = "GFX_ZNT2_event"
         texturefile = "gfx\interface\events\GFX_ZNT2_event.png"
+    }
+    spriteType = {
+        name = "GFX_1_event"
+        texturefile = "gfx\interface\events\1.png"
+    }
+    spriteType = {
+        name = "GFX_2_event"
+        texturefile = "gfx\interface\events\2.png"
+    }
+    spriteType = {
+        name = "GFX_3_event"
+        texturefile = "gfx\interface\events\3.png"
+    }
+    spriteType = {
+        name = "GFX_4_event"
+        texturefile = "gfx\interface\events\4.png"
     }
 }

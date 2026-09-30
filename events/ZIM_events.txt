@@ -107,6 +107,7 @@ country_event = {
     id = ZIM.8
     title = ZIM.8.t
     desc = ZIM.8.desc
+    picture = GFX_ZIM10_event
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -120,6 +121,7 @@ country_event = {
     id = ZIM.9
     title = ZIM.9.t
     desc = ZIM.9.desc
+    picture = GFX_ZIM11_event
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -133,6 +135,7 @@ country_event = {
     id = ZIM.10
     title = ZIM.10.t
     desc = ZIM.10.desc
+    picture = GFX_ZIM2_event
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -147,6 +150,7 @@ country_event = {
     id = ZIM.11
     title = ZIM.11.t
     desc = ZIM.11.desc
+    picture = GFX_ZIM12_event
     is_triggered_only = yes
 
     option = {
@@ -216,6 +220,7 @@ country_event = {
     id = ZIM.13
     title = ZIM.13.t
     desc = ZIM.13.desc
+    picture = GFX_ZIM13_event
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -231,6 +236,7 @@ country_event = {
     id = ZIM.14
     title = ZIM.14.t
     desc = ZIM.14.desc
+    picture = GFX_ZIM14_event
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -244,6 +250,7 @@ country_event = {
     id = ZIM.15
     title = ZIM.15.t
     desc = ZIM.15.desc
+    picture = GFX_ZIM15_event
     is_triggered_only = yes
     fire_only_once = yes
 

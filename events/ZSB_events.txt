@@ -4,6 +4,7 @@ country_event = {#深夜的市长府邸
     id = ZSB.1
     title = ZSB.1.t
     desc = ZSB.1.desc
+    picture = GFX_1_event
 
     is_triggered_only = yes
 
@@ -20,6 +21,7 @@ country_event = {#加丹加
     id = ZSB.2
     title = ZSB.2.t
     desc = ZSB.2.desc
+    picture = GFX_2_event
 
     is_triggered_only = yes
 
@@ -43,6 +45,7 @@ country_event = {#总督府
     id = ZSB.3
     title = ZSB.3.t
     desc = ZSB.3.desc
+    picture = GFX_3_event
 
     is_triggered_only = yes
 
@@ -56,6 +59,7 @@ country_event = {#南非
     id = ZSB.4
     title = ZSB.4.t
     desc = ZSB.4.desc
+    picture = GFX_4_event
 
     is_triggered_only = yes
 
