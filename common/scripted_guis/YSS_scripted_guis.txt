@@ -1,12 +1,33 @@
 scripted_gui = {
 		
-	YSS_body_ui = { #总书记身体状况
+	YSS_body_ui = { #非洲解放事务gui启动器
 	    parent_window_token = politics_tab
 		context_type = player_context
 		window_name = "YSS_body_ui_window"
 		visible = {
 			original_tag = YSS
+			YSS = {
+				has_completed_focus = YSS_focus_172
+			}
 	    }
+		effects = {
+			YSS_body_button_click = {
+			    set_country_flag = YSS_set_body_start
+			}
+		}
+	}
+	YSS_body_start_ui = { #非洲解放事务
+		context_type = player_context
+		window_name = "YSS_body_start_ui_window"
+		visible = {
+			original_tag = YSS
+			has_country_flag = YSS_set_body_start
+	    }
+		effects = {
+			YSS_body_start_button_click = {
+			    clr_country_flag = YSS_set_body_start
+			}
+		}
 	}
 
 	YSS_days_ui = { #年度报告启动器
