@@ -73,6 +73,7 @@ country_event = {#沟通
     id = ZSB.5
     title = ZSB.5.t
     desc = ZSB.5.desc
+    picture = GFX_5_event
 
     is_triggered_only = yes
 
@@ -86,6 +87,7 @@ country_event = {#议会
     id = ZSB.6
     title = ZSB.6.t
     desc = ZSB.6.desc
+    picture = GFX_6_event
 
     is_triggered_only = yes
 
@@ -517,6 +519,7 @@ country_event = {#检查选举结果
     id = ZSB.27
     name = ZSB.27
     desc = ZSB.27_desc
+    picture = GFX_7_event
 
     is_triggered_only = yes
 

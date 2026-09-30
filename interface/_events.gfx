@@ -211,4 +211,16 @@ spriteTypes = {
         name = "GFX_4_event"
         texturefile = "gfx\interface\events\4.png"
     }
+    spriteType = {
+        name = "GFX_5_event"
+        texturefile = "gfx\interface\events\5.png"
+    }
+    spriteType = {
+        name = "GFX_6_event"
+        texturefile = "gfx\interface\events\6.png"
+    }
+    spriteType = {
+        name = "GFX_7_event"
+        texturefile = "gfx\interface\events\7.png"
+    }
 }
