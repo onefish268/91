@@ -53,7 +53,7 @@ guiTypes = {
 		iconType = {
 			name = "YSS_body4_icon"
 			spriteType = GFX_YSS_body4_icon
-			position = { x = 815 y = 370 }
+			position = { x = 1045 y = 370 }
     	    scale = 0.2
 		}
 		iconType = {
@@ -125,8 +125,62 @@ guiTypes = {
 		iconType = {
 			name = "YSS_body17_icon"
 			spriteType = GFX_YSS_body17_icon
-			position = { x = 22 y = 440 }
-    	    scale = 0.37
+			position = { x = 132 y = 445 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body18_icon"
+			spriteType = GFX_YSS_body18_icon
+			position = { x = 22 y = 445 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body19_icon"
+			spriteType = GFX_YSS_body19_icon
+			position = { x = 22 y = 520 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body20_icon"
+			spriteType = GFX_YSS_body20_icon
+			position = { x = 132 y = 520 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body21_icon"
+			spriteType = GFX_YSS_body21_icon
+			position = { x = 222 y = 450 }
+    	    scale = 0.03
+		}
+		iconType = {
+			name = "YSS_body22_icon"
+			spriteType = GFX_YSS_body22_icon
+			position = { x = 22 y = 445 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body23_icon"
+			spriteType = GFX_YSS_body23_icon
+			position = { x = 132 y = 445 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body24_icon"
+			spriteType = GFX_YSS_body24_icon
+			position = { x = 22 y = 520 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body25_icon"
+			spriteType = GFX_YSS_body25_icon
+			position = { x = 132 y = 520 }
+    	    scale = 1
+		}
+		iconType = {
+			name = "YSS_body26_icon"
+			spriteType = GFX_YSS_body26_icon
+			position = { x = 382 y = 120 }
+    	    scale = 0.65
 		}
 	}
 }
