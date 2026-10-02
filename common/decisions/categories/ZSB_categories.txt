@@ -20,6 +20,7 @@ ZSB_xuanju_category = {
 
     visible = {
         has_completed_focus = 6_focus_1
+        NOT = { has_country_flag = ZSB_xuanjv_jieshu }
         tag = ZSB   # 仅某国能看见这个决议分类，换成你需要的国家tag
     }
 }

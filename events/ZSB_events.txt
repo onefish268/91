@@ -100,7 +100,7 @@ country_event = {#和杜马的通牒
 
 	option = {
         name = ZSB.7.a
-        ai_chance = { base = 50 }
+        ai_chance = { base = 90 }
 
         ZSB = {
             annex_country = {
@@ -110,7 +110,7 @@ country_event = {#和杜马的通牒
     }
     option = {
         name = ZSB.7.b
-        ai_chance = { base = 50 }
+        ai_chance = { base = 10 }
         ZSB = {
             country_event = ZSB.12
             create_wargoal = {
@@ -244,9 +244,7 @@ country_event = {#六角大楼的建设
     immediate = {
         swap_ideas = {
             remove_idea = ZSB_Construction_of_the_Hexagon
-            add_ideas = {
-                ZSB_The_Hexagon
-            }
+            add_idea = ZSB_The_Hexagon
         }
     }
 }
@@ -516,6 +514,10 @@ country_event = {#检查选举结果
 
     is_triggered_only = yes
 
+    immediate = {
+        set_country_flag = ZSB_xuanjv_jieshu
+    }
+
     option = {
         name = ZSB.27_a
         trigger = { has_country_flag = ZSB_KL_win_the_vote }
@@ -533,6 +535,37 @@ country_event = {#检查选举结果
         complete_national_focus = 6_focus_2
         hidden_effect = {
             scoped_play_song = "耐心"
+        }
+    }
+}
+
+country_event = {#和ZIM的通牒
+    id = ZSB.28
+    title = ZSB.28.t
+    desc = ZSB.28.desc
+
+    is_triggered_only = yes
+
+	option = {
+        name = ZSB.28.a
+        ai_chance = { base = 50 }
+
+        ZSB = {
+            annex_country = {
+                target = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = ZSB.28.b
+        ai_chance = { base = 0 }
+        ZSB = {
+            country_event = ZSB.12
+            create_wargoal = {
+                target = ROOT
+                type = annex_everything
+            }
         }
     }
 }

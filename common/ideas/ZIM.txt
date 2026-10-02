@@ -209,9 +209,7 @@ ideas = {
 			    base = 1
 		    }
 	        visible = {
-			    or = {
-				    tag = ZSB
-			    }
+				tag = ZSB
 		    }
 		    available = {
 			    has_completed_focus = 6_focus_45
@@ -219,8 +217,8 @@ ideas = {
 	        cost = 150
     	    traits = { electronics_concern }
 	        modifier = {
-			    stability_weekly_factor = 0.001
-				war_support_weekly_factor = 0.0015
+			    stability_weekly = 0.001
+				war_support_weekly = 0.001
 				surrender_limit = 0.25
 	        }
         }

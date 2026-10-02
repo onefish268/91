@@ -30,6 +30,11 @@ country_event = {#解体
         name = YSS.2.a
         ai_chance = { base = 50 }
         release = ETH
+        ROOT = {
+            every_core_state = {
+                add_core_of = ETH
+            }
+        }
         ETH = {
             annex_country = {
                 target = YSS

@@ -20,7 +20,7 @@ country_event = {#清理标记有关招募的事件
 	}
 }
 
-country_event = {#配帕洛尼自动走国策
+country_event = {#佩帕洛尼自动走国策
 	id = invisible_event.002
 	is_triggered_only = yes
 	hidden = yes
@@ -30,6 +30,7 @@ country_event = {#配帕洛尼自动走国策
 			limit = {
 				has_completed_focus = 3_focus_Endless_fight
 			}
+			clr_country_flag = seven_time
 		}
 		else_if = {
 			limit = {
@@ -38,10 +39,18 @@ country_event = {#配帕洛尼自动走国策
 			complete_national_focus = {
 				focus = 3_focus_Endless_fight
 				use_side_message = yes
-				originator_name = "配帕洛尼"
+				originator_name = "佩帕洛尼"
 			}
 			deactivate_shine_on_focus = 3_focus_Endless_fight
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.002
+				days = 140
+			}
+			set_country_flag = {
+				flag = seven_time
+				days = 141
+				value = 1
+			}
 		}
 		else_if = {
 			limit = {
@@ -50,16 +59,25 @@ country_event = {#配帕洛尼自动走国策
 			complete_national_focus = {
 				focus = three_focus_22
 				use_side_message = yes
-				originator_name = "配帕洛尼"
+				originator_name = "佩帕洛尼"
 			}
+			activate_shine_on_focus = 3_focus_Endless_fight
 			deactivate_shine_on_focus = three_focus_22
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.002
+				days = 140
+			}
+			set_country_flag = {
+				flag = seven_time
+				days = 141
+				value = 1
+			}
 		}
 		else = {
 			complete_national_focus = {
 				focus = three_focus_17
 				use_side_message = yes
-				originator_name = "配帕洛尼"
+				originator_name = "佩帕洛尼"
 			}
 			activate_shine_on_focus = three_focus_22
 			deactivate_shine_on_focus = three_focus_17
@@ -76,7 +94,6 @@ country_event = {#配帕洛尼自动走国策
 	}
 }
 
-
 country_event = {#卡尔帕乔自动走国策
 	id = invisible_event.003
 	is_triggered_only = yes
@@ -87,6 +104,7 @@ country_event = {#卡尔帕乔自动走国策
 			limit = {
 				has_completed_focus = 3_focus_Total_war_economy
 			}
+			clr_country_flag = four_time
 		}
 		else_if = {
 			limit = {
@@ -98,7 +116,15 @@ country_event = {#卡尔帕乔自动走国策
 				originator_name = "卡尔帕乔"
 			}
 			deactivate_shine_on_focus = 3_focus_Total_war_economy
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.003
+				days = 140
+			}
+			set_country_flag = {
+				flag = four_time
+				days = 141
+				value = 1
+			}
 		}
 		else_if = {
 			limit = {
@@ -109,8 +135,17 @@ country_event = {#卡尔帕乔自动走国策
 				use_side_message = yes
 				originator_name = "卡尔帕乔"
 			}
+			activate_shine_on_focus = 3_focus_Total_war_economy
 			deactivate_shine_on_focus = three_focus_23
-			clr_country_flag = four_time
+			country_event = {
+				id = invisible_event.003
+				days = 140
+			}
+			set_country_flag = {
+				flag = four_time
+				days = 141
+				value = 1
+			}
 		}
 		else = {
 			complete_national_focus = {
@@ -143,6 +178,7 @@ country_event = {#"得力干将齐亚诺"
 			limit = {
 				has_completed_focus = 3_focus_Neo_African_union
 			}
+			clr_country_flag = five_time
 		}
 		else_if = {
 			limit = {
@@ -154,7 +190,15 @@ country_event = {#"得力干将齐亚诺"
 				originator_name = "齐亚诺"
 			}
 			deactivate_shine_on_focus = 3_focus_Neo_African_union
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.004
+				days = 140
+			}
+			set_country_flag = {
+				flag = five_time
+				days = 141
+				value = 1
+			}
 		}
 		else_if = {
 			limit = {
@@ -165,8 +209,17 @@ country_event = {#"得力干将齐亚诺"
 				use_side_message = yes
 				originator_name = "齐亚诺"
 			}
+			activate_shine_on_focus = 3_focus_Neo_African_union
 			deactivate_shine_on_focus = three_focus_24
-			clr_country_flag = five_time
+			country_event = {
+				id = invisible_event.004
+				days = 140
+			}
+			set_country_flag = {
+				flag = five_time
+				days = 141
+				value = 1
+			}
 		}
 		else = {
 			complete_national_focus = {
@@ -199,6 +252,7 @@ country_event = {#斯塔拉切自动走国策
 			limit = {
 				has_completed_focus = 3_focus_Rhodesian_culture
 			}
+			clr_country_flag = six_time
 		}
 		else_if = {
 			limit = {
@@ -210,7 +264,15 @@ country_event = {#斯塔拉切自动走国策
 				originator_name = "斯塔拉切"
 			}
 			deactivate_shine_on_focus = 3_focus_Rhodesian_culture
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.005
+				days = 140
+			}
+			set_country_flag = {
+				flag = six_time
+				days = 141
+				value = 1
+			}
 		}
 		else_if = {
 			limit = {
@@ -221,8 +283,17 @@ country_event = {#斯塔拉切自动走国策
 				use_side_message = yes
 				originator_name = "斯塔拉切"
 			}
+			activate_shine_on_focus = 3_focus_Rhodesian_culture
 			deactivate_shine_on_focus = three_focus_25
-			clr_country_flag = six_time
+			country_event = {
+				id = invisible_event.005
+				days = 140
+			}
+			set_country_flag = {
+				flag = six_time
+				days = 141
+				value = 1
+			}
 		}
 		else = {
 			complete_national_focus = {
@@ -255,6 +326,7 @@ country_event = {#帕沃利尼自动走国策
 			limit = {
 				has_completed_focus = 3_focus_Veni_vidi_vici
 			}
+			clr_country_flag = eight_time
 		}
 		else_if = {
 			limit = {
@@ -266,7 +338,15 @@ country_event = {#帕沃利尼自动走国策
 				originator_name = "帕沃利尼"
 			}
 			deactivate_shine_on_focus = 3_focus_Veni_vidi_vici
-			clr_country_flag = seven_time
+			country_event = {
+				id = invisible_event.006
+				days = 140
+			}
+			set_country_flag = {
+				flag = eight_time
+				days = 141
+				value = 1
+			}
 		}
 		else_if = {
 			limit = {
@@ -277,8 +357,17 @@ country_event = {#帕沃利尼自动走国策
 				use_side_message = yes
 				originator_name = "帕沃利尼"
 			}
+			activate_shine_on_focus = 3_focus_Veni_vidi_vici
 			deactivate_shine_on_focus = three_focus_26
-			clr_country_flag = eight_time
+			country_event = {
+				id = invisible_event.006
+				days = 140
+			}
+			set_country_flag = {
+				flag = eight_time
+				days = 141
+				value = 1
+			}
 		}
 		else = {
 			complete_national_focus = {
@@ -297,6 +386,58 @@ country_event = {#帕沃利尼自动走国策
 				days = 141
 				value = 1
 			}
+		}
+	}
+}
+
+country_event = {#关于入侵南非的隐藏触发器
+	id = invisible_event.007
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ROOT = {
+			has_war_with = EAS
+		}
+	}
+
+	immediate = {
+		random_country = {
+		    limit = {
+		    	has_country_flag = the_lord_of_EAS
+		    }
+		    set_autonomy = {
+		        target = EAS
+	      	    autonomous_state = autonomy_colony
+	    	    end_wars = no
+		    	end_civil_wars = no
+		   	}
+		}
+	}
+}
+
+country_event = {#关于入侵刚果的隐藏触发器
+	id = invisible_event.008
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ROOT = {
+			has_war_with = COG
+		}
+	}
+
+	immediate = {
+		random_country = {
+		    limit = {
+		    	has_country_flag = the_lord_of_COG
+		    }
+		    set_autonomy = {
+		        target = COG
+	      	    autonomous_state = autonomy_colony
+	    	    end_wars = no
+		    	end_civil_wars = no
+		   	}
 		}
 	}
 }

@@ -14,8 +14,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_1
-		x = 1
-		y = 1
+		x = 7
+		y = -1
 		cost = 1
 		icon = GFX_focus_TGI_get_the_fxxk_outa_here
 		text_icon = ZSB_focus_style
@@ -35,8 +35,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_2
-		x = -5
-		y = 1
+		x = 1
+		y = -1
 		cost = 1
 		icon = GFX_focus_TGI_land_of_pain
 		text_icon = ZSB_focus_style
@@ -57,8 +57,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_3
-		x = 7
-		y = 1
+		x = 13
+		y = -1
 		cost = 3
 		icon = GFX_focus_PHI_fortify_corregidor
 		text_icon = ZSB_focus_style
@@ -80,8 +80,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_4
-		x = 13
-		y = 1
+		x = 19
+		y = -1
 		cost = 2
 		icon = GFX_focus_NORDIC_com_selector_material
 		text_icon = ZSB_focus_style
@@ -95,8 +95,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_5
-		x = 0
-		y = 2
+		x = 6
+		y = 0
 		cost = 2
 		icon = GFX_focus_TGI_northern_border_base
 		text_icon = ZSB_focus_style
@@ -124,8 +124,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_6
-		x = 2
-		y = 2
+		x = 8
+		y = 0
 		cost = 1
 		icon = GFX_focus_NGL_set_out
 		text_icon = ZSB_focus_style
@@ -152,8 +152,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_7
-		x = 0
-		y = 4
+		x = 6
+		y = 2
 		cost = 2
 		icon = GFX_focus_NGL_civil_used
 		text_icon = ZSB_focus_style
@@ -177,8 +177,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_8
-		x = 2
-		y = 4
+		x = 8
+		y = 2
 		cost = 1
 		icon = GFX_focus_NGL_imperial_intelligence_agency
 		text_icon = ZSB_focus_style
@@ -202,8 +202,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_9
-		x = 0
-		y = 6
+		x = 6
+		y = 4
 		cost = 2
 		icon = GFX_focus_NGL_end_the_struggle
 		text_icon = ZSB_focus_style
@@ -227,8 +227,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_10
-		x = 2
-		y = 6
+		x = 8
+		y = 4
 		cost = 1
 		icon = GFX_focus_TGI_farther_land
 		text_icon = ZSB_focus_style
@@ -252,8 +252,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_11
-		x = 1
-		y = 7
+		x = 7
+		y = 5
 		cost = 3
 		icon = GFX_focus_NGL_aristocracy_admit_their_mistakes
 		text_icon = ZSB_focus_style
@@ -316,8 +316,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_12
-		x = -6
-		y = 2
+		x = 0
+		y = 0
 		cost = 1
 		icon = GFX_focus_generic_treaty
 		text_icon = ZSB_focus_style
@@ -340,8 +340,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_13
-		x = -4
-		y = 2
+		x = 2
+		y = 0
 		cost = 1
 		icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
 		text_icon = ZSB_focus_style
@@ -364,8 +364,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_14
-		x = -5
-		y = 3
+		x = 1
+		y = 1
 		cost = 1
 		icon = GFX_focus_PRC_promote_paper_bills
 		text_icon = ZSB_focus_style
@@ -388,8 +388,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_16
-		x = -4
-		y = 5
+		x = 2
+		y = 3
 		cost = 1
 		icon = GFX_focus_TUR_ratify_the_six_arrows
 		text_icon = ZSB_focus_style
@@ -412,8 +412,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_15
-		x = -6
-		y = 5
+		x = 0
+		y = 3
 		cost = 1
 		icon = GFX_focus_generic_university_2
 		text_icon = ZSB_focus_style
@@ -436,8 +436,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_17
-		x = -5
-		y = 7
+		x = 1
+		y = 5
 		cost = 3
 		icon = GFX_focus_generic_surrender
 		text_icon = ZSB_focus_style
@@ -476,8 +476,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_18
-		x = 7
-		y = 3
+		x = 13
+		y = 1
 		cost = 2
 		icon = GFX_focus_focus_fra_maquis
 		text_icon = ZSB_focus_style
@@ -502,8 +502,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_19
-		x = 7
-		y = 5
+		x = 13
+		y = 3
 		cost = 2
 		icon = GFX_focus_INS_peg_indies_guilder_to_us_dollar
 		text_icon = ZSB_focus_style
@@ -528,8 +528,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_20
-		x = 7
-		y = 7
+		x = 13
+		y = 5
 		cost = 2
 		icon = GFX_focus_generic_expropriate_industrialist
 		text_icon = ZSB_focus_style
@@ -554,8 +554,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_21
-		x = 11
-		y = 2
+		x = 17
+		y = 0
 		cost = 2
 		icon = GFX_focus_INS_license_dutch_weapon_blueprints
 		text_icon = ZSB_focus_style
@@ -572,8 +572,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_22
-		x = 15
-		y = 2
+		x = 21
+		y = 0
 		cost = 2
 		icon = GFX_focus_AFG_sugar_factory
 		text_icon = ZSB_focus_style
@@ -590,8 +590,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_23
-		x = 11
-		y = 4
+		x = 17
+		y = 2
 		cost = 2
 		icon = GFX_focus_AST_new_south_wales_government_railways
 		text_icon = ZSB_focus_style
@@ -633,8 +633,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_24
-		x = 15
-		y = 4
+		x = 21
+		y = 2
 		cost = 2
 		icon = GFX_focus_AST_stephensen
 		text_icon = ZSB_focus_style
@@ -651,8 +651,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_25
-		x = 11
-		y = 7
+		x = 17
+		y = 5
 		cost = 2
 		icon = GFX_focus_FIN_weapon_caches
 		text_icon = ZSB_focus_style
@@ -683,8 +683,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_26
-		x = 15
-		y = 7
+		x = 21
+		y = 5
 		cost = 2
 		icon = GFX_focus_RAJ_special_economic_zones
 		text_icon = ZSB_focus_style
@@ -700,9 +700,41 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = 5_focus_crazy_guys
+		cost = 1
+		x = 4
+		y = 10
+		icon = GFX_focus_RAJ_a_private_military
+		text_icon = ZSB_focus_style
+
+		prerequisite = {
+			focus = 5_focus_27
+		}
+		completion_reward = {
+            create_wargoal = {
+                target = ZXS
+                type = annex_everything
+            }
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZXS
+					}
+				}
+				add_core_of = ZSB
+			}
+		}
+		bypass = {
+			ZXS = {
+				exists = no
+			}
+		}
+	}
+	focus = {
 		id = 5_focus_27
 		x = 4
-		y = 9
+		y = 7
 		cost = 2
 		icon = GFX_focus_NGL_future_goals
 		text_icon = ZSB_focus_style
@@ -721,8 +753,8 @@ focus_tree = {
 	focus = {
 		id = 5_focus_28
 		x = -5
-		y = 10
-		cost = 2
+		y = 8
+		cost = 1
 		icon = GFX_focus_GER_fuhrerprinzip_goring
 		text_icon = ZSB_focus_style
 		continue_if_invalid = no
@@ -742,8 +774,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_29
-		x = 1
-		y = 10
+		x = 0
+		y = 8
 		cost = 2
 		icon = GFX_focus_ITA_peasants_rise
 		text_icon = ZSB_focus_style
@@ -766,8 +798,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_30
-		x = 7
-		y = 10
+		x = 8
+		y = 8
 		cost = 2
 		icon = GFX_focus_BUL_destroy_the_zveno
 		text_icon = ZSB_focus_style
@@ -791,7 +823,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_31
 		x = 13
-		y = 10
+		y = 8
 		cost = 2
 		icon = GFX_focus_NGL_children_of_motherland
 		text_icon = ZSB_focus_style
@@ -815,7 +847,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_32
 		x = -6
-		y = 11
+		y = 9
 		cost = 1
 		icon = GFX_focus_NPT_crackdown_on_cracking_of_associations
 		text_icon = ZSB_focus_style
@@ -843,7 +875,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_33
 		x = -4
-		y = 11
+		y = 9
 		cost = 1
 		icon = GFX_focus_generic_crush_the_military
 		text_icon = ZSB_focus_style
@@ -865,7 +897,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_34
 		x = -6
-		y = 13
+		y = 11
 		cost = 1
 		icon = GFX_focus_SOV_military_purge
 		text_icon = ZSB_focus_style
@@ -887,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_35
 		x = -4
-		y = 13
+		y = 11
 		cost = 1
 		icon = GFX_focus_AFG_royal_guard
 		text_icon = ZSB_focus_style
@@ -908,8 +940,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_36
-		x = 1
-		y = 12
+		x = 0
+		y = 10
 		cost = 1
 		icon = GFX_focus_NGL_not_the_life_of_royal
 		text_icon = ZSB_focus_style
@@ -934,8 +966,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_37
-		x = 7
-		y = 12
+		x = 8
+		y = 10
 		cost = 1
 		icon = GFX_focus_USS_expand_empire_sojy
 		text_icon = ZSB_focus_style
@@ -961,7 +993,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_38
 		x = 13
-		y = 12
+		y = 10
 		cost = 2
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		text_icon = ZSB_focus_style
@@ -987,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_39
 		x = -5
-		y = 14
+		y = 12
 		cost = 2
 		icon = GFX_focus_PER_rally_behind_mosaddegh
 		text_icon = ZSB_focus_style
@@ -1002,7 +1034,7 @@ focus_tree = {
 		completion_reward = {
 			ZIM = {
 				country_event = {
-					id = ZSB.7
+					id = ZSB.28
 					days = 5
 				}
 			}
@@ -1020,8 +1052,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_40
-		x = 1
-		y = 14
+		x = 0
+		y = 12
 		cost = 2
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		text_icon = ZSB_focus_style
@@ -1051,8 +1083,8 @@ focus_tree = {
 	}
 	focus = {
 		id = 5_focus_41
-		x = 7
-		y = 14
+		x = 8
+		y = 12
 		cost = 2
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		text_icon = ZSB_focus_style
@@ -1083,7 +1115,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_42
 		x = 13
-		y = 14
+		y = 12
 		cost = 2
 		icon = GFX_focus_PHI_utang_na_loob
 		text_icon = ZSB_focus_style
@@ -1114,7 +1146,7 @@ focus_tree = {
 	focus = {
 		id = 5_focus_43
 		x = 4
-		y = 15
+		y = 13
 		cost = 2
 		icon = GFX_focus_NGL_imperial_glory
 		text_icon = ZSB_focus_style
@@ -1131,6 +1163,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 5_focus_42
+		}
+		prerequisite = {
+			focus = 5_focus_crazy_guys
 		}
 		completion_reward = {
 			load_focus_tree = ZSB3_focus_tree
