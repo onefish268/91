@@ -316,7 +316,7 @@ focus_tree = {
 		x = -16
 		y = -1
 		cost = 5
-		icon = GFX_focus_ITA_italian_hegemony
+		icon = GFX_focus_zyx37
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -393,7 +393,7 @@ focus_tree = {
 		x = -20
 		y = 0
 		cost = 5
-		icon = GFX_focus_ITA_culto_del_duce
+		icon = GFX_focus_zyx38
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -409,7 +409,7 @@ focus_tree = {
 		x = -21
 		y = 1
 		cost = 5
-		icon = GFX_focus_PRC_the_central_committee
+		icon = GFX_focus_zyx39
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -427,7 +427,7 @@ focus_tree = {
 		x = -19
 		y = 1
 		cost = 5
-		icon = GFX_focus_ETH_invite_italian_settlers
+		icon = GFX_focus_zyx40
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -445,7 +445,7 @@ focus_tree = {
 		x = -20
 		y = 2
 		cost = 5
-		icon = GFX_focus_SIA_order_discipline_and_unity
+		icon = GFX_focus_zyx41
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -466,7 +466,7 @@ focus_tree = {
 		x = -20
 		y = 3
 		cost = 5
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_focus_zyx43
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -484,7 +484,7 @@ focus_tree = {
 		x = -22
 		y = 3
 		cost = 5
-		icon = GFX_focus_ICE_expanding_the_university_of_reykjavik
+		icon = GFX_focus_zyx42
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -502,7 +502,7 @@ focus_tree = {
 		x = -18
 		y = 3
 		cost = 5
-		icon = GFX_focus_SIA_defenders_of_constitutional_liberty
+		icon = GFX_focus_zyx44
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -520,7 +520,7 @@ focus_tree = {
 		x = -20
 		y = 5
 		cost = 3
-		icon = GFX_focus_DEN_national_unity
+		icon = GFX_focus_zyx45
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -547,7 +547,7 @@ focus_tree = {
 		x = -15
 		y = 3
 		cost = 20
-		icon = GFX_focus_ITA_blackshirts
+		icon = GFX_focus_zyx46
 		text_icon = ZYX_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4319,13 +4319,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 8
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_154
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.42
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4333,13 +4337,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 50
 		y = 9
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_150
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.43
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4347,13 +4355,17 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 52
 		y = 9
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = 3_focus_150
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.44
+				days = 5
+			}
 		}
 	}
 	focus = {
@@ -4361,7 +4373,7 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 10
-		cost = 0
+		cost = 2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -4382,7 +4394,7 @@ focus_tree = {
 		text_icon = ZYX_focus_style
 		x = 51
 		y = 7
-		cost = 0
+		cost = 1
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		allow_branch = {
@@ -4391,6 +4403,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = {
+				id = ZYX.41
+				days = 5
+			}
 		}
 	}
 }

@@ -274,6 +274,182 @@ spriteTypes = {
         name = "GFX_YSS_yisiland_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_yisiland_icon.png"
     }
+	spriteType = {
+        name = "GFX_YSS_body_start_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body_start_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body_start1_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body_start1_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body1_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body1_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body2_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body2_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body3_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body3_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body4_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body4_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body6_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body6_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body7_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body7_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body8_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body8_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body9_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body9_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body10_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body10_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body11_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body11_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body12_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body12_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body13_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body13_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body14_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body14_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body15_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body15_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body16_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body16_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body17_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body17_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body18_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body18_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body19_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body19_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body20_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body20_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body21_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body21_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body22_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body22_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body23_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body23_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body24_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body24_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body25_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body25_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body26_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body26_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body27_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body27_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body28_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body28_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body29_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body29_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body30_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body30_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body31_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body31_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body32_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body32_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body33_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body33_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body34_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body34_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body35_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body35_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body36_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body36_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body37_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body37_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body38_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body38_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body39_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body39_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body40_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body40_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body41_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body41_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body42_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body42_icon.png"
+    }
+	spriteType = {
+        name = "GFX_YSS_body43_icon"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_body43_icon.png"
+    }
     spriteType = {
         name = "GFX_EAS_anan"
         texturefile = "gfx/leaders/ZIM/anan.png"

@@ -4,6 +4,7 @@ country_event = {#深夜的市长府邸
     id = ZSB.1
     title = ZSB.1.t
     desc = ZSB.1.desc
+    picture = GFX_1_event
 
     is_triggered_only = yes
 
@@ -20,6 +21,7 @@ country_event = {#加丹加
     id = ZSB.2
     title = ZSB.2.t
     desc = ZSB.2.desc
+    picture = GFX_2_event
 
     is_triggered_only = yes
 
@@ -43,6 +45,7 @@ country_event = {#总督府
     id = ZSB.3
     title = ZSB.3.t
     desc = ZSB.3.desc
+    picture = GFX_3_event
 
     is_triggered_only = yes
 
@@ -56,6 +59,7 @@ country_event = {#南非
     id = ZSB.4
     title = ZSB.4.t
     desc = ZSB.4.desc
+    picture = GFX_4_event
 
     is_triggered_only = yes
 
@@ -69,6 +73,7 @@ country_event = {#沟通
     id = ZSB.5
     title = ZSB.5.t
     desc = ZSB.5.desc
+    picture = GFX_5_event
 
     is_triggered_only = yes
 
@@ -82,6 +87,7 @@ country_event = {#议会
     id = ZSB.6
     title = ZSB.6.t
     desc = ZSB.6.desc
+    picture = GFX_6_event
 
     is_triggered_only = yes
 
@@ -511,6 +517,7 @@ country_event = {#检查选举结果
     id = ZSB.27
     name = ZSB.27
     desc = ZSB.27_desc
+    picture = GFX_7_event
 
     is_triggered_only = yes
 
