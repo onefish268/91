@@ -16,8 +16,8 @@ guiTypes = {
 
 	}
 }
-guiTypes = {
-
+guiTypes = { 
+	#互助组织
 	containerWindowType = {
 		name = "YSS_body_start_ui_window"
 		position = { x = 500 y = 200 }
@@ -123,64 +123,74 @@ guiTypes = {
     	    scale = 0.7
 		}
 		iconType = {
-			name = "YSS_body17_icon"
-			spriteType = GFX_YSS_body17_icon
-			position = { x = 132 y = 445 }
-    	    scale = 1
-		}
-		iconType = {
-			name = "YSS_body18_icon"
-			spriteType = GFX_YSS_body18_icon
-			position = { x = 22 y = 445 }
-    	    scale = 1
-		}
-		iconType = {
-			name = "YSS_body19_icon"
-			spriteType = GFX_YSS_body19_icon
-			position = { x = 22 y = 520 }
-    	    scale = 1
-		}
-		iconType = {
-			name = "YSS_body20_icon"
-			spriteType = GFX_YSS_body20_icon
-			position = { x = 132 y = 520 }
-    	    scale = 1
-		}
-		iconType = {
 			name = "YSS_body21_icon"
 			spriteType = GFX_YSS_body21_icon
 			position = { x = 222 y = 450 }
     	    scale = 0.03
 		}
-		iconType = {
-			name = "YSS_body22_icon"
-			spriteType = GFX_YSS_body22_icon
-			position = { x = 22 y = 445 }
-    	    scale = 1
+
+		gridBoxType = {
+			name = "map_of_africa"
+			position = { x = 412 y = 120 }
+			size = { width = 1000 height = 1000 }
+   			slotsize = { width = 0 height = 0 }
+    		max_slots_horizontal = 9
+   		    max_slots_vertical = 1
+	    	#add_horizontal = yes
+    		format = "UPPER_LEFT"
 		}
-		iconType = {
-			name = "YSS_body23_icon"
-			spriteType = GFX_YSS_body23_icon
-			position = { x = 132 y = 445 }
-    	    scale = 1
+
+		gridBoxType = {
+			name = "africa_of_countries"
+			position = { x = 20 y = 445 }
+			size = { width = 1000 height = 1000 }
+   			slotsize = { width = 110 height = 75 }
+    		max_slots_horizontal = 2
+   		    max_slots_vertical = 2
+	    	#add_horizontal = yes
+    		format = "UPPER_LEFT"
 		}
-		iconType = {
-			name = "YSS_body24_icon"
-			spriteType = GFX_YSS_body24_icon
-			position = { x = 22 y = 520 }
-    	    scale = 1
+
+		gridBoxType = {
+			name = "YSS_all_buttons"
+			position = { x = 850 y = 140 }
+			size = { width = 1000 height = 1000 }
+   			slotsize = { width = 180 height = 75 }
+    		max_slots_horizontal = 2
+   		    max_slots_vertical = 3
+	    	#add_horizontal = yes
+    		format = "UPPER_LEFT"
 		}
-		iconType = {
-			name = "YSS_body25_icon"
-			spriteType = GFX_YSS_body25_icon
-			position = { x = 132 y = 520 }
-    	    scale = 1
+	}
+
+	containerWindowType = {#各个地块 由gridbox调出
+		name = "map_of_africa_block"
+
+		buttonType = {
+			name = "map_of_africa_block_button"
+			spriteType = map_of_africa_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.65
 		}
-		iconType = {
-			name = "YSS_body26_icon"
-			spriteType = GFX_YSS_body26_icon
-			position = { x = 382 y = 120 }
-    	    scale = 0.65
+	}
+	containerWindowType = {#各个地块 由gridbox调出
+		name = "africa_of_countries_block"
+
+		buttonType = {
+			name = "africa_of_countries_block_button"
+			spriteType = africa_of_countries_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 1
+		}
+	}
+	containerWindowType = {#各个地块 由gridbox调出
+		name = "all_buttons_block"
+
+		buttonType = {
+			name = "all_buttons_block_button"
+			spriteType = all_button_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
+        	position = { x = 0 y = 0 }
+			scale = 0.05
 		}
 	}
 }
