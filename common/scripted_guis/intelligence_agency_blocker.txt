@@ -1,0 +1,29 @@
+# 从KX偷的
+
+scripted_gui = {
+
+	intelligence_agency_blocker = {
+		context_type = player_context
+		window_name = "intelligence_agency_blocker_window"
+		parent_window_name = "countryintelligenceagencyview"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_dlc = "La Resistance"
+			is_ai = no
+			has_intelligence_agency = no
+			has_country_flag = agency_blocked
+		}
+
+		triggers = {
+			intelligence_agency_blocker_button_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+}
+

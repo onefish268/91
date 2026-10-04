@@ -1,0 +1,205 @@
+leader_traits = {
+	#奇迹的魔女
+	The_Miracle_Witch = {
+		random = no
+		political_power_gain = 0.85
+		army_core_defence_factor = 0.15
+		terrain_penalty_reduction = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#黄金的魔女
+	the_golden_witch = {
+		random = no
+		consumer_goods_factor = -0.2
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#流亡者的领袖
+	leaders_of_exiles = {
+		random = no
+		weekly_manpower = 1000
+		army_defence_against_major_factor = 0.05
+		army_defence_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#绝对的魔女
+	the_absolute_witch = {
+		random = no
+		surrender_limit = 0.15
+		production_factory_start_efficiency_factor = 0.2
+		army_org_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#阿纳斯塔西娅
+	Anastasia_re = {
+		random = no
+		compliance_growth = 0.1
+		compliance_growth_on_our_occupied_states = -0.25
+		resistance_decay = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#小樱
+	Sakura_re = {
+		random = no
+		required_garrison_factor = -0.25
+		resistance_growth = -0.25
+		army_attack_against_major_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	magical_girl = {
+		random = no
+		war_support_weekly = 0.05
+		stability_weekly = 0.01
+		communism_drift = 1
+	}
+	control_the_fate = {
+		random = no
+		war_support_weekly = 0.005
+		stability_weekly = 0.005
+		political_power_factor = 0.1
+		army_defence_factor = 0.1
+	}
+	Sakura_Servant = {
+		random = no
+		political_power_gain = 0.05
+		drift_defence_factor = 0.15
+	}
+	confident_visionary_leader = {
+		random = no
+		economy_cost_factor = -0.15
+	}
+	Firm_scientific_research = {
+		random = no
+		research_speed_factor = 0.1
+	}
+	no_heroworship = {
+		random = no
+		surrender_limit = 0.15
+	}
+	kmk_great_commander = {
+		random = no
+		army_org_factor = 0.1
+		recon_factor = 0.1
+	}
+	kmk_architect_of_communism = {
+		random = no
+		communism_drift = 0.1
+		puppet_cost_factor = -0.2
+		subjects_autonomy_gain = -0.1
+	}
+	kmk_mother_of_nations = {
+		random = no
+		stability_weekly = 0.001
+		compliance_gain = 0.05
+		conscription = 0.02
+	}
+	perfect_and_elegant_regent = {
+		random = no
+		supply_consumption_factor = -0.1
+		supply_node_range = 0.1
+		compliance_gain = 0.1
+		resistance_target = -0.25
+	}
+	#旧幻想乡的领导者
+	leader_of_old_gensokyo = {
+		random = no
+		stability_factor = 0.1
+		theorist_cost_factor = -0.05
+		political_advisor_cost_factor = -0.05
+		surrender_limit = 0.05
+	}
+	#使事态逆转的能力
+	The_ability_to_turn_things_around = {
+		random = no
+		stability_factor = -0.1
+		army_defence_against_major_factor = 0.05
+		army_attack_against_major_factor = 0.05
+		army_attack_factor = 0.02
+		army_defence_factor = 0.02
+	}
+	#秘神
+	Hidden_Star = {
+		random = no
+		weekly_manpower = 500
+		industrial_capacity_factory = 0.1
+		intel_from_operatives_factor = 0.2
+		own_operative_detection_chance_factor = -0.25
+		intel_network_gain_factor = 0.15
+	}
+	#翩翩起舞的精神
+	lib_dance_spirit = {
+		random = no
+		political_power_factor = 0.1
+		acclimatization_hot_climate_gain_factor = 0.1
+		acclimatization_cold_climate_gain_factor = 0.1
+	}
+	#翩翩起舞的生命
+	lib_dance_life = {
+		random = no
+		experience_loss_factor = -0.2
+		land_reinforce_rate = 0.01
+		recon_factor = 0.05
+	}
+	#食梦、造梦程度的能力
+	lib_dream_123 = {
+		random = no
+		consumer_goods_factor = -0.1
+		promote_cost_factor = -0.25
+	}
+	#橙猫猫
+	lib_little_cat = {
+		random = no
+		stability_factor = 0.1
+		war_stability_factor = 0.1
+		compliance_growth = 0.15
+	}
+	#飞翔的毗沙门天
+	lib_large_cat = {
+		random = no
+		stability_factor = 0.1
+		war_stability_factor = 0.1
+		compliance_growth = 0.15
+	}
+	#代理总督
+	lib_dailizongdu = {
+		random = no
+		stability_factor = 0.1
+		war_stability_factor = 0.1
+		compliance_growth = 0.15
+	}
+	#没睡醒
+	lib_meishuixing = {
+		random = no
+		stability_factor = -0.1
+		theorist_cost_factor = 0.05
+		political_advisor_cost_factor = 0.05
+		surrender_limit = -0.05
+	}
+	lib_remi = {
+		random = no
+		stability_factor = 0.05
+	}
+	#地藏魔法使
+	lib_Narumi = {
+		random = no
+		local_resources_factor = 0.15
+	}
+	#数字的魔术师
+	lib_ran_the_trait = {
+		random = no
+		industrial_capacity_factory = 0.1
+	}
+}

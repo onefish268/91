@@ -1,0 +1,80 @@
+LIB_debug = {
+	allowed = { original_tag = LIB }
+	priority = 1000
+	visible = {
+		is_debug = yes
+	}
+}
+
+
+LIB_gongye_category = {
+    picture = GFX_decision_cat_default
+    priority = 90
+    visible = {
+        has_country_flag = LIB_open_gongye_flag
+        tag = LIB   
+    }
+}
+
+LIB_junshi_category = {
+    picture = GFX_decision_cat_default
+    priority = 80
+    visible = {
+        has_country_flag = LIB_open_junshi_flag
+        tag = LIB   
+    }
+}
+
+LIB_fangong_category = {
+    picture = GFX_decision_cat_default
+    priority = 70
+    visible = {
+        has_country_flag = LIB_open_fangong_flag
+        tag = LIB   
+    }
+}
+
+LIB_ziyuan_category = {
+    picture = GFX_decision_cat_default
+    priority = 60
+    visible = {
+        has_completed_focus = LIB_new_focus_40
+        tag = LIB   
+    }
+}
+
+LIB_mimi_category = {
+    picture = GFX_decision_cat_default
+    priority = 50
+    visible = {
+        has_country_flag = LIB_open_mimi_flag
+        tag = LIB   
+    }
+}
+
+LIB_wuhui_category = {
+    picture = GFX_decision_cat_default
+    priority = 40
+    visible = {
+        has_country_flag = LIB_open_wuhui_flag
+        tag = LIB   
+    }
+}
+FREE_FRA_Return_from_Hell = {
+	priority = 200
+	icon = generic_formable_nations
+	allowed = {
+		tag = LIB
+	}
+	visible = {
+			has_completed_focus = LIB_new_focus_33
+	}
+	on_map_area = {
+		name = control_of_these_states_is_required_to_form_the_nation
+		zoom = 1000
+		target_array = global.ah_formables_states_array
+		target_trigger = {
+			FROM = { has_state_flag = FRA_mainland_state }
+		}
+	}
+}

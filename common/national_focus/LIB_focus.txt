@@ -27,6 +27,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
@@ -40,10 +42,36 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancel = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_dxt_tt  
+        has_country_flag = LIB_dxt_flag
+    }
+	}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		effect_tooltip = {
+		459 = {
+	add_extra_state_shared_building_slots = 9
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = dockyard
+		level = 3
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = industrial_complex
+		level = 5
+		instant_build = yes
+	}
+	}
+	}
 		}
 	}
 
@@ -55,17 +83,20 @@ focus_tree = {
 		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		prerequisite = { focus = LIB_new_focus_1 }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
+		allow_branch = {
+			has_country_flag = LIB_jszz_flag
+	    }
 		completion_reward = {
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_3
-		icon = GFX_focus_lib1
 		x = 2
 		y = 4
 		cost = 5
@@ -77,12 +108,55 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_3_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		# 工厂产出 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = -0.1
+				tooltip = industrial_capacity_factor_tt
+			}
+			# 船坞工业产能 -10%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = -0.1
+				tooltip = industrial_capacity_dockyard_tt
+			}
+			# 生产效率保持 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = -0.1
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+			# 生产效率增长 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			# 建设速度 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_speed_buildings_factor
+				value = -0.1
+				tooltip = production_speed_buildings_factor_tt
+			}
+			# 生产效率上限 -0.05%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			# 周度稳定性加1
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = 0.01
+				tooltip = stability_weekly_tt
+			}
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_4
-		icon = GFX_focus_lib5
 		x = 6
 		y = 4
 		cost = 5
@@ -94,29 +168,38 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_to_variable = {
+				var = LIB_political_power_cost
+				value = -0.2
+				tooltip = political_power_cost_tt
+			}
+			add_country_leader_trait = dictator
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_5
-		icon = GFX_focus_lib2
+		icon = GFX_goal_unknown
 		x = 0
 		y = 5
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_3 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		available = {
+		political_power > 50}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = -50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_6
-		icon = GFX_focus_lib3
 		x = 2
 		y = 5
 		cost = 5
@@ -128,12 +211,55 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		# 生产效率保持 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = 0.1
+			}
+			
+			# 生产效率增长 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = 0.1
+			}
+			
+			# 生产效率上限 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = 0.1
+			}
+			# 工厂产出 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = 0.1
+			}
+			# 船坞工业产能 10%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = 0.1
+			}
+			# 生活消费品工厂系数 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = -0.2
+			}
+			
+			# 政治点数消耗 -0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = 0.2
+			}
+			
+			add_political_power = -50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_7
-		icon = GFX_focus_lib4
 		x = 2
 		y = 6
 		cost = 10
@@ -146,12 +272,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = -50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_8
-		icon = GFX_focus_lib7
 		x = 8
 		y = 5
 		cost = 5
@@ -163,12 +289,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = -50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_9
-		icon = GFX_focus_lib6
 		x = 6
 		y = 5
 		cost = 5
@@ -180,12 +306,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = -50
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_10
-		icon = GFX_focus_lib8
 		x = 6
 		y = 6
 		cost = 5
@@ -203,7 +329,6 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_11
-		icon = GFX_focus_lib9
 		x = 4
 		y = 7
 		cost = 10
@@ -216,26 +341,49 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		459 = {
+	add_extra_state_shared_building_slots = 6
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = industrial_complex
+		level = 3
+		instant_build = yes
+	}
+	}
 		}
 	}
 
 	focus = {
 		id = LIB_new_focus_12
-		icon = GFX_goal_unknown
 		x = 13
 		y = 3
 		cost = 10
-		prerequisite = { focus = LIB_new_focus_3 }
-		prerequisite = { focus = LIB_new_focus_4 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		available = {
+		has_completed_focus = LIB_new_focus_3
+		has_completed_focus = LIB_new_focus_4
+        }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		}
-	}
+		custom_effect_tooltip = LIB_new_focus_12_tt
+		hidden_effect = {
+		country_event = { id = LIB_xh.01 days = 1 }
+						}
+							}
+			}
 
 	focus = {
 		id = LIB_new_focus_13
@@ -264,6 +412,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_13_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_13_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -281,6 +439,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_14_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_14_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -298,6 +466,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_15_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_15_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -315,6 +493,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_16_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_16_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -332,6 +520,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_17_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_17_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -349,6 +547,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_18_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_18_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -366,6 +574,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_19_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_19_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -383,6 +601,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_20_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_20_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -402,6 +630,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_21_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_21_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -420,10 +658,33 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_22_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_22_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		clr_country_flag = LIB_13_flag
+		clr_country_flag = LIB_14_flag
+		clr_country_flag = LIB_15_flag
+		clr_country_flag = LIB_16_flag
+		clr_country_flag = LIB_17_flag
+		clr_country_flag = LIB_18_flag
+		clr_country_flag = LIB_19_flag
+		clr_country_flag = LIB_20_flag
+		clr_country_flag = LIB_21_flag
+		clr_country_flag = LIB_22_flag
+		custom_effect_tooltip ={
+		tooltip = LIB_eco_rise_high_tt
+		}
 		}
 	}
 
@@ -589,6 +850,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = { has_country_flag = LIB_FRA_will_fall_flag }
 		ai_will_do = {
 			factor = 1
 		}
@@ -606,6 +868,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = { has_country_flag = Free_france_flag }
 		ai_will_do = {
 			factor = 1
 		}
@@ -627,7 +890,65 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = LIB_new_focus_35_tt
+			set_party_name = {
+				ideology = fascism
+				long_name = "贤者议会-月都系"
+				name = "贤者议会-月都系"
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "贤者议会-八云紫系"
+				name = "贤者议会-八云紫系"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "贤者议会-后户系"
+				name = "贤者议会-后户系"
+			}
+			hidden_effect = {
+			add_dynamic_modifier = { modifier = LIB_pxzc1_idea } 
+			if = {
+			limit = {has_country_flag = LIB_remi_in_power_flag }
+			create_country_leader = {
+				name = "LIB_Remilia"
+				desc = "LIB_Remilia_desc"
+				picture = "gfx/leaders/LIB/remi.png"
+				expire = "1965.1.1"
+				ideology = enlightened_despotism
+				traits = { 
+					lib_remi
+				}
+
+			}
+			remove_ideas = FRA_Ran_idea
+			add_ideas = FRA_XZYH_idea
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_fran_in_power_flag }
+			create_country_leader = {
+				name = "LIB_Flandre"
+				desc = "LIB_Flandre_desc"
+				picture = "gfx/leaders/LIB/fran.png"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					lib_remi
+				}
+			}
+			remove_ideas = FRA_Ran_idea
+			add_ideas = FRA_XZYH_idea
+			}
+			else= {
+			create_country_leader = {
+				name = "贤者议会"
+				picture = GFX_LIB_XZYH
+				expire = "1965.1.1"
+				ideology = despotism
+			}
 		}
+	}
+	}
 	}
 
 	focus = {
@@ -724,6 +1045,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1008,6 +1330,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_54 }
+		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1025,6 +1348,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_54 }
+		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1177,6 +1501,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		prerequisite = { focus = LIB_new_focus_68 }
+		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

@@ -1,0 +1,366 @@
+ideas = {
+    country = {
+		#对外投资合作局
+		LIB_dwtzhzj = {
+			allowed = { always = no }
+			picture = generic_central_management
+			modifier = {
+				trade_opinion_factor = 0.25
+				opinion_gain_monthly_factor = 0.15
+				production_speed_infrastructure_factor = 0.2
+				production_speed_buildings_factor = 0.06
+				weekly_manpower = 25
+			}
+		}
+
+		#航运管理局
+		LIB_hyglj = {
+            removal_cost = -1
+    		#picture = generic_victors_of_ww1
+    		modifier = {
+                consumer_goods_factor = -0.10
+				political_power_gain = 0.2
+    		}
+        }
+		#发展与投资管理局
+		LIB_fzytzglj = {
+            removal_cost = -1
+    		#picture = generic_victors_of_ww1
+    		modifier = {
+                surrender_limit = 0.50
+    		}
+        }
+		#隙间困局
+		LIB_xjkj = {
+            removal_cost = -1
+    		#picture = generic_victors_of_ww1
+    		modifier = {
+			custom_modifier_tooltip = {
+			tooltip = LIB_block_agency_tt
+			has_country_flag = LIB_block_agency}
+    		}
+        }
+		agency_upgrade_time = -0.15
+		#对外投资合作二局
+		LIB_dwtzhzej = {
+            removal_cost = -1
+    		picture = generic_victors_of_ww1
+    		modifier = {
+                surrender_limit = 0.50
+    		}
+        }
+		#绝不投降
+        LIB_never_surrunder = {
+            removal_cost = -1
+    		picture = generic_victors_of_ww1
+    		modifier = {
+                surrender_limit = 0.50
+    		}
+        }
+		#八云紫建设计划
+        LIB_bba_building = {
+            removal_cost = -1
+    		picture = ARG_construction_guilds
+    		modifier = {
+                economy_cost_factor = -0.1
+                stability_factor = -0.1
+                production_speed_buildings_factor = 0.1
+    		}
+        }
+		#探女的计划
+        LIB_sagume_plan_idea = {
+            removal_cost = -1
+    		picture = triumphant_will
+            modifier = {
+                planning_speed = 0.2
+            }
+            targeted_modifier = {
+    			tag = DVL
+    			#战斗修正种类
+    			attack_bonus_against = 0.15
+    			defense_bonus_against = 0.15
+    		}
+        }
+		#秘神回归
+        LIB_okina_return_idea = {
+            removal_cost = -1
+    		picture = generic_monarchist_uprising
+    		modifier = {
+                resistance_target_on_our_occupied_states = 0.25
+                resistance_decay_on_our_occupied_states = -0.25
+                production_factory_efficiency_gain_factor = 0.1
+                intel_from_operatives_factor = 0.2
+                own_operative_detection_chance_factor = -0.5
+    		}
+        }
+		#月都迁都计划
+		LIB_the_plan_of_lunar_capital = {
+            removal_cost = -1
+    		picture = tur_disorganised_armed_forces
+    		modifier = {
+                army_attack_factor = 0.1
+				army_defence_factor = 0.1
+    		}
+        }
+		#重塑幻想乡计划
+		LIB_reshape_gensokyo = {
+            removal_cost = -1
+    		picture = NORDIC_airforce_monarchist
+    		modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+    		}
+        }
+		#隐匿幻想乡
+		LIB_hidden_gensokyo = {
+            removal_cost = -1
+    		picture = eng_special_air_service
+    		modifier = {
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+    		}
+        }
+		#贤者之国
+		LIB_the_nation = {
+            removal_cost = -1
+    		picture = generic_navy_bonus
+    		modifier = {
+				army_org_factor = 0.15
+				max_planning_factor = 0.1
+				weekly_manpower = 850
+    		}
+        }
+		FRA_connections_to_trade_unions = {
+            removal_cost = -1
+    		picture = generic_production_bonus
+    		modifier = {
+				supply_node_range = 0.1
+				fuel_gain = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+    		}
+        }
+		LIB_steady_as_she_goes_idea = {
+			name = LIB_steady_as_she_goes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+			}
+			picture = eng_steady_as_she_goes
+			removal_cost = -1
+		}
+		LIB_air_attack_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_mission_efficiency = 0.15
+				max_planning = 0.05
+			}
+			picture = eng_special_air_service
+			removal_cost = -1
+		}
+		LIB_Enlightened_imperialism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = 0.2
+			}
+			picture = eng_steady_as_she_goes
+			removal_cost = -1
+		}
+		LIB_Liberation_ransom = {
+			picture = FRA_Liberation_ransom
+			NAME = FRA_Liberation_ransom
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = LIB
+				cic_to_target_factor = 0.8
+				mic_to_target_factor = 0.8
+			}
+		}
+		LIB_GENSOKYO_SSS = {
+			picture = generic_victors_of_ww1
+			NAME = LIB_ensemble_dedicated_to_deceased_princess
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.35
+				production_factory_max_efficiency_factor = 0.1
+				monthly_population = 0.25
+				planning_speed = 0.15
+				subversive_activites_upkeep = -0.25
+			}
+		}
+    }
+    hidden_ideas = {
+		FRA_XZYH_idea = {
+			name = "FRA_XZYH"
+			allowed = {
+				always = yes
+			}
+			available = { 
+				always = yes
+			}
+			removal_cost = -1
+			#picture = cop_idea
+			modifier = {
+			industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_Ran_idea = {
+			name = "FRA_Ran"
+			allowed = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = cop_idea
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_Nishida_Satono_idea = {
+			name = "FRA_Nishida_Satono"
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_country_leader = {
+					ruling_only = yes
+					character = FRA_Matara_Okina
+				}
+			}
+			removal_cost = -1
+			#picture = cop_idea
+			modifier = {
+				army_morale_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+			}
+		}
+		FRA_Teireida_Mai_idea = {
+			name = "FRA_Teireida_Mai"
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_country_leader = {
+					ruling_only = yes
+					character = FRA_Matara_Okina
+				}
+			}
+			removal_cost = -1
+			#picture = cop_idea
+			modifier = {
+				experience_loss_factor = -0.2
+				land_reinforce_rate = 0.01
+				recon_factor = 0.05
+			}
+		}
+		FRA_Doremy_Sweet_idea = {
+			name = "FRA_Doremy_Sweet_idea"
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_country_leader = {
+					ruling_only = yes
+					character = FRA_Kisin_Sagume
+				}
+			}
+			removal_cost = -1
+			#picture = cop_idea
+			modifier = {
+				consumer_goods_factor = -0.1
+				promote_cost_factor = -0.25
+			}
+		}
+		#博丽灵梦
+		LIB_Reimu_idea = {
+			name = "FRA_Reimu"
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Reimu
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+	industrial_concern = {
+		LIB_Kappa_Heavy_Industries_industrial = {
+			picture = Kappa_Heavy_Industries
+			name = Kappa_Heavy_Industries_industrial
+			allowed = {
+				tag = LIB
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			visible = {
+			}
+			available = {
+				if = {
+					limit = {
+						tag = LIB
+					}
+					has_full_control_of_state = 29
+				}
+			}
+			traits = {
+				industrial_manufacturer
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

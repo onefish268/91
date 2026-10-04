@@ -1,6 +1,23 @@
 spriteTypes = {
     ###GUI
     #民族精神
+    #领袖
+	SpriteType = {
+		name = "GFX_LIB_XZYH"
+		texturefile = "gfx/leaders/LIB/LIB_XZYH.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_REMI"
+		texturefile = "gfx/leaders/LIB/remi.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_FRAN"
+		texturefile = "gfx/leaders/LIB/fran.png"
+	}
+	SpriteType = {
+		name = "GFX_LIB_GJGDWYH"
+		texturefile = "gfx/leaders/FRA/FRA_Electoral_Commission.dds"
+	}
     #超事件
     #结语
 	#决议
@@ -26,5 +43,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_LIB_FOCUS_JLSRZDD"
 		texturefile = "gfx/interface/goals/LIB/GC_JLSRZDD.png"
+	}
+SpriteType = {
+		name = "GFX_LIB_FOCUS_YLZJH"
+		texturefile = "gfx/interface/goals/LIB/GC_YLZJH.png"
 	}
 }

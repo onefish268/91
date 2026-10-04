@@ -1,0 +1,8233 @@
+﻿add_namespace = FRA_Gensokyo
+add_namespace = FRA_Gensokyo_news
+add_namespace = FRA_Gensokyo_Alliance
+#舵手逝世
+country_event = {
+	id = FRA_Gensokyo.001
+	title = FRA_Gensokyo.001.t
+	desc = FRA_Gensokyo.001.desc
+	picture = GFX_event_FRA_death_of_Akyuu2
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.001.a
+		remove_ideas = FRA_Marisa_idea
+		retire_character = FRA_Hieda_no_Akyuu
+		promote_character = FRA_Electoral_Commission
+		set_party_name = {
+			ideology = democratic
+			long_name = FRA_Electoral_Commission
+			name = FRA_Electoral_Commission
+		}
+		country_event = {
+			id = FRA_Gensokyo.049
+		}
+		hidden_effect = {
+			clear_array = THIS.Ruling_coalition_array
+			FRA_change_to_hoi_pie_chart = yes
+			news_event = {
+				id = FRA_Gensokyo_news.001
+			}
+			country_event = {
+				id = FRA_Gensokyo.042
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+#记者发布会
+country_event = {
+	id = FRA_Gensokyo.002
+	title = FRA_Gensokyo.002.t
+	desc = FRA_Gensokyo.002.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.002.a
+		custom_effect_tooltip = FRA_be_as_left
+		set_variable = { FRA_be_as_party = 1 }
+		hidden_effect = {
+			random_list = {
+				50 = {}
+				50 = {
+					country_event = {
+						id = FRA_Gensokyo.006
+						days = 1
+					}
+				}
+			}
+			country_event = {
+				id = FRA_Gensokyo.007
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_4
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_5
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_6
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.002.b
+		custom_effect_tooltip = FRA_be_as_PFG
+		set_variable = { FRA_be_as_party = 2 }
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.004
+				days = 1
+			}
+			country_event = {
+				id = FRA_Gensokyo.007
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_5
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_6
+				}
+				factor = 0
+			}
+			modifier = {
+				KNM = { is_ai = no }
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = DEFAULT
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.002.c
+		custom_effect_tooltip = FRA_be_as_IDU
+		set_variable = { FRA_be_as_party = 3 }
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.004
+				days = 1
+			}
+			country_event = {
+				id = FRA_Gensokyo.007
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_4
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_6
+				}
+				factor = 0
+			}
+			modifier = {
+				KNM = { is_ai = no }
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = DEFAULT
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.002.d
+		custom_effect_tooltip = FRA_be_as_right
+		set_variable = { FRA_be_as_party = 4 }
+		hidden_effect = {
+			random_list = {
+				50 = {}
+				50 = {
+					country_event = {
+						id = FRA_Gensokyo.006
+						days = 1
+					}
+				}
+			}
+			country_event = {
+				id = FRA_Gensokyo.007
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_2
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_4
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_5
+				}
+				factor = 0
+			}
+			modifier = {
+				KNM = { is_ai = no }
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = DEFAULT
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#人民阵线
+country_event = {
+	id = FRA_Gensokyo.003
+	title = FRA_Gensokyo.003.t
+	desc = FRA_Gensokyo.003.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.003.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.005
+				days = 3
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#自-民联盟？
+country_event = {
+	id = FRA_Gensokyo.004
+	title = FRA_Gensokyo.004.t
+	desc = FRA_Gensokyo.004.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.004.a
+		set_country_flag = PFG_IDU_ALLY
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.004.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#国民联盟
+country_event = {
+	id = FRA_Gensokyo.005
+	title = FRA_Gensokyo.005.t
+	desc = FRA_Gensokyo.005.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.005.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.002
+				days = 7
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#自-民联盟
+country_event = {
+	id = FRA_Gensokyo.006
+	title = FRA_Gensokyo.006.t
+	desc = FRA_Gensokyo.006.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.006.a
+		set_country_flag = PFG_IDU_ALLY
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#选举开始
+country_event = {
+	id = FRA_Gensokyo.007
+	title = FRA_Gensokyo.007.t
+	desc = FRA_Gensokyo.007.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.007.a
+		custom_effect_tooltip = Where_to_open_FRA_Election_window
+		set_country_flag = FRA_Elections_begin
+		activate_mission = FRA_election_results_in_mission
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 1 } }
+			activate_mission = FRA_PFG_is_action
+			activate_mission = FRA_IDU_is_action
+			activate_mission = FRA_National_is_action
+		}
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 2 } }
+			activate_mission = FRA_Peolple_Font_is_action
+			activate_mission = FRA_IDU_is_action
+			activate_mission = FRA_National_is_action
+		}
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 3 } }
+			activate_mission = FRA_Peolple_Font_is_action
+			activate_mission = FRA_PFG_is_action
+			activate_mission = FRA_National_is_action
+		}
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 4 } }
+			activate_mission = FRA_Peolple_Font_is_action
+			activate_mission = FRA_PFG_is_action
+			activate_mission = FRA_IDU_is_action
+		}
+		add_political_power = 100
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.007.a
+		country_event = {
+			id = FRA_Gensokyo.800
+			days = 60
+		}
+		ai_chance = {
+			base = 10
+		}
+		trigger = { is_ai = yes }
+	}
+}
+
+#黑色星期二波及幻想乡
+country_event = {
+	id = FRA_Gensokyo.008
+	title = FRA_Gensokyo.008.t
+	desc = FRA_Gensokyo.008.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.008.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = FRA_Financial_spree
+				add_idea = FRA_financial_system_collapsed
+			}
+			swap_ideas = {
+				remove_idea = FRA_developed_industry
+				add_idea = FRA_The_Great_Depression
+			}
+		}
+		unlock_decision_category_tooltip = FRA_Black_Tuesday_decision_categories
+		set_country_flag = FRA_Black_Tuesday_decision_categories
+		every_state = {
+			limit = {
+				or = {
+					state = 983
+					state = 14
+					state = 23
+					state = 19
+					state = 779
+					state = 984
+					state = 817
+					state = 22
+					state = 31
+					state = 25
+					state = 30
+					state = 15
+					state = 33
+					state = 26
+					state = 32
+					state = 763
+					state = 27
+					state = 18
+					state = 16
+					state = 24
+					state = 980
+					state = 785
+				}
+			}
+			FRA_PCG_Support_rose_slightly = yes
+			FRA_LCR_Support_rose_very_slightly = yes
+			FRA_GFN_Support_rose_slightly = yes
+			FRA_MNR_Support_rose_very_slightly = yes
+		}
+		hidden_effect = {
+			KMK = {
+				country_event = {
+					id = FRA_Gensokyo.011
+				}
+			}
+			LIB = {
+				country_event = {
+					id = LIB_jjxt.1
+				}
+			}
+			country_event = {
+				id = FRA_Gensokyo.068
+				days = 5
+			}
+			remove_ideas = FRA_Financial_spree
+			remove_ideas = FRA_developed_industry
+			add_dynamic_modifier = {
+				modifier = FRA_Financial_crisis
+			}
+			add_dynamic_modifier = {
+				modifier = FRA_Financial_crisis_HCP
+			}
+			ROV = {
+				country_event = {
+					id = FRA_Gensokyo.137
+					days = 10
+				}
+			}
+		}
+		set_variable = { FRA_financial_crisis_var = 100 }
+		set_variable = { FRA_credit_crunch_var = 100 }
+		set_variable = { FRA_Overcapacity_var = 100 }
+		set_variable = { FRA_degree_of_economic_crisis_var = 100 }
+		FRA_Calculate_Great_Depression_debuff = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#选举结果出炉
+country_event = {
+	id = FRA_Gensokyo.009
+	title = FRA_Gensokyo.009.t
+	desc = FRA_Gensokyo.009.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	immediate = { set_country_flag = FRA_The_election_results_in }
+	option = {
+		name = FRA_Gensokyo.009.a
+		clr_country_flag = FRA_Elections_begin
+		FRA_The_election_results_in = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#红魔馆宣布独立
+country_event = {
+	id = FRA_Gensokyo.010
+	title = FRA_Gensokyo.010.t
+	desc = FRA_Gensokyo.010.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.010.a
+		KMK = {
+			end_puppet_this = yes
+			leave_faction = yes
+		}
+		dismantle_faction = yes
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.008
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#机会！
+country_event = {
+	id = FRA_Gensokyo.011
+	title = FRA_Gensokyo.011.t
+	desc = FRA_Gensokyo.011.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.011.a
+		FRA = {
+			country_event = {
+				id = FRA_Gensokyo.010
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#不信任议案
+country_event = {
+	id = FRA_Gensokyo.012
+	title = FRA_Gensokyo.012.t
+	desc = FRA_Gensokyo.012.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.012.a
+		set_politics = { ruling_party = democratic }
+		FRA_remove_all_ideas = yes
+		promote_character = FRA_Electoral_Commission
+		set_party_name = {
+			ideology = democratic
+			long_name = FRA_Electoral_Commission
+			name = FRA_Electoral_Commission
+		}
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.013
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#人间之里动乱
+country_event = {
+	id = FRA_Gensokyo.013
+	title = FRA_Gensokyo.013.t
+	desc = FRA_Gensokyo.013.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.013.a
+		swap_ideas = {
+			remove_idea = FRA_Step_in_Democratization
+			add_idea = FRA_Political_unrest
+		}
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.014
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#军队进入人间之里
+country_event = {
+	id = FRA_Gensokyo.014
+	title = FRA_Gensokyo.014.t
+	desc = FRA_Gensokyo.014.desc
+	picture = GFX_event_FRA_Alice_and_Yuka
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.014.a
+		FRA_remove_all_ideas = yes
+		#add_ideas = FRA_Kazami_Yuka_idea
+		promote_character = FRA_Triple_Alliance
+		set_politics = { ruling_party = neutrality }
+		country_event = {
+			id = FRA_Gensokyo.015
+		}
+		add_to_variable = { support_of_GPM = 20 }
+		add_to_variable = { support_of_KYR = 10 }
+		clear_array = Ruling_coalition_array
+		add_to_array = { Ruling_coalition_array = 9 }
+		add_to_array = { Ruling_coalition_array = 8 }
+		add_to_array = { Ruling_coalition_array = 7 }
+		set_variable = { FRA_Ruling_Party_VAR = 9 }
+		FRA_change_to_hoi_pie_chart = yes
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#镇压！
+country_event = {
+	id = FRA_Gensokyo.015
+	title = FRA_Gensokyo.015.t
+	desc = FRA_Gensokyo.015.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.015.a
+		add_stability = -0.1
+		add_popularity = { ideology = neutrality popularity = 0.2 }
+		swap_ideas = {
+			remove_idea = FRA_Political_unrest
+			add_idea = FRA_Political_unrest_01
+		}
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { ROOT.num_of_support_people_font > 8 } }
+				country_event = {
+					id = FRA_Gensokyo.016
+					days = 7
+				}
+			}
+			else_if = {
+				limit = { is_ai = yes }
+				country_event = {
+					id = FRA_Gensokyo.016
+					days = 7
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_7
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_8
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_9
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.015.a
+		add_stability = -0.1
+		add_popularity = { ideology = neutrality popularity = 0.2 }
+		swap_ideas = {
+			remove_idea = FRA_Political_unrest
+			add_idea = FRA_Political_unrest_01
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_1
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_2
+				}
+				factor = 0
+			}
+		}
+		trigger = { is_ai = yes }
+	}
+}
+
+#士兵哗变
+country_event = {
+	id = FRA_Gensokyo.016
+	title = FRA_Gensokyo.016.t
+	desc = FRA_Gensokyo.016.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.016.a
+		FRA_Soldiers_mutinied = yes
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.1007
+				days = 14
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.016.b
+		trigger = { is_ai = yes }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#自由派起义
+country_event = {
+	id = FRA_Gensokyo.017
+	title = FRA_Gensokyo.017.t
+	desc = FRA_Gensokyo.017.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.017.a
+		hidden_effect = {
+			division_template = {
+				name = "自由派起义军"
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+		}
+		GOG = {
+			every_core_state = {
+				limit = {
+					is_controlled_by = GOG
+				}
+				create_unit = {
+					division = "name = \"自由派起义军\" division_template = \"自由派起义军\" start_experience_factor = 0"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"自由派起义军\" division_template = \"自由派起义军\" start_experience_factor = 0"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+}
+
+#仍需结束之事
+country_event = {
+	id = FRA_Gensokyo.018
+	title = FRA_Gensokyo.018.t
+	desc = FRA_Gensokyo.018.desc
+	picture = GFX_event_FRA_Sanae_coronation
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.018.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.043
+			}
+		}
+	}
+}
+
+#换届选举
+country_event = {
+	id = FRA_Gensokyo.019
+	title = FRA_Gensokyo.019.t
+	desc = FRA_Gensokyo.019.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.019.a
+		set_country_flag = FRA_elections_until_peace
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.019.b
+		set_country_flag = FRA_elections_until_peace
+		set_country_flag = FRA_elections_war_cant_stop_us
+		ai_chance = {
+			base = 0
+		}
+		country_event = {
+			id = FRA_Gensokyo.020
+		}
+		add_stability = -0.1
+		add_war_support = -0.05
+	}
+}
+
+#换届选举
+country_event = {
+	id = FRA_Gensokyo.020
+	title = FRA_Gensokyo.020.t
+	desc = FRA_Gensokyo.020.desc
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		or = {
+			has_war_with_major = no
+			has_country_flag = FRA_elections_war_cant_stop_us
+		}
+		has_country_flag = FRA_elections_until_peace
+	}
+	option = {
+		name = FRA_Gensokyo.020.a
+		if = {
+			limit = { has_completed_focus = FRA_first_term_of_Ibaraki_Kasen }
+			complete_national_focus = FRA_second_term_of_Ibaraki_Kasen
+		}
+		if = {
+			limit = { has_completed_focus = FRA_first_term_of_Marisa }
+			complete_national_focus = FRA_second_term_of_Marisa
+		}
+		if = {
+			limit = { has_completed_focus = FRA_first_term_of_Kamishirasawa_Keine }
+			complete_national_focus = FRA_second_term_of_Kamishirasawa_Keine
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幻想乡联盟
+country_event = {
+	id = FRA_Gensokyo.021
+	title = FRA_Gensokyo.021.t
+	desc = FRA_Gensokyo.021.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.021.a
+		hidden_effect = {
+			if = {
+				limit = {
+					or = {
+						controls_state = 459
+						any_subject_country = {
+							controls_state = 459
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.01 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.02 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 298
+						any_subject_country = {
+							controls_state = 298
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.03 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.04 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 545
+						any_subject_country = {
+							controls_state = 545
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.05 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.06 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 275
+						any_subject_country = {
+							controls_state = 275
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.07 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.08 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 446
+						any_subject_country = {
+							controls_state = 446
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.09 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.10 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 271
+						any_subject_country = {
+							controls_state = 271
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.11 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.12 } #refuses
+				}
+			}
+			if = {
+				limit = {
+					or = {
+						controls_state = 295
+						any_subject_country = {
+							controls_state = 295
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							has_government = communism
+							factor = 2
+						}
+						modifier = {
+							has_country_leader_ideology = socialism
+							factor = 2
+						}
+						modifier = {
+							has_government = fascism
+							factor = 0.25
+						}
+						country_event = FRA_Gensokyo_Alliance.13 #accepts
+					} 
+					50 = { country_event = FRA_Gensokyo_Alliance.14 } #refuses
+				}
+			}
+		}
+	}
+}
+
+#最长工时
+country_event = {
+	id = FRA_Gensokyo.022
+	title = FRA_Gensokyo.022.t
+	desc = FRA_Gensokyo.022.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.022.a
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_LCR_down_middle
+		multiply_variable = { FRANA_LCR_support_us = 0.75 }
+		round_variable = FRANA_LCR_support_us
+		clamp_variable = {
+			var = FRANA_LCR_support_us
+			max = FRANA_seat_of_LCR
+		}
+		custom_effect_tooltip = FRA_support_seat_PCG_down_slight
+		multiply_variable = { FRANA_PCG_support_us = 0.9 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_slight
+		multiply_variable = { FRANA_PSG_support_us = 1.1 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_rise_middle
+		multiply_variable = { FRANA_PFG_support_us = 1.2 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_rise_middle
+		multiply_variable = { FRANA_IDU_support_us = 1.2 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = 5
+			tooltip = FRA_bourgeoisie_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 5
+			tooltip = FRA_worker_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_ten_hour_work
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -5
+				tooltip = FRA_bourgeoisie_Influence_decline_slightly_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 5
+				tooltip = FRA_worker_Influence_rose_slightly_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = -10
+			tooltip = LCR_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = -5
+			tooltip = PCG_attitude_decline_slightly_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 10
+			tooltip = PSG_Influence_rose_slightly_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.022.b
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_PCG_rose_slight
+		multiply_variable = { FRANA_PCG_support_us = 1.1 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_middle
+		multiply_variable = { FRANA_PSG_support_us = 1.2 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_rise_slight
+		multiply_variable = { FRANA_PFG_support_us = 1.1 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_rise_slight
+		multiply_variable = { FRANA_IDU_support_us = 1.1 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 10
+			tooltip = FRA_worker_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_eight_hour_work
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -5
+				tooltip = FRA_bourgeoisie_Influence_decline_slightly_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 10
+				tooltip = FRA_worker_Influence_rose_Moderately_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = 5
+			tooltip = LCR_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_Influence_progress_var
+			value = 5
+			tooltip = LCR_Influence_rose_slightly_tt
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = 10
+			tooltip = PCG_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_Influence_progress_var
+			value = 10
+			tooltip = PCG_Influence_rose_Moderately_tt
+		}
+		add_to_variable = {
+			var = PSG_gui_attitude_progress_var
+			value = 20
+			tooltip = PSG_attitude_rose_Highly_tt
+		}
+		clamp_variable = {
+			var = PSG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 20
+			tooltip = PSG_Influence_rose_Highly_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.022.c
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_LCR_rose_max
+		multiply_variable = { FRANA_LCR_support_us = 1000 }
+		round_variable = FRANA_LCR_support_us
+		clamp_variable = {
+			var = FRANA_LCR_support_us
+			max = FRANA_seat_of_LCR
+		}
+		custom_effect_tooltip = FRA_support_seat_PCG_rose_max
+		multiply_variable = { FRANA_PCG_support_us = 1000 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_max
+		multiply_variable = { FRANA_PSG_support_us = 1000 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_down_middle
+		multiply_variable = { FRANA_PFG_support_us = 0.8 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_down_highly
+		multiply_variable = { FRANA_IDU_support_us = 0.7 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		custom_effect_tooltip = FRA_support_seat_GFN_down_zero
+		multiply_variable = { FRANA_GFN_support_us = 0 }
+		round_variable = FRANA_GFN_support_us
+		clamp_variable = {
+			var = FRANA_GFN_support_us
+			max = FRANA_seat_of_GFN
+		}
+		custom_effect_tooltip = FRA_support_seat_MNR_down_zero
+		multiply_variable = { FRANA_MNR_support_us = 0 }
+		round_variable = FRANA_MNR_support_us
+		clamp_variable = {
+			var = FRANA_MNR_support_us
+			max = FRANA_seat_of_MNR
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = -40
+			tooltip = FRA_bourgeoisie_attitude_decline_very_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_middle_class_attitude_progress_var
+			value = -10
+			tooltip = FRA_middle_class_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = FRA_middle_class_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 40
+			tooltip = FRA_worker_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_famer_attitude_progress_var
+			value = 20
+			tooltip = FRA_famer_attitude_rose_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_famer_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_six_hour_work
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -20
+				tooltip = FRA_bourgeoisie_Influence_decline_highly_tt
+			}
+			add_to_variable = {
+				var = FRA_middle_class_Influence_progress_var
+				value = -10
+				tooltip = FRA_middle_class_Influence_decline_Moderately_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 20
+				tooltip = FRA_worker_Influence_rose_highly_tt
+			}
+			add_to_variable = {
+				var = FRA_famer_Influence_progress_var
+				value = 10
+				tooltip = FRA_famer_Influence_rose_Moderately_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = 40
+			tooltip = LCR_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_Influence_progress_var
+			value = 20
+			tooltip = LCR_Influence_rose_highly_tt
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = 40
+			tooltip = PCG_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_Influence_progress_var
+			value = 10
+			tooltip = PCG_Influence_rose_Moderately_tt
+		}
+		add_to_variable = {
+			var = PSG_gui_attitude_progress_var
+			value = 20
+			tooltip = PSG_attitude_rose_Highly_tt
+		}
+		clamp_variable = {
+			var = PSG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 10
+			tooltip = PSG_Influence_rose_Moderately_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#最低工资
+country_event = {
+	id = FRA_Gensokyo.023
+	title = FRA_Gensokyo.023.t
+	desc = FRA_Gensokyo.023.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.023.a
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_LCR_down_middle
+		multiply_variable = { FRANA_LCR_support_us = 0.75 }
+		round_variable = FRANA_LCR_support_us
+		clamp_variable = {
+			var = FRANA_LCR_support_us
+			max = FRANA_seat_of_LCR
+		}
+		custom_effect_tooltip = FRA_support_seat_PCG_down_slight
+		multiply_variable = { FRANA_PCG_support_us = 0.9 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_slight
+		multiply_variable = { FRANA_PSG_support_us = 1.1 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_rise_middle
+		multiply_variable = { FRANA_PFG_support_us = 1.2 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_rise_middle
+		multiply_variable = { FRANA_IDU_support_us = 1.2 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = 5
+			tooltip = FRA_bourgeoisie_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 5
+			tooltip = FRA_worker_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_low_level_wage
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -5
+				tooltip = FRA_bourgeoisie_Influence_decline_slightly_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 5
+				tooltip = FRA_worker_Influence_rose_slightly_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = -10
+			tooltip = LCR_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = -5
+			tooltip = PCG_attitude_decline_slightly_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 10
+			tooltip = PSG_Influence_rose_slightly_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.023.b
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_PCG_rose_slight
+		multiply_variable = { FRANA_PCG_support_us = 1.1 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_middle
+		multiply_variable = { FRANA_PSG_support_us = 1.2 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_rise_slight
+		multiply_variable = { FRANA_PFG_support_us = 1.1 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_rise_slight
+		multiply_variable = { FRANA_IDU_support_us = 1.1 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 10
+			tooltip = FRA_worker_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_middle_level_wage
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -5
+				tooltip = FRA_bourgeoisie_Influence_decline_slightly_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 10
+				tooltip = FRA_worker_Influence_rose_Moderately_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = 5
+			tooltip = LCR_attitude_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_Influence_progress_var
+			value = 5
+			tooltip = LCR_Influence_rose_slightly_tt
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = 10
+			tooltip = PCG_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_Influence_progress_var
+			value = 10
+			tooltip = PCG_Influence_rose_Moderately_tt
+		}
+		add_to_variable = {
+			var = PSG_gui_attitude_progress_var
+			value = 20
+			tooltip = PSG_attitude_rose_Highly_tt
+		}
+		clamp_variable = {
+			var = PSG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 20
+			tooltip = PSG_Influence_rose_Highly_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.023.c
+		custom_effect_tooltip = FRA_National_Assemblyy_influence_tt
+		custom_effect_tooltip = FRA_support_seat_LCR_rose_max
+		multiply_variable = { FRANA_LCR_support_us = 1000 }
+		round_variable = FRANA_LCR_support_us
+		clamp_variable = {
+			var = FRANA_LCR_support_us
+			max = FRANA_seat_of_LCR
+		}
+		custom_effect_tooltip = FRA_support_seat_PCG_rose_max
+		multiply_variable = { FRANA_PCG_support_us = 1000 }
+		round_variable = FRANA_PCG_support_us
+		clamp_variable = {
+			var = FRANA_PCG_support_us
+			max = FRANA_seat_of_PCG
+		}
+		custom_effect_tooltip = FRA_support_seat_PSG_rose_max
+		multiply_variable = { FRANA_PSG_support_us = 1000 }
+		round_variable = FRANA_PSG_support_us
+		clamp_variable = {
+			var = FRANA_PSG_support_us
+			max = FRANA_seat_of_PSG
+		}
+		custom_effect_tooltip = FRA_support_seat_PFG_down_middle
+		multiply_variable = { FRANA_PFG_support_us = 0.8 }
+		round_variable = FRANA_PFG_support_us
+		clamp_variable = {
+			var = FRANA_PFG_support_us
+			max = FRANA_seat_of_PFG
+		}
+		custom_effect_tooltip = FRA_support_seat_IDU_down_highly
+		multiply_variable = { FRANA_IDU_support_us = 0.7 }
+		round_variable = FRANA_IDU_support_us
+		clamp_variable = {
+			var = FRANA_IDU_support_us
+			max = FRANA_seat_of_IDU
+		}
+		custom_effect_tooltip = FRA_support_seat_GFN_down_zero
+		multiply_variable = { FRANA_GFN_support_us = 0 }
+		round_variable = FRANA_GFN_support_us
+		clamp_variable = {
+			var = FRANA_GFN_support_us
+			max = FRANA_seat_of_GFN
+		}
+		custom_effect_tooltip = FRA_support_seat_MNR_down_zero
+		multiply_variable = { FRANA_MNR_support_us = 0 }
+		round_variable = FRANA_MNR_support_us
+		clamp_variable = {
+			var = FRANA_MNR_support_us
+			max = FRANA_seat_of_MNR
+		}
+		FRA_Bills_of_National_Assembly_calculate = yes
+		custom_effect_tooltip = FRA_Government_support_influence_tt
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = -40
+			tooltip = FRA_bourgeoisie_attitude_decline_very_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_middle_class_attitude_progress_var
+			value = -10
+			tooltip = FRA_middle_class_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = FRA_middle_class_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_worker_attitude_progress_var
+			value = 40
+			tooltip = FRA_worker_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_worker_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = FRA_famer_attitude_progress_var
+			value = 20
+			tooltip = FRA_famer_attitude_rose_highly_tt
+		}
+		clamp_variable = {
+			var = FRA_famer_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		custom_effect_tooltip = After_the_passage_of_the_bill
+		set_country_flag = FRA_high_level_wage
+		effect_tooltip = {
+			add_to_variable = {
+				var = FRA_bourgeoisie_Influence_progress_var
+				value = -20
+				tooltip = FRA_bourgeoisie_Influence_decline_highly_tt
+			}
+			add_to_variable = {
+				var = FRA_middle_class_Influence_progress_var
+				value = -10
+				tooltip = FRA_middle_class_Influence_decline_Moderately_tt
+			}
+			add_to_variable = {
+				var = FRA_worker_Influence_progress_var
+				value = 20
+				tooltip = FRA_worker_Influence_rose_highly_tt
+			}
+			add_to_variable = {
+				var = FRA_famer_Influence_progress_var
+				value = 10
+				tooltip = FRA_famer_Influence_rose_Moderately_tt
+			}
+		}
+		custom_effect_tooltip = FRA_Popular_Front_unity_influence_tt
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = 40
+			tooltip = LCR_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_Influence_progress_var
+			value = 20
+			tooltip = LCR_Influence_rose_highly_tt
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = 40
+			tooltip = PCG_attitude_rose_very_highly_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_Influence_progress_var
+			value = 10
+			tooltip = PCG_Influence_rose_Moderately_tt
+		}
+		add_to_variable = {
+			var = PSG_gui_attitude_progress_var
+			value = 20
+			tooltip = PSG_attitude_rose_Highly_tt
+		}
+		clamp_variable = {
+			var = PSG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PSG_gui_Influence_progress_var
+			value = 10
+			tooltip = PSG_Influence_rose_Moderately_tt
+		}
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#密谋
+country_event = {
+	id = FRA_Gensokyo.024
+	title = FRA_Gensokyo.024.t
+	desc = FRA_Gensokyo.024.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae
+	option = {
+		name = FRA_Gensokyo.024.a
+		activate_mission = FRA_An_army_on_move
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.040
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#处置方案
+country_event = {
+	id = FRA_Gensokyo.025
+	title = FRA_Gensokyo.025.t
+	desc = FRA_Gensokyo.025.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.025.a
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = 5
+			tooltip = FRA_bourgeoisie_attitude_rose_slightly_tt
+		}
+		add_to_variable = {
+			var = FRA_bourgeoisie_Influence_progress_var
+			value = 5
+			tooltip = FRA_bourgeoisie_Influence_rose_slightly_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = -10
+			tooltip = LCR_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = -10
+			tooltip = PCG_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.025.b
+		add_to_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			value = -20
+			tooltip = FRA_bourgeoisie_attitude_decline_Moderately_tt
+		}
+		clamp_variable = {
+			var = FRA_bourgeoisie_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = LCR_gui_attitude_progress_var
+			value = 10
+			tooltip = LCR_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = LCR_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = PCG_gui_attitude_progress_var
+			value = 10
+			tooltip = PCG_attitude_rose_Moderately_tt
+		}
+		clamp_variable = {
+			var = PCG_gui_attitude_progress_var
+			min = 0
+			max = 100
+		}
+		FRA_Calculate_government_approval_rating = yes
+		FRA_Calculate_support_of_Popular_Front = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#过激的宣传运动招致谴责
+country_event = {
+	id = FRA_Gensokyo.026
+	title = FRA_Gensokyo.026.t
+	desc = FRA_Gensokyo.026.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.026.a
+		custom_effect_tooltip = FRA_Lost_sevel_seats_transferred_to_rival_parties
+		set_variable = { LCR_decline_seat = FRANA_LCR_support_us }
+		multiply_variable = { LCR_decline_seat = 0.1 }
+		subtract_from_variable = { FRANA_LCR_support_us = LCR_decline_seat }
+		add_to_variable = { FRANA_MNR_support_us = LCR_decline_seat }
+		set_variable = { PCG_decline_seat = FRANA_PCG_support_us }
+		multiply_variable = { PCG_decline_seat = 0.1 }
+		subtract_from_variable = { FRANA_PCG_support_us = PCG_decline_seat }
+		add_to_variable = { FRANA_GFN_support_us = PCG_decline_seat }
+		set_variable = { PSG_decline_seat = FRANA_PSG_support_us }
+		multiply_variable = { PSG_decline_seat = 0.1 }
+		subtract_from_variable = { FRANA_PSG_support_us = PSG_decline_seat }
+		subtract_from_variable = { FRANA_PSG_support_us = PSG_decline_seat }
+		add_to_variable = { FRANA_IDU_support_us = PSG_decline_seat }
+		add_to_variable = { FRANA_seatend_of_PFG = PSG_decline_seat }
+		FRA_Counting_of_seats_in_National_Assembly = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FRA.Getname]邀请我们谈判
+country_event = {
+	id = FRA_Gensokyo.027
+	title = FRA_Gensokyo.027.t
+	desc = FRA_Gensokyo.027.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.027.a
+		effect_tooltip = {
+			every_character = {
+				set_nationality = FRA
+			}
+			set_cosmetic_tag = NFA_FRA_NA
+			set_country_flag = FRA_Ally_Original
+			FRA = {
+				if = {
+					limit = { FRA_has_level_three_tag = no }
+					set_cosmetic_tag = FRA_NFA_Unition
+				}
+				faction_leader = {
+					add_to_faction = ROOT
+				}
+			}
+		}
+		FRA = {
+			country_event = {
+				id = FRA_Gensokyo.028
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.027.b
+		FRA = {
+			country_event = {
+				id = FRA_Gensokyo.802
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.010
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				FROM = { is_ai = no }
+			}
+		}
+	}
+}
+
+#[NFA.Getname]同意了
+country_event = {
+	id = FRA_Gensokyo.028
+	title = FRA_Gensokyo.028.t
+	desc = FRA_Gensokyo.028.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.028.a
+		NFA = {
+			every_character = {
+				limit = { is_general_advisor = no }
+				set_nationality = FRA
+			}
+			set_cosmetic_tag = NFA_FRA_NA
+			set_country_flag = FRA_Ally_Original
+			load_focus_tree = generic_focus
+		}
+		if = {
+			limit = { FRA_has_level_three_tag = no }
+			set_cosmetic_tag = FRA_NFA_Unition
+		}
+		faction_leader = {
+			add_to_faction = NFA
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_government = communism }
+				FRA_remove_all_ideas = yes
+				add_ideas = FRA_Maurice_Thorez_idea
+			}
+			if = {
+				limit = { has_government = democratic }
+				FRA_remove_all_ideas = yes
+				add_ideas = FRA_Jeanne_dArc_idea
+			}
+			news_event = {
+				id = FRA_Gensokyo_news.009
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.Getname]邀请我们组建欧洲共同体
+country_event = {
+	id = FRA_Gensokyo.029
+	title = FRA_Gensokyo.029.t
+	desc = FRA_Gensokyo.029.desc
+	#fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.029.a
+		if = {
+			limit = { 
+				is_in_faction = yes
+				is_faction_leader = no 
+				not = {
+					is_in_faction_with = FROM
+				}
+			}
+			faction_leader = {
+				country_event = {
+					id = FRA_Gensokyo.031
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = FRA_Betrayal_of_Covenant
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.030
+				#days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.029.b
+		if = {
+			limit = {
+				is_in_faction_with = FROM
+				is_faction_leader = no
+			}
+			leave_faction = yes
+		}
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.802
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				has_government = FROM
+			}
+		}
+	}
+}
+
+#[FROM.Getname]同意了
+country_event = {
+	id = FRA_Gensokyo.030
+	title = FRA_Gensokyo.030.t
+	desc = FRA_Gensokyo.030.desc
+	#fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.030.a
+		add_to_faction = FROM
+		FROM = {
+			add_to_array = {
+				global.GER_European_Union_members_array = THIS
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.Getname]背叛盟约
+country_event = {
+	id = FRA_Gensokyo.031
+	title = FRA_Gensokyo.031.t
+	desc = FRA_Gensokyo.031.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.031.a
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = FRA_Betrayal_of_Covenant
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#皇帝的新头像
+country_event = {
+	id = FRA_Gensokyo.032
+	title = FRA_Gensokyo.032.t
+	desc = FRA_Gensokyo.032.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.032.a
+		custom_effect_tooltip = FRA_Sanae_Bonaparte_tt
+		set_portraits = {
+			character = FRA_Sanae
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Sanae_Bonaparte.dds"
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.032.b
+		custom_effect_tooltip = FRA_Sanae_Laurel_Leaf_tt
+		set_portraits = {
+			character = FRA_Sanae
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Sanae_Laurel_Leaf.dds"
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#早苗加冕
+country_event = {
+	id = FRA_Gensokyo.033
+	title = FRA_Gensokyo.033.t
+	desc = FRA_Gensokyo.033.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae_coronation
+	option = {
+		name = FRA_Gensokyo.033.a
+		set_country_leader_ideology = Sanaeism_subideology
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.032
+			}
+			news_event = {
+				id = FRA_Gensokyo_news.011
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#加入反幻想乡包围网
+country_event = {
+	id = FRA_Gensokyo.034
+	title = FRA_Gensokyo.034.t
+	desc = FRA_Gensokyo.034.desc
+	fire_only_once = yes
+	trigger = {
+		capital_scope = { is_on_continent = europe }
+		is_major = yes
+		is_subject = no
+		not = { tag = FRA }
+		not = {
+			is_in_array = {
+				array = global.Anti_Gensokyo_Ally_members_array
+				value = ROOT
+			}
+		}
+		FRA = { has_added_tension_amount > 35 }
+		FRA = { not = { has_completed_focus = FRA_Destroy_encirclement } }
+		not = { is_in_faction_with = FRA }
+		not = { has_war_with = FRA }
+		FRA = {
+			is_major = yes
+			is_subject = no
+			has_completed_focus = FRA_Immortal_Empire
+			has_country_leader = {
+				ruling_only = yes
+				character = FRA_Sanae
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.034.a
+		send_embargo = FRA
+		add_to_array = {
+			global.Anti_Gensokyo_Ally_members_array = THIS
+		}
+		set_global_flag = Fisrt_jion_in_anti_gensokyo_ally
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.012
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.034.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.035
+	title = FRA_Gensokyo.034.t
+	desc = FRA_Gensokyo.034.desc
+	fire_only_once = yes
+	trigger = {
+		capital_scope = { is_on_continent = europe }
+		is_major = yes
+		is_subject = no
+		not = { tag = FRA }
+		not = {
+			is_in_array = {
+				array = global.Anti_Gensokyo_Ally_members_array
+				value = ROOT
+			}
+		}
+		FRA = { has_added_tension_amount > 70 }
+		FRA = { not = { has_completed_focus = FRA_Destroy_encirclement } }
+		not = { is_in_faction_with = FRA }
+		not = { has_war_with = FRA }
+		FRA = {
+			is_major = yes
+			is_subject = no
+			has_completed_focus = FRA_Immortal_Empire
+			has_country_leader = {
+				ruling_only = yes
+				character = FRA_Sanae
+			}
+		}
+		has_global_flag = Fisrt_jion_in_anti_gensokyo_ally
+	}
+	option = {
+		name = FRA_Gensokyo.034.a
+		send_embargo = FRA
+		add_to_array = {
+			global.Anti_Gensokyo_Ally_members_array = THIS
+		}
+		set_global_flag = Second_jion_in_anti_gensokyo_ally
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.012
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.034.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.036
+	title = FRA_Gensokyo.034.t
+	desc = FRA_Gensokyo.034.desc
+	fire_only_once = yes
+	trigger = {
+		capital_scope = { is_on_continent = europe }
+		is_major = yes
+		is_subject = no
+		not = { tag = FRA }
+		not = {
+			is_in_array = {
+				array = global.Anti_Gensokyo_Ally_members_array
+				value = ROOT
+			}
+		}
+		FRA = { has_added_tension_amount > 120 }
+		FRA = { not = { has_completed_focus = FRA_Destroy_encirclement } }
+		not = { is_in_faction_with = FRA }
+		not = { has_war_with = FRA }
+		FRA = {
+			is_major = yes
+			is_subject = no
+			has_completed_focus = FRA_Immortal_Empire
+			has_country_leader = {
+				ruling_only = yes
+				character = FRA_Sanae
+			}
+		}
+		has_global_flag = Second_jion_in_anti_gensokyo_ally
+	}
+	option = {
+		name = FRA_Gensokyo.034.a
+		send_embargo = FRA
+		add_to_array = {
+			global.Anti_Gensokyo_Ally_members_array = THIS
+		}
+		set_global_flag = Third_jion_in_anti_gensokyo_ally
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.012
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.034.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#一场晚宴
+country_event = {
+	id = FRA_Gensokyo.037
+	title = FRA_Gensokyo.037.t
+	desc = FRA_Gensokyo.037.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae
+	option = {
+		name = FRA_Gensokyo.037.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#最后的革命
+country_event = {
+	id = FRA_Gensokyo.038
+	title = FRA_Gensokyo.038.t
+	desc = FRA_Gensokyo.038.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae
+	option = {
+		name = FRA_Gensokyo.038.a
+		add_manpower = -2
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[GetYear]年党代表大会
+country_event = {
+	id = FRA_Gensokyo.039
+	title = FRA_Gensokyo.039.t
+	desc = FRA_Gensokyo.039.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { has_government = communism }
+	immediate = { set_country_flag = PSG_third_tenure }
+	option = {
+		name = FRA_Gensokyo.039.a
+		if = {
+			limit = { has_government = communism }
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = communism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.039.b
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Ibaraki_Kasen_idea
+		promote_character = FRA_Reimu
+		#set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_PCG = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 2 }
+		FRA_set_rule_party_name = yes
+		if = {
+			limit = { has_government = communism }
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = communism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+		}
+		if = {
+			limit = { FRA_has_level_higher_one_tag = no }
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = Gensokyo_SSF
+		}
+		set_country_leader_ideology = leninism
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.039.c
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Syameimaru_idea
+		promote_character = FRA_Inubashiri
+		#set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_LCR = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 1 }
+		FRA_set_rule_party_name = yes
+		if = {
+			limit = { has_government = communism }
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = communism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.039.d
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Nitori_idea
+		promote_character = FRA_Okazaki_Yumemi
+		#set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_LCR = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 1 }
+		FRA_set_rule_party_name = yes
+		if = {
+			limit = { FRA_has_level_higher_one_tag = no }
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = Gensokyo_Farsighted
+		}
+		if = {
+			limit = { has_government = communism }
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = communism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#目眩之光
+country_event = {
+	id = FRA_Gensokyo.040
+	title = FRA_Gensokyo.040.t
+	desc = FRA_Gensokyo.040.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae
+	option = {
+		name = FRA_Gensokyo.040.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#第二天
+country_event = {
+	id = FRA_Gensokyo.041
+	title = FRA_Gensokyo.041.t
+	desc = FRA_Gensokyo.041.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae
+	option = {
+		name = FRA_Gensokyo.041.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#凯旋门一日
+country_event = {
+	id = FRA_Gensokyo.042
+	title = FRA_Gensokyo.042.t
+	desc = FRA_Gensokyo.042.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_death_of_Akyuu
+	option = {
+		name = FRA_Gensokyo.042.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#人间之里在下雨
+country_event = {
+	id = FRA_Gensokyo.043
+	title = FRA_Gensokyo.043.t
+	desc = FRA_Gensokyo.043.desc
+	picture = GFX_event_FRA_Sanae_coronation
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.043.a
+		retire_character = FRA_Kasen
+		retire_character = FRA_Reimu
+		FRA_remove_all_ideas = yes
+		promote_character = FRA_Sanae
+		set_politics = { ruling_party = neutrality }
+		set_variable = { FRA_Ruling_Party_VAR = 10 }
+		FRA_set_rule_party_name = yes
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			remove_dynamic_modifier = { modifier = FRA_Government_support_modifier }
+			remove_dynamic_modifier = { modifier = FRA_Popular_Front_unity_modifier }
+			news_event = {
+				id = FRA_Gensokyo_news.006
+			}
+			country_event = {
+				id = FRA_Gensokyo.041
+			}
+			country_event = {
+				id = FRA_Gensokyo.075
+				days = 14
+			}
+		}
+		hidden_effect = { load_oob = FRA_revolution_ended_there }
+		if = {
+			limit = { has_idea = race_youkai }
+			swap_ideas = {
+				remove_idea = race_youkai
+				add_idea = race_mankind
+			}
+		}
+		add_to_variable = {
+			var = support_of_Sanae
+			value = 50
+			tooltip = support_of_Sanae_rose_50
+		}
+		FRA_change_to_hoi_pie_chart = yes
+	}
+}
+
+#决意
+country_event = {
+	id = FRA_Gensokyo.044
+	title = FRA_Gensokyo.044.t
+	desc = FRA_Gensokyo.044.desc
+	picture = GFX_event_Reimu_and_Kasen
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.044.a
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#会面
+country_event = {
+	id = FRA_Gensokyo.045
+	title = FRA_Gensokyo.045.t
+	desc = FRA_Gensokyo.045.desc
+	picture = GFX_event_Reimu_and_Kasen
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.045.a
+		add_political_power = 10
+		add_popularity = { ideology = communism popularity = 0.1 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#《所有制改革法案》
+country_event = {
+	id = FRA_Gensokyo.046
+	title = FRA_Gensokyo.046.t
+	desc = FRA_Gensokyo.046.desc
+	picture = GFX_event_Reimu_and_Kasen
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.046.a
+		activate_mission = FRA_submit_amendments_to_Ownership_Reform_Act_Mission
+		set_variable = { FRA_Motions_voted_on_var = 2 }
+		hidden_effect = {
+			set_variable = { LCR_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_LCR_support_us = FRANA_seat_of_LCR }
+			round_variable = FRANA_LCR_support_us
+			#
+			set_variable = { PCG_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_PCG_support_us = FRANA_seat_of_PCG }
+			round_variable = FRANA_PCG_support_us
+			#
+			set_variable = { PSG_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_PSG_support_us = FRANA_seat_of_PSG }
+			multiply_variable = { FRANA_seat_of_PSG = 1 }
+			round_variable = FRANA_PSG_support_us
+			round_variable = FRANA_seat_of_PSG
+			#
+			set_variable = { PFG_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_PFG_support_us = FRANA_seat_of_PFG }
+			multiply_variable = { FRANA_PFG_support_us = 1 }
+			round_variable = FRANA_PFG_support_us
+			#
+			set_variable = { IDU_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_IDU_support_us = FRANA_seat_of_IDU }
+			multiply_variable = { FRANA_IDU_support_us = 1 }
+			round_variable = FRANA_IDU_support_us
+			#
+			set_variable = { GFN_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_GFN_support_us = FRANA_seat_of_GFN }
+			multiply_variable = { FRANA_GFN_support_us = 0.9 }
+			round_variable = FRANA_GFN_support_us
+			#
+			set_variable = { MNR_can_be_fought_for_or_not_var = 1 }
+			set_variable = { FRANA_MNR_support_us = FRANA_seat_of_MNR }
+			multiply_variable = { FRANA_MNR_support_us = 0.85 }
+			round_variable = FRANA_MNR_support_us
+			FRA_Bills_of_National_Assembly_calculate = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#教育方向
+country_event = {
+	id = FRA_Gensokyo.047
+	title = FRA_Gensokyo.047.t
+	desc = FRA_Gensokyo.047.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.047.a
+		set_country_flag = Educational_direction_of_Fujiwara_no_Mokou
+		set_country_flag = Educational_direction_of_Fujiwara_no_Mokou_pol
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.047.b
+		set_country_flag = Educational_direction_of_Fujiwara_no_Mokou
+		set_country_flag = Educational_direction_of_Fujiwara_no_Mokou_army
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#教育方向
+country_event = {
+	id = FRA_Gensokyo.048
+	title = FRA_Gensokyo.048.t
+	desc = FRA_Gensokyo.048.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.048.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#稗田阿求的遗体问题
+country_event = {
+	id = FRA_Gensokyo.049
+	title = FRA_Gensokyo.049.t
+	desc = FRA_Gensokyo.049.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_death_of_Akyuu
+	option = {
+		name = FRA_Gensokyo.049.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.050
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.049.b
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.051
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#葬礼
+country_event = {
+	id = FRA_Gensokyo.050
+	title = FRA_Gensokyo.050.t
+	desc = FRA_Gensokyo.050.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_death_of_Akyuu
+	option = {
+		name = FRA_Gensokyo.050.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#葬礼
+country_event = {
+	id = FRA_Gensokyo.051
+	title = FRA_Gensokyo.051.t
+	desc = FRA_Gensokyo.051.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_death_of_Akyuu
+	option = {
+		name = FRA_Gensokyo.051.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#一场小聚
+country_event = {
+	id = FRA_Gensokyo.052
+	title = FRA_Gensokyo.052.t
+	desc = FRA_Gensokyo.052.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.052.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.053
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#一场交易
+country_event = {
+	id = FRA_Gensokyo.053
+	title = FRA_Gensokyo.053.t
+	desc = FRA_Gensokyo.053.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.053.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#光荣与梦想
+country_event = {
+	id = FRA_Gensokyo.054
+	title = FRA_Gensokyo.054.t
+	desc = FRA_Gensokyo.054.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.054.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#push it to the limit！
+country_event = {
+	id = FRA_Gensokyo.055
+	title = FRA_Gensokyo.055.t
+	desc = FRA_Gensokyo.055.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.055.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#雾雨魔理沙总统的就职典礼
+country_event = {
+	id = FRA_Gensokyo.056
+	title = FRA_Gensokyo.056.t
+	desc = FRA_Gensokyo.056.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.056.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#第200号总统令
+country_event = {
+	id = FRA_Gensokyo.057
+	title = FRA_Gensokyo.057.t
+	desc = FRA_Gensokyo.057.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.057.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#会见博丽灵梦
+country_event = {
+	id = FRA_Gensokyo.058
+	title = FRA_Gensokyo.058.t
+	desc = FRA_Gensokyo.058.desc
+	is_triggered_only = yes
+	picture = GFX_event_Reimu_and_Kasen
+	option = {
+		name = FRA_Gensokyo.058.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#雾雨魔理沙致人间之里大区全体公民的一封贺信
+country_event = {
+	id = FRA_Gensokyo.059
+	title = FRA_Gensokyo.059.t
+	desc = FRA_Gensokyo.059.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.059.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#行动报告-第41号
+country_event = {
+	id = FRA_Gensokyo.060
+	title = FRA_Gensokyo.060.t
+	desc = FRA_Gensokyo.060.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.060.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#暴君必须死，因为共和国必须生
+country_event = {
+	id = FRA_Gensokyo.061
+	title = FRA_Gensokyo.061.t
+	desc = FRA_Gensokyo.061.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.061.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#总统信箱里的一封信
+country_event = {
+	id = FRA_Gensokyo.062
+	title = FRA_Gensokyo.062.t
+	desc = FRA_Gensokyo.062.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.062.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#向繁荣奔去
+country_event = {
+	id = FRA_Gensokyo.063
+	title = FRA_Gensokyo.063.t
+	desc = FRA_Gensokyo.063.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.063.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#捍卫民主自由，我们需要你
+country_event = {
+	id = FRA_Gensokyo.064
+	title = FRA_Gensokyo.064.t
+	desc = FRA_Gensokyo.064.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.064.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#昨与今
+country_event = {
+	id = FRA_Gensokyo.065
+	title = FRA_Gensokyo.065.t
+	desc = FRA_Gensokyo.065.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.065.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幻想乡之颂
+country_event = {
+	id = FRA_Gensokyo.066
+	title = FRA_Gensokyo.066.t
+	desc = FRA_Gensokyo.066.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.066.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#晚安
+country_event = {
+	id = FRA_Gensokyo.067
+	title = FRA_Gensokyo.067.t
+	desc = FRA_Gensokyo.067.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Marisa
+	option = {
+		name = FRA_Gensokyo.067.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#从莱茵兰撤军
+country_event = {
+	id = FRA_Gensokyo.068
+	title = FRA_Gensokyo.068.t
+	desc = FRA_Gensokyo.068.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.068.a
+		RHI = {
+			set_country_flag = RHI_End_period_of_occupation
+			end_puppet_this = yes
+			leave_faction = yes
+			drop_cosmetic_tag = yes
+			FRA_Youmu = { set_nationality = ROOT }
+			hidden_effect = {
+				remove_ideas = RHI_Youmu_idea
+				add_ideas = RHI_Jean_Gunnhildr_idea
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = RHI_subject_party_long
+				name = RHI_subject_party
+			}
+			mark_focus_tree_layout_dirty = yes
+			country_event = { id = demGermany.005 }
+		}
+		remove_ideas = FRA_Occupy_the_Rhineland
+		add_war_support = 0.15
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.016
+			}
+			RHI = {
+				country_event = {
+					id = demGermany.001
+					days = 7
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#圣杯履行条约
+country_event = {
+	id = FRA_Gensokyo.069
+	title = FRA_Gensokyo.069.t
+	desc = FRA_Gensokyo.069.desc
+	is_triggered_only = yes
+	picture = GFX_event_Altria
+	option = {
+		name = FRA_Gensokyo.069.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		give_military_access = ENG
+		ENG = { give_military_access = FRA }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#圣杯背叛了我们！
+country_event = {
+	id = FRA_Gensokyo.070
+	title = FRA_Gensokyo.070.t
+	desc = FRA_Gensokyo.070.desc
+	is_triggered_only = yes
+	picture = GFX_event_Altria
+	option = {
+		name = FRA_Gensokyo.070.a
+		add_ideas = FRA_fight_to_the_death
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[DVL.Getname]进攻幻想乡
+country_event = {
+	id = FRA_Gensokyo.071
+	title = FRA_Gensokyo.071.t
+	desc = FRA_Gensokyo.071.desc
+	is_triggered_only = yes
+	picture = GFX_event_Reimu
+	option = {
+		name = FRA_Gensokyo.071.a
+		#DVL = { declare_war_on = { target = ROOT type = yes } }
+		FRA = {
+			if = {
+				limit = { exists = yes }
+				country_event = {
+					id = FRA_Gensokyo.069
+				}
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = FRA
+					enemy = DVL
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+		KMK = {
+			if = {
+				limit = { exists = yes }
+				country_event = {
+					id = FRA_Gensokyo.069
+				}
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = KMK
+					enemy = DVL
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.071.b
+		FRA = {
+			if = {
+				limit = { exists = yes }
+				country_event = {
+					id = FRA_Gensokyo.070
+				}
+			}
+		}
+		KMK = {
+			if = {
+				limit = { exists = yes }
+				country_event = {
+					id = FRA_Gensokyo.070
+				}
+			}
+		}
+		add_stability = -0.3
+		add_war_support = -0.3
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.getname]提议团结抗战
+country_event = {
+	id = FRA_Gensokyo.073
+	title = FRA_Gensokyo.073.t
+	desc = FRA_Gensokyo.073.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.073.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.getname]同意了
+country_event = {
+	id = FRA_Gensokyo.074
+	title = FRA_Gensokyo.074.t
+	desc = FRA_Gensokyo.074.desc
+	is_triggered_only = yes	
+	option = {
+		name = FRA_Gensokyo.074.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幻想乡奇迹党
+country_event = {
+	id = FRA_Gensokyo.075
+	title = FRA_Gensokyo.075.t
+	desc = FRA_Gensokyo.075.desc
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Sanae_coronation
+	option = {
+		name = FRA_Gensokyo.075.a
+		set_country_flag = FRA_Sanae_formal_party
+		set_party_name = {
+			ideology = neutrality
+			long_name = FRA_Sanae_formal_party
+			name = FRA_Sanae_formal_party
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[DVL.Getname]进攻莱茵兰
+country_event = {
+	id = FRA_Gensokyo.076
+	title = FRA_Gensokyo.076.t
+	desc = FRA_Gensokyo.076.desc
+	is_triggered_only = yes
+	picture = GFX_event_Supreme_and_Guardians
+	option = {
+		name = FRA_Gensokyo.076.b
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+
+#圣杯背叛了我们
+country_event = {
+	id = FRA_Gensokyo.078
+	title = FRA_Gensokyo.078.t
+	desc = FRA_Gensokyo.078.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.078.a
+		leave_faction = yes
+		every_country = {
+			limit = {
+				is_subject_of = FRA
+				is_in_ally = yes
+			}
+			leave_faction = yes
+		}
+		LIB = {
+			limit = {
+				is_subject_of = FRA
+			}
+			end_puppet_this = yes
+			create_faction_from_template = {
+				template = faction_template_Gensokyo_system
+				name = Free_Gensokyo
+				icon = GFX_faction_logo_generic_13
+			}
+			add_to_faction = FRA
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Gensokyo.079
+	title = FRA_Gensokyo.079.t
+	desc = FRA_Gensokyo.079.desc
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_guaranteed = POL
+		OR = {
+			AND = {
+				POL = { has_government = communism }
+				NOT = { FRA = { has_government = communism } }
+			}
+			AND = {
+				POL = { has_government = fascism }
+				NOT = { FRA = { has_government = fascism } }
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.079.a
+		diplomatic_relation = {
+			country = POL
+			relation = guarantee
+			active = no
+		}
+	}
+}
+
+#幻想乡索要莱茵兰地区
+country_event = {
+	id = FRA_Gensokyo.080
+	title = FRA_Gensokyo.080.t
+	desc = FRA_Gensokyo.080.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.080.a
+		custom_effect_tooltip = FRA_Require_for_Rhineland_tt1
+		28 = {
+			if = {
+				limit = {
+					is_core_of = ROOT
+				}
+				remove_core_of = ROOT
+			}
+			if = {
+				limit = {
+					is_claimed_by = ROOT
+				}
+				remove_claim_by = ROOT
+			}
+			clr_state_flag = L_GER
+			clr_state_flag = G_GER
+		}
+		42 = {
+			if = {
+				limit = {
+					is_core_of = ROOT
+				}
+				remove_core_of = ROOT
+			}
+			if = {
+				limit = {
+					is_claimed_by = ROOT
+				}
+				remove_claim_by = ROOT
+			}
+			clr_state_flag = L_GER
+			clr_state_flag = G_GER
+		}
+		781 = {
+			if = {
+				limit = {
+					is_core_of = ROOT
+				}
+				remove_core_of = ROOT
+			}
+			if = {
+				limit = {
+					is_claimed_by = ROOT
+				}
+				remove_claim_by = ROOT
+			}
+			clr_state_flag = L_GER
+			clr_state_flag = G_GER
+		}
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.081
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.080.b
+		custom_effect_tooltip = FRA_Require_for_Rhineland_tt2
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.082
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#[FROM.Getname]同意了
+country_event = {
+	id = FRA_Gensokyo.081
+	title = FRA_Gensokyo.081.t
+	desc = FRA_Gensokyo.081.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.081.a
+		42 = {
+			add_claim_by_ROOT_if_has_no_core = yes
+			enable_state_integration_80_compliance = yes
+			subject_state_tranfer_to_ROOT = yes
+		}
+		781 = {
+			add_claim_by_ROOT_if_has_no_core = yes
+			enable_state_integration_80_compliance = yes
+			subject_state_tranfer_to_ROOT = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.Getname]拒绝了
+country_event = {
+	id = FRA_Gensokyo.082
+	title = FRA_Gensokyo.082.t
+	desc = FRA_Gensokyo.082.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.082.a
+		leave_faction = yes
+		complete_national_focus = FRA_establish_Gensokyo_as_king
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幻想乡要求划定势力范围
+country_event = {
+	id = FRA_Gensokyo.083
+	title = FRA_Gensokyo.083.t
+	desc = FRA_Gensokyo.083.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.083.a
+		custom_effect_tooltip = FRA_Delineate_spheres_of_influence_tt
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.084
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.083.b
+		custom_effect_tooltip = FRA_Require_for_Rhineland_tt2
+		FROM = {
+			country_event = {
+				id = FRA_Gensokyo.082
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#[FROM.Getname]同意了
+country_event = {
+	id = FRA_Gensokyo.084
+	title = FRA_Gensokyo.084.t
+	desc = FRA_Gensokyo.084.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.084.a
+		every_state = {
+			limit = {
+                or = {
+                    region = 237
+                    region = 41
+                    region = 236
+                    region = 255
+                    region = 68
+                    region = 1
+                    region = 2
+                    region = 3
+                    region = 4
+                    region = 11
+                    region = 246
+                    region = 131
+					has_state_flag = is_ALS_state_area
+					is_little_GRE_area = yes
+					is_Thrace_area = yes
+					is_Edirne_area = yes
+                }
+			}
+			add_claim_by = ROOT
+		}
+		every_state = {
+			limit = {
+                or = {
+					has_state_flag = is_ITA_state_area
+					has_state_flag = SWE_orginal_state
+                    state = 37
+                    state = 99
+                    state = 1160
+                    state = 1161
+                    state = 1162
+					has_state_flag = is_KAL_area_state
+					has_state_flag = is_POL_state_area
+                    region = 27
+                    state = 875
+					region = 37
+					region = 143
+					state = 105
+					state = 1134
+					state = 108
+					state = 841
+					state = 765
+					state = 1140
+                    state = 83
+                    state = 76
+                    state = 789
+                    state = 84
+                    state = 82
+                    region = 26
+                }
+			}
+			add_claim_by = FROM
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#突袭议会
+country_event = {
+	id = FRA_Gensokyo.085
+	title = FRA_Gensokyo.085.t
+	desc = FRA_Gensokyo.085.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.085.a
+		hidden_effect = { set_politics = { ruling_party = fascism elections_allowed = no } }
+		custom_effect_tooltip = elections_not_allowed
+		set_cosmetic_tag = Gensokyo_Unified_State
+		set_variable = { FRA_Reisen_Udongein_Inaba_title = 1 }
+		custom_effect_tooltip = {
+			localization_key = will_call_AAA_BBB
+			AAA = "FRA_Reisen_Udongein_Inaba"
+			BBB = "FRA_leader_title_Chief"
+		}
+		remove_ideas = FRA_Step_in_Democratization
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.017
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#[FROM.Getname]邀请我们加入£GFX_WSDO_text_icon §F波长同步防御条约组织§!
+	country_event = {
+		id = FRA_Gensokyo.086
+		title = FRA_Gensokyo.086.t
+		desc = FRA_Gensokyo.086.desc
+		is_triggered_only = yes
+		option = {
+			name = FRA_Gensokyo.086.a
+			add_ideas = FRA_WSDO_idea
+			FROM = {
+				#[FROM.Getname]同意了
+				country_event = {
+					id = generic.2016
+					hours = 6
+				}
+			}
+			ai_chance = {
+				factor = 10
+			}
+		}
+		option = {
+			name = FRA_Gensokyo.086.b
+			FROM = {
+				#[FROM.Getname]拒绝了
+				country_event = {
+					id = generic.2009
+					hours = 6
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+
+#选择首相
+country_event = {
+	id = FRA_Gensokyo.087
+	title = FRA_Gensokyo.087.t
+	desc = FRA_Gensokyo.087.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.087.a
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Reisen_Udongein_Inaba_idea
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.087.b
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Tewi_Inaba_idea
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.087.c
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Eirin_Yagokoro_idea
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.087.d
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Huziwara_no_Mokou_idea
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.120
+				days = 7
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#白玉楼的虚无飨宴
+country_event = {
+	id = FRA_Gensokyo.088
+	title = FRA_Gensokyo.088.t
+	desc = FRA_Gensokyo.088.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_01
+	option = {
+		name = FRA_Gensokyo.088.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 1 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_01"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^1 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#深层的潜意识荆棘
+country_event = {
+	id = FRA_Gensokyo.089
+	title = FRA_Gensokyo.089.t
+	desc = FRA_Gensokyo.089.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_02
+	option = {
+		name = FRA_Gensokyo.089.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 2 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_02"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^2 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#凝结的是非之雾
+country_event = {
+	id = FRA_Gensokyo.090
+	title = FRA_Gensokyo.090.t
+	desc = FRA_Gensokyo.090.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_03
+	option = {
+		name = FRA_Gensokyo.090.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 3 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_03"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^3 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#终极的植物压花
+country_event = {
+	id = FRA_Gensokyo.091
+	title = FRA_Gensokyo.091.t
+	desc = FRA_Gensokyo.091.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_04
+	option = {
+		name = FRA_Gensokyo.091.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 4 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_04"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 4 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 5 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^4 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#名为“借”的知识转移
+country_event = {
+	id = FRA_Gensokyo.092
+	title = FRA_Gensokyo.092.t
+	desc = FRA_Gensokyo.092.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_05
+	option = {
+		name = FRA_Gensokyo.092.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 5 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_05"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 4 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 5 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^4 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#蕴含法力的纯素碳水
+country_event = {
+	id = FRA_Gensokyo.093
+	title = FRA_Gensokyo.093.t
+	desc = FRA_Gensokyo.093.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_06
+	option = {
+		name = FRA_Gensokyo.093.a
+		custom_effect_tooltip = FRA_Gensokyo.093.tt
+		add_to_array = { FRA_Laboratory_optional_material_array = 6 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_06"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^5 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幸运绒毛与月都捕获陷阱
+country_event = {
+	id = FRA_Gensokyo.094
+	title = FRA_Gensokyo.094.t
+	desc = FRA_Gensokyo.094.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_07
+	option = {
+		name = FRA_Gensokyo.094.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 7 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_07"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 7 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 8 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^6 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#极致纯净的月之精华
+country_event = {
+	id = FRA_Gensokyo.095
+	title = FRA_Gensokyo.095.t
+	desc = FRA_Gensokyo.095.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_08
+	option = {
+		name = FRA_Gensokyo.095.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 8 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_08"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 7 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 8 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^6 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#充满奇迹的秘制酵母
+country_event = {
+	id = FRA_Gensokyo.096
+	title = FRA_Gensokyo.096.t
+	desc = FRA_Gensokyo.096.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_09
+	option = {
+		name = FRA_Gensokyo.096.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 9 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_09"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 9 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 10 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^7 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#捕捉极速的残影
+country_event = {
+	id = FRA_Gensokyo.097
+	title = FRA_Gensokyo.097.t
+	desc = FRA_Gensokyo.097.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_10
+	option = {
+		name = FRA_Gensokyo.097.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 10 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_10"
+		}
+		if = {
+			limit = {
+				is_in_array = { FRA_Laboratory_optional_material_array = 9 }
+				is_in_array = { FRA_Laboratory_optional_material_array = 10 }
+			}
+			set_variable = { FRA_Yagokoro_Travelogue_states_array^7 = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#蕴含夜盲症的碳水奇迹
+country_event = {
+	id = FRA_Gensokyo.098
+	title = FRA_Gensokyo.098.t
+	desc = FRA_Gensokyo.098.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_11
+	option = {
+		name = FRA_Gensokyo.098.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 11 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_11"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^8 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#尘封的第九世代残卷
+country_event = {
+	id = FRA_Gensokyo.099
+	title = FRA_Gensokyo.099.t
+	desc = FRA_Gensokyo.099.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_12
+	option = {
+		name = FRA_Gensokyo.099.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 12 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_12"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^9 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#高科技引擎的冷却剂
+country_event = {
+	id = FRA_Gensokyo.100
+	title = FRA_Gensokyo.100.t
+	desc = FRA_Gensokyo.100.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_13
+	option = {
+		name = FRA_Gensokyo.100.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 13 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_13"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^10 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#蕴含密度的鬼之余屑
+country_event = {
+	id = FRA_Gensokyo.101
+	title = FRA_Gensokyo.101.t
+	desc = FRA_Gensokyo.101.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_14
+	option = {
+		name = FRA_Gensokyo.101.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 14 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_14"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^11 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#命运红月的生命源泉
+country_event = {
+	id = FRA_Gensokyo.102
+	title = FRA_Gensokyo.102.t
+	desc = FRA_Gensokyo.102.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_15
+	option = {
+		name = FRA_Gensokyo.102.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 15 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_15"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^12 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#绝对零度的笨蛋力
+country_event = {
+	id = FRA_Gensokyo.103
+	title = FRA_Gensokyo.103.t
+	desc = FRA_Gensokyo.103.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro_Travelogue_16
+	option = {
+		name = FRA_Gensokyo.103.a
+		add_to_array = { FRA_Laboratory_optional_material_array = 16 }
+		custom_effect_tooltip = {
+			localization_key = get_laboratory_material
+			laboratory_material = "FRA_Laboratory_material_16"
+		}
+		set_variable = { FRA_Yagokoro_Travelogue_states_array^13 = 2 }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#审判法兰西
+country_event = {
+	id = FRA_Gensokyo.104
+	title = FRA_Gensokyo.104.t
+	desc = FRA_Gensokyo.104.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.104.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = { has_government = fascism }
+		add_political_power = 100
+		add_stability = 0.2
+		add_war_support = 0.2
+	}
+	option = {
+		name = FRA_Gensokyo.104.b
+		custom_effect_tooltip = about_half_nfa_character_add_in
+		hidden_effect = {
+			NFA = {
+				every_character = {
+					limit = { is_general_advisor = no }
+					random_list = {
+						10 = {}
+						10 = { set_nationality = ROOT }
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.104.c
+		NFA = {
+			every_character = {
+				limit = { is_general_advisor = no }
+				set_nationality = ROOT
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		trigger = { has_government = neutrality }
+		add_political_power = -100
+		add_stability = -0.2
+		add_war_support = -0.2
+	}
+}
+
+#“新秩序”的降临
+country_event = {
+	id = FRA_Gensokyo.105
+	title = FRA_Gensokyo.105.t
+	desc = FRA_Gensokyo.105.desc
+	picture = GFX_event_FRA_Reisen_Udongein_Inaba
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.105.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#重建君主制
+country_event = {
+	id = FRA_Gensokyo.106
+	title = FRA_Gensokyo.106.t
+	desc = FRA_Gensokyo.106.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.106.a
+			add_to_variable = {
+				var = support_of_HKP
+				value = 15
+				tooltip = support_of_HKP_change_tt
+			}
+			FRA_change_to_hoi_pie_chart = yes
+			FRA_remove_all_ideas = yes
+			hidden_effect = { add_ideas = FRA_Reisen_Udongein_Inaba_idea }
+			promote_character = FRA_Houraisan_Kaguya
+			set_politics = { ruling_party = neutrality }
+			set_variable = { FRA_Ruling_Party_VAR = 11 }
+			FRA_set_rule_party_name = yes
+			if = {
+				limit = { is_faction_leader = yes }
+				create_faction_from_template = {
+					template = faction_template_Ainz_Ooal_Gown_Federation
+					name = ETERNALIA_CELESTIA
+					icon = GFX_faction_logo_ETERNALIA_CELESTIA
+				}
+			}
+		hidden_effect = {
+			news_event = {
+				id = FRA_Gensokyo_news.018
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#“公主殿下”
+country_event = {
+	id = FRA_Gensokyo.107
+	title = FRA_Gensokyo.107.t
+	desc = FRA_Gensokyo.107.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Kaguya
+	option = {
+		name = FRA_Gensokyo.107.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#因幡帝
+country_event = {
+	id = FRA_Gensokyo.108
+	title = FRA_Gensokyo.108.t
+	desc = FRA_Gensokyo.108.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Tewi_Inaba
+	option = {
+		name = FRA_Gensokyo.108.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#八意永琳
+country_event = {
+	id = FRA_Gensokyo.109
+	title = FRA_Gensokyo.109.t
+	desc = FRA_Gensokyo.109.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Yagokoro
+	option = {
+		name = FRA_Gensokyo.109.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#藤原妹红
+country_event = {
+	id = FRA_Gensokyo.110
+	title = FRA_Gensokyo.110.t
+	desc = FRA_Gensokyo.110.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Mokou
+	option = {
+		name = FRA_Gensokyo.110.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#欧洲之主
+country_event = {
+	id = FRA_Gensokyo.111
+	title = FRA_Gensokyo.111.t
+	desc = FRA_Gensokyo.111.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.111.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#恢复王冠领地
+country_event = {
+	id = FRA_Gensokyo.112
+	title = FRA_Gensokyo.112.t
+	desc = FRA_Gensokyo.112.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.112.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#第四次守矢神社会议
+country_event = {
+	id = FRA_Gensokyo.113
+	title = FRA_Gensokyo.113.t
+	desc = FRA_Gensokyo.113.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.113.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#黑白老鼠
+country_event = {
+	id = FRA_Gensokyo.114
+	title = FRA_Gensokyo.114.t
+	desc = FRA_Gensokyo.114.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.114.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#吉祥物结局
+country_event = {
+	id = FRA_Gensokyo.115
+	title = FRA_Gensokyo.115.t
+	desc = FRA_Gensokyo.115.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.115.a
+		add_country_leader_trait = dictator
+		set_variable = { FRA_Reisen_Udongein_Inaba_title = 2 }
+		custom_effect_tooltip = {
+			localization_key = will_call_AAA_BBB
+			AAA = "FRA_Reisen_Udongein_Inaba"
+			BBB = "FRA_leader_title_Lord"
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#赤蛮奇的日常工作
+country_event = {
+	id = FRA_Gensokyo.116
+	title = FRA_Gensokyo.116.t
+	desc = FRA_Gensokyo.116.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.116.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#接力长跑
+country_event = {
+	id = FRA_Gensokyo.117
+	title = FRA_Gensokyo.117.t
+	desc = FRA_Gensokyo.117.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.117.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#竹光望月夜
+country_event = {
+	id = FRA_Gensokyo.118
+	title = FRA_Gensokyo.118.t
+	desc = FRA_Gensokyo.118.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_tietie01
+	option = {
+		name = FRA_Gensokyo.118.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#小秘书蘑菇碳的第一天
+country_event = {
+	id = FRA_Gensokyo.120
+	title = FRA_Gensokyo.120.t
+	desc = FRA_Gensokyo.120.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_Mokou
+	option = {
+		name = FRA_Gensokyo.120.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.121
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#华丽的女仆装
+country_event = {
+	id = FRA_Gensokyo.121
+	title = FRA_Gensokyo.121.t
+	desc = FRA_Gensokyo.121.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_tietie04
+	option = {
+		name = FRA_Gensokyo.121.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.122
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#辉夜陛下的游戏时间
+country_event = {
+	id = FRA_Gensokyo.122
+	title = FRA_Gensokyo.122.t
+	desc = FRA_Gensokyo.122.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_event_FRA_tietie02
+	option = {
+		name = FRA_Gensokyo.122.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.123
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#雨夜之后
+country_event = {
+	id = FRA_Gensokyo.123
+	title = FRA_Gensokyo.123.t
+	desc = FRA_Gensokyo.123.desc
+	picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.123.a
+		hidden_effect = {
+			country_event = {
+				id = FRA_Gensokyo.118
+				days = 30
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#守矢神社
+country_event = {
+	id = FRA_Gensokyo.124
+	title = FRA_Gensokyo.124.t
+	desc = FRA_Gensokyo.124.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.124.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					or = {
+						state = 735
+						state = 763
+						state = 21
+						state = 943
+						state = 762
+					}
+				}
+				MRY = { add_state_core = PREV }
+			}
+		}
+		release = MRY
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MRY
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.1
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MRY = { inherit_technology = ROOT }
+			FRA_Inubashiri = { set_nationality = MRY }
+			FRA_Syameimaru = { set_nationality = MRY }
+			FRA_Sakata_Nemuno = { set_nationality = MRY }
+			FRA_Shizuha = { set_nationality = MRY }
+			FRA_Aki_Minoriko = { set_nationality = MRY }
+			FRA_Himemushi_Momoyo = { set_nationality = MRY }
+			FRA_Komakusa_Sannyo = { set_nationality = MRY }
+			FRA_Yamashiro_Takane = { set_nationality = MRY }
+			FRA_Goutokuzi_Mike = { set_nationality = MRY }
+			FRA_Son_Biten = { set_nationality = MRY }
+			FRA_Hoshiguma_Yugi = { set_nationality = MRY }
+			FRA_Iizunamaru_Megumu = { set_nationality = MRY }
+			FRA_Himekaidou_Hatate = { set_nationality = MRY }
+			#FRA_Kagiyama_Hina = { set_nationality = MRY }
+			FRA_Sanae = { set_nationality = MRY }
+			FRA_Kanako = { set_nationality = MRY }
+			FRA_Suwako = { set_nationality = MRY }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.124.b
+		hidden_effect = {
+			every_state = {
+				limit = {
+					or = {
+						state = 735
+						state = 763
+						state = 21
+						state = 943
+						state = 762
+					}
+				}
+				MRY = { add_state_core = PREV }
+			}
+		}
+		release = MRY
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MRY
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.1
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MRY = { inherit_technology = ROOT }
+			FRA_Inubashiri = { set_nationality = MRY }
+			FRA_Syameimaru = { set_nationality = MRY }
+			FRA_Sakata_Nemuno = { set_nationality = MRY }
+			FRA_Shizuha = { set_nationality = MRY }
+			FRA_Aki_Minoriko = { set_nationality = MRY }
+			FRA_Himemushi_Momoyo = { set_nationality = MRY }
+			FRA_Komakusa_Sannyo = { set_nationality = MRY }
+			FRA_Yamashiro_Takane = { set_nationality = MRY }
+			FRA_Goutokuzi_Mike = { set_nationality = MRY }
+			FRA_Son_Biten = { set_nationality = MRY }
+			FRA_Hoshiguma_Yugi = { set_nationality = MRY }
+			FRA_Iizunamaru_Megumu = { set_nationality = MRY }
+			FRA_Himekaidou_Hatate = { set_nationality = MRY }
+			#FRA_Kagiyama_Hina = { set_nationality = MRY }
+			FRA_Sanae = { set_nationality = MRY }
+			FRA_Kanako = { set_nationality = MRY }
+			FRA_Suwako = { set_nationality = MRY }
+		}
+		custom_effect_tooltip = change_tag_to_MRY
+		MRY = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#博丽神社
+country_event = {
+	id = FRA_Gensokyo.125
+	title = FRA_Gensokyo.125.t
+	desc = FRA_Gensokyo.125.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.125.a
+		hidden_effect = {
+			HKR = { add_state_core = 785 }
+			HKR = { add_state_core = 28 }
+		}
+		release = HKR
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = HKR
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.11
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			HKR = { inherit_technology = ROOT }
+			FRA_Suika = { set_nationality = HKR }
+			FRA_Kasen = { set_nationality = HKR }
+			FRA_Reimu = { set_nationality = HKR }
+			FRA_Clownpiece = { set_nationality = HKR }
+			FRA_Star_Sapphire = { set_nationality = HKR }
+			FRA_Luna_Child = { set_nationality = HKR }
+			FRA_Sunny_Milk = { set_nationality = HKR }
+			FRA_Sukuna_Shinmyoumaru = { set_nationality = HKR }
+			FRA_Yorigami_Shion = { set_nationality = HKR }
+			FRA_Komano_Aun = { set_nationality = HKR }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.125.b
+		hidden_effect = {
+			HKR = { add_state_core = 785 }
+			HKR = { add_state_core = 28 }
+		}
+		release = HKR
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = HKR
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.11
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			HKR = { inherit_technology = ROOT }
+			FRA_Suika = { set_nationality = HKR }
+			FRA_Kasen = { set_nationality = HKR }
+			FRA_Reimu = { set_nationality = HKR }
+			FRA_Clownpiece = { set_nationality = HKR }
+			FRA_Star_Sapphire = { set_nationality = HKR }
+			FRA_Luna_Child = { set_nationality = HKR }
+			FRA_Sunny_Milk = { set_nationality = HKR }
+			FRA_Sukuna_Shinmyoumaru = { set_nationality = HKR }
+			FRA_Yorigami_Shion = { set_nationality = HKR }
+			FRA_Komano_Aun = { set_nationality = HKR }
+		}
+		custom_effect_tooltip = change_tag_to_HKR
+		HKR = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#玄武之泽
+country_event = {
+	id = FRA_Gensokyo.126
+	title = FRA_Gensokyo.126.t
+	desc = FRA_Gensokyo.126.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.126.a
+		hidden_effect = {
+			GNS = { add_state_core = 29 }
+			GNS = { add_state_core = 17 }
+			GNS = { add_state_core = 980 }
+		}
+		release = GNS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = GNS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.13
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			GNS = { inherit_technology = ROOT }
+			FRA_Nitori = { set_nationality = GNS }
+			FRA_Okazaki_Yumemi = { set_nationality = GNS }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.126.b
+		hidden_effect = {
+			GNS = { add_state_core = 29 }
+			GNS = { add_state_core = 17 }
+			GNS = { add_state_core = 980 }
+		}
+		release = GNS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = GNS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.13
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			GNS = { inherit_technology = ROOT }
+			FRA_Nitori = { set_nationality = GNS }
+			FRA_Okazaki_Yumemi = { set_nationality = GNS }
+		}
+		custom_effect_tooltip = change_tag_to_GNS
+		GNS = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#魔法之森
+country_event = {
+	id = FRA_Gensokyo.127
+	title = FRA_Gensokyo.127.t
+	desc = FRA_Gensokyo.127.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.127.a
+		hidden_effect = {
+			GOS = { add_state_core = 25 }
+			GOS = { add_state_core = 33 }
+		}
+		release = GOS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = GOS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.14
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			GOS = { inherit_technology = ROOT }
+			FRA_Marisa = { set_nationality = GOS }
+			FRA_Medicine = { set_nationality = GOS }
+			FRA_Kazami_Yuka = { set_nationality = GOS }
+			FRA_Alice_Margatroid = { set_nationality = GOS }
+			FRA_Satsuki_Rin = { set_nationality = GOS }
+			FRA_Shanghai = { set_nationality = GOS }
+			FRA_Yatadera_Narumi = { set_nationality = GOS }
+			FRA_Eternity_Larva = { set_nationality = GOS }
+			FRA_Mitsugashira_Enoko = { set_nationality = GOS }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.127.b
+		hidden_effect = {
+			GOS = { add_state_core = 25 }
+			GOS = { add_state_core = 33 }
+		}
+		release = GOS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = GOS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.14
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			GOS = { inherit_technology = ROOT }
+			FRA_Marisa = { set_nationality = GOS }
+			FRA_Medicine = { set_nationality = GOS }
+			FRA_Kazami_Yuka = { set_nationality = GOS }
+			FRA_Alice_Margatroid = { set_nationality = GOS }
+			FRA_Satsuki_Rin = { set_nationality = GOS }
+			FRA_Shanghai = { set_nationality = GOS }
+			FRA_Yatadera_Narumi = { set_nationality = GOS }
+			FRA_Eternity_Larva = { set_nationality = GOS }
+			FRA_Mitsugashira_Enoko = { set_nationality = GOS }
+		}
+		custom_effect_tooltip = change_tag_to_GOS
+		GOS = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#地灵殿
+country_event = {
+	id = FRA_Gensokyo.128
+	title = FRA_Gensokyo.128.t
+	desc = FRA_Gensokyo.128.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.128.a
+		hidden_effect = {
+			PES = { add_state_core = 23 }
+			PES = { add_state_core = 30 }
+		}
+		release = PES
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = PES
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.17
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			PES = { inherit_technology = ROOT }
+			FRA_Reiuji_Utsuho = { set_nationality = PES }
+			FRA_Komeiji_Koishi = { set_nationality = PES }
+			FRA_Komeiji_Satori = { set_nationality = PES }
+			FRA_Kaenbyou_Rin = { set_nationality = PES }
+			FRA_Shikieiki_Yamaxanadu = { set_nationality = PES }
+			FRA_Komachi_Onoduka = { set_nationality = PES }
+			FRA_Nippaku_Zanmu = { set_nationality = PES }
+			FRA_Yomotsu_Hisami = { set_nationality = PES }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.128.b
+		hidden_effect = {
+			PES = { add_state_core = 23 }
+			PES = { add_state_core = 30 }
+		}
+		release = PES
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = PES
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.17
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			PES = { inherit_technology = ROOT }
+			FRA_Reiuji_Utsuho = { set_nationality = PES }
+			FRA_Komeiji_Koishi = { set_nationality = PES }
+			FRA_Komeiji_Satori = { set_nationality = PES }
+			FRA_Kaenbyou_Rin = { set_nationality = PES }
+			FRA_Shikieiki_Yamaxanadu = { set_nationality = PES }
+			FRA_Komachi_Onoduka = { set_nationality = PES }
+			FRA_Nippaku_Zanmu = { set_nationality = PES }
+			FRA_Yomotsu_Hisami = { set_nationality = PES }
+		}
+		custom_effect_tooltip = change_tag_to_PES
+		PES = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#命莲寺
+country_event = {
+	id = FRA_Gensokyo.129
+	title = FRA_Gensokyo.129.t
+	desc = FRA_Gensokyo.129.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.129.a
+		hidden_effect = {
+			MYO = { add_state_core = 15 }
+		}
+		release = MYO
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MYO
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.2
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MYO = { inherit_technology = ROOT }
+			FRA_Hijiri_Byakuren = { set_nationality = MYO }
+			FRA_Murasa_Minamitsu = { set_nationality = MYO }
+			FRA_Kumoi_Ichirin = { set_nationality = MYO }
+			FRA_Tatara_Kogasa = { set_nationality = MYO }
+			FRA_Kokoro = { set_nationality = MYO }
+			FRA_Mamizou = { set_nationality = MYO }
+			FRA_Nazrin = { set_nationality = MYO }
+			FRA_Toramaru_Shou = { set_nationality = MYO }
+			FRA_Kasodani_Kyouko = { set_nationality = MYO }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.129.b
+		hidden_effect = {
+			MYO = { add_state_core = 15 }
+		}
+		release = MYO
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MYO
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.2
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MYO = { inherit_technology = ROOT }
+			FRA_Hijiri_Byakuren = { set_nationality = MYO }
+			FRA_Murasa_Minamitsu = { set_nationality = MYO }
+			FRA_Kumoi_Ichirin = { set_nationality = MYO }
+			FRA_Tatara_Kogasa = { set_nationality = MYO }
+			FRA_Kokoro = { set_nationality = MYO }
+			FRA_Mamizou = { set_nationality = MYO }
+			FRA_Nazrin = { set_nationality = MYO }
+			FRA_Toramaru_Shou = { set_nationality = MYO }
+			FRA_Kasodani_Kyouko = { set_nationality = MYO }
+		}
+		custom_effect_tooltip = change_tag_to_MYO
+		MYO = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#天界
+country_event = {
+	id = FRA_Gensokyo.130
+	title = FRA_Gensokyo.130.t
+	desc = FRA_Gensokyo.130.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.130.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					or = {
+						state = 1
+						state = 817
+						state = 984
+						state = 779
+						state = 22
+						state = 31
+						state = 19
+					}
+				}
+				MEI = {
+					add_state_core = PREV
+				}
+			}
+		}
+		release = MEI
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MEI
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.25
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MEI = { inherit_technology = ROOT }
+			FRA_Matara_Okina = { set_nationality = MEI }
+			FRA_Nishida_Satono = { set_nationality = MEI }
+			FRA_Teireida_Mai = { set_nationality = MEI }
+			FRA_Doremy_Sweet = { set_nationality = MEI }
+			FRA_Hecatia_Lapislazuli = { set_nationality = MEI }
+			FRA_Hinanawi_Tenshi = { set_nationality = MEI }
+			FRA_Junko = { set_nationality = MEI }
+			#FRA_Lilywhite = { set_nationality = MEI }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.130.b
+		hidden_effect = {
+			every_state = {
+				limit = {
+					or = {
+						state = 1
+						state = 817
+						state = 984
+						state = 779
+						state = 22
+						state = 31
+						state = 19
+					}
+				}
+				MEI = {
+					add_state_core = PREV
+				}
+			}
+		}
+		release = MEI
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = MEI
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.25
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MEI = { inherit_technology = ROOT }
+			FRA_Matara_Okina = { set_nationality = MEI }
+			FRA_Nishida_Satono = { set_nationality = MEI }
+			FRA_Teireida_Mai = { set_nationality = MEI }
+			FRA_Doremy_Sweet = { set_nationality = MEI }
+			FRA_Hecatia_Lapislazuli = { set_nationality = MEI }
+			FRA_Hinanawi_Tenshi = { set_nationality = MEI }
+			FRA_Junko = { set_nationality = MEI }
+			#FRA_Lilywhite = { set_nationality = MEI }
+		}
+		custom_effect_tooltip = change_tag_to_MEI
+		MEI = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#白玉楼
+country_event = {
+	id = FRA_Gensokyo.131
+	title = FRA_Gensokyo.131.t
+	desc = FRA_Gensokyo.131.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.131.a
+		hidden_effect = {
+			BRI = { add_state_core = 983 }
+			BRI = { add_state_core = 14 }
+		}
+		release = BRI
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = BRI
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.33
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			BRI = { inherit_technology = ROOT }
+			FRA_Letty_Whiterock = { set_nationality = BRI }
+			FRA_Youmu = { set_nationality = BRI }
+			FRA_Saigyouji_Yuyuko = { set_nationality = BRI }
+			FRA_Maribel_Hearn = { set_nationality = BRI }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.131.b
+		hidden_effect = {
+			BRI = { add_state_core = 983 }
+			BRI = { add_state_core = 14 }
+		}
+		release = BRI
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = BRI
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.33
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			BRI = { inherit_technology = ROOT }
+			FRA_Letty_Whiterock = { set_nationality = BRI }
+			FRA_Youmu = { set_nationality = BRI }
+			FRA_Saigyouji_Yuyuko = { set_nationality = BRI }
+			FRA_Maribel_Hearn = { set_nationality = BRI }
+		}
+		custom_effect_tooltip = change_tag_to_BRI
+		BRI = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#人间之里
+country_event = {
+	id = FRA_Gensokyo.132
+	title = FRA_Gensokyo.132.t
+	desc = FRA_Gensokyo.132.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.132.a
+		hidden_effect = {
+			set_capital = {
+				state = 32
+				remember_old_capital = no
+			}
+			NOS = { add_state_core = 24 }
+			NOS = { add_state_core = 18 }
+			NOS = { add_state_core = 16 }
+		}
+		release = NOS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = NOS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.5
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			NOS = { inherit_technology = ROOT }
+			FRA_Motoori_Kosuzu = { set_nationality = NOS }
+			FRA_Kamishirasawa_Keine = { set_nationality = NOS }
+			FRA_Sekibanki = { set_nationality = NOS }
+			FRA_Okunoda_Miyoi = { set_nationality = NOS }
+			FRA_Mystia_Lorelei = { set_nationality = NOS }
+			FRA_Usami_Sumireko = { set_nationality = NOS }
+			FRA_Lunasa_Prismriver = { set_nationality = NOS }
+			FRA_Horikawa = { set_nationality = NOS }
+			FRA_Toyosatomimi_no_Miko = { set_nationality = NOS }
+			FRA_Soga_no_Toziko = { set_nationality = NOS }
+			FRA_Seiga_NyanNyan = { set_nationality = NOS }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.132.b
+		hidden_effect = {
+			set_capital = {
+				state = 32
+				remember_old_capital = no
+			}
+			NOS = { add_state_core = 24 }
+			NOS = { add_state_core = 18 }
+			NOS = { add_state_core = 16 }
+		}
+		release = NOS
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = NOS
+				navy_ratio = 0
+				air_ratio = 0
+				stockpile_ratio = 0
+				army_ratio = 0.5
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			NOS = { inherit_technology = ROOT }
+			FRA_Motoori_Kosuzu = { set_nationality = NOS }
+			FRA_Kamishirasawa_Keine = { set_nationality = NOS }
+			FRA_Sekibanki = { set_nationality = NOS }
+			FRA_Okunoda_Miyoi = { set_nationality = NOS }
+			FRA_Mystia_Lorelei = { set_nationality = NOS }
+			FRA_Usami_Sumireko = { set_nationality = NOS }
+			FRA_Lunasa_Prismriver = { set_nationality = NOS }
+			FRA_Horikawa = { set_nationality = NOS }
+			FRA_Toyosatomimi_no_Miko = { set_nationality = NOS }
+			FRA_Soga_no_Toziko = { set_nationality = NOS }
+			FRA_Seiga_NyanNyan = { set_nationality = NOS }
+		}
+		custom_effect_tooltip = change_tag_to_NOS
+		NOS = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#共和不在
+country_event = {
+	id = FRA_Gensokyo.133
+	title = FRA_Gensokyo.133.t
+	desc = FRA_Gensokyo.133.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.133.a
+		set_cosmetic_tag = Gensokyo_Lunar
+		every_core_state = {
+			limit = { not = { is_fully_controlled_by = ROOT } }
+			remove_core_of = ROOT
+		}
+		remove_ideas = FRA_Step_in_Democratization
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#八云紫接管舰队
+country_event = {
+	id = FRA_Gensokyo.134
+	title = FRA_Gensokyo.134.t
+	desc = FRA_Gensokyo.134.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.134.a
+		transfer_navy = {
+			target = LIB
+		}
+		LIB = {
+			end_puppet_this = yes
+			set_cosmetic_tag = FRA_Navy_LIB
+			puppet = COG
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#大萧条消退
+country_event = {
+	id = FRA_Gensokyo.135
+	title = FRA_Gensokyo.135.t
+	desc = FRA_Gensokyo.135.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.135.a
+		if = {
+			limit = { has_dynamic_modifier = { modifier = FRA_Financial_crisis } }
+			remove_dynamic_modifier = { modifier = FRA_Financial_crisis }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = FRA_Financial_crisis_HCP } }
+			remove_dynamic_modifier = { modifier = FRA_Financial_crisis_HCP }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = FRA_Degree_of_unity } }
+			remove_dynamic_modifier = { modifier = FRA_Degree_of_unity }
+		}
+		set_variable = { FRA_financial_crisis_var = 0 }
+		set_variable = { FRA_credit_crunch_var = 0 }
+		set_variable = { FRA_Overcapacity_var = 0 }
+		FRA_Calculate_Great_Depression_debuff = yes
+		clr_country_flag = FRA_Black_Tuesday_decision_categories
+		add_timed_idea = {
+			idea = FRA_The_Great_Depression_5
+			days = 400
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#军事变革
+country_event = {
+	id = FRA_Gensokyo.136
+	title = FRA_Gensokyo.136.t
+	desc = FRA_Gensokyo.136.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.136.a
+		remove_ideas = FRA_victors_of_Great_War
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#印支革命
+country_event = {
+	id = FRA_Gensokyo.137
+	title = FRA_Gensokyo.137.t
+	desc = FRA_Gensokyo.137.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			857 = { transfer_state_to = VIN }
+			671 = { transfer_state_to = VIN }
+			VIN = {
+				inherit_technology = ROOT
+				load_oob = "VIN_1936"
+				add_ideas = ROV_VIN_war_buff
+				add_ideas = VIN_Revolutionary_war_buff
+			}
+			ROV = { every_core_state = { add_core_of = VIN } }
+			VIN = {
+				every_state = {
+					limit = {
+						or = {
+							region = 196
+							region = 142
+							region = 194
+							region = 195
+						}
+					}
+					if = {
+						limit = { not = { is_core_of = PREV } }
+						add_claim_by = PREV
+					}
+					enable_state_integration_80_compliance = yes
+					subject_state_tranfer_to_ROOT = yes
+				}
+			}
+			news_event = {
+				id = FRA_Gensokyo_news.021
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.137.a
+		add_ideas = ROV_VIN_war_buff
+		end_puppet_this = yes
+		leave_faction = yes
+		declare_war_on = { target = VIN type = annex_everything }
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.137.b
+		add_ideas = ROV_VIN_war_buff
+		end_puppet_this = yes
+		leave_faction = yes
+		declare_war_on = { target = VIN type = annex_everything }
+		VIN = { change_tag_from_ROOT = yes }
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#印支战争
+country_event = {
+	id = FRA_Gensokyo.138
+	title = FRA_Gensokyo.138.t
+	desc = FRA_Gensokyo.138.desc
+	#picture = GFX_event_FRA_tietie05
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.138.a
+		add_political_power = -15
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#弹道奇迹
+country_event = {
+	id = FRA_Gensokyo.139
+	title = FRA_Gensokyo.139.t
+	desc = FRA_Gensokyo.139.desc
+	picture = GFX_event_FRA_Sanae_coronation
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.139.a
+			set_technology = {
+				tech_Sanae_Artillery = 1
+				popup = no
+			}
+			custom_effect_tooltip = CHI_tech_effect_tt
+			effect_tooltip = {
+				add_unit_bonus = {
+					artillery_brigade = {
+						combat_width = -3
+					}
+					rocket_artillery_brigade = {
+						combat_width = -3
+					}
+					mot_artillery_brigade = {
+						combat_width = -3
+					}
+					mot_rocket_artillery_brigade = {
+						combat_width = -3
+					}
+				}
+			}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#######  AI专用     #######
+country_event = {
+	id = FRA_Gensokyo.800
+	title = FRA_Gensokyo.800.t
+	desc = FRA_Gensokyo.800.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	immediate = { set_country_flag = FRA_The_election_results_in }
+	option = {
+		name = FRA_Gensokyo.800.a
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 1 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Reimu_idea
+			promote_character = FRA_Kasen
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_PSG = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 3 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.003
+				}
+				country_event = {
+					id = FRA_Gensokyo.1011
+					days = 1825
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			FRA_Initialization_of_seats_in_National_Assembly = yes
+			complete_national_focus = FRA_first_term_of_Ibaraki_Kasen
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 2 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Alice_Margatroid_idea
+			promote_character = FRA_Marisa
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_PFG = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 4 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.002
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			FRA_Initialization_of_seats_in_National_Assembly = yes
+			complete_national_focus = FRA_first_term_of_Marisa
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 3 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Huziwara_no_Mokou_idea
+			promote_character = FRA_Kamishirasawa_Keine
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_IDU = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 5 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.004
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			FRA_Initialization_of_seats_in_National_Assembly = yes
+			complete_national_focus = FRA_first_term_of_Kamishirasawa_Keine
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 4 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Houraisan_Kaguya_idea
+			promote_character = FRA_Reisen_Udongein_Inaba
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = fascism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_GFN = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 6 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.005
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			FRA_Initialization_of_seats_in_National_Assembly = yes
+			complete_national_focus = FRA_GFN_Reisen_Udongein_Inaba_Elected
+		}
+		ai_chance = {
+			base = 90
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_1
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_2
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_7
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_8
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_9
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.800.b
+		if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 1 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Reimu_idea
+			promote_character = FRA_Kasen
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_PSG = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 3 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.003
+				}
+				country_event = {
+					id = FRA_Gensokyo.1011
+					days = 1825
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 2 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Alice_Margatroid_idea
+			promote_character = FRA_Marisa
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_PFG = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 4 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.002
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 3 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Huziwara_no_Mokou_idea
+			promote_character = FRA_Kamishirasawa_Keine
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_IDU = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 5 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.004
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { ROOT.FRA_be_as_party = 4 } }
+			FRA_remove_all_ideas = yes
+			add_ideas = FRA_Houraisan_Kaguya_idea
+			promote_character = FRA_Reisen_Udongein_Inaba
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = fascism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			custom_effect_tooltip = election_five_yeas_later
+			add_to_variable = { support_of_GFN = 25 }
+			set_variable = { FRA_Ruling_Party_VAR = 6 }
+			FRA_set_rule_party_name = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.005
+				}
+			}
+		}
+		country_event = {
+			id = FRA_Gensokyo.012
+			days = 7
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_4
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_5
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = FRA_GAME_RULE_6
+				}
+				factor = 0
+			}
+			modifier = {
+				KNM = { is_ai = no }
+				has_game_rule = {
+					rule = AH_FRA_ai_behavior_SELECTION
+					option = DEFAULT
+				}
+				factor = 0
+			}
+		}
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.801
+	title = FRA_Gensokyo.801.t
+	desc = FRA_Gensokyo.801.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.801.a
+		if = {
+			limit = { FRA_Motions_voted_on_var = 1 }
+			add_to_variable = {
+				var = FRA_financial_crisis_var
+				value = -10
+				tooltip = FRA_financial_crisis_var_subtract10_tt
+			}
+			add_to_variable = {
+				var = FRA_credit_crunch_var
+				value = -10
+				tooltip = FRA_credit_crunch_var_subtract10_tt
+			}
+			add_to_variable = {
+				var = FRA_Overcapacity_var
+				value = -20
+				tooltip = FRA_Overcapacity_var_subtract20_tt
+			}
+			add_ideas = FRA_New_Labour_Code
+		}
+		set_variable = { FRA_Motions_voted_on_var = 0 }
+		set_variable = { LCR_can_be_fought_for_or_not_var = 0 }
+		set_variable = { FRANA_LCR_support_us = 0 }
+		set_variable = { PCG_can_be_fought_for_or_not_var = 0 }
+		set_variable = { FRANA_PCG_support_us = 0 }
+		set_variable = { PSG_can_be_fought_for_or_not_var = 0 }
+		set_variable = { FRANA_PSG_support_us = 0 }
+		FRA_Calculate_Great_Depression_debuff = yes
+		ai_chance = {
+			base = 90
+		}
+	}
+}
+
+#[FROM.Getname]拒绝了
+country_event = {
+	id = FRA_Gensokyo.802
+	title = FRA_Gensokyo.802.t
+	desc = FRA_Gensokyo.802.desc
+	#fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.802.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#######  幻想乡联盟     #######
+#北非投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.01
+	title = FRA_Gensokyo_Alliance.01.t
+	desc = FRA_Gensokyo_Alliance.01.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				or = {
+					region = 189
+					region = 238
+					region = 127
+				}
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = LIB
+					tag = LBA
+					tag = MOR
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				or = {
+					region = 189
+					region = 238
+					region = 127
+				}
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#北非投票脱离
+country_event = {
+	id = FRA_Gensokyo_Alliance.02
+	title = FRA_Gensokyo_Alliance.02.t
+	desc = FRA_Gensokyo_Alliance.02.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = LIB
+		}
+		release_targeted_tag = yes
+		set_temp_variable = {
+			tag_to_release = LBA
+		}
+		release_targeted_tag = yes
+		set_temp_variable = {
+			tag_to_release = MOR
+		}
+		release_targeted_tag = yes
+	}
+}
+#西非投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.03
+	title = FRA_Gensokyo_Alliance.03.t
+	desc = FRA_Gensokyo_Alliance.03.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				or = {
+					region = 243
+					region = 182
+				}
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = SAF
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				or = {
+					region = 243
+					region = 182
+				}
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#西非投票脱离
+country_event = {
+	id = FRA_Gensokyo_Alliance.04
+	title = FRA_Gensokyo_Alliance.04.t
+	desc = FRA_Gensokyo_Alliance.04.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = SAF
+		}
+		release_targeted_tag = yes
+	}
+}
+#中非投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.05
+	title = FRA_Gensokyo_Alliance.05.t
+	desc = FRA_Gensokyo_Alliance.05.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				has_state_flag = ZIM_state_area
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = ZIM
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = ZIM_state_area
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#中非投票脱离
+country_event = {
+	id = FRA_Gensokyo_Alliance.06
+	title = FRA_Gensokyo_Alliance.06.t
+	desc = FRA_Gensokyo_Alliance.06.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = ZIM
+		}
+		release_targeted_tag = yes
+	}
+}
+#南非投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.07
+	title = FRA_Gensokyo_Alliance.07.t
+	desc = FRA_Gensokyo_Alliance.07.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				has_state_flag = EAS_state_area
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = EAS
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = EAS_state_area
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#南非投票反对
+country_event = {
+	id = FRA_Gensokyo_Alliance.08
+	title = FRA_Gensokyo_Alliance.08.t
+	desc = FRA_Gensokyo_Alliance.08.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = EAS
+		}
+		release_targeted_tag = yes
+	}
+}
+#埃及投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.09
+	title = FRA_Gensokyo_Alliance.09.t
+	desc = FRA_Gensokyo_Alliance.09.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				or = {
+					region = 126
+					region = 128
+					state = 453
+				}
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = EGY
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				or = {
+					region = 126
+					region = 128
+					state = 453
+				}
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#埃及投票反对
+country_event = {
+	id = FRA_Gensokyo_Alliance.10
+	title = FRA_Gensokyo_Alliance.10.t
+	desc = FRA_Gensokyo_Alliance.10.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = EGY
+		}
+		release_targeted_tag = yes
+	}
+}
+#东非投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.11
+	title = FRA_Gensokyo_Alliance.11.t
+	desc = FRA_Gensokyo_Alliance.11.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				has_state_flag = ETH_state_area
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = ETH
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = ETH_state_area
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#东非投票反对
+country_event = {
+	id = FRA_Gensokyo_Alliance.12
+	title = FRA_Gensokyo_Alliance.12.t
+	desc = FRA_Gensokyo_Alliance.12.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = ETH
+		}
+		release_targeted_tag = yes
+	}
+}
+#刚果投票加入
+country_event = {
+	id = FRA_Gensokyo_Alliance.13
+	title = FRA_Gensokyo_Alliance.13.t
+	desc = FRA_Gensokyo_Alliance.13.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.01.a
+		every_state = {
+			limit = {
+				has_state_flag = COG_state_area
+			}
+			add_core_of = ROOT
+		}
+		every_country = {
+			limit = {
+				or = {
+					tag = COG
+				}
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = COG_state_area
+				or = {
+					is_fully_controlled_by = ROOT
+					any_subject_country = {
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+			transfer_state_to = ROOT
+		}
+	}
+}
+#刚果投票脱离
+country_event = {
+	id = FRA_Gensokyo_Alliance.14
+	title = FRA_Gensokyo_Alliance.14.t
+	desc = FRA_Gensokyo_Alliance.14.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo_Alliance.02.a
+		set_temp_variable = {
+			tag_to_release = COG
+		}
+		release_targeted_tag = yes
+	}
+}
+
+#######  隐   藏     #######
+#开局政治
+country_event = {
+	id = FRA_Gensokyo.1000
+	title = FRA_Gensokyo.1000.t
+	desc = FRA_Gensokyo.1000.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		FRA_Set_opening_party_situation = yes
+		FRA_initialize_govern_of_Kasen = yes
+		set_variable = { FRA_Ruling_Party_VAR = 4 }
+		FRA_Approval_Rating_Start = yes
+	}
+	option = {
+		name = FRA_Gensokyo.1000.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#幻想乡-红魔馆战争
+country_event = {
+	id = FRA_Gensokyo.1001
+	title = FRA_Gensokyo.1001.t
+	desc = FRA_Gensokyo.1001.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+	}
+	option = {
+		name = FRA_Gensokyo.1001.a
+		activate_mission = KMK_unit_FRA_war
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#幻想乡-红魔馆战争
+country_event = {
+	id = FRA_Gensokyo.1002
+	title = FRA_Gensokyo.1001.t
+	desc = FRA_Gensokyo.1001.desc
+	#picture = GFX_event_MGU_PRISONER_1
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+	}
+	option = {
+		name = FRA_Gensokyo.1001.a
+		activate_mission = KMK_unit_FRA_war
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#新年欢庆
+country_event = {
+	id = FRA_Gensokyo.1003
+	title = FRA_Gensokyo.1003.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1003.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#检视试点地区
+country_event = {
+	id = FRA_Gensokyo.1004
+	title = FRA_Gensokyo.1004.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1004.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#民主化初步成果
+country_event = {
+	id = FRA_Gensokyo.1005
+	title = FRA_Gensokyo.1005.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1005.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#交代后事
+country_event = {
+	id = FRA_Gensokyo.1006
+	title = FRA_Gensokyo.1006.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1006.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#自由派起义
+country_event = {
+	id = FRA_Gensokyo.1007
+	title = FRA_Gensokyo.1007.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { has_war_with = GOG }
+			country_event = {
+				id = FRA_Gensokyo.017
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.1007.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#交代后事
+country_event = {
+	id = FRA_Gensokyo.1008
+	title = FRA_Gensokyo.1008.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1008.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#柏林危机
+country_event = {
+	id = FRA_Gensokyo.1009
+	title = FRA_Gensokyo.1009.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1009.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#斯特拉斯堡会谈
+country_event = {
+	id = FRA_Gensokyo.1010
+	title = FRA_Gensokyo.1010.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.1010.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#换届选举
+country_event = {
+	id = FRA_Gensokyo.1011
+	title = FRA_Gensokyo.1011.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	#is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1941.3.1
+		tag = FRA
+		has_government = democratic
+	}
+	immediate = {
+		if = {
+			limit = {
+				or = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Kasen
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Marisa
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Kamishirasawa_Keine
+					}
+				}
+			}
+			if = {
+				limit = { has_war_with_major = yes }
+				country_event = {
+					id = FRA_Gensokyo.019
+				}
+			}
+			else = {
+				set_country_flag = FRA_elections_until_peace
+				country_event = {
+					id = FRA_Gensokyo.020
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.1011.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#革命到此为止
+country_event = {
+	id = FRA_Gensokyo.1012
+	title = FRA_Gensokyo.1012.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	hidden = yes
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { load_oob = FRA_Pro_Western_diplomacy }
+	}
+	option = {
+		name = FRA_Gensokyo.1012.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#亲西方外交
+country_event = {
+	id = FRA_Gensokyo.1013
+	title = FRA_Gensokyo.1013.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	hidden = yes
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { load_oob = FRA_Back_to_the_free_market }
+	}
+	option = {
+		name = FRA_Gensokyo.1013.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#重回自由市场
+country_event = {
+	id = FRA_Gensokyo.1014
+	title = FRA_Gensokyo.1014.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	hidden = yes
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { load_oob = FRA_Manhunt_for_left_wing }
+	}
+	option = {
+		name = FRA_Gensokyo.1014.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#搜捕左翼
+country_event = {
+	id = FRA_Gensokyo.1015
+	title = FRA_Gensokyo.1015.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	is_triggered_only = yes
+	hidden = yes
+	#fire_only_once = yes
+	immediate = {
+		hidden_effect = { load_oob = FRA_The_Golden_Age }
+	}
+	option = {
+		name = FRA_Gensokyo.1015.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#反幻想乡同盟
+country_event = {
+	id = FRA_Gensokyo.1016
+	title = FRA_Gensokyo.1016.t
+	desc = FRA_Debug_only
+	picture = GFX_event_FRA_debug_only
+	#is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		any_enemy_country = {
+			is_in_array = {
+				array = global.Anti_Gensokyo_Ally_members_array
+				value = THIS
+			}
+			is_subject = no
+		}
+		any_country = {
+			limit = {
+				is_subject = no
+				not = { has_war_with = FRA }
+				is_in_array = {
+					array = global.Anti_Gensokyo_Ally_members_array
+					value = THIS
+				}
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_subject = no
+					not = { has_war_with = FRA }
+					is_in_array = {
+						array = global.Anti_Gensokyo_Ally_members_array
+						value = THIS
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.1015.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#莱茵兰独立
+country_event = {
+	id = FRA_Gensokyo.1017
+	title = FRA_Gensokyo.1017.t
+	desc = FRA_Gensokyo.1017.desc
+	trigger = {
+		RHI = {
+			has_cosmetic_tag = RHI_FRA
+			not = { is_subject_of = FRA }
+		}
+	}
+	hidden = yes
+	immediate = {
+		RHI = { drop_cosmetic_tag = yes }
+	}
+	option = {
+		name = FRA_Gensokyo.1017.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#
+country_event = {
+	id = FRA_Gensokyo.1018
+	title = FRA_Gensokyo.1018.t
+	desc = FRA_Gensokyo.1018.desc
+	trigger = {
+		LIB = {
+			has_cosmetic_tag = LIB_FRA
+			not = { is_subject_of = FRA }
+		}
+	}
+	hidden = yes
+	immediate = {
+		LIB = { drop_cosmetic_tag = yes }
+	}
+	option = {
+		name = FRA_Gensokyo.1018.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#######  新  闻   #######
+
+#阿求去世           
+news_event = {
+	id = FRA_Gensokyo_news.001
+	title = FRA_Gensokyo_news.001.t
+	picture = GFX_news_FRA_death_of_Akyuu
+	desc = FRA_Gensokyo_news.001.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.001.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.001.b
+		trigger = {
+			not = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.001.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.001.d
+		trigger = {
+			or = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+#幻想乡自由党赢得幻想乡大选
+news_event = {
+	id = FRA_Gensokyo_news.002
+	title = FRA_Gensokyo_news.002.t
+	picture = GFX_news_FRA_won_of_PFG
+	desc = {
+		text = FRA_Gensokyo_news.002.desc1
+		trigger = {
+			has_country_flag = PFG_IDU_ALLY
+		}
+	}
+	desc = {
+		text = FRA_Gensokyo_news.002.desc2
+		trigger = {
+			NOT = {
+				has_country_flag = PFG_IDU_ALLY
+			}
+		}
+	}
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.002.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.002.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			has_government = democratic
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.002.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.002.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			or = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.002.e
+		trigger = {
+			tag = KMK
+		}
+	}
+}
+
+#人民阵线赢得幻想乡大选
+news_event = {
+	id = FRA_Gensokyo_news.003
+	title = FRA_Gensokyo_news.003.t
+	picture = GFX_news_FRA_won_of_poeple_font
+	desc = FRA_Gensokyo_news.003.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.003.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.003.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			has_government = democratic
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.003.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.003.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		#	or = {
+		#		has_government = democratic
+				has_government = fascism
+		#	}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.003.e
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.003.f
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			has_government = communism
+		}
+	}
+}
+
+#独立民主同盟赢得幻想乡大选
+news_event = {
+	id = FRA_Gensokyo_news.004
+	title = FRA_Gensokyo_news.004.t
+	picture = GFX_news_FRA_won_of_IDU
+	desc = {
+		text = FRA_Gensokyo_news.004.desc1
+		trigger = {
+			has_country_flag = PFG_IDU_ALLY
+		}
+	}
+	desc = {
+		text = FRA_Gensokyo_news.004.desc2
+		trigger = {
+			NOT = {
+				has_country_flag = PFG_IDU_ALLY
+			}
+		}
+	}
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.004.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.004.b
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.004.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			or = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.004.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			or = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+#国民同盟赢得幻想乡大选
+news_event = {
+	id = FRA_Gensokyo_news.005
+	title = FRA_Gensokyo_news.005.t
+	picture = GFX_news_FRA_won_of_GFN
+	desc = FRA_Gensokyo_news.005.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.005.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.005.b
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.005.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+			or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.005.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+					tag = DVL
+				}
+			}
+			or = {
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.005.d
+		trigger = {
+			tag = DVL
+		}
+	}
+}
+
+#幻想乡共和国发生军事政变
+news_event = {
+	id = FRA_Gensokyo_news.006
+	title = FRA_Gensokyo_news.006.t
+	picture = GFX_news_FRA_Sanae_military_coup
+	desc = FRA_Gensokyo_news.006.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.006.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.006.b
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.006.c
+		trigger = {
+			has_government = communism
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.006.d
+		trigger = {
+			has_government = democratic
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.006.e
+		trigger = {
+			has_government = fascism
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.006.f
+		trigger = {
+			has_government = neutrality
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		}
+	}
+}
+
+#西非剧变
+news_event = {
+	id = FRA_Gensokyo_news.007
+	title = FRA_Gensokyo_news.007.t
+	picture = GFX_news_event_german_inspect_troops
+	desc = FRA_Gensokyo_news.007.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.007.a
+		trigger = {
+			tag = LIB
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.007.b
+		trigger = {
+			not = { tag = LIB }
+		}
+	}
+}
+
+#红魔馆宣布独立
+news_event = {
+	id = FRA_Gensokyo_news.008
+	title = FRA_Gensokyo_news.008.t
+	picture = GFX_news_KMK_end_puppet_pic
+	desc = FRA_Gensokyo_news.008.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.008.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.008.b
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.008.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+				}
+			}
+		}
+	}
+}
+
+#百慕大会谈成功举行
+news_event = {
+	id = FRA_Gensokyo_news.009
+	title = FRA_Gensokyo_news.009.t
+	picture = GFX_news_FRA_Bermuda_talks
+	desc = FRA_Gensokyo_news.009.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.009.a
+		trigger = {
+			or = {
+				tag = FRA
+				tag = NFA
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.009.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+				}
+			}
+			is_in_faction_with = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.009.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+				}
+			}
+			has_war_with = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.009.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+					is_in_faction_with = FRA
+					has_war_with = FRA
+				}
+			}
+		}
+	}
+}
+
+#百慕大会谈谈判破裂
+news_event = {
+	id = FRA_Gensokyo_news.010
+	title = FRA_Gensokyo_news.010.t
+	picture = GFX_news_FRA_Bermuda_talks
+	desc = FRA_Gensokyo_news.010.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.010.a
+		trigger = {
+			or = {
+				tag = FRA
+				tag = NFA
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.010.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+				}
+			}
+			is_in_faction_with = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.010.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+				}
+			}
+			has_war_with = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.010.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = NFA
+					is_in_faction_with = FRA
+					has_war_with = FRA
+				}
+			}
+		}
+	}
+}
+
+#东风谷早苗加冕
+news_event = {
+	id = FRA_Gensokyo_news.011
+	title = FRA_Gensokyo_news.011.t
+	picture = GFX_news_FRA_coronation_of_Sanae
+	desc = FRA_Gensokyo_news.011.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.011.a
+		set_variable = { adorable_heart_super_event_var = 35 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.011.b
+		set_variable = { adorable_heart_super_event_var = 35 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			not = { tag = FRA }
+			is_in_faction_with = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.011.c
+		set_variable = { adorable_heart_super_event_var = 35 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					is_in_faction_with = FRA
+				}
+			}
+		}
+	}
+}
+
+#[FROM.Getname]宣布加入反幻想乡同盟
+news_event = {
+	id = FRA_Gensokyo_news.012
+	title = FRA_Gensokyo_news.012.t
+	picture = GFX_news_event_SOV_attack_GER
+	desc = FRA_Gensokyo_news.012.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.012.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.012.b
+		trigger = {
+			not = { tag = FRA }
+			is_in_array = {
+				array = global.Anti_Gensokyo_Ally_members_array
+				value = THIS
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.012.c
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					is_in_array = {
+						array = global.Anti_Gensokyo_Ally_members_array
+						value = THIS
+					}
+				}
+			}
+		}
+	}
+}
+
+#欧洲统一
+news_event = {
+	id = FRA_Gensokyo_news.013
+	title = FRA_Gensokyo_news.013.t
+	picture = GFX_news_event_unit_of_eu
+	desc = FRA_Gensokyo_news.013.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.013.a
+		set_variable = { adorable_heart_super_event_var = 67 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.013.b
+		set_variable = { adorable_heart_super_event_var = 67 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			not = { tag = FROM }
+			capital_scope = { is_on_continent = europe }
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.013.c
+		set_variable = { adorable_heart_super_event_var = 67 }
+		adorable_heart_fire_super_event = yes
+		trigger = {
+			not = {
+				or = {
+					tag = FROM
+					capital_scope = { is_on_continent = europe }
+				}
+			}
+		}
+	}
+}
+
+#幻想乡改革
+news_event = {
+	id = FRA_Gensokyo_news.014
+	title = FRA_Gensokyo_news.014.t
+	picture = GFX_news_FRA_won_of_poeple_font
+	desc = FRA_Gensokyo_news.014.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.014.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.014.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					has_government = communism
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.014.c
+		trigger = {
+			has_government = communism
+			not = {
+				tag = FRA
+			}
+		}
+	}
+}
+
+#《水神降临我身边》发售
+news_event = {
+	id = FRA_Gensokyo_news.015
+	title = FRA_Gensokyo_news.015.t
+	picture = GFX_FOT_Furina_news
+	desc = FRA_Gensokyo_news.015.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.015.a
+		trigger = {
+			tag = FOT
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.015.b
+		trigger = {
+			not = {
+				tag = FOT
+			}
+		}
+	}
+}
+
+#幻想乡军队撤出莱茵兰
+news_event = {
+	id = FRA_Gensokyo_news.016
+	title = FRA_Gensokyo_news.016.t
+	picture = GFX_news_FRA_army_withdrew_from_Rhineland
+	desc = FRA_Gensokyo_news.016.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		# RHI = {
+		# 	end_puppet_this = yes
+		# 	leave_faction = yes
+		# 	drop_cosmetic_tag = yes
+		# }
+	}
+	option = {
+		name = FRA_Gensokyo_news.016.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.016.b
+		trigger = {
+			tag = KMK
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.016.c
+		trigger = {
+			tag = RHI
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.016.d
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = KMK
+					tag = RHI
+				}
+			}
+		}
+	}
+}
+
+#幻想乡政变
+news_event = {
+	id = FRA_Gensokyo_news.017
+	title = FRA_Gensokyo_news.017.t
+	picture = GFX_news_FRA_GFN_Coup
+	desc = FRA_Gensokyo_news.017.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.017.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.b
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.c
+		trigger = {
+			tag = SOV
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.d
+		trigger = {
+			tag = DVL
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.e
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.f
+		trigger = {
+			tag = NFA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.g
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.h
+		trigger = {
+			has_government = democratic
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.i
+		trigger = {
+			has_government = communism
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.017.j
+		trigger = {
+			or = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+}
+
+#蓬莱山辉夜复辟
+news_event = {
+	id = FRA_Gensokyo_news.018
+	title = FRA_Gensokyo_news.018.t
+	picture = GFX_news_FRA_HKP_Restoration
+	desc = FRA_Gensokyo_news.018.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.018.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.b
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.c
+		trigger = {
+			tag = SOV
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.d
+		trigger = {
+			tag = DVL
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.e
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.f
+		trigger = {
+			tag = NFA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.g
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.h
+		trigger = {
+			has_government = democratic
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.i
+		trigger = {
+			has_government = communism
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.018.j
+		trigger = {
+			or = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			not = {
+				or = {
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = DVL
+					tag = GER
+					tag = NFA
+					tag = JAP
+				}
+			}
+		}
+	}
+}
+
+#印支革命胜利
+news_event = {
+	id = FRA_Gensokyo_news.019
+	title = FRA_Gensokyo_news.019.t
+	picture = GFX_news_VIN_win_war
+	desc = FRA_Gensokyo_news.019.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.019.a
+		trigger = {
+			tag = VIN
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.019.b
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.019.c
+		trigger = {
+			has_government = communism
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.019.d
+		trigger = {
+			not = { has_government = communism }
+		}
+	}
+}
+
+#幻想乡军团稳定印支
+news_event = {
+	id = FRA_Gensokyo_news.020
+	title = FRA_Gensokyo_news.020.t
+	picture = GFX_news_ROV_win_war
+	desc = FRA_Gensokyo_news.020.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.020.a
+		trigger = {
+			or = {
+				tag = FRA
+				tag = ROV
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.020.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = ROV
+				}
+			}
+		}
+	}
+}
+
+#印度支那战争
+news_event = {
+	id = FRA_Gensokyo_news.021
+	title = FRA_Gensokyo_news.021.t
+	picture = GFX_news_FRA_VIN_war
+	desc = FRA_Gensokyo_news.021.desc
+	trigger = {
+		wants_world_news = yes
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = FRA_Gensokyo_news.021.a
+		trigger = {
+			or = {
+				tag = FRA
+				tag = VIN
+				tag = ROV
+			}
+		}
+	}
+	option = {
+		name = FRA_Gensokyo_news.021.b
+		trigger = {
+			not = {
+				or = {
+					tag = FRA
+					tag = VIN
+					tag = ROV
+				}
+			}
+		}
+	}
+}
+
+###################
+country_event = {
+	id = FRA_Gensokyo.2000
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = FRA_Gensokyo.2000.a
+		set_technology = {
+			Airborne_tanks_tech = 1
+			popup = no
+		}
+	}
+	option = {
+		name = FRA_Gensokyo.2000.a
+		FRA_Set_opening_party_situation = yes
+	}
+	option = {
+		name = Ruling_coalition_array
+		clear_array = Ruling_coalition_array
+		add_to_array = { Ruling_coalition_array = 1 }
+		add_to_array = { Ruling_coalition_array = 2 }
+		add_to_array = { Ruling_coalition_array = 3 }
+		add_to_array = { Ruling_coalition_array = 4 }
+		add_to_array = { Ruling_coalition_array = 5 }
+		add_to_array = { Ruling_coalition_array = 6 }
+		add_to_array = { Ruling_coalition_array = 7 }
+		add_to_array = { Ruling_coalition_array = 8 }
+		add_to_array = { Ruling_coalition_array = 9 }
+		add_to_array = { Ruling_coalition_array = 10 }
+		add_to_array = { Ruling_coalition_array = 11 }
+		FRA_Calculate_support_of_Ruling_Coalition_Vate = yes
+		FRA_change_to_hoi_pie_chart = yes
+	}
+	option = {
+		name = FRA_Gensokyo.2000.a
+		FRA_Initialization_of_seats_in_National_Assembly = yes
+	}
+	option = {
+		name = FRA_Gensokyo.2000.a
+		FRA_Calculate_Great_Depression_debuff = yes
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.2001
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = Gensokyo_Ligue_Communiste_Revolutionnaire
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Syameimaru_idea
+		promote_character = FRA_Inubashiri
+		set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_LCR = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 1 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Parti_Communiste_Gensokyo
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Ibaraki_Kasen_idea
+		promote_character = FRA_Reimu
+		set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_PCG = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 2 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Parti_Socialiste_Gensokyo
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Reimu_idea
+		promote_character = FRA_Kasen
+		set_politics = { ruling_party = democratic }
+		add_to_variable = { support_of_PSG = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 3 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Parti_Freedom_Gensokyo
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Alice_Margatroid_idea
+		promote_character = FRA_Marisa
+		set_politics = { ruling_party = democratic }
+		add_to_variable = { support_of_PFG = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 4 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Gensokyo_Independent_Democratic_Union
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Huziwara_no_Mokou_idea
+		promote_character = FRA_Kamishirasawa_Keine
+		set_politics = { ruling_party = democratic }
+		add_to_variable = { support_of_IDU = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 5 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Gensokyo_Front_National
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Houraisan_Kaguya_idea
+		promote_character = FRA_Reisen_Udongein_Inaba
+		set_politics = { ruling_party = fascism }
+		add_to_variable = { support_of_GFN = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 6 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Gensokyo_Mouvement_National_Republicain
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Watatsuki_no_Yorihime_idea
+		promote_character = FRA_Watatsuki_no_Toyohime
+		set_politics = { ruling_party = fascism }
+		add_to_variable = { support_of_MNR = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 7 }
+		FRA_set_rule_party_name = yes
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.2002
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = Gensokyo_Puppet_Movement
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Shanghai_idea
+		promote_character = FRA_Alice_Margatroid
+		set_politics = { ruling_party = neutrality }
+		add_to_variable = { support_of_GPM = 100 }
+		set_variable = { FRA_Ruling_Party_VAR = 9 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Gestalt
+		set_portraits = {
+			character = FRA_Alice_Margatroid
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Alice_Margatroid_3.dds"
+			}
+		}
+		set_country_leader_ideology = Gestalt
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Shinki_idea
+	}
+	option = {
+		name = Kazami_Yuuka_Regime
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Medicine_idea
+		promote_character = FRA_Kazami_Yuka
+		set_politics = { ruling_party = neutrality }
+		add_to_variable = { support_of_KYR = 100 }
+		set_variable = { FRA_Ruling_Party_VAR = 8 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Sunflower_annihilationism_subideology
+		set_portraits = {
+			character = FRA_Kazami_Yuka
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kazami_Yuka_political_2.dds"
+			}
+		}
+		set_country_leader_ideology = Sunflower_annihilationism_subideology
+	}
+	option = {
+		name = FRA_Sanae_party
+		FRA_remove_all_ideas = yes
+		promote_character = FRA_Sanae
+		set_politics = { ruling_party = neutrality }
+		set_variable = { FRA_Ruling_Party_VAR = 10 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = FRA_Houraisan_Kaguya_party
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Reisen_Udongein_Inaba_idea
+		promote_character = FRA_Houraisan_Kaguya
+		set_politics = { ruling_party = neutrality }
+		set_variable = { FRA_Ruling_Party_VAR = 11 }
+		FRA_set_rule_party_name = yes
+	}
+	option = {
+		name = Gensokyo_Lunar_fascism
+		set_cosmetic_tag = Gensokyo_Lunar
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.2003
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = adorable_heart_automatic_repayment_text
+		if = {
+			limit = {
+				check_variable = { ubs_save > 0 }
+				check_variable = { ubs_load > 0 }
+				check_variable = { adorable_heart_automatic_repayment_var = 2 }
+			}
+			if = {
+				limit = {
+					not = { check_variable = { ubs_load > ubs_save } }
+				}
+				subtract_from_variable = { ubs_save = ubs_load }
+				set_variable = { ubs_load = 0 }
+			}
+			else = {
+				subtract_from_variable = { ubs_load = ubs_save }
+				set_variable = { ubs_save = 0 }
+			}
+		}
+	}
+	option = {
+		name = FRA_submit_amendments_to_Ownership_Reform_Act_Mission_tt
+			custom_effect_tooltip = FRA_submit_amendments_to_Ownership_Reform_Act_Mission_tt
+			FRA_Kasen = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = "FRA_Kasen_leader_desc"
+						ideology = warm_syndicalism_group
+						traits = {
+						}
+						expire = "1999.1.1.1"
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			set_portraits = {
+				character = FRA_Kasen
+				civilian = {
+					large = "gfx/leaders/FRA/FRA_Ibaraki_Kasen_1.dds"
+				}
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = Parti_Socialiste_Gensokyo
+				name = Parti_Socialiste_Gensokyo
+			}
+			set_politics = { ruling_party = communism }
+			add_popularity = { ideology = communism popularity = 0.15 }
+			FRA_Calculate_government_approval_rating = yes
+			FRA_Restore_default_status_of_National_Assembly = yes
+			hidden_effect = {
+				news_event = {
+					id = FRA_Gensokyo_news.014
+				}
+			}
+			add_to_variable = {
+				var = support_of_LCR
+				value = 5
+				tooltip = support_of_LCR_rose_5
+			}
+			add_to_variable = {
+				var = support_of_PCG
+				value = 5
+				tooltip = support_of_PCG_rose_5
+			}
+			add_to_variable = {
+				var = support_of_PSG
+				value = 5
+				tooltip = support_of_PSG_rose_5
+			}
+			add_to_variable = {
+				var = PSG_left_vate
+				value = 0.25
+				tooltip = PSG_left_vate_rose
+			}
+			FRA_change_to_hoi_pie_chart = yes
+	}
+	option = {
+		name = Market_socialism
+		FRA_remove_all_ideas = yes
+		add_ideas = FRA_Marisa_idea
+		promote_character = FRA_Reimu
+		set_politics = { ruling_party = communism }
+		add_to_variable = { support_of_PCG = 25 }
+		set_variable = { FRA_Ruling_Party_VAR = 2 }
+		FRA_set_rule_party_name = yes
+		set_portraits = {
+			character = FRA_Reimu
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Reimu2.dds"
+			}
+		}
+		set_country_leader_ideology = Market_socialism
+		clear_array = THIS.Ruling_coalition_array
+		add_to_array = { Ruling_coalition_array = 2 }
+		add_to_array = { Ruling_coalition_array = 3 }
+		add_to_array = { Ruling_coalition_array = 4 }
+		add_to_array = { Ruling_coalition_array = 5 }
+	}
+	option = {
+		name = French_Gensokyo_communism
+		#set_cosmetic_tag = French_Gensokyo
+		set_portraits = {
+			character = FRA_Reimu
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Reimu.dds"
+			}
+		}
+		set_country_leader_ideology = Utopian_Socialism
+	}
+	option = {
+		name = Hakureiism
+		#set_cosmetic_tag = Gensokyo_SSF
+		FRA_remove_all_ideas = yes
+		set_portraits = {
+			character = FRA_Reimu
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Reimu3.dds"
+			}
+		}
+		set_country_leader_ideology = Hakureiism
+				set_country_leader_description = {
+					ideology = communism
+					desc = FRA_Reimu_desc_Continue_revolution
+				}
+		clear_array = THIS.Ruling_coalition_array
+		add_to_array = { Ruling_coalition_array = 2 }
+		add_to_array = { Ruling_coalition_array = 1 }
+		add_to_array = { Ruling_coalition_array = 3 }
+	}
+	option = {
+		name = leninism
+		set_cosmetic_tag = Gensokyo_SSF
+		add_ideas = FRA_Daiyousei_idea
+		set_country_leader_ideology = leninism
+		set_country_leader_ideology = leninism
+	}
+	option = {
+		name = digital_fascism
+		set_country_leader_ideology = digital_fascism
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.2004
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = Garden_of_the_Sun_Area
+		set_country_flag = Garden_of_the_Sun_Area
+	}
+	option = {
+		name = FRA_Triple_Alliance_Kazami_Yuka_Influence_var
+		set_variable = { FRA_Triple_Alliance_Kazami_Yuka_Influence_var = 30 }
+		set_variable = { FRA_Triple_Alliance_Alice_Margatroid_Influence_var = 40 }
+		set_variable = { FRA_Triple_Alliance_Watatsuki_no_Toyohime_Influence_var = 30 }
+	}
+	option = {
+		name = Paris_Entente
+				create_faction_from_template = {
+					template = faction_template_Ainz_Ooal_Gown_Federation
+					name = Paris_Entente
+					icon = GFX_faction_logo_Paris_Entente_Reisen
+				}
+	}
+	option = {
+		name = bamboo_grove_squad
+		set_technology = { bamboo_grove_squad_tech = 1 }
+	}
+	option = {
+		name = culture_Human_Village
+		FRA_state_country_core = yes
+		set_cosmetic_tag = Human_Village_Provisional_Committee
+		release = HKR
+		release = MRY
+		release = GNS
+		release = COM
+		release = GOS
+		release = BRI
+		release = PES
+		release = MYO
+		release = MEI
+	}
+	option = {
+		name = FRA_Laboratory_optional_material_array
+        add_to_array = { FRA_Laboratory_optional_material_array = 1 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 2 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 3 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 4 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 5 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 6 }
+        add_to_array = { FRA_Laboratory_optional_material_array = 7 }
+	}
+}
+country_event = {
+	id = FRA_Gensokyo.2005
+	title = FRA_Gensokyo.2000.t
+	desc = FRA_Gensokyo.2000.desc
+	is_triggered_only = yes
+	option = {
+		name = retire_FRA_Tewi_Inaba
+		set_country_flag = retire_FRA_Tewi_Inaba
+		hidden_effect = { add_ideas = FRA_WOHS_idea }
+	}
+	option = {
+		name = FRA_Extract_WOHS
+		FRA_Extract_WOHS = yes
+	}
+	option = {
+		name = FRA_Financial_crisis
+			remove_ideas = FRA_Financial_spree
+			remove_ideas = FRA_developed_industry
+	}
+	option = {
+		name = super_event_36
+		set_variable = { adorable_heart_super_event_var = 36 }
+		adorable_heart_fire_super_event = yes
+	}
+	option = {
+		name = sp_air_helicopter
+		complete_special_project = sp:sp_air_helicopter
+	}
+}
+
+
+

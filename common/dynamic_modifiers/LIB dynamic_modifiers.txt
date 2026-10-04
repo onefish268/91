@@ -1,0 +1,161 @@
+
+###国家层面动态修正（由原民族精神转换，数值由变量驱动）###
+#新人间之里自卫队/幻想乡防卫军
+LIB_hxxfwj_idea = {
+	enable = {
+		always = yes
+	}
+	icon = ARG_construction_guilds
+	experience_gain_army = LIB_experience_gain_army ##陆军经验获取
+	army_armor_speed_factor = LIB_army_armor_speed_factor   ##装甲速度
+	army_artillery_attack_factor = LIB_army_artillery_attack_factor   ##火炮攻击
+	army_infantry_attack_factor = LIB_army_infantry_attack_factor   ##步兵攻击
+	heat_attrition_factor = LIB_army_heat_attrition_factor   ##炎热损耗
+	mechanized_attack_factor = LIB_army_mechanized_attack_factor   ##机械化攻击
+	motorized_attack_factor = LIB_army_motorized_attack_factor   ##摩托化攻击
+	supply_consumption_factor = LIB_army_supply_consumption_factor   ##补给效率
+	army_attack_factor = LIB_army_attack_factor   ##陆军师攻击
+	army_defence_factor = LIB_army_defence_factor   ##陆军师防御
+	army_morale_factor = LIB_army_morale_factor ##陆军师组织度恢复速率
+	army_org_factor = LIB_army_org_factor ##陆军师组织度
+	planning_speed = LIB_planning_speed ##计划速度系数
+	max_planning_factor = LIB_max_planning_factor ##计划加成上限系数
+	training_time_factor = LIB_training_time_factor ##训练时间
+	special_forces_attack_factor = LIB_special_forces_attack_factor ##特种攻击
+	special_forces_defence_factor = LIB_special_forces_attack_factor ##特种防御
+	convoy_raiding_efficiency_factor = LIB_convoy_raiding_efficiency_factor   ##船队袭击效率
+	fighter_sortie_efficiency = LIB_fighter_sortie_efficiency   ##战斗机出击效率
+	air_accidents_factor = LIB_airforce_air_accidents_factor   ##飞行事故系数
+	air_cas_efficiency = LIB_air_cas_efficiency   ##近地支援效率
+	naval_damage_factor = LIB_naval_damage_factor   ##海军伤害系数
+	naval_invasion_planning_bonus_speed = LIB_naval_invasion_planning_bonus_speed ##入侵计划速度
+	amphibious_invasion = LIB_amphibious_invasion ##入侵速度
+	naval_hit_chance = LIB_naval_hit_chance   ##海军命中率
+	navy_submarine_attack_factor = LIB_navy_submarine_attack_factor   ##潜艇攻击系数
+	navy_submarine_defence_factor = LIB_navy_submarine_defence_factor   ##潜艇防御系数
+	navy_visibility = LIB_navy_visibility   ##可见度
+	
+}
+#国家动荡/经济复苏
+LIB_gjdd_idea = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_LIB_4
+	civilian_factory_use = LIB_economy_committee_civilian_factory_use   ##民用工厂占用
+	consumer_goods_factor = LIB_economy_committee_consumer_goods_factor   ##生活消费品工厂系数
+	energy_gain_factor = LIB_economy_committee_energy_gain_factor   ##从煤炭获得的能量
+	industrial_capacity_dockyard_factor = LIB_industrial_capacity_dockyard ##船坞工业产能
+	industrial_capacity = LIB_economy_committee_industrial_capacity_factory   ##工厂产出
+	industry_repair_factor = LIB_economy_committee_industry_repair_factor   ##工厂修复速度
+	line_change_production_efficiency_factor = LIB_economy_committee_line_change_production_efficiency_factor   ##生产效率保持
+	production_factory_efficiency_gain_factor = LIB_economy_committee_production_factory_efficiency_gain_factor   ##生产效率增长
+	production_factory_max_efficiency_factor = LIB_economy_committee_production_factory_max_efficiency_factor   ##生产效率上限
+	conscription_factor = LIB_economy_committee_conscription_factor  ##可征募人口
+	monthly_population = LIB_economy_committee_monthly_population  ##每月人口
+	research_speed_factor = LIB_economy_committee_research_speed_factor  ##研究速度
+	production_speed_buildings_factor = LIB_economy_committee_production_speed_buildings_factor  ##建设速度
+	stability_weekly = LIB_impure_party_stability_weekly   ##周度稳定性
+	political_power_cost = LIB_political_power_cost #政治点数消耗
+	hcp_income_factor_monthly = LIB_hcp_income_factor_monthly #金金金金金钱钱钱钱钱
+	
+}	
+
+#派系支持
+LIB_pxzc1_idea = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_LIB_5
+	party_popularity_stability_factor = -1.0#禁用党派支持率
+	stability_factor = 0.595#固定稳定度支持
+	energy_gain_factor = {##从煤炭获得的能量
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	army_attack_factor = {##陆军师攻击
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	research_speed_factor = {##研究速度
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	army_defence_factor = {##陆军师防御
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	conscription_factor = {##可征募人口
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	army_morale_factor = {##陆军师组织度恢复速率
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	army_org_factor = {##陆军师组织度
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	industry_repair_factor = {##工厂修复速度
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+}	
+LIB_pxzc2_idea = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_LIB_5
+	party_popularity_stability_factor = -1.0#禁用党派支持率
+	stability_factor = 0.595#固定稳定度支持
+	arms_factory_build_speed_factor = {##建设速度
+        value = party_popularity@communist
+        multiply = 0.20
+    }
+	production_factory_max_efficiency_factor = {##生产效率上限
+        value = party_popularity@communist
+        multiply = 0.20
+    }
+	industrial_capacity_factory = {##工厂产出
+        value = party_popularity@communist
+        multiply = 0.20
+    }
+	consumer_goods_factor = {##生活消费品工厂系数
+        value = 
+		party_popularity@communist
+        multiply = 0.20
+    }
+	energy_gain_factor = {##从煤炭获得的能量
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	army_attack_factor = {##陆军师攻击
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	research_speed_factor = {##研究速度
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	army_defence_factor = {##陆军师防御
+        value = party_popularity@fascist
+        multiply = 0.20
+    }
+	conscription_factor = {##可征募人口
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	army_morale_factor = {##陆军师组织度恢复速率
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	army_org_factor = {##陆军师组织度
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+	industry_repair_factor = {##工厂修复速度
+        value = party_popularity@democratic
+        multiply = 0.20
+    }
+}

@@ -1,0 +1,255 @@
+characters = {
+#自由幻想乡
+	#探女
+	FRA_Kisin_Sagume = {
+		name = "FRA_Kisin_Sagume"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kisin_Sagume.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kisin_Sagume.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kisin_Sagume.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kisin_Sagume.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Kisin_Sagume_desc"
+			ideology = Lunar_purification_subideology
+			expire = "1965.1.1.1"
+			traits = {
+				The_ability_to_turn_things_around
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LIB_sagume
+			allowed = {
+				or = {
+					original_tag = KMK
+					original_tag = FRA
+					original_tag = LIB
+				}
+			}
+			traits = {
+				army_armored_2
+			}
+			#cost = 100
+			ai_will_do = {
+				factor = 999
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				commando
+				politically_connected
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 3
+		}
+	}
+	FRA_Yukari = {
+		name = "FRA_Yukari"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Yukari.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yukari.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Yukari.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yukari.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Yukari_desc"
+			ideology = autocracy_subideology
+			expire = "1965.1.1.1"
+			traits = {
+				leader_of_old_gensokyo
+				lib_meishuixing
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Yukari
+			allowed = {
+				or = {
+					original_tag = FRA
+					original_tag = KMK
+					original_tag = LIB
+				}
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Yukari
+					}
+				}
+			}
+			traits = {
+				leader_of_old_gensokyo
+			}
+			ai_will_do = {
+				factor = 999
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Yukari
+			ledger = army
+			allowed = {
+				or = {
+					original_tag = FRA
+					original_tag = KMK
+					original_tag = LIB
+				}
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			#cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			desc = "FRA_Yukari_desc"
+			traits = {
+				bagua
+				career_officer
+				trait_cautious
+				infantry_officer
+				trickster
+				defensive_doctrine
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	FRA_Ran = {
+		name = "FRA_Ran"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Ran.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Ran.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Ran.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Ran.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FRA_Ran
+			ledger = army
+			allowed = {
+				or = {
+					original_tag = FRA
+					original_tag = KMK
+					original_tag = LIB
+				}
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			#cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Ran
+			allowed = {
+				or = {
+					original_tag = FRA
+					original_tag = KMK
+					original_tag = LIB
+				}
+			}
+			available = {
+				not = {
+					has_idea = FRA_Ran_idea
+				}
+			}
+			traits = {
+				lib_ran_the_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Ran_desc"
+			traits = {
+				bagua
+				brilliant_strategist
+				career_officer
+				trait_cautious
+				armor_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	FRA_Chen = {
+		name = "FRA_Chen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Chen.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Chen.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Chen.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Chen.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Chen
+			allowed = {
+				or = {
+					original_tag = FRA
+					original_tag = KMK
+					original_tag = LIB
+				}
+			}
+			available = {
+			}
+			traits = {
+				lib_little_cat
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Chen_desc"
+			traits = {
+				bagua
+				career_officer
+				trait_reckless
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+}

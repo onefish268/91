@@ -1,0 +1,1290 @@
+add_namespace = LIB_flavor
+add_namespace = LIB_news
+add_namespace = LIB_xh
+add_namespace = LIB_jjxt
+add_namespace = LIB_lw
+
+#流亡事件
+#红魔馆败北
+country_event = {
+	id = LIB_lw.1
+	title = LIB_lw.1.t
+	desc = LIB_lw.1.d
+	fire_only_once = yes
+	trigger = {
+		tag = KMK
+		KMK = { has_war_with = DVL }
+		DVL = { is_faction_leader = yes }
+		surrender_progress > 0.6
+		16 = { controller = { NOT = { original_tag = KMK } } }
+		NOT = { has_global_flag = FRA_has_fallen }
+		LIB = { is_subject_of = KMK }
+	}
+	 immediate = {
+	 	set_global_flag = FRA_has_fallen
+		add_timed_idea = {
+				idea = LIB_never_surrunder
+				days = 15
+			}
+		LIB = {
+				set_country_flag = LIB_FRA_will_fall_flag
+                complete_national_focus = LIB_new_focus_32
+            }
+    }
+	option = {
+		name = LIB_lw.1.a
+		country_event = {
+				id = LIB_lw.2
+				days = 3
+			}
+			
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#红魔馆流亡后续1
+country_event = {
+	id = LIB_lw.2
+	title = LIB_lw.2.t
+	desc = LIB_lw.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+        set_global_flag = FRA_has_fallen
+        if = {
+            limit = {
+                # 检查ROOT（KMK）的领袖是否是蕾米
+                KMK = {
+                    has_country_leader = {
+                        character = KMK_Remilia
+                        ruling_only = yes
+                    }
+                }
+            }
+            LIB = {
+                set_country_flag = LIB_remi_in_power_flag
+            }
+        }
+		else = {
+			LIB = {
+                set_country_flag = LIB_fran_in_power_flag
+            }
+		}
+    }
+	option = {
+		name = LIB_lw.2.a
+		KMK = {
+			transfer_navy = {
+				target = LIB
+			}
+		}
+		if = {
+			limit = {
+				is_faction_leader  = yes
+			}
+			dismantle_faction = yes
+		}
+		if = {
+			limit = {
+				LIB = {
+					NOT = {
+						has_war_with = DVL
+					}
+				}
+			}
+			DVL = {
+				declare_war_on = { target = LIB type = take_state }
+			}
+		}
+		LIB = {
+			set_major = yes
+			
+			country_event = {
+				id = LIB_lw.3
+				days = 1
+			}
+			KMK = {
+				set_autonomy = {
+					target = LIB
+					autonomy_state = autonomy_free
+				}
+			}
+			add_ideas = LIB_never_surrunder
+			change_tag_from_ROOT = yes
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = LIB_FRA
+		}
+		hidden_effect = {
+			
+			KMK = {
+				diplomatic_relation = {
+					country = RIS
+					relation = guarantee
+					active = no
+				}
+			}
+			LIB = {
+				diplomatic_relation = {
+					country = RIS
+					relation = guarantee
+					active = yes
+				}
+			}
+		}	
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#红魔馆流亡后续2
+country_event = {
+	id = LIB_lw.3
+	title = LIB_lw.3.t
+	desc = LIB_lw.3.d
+	is_triggered_only = yes
+	option = {
+		name = LIB_lw.3.a
+		custom_effect_tooltip = LIB_FRA_fallen_tt
+		hidden_effect = { 
+		set_country_flag = Free_france_flag
+		complete_national_focus = LIB_new_focus_33
+		set_autonomy = {
+				target = COG
+				autonomy_state = autonomy_puppet
+			}
+		FRA = {
+			FRA_Inubashiri = { set_nationality = ROOT }
+			FRA_Nitori = { set_nationality = ROOT }
+			FRA_Okazaki_Yumemi = { set_nationality = ROOT }
+			FRA_Sakata_Nemuno = { set_nationality = ROOT }
+			FRA_Komano_Aun = { set_nationality = ROOT }
+			FRA_Yatadera_Narumi = { set_nationality = ROOT }
+			FRA_Nishida_Satono = { set_nationality = ROOT }
+			FRA_Teireida_Mai = { set_nationality = ROOT }
+			FRA_Doremy_Sweet = { set_nationality = ROOT }
+			FRA_Seiran = { set_nationality = ROOT }
+			FRA_Ringo = { set_nationality = ROOT }
+		}
+		KMK = {
+			KMK_Remilia = { set_nationality = LIB }
+			KMK_Flandre = { set_nationality = LIB }
+			KMK_Sakuya = { set_nationality = LIB }
+			KMK_Patchouli = { set_nationality = LIB }
+			KMK_Meirin = { set_nationality = LIB }
+			KMK_Rumia_1 = { set_nationality = LIB }
+			KMK_Koakuma = { set_nationality = LIB }
+			KMK_Bearn = { set_nationality = LIB }
+		}
+        every_state = {
+                limit = {
+                    is_core_of = KMK
+                }
+                add_core_of = LIB
+				}
+		every_state = {
+			limit = { has_state_flag = FRA_mainland_state }
+			add_core_of = LIB
+		}
+		DVL = { annex_country = { target = KMK transfer_troops = no } }
+		# 工业科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt      # 可选，自定义提示文本
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+
+		# 步兵装备科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = infantry_weapons
+		}
+		
+		# 炮兵科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = artillery
+		}
+		
+		# 装甲科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#幻想乡败北
+country_event = {
+	id = LIB_lw.4
+	title = LIB_lw.4.t
+	desc = LIB_lw.4.d
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		FRA = { has_war_with = DVL }
+		DVL = { is_faction_leader = yes }
+		surrender_progress > 0.6
+		16 = { controller = { NOT = { original_tag = FRA } } }
+		NOT = { has_global_flag = FRA_has_fallen }
+		LIB = { is_subject_of = FRA }
+	}
+	immediate = {
+		set_global_flag = FRA_has_fallen
+		add_timed_idea = {
+				idea = LIB_never_surrunder
+				days = 15
+			}
+		LIB = {
+				set_country_flag = LIB_FRA_will_fall_flag
+                complete_national_focus = LIB_new_focus_32
+            }
+    }
+	option = {
+		name = LIB_lw.1.a
+		country_event = {
+				id = LIB_lw.5
+				days = 3
+			}
+			
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = LIB_lw.5
+	title = LIB_lw.5.t
+	desc = LIB_lw.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+        set_global_flag = FRA_has_fallen
+    }
+	option = {
+		name = LIB_lw.5.a
+		custom_effect_tooltip = LIB_FRA_fallen_tt
+		hidden_effect = {
+		FRA = {
+			transfer_navy = {
+				target = LIB
+			}
+		}
+		if = {
+			limit = {
+				is_faction_leader  = yes
+			}
+			dismantle_faction = yes
+		}
+		if = {
+			limit = {
+				LIB = {
+					NOT = {
+						has_war_with = DVL
+					}
+				}
+			}
+			DVL = {
+				declare_war_on = { target = LIB type = take_state }
+			}
+		}
+		LIB = {
+			set_major = yes
+			
+			country_event = {
+				id = LIB_lw.6
+				days = 3
+			}
+			ROOT = {
+				set_autonomy = {
+					target = LIB
+					autonomy_state = autonomy_free
+				}
+			}
+			add_ideas = LIB_never_surrunder
+			change_tag_from_ROOT = yes
+			end_puppet_this = yes
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = LIB_FRA
+		}
+		
+			FRA = {
+				diplomatic_relation = {
+					country = RIS
+					relation = guarantee
+					active = no
+				}
+			}
+			LIB = {
+				diplomatic_relation = {
+					country = RIS
+					relation = guarantee
+					active = yes
+				}
+			}
+		}	
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+#幻想乡流亡后续
+country_event = {
+	id = LIB_lw.6
+	title = LIB_lw.6.t
+	desc = LIB_lw.6.desc
+	is_triggered_only = yes
+	option = {
+		name = LIB_lw.6.a
+		custom_effect_tooltip = LIB_FRA_fallen_tt
+		hidden_effect = {
+		set_country_flag = Free_france_flag
+		set_cosmetic_tag = LIB_FRA
+		set_autonomy = {
+				target = COG
+				autonomy_state = autonomy_puppet
+			}
+		DVL = { annex_country = { target = FRA transfer_troops = no } }
+		FRA = {
+			FRA_Kamishirasawa_Keine = { set_nationality = ROOT }
+			FRA_Komeiji_Koishi = { set_nationality = ROOT }
+			FRA_Huziwara_no_Mokou = { set_nationality = ROOT }
+			FRA_Komeiji_Satori = { set_nationality = ROOT }
+			FRA_Saigyouji_Yuyuko = { set_nationality = ROOT }
+			FRA_Youmu = { set_nationality = ROOT }
+			FRA_Inubashiri = { set_nationality = ROOT }
+			FRA_Nitori = { set_nationality = ROOT }
+			FRA_Okazaki_Yumemi = { set_nationality = ROOT }
+			FRA_Sakata_Nemuno = { set_nationality = ROOT }
+			FRA_Komano_Aun = { set_nationality = ROOT }
+			FRA_Yatadera_Narumi = { set_nationality = ROOT }
+			FRA_Nishida_Satono = { set_nationality = ROOT }
+			FRA_Teireida_Mai = { set_nationality = ROOT }
+			FRA_Doremy_Sweet = { set_nationality = ROOT }
+			FRA_Seiran = { set_nationality = ROOT }
+			FRA_Ringo = { set_nationality = ROOT }
+			FRA_Reisen_Udongein_Inaba = { set_nationality = ROOT }
+		}
+		KMK = {
+			KMK_Rumia_1 = { set_nationality = LIB }
+			KMK_Bearn = { set_nationality = LIB }
+		}
+		every_state = {
+                limit = {
+                    is_core_of = KMK
+                }
+                add_core_of = LIB
+				}
+		every_state = {
+			limit = { has_state_flag = FRA_mainland_state }
+			add_core_of = LIB
+		}
+		DVL = { annex_country = { target = FRA transfer_troops = no } }
+		custom_effect_tooltip = LIB_FRA_bonus_tt
+		 # 工业科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt      # 可选，自定义提示文本
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+
+		# 步兵装备科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = infantry_weapons
+		}
+		
+		# 炮兵科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = artillery
+		}
+		
+		# 装甲科技：2次100%加成
+		add_tech_bonus = {
+			name = LIB_FRA_bonus_tt
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#经济萧条
+
+country_event = {
+	id = LIB_jjxt.1
+	title = LIB_jjxt.1.t
+	desc = LIB_jjxt.1.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.2
+				days = 7
+			}
+			add_dynamic_modifier = LIB_gjdd_idea
+			add_stability = -0.2
+			add_war_support = -0.2
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_economy_committee_research_speed_factor
+				value = -0.2
+			}   # 研究速度
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = -0.2
+			}   # 周度稳定性
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = -0.2
+			}   # 船坞工业产能
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = -0.2
+			}   # 生活消费品工厂系数
+			add_to_variable = {
+				var = LIB_economy_committee_energy_gain_factor
+				value = -0.2
+			}   # 从煤炭获得的能量
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = -0.2
+			}   # 工厂产出
+			add_to_variable = {
+				var = LIB_economy_committee_industry_repair_factor
+				value = -0.2
+			}   # 工厂修复速度
+			add_to_variable = {
+				var = LIB_political_power_cost #政治点数消耗
+				value = 0.2
+			}  
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+    }
+	option = {
+		name = LIB_jjxt.1.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+		country_event = {
+				id = LIB_flavor.1
+				hours = 2
+			}
+			add_manpower = -4
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.2
+	title = LIB_jjxt.2.t
+	desc = LIB_jjxt.2.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.3
+				days = 14
+			}
+			# 工厂产出 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = -0.2
+			}
+			# 船坞工业产能 -20%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = -0.2
+			}
+			# 生产效率保持 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = -0.2
+			}
+			# 生产效率增长 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.2
+			}
+			# 建设速度 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_speed_buildings_factor
+				value = -0.2
+			}
+			# 生产效率上限 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.1
+			}
+			# 周度稳定性扣1
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = -0.01
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+			}
+	option = {
+		name = LIB_jjxt.2.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.3
+	title = LIB_jjxt.3.t
+	desc = LIB_jjxt.3.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.4
+				days = 14
+			}
+			# 生活消费品工厂系数 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = 0.2
+			}
+			
+			# 从煤炭获得的能量 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_energy_gain_factor
+				value = -0.2
+			}
+			
+			# 工厂产出 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = -0.2
+			}
+			# 船坞工业产能 -20%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = -0.2
+			}
+			# 生产效率保持 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = -0.2
+			}
+			
+			# 生产效率增长 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.2
+			}
+			
+			# 生产效率上限 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.1
+			}
+			
+			# 周度稳定性 -1%
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = -0.01
+			}
+			
+			# 建设速度 -30%
+			add_to_variable = {
+				var = LIB_economy_committee_production_speed_buildings_factor
+				value = -0.3
+			}
+			}
+	option = {
+		name = LIB_jjxt.3.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.4
+	title = LIB_jjxt.4.t
+	desc = LIB_jjxt.4.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.5
+				days = 14
+			}
+						# 可征募人口 -15%
+			add_to_variable = {
+				var = LIB_economy_committee_conscription_factor
+				value = -0.15
+			}
+			
+			# 政治点数消耗 +0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = 0.2
+			}
+			
+			# 稳定性一次性 -10%
+			add_stability = -0.1
+			
+			# 首都（422）损伤一单位基础建设
+			damage_building = {
+				type = infrastructure
+				level = 1
+				province = 422
+			}
+			
+			# 首都（422）损伤一单位民用工厂
+			damage_building = {
+				type = industrial_complex
+				level = 1
+				province = 422
+			}
+			}
+	option = {
+		name = LIB_jjxt.4.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.5
+	title = LIB_jjxt.5.t
+	desc = LIB_jjxt.5.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.6
+				days = 14
+			}
+			# 生产效率上限 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.1
+			}
+			add_to_variable = {
+				var = LIB_economy_committee_research_speed_factor
+				value = -0.2
+			}   # 研究速度
+			# 从煤炭获得的能量 -40%
+			add_to_variable = {
+				var = LIB_economy_committee_energy_gain_factor
+				value = -0.4
+			}
+			
+			# 周度稳定度 -1%
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = -0.01
+			}
+			
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+			}
+	option = {
+		name = LIB_jjxt.5.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.6
+	title = LIB_jjxt.6.t
+	desc = LIB_jjxt.6.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.7
+				days = 14
+			}
+			# 战争支持度 -20%（一次性直接扣减）
+			add_war_support = -0.2
+			LIB_industrial_capacity_dockyard
+			# 工厂产出 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = -0.2
+			}
+			# 船坞工业产能 -20%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = -0.2
+			}
+			# 生活消费品工厂系数 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = 0.2
+			}
+			# 周度稳定度 -1%
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = -0.01
+			}
+			# 政治点数消耗 +0.4
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = 0.4
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+						}
+	option = {
+		name = LIB_jjxt.6.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.7
+	title = LIB_jjxt.7.t
+	desc = LIB_jjxt.7.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.8
+				days = 14
+			}
+			# 战争支持度 -20%（一次性直接扣减）
+			add_war_support = -0.2
+			
+			
+			# 生活消费品工厂系数 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = 0.2
+			}
+			# 可征募人口 -15%
+			add_to_variable = {
+				var = LIB_economy_committee_conscription_factor
+				value = -0.15
+			}
+			# 生产效率上限 -15%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.15
+			}
+			# 生产效率增长 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.2
+			}
+			# 月度人口 -30%
+			add_to_variable = {
+				var = LIB_economy_committee_monthly_population
+				value = -0.3
+			}
+			# 政治点数消耗 +0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = 0.2
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+						}
+	option = {
+		name = LIB_jjxt.7.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.8
+	title = LIB_jjxt.8.t
+	desc = LIB_jjxt.8.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.10
+				days = 14
+			}
+			# 战争支持度 -20%（一次性直接扣减）
+			add_war_support = -0.2
+			
+			# 稳定度 -20%（一次性直接扣减）
+			add_stability = -0.2
+			
+			add_political_power = -100
+			# 生产效率保持 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = -0.2
+			}
+			
+			# 生产效率增长 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = -0.2
+			}
+			
+			# 生产效率上限 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = -0.2
+			}
+			
+			# 生活消费品工厂系数 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = 0.2
+			}
+			
+			# 政治点数消耗 +0.4
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = 0.2
+			}
+			damage_building = {
+				type = infrastructure
+				level = 3
+				province = 422
+			}
+			# 首都（422）损伤2单位民用工厂
+			damage_building = {
+				type = industrial_complex
+				level = 2
+				province = 422
+			}
+						}
+	option = {
+		name = LIB_jjxt.8.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.9
+	title = LIB_jjxt.9.t
+	desc = LIB_jjxt.9.d
+	is_triggered_only = yes
+	immediate = {
+			# 稳定度 -20%（一次性直接扣减）
+			add_stability = -0.2
+			# 周度稳定度 +1%
+			add_to_variable = {
+				var = LIB_impure_party_stability_weekly
+				value = 0.01
+			}
+			
+			# 政治点数消耗 -0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = 0.4
+			}
+						}
+	option = {
+		name = LIB_jjxt.9.a
+		add_to_variable = {
+				var = ubs_save
+				value = 500
+				tooltip = UBS_SAVE_UP_500
+			}
+		custom_effect_tooltip = LIB_jjxt.2.a_tt
+
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.10
+	title = LIB_jjxt.10.t
+	desc = LIB_jjxt.10.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.11
+				days = 14
+			}
+			
+			# 生产效率保持 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_line_change_production_efficiency_factor
+				value = 0.1
+			}
+			
+			# 生产效率增长 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_efficiency_gain_factor
+				value = 0.1
+			}
+			
+			# 生产效率上限 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_production_factory_max_efficiency_factor
+				value = 0.1
+			}
+			# 工厂产出 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = 0.1
+			}
+			# 船坞工业产能 10%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = 0.1
+			}
+			# 生活消费品工厂系数 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = 0.2
+			}
+			
+			# 政治点数消耗 -0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = -0.2
+			}
+			add_to_variable = {
+				var = LIB_hcp_income_factor_monthly #钱
+				value = -0.2
+			}
+						}
+	option = {
+		name = LIB_jjxt.10.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.11
+	title = LIB_jjxt.11.t
+	desc = LIB_jjxt.11.d
+	is_triggered_only = yes
+	immediate = {
+        country_event = {
+				id = LIB_jjxt.12
+				days = 14
+			}
+			# 生活消费品工厂系数 -10%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = -0.1
+			}
+			# 可征募人口 +10%
+			add_to_variable = {
+				var = LIB_economy_committee_conscription_factor
+				value = 0.1
+			}
+			
+			# 月度人口 +20%
+			add_to_variable = {
+				var = LIB_economy_committee_monthly_population
+				value = 0.2
+			}
+		
+			# 政治点数消耗 -0.2
+			add_to_variable = {
+				var = LIB_political_power_cost
+				value = -0.2
+			}
+						}
+	option = {
+		name = LIB_jjxt.11.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+
+country_event = {
+	id = LIB_jjxt.12
+	title = LIB_jjxt.12.t
+	desc = LIB_jjxt.12.d
+	is_triggered_only = yes
+	immediate = {
+			# 稳定度10%（一次性直接扣减）
+			add_stability = 0.1
+			
+			# 工厂产出 10%
+			add_to_variable = {
+				var = LIB_economy_committee_industrial_capacity_factory
+				value = 0.1
+			}
+			# 船坞工业产能 10%
+			add_to_variable = {
+				var = LIB_industrial_capacity_dockyard
+				value = 0.1
+			}
+			
+			# 生活消费品工厂系数 -20%
+			add_to_variable = {
+				var = LIB_economy_committee_consumer_goods_factor
+				value = -0.2
+			}
+			}
+	option = {
+		name = LIB_jjxt.12.a
+		custom_effect_tooltip = LIB_jjxt.1.a_tt
+	}
+}
+#酒狐，给我点国策
+country_event = {
+	id = LIB_xh.01
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = LIB_13_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_13
+			set_country_flag = { flag = LIB_new_focus_13_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_14_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_14
+			set_country_flag = { flag = LIB_new_focus_14_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_15_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_15
+			set_country_flag = { flag = LIB_new_focus_15_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_16_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_16
+			set_country_flag = { flag = LIB_new_focus_16_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_17_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_17
+			set_country_flag = { flag = LIB_new_focus_17_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_18_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_18
+			set_country_flag = { flag = LIB_new_focus_18_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_19_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_19
+			set_country_flag = { flag = LIB_new_focus_19_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_20_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_20
+			set_country_flag = { flag = LIB_new_focus_20_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_21_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_21
+			set_country_flag = { flag = LIB_new_focus_21_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = LIB_22_flag }
+			}
+			activate_shine_on_focus = LIB_new_focus_22
+			set_country_flag = { flag = LIB_new_focus_22_in_progress_flag days = 36 }
+			country_event = { id = LIB_xh.02 days = 35 }
+		}
+		else = { #Debug logs
+			log = "ALL FOCUS HAS COMPLETED OR SOMETHING WENT WRONG WITH RAN's FOCUS BRANCH - Cannot start new focus"
+		}
+	}
+}
+
+country_event = {
+	id = LIB_xh.02
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_13
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_13
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_13
+			clr_country_flag = LIB_new_focus_13_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_14
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_14
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_14
+			clr_country_flag = LIB_new_focus_14_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_15
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_15
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_15
+			clr_country_flag = LIB_new_focus_15_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_16
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_16
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_16
+			clr_country_flag = LIB_new_focus_16_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_17
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_17
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_17
+			clr_country_flag = LIB_new_focus_17_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_18
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_18
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_18
+			clr_country_flag = LIB_new_focus_18_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_19
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_19
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_19
+			clr_country_flag = LIB_new_focus_19_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_20
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_20
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_20
+			clr_country_flag = LIB_new_focus_20_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_21
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_21
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_21
+			clr_country_flag = LIB_new_focus_21_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = LIB_new_focus_22
+			}
+			complete_national_focus = {
+				focus = LIB_new_focus_22
+				use_side_message = yes
+				originator_name = FRA_Ran
+			}
+			deactivate_shine_on_focus = LIB_new_focus_22
+			clr_country_flag = LIB_new_focus_22_in_progress_flag
+			country_event = { id = LIB_xh.01 }
+		}
+		else = { #Debug logs
+			log = "ALL FOCUS HAS COMPLETED OR SOMETHING WENT WRONG WITH RAN's FOCUS BRANCH - Cannot start new focus"
+		}
+	}
+}
+
+
+
+

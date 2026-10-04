@@ -1,8 +1,95 @@
 defined_text = {
 	#新人间之里国家介绍
-	name = GET_LIB_Country_History
 	text = {
 		trigger = { check_variable = { Country_History_Page_Var = 1 } }
 		localization_key = LIB_Country_History_Page_01
 	}
-}
+	}
+	#战时内阁总辞职
+	defined_text = {
+    name = LIB_new_focus_34_desc_text 
+    # 华扇
+    text = {
+        trigger = { has_country_flag = LIB_Sanae_in_Kasen_flag }
+        localization_key = LIB_new_focus_34_desc_A
+    }
+	# 魔理沙
+    text = {
+        trigger = { has_country_flag = LIB_Marisa_in_Kasen_flag }
+        localization_key = LIB_new_focus_34_desc_B
+    }
+	# 慧音
+    text = {
+        trigger = { has_country_flag = LIB_Keine_in_Kasen_flag }
+        localization_key = LIB_new_focus_34_desc_C
+    }
+    # 早苗
+    text = {
+        trigger = { has_country_flag = LIB_Sanae_in_power_flag }
+        localization_key = LIB_new_focus_34_desc_D
+    }
+	# 铃仙
+    text = {
+        trigger = { has_country_flag = LIB_Reisen_in_power_flag }
+        localization_key = LIB_new_focus_34_desc_E
+    }
+    # 默认情况：斯卡雷特
+    text = {
+        trigger = { always = yes }
+        localization_key = LIB_new_focus_34_desc_F
+    }
+	}
+	#贤者议会名字
+	defined_text = {
+	name = XZYH_NAME
+	text = {
+		trigger = {
+			has_country_flag = LIB_XZYHJS
+		}
+		localization_key = FRA_GJGDWYH
+	}
+	text = {
+		trigger = { always = yes }
+		localization_key = FRA_XZYH
+	}
+	}
+	#幻想乡防卫军名字
+	defined_text = {
+	name = HXXFWJ_NAME
+	text = {
+		trigger = {
+			has_completed_focus = 
+		}
+		localization_key = FRA_GJGDWYH
+	}
+	text = {
+		trigger = { always = yes }
+		localization_key = LIB_hxxfwj1_name
+	}
+	}
+	defined_text = {
+	name = XZYH_NAME
+	text = {
+		trigger = {
+			has_country_flag = LIB_XZYHJS
+		}
+		localization_key = FRA_GJGDWYH
+	}
+	text = {
+		trigger = { always = yes }
+		localization_key = FRA_XZYH
+	}
+	}
+	defined_text = {
+	name = XZYH_NAME
+	text = {
+		trigger = {
+			has_country_flag = LIB_XZYHJS
+		}
+		localization_key = FRA_GJGDWYH
+	}
+	text = {
+		trigger = { always = yes }
+		localization_key = FRA_XZYH
+	}
+	}
