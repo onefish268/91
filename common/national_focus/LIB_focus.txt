@@ -92,6 +92,7 @@ focus_tree = {
 			has_country_flag = LIB_jszz_flag
 	    }
 		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -214,47 +215,56 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_gjdd_tt
 		# 生产效率保持 +10%
 			add_to_variable = {
 				var = LIB_economy_committee_line_change_production_efficiency_factor
 				value = 0.1
+				tooltip = line_change_production_efficiency_factor_tt
 			}
 			
 			# 生产效率增长 +10%
 			add_to_variable = {
 				var = LIB_economy_committee_production_factory_efficiency_gain_factor
 				value = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			
 			# 生产效率上限 +10%
 			add_to_variable = {
 				var = LIB_economy_committee_production_factory_max_efficiency_factor
 				value = 0.1
+				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			# 工厂产出 +10%
 			add_to_variable = {
 				var = LIB_economy_committee_industrial_capacity_factory
 				value = 0.1
+				tooltip = industrial_capacity_factor_tt
 			}
 			# 船坞工业产能 10%
 			add_to_variable = {
 				var = LIB_industrial_capacity_dockyard
 				value = 0.1
+				tooltip = industrial_capacity_dockyard_tt
 			}
 			# 生活消费品工厂系数 -20%
 			add_to_variable = {
 				var = LIB_economy_committee_consumer_goods_factor
 				value = -0.2
+				tooltip = consumer_goods_factor_tt
 			}
 			
 			# 政治点数消耗 -0.2
 			add_to_variable = {
 				var = LIB_political_power_cost
 				value = -0.2
+				tooltip = hcp_income_factor_monthly_tooltip
 			}
 			add_to_variable = {
 				var = LIB_hcp_income_factor_monthly #钱
 				value = 0.2
+				tooltip = hcp_income_factor_monthly_tooltip
 			}
 			
 			add_political_power = -50
@@ -282,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_8
-		GFX_focus_lib7
+		icon = GFX_focus_lib7
 		x = 8
 		y = 5
 		cost = 5
@@ -383,6 +393,9 @@ focus_tree = {
 		has_completed_focus = LIB_new_focus_3
 		has_completed_focus = LIB_new_focus_4
         }
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_2 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -408,8 +421,8 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_13_in_progress_flag}
-		}      
+        NOT = { has_country_flag = LIB_new_focus_13_in_progress_flag }
+		}
         }
 		select_effect = {
 			set_country_flag = LIB_13_flag
@@ -1037,7 +1050,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_completed_focus = LIB_new_focus_35 }
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_35 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1256,6 +1271,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_2 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1479,6 +1497,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_2 
+		}
 		ai_will_do = {
 			factor = 1
 		}

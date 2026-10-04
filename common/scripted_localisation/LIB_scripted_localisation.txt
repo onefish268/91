@@ -41,7 +41,7 @@ defined_text = {
 	}
 	#贤者议会名字
 	defined_text = {
-	name = XZYH_NAME
+	name = LIB_XZYH_NAME
 	text = {
 		trigger = {
 			has_country_flag = LIB_XZYHJS
@@ -49,35 +49,33 @@ defined_text = {
 		localization_key = FRA_GJGDWYH
 	}
 	text = {
-		trigger = { always = yes }
 		localization_key = FRA_XZYH
 	}
 	}
 	#幻想乡防卫军名字
 	defined_text = {
-	name = HXXFWJ_NAME
+	name = LIB_HXXFWJ_NAME
 	text = {
 		trigger = {
-			has_completed_focus = 
+			has_completed_focus = LIB_new_focus_69
 		}
-		localization_key = FRA_GJGDWYH
+		localization_key = LIB_hxxfwj2_name
 	}
 	text = {
-		trigger = { always = yes }
 		localization_key = LIB_hxxfwj1_name
 	}
 	}
+	#国家动荡名字
 	defined_text = {
-	name = XZYH_NAME
+	name = LIB_GJDD_NAME
 	text = {
 		trigger = {
-			has_country_flag = LIB_XZYHJS
+			has_country_flag = LIB_JJHF
 		}
-		localization_key = FRA_GJGDWYH
+		localization_key = LIB_gjdd2_name
 	}
 	text = {
-		trigger = { always = yes }
-		localization_key = FRA_XZYH
+		localization_key = LIB_gjdd1_name
 	}
 	}
 	defined_text = {

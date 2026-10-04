@@ -891,8 +891,6 @@ country_event = {
 	desc = LIB_jjxt.9.d
 	is_triggered_only = yes
 	immediate = {
-			# 稳定度 -20%（一次性直接扣减）
-			add_stability = -0.2
 			# 周度稳定度 +1%
 			add_to_variable = {
 				var = LIB_impure_party_stability_weekly
@@ -911,6 +909,8 @@ country_event = {
 						}
 	option = {
 		name = LIB_jjxt.9.a
+		# 稳定度 -20%（一次性直接扣减）
+		add_stability = -0.2
 		add_to_variable = {
 				var = ubs_save
 				value = 500

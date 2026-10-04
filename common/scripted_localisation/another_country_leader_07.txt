@@ -63,6 +63,12 @@ defined_text = {
 		}
 		localization_key = GFX_FRA_Reimu
 	}
+	text = {
+		trigger = {
+			has_idea = FRA_XZYH_idea
+		}
+		localization_key = GFX_LIB_XZYH
+	}
  ##ww
 	text = {
 		trigger = {
@@ -180,6 +186,12 @@ defined_text = {
 		}
 		localization_key = FRA_Reimu
 	}
+	text = {
+		trigger = {
+			has_idea = FRA_XZYH_idea
+		}
+		localization_key = [LIB_XZYH_NAME]
+	}
  ##ww
 	text = {
 		trigger = {
@@ -265,6 +277,12 @@ defined_text = {
 			has_idea = KMK_Beatrice1_idea
 		}
 		localization_key = KMK_Beatrice_desc_1
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_XZYH_idea
+		}
+		localization_key = FRA_XZYH_desc_1
 	}
  ##自由幻想乡
 	text = {
@@ -408,6 +426,12 @@ defined_text = {
 			has_idea = LIB_Reimu_idea
 		}
 		localization_key = FRA_Reimu_Diplomacy_desc
+		}
+	text = {
+		trigger = {
+			has_idea = FRA_XZYH_idea
+		}
+		localization_key = FRA_XZYH_Diplomacy_desc
 	}
  ##ww
 	text = {
@@ -520,6 +544,12 @@ defined_text = {
 			has_idea = LIB_Reimu_idea
 		}
 		localization_key = FRA_Reimu_desc
+	}
+	text = {
+		trigger = {
+			has_idea = FRA_XZYH_idea
+		}
+		localization_key = FRA_XZYH_desc
 	}
  #ww
 	text = {
