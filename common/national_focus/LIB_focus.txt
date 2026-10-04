@@ -97,6 +97,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_3
+		icon = GFX_goal_unknown
 		x = 2
 		y = 4
 		cost = 5
@@ -157,6 +158,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_4
+		icon = GFX_goal_unknown
 		x = 6
 		y = 4
 		cost = 5
@@ -200,6 +202,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_6
+		icon = GFX_goal_unknown
 		x = 2
 		y = 5
 		cost = 5
@@ -260,6 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_7
+		icon = GFX_goal_unknown
 		x = 2
 		y = 6
 		cost = 10
@@ -295,6 +299,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_9
+		icon = GFX_goal_unknown
 		x = 6
 		y = 5
 		cost = 5
@@ -312,6 +317,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_10
+		icon = GFX_goal_unknown
 		x = 6
 		y = 6
 		cost = 5
@@ -329,6 +335,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_11
+		icon = GFX_goal_unknown
 		x = 4
 		y = 7
 		cost = 10
@@ -364,6 +371,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_12
+		icon = GFX_LIB_FOCUS_YLZJH
 		x = 13
 		y = 3
 		cost = 10
@@ -395,6 +403,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		cancelable = no
+		available = {
+		custom_trigger_tooltip = {
+        tooltip = LIB_ran_working_tt  
+        NOT = {has_country_flag = LIB_new_focus_13_in_progress_flag}
+		}      
+        }
+		select_effect = {
+			set_country_flag = LIB_13_flag
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -416,11 +434,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_13_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_14_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_13_flag
+			set_country_flag = LIB_14_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -443,11 +461,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_14_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_15_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_14_flag
+			set_country_flag = LIB_15_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -470,11 +488,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_15_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_16_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_15_flag
+			set_country_flag = LIB_16_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -497,11 +515,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_16_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_17_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_16_flag
+			set_country_flag = LIB_17_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -524,11 +542,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_17_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_18_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_17_flag
+			set_country_flag = LIB_18_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -551,11 +569,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_18_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_19_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_18_flag
+			set_country_flag = LIB_19_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -578,11 +596,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_19_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_20_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_19_flag
+			set_country_flag = LIB_20_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -605,11 +623,11 @@ focus_tree = {
 		available = {
 		custom_trigger_tooltip = {
         tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_20_in_progress_flag}
+        NOT = {has_country_flag = LIB_new_focus_21_in_progress_flag}
 		}      
         }
 		select_effect = {
-			set_country_flag = LIB_20_flag
+			set_country_flag = LIB_21_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -627,34 +645,6 @@ focus_tree = {
 		prerequisite = { focus = LIB_new_focus_20 }
 		prerequisite = { focus = LIB_new_focus_21 }
 		prerequisite = { focus = LIB_new_focus_19 }
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		cancelable = no
-		available = {
-		custom_trigger_tooltip = {
-        tooltip = LIB_ran_working_tt  
-        NOT = {has_country_flag = LIB_new_focus_21_in_progress_flag}
-		}      
-        }
-		select_effect = {
-			set_country_flag = LIB_21_flag
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = LIB_new_focus_23
-		icon = GFX_goal_unknown
-		x = 9
-		y = 8
-		cost = 10
-		prerequisite = { focus = LIB_new_focus_11 }
-		prerequisite = { focus = LIB_new_focus_22 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -685,6 +675,24 @@ focus_tree = {
 		custom_effect_tooltip ={
 		tooltip = LIB_eco_rise_high_tt
 		}
+		}
+	}
+
+	focus = {
+		id = LIB_new_focus_23
+		icon = GFX_goal_unknown
+		x = 9
+		y = 8
+		cost = 10
+		prerequisite = { focus = LIB_new_focus_11 }
+		prerequisite = { focus = LIB_new_focus_22 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
 		}
 	}
 
@@ -833,6 +841,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = { has_country_flag = LIB_FRA_will_fall_flag }
 		ai_will_do = {
 			factor = 1
 		}
@@ -850,7 +859,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_country_flag = LIB_FRA_will_fall_flag }
+		allow_branch = { has_country_flag = Free_france_flag }
 		ai_will_do = {
 			factor = 1
 		}
@@ -868,7 +877,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_country_flag = Free_france_flag }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1028,6 +1036,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1045,7 +1054,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		ai_will_do = {
 			factor = 1
 		}
