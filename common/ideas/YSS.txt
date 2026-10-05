@@ -806,6 +806,13 @@ ideas = {
 				air_defence_factor = 0.05
 			}
 		}
+
+		the_influence_of_YSS = {
+			picture = GFX_idea_YSS_9
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
 	}
 }
 

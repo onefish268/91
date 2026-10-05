@@ -138,3 +138,55 @@ defined_text = {
 		localization_key = GFX_SA_ERROR
 	}
 }
+
+defined_text = {
+	name = all_button_text_loc
+	text = {
+		trigger = { check_variable = { picture_value = 0 } }
+		localization_key = YSS_map_button_text_0
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 1 } }
+		localization_key = YSS_map_button_text_1
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 2 } }
+		localization_key = YSS_map_button_text_2
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 3 } }
+		localization_key = YSS_map_button_text_3
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 4 } }
+		localization_key = YSS_map_button_text_4
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 5 } }
+		localization_key = YSS_map_button_text_5
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 6 } }
+		localization_key = YSS_map_button_text_6
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 7 } }
+		localization_key = YSS_map_button_text_7
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 8 } }
+		localization_key = YSS_map_button_text_8
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 9 } }
+		localization_key = YSS_map_button_text_9
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 10 } }
+		localization_key = YSS_map_button_text_10
+	}
+	text = {
+		trigger = { check_variable = { picture_value = 11 } }
+		localization_key = YSS_map_button_text_11
+	}
+}

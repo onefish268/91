@@ -129,7 +129,16 @@ guiTypes = {
     	    scale = 0.03
 		}
 
-		gridBoxType = {
+		buttonType = {
+			name = "map_of_Africa_region_button"
+			position = { x = 402 y = 120 }
+			spriteType = Africa_region
+			scale = 0.60
+
+			pdx_tooltip = YSS_map_support_1
+		}
+
+		gridBoxType = { #地图
 			name = "map_of_africa"
 			position = { x = 412 y = 120 }
 			size = { width = 1000 height = 1000 }
@@ -140,7 +149,7 @@ guiTypes = {
     		format = "UPPER_LEFT"
 		}
 
-		gridBoxType = {
+		gridBoxType = { #国旗图片
 			name = "africa_of_countries"
 			position = { x = 20 y = 445 }
 			size = { width = 1000 height = 1000 }
@@ -151,7 +160,7 @@ guiTypes = {
     		format = "UPPER_LEFT"
 		}
 
-		gridBoxType = {
+		gridBoxType = { #相应按钮
 			name = "YSS_all_buttons"
 			position = { x = 850 y = 140 }
 			size = { width = 1000 height = 1000 }
@@ -171,6 +180,7 @@ guiTypes = {
 			spriteType = map_of_africa_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
 			scale = 0.65
+			pdx_tooltip = YSS_map_support_0
 		}
 	}
 	containerWindowType = {#各个地块 由gridbox调出
@@ -181,6 +191,7 @@ guiTypes = {
 			spriteType = africa_of_countries_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
 			scale = 1
+			pdx_tooltip = YSS_map_support_0
 		}
 	}
 	containerWindowType = {#各个地块 由gridbox调出
@@ -191,6 +202,7 @@ guiTypes = {
 			spriteType = all_button_loc #button必须事先定义一些东西去占位，否则未定义行为将会招致闪退！！！
         	position = { x = 0 y = 0 }
 			scale = 0.05
+			pdx_tooltip = YSS_map_button_text
 		}
 	}
 }

@@ -1,5 +1,10 @@
 spriteTypes = {
     spriteType = {
+        name = Africa_region
+        texturefile = "gfx/guis/YSS/Africa_region.png"
+        transparencecheck = yes
+    }
+    spriteType = {
         name = COG_region
         texturefile = "gfx/guis/YSS/COG_region.png"
 		transparencecheck = yes

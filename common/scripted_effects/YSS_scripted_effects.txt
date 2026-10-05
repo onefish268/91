@@ -43,3 +43,181 @@ YSS_upgrade_state_dev = {
         add_dynamic_modifier = { modifier = YSS_province_kaifa_5 }
     }
 }
+
+YSS_return_the_right_country = {
+    if = {
+        limit = { check_variable = { picture_value = 0 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = COG }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 1 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = ZIM }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 2 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = EAS }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 3 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = YSS }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 4 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = EGY }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 5 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = LBA }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 6 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = LIB }
+    }
+    else_if = {
+        limit = { check_variable = { picture_value = 7 } }
+        clear_array = YSS_chosen_array
+        add_to_array = { YSS_chosen_array = SAF }
+    }
+
+    set_country_flag = YSS_see_all_buttons
+
+    clear_array = YSS_all_buttons_array
+
+    if = {
+        limit = {
+            all_of_scopes = {
+                array = YSS_chosen_array
+                NOT = { has_government = communism }
+                NOT = { is_ally_with = YSS }
+            }
+        }
+		add_to_array = { YSS_all_buttons_array = 0 }
+		add_to_array = { YSS_all_buttons_array = 1 }
+		add_to_array = { YSS_all_buttons_array = 2 }
+		add_to_array = { YSS_all_buttons_array = 3 }
+		add_to_array = { YSS_all_buttons_array = 4 }
+		add_to_array = { YSS_all_buttons_array = 5 }
+    }
+    else = {
+		add_to_array = { YSS_all_buttons_array = 6 }
+		add_to_array = { YSS_all_buttons_array = 7 }
+		add_to_array = { YSS_all_buttons_array = 8 }
+		add_to_array = { YSS_all_buttons_array = 9 }
+		add_to_array = { YSS_all_buttons_array = 10 }
+		add_to_array = { YSS_all_buttons_array = 11 }
+    }
+}
+
+#如果不是社会主义，且不是YSS傀儡的话
+			#0、增加康米支持度，20%可以跳事件说要不要起义，不行就继续
+			#1、选择要支援什么样的装备
+			#2、派遣一个将军过去给人家用，加民族精神，反复点，胜利才回来
+			#3、争对那个国家的派遣志愿军的BUFF
+			#4、给2军工，可以反复点击
+			#5、去哪个洲募集士兵去援助（看有多少的共产国家，共产主义国家将依据自己的实际情况支援不同的师）
+
+			#科研加成卡
+			#XP++
+			#援助多少工厂，多少天建设成功。也可以给资源
+			#军工厂拆一两个过去，加机构的经费，要能指定国家
+			#
+			#吞并，援助越多越成功。触发第一次改名，改成索维耶特社会主义联盟
+
+YSS_return_button_effect_0 = { #获得争对某个国家的buff
+    if = {
+        limit = {
+            has_political_power > 49
+            all_of_scopes = {
+                array = YSS_chosen_array
+                NOT = { has_idea = the_influence_of_YSS }
+                NOT = { has_government = communism }
+                NOT = { is_ally_with = YSS }
+            }
+        }
+        add_political_power = -50
+
+        for_each_scope_loop = {
+            array = YSS_chosen_array
+
+            add_timed_idea = {
+                idea = the_influence_of_YSS
+                days = 365
+            }
+
+            if = {
+                limit = { has_country_flag = YSS_we_start_to_action }
+            }
+            else = {
+                country_event = YSS.1000
+            }
+        }
+    }
+}
+
+YSS_return_button_effect_1 = { #给装备
+    if = {
+        limit = {
+            all_of_scopes = {
+                array = YSS_chosen_array
+                NOT = { has_government = communism }
+                NOT = { is_ally_with = YSS }
+            }
+        }
+
+        for_each_scope_loop = {
+            array = YSS_chosen_array
+
+            YSS = {
+                country_event = YSS.1100
+            }
+        }
+    }
+}
+
+YSS_return_button_effect_2 = { #设置外派的将领
+    for_each_scope_loop = {
+        array = YSS_chosen_array
+
+        if = { #战争已经开打
+            limit = { has_country_flag = YSS_launch_the_civil_war }
+            YSS = {
+                random_army_leader = {
+                    limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+
+                    set_character_flag = YSS_has_mission_to_aboard
+                    meta_effect = {
+                        text = {
+                            set_character_flag = go_to_[country_tag]
+                        }
+                        country_tag = "[?var:YSS_chosen_array^0]"
+                    }
+                    
+
+                    set_nationality = PREV.PREV
+                }
+            }
+        }
+        else = { #战事未开
+            YSS = {
+                random_army_leader = {
+                    limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+                    
+                    set_character_flag = YSS_has_mission_to_aboard
+                    meta_effect = {
+                        text = {
+                            set_character_flag = go_to_[country_tag]
+                        }
+                        country_tag = "[?var:YSS_chosen_array^0]"
+                    }
+                }
+            }
+        }
+    }
+}
