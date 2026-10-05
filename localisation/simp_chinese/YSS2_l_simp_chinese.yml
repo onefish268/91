@@ -23,7 +23,7 @@
   YSS_map_button_text_0: "消耗50£pol_power去给§Y[?var:YSS_chosen_array^0.GetName]§!提供一个每日增长 §Y0.1§! 共产党支持率buff，持续§Y365§!天。"
   YSS_map_button_text_1: "当§Y[?var:YSS_chosen_array^0.GetName]§!爆发内战时，为革命势力提供装备保障。触发事件选择装备的种类和数目。" #
   YSS_map_button_text_2: "派遣军事教官前去§Y[?var:YSS_chosen_array^0.GetName]§!支援，为她们上军事buff。（注意！这个是从我们的将军里随机挑选人来派遣的，可能会把好将领派出去。）"
-  YSS_map_button_text_3: "消耗50£pol_power 获得争对§Y[?var:YSS_chosen_array^0.GetName]§!的志愿军buff。"
+  YSS_map_button_text_3: "当该国家进入战争时，消耗50£pol_power 获得增加志愿军一个上限的buff。（一个国家一次）"
   YSS_map_button_text_4: "在该国的起义爆发时，为§Y[?var:YSS_chosen_array^0.GetName]§!的起义部队提供§Y2个§!§G军用工厂§!，这些提供的工厂会在开战时从我国扣除，打完§Y胜仗§!后，再返还给我们。"
   YSS_map_button_text_5: "消耗100£pol_power 选择一个大洲，然后我们会号召这块大洲上的§R社会主义国家§!为§Y[?var:YSS_chosen_array^0.GetName]§!的起义提供支持。"
   YSS_map_button_text_6: "花费100£pol_power 和 §Y[?var:YSS_chosen_array^0.GetName]§!进行科技交流，跳出事件来选择科研加成卡。（取决于该国家的科研有多发达）"

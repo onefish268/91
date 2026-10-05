@@ -202,3 +202,12 @@ YSS_7 = {
 	party_popularity_stability_factor = YSS_7_party_popularity_stability_factor #党派支持度对稳定度修正
 	conscription_factor = YSS_7_conscription_factor #征兵系数
 }
+
+#中央政治局
+YSS_volunteer_to_other_country = {
+    enable = {
+		always = yes
+	}
+	icon = GFX_idea_YSS_7		
+	send_volunteer_size = YSS_volunteer_to_other_country_send_volunteer_size #派遣人数
+}
