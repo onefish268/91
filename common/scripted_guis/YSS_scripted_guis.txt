@@ -164,7 +164,7 @@ scripted_gui = {
 					limit = {
 						NOT = { check_variable = { picture_value = 3 } }
 						NOT = { check_variable = { picture_value = 8 } }
-				}
+					}
 					clear_array = YSS_map_of_region_array
 					add_to_array = { YSS_map_of_region_array = picture_value }
 					YSS_return_the_right_country = yes
@@ -173,7 +173,10 @@ scripted_gui = {
 
 			africa_of_countries_block_button_click = {
 				if = { 
-					limit = { NOT = { check_variable = { picture_value = 8 } } }
+					limit = {
+						NOT = { check_variable = { picture_value = 3 } }
+						NOT = { check_variable = { picture_value = 8 } }
+					}
 					clear_array = YSS_map_of_region_array
 					add_to_array = { YSS_map_of_region_array = picture_value }
 					YSS_return_the_right_country = yes

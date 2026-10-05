@@ -1816,6 +1816,8 @@ country_event = {
 	option = {
 		name = YSS.1001.a
 		#////////引爆战争的代码 空
+
+		
 	}
 	option = {
 		name = YSS.1001.b
@@ -2338,6 +2340,9 @@ country_event = {
 			country_event = YSS.1201
 		}
 	}
+	option = {
+		name = YSS.1200.h
+	}
 }
 country_event = {
 	#中转事件（隐藏）
@@ -2355,7 +2360,7 @@ country_event = {
 	}
 }
 country_event = {
-	#选择哪个大洲
+	#是否支援
 	id = YSS.1202
 	title = YSS.1202.t
 	desc = YSS.1202.d
@@ -2514,7 +2519,10 @@ country_event = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+
+			}
 			random_list = {
 				# 小步兵
 				20 = {
@@ -2596,5 +2604,9 @@ country_event = {
 				}
 			}
 		}
+	}
+
+	option = {
+		name = YSS.1202.b
 	}
 }

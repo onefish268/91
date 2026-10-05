@@ -126,9 +126,38 @@ YSS_return_the_right_country = {
 				picture_value = 1
 			}
 		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = ZIM
+		if = {
+			limit = {
+				ZIM = {
+					exists = yes
+				}
+			}
+			clear_array = YSS_chosen_array
+				add_to_array = {
+				YSS_chosen_array = ZIM
+			}
+		}
+		else_if = {
+			limit = {
+				ZYX = {
+					exists = yes
+				}
+			}
+			clear_array = YSS_chosen_array
+				add_to_array = {
+				YSS_chosen_array = ZYX
+			}
+		}
+		else_if = {
+			limit = {
+				ZSB = {
+					exists = yes
+				}
+			}
+			clear_array = YSS_chosen_array
+				add_to_array = {
+				YSS_chosen_array = ZSB
+			}
 		}
 	}
 	else_if = {
@@ -203,12 +232,8 @@ YSS_return_the_right_country = {
 		limit = {
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		add_to_array = {
@@ -272,15 +297,8 @@ YSS_return_button_effect_0 = {
 			has_political_power > 49
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_idea = the_influence_of_YSS
-				}
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		add_political_power = -50
@@ -308,12 +326,8 @@ YSS_return_button_effect_1 = {
 		limit = {
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		for_each_scope_loop = {
@@ -331,12 +345,8 @@ YSS_return_button_effect_2 = {
 		limit = {
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		for_each_scope_loop = {
@@ -398,15 +408,8 @@ YSS_return_button_effect_3 = {
 		limit = {
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_idea = the_influence_of_YSS
-				}
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		#增加志愿上限
@@ -448,6 +451,11 @@ YSS_return_button_effect_4 = {
 	#给军工
 	if = {
 		limit = {
+			all_of_scopes = {
+				array = YSS_chosen_array
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
+			}
 			num_of_military_factories > 1
 		}
 		set_temp_variable = {
@@ -474,14 +482,6 @@ YSS_return_button_effect_4 = {
 					instant_build = yes
 				}
 			}
-		}
-		meta_effect = {
-			text = {
-				add_to_variable = {
-					total_factory_of_[country_tag] = 2
-				}
-			}
-			country_tag = "[?YSS_chosen_array^0]"
 		}
 		for_each_scope_loop = {
 			array = YSS_chosen_array
@@ -513,6 +513,9 @@ YSS_return_button_effect_4 = {
 					}
 				}
 			}
+			else = {
+				add_to_variable = { YSS_total_of_factory = 2 }
+			}
 		}
 	}
 }
@@ -522,15 +525,8 @@ YSS_return_button_effect_5 = {
 		limit = {
 			all_of_scopes = {
 				array = YSS_chosen_array
-				NOT = {
-					has_idea = the_influence_of_YSS
-				}
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					is_ally_with = YSS
-				}
+				
+				NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		#给某个大洲
@@ -538,12 +534,13 @@ YSS_return_button_effect_5 = {
 			limit = {
 				all_of_scopes = {
 					array = YSS_chosen_array
-
-					has_country_flag = YSS_launch_the_civil_war
+					NOT = { has_country_flag = YSS_has_find_friend }
 				}
 			}
 			for_each_scope_loop = {
 				array = YSS_chosen_array
+
+				set_country_flag = YSS_has_find_friend
 				YSS = {
 					country_event = YSS.1200
 				}
