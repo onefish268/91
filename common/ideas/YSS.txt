@@ -520,7 +520,7 @@ ideas = {
 		YSS_idea_focus_121 = {
 			name = YSS_new_idea
 			modifier = {
-				max_army_group_size = -5
+				max_army_group_size = 5
 			}
 		}
 		YSS_idea_focus_122 = {
@@ -560,35 +560,37 @@ ideas = {
 		YSS_idea_focus_126 = {
 			name = YSS_new_idea
 			modifier = {
-				training_time_factor = -0.05
+				training_time_factor = -0.15
 			}
 		}
 		YSS_idea_focus_127 = {
 			name = YSS_new_idea
 			modifier = {
-				army_strength_factor = 0.05
-				army_org_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.15
 			}
 		}
 		YSS_idea_focus_128 = {
 			name = YSS_new_idea
 			modifier = {
 				army_infantry_attack_factor = 0.05
-				supply_consumption_factor = 0.05
+				supply_consumption_factor = -0.1
 				army_defence_factor = 0.05
 			}
 		}
 		YSS_idea_focus_130 = {
 			name = YSS_new_idea
 			modifier = {
-				army_strength_factor = 0.05
-				army_morale_factor = 0.05
+				army_strength_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 		YSS_idea_focus_131 = {
 			name = YSS_new_idea
 			modifier = {
 				army_org_factor = 0.05
+				supply_consumption_factor = -0.1
+				army_morale_factor = 0.05
 			}
 		}
 		YSS_idea_focus_132 = {
@@ -596,19 +598,25 @@ ideas = {
 			modifier = {
 				army_infantry_attack_factor = 0.05
 				army_morale_factor = 0.05
-				training_time_factor = -0.05
+				training_time_factor = -0.1
 			}
 		}
 		YSS_idea_focus_133 = {
 			name = YSS_new_idea
 			modifier = {
-				army_armor_speed_factor = 0.05
+				army_armor_speed_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				mechanized_attack_factor = 0.1
+				motorized_attack_factor = 0.1
 			}
 		}
 		YSS_idea_focus_134 = {
 			name = YSS_new_idea
 			modifier = {
-				army_artillery_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_artillery_attack_factor = 0.15
+				supply_consumption_factor = -0.1
 			}
 		}
 		YSS_idea_focus_135 = {
@@ -623,21 +631,23 @@ ideas = {
 			name = YSS_new_idea
 			modifier = {
 				army_strength_factor = 0.05
-				army_org_factor = 0.05
+				army_org_factor = 0.1
 			}
 		}
 		YSS_idea_focus_137 = {
 			name = YSS_new_idea
 			modifier = {
 				army_morale_factor = 0.05
-				max_planning_factor = 0.05
+				max_planning_factor = 0.15
 			}
 		}
 		YSS_idea_focus_138 = {
 			name = YSS_new_idea
 			modifier = {
-				mechanized_attack_factor = 0.05
-				motorized_attack_factor = 0.05
+				mechanized_attack_factor = 0.1
+				motorized_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
 			}
 		}
 		YSS_idea_focus_139 = {
@@ -645,8 +655,10 @@ ideas = {
 			modifier = {
 				army_armor_speed_factor = 0.05
 				army_artillery_attack_factor = 0.05
-				mechanized_attack_factor = 0.05
-				motorized_attack_factor = 0.05
+				mechanized_attack_factor = 0.1
+				motorized_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
 			}
 		}
 		YSS_idea_focus_140 = {
@@ -660,7 +672,7 @@ ideas = {
 		YSS_idea_focus_141 = {
 			name = YSS_new_idea
 			modifier = {
-				army_attack_speed_factor = 0.05
+				army_attack_speed_factor = 0.1
 				army_strength_factor = 0.05
 				army_morale_factor = 0.05
 			}
@@ -670,22 +682,25 @@ ideas = {
 			modifier = {
 				army_attack_against_major_factor = 0.05
 				army_attack_against_minor_factor = 0.05
-				army_infantry_attack_factor = 0.05
-				max_planning_factor = 0.05
+				army_infantry_attack_factor = 0.1
+				max_planning_factor = 0.2
+				training_time_factor = -0.05
 			}
 		}
 		YSS_idea_focus_143 = {
 			name = YSS_new_idea
 			modifier = {
-				army_armor_speed_factor = 0.05
-				mechanized_attack_factor = 0.05
-				motorized_attack_factor = 0.05
+				army_armor_speed_factor = 0.1
+				mechanized_attack_factor = 0.1
+				motorized_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
 			}
 		}
 		YSS_idea_focus_144 = {
 			name = YSS_new_idea
 			modifier = {
-				supply_consumption_factor = 0.05
+				supply_consumption_factor = -0.25
 			}
 		}
 		YSS_idea_focus_145 = {
@@ -693,9 +708,8 @@ ideas = {
 			modifier = {
 				army_attack_against_major_factor = 0.05
 				army_attack_against_minor_factor = 0.05
-				army_attack_speed_factor = 0.05
-				army_defence_factor = 0.05
-				max_planning_factor = 0.05
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
 			}
 		}
 		YSS_idea_focus_150 = {

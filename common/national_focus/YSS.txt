@@ -1250,21 +1250,22 @@ focus_tree = {
 			focus = YSS_focus_49
 		}
 		completion_reward = {
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = YSS_focus_46_0
-				bonus = 0.5
+				bonus = 0.25
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_1
-				bonus = 0.5
-				uses = 2
+				bonus = 0.25
+				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_2
-				bonus = 0.5
+				bonus = 0.25
 				uses = 1
 				category = artillery
 			}
@@ -3203,7 +3204,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_max_army_group_size = -5
+				YSS_red_army_max_army_group_size = 5
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3380,7 +3381,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_training_time_factor = -0.05
+				YSS_training_time_factor = -0.15
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3405,10 +3406,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
+				YSS_army_morale_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_army_org_factor = 0.05
+				YSS_army_org_factor = 0.15
 			}
 			hidden_effect = {
 				country_event = {
@@ -3443,10 +3444,10 @@ focus_tree = {
 				YSS_red_army_army_infantry_attack_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_red_army_supply_consumption_factor = 0.05
+				YSS_red_army_supply_consumption_factor = -0.1
 			}
 			add_to_variable = {
-				YSS_red_army_army_defence_factor = 0.05
+				YSS_red_army_army_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3490,7 +3491,7 @@ focus_tree = {
 		id = YSS_focus_130
 		x = -8
 		y = 8
-		cost = 5
+		cost = 4
 		icon = GFX_focus_PRC_invite_soviet_general
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3506,10 +3507,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
+				YSS_red_army_army_strength_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
+				YSS_army_morale_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3518,7 +3519,7 @@ focus_tree = {
 		id = YSS_focus_131
 		x = -6
 		y = 8
-		cost = 5
+		cost = 4
 		icon = GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3536,6 +3537,12 @@ focus_tree = {
 			add_to_variable = {
 				YSS_army_org_factor = 0.05
 			}
+			add_to_variable = {
+				YSS_red_army_supply_consumption_factor = -0.1
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
 	}
@@ -3543,7 +3550,7 @@ focus_tree = {
 		id = YSS_focus_132
 		x = -4
 		y = 8
-		cost = 5
+		cost = 4
 		icon = GFX_SOV_war_heroes_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3566,7 +3573,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_training_time_factor = -0.05
+				YSS_training_time_factor = -0.1
 			}
 			hidden_effect = {
 				country_event = {
@@ -3597,7 +3604,19 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_army_armor_speed_factor = 0.05
+				YSS_red_army_army_armor_speed_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_mechanized_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_motorized_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3622,7 +3641,13 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_army_artillery_attack_factor = 0.05
+				YSS_army_org_factor = 0.05
+			}
+			add_to_variable = {
+				YSS_red_army_army_artillery_attack_factor = 0.15
+			}
+			add_to_variable = {
+				YSS_red_army_supply_consumption_factor = -0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3631,7 +3656,7 @@ focus_tree = {
 		id = YSS_focus_135
 		x = -8
 		y = 9
-		cost = 5
+		cost = 4
 		icon = GFX_focus_SOV_penal_battalions
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3662,7 +3687,7 @@ focus_tree = {
 		id = YSS_focus_136
 		x = -6
 		y = 9
-		cost = 5
+		cost = 4
 		icon = GFX_focus_YUG_pan_slavic_congress
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3681,7 +3706,7 @@ focus_tree = {
 				YSS_red_army_army_strength_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_army_org_factor = 0.05
+				YSS_army_org_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3690,7 +3715,7 @@ focus_tree = {
 		id = YSS_focus_137
 		x = -4
 		y = 9
-		cost = 5
+		cost = 4
 		icon = GFX_focus_spr_class_war
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3709,7 +3734,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_max_planning_factor = 0.05
+				YSS_max_planning_factor = 0.15
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3734,10 +3759,16 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_mechanized_attack_factor = 0.05
+				YSS_red_army_armor_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_red_army_motorized_attack_factor = 0.05
+				YSS_red_army_armor_defence_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_mechanized_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_motorized_attack_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3771,10 +3802,16 @@ focus_tree = {
 				YSS_red_army_army_artillery_attack_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_red_army_mechanized_attack_factor = 0.05
+				YSS_red_army_mechanized_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_red_army_motorized_attack_factor = 0.05
+				YSS_red_army_motorized_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3783,7 +3820,7 @@ focus_tree = {
 		id = YSS_focus_140
 		x = -8
 		y = 10
-		cost = 5
+		cost = 4
 		icon = GFX_focus_SOV_the_last_purge
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3814,7 +3851,7 @@ focus_tree = {
 		id = YSS_focus_141
 		x = -6
 		y = 10
-		cost = 5
+		cost = 4
 		icon = GFX_SOV_the_workers_dictatorship_ccp_2d_sov_compatibility
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3830,7 +3867,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_army_attack_speed_factor = 0.05
+				YSS_red_army_army_attack_speed_factor = 0.1
 			}
 			add_to_variable = {
 				YSS_red_army_army_strength_factor = 0.05
@@ -3868,10 +3905,13 @@ focus_tree = {
 				YSS_red_army_army_attack_against_minor_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_red_army_army_infantry_attack_factor = 0.05
+				YSS_red_army_army_infantry_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_max_planning_factor = 0.05
+				YSS_max_planning_factor = 0.2
+			}
+			add_to_variable = {
+				YSS_training_time_factor = -0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3901,13 +3941,19 @@ focus_tree = {
                 category = cat_mechanized_equipment
             }
 			add_to_variable = {
-				YSS_red_army_army_armor_speed_factor = 0.05
+				YSS_red_army_army_armor_speed_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_red_army_mechanized_attack_factor = 0.05
+				YSS_red_army_mechanized_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_red_army_motorized_attack_factor = 0.05
+				YSS_red_army_motorized_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_attack_factor = 0.1
+			}
+			add_to_variable = {
+				YSS_red_army_armor_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
@@ -3932,7 +3978,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_red_army_supply_consumption_factor = 0.05
+				YSS_red_army_supply_consumption_factor = -0.25
 			}
 			custom_effect_tooltip = YSS_tootip_27
 			hidden_effect = {
@@ -3947,7 +3993,7 @@ focus_tree = {
 		id = YSS_focus_145
 		x = -4
 		y = 12
-		cost = 5
+		cost = 6
 		icon = GFX_focus_PRC_army_command
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3981,13 +4027,10 @@ focus_tree = {
 				YSS_red_army_army_attack_against_minor_factor = 0.05
 			}
 			add_to_variable = {
-				YSS_red_army_army_attack_speed_factor = 0.05
+				YSS_red_army_breakthrough_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_red_army_army_defence_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_max_planning_factor = 0.05
+				YSS_red_army_army_attack_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_27
 			hidden_effect = {
@@ -4586,10 +4629,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
                 bonus = 1.0          # 立即完成一次战斗机研究
-                uses = 1
+                uses = 2
                 category = light_air  # 轻型飞机类别
             }
-			add_research_slot = 1
 		}
 	}
 	focus = {

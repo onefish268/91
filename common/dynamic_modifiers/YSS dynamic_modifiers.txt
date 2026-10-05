@@ -96,7 +96,11 @@ YSS_2 = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_2
+	army_attack_factor = YSS_red_army_army_attack_factor #陆军攻击
+	breakthrough_factor = YSS_red_army_breakthrough_factor #陆军突破
 	army_armor_speed_factor = YSS_red_army_army_armor_speed_factor   ##装甲速度
+	army_armor_attack_factor = YSS_red_army_armor_attack_factor #装甲攻击
+	army_armor_defence_factor = YSS_red_army_armor_defence_factor #装甲防御
 	army_artillery_attack_factor = YSS_red_army_army_artillery_attack_factor   ##火炮攻击
 	army_attack_against_major_factor = YSS_red_army_army_attack_against_major_factor   ##对主要目标攻击
 	army_attack_against_minor_factor = YSS_red_army_army_attack_against_minor_factor   ##对次要目标攻击
