@@ -1,13 +1,36 @@
 debug_test_categories = {
 
-	add_some_to_test_array = {
-		complete_effect = {#selected_console_show_array
+	test_meta_effect_in_EGY = {
+							complete_effect = {
+								YSS = {
+								if = {
+									limit = {
+										NOT = { has_country_flag = YSS_revoluntion_victory }
+										has_country_flag = YSS_launch_the_civil_war
+									}
+									add_equipment_to_stockpile = {
+									type = infantry_equipment
+									amount = YSS_total_of_gun
+									producer = YSS
+									}
+								}
+							}
 		}
 	}
 
-	add_array_number_test = {
-		complete_effect = {#selected_console_show_array
-			add_to_array = { selected_console_show_array = selected_console_show_array^num }
+	test_meta_effect_in_EGY_0 = {
+							complete_effect = {
+										add_equipment_to_stockpile = {
+											type = infantry_equipment
+											amount = YSS_total_of_gun@EGY
+											producer = YSS
+										}
+		}
+	}
+
+	test_of_at_effect = {
+		complete_effect = {
+			add_to_variable = { YSS_total_of_gun@EGY = 10 }
 		}
 	}
 
@@ -56,134 +79,4 @@ debug_test_categories = {
 		}
 	}
 
-	the_third = {
-		icon = generic_construction
-
-		complete_effect = {
-			set_country_flag = test_of_second_flag
-		}
-	}
-
-	the_fourth = {
-		icon = generic_construction
-
-		complete_effect = {
-			clr_country_flag = test_of_second_flag
-		}
-	}
-
-	add_a_scripted_idea = {
-		name = add_a_scripted_idea
-		icon = generic_construction
-		
-		cost = 10
-
-		complete_effect = {
-			add_dynamic_modifier = {
-				modifier = Absent_rule
-			}
-			set_variable = { Absent_rule__political_gain = 0.1 }
-			set_variable = { Absent_rule__customer_goods_extent = 0.2 }
-		}
-	}
-
-	add_decision_mission = {
-		icon = generic_construction
-		
-		cost = 10
-
-		complete_effect = {
-			activate_mission = ZSB_decision_01
-		}
-	}
-
-	strat_to_set_a_variable = {
-		complete_effect = {
-			set_variable = { debug_test_number = 0 }
-			set_variable = { debug_test_number_ones = 1 }
-			set_variable = { debug_test_number_tens = 1 }
-			set_variable = { debug_test_number_hundreds = 1 }
-
-			set_country_flag = have_debug_test_number
-		}
-	}
-
-	add_the_variable_1 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-			if = {
-				limit = { check_variable = { debug_test_number_ones = 10 } }
-				set_variable = { debug_test_number_ones = 1 }
-				add_to_variable = { debug_test_number_tens = 1 }
-			}
-			else = {
-				add_to_variable = { debug_test_number_ones = 1 }
-			}
-
-			add_to_variable = { debug_test_number = 1 }
-		}
-	}
-
-	add_the_variable_10 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-			if = {
-				limit = { check_variable = { debug_test_number_tens = 10 } }
-				set_variable = { debug_test_number_tens = 1 }
-				add_to_variable = { debug_test_number_hundreds = 1 }
-			}
-			else = {
-				add_to_variable = { debug_test_number_tens = 1 }
-			}
-			add_to_variable = { debug_test_number = 10 }
-		}
-	}
-
-	cut_the_variable_1 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-
-			if = {
-				limit = { check_variable = { debug_test_number_ones = 0 } }
-				set_variable = { debug_test_number_ones = 9 }
-				add_to_variable = { debug_test_number_tens = -1 }
-			}
-			else = {
-				add_to_variable = { debug_test_number_ones = -1 }
-			}
-
-			add_to_variable = { debug_test_number = -1 }
-
-
-		}
-	}
-
-	cut_the_variable_10 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-			if = {
-				limit = { check_variable = { debug_test_number_tens = 1 } }
-				set_variable = { debug_test_number_tens = 10 }
-				add_to_variable = { debug_test_number_hundreds = -1 }
-			}
-			else = {
-				add_to_variable = { debug_test_number_tens = -1 }
-			}
-			add_to_variable = { debug_test_number = -10 }
-		}
-	}
-
-	multiply_the_variable_3 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-			multiply_variable = { debug_test_number = 3 }
-		}
-	}
-
-	devide_the_variable_3 = {
-		visible = { has_country_flag = have_debug_test_number }
-		complete_effect = {
-			divide_variable = { debug_test_number = 3 }
-		}
-	}
 }
