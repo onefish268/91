@@ -1,6 +1,6 @@
 characters = {
 	ZYX_anqiubifei = {
-		name = "加布里埃尔·邓南遮"
+		name = "井芹仁菜"
 		portraits = {
 			civilian = {
 				large = "anqiubifei"
@@ -18,7 +18,7 @@ characters = {
 
 	#顾问	
 	ZYX_sitalaqie = {
-		name = "阿契尔・斯塔拉切"
+		name = "河原木桃香"
 		portraits = {
 			civilian = {
 				small = "sitalaqie"
@@ -41,7 +41,7 @@ characters = {
 	}
 
 	ZYX_pawolini = {
-		name = "亚历山德罗・帕沃利尼"
+		name = "安和昴"
 		portraits = {
 			civilian = {
 				small = "pawolini"
@@ -64,7 +64,7 @@ characters = {
 	}
 
 	ZYX_qiyanuo = {
-		name = "加莱阿佐・齐亚诺"
+		name = "海老冢智"
 		portraits = {
 			civilian = {
 				small = "qiyanuo"
