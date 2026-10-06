@@ -1887,11 +1887,11 @@ YSS_kj_buy_category = {
 			}
 		}
 		remove_effect = {
-			add_equipment_to_stockpile = {
-                type = fighter_bomber_equipment      # 装备类型（必填）
-                amount = 30                   # 数量，正数增加，负数减少（必填）
-                producer = GER                 # 生产国，可选，默认为当前国家
-            }
+		add_equipment_to_stockpile = {
+			type = fighter_bomber_equipment      # 装备类型（必填）
+			amount = 30                   # 数量，正数增加，负数减少（必填）
+			producer = GER                 # 生产国，可选，默认为当前国家
+		}
 			add_timed_idea = {
 				idea = YSS_11
 				days = 100

@@ -299,6 +299,7 @@ YSS_return_button_effect_0 = {
 				array = YSS_chosen_array
 				
 				NOT = { has_country_flag = YSS_revoluntion_victory }
+				NOT = { has_idea = the_influence_of_YSS }
 			}
 		}
 		add_political_power = -50
@@ -526,7 +527,7 @@ YSS_return_button_effect_5 = {
 			all_of_scopes = {
 				array = YSS_chosen_array
 				
-				NOT = { has_country_flag = YSS_revoluntion_victory }
+				#NOT = { has_country_flag = YSS_revoluntion_victory }
 			}
 		}
 		#给某个大洲
@@ -534,7 +535,7 @@ YSS_return_button_effect_5 = {
 			limit = {
 				all_of_scopes = {
 					array = YSS_chosen_array
-					NOT = { has_country_flag = YSS_has_find_friend }
+					#NOT = { has_country_flag = YSS_has_find_friend }
 				}
 			}
 			for_each_scope_loop = {

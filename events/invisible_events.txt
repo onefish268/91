@@ -428,16 +428,26 @@ country_event = {#关于入侵刚果的隐藏触发器
 	}
 
 	immediate = {
-		random_country = {
-		    limit = {
-		    	has_country_flag = the_lord_of_COG
-		    }
-		    set_autonomy = {
-		        target = COG
-	      	    autonomous_state = autonomy_colony
-	    	    end_wars = no
-		    	end_civil_wars = no
-		   	}
+		if = {
+			limit = {
+				COG = { has_capitulated = yes }
+			}
+			ROOT = {
+				annex_country = COG
+			}
+		}
+		else = {
+			random_country = {
+		    	limit = {
+		    		has_country_flag = the_lord_of_COG
+		    	}
+		    	set_autonomy = {
+			        target = COG
+		      	    autonomous_state = autonomy_colony
+		    	    end_wars = no
+		    		end_civil_wars = no
+		   		}
+			}
 		}
 	}
 }

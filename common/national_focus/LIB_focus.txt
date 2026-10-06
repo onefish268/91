@@ -1051,7 +1051,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		allow_branch = {
-		has_completed_focus = LIB_new_focus_35 
+			has_completed_focus = LIB_new_focus_35 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1271,9 +1271,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = {
-		has_completed_focus = LIB_new_focus_2 
-		}
+		allow_branch = { has_completed_focus = LIB_new_focus_2 }
 		ai_will_do = {
 			factor = 1
 		}
