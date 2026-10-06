@@ -1,0 +1,450 @@
+#################### 
+KMK_arsenal_organization = {
+	name = KMK_arsenal
+	include = generic_tank_organization
+	icon = GFX_idea_KMK_arsenal
+	allowed = {	
+		or = {
+			tag = KMK
+			tag = FRA
+			tag = KNM
+		}
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = FRA
+				}
+				OR = {
+					925 = { is_core_of = FRA }
+					has_full_control_of_state = 925
+					925 = {
+						owner = {
+							is_in_faction_with = FRA
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					925 = { is_core_of = KNM }
+					has_full_control_of_state = 925
+					925 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+	equipment_type = { armor }
+	initial_trait = {
+		name = USA_mio_trait_dedicated_tank_factory
+		
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = -0.05
+			build_cost_ic = -0.03
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_arsenal_of_neutrality
+		name = KMK_mio_trait_arsenal_of_neutrality
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+
+		all_parents = { generic_mio_trait_standardized_components }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.15
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Forbidden_Knight
+		name = KMK_mio_trait_Forbidden_Knight
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		special_trait_background = yes
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+		all_parents = { generic_mio_trait_standardized_components }
+		equipment_bonus = {
+			soft_attack = 0.1
+			defense = 0.1
+			hardness = 0.05
+			hard_attack = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_artillery
+		name = KMK_mio_trait_Improve_artillery
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		special_trait_background = yes
+		position = { x=6 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_speed
+		name = KMK_mio_trait_Improve_speed
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		position = { x=6 y=0 }
+		relative_position_id = generic_mio_trait_standardized_components
+		equipment_bonus = {
+			maximum_speed = 0.10
+			defense = 0.02
+			hardness = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_armor
+		name = KMK_mio_trait_Improve_armor
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		position = { x=6 y=-1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}
+
+}
+
+#####################
+KMK_naval_yard_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_newport_news_shipbuilding
+	allowed = {
+		tag = kmk 
+	}
+	available = {
+	}
+
+	initial_trait = {
+		name = USA_mio_trait_carrier_specialists
+		
+		equipment_bonus = {
+			build_cost_ic = -0.1
+			surface_visibility = -0.1
+		}
+		
+
+		
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_north_carolina_shipbuilding_company
+		name = USA_mio_trait_north_carolina_shipbuilding_company
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+		special_trait_background = yes
+
+		limit_to_equipment_type = {
+			screen_ship
+		}
+
+		all_parents = {  }
+
+		position = { x=3 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+}
+
+###########################
+KMK_messerschmitt_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_messerschmitt
+	
+	allowed = {	
+		or = {
+			tag = KMK
+			tag = FRA
+			tag = KNM
+		}
+	}
+
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 28
+			}
+			if = {
+				limit = {
+					tag = KMK
+				}
+				OR = {
+					28 = {
+						is_core_of = KMK
+					}
+					has_full_control_of_state = 28
+				}
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					28 = { is_core_of = KNM }
+					28 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+		maritime_patrol_plane
+	}
+
+	add_trait = {
+		token = GER_mio_trait_maintenance_first_design
+		name = GER_mio_trait_maintenance_first_design
+
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		special_trait_background = yes
+		
+		position = { x=-2 y=1 }
+		relative_position_id = generic_mio_trait_expanded_production_facilities
+
+		all_parents = { generic_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			air_attack = 0.1
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_maintenance_first_design1
+		name = KMK_mio_trait_maintenance_first_design
+
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		special_trait_background = yes
+		
+		position = { x=0 y=1 }
+		relative_position_id = GER_mio_trait_maintenance_first_design
+
+		all_parents = { GER_mio_trait_maintenance_first_design }
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_fuselage_based_weapons
+		name = GER_mio_trait_fuselage_based_weapons
+
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes
+		
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_gun_pods
+
+		any_parent = { generic_mio_trait_heavier_airframe generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
+
+		equipment_bonus = {
+			air_attack = 0.1
+			air_agility = 0.1
+			air_defence = 0.1
+		} 
+	}
+	add_trait = { 
+		token = ENG_mio_trait_elliptical_wings
+		name = ENG_mio_trait_elliptical_wings
+		icon = GFX_generic_mio_trait_icon_defense
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_expanded_production_facilities
+
+		any_parent = { generic_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			air_defence = 0.1	
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_elliptical_wings
+		name = KMK_mio_trait_elliptical_wings
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = ENG_mio_trait_elliptical_wings
+
+		any_parent = { ENG_mio_trait_elliptical_wings }
+
+		equipment_bonus = {
+			air_defence = 0.1	
+			build_cost_ic = -0.05
+		}
+	}
+}
+
+BEL_renard_organization = {
+	name = renard
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_BEL_renard_organization
+	allowed = {
+		original_tag = KMK
+		has_dlc = "Gotterdammerung"
+	}
+
+	available = {
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_all_metal_expertise
+		name = BEL_mio_trait_all_metal_expertise
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+		
+		position = { x=2 y=1 }  
+
+		any_parent = { generic_mio_trait_metal_skin }		
+
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_browning_collaboration
+		name = BEL_mio_trait_browning_collaboration
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes		
+		
+		position = { x=7 y=1 }  
+
+		any_parent = { generic_mio_trait_minimum_weapon_requirements }		
+
+		equipment_bonus = {
+			air_attack = 0.1
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_stampe_et_vertrongen
+		name = BEL_mio_trait_stampe_et_vertrongen
+		icon = GFX_generic_mio_trait_icon_naval_range
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		equipment_bonus = {
+			air_agility = 0.1
+			air_range = 0.1
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_stampe_et_renard
+		name = BEL_mio_trait_stampe_et_renard
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+		special_trait_background = yes
+		
+		position = { x=9 y=1 }  
+
+		any_parent = { BEL_mio_trait_stampe_et_vertrongen }
+
+		equipment_bonus = {
+			air_attack = 0.05
+			reliability = 0.05
+		}
+
+	}
+
+
+}
+##############
+HOL_nsm_amsterdam_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_nsm_amsterdam
+	allowed = { 
+		tag = KMK
+	}
+}
+
+HOL_wilton_fijenoord_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_wilton_fijenoord
+	allowed = { 
+		tag = KMK
+	}
+}
+
+HOL_daf_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_HOL_daf
+	allowed = { 
+		tag = KMK
+	}
+}
+
+HOL_artillerie_inrichtingen_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_artillerie_inrichtingen
+	allowed = { 
+		tag = KMK
+	}
+}
+
+HOL_hih_siderius_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_hih_siderius
+	allowed = { 
+		tag = KMK
+	}
+}

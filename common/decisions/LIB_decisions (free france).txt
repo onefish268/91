@@ -26,6 +26,13 @@ LIB_debug = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	free_france4 = {
+		complete_effect = {
+			set_country_flag = LIB_FRA_will_fall_flag
+			set_country_flag = Free_france_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
 	XZYH = {
 		complete_effect = {
 			remove_ideas = FRA_Ran_idea
@@ -97,12 +104,8 @@ FREE_FRA_Return_from_Hell = {
 			controls_state = 16
 			custom_trigger_tooltip = {
 				tooltip = "已经稳定政局"
-				has_completed_focus = LIB_yukari
+				has_completed_focus = LIB_new_focus_42
 			}
-			# custom_trigger_tooltip = {
-			# 	tooltip = unm_of_control_france_state_bigger_20
-			# 	check_variable = { unm_of_control_france_state > 20 }
-			# }
 			not = {
 				country_exists = DVL
 			}
@@ -140,7 +143,846 @@ FREE_FRA_Return_from_Hell = {
 	}
 }
 LIB_gongye = {
-	
+	LIB_xlgjs_decision = {
+    icon = GFX_decision_infrastructure
+    # 消耗 100 政治点数
+    cost = 100
+    days_remove = 140
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_25 }
+    # 可用条件：459 必须由 ROOT 拥有并控制
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        459 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 5
+    }
+    # 点击瞬间无额外效果（所有效果在倒计时结束后结算）
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        459 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            # 3. 增加 4 个民用工厂
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+            }
+            # 4. 增加 1 个军用工厂
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+LIB_hzg_decision = {
+    icon = GFX_decision_infrastructure
+    # 消耗 100 政治点数
+    cost = 100
+    days_remove = 140
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_25
+	has_completed_focus = LIB_new_focus_28 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        460 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 5
+    }
+    # 点击瞬间无额外效果（所有效果在倒计时结束后结算）
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        460 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+LIB_smxs_decision = {
+    icon = GFX_decision_infrastructure
+    cost = 100
+    fire_only_once = yes
+	days_remove = 140
+	visible = {
+	has_completed_focus = LIB_new_focus_25
+	has_completed_focus = LIB_new_focus_30 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        805 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		513 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		865 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		665 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 5
+    }
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        805 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+		513 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+          
+        }
+		865 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+		665 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+		add_stability = 0.05
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.05
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+    }
+}
+LIB_yjlz_decision = {
+    icon = GFX_decision_infrastructure
+    cost = 100
+	days_remove = 100
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_25
+	has_completed_focus = LIB_new_focus_29 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        805 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 5
+    }
+    complete_effect = {
+    }
+    remove_effect = {
+        805 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+		add_resource = {
+            type = steel
+            amount = 20
+            state = 400
+        }
+        add_resource = {
+            type = tungsten
+            amount = 10
+            state = 400
+        }
+    }
+}
+#堡垒一二三期
+LIB_fyyqgc1_decision = {
+    icon = GFX_decision_infrastructure
+	cost = 50
+    days_remove = 100
+    fire_only_once = yes
+	visible = {has_completed_focus = LIB_new_focus_45}
+    available = {
+        num_of_civilian_factories_available_for_projects >= 5
+        # 可选：检查省份归属，避免无效建设
+        7132 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1145 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 省份 7132
+        805 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+        }
+        # 省份 1145
+        459 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+        }
+        # 省份 1160
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+        }
+        # 省份 9994
+        460 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+        }
+        # 省份 11921
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+        }
+		set_country_flag = LIB_yiqigongcheng
+    }
+}
+LIB_fyyqgc2_decision = {
+    icon = GFX_decision_infrastructure
+	cost = 50
+    days_remove = 100
+    fire_only_once = yes
+	visible = {has_country_flag = LIB_yiqigongcheng}
+    available = {
+        num_of_civilian_factories_available_for_projects >= 5
+        # 可选：检查省份归属，避免无效建设
+        7132 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1145 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 省份 7132
+        805 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+        }
+        # 省份 1145
+        459 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+        }
+        # 省份 1160
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+        }
+        # 省份 9994
+        460 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+        }
+        # 省份 11921
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+        }
+		set_country_flag = LIB_erqigongcheng
+    }
+}
+LIB_fyyqgc3_decision = {
+    icon = GFX_decision_infrastructure
+	cost = 50
+    days_remove = 100
+    fire_only_once = yes
+	visible = {has_country_flag = LIB_erqigongcheng}
+    available = {
+        num_of_civilian_factories_available_for_projects >= 5
+        # 可选：检查省份归属，避免无效建设
+        7132 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1145 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 省份 7132
+        805 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 7132
+            }
+        }
+        # 省份 1145
+        459 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1145
+            }
+        }
+        # 省份 1160
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 1160
+            }
+        }
+        # 省份 9994
+        460 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 9994
+            }
+        }
+        # 省份 11921
+        458 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+				province = 11921
+            }
+        }
+    }
+}
+LIB_anti_air_yiqi = {
+    icon = GFX_decision_generic_construction
+    cost = 50
+    days_remove = 30
+    fire_only_once = yes
+	visible = {has_completed_focus = LIB_new_focus_45}
+    available = {
+        num_of_civilian_factories_available_for_projects >= 10
+        805 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        459 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        460 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        458 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用10个民工
+    modifier = {
+        civilian_factory_use = 10
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 州 805
+        805 = {
+            add_building_construction = {
+                type = anti_air_building
+                level = 3
+                instant_build = yes
+            }
+        }
+        # 州 459
+        459 = {
+            add_building_construction = {
+                type = anti_air_building
+                level = 3
+                instant_build = yes
+            }
+        }
+        # 州 460
+        460 = {
+            add_building_construction = {
+                type = anti_air_building
+                level = 3
+                instant_build = yes
+            }
+        }
+        # 州 458
+        458 = {
+            add_building_construction = {
+                type = anti_air_building
+                level = 3
+                instant_build = yes
+            }
+        }
+    }
+}
+LIB_anti_air_erqi = {
+    icon = GFX_decision_generic_construction
+
+    cost = 50
+    days_remove = 60
+    fire_only_once = no
+
+    # 只有已研发雷达科技时，决议才可见
+    visible = {
+        has_tech = radar
+    }
+
+    available = {
+        num_of_civilian_factories_available_for_projects >= 10
+        805 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        459 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        460 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        458 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用10个民工
+    modifier = {
+        civilian_factory_use = 10
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 州 805
+        805 = {
+            add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+            }
+        }
+        # 州 459
+        459 = {
+            add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+            }
+        }
+        # 州 460
+        460 = {
+            add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+            }
+        }
+        # 州 458
+        458 = {
+            add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+}
+#紧急碉堡
+LIB_bunker_construction_jinji = {
+    icon = GFX_decision_generic_construction
+
+    cost = 50
+    days_remove = 60
+    fire_only_once = no
+
+    # 只有省份446被DVL控制时，决议才可见
+    visible = {
+        446 = {
+            controller = { tag = DVL }
+        }
+    }
+
+    available = {
+        num_of_civilian_factories_available_for_projects >= 10
+    }
+
+    # 决议计时期间占用10个民工
+    modifier = {
+        civilian_factory_use = 10
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # state 665 的省份
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 11957
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 1105
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 4992
+            instant_build = yes
+        }
+        # state 513 的省份
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 12842
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 2049
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 5035
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 4903
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = bunker
+            level = 4
+            province = 8061
+            instant_build = yes
+        }
+    }
+}
+}
+LIB_junshi = {
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
+free_france2 = {
+		complete_effect = {
+			FRA = {
+			country_event = {
+				id = LIB_lw.5
+			}
+		}
+		}
+	}
 }
 LIB_bba_industery_decisions = {
 	steal_civilian_factory_from_fra = {

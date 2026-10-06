@@ -23,6 +23,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = {
+		NOT = {
+		has_country_flag = LIB_dxt_flag
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -83,13 +88,12 @@ focus_tree = {
 		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		prerequisite = { focus = LIB_new_focus_1 }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
 		allow_branch = {
-			has_country_flag = LIB_jszz_flag
+			has_country_flag = LIB_dxt_flag
 	    }
 		completion_reward = {
 		mark_focus_tree_layout_dirty = yes
@@ -112,48 +116,31 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = LIB_new_focus_3_tt
 		custom_effect_tooltip = LIB_gjdd_tt
-		# 工厂产出 -10%
-			add_to_variable = {
-				var = LIB_economy_committee_industrial_capacity_factory
-				value = -0.1
-				tooltip = industrial_capacity_factor_tt
-			}
-			# 船坞工业产能 -10%
-			add_to_variable = {
-				var = LIB_industrial_capacity_dockyard
-				value = -0.1
-				tooltip = industrial_capacity_dockyard_tt
-			}
-			# 生产效率保持 -10%
-			add_to_variable = {
-				var = LIB_economy_committee_line_change_production_efficiency_factor
-				value = -0.1
-				tooltip = line_change_production_efficiency_factor_tt
-			}
-			# 生产效率增长 -10%
-			add_to_variable = {
-				var = LIB_economy_committee_production_factory_efficiency_gain_factor
-				value = -0.1
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			# 建设速度 -10%
-			add_to_variable = {
-				var = LIB_economy_committee_production_speed_buildings_factor
-				value = -0.1
-				tooltip = production_speed_buildings_factor_tt
-			}
-			# 生产效率上限 -0.05%
-			add_to_variable = {
-				var = LIB_economy_committee_production_factory_max_efficiency_factor
-				value = -0.05
-				tooltip = production_factory_max_efficiency_factor_tt
-			}
-			# 周度稳定性加1
-			add_to_variable = {
-				var = LIB_impure_party_stability_weekly
-				value = 0.01
-				tooltip = stability_weekly_tt
-			}
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = -0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = -0.1
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_impure_party_stability_weekly
+			value = -0.01
+			tooltip = stability_weekly_tt
+		}
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		}
 		}
 	}
 
@@ -171,13 +158,36 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
-				var = LIB_political_power_cost
-				value = -0.2
-				tooltip = political_power_cost_tt
-			}
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_research_speed_factor
+			value = 0.1
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		}
 			add_country_leader_trait = dictator
 			add_political_power = 50
+			add_ideas = LIB_zsdc
+			custom_effect_tooltip = LIB_new_focus_4_tt
 		}
 	}
 
@@ -186,17 +196,23 @@ focus_tree = {
 		icon = GFX_focus_lib2
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_3 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available = {
-		political_power > 50}
+		political_power > 0}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_5_tt
+		hidden_effect = {
+		FRA = {
+		country_event = LIB_dwmy.1
+		}
+		}
 		add_political_power = -50
 		}
 	}
@@ -206,8 +222,10 @@ focus_tree = {
 		icon = GFX_focus_lib3
 		x = 2
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_3 }
+		available = {
+		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -215,57 +233,33 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
-		# 生产效率保持 +10%
-			add_to_variable = {
-				var = LIB_economy_committee_line_change_production_efficiency_factor
-				value = 0.1
-				tooltip = line_change_production_efficiency_factor_tt
-			}
-			
-			# 生产效率增长 +10%
-			add_to_variable = {
-				var = LIB_economy_committee_production_factory_efficiency_gain_factor
-				value = 0.1
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			
-			# 生产效率上限 +10%
-			add_to_variable = {
-				var = LIB_economy_committee_production_factory_max_efficiency_factor
-				value = 0.1
-				tooltip = production_factory_max_efficiency_factor_tt
-			}
-			# 工厂产出 +10%
-			add_to_variable = {
-				var = LIB_economy_committee_industrial_capacity_factory
-				value = 0.1
-				tooltip = industrial_capacity_factor_tt
-			}
-			# 船坞工业产能 10%
-			add_to_variable = {
-				var = LIB_industrial_capacity_dockyard
-				value = 0.1
-				tooltip = industrial_capacity_dockyard_tt
-			}
-			# 生活消费品工厂系数 -20%
-			add_to_variable = {
-				var = LIB_economy_committee_consumer_goods_factor
-				value = -0.2
-				tooltip = consumer_goods_factor_tt
-			}
-			
-			# 政治点数消耗 -0.2
-			add_to_variable = {
-				var = LIB_political_power_cost
-				value = -0.2
-				tooltip = hcp_income_factor_monthly_tooltip
-			}
-			add_to_variable = {
-				var = LIB_hcp_income_factor_monthly #钱
-				value = 0.2
-				tooltip = hcp_income_factor_monthly_tooltip
-			}
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_industrial_capacity_factory
+			value = 0.1
+			tooltip = industrial_capacity_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_research_speed_factor
+			value = 0.1
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		}
 			
 			add_political_power = -50
 		}
@@ -276,16 +270,49 @@ focus_tree = {
 		icon = GFX_focus_lib4
 		x = 2
 		y = 6
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_6 }
 		prerequisite = { focus = LIB_new_focus_5 }
 		cancel_if_invalid = yes
+		available = {
+		political_power > 0}
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+		
+		add_to_variable = {
+			var = LIB_economy_committee_industry_repair_factor
+			value = 0.1
+			tooltip = industry_repair_factor_tt
+		} # 工厂修复速度
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.1
+			tooltip = production_speed_buildings_factor_tt
+		} # 建设速度
+		
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		} # 金钱收入
 		add_political_power = -50
 		}
 	}
@@ -295,8 +322,10 @@ focus_tree = {
 		icon = GFX_focus_lib7
 		x = 8
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_4 }
+		available = {
+		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -304,6 +333,37 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_industrial_capacity_dockyard
+			value = 0.1
+			tooltip = industrial_capacity_dockyard_factor_tt
+		} # 船坞工业产能
+		
+		add_to_variable = {
+			var = LIB_economy_committee_industry_repair_factor
+			value = 0.1
+			tooltip = industry_repair_factor_tt
+		} # 工厂修复速度
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.1
+			tooltip = production_speed_buildings_factor_tt
+		} # 建设速度
+		
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		} # 政治点消耗
+		
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		} # 金钱收入
 		add_political_power = -50
 		}
 	}
@@ -313,8 +373,10 @@ focus_tree = {
 		icon = GFX_focus_lib6
 		x = 6
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_4 }
+		available = {
+		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -322,6 +384,31 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		} # 从煤炭获得的能量
+		
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
+		
+		add_to_variable = {
+			var = LIB_economy_committee_research_speed_factor
+			value = 0.1
+			tooltip = research_speed_factor_tt
+		} # 研究速度
 		add_political_power = -50
 		}
 	}
@@ -331,9 +418,11 @@ focus_tree = {
 		icon = GFX_focus_lib8
 		x = 6
 		y = 6
-		cost = 5
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_9 }
 		prerequisite = { focus = LIB_new_focus_8 }
+		available = {
+		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -341,6 +430,31 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_industrial_capacity_factory
+			value = 0.1
+			tooltip = industrial_capacity_tt
+		} # 工厂产出
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		} # 生产效率增长
+		
+		add_to_variable = {
+			var = LIB_economy_committee_research_speed_factor
+			value = 0.1
+			tooltip = research_speed_factor_tt
+		} # 研究速度
+		
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		} # 政治点消耗
 		}
 	}
 
@@ -349,9 +463,11 @@ focus_tree = {
 		icon = GFX_focus_lib9
 		x = 4
 		y = 7
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_10 }
 		prerequisite = { focus = LIB_new_focus_7 }
+		available = {
+		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -359,6 +475,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		459 = {
 	add_extra_state_shared_building_slots = 6
 	add_building_construction = {
@@ -385,7 +502,7 @@ focus_tree = {
 		icon = GFX_LIB_FOCUS_YLZJH
 		x = 13
 		y = 3
-		cost = 10
+		cost = 6
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -401,18 +518,54 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = LIB_new_focus_12_tt
-		hidden_effect = {
-		country_event = { id = LIB_xh.01 days = 1 }
-						}
-							}
-			}
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+		
+		add_to_variable = {
+			var = LIB_economy_committee_industry_repair_factor
+			value = 0.1
+			tooltip = industry_repair_factor_tt
+		} # 工厂修复速度
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
+		
+		add_to_variable = {
+			var = LIB_economy_committee_monthly_population
+			value = 0.1
+			tooltip = monthly_population_tt
+		} # 每月人口
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.1
+			tooltip = production_speed_buildings_factor_tt
+		} # 建设速度
+		
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		} # 政治点消耗
+				hidden_effect = {
+				country_event = { id = LIB_xh.01 days = 1 }
+								}
+									}
+					}
 
 	focus = {
 		id = LIB_new_focus_13
 		icon = GFX_goal_unknown
 		x = 13
 		y = 4
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -431,6 +584,31 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		} # 从煤炭获得的能量
+		
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		
+		add_to_variable = {
+			var = LIB_economy_committee_research_speed_factor
+			value = 0.1
+			tooltip = research_speed_factor_tt
+		} # 研究速度
+		
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		} # 金钱收入
 		}
 	}
 
@@ -439,7 +617,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 5
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_13 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -458,6 +636,31 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_industrial_capacity_dockyard
+			value = 0.1
+			tooltip = industrial_capacity_dockyard_factor_tt
+		} # 船坞工业产能
+		
+		add_to_variable = {
+			var = LIB_economy_committee_industrial_capacity_factory
+			value = 0.1
+			tooltip = industrial_capacity_tt
+		} # 工厂产出
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		} # 生产效率增长
+		
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		} # 金钱收入
 		}
 	}
 
@@ -466,7 +669,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 4
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -485,6 +688,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = {
+				id = LIB_jjxt.13
+				days = 3
+			}
 		}
 	}
 
@@ -493,7 +700,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 15
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_12 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -512,6 +719,35 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+		
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
+		add_to_variable = {
+			var = LIB_impure_party_stability_weekly
+			value = 0.005
+			tooltip = stability_weekly_tt
+		}
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		} # 政治点消耗
 		}
 	}
 
@@ -520,7 +756,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 5
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_15 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -539,6 +775,37 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+		
+		add_to_variable = {
+			var = LIB_economy_committee_industry_repair_factor
+			value = 0.1
+			tooltip = industry_repair_factor_tt
+		} # 工厂修复速度
+		
+		add_to_variable = {
+			var = LIB_economy_committee_conscription_factor
+			value = 0.1
+			tooltip = conscription_factor_tt
+		} # 可征募人口
+		
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		} # 政治点消耗
+		
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.1
+			tooltip = hcp_income_factor_monthly_tooltip
+		} # 金钱收入
 		}
 	}
 
@@ -547,7 +814,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 15
 		y = 5
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_16 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -566,6 +833,37 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		} # 从煤炭获得的能量
+		
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
+		
+		add_to_variable = {
+			var = LIB_economy_committee_conscription_factor
+			value = 0.1
+			tooltip = conscription_factor_tt
+		} # 可征募人口
+		
+		add_to_variable = {
+			var = LIB_economy_committee_monthly_population
+			value = 0.1
+			tooltip = monthly_population_tt
+		} # 每月人口
 		}
 	}
 
@@ -574,7 +872,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 6
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_17 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -593,6 +891,31 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+		
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		
+		add_to_variable = {
+			var = LIB_economy_committee_conscription_factor
+			value = 0.1
+			tooltip = conscription_factor_tt
+		} # 可征募人口
+		
+		add_to_variable = {
+			var = LIB_economy_committee_monthly_population
+			value = 0.1
+			tooltip = monthly_population_tt
+		} # 每月人口
 		}
 	}
 
@@ -601,7 +924,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 6
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_14 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -620,6 +943,28 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_industrial_capacity_dockyard
+			value = 0.1
+			tooltip = industrial_capacity_dockyard_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.1
+			tooltip = production_speed_buildings_factor_tt
+		}
 		}
 	}
 
@@ -628,7 +973,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 15
 		y = 6
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_18 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -647,6 +992,33 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_6_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_industry_repair_factor
+			value = 0.1
+			tooltip = industry_repair_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_efficiency_gain_factor
+			value = 0.1
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_conscription_factor
+			value = 0.1
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_monthly_population
+			value = 0.1
+			tooltip = monthly_population_tt
+		}
 		}
 	}
 
@@ -655,7 +1027,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 7
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_20 }
 		prerequisite = { focus = LIB_new_focus_21 }
 		prerequisite = { focus = LIB_new_focus_19 }
@@ -676,6 +1048,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		clr_country_flag = LIB_13_flag
 		clr_country_flag = LIB_14_flag
 		clr_country_flag = LIB_15_flag
@@ -689,6 +1062,44 @@ focus_tree = {
 		custom_effect_tooltip ={
 		tooltip = LIB_eco_rise_high_tt
 		}
+		custom_effect_tooltip = LIB_new_focus_22_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_energy_gain_factor
+			value = 0.1
+			tooltip = energy_gain_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_industrial_capacity_factory
+			value = 0.1
+			tooltip = industrial_capacity_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.1
+			tooltip = line_change_production_efficiency_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_impure_party_stability_weekly
+			value = 0.005
+			tooltip = stability_weekly_tt
+		}
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.1
+			tooltip = political_power_cost_tt
+		}
+		add_to_variable = {
+			var = LIB_hcp_income_factor_monthly
+			value = 0.2
+			tooltip = hcp_income_factor_monthly_tooltip
+		}
+		
 		}
 	}
 
@@ -697,16 +1108,34 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 8
-		cost = 10
+		cost = 1
 		prerequisite = { focus = LIB_new_focus_11 }
 		prerequisite = { focus = LIB_new_focus_22 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_11
+		has_completed_focus = LIB_new_focus_22
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_23_tt
+		remove_country_leader_trait = dictator
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_impure_party_stability_weekly
+			value = 0.01
+			tooltip = stability_weekly_tt
+		}
+		add_to_variable = {
+			var = LIB_political_power_cost
+			value = -0.05
+			tooltip = political_power_cost_tt
+		}
+		set_country_flag = LIB_open_gongye_flag
 		}
 	}
 
@@ -715,7 +1144,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 9
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_23 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -724,6 +1153,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_dwtzhzj
 		}
 	}
 
@@ -732,7 +1162,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 9
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_23 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -741,6 +1171,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_fzytzglj
+		custom_effect_tooltip = LIB_new_focus_25_tt
 		}
 	}
 
@@ -749,7 +1181,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 10
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_24 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -758,6 +1190,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		swap_ideas = {
+            remove_idea = LIB_dwtzhzj
+            add_idea = LIB_dwtzhzj2
+			}
+			custom_effect_tooltip = LIB_gjdd_tt
+			add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
+        } # 金钱收入
 		}
 	}
 
@@ -766,7 +1208,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 10
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_25 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -775,7 +1217,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_hyglj
+		custom_effect_tooltip = LIB_gjdd_tt
+			add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
 		}
+	}
 	}
 
 	focus = {
@@ -783,7 +1232,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 11
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_26 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -792,7 +1241,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+			add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
 		}
+	}
 	}
 
 	focus = {
@@ -800,7 +1256,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 11
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_27 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -809,7 +1265,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+			add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
 		}
+	}
 	}
 
 	focus = {
@@ -817,7 +1280,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 12
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_28 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -826,15 +1289,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+			add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
 		}
 	}
-
+	}
+	
 	focus = {
 		id = LIB_new_focus_31
 		icon = GFX_goal_unknown
 		x = 11
 		y = 12
-		cost = 10
+		cost = 6
 		prerequisite = { focus = LIB_new_focus_29 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -843,15 +1313,28 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_sxzdtz
+
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = 0.05
+            tooltip = hcp_income_factor_monthly_tooltip
+		add_to_variable = {
+            var = LIB_political_power_cost
+            value = 0.05
+            tooltip = political_power_cost_tt
+        } # 政治点消耗
 		}
 	}
-
+	}
+	
 	focus = {
 		id = LIB_new_focus_32
 		icon = GFX_goal_unknown
 		x = 5
 		y = 15
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -860,6 +1343,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -868,7 +1352,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 16
-		cost = 10
+		cost = 1
 		prerequisite = { focus = LIB_new_focus_32 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -878,6 +1362,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_never_surrunder
 		}
 	}
 
@@ -886,7 +1371,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 17
-		cost = 10
+		cost = 1
 		prerequisite = { focus = LIB_new_focus_33 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -903,7 +1388,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 18
-		cost = 10
+		cost = 1
 		prerequisite = { focus = LIB_new_focus_34 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -978,7 +1463,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 19
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -995,7 +1480,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 20
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_36 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1012,7 +1497,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 19
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1029,7 +1514,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 20
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_38 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1046,12 +1531,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 15
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		allow_branch = {
-			has_completed_focus = LIB_new_focus_35 
+		has_completed_focus = LIB_new_focus_35 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1065,7 +1550,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 16
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1082,7 +1567,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 17
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_43 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1099,7 +1584,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 17
 		y = 16
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1116,7 +1601,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 21
 		y = 16
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_42 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1133,7 +1618,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 17
 		y = 17
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_45 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1150,7 +1635,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 21
 		y = 17
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_46 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1167,7 +1652,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 15
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_44 }
@@ -1187,7 +1672,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_44 }
@@ -1207,7 +1692,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 17
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_44 }
@@ -1227,7 +1712,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 21
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_44 }
@@ -1247,7 +1732,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 23
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_48 }
 		prerequisite = { focus = LIB_new_focus_47 }
 		prerequisite = { focus = LIB_new_focus_44 }
@@ -1267,15 +1752,23 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 23
 		y = 0
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_completed_focus = LIB_new_focus_2 }
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_2 
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		FRA = {
+		country_event = {
+				id = LIB_jjxt.17
+				days = 3
+			} 
+		}
 		}
 	}
 
@@ -1284,7 +1777,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 24
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_49 focus = LIB_new_focus_50 focus = LIB_new_focus_51 focus = LIB_new_focus_52 focus = LIB_new_focus_53 }
 		prerequisite = { focus = LIB_new_focus_34 }
 		cancel_if_invalid = yes
@@ -1302,7 +1795,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 25
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_55 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1319,7 +1812,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 26
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_56 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1336,7 +1829,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 27
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_57 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1353,7 +1846,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
 		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
@@ -1371,7 +1864,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
 		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
@@ -1389,7 +1882,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_59 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1406,7 +1899,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_61 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1423,7 +1916,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_60 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1440,7 +1933,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_63 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1457,7 +1950,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_60 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1474,7 +1967,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_59 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1491,27 +1984,85 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 0
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		allow_branch = {
-		has_completed_focus = LIB_new_focus_2 
+		has_country_flag = LIB_dxt_flag
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_67_tt
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+            var = LIB_economy_committee_consumer_goods_factor
+            value = -0.05
+            tooltip = consumer_goods_factor_tt
+        } # 生活消费品工厂系数（负值正面）
+        add_to_variable = {
+            var = LIB_economy_committee_industrial_capacity_factory
+            value = 0.05
+            tooltip = industrial_capacity_tt
+        } # 工厂产出
+        add_to_variable = {
+            var = LIB_economy_committee_conscription_factor
+            value = 0.10
+            tooltip = conscription_factor_tt
+        } # 可征募人口
+        add_to_variable = {
+            var = LIB_economy_committee_monthly_population
+            value = 0.2
+            tooltip = monthly_population_tt
+        } # 每月人口
+        add_to_variable = {
+            var = LIB_impure_party_stability_weekly
+            value = 0.01
+            tooltip = stability_weekly_tt
+        } # 周度稳定性
+        add_to_variable = {
+            var = LIB_political_power_cost
+            value = -0.05
+            tooltip = political_power_cost_tt
+        } # 政治点消耗（负值正面）
+        add_to_variable = {
+            var = LIB_hcp_income_factor_monthly
+            value = -0.05
+            tooltip = hcp_income_factor_monthly_tooltip
+        } # 金钱收入
+		custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+            var = LIB_experience_gain_army
+            value = 0.10
+            tooltip = experience_gain_army_tt
+        } # 陆军经验获取
+        add_to_variable = {
+            var = LIB_special_forces_attack_factor
+            value = 0.05
+            tooltip = special_forces_attack_factor_tt
+        } # 特种攻击
+        add_to_variable = {
+            var = LIB_special_forces_defence_factor
+            value = 0.05
+            tooltip = special_forces_defence_factor_tt
+        } # 特种防御
+		mark_focus_tree_layout_dirty = yes
+    }
 		}
-	}
+	
 
 	focus = {
 		id = LIB_new_focus_68
 		icon = GFX_goal_unknown
 		x = 32
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_67 }
+		allow_branch = {
+		has_completed_focus = LIB_new_focus_67
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1527,7 +2078,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_68 }
 		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
 		cancel_if_invalid = yes
@@ -1545,7 +2096,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_69 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1562,7 +2113,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1579,7 +2130,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1596,7 +2147,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 34
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_71 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1613,7 +2164,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 31
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_73 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1630,7 +2181,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_73 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1647,7 +2198,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIB_new_focus_75 }
 		prerequisite = { focus = LIB_new_focus_76 }
 		cancel_if_invalid = yes
@@ -1657,6 +2208,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LIB_fkjs
 		}
 	}
 }

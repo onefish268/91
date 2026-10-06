@@ -1,5 +1,6 @@
-defined_text = {
+	defined_text = {
 	#新人间之里国家介绍
+	name = GET_LIB_Country_History
 	text = {
 		trigger = { check_variable = { Country_History_Page_Var = 1 } }
 		localization_key = LIB_Country_History_Page_01
@@ -70,24 +71,38 @@ defined_text = {
 	name = LIB_GJDD_NAME
 	text = {
 		trigger = {
-			has_country_flag = LIB_JJHF
+		AND = {
+			has_completed_focus = LIB_new_focus_23
+			NOT = {
+			has_completed_focus = LIB_new_focus_46
+			}
+			}
 		}
 		localization_key = LIB_gjdd2_name
+	}
+	text = {
+		trigger = {
+		AND = {
+			has_completed_focus = LIB_new_focus_23
+			has_completed_focus = LIB_new_focus_46
+		}
+		}
+		localization_key = LIB_gjdd3_name
 	}
 	text = {
 		localization_key = LIB_gjdd1_name
 	}
 	}
 	defined_text = {
-	name = XZYH_NAME
+	name = LIB_GONGYE_NAME
 	text = {
 		trigger = {
-			has_country_flag = LIB_XZYHJS
+			has_completed_focus = LIB_new_focus_46
 		}
-		localization_key = FRA_GJGDWYH
+		localization_key = LIB_gongye_category_name2
 	}
 	text = {
-		trigger = { always = yes }
-		localization_key = FRA_XZYH
+		localization_key = LIB_gongye_category_name1
 	}
 	}
+	
