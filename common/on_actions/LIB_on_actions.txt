@@ -1,0 +1,93 @@
+on_actions = {
+	on_startup = {
+		effect = {
+        LIB = {
+            set_variable = { var = LIB_party_fascist_pop value = party_popularity@fascism }
+            set_variable = { var = LIB_party_democratic_pop value = party_popularity@democratic }
+            set_variable = { var = LIB_party_communist_pop value = party_popularity@communism }
+            set_variable = { var = LIB_party_neutral_pop value = party_popularity@neutrality }
+        }
+    }
+	}
+	on_monthly = {
+    effect = {
+        LIB = {
+            set_variable = {
+                var = LIB_party_fascist_pop
+                value = party_popularity@fascism
+            }
+            set_variable = {
+                var = LIB_party_democratic_pop
+                value = party_popularity@democratic
+            }
+            set_variable = {
+                var = LIB_party_communist_pop
+                value = party_popularity@communism
+            }
+            set_variable = {
+                var = LIB_party_neutral_pop
+                value = party_popularity@neutrality
+            }
+        }
+    }
+}
+	on_daily_FRA = {
+    effect = {
+        FRA = {
+            if = {
+                limit = {
+                    has_war_with = DVL
+                    DVL = { is_faction_leader = yes }
+                    surrender_progress > 0.6
+                    16 = {
+                        controller = {
+                            NOT = { original_tag = FRA }
+                        }
+                    }
+                    NOT = { has_global_flag = FRA_has_fallen }
+                    LIB = { is_subject_of = FRA }
+                }
+                country_event = LIB_lw.4
+            }
+        }
+    }
+}
+	on_daily_KMK = {
+    effect = {
+        KMK = {
+            if = {
+                limit = {
+                    has_war_with = DVL
+                    DVL = { is_faction_leader = yes }
+                    surrender_progress > 0.6
+                    16 = {
+                        controller = {
+                            NOT = { original_tag = KMK }
+                        }
+                    }
+                    NOT = { has_global_flag = FRA_has_fallen }
+                    LIB = { is_subject_of = KMK }
+                }
+                country_event = LIB_lw.1
+            }
+        }
+    }
+	}
+	
+	on_monthly_LIB = {
+    effect = {
+        LIB = {
+            if = {
+                limit = {
+				has_completed_focus = LIB_new_focus_30
+				has_completed_focus = LIB_new_focus_31
+				has_completed_focus = LIB_new_focus_54
+				has_completed_focus = LIB_new_focus_67
+				NOT = {has_country_flag = LIB_FRA_will_fall_flag}
+                }
+                country_event = LIB_flavor.2
+            }
+        }
+    }
+}
+}

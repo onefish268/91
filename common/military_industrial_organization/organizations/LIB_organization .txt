@@ -1,0 +1,205 @@
+#################### 
+LIB_arsenal_organization = {
+	name = LIB_arsenal
+	include = generic_tank_organization
+	icon = GFX_idea_KMK_arsenal
+	allowed = {	
+			original_tag = LIB
+		}
+	available = {
+		has_completed_focus = LIB_new_focus_48
+	}
+	equipment_type = { armor }
+	initial_trait = {
+		name = USA_mio_trait_dedicated_tank_factory
+		
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = -0.05
+			build_cost_ic = -0.03
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_arsenal_of_neutrality
+		name = KMK_mio_trait_arsenal_of_neutrality
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+
+		all_parents = { generic_mio_trait_standardized_components }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.15
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Forbidden_Knight
+		name = KMK_mio_trait_Forbidden_Knight
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		special_trait_background = yes
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+		all_parents = { generic_mio_trait_standardized_components }
+		equipment_bonus = {
+			soft_attack = 0.1
+			defense = 0.1
+			hardness = 0.05
+			hard_attack = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_artillery
+		name = KMK_mio_trait_Improve_artillery
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		special_trait_background = yes
+		position = { x=6 y=1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		available = {
+			has_global_flag = second_weltkrieg_has_started
+		}
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_speed
+		name = KMK_mio_trait_Improve_speed
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		position = { x=6 y=0 }
+		relative_position_id = generic_mio_trait_standardized_components
+		equipment_bonus = {
+			maximum_speed = 0.10
+			defense = 0.02
+			hardness = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = KMK_mio_trait_Improve_armor
+		name = KMK_mio_trait_Improve_armor
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		position = { x=6 y=-1 }
+		relative_position_id = generic_mio_trait_standardized_components
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}
+	add_trait = { 
+		token = LIB_mio_trait_Improve_aa
+		name = LIB_mio_trait_Improve_aaa
+		icon = GFX_generic_mio_department_icon_anti_air
+		special_trait_background = yes
+		position = { x=6 y=2 }
+		relative_position_id = generic_mio_trait_standardized_components
+		available = {
+			has_completed_focus = LIB_new_focus_74
+		}
+			limit_to_equipment_type = {
+        "mio_cat_eq_all_light_tank"
+        "mio_cat_eq_all_medium_tank"
+        "mio_cat_eq_all_heavy_tank"
+    }
+	equipment_bonus = {
+        air_attack = 0.20  # 对空攻击 +20%
+    }
+		}
+	}
+#####################
+LIB_Kappa_Heavy_Industries_materiel = {
+	name = LIB_Kappa
+	include = artillery_offense_organization
+	icon = GFX_idea_Kappa_Heavy_Industries
+	allowed = {	
+			original_tag = LIB
+		}
+	available = {
+		has_completed_focus = LIB_new_focus_48
+	}
+	add_trait = { 
+		token = LIB_mio_trait_Improve_aa
+		name = LIB_mio_trait_Improve_aa
+		icon = GFX_generic_mio_department_icon_anti_air
+		special_trait_background = yes
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_light_weight_barrels
+		available = {
+			has_completed_focus = LIB_new_focus_74
+		}
+			limit_to_equipment_type = {
+			anti_air_equipment
+		}
+	equipment_bonus = {
+        air_attack = 0.20  # 对空攻击 +20%
+    }
+		}
+}
+#####################
+LIB_Moriya_Ropeway = {  ##守矢索道
+	include = generic_train_organization
+	icon = GFX_idea_FRA_Moriya_Ropeway
+	allowed = {	
+			original_tag = LIB
+		}
+	available = {
+		has_completed_focus = LIB_new_focus_48
+	}
+	research_categories = { train_tech support_tech }
+	initial_trait = {
+		name = generic_mio_initial_trait_generic_train_manufacturer
+		limit_to_equipment_type = { 
+			train_equipment 
+			#support_equipment
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0 #5% from MIO base
+		}
+	}
+	add_trait = { 
+		token = LIB_mio_trait_Improve_aa
+		name = LIB_mio_trait_Improve_aa
+		icon = GFX_generic_mio_department_icon_anti_air
+		special_trait_background = yes
+		position = { x=6 y=2 }
+		relative_position_id = generic_mio_trait_improved_axle_fitting
+		available = {
+			has_completed_focus = LIB_new_focus_74
+		}
+			limit_to_equipment_type = {
+			train_equipment
+		}
+	equipment_bonus = {
+        air_attack = 0.20  # 对空攻击 +20%
+    }
+		}
+}
+generic_mio_trait_improved_axle_fitting
+#####################
+LIB_Wings_of_Tengu = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_Wings_of_Tengu
+	allowed = {	
+			original_tag = LIB
+		}
+	available = {
+		has_completed_focus = LIB_new_focus_48
+	}
+}

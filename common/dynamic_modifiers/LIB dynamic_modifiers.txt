@@ -2,10 +2,11 @@
 ###国家层面动态修正（由原民族精神转换，数值由变量驱动）###
 #新人间之里自卫队/幻想乡防卫军
 LIB_hxxfwj_idea = {
+	name = LIB_HXXFWJ_NAME
 	enable = {
 		always = yes
 	}
-	icon = ARG_construction_guilds
+	icon = GFX_idea_LIB_3
 	experience_gain_army = LIB_experience_gain_army ##陆军经验获取
 	army_armor_speed_factor = LIB_army_armor_speed_factor   ##装甲速度
 	army_artillery_attack_factor = LIB_army_artillery_attack_factor   ##火炮攻击
@@ -22,7 +23,7 @@ LIB_hxxfwj_idea = {
 	max_planning_factor = LIB_max_planning_factor ##计划加成上限系数
 	training_time_factor = LIB_training_time_factor ##训练时间
 	special_forces_attack_factor = LIB_special_forces_attack_factor ##特种攻击
-	special_forces_defence_factor = LIB_special_forces_attack_factor ##特种防御
+	special_forces_defence_factor = LIB_special_forces_defence_factor ##特种防御
 	convoy_raiding_efficiency_factor = LIB_convoy_raiding_efficiency_factor   ##船队袭击效率
 	fighter_sortie_efficiency = LIB_fighter_sortie_efficiency   ##战斗机出击效率
 	air_accidents_factor = LIB_airforce_air_accidents_factor   ##飞行事故系数
@@ -34,10 +35,10 @@ LIB_hxxfwj_idea = {
 	navy_submarine_attack_factor = LIB_navy_submarine_attack_factor   ##潜艇攻击系数
 	navy_submarine_defence_factor = LIB_navy_submarine_defence_factor   ##潜艇防御系数
 	navy_visibility = LIB_navy_visibility   ##可见度
-	
 }
 #国家动荡/经济复苏
 LIB_gjdd_idea = {
+	name = LIB_GJDD_NAME
 	enable = {
 		always = yes
 	}
@@ -46,7 +47,7 @@ LIB_gjdd_idea = {
 	consumer_goods_factor = LIB_economy_committee_consumer_goods_factor   ##生活消费品工厂系数
 	energy_gain_factor = LIB_economy_committee_energy_gain_factor   ##从煤炭获得的能量
 	industrial_capacity_dockyard_factor = LIB_industrial_capacity_dockyard ##船坞工业产能
-	industrial_capacity = LIB_economy_committee_industrial_capacity_factory   ##工厂产出
+	industrial_capacity_factor = LIB_economy_committee_industrial_capacity_factory   ##工厂产出
 	industry_repair_factor = LIB_economy_committee_industry_repair_factor   ##工厂修复速度
 	line_change_production_efficiency_factor = LIB_economy_committee_line_change_production_efficiency_factor   ##生产效率保持
 	production_factory_efficiency_gain_factor = LIB_economy_committee_production_factory_efficiency_gain_factor   ##生产效率增长
@@ -57,7 +58,7 @@ LIB_gjdd_idea = {
 	production_speed_buildings_factor = LIB_economy_committee_production_speed_buildings_factor  ##建设速度
 	stability_weekly = LIB_impure_party_stability_weekly   ##周度稳定性
 	political_power_cost = LIB_political_power_cost #政治点数消耗
-	hcp_income_factor_monthly = LIB_hcp_income_factor_monthly #金金金金金钱钱钱钱钱
+	hcp_income_factor_monthly = LIB_hcp_income_factor_monthly #金金金金金金金钱钱钱钱钱
 	
 }	
 
@@ -66,39 +67,41 @@ LIB_pxzc1_idea = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_LIB_5
-	party_popularity_stability_factor = -1.0#禁用党派支持率
-	stability_factor = 0.595#固定稳定度支持
-	energy_gain_factor = {##从煤炭获得的能量
-        value = party_popularity@fascist
+    #icon = GFX_idea_LIB_5
+    party_popularity_stability_factor = -1.0
+    stability_factor = 0.595
+    # 法西斯主义支持率驱动的加成
+    energy_gain_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	army_attack_factor = {##陆军师攻击
-        value = party_popularity@fascist
+    army_attack_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	research_speed_factor = {##研究速度
-        value = party_popularity@fascist
+    research_speed_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	army_defence_factor = {##陆军师防御
-        value = party_popularity@fascist
+    army_defence_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	conscription_factor = {##可征募人口
-        value = party_popularity@democratic
+    # 民主主义支持率驱动的加成
+    conscription_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	army_morale_factor = {##陆军师组织度恢复速率
-        value = party_popularity@democratic
+    army_morale_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	army_org_factor = {##陆军师组织度
-        value = party_popularity@democratic
+    army_org_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	industry_repair_factor = {##工厂修复速度
-        value = party_popularity@democratic
+    industry_repair_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
 }	
@@ -106,56 +109,57 @@ LIB_pxzc2_idea = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_LIB_5
+	#icon = GFX_idea_LIB_5
 	party_popularity_stability_factor = -1.0#禁用党派支持率
 	stability_factor = 0.595#固定稳定度支持
 	arms_factory_build_speed_factor = {##建设速度
-        value = party_popularity@communist
+        value = LIB_party_communist_pop
         multiply = 0.20
     }
 	production_factory_max_efficiency_factor = {##生产效率上限
-        value = party_popularity@communist
+        value = LIB_party_communist_pop
         multiply = 0.20
     }
 	industrial_capacity_factory = {##工厂产出
-        value = party_popularity@communist
+        value = LIB_party_communist_pop
         multiply = 0.20
     }
 	consumer_goods_factor = {##生活消费品工厂系数
-        value = 
-		party_popularity@communist
+        value = LIB_party_communist_pop
         multiply = 0.20
     }
-	energy_gain_factor = {##从煤炭获得的能量
-        value = party_popularity@fascist
+	  # 法西斯主义支持率驱动的加成
+    energy_gain_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	army_attack_factor = {##陆军师攻击
-        value = party_popularity@fascist
+    army_attack_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	research_speed_factor = {##研究速度
-        value = party_popularity@fascist
+    research_speed_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	army_defence_factor = {##陆军师防御
-        value = party_popularity@fascist
+    army_defence_factor = {
+        value = LIB_party_fascist_pop
         multiply = 0.20
     }
-	conscription_factor = {##可征募人口
-        value = party_popularity@democratic
+    # 民主主义支持率驱动的加成
+    conscription_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	army_morale_factor = {##陆军师组织度恢复速率
-        value = party_popularity@democratic
+    army_morale_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	army_org_factor = {##陆军师组织度
-        value = party_popularity@democratic
+    army_org_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
-	industry_repair_factor = {##工厂修复速度
-        value = party_popularity@democratic
+    industry_repair_factor = {
+        value = LIB_party_democratic_pop
         multiply = 0.20
     }
 }

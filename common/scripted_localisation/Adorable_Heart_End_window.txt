@@ -1,0 +1,1534 @@
+defined_text = {  ##图片
+    name = GET_Adorable_Heart_End_Icon
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = GFX_DVL_End_Icon
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GFX_GER_Xier_End_Icon
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Sanae }
+        }
+        localization_key = GFX_FRA_Sanae_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            or = {
+                FRA_Social_Democratic_elections_foucs_tree = yes
+                has_country_leader = {
+                    ruling_only = yes
+                    character = FRA_Kasen
+                }
+            }
+        }
+        localization_key = GFX_FRA_PSG_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            OR = {
+                has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+            }
+        }
+        localization_key = GFX_FRA_Marisa_End_Icon #我和我老婆
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Kamishirasawa_Keine }
+        }
+        localization_key = GFX_FRA_IDU_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Reisen_Udongein_Inaba }
+        }
+        localization_key = GFX_FRA_GFN_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Houraisan_Kaguya }
+        }
+        localization_key = GFX_FRA_HKP_End_Icon
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = GFX_MGU_Soul_Default_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = GFX_MGU_Soul_Complete_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = GFX_MGU_Silver_Court_End_Icon
+    }
+    text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = GFX_MTK_End_Icon
+	}
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = GFX_yuki_end
+    }
+    #野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = GFX_LHS_heguo_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = LHS
+                        has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = GFX_LHS_xiaofeng_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = GFX_LHS_xueyi_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = GFX_LHS_mumian_End_Icon
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = GFX_PAO_wdgz_end_Icon
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = GFX_PAO_zxrc_end_Icon
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = GFX_PAM_lqdw_end_Icon
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = GFX_PAM_last_end_Icon
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = GFX_PAQ_last_end_Icon
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = GFX_KMK_Sakuya_he_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = GFX_KMK_Sakuya_be_End_Icon
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = GFX_PRC_Chen_shi_tao_End_Icon
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = GFX_JAP_fascism_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = GFX_JAP_communism_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = GFX_JAP_democratic_End_Icon
+    }    
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_End_Icon
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_End_Icon
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_End_Icon
+    }
+    text = {##  平安京
+        trigger = {
+            tag = ONM
+        }
+        localization_key = GFX_LIB_End_Icon
+    }
+}
+
+
+defined_text = {  ##标题
+    name = GET_Adorable_Heart_End_window_title
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_end_title
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GER_xier_end_title
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Sanae }
+        }
+        localization_key = FRA_Sanae_end_title
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            or = {
+                FRA_Social_Democratic_elections_foucs_tree = yes
+                has_country_leader = {
+                    ruling_only = yes
+                    character = FRA_Kasen
+                }
+            }
+        }
+        localization_key = FRA_PSG_end_title
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            OR = {
+                has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+            }
+        }
+        localization_key = FRA_PFG_end_title
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Kamishirasawa_Keine }
+        }
+        localization_key = FRA_IDU_end_title
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Reisen_Udongein_Inaba }
+        }
+        localization_key = FRA_GFN_end_title
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Houraisan_Kaguya }
+        }
+        localization_key = FRA_HKP_end_title
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = MGU_Soul_Default_end_title
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = MGU_Soul_Complete_end_title
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = MGU_Silver_Court_end_title
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = MGU_yuki_end_title
+    }
+ 	text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = MTK_end_title
+	}	   
+    ##  野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_title
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_title2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_title3
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = LHS_end_title4
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = PAO_end_title
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = PAO_end_title2
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = PAM_end_title
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = PAM_end_title2
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = PAQ_end_title
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = KMK_Sakuya_he_end_title
+    }
+    text = {
+        trigger = {
+            tag = KMK
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = KMK_Sakuya_be_end_title
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = PRC_Chen_shi_tao_end_title
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = JAP_fascism_end_title
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = JAP_communism_end_title
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = JAP_democratic_end_title
+    }
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_end_title
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_end_title
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_end_title
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_end_title
+    }
+    text = {##  平安京
+        trigger = {
+            tag = LIB
+        }
+        localization_key = LIB_end_title
+    }
+}
+
+
+defined_text = {  ##介绍1
+    name = GET_Adorable_Heart_End_window_TIP_1
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_end_tip
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GER_xier_end_tip
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Sanae }
+        }
+        localization_key = FRA_Sanae_end_tip
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            or = {
+                FRA_Social_Democratic_elections_foucs_tree = yes
+                has_country_leader = {
+                    ruling_only = yes
+                    character = FRA_Kasen
+                }
+            }
+        }
+        localization_key = FRA_PSG_end_tip
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            OR = {
+                has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+            }
+        }
+        localization_key = FRA_Marisa_end_tip #雾雨魔理沙胜利结算
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Kamishirasawa_Keine }
+        }
+        localization_key = FRA_IDU_end_tip
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Reisen_Udongein_Inaba }
+        }
+        localization_key = FRA_GFN_end_tip
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Houraisan_Kaguya }
+        }
+        localization_key = FRA_HKP_end_tip
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = MGU_Soul_Default_end_tip
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = MGU_Soul_Complete_end_tip
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = MGU_Silver_Court_end_tip
+    }
+	text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = MTK_end_tip
+	}    
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = MGU_yuki_end_tip
+    }
+    ##  野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip
+    }
+    text = {
+        trigger = {
+            tag = LHS
+                        has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip3
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = LHS_end_tip4
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = PAO_end_tip
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = PAO_end_tip2
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = PAM_end_tip
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = PAM_end_tip2
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = PAQ_end_tip
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = KMK_Sakuya_he_end_tip
+    }
+    text = {
+        trigger = {
+            tag = KMK
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = KMK_Sakuya_be_end_tip
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = PRC_Chen_shi_tao_end_tip
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = JAP_fascism_end_tip
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = JAP_communism_end_tip
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = JAP_democratic_end_tip
+    }
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_end_tip
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_end_tip
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_end_tip
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_end_tip
+    }
+    text = {##  平安京
+        trigger = {
+            tag = LIB
+        }
+        localization_key = LIB_end_tip
+    }
+}
+
+
+
+defined_text = {  ##介绍2
+    name = GET_Adorable_Heart_End_window_TIP_2
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_end_tip_2
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GER_xier_end_tip_2
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            NOT = {
+                OR = {
+                    has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                    has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+                }
+            }
+        }
+        localization_key = FRA_end_tip_2
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = MGU_Soul_Default_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = MGU_Soul_Complete_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = MGU_Silver_Court_end_tip_2
+    }
+	text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = MTK_end_tip_2
+	}    
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = MGU_yuki_end_tip_2
+    }
+    ##  野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+                        has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip2_2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_tip3_2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = LHS_end_tip4_2
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = PAO_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = PAO_end_tip2_2
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = PAM_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = PAM_end_tip2_2
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = PAQ_end_tip_2
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = KMK_Sakuya_he_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = KMK_Sakuya_be_end_tip_2
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = PRC_Chen_shi_tao_end_tip_2
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = JAP_fascism_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = JAP_communism_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = JAP_democratic_end_tip_2
+    }
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_end_tip_2
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_end_tip_2
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_end_tip_2
+    }
+    text = {##  平安京
+        trigger = {
+            tag = LIB
+        }
+        localization_key = LIB_end_tip_2
+    }
+}
+
+
+defined_text = {  ##按钮
+    name = GET_Adorable_Heart_End_close_button_text
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_end_close_button
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GER_xier_end_close_button
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Sanae }
+        }
+        localization_key = FRA_Sanae_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            or = {
+                FRA_Social_Democratic_elections_foucs_tree = yes
+                has_country_leader = {
+                    ruling_only = yes
+                    character = FRA_Kasen
+                }
+            }
+        }
+        localization_key = FRA_PSG_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            OR = {
+                has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+            }
+        }
+        localization_key = FRA_Marisa_end_close_button #结语按钮
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Kamishirasawa_Keine }
+        }
+        localization_key = FRA_IDU_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Reisen_Udongein_Inaba }
+        }
+        localization_key = FRA_GFN_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Houraisan_Kaguya }
+        }
+        localization_key = FRA_HKP_end_close_button
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = MGU_Soul_Default_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = MGU_Soul_Complete_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = MGU_Silver_Court_end_close_button
+    }
+	text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = MTK_end_close_button
+	}    
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = MGU_yuki_end_button
+    }
+    ##  野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = LHS
+                        has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button2
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button3
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = LHS_end_close_button4
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = PAO_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = PAO_end_close_button2
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = PAM_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = PAM_end_close_button2
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = PAQ_end_close_button
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = KMK_Sakuya_he_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = KMK_Sakuya_be_end_close_button
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = PRC_Chen_shi_tao_end_close_button
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = JAP_fascism_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = JAP_communism_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = JAP_democratic_end_close_button
+    }
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_end_close_button
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_end_close_button
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_end_close_button
+    }
+    text = {##  平安京
+        trigger = {
+            tag = LIB
+        }
+        localization_key = LIB_end_close_button
+    }
+}
+
+defined_text = {  ##按钮-悬浮
+    name = GET_Adorable_Heart_End_close_button_TT
+    ##  魔导国
+    text = {
+        trigger = { tag = DVL }
+        localization_key = DVL_end_close_button_TT
+    }
+    ##  德国
+    text = {
+        trigger = {
+            tag = GER
+            has_country_leader = { ruling_only = yes character = GER_xier }
+        }
+        localization_key = GER_xier_end_close_button_TT
+    }
+    ##  幻想乡
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Sanae }
+        }
+        localization_key = FRA_Sanae_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            or = {
+                FRA_Social_Democratic_elections_foucs_tree = yes
+                has_country_leader = {
+                    ruling_only = yes
+                    character = FRA_Kasen
+                }
+            }
+        }
+        localization_key = FRA_PSG_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            OR = {
+                has_country_leader = { ruling_only = yes character = FRA_Marisa }
+                has_country_leader = { ruling_only = yes character = FRA_Alice_Margatroid }
+            }
+        }
+        localization_key = FRA_Marisa_end_close_button_TT #RT
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Kamishirasawa_Keine }
+        }
+        localization_key = FRA_IDU_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Reisen_Udongein_Inaba }
+        }
+        localization_key = FRA_GFN_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = FRA
+            has_country_leader = { ruling_only = yes character = FRA_Houraisan_Kaguya }
+        }
+        localization_key = FRA_HKP_end_close_button_TT
+    }
+    ##  魔联
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Default_flag
+        }
+        localization_key = MGU_Soul_Default_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Soul_Complete_flag
+        }
+        localization_key = MGU_Soul_Complete_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_Silver_Court_flag
+        }
+        localization_key = MGU_Silver_Court_end_close_button_TT
+    }
+	text = {
+		trigger = {
+			tag = MGU
+			has_country_flag = MTK_end_flag
+		}
+		localization_key = MTK_end_close_button_TT
+	}    
+    text = {
+        trigger = {
+            tag = MGU
+            has_country_flag = MGU_yuki_enter
+        }
+        localization_key = MGU_yuki_end_button_TT
+    }
+    ##  野火
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xiaoguo }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = LHS
+                        has_country_leader = { ruling_only = yes character = LHS_Nymph }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button2_TT
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_leader = { ruling_only = yes character = LHS_xueyi }
+            not = {has_country_flag = LHS_mumian2}
+        }
+        localization_key = LHS_end_close_button3_TT
+    }
+    text = {
+        trigger = {
+            tag = LHS
+            has_country_flag = LHS_mumian2
+        }
+        localization_key = LHS_end_close_button4_TT
+    }
+    ##  夜莺之国
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_kddx
+        }
+        localization_key = PAO_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = PAO
+            has_completed_focus = PAO_zxrc
+        }
+        localization_key = PAO_end_close_button2_TT
+    }
+    ##  索拉娜
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            not = {
+                has_country_flag = PAM_yqrm
+            }
+        }
+        localization_key = PAM_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = PAM
+            has_completed_focus = PAM_this_meal_is_on_me
+            has_country_flag = PAM_yqrm
+        }
+        localization_key = PAM_end_close_button2_TT
+    }
+    ##  阿德莱希
+    text = {
+        trigger = {
+            tag = PAQ
+            has_completed_focus = PAQ_65
+        }
+        localization_key = PAQ_end_close_button_TT
+    }
+    ##  红魔馆
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_he_flag
+        }
+        localization_key = KMK_Sakuya_he_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = KMK
+
+            has_country_flag = KMK_Sakuya_be_flag
+        }
+        localization_key = KMK_Sakuya_be_end_close_button_TT
+    }
+    ##  中共
+    text = {
+        trigger = {
+            tag = PRC
+            has_country_leader = { ruling_only = yes character = PRC_Chen_shi_tao }
+        }
+        localization_key = PRC_Chen_shi_tao_end_close_button_TT
+    }
+    ##  鬼子
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = fascism
+        }
+        localization_key = JAP_fascism_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = communism
+        }
+        localization_key = JAP_communism_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = JAP
+            has_government = democratic
+        }
+        localization_key = JAP_democratic_end_close_button_TT
+    }
+	##  蒙古
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_mansui }
+        }
+        localization_key = GFX_HJJ_1_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = GXC
+            has_country_leader = { ruling_only = yes character = MON_zhangwei }
+        }
+        localization_key = GFX_HJJ_2_end_close_button_TT
+    }
+    text = {
+        trigger = {
+            tag = MON
+            has_completed_focus = MON_mengguzhixiadeheping
+        }
+        localization_key = GFX_MGE_end_close_button_TT
+    }
+	##  乌克兰
+    text = {
+        trigger = {
+            tag = UKR
+            has_country_leader = { ruling_only = yes character = SOV_Anastasia }
+        }
+        localization_key = GFX_UKR_huangnv_end_close_button_TT
+    }
+    text = {##  新人间之里
+        trigger = {
+            tag = LIB
+        }
+        localization_key = LIB_end_close_button_TT
+    }
+}
+

@@ -17,7 +17,7 @@ focus_tree = {
 		x = 32
 		y = 0
 		cost = 1
-		icon = GFX_focus_NGL_in_the_ruins
+		icon = GFX_focus_zsh37
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -37,8 +37,8 @@ focus_tree = {
 		id = YSS_focus_2
 		x = 32
 		y = 2
-		cost = 2
-		icon = GFX_focus_GER_legacy_of_the_spartacus_league
+		cost = 1
+		icon = GFX_focus_zsh38
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -58,8 +58,8 @@ focus_tree = {
 		id = YSS_focus_3
 		x = 32
 		y = 3
-		cost = 3
-		icon = GFX_focus_PER_constitutional_monarchy
+		cost = 2
+		icon = GFX_focus_zsh40
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -81,8 +81,8 @@ focus_tree = {
 		id = YSS_focus_4
 		x = 30
 		y = 3
-		cost = 3
-		icon = GFX_focus_PHI_return_of_the_exiles
+		cost = 2
+		icon = GFX_focus_zsh39
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -104,8 +104,8 @@ focus_tree = {
 		id = YSS_focus_5
 		x = 34
 		y = 3
-		cost = 3
-		icon = GFX_focus_ETH_african_wildfire
+		cost = 2
+		icon = GFX_focus_zsh41
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -3163,69 +3163,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_120
-		x = -7
-		y = 4
-		cost = 3
-		icon = GFX_focus_NGL_dont_be_lenient
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_119
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_120
-				}
-			}
-			add_to_variable = {
-				YSS_training_time_factor = -0.05
-			}
-			custom_effect_tooltip = YSS_tootip_27
-		}
-	}
-	focus = {
-		id = YSS_focus_121
-		x = -5
-		y = 4
-		cost = 3
-		icon = GFX_focus_NGL_prohibition_of_discrimination
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_119
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_121
-				}
-			}
-			add_to_variable = {
-				YSS_red_army_max_army_group_size = 5
-			}
-			custom_effect_tooltip = YSS_tootip_27
-		}
-	}
-	focus = {
 		id = YSS_focus_122
 		x = -6
-		y = 5
+		y = 4
 		cost = 5
 		icon = GFX_focus_USS_security_sector_restructuring
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_120
-		}
-		prerequisite = {
-			focus = YSS_focus_121
+			focus = YSS_focus_119
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -3254,55 +3201,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_123
-		x = -2
-		y = 3
-		cost = 0
-		icon = GFX_focus_NGL_bright_new_star
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_118
-		}
-		allow_branch = {
-			has_country_flag = YSS_hongjun_baogao3
-	    }
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_123
-				}
-			}
-			add_stability = -0.05
-			add_war_support = -0.05
-			add_to_variable = {
-				YSS_army_morale_factor = -0.05
-			}
-			add_to_variable = {
-				YSS_army_org_factor = -0.05
-			}
-			add_to_variable = {
-				YSS_max_planning_factor = -0.05
-			}
-			add_to_variable = {
-				YSS_training_time_factor = 0.1
-			}
-			custom_effect_tooltip = YSS_tootip_26
-	    }
-	}
-	focus = {
 		id = YSS_focus_124
 		x = -2
-		y = 4
+		y = 3
 		cost = 0
 		icon = GFX_focus_NGL_enemy_blood
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_123
+			focus = YSS_focus_118
 		}
 		allow_branch = {
 			has_country_flag = YSS_hongjun_baogao4
@@ -3325,7 +3233,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_125
 		x = -2
-		y = 5
+		y = 4
 		cost = 0
 		icon = GFX_focus_USS_open_stock
 		continue_if_invalid = no
@@ -3364,7 +3272,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_126
 		x = -4
-		y = 6
+		y = 5
 		cost = 5
 		icon = GFX_focus_NGL_tear_up_false_law
 		continue_if_invalid = no

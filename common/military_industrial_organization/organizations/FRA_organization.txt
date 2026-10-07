@@ -1,0 +1,808 @@
+#################### 
+FRA_Kirisame_House = {
+	include = generic_spirit_suit_organization
+	icon = GFX_idea_FRA_Kirisame_House
+	allowed = {
+		or = {
+			is_Gensokyo_tag = yes
+			tag = LIB
+		}
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					or = {
+						tag = KMK	
+						tag = LIB
+					}
+				}
+				has_full_control_of_state = 33
+			}
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 33
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					33 = { is_core_of = KNM }
+					has_full_control_of_state = 33
+					33 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+	add_trait = {
+		token = USA_mio_trait_floating_module
+		name = USA_mio_trait_floating_module
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_finite_field
+		any_parent = { generic_mio_trait_finite_field generic_mio_trait_reinforced_crystallization  }
+		equipment_bonus = {
+			maximum_speed = 0.05
+			air_attack = 0.15
+		}
+	}
+	add_trait = {
+		token = USA_counterfeit_witch
+		name = USA_counterfeit_witch
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		position = { x=0 y=1 }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.10
+			production_cost_factor = -0.10
+		}
+	}
+}
+
+FRA_renault_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_renault
+	allowed = { tag = NFA }
+	visible = {
+	}
+	available = {
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	add_trait = {
+		token = FRA_mio_trait_automitrailleuses
+		name = FRA_mio_trait_automitrailleuses
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		position = {
+			x = 5
+			y = 0
+		}
+		limit_to_equipment_type = {
+			medium_tank_chassis
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+			armor_value = -0.05
+		}
+	}
+	add_trait = {
+		token = FRA_mio_trait_b1_bis_suspension
+		name = FRA_mio_trait_b1_bis_suspension
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		special_trait_background = yes
+		position = {
+			x = 1
+			y = 1
+		}
+		relative_position_id = generic_mio_trait_single_engine
+		any_parent = {
+			generic_mio_trait_single_engine
+			generic_mio_trait_dual_engine_redundancy
+		}
+		limit_to_equipment_type = {
+			heavy_tank_chassis
+		}
+		equipment_bonus = {
+			maximum_speed = 0.05
+			breakthrough = 0.1
+		}
+	}
+}
+
+FRA_hotchkiss_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	allowed = {
+		or = {
+			is_french_tag = yes
+			tag = LIB
+		}
+		not = { tag = KMK }
+	}
+	add_trait = {
+		token = FRA_mio_trait_l_35
+		name = FRA_mio_trait_l_35
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+		any_parent = {
+			generic_mio_enlarged_breech
+		}
+		relative_position_id = generic_mio_enlarged_breech
+		position = {
+			x = 1
+			y = 2
+		}
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+	}
+	override_trait = {
+		token = generic_mio_gunner_sight_improvements
+		position = {
+			x = -1
+			y = 2
+		}
+	}
+}
+
+Kappa_Heavy_Industries_tank = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_Kappa_Heavy_Industries
+	allowed = {
+		or = {
+			is_Gensokyo_tag = yes
+			tag = LIB
+		}
+	}
+	visible = {
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = KMK
+				}
+				has_completed_focus = KMK_Remiria_new_01
+			}
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 29
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					29 = { is_core_of = KNM }
+					29 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			armor_value = 0.05
+			reliability = 0.1
+		}
+	}
+	add_trait = {
+		token = FRA_mio_trait_automitrailleuses
+		name = FRA_mio_trait_automitrailleuses
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		position = {
+			x = 5
+			y = 0
+		}
+		limit_to_equipment_type = {
+			medium_tank_chassis
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+			armor_value = -0.05
+		}
+	}
+	add_trait = {
+		token = FRA_mio_trait_b1_bis_suspension
+		name = FRA_mio_trait_b1_bis_suspension
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		special_trait_background = yes
+		position = {
+			x = 1
+			y = 1
+		}
+		relative_position_id = generic_mio_trait_single_engine
+		any_parent = {
+			generic_mio_trait_single_engine
+			generic_mio_trait_dual_engine_redundancy
+		}
+		limit_to_equipment_type = {
+			heavy_tank_chassis
+		}
+		equipment_bonus = {
+			maximum_speed = 0.05
+			breakthrough = 0.1
+		}
+	}
+}
+
+#####################
+FRA_fcm_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_fcm
+	allowed = {
+		or = {
+			is_french_tag = yes
+			tag = LIB
+		}
+		not = { tag = KMK }
+	}
+}
+
+FRA_aeb_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_FRA_aeb
+	allowed = { is_french_tag = yes }
+}
+
+FRA_acl_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_FRA_acl
+	allowed = { is_french_tag = yes }
+}
+
+FRA_acf_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_FRA_acf
+	allowed = {
+		or = {
+			is_french_tag = yes
+			tag = LIB
+		}
+	}
+}
+
+Kappa_Heavy_Industries_navl = {
+	include = battle_line_ship_offense_organization
+	icon = GFX_idea_Kappa_Heavy_Industries
+	allowed = {
+		or = {
+			is_Gensokyo_tag = yes
+			tag = LIB
+		}
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = KMK
+				}
+				has_completed_focus = KMK_Remiria_new_01
+			}
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 29
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					29 = { is_core_of = KNM }
+					29 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+###########################
+FRA_morane_saulnier_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_morane_saulnier
+	allowed = {
+		tag = NFA
+	}
+}
+
+Wings_of_Tengu = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_Wings_of_Tengu
+	allowed = { is_Gensokyo_tag = yes }
+	visible = {
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					or = {
+						tag = FRA
+						tag = KMK
+					}
+				}
+				or = {
+					controls_state = 21
+					any_subject_country = { controls_state = 21 }
+				}
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					21 = { is_core_of = KNM }
+					21 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+FRA_bloch_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_bloch
+	allowed = { is_french_tag = yes }
+	visible = {
+	}
+	available = {
+	}
+}
+
+SNCASO_organization = {
+	include = generic_helicopter_organization
+	icon = GFX_idea_SNCASO
+	allowed = { is_Gensokyo_tag = yes }
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = KMK
+				}
+				has_completed_focus = KMK_Remiria_new_01
+			}
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 29
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					29 = { is_core_of = KNM }
+					29 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+FRA_amiot_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_amiot
+	allowed = { is_french_tag = yes }
+}
+
+FRA_levasseur_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_levasseur
+	allowed = { is_french_tag = yes }
+}
+
+FRA_SNCAC_organization = {
+	name = SNCAC
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_FRA_sncac
+	allowed = { is_french_tag = yes }
+	visible = {
+	}
+}
+
+###################################
+FRA_panhard_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_FRA_panhard
+	allowed = { is_french_tag = yes }
+}
+
+FRA_somua_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_somua
+	allowed = { is_french_tag = yes }
+	visible = {
+	}
+	available = {
+	}
+}
+
+FRA_mas_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mas
+	allowed = { is_french_tag = yes }
+	visible = {
+	}
+	available = {
+	}
+}
+
+FRA_schneider_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_schneider
+	allowed = { is_french_tag = yes }
+}
+
+Kappa_Heavy_Industries_materiel = {
+	include = artillery_offense_organization
+	icon = GFX_idea_Kappa_Heavy_Industries
+	allowed = { is_Gensokyo_tag = yes }
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					tag = KMK
+				}
+				has_completed_focus = KMK_Remiria_new_01
+			}
+			if = {
+				limit = {
+					tag = FRA	
+				}
+				owns_state = 29
+			}
+			if = {
+				limit = {
+					tag = KNM
+				}
+				OR = {
+					29 = { is_core_of = KNM }
+					29 = {
+						owner = {
+							is_in_faction_with = KNM
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+FRA_Moriya_Ropeway = {  ##守矢索道
+	include = generic_train_organization
+	icon = GFX_idea_FRA_Moriya_Ropeway
+	allowed = { is_Gensokyo_tag = yes }
+	research_categories = { train_tech support_tech }
+	initial_trait = {
+		name = generic_mio_initial_trait_generic_train_manufacturer
+		limit_to_equipment_type = { 
+			train_equipment 
+			#support_equipment
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0 #5% from MIO base
+		}
+	}
+	add_trait = {
+		token = FRA_mio_trait_scam_facilities
+		name = FRA_mio_trait_scam_facilities
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		position = { x=9 y=0 }
+		visible = {
+			FROM = { 
+				original_tag = FRA
+			}
+		}
+		limit_to_equipment_type = { train_equipment }
+		available = {
+			FROM = {
+				controls_state = 28
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+FRA_alsthom_organization = {
+	include = generic_train_organization
+	icon = GFX_idea_FRA_alsthom
+	allowed = { tag = NFA }
+	research_categories = { train_tech support_tech }
+	initial_trait = {
+		name = generic_mio_initial_trait_generic_train_manufacturer
+		limit_to_equipment_type = { 
+			train_equipment 
+			#support_equipment
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0 #5% from MIO base
+		}
+	}
+}
+
+##河童
+Kappa_tank_organization = {
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {
+		always = no
+	}
+	equipment_type = {
+		armor
+	}
+	research_categories = {
+		armor
+	}
+	tree_header_text = {
+		text = mio_header_tank_construction
+		x = 3
+	}
+	tree_header_text = {
+		text = mio_header_equipment_and_specialization
+		x = 7
+	}
+	initial_trait = {
+		name = generic_mio_initial_trait_standardized_production
+		equipment_bonus = {
+			breakthrough = 0.05
+			soft_attack = 0.1
+			reliability = 0.05
+			build_cost_ic = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_simplified_suspension
+		name = generic_mio_trait_simplified_suspension
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = {
+			x = 1
+			y = 0
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_crew_ergonomics
+		name = generic_mio_trait_crew_ergonomics
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = {
+			x = 4
+			y = 0
+		}
+		relative_position_id = generic_mio_trait_simplified_suspension
+		equipment_bonus = {
+			maximum_speed = 0.02
+			defense = 0.02
+		}
+	}
+	trait = {
+		token = generic_mio_trait_improved_tracks
+		name = generic_mio_trait_improved_tracks
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = {
+			x = 0
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_simplified_suspension
+		any_parent = {
+			generic_mio_trait_simplified_suspension
+		}
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_command_upgrades
+		name = generic_mio_trait_command_upgrades
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		position = {
+			x = 0
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_crew_ergonomics
+		any_parent = {
+			generic_mio_trait_crew_ergonomics
+		}
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_standardized_components
+		name = generic_mio_trait_standardized_components
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		position = {
+			x = 2
+			y = 1
+		}
+		relative_position_id = generic_mio_trait_simplified_suspension
+		all_parents = {
+			generic_mio_trait_simplified_suspension
+			generic_mio_trait_crew_ergonomics
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+			production_resource_need_factor = -0.15
+		}
+	}
+	trait = {
+		token = generic_mio_trait_improved_tooling
+		name = generic_mio_trait_improved_tooling
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		position = {
+			x = 0
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_standardized_components
+		all_parents = {
+			generic_mio_trait_improved_tracks
+			generic_mio_trait_standardized_components
+			generic_mio_trait_command_upgrades
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		}
+	}
+	trait = {
+		token = generic_mio_trait_mass_production
+		name = generic_mio_trait_mass_production
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		position = {
+			x = -1
+			y = 1
+		}
+		relative_position_id = generic_mio_trait_improved_tooling
+		any_parent = {
+			generic_mio_trait_improved_tooling
+		}
+		mutually_exclusive = {
+			generic_mio_trait_quality_improvements
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+	trait = {
+		token = generic_mio_trait_quality_improvements
+		name = generic_mio_trait_quality_improvements
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		position = {
+			x = 1
+			y = 1
+		}
+		relative_position_id = generic_mio_trait_improved_tooling
+		any_parent = {
+			generic_mio_trait_improved_tooling
+		}
+		mutually_exclusive = {
+			generic_mio_trait_mass_production
+		}
+		equipment_bonus = {
+			armor_value = 0.1
+			defense = 0.1
+		}
+	}
+	trait = {
+		token = generic_mio_trait_defensive_equipment
+		name = generic_mio_trait_defensive_equipment
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		position = {
+			x = 2
+			y = 0
+		}
+		relative_position_id = generic_mio_trait_crew_ergonomics
+		equipment_bonus = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+	}
+	trait = {
+		token = generic_mio_trait_long_barreled_guns
+		name = generic_mio_trait_long_barreled_guns
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		position = {
+			x = 0
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_defensive_equipment
+		all_parents = {
+			generic_mio_trait_crew_ergonomics
+			generic_mio_trait_defensive_equipment
+		}
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_anti_tank_specialization
+		name = generic_mio_trait_anti_tank_specialization
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		position = {
+			x = -1
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		any_parent = {
+			generic_mio_trait_long_barreled_guns
+		}
+		mutually_exclusive = {
+			generic_mio_trait_infantry_support_tanks
+		}
+		equipment_bonus = {
+			armor_value = 0.05
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_infantry_support_tanks
+		name = generic_mio_trait_infantry_support_tanks
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		position = {
+			x = 1
+			y = 2
+		}
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		any_parent = {
+			generic_mio_trait_long_barreled_guns
+		}
+		mutually_exclusive = {
+			generic_mio_trait_anti_tank_specialization
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.02
+		}
+	}
+}
