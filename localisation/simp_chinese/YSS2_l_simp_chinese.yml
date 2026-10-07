@@ -24,8 +24,10 @@
   YSS_map_button_text_1: "当§Y[?var:YSS_chosen_array^0.GetName]§!爆发内战时，为革命势力提供装备保障。触发事件选择装备的种类和数目。" #
   YSS_map_button_text_2: "派遣军事教官前去§Y[?var:YSS_chosen_array^0.GetName]§!支援，为她们上军事buff。（注意！这个是从我们的将军里随机挑选人来派遣的，可能会把好将领派出去。）"
   YSS_map_button_text_3: "当该国家进入战争时，消耗50£pol_power 获得增加志愿军一个上限的buff。（一个国家一次）"
-  YSS_map_button_text_4: "在该国的起义爆发时，为§Y[?var:YSS_chosen_array^0.GetName]§!的起义部队提供§Y2个§!§G军用工厂§!，这些提供的工厂会在开战时从我国扣除，打完§Y胜仗§!后，再返还给我们。"
+  YSS_map_button_text_4: "在该国的起义爆发时，为§Y[?var:YSS_chosen_array^0.GetName]§!的起义部队提供§Y2个§!§G军用工厂§!，这些提供的工厂会在开战时从我国扣除，打完§Y胜仗§!后，再返还给我们。(在未开战前，我们可以右键点击按钮减少2个承诺的§G军用工厂§!。 )"
   YSS_map_button_text_5: "消耗100£pol_power 选择一个大洲，然后我们会号召这块大洲上的§R社会主义国家§!为§Y[?var:YSS_chosen_array^0.GetName]§!的起义提供支持。"
+
+
   YSS_map_button_text_6: "花费100£pol_power 和 §Y[?var:YSS_chosen_array^0.GetName]§!进行科技交流，跳出事件来选择科研加成卡。（取决于该国家的科研有多发达）"
   YSS_map_button_text_7: "和§Y[?var:YSS_chosen_array^0.GetName]§!展开联合军演，花费100£pol_power 兑换50£army_experience。"
   YSS_map_button_text_8: "消耗120£pol_power 帮助§Y[?var:YSS_chosen_array^0.GetName]§!开展建设或者开矿的工作。会触发事件让我们选择建筑类型、规模大小。（建设的时间因此也会有所差别）"
@@ -82,4 +84,7 @@
   YSS.1202.d: "不久前，[FROM.GetName]国内的革命势力奋起反抗国内的反动势力，当地的革命代表通过电报向我们寻求帮助，这是我们支援革命的一次绝佳的机会。"
   YSS.1202.a: "我们要为她们提供力所能及的帮助！"
   YSS.1202.b: "算了,我们没有兴趣。"
+  faction_template_Africa_union: "非洲阵线"
 
+  YSS_officer_support_revoluntion: "来自索维耶特联盟的军官团支持"
+  YSS_officer_support_revoluntion_desc: "索维耶特联盟的军官被报告在革命者的队伍当中出现，这些专业军官的存在将大大提高革命者的战斗力。"

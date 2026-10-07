@@ -203,11 +203,22 @@ YSS_7 = {
 	conscription_factor = YSS_7_conscription_factor #征兵系数
 }
 
-#中央政治局
+#
 YSS_volunteer_to_other_country = {
     enable = {
 		always = yes
 	}
 	icon = GFX_idea_YSS_7		
 	send_volunteer_size = YSS_volunteer_to_other_country_send_volunteer_size #派遣人数
+}
+
+YSS_officer_support_revoluntion = {
+    available = {
+		has_civil_war = yes
+	}
+	icon = GFX_idea_YSS_2	
+	army_morale_factor = YSS_officer_factor
+	army_org_factor = YSS_officer_factor
+	army_speed_factor = YSS_officer_factor
+	planning_speed = YSS_officer_factor
 }

@@ -137,4 +137,9 @@ spriteTypes = {
         name = GFX_YSS_body38_icon
         texturefile = "gfx/leaders/YSS/GFX_YSS_body38_icon.png"
     }
+
+    SpriteType = {
+		name = GFX_focus_BRA_dec_miniature
+		texturefile = "gfx/focus_icon/focus_BRA_dec_miniature.dds"
+	}
 }

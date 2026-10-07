@@ -294,29 +294,21 @@ YSS_return_button_effect_0 = {
 	#获得争对某个国家的buff
 	if = {
 		limit = {
-			has_political_power > 49
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
+			var:YSS_chosen_array^0 = {
 				NOT = { has_country_flag = YSS_revoluntion_victory }
 				NOT = { has_idea = the_influence_of_YSS }
 			}
+			has_political_power > 49
 		}
 		add_political_power = -50
-		for_each_scope_loop = {
-			array = YSS_chosen_array
+
+		var:YSS_chosen_array^0 = {
 			add_timed_idea = {
 				idea = the_influence_of_YSS
 				days = 365
 			}
-			if = {
-				limit = {
-					has_country_flag = YSS_we_start_to_action
-				}
-			}
-			else = {
-				country_event = YSS.1000
-			}
+
+			country_event = YSS.1000
 		}
 	}
 }
@@ -324,18 +316,10 @@ YSS_return_button_effect_0 = {
 YSS_return_button_effect_1 = {
 	#给装备
 	if = {
-		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
+		limit = { var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } } }
 
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-			}
-		}
-		for_each_scope_loop = {
-			array = YSS_chosen_array
-			YSS = {
-				country_event = YSS.1100
-			}
+		var:YSS_chosen_array^0 = {
+			country_event = YSS.1105
 		}
 	}
 }
@@ -344,179 +328,185 @@ YSS_return_button_effect_2 = {
 	#设置外派的将领
 	if = {
 		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
-				NOT = { has_country_flag = YSS_revoluntion_victory }
+			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } }
+			any_army_leader = {
+				NOT = { has_country_flag = YSS_has_mission_to_aboard }
 			}
 		}
-		for_each_scope_loop = {
-			array = YSS_chosen_array
-			if = {
-				#战争已经开打
-				limit = {
-					has_country_flag = YSS_launch_the_civil_war
-					has_war = yes
-				}
-				YSS = {
-					random_army_leader = {
-						limit = {
-							NOT = {
-								has_character_flag = YSS_has_mission_to_aboard
-							}
-						}
-						set_character_flag = YSS_has_mission_to_aboard
-						meta_effect = {
-							text = {
-								set_character_flag = go_to_[country_tag]
-							}
-							country_tag = "[?var:YSS_chosen_array^0]"
-						}
-						set_nationality = PREV.PREV
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_country_flag = YSS_launch_the_civil_war
-					}
-				}
-				#战事未开
-				YSS = {
-					random_army_leader = {
-						limit = {
-							NOT = {
-								has_character_flag = YSS_has_mission_to_aboard
-							}
-						}
-						set_character_flag = YSS_has_mission_to_aboard
-						meta_effect = {
-							text = {
-								set_character_flag = go_to_[country_tag]
-							}
-							country_tag = "[?var:YSS_chosen_array^0]"
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
-YSS_return_button_effect_3 = {
-	if = {
-		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
-				NOT = { has_country_flag = YSS_revoluntion_victory }
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 2 }
 			}
+			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
 		}
-		#增加志愿上限
-		for_each_scope_loop = {
-			array = YSS_chosen_array
-			if = {
-				#没有设置过flag
-				limit = {
-					NOT = {
-						has_country_flag = YSS_we_have_volunteer_to_this_country
-					}
-					has_war = yes
-					has_political_power > 49
-				}
-				add_political_power = -50
-				set_country_flag = YSS_we_have_volunteer_to_this_country
-				add_to_variable = {
-					YSS_volunteer_to_other_country_send_volunteer_size = 1
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_country_flag = YSS_launch_the_civil_war
-					}
-					NOT = {
-						has_country_flag = YSS_we_prepare_to_send_volunteer
-					}
-					has_political_power > 49
-				}
-				add_political_power = -50
-				set_country_flag = YSS_we_prepare_to_send_volunteer
-			}
-		}
-	}
-}
 
-YSS_return_button_effect_4 = {
-	#给军工
-	if = {
-		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-			}
-			num_of_military_factories > 1
-		}
-		set_temp_variable = {
-			i = 0
-		}
-		while_loop_effect = {
-			limit = {
-				check_variable = {
-					i < 2
-				}
-			}
-			add_to_temp_variable = {
-				i = 1
-			}
-			random_controlled_state = {
-				limit = {
-					check_variable = {
-						building_level@arms_factory > 0
-					}
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = -1
-					instant_build = yes
-				}
-			}
-		}
-		for_each_scope_loop = {
-			array = YSS_chosen_array
 			if = {
-				limit = {
-					has_country_flag = YSS_launch_the_civil_war
+				limit = { var:YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
+
+				random_army_leader = {
+					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+					set_character_flag = YSS_has_mission_to_aboard
+					meta_effect = {
+						text = {
+							set_character_flag = go_to_[country_tag]
+							set_nationality = [country_tag]
+						}
+						debug = yes
+						country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
+					}
 				}
-				while_loop_effect = {
-					limit = {
-						check_variable = {
-							i > 0
-						}
-					}
-					add_to_temp_variable = {
-						i = -1
-					}
-					random_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 0
-							}
-						}
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
+
+				var:YSS_chosen_array^0 = {
+					add_to_variable = { YSS_officer_factor = 0.05 }
 				}
 			}
 			else = {
-				add_to_variable = { YSS_total_of_factory = 2 }
+				random_army_leader = {
+					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+					set_character_flag = YSS_has_mission_to_aboard
+					meta_effect = {
+						text = {
+							set_character_flag = go_to_[country_tag]
+						}
+						country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
+					}
+				}
 			}
+	}
+}
+
+YSS_return_button_effect_3 = {#志愿军
+	if = {
+		limit = {
+			var:YSS_chosen_array^0 = {
+				NOT = { has_country_flag = YSS_revoluntion_victory }
+				NOT = { has_country_flag = YSS_have_volunteer_to_this_country }
+				NOT = { has_country_flag = YSS_we_prepare_to_send_volunteer }
+			}
+			has_political_power > 49
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
+		}
+
+		if = {
+			add_political_power = -50
+			limit = { var:YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
+
+			var:YSS_chosen_array^0 = { set_country_flag = YSS_have_volunteer_to_this_country }
+			add_to_variable = { YSS_volunteer_to_other_country_send_volunteer_size = 1 }
+		}
+		else = {
+			add_political_power = -50
+			var:YSS_chosen_array^0 = { set_country_flag = YSS_we_prepare_to_send_volunteer }
+		}
+	}
+}
+
+YSS_return_button_effect_4 = {#给工厂
+	#给军工
+	if = {
+		limit = {
+			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } }
+			
+			check_expr = {
+        		value = YSS.num_of_military_factories
+				add = YSS.YSS_the_num_of_send_factories
+        		subtract = YSS.YSS_total_of_factory_COG
+				subtract = YSS.YSS_total_of_factory_ZIM
+				subtract = YSS.YSS_total_of_factory_ZYX
+				subtract = YSS.YSS_total_of_factory_ZSB
+				subtract = YSS.YSS_total_of_factory_EAS
+				subtract = YSS.YSS_total_of_factory_EGY
+				subtract = YSS.YSS_total_of_factory_LBA
+				subtract = YSS.YSS_total_of_factory_LIB
+				subtract = YSS.YSS_total_of_factory_SAF
+        		greater_than = 1
+    		}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
+		}
+
+		if = {
+			limit = { var:YSS.YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
+
+			meta_effect = {
+					text = {
+						add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = 2 }
+					}
+					country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
+				}
+
+						var:YSS.YSS_chosen_array^0 = {
+							add_offsite_building = {
+		            			type = arms_factory
+            					level = 2
+        					}
+						}
+
+						set_temp_variable = { round_i = 0 }
+
+						while_loop_effect = {
+							limit = {
+								check_variable = { round_i < 2 }
+							}
+
+							add_to_temp_variable = { round_i = 1 }
+
+							YSS = {
+								random_owned_controlled_state = {
+    								limit = {
+        								arms_factory > 0
+			    					}
+
+								    remove_building = {
+										type = arms_factory
+										level = 1
+									}
+								}
+								add_to_variable = { YSS.YSS_the_num_of_send_factories = 1 }
+							}
+						}
+		}
+		else = {
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = 2 }
+				}
+				country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
+			}
+		}
+	}
+}
+
+YSS_return_button_effect_right_4 = {#撤销给工厂(只有掀起内战前有效)
+	if = {
+		limit = {
+			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_launch_the_civil_war } }
+			meta_trigger = {
+				text = {
+					check_variable = { YSS.YSS_total_of_factory_[country_tag] > 1 }
+				}
+				country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = -2 }
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = -5 }
+			}
+			country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
 		}
 	}
 }
@@ -524,28 +514,18 @@ YSS_return_button_effect_4 = {
 YSS_return_button_effect_5 = {
 	if = {
 		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
-				#NOT = { has_country_flag = YSS_revoluntion_victory }
+			var:YSS_chosen_array^0 = {
+				NOT = { has_country_flag = YSS_revoluntion_victory }
+				NOT = { has_country_flag = YSS_has_find_friend }
 			}
+			has_political_power > 99
 		}
-		#给某个大洲
-		if = {
-			limit = {
-				all_of_scopes = {
-					array = YSS_chosen_array
-					#NOT = { has_country_flag = YSS_has_find_friend }
-				}
-			}
-			for_each_scope_loop = {
-				array = YSS_chosen_array
 
-				set_country_flag = YSS_has_find_friend
-				YSS = {
-					country_event = YSS.1200
-				}
-			}
+		add_political_power = -100
+		var:YSS_chosen_array^0 = {
+			set_country_flag = YSS_has_find_friend
+
+			country_event = YSS.1206
 		}
 	}
 }

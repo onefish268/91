@@ -365,4 +365,85 @@ on_actions = {
             }
         }
     }
+
+	on_civil_war_end = {
+    effect = {
+        if = {
+            limit = {
+                ROOT = {
+					has_country_flag = YSS_launch_the_civil_war
+				}
+                # 可以根据需要加更多条件，比如确认是玩家赢的
+            }
+
+			set_country_flag = YSS_revoluntion_victory
+
+			remove_idea = ZYX_Suddenly_attack
+
+			clear_variable = ROOT.YSS_officer_factor
+
+			remove_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = YSS_have_volunteer_to_this_country
+						has_country_flag = YSS_we_prepare_to_send_volunteer
+					}
+				}
+				clr_country_flag = YSS_have_volunteer_to_this_country
+				clr_country_flag = YSS_we_prepare_to_send_volunteer
+				add_to_variable = { YSS.YSS_volunteer_to_other_country_send_volunteer_size = -1 }
+			}
+
+			#####战后归还
+
+			meta_effect = {
+				text = {
+					every_army_leader = {
+						limit = { has_character_flag = YSS_has_mission_to_aboard }
+						clr_character_flag = YSS_has_mission_to_aboard
+						clr_character_flag = go_to_[country_tag]
+						set_nationality = YSS
+					}
+				}
+				country_tag = "[ROOT.GetTag]"
+			}
+
+			meta_effect = {
+				text = {
+					set_temp_variable = { clear_num_of_factory = YSS.YSS_total_of_factory_[country_tag] }
+				}
+				country_tag = "[ROOT.GetTag]"
+			}
+
+			meta_effect = {
+				text = {
+					set_temp_variable = { clean_num_of_factory = clear_num_of_factory }
+
+					YSS = {
+						add_offsite_building = {
+							type = arms_factory
+							level = clean_num_of_factory
+						}
+					}
+
+					multiply_temp_variable = { clean_num_of_factory = -1 }
+
+					add_to_variable = { YSS.YSS_the_num_of_send_factories = clean_num_of_factory }
+
+					add_offsite_building = {
+						type = arms_factory
+						level = clean_num_of_factory
+					}
+				}
+				test_number = "[?temp_var:clear_num_of_factory]"
+			}
+            
+            YSS = {
+				add_to_faction = ROOT
+			}
+        }
+    }
+}
 }

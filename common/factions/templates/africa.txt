@@ -1,0 +1,10 @@
+# 非洲联盟
+faction_template_Africa_union = {
+	name = faction_template_Africa_union
+	manifest = faction_manifest_strength_in_unity
+	icon = GFX_focus_BRA_dec
+	goals = {
+	}
+	default_rules = {
+	}
+}

@@ -191,6 +191,15 @@ scripted_gui = {
 					button_number = "[?picture_value]"
 				}
 			}
+
+			all_buttons_block_button_right_click = {
+				meta_effect = {
+					text = {
+						YSS_return_button_effect_right_[button_number] = yes
+					}
+					button_number = "[?picture_value]"
+				}
+			}
 		}
 	}
 
