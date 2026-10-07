@@ -48,4 +48,388 @@ SpriteType = {
 		name = "GFX_LIB_FOCUS_YLZJH"
 		texturefile = "gfx/interface/goals/LIB/GC_YLZJH.png"
 	}
+spriteType = {
+		name = "GFX_goal_LIB_election"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_election.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_election2"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_election2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_hidden_gensokyo"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_hidden_gensokyo.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_okina"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_okina.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_okina_return"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_okina_return.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_reshape_gensokyo"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_reshape_gensokyo.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_sagume"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_sagume.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_sagume_plan"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_sagume_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_the_nation"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_the_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_the_plan_of_lunar_capital"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_the_plan_of_lunar_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LIB_yukari"
+		texturefile = "gfx/interface/goals/LIB/goal_LIB_yukari.dds"
+	}
+    SpriteType = {
+        name = "GFX_goal_LIB_election_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_election.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_election.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_election.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_election2_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_election2.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_election2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_election2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_hidden_gensokyo_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_hidden_gensokyo.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_hidden_gensokyo.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_hidden_gensokyo.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_okina_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_okina.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_okina.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_okina.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_okina_return_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_okina_return.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_okina_return.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_okina_return.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_reshape_gensokyo_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_reshape_gensokyo.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_reshape_gensokyo.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_reshape_gensokyo.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_sagume_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_sagume.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_sagume.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_sagume.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_sagume_plan_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_sagume_plan.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_sagume_plan.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_sagume_plan.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_the_nation_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_the_nation.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_the_nation.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_the_nation.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_the_plan_of_lunar_capital_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_the_plan_of_lunar_capital.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_the_plan_of_lunar_capital.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_the_plan_of_lunar_capital.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
+
+    SpriteType = {
+        name = "GFX_goal_LIB_yukari_shine"
+        texturefile = "gfx/interface/goals/LIB/goal_LIB_yukari.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_yukari.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/LIB/goal_LIB_yukari.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0 y = 0 }
+            animationtexturescale = { x = 1 y = 1 }
+        }
+        legacy_lazy_load = no
+    }
 }

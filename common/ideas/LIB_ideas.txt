@@ -26,6 +26,14 @@ ideas = {
 				weekly_manpower = 25
 			}
 		}
+		#兽人族群问题
+		LIB_srzqwt = {
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				conscription_factor = -0.15
+			}
+		}
 		# 1.步枪生产花费 -10%
 			LIB_infantry_cost_reduction = {
             picture = GFX_idea_generic_industrial_concern
@@ -286,8 +294,8 @@ ideas = {
     			defense_bonus_against = 0.15
     		}
         }
-		#秘神回归
-        LIB_okina_return_idea = {
+		#对外投资合作二局
+        LIB_dwtzhzej1 = {
             removal_cost = -1
     		picture = generic_monarchist_uprising
     		modifier = {
@@ -296,6 +304,17 @@ ideas = {
                 production_factory_efficiency_gain_factor = 0.1
                 intel_from_operatives_factor = 0.2
                 own_operative_detection_chance_factor = -0.5
+    		}
+        }
+		LIB_dwtzhzej2 = {
+            removal_cost = -1
+    		picture = generic_monarchist_uprising
+    		modifier = {
+                resistance_target_on_our_occupied_states = 0.25
+                resistance_decay_on_our_occupied_states = -0.25
+                production_factory_efficiency_gain_factor = 0.1
+                intel_from_operatives_factor = 0.2
+                own_operative_detection_chance_factor = -1
     		}
         }
 		#月都迁都计划

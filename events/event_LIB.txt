@@ -795,7 +795,14 @@ country_event = {
     is_triggered_only = yes
     immediate = {
         set_country_flag = LIB_dxt_flag
-        add_to_variable = { var = LIB_economy_committee_consumer_goods_factor value = 0.20 }
+    }
+    option = {
+        name = LIB_jjxt.1.a
+        custom_effect_tooltip = LIB_jjxt.1.a_tt
+        add_stability = -0.2
+        add_war_support = -0.2
+		hidden_effect = {
+		add_to_variable = { var = LIB_economy_committee_consumer_goods_factor value = 0.20 }
         add_to_variable = { var = LIB_economy_committee_energy_gain_factor value = -0.25 }
         add_to_variable = { var = LIB_industrial_capacity_dockyard value = -0.20 }
         add_to_variable = { var = LIB_economy_committee_industrial_capacity_factory value = -0.15 }
@@ -809,13 +816,6 @@ country_event = {
         add_to_variable = { var = LIB_political_power_cost value = 0.20 }
         add_to_variable = { var = LIB_hcp_income_factor_monthly value = -0.15 }
 		add_dynamic_modifier = { modifier = LIB_gjdd_idea }
-    }
-    option = {
-        name = LIB_jjxt.1.a
-        custom_effect_tooltip = LIB_jjxt.1.a_tt
-        add_stability = -0.2
-        add_war_support = -0.2
-		hidden_effect = {
 		complete_national_focus = LIB_new_focus_2
 		country_event = { id = LIB_jjxt.2 days = 7 }
         country_event = { id = LIB_jjxt.3 days = 21 }
@@ -1026,6 +1026,12 @@ country_event = {
 		name = LIB_jjxt.7.a
 		add_war_support = -0.1
 		custom_effect_tooltip = LIB_jjxt.1.a_tt
+		hidden_effect = {
+		country_event = {
+				id = LIB_flavor.3
+				days = 3
+			}
+		}
 	}
 }
 
@@ -1243,7 +1249,7 @@ country_event = {
 		add_to_variable = {
 				var = ubs_save
 				value = -200
-				tooltip = UBS_SAVE_DOWN_200
+				tooltip = UBS_SAVE_down_200
 			}
         custom_effect_tooltip = LIB_gjdd_tt
         add_to_variable = {
@@ -1722,7 +1728,45 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.2.a
-		add_country_leader_trait = lib_meishuixing
+	}
+	}
+	country_event = {
+	id = LIB_flavor.3
+	title = LIB_flavor.3.t
+	desc = LIB_flavor.3.d
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.3.a
+		hidden_effect = {
+		country_event = { id = LIB_flavor.4 }
+		}
+	}
+	}
+	country_event = {
+	id = LIB_flavor.4
+	title = LIB_flavor.4.t
+	desc = LIB_flavor.4.d
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.4.a
+		add_manpower = -2
+		hidden_effect = {
+		country_event = { 
+		id = LIB_flavor.5 
+		days = 3
+		}
+		}
+	}
+	}
+	country_event = {
+	id = LIB_flavor.5
+	title = LIB_flavor.5.t
+	desc = LIB_flavor.5.d
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.5.a
+		add_manpower = 2
+		
 	}
 	}
 
