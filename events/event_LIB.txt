@@ -2,6 +2,7 @@ add_namespace = LIB_dwmy#对外贸易
 add_namespace = LIB_lw#流亡 
 add_namespace = LIB_jjxt#经济萧条
 add_namespace = LIB_xh#循环
+add_namespace = LIB_fangong#反攻
 add_namespace = LIB_flavor#风味
 add_namespace = LIB_news#新闻
 
@@ -1196,6 +1197,7 @@ country_event = {
 	is_triggered_only = yes
     option = {
         name = LIB_jjxt.13.a
+		custom_effect_tooltip = LIB_new_focus_15_tt
         custom_effect_tooltip = LIB_gjdd_tt
         add_to_variable = {
             var = LIB_economy_committee_consumer_goods_factor
@@ -1217,10 +1219,13 @@ country_event = {
             value = -0.10
             tooltip = political_power_cost_tt
         } # 政治点消耗
+		hidden_effect = {
         country_event = { id = LIB_jjxt.14 days = 3 }
+		}
     }
     option = {
         name = LIB_jjxt.13.b
+		custom_effect_tooltip = LIB_new_focus_15_tt
         custom_effect_tooltip = LIB_gjdd_tt
         add_to_variable = {
             var = LIB_economy_committee_consumer_goods_factor
@@ -1242,10 +1247,13 @@ country_event = {
             value = -0.02
             tooltip = political_power_cost_tt
         } 
+		hidden_effect = {
         country_event = { id = LIB_jjxt.15 days = 30 }
+		}
     }
     option = {
         name = LIB_jjxt.13.c
+		custom_effect_tooltip = LIB_new_focus_15_tt
 		add_to_variable = {
 				var = ubs_save
 				value = -200
@@ -1277,7 +1285,9 @@ country_event = {
             value = -0.10
             tooltip = hcp_income_factor_monthly_tooltip
         } # 金钱收入（财政补贴支出）
+		hidden_effect = {
         country_event = { id = LIB_jjxt.16 days = 60 }
+		}
     }
 }
 	country_event = {
@@ -1710,10 +1720,11 @@ country_event = {
 		}
 	}
 }
-country_event = {
+	country_event = {
 	id = LIB_flavor.1
 	title = LIB_flavor.1.t
 	desc = LIB_flavor.1.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.1.a
@@ -1725,15 +1736,18 @@ country_event = {
 	id = LIB_flavor.2
 	title = LIB_flavor.2.t
 	desc = LIB_flavor.2.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.2.a
 	}
 	}
+	
 	country_event = {
 	id = LIB_flavor.3
 	title = LIB_flavor.3.t
 	desc = LIB_flavor.3.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.3.a
@@ -1742,10 +1756,12 @@ country_event = {
 		}
 	}
 	}
+	
 	country_event = {
 	id = LIB_flavor.4
 	title = LIB_flavor.4.t
 	desc = LIB_flavor.4.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.4.a
@@ -1758,15 +1774,35 @@ country_event = {
 		}
 	}
 	}
+	
 	country_event = {
 	id = LIB_flavor.5
 	title = LIB_flavor.5.t
 	desc = LIB_flavor.5.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_flavor.5.a
 		add_manpower = 2
 		
+	}
+	}
+	
+	country_event = {
+	id = LIB_flavor.6
+	title = LIB_flavor.6.t
+	desc = LIB_flavor.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.6.a
+		FRA_Chen = {
+            add_timed_unit_leader_trait = {
+                trait = wounded
+                days = 7 # 可以自定义持续时间
+            }
+		
+	}
 	}
 	}
 

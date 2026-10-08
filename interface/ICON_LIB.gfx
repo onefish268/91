@@ -1,4 +1,9 @@
 spriteTypes = {
+	###开局
+	SpriteType = {
+		name = "GFX_LIB_XZYH"
+		texturefile = "gfx/leaders/LIB/LIB_XZYH.png"
+	}
     ###GUI
     #民族精神
     #领袖
