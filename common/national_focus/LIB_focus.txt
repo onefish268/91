@@ -203,8 +203,7 @@ focus_tree = {
 		prerequisite = { focus = LIB_new_focus_3 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available = {
-		political_power > 0}
+		available = { has_political_power > 0 }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -227,8 +226,7 @@ focus_tree = {
 		y = 5
 		cost = 6
 		prerequisite = { focus = LIB_new_focus_3 }
-		available = {
-		political_power > 0}
+		available = { has_political_power > 0 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -277,8 +275,7 @@ focus_tree = {
 		prerequisite = { focus = LIB_new_focus_6 }
 		prerequisite = { focus = LIB_new_focus_5 }
 		cancel_if_invalid = yes
-		available = {
-		political_power > 0}
+		available = { has_political_power > 0 }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = {
@@ -327,10 +324,9 @@ focus_tree = {
 		y = 5
 		cost = 6
 		prerequisite = { focus = LIB_new_focus_4 }
-		available = {
-		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		available = { has_political_power > 0 }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -378,10 +374,9 @@ focus_tree = {
 		y = 5
 		cost = 6
 		prerequisite = { focus = LIB_new_focus_4 }
-		available = {
-		political_power > 0}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		available = { has_political_power > 0 }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -424,8 +419,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = LIB_new_focus_9 }
 		prerequisite = { focus = LIB_new_focus_8 }
-		available = {
-		political_power > 0}
+		available = { has_political_power > 0 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -458,6 +452,7 @@ focus_tree = {
 			value = -0.1
 			tooltip = political_power_cost_tt
 		} # 政治点消耗
+		add_political_power = -50
 		}
 	}
 
@@ -469,8 +464,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = LIB_new_focus_10 }
 		prerequisite = { focus = LIB_new_focus_7 }
-		available = {
-		political_power > 0}
+		available = { has_political_power > 0 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -478,6 +472,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} 
 		mark_focus_tree_layout_dirty = yes
 		459 = {
 	add_extra_state_shared_building_slots = 6
@@ -587,6 +587,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_to_variable = {
+				var = ubs_save
+				value = -100
+				tooltip = UBS_SAVE_down_100
+			}
 		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
@@ -641,6 +646,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_to_variable = {
+				var = ubs_save
+				value = -100
+				tooltip = UBS_SAVE_down_100
+			}
 		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
@@ -780,6 +790,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_to_variable = {
+				var = ubs_save
+				value = -50
+				tooltip = UBS_SAVE_down_50
+			}
 		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
@@ -1006,6 +1021,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_to_variable = {
+				var = ubs_save
+				value = -50
+				tooltip = UBS_SAVE_down_50
+			}
 		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
@@ -1368,6 +1388,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		remove_country_leader_trait = lib_meishuixing
 		mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -1405,6 +1426,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_34_tt
+		add_political_power = 150
 		}
 	}
 
@@ -1493,13 +1516,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { factor = 25 }
+		bypass = {
+			or = {
+				is_in_faction_with = ENG
+				ENG = {
+					is_in_faction_with = NFA
+				}
+			}
 		}
 		completion_reward = {
+			
+			ENG = {
+				country_event = generic.2002
+			}
 		}
 	}
-
 	focus = {
 		id = LIB_new_focus_37
 		icon = GFX_focus_lib53
@@ -1530,8 +1562,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		}
+		 completion_reward = {
+        if = {
+            limit = {
+                NOT = { has_idea = extensive_conscription }
+                NOT = { has_idea = service_by_requirement }
+                NOT = { has_idea = all_adults_serve }
+                NOT = { has_idea = scrapping_the_barrel }
+			}
+			 add_ideas = extensive_conscription
+			 }
+		else = {
+            add_political_power = 150
+        }
+		if = {
+            limit = {
+                NOT = { has_idea = war_economy }
+                NOT = { has_idea = total_mobilization }
+            }
+            add_ideas = war_economy
+			}
+        else = {
+            add_political_power = 150
+        }
+    }
 	}
 
 	focus = {
@@ -1556,7 +1610,7 @@ focus_tree = {
 		icon = GFX_focus_lib43
 		x = 19
 		y = 15
-		cost = 5
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1567,6 +1621,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_42_tt
 		}
 	}
 
@@ -1601,6 +1656,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		
 		}
 	}
 
@@ -1618,6 +1674,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_45_tt
 		}
 	}
 
@@ -1635,6 +1692,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.2
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.1
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
 		}
 	}
 
@@ -1656,7 +1724,8 @@ focus_tree = {
 		create_intelligence_agency = {
         name = "对外投资合作二局"
     }
-		# 给予三项随机情报机构升级
+		# 给予4项随机情报机构升级
+		gain_random_agency_upgrade = yes
 		gain_random_agency_upgrade = yes
 		gain_random_agency_upgrade = yes
 		gain_random_agency_upgrade = yes
@@ -1677,6 +1746,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		LIB_Moriya_Ropeway = {
+                add_mio_size = 3
+            }
+		LIB_Kappa_Heavy_Industries_materiel = {
+                add_mio_size = 3
+            }
+		Kappa_Heavy_Industries_navl = {
+                add_mio_size = 3
+            }
+		LIB_Wings_of_Tengu = {
+                add_mio_size = 3
+            }
+		LIB_arsenal_organization = {
+                add_mio_size = 3
+            }
 		}
 	}
 
@@ -1697,6 +1781,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_49_tt
 		}
 	}
 
@@ -1717,6 +1802,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_50_tt
 		}
 	}
 
@@ -1737,6 +1823,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_51_tt
 		}
 	}
 
@@ -1757,6 +1844,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_52_tt
 		}
 	}
 
@@ -1777,6 +1865,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_53_tt
 		}
 	}
 
@@ -1796,6 +1885,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = LIB_new_focus_54_tt
 		FRA = {
 		country_event = {
 				id = LIB_jjxt.17
@@ -1820,9 +1910,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
 		}
 	}
-
+	
 	focus = {
 		id = LIB_new_focus_56
 		icon = GFX_focus_lib23
@@ -2088,7 +2179,7 @@ focus_tree = {
 
 	focus = {
 		id = LIB_new_focus_68
-		icon = GFX_focus_lib
+		icon = GFX_focus_lib24
 		x = 32
 		y = 1
 		cost = 5

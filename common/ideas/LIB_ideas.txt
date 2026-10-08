@@ -133,7 +133,7 @@ ideas = {
         }
 		}
 		}
-		
+		#行政指导
 		LIB_zsdc = {
             picture = GFX_idea_generic_political_advisor
             allowed = { original_tag = LIB }
@@ -142,7 +142,6 @@ ideas = {
             # 关键：不满足以下任一条件时，精神会被自动移除
             available = {
                 stability < 0.99
-                NOT = { has_completed_focus = LIB_FOCUS_44 }
             }
 
             modifier = {
