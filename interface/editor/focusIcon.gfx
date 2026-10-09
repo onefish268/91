@@ -1051,4 +1051,200 @@ SpriteType = {
     name = "GFX_focus_lib9"
     texturefile = "gfx/focus_icon/GFX_focus_lib9.png"
 }
+spriteType = {
+        name = "GFX_focus_lib10"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib10.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib11"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib11.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib12"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib12.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib13"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib13.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib14"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib14.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib15"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib15.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib16"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib16.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib17"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib17.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib18"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib18.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib19"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib19.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib20"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib20.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib21"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib21.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib22"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib22.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib23"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib23.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib24"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib24.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib25"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib25.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib26"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib26.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib27"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib27.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib28"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib28.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib29"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib29.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib30"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib30.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib31"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib31.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib32"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib32.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib33"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib33.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib34"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib34.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib35"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib35.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib36"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib36.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib37"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib37.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib38"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib38.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib39"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib39.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib40"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib40.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib41"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib41.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib42"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib42.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib43"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib43.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib44"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib44.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib45"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib45.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib46"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib46.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib47"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib47.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib48"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib48.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib49"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib49.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib50"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib50.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib51"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib51.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib52"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib52.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib53"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib53.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib54"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib54.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib55"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib55.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib56"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib56.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib57"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib57.png"
+    }
+    spriteType = {
+        name = "GFX_focus_lib58"
+        texturefile = "gfx/interface/goals/LIB/GFX_focus_lib58.png"
+    }
 }

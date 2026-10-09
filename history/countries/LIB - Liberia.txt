@@ -13,7 +13,9 @@ add_ideas = {
 	limited_conscription
 }
 set_country_flag = agency_blocked
-add_ideas = { LIB_xjkj }
+add_ideas = { 
+LIB_xjkj
+LIB_srzqwt }
 #新人里自卫队
 set_variable = { LIB_max_planning_factor = -0.1 }
 set_variable = { LIB_army_heat_attrition_factor = 0.05 }

@@ -66,10 +66,10 @@ country_event = { ####对殖民地的紧急措施
            	 		is_puppet = yes
             	}
             		# 为每个傀儡国触发事件
-            		country_event = {
-						id = SA_FRA_event.00102
-						days = 3
-					}
+            		#country_event = {
+					#	id = SA_FRA_event.00102
+					#	days = 3
+					#}
         	}
 		}
     }

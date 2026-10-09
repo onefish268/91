@@ -1253,19 +1253,19 @@ focus_tree = {
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = YSS_focus_46_0
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_1
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_2
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -2131,18 +2131,21 @@ focus_tree = {
 				name = YSS_focus_78_0
 				bonus = 0.5
 				uses = 1
+				ahead_reduction = 2
 				category = armor
 			}
 			add_tech_bonus = {
 				name = YSS_focus_78_1
 				bonus = 0.5
 				uses = 2
+				ahead_reduction = 2
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = YSS_focus_78_2
 				bonus = 0.5
 				uses = 1
+				ahead_reduction = 2
 				category = artillery
 			}
 		}
@@ -4682,87 +4685,151 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_32
 
-			COG = {
-				set_variable = { YSS_total_of_gun@COG = 0 }
-				set_variable = { YSS_total_of_artillery@COG = 0 }
-				set_variable = { YSS_total_of_support_equipment@COG = 0 }
-				set_variable = { YSS_total_of_factory@COG = 0 }
-				set_variable = { YSS_volunteer_level_0@COG = 0 }
-				set_variable = { YSS_volunteer_level_1@COG = 0 }
-				set_variable = { YSS_volunteer_level_2@COG = 0 }
+			add_to_array = { YSS_focus_172_array = COG }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZIM = {
-				set_variable = { YSS_total_of_gun@ZIM = 0 }
-				set_variable = { YSS_total_of_artillery@ZIM = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZIM = 0 }
-				set_variable = { YSS_total_of_factory@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_0@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_1@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_2@ZIM = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZIM }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZSB = {
-				set_variable = { YSS_total_of_gun@ZSB = 0 }
-				set_variable = { YSS_total_of_artillery@ZSB = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZSB = 0 }
-				set_variable = { YSS_total_of_factory@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_0@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_1@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_2@ZSB = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZYX }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZYX = {
-				set_variable = { YSS_total_of_gun@ZYX = 0 }
-				set_variable = { YSS_total_of_artillery@ZYX = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZYX = 0 }
-				set_variable = { YSS_total_of_factory@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_0@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_1@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_2@ZYX = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZSB }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			EAS = {
-				set_variable = { YSS_total_of_gun@EAS = 0 }
-				set_variable = { YSS_total_of_artillery@EAS = 0 }
-				set_variable = { YSS_total_of_support_equipment@EAS = 0 }
-				set_variable = { YSS_total_of_factory@EAS = 0 }
-				set_variable = { YSS_volunteer_level_0@EAS = 0 }
-				set_variable = { YSS_volunteer_level_1@EAS = 0 }
-				set_variable = { YSS_volunteer_level_2@EAS = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = EAS }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			EGY = {
-				set_variable = { YSS_total_of_gun@EGY = 0 }
-				set_variable = { YSS_total_of_artillery@EGY = 0 }
-				set_variable = { YSS_total_of_support_equipment@EGY = 0 }
-				set_variable = { YSS_total_of_factory@EGY = 0 }
-				set_variable = { YSS_volunteer_level_0@EGY = 0 }
-				set_variable = { YSS_volunteer_level_1@EGY = 0 }
-				set_variable = { YSS_volunteer_level_2@EGY = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = EGY }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			LBA = {
-				set_variable = { YSS_total_of_gun@LBA = 0 }
-				set_variable = { YSS_total_of_artillery@LBA = 0 }
-				set_variable = { YSS_total_of_support_equipment@LBA = 0 }
-				set_variable = { YSS_total_of_factory@LBA = 0 }
-				set_variable = { YSS_volunteer_level_0@LBA = 0 }
-				set_variable = { YSS_volunteer_level_1@LBA = 0 }
-				set_variable = { YSS_volunteer_level_2@LBA = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = LBA }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			LIB = {
-				set_variable = { YSS_total_of_gun@LIB = 0 }
-				set_variable = { YSS_total_of_artillery@LIB = 0 }
-				set_variable = { YSS_total_of_support_equipment@LIB = 0 }
-				set_variable = { YSS_total_of_factory@LIB = 0 }
-				set_variable = { YSS_volunteer_level_0@LIB = 0 }
-				set_variable = { YSS_volunteer_level_1@LIB = 0 }
-				set_variable = { YSS_volunteer_level_2@LIB = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = LIB }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			SAF = {
-				set_variable = { YSS_total_of_gun@SAF = 0 }
-				set_variable = { YSS_total_of_artillery@SAF = 0 }
-				set_variable = { YSS_total_of_support_equipment@SAF = 0 }
-				set_variable = { YSS_total_of_factory@SAF = 0 }
-				set_variable = { YSS_volunteer_level_0@SAF = 0 }
-				set_variable = { YSS_volunteer_level_1@SAF = 0 }
-				set_variable = { YSS_volunteer_level_2@SAF = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = SAF }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
+			clear_array = YSS_focus_172_array
+
+			set_variable = { YSS.YSS_the_num_of_send_factories = 0 }
 		}
 	}
 }

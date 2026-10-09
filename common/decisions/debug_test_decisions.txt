@@ -1,39 +1,54 @@
 debug_test_categories = {
 
-	test_meta_effect_in_EGY = {
-							complete_effect = {
-								YSS = {
-								if = {
-									limit = {
-										NOT = { has_country_flag = YSS_revoluntion_victory }
-										has_country_flag = YSS_launch_the_civil_war
-									}
-									add_equipment_to_stockpile = {
-									type = infantry_equipment
-									amount = YSS_total_of_gun
-									producer = YSS
-									}
+	
+	test_character = {
+		complete_effect = {
+			add_stability = YSS_officer_factor
+			add_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+		}
+	}
+
+	test_character_return = {
+		complete_effect = {
+			every_army_leader = {
+						limit = { has_character_flag = YSS_has_mission_to_aboard }
+						clr_character_flag = YSS_has_mission_to_aboard
+						clr_character_flag = go_to_EGY
+						set_nationality = YSS
+					}
+		}
+	}
+
+	test_factory_add_abord = {
+		complete_effect = {
+			meta_effect = {
+				text = {
+
+					YSS = {
+						every_core_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
 								}
 							}
+							###这个random不能接变量，硬性要求数字
+							random_select_amount = [test_number]
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					
+				}
+				test_number = "[?YSS.YSS_total_of_factory_EGY]"
+			}
 		}
 	}
-
-	test_meta_effect_in_EGY_0 = {
-							complete_effect = {
-										add_equipment_to_stockpile = {
-											type = infantry_equipment
-											amount = YSS_total_of_gun@EGY
-											producer = YSS
-										}
-		}
-	}
-
-	test_of_at_effect = {
-		complete_effect = {
-			add_to_variable = { YSS_total_of_gun@EGY = 10 }
-		}
-	}
-
+	
 	the_first = {
 		name = the_first
 		icon = generic_construction

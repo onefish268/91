@@ -115,6 +115,8 @@ set_popularities = {
 
 } 
 
+create_faction_from_template = faction_template_Africa_union
+
 recruit_character = YSS_mlhm
 recruit_character = YSS_1_1
 recruit_character = YSS_1_2

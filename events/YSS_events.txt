@@ -1813,6 +1813,13 @@ country_event = {
 		name = YSS.1001.a
 		#////////引爆战争的代码
 
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+			}
+			country_tag = "[FROM.GetTag]"
+		}
+
 		FROM = {
 			country_event = YSS.1002
 		}
@@ -1829,7 +1836,6 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
 	id = YSS.1002
 	is_triggered_only = yes
@@ -1854,6 +1860,7 @@ country_event = {
 
 				# 爆内战，创建叛军国家
     			start_civil_war = {
+					ruling_party = communism
         			ideology = neutrality
         			size = 0.15
         			army_ratio = 0.2
@@ -1877,131 +1884,202 @@ country_event = {
             			limit = { has_country_flag = YSS_the_lord_of_country }
             				set_autonomy = {
         	    		    target = PREV
-    	            		autonomous_state = autonomy_colony
-	            		    end_wars = no
-    		            	end_civil_wars = no
-            			}
+    	            			autonomous_state = autonomy_colony
+	            		   		end_wars = no
+    		            		end_civil_wars = no
+            				}
+							clr_country_flag = YSS_the_lord_of_country
     				}
     			}
 
+				PREV = {
+					add_timed_idea = {
+						idea = ZYX_Suddenly_attack
+						days = 60
+					}
+				}
+				add_timed_idea = {
+					idea = ZYX_Suddenly_attack
+					days = 60
+				}
+
 				set_country_flag = YSS_launch_the_civil_war
 
+				if = {
+					limit = {
+							has_country_flag = YSS_we_prepare_to_send_volunteer
+					}
+					add_to_variable = { YSS.YSS_volunteer_to_other_country_send_volunteer_size = 1 }
+				}
+
+				YSS = {
+					every_army_leader = {
+						limit = {
+							meta_trigger = {
+								text = {
+									has_character_flag = go_to_[country_tag]
+								}
+								country_tag = "[ROOT.GetTag]"
+							}
+						}
+						meta_effect = {
+							text = {
+								set_nationality = [country_tag]
+							}
+							country_tag = "[ROOT.GetTag]"
+						}
+
+						add_to_variable = { ROOT.YSS_officer_factor = 0.05 }
+					}
+				}
+
+				add_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+
+				if = {
+					limit = { has_country_flag = YSS_we_prepare_to_send_volunteer }
+					set_country_flag = YSS_have_volunteer_to_this_country
+					add_to_variable = { YSS_volunteer_to_other_country_send_volunteer_size = 1 }
+				}
+
+				meta_effect = {
+					text = {
 						add_equipment_to_stockpile = {
-        			        type = infantry_equipment
-            			    amount = YSS_total_of_gun@ROOT
-			                producer = YSS
-            			}
+        				    type = infantry_equipment
+        		    	    amount = YSS.YSS_total_of_gun_[country_tag]
+				            producer = YSS
+    					}
 						add_equipment_to_stockpile = {
         			        type = artillery_equipment
-            			    amount = YSS_total_of_artillery@ROOT
+            			    amount = YSS.YSS_total_of_artillery_[country_tag]
 			                producer = YSS
             			}
 						add_equipment_to_stockpile = {
         			        type = support_equipment
-            			    amount = YSS_total_of_support_equipment@ROOT
+            			    amount = YSS.YSS_total_of_support_equipment_[country_tag]
 			                producer = YSS
             			}
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 
-						set_temp_variable = { i = 0 }
+				meta_effect = {
+					text = {
+						add_offsite_building = {
+	            			type = arms_factory
+            				level = YSS.YSS_total_of_factory_[country_tag]
+        				}
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 
-						while_loop_effect = {
-							limit = { check_variable = { i < YSS_total_of_factory@ROOT } }
-							random_controlled_state = {
-								limit = {
-									free_building_slots > 0
-								}
-
-								add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-							}
-							add_to_temp_variable = { i = 1 }
-						}
-
-						set_temp_variable = { ii = 0 }
-
-						division_template = {
-								name = "国际营"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-								}
-							}
+						set_temp_variable = { round_i = 0 }
 
 						while_loop_effect = {
-							limit = { check_variable = { ii < YSS_volunteer_level_0@ROOT } }
-							
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际营\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
+							limit = {
+								meta_trigger = {
+									text = {
+										check_variable = { round_i < YSS.YSS_total_of_factory_[country_tag] }
+									}
+									country_tag = "[ROOT.GetTag]"
 								}
 							}
 
-							add_to_temp_variable = { ii = 1 }
+							meta_effect = {
+								text = {
+									add_to_temp_variable = { round_i = 1 }
+								}
+								country_tag = "[ROOT.GetTag]"
+							}
+
+							YSS = {
+								random_owned_controlled_state = {
+    								limit = {
+        								arms_factory > 0
+			    					}
+
+								    remove_building = {
+										type = arms_factory
+										level = 1
+									}
+								}
+								add_to_variable = { YSS.YSS_the_num_of_send_factories = 1 }
+							}
 						}
 
-						set_temp_variable = { iii = 0 }
-
-						division_template = {
-								name = "国际旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									infantry = { x = 1 y = 0 }
-									infantry = { x = 1 y = 1 }
-								}
+				division_template = {
+					name = "国际营"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+					}
+				}		
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际营\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_0_[country_tag]
 							}
-
-						while_loop_effect = {
-							limit = { check_variable = { iii < YSS_volunteer_level_1@ROOT } }
-							
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际旅\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
-								}
-							}
-
-							add_to_temp_variable = { iii = 1 }
 						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
 
-						set_temp_variable = { iiii = 0 }
-
-						division_template = {
-								name = "国际装甲旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									light_armor = { x = 1 y = 0 }
-									light_armor = { x = 1 y = 1 }
-								}
+				division_template = {
+					name = "国际旅"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+				}		
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际旅\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_1_[country_tag]
 							}
-
-						while_loop_effect = {
-							limit = { check_variable = { iiii < YSS_volunteer_level_2@ROOT } }
-							
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
-								}
-							}
-
-							add_to_temp_variable = { iiii = 1 }
 						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
+
+				division_template = {
+					name = "国际装甲旅"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 1 y = 1 }
+					}
+				}					
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_2_[country_tag]
+							}
+						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
     		}
 			else = {
 				# 爆内战，创建叛军国家
     			start_civil_war = {
+					ruling_party = communism
         			ideology = neutrality
         			size = 0.15
         			army_ratio = 0.2
@@ -2011,119 +2089,193 @@ country_event = {
         			keep_all_characters = yes
     			}
 
+				PREV = {
+					add_timed_idea = {
+						idea = ZYX_Suddenly_attack
+						days = 60
+					}
+				}
+				add_timed_idea = {
+					idea = ZYX_Suddenly_attack
+					days = 60
+				}
+
 				set_country_flag = YSS_launch_the_civil_war
 
-				#//////////////之前写的，一一兑现
-			
+				if = {
+					limit = {
+							has_country_flag = YSS_we_prepare_to_send_volunteer
+					}
+					add_to_variable = { YSS.YSS_volunteer_to_other_country_send_volunteer_size = 1 }
+				}
+
+				YSS = {
+					every_army_leader = {
+						limit = {
+							meta_trigger = {
+								text = {
+									has_character_flag = go_to_[country_tag]
+								}
+								country_tag = "[ROOT.GetTag]"
+							}
+						}
+						meta_effect = {
+							text = {
+								set_nationality = [country_tag]
+							}
+							country_tag = "[ROOT.GetTag]"
+						}
+
+						add_to_variable = { ROOT.YSS_officer_factor = 0.05 }
+					}
+				}
+
+				add_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+
+				meta_effect = {
+					text = {
 						add_equipment_to_stockpile = {
-        			        type = infantry_equipment
-            			    amount = YSS_total_of_gun@ROOT
-			                producer = YSS
-            			}
+        				    type = infantry_equipment
+        		    	    amount = YSS.YSS_total_of_gun_[country_tag]
+				            producer = YSS
+    					}
 						add_equipment_to_stockpile = {
         			        type = artillery_equipment
-            			    amount = YSS_total_of_artillery@ROOT
+            			    amount = YSS.YSS_total_of_artillery_[country_tag]
 			                producer = YSS
             			}
 						add_equipment_to_stockpile = {
         			        type = support_equipment
-            			    amount = YSS_total_of_support_equipment@ROOT
+            			    amount = YSS.YSS_total_of_support_equipment_[country_tag]
 			                producer = YSS
             			}
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 
-						set_temp_variable = { i = 0 }
+				meta_effect = {
+					text = {
+						add_offsite_building = {
+	            			type = arms_factory
+            				level = YSS.YSS_total_of_factory_[country_tag]
+        				}
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 
-						while_loop_effect = {
-							limit = { check_variable = { i < YSS_total_of_factory@ROOT } }
-							random_controlled_state = {
-								limit = {
-									free_building_slots > 0
-								}
+						meta_effect = {
+					text = {
+						add_offsite_building = {
+	            			type = arms_factory
+            				level = YSS.YSS_total_of_factory_[country_tag]
+        				}
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 
-								add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-							}
-							add_to_temp_variable = { i = 1 }
-						}
-
-						set_temp_variable = { ii = 0 }
-
-						while_loop_effect = {
-							limit = { check_variable = { ii < YSS_volunteer_level_0@ROOT } }
-							
-							division_template = {
-								name = "国际营"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-								}
-							}
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际营\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
-								}
-							}
-
-							add_to_temp_variable = { ii = 1 }
-						}
-
-						set_temp_variable = { iii = 0 }
+						set_temp_variable = { round_i = 0 }
 
 						while_loop_effect = {
-							limit = { check_variable = { iii < YSS_volunteer_level_1@ROOT } }
-							
-							division_template = {
-								name = "国际旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									infantry = { x = 1 y = 0 }
-									infantry = { x = 1 y = 1 }
-								}
-							}
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际旅\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
+							limit = {
+								meta_trigger = {
+									text = {
+										check_variable = { round_i < YSS.YSS_total_of_factory_[country_tag] }
+									}
+									country_tag = "[ROOT.GetTag]"
 								}
 							}
 
-							add_to_temp_variable = { iii = 1 }
+							meta_effect = {
+								text = {
+									add_to_temp_variable = { round_i = 1 }
+								}
+								country_tag = "[ROOT.GetTag]"
+							}
+
+							YSS = {
+								random_owned_controlled_state = {
+    								limit = {
+        								arms_factory > 0
+			    					}
+
+								    remove_building = {
+										type = arms_factory
+										level = 1
+									}
+								}
+								add_to_variable = { YSS.YSS_the_num_of_send_factories = 1 }
+							}
 						}
 
-						set_temp_variable = { iiii = 0 }
-
-						while_loop_effect = {
-							limit = { check_variable = { iiii < YSS_volunteer_level_2@ROOT } }
-							
-							division_template = {
-								name = "国际装甲旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									light_armor = { x = 1 y = 0 }
-									light_armor = { x = 1 y = 1 }
-								}
+				division_template = {
+					name = "国际营"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+					}
+				}		
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际营\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_0_[country_tag]
 							}
-							capital_scope = {
-								create_unit = {
-									division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
-									owner = ROOT
-									allow_spawning_on_enemy_provs = yes
-								}
-							}
-
-							add_to_temp_variable = { iiii = 1 }
 						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
+
+				division_template = {
+					name = "国际旅"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+				}		
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际旅\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_1_[country_tag]
+							}
+						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
+
+				division_template = {
+					name = "国际装甲旅"
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 1 y = 1 }
+					}
+				}					
+				capital_scope = {
+					meta_effect = {
+						text = {
+							create_unit = {
+								division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
+								owner = ROOT
+								allow_spawning_on_enemy_provs = yes
+								count = YSS.YSS_volunteer_level_2_[country_tag]
+							}
+						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
 			}
 		}
 	}
@@ -2175,29 +2327,51 @@ country_event = {
 				infantry_equipment > 999
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -1000
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 1000
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_gun@FROM = 1000
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_gun_[country_tag] = 1000 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2208,29 +2382,51 @@ country_event = {
 				infantry_equipment > 1999
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -2000
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 2000
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_gun@FROM = 2000
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 20
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_gun_[country_tag] = 2000 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2241,29 +2437,51 @@ country_event = {
 				infantry_equipment > 2999
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -3000
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 3000
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_gun@FROM = 3000
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 30
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_gun_[country_tag] = 3000 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2285,29 +2503,51 @@ country_event = {
 				artillery_equipment > 149
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = -150
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 150
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_artillery@FROM = 150
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 10
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_artillery_[country_tag] = 150 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2318,29 +2558,51 @@ country_event = {
 				artillery_equipment > 299
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = -300
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -300
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 300
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_artillery@FROM = 300
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 20
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -300
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_artillery_[country_tag] = 300 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2351,29 +2613,51 @@ country_event = {
 				artillery_equipment > 449
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = -450
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -450
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 450
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_artillery@FROM = 450
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 30
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -450
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_artillery_[country_tag] = 450 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2395,29 +2679,51 @@ country_event = {
 				support_equipment > 119
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = support_equipment
-			amount = -120
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -120
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = support_equipment
 					amount = 120
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_support_equipment@FROM = 120
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 10
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -120
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_support_equipment_[country_tag] = 120 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2428,29 +2734,51 @@ country_event = {
 				support_equipment > 239
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = support_equipment
-			amount = -240
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -240
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = support_equipment
 					amount = 240
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_support_equipment@FROM = 240
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 20
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -240
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_support_equipment_[country_tag] = 240 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 20 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2461,29 +2789,51 @@ country_event = {
 				support_equipment > 359
 			}
 		}
-		add_equipment_to_stockpile = {
-			type = support_equipment
-			amount = -360
-		}
-		FROM = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				FROM = {
 					NOT = { has_country_flag = YSS_revoluntion_victory }
 					has_country_flag = YSS_launch_the_civil_war
 				}
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -360
+			}
+
+			FROM = {
 				add_equipment_to_stockpile = {
 					type = support_equipment
 					amount = 360
 					producer = YSS
 				}
 			}
-			else = {
-				add_to_variable = {
-					YSS_total_of_support_equipment@FROM = 360
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
 				}
 			}
-			add_to_variable = {
-				the_help_of_YSS = 30
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -360
+			}
+
+			meta_effect = {
+				text = {
+					add_to_variable = { YSS.YSS_total_of_support_equipment_[country_tag] = 360 }
+					add_to_variable = { YSS.YSS_[country_tag]_willing_join = 30 }
+				}
+				country_tag = "[FROM.GetTag]"
 			}
 		}
 	}
@@ -2494,6 +2844,7 @@ country_event = {
 country_event = {
 	#中转事件（隐藏）
 	id = YSS.1104
+	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 		hidden_effect = {
@@ -2523,6 +2874,19 @@ country_event = {
 					country_event = YSS.1103
 				}
 				clr_country_flag = YSS_select_1103
+			}
+		}
+	}
+}
+country_event = {
+	#中转事件（隐藏）
+	id = YSS.1105
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			YSS = {
+				country_event = YSS.1100
 			}
 		}
 	}
@@ -2643,6 +3007,7 @@ country_event = {
 country_event = {
 	#中转事件（隐藏）
 	id = YSS.1201
+	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 		hidden_effect = {
@@ -2676,6 +3041,7 @@ country_event = {
 					has_country_flag = YSS_launch_the_civil_war
 				}
 			}
+
 			random_list = {
 				# 小步兵
 				20 = {
@@ -2699,27 +3065,15 @@ country_event = {
 					}
 					hidden_effect = {
 						FROM = {
-							division_template = {
-								name = "国际营"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									infantry = { x = 1 y = 0 }
-									infantry = { x = 1 y = 1 }
+							country_event = YSS.1203
+						}
+
+						YSS = {
+							meta_effect = {
+								text = {
+									add_to_variable = { YSS.YSS_[country_tag]_willing_join = 2 }
 								}
-							}
-							capital_scope = {
-								meta_effect = {
-									text = {
-										create_unit = {
-											division = "name = \"[country_tag]志愿军\" division_template = \"国际营\" start_experience_factor = 0"
-											owner = ROOT
-											allow_spawning_on_enemy_provs = yes
-										}
-									}
-									country_tag = "[ROOT.GetName]"
-								}
+								country_tag = "[FROM.GetTag]"
 							}
 						}
 					}
@@ -2746,27 +3100,17 @@ country_event = {
 					}
 					hidden_effect = {
 						FROM = {
-							division_template = {
-								name = "国际旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									infantry = { x = 1 y = 0 }
-									infantry = { x = 1 y = 1 }
+							FROM = {
+							country_event = YSS.1204
+						}
+						}
+
+						YSS = {
+							meta_effect = {
+								text = {
+									add_to_variable = { YSS.YSS_[country_tag]_willing_join = 3 }
 								}
-							}
-							capital_scope = {
-								meta_effect = {
-									text = {
-										create_unit = {
-											division = "name = \"[country_tag]志愿军\" division_template = \"国际旅\" start_experience_factor = 0"
-											owner = ROOT
-											allow_spawning_on_enemy_provs = yes
-										}
-									}
-									country_tag = "[ROOT.GetName]"
-								}
+								country_tag = "[FROM.GetTag]"
 							}
 						}
 					}
@@ -2793,27 +3137,15 @@ country_event = {
 					}
 					hidden_effect = {
 						FROM = {
-							division_template = {
-								name = "国际装甲旅"
-								is_locked = yes
-								regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									light_armor = { x = 1 y = 0 }
-									light_armor = { x = 1 y = 1 }
+							country_event = YSS.1205
+						}
+
+						YSS = {
+							meta_effect = {
+								text = {
+									add_to_variable = { YSS.YSS_[country_tag]_willing_join = 4 }
 								}
-							}
-							capital_scope = {
-								meta_effect = {
-									text = {
-										create_unit = {
-											division = "name = \"[country_tag]志愿军\" division_template = \"国际旅\" start_experience_factor = 0.2"
-											owner = ROOT
-											allow_spawning_on_enemy_provs = yes
-										}
-									}
-									country_tag = "[ROOT.GetName]"
-								}
+								country_tag = "[FROM.GetTag]"
 							}
 						}
 					}
@@ -2822,7 +3154,9 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_country_flag = YSS_revoluntion_victory }
+				FROM = {
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+				}
 			}
 			random_list = {
 				# 小步兵
@@ -2845,9 +3179,13 @@ country_event = {
 						factor = 0.05
 						num_of_factories > 100
 					}
-					FROM = {
-						add_to_variable = {
-							YSS_volunteer_level_0@ROOT = 1
+					YSS = {
+						meta_effect = {
+							text = {
+								add_to_variable = { YSS_volunteer_level_0_[country_tag] = 1 }
+								add_to_variable = { YSS.YSS_[country_tag]_willing_join = 2 }
+							}
+							country_tag = "[FROM.GetTag]"
 						}
 					}
 				}
@@ -2871,9 +3209,13 @@ country_event = {
 						factor = 1
 						num_of_factories > 100
 					}
-					FROM = {
-						add_to_variable = {
-							YSS_volunteer_level_1@ROOT = 1
+					YSS = {
+						meta_effect = {
+							text = {
+								add_to_variable = { YSS_volunteer_level_1_[country_tag] = 1 }
+								add_to_variable = { YSS.YSS_[country_tag]_willing_join = 3 }
+							}
+							country_tag = "[FROM.GetTag]"
 						}
 					}
 				}
@@ -2897,9 +3239,13 @@ country_event = {
 						factor = 3
 						num_of_factories > 100
 					}
-					FROM = {
-						add_to_variable = {
-							YSS_volunteer_level_2@ROOT = 1
+					YSS = {
+						meta_effect = {
+							text = {
+								add_to_variable = { YSS_volunteer_level_2_[country_tag] = 1 }
+								add_to_variable = { YSS.YSS_[country_tag]_willing_join = 4 }
+							}
+							country_tag = "[FROM.GetTag]"
 						}
 					}
 				}
@@ -2914,5 +3260,85 @@ country_event = {
 			base = 0
 		}
 
+	}
+}
+country_event = {
+	id = YSS.1203
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				meta_effect = {
+					text = {
+						create_unit = {
+							division = "name = \"[country_tag]志愿军\" division_template = \"国际营\" start_experience_factor = 0.2"
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+							count = 1
+						}
+					}
+					country_tag = "[FROM.GetName]"
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.1204
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				meta_effect = {
+					text = {
+						create_unit = {
+							division = "name = \"[country_tag]志愿军\" division_template = \"国际旅\" start_experience_factor = 0.2"
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+							count = 1
+						}
+					}
+					country_tag = "[FROM.GetName]"
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.1205
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				meta_effect = {
+					text = {
+						create_unit = {
+							division = "name = \"[country_tag]志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0.2"
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+							count = 1
+						}
+					}
+					country_tag = "[FROM.GetName]"
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = YSS.1206
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1200 }
+		}
 	}
 }

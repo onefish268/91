@@ -12,7 +12,7 @@ LIB_gongye_category = {
     priority = 90
     visible = {
         has_country_flag = LIB_open_gongye_flag
-        tag = LIB   
+        tag = LIB
     }
 }
 
