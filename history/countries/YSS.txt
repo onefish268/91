@@ -173,6 +173,7 @@ recruit_character = YSS_7_habu
 recruit_character = YSS_3_5
 recruit_character = YSS_3_6
 recruit_character = YSS_6_9
+recruit_character = YSS_6_10
 recruit_character = YSS_1_16
 recruit_character = YSS_1_17
 recruit_character = YSS_1_18
@@ -202,7 +203,8 @@ recruit_character = YSS_1_41
 recruit_character = YSS_1_42
 recruit_character = YSS_1_43
 recruit_character = YSS_1_44
-
-
-
+recruit_character = YSS_1_45
+recruit_character = YSS_1_46
+recruit_character = YSS_1_47
+recruit_character = YSS_6_11
 

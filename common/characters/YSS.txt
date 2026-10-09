@@ -845,7 +845,65 @@ characters = {
 		}
 		advisor = { 	
 			traits = {
-				proletariat_internationalist
+				HUN_internationalist_marxist
+			}
+			idea_token = YSS_1_15
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_45 = {
+		name = "陵"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/116.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JAP_modernist_architect
+			}
+			idea_token = YSS_1_15
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_46 = {
+		name = "秋"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/120.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				nuclear_enthusiast
+				jiasu_trait
+			}
+			idea_token = YSS_1_15
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_47 = {
+		name = "茗旧"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/121.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SWI_commander_in_chief
 			}
 			idea_token = YSS_1_15
 			slot = political_advisor
@@ -1481,13 +1539,74 @@ characters = {
 			logistics_skill = 3
 		}
 	}
-#陆军将军
-    YSS_7_1 = {
-		name = "阿里・马赫"
+	YSS_6_10 = {
+		name = "兽耳酱"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/40.png"
-				large = "gfx/leaders/YSS/68.png"
+				small = "gfx/leaders/YSS/118.png"
+				large = "gfx/leaders/YSS/119.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_armored_3
+			}
+			idea_token = YSS_6_9
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				trait_reckless
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 1
+		}
+	}
+	YSS_6_11 = {
+		name = "茗旧"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/121.png"
+				large = "gfx/leaders/YSS/122.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_artillery_3
+			}
+			idea_token = YSS_6_9
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 1
+		}
+	}
+#陆军将军
+    YSS_7_1 = {
+		name = "陵"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/116.png"
+				large = "gfx/leaders/YSS/117.png"
 			}
 		}
 		corps_commander = {
@@ -1499,10 +1618,9 @@ characters = {
 		}
 	}
 	YSS_7_2 = {
-		name = "阿布德・帕"
+		name = "伊芙・梅里斯丹"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/41.png"
 				large = "gfx/leaders/YSS/69.png"
 			}
 		}
@@ -1515,10 +1633,9 @@ characters = {
 		}
 	}
 	YSS_7_3 = {
-		name = "侯赛因・西里"
+		name = "崇音"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/42.png"
 				large = "gfx/leaders/YSS/70.png"
 			}
 		}
@@ -1531,10 +1648,9 @@ characters = {
 		}
 	}
 	YSS_7_4 = {
-		name = "穆罕默德・马哈茂"
+		name = "拉斯特"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/43.png"
 				large = "gfx/leaders/YSS/71.png"
 			}
 		}
@@ -1547,10 +1663,9 @@ characters = {
 		}
 	}
 	YSS_7_5 = {
-		name = "穆罕默德・阿里"
+		name = "冷砂"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/44.png"
 				large = "gfx/leaders/YSS/72.png"
 			}
 		}
@@ -1563,10 +1678,9 @@ characters = {
 		}
 	}
 	YSS_7_6 = {
-		name = "塔哈・侯赛因"
+		name = "冥焱·雪奈"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/45.png"
 				large = "gfx/leaders/YSS/73.png"
 			}
 		}
@@ -1579,10 +1693,9 @@ characters = {
 		}
 	}
 	YSS_7_7 = {
-		name = "赛义德・库特布"
+		name = "周茹冰"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/46.png"
 				large = "gfx/leaders/YSS/74.png"
 			}
 		}
@@ -1595,10 +1708,9 @@ characters = {
 		}
 	}
 	YSS_7_8 = {
-		name = "萨拉马・穆萨"
+		name = "灰星"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/47.png"
 				large = "gfx/leaders/YSS/75.png"
 			}
 		}
@@ -1611,10 +1723,9 @@ characters = {
 		}
 	}
 	YSS_7_9 = {
-		name = "法莉妲"
+		name = "奥里西斯"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/48.png"
 				large = "gfx/leaders/YSS/76.png"
 			}
 		}
@@ -1627,10 +1738,9 @@ characters = {
 		}
 	}
 	YSS_7_10 = {
-		name = "多丽亚・沙菲克"
+		name = "凛音"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/49.png"
 				large = "gfx/leaders/YSS/77.png"
 			}
 		}
@@ -1643,10 +1753,9 @@ characters = {
 		}
 	}
 	YSS_7_11 = {
-		name = "艾哈迈德・侯赛因"
+		name = "艾莉娅"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/50.png"
 				large = "gfx/leaders/YSS/78.png"
 			}
 		}
@@ -1659,10 +1768,9 @@ characters = {
 		}
 	}
 	YSS_7_habu = {
-		name = "塔拉特・哈布"
+		name = "粉红"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/51.png"
 				large = "gfx/leaders/YSS/79.png"
 			}
 		}
@@ -1676,10 +1784,9 @@ characters = {
 	}
 #海军将官
     YSS_8_1 = {
-		name = "阿卜杜勒・拉赫曼"
+		name = "丽娅丝"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/37.png"
 				large = "gfx/leaders/YSS/65.png"
 			}
 		}
@@ -1692,10 +1799,9 @@ characters = {
 		}
 	}
 	YSS_8_2 = {
-		name = "扎卡里亚・莫希丁"
+		name = "克莉·怀特洛克"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/38.png"
 				large = "gfx/leaders/YSS/66.png"
 			}
 		}
@@ -1708,11 +1814,40 @@ characters = {
 		}
 	}
 	YSS_8_3 = {
-		name = "穆罕默德・纳吉布"
+		name = "伊丽莎白·阿夫顿"
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/YSS/39.png"
 				large = "gfx/leaders/YSS/67.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_4 = {
+		name = "小玉"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/123.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_5 = {
+		name = "红兔"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/124.png"
 			}
 		}
 		navy_leader = {

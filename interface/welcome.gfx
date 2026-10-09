@@ -330,6 +330,31 @@ spriteTypes = {
 				noOfFrames = 2
 				transparencecheck = yes
 			}
+		### - 索维耶特联盟 - ###	
+			spriteType = {
+				name = "GFX_Country_History_Button_YSS"
+				texturefile = "gfx/welcome/button/Country_History_Button_YSS.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Local_History_Button_YSS"
+				texturefile = "gfx/welcome/button/Local_History_Button_YSS.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_World_History_Button_YSS"
+				texturefile = "gfx/welcome/button/World_History_Button_YSS.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
+			spriteType = {
+				name = "GFX_Route_Guide_Button_YSS"
+				texturefile = "gfx/welcome/button/Route_Guide_Button_YSS.png"
+				noOfFrames = 2
+				transparencecheck = yes
+			}
 		### - 苏联 - ###
 		### - 德国 - ###
 			spriteType = {
