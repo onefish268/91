@@ -3100,9 +3100,7 @@ country_event = {
 					}
 					hidden_effect = {
 						FROM = {
-							FROM = {
 							country_event = YSS.1204
-						}
 						}
 
 						YSS = {
@@ -3340,5 +3338,1404 @@ country_event = {
 		hidden_effect = {
 			YSS = { country_event = YSS.1200 }
 		}
+	}
+}
+
+
+country_event = {#选择科研方向
+	id = YSS.1300
+	title = YSS.1300.t
+	desc = YSS.1300.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1300.a
+		add_tech_bonus = {
+			name = YSS.1300_0
+			uses = 1
+			bonus = 0.5
+			category = industry
+		}
+	}
+	option = {
+		name = YSS.1300.b
+		add_tech_bonus = {
+			name = YSS.1300_1
+			uses = 1
+			bonus = 0.5
+			category = electronics
+		}
+	}
+	option = {
+		name = YSS.1300.c
+		add_tech_bonus = {
+			name = YSS.1300_2
+			uses = 1
+			bonus = 0.5
+			category = infantry_weapons
+		}
+	}
+	option = {
+		name = YSS.1300.e
+		add_tech_bonus = {
+			name = YSS.1300_3
+			uses = 1
+			bonus = 0.5
+			category = artillery
+		}
+	}
+	option = {
+		name = YSS.1300.f
+		add_tech_bonus = {
+			name = YSS.1300_4
+			uses = 1
+			bonus = 0.5
+			category = armor
+		}
+	}
+	option = {
+		name = YSS.1300.g
+		add_tech_bonus = {
+			name = YSS.1300_5
+			uses = 1
+			bonus = 0.5
+			category = air_equipment
+		}
+	}
+	option = {
+		name = YSS.1300.h
+		add_tech_bonus = {
+			name = YSS.1300_6
+			uses = 1
+			bonus = 0.5
+			category = naval_equipment
+		}
+	}
+}
+country_event = {#选择科研方向
+	id = YSS.1301
+	title = YSS.1300.t
+	desc = YSS.1300.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1300.a
+		add_tech_bonus = {
+			name = YSS.1301_0
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = industry
+		}
+	}
+	option = {
+		name = YSS.1300.b
+		add_tech_bonus = {
+			name = YSS.1301_1
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = electronics
+		}
+	}
+	option = {
+		name = YSS.1300.c
+		add_tech_bonus = {
+			name = YSS.1301_2
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = infantry_weapons
+		}
+	}
+	option = {
+		name = YSS.1300.e
+		add_tech_bonus = {
+			name = YSS.1301_3
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = artillery
+		}
+	}
+	option = {
+		name = YSS.1300.f
+		add_tech_bonus = {
+			name = YSS.1301_4
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = armor
+		}
+	}
+	option = {
+		name = YSS.1300.g
+		add_tech_bonus = {
+			name = YSS.1301_5
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = air_equipment
+		}
+	}
+	option = {
+		name = YSS.1300.h
+		add_tech_bonus = {
+			name = YSS.1301_6
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			category = naval_equipment
+		}
+	}
+}
+country_event = {#选择科研方向
+	id = YSS.1302
+	title = YSS.1300.t
+	desc = YSS.1300.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1300.a
+		add_tech_bonus = {
+			name = YSS.1302_0
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = industry
+		}
+	}
+	option = {
+		name = YSS.1300.b
+		add_tech_bonus = {
+			name = YSS.1302_1
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = electronics
+		}
+	}
+	option = {
+		name = YSS.1300.c
+		add_tech_bonus = {
+			name = YSS.1302_2
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = infantry_weapons
+		}
+	}
+	option = {
+		name = YSS.1300.e
+		add_tech_bonus = {
+			name = YSS.1302_3
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = artillery
+		}
+	}
+	option = {
+		name = YSS.1300.f
+		add_tech_bonus = {
+			name = YSS.1302_4
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = armor
+		}
+	}
+	option = {
+		name = YSS.1300.g
+		add_tech_bonus = {
+			name = YSS.1302_5
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = air_equipment
+		}
+	}
+	option = {
+		name = YSS.1300.h
+		add_tech_bonus = {
+			name = YSS.1302_6
+			uses = 1
+			bonus = 1
+			ahead_reduction = 1
+			category = naval_equipment
+		}
+	}
+}
+country_event = {#选择科研方向
+	id = YSS.1303
+	title = YSS.1300.t
+	desc = YSS.1300.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1300.a
+		add_tech_bonus = {
+			name = YSS.1303_0
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = industry
+		}
+	}
+	option = {
+		name = YSS.1300.b
+		add_tech_bonus = {
+			name = YSS.1303_1
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = electronics
+		}
+	}
+	option = {
+		name = YSS.1300.c
+		add_tech_bonus = {
+			name = YSS.1303_2
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = infantry_weapons
+		}
+	}
+	option = {
+		name = YSS.1300.e
+		add_tech_bonus = {
+			name = YSS.1303_3
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = artillery
+		}
+	}
+	option = {
+		name = YSS.1300.f
+		add_tech_bonus = {
+			name = YSS.1303_4
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = armor
+		}
+	}
+	option = {
+		name = YSS.1300.g
+		add_tech_bonus = {
+			name = YSS.1303_5
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = air_equipment
+		}
+	}
+	option = {
+		name = YSS.1300.h
+		add_tech_bonus = {
+			name = YSS.1303_6
+			uses = 1
+			bonus = 1.5
+			ahead_reduction = 1.5
+			category = naval_equipment
+		}
+	}
+}
+country_event = { 
+	id = YSS.1304
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1300 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1305
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1301 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1306
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1302 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1307
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1303 }
+		}
+	}
+}
+
+country_event = {#选择建设方向
+	id = YSS.1400
+	title = YSS.1400.t
+	desc = YSS.1400.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1400.a
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1404
+			}
+		}
+	}
+	option = {
+		name = YSS.1400.b
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1405
+			}
+		}
+	}
+}
+country_event = {#选择工业具体项目
+	id = YSS.1401
+	title = YSS.1401.t
+	desc = YSS.1401.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1401.a
+		hidden_effect = {
+			FROM = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+            			    building = industrial_complex
+			                size > 1
+            			}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+			}
+			}
+		}
+	}
+	option = {
+		name = YSS.1401.b
+		hidden_effect = {
+			FROM = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+            			    building = arms_factory
+			                size > 1
+            			}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1401.c
+		hidden_effect = {
+			FROM = {
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1401.e
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1403
+			}
+		}
+	}
+}
+country_event = {#选择资源具体项目
+	id = YSS.1402
+	title = YSS.1402.t
+	desc = YSS.1402.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1402.a
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = oil
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.b
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = aluminium
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.e
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = tungsten
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.f
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = steel
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.g
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = chromium
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.h
+		hidden_effect = {
+			FROM = {
+				capital_scope = {
+					add_resource = {
+						type = coal
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1402.i
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1403
+			}
+		}
+	}
+}
+country_event = { 
+	id = YSS.1403
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1400 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1404
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1401 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1405
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1402 }
+		}
+	}
+}
+
+country_event = {#选择企业的方向
+	id = YSS.1500
+	title = YSS.1500.t
+	desc = YSS.1500.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1500.a
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1506
+			}
+		}
+	}
+	option = {
+		name = YSS.1500.b
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1507
+			}
+		}
+	}
+	option = {
+		name = YSS.1500.c
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1508
+			}
+		}
+	}
+	option = {
+		name = YSS.1500.e
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1509
+			}
+		}
+	}
+}
+country_event = {#选择哪个军需品装备
+	id = YSS.1501
+	title = YSS.1501.t
+	desc = YSS.1501.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS_artillery_org
+		mio:YSS_artillery_org = {
+			add_mio_size = 1
+		}
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_infantry_equipment
+		mio:YSS_infantry_equipment = {
+			add_mio_size = 1
+		}
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_motorized
+		mio:YSS_motorized = {
+			add_mio_size = 1
+		}
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_support_equipment
+		mio:YSS_support_equipment = {
+			add_mio_size = 1
+		}
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS.1501.f
+	}
+}
+country_event = {#选择海军
+	id = YSS.1502
+	title = YSS.1502.t
+	desc = YSS.1502.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS_battle_line_ship
+		mio:YSS_battle_line_ship = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { dockyard > 1 }
+
+			remove_building = {
+				type = dockyard
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_escort_ship
+		mio:YSS_escort_ship = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { dockyard > 1 }
+
+			remove_building = {
+				type = dockyard
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_refurbishment_repair
+		mio:YSS_refurbishment_repair = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { dockyard > 1 }
+
+			remove_building = {
+				type = dockyard
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS.1502.e
+	}
+}
+country_event = {#选择空军
+	id = YSS.1503
+	title = YSS.1503.t
+	desc = YSS.1503.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS_air
+		mio:YSS_air = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_cas_aircraft
+		mio:YSS_cas_aircraft = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_light_aircraft
+		mio:YSS_light_aircraft = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS.1503.e
+	}
+}
+country_event = {#选择坦克
+	id = YSS.1504
+	title = YSS.1504.t
+	desc = YSS.1504.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS_bbtank
+		mio:YSS_bbtank = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_assault_guns
+		mio:YSS_assault_guns = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YYSS_tank
+		mio:YSS_tank = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS_refurbishment_plant
+		mio:YSS_refurbishment_plant = {
+			add_mio_size = 1
+		}
+
+		random_owned_controlled_state = {
+    		limit = { arms_factory > 1 }
+
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size = 2
+					}
+				}
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+
+		meta_effect = {
+			text = {
+				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
+			}
+			country_tag = "[?FROM.GetTag]"
+		}
+	}
+	option = {
+		name = YSS.1504.f
+		hidden_effect = {
+			FROM = {
+				country_event = YSS.1505
+			}
+		}
+	}
+}
+country_event = { 
+	id = YSS.1505
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1500 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1506
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1501 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1507
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1502 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1508
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1503 }
+		}
+	}
+}
+country_event = { 
+	id = YSS.1509
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			YSS = { country_event = YSS.1504 }
+		}
+	}
+}
+
+country_event = {#加盟信件
+	id = YSS.1600
+	title = YSS.1600.t
+	desc = YSS.1600.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1600.a
+
+		every_core_state = {
+			add_core_of = YSS
+		}
+
+		if = {
+			YSS = { NOT = { has_country_flag = YSS_change_its_name } }
+			YSS = {
+				set_cosmetic_tag = YSS_AFRICA_UNION
+				set_country_flag = YSS_change_its_name
+			}
+		}
+
+		YSS = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				factor = 0.5
+
+				communism < 0.3
+			}
+			modifier = {
+				factor = 1.5
+
+				communism > 0.4
+			}
+			modifier = {
+				factor = 1.35
+
+				communism > 0.6
+			}
+			modifier = {
+				factor = 1.35
+
+				has_stability > 0.5
+			}
+			modifier = {
+				factor = 1.5
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 50 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+			modifier = {
+				factor = 1.4
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 75 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+			modifier = {
+				factor = 1.3
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 100 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+		}
+	}
+	option = {
+		name = YSS.1600.b
+		YSS = {
+			country_event = YSS.1601
+		}
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				factor = 10
+
+				communism < 0.3
+			}
+			modifier = {
+				factor = 0.5
+
+				communism > 0.4
+			}
+			modifier = {
+				factor = 0.2
+
+				communism > 0.6
+			}
+			modifier = {
+				factor = 0.5
+
+				has_stability > 0.5
+			}
+			modifier = {
+				factor = 0.9
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 50 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+			modifier = {
+				factor = 0.8
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 75 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+			modifier = {
+				factor = 0.7
+
+				meta_trigger = {
+					text = {
+						check_variable = { YSS_[country_tag]_willing_join > 100 }
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+		}
+	}
+}
+country_event = {#暂时不太合适
+	id = YSS.1601
+	title = YSS.1601.t
+	desc = YSS.1601.d
+	is_triggered_only = yes
+	picture = GFX_YSS28_event
+	option = {
+		name = YSS.1601.a
 	}
 }
