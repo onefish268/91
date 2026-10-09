@@ -461,6 +461,10 @@ defined_text = {
         localization_key = GFX_Country_History_Button_ZIM
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = GFX_Country_History_Button_YSS
+    }
+    text = {
         trigger = { tag = GER }
         localization_key = GFX_Country_History_Button_GER
     }
@@ -547,6 +551,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_Local_History_Button_ZIM
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = GFX_Local_History_Button_YSS
     }
     text = {
         trigger = { tag = GER }
@@ -641,6 +649,10 @@ defined_text = {
         localization_key = GFX_World_History_Button_ZIM
     }
     text = {
+        trigger = { tag = YSS }
+        localization_key = GFX_World_History_Button_YSS
+    }
+    text = {
         trigger = { tag = FRA }
         localization_key = GFX_World_History_Button_FRA
     }
@@ -727,6 +739,10 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_Route_Guide_Button_ZIM
+    }
+    text = {
+        trigger = { tag = YSS }
+        localization_key = GFX_Route_Guide_Button_YSS
     }
     text = {
         trigger = { tag = FRA }

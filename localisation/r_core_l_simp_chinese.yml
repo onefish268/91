@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+ FE_HISTORICAL: "AI历史国策（§R不要勾选§!）"
+ FE_HISTORICAL_TOOLTIP: "如果你希望钢铁萌心出现§RBUG§!，请打开这个功能。"
+ FE_IRONMAN: "铁人模式（§R不推荐打开§!）"
+ LOADING_HISTORY: "总书记正在签署秘密档案..."
+ LOADING_GUI: "宣传部正在绘制领袖肖像..."
+ LOAD_GFX_PDXMAP_SHADERS: "中央政治局正在激烈争吵..."
+ LOAD_GFX_PDXMAP_TERRAIN: "农业人民委员部正在丈量土地..."
+ LOAD_GFX_PDXMAP_BORDERS: "王公正在花天酒地..."
+ LOAD_GFX_PDXMAP_TEXTURES: "造船厂正在铺设红海军龙骨..."
+ LOAD_GFX_PDXMAP_TREES: "革命的火种正在悄然蔓延..."
+ LOAD_GFX_PDXMAP_RIVERS: "红军军改进行中..."
+ LOAD_GFX_PDXMAP_STATIC_OBJECTS: "正在起草新宪法..."
+ LOAD_GFX: "中央正在夺取最高权限..."
+ LOAD_FLAGS: "亚的斯亚贝巴广场升起红旗..."
+ PROC_FLAGS: "皇宫内传出喧哗声..."
+ LOAD_EVENTS: "外交人民委员正在与圣杯王国谈判..."
+ LOAD_INIT: "巨人轰然倒下..."
+ CREATING_PROVINCE: "一个时代的终结..."
+
+ CUSTOM_GAME_SETTINGS_BACK: "应用"
+
