@@ -827,6 +827,16 @@ ideas = {
 				communism_drift = 0.1
 			}
 		}
+
+		YSS_the_cooperation_benefit = {
+			picture = GFX_idea_YSS_8
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				stability_weekly = 0.01
+			}
+		}
 	}
 }
 
