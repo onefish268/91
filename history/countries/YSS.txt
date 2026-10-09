@@ -144,6 +144,7 @@ recruit_character = YSS_4_3
 recruit_character = YSS_4_4
 recruit_character = YSS_5_1
 recruit_character = YSS_5_2
+recruit_character = YSS_5_3
 recruit_character = YSS_6_1
 recruit_character = YSS_6_2
 recruit_character = YSS_6_3
@@ -168,8 +169,37 @@ recruit_character = YSS_7_10
 recruit_character = YSS_7_11
 recruit_character = YSS_7_habu
 recruit_character = YSS_3_5
+recruit_character = YSS_3_6
 recruit_character = YSS_6_9
-
+recruit_character = YSS_1_16
+recruit_character = YSS_1_17
+recruit_character = YSS_1_18
+recruit_character = YSS_1_19
+recruit_character = YSS_1_20
+recruit_character = YSS_1_21
+recruit_character = YSS_1_22
+recruit_character = YSS_1_23
+recruit_character = YSS_1_24
+recruit_character = YSS_1_25
+recruit_character = YSS_1_26
+recruit_character = YSS_1_27
+recruit_character = YSS_1_28
+recruit_character = YSS_1_29
+recruit_character = YSS_1_30
+recruit_character = YSS_1_31
+recruit_character = YSS_1_32
+recruit_character = YSS_1_33
+recruit_character = YSS_1_34
+recruit_character = YSS_1_35
+recruit_character = YSS_1_36
+recruit_character = YSS_1_37
+recruit_character = YSS_1_38
+recruit_character = YSS_1_39
+recruit_character = YSS_1_40
+recruit_character = YSS_1_41
+recruit_character = YSS_1_42
+recruit_character = YSS_1_43
+recruit_character = YSS_1_44
 
 
 
