@@ -17,7 +17,7 @@ focus_tree = {
 		x = 32
 		y = 0
 		cost = 1
-		icon = GFX_focus_NGL_in_the_ruins
+		icon = GFX_focus_zsh37
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -37,8 +37,8 @@ focus_tree = {
 		id = YSS_focus_2
 		x = 32
 		y = 2
-		cost = 2
-		icon = GFX_focus_GER_legacy_of_the_spartacus_league
+		cost = 1
+		icon = GFX_focus_zsh38
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -58,8 +58,8 @@ focus_tree = {
 		id = YSS_focus_3
 		x = 32
 		y = 3
-		cost = 3
-		icon = GFX_focus_PER_constitutional_monarchy
+		cost = 2
+		icon = GFX_focus_zsh40
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -81,8 +81,8 @@ focus_tree = {
 		id = YSS_focus_4
 		x = 30
 		y = 3
-		cost = 3
-		icon = GFX_focus_PHI_return_of_the_exiles
+		cost = 2
+		icon = GFX_focus_zsh39
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -104,8 +104,8 @@ focus_tree = {
 		id = YSS_focus_5
 		x = 34
 		y = 3
-		cost = 3
-		icon = GFX_focus_ETH_african_wildfire
+		cost = 2
+		icon = GFX_focus_zsh41
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -492,7 +492,7 @@ focus_tree = {
 		id = YSS_focus_24
 		x = 25
 		y = 13
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PHI_the_red_sun_over_manila
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -512,17 +512,23 @@ focus_tree = {
             }
 			custom_effect_tooltip = YSS_tootip_31
 			hidden_effect = {
+				country_event = {
+				id = YSS.73
+				days = 7
+			    }
+			    activate_shine_on_focus = YSS_focus_26
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_daqingxi
                 scoped_play_song = "当你在欢呼中死去"
             }
+			custom_effect_tooltip = YSS_tootip_33
 		}
 	}
 	focus = {
 		id = YSS_focus_25
 		x = 27
 		y = 13
-		cost = 0
+		cost = 5
 		icon = GFX_focus_NGL_the_lost_man
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -557,16 +563,12 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-			}
+			add_stability = -0.07
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_26
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -585,19 +587,12 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_7_party_popularity_stability_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
-			}
+			add_stability = -0.07
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_28
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -616,25 +611,18 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
-			}
+			add_stability = -0.07
 			add_manpower = -3000
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_29
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
 		id = YSS_focus_30
-		x = 30
+		x = 32
 		y = 13
 		cost = 0
 		icon = GFX_focus_generic_phone
@@ -649,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_31
-		x = 30
+		x = 32
 		y = 14
 		cost = 5
 		icon = GFX_focus_NGL_take_up_arms
@@ -661,15 +649,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_stability = 0.05
-			remove_advisor_role = {
-                character = "YSS_1_8"  # 要修改的角色ID
-                slot = political_advisor          # 要移除的顾问槽位
-            }
 		}
 	}
 	focus = {
 		id = YSS_focus_32
-		x = 30
+		x = 32
 		y = 15
 		cost = 5
 		icon = GFX_focus_NGL_affirmative_action_for_infected
@@ -912,7 +896,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_43
 		x = 32
-		y = 13
+		y = 16
 		cost = 5
 		icon = GFX_focus_generic_communist
 		continue_if_invalid = no
@@ -941,8 +925,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_44
-		x = 33
-		y = 14
+		x = 32
+		y = 17
 		cost = 5
 		icon = GFX_focus_ARG_the_buenos_aires_conference
 		continue_if_invalid = no
@@ -958,8 +942,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_45
-		x = 33
-		y = 15
+		x = 32
+		y = 18
 		cost = 5
 		icon = GFX_focus_AUS_danubian_socialist_communes
 		continue_if_invalid = no
@@ -1101,31 +1085,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_50
-		x = 14
-		y = 6
-		cost = 3
-		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_46
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_50
-				}
-			}
-			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
-			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.1 }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
 		id = YSS_focus_51
 		x = 16
 		y = 6
@@ -1172,6 +1131,15 @@ focus_tree = {
 			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
 			custom_effect_tooltip =YSS_tootip_28
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			hidden_effect = {
+				country_event = {
+				    id = YSS.53
+					days = 5
+			    }
+			}
 		}
 	}
 	focus = {
@@ -1208,14 +1176,14 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_54
 		x = 22
-		y = 6
+		y = 8
 		cost = 3
 		icon = GFX_focus_JAP_approach_mitsubishi
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_48
+			focus = YSS_focus_68
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1253,52 +1221,27 @@ focus_tree = {
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = YSS_focus_46_0
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_1
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = YSS_focus_46_2
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
 		}
 	}
 	focus = {
-		id = YSS_focus_56
-		x = 14
-		y = 8
-		cost = 3
-		icon = GFX_focus_ITA_banda_carita
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_50
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_56
-				}
-			}
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
-			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
-			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.15 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
 		id = YSS_focus_57
-		x = 12
+		x = 13
 		y = 10
 		cost = 3
 		icon = GFX_focus_JAP_approach_sumitomo
@@ -1307,6 +1250,9 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_55
+		}
+		prerequisite = {
+			focus = YSS_focus_60
 		}
 		completion_reward = {
 			every_controlled_state = {
@@ -1322,25 +1268,29 @@ focus_tree = {
 					level = 1
 				}
 			}
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
 			hidden_effect = {
 				country_event = {
 				    id = YSS.52
 					days = 5
 			    }
 			}
+			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
 		id = YSS_focus_58
 		x = 14
-		y = 10
+		y = 6
 		cost = 3
 		icon = GFX_focus_PRC_urbanization_two
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_56
+			focus = YSS_focus_46
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1349,41 +1299,22 @@ focus_tree = {
 					add_idea = YSS_idea_focus_58
 				}
 			}
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.1 }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
 			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
-		id = YSS_focus_59
-		x = 12
-		y = 12
-		cost = 3
-		icon = GFX_focus_SIA_the_yellow_dossier
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_57
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_59
-				}
-			}
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 }
+			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.15 }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
 		id = YSS_focus_60
 		x = 14
-		y = 12
+		y = 8
 		cost = 3
 		icon = GFX_focus_PRC_urbanization
 		continue_if_invalid = no
@@ -1450,37 +1381,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_62
-		x = 18
-		y = 8
-		cost = 3
-		icon = GFX_focus_propaganda_soviet
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_52
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_62
-				}
-			}
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 }
-			custom_effect_tooltip =YSS_tootip_28
-			hidden_effect = {
-				country_event = {
-				    id = YSS.53
-					days = 5
-			    }
-			}
-		}
-	}
-	focus = {
 		id = YSS_focus_63
 		x = 16
 		y = 10
@@ -1499,6 +1399,8 @@ focus_tree = {
 					add_idea = YSS_idea_focus_63
 				}
 			}
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor  = 0.05 }
 			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 }
 			custom_effect_tooltip =YSS_tootip_28
@@ -1507,14 +1409,14 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_64
 		x = 18
-		y = 10
+		y = 8
 		cost = 3
 		icon = GFX_focus_HUN_reinstate_the_lenin_boys
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_62
+			focus = YSS_focus_52
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1535,33 +1437,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_65
-		x = 16
-		y = 12
-		cost = 3
-		icon = GFX_focus_SWE_rations
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_63
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_65
-				}
-			}
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor  = 0.05 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
 		id = YSS_focus_66
 		x = 18
-		y = 12
+		y = 10
 		cost = 3
 		icon = GFX_focus_SOV_womens_fascist_movement
 		continue_if_invalid = no
@@ -1584,15 +1462,18 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_67
-		x = 20
-		y = 8
+		x = 21
+		y = 10
 		cost = 3
 		icon = GFX_focus_AUS_graf_und_stift_focus
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_53
+			focus = YSS_focus_71
+		}
+		prerequisite = {
+			focus = YSS_focus_54
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1610,19 +1491,22 @@ focus_tree = {
 					days = 5
 			    }
 			}
+			add_stability = 0.1
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
 		}
 	}
 	focus = {
 		id = YSS_focus_68
 		x = 22
-		y = 8
+		y = 6
 		cost = 3
 		icon = GFX_focus_RAJ_protest_against_the_howell_monument
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_54
+			focus = YSS_focus_48
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1647,76 +1531,28 @@ focus_tree = {
 			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 }
 			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
-		id = YSS_focus_69
-		x = 20
-		y = 10
-		cost = 3
-		icon = GFX_focus_INS_peg_indies_guilder_to_dutch_guilder
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_67
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_69
-				}
-			}
-			add_stability = 0.1
 			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
-		id = YSS_focus_70
-		x = 22
-		y = 10
-		cost = 3
-		icon = GFX_focus_SIA_the_purge
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_68
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_70
-				}
-			}
-			add_stability = 0.1
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
-		    custom_effect_tooltip =YSS_tootip_28
 			hidden_effect = {
 				country_event = {
 				    id = YSS.56
 					days = 5
 			    }
 			}
-	    }
+			custom_effect_tooltip =YSS_tootip_28
+		}
 	}
 	focus = {
 		id = YSS_focus_71
 		x = 20
-		y = 12
+		y = 8
 		cost = 3
 		icon = GFX_focus_NOR_moscows_education_centers
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_69
+			focus = YSS_focus_53
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1731,43 +1567,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_72
-		x = 22
-		y = 12
-		cost = 3
-		icon = GFX_focus_CHL_denounce_the_anarchy
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_70
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_72
-				}
-			}
-			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
-			custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
 		id = YSS_focus_73
 		x = 13
-		y = 13
-		cost = 2
+		y = 12
+		cost = 5
 		icon = GFX_focus_SOV_organization_centralization_discipline
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_59
-		}
-		prerequisite = {
-			focus = YSS_focus_60
+			focus = YSS_focus_57
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -1836,14 +1645,14 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_74
 		x = 17
-		y = 13
-		cost = 2
+		y = 12
+		cost = 5
 		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_65
+			focus = YSS_focus_63
 		}
 		prerequisite = {
 			focus = YSS_focus_66
@@ -1914,8 +1723,8 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_75
 		x = 21
-		y = 13
-		cost = 2
+		y = 12
+		cost = 5
 		icon = GFX_focus_IRQ_kurdish_form_the_peshmerga
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -1924,7 +1733,7 @@ focus_tree = {
 			focus = YSS_focus_71
 		}
 		prerequisite = {
-			focus = YSS_focus_72
+			focus = YSS_focus_70
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -2034,7 +1843,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_77
 		x = 17
-		y = 15
+		y = 14
 		cost = 2
 		icon = GFX_focus_generic_army_attack
 		continue_if_invalid = no
@@ -2115,42 +1924,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_78
-		x = 13
-		y = 17
-		cost = 3
-		icon = GFX_focus_generic_railway_gun
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_82
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = YSS_focus_78_0
-				bonus = 0.5
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
-				name = YSS_focus_78_1
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = YSS_focus_78_2
-				bonus = 0.5
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-	focus = {
 		id = YSS_focus_79
 		x = 15
-		y = 17
+		y = 16
 		cost = 3
 		icon = GFX_focus_INS_military_equipment_contracts
 		continue_if_invalid = no
@@ -2187,7 +1963,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_80
 		x = 19
-		y = 17
+		y = 16
 		cost = 3
 		icon = GFX_focus_generic_price_controls
 		continue_if_invalid = no
@@ -2209,34 +1985,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_81
-		x = 21
-		y = 17
-		cost = 3
-		icon = GFX_focus_PER_fund_imperial_excellency
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_83
-		}
-		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = YSS_idea_focus
-					add_idea = YSS_idea_focus_81
-				}
-			}
-			add_stability = 0.1
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
-		    custom_effect_tooltip =YSS_tootip_28
-		}
-	}
-	focus = {
 		id = YSS_focus_82
 		x = 14
-		y = 16
+		y = 15
 		cost = 3
 		icon = GFX_focus_DEN_sirius_patrol
 		continue_if_invalid = no
@@ -2260,7 +2011,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_83
 		x = 20
-		y = 16
+		y = 15
 		cost = 3
 		icon = GFX_focus_BEL_the_grand_place
 		continue_if_invalid = no
@@ -2292,13 +2043,16 @@ focus_tree = {
 			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 }
 			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_stability = 0.1
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
 		id = YSS_focus_84
 		x = 17
-		y = 16
+		y = 15
 		cost = 3
 		icon = GFX_focus_RAJ_a_private_military
 		continue_if_invalid = no
@@ -2328,7 +2082,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_85
 		x = 17
-		y = 17
+		y = 16
 		cost = 3
 		icon = GFX_focus_CHI_weaponise_the_faithful
 		continue_if_invalid = no
@@ -2346,21 +2100,20 @@ focus_tree = {
 			}
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
 	focus = {
 		id = YSS_focus_86
-		x = 14
-		y = 18
+		x = 15
+		y = 17
 		cost = 3
 		icon = GFX_focus_hol_philips
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_78
-		}
 		prerequisite = {
 			focus = YSS_focus_79
 		}
@@ -2385,8 +2138,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_87
-		x = 20
-		y = 18
+		x = 19
+		y = 17
 		cost = 3
 		icon = GFX_focus_RUS_agency
 		continue_if_invalid = no
@@ -2394,9 +2147,6 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_focus_80
-		}
-		prerequisite = {
-			focus = YSS_focus_81
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -2419,7 +2169,7 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_88
 		x = 17
-		y = 18
+		y = 17
 		cost = 3
 		icon = GFX_focus_PER_shiraz_university
 		continue_if_invalid = no
@@ -2491,13 +2241,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_political_power_cost = -0.1
+				YSS_political_power_cost = -0.05
 			}
 			add_to_variable = {
 				YSS_drift_defence_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_communism_drift = 0.05
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2711,9 +2458,6 @@ focus_tree = {
 			add_to_variable = {
 				YSS_7_industrial_capacity_factory = 0.05
 			}
-			add_to_variable = {
-				YSS_conscription = 0.005
-			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
@@ -2746,9 +2490,6 @@ focus_tree = {
 			add_to_variable = {
 				YSS_forced_surrender_limit = 0.05
 			}
-			add_to_variable = {
-				YSS_research_speed_factor = 0.05
-			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
@@ -2773,13 +2514,10 @@ focus_tree = {
 			}
 			add_manpower = 30000
 			add_to_variable = {
-				YSS_political_power_cost = -0.1
+				YSS_political_power_cost = -0.05
 			}
 			add_to_variable = {
 				YSS_forced_surrender_limit = 0.05
-			}
-			add_to_variable = {
-				YSS_7_party_popularity_stability_factor = 0.05
 			}
 			custom_effect_tooltip = YSS_tootip_6
 			hidden_effect = {
@@ -2810,13 +2548,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_7_monthly_population = 0.1
+				YSS_7_monthly_population = 0.05
 			}
 			add_to_variable = {
 				YSS_stability_weekly = 0.01
-			}
-			add_to_variable = {
-				YSS_political_power_factor = 0.05
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2880,12 +2615,6 @@ focus_tree = {
 			}
 			add_to_variable = {
 				YSS_7_industrial_capacity_factory = 0.05
-			}
-			add_to_variable = {
-				YSS_army_attack_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_army_defense_factor = 0.05
 			}
 			add_popularity = {
                 ideology = communism
@@ -3050,6 +2779,14 @@ focus_tree = {
 			has_country_flag = sov_has_agree
 		}
 		completion_reward = {
+			hidden_effect = {
+				every_faction_member = {
+					limit = { NOT = { tag = YSS } }
+					SOV = {
+						add_to_faction = THIS
+					}
+				}
+			}
 			SOV = {
 				add_to_faction = YSS
 			}
@@ -3742,6 +3479,27 @@ focus_tree = {
 			add_to_variable = {
 				YSS_red_army_armor_defence_factor = 0.1
 			}
+			add_tech_bonus = {
+				name = YSS_focus_78_0
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = YSS_focus_78_1
+				bonus = 0.5
+				uses = 2
+				ahead_reduction = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = YSS_focus_78_2
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 2
+				category = artillery
+			}
 			custom_effect_tooltip = YSS_tootip_27
 		}
 	}
@@ -4379,22 +4137,22 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_command_power_gain_mult = 0.05
+				YSS_command_power_gain_mult = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_air_accidents_factor = -0.05
+				YSS_airforce_air_accidents_factor = -0.1
 			}
 			add_to_variable = {
-				YSS_airforce_ground_attack_factor = 0.05
+				YSS_airforce_ground_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_static_anti_air_damage_factor = 0.05
+				YSS_airforce_static_anti_air_damage_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_air_attack_factor = 0.05
+				YSS_airforce_air_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_air_defence_factor = 0.05
+				YSS_airforce_air_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_16
 		}
@@ -4421,10 +4179,10 @@ focus_tree = {
 			add_stability = -0.05
 			add_command_power = 20
 			add_to_variable = {
-				YSS_airforce_air_accidents_factor = -0.05
+				YSS_airforce_air_accidents_factor = -0.15
 			}
 			add_to_variable = {
-				YSS_airforce_air_attack_factor = 0.05
+				YSS_airforce_air_attack_factor = 0.15
 			}
 			custom_effect_tooltip = YSS_tootip_16
 		}
@@ -4449,10 +4207,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_airforce_air_accidents_factor = -0.05
+				YSS_airforce_air_accidents_factor = -0.1
 			}
 			add_to_variable = {
-				YSS_air_mission_efficiency = 0.05
+				YSS_air_mission_efficiency = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_16
 			hidden_effect = {
@@ -4483,10 +4241,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_airforce_ground_attack_factor = 0.05
+				YSS_airforce_ground_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_air_training_xp_gain_factor = 0.05
+				YSS_air_training_xp_gain_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_16
 			hidden_effect = {
@@ -4519,10 +4277,10 @@ focus_tree = {
 			add_stability = -0.05
 			add_command_power = 25
 			add_to_variable = {
-				YSS_air_training_xp_gain_factor = 0.05
+				YSS_air_training_xp_gain_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_air_mission_efficiency = 0.05
+				YSS_air_mission_efficiency = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_16
 		}
@@ -4586,15 +4344,11 @@ focus_tree = {
 				}
 			}
 			add_stability = -0.05
-			remove_advisor_role = {
-                character = "YSS_4_3"  # 要修改的角色ID
-                slot = air_chief          # 要移除的顾问槽位
-            }
 			add_to_variable = {
-				YSS_command_power_gain_mult = 0.05
+				YSS_command_power_gain_mult = 0.15
 			}
 			add_to_variable = {
-				YSS_air_mission_efficiency = 0.05
+				YSS_air_mission_efficiency = 0.15
 			}
 			custom_effect_tooltip = YSS_tootip_16
 		}
@@ -4622,13 +4376,13 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_airforce_ground_attack_factor = 0.05
+				YSS_airforce_ground_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_air_attack_factor = 0.05
+				YSS_airforce_air_attack_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_airforce_air_defence_factor = 0.05
+				YSS_airforce_air_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_16
 		}
@@ -4656,10 +4410,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_airforce_static_anti_air_damage_factor = 0.05
+				YSS_airforce_static_anti_air_damage_factor = 0.15
 			}
 			add_to_variable = {
-				YSS_airforce_air_defence_factor = 0.05
+				YSS_airforce_air_defence_factor = 0.15
 			}
 			custom_effect_tooltip = YSS_tootip_16
 			hidden_effect = {
@@ -4703,87 +4457,151 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_32
 
-			COG = {
-				set_variable = { YSS_total_of_gun@COG = 0 }
-				set_variable = { YSS_total_of_artillery@COG = 0 }
-				set_variable = { YSS_total_of_support_equipment@COG = 0 }
-				set_variable = { YSS_total_of_factory@COG = 0 }
-				set_variable = { YSS_volunteer_level_0@COG = 0 }
-				set_variable = { YSS_volunteer_level_1@COG = 0 }
-				set_variable = { YSS_volunteer_level_2@COG = 0 }
+			add_to_array = { YSS_focus_172_array = COG }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZIM = {
-				set_variable = { YSS_total_of_gun@ZIM = 0 }
-				set_variable = { YSS_total_of_artillery@ZIM = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZIM = 0 }
-				set_variable = { YSS_total_of_factory@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_0@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_1@ZIM = 0 }
-				set_variable = { YSS_volunteer_level_2@ZIM = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZIM }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZSB = {
-				set_variable = { YSS_total_of_gun@ZSB = 0 }
-				set_variable = { YSS_total_of_artillery@ZSB = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZSB = 0 }
-				set_variable = { YSS_total_of_factory@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_0@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_1@ZSB = 0 }
-				set_variable = { YSS_volunteer_level_2@ZSB = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZYX }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			ZYX = {
-				set_variable = { YSS_total_of_gun@ZYX = 0 }
-				set_variable = { YSS_total_of_artillery@ZYX = 0 }
-				set_variable = { YSS_total_of_support_equipment@ZYX = 0 }
-				set_variable = { YSS_total_of_factory@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_0@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_1@ZYX = 0 }
-				set_variable = { YSS_volunteer_level_2@ZYX = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = ZSB }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			EAS = {
-				set_variable = { YSS_total_of_gun@EAS = 0 }
-				set_variable = { YSS_total_of_artillery@EAS = 0 }
-				set_variable = { YSS_total_of_support_equipment@EAS = 0 }
-				set_variable = { YSS_total_of_factory@EAS = 0 }
-				set_variable = { YSS_volunteer_level_0@EAS = 0 }
-				set_variable = { YSS_volunteer_level_1@EAS = 0 }
-				set_variable = { YSS_volunteer_level_2@EAS = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = EAS }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			EGY = {
-				set_variable = { YSS_total_of_gun@EGY = 0 }
-				set_variable = { YSS_total_of_artillery@EGY = 0 }
-				set_variable = { YSS_total_of_support_equipment@EGY = 0 }
-				set_variable = { YSS_total_of_factory@EGY = 0 }
-				set_variable = { YSS_volunteer_level_0@EGY = 0 }
-				set_variable = { YSS_volunteer_level_1@EGY = 0 }
-				set_variable = { YSS_volunteer_level_2@EGY = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = EGY }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			LBA = {
-				set_variable = { YSS_total_of_gun@LBA = 0 }
-				set_variable = { YSS_total_of_artillery@LBA = 0 }
-				set_variable = { YSS_total_of_support_equipment@LBA = 0 }
-				set_variable = { YSS_total_of_factory@LBA = 0 }
-				set_variable = { YSS_volunteer_level_0@LBA = 0 }
-				set_variable = { YSS_volunteer_level_1@LBA = 0 }
-				set_variable = { YSS_volunteer_level_2@LBA = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = LBA }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			LIB = {
-				set_variable = { YSS_total_of_gun@LIB = 0 }
-				set_variable = { YSS_total_of_artillery@LIB = 0 }
-				set_variable = { YSS_total_of_support_equipment@LIB = 0 }
-				set_variable = { YSS_total_of_factory@LIB = 0 }
-				set_variable = { YSS_volunteer_level_0@LIB = 0 }
-				set_variable = { YSS_volunteer_level_1@LIB = 0 }
-				set_variable = { YSS_volunteer_level_2@LIB = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = LIB }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
-			SAF = {
-				set_variable = { YSS_total_of_gun@SAF = 0 }
-				set_variable = { YSS_total_of_artillery@SAF = 0 }
-				set_variable = { YSS_total_of_support_equipment@SAF = 0 }
-				set_variable = { YSS_total_of_factory@SAF = 0 }
-				set_variable = { YSS_volunteer_level_0@SAF = 0 }
-				set_variable = { YSS_volunteer_level_1@SAF = 0 }
-				set_variable = { YSS_volunteer_level_2@SAF = 0 }
+			clear_array = YSS_focus_172_array
+
+			add_to_array = { YSS_focus_172_array = SAF }
+			meta_effect = {
+				text = {
+					set_variable = { YSS_total_of_gun_[country_tag] = 0 }
+					set_variable = { YSS_total_of_artillery_[country_tag] = 0 }
+					set_variable = { YSS_total_of_support_equipment_[country_tag] = 0 }
+					set_variable = { YSS_total_of_factory_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_0_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_1_[country_tag] = 0 }
+					set_variable = { YSS_volunteer_level_2_[country_tag] = 0 }
+					set_variable = { YSS_[country_tag]_willing_join = 0 }
+				}
+				country_tag = "[?YSS_focus_172_array^0.GetTag]"
 			}
+			clear_array = YSS_focus_172_array
+
+			set_variable = { YSS.YSS_the_num_of_send_factories = 0 }
 		}
 	}
 }
