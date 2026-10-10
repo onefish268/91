@@ -532,20 +532,25 @@ YSS_return_button_effect_5 = {
 
 YSS_return_button_effect_6 = {#科研交流
 	if = {
-		limit = { var:YSS_chosen_array^0 = { amount_research_slots < 3 } }#如果才0，1，2
-		var:YSS_chosen_array^0 = { country_event = YSS.1304 }
-	}
-	else_if = {
-		limit = { var:YSS_chosen_array^0 = { amount_research_slots = 3 } }#如果3
-		var:YSS_chosen_array^0 = { country_event = YSS.1305 }
-	}
-	else_if = {
-		limit = { var:YSS_chosen_array^0 = { amount_research_slots = 4 } }#如果4
-		var:YSS_chosen_array^0 = { country_event = YSS.1306 }
-	}
-	else_if = {
-		limit = { var:YSS_chosen_array^0 = { amount_research_slots > 4 } }#如果>4 真的可能吗
-		var:YSS_chosen_array^0 = { country_event = YSS.1307 }
+		limit = { has_political_power > 99 }
+		add_political_power = -100
+
+		if = {
+			limit = { var:YSS_chosen_array^0 = { amount_research_slots < 3 } }#如果才0，1，2
+			var:YSS_chosen_array^0 = { country_event = YSS.1304 }
+		}
+		else_if = {
+			limit = { var:YSS_chosen_array^0 = { amount_research_slots = 3 } }#如果3
+			var:YSS_chosen_array^0 = { country_event = YSS.1305 }
+		}
+		else_if = {
+			limit = { var:YSS_chosen_array^0 = { amount_research_slots = 4 } }#如果4
+			var:YSS_chosen_array^0 = { country_event = YSS.1306 }
+		}
+		else_if = {
+			limit = { var:YSS_chosen_array^0 = { amount_research_slots > 4 } }#如果>4 真的可能吗
+			var:YSS_chosen_array^0 = { country_event = YSS.1307 }
+		}
 	}
 }
 
@@ -584,7 +589,7 @@ YSS_return_button_effect_8 = {#建设
 	}
 }
 
-YSS_return_button_effect_9 = {#军工厂
+YSS_return_button_effect_9 = {#军工厂升级
 	var:YSS_chosen_array^0 = {
 		country_event = YSS.1505
 	}
@@ -615,7 +620,7 @@ YSS_return_button_effect_10 = {#建设
 	}
 }
 
-YSS_return_button_effect_11 = {#军演
+YSS_return_button_effect_11 = {#合体！
 	if = {
 		limit = { has_political_power > 49 }
 		add_political_power = -50
