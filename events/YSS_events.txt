@@ -884,31 +884,6 @@ country_event = {
 		complete_national_focus = YSS_focus_118
 		hidden_effect = {
 			country_event = {
-				id = YSS.40
-				days = 14
-			}
-		}
-		ai_chance = {
-			base = 50
-		}
-	}
-}
-
-country_event = {
-	#红军
-	id = YSS.40
-	title = YSS.40.t
-	desc = YSS.40.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_YSS26_event
-	option = {
-		name = YSS.40.a
-		set_country_flag = YSS_hongjun_baogao3
-		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = YSS_focus_123
-		hidden_effect = {
-			country_event = {
 				id = YSS.41
 				days = 14
 			}
@@ -1522,7 +1497,6 @@ country_event = {
 	title = YSS.73.t
 	desc = YSS.73.d
 	is_triggered_only = yes
-	fire_only_once = yes
 	picture = GFX_YSS28_event
 	option = {
 		name = YSS.73.a
@@ -1555,7 +1529,6 @@ country_event = {
 	title = YSS.74.t
 	desc = YSS.74.d
 	is_triggered_only = yes
-	fire_only_once = yes
 	picture = GFX_YSS28_event
 	option = {
 		name = YSS.74.a
@@ -1588,7 +1561,6 @@ country_event = {
 	title = YSS.75.t
 	desc = YSS.75.d
 	is_triggered_only = yes
-	fire_only_once = yes
 	picture = GFX_YSS28_event
 	option = {
 		name = YSS.75.a
