@@ -2779,6 +2779,14 @@ focus_tree = {
 			has_country_flag = sov_has_agree
 		}
 		completion_reward = {
+			hidden_effect = {
+				every_faction_member = {
+					limit = { NOT = { tag = YSS } }
+					SOV = {
+						add_to_faction = THIS
+					}
+				}
+			}
 			SOV = {
 				add_to_faction = YSS
 			}
