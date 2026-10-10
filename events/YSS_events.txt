@@ -1817,59 +1817,101 @@ country_event = {
 		hidden_effect = {
 			if = {
         		limit = { is_subject = yes }
-        		OVERLORD = {
-            		set_autonomy = {
-	               		target = ROOT
-               			autonomy_state = autonomy_free
-               			end_wars = yes
-            	   		end_civil_wars = yes
-           			}
 
-					set_country_flag = YSS_the_lord_of_country
-        		}
-
-				
-
+				# autonomy_dominion: "自治领"
+				#autonomy_colony: "殖民领"
 				# 爆内战，创建叛军国家
-    			start_civil_war = {
-					ruling_party = communism
-        			ideology = neutrality
-        			size = 0.15
-        			army_ratio = 0.2
-    	   			navy_ratio = 0.2
-	        		air_ratio = 0.2
+				leave_faction = yes
+
+				if = {
+					limit = { has_autonomy_state = autonomy_dominion }
+
+					OVERLORD = {
+            			set_autonomy = {
+	               			target = ROOT
+	               			autonomy_state = autonomy_free
+    	           			end_wars = yes
+        	    	   		end_civil_wars = yes
+           				}
+
+						set_country_flag = YSS_the_lord_of_country
+        			}
+
+					leave_faction = yes
+
+					# 爆内战，创建叛军国家
+    				start_civil_war = {
+						ruling_party = communism
+        				ideology = neutrality
+        				size = 0.15
+        				army_ratio = 0.2
+	    	   			navy_ratio = 0.2
+		        		air_ratio = 0.2
         			
-        			keep_all_characters = yes
-
-					#PREV指向叛军
-	        		#PREV = {
-            		#	set_cosmetic_tag = CUB_rebel_faction
-        			#}
-
-    	    		# PREV.PREV 指向玩家侧原国家
-	        		#PREV.PREV = {
-            		#	set_cosmetic_tag = CUB_free_cuba
-       				#}
-
-    	    		# 关键一步：找宗主国
-	        		random_country = {
-            			limit = { has_country_flag = YSS_the_lord_of_country }
+        				keep_all_characters = yes
+	        		
+						random_country = {
+            				limit = { has_country_flag = YSS_the_lord_of_country }
             				set_autonomy = {
-        	    		    target = PREV
-    	            			autonomous_state = autonomy_colony
-	            		   		end_wars = no
-    		            		end_civil_wars = no
+        	    			    target = PREV
+    	            			autonomous_state = autonomy_dominion
+		            		   	end_wars = no
+    			            	end_civil_wars = no
             				}
 							clr_country_flag = YSS_the_lord_of_country
+   		 				}
+						
+						add_timed_idea = {
+							idea = ZYX_Suddenly_attack
+							days = 60
+						}
     				}
-    			}
-
-				PREV = {
-					add_timed_idea = {
-						idea = ZYX_Suddenly_attack
-						days = 60
-					}
 				}
+				else_if = {
+					limit = { has_autonomy_state = autonomy_colony }
+
+					OVERLORD = {
+            			set_autonomy = {
+	               			target = ROOT
+	               			autonomy_state = autonomy_free
+    	           			end_wars = yes
+        	    	   		end_civil_wars = yes
+           				}
+
+						set_country_flag = YSS_the_lord_of_country
+        			}
+
+					leave_faction = yes
+
+					# 爆内战，创建叛军国家
+    				start_civil_war = {
+						ruling_party = communism
+        				ideology = neutrality
+        				size = 0.15
+        				army_ratio = 0.2
+	    	   			navy_ratio = 0.2
+		        		air_ratio = 0.2
+        			
+        				keep_all_characters = yes
+	        		
+						random_country = {
+            				limit = { has_country_flag = YSS_the_lord_of_country }
+            				set_autonomy = {
+        	    			    target = PREV
+    	            			autonomous_state = autonomy_colony
+		            		   	end_wars = no
+    			            	end_civil_wars = no
+            				}
+							clr_country_flag = YSS_the_lord_of_country
+   		 				}
+
+						add_timed_idea = {
+							idea = ZYX_Suddenly_attack
+							days = 60
+						}
+    				}
+				}
+
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
 					days = 60
@@ -2059,14 +2101,13 @@ country_event = {
 	        		air_ratio = 0.2
         			
         			keep_all_characters = yes
-    			}
 
-				PREV = {
 					add_timed_idea = {
 						idea = ZYX_Suddenly_attack
 						days = 60
 					}
-				}
+    			}
+
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
 					days = 60
