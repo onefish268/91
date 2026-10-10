@@ -2393,10 +2393,10 @@ focus_tree = {
 				YSS_stability_weekly = 0.01
 			}
 			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
+				YSS_production_speed_buildings_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
+				YSS_drift_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2425,10 +2425,10 @@ focus_tree = {
 				YSS_stability_weekly = 0.01
 			}
 			add_to_variable = {
-				YSS_defensive_war_stability_factor = 0.05
+				YSS_defensive_war_stability_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_offensive_war_stability_factor = 0.05
+				YSS_offensive_war_stability_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2548,7 +2548,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_7_monthly_population = 0.05
+				YSS_7_monthly_population = 0.1
 			}
 			add_to_variable = {
 				YSS_stability_weekly = 0.01
