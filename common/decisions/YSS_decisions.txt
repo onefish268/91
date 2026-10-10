@@ -1437,7 +1437,7 @@ YSS_states_category = {
 YSS_renwu_category = {
 	YSS_renwu_1 = {
         icon = GFX_decision_default
-		days_mission_timeout = 30
+		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
 		}
@@ -1454,7 +1454,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_2 = {
         icon = GFX_decision_default
-		days_mission_timeout = 54
+		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
 		}
@@ -1471,7 +1471,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_3 = {
         icon = GFX_decision_default
-		days_mission_timeout = 77
+		days_mission_timeout = 60
 		activation = {
 			original_tag = YSS
 		}
@@ -1488,7 +1488,7 @@ YSS_renwu_category = {
     }
 	YSS_renwu_4 = {
         icon = GFX_decision_default
-		days_mission_timeout = 101
+		days_mission_timeout = 80
 		activation = {
 			original_tag = YSS
 		}
@@ -1579,6 +1579,96 @@ YSS_renwu_category = {
 		}
 		available = {
 			has_completed_focus = YSS_focus_95
+        }
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_renwu_false
+			add_stability = -0.15
+		}
+    }
+	YSS_renwu_10 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 40
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_30
+		}
+		available = {
+			has_completed_focus = YSS_focus_31
+        }
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_renwu_false
+			add_stability = -0.15
+		}
+    }
+	YSS_renwu_11 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 40
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_31
+		}
+		available = {
+			has_completed_focus = YSS_focus_32
+        }
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_renwu_false
+			add_stability = -0.15
+		}
+    }
+	YSS_renwu_12 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 40
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_32
+		}
+		available = {
+			has_completed_focus = YSS_focus_43
+        }
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_renwu_false
+			add_stability = -0.15
+		}
+    }
+	YSS_renwu_13 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 40
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_43
+		}
+		available = {
+			has_completed_focus = YSS_focus_44
+        }
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_renwu_false
+			add_stability = -0.15
+		}
+    }
+	YSS_renwu_14 = {
+        icon = GFX_decision_default
+		days_mission_timeout = 40
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_44
+		}
+		available = {
+			has_completed_focus = YSS_focus_45
         }
 		is_good = no
 		fire_only_once = yes
@@ -2046,6 +2136,41 @@ YSS_kj_buy_category = {
 				idea = YSS_11
 				days = 100
 			}
+		}
+	}
+}
+
+YSS_geming_category = {
+	YSS_gm_1 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+		}
+	}
+	YSS_gm_2 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
 		}
 	}
 }

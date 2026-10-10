@@ -142,4 +142,17 @@ spriteTypes = {
 		name = GFX_focus_BRA_dec_miniature
 		texturefile = "gfx/focus_icon/focus_BRA_dec_miniature.dds"
 	}
+
+    SpriteType = {
+		name = GFX_YSS_faction_panel_banner
+		texturefile = "gfx/leaders/YSS/GFX_YSS_faction_panel_banner.png"
+	}
+    SpriteType = {
+		name = GFX_decision_faction_YSS_zveno
+		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_zveno.png"
+	}
+    SpriteType = {
+		name = GFX_decision_faction_YSS_bzns
+		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_bzns.png"
+	}
 }

@@ -42,3 +42,13 @@ YSS_kj_buy_category = {
         has_completed_focus = YSS_focus_167 
     }
 }
+
+YSS_geming_category = {
+    picture = GFX_decision_cat_default
+    priority = 99
+    scripted_gui = YSS_geming_ui
+    visible = {
+        original_tag = YSS 
+        #has_completed_focus = YSS_focus_24 
+    }
+}

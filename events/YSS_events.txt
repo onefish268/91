@@ -1233,6 +1233,9 @@ country_event = {
 			has_completed_focus = YSS_focus_149
 			has_completed_focus = YSS_focus_162
 			has_completed_focus = YSS_focus_42
+			NOT = {
+				has_completed_focus = YSS_focus_14
+			}
 		}
 	}
 	fire_only_once = yes
@@ -1264,6 +1267,7 @@ country_event = {
 				id = YSS.64
 				days = 7
 			}
+			activate_shine_on_focus = YSS_focus_16
 		}
 		ai_chance = {
 			base = 50
@@ -1287,6 +1291,7 @@ country_event = {
 				id = YSS.65
 				days = 7
 			}
+			activate_shine_on_focus = YSS_focus_17
 		}
 		ai_chance = {
 			base = 50
@@ -1310,6 +1315,7 @@ country_event = {
 				id = YSS.66
 				days = 7
 			}
+			activate_shine_on_focus = YSS_focus_18
 		}
 		ai_chance = {
 			base = 50
@@ -1333,6 +1339,7 @@ country_event = {
 				id = YSS.67
 				days = 7
 			}
+			activate_shine_on_focus = YSS_focus_19
 		}
 		ai_chance = {
 			base = 50
@@ -1356,6 +1363,7 @@ country_event = {
 				id = YSS.68
 				days = 7
 			}
+			activate_shine_on_focus = YSS_focus_20
 		}
 		ai_chance = {
 			base = 50
@@ -1379,6 +1387,7 @@ country_event = {
 				id = YSS.69
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_21
 		}
 		ai_chance = {
 			base = 50
@@ -1402,6 +1411,7 @@ country_event = {
 				id = YSS.70
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_22
 		}
 		ai_chance = {
 			base = 50
@@ -1425,6 +1435,7 @@ country_event = {
 				id = YSS.71
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_23
 		}
 		ai_chance = {
 			base = 50
@@ -1443,48 +1454,9 @@ country_event = {
 	option = {
 		name = YSS.71.a
 		complete_national_focus = YSS_focus_23
-		hidden_effect = {
-			country_event = {
-				id = YSS.72
-				days = 35
-			}
-		}
-		ai_chance = {
-			base = 50
-		}
-	}
-}
-
-country_event = {
-	#大清洗
-	id = YSS.72
-	title = YSS.72.t
-	desc = YSS.72.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_YSS6_event
-	option = {
-		name = YSS.72.a
-		complete_national_focus = YSS_focus_25
+		mark_focus_tree_layout_dirty = yes
 		set_country_flag = YSS_daqingxi_jieshu
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = YSS_tootip_30
-		ai_chance = {
-			base = 50
-		}
-	}
-	option = {
-		name = YSS.72.b
-		complete_national_focus = YSS_focus_24
 		set_country_flag = YSS_daqingxi_kuoda
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = YSS_tootip_31
-		hidden_effect = {
-			country_event = {
-				id = YSS.73
-				days = 7
-			}
-		}
 		ai_chance = {
 			base = 50
 		}
@@ -1506,6 +1478,7 @@ country_event = {
 				id = YSS.74
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_28
 		}
 		ai_chance = {
 			base = 50
@@ -1538,6 +1511,7 @@ country_event = {
 				id = YSS.75
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_29
 		}
 		ai_chance = {
 			base = 50
@@ -1570,6 +1544,7 @@ country_event = {
 				id = YSS.73
 				days = 35
 			}
+			activate_shine_on_focus = YSS_focus_26
 		}
 		ai_chance = {
 			base = 50

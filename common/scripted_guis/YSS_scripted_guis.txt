@@ -366,6 +366,12 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "YSS_yisiland_ui_window"
 	}
+
+	YSS_geming_ui = {
+		context_type = decision_category
+		window_name = "YSS_internal_factions_decision_ui_window"
+
+	}
 	
 }
 

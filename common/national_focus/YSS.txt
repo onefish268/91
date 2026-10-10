@@ -492,7 +492,7 @@ focus_tree = {
 		id = YSS_focus_24
 		x = 25
 		y = 13
-		cost = 0
+		cost = 5
 		icon = GFX_focus_PHI_the_red_sun_over_manila
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -512,17 +512,23 @@ focus_tree = {
             }
 			custom_effect_tooltip = YSS_tootip_31
 			hidden_effect = {
+				country_event = {
+				id = YSS.73
+				days = 7
+			    }
+			    activate_shine_on_focus = YSS_focus_26
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_daqingxi
                 scoped_play_song = "当你在欢呼中死去"
             }
+			custom_effect_tooltip = YSS_tootip_33
 		}
 	}
 	focus = {
 		id = YSS_focus_25
 		x = 27
 		y = 13
-		cost = 0
+		cost = 5
 		icon = GFX_focus_NGL_the_lost_man
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -557,16 +563,12 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-			}
+			add_stability = -0.07
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_26
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -585,19 +587,12 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_7_party_popularity_stability_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
-			}
+			add_stability = -0.07
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_28
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -616,20 +611,13 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.05
-			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
-			}
-			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
-			}
+			add_stability = -0.07
 			add_manpower = -3000
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_29
                 }   
 		    }
-			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
 	focus = {
@@ -661,10 +649,6 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_stability = 0.05
-			remove_advisor_role = {
-                character = "YSS_1_8"  # 要修改的角色ID
-                slot = political_advisor          # 要移除的顾问槽位
-            }
 		}
 	}
 	focus = {
@@ -4352,10 +4336,6 @@ focus_tree = {
 				}
 			}
 			add_stability = -0.05
-			remove_advisor_role = {
-                character = "YSS_4_3"  # 要修改的角色ID
-                slot = air_chief          # 要移除的顾问槽位
-            }
 			add_to_variable = {
 				YSS_command_power_gain_mult = 0.15
 			}
