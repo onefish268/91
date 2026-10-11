@@ -198,9 +198,16 @@ country_event = {
 
     option = {
         name = GER_afica.11.a
-        declare_war_on = {
-            target = EAS  
-            type = annex_everything  
+        #修复⑥：EAS 存续且尚未交战时才宣战（与 .12/.13 投降吞并链去重）
+        if = {
+            limit = {
+                EAS = { exists = yes }
+                NOT = { has_war_with = EAS }
+            }
+            declare_war_on = {
+                target = EAS  
+                type = annex_everything  
+            }
         }
         ai_chance = { base = 50 }
     }
@@ -263,6 +270,14 @@ country_event = {
             set_variable = { adorable_heart_super_event_music_button_var = transform_the_number_of_music_situation }
             set_variable = { Chinese_Secondary_News_button_var = transform_the_number_of_Chinese_news_situation }
             set_country_flag = Adorable_heart_opinion_button_visible
+            #修复③：玩家转入德国时补欢迎界面变量 + 树刷新 + 日志
+            set_country_flag = show_welcome_splash
+            set_variable = { Country_History_Button_Var = 1 }
+            set_variable = { Local_History_Button_Var = 1 }
+            set_variable = { World_History_Button_Var = 1 }
+            set_variable = { Route_Guide_Button_Var = 2 }
+            mark_focus_tree_layout_dirty = yes
+            log = "[GetDateText]: GER_afica.14 玩家转入德国: [GER.GetName]"
             change_tag_from = ZYX
         }       
         ai_chance = { base = 0 }
