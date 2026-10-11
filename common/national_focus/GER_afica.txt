@@ -70,6 +70,16 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = cks_lunchuan10
 			custom_effect_tooltip = cks_lunchuan11
+			#修复⑤：补上实际结算（原先只有提示文本，完成无收益）
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+			log = "[GetDateText]: 7_focus_3 接受援助结算: [Root.GetName]"
 		}
 	}
 	focus = {

@@ -4474,9 +4474,16 @@ focus_tree = {
 					traits = {
 					}
 				}
-				load_focus_tree = germany_Lisa_triumphant_focus
+				#修复①：显式参数 + 立即刷新树布局（防切树后卡死/错乱）
+				load_focus_tree = {
+					tree = germany_Lisa_triumphant_focus
+					keep_completed = no
+				}
+				mark_focus_tree_layout_dirty = yes
 			}
 			hidden_effect = {
+				#修复①：补切换日志（配合树切换排查）
+				log = "[GetDateText]: GER_Lisa_triumphant 切换莉莎树: [Root.GetName]"
 				country_event = {
 					id = ah_germany.88
 				}
