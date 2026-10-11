@@ -139,8 +139,13 @@ spriteTypes = {
     }
 
     SpriteType = {
-		name = GFX_focus_BRA_dec_miniature
-		texturefile = "gfx/focus_icon/focus_BRA_dec_miniature.dds"
+		name = GFX_faction_template_Africa_miniature
+		texturefile = "gfx/focus_icon/GFX_faction_template_Africa_miniature.png"
+	}
+
+    SpriteType = {
+		name = GFX_faction_template_Africa
+		texturefile = "gfx/focus_icon/GFX_faction_template_Africa.png"
 	}
 
     SpriteType = {
@@ -154,5 +159,66 @@ spriteTypes = {
     SpriteType = {
 		name = GFX_decision_faction_YSS_bzns
 		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_bzns.png"
+	}
+#本地化插图
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_6
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_6.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_7
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_7.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_8
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_8.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_9
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_9.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_10
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_10.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_11
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_11.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_12
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_12.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_13
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_13.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_14
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_14.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_15
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_15.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_16
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_16.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_17
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_17.png"
+        legacy_lazy_load = no
 	}
 }

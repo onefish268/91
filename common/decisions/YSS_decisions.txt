@@ -2143,21 +2143,70 @@ YSS_kj_buy_category = {
 YSS_geming_category = {
 	YSS_gm_1 = {
 		icon = GFX_decision_default
-		ai_will_do = {
-			factor = 1
+		days_mission_timeout = 20
+		activation = {
+			original_tag = YSS
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
 		available = {
-			NOT = {
-				has_country_flag = YSS_daqingxi_jiaoting
-			}
-		}
-		remove_effect = {
+        }
+		is_good = no
+
+		timeout_effect = {
 		}
 	}
 	YSS_gm_2 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 20
+		activation = {
+			original_tag = YSS
+		}
+		available = {
+        }
+		is_good = no
+
+		timeout_effect = {
+		}
+	}
+	YSS_gm_3 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 20
+		activation = {
+			original_tag = YSS
+		}
+		available = {
+        }
+		is_good = no
+
+		timeout_effect = {
+		}
+	}
+	YSS_gm_4 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 20
+		activation = {
+			original_tag = YSS
+		}
+		available = {
+        }
+		is_good = no
+
+		timeout_effect = {
+		}
+	}
+	YSS_gm_5 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 20
+		activation = {
+			original_tag = YSS
+		}
+		available = {
+        }
+		is_good = no
+
+		timeout_effect = {
+		}
+	}
+	YSS_gm_6 = {
 		icon = GFX_decision_default
 		ai_will_do = {
 			factor = 1
@@ -2171,6 +2220,194 @@ YSS_geming_category = {
 			}
 		}
 		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_6
+		}
+	}
+	YSS_gm_7 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_7
+		}
+	}
+	YSS_gm_8 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_8
+		}
+	}
+	YSS_gm_9 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_9
+		}
+	}
+	YSS_gm_10 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_10
+		}
+	}
+	YSS_gm_11 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_11
+		}
+	}
+	YSS_gm_12 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_12
+		}
+	}
+	YSS_gm_13 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_13
+		}
+	}
+	YSS_gm_14 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_14
+		}
+	}
+	YSS_gm_15 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_15
+		}
+	}
+	YSS_gm_16 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_16
+		}
+	}
+	YSS_gm_17 = {
+		icon = GFX_decision_default
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_17
 		}
 	}
 }

@@ -1729,6 +1729,21 @@ country_event = {
 }
 
 country_event = {
+	#风味事件
+	id = YSS.79
+	title = YSS.79.t
+	desc = YSS.79.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = YSS.79.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
 	#检测最低限度20%
 	id = YSS.1000
 	is_triggered_only = yes
