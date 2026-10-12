@@ -44,6 +44,22 @@ on_actions = {
 			if = {
 				limit = {
                     FROM = { tag = ZYX }     
+                    ROOT = { tag = EAS }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = EAS
+					}
+					annex_country = { target = EAS }
+				}
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = { tag = ZYX }     
                     ROOT = { tag = ZXS }   
                 }
                 ZYX = {

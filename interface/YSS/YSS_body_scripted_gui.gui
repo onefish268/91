@@ -610,6 +610,12 @@ guiTypes = {
 	    	    scale = 1.8
 			}
 			iconType = {
+				name = "YSS_super_event_photo10_icon"
+				spriteType = GFX_YSS_super_event_photo10_icon
+				position = { x = 150 y = 100 }
+	    	    scale = 1.8
+			}
+			iconType = {
 				name = "YSS_super_event_ui_icon"
 				spriteType = GFX_YSS_super_event_ui_icon
 				position = { x = 0 y = 0 }
@@ -703,6 +709,15 @@ guiTypes = {
 				text = YSS_super_event_9_desc
 				format = left		
 			}
+			instantTextBoxType = {
+				name = "YSS_super_event_10_desc"
+				position = { x = 985 y = 790 }
+				maxHeight = 474
+				maxWidth = 250
+				font = "hoi_18mbs"
+				text = YSS_super_event_10_desc
+				format = left		
+			}
 		}
 	}
 }
@@ -769,6 +784,31 @@ guiTypes = {
 				format = left
 				maxHeight = 24
 				maxWidth = 200
+			}
+
+			iconType = {
+				name ="jindu_icon"
+				spriteType = "GFX_decision_faction_YSS_jindu"
+				position = { x = 135 y = 1110 }
+				scale = 0.18
+			}
+			iconType = {
+				name ="liedu_icon"
+				spriteType = "GFX_decision_faction_YSS_jindu"
+				position = { x = 135 y = 1240 }
+				scale = 0.18
+			}
+			iconType = {
+				name ="jin_icon"
+				spriteType = "GFX_decision_faction_YSS_jin"
+				position = { x = 75 y = 1020 }
+				scale = 0.3
+			}
+			iconType = {
+				name ="lie_icon"
+				spriteType = "GFX_decision_faction_YSS_lie"
+				position = { x = 77 y = 1150 }
+				scale = 0.3
 			}
 		}
 

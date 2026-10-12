@@ -160,6 +160,26 @@ spriteTypes = {
 		name = GFX_decision_faction_YSS_bzns
 		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_bzns.png"
 	}
+    SpriteType = {
+		name = GFX_decision_faction_YSS_jin
+		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_jin.png"
+	}
+    SpriteType = {
+		name = GFX_decision_faction_YSS_lie
+		texturefile = "gfx/leaders/YSS/GFX_decision_faction_YSS_lie.png"
+	}
+    progressbartype = {
+		name = "GFX_decision_faction_YSS_jindu"
+		textureFile1 = "gfx/leaders/YSS/GFX_decision_faction_YSS_jindu_full.png"
+		textureFile2 = "gfx/leaders/YSS/GFX_decision_faction_YSS_jindu.png"
+		size = {
+			x = 312.48
+			y = 32.22
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
 #本地化插图
     SpriteType = {
 		name = GFX_YSS_gm_tooltip_pt_6
@@ -219,6 +239,16 @@ spriteTypes = {
     SpriteType = {
 		name = GFX_YSS_gm_tooltip_pt_17
 		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_17.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_jindu
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_jindu.png"
+        legacy_lazy_load = no
+	}
+    SpriteType = {
+		name = GFX_YSS_gm_tooltip_pt_liedu
+		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_liedu.png"
         legacy_lazy_load = no
 	}
 }

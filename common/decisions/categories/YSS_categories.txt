@@ -49,6 +49,9 @@ YSS_geming_category = {
     scripted_gui = YSS_geming_ui
     visible = {
         original_tag = YSS 
-        #has_completed_focus = YSS_focus_24 
+        has_completed_focus = YSS_focus_24 
+        NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
     }
 }

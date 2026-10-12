@@ -2143,28 +2143,66 @@ YSS_kj_buy_category = {
 YSS_geming_category = {
 	YSS_gm_1 = {
 		icon = GFX_decision_default
-		days_mission_timeout = 20
+		days_mission_timeout = 15
 		activation = {
 			original_tag = YSS
+			check_variable = {
+                var = YSS_liedu_mind_value
+                value = 40
+                compare = less_than_or_equals
+            }
 		}
 		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
         }
-		is_good = no
+		is_good = yes
 
 		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_5
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = -10}
+			add_to_variable = {YSS_liedu_mind_value = -10}
 		}
 	}
 	YSS_gm_2 = {
 		icon = GFX_decision_default
-		days_mission_timeout = 20
+		days_mission_timeout = 15
 		activation = {
 			original_tag = YSS
+			check_variable = {
+                var = YSS_liedu_mind_value
+                value = 60
+                compare = less_than_or_equals
+            }
 		}
 		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
         }
-		is_good = no
+		is_good = yes
 
 		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_5
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = -10}
+			add_to_variable = {YSS_liedu_mind_value = -10}
 		}
 	}
 	YSS_gm_3 = {
@@ -2172,12 +2210,31 @@ YSS_geming_category = {
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
+			check_variable = {
+                var = YSS_jindu_power_value
+                value = 40
+                compare = less_than_or_equals
+            }
 		}
 		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
         }
-		is_good = no
+		is_good = yes
 
 		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_5
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = -10}
+			add_to_variable = {YSS_liedu_mind_value = -10}
 		}
 	}
 	YSS_gm_4 = {
@@ -2185,25 +2242,58 @@ YSS_geming_category = {
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
+			check_variable = {
+                var = YSS_jindu_power_value
+                value = 60
+                compare = less_than_or_equals
+            }
 		}
 		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
         }
-		is_good = no
+		is_good = yes
 
 		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_5
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = -10}
+			add_to_variable = {YSS_liedu_mind_value = -10}
 		}
 	}
 	YSS_gm_5 = {
 		icon = GFX_decision_default
-		days_mission_timeout = 20
+		days_mission_timeout = 25
 		activation = {
 			original_tag = YSS
 		}
 		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
         }
-		is_good = no
+		is_good = yes
 
 		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_5
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = -10}
+			add_to_variable = {YSS_liedu_mind_value = -10}
 		}
 	}
 	YSS_gm_6 = {
@@ -2212,8 +2302,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2221,6 +2310,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_6
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = 20}
 		}
 	}
 	YSS_gm_7 = {
@@ -2228,9 +2328,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 40
+		days_remove = 30
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2238,6 +2337,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_7
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = 25}
 		}
 	}
 	YSS_gm_8 = {
@@ -2246,8 +2356,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2255,6 +2364,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_8
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = 20}
 		}
 	}
 	YSS_gm_9 = {
@@ -2262,9 +2382,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 40
+		days_remove = 25
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2272,6 +2391,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_9
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = 30}
 		}
 	}
 	YSS_gm_10 = {
@@ -2279,9 +2409,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 60
+		days_remove = 15
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2289,6 +2418,18 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_10
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_jindu_power_value = 35}
+			add_to_variable = {YSS_liedu_mind_value = 30}
 		}
 	}
 	YSS_gm_11 = {
@@ -2297,8 +2438,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2306,6 +2446,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_11
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 25}
 		}
 	}
 	YSS_gm_12 = {
@@ -2314,8 +2465,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 15
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2323,6 +2473,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_12
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 15}
 		}
 	}
 	YSS_gm_13 = {
@@ -2330,9 +2491,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 40
+		days_remove = 25
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2340,6 +2500,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_13
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 30}
 		}
 	}
 	YSS_gm_14 = {
@@ -2347,9 +2518,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 40
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2357,6 +2527,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_14
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = -30}
 		}
 	}
 	YSS_gm_15 = {
@@ -2364,9 +2545,8 @@ YSS_geming_category = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		cost = 60
+		days_remove = 30
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2374,6 +2554,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_15
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = -40}
 		}
 	}
 	YSS_gm_16 = {
@@ -2382,8 +2573,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2391,6 +2581,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_16
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = -25}
 		}
 	}
 	YSS_gm_17 = {
@@ -2399,8 +2600,7 @@ YSS_geming_category = {
 			factor = 1
 		}
 		cost = 25
-		days_remove = 35
-		fire_only_once = yes
+		days_remove = 20
 		available = {
 			NOT = {
 				has_country_flag = YSS_daqingxi_jiaoting
@@ -2408,6 +2608,17 @@ YSS_geming_category = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = YSS_gm_tooltip_17
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = -25}
 		}
 	}
 }

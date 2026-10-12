@@ -1230,8 +1230,8 @@ country_event = {
 	trigger = {
 		YSS = {
 			has_completed_focus = YSS_focus_126
-			has_completed_focus = YSS_focus_149
-			has_completed_focus = YSS_focus_162
+			has_completed_focus = YSS_focus_148
+			has_completed_focus = YSS_focus_161
 			has_completed_focus = YSS_focus_42
 			NOT = {
 				has_completed_focus = YSS_focus_14
@@ -1469,7 +1469,12 @@ country_event = {
 	title = YSS.73.t
 	desc = YSS.73.d
 	is_triggered_only = yes
-	picture = GFX_YSS28_event
+	picture = GFX_YSS29_event
+	trigger = {
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
+	}
 	option = {
 		name = YSS.73.a
 		complete_national_focus = YSS_focus_26
@@ -1502,7 +1507,12 @@ country_event = {
 	title = YSS.74.t
 	desc = YSS.74.d
 	is_triggered_only = yes
-	picture = GFX_YSS28_event
+	picture = GFX_YSS29_event
+	trigger = {
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
+	}
 	option = {
 		name = YSS.74.a
 		complete_national_focus = YSS_focus_28
@@ -1535,7 +1545,12 @@ country_event = {
 	title = YSS.75.t
 	desc = YSS.75.d
 	is_triggered_only = yes
-	picture = GFX_YSS28_event
+	picture = GFX_YSS29_event
+	trigger = {
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
+	}
 	option = {
 		name = YSS.75.a
 		complete_national_focus = YSS_focus_29
@@ -1737,6 +1752,322 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.79.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	#烈度破坏
+	id = YSS.80
+	hidden = yes
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 60
+            compare = greater_than_or_equals
+        }
+	}
+	immediate = {
+		YSS = {
+			country_event = {
+				id = YSS.81
+				days = 15
+			}
+		}
+	}
+}
+country_event = {
+	#基础设施破坏
+	id = YSS.81
+	title = YSS.81.t
+	desc = YSS.81.d
+	is_triggered_only = yes
+	picture = GFX_YSS30_event
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 60
+            compare = less_than_or_equals
+        }
+	}
+	option = {
+		name = YSS.81.a
+		YSS = {
+		random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                infrastructure > 0
+            }
+            damage_building = {
+				type = infrastructure
+                damage = 1
+				repair_speed_modifier = -0.3
+            }
+        }
+	    }
+		hidden_effect = {
+		YSS = {
+			country_event = {
+				id = YSS.82
+				days = 15
+			}
+		}
+	    }
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = {
+	#工厂破坏
+	id = YSS.82
+	title = YSS.82.t
+	desc = YSS.82.d
+	is_triggered_only = yes
+	picture = GFX_YSS30_event
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 60
+            compare = less_than_or_equals
+        }
+	}
+	option = {
+		name = YSS.82.a
+		YSS = {
+		random_list = {
+            50 = {
+                random_owned_state = {
+                    limit = {
+                        is_core_of = ROOT
+						has_building = { type = industrial_complex level > 0 }
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 1
+				        repair_speed_modifier = -0.3
+                    }
+                }
+            }
+            50 = {
+                random_owned_state = {
+                    limit = {
+                        is_core_of = ROOT
+						has_building = { type = arms_factory level > 0 }
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 1
+				        repair_speed_modifier = -0.3
+                    }
+                }
+            }
+        }
+	    }
+		hidden_effect = {
+		YSS = {
+			country_event = {
+				id = YSS.83
+				days = 15
+			}
+		}
+	    }
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = {
+	#稳定度破坏
+	id = YSS.83
+	title = YSS.83.t
+	desc = YSS.83.d
+	is_triggered_only = yes
+	picture = GFX_YSS30_event
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 60
+            compare = less_than_or_equals
+        }
+	}
+	option = {
+		name = YSS.83.a
+		add_stability = -0.1
+		hidden_effect = {
+		YSS = {
+			country_event = {
+				id = YSS.81
+				days = 15
+			}
+		}
+	    }
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	#革命胜利
+	id = YSS.84
+	hidden = yes
+	trigger = {
+		check_variable = {
+            var = YSS_jindu_power_value
+            value = 100
+            compare = equals
+        }
+	}
+	immediate = {
+		YSS = {
+			country_event = {
+				id = YSS.85
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.85
+	title = YSS.85.t
+	desc = YSS.85.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS32_event
+
+	option = {
+		name = YSS.85.a
+		complete_national_focus = YSS_focus_30
+		set_country_flag = YSS_daqingxi_jiaoting
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			every_core_state = {
+            if = {
+                limit = { has_state_category = one }
+                set_state_category = three
+            }
+            else_if = {
+                limit = { has_state_category = two }
+                set_state_category = four
+            }
+            else_if = {
+                limit = { has_state_category = three }
+                set_state_category = five
+            }
+            else_if = {
+                limit = { has_state_category = four }
+                set_state_category = six
+            }
+            else_if = {
+                limit = { has_state_category = five }
+                set_state_category = seven
+            }
+			else_if = {
+                limit = { has_state_category = six }
+                set_state_category = eight
+            }
+			else_if = {
+                limit = { has_state_category = seven }
+                set_state_category = nine
+            }
+			else_if = {
+                limit = { has_state_category = eight }
+                set_state_category = ten
+            }
+			else_if = {
+                limit = { has_state_category = nine }
+                set_state_category = eleven
+            }
+			else_if = {
+                limit = { has_state_category = ten }
+                set_state_category = twelve
+            }
+            }
+			set_country_flag = YSS_super_event
+			set_country_flag = YSS_gangeming
+			scoped_play_song = "二次胜利"
+		}
+		custom_effect_tooltip = YSS_tootip_34
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	#烈度0，革命失败
+	id = YSS.86
+	hidden = yes
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 0
+            compare = equals
+        }
+	}
+	immediate = {
+		YSS = {
+			country_event = {
+				id = YSS.87
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.87
+	title = YSS.87.t
+	desc = YSS.87.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS33_event
+
+	option = {
+		name = YSS.87.a
+		add_stability = -0.1
+		complete_national_focus = YSS_focus_30
+		set_country_flag = YSS_daqingxi_jiaoting
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	#烈度100，革命失败
+	id = YSS.88
+	hidden = yes
+	trigger = {
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 100
+            compare = equals
+        }
+	}
+	immediate = {
+		YSS = {
+			country_event = {
+				id = YSS.89
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.89
+	title = YSS.89.t
+	desc = YSS.89.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS31_event
+
+	option = {
+		name = YSS.89.a
+		add_stability = -0.6
+		complete_national_focus = YSS_focus_30
+		set_country_flag = YSS_daqingxi_jiaoting
+		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
 			base = 50
 		}

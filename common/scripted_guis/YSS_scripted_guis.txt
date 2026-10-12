@@ -271,6 +271,8 @@ scripted_gui = {
 			YSS_super_event_8_desc_visible = { has_country_flag = YSS_daqingxi }
 			YSS_super_event_photo9_icon_visible = { has_country_flag = YSS_daqingxiwu }
 			YSS_super_event_9_desc_visible = { has_country_flag = YSS_daqingxiwu }
+			YSS_super_event_photo10_icon_visible = { has_country_flag = YSS_gangeming }
+			YSS_super_event_10_desc_visible = { has_country_flag = YSS_gangeming }
 		}
 
 		effects = {
@@ -285,6 +287,7 @@ scripted_gui = {
 				clr_country_flag = YSS_red_army_complet
 				clr_country_flag = YSS_daqingxi
 				clr_country_flag = YSS_daqingxiwu
+				clr_country_flag = YSS_gangeming
 			}
 		}
 	}
@@ -367,10 +370,18 @@ scripted_gui = {
 		window_name = "YSS_yisiland_ui_window"
 	}
 
-	YSS_geming_ui = {
+	YSS_geming_ui = {#第二次大革命
 		context_type = decision_category
 		window_name = "YSS_internal_factions_decision_ui_window"
 
+		properties = {
+			jindu_icon = {
+				frame = YSS_jindu_power_value
+			}
+			liedu_icon = {
+				frame = YSS_liedu_mind_value
+			}
+		}
 	}
 	
 }

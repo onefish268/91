@@ -132,6 +132,26 @@ spriteTypes = {
         texturefile = "gfx\interface\events\YSS28_event.png"
     }
     spriteType = {
+        name = "GFX_YSS29_event"
+        texturefile = "gfx\interface\events\YSS29_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS30_event"
+        texturefile = "gfx\interface\events\YSS30_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS31_event"
+        texturefile = "gfx\interface\events\YSS31_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS32_event"
+        texturefile = "gfx\interface\events\YSS32_event.png"
+    }
+    spriteType = {
+        name = "GFX_YSS33_event"
+        texturefile = "gfx\interface\events\YSS33_event.png"
+    }
+    spriteType = {
         name = "GFX_news_2"
         texturefile = "gfx\interface\events\news_2.png"
     }

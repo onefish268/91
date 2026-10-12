@@ -118,3 +118,8 @@ music = {
     file = "当你在欢呼中死去.ogg"
     volume = 1
 }
+music = {
+    name = "二次胜利"
+    file = "二次胜利.ogg"
+    volume = 1
+}

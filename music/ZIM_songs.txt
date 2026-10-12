@@ -200,3 +200,11 @@ music = {
         }
     }
 }
+music = {
+    song = "二次胜利"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

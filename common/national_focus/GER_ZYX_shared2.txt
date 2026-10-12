@@ -251,6 +251,16 @@ joint_focus = {
 				id = GER_afica.14
 				days = 7
 			}
+			if = {
+                limit = {
+                    GER = {
+                        is_ai = yes
+                    }
+                }
+                545 = {
+                    add_core_of = GER
+                }
+            }
 		}
 		GER = {
 			load_focus_tree = GER_afica_focus_tree
