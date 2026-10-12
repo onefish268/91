@@ -1,630 +1,111 @@
 YSS_upgrade_state_admin = {
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_xingzheng_1
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_1
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_xingzheng_2
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_2
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_xingzheng_3
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_3
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_xingzheng_4
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_4
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_xingzheng_5
-		}
-	}
+    if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_1 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_1 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_2 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_2 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_2 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_3 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_3 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_3 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_4 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_xingzheng_4 } }
+        remove_dynamic_modifier = { modifier = YSS_province_xingzheng_4 }
+        add_dynamic_modifier = { modifier = YSS_province_xingzheng_5 }
+    }
 }
 
 YSS_upgrade_state_dev = {
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_kaifa_1
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_kaifa_1
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_kaifa_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_kaifa_2
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_kaifa_2
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_kaifa_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_kaifa_3
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_kaifa_3
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_kaifa_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = YSS_province_kaifa_4
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = YSS_province_kaifa_4
-		}
-		add_dynamic_modifier = {
-			modifier = YSS_province_kaifa_5
-		}
-	}
+    if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_1 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_1 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_2 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_2 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_2 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_3 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_3 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_3 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_4 }
+    }
+    else_if = {
+        limit = { has_dynamic_modifier = { modifier = YSS_province_kaifa_4 } }
+        remove_dynamic_modifier = { modifier = YSS_province_kaifa_4 }
+        add_dynamic_modifier = { modifier = YSS_province_kaifa_5 }
+    }
 }
 
-YSS_return_the_right_country = {
+YSS_set_pubilcity_slot = {
 	if = {
 		limit = {
 			check_variable = {
-				picture_value = 0
+				YSS_pub_slot_A = 0
 			}
 		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = COG
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 1
-			}
-		}
-		if = {
-			limit = {
-				ZIM = {
-					exists = yes
-				}
-			}
-			clear_array = YSS_chosen_array
-				add_to_array = {
-				YSS_chosen_array = ZIM
-			}
+		set_variable = {
+			YSS_pub_slot_A = YSS_pub_temp
 		}
 		else_if = {
 			limit = {
-				ZYX = {
-					exists = yes
+				check_variable = {
+					YSS_pub_slot_B = 0
 				}
 			}
-			clear_array = YSS_chosen_array
-				add_to_array = {
-				YSS_chosen_array = ZYX
+			set_variable = {
+				YSS_pub_slot_B = YSS_pub_temp
 			}
+			else_if = {
+				limit = {
+					check_variable = {
+						YSS_pub_slot_C = 0
+					}
+				}
+				set_variable = {
+					YSS_pub_slot_C = YSS_pub_temp
+				}
+			}
+		}
+	}
+}
+
+YSS_clr_pubilcity_slot = {
+	if = {
+		limit = {
+			check_variable = {
+				YSS_pub_slot_A = YSS_pub_temp
+			}
+		}
+		set_variable = {
+			YSS_pub_slot_A = 0
 		}
 		else_if = {
 			limit = {
-				ZSB = {
-					exists = yes
+				check_variable = {
+					YSS_pub_slot_B = YSS_pub_temp
 				}
 			}
-			clear_array = YSS_chosen_array
-				add_to_array = {
-				YSS_chosen_array = ZSB
+			set_variable = {
+				YSS_pub_slot_B = 0
 			}
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 2
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = EAS
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 3
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = YSS
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 4
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = EGY
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 5
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = LBA
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 6
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = LIB
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				picture_value = 7
-			}
-		}
-		clear_array = YSS_chosen_array
-		add_to_array = {
-			YSS_chosen_array = SAF
-		}
-	}
-	set_country_flag = YSS_see_all_buttons
-	clear_array = YSS_all_buttons_array
-	if = {
-		limit = {
-			all_of_scopes = {
-				array = YSS_chosen_array
-				
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-			}
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 0
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 1
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 2
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 3
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 4
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 5
-		}
-	}
-	else = {
-		add_to_array = {
-			YSS_all_buttons_array = 6
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 7
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 8
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 9
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 10
-		}
-		add_to_array = {
-			YSS_all_buttons_array = 11
-		}
-	}
-}
-
-#如果不是社会主义，且不是YSS傀儡的话
-#0、增加康米支持度，20%可以跳事件说要不要起义，不行就继续
-#1、选择要支援什么样的装备
-#2、派遣一个将军过去给人家用，加民族精神，反复点，胜利才回来
-#3、争对那个国家的派遣志愿军的BUFF
-#4、给2军工，可以反复点击
-#5、去哪个洲募集士兵去援助（看有多少的共产国家，共产主义国家将依据自己的实际情况支援不同的师）
-#科研加成卡
-#XP++
-#援助多少工厂，多少天建设成功。也可以给资源
-#军工厂拆一两个过去，加机构的经费，要能指定国家
-#
-#吞并，援助越多越成功。触发第一次改名，改成索维耶特社会主义联盟
-YSS_return_button_effect_0 = {
-	#获得争对某个国家的buff
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = {
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-				NOT = { has_idea = the_influence_of_YSS }
-			}
-			has_political_power > 49
-		}
-		add_political_power = -50
-
-		var:YSS_chosen_array^0 = {
-			add_timed_idea = {
-				idea = the_influence_of_YSS
-				days = 365
-			}
-
-			country_event = YSS.1000
-		}
-	}
-}
-
-YSS_return_button_effect_1 = {
-	#给装备
-	if = {
-		limit = { var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } } }
-
-		var:YSS_chosen_array^0 = {
-			country_event = YSS.1105
-		}
-	}
-}
-
-YSS_return_button_effect_2 = {
-	#设置外派的将领
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } }
-			any_army_leader = {
-				NOT = { has_country_flag = YSS_has_mission_to_aboard }
-			}
-		}
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 2 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-			if = {
-				limit = { var:YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
-
-				random_army_leader = {
-					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
-					set_character_flag = YSS_has_mission_to_aboard
-					meta_effect = {
-						text = {
-							set_character_flag = go_to_[country_tag]
-							set_nationality = [country_tag]
-						}
-						debug = yes
-						country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
+			else_if = {
+				limit = {
+					check_variable = {
+						YSS_pub_slot_C = YSS_pub_temp
 					}
 				}
-
-				var:YSS_chosen_array^0 = {
-					add_to_variable = { YSS_officer_factor = 0.05 }
+				set_variable = {
+					YSS_pub_slot_C = 0
 				}
 			}
-			else = {
-				random_army_leader = {
-					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
-					set_character_flag = YSS_has_mission_to_aboard
-					meta_effect = {
-						text = {
-							set_character_flag = go_to_[country_tag]
-						}
-						country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-					}
-				}
-			}
-	}
-}
-
-YSS_return_button_effect_3 = {#志愿军
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = {
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-				NOT = { has_country_flag = YSS_have_volunteer_to_this_country }
-				NOT = { has_country_flag = YSS_we_prepare_to_send_volunteer }
-			}
-			has_political_power > 49
 		}
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-		if = {
-			add_political_power = -50
-			limit = { var:YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
-
-			var:YSS_chosen_array^0 = { set_country_flag = YSS_have_volunteer_to_this_country }
-			add_to_variable = { YSS_volunteer_to_other_country_send_volunteer_size = 1 }
-		}
-		else = {
-			add_political_power = -50
-			var:YSS_chosen_array^0 = { set_country_flag = YSS_we_prepare_to_send_volunteer }
-		}
-	}
-}
-
-YSS_return_button_effect_4 = {#给工厂
-	#给军工
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } }
-			
-			check_expr = {
-        		value = YSS.num_of_military_factories
-				add = YSS.YSS_the_num_of_send_factories
-        		subtract = YSS.YSS_total_of_factory_COG
-				subtract = YSS.YSS_total_of_factory_ZIM
-				subtract = YSS.YSS_total_of_factory_ZYX
-				subtract = YSS.YSS_total_of_factory_ZSB
-				subtract = YSS.YSS_total_of_factory_EAS
-				subtract = YSS.YSS_total_of_factory_EGY
-				subtract = YSS.YSS_total_of_factory_LBA
-				subtract = YSS.YSS_total_of_factory_LIB
-				subtract = YSS.YSS_total_of_factory_SAF
-        		greater_than = 1
-    		}
-		}
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-		if = {
-			limit = { var:YSS.YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
-
-			meta_effect = {
-					text = {
-						add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = 2 }
-					}
-					country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
-				}
-
-						var:YSS.YSS_chosen_array^0 = {
-							add_offsite_building = {
-		            			type = arms_factory
-            					level = 2
-        					}
-						}
-
-						set_temp_variable = { round_i = 0 }
-
-						while_loop_effect = {
-							limit = {
-								check_variable = { round_i < 2 }
-							}
-
-							add_to_temp_variable = { round_i = 1 }
-
-							YSS = {
-								random_owned_controlled_state = {
-    								limit = {
-        								arms_factory > 0
-			    					}
-
-								    remove_building = {
-										type = arms_factory
-										level = 1
-									}
-								}
-								add_to_variable = { YSS.YSS_the_num_of_send_factories = 1 }
-							}
-						}
-		}
-		else = {
-			meta_effect = {
-				text = {
-					add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = 2 }
-				}
-				country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
-			}
-		}
-	}
-}
-
-YSS_return_button_effect_right_4 = {#撤销给工厂(只有掀起内战前有效)
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_launch_the_civil_war } }
-			meta_trigger = {
-				text = {
-					check_variable = { YSS.YSS_total_of_factory_[country_tag] > 1 }
-				}
-				country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
-			}
-		}
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_total_of_factory_[country_tag] = -2 }
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = -5 }
-			}
-			country_tag = "[?var:YSS.YSS_chosen_array^0.GetTag]"
-		}
-	}
-}
-
-YSS_return_button_effect_5 = {
-	if = {
-		limit = {
-			var:YSS_chosen_array^0 = {
-				NOT = { has_country_flag = YSS_revoluntion_victory }
-				NOT = { has_country_flag = YSS_has_find_friend }
-			}
-			has_political_power > 99
-		}
-
-		add_political_power = -100
-		var:YSS_chosen_array^0 = {
-			set_country_flag = YSS_has_find_friend
-
-			country_event = YSS.1206
-		}
-	}
-}
-
-YSS_return_button_effect_6 = {#科研交流
-	if = {
-		limit = { has_political_power > 99 }
-		add_political_power = -100
-
-		if = {
-			limit = { var:YSS_chosen_array^0 = { amount_research_slots < 3 } }#如果才0，1，2
-			var:YSS_chosen_array^0 = { country_event = YSS.1304 }
-		}
-		else_if = {
-			limit = { var:YSS_chosen_array^0 = { amount_research_slots = 3 } }#如果3
-			var:YSS_chosen_array^0 = { country_event = YSS.1305 }
-		}
-		else_if = {
-			limit = { var:YSS_chosen_array^0 = { amount_research_slots = 4 } }#如果4
-			var:YSS_chosen_array^0 = { country_event = YSS.1306 }
-		}
-		else_if = {
-			limit = { var:YSS_chosen_array^0 = { amount_research_slots > 4 } }#如果>4 真的可能吗
-			var:YSS_chosen_array^0 = { country_event = YSS.1307 }
-		}
-	}
-}
-
-YSS_return_button_effect_7 = {#军演
-	if = {
-		limit = { has_political_power > 99 }
-		add_political_power = -100
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 5 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-		YSS = { army_experience = 50 }
-		var:YSS_chosen_array^0 = { army_experience = 50 }
-	}
-}
-
-YSS_return_button_effect_8 = {#建设
-	if = {
-		limit = { has_political_power > 149 }
-		add_political_power = -150
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-		var:YSS_chosen_array^0 = {
-			country_event = YSS.1403
-		}
-	}
-}
-
-YSS_return_button_effect_9 = {#军工厂升级
-	var:YSS_chosen_array^0 = {
-		country_event = YSS.1505
-	}
-}
-
-YSS_return_button_effect_10 = {#建设
-	if = {
-		limit = { has_political_power > 119 }
-		add_political_power = -120
-
-		meta_effect = {
-			text = {
-				add_to_variable = { YSS.YSS_[country_tag]_willing_join = 10 }
-			}
-			country_tag = "[?YSS.YSS_chosen_array^0.GetTag]"
-		}
-
-		var:YSS_chosen_array^0 = {
-			add_timed_idea = {
-				idea = YSS_the_cooperation_benefit
-				days = 365
-			}
-		}
-		add_timed_idea = {
-			idea = YSS_the_cooperation_benefit
-			days = 365
-		}
-	}
-}
-
-YSS_return_button_effect_11 = {#合体！
-	if = {
-		limit = { has_political_power > 49 }
-		add_political_power = -50
-
-		var:YSS_chosen_array^0 = { country_event = YSS.1600 }
 	}
 }

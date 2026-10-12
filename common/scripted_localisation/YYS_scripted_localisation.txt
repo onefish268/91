@@ -139,54 +139,253 @@ defined_text = {
 	}
 }
 
+#宣传
 defined_text = {
-	name = all_button_text_loc
+	name = YSS_Get_Publicity_Slot_A
 	text = {
-		trigger = { check_variable = { picture_value = 0 } }
-		localization_key = YSS_map_button_text_0
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = -1
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_A"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 1 } }
-		localization_key = YSS_map_button_text_1
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 0
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_B"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 2 } }
-		localization_key = YSS_map_button_text_2
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 1
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_A"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 3 } }
-		localization_key = YSS_map_button_text_3
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 2
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_B"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 4 } }
-		localization_key = YSS_map_button_text_4
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 3
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_C"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 5 } }
-		localization_key = YSS_map_button_text_5
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 4
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_D"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 6 } }
-		localization_key = YSS_map_button_text_6
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 5
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_E"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 7 } }
-		localization_key = YSS_map_button_text_7
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 6
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_F"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 8 } }
-		localization_key = YSS_map_button_text_8
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 7
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_G"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 9 } }
-		localization_key = YSS_map_button_text_9
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_A = 8
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_H"
+	}
+}
+defined_text = {
+	name = YSS_Get_Publicity_Slot_B
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = -1
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_A"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 10 } }
-		localization_key = YSS_map_button_text_10
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 0
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_B"
 	}
 	text = {
-		trigger = { check_variable = { picture_value = 11 } }
-		localization_key = YSS_map_button_text_11
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 1
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_A"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 2
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_B"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 3
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_C"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 4
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_D"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 5
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_E"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 6
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_F"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 7
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_G"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_B = 8
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_H"
+	}
+}
+defined_text = {
+	name = YSS_Get_Publicity_Slot_C
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = -1
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_A"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 0
+			}
+		}
+		localization_key = "GFX_AUS_publicity_image_B"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 1
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_A"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 2
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_B"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 3
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_C"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 4
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_D"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 5
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_E"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 6
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_F"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 7
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_G"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				YSS_pub_slot_C = 8
+			}
+		}
+		localization_key = "GFX_YSS_publicity_image_H"
 	}
 }
