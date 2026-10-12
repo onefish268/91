@@ -11,7 +11,6 @@ scripted_gui = {
 			}
 	    }
 		effects = {
-
 			YSS_body_button_click = {
 			    set_country_flag = YSS_set_body_start
 
@@ -116,23 +115,6 @@ scripted_gui = {
 		}
 
 		effects = {
-			map_of_Africa_region_button_click = {
-				clear_array = YSS_map_of_region_array
-				add_to_array = { YSS_map_of_region_array = 0 }
-				add_to_array = { YSS_map_of_region_array = 1 }
-				add_to_array = { YSS_map_of_region_array = 2 }
-				add_to_array = { YSS_map_of_region_array = 3 }
-				add_to_array = { YSS_map_of_region_array = 4 }
-				add_to_array = { YSS_map_of_region_array = 5 }
-				add_to_array = { YSS_map_of_region_array = 6 }
-				add_to_array = { YSS_map_of_region_array = 7 }
-				add_to_array = { YSS_map_of_region_array = 8 }
-
-				clr_country_flag = YSS_see_all_buttons
-
-				clear_array = YSS_all_buttons_array
-			}
-
 			YSS_body_start_button_click = {
 			    clr_country_flag = YSS_set_body_start
 				clr_country_flag = YSS_see_all_buttons
@@ -160,45 +142,49 @@ scripted_gui = {
 			}
 
 			map_of_africa_block_button_click = {
-				if = { 
-					limit = {
-						NOT = { check_variable = { picture_value = 3 } }
-						NOT = { check_variable = { picture_value = 8 } }
-					}
-					clear_array = YSS_map_of_region_array
-					add_to_array = { YSS_map_of_region_array = picture_value }
-					YSS_return_the_right_country = yes
-				}
+				set_country_flag = YSS_see_all_buttons
+
+				clear_array = YSS_all_buttons_array
+				add_to_array = { YSS_all_buttons_array = 0 }
+				add_to_array = { YSS_all_buttons_array = 1 }
+				add_to_array = { YSS_all_buttons_array = 2 }
+				add_to_array = { YSS_all_buttons_array = 3 }
+				add_to_array = { YSS_all_buttons_array = 4 }
+				add_to_array = { YSS_all_buttons_array = 5 }
+			}
+			map_of_africa_block_button_right_click = {
+				set_country_flag = YSS_see_all_buttons
+
+				clear_array = YSS_all_buttons_array
+				add_to_array = { YSS_all_buttons_array = 6 }
+				add_to_array = { YSS_all_buttons_array = 7 }
+				add_to_array = { YSS_all_buttons_array = 8 }
+				add_to_array = { YSS_all_buttons_array = 9 }
+				add_to_array = { YSS_all_buttons_array = 10 }
+				add_to_array = { YSS_all_buttons_array = 11 }
 			}
 
 			africa_of_countries_block_button_click = {
-				if = { 
-					limit = {
-						NOT = { check_variable = { picture_value = 3 } }
-						NOT = { check_variable = { picture_value = 8 } }
-					}
-					clear_array = YSS_map_of_region_array
-					add_to_array = { YSS_map_of_region_array = picture_value }
-					YSS_return_the_right_country = yes
-				}
-			}
+				set_country_flag = YSS_see_all_buttons
 
-			all_buttons_block_button_click = {
-				meta_effect = {
-					text = {
-						YSS_return_button_effect_[button_number] = yes
-					}
-					button_number = "[?picture_value]"
-				}
+				clear_array = YSS_all_buttons_array
+				add_to_array = { YSS_all_buttons_array = 0 }
+				add_to_array = { YSS_all_buttons_array = 1 }
+				add_to_array = { YSS_all_buttons_array = 2 }
+				add_to_array = { YSS_all_buttons_array = 3 }
+				add_to_array = { YSS_all_buttons_array = 4 }
+				add_to_array = { YSS_all_buttons_array = 5 }
 			}
+			africa_of_countries_block_button_right_click = {
+				set_country_flag = YSS_see_all_buttons
 
-			all_buttons_block_button_right_click = {
-				meta_effect = {
-					text = {
-						YSS_return_button_effect_right_[button_number] = yes
-					}
-					button_number = "[?picture_value]"
-				}
+				clear_array = YSS_all_buttons_array
+				add_to_array = { YSS_all_buttons_array = 6 }
+				add_to_array = { YSS_all_buttons_array = 7 }
+				add_to_array = { YSS_all_buttons_array = 8 }
+				add_to_array = { YSS_all_buttons_array = 9 }
+				add_to_array = { YSS_all_buttons_array = 10 }
+				add_to_array = { YSS_all_buttons_array = 11 }
 			}
 		}
 	}
@@ -366,12 +352,20 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "YSS_yisiland_ui_window"
 	}
-
-	YSS_geming_ui = {
+	YSS_pl_cat_gui = {
 		context_type = decision_category
-		window_name = "YSS_internal_factions_decision_ui_window"
-
+		window_name = "YSS_publicity_campaigns_ui_window"
+		properties = {
+			YSS_publicity_solt_A = {
+				image = "[YSS_Get_Publicity_Slot_A]"
+			}
+			YSS_publicity_solt_B = {
+				image = "[YSS_Get_Publicity_Slot_B]"
+			}
+			YSS_publicity_solt_C = {
+				image = "[YSS_Get_Publicity_Slot_C]"
+			}
+		}
 	}
-	
 }
 

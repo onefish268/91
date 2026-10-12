@@ -1,3 +1,10 @@
+YSS_debug = {
+	allowed = { original_tag = YSS }
+	priority = 1000
+	visible = {
+		is_debug = yes
+	}
+}
 YSS_states_category = {
     picture = GFX_decision_cat_default
     priority = 98
@@ -42,13 +49,46 @@ YSS_kj_buy_category = {
         has_completed_focus = YSS_focus_167 
     }
 }
-
-YSS_geming_category = {
+YSS_national_construction = {
     picture = GFX_decision_cat_default
-    priority = 99
-    scripted_gui = YSS_geming_ui
+    priority = 97
+	allowed = {
+		original_tag = YSS
+	}
     visible = {
-        original_tag = YSS 
-        #has_completed_focus = YSS_focus_24 
+        has_country_flag = YSS_open_nc
+    }
+}
+YSS_xcgdb = {
+	icon = generic_research
+	priority = 100
+	allowed = {
+		original_tag = YSS
+	}
+	visible = {
+		has_country_flag = YSS_open_xcgdb
+	}
+	scripted_gui = YSS_pl_cat_gui
+}
+
+YSS_gjkxy = {
+	icon = GFX_decision_Chinese_Academy_of_Sciences_icon
+	scripted_gui = PRC_Chinese_Academy_of_Sciences_window
+	priority = 80
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = YSS_open_gjkxy
+	}
+	allowed = {
+		original_tag = YSS
+	}
+}
+
+YSS_jsgg = {
+    picture = GFX_decision_cat_default
+	allowed = { original_tag = YSS }
+    priority = 60
+    visible = {
+        has_country_flag = YSS_open_jsgg
     }
 }
