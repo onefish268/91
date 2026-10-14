@@ -1069,9 +1069,9 @@ focus_tree = {
 			focus = YSS_focus_46
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1089,7 +1089,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
-			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1135,8 +1135,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 			hidden_effect = {
 				country_event = {
@@ -1167,8 +1167,8 @@ focus_tree = {
 			}
 
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1235,9 +1235,9 @@ focus_tree = {
 					level = 1
 				}
 			}
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			hidden_effect = {
 				country_event = {
 				    id = YSS.52
@@ -1285,9 +1285,9 @@ focus_tree = {
 			focus = YSS_focus_58
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1311,7 +1311,7 @@ focus_tree = {
 				category = industry
 			}
 
-			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 tooltip = industry_repair_factor_tt }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.1 tooltip = industry_repair_factor_tt }
 			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			every_controlled_state = {
 				limit = {
@@ -1362,8 +1362,8 @@ focus_tree = {
 			focus = YSS_focus_52
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 			hidden_effect = {
 				country_event = {
@@ -1386,8 +1386,8 @@ focus_tree = {
 			focus = YSS_focus_64
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1475,7 +1475,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
-			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1715,8 +1715,8 @@ focus_tree = {
 			clr_country_flag = jindu3_has_more
 			set_country_flag = jindu4_has_more
 
-			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 tooltip = industry_repair_factor_tt }
-			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.15 tooltip = industry_repair_factor_tt }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.15 tooltip = energy_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 
 			hidden_effect = {
@@ -1828,8 +1828,8 @@ focus_tree = {
 				category = synth_resources
 			}
 
-			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 tooltip = army_fuel_consumption_factor_tt }
-			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.1 tooltip = army_fuel_consumption_factor_tt }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.1 tooltip = energy_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1846,7 +1846,7 @@ focus_tree = {
 			focus = YSS_focus_83
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
@@ -1864,8 +1864,8 @@ focus_tree = {
 			focus = YSS_focus_77
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1917,8 +1917,8 @@ focus_tree = {
 			focus = YSS_focus_77
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 tooltip = industry_repair_factor_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.1 tooltip = industry_repair_factor_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 			hidden_effect = {
 				country_event = {
@@ -1968,8 +1968,8 @@ focus_tree = {
 				category = industry
 			}
 
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 		}
 	}
@@ -1986,8 +1986,8 @@ focus_tree = {
 			focus = YSS_focus_80
 		}
 		completion_reward = {
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip =YSS_tootip_28
 			hidden_effect = {
 				country_event = {
@@ -2066,11 +2066,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
+				YSS_drift_defence_factor = 0.1
 				tooltip = drift_defence_factor_tt
 			}
 			custom_effect_tooltip = YSS_tootip_35
@@ -2108,15 +2108,15 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
+				YSS_drift_defence_factor = 0.1
 				tooltip = drift_defence_factor_tt
 			}
 			add_to_variable = {
-				YSS_7_party_popularity_stability_factor = 0.05
+				YSS_7_party_popularity_stability_factor = 0.1
 				tooltip = party_popularity_stability_factor_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2145,7 +2145,7 @@ focus_tree = {
 		id = YSS_focus_94
 		x = 5
 		y = 0
-		cost = 2
+		cost = 1
 		icon = GFX_focus_PRC_the_northeast_aviation_university_sea
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2164,7 +2164,7 @@ focus_tree = {
 		id = YSS_focus_95
 		x = 5
 		y = 14
-		cost = 2
+		cost = 1
 		icon = GFX_focus_PRC_form_central_social_affairs_department
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2278,7 +2278,7 @@ focus_tree = {
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 				tooltip = industrial_capacity_factory_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2302,11 +2302,11 @@ focus_tree = {
                 popularity = 0.05
             }
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 				tooltip = forced_surrender_limit_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2327,11 +2327,11 @@ focus_tree = {
 		completion_reward = { 
 			add_manpower = 30000
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 				tooltip = forced_surrender_limit_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2385,15 +2385,15 @@ focus_tree = {
                 popularity = 0.05
             }
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 				tooltip = forced_surrender_limit_tt
 			}
 			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
+				YSS_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2413,11 +2413,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_popularity = {
@@ -2441,15 +2441,15 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 				tooltip = political_power_cost_tt
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
+				YSS_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tt
 			}
 			custom_effect_tooltip = YSS_tootip_6
@@ -2504,7 +2504,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_172
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_10
@@ -2527,7 +2527,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_172
 		}
 		completion_reward = {
 			give_market_access = LHS
@@ -4109,14 +4109,14 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_172
 		x = 42
-		y = 13
+		y = 11
 		cost = 5
 		icon = GFX_focus_BRA_dec
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_93
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_32
