@@ -2252,10 +2252,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
+				YSS_drift_defence_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2273,7 +2273,7 @@ focus_tree = {
 			focus = YSS_focus_89
 		}
 		completion_reward = { 
-			add_political_power = 150
+			add_political_power = 250
 			add_stability = 0.05
 		}
 	}
@@ -2297,13 +2297,13 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_drift_defence_factor = 0.05
+				YSS_drift_defence_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_7_party_popularity_stability_factor = 0.05
+				YSS_7_party_popularity_stability_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 			hidden_effect = {
@@ -2467,7 +2467,7 @@ focus_tree = {
 				YSS_7_conscription_factor = 0.1
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2496,10 +2496,10 @@ focus_tree = {
                 popularity = 0.05
             }
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2525,10 +2525,10 @@ focus_tree = {
 			}
 			add_manpower = 30000
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 			hidden_effect = {
@@ -2591,13 +2591,13 @@ focus_tree = {
                 popularity = 0.05
             }
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_forced_surrender_limit = 0.05
+				YSS_forced_surrender_limit = 0.1
 			}
 			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
+				YSS_production_speed_buildings_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
@@ -2622,10 +2622,10 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 			}
 			add_popularity = {
                 ideology = communism
@@ -2654,13 +2654,13 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				YSS_political_power_cost = -0.05
+				YSS_political_power_cost = -0.1
 			}
 			add_to_variable = {
-				YSS_7_industrial_capacity_factory = 0.05
+				YSS_7_industrial_capacity_factory = 0.1
 			}
 			add_to_variable = {
-				YSS_production_speed_buildings_factor = 0.05
+				YSS_production_speed_buildings_factor = 0.1
 			}
 			custom_effect_tooltip = YSS_tootip_6
 		}
