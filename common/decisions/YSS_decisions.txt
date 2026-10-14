@@ -2654,6 +2654,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_145
 		}
 		visible = {
 		}
@@ -2691,6 +2692,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_42
 		}
 		visible = {
 		}
@@ -2729,6 +2731,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_154
 		}
 		visible = {
 		}
@@ -2764,6 +2767,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_92
 		}
 		visible = {
 		}
@@ -2802,6 +2806,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_169
 		}
 		visible = {
 		}
@@ -2840,6 +2845,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_45
 		}
 		visible = {
 		}
@@ -2878,6 +2884,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_13
 		}
 		visible = {
 		}
@@ -2916,6 +2923,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_42
 		}
 		visible = {
 		}
@@ -2952,6 +2960,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_109
 		}
 		visible = {
 		}
@@ -2990,6 +2999,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_64
 		}
 		visible = {
 		}
