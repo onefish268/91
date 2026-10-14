@@ -2627,3 +2627,395 @@ YSS_geming_category = {
 		}
 	}
 }
+
+YSS_xcgdb = {
+	debug = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = {
+				YSS_pub_slot_A = 0
+			}
+			set_variable = {
+				YSS_pub_slot_B = 0
+			}
+			set_variable = {
+				YSS_pub_slot_C = 0
+			}
+		}
+	}
+	YSS_publicity_A = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 100
+		cost = 50
+		days_re_enable = 60
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 1
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			army_attack_factor = 0.2
+			army_morale_factor = 0.15
+			army_org_factor = 0.25
+			breakthrough_factor = 0.4
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 1
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_B = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 60
+		cost = 50
+		days_re_enable = 60
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 2
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			global_building_slots_factor = 0.25
+			industrial_capacity_factory = 0.1
+			production_lack_of_resource_penalty_factor = -0.65
+			production_speed_buildings_factor = 0.25
+			industrial_factory_donations = 5
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 2
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_C = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 50
+		cost = 50
+		days_re_enable = 50
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 3
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			industrial_capacity_dockyard = 0.6
+			consumer_goods_expected_value = -0.5
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 3
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_D = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 50
+		cost = 50
+		days_re_enable = 50
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 4
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			communism_drift = 0.07
+			opinion_gain_monthly_same_ideology_factor = 0.3
+			party_popularity_stability_factor = 1
+			political_power_factor = 0.25
+			stability_weekly_factor = 0.01
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 4
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_E = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 50
+		cost = 50
+		days_re_enable = 50
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 5
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			air_ace_generation_chance_factor = 1
+			air_advisor_cost_factor = -0.9
+			air_home_defence_factor = 0.7
+			research_speed_factor = 0.15
+			sp_air_jet_engine_speed_factor = 0.45
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 5
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_F = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 50
+		cost = 50
+		days_re_enable = 50
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 6
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			compliance_gain = 0.05
+			consumer_goods_factor = -0.35
+			line_change_production_efficiency_factor = 0.55
+			stability_weekly_factor = 0.4
+			war_support_weekly_factor = 0.4
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 6
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_G = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 50
+		cost = 50
+		days_re_enable = 50
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 7
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			enemy_operative_capture_chance_factor = 0.5
+			industrial_capacity_factory_powered = 0.35
+			production_speed_buildings_powered_factor = 0.35
+			surrender_limit = 1
+			weekly_manpower = 8000
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 7
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_H = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 100
+		cost = 50
+		days_re_enable = 100
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 8
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			research_speed_factor = 0.45
+			special_project_speed_factor = 0.6
+			sp_nuclear_reactor_speed_factor = 0.4
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 8
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_I = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 100
+		cost = 50
+		days_re_enable = 100
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 9
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			army_armor_attack_factor = 0.3
+			army_artillery_attack_factor = 0.3
+			army_infantry_attack_factor = 0.3
+			max_planning_factor = 0.15
+			army_speed_factor = 0.5
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 9
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	YSS_publicity_J = {
+		allowed = {
+			original_tag = YSS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EMPTY_SPARE
+				YSS_propaganda_poster_slot_available = yes
+			}
+		}
+		visible = {
+		}
+		days_remove = 100
+		cost = 50
+		days_re_enable = 100
+		complete_effect = {
+			set_variable = {
+				YSS_pub_temp = 10
+			}
+			YSS_set_pubilcity_slot = yes
+		}
+		modifier = {
+			global_building_slots_factor = 0.35
+			industrial_capacity_factory = 0.25
+			production_factory_efficiency_gain_factor = 0.6
+			production_factory_max_efficiency_factor = 0.6
+		}
+		remove_effect = {
+			set_variable = {
+				YSS_pub_temp = 10
+			}
+			YSS_clr_pubilcity_slot = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+}

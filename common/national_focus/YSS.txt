@@ -1631,10 +1631,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_71
-		}
-		prerequisite = {
-			focus = YSS_focus_70
+			focus = YSS_focus_67
 		}
 		completion_reward = {
 			if = {
@@ -2076,6 +2073,7 @@ focus_tree = {
 				YSS_drift_defence_factor = 0.05
 				tooltip = drift_defence_factor_tt
 			}
+			custom_effect_tooltip = YSS_tootip_35
 			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
@@ -2222,6 +2220,10 @@ focus_tree = {
 				YSS_drift_defence_factor = 0.1
 				tooltip = drift_defence_factor_tt
 			}
+			set_variable = {
+				YSS_pub_slot_B = 0
+			}
+			custom_effect_tooltip = YSS_Excess_promotional_slots
 			custom_effect_tooltip = YSS_tootip_6
 		}
 	}
@@ -2251,6 +2253,10 @@ focus_tree = {
 				YSS_offensive_war_stability_factor = 0.1
 				tooltip = offensive_war_stability_factor_tt
 			}
+			set_variable = {
+				YSS_pub_slot_C = 0
+			}
+			custom_effect_tooltip = YSS_Excess_promotional_slots
 			custom_effect_tooltip = YSS_tootip_6
 		}
 	}

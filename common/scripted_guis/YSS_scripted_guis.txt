@@ -383,6 +383,22 @@ scripted_gui = {
 			}
 		}
 	}
+
+	YSS_pl_cat_gui = {
+		context_type = decision_category
+		window_name = "YSS_publicity_campaigns_ui_window"
+		properties = {
+			YSS_publicity_solt_A = {
+				image = "[YSS_Get_Publicity_Slot_A]"
+			}
+			YSS_publicity_solt_B = {
+				image = "[YSS_Get_Publicity_Slot_B]"
+			}
+			YSS_publicity_solt_C = {
+				image = "[YSS_Get_Publicity_Slot_C]"
+			}
+		}
+	}
 	
 }
 

@@ -251,4 +251,49 @@ spriteTypes = {
 		texturefile = "gfx/leaders/YSS/GFX_YSS_gm_tooltip_pt_liedu.png"
         legacy_lazy_load = no
 	}
+#宣传鼓动部
+    SpriteType = {
+		name = GFX_YSS_xuanchuan_icon
+		texturefile = "gfx/leaders/YSS/GFX_YSS_xuanchuan_icon.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_A
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_A.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_B
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_B.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_C
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_C.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_D
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_D.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_E
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_E.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_F
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_F.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_G
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_G.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_H
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_H.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_I
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_I.png"
+	}
+    SpriteType = {
+		name = GFX_YSS_publicity_image_J
+		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_J.png"
+	}
 }
