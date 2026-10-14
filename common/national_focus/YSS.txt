@@ -2689,7 +2689,7 @@ focus_tree = {
 		id = YSS_focus_109
 		x = 39
 		y = 12
-		cost = 5
+		cost = 1
 		icon = GFX_focus_generic_annex_country_2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2714,7 +2714,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_172
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_10
@@ -2728,22 +2728,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YSS_focus_111
-		x = 42
-		y = 11
-		cost = 5
-		icon = GFX_focus_eng_liberate_the_home_of_marx
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_focus_93
-		}
-		completion_reward = {
-			set_major = yes
-		}
-	}
-	focus = {
 		id = YSS_focus_112
 		x = 43
 		y = 12
@@ -2753,7 +2737,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_172
 		}
 		completion_reward = {
 			give_market_access = LHS
@@ -4462,14 +4446,14 @@ focus_tree = {
 	focus = {
 		id = YSS_focus_172
 		x = 42
-		y = 13
+		y = 11
 		cost = 5
 		icon = GFX_focus_BRA_dec
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = YSS_focus_111
+			focus = YSS_focus_93
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_32
