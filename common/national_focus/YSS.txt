@@ -578,7 +578,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.07
+			add_stability = -0.15
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_26
@@ -602,7 +602,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.07
+			add_stability = -0.15
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_28
@@ -626,7 +626,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.07
+			add_stability = -0.15
 			add_manpower = -3000
 			hidden_effect = {
 			    uncomplete_national_focus = {
@@ -2479,7 +2479,7 @@ focus_tree = {
 		id = YSS_focus_109
 		x = 39
 		y = 12
-		cost = 5
+		cost = 1
 		icon = GFX_focus_generic_annex_country_2
 		continue_if_invalid = no
 		cancel_if_invalid = yes
