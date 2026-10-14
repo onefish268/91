@@ -628,3 +628,69 @@ YSS_return_button_effect_11 = {#合体！
 		var:YSS_chosen_array^0 = { country_event = YSS.1600 }
 	}
 }
+
+YSS_set_pubilcity_slot = {
+	if = {
+		limit = {
+			check_variable = {
+				YSS_pub_slot_A = 0
+			}
+		}
+		set_variable = {
+			YSS_pub_slot_A = YSS_pub_temp
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					YSS_pub_slot_B = 0
+				}
+			}
+			set_variable = {
+				YSS_pub_slot_B = YSS_pub_temp
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						YSS_pub_slot_C = 0
+					}
+				}
+				set_variable = {
+					YSS_pub_slot_C = YSS_pub_temp
+				}
+			}
+		}
+	}
+}
+
+YSS_clr_pubilcity_slot = {
+	if = {
+		limit = {
+			check_variable = {
+				YSS_pub_slot_A = YSS_pub_temp
+			}
+		}
+		set_variable = {
+			YSS_pub_slot_A = 0
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					YSS_pub_slot_B = YSS_pub_temp
+				}
+			}
+			set_variable = {
+				YSS_pub_slot_B = 0
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						YSS_pub_slot_C = YSS_pub_temp
+					}
+				}
+				set_variable = {
+					YSS_pub_slot_C = 0
+				}
+			}
+		}
+	}
+}

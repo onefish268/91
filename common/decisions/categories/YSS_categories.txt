@@ -55,3 +55,16 @@ YSS_geming_category = {
 		}
     }
 }
+
+YSS_xcgdb = {
+	icon = generic_research
+	priority = 97
+	allowed = {
+		original_tag = YSS
+	}
+	visible = {
+		original_tag = YSS
+        has_completed_focus = YSS_focus_90
+	}
+	scripted_gui = YSS_pl_cat_gui
+}
