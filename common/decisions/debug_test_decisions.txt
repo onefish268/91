@@ -91,6 +91,11 @@ debug_test_categories = {
 			set_country_flag = YSS_hongjun_baogao5
 
 			set_country_flag = YSS_haijun_baogao
+
+
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
