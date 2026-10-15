@@ -6,6 +6,70 @@ spriteTypes = {
 	}
     ###GUI
     #民族精神
+	spriteType = {
+        name = "GFX_idea_lib2"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib2.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib3"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib3.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib4"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib4.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib5"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib5.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib6"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib6.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib7"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib7.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib8"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib8.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib9"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib9.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib10"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib10.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib11"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib11.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib12"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib12.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib13"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib13.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib14"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib14.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib15"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib15.png"
+    }
+	spriteType = {
+        name = "GFX_idea_lib16"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib16.png"
+    }
+    spriteType = {
+        name = "GFX_idea_lib17"
+        texturefile = "gfx/interface/ideas/LIB/GFX_idea_lib17.png"
+    }
     #领袖
 	SpriteType = {
 		name = "GFX_LIB_XZYH"
@@ -49,11 +113,11 @@ spriteTypes = {
 		name = "GFX_LIB_FOCUS_JLSRZDD"
 		texturefile = "gfx/interface/goals/LIB/GC_JLSRZDD.png"
 	}
-SpriteType = {
+	SpriteType = {
 		name = "GFX_LIB_FOCUS_YLZJH"
 		texturefile = "gfx/interface/goals/LIB/GC_YLZJH.png"
 	}
-spriteType = {
+	spriteType = {
 		name = "GFX_goal_LIB_election"
 		texturefile = "gfx/interface/goals/LIB/goal_LIB_election.dds"
 	}
