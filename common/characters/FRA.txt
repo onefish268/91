@@ -1,0 +1,2809 @@
+characters = {
+	#稗田阿求
+	FRA_Hieda_no_Akyuu = {
+		name = "FRA_Hieda_no_Akyuu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Hieda_no_Akyuu.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_FRA_Hieda_no_Akyuu_desc"
+			ideology = Guided_democracy
+			expire = "1965.1.1.1"
+			traits = {
+				popular_figurehead
+				FRA_Twenty_years_at_helm
+				FRA_end_of_life_approaching
+			}
+		}
+	}
+	
+	#选举委员会
+	FRA_Electoral_Commission = {
+		name = "FRA_Electoral_Commission"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Electoral_Commission.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = liberalism
+			expire = "1965.1.1.1"
+			traits = {
+			}
+		}
+	}
+###蓝###
+	#魔理沙
+	FRA_Marisa = {
+		name = "FRA_Marisa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Marisa.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Marisa.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Marisa.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Marisa.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Marisa_PFG_desc"
+			ideology = Gensokyo_liberalism
+			expire = "1965.1.1.1"
+			traits = { Great_magic }
+			id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Marisa
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				FRA_Kirisame_Magician
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				desert_fox
+				trait_mountaineer
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#上白泽慧音
+	FRA_Kamishirasawa_Keine = {
+		name = FRA_Kamishirasawa_Keine
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kamishirasawa_Keine.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kamishirasawa_Keine.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kamishirasawa_Keine.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kamishirasawa_Keine.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Kamishirasawa_Keine_leader_desc"
+			ideology = Trade_liberalism
+			expire = "1965.1.1.1"
+			traits = { FRA_Halfbeast_knowledge_and_history }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Kamishirasawa_Keine
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Kamishirasawa_Keine
+					}
+				}
+			}
+			traits = {
+				FRA_Halfbeast_knowledge_and_history
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#藤原妹红
+	FRA_Huziwara_no_Mokou = {
+		name = "FRA_Huziwara_no_Mokou"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Huziwara_no_Mokou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Huziwara_no_Mokou.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Huziwara_no_Mokou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Huziwara_no_Mokou.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trait_reckless
+				trickster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Huziwara_no_Mokou_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Huziwara_no_Mokou
+					}
+				}
+				not = { has_idea = FRA_Huziwara_no_Mokou_idea }
+			}
+			traits = {
+				FRA_red_self_police_team
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#茨木华扇
+	FRA_Kasen = {
+		name = FRA_Ibaraki_Kasen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Ibaraki_Kasen.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kasen.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Ibaraki_Kasen.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kasen.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Kasen_leader_desc"
+			ideology = socialism
+			expire = "1965.1.1.1"
+			traits = { FRA_Supporters_of_democratic_socialism }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Kasen
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Kasen
+					}
+				}
+				NOT = { has_idea = FRA_Ibaraki_Kasen_idea }
+			}
+			traits = { FRA_Supporters_of_democratic_socialism }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Kasen_desc"
+			traits = {
+				bagua
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+###红###
+	#博丽灵梦
+	FRA_Reimu = {
+		name = FRA_Reimu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Reimu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Reimu.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Reimu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Reimu.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = marxism
+			expire = "1965.1.1.1"
+			traits = { red_white_miko }
+			id = -1
+		}
+		field_marshal = {
+			desc = "FRA_Reimu_desc"
+			traits = {
+				bagua
+				trait_reckless
+				media_personality
+				politically_connected
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FRA_Reimu_army
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				ah_military_theorist
+			}
+			#cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Reimu
+			allowed = {
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Reimu
+					}
+				}
+				NOT = { has_idea = FRA_Reimu_idea }
+			}
+			traits = {
+				red_white_miko
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#犬走椛
+	FRA_Inubashiri = {
+		name = FRA_Inubashiri_Momizi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Inubashiri_Momizi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Inubashiri.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Inubashiri_Momizi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Inubashiri.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = Radical_socialism
+			expire = "1965.1.1.1"
+			traits = { FRA_Revolutionary_fighters }
+			id = -1
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = FRA_Inubashiri_Momizi
+			allowed = {
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = ""
+			traits = {
+				bagua
+				brilliant_strategist
+				career_officer
+				media_personality
+				armor_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		# navy_leader = {
+		# 	desc = "FRA_Inubashiri_desc"
+		# 	traits = {
+		# 		gentlemanly
+		# 		navy_career_officer
+		# 		superior_tactician
+		# 	}
+		# 	skill = 4
+		# 	attack_skill = 3
+		# 	defense_skill = 4
+		# 	maneuvering_skill = 1
+		# 	coordination_skill = 1
+		# 	legacy_id = -1
+		# }
+	}
+	#射命丸文
+	FRA_Syameimaru = {
+		name = "FRA_Syameimaru"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Syameimaru.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Syameimaru.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Syameimaru.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Syameimaru.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Syameimaru_political
+			allowed = {
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Syameimaru
+					}
+				}
+				NOT = { has_idea = FRA_Syameimaru_idea }
+			}
+			traits = {
+				head_of_intelligence
+				Left_wing_playwright
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FRA_Syameimaru_army
+			allowed = {
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#河城荷取
+	FRA_Nitori = {
+		name = "FRA_Nitori"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Nitori.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nitori.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Nitori.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nitori.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Nitori
+			allowed = {
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Nitori
+					}
+				}
+				NOT = { has_idea = FRA_Nitori_idea }
+			}
+			traits = { FRA_Heavy_industry_frenzy }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_artillery_specialist scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 2
+			}
+		}
+		navy_leader = {
+			traits = {
+				spotter
+				air_controller
+				superior_tactician
+				fleet_protector
+				flight_deck_manager
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	#冈崎梦美
+	FRA_Okazaki_Yumemi = {
+		name = "FRA_Okazaki_Yumemi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Okazaki_Yumemi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Okazaki_Yumemi.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = Farsighted_socialism
+			expire = "1965.1.1.1"
+			traits = { FRA_Professor }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Okazaki_Yumemi
+			allowed = {
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Okazaki_Yumemi
+					}
+				}
+			}
+			traits = { FRA_Professor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_power_expert scientist_trait_fast_learner }
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+	}
+###灰###
+	#东风谷早苗
+	FRA_Sanae = {
+		name = "FRA_Sanae"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Sanae.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Sanae.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_FRA_Sanae_desc"
+			ideology = military_politicism
+			traits = {
+				Common_sense_erasure
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Sanae_political_idea
+			allowed = {
+			}
+			available = {
+				NOT = {
+					or = {
+						has_idea = FRA_Sanae_idea
+						has_country_leader = {
+							ruling_only = yes
+							character = FRA_Sanae
+						}
+					}
+				}
+			}
+			traits = { Common_sense_erasure }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			desc = "FRA_Sanae_desc"
+			traits = {
+				war_hero
+				media_personality
+				brilliant_strategist
+				organizer
+				bagua
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	#爱丽丝·玛格特罗依德
+	FRA_Alice_Margatroid = {
+		name = FRA_Alice_Margatroid
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Alice_Margatroid.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Alice_Margatroid.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Alice_Margatroid.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Alice_Margatroid.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = military_politicism
+			traits = { Seven_colored_puppeteers }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Alice_Margatroid
+			ledger = army
+			allowed = {
+			}
+			available = {
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trait_mountaineer
+				armor_officer
+				harsh_leader
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#风见幽香
+	FRA_Kazami_Yuka = {
+		name = FRA_Kazami_Yuka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kazami_Yuka_political.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kazami_Yuka.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kazami_Yuka.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kazami_Yuka.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = military_politicism
+			traits = { FRA_Lord_of_Flowers_of_Four_Seasons }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FRA_Kazami_Yuka
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_chief_organizational_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				bagua
+				trait_cautious
+				hill_fighter
+				brilliant_strategist
+				fast_planner
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#三头同盟
+	FRA_Triple_Alliance = {
+		name = FRA_Triple_Alliance
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Triple_Alliance.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = military_politicism
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+###棕###
+	#铃仙·优昙华院·因幡
+	FRA_Reisen_Udongein_Inaba = {
+		name = FRA_Reisen_Udongein_Inaba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Reisen_Udongein_Inaba.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Reisen_Udongein_Inaba.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Reisen_Udongein_Inaba.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Reisen_Udongein_Inaba.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Reisen_Udongein_Inaba_pol_desc"
+			ideology = Right_populism_subideology
+			expire = "1965.1.1.1"
+			traits = { FRA_Red_Eye_Synchronizer }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Reisen_Udongein_Inaba
+			allowed = {
+			}
+			traits = {
+				backroom_backstabber
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#绵月丰姬
+	FRA_Watatsuki_no_Toyohime = {
+		name = "FRA_Watatsuki_no_Toyohime"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Watatsuki_no_Toyohime.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Watatsuki_no_Toyohime.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = Lunar_purification_subideology
+			expire = "1965.1.1.1"
+			traits = {
+			}
+			id = -1
+		}
+		field_marshal={
+			traits={ bagua old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#绵月依姬
+	FRA_Watatsuki_no_Yorihime = {
+		name = "FRA_Watatsuki_no_Yorihime"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Watatsuki_no_Yorihime.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Watatsuki_no_Yorihime.dds"
+			}
+		}
+		corps_commander={
+			traits={ bagua brilliant_strategist trait_reckless armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	#蓬莱山辉夜
+	FRA_Houraisan_Kaguya = {
+		name = FRA_Houraisan_Kaguya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Houraisan_Kaguya.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Houraisan_Kaguya.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Houraisan_Kaguya.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Houraisan_Kaguya.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Houraisan_Kaguya_desc"
+			ideology = Absolute_monarchy
+			expire = "1965.1.1.1"
+			traits = { FRA_Observer_of_Eternity_and_Infinitesimal }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Houraisan_Kaguya_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Houraisan_Kaguya
+					}
+				}
+				not = { has_idea = FRA_Houraisan_Kaguya_idea }
+			}
+			traits = {
+				popular_figurehead
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#因幡帝
+	FRA_Tewi_Inaba = {
+		name = FRA_Tewi_Inaba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Tewi_Inaba.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Tewi_Inaba.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Tewi_Inaba.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Tewi_Inaba.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Tewi_Inaba_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Tewi_Inaba
+					}
+				}
+				not = { has_idea = FRA_Tewi_Inaba_idea }
+			}
+			visible = { has_country_flag = retire_FRA_Tewi_Inaba }
+			traits = {
+				FRA_lucky_white_rabbit
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits={ bagua inflexible_strategist infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+#其它
+	#丰聪耳神子
+	FRA_Toyosatomimi_no_Miko = {
+		name = FRA_Toyosatomimi_no_Miko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Toyosatomimi_no_Miko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Toyosatomimi_no_Miko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Toyosatomimi_no_Miko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Toyosatomimi_no_Miko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	#圣白莲
+	FRA_Hijiri_Byakuren = {
+		name = FRA_Hijiri_Byakuren
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Hijiri_Byakuren.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hijiri_Byakuren.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Hijiri_Byakuren.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hijiri_Byakuren.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Hijiri_Byakuren
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				cavalry_officer
+				trait_engineer
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+		scientist = {
+			traits = { scientist_trait_surface_ship_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	#八意永琳
+	FRA_Eirin_Yagokoro = {
+		name = FRA_Eirin_Yagokoro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Eirin_Yagokoro.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Eirin_Yagokoro.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Eirin_Yagokoro.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Eirin_Yagokoro.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				war_hero
+				career_officer
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Eirin_Yagokoro_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Eirin_Yagokoro
+					}
+				}
+				not = { has_idea = FRA_Eirin_Yagokoro_idea }
+			}
+			visible = { has_country_flag = retire_FRA_Eirin_Yagokoro }
+			traits = {
+				FRA_hourai_pharmacist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#比那名居天子
+	FRA_Hinanawi_Tenshi = {
+		name = FRA_Hinanawi_Tenshi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Hinanawi_Tenshi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hinanawi_Tenshi.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Hinanawi_Tenshi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hinanawi_Tenshi.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Hinanawi_Tenshi
+			ledger = air
+			allowed = {
+			}
+			traits = {
+				air_airborne_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				infantry_officer
+				urban_assault_specialist
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#纯狐
+	FRA_Junko = {
+		name = FRA_Junko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Junko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Junko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Junko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Junko.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FRA_Junko
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				career_officer
+				bagua
+				fortress_buster
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	#小野塚小町
+	FRA_Komachi_Onoduka = {
+		name = FRA_Komachi_Onoduka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Komachi_Onoduka.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komachi_Onoduka.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Komachi_Onoduka.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komachi_Onoduka.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = FRA_Komachi_Onoduka
+			allowed = {
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader = {
+			traits = {
+				seawolf
+				flight_deck_manager
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+		scientist = {
+			traits = { scientist_trait_submarine_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	#古明地恋
+	FRA_Komeiji_Koishi = {
+		name = FRA_Komeiji_Koishi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Komeiji_Koishi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komeiji_Koishi.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Komeiji_Koishi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komeiji_Koishi.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Komeiji_Koishi
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				infantry_officer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#古明地觉
+	FRA_Komeiji_Satori = {
+		name = FRA_Komeiji_Satori
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Komeiji_Satori.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komeiji_Satori.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Komeiji_Satori.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komeiji_Satori.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Komeiji_Satori
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trickster
+				fortress_buster
+				trait_mountaineer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		scientist = {
+			traits = { scientist_trait_electronics_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	##蕾蒂·霍瓦特洛克
+	FRA_Letty_Whiterock = {
+		name = FRA_Letty_Whiterock
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Letty_Whiterock.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Letty_Whiterock.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Letty_Whiterock.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Letty_Whiterock.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = FRA_Letty_Whiterock
+			allowed = {
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#莉莉白
+	FRA_Lilywhite = {
+		name = FRA_Lilywhite
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Lilywhite.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Lilywhite.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Lilywhite.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Lilywhite.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				thorough_planner
+				offensive_doctrine
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#露娜萨·普莉兹姆利巴
+	FRA_Lunasa_Prismriver = {
+		name = FRA_Lunasa_Prismriver
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Lunasa_Prismriver.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Lunasa_Prismriver.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Lunasa_Prismriver.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Lunasa_Prismriver.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = FRA_Lunasa_Prismriver
+			ledger = navy
+			allowed = {
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		navy_leader = {
+			traits = {
+				chief_engineer
+				fly_swatter
+				fleet_protector
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#二岩猯藏
+	FRA_Mamizou = {
+		name = FRA_Mamizou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Mamizou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mamizou.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Mamizou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mamizou.dds"
+			}
+		}
+	}
+	#赫卡提亚·拉碧斯拉祖利
+	FRA_Hecatia_Lapislazuli = {
+		name = FRA_Hecatia_Lapislazuli
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Hecatia_Lapislazuli.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hecatia_Lapislazuli.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Hecatia_Lapislazuli.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hecatia_Lapislazuli.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				harsh_leader
+				organizer
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	##西行寺幽幽子
+	FRA_Saigyouji_Yuyuko = {
+		name = FRA_Saigyouji_Yuyuko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Saigyouji_Yuyuko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Saigyouji_Yuyuko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Saigyouji_Yuyuko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Saigyouji_Yuyuko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trickster
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	###四季映姬·夜摩仙那度
+	FRA_Shikieiki_Yamaxanadu = {
+		name = FRA_Shikieiki_Yamaxanadu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Shikieiki_Yamaxanadu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Shikieiki_Yamaxanadu.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Shikieiki_Yamaxanadu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Shikieiki_Yamaxanadu.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				brilliant_strategist
+				armor_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#宇佐见堇子
+	FRA_Usami_Sumireko = {
+		name = FRA_Usami_Sumireko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Usami_Sumireko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Usami_Sumireko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Usami_Sumireko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Usami_Sumireko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trait_reckless
+				trickster
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	#魂魄妖梦
+	FRA_Youmu = {
+		name = FRA_Youmu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Youmu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Youmu.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Youmu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Youmu.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Youmu
+			allowed = {
+			}
+			traits = {
+				quartermaster_general
+				armaments_organizer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trickster
+				trait_engineer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	#伊吹萃香
+	FRA_Suika = {
+		name = FRA_Suika
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Suika.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Suika.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Suika.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Suika.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Suika
+			allowed = {
+			}
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Suika_desc"
+			traits = {
+				bagua
+				trait_reckless
+				infantry_officer
+				politically_connected
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	#克劳恩皮丝
+	FRA_Clownpiece = {
+		name = FRA_Clownpiece
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Clownpiece.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Clownpiece.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Clownpiece.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Clownpiece.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Clownpiece
+			allowed = {
+			}
+			traits = {
+				born_agitator
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FRA_Ran
+			ledger = air
+			allowed = {
+			}
+			traits = {
+				victory_through_airpower
+			}
+			#cost = 100victory_through_airpower
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Clownpiece_desc"
+			traits = {
+				bagua
+				brilliant_strategist
+				trait_reckless
+				media_personality
+				politically_connected
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	###八坂神奈子
+	FRA_Kanako = {
+		name = FRA_Kanako
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kanako.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kanako.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kanako.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kanako.dds"
+			}
+		}
+		field_marshal = {
+			desc = "FRA_Kanako_desc"
+			traits = {
+				panzer_leader
+				panzer_expert
+				commando
+				bagua
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	###洩矢诹访子
+	FRA_Suwako = {
+		name = FRA_Suwako
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Suwako.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Suwako.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Suwako.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Suwako.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FRA_Suwako
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			desc = "FRA_Suwako_desc"
+			traits = {
+				bagua
+				organizer
+				organisational_leader
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	#今泉影狼
+	FRA_Kagerou = {
+		name = FRA_Kagerou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kagerou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kagerou.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kagerou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kagerou.dds"
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Kagerou_desc"
+			traits = {
+				bagua
+				cavalry_officer
+				trickster
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	#秋静叶
+	FRA_Shizuha = {
+		name = FRA_Shizuha
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Shizuha.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Shizuha.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Shizuha.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Shizuha.dds"
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Shizuha_desc"
+			traits = {
+				brilliant_strategist
+				bagua
+				armor_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	#秦心
+	FRA_Kokoro = {
+		name = FRA_Kokoro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kokoro.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kokoro.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kokoro.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kokoro.dds"
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Kokoro_desc"
+			traits = {
+				bagua
+				infantry_officer
+				trickster
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		scientist = {
+			traits = { scientist_trait_guidance_systems_expertt scientist_trait_fast_learner }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	#堀川雷鼓
+	FRA_Horikawa = {
+		name = FRA_Horikawa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Horikawa.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Horikawa.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Horikawa.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Horikawa.dds"
+			}
+		}
+		corps_commander = {
+			desc = "FRA_Horikawa_desc"
+			traits = {
+				bagua
+				armor_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	#灵乌路空
+	FRA_Reiuji_Utsuho = {
+		name = FRA_Reiuji_Utsuho
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/FRA_Reiuji_Utsuho.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	#玛艾露贝莉·赫恩
+	FRA_Maribel_Hearn = {
+		name = "FRA_Maribel_Hearn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Maribel_Hearn.dds"
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	#冴月麟
+	FRA_Satsuki_Rin = {
+		name = "FRA_Satsuki_Rin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Satsuki_Rin.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bagua career_officer old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#清兰
+	FRA_Seiran = {
+		name = "FRA_Seiran"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Seiran.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Seiran.dds"
+			}
+		}
+	}
+	#铃瑚
+	FRA_Ringo = {
+		name = "FRA_Ringo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Ringo.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Ringo.dds"
+			}
+		}
+	}
+	#梅蒂欣·梅兰可莉
+	FRA_Medicine = {
+		name = "FRA_Medicine"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Medicine.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Medicine.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Medicine.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Medicine.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bagua career_officer naval_invader commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Medicine_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Medicine
+					}
+				}
+				NOT = { has_idea = FRA_Medicine_idea }
+			}
+			traits = { FRA_lily_poison_master }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#火焰猫燐
+	FRA_Kaenbyou_Rin = {
+		name = "FRA_Kaenbyou_Rin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kaenbyou_Rin.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kaenbyou_Rin.dds"
+			}
+		}
+	}
+	#村纱水蜜
+	FRA_Murasa_Minamitsu = {
+		name = "FRA_Murasa_Minamitsu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Murasa_Minamitsu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Murasa_Minamitsu.dds"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = FRA_Murasa_Minamitsu_theorist
+			ledger = navy
+			allowed = {
+			}
+			traits = {
+				ah_naval_theorist
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		navy_leader = {
+			traits = {
+				naval_lineage
+				ironside
+				big_guns_expert
+				green_water_expert
+				superior_tactician
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	#云居一轮
+	FRA_Kumoi_Ichirin = {
+		name = "FRA_Kumoi_Ichirin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kumoi_Ichirin.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kumoi_Ichirin.dds"
+			}
+		}
+	}
+	#多多良小伞
+	FRA_Tatara_Kogasa = {
+		name = "FRA_Tatara_Kogasa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Tatara_Kogasa.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Tatara_Kogasa.dds"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = FRA_Tatara_Kogasa_theorist
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+	}
+	#米斯蒂娅·萝蕾拉
+	FRA_Mystia_Lorelei = {
+		name = FRA_Mystia_Lorelei
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Mystia_Lorelei.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mystia_Lorelei.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Mystia_Lorelei.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mystia_Lorelei.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Mystia_Lorelei_political_advisor
+			allowed = {
+			}
+			available = {
+				not = {
+					has_country_leader = {
+						ruling_only = yes
+						character = FRA_Mystia_Lorelei
+					}
+				}
+			}
+			traits = {
+				FRA_Young_lady_boss
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#爱塔妮提拉尔瓦
+	FRA_Eternity_Larva = {
+		name = FRA_Eternity_Larva
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Eternity_Larva.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Eternity_Larva.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Eternity_Larva.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Eternity_Larva.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FRA_Eternity_Larva
+			allowed = {
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 50
+			available = {
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trickster
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	#坂田合欢
+	FRA_Sakata_Nemuno = {
+		name = FRA_Sakata_Nemuno
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Sakata_Nemuno.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Sakata_Nemuno.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Sakata_Nemuno.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Sakata_Nemuno.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Sakata_Nemuno
+			ledger = army
+			allowed = {
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 999
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				hill_fighter
+				trickster
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#高丽野阿吽
+	FRA_Komano_Aun = {
+		name = FRA_Komano_Aun
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Komano_Aun.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komano_Aun.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Komano_Aun.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komano_Aun.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = FRA_Komano_Aun
+			allowed = {
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				trait_reckless
+				hill_fighter
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#矢田寺成美
+	FRA_Yatadera_Narumi= {
+		name = FRA_Yatadera_Narumi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Yatadera_Narumi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yatadera_Narumi.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Yatadera_Narumi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yatadera_Narumi.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Yatadera_Narumi
+			allowed = {
+			}
+			traits = {
+				lib_Narumi
+			}
+			research_bonus = {
+				magic_tank = 0.1
+				magic_airforce_tech = 0.1
+				magic_army_tech = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = FRA_Yatadera_Narumi
+			allowed = {
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 50
+			available = {
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				infantry_officer
+				naval_invader
+				invader_ii
+				naval_liaso
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	#尔子田里乃
+	FRA_Nishida_Satono = {
+		name = FRA_Nishida_Satono
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Nishida_Satono.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nishida_Satono.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Nishida_Satono.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nishida_Satono.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Nishida_Satono
+			allowed = {
+			}
+			available = {
+				not = {
+					has_idea = FRA_Nishida_Satono_idea
+				}
+			}
+			traits = {
+				lib_dance_spirit
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				ranger
+				inflexible_strategist
+				career_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	#丁礼田舞
+	FRA_Teireida_Mai = {
+		name = FRA_Teireida_Mai
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Teireida_Mai.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Teireida_Mai.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Teireida_Mai.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Teireida_Mai.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Teireida_Mai
+			allowed = {
+			}
+			available = {
+				not = {
+					has_idea = FRA_Teireida_Mai_idea
+				}
+			}
+			traits = {
+				lib_dance_life
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast naval_lineage }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	#摩多罗隐岐奈
+	FRA_Matara_Okina = {
+		name = FRA_Matara_Okina
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Matara_Okina.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Matara_Okina.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Matara_Okina.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Matara_Okina.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Matara_Okina_desc"
+			ideology = Gensokyo_liberalism
+			expire = "1965.1.1.1"
+			traits = {
+				Hidden_Star
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			#idea_token = KMK_Beatrice
+			visible= {
+			}
+			allowed = {
+			}
+			traits = {
+				Hidden_Star
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				bagua
+				politically_connected
+				career_officer
+				desert_fox
+				urban_assault_specialist
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	#哆来咪
+	FRA_Doremy_Sweet = {
+		name = FRA_Doremy_Sweet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Doremy_Sweet.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Doremy_Sweet.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Doremy_Sweet.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Doremy_Sweet.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Doremy_Sweet
+			available = {
+				not = {
+					has_idea = FRA_Doremy_Sweet_idea
+				}
+			}
+			allowed = {
+			}
+			traits = {
+				lib_dream_123
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				politically_connected
+				old_guard
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#秋穰子
+	FRA_Aki_Minoriko = {
+		name = FRA_Aki_Minoriko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Aki_Minoriko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Aki_Minoriko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Aki_Minoriko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Aki_Minoriko.dds"
+			}
+		}
+		corps_commander={
+			traits={ bagua career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	#豪德寺三花
+	FRA_Goutokuzi_Mike = {
+		name = FRA_Goutokuzi_Mike
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Goutokuzi_Mike.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Goutokuzi_Mike.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Goutokuzi_Mike.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Goutokuzi_Mike.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bagua cavalry_officer trait_reckless }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	#姬海棠果
+	FRA_Himekaidou_Hatate = {
+		name = FRA_Himekaidou_Hatate
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Himekaidou_Hatate.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Himekaidou_Hatate.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Himekaidou_Hatate.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Himekaidou_Hatate.dds"
+			}
+		}
+		corps_commander={
+			traits={ bagua brilliant_strategist trait_reckless armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	#姬虫百百世
+	FRA_Himemushi_Momoyo = {
+		name = FRA_Himemushi_Momoyo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Himemushi_Momoyo.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Himemushi_Momoyo.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Himemushi_Momoyo.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Himemushi_Momoyo.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast navy_career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_Himemushi_Momoyo_high_command
+			ledger = navy
+			allowed = {
+			}
+			traits = { navy_fleet_logistics_2 }
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+			}
+		}
+	}
+	#星熊勇仪
+	FRA_Hoshiguma_Yugi = {
+		name = FRA_Hoshiguma_Yugi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Hoshiguma_Yugi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hoshiguma_Yugi.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Hoshiguma_Yugi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Hoshiguma_Yugi.dds"
+			}
+		}
+		corps_commander={
+			traits={ bagua trait_reckless infantry_officer }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	#饭纲丸龙
+	FRA_Iizunamaru_Megumu = {
+		name = FRA_Iizunamaru_Megumu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Iizunamaru_Megumu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Iizunamaru_Megumu.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Iizunamaru_Megumu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Iizunamaru_Megumu.dds"
+			}
+		}
+		navy_leader={
+			traits={ caustic_personality gunnery_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=3
+		}
+	}
+	#键山雏
+	FRA_Kagiyama_Hina = {
+		name = FRA_Kagiyama_Hina
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kagiyama_Hina.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kagiyama_Hina.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kagiyama_Hina.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kagiyama_Hina.dds"
+			}
+		}
+		corps_commander={ 
+			traits={ bagua infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+		country_leader = {
+			desc = ""
+			ideology = oligarchism
+			expire = "1965.1.1.1"
+			traits = {
+			}
+		}
+	}
+	#幽谷响子
+	FRA_Kasodani_Kyouko = {
+		name = FRA_Kasodani_Kyouko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Kasodani_Kyouko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kasodani_Kyouko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Kasodani_Kyouko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Kasodani_Kyouko.dds"
+			}
+		}
+	}
+	#驹草山如
+	FRA_Komakusa_Sannyo = {
+		name = FRA_Komakusa_Sannyo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Komakusa_Sannyo.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komakusa_Sannyo.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Komakusa_Sannyo.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Komakusa_Sannyo.dds"
+			}
+		}
+	}
+	#露娜切露德
+	FRA_Luna_Child = {
+		name = FRA_Luna_Child
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Luna_Child.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Luna_Child.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Luna_Child.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Luna_Child.dds"
+			}
+		}
+	}
+	#三头慧之子
+	FRA_Mitsugashira_Enoko = {
+		name = FRA_Mitsugashira_Enoko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Mitsugashira_Enoko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mitsugashira_Enoko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Mitsugashira_Enoko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mitsugashira_Enoko.dds"
+			}
+		}
+	}
+	#娜兹玲
+	FRA_Nazrin = {
+		name = FRA_Nazrin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Nazrin.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nazrin.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Nazrin.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nazrin.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				logistics_wizard
+				trickster
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#日白残无
+	FRA_Nippaku_Zanmu = {
+		name = FRA_Nippaku_Zanmu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Nippaku_Zanmu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nippaku_Zanmu.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Nippaku_Zanmu.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Nippaku_Zanmu.dds"
+			}
+		}
+	}
+	#奥野田美宵
+	FRA_Okunoda_Miyoi = {
+		name = FRA_Okunoda_Miyoi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Okunoda_Miyoi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Okunoda_Miyoi.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Okunoda_Miyoi.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Okunoda_Miyoi.dds"
+			}
+		}
+	}
+	#霍青娥
+	FRA_Seiga_NyanNyan = {
+		name = FRA_Seiga_NyanNyan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Seiga_NyanNyan.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Seiga_NyanNyan.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Seiga_NyanNyan.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Seiga_NyanNyan.dds"
+			}
+		}
+		corps_commander={
+			traits={ bagua infantry_officer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	#赤蛮奇
+	FRA_Sekibanki = {
+		name = FRA_Sekibanki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Sekibanki.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Sekibanki.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Sekibanki.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Sekibanki.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FRA_Sekibanki_high_command
+			ledger = navy
+			allowed = {
+			}
+			traits = {
+				navy_capital_ship_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader = {
+			traits = {
+				superior_tactician
+				seawolf
+				craven
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	#苏我屠自古
+	FRA_Soga_no_Toziko = {
+		name = FRA_Soga_no_Toziko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Soga_no_Toziko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Soga_no_Toziko.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Soga_no_Toziko.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Soga_no_Toziko.dds"
+			}
+		}
+	}
+	#孙美天
+	FRA_Son_Biten = {
+		name = FRA_Son_Biten
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Son_Biten.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Son_Biten.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Son_Biten.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Son_Biten.dds"
+			}
+		}
+	}
+	#寅丸星
+	FRA_Toramaru_Shou = {
+		name = FRA_Toramaru_Shou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Toramaru_Shou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Toramaru_Shou.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Toramaru_Shou.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Toramaru_Shou.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold seawolf }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=807
+		}
+	}
+	#山城高岭
+	FRA_Yamashiro_Takane = {
+		name = FRA_Yamashiro_Takane
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Yamashiro_Takane.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yamashiro_Takane.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Yamashiro_Takane.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yamashiro_Takane.dds"
+			}
+		}
+	}
+	#豫母都日狭美
+	FRA_Yomotsu_Hisami = {
+		name = FRA_Yomotsu_Hisami
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Yomotsu_Hisami.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yomotsu_Hisami.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Yomotsu_Hisami.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yomotsu_Hisami.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold fleet_protector }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	#依神紫苑
+	FRA_Yorigami_Shion = {
+		name = FRA_Yorigami_Shion
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Yorigami_Shion.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yorigami_Shion.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Yorigami_Shion.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Yorigami_Shion.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bagua
+				ranger
+				inflexible_strategist
+				career_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	#天弓千亦
+	FRA_Tenkyu_Chimata = {
+		name = "FRA_Tenkyu_Chimata"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Tenkyu_Chimata.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = Trade_liberalism
+			expire = "1965.1.1.1"
+			traits = {
+			}
+		}
+	}
+	#魅魔
+	FRA_Mima = {
+		name = FRA_Mima
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Mima.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mima.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/FRA_Mima.dds"
+				small = "gfx/interface/ideas/FRA/idea_FRA_Mima.dds"
+			}
+		}
+		country_leader = {
+			desc = "FRA_Mima_desc"
+			ideology = autocracy_subideology
+			expire = "1965.1.1.1"
+			traits = {
+				prince_of_terror
+			}
+		}
+	}
+	#魅魔
+	FRA_Shinki = {
+		name = FRA_Shinki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Shinki.dds"
+			}
+		}
+	}
+}

@@ -177,8 +177,7 @@ LIB_Moriya_Ropeway = {  ##守矢索道
 		name = LIB_mio_trait_Improve_aa
 		icon = GFX_generic_mio_department_icon_anti_air
 		special_trait_background = yes
-		position = { x=6 y=2 }
-		relative_position_id = generic_mio_trait_improved_axle_fitting
+		position = { x=9 y=1 }
 		available = {
 			has_completed_focus = LIB_new_focus_74
 		}
@@ -201,5 +200,6 @@ LIB_Wings_of_Tengu = {
 	visible = { always = yes }
 	available = {
 		has_completed_focus = LIB_new_focus_48
+			
+		}
 	}
-}

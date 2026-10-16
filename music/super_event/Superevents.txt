@@ -1,0 +1,1993 @@
+music_station = "Adorable_heart_superevents"
+
+music = {
+	song = "super_event_22"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_37"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_40"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_38"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_39"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_25"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_70"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_68"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_69"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_1"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_4"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_5"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_6"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_7"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_8"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_9"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_20"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_21"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_18"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_12"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_13"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_14"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_15"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_23"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_19"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_26"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_47"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_28"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_29"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_31"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_32"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_33"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_34"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_FRA_unit_5"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_FRA_unit_6"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_FRA_unit_7"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_FRA_unit_8"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_129"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_132"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_30"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_49"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_50"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_52"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_53"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_54"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_56"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_57"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_58"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_131"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_130"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_64"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_63"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_24"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_65"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_144"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_145"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_146"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_147"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_148"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_67"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_48"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_59"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_60"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_61"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_62"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_27"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_71"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_72"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_73"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_74"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_75"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_76"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_77"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_78"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_79"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_80"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_81"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_82"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_35"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_10"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_51"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_17"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_11"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_55"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_84"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_83"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_85"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_86"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_2"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_3"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+
+music = {
+	song = "End_of_DVL"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "super_event_101"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_102"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "邪恶的崛起"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_104"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "混沌と絶望、そして死"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "团结人民之歌（晓枫）"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_105"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_106"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_107"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_108"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_110"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_111"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_113"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_115"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "路标"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_114"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "彼方の破片"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_112"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_116"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_117"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_119"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_120"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "朔与亚纪"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "再见深海"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "琉璃の鸟"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "小小的光"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "冬の星座"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "送往过去的话"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "elm"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "泡沫の灯"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "雨"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "鸟鸣"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "火车"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_133"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_134"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_135"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_138"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_139"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_141"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_142"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "虽然歌声无形"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_140"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "默剧"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "吞噬夜空"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "永恒不变"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_103"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_137"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_136"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "像弹簧火箭一样"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_100"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_109"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_127"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "星屑"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_126"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_99"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "outcry"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "days"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_128"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "痛苦之村"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "星之指引"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_118"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "Sleeping Beauty"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "夜奏花"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "静寂の雪"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "我们永远在一起吧"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "悠久花都"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "幻听"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_41"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_42"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_43"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+
+music = {
+	song = "カラフル（五彩斑斓）"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "暮光之路"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "胜利荣光"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "リンクス（携手）"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "シグナル（信号）"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "ririko"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "势魏延"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "Magia"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "致以无名的抗争者"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_90"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_92"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_93"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+	volume = 3.00
+}
+music = {
+	song = "super_event_94"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_91"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+	volume = 3.00
+}
+music = {
+	song = "super_event_89"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_97"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_98"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_95"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_87"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_88"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_96"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_122"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_123"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_124"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_36"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "在弗兰德的战场上"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_158"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "昔涟"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_150"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "拂晓"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_160"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_161"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_7121"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "致我"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "Past The Stargazing Season"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_7122"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_7123"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "For you.写给你的歌"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_7124"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "何者"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_152"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "耀斑"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "红昭愿dj"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_157"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_159"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_155"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_154"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_151"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_156"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "死别"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_149"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_153"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "剑冢"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_161"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_162"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "Universal_Collapse"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "烈阳啊，请见我真名"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "太阳是什么颜色"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "我曾遇到一束光"  ##宋教仁
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "歌声与微笑"  ##小蒋左
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "太阳之子"  ##小蒋右
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "大哉乾元"  ##胡宗南
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "反乌托邦Pt.2"  ##识之律者
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "我是汤不是唐"  ##汤汤
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "赤刃映尘"  ##陈
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_163"  ##美德共和国
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_164"  ##美德共和国-美洲大陆战争
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "歌唱祖国68"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_165"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_166"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "加州之梦"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "火玫瑰"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "解放之歌"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_167"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_168"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+	song = "super_event_169"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

@@ -241,6 +241,10 @@ spriteTypes = {
 			name = "GFX_PAW_Side_Picture_true"
 			textureFile = "gfx/welcome/Side_Picture/PAW_Side_Picture_true.png"
 		}
+		spriteType = {
+			name = "GFX_LIB_Side_Picture"
+			textureFile = "gfx/welcome/Side_Picture/LIB_Side_Picture.png"
+		}
 		#通用
 		spriteType = {
 			name = "GFX_Generic_Side_Picture"

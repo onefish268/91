@@ -31,6 +31,38 @@ on_actions = {
         }
     }
 }
+on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = { tag = LIB }     
+                    ROOT = { tag = YSS }   
+                }
+                LIB = {
+					white_peace = {
+						tag = YSS
+						message = LIB_win_YSS
+					}
+					puppet = {
+                target = YSS
+                end_wars = yes
+            }
+				}
+				YSS = {
+				add_ideas = LIB_Liberation_ransom
+				promote_character = {
+		character = YSS_1_44
+		ideology = Military_socialism
+		}
+		set_party_name = {
+				ideology = communism
+				long_name = "八云红系"
+				name = "八云红系"
+			}
+				}
+			}
+		}
+	}
 	on_daily_FRA = {
     effect = {
         FRA = {

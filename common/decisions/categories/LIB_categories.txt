@@ -9,65 +9,75 @@ LIB_debug = {
 
 LIB_gongye_category = {
     picture = GFX_decision_cat_default
-    priority = 90
+	allowed = { original_tag = LIB }
+    priority = 950
     visible = {
         has_country_flag = LIB_open_gongye_flag
-        tag = LIB
     }
 }
 
 LIB_junshi_category = {
     picture = GFX_decision_cat_default
-    priority = 80
+	allowed = { original_tag = LIB }
+    priority = 940
     visible = {
         has_country_flag = LIB_open_junshi_flag
-        tag = LIB   
     }
 }
-
+LIB_xijian_category = {
+	desc = LIB_xijian_category_desc
+    picture = GFX_decision_cat_default
+	allowed = { original_tag = LIB }
+    priority = 900
+    visible = {
+        has_country_flag = LIB_open_xijian_flag
+		has_war_with = DVL
+    }
+	scripted_gui = LIB_bba_industery_decisions_ui
+}
 LIB_fangong_category = {
     picture = GFX_decision_cat_default
-    priority = 70
+	allowed = { original_tag = LIB }
+    priority = 800
     visible = {
         has_country_flag = LIB_open_fangong_flag
-        tag = LIB   
     }
 }
 
 LIB_ziyuan_category = {
     picture = GFX_decision_cat_default
-    priority = 60
+	allowed = { original_tag = LIB }
+    priority = 700
     visible = {
-        has_completed_focus = LIB_new_focus_40
-        tag = LIB   
+        has_country_flag = LIB_open_ziyuan_flag
     }
 }
 
 LIB_mimi_category = {
     picture = GFX_decision_cat_default
+	allowed = { original_tag = LIB }
     priority = 50
     visible = {
-        has_country_flag = LIB_open_mimi_flag
-        tag = LIB   
+        has_country_flag = LIB_open_mimi_flag  
     }
 }
 
 LIB_wuhui_category = {
     picture = GFX_decision_cat_default
+	allowed = { original_tag = LIB }
     priority = 40
     visible = {
         has_country_flag = LIB_open_wuhui_flag
-        tag = LIB   
     }
 }
-FREE_FRA_Return_from_Hell = {
-	priority = 200
-	icon = generic_formable_nations
+FREE_FRA_Return_from_Hell_category = {
+	priority = 999
+	picture = generic_formable_nations
 	allowed = {
 		tag = LIB
 	}
 	visible = {
-			has_completed_focus = LIB_new_focus_33
+			has_country_flag = LIB_open_free_flag
 	}
 	on_map_area = {
 		name = control_of_these_states_is_required_to_form_the_nation

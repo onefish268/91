@@ -1,0 +1,8 @@
+########### LIB
+sound =
+{
+	name = "朋友的酒"
+	file = "LIB/Friends_wine.wav"
+	always_load = no
+}
+

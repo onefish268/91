@@ -5,6 +5,14 @@
 		trigger = { check_variable = { Country_History_Page_Var = 1 } }
 		localization_key = LIB_Country_History_Page_01
 	}
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 2 } }
+		localization_key = LIB_Country_History_Page_02
+	}
+	text = {
+		trigger = { check_variable = { Country_History_Page_Var = 3 } }
+		localization_key = LIB_Country_History_Page_03
+	}
 	}
 	#战时内阁总辞职
 	defined_text = {
@@ -105,4 +113,111 @@
 		localization_key = LIB_gongye_category_name1
 	}
 	}
+	#减少造价
+	defined_text = {
+		name = GET_LIB_infantry_cost_reduction
+		text = {
+			trigger = {
+				has_idea = LIB_infantry_cost_reduction
+			}
+			localization_key = LIB_infantry_cost_reduction_effect
+		}
+		text = {
+			localization_key = empty_modifier
+		}
+	}
+	defined_text = {
+		name = GET_small_airframe_cost_reduction
+		text = {
+			trigger = {
+				has_idea = LIB_small_airframe_cost_reduction
+				has_idea = LIB_ccqqczf_idea
+			}
+			localization_key = LIB_small_airframe_cost_reduction_effect1
+		}
+		text = {
+			trigger = {
+				has_idea = LIB_ccqqczf_idea
+			}
+			localization_key = LIB_small_airframe_cost_reduction_effect2
+		}
+		text = {
+			trigger = {
+				has_idea = LIB_small_airframe_cost_reduction
+			}
+			localization_key = LIB_small_airframe_cost_reduction_effect3
+		}
+		text = {
+			localization_key = empty_modifier
+		}
+	}
+
+	defined_text = {
+		name = GET_LIB_submarine_cost_reduction
+		text = {
+			trigger = {
+				has_idea = LIB_submarine_cost_reduction
+			}
+			localization_key = LIB_submarine_cost_reduction_effect
+		}
+		text = {
+			localization_key = empty_modifier
+		}
+	}
+	defined_text = {
+		name = GET_LIB_ccqqczf
+		text = {
+			trigger = {
+				has_idea = LIB_ccqqczf_idea
+			}
+			localization_key = LIB_ccqqczf_effect
+		}
+		text = {
+			localization_key = empty_modifier
+		}
+	}
+	defined_text = {
+		name = GET_LIB_super_heavy_artillery_cost_reduction
+		text = {
+			trigger = {
+				has_idea = LIB_super_heavy_artillery_cost_reduction
+			}
+			localization_key = LIB_super_heavy_artillery_cost_reduction_effect
+		}
+		text = {
+			localization_key = empty_modifier
+		}
+	}
+	defined_text = {
+		name = Get_fangong_name
+		text = {
+			trigger = {
+				has_country_flag = LIB_xiji_flag1
+			}
+			localization_key = LIB_fangong_name2
+		}
+		text = {
+			trigger = {
+				has_country_flag = LIB_xiji_flag2
+			}
+			localization_key = LIB_fangong_name3
+		}
+		text = {
+			trigger = {
+				has_country_flag = LIB_xiji_flag3
+			}
+			localization_key = LIB_fangong_name4
+		}
+		text = {
+			trigger = {
+				has_country_flag = LIB_xiji_flag4
+			}
+			localization_key = LIB_fangong_name5
+		}
+		text = {
+			localization_key = LIB_fangong_name1
+		}
+	}
+
+
 	

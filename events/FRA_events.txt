@@ -64,12 +64,15 @@ country_event = { ####对殖民地的紧急措施
 				limit = {
         	        is_subject_of = FRA
            	 		is_puppet = yes
+			NOT = {
+					tag = LIB
+				}
             	}
             		# 为每个傀儡国触发事件
-            		#country_event = {
-					#	id = SA_FRA_event.00102
-					#	days = 3
-					#}
+            		country_event = {
+						id = SA_FRA_event.00102
+						days = 3
+					}
         	}
 		}
     }

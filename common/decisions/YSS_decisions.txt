@@ -2654,6 +2654,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_145
 		}
 		visible = {
 		}
@@ -2669,8 +2670,8 @@ YSS_xcgdb = {
 		modifier = {
 			army_attack_factor = 0.2
 			army_morale_factor = 0.15
-			army_org_factor = 0.25
-			breakthrough_factor = 0.4
+			army_org_factor = 0.15
+			breakthrough_factor = 0.2
 		}
 		remove_effect = {
 			set_variable = {
@@ -2691,6 +2692,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_42
 		}
 		visible = {
 		}
@@ -2704,11 +2706,11 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			global_building_slots_factor = 0.25
+			global_building_slots_factor = 0.15
 			industrial_capacity_factory = 0.1
-			production_lack_of_resource_penalty_factor = -0.65
-			production_speed_buildings_factor = 0.25
-			industrial_factory_donations = 5
+			production_lack_of_resource_penalty_factor = -0.45
+			production_speed_buildings_factor = 0.15
+			industrial_factory_donations = 2
 		}
 		remove_effect = {
 			set_variable = {
@@ -2729,6 +2731,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_154
 		}
 		visible = {
 		}
@@ -2742,8 +2745,8 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			industrial_capacity_dockyard = 0.6
-			consumer_goods_expected_value = -0.5
+			industrial_capacity_dockyard = 0.15
+			consumer_goods_expected_value = -0.15
 		}
 		remove_effect = {
 			set_variable = {
@@ -2764,6 +2767,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_92
 		}
 		visible = {
 		}
@@ -2778,9 +2782,9 @@ YSS_xcgdb = {
 		}
 		modifier = {
 			communism_drift = 0.07
-			opinion_gain_monthly_same_ideology_factor = 0.3
-			party_popularity_stability_factor = 1
-			political_power_factor = 0.25
+			opinion_gain_monthly_same_ideology_factor = 0.15
+			party_popularity_stability_factor = 0.15
+			political_power_factor = 0.15
 			stability_weekly_factor = 0.01
 		}
 		remove_effect = {
@@ -2802,6 +2806,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_169
 		}
 		visible = {
 		}
@@ -2816,10 +2821,10 @@ YSS_xcgdb = {
 		}
 		modifier = {
 			air_ace_generation_chance_factor = 1
-			air_advisor_cost_factor = -0.9
-			air_home_defence_factor = 0.7
+			air_advisor_cost_factor = -0.25
+			air_home_defence_factor = 0.15
 			research_speed_factor = 0.15
-			sp_air_jet_engine_speed_factor = 0.45
+			sp_air_jet_engine_speed_factor = 0.25
 		}
 		remove_effect = {
 			set_variable = {
@@ -2840,6 +2845,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_45
 		}
 		visible = {
 		}
@@ -2854,10 +2860,10 @@ YSS_xcgdb = {
 		}
 		modifier = {
 			compliance_gain = 0.05
-			consumer_goods_factor = -0.35
-			line_change_production_efficiency_factor = 0.55
-			stability_weekly_factor = 0.4
-			war_support_weekly_factor = 0.4
+			consumer_goods_factor = -0.15
+			line_change_production_efficiency_factor = 0.15
+			stability_weekly_factor = 0.1
+			war_support_weekly_factor = 0.1
 		}
 		remove_effect = {
 			set_variable = {
@@ -2878,6 +2884,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_13
 		}
 		visible = {
 		}
@@ -2891,11 +2898,11 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			enemy_operative_capture_chance_factor = 0.5
-			industrial_capacity_factory_powered = 0.35
-			production_speed_buildings_powered_factor = 0.35
+			enemy_operative_capture_chance_factor = 0.15
+			industrial_capacity_factory_powered = 0.15
+			production_speed_buildings_powered_factor = 0.15
 			surrender_limit = 1
-			weekly_manpower = 8000
+			weekly_manpower = 1000
 		}
 		remove_effect = {
 			set_variable = {
@@ -2916,6 +2923,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_42
 		}
 		visible = {
 		}
@@ -2929,7 +2937,7 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			research_speed_factor = 0.45
+			research_speed_factor = 0.25
 			special_project_speed_factor = 0.6
 			sp_nuclear_reactor_speed_factor = 0.4
 		}
@@ -2952,6 +2960,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_109
 		}
 		visible = {
 		}
@@ -2965,11 +2974,11 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			army_armor_attack_factor = 0.3
-			army_artillery_attack_factor = 0.3
-			army_infantry_attack_factor = 0.3
+			army_armor_attack_factor = 0.15
+			army_artillery_attack_factor = 0.15
+			army_infantry_attack_factor = 0.15
 			max_planning_factor = 0.15
-			army_speed_factor = 0.5
+			army_speed_factor = 0.1
 		}
 		remove_effect = {
 			set_variable = {
@@ -2990,6 +2999,7 @@ YSS_xcgdb = {
 				tooltip = EMPTY_SPARE
 				YSS_propaganda_poster_slot_available = yes
 			}
+			has_completed_focus = YSS_focus_64
 		}
 		visible = {
 		}
@@ -3003,10 +3013,10 @@ YSS_xcgdb = {
 			YSS_set_pubilcity_slot = yes
 		}
 		modifier = {
-			global_building_slots_factor = 0.35
+			global_building_slots_factor = 0.15
 			industrial_capacity_factory = 0.25
-			production_factory_efficiency_gain_factor = 0.6
-			production_factory_max_efficiency_factor = 0.6
+			production_factory_efficiency_gain_factor = 0.2
+			production_factory_max_efficiency_factor = 0.2
 		}
 		remove_effect = {
 			set_variable = {

@@ -417,9 +417,13 @@ defined_text = {
         trigger = { tag = PAQ }
         localization_key = GFX_PAQ_Side_Picture
     }   
-	text = {
+    text = {
         trigger = { tag = MON }
         localization_key = GFX_MON_Side_Picture
+    }
+    text = {
+        trigger = { tag = LIB }
+        localization_key = GFX_LIB_Side_Picture
     }
     text = {
         trigger = { tag = PA1 }
@@ -1300,6 +1304,10 @@ defined_text = {
         trigger = { tag = PA1 }
         localization_key = PA1_his_page_02_title
     } 
+     text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_his_page_02_title
+    } 
 }
 
 defined_text = {
@@ -1456,6 +1464,10 @@ defined_text = {
     text = {
         trigger = { tag = PA1 }
         localization_key = PA1_his_page_03_title
+    } 
+     text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_his_page_03_title
     } 
 }
 

@@ -14,13 +14,14 @@ state = {
             modifier = YSS_province_kaifa_1
         }
 		add_to_array = { state_victory_points = 1984 }
-		victory_points = { 1984 1 }
+		victory_points = { 1984 15 }
 
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
 		}
+		victory_points = { 2009 11 }
 	}
 	resources = {
 		aluminium = 25

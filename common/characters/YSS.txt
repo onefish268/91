@@ -315,7 +315,7 @@ characters = {
 			traits = {
 				devoted_communist
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_16
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -334,7 +334,7 @@ characters = {
 			traits = {
 				HUN_the_old_warden
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_17
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -353,7 +353,7 @@ characters = {
 			traits = {
 				headstrong
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_18
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -372,7 +372,7 @@ characters = {
 			traits = {
 				GER_stern_communist
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_19
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -391,7 +391,7 @@ characters = {
 			traits = {
 				indomitable_perseverance
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_20
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -410,7 +410,7 @@ characters = {
 			traits = {
 				SND_unreliable_opportunist
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_21
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -429,7 +429,7 @@ characters = {
 			traits = {
 				silent_mule
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_22
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -448,7 +448,7 @@ characters = {
 			traits = {
 				NOR_supplies_commisioner
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_23
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -467,7 +467,7 @@ characters = {
 			traits = {
 				BEL_man_with_a_plan
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_24
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -486,7 +486,7 @@ characters = {
 			traits = {
 				JAP_financial_genius
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_25
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -505,7 +505,7 @@ characters = {
 			traits = {
 				silent_workhorse
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_26
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -524,7 +524,7 @@ characters = {
 			traits = {
 				NOR_callous_engineer
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_27
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -543,7 +543,7 @@ characters = {
 			traits = {
 				rebellious_educator
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_28
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -562,7 +562,7 @@ characters = {
 			traits = {
 				head_of_the_nkvd_beriya_no_paranoia
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_29
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -581,7 +581,7 @@ characters = {
 			traits = {
 				RAJ_GOE_cultural_icon
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_30
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -600,7 +600,7 @@ characters = {
 			traits = {
 				PRC_charming_revoluionary
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_31
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -619,7 +619,7 @@ characters = {
 			traits = {
 				JUNO_popular_among_the_people
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_32
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -638,7 +638,7 @@ characters = {
 			traits = {
 				AST_a_sound_voice_trait
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_33
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -657,7 +657,7 @@ characters = {
 			traits = {
 				SWE_solidified_mandate_upgraded
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_34
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -676,7 +676,7 @@ characters = {
 			traits = {
 				compassionate_gentleman
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_35
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -695,7 +695,7 @@ characters = {
 			traits = {
 				appeasing_technocrat
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_36
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -714,7 +714,7 @@ characters = {
 			traits = {
 				la_pasionaria
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_37
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -733,7 +733,7 @@ characters = {
 			traits = {
 				silent_workhorse
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_38
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -752,7 +752,7 @@ characters = {
 			traits = {
 				AST_a_sound_voice_trait
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_39
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -771,7 +771,7 @@ characters = {
 			traits = {
 				SIA_ananda_industry_3
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_40
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -790,7 +790,7 @@ characters = {
 			traits = {
 				BRA_modernist_architect
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_41
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -809,7 +809,7 @@ characters = {
 			traits = {
 				SIA_ananda_administrator_1
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_42
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -828,7 +828,7 @@ characters = {
 			traits = {
 				SWE_respectful_occupier
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_43
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -847,7 +847,7 @@ characters = {
 			traits = {
 				HUN_internationalist_marxist
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_44
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -866,7 +866,7 @@ characters = {
 			traits = {
 				JAP_modernist_architect
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_45
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -886,7 +886,7 @@ characters = {
 				nuclear_enthusiast
 				jiasu_trait
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_46
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -905,7 +905,7 @@ characters = {
 			traits = {
 				SWI_commander_in_chief
 			}
-			idea_token = YSS_1_15
+			idea_token = YSS_1_47
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -1129,7 +1129,7 @@ characters = {
 			traits = {
 				army_chief_reform_2
 			}
-			idea_token = YSS_3_5
+			idea_token = YSS_3_6
 			slot = army_chief
 			cost = 150
 			ai_will_do = {
@@ -1551,7 +1551,7 @@ characters = {
 			traits = {
 				army_armored_3
 			}
-			idea_token = YSS_6_9
+			idea_token = YSS_6_10
 			slot = high_command
 			cost = 150
 			ai_will_do = {
@@ -1583,7 +1583,7 @@ characters = {
 			traits = {
 				army_artillery_3
 			}
-			idea_token = YSS_6_9
+			idea_token = YSS_6_11
 			slot = high_command
 			cost = 150
 			ai_will_do = {
