@@ -1920,7 +1920,7 @@ country_event = {
 		check_variable = {
             var = YSS_jindu_power_value
             value = 100
-            compare = equals
+            compare = greater_than_or_equals
         }
 	}
 	immediate = {
@@ -2007,7 +2007,7 @@ country_event = {
 		check_variable = {
             var = YSS_liedu_mind_value
             value = 0
-            compare = equals
+            compare = less_than_or_equals
         }
 	}
 	immediate = {
@@ -2047,7 +2047,7 @@ country_event = {
 		check_variable = {
             var = YSS_liedu_mind_value
             value = 100
-            compare = equals
+            compare = greater_than_or_equals
         }
 	}
 	immediate = {

@@ -614,8 +614,8 @@ ideas = {
 			}
 
 			modifier = {
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
+				ai_call_ally_desire_factor = -10000
+				ai_join_ally_desire_factor = -10000
 			}
 		}
 		#圣杯的制裁

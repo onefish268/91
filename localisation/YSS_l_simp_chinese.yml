@@ -34,11 +34,19 @@
  YSS_province_kaifa_3: "地方开发程度等级-§C中级§!"
  YSS_province_kaifa_4: "地方开发程度等级-§G高级§!"
  YSS_province_kaifa_5: "地方开发程度等级-§O最高级§!"
-#省份名称
+#省份
  STATE_1233: "苏丹大区"
  STATE_1232: "中央大区"
  STATE_1234: "北索马里特别区"
  STATE_1235: "索马里大区"
+#城市名称
+ VICTORY_POINTS_13554: "阿克苏姆"
+ VICTORY_POINTS_10775: "千歌特马"
+ VICTORY_POINTS_2009: "阿姆萨拉特"
+ VICTORY_POINTS_13496: "耶什美理"
+ VICTORY_POINTS_7912: "叶诗谷德"
+ VICTORY_POINTS_2088: "廿九城"
+ VICTORY_POINTS_8133: "凯克贝萨特"
 #城市介绍
  Adorable_heart_city_story_title_ydsybb: "鲜花之都-亚的斯亚贝巴"
  Adorable_heart_city_story_title_hegs: "红海之滨-哈尔格萨"
