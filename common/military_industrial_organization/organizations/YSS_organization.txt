@@ -6,7 +6,7 @@ YSS_bbtank = {#步兵坦克
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_133
 	}
 }
 
@@ -18,7 +18,7 @@ YSS_air = {#飞机
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_162
 	}
 }
 
@@ -30,7 +30,6 @@ YSS_artillery_org = {#火炮
 		tag = YSS
 	}
 	available = {
-		
 	}
 }
 
@@ -42,7 +41,7 @@ YSS_assault_guns = {#自行火炮
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_134
 	}
 }
 
@@ -54,7 +53,7 @@ YSS_battle_line_ship = {#大船
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_154
 	}
 }
 
@@ -66,7 +65,7 @@ YSS_cas_aircraft = {#近距支援机
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_168
 	}
 }
 
@@ -78,7 +77,7 @@ YSS_escort_ship = {#护卫舰
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_150
 	}
 }
 
@@ -102,7 +101,7 @@ YSS_light_aircraft = {#轻型飞机
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_168
 	}
 }
 
@@ -114,7 +113,7 @@ YSS_motorized = {#卡车
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_144
 	}
 }
 
@@ -150,7 +149,7 @@ YSS_tank = {#标准化坦克
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_133
 	}
 }
 
@@ -162,7 +161,7 @@ YSS_refurbishment_plant = {#拖拉机装配厂
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_54
 	}
 }
 
@@ -174,6 +173,6 @@ YSS_train = {#火车
 		tag = YSS
 	}
 	available = {
-		
+		has_completed_focus = YSS_focus_42
 	}
 }
