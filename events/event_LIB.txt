@@ -946,12 +946,30 @@ country_event = {
 		character = FRA_Kasen
 		ideology = Hakureiism
 		}
+		if = {
+			limit = {has_country_flag = LIB_remi_in_power_flag }
+			set_party_name = {
+				ideology = communism
+				long_name = "蒙蕾米莉亚陛下赐福的贤者议会-华扇系"
+				name = "贤者议会-华扇系"
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_fran_in_power_flag }
+			set_party_name = {
+				ideology = communism
+				long_name = "蒙芙兰朵露陛下赐福的贤者议会-华扇系"
+				name = "贤者议会-月都系"
+			}
+			}
+			else = {
 		set_party_name = {
 				ideology = communism
 				long_name = "贤者议会-华扇系"
 				name = "贤者议会-华扇系"
 			}
 	}
+}
 }
 
 country_event = {
@@ -962,37 +980,72 @@ country_event = {
 	option = {
 		name = LIB_lw.13.a
 		COG = {
-		add_ideas = 
+		add_ideas = LIB_Liberation_ransom
 		}
 	}
 	option = {
 		name = LIB_lw.13.b
-		custom_effect_tooltip = LIB_lw.12.a_tt
 		LIB = { annex_country = { target = COG transfer_troops = yes } }
+		every_state = {
+                limit = {
+                    is_core_of = COG
+                }
+                add_core_of = LIB
+				}
+		
 	}
 	option = {
 		name = LIB_lw.13.c
-		custom_effect_tooltip = LIB_lw.12.a_tt
 		LIB = { annex_country = { target = COG transfer_troops = yes } }
+		every_state = {
+                limit = {
+                    is_core_of = KMK
+                }
+                add_compliance = 85
+				}
 	}
 	option = {
 		name = LIB_lw.13.d
-		custom_effect_tooltip = LIB_lw.12.a_tt
 		LIB = {
 		FRA_Chen = { set_nationality = COG }
 		}
-		
 		COG = {
+		add_ideas = LIB_Liberation_ransom
 		promote_character = {
 		character = FRA_Chen
 		ideology = autocracy_subideology
 		}
-		set_party_name = {
-				ideology = neutrality
+		}
+		if = {
+			limit = {has_country_flag = LIB_remi_in_power_flag }
+			COG = {
+			set_party_name = {
+				ideology = communism
+				long_name = "蒙蕾米莉亚陛下赐福的贤者议会-橙系"
+				name = "贤者议会-橙系"
+			}
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_fran_in_power_flag }
+			COG = {
+			set_party_name = {
+				ideology = communism
+				long_name = "蒙芙兰朵露陛下赐福的贤者议会-橙系"
+				name = "贤者议会-橙系"
+			}
+			}
+			}
+			else = {
+			COG = {
+			set_party_name = {
+				ideology = communism
 				long_name = "贤者议会-橙系"
 				name = "贤者议会-橙系"
 			}
 			}
+	}
+		
 	}
 }
 
@@ -2026,7 +2079,98 @@ country_event = {
 	}
 	}
 
+#新闻
+country_event = {
+	id = LIB_news.1
+	title = LIB_news.1.t
+	desc = LIB_news.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_news.1.a
+		trigger = {
+		TAG = LIB
+		}
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	option = {
+		name = LIB_news.1.b
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	option = {
+		name = LIB_news.1.c
+		trigger = {
+		OR = {
+		TAG = DVL
+		is_ally_with = DVL
+		}
+		
+		}
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	
+	}
+	
+	country_event = {
+	id = LIB_news.2
+	title = LIB_news.2.t
+	desc = LIB_news.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_news.2.a
+		trigger = {
+		TAG = LIB
+		}
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	option = {
+		name = LIB_news.2.b
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	option = {
+		name = LIB_news.2.c
+		trigger = {
+		OR = {
+		TAG = DVL
+		is_ally_with = DVL
+		}
+		
+		}
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 168 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	
+	}
 
-
-
-
+country_event = {
+	id = LIB_news.3
+	title = LIB_news.3.t
+	desc = LIB_news.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_news.3.a
+	hidden_effect = {
+	set_variable = { adorable_heart_super_event_var = 169 } 
+	adorable_heart_fire_super_event = yes 
+	}
+	}
+	}
