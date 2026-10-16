@@ -2661,11 +2661,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = -0.05
+			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
 				YSS_red_army_army_strength_factor = -0.05
 				tooltip = army_strength_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_26
 	    }
 	}
 	focus = {
@@ -2681,11 +2681,11 @@ focus_tree = {
 			focus = YSS_focus_117
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
 			hidden_effect = {
 				country_event = {
 				    id = YSS.43
@@ -2708,6 +2708,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.05
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_against_major_factor = 0.05
 				tooltip = army_attack_against_major_factor_tt
@@ -2728,7 +2729,6 @@ focus_tree = {
 				YSS_max_planning_factor = 0.05
 				tooltip = max_planning_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
 		}
 	}
 	focus = {
@@ -2749,11 +2749,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = -0.05
+			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
 				YSS_red_army_army_strength_factor = -0.05
 				tooltip = army_strength_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_26
 	    }
 	}
 	focus = {
@@ -2774,6 +2774,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = -0.05
+			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
 				YSS_army_morale_factor = -0.05
 				tooltip = army_morale_factor_tt
@@ -2790,7 +2791,6 @@ focus_tree = {
 				YSS_training_time_factor = 0.1
 				tooltip = training_time_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_26
 	    }
 	}
 	focus = {
@@ -2809,11 +2809,11 @@ focus_tree = {
 			focus = YSS_focus_125
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_training_time_factor = -0.15
 				tooltip = training_time_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
 		}
 	}
 	focus = {
@@ -2829,6 +2829,7 @@ focus_tree = {
 			focus = YSS_focus_126
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
@@ -2843,7 +2844,7 @@ focus_tree = {
 					days = 5
 			    }
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -2860,6 +2861,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_manpower = 30000
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
@@ -2872,7 +2874,7 @@ focus_tree = {
 				YSS_red_army_army_defence_factor = 0.1
 				tooltip = army_defence_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -2920,6 +2922,7 @@ focus_tree = {
 			focus = YSS_focus_127
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_strength_factor = 0.1
 				tooltip = army_strength_factor_tt
@@ -2928,7 +2931,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -2944,6 +2947,7 @@ focus_tree = {
 			focus = YSS_focus_127
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
@@ -2956,7 +2960,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -2973,6 +2977,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 50
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
@@ -2991,7 +2996,7 @@ focus_tree = {
 					days = 5
 			    }
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3007,6 +3012,7 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
 				tooltip = army_armor_speed_factor_tt
@@ -3027,7 +3033,7 @@ focus_tree = {
 				YSS_red_army_armor_defence_factor = 0.1
 				tooltip = army_armor_defence_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 			custom_effect_tooltip = YSS_tootip_36
 			custom_effect_tooltip = YSS_tootip_44
 		}
@@ -3045,6 +3051,7 @@ focus_tree = {
 			focus = YSS_focus_133
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
@@ -3057,7 +3064,7 @@ focus_tree = {
 				YSS_red_army_supply_consumption_factor = -0.1
 				tooltip = supply_consumption_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 			custom_effect_tooltip = YSS_tootip_38
 		}
 	}
@@ -3074,6 +3081,7 @@ focus_tree = {
 			focus = YSS_focus_130
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_speed_factor = 0.05
 				tooltip = army_attack_speed_factor_tt
@@ -3086,7 +3094,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3102,6 +3110,7 @@ focus_tree = {
 			focus = YSS_focus_131
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_strength_factor = 0.05
 				tooltip = army_strength_factor_tt
@@ -3110,7 +3119,7 @@ focus_tree = {
 				YSS_army_org_factor = 0.1
 				tooltip = army_org_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3126,6 +3135,7 @@ focus_tree = {
 			focus = YSS_focus_132
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
@@ -3134,7 +3144,7 @@ focus_tree = {
 				YSS_max_planning_factor = 0.15
 				tooltip = max_planning_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3150,6 +3160,7 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_armor_attack_factor = 0.1
 				tooltip = army_armor_attack_factor_tt
@@ -3166,7 +3177,7 @@ focus_tree = {
 				YSS_red_army_motorized_attack_factor = 0.1
 				tooltip = motorized_attack_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3185,6 +3196,7 @@ focus_tree = {
             add_tech_bonus = { bonus = 0.5 uses = 1 category = radar_tech }
             add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
             add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.05
 				tooltip = army_armor_speed_factor_tt
@@ -3230,7 +3242,7 @@ focus_tree = {
 				ahead_reduction = 2
 				category = artillery
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3246,6 +3258,7 @@ focus_tree = {
 			focus = YSS_focus_135
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_speed_factor = 0.05
 				tooltip = army_attack_speed_factor_tt
@@ -3258,7 +3271,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3274,6 +3287,7 @@ focus_tree = {
 			focus = YSS_focus_136
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_speed_factor = 0.1
 				tooltip = army_attack_speed_factor_tt
@@ -3286,7 +3300,7 @@ focus_tree = {
 				YSS_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3303,6 +3317,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 50
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_against_major_factor = 0.05
 				tooltip = army_attack_against_major_factor_tt
@@ -3323,7 +3338,7 @@ focus_tree = {
 				YSS_training_time_factor = -0.1
 				tooltip = training_time_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3344,6 +3359,7 @@ focus_tree = {
                 uses = 1
                 category = cat_mechanized_equipment
             }
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
 				tooltip = army_armor_speed_factor_tt
@@ -3364,7 +3380,7 @@ focus_tree = {
 				YSS_red_army_armor_defence_factor = 0.1
 				tooltip = army_armor_defence_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 		}
 	}
 	focus = {
@@ -3380,11 +3396,12 @@ focus_tree = {
 			focus = YSS_focus_139
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_supply_consumption_factor = -0.25
 				tooltip = supply_consumption_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 			custom_effect_tooltip = YSS_tootip_43
 			hidden_effect = {
 				country_event = {
@@ -3419,6 +3436,7 @@ focus_tree = {
 			focus = YSS_focus_144
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_attack_against_major_factor = 0.05
 				tooltip = army_attack_against_major_factor_tt
@@ -3435,7 +3453,7 @@ focus_tree = {
 				YSS_red_army_army_attack_factor = 0.1
 				tooltip = army_attack_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_27
+			
 			hidden_effect = {
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_red_army_complet
@@ -3536,11 +3554,12 @@ focus_tree = {
 			focus = YSS_focus_149
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 			custom_effect_tooltip = YSS_tootip_41
 			hidden_effect = {
 				country_event = {
@@ -3563,6 +3582,7 @@ focus_tree = {
 			focus = YSS_focus_149
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_navy_fighter_sortie_efficiency = 0.05
 				tooltip = fighter_sortie_efficiency_tt
@@ -3571,7 +3591,7 @@ focus_tree = {
 				YSS_navy_naval_hit_chance = 0.05
 				tooltip = naval_hit_chance_tt
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 		}
 	}
 	focus = {
@@ -3587,6 +3607,7 @@ focus_tree = {
 			focus = YSS_focus_150
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
@@ -3599,7 +3620,7 @@ focus_tree = {
 				YSS_production_cost_max_ship_hull_cruiser = -500
 				tooltip = production_cost_max_ship_hull_cruiser_tt
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 		}
 	}
 	focus = {
@@ -3615,6 +3636,7 @@ focus_tree = {
 			focus = YSS_focus_151
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_navy_convoy_raiding_efficiency_factor = 0.05
 				tooltip = convoy_raiding_efficiency_factor_tt
@@ -3633,7 +3655,7 @@ focus_tree = {
 					days = 5
 			    }
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 		}
 	}
 	focus = {
@@ -3649,6 +3671,7 @@ focus_tree = {
 			focus = YSS_focus_152
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
@@ -3665,7 +3688,7 @@ focus_tree = {
 				YSS_navy_naval_damage_factor = 0.05
 				tooltip = naval_damage_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 			custom_effect_tooltip = YSS_tootip_39
 		}
 	}
@@ -3707,6 +3730,7 @@ focus_tree = {
 			focus = YSS_focus_155
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
@@ -3723,7 +3747,7 @@ focus_tree = {
 				YSS_navy_naval_damage_factor = 0.05
 				tooltip = naval_damage_factor_tt
 			}
-			custom_effect_tooltip = YSS_tootip_23
+			
 			hidden_effect = {
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_hj_complet
