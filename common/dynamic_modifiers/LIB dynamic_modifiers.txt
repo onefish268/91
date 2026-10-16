@@ -6,7 +6,7 @@ LIB_hxxfwj_idea = {
 	enable = {
 		always = yes
 	}
-	icon = lib14
+	icon = GFX_idea_lib_14
 	supply_consumption_factor = LIB_supply_consumption_factor
 	land_reinforce_rate = LIB_land_reinforce_rate
 	rangers_special_forces_contribution_factor = LIB_rangers_special_forces_contribution_factor
@@ -60,7 +60,7 @@ LIB_gjdd_idea = {
 	enable = {
 		always = yes
 	}
-	icon = lib3
+	icon = GFX_idea_lib_3
 	civilian_factory_use = LIB_civilian_factory_use
 	production_lack_of_resource_penalty_factor = LIB_production_lack_of_resource_penalty_factor #战略资源缺乏惩罚
 	consumer_goods_factor = LIB_economy_committee_consumer_goods_factor   ##生活消费品工厂系数
@@ -86,7 +86,7 @@ LIB_pxzc1_idea = {
 	enable = {
 		always = yes
 	}
-    icon = lib6
+    icon = GFX_idea_lib_6
     party_popularity_stability_factor = -1.0
     stability_factor = 0.595
     # 法西斯主义支持率驱动的加成
@@ -128,7 +128,7 @@ LIB_pxzc2_idea = {
 	enable = {
 		always = yes
 	}
-	icon = lib6
+	icon = GFX_idea_lib_6
 	party_popularity_stability_factor = -1.0#禁用党派支持率
 	stability_factor = 0.595#固定稳定度支持
 	arms_factory_build_speed_factor = {##建设速度

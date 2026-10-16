@@ -3,7 +3,7 @@ ideas = {
 		#对外投资合作局
 		LIB_dwtzhzj = {
 			removal_cost = -1
-			picture = lib9
+			picture = lib_9
 			modifier = {
 				trade_opinion_factor = 0.25
 				opinion_gain_monthly_factor = 0.15
@@ -14,7 +14,7 @@ ideas = {
 		}
 		LIB_dwtzhzj2 = {
 			removal_cost = -1
-			picture = lib9
+			picture = lib_9
 			modifier = {
 				trade_opinion_factor = 0.25
 				opinion_gain_monthly_factor = 0.15
@@ -29,13 +29,11 @@ ideas = {
 		#兽人族群问题
 		LIB_srzqwt = {
 			removal_cost = -1
-			picture = lib8
+			picture = lib_8
 			modifier = {
 				conscription_factor = -0.15
 			}
 		}
-		# 1.步枪生产花费 -10%
-		
 		#符卡精神
 		LIB_fkjs = {
             picture = GFX_idea_generic_army_spirit
@@ -52,7 +50,7 @@ ideas = {
 		#航运管理局
 		LIB_hyglj = {
             removal_cost = -1
-    		picture = lib10
+    		picture = lib_10
     		modifier = {
 				production_lack_of_resource_penalty_factor = -0.2
                 consumer_goods_factor = -0.10
@@ -60,7 +58,6 @@ ideas = {
 				 
 		}
 		equipment_bonus = {
-				 name = LIB_convoy_cost_reduction_bonus
                     convoy = {
                         build_cost_ic = 0.25   # 运输船造价 +25%
                         instant = yes           # 立即生效
@@ -69,7 +66,7 @@ ideas = {
 		}
 		#行政指导
 		LIB_zsdc = {
-            picture = lib13
+            picture = lib_13
             allowed = { original_tag = LIB }
             removable = yes
             
@@ -86,7 +83,7 @@ ideas = {
 		#抗议
 		LIB_ky1 = {
             removal_cost = -1
-    		picture = lib2
+    		picture = lib_2
     		modifier = {
                 stability = -0.1             
                 political_power_cost = 0.15            # 政治点消耗
@@ -96,7 +93,7 @@ ideas = {
         }
 		LIB_ky2 = {
             removal_cost = -1
-    		picture = lib2
+    		picture = lib_2
     		modifier = {
                 hcp_income_factor_monthly = -0.10        # 金钱收入
                 political_power_cost = 0.05             # 政治点消耗
@@ -106,7 +103,7 @@ ideas = {
         }
 		LIB_ky3 = {
             removal_cost = -1
-    		picture = lib2
+    		picture = lib_2
     		modifier = {
                 industrial_capacity_factory_factory = 0.10                     
 				line_change_production_efficiency_factor = 0.10        
@@ -119,7 +116,7 @@ ideas = {
 		#数学指导投资
 		LIB_sxzdtz = {
             removal_cost = -1
-    		picture = lib6
+    		picture = lib_6
     		modifier = {
 			# 生产受战略资源缺乏惩罚 -20%
                 production_lack_of_resource_penalty_factor = -0.2
@@ -133,7 +130,7 @@ ideas = {
         }
 		LIB_xjkj = {
             removal_cost = -1
-    		picture = lib12
+    		picture = lib_12
 			modifier = {
 			custom_modifier_tooltip = LIB_block_agency_tt
                 agency_upgrade_time = 99.99
@@ -143,7 +140,7 @@ ideas = {
         LIB_navy_air_base_idea = {
             allowed = { always = yes }
             removal_cost = -1
-            picture = lib15
+            picture = lib_15
             modifier = {
 			air_superiority_efficiency = 0.10            # 夺取制空权效率
             air_cas_efficiency = 0.10                    # 近地支援效率
@@ -156,7 +153,7 @@ ideas = {
 		#入侵新游汐叶界
 		LIB_rqxyxyj = {
             removal_cost = -1
-    		picture = lib17
+    		picture = lib_17
     		modifier = {
                 targeted_modifier = {
 				tag = MOR
@@ -168,7 +165,7 @@ ideas = {
 		#入侵利比亚
 		LIB_rqlby = {
             removal_cost = -1
-    		picture = lib17
+    		picture = lib_17
     		modifier = {
                 targeted_modifier = {
 				tag = LBA
@@ -180,7 +177,7 @@ ideas = {
 		#磷灰石进口
 		 LIB_lhsjk = {
             removal_cost = -1
-    		picture = lib16
+    		picture = lib_16
     		available = {
 			NOT = {
 			has_war_with = LIB
