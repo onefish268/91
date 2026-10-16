@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
 
 #伟大战争
 
@@ -910,16 +910,6 @@ l_simp_chinese:
   super_event_167_QUOTE_LOC: "别坐在那哭，起来，去把那些对我们兄弟开火的家伙消灭掉！"
   super_event_167_QUOTE_SOURCE_LOC: "——诺曼·科塔"
   super_event_167_CLOSED_LOC: "来自新大陆"
- #幻想乡败退
-  super_event_168: "幻想乡流亡"
-  super_event_168_QUOTE_LOC: "敌人用强大炮火击败了幻想乡，幻想乡应该用更强的炮火击败她的敌人，这就是天道！"
-  super_event_168_QUOTE_SOURCE_LOC: "——茨木华扇"
-  super_event_168_CLOSED_LOC: "战争尚未结束"
- #幻想乡归来 
-  super_event_169: "幻想乡归来"
-  super_event_169_QUOTE_LOC: "敌人用强大炮火击败了幻想乡，幻想乡应该用更强的炮火击败她的敌人，这就是天道！"
-  super_event_169_QUOTE_SOURCE_LOC: "——茨木华扇"
-  super_event_169_CLOSED_LOC: "战争尚未结束"
 
   AH_debug_se_text: "[adorable_heart_Get_Super_Event_Title]（[?adorable_heart_super_event_var]）"
   adorable_heart_Super_Event_Title: "§b[adorable_heart_Get_Super_Event_Title]§!"
