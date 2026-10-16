@@ -1,0 +1,1050 @@
+music = {
+	name = "super_event_22"
+	file = "das_Deutschlandlied.ogg"
+}
+
+music = {
+	name = "super_event_37"
+	file = "长城谣.ogg"
+}
+
+music = {
+	name = "super_event_40"
+	file = "你若三冬.ogg"
+}
+
+music = {
+	name = "super_event_38"
+	file = "神州万里.ogg"
+}
+
+music = {
+	name = "super_event_39"
+	file = "光耀神州.ogg"
+}
+
+music = {
+	name = "super_event_25"
+	file = "从废墟中崛起.ogg"
+}
+
+music = {
+	name = "super_event_70"
+	file = "马赛曲.ogg"
+}
+
+music = {
+	name = "super_event_68"
+	file = "洋葱之歌.ogg"
+}
+
+music = {
+	name = "super_event_69"
+	file = "洋葱之歌.ogg"
+}
+
+music = {
+	name = "super_event_1"
+	file = "“自新大陆”第四乐章.ogg"
+}
+
+music = {
+	name = "super_event_4"
+	file = "神圣的战争.ogg"
+}
+
+music = {
+	name = "super_event_5"
+	file = "神圣的战争.ogg"
+}
+
+music = {
+	name = "super_event_6"
+	file = "神圣的战争.ogg"
+}
+
+music = {
+	name = "super_event_7"
+	file = "神圣的战争.ogg"
+}
+
+music = {
+	name = "super_event_8"
+	file = "神圣的战争.ogg"
+}
+
+music = {
+	name = "super_event_9"
+	file = "最美好的前程.ogg"
+}
+
+music = {
+	name = "super_event_20"
+	file = "西部森林之歌.ogg"
+}
+
+music = {
+	name = "super_event_21"
+	file = "西部森林之歌.ogg"
+}
+
+music = {
+	name = "super_event_18"
+	file = "EXEC COSMOFLIPS.ogg"
+}
+
+music = {
+	name = "super_event_12"
+	file = "澤野弘之 - UNICORN.ogg"
+}
+
+music = {
+	name = "super_event_13"
+	file = "Sis puella magica!.ogg"
+}
+
+music = {
+	name = "super_event_14"
+	file = "君の銀の庭.ogg"
+}
+
+music = {
+	name = "super_event_15"
+	file = "Connect.ogg"
+}
+
+music = {
+	name = "super_event_23"
+	file = "Was ist des Deutschen Vaterland DieWacht am Rhein.ogg"
+}
+
+music = {
+	name = "super_event_19"
+	file = "团结人民之歌.ogg"
+}
+
+music = {
+	name = "super_event_26"
+	file = "统一战线之歌.ogg"
+}
+
+music = {
+	name = "super_event_47"
+	file = "当那一天来临.ogg"
+}
+
+music = {
+	name = "super_event_28"
+	file = "つちかひの唄-巫月和音部分.ogg"
+}
+
+music = {
+	name = "super_event_29"
+	file = "時計塔の護人.ogg"
+}
+
+music = {
+	name = "super_event_31"
+	file = "Mist Lake.ogg"
+}
+
+music = {
+	name = "super_event_32"
+	file = "献给已逝公主的七重奏.ogg"
+}
+
+music = {
+	name = "super_event_33"
+	file = "U.N.OWEN就是她吗？.ogg"
+}
+
+music = {
+	name = "super_event_34"
+	file = "芥川龙之介的河童.ogg"
+}
+
+music = {
+	name = "super_event_FRA_unit_5"
+	file = "东方心绮楼.ogg"
+}
+
+music = {
+	name = "super_event_FRA_unit_6"
+	file = "夜が降りてくる.ogg"
+}
+
+music = {
+	name = "super_event_FRA_unit_7"
+	file = "恋色magic.ogg"
+}
+
+music = {
+	name = "super_event_FRA_unit_8"
+	file = "Romantic Children.ogg"
+}
+
+music = {
+	name = "super_event_129"
+	file = "拯救失控USER.ogg"
+}
+
+music = {
+	name = "super_event_132"
+	file = "真结局.ogg"
+}
+
+music = {
+	name = "super_event_30"
+	file = "大萧条.ogg"
+}
+
+music = {
+	name = "super_event_49"
+	file = "张作玲独裁线.ogg"
+}
+
+music = {
+	name = "super_event_50"
+	file = "张雪娘民主线.ogg"
+}
+
+music = {
+	name = "super_event_52"
+	file = "东北李德胜线.ogg"
+}
+
+music = {
+	name = "super_event_53"
+	file = "钢铁洪流进行曲.ogg"
+}
+
+music = {
+	name = "super_event_54"
+	file = "喀秋莎.ogg"
+}
+
+music = {
+	name = "super_event_56"
+	file = "虎妞线.ogg"
+}
+
+music = {
+	name = "super_event_57"
+	file = "杀马特团长线.ogg"
+}
+
+music = {
+	name = "super_event_58"
+	file = "东北国民党线.ogg"
+}
+
+music = {
+	name = "super_event_131"
+	file = "破碎的梦.ogg"
+}
+
+music = {
+	name = "super_event_130"
+	file = "光之种.ogg"
+}
+
+music = {
+	name = "super_event_64"
+	file = "我没有背叛.ogg"
+}
+
+music = {
+	name = "super_event_63"
+	file = "登山缆车.ogg"
+}
+
+music = {
+	name = "super_event_24"
+	file = "日升之屋.ogg"
+}
+
+music = {
+	name = "super_event_65"
+	file = "Key of Truth.ogg"
+}
+
+music = {
+	name = "super_event_144"
+	file = "Sogno di Volare.ogg"
+}
+
+music = {
+	name = "super_event_145"
+	file = "屋旁的青草.ogg"
+}
+
+music = {
+	name = "super_event_147"
+	file = "Hi-Res.ogg"
+}
+
+music = {
+	name = "super_event_148"
+	file = "Astronautenmarsch.ogg"
+}
+
+music = {
+	name = "super_event_67"
+	file = "欢乐颂.ogg"
+}
+
+music = {
+	name = "super_event_48"
+	file = "我的祖国.ogg"
+}
+
+music = {
+	name = "super_event_59"
+	file = "稻光神鸣.ogg"
+}
+
+music = {
+	name = "super_event_60"
+	file = "团结劳动者之歌.ogg"
+}
+
+music = {
+	name = "super_event_61"
+	file = "夜上海.ogg"
+}
+
+music = {
+	name = "super_event_62"
+	file = "保卫黄河.ogg"
+}
+
+music = {
+	name = "super_event_27"
+	file = "KING.ogg"
+}
+
+music = {
+	name = "super_event_71"
+	file = "工农的孩子.ogg"
+}
+
+music = {
+	name = "super_event_72"
+	file = "America (The Industrial Era).ogg"
+}
+
+music = {
+	name = "super_event_73"
+	file = "China Loading.ogg"
+}
+
+music = {
+	name = "super_event_74"
+	file = "流星的颤音.ogg"
+}
+
+music = {
+	name = "super_event_75"
+	file = "人民阵线之歌.ogg"
+}
+
+music = {
+	name = "super_event_76"
+	file = "愚人曲.ogg"
+}
+
+music = {
+	name = "super_event_146"
+	file = "点与线.ogg"
+}
+
+music = {
+	name = "super_event_77"
+	file = "共和国战歌.ogg"
+}
+
+music = {
+	name = "super_event_78"
+	file = "Legacy of Rome.ogg"
+}
+
+music = {
+	name = "super_event_79"
+	file = "你将如闪电般归来.ogg"
+}
+
+music = {
+	name = "super_event_80"
+	file = "当约翰尼迈步回家时.ogg"
+}
+
+music = {
+	name = "super_event_81"
+	file = "团结一致到永远.ogg"
+}
+
+music = {
+	name = "super_event_82"
+	file = "万岁胜利者的桂冠.ogg"
+}
+
+music = {
+	name = "super_event_35"
+	file = "信仰是为了虚幻的人.ogg"
+}
+
+music = {
+	name = "super_event_10"
+	file = "国际歌.ogg"
+}
+
+music = {
+	name = "super_event_51"
+	file = "乘胜追击.ogg"
+}
+
+music = {
+	name = "super_event_17"
+	file = "雪之进军.ogg"
+}
+
+music = {
+	name = "super_event_11"
+	file = "远东游击队之歌.ogg"
+}
+
+music = {
+	name = "super_event_55"
+	file = "精忠报国.ogg"
+}
+
+music = {
+	name = "super_event_84"
+	file = "立宪.ogg"
+}
+
+music = {
+	name = "super_event_83"
+	file = "民族主义.ogg"
+}
+
+music = {
+	name = "super_event_85"
+	file = "沙皇专制.ogg"
+}
+
+music = {
+	name = "super_event_86"
+	file = "瓦尔基里.ogg"
+}
+
+music = {
+	name = "super_event_2"
+	file = "Silent Solitude.ogg"
+}
+
+music = {
+	name = "super_event_3"
+	file = "HOLLOW HUNGER.ogg"
+}
+
+
+music = {
+	name = "End_of_DVL"
+	file = "HYDRA.ogg"
+}
+
+music = {
+	name = "super_event_101"
+	file = "灵魂燃尽.ogg"
+}
+music = {
+	name = "super_event_102"
+	file = "ダイヤノカガヤキ.ogg"
+}
+music = {
+	name = "邪恶的崛起"
+	file = "邪恶的崛起.ogg"
+}
+music = {
+	name = "super_event_104"
+	file = "团结的人民永远不会被击溃.ogg"
+}
+music = {
+	name = "混沌と絶望、そして死"
+	file = "混沌と絶望、そして死.ogg"
+}
+music = {
+	name = "团结人民之歌（晓枫）"
+	file = "团结人民之歌（晓枫）.ogg"
+}
+music = {
+	name = "super_event_105"
+	file = "我们必胜.ogg"
+}
+music = {
+	name = "super_event_106"
+	file = "团结一致到永远（美洲）.ogg"
+}
+music = {
+	name = "super_event_107"
+	file = "感情革命摇滚.ogg"
+}
+music = {
+	name = "super_event_108"
+	file = "为了逐渐改变的世界.ogg"
+}
+music = {
+	name = "super_event_110"
+	file = "弗雷斯贝尔古(Hræsvelgr)的少女~风花雪月~.ogg"
+}
+music = {
+	name = "super_event_111"
+	file = "游击队员之歌.ogg"
+}
+music = {
+	name = "super_event_113"
+	file = "分岔路口.ogg"
+}
+music = {
+	name = "super_event_115"
+	file = "人类祈祷记录.ogg"
+}
+music = {
+	name = "路标"
+	file = "路标.ogg"
+}
+music = {
+	name = "super_event_114"
+	file = "连长.ogg"
+}
+music = {
+	name = "彼方の破片"
+	file = "彼方の破片.ogg"
+}
+music = {
+	name = "super_event_112"
+	file = "永远不会枯萎的花.ogg"
+}
+music = {
+	name = "super_event_116"
+	file = "雨，携你而至.ogg"
+}
+music = {
+	name = "super_event_117"
+	file = "不散的花.ogg"
+}
+music = {
+	name = "super_event_119"
+	file = "魔法旋律.ogg"
+}
+music = {
+	name = "super_event_120"
+	file = "提灯照河山.ogg"
+}
+music = {
+	name = "朔与亚纪"
+	file = "朔与亚纪.ogg"
+}
+music = {
+	name = "再见深海"
+	file = "再见深海.ogg"
+}
+music = {
+	name = "琉璃の鸟"
+	file = "琉璃の鸟.ogg"
+}
+music = {
+	name = "小小的光"
+	file = "小小的光.ogg"
+}
+music = {
+	name = "冬の星座"
+	file = "冬の星座.ogg"
+}
+music = {
+	name = "送往过去的话"
+	file = "送往过去的话.ogg"
+}
+music = {
+	name = "elm"
+	file = "elm.ogg"
+}
+music = {
+	name = "泡沫の灯"
+	file = "泡沫の灯.ogg"
+}
+music = {
+	name = "雨"
+	file = "雨.ogg"
+}
+music = {
+	name = "鸟鸣"
+	file = "鸟鸣.ogg"
+}
+music = {
+	name = "火车"
+	file = "火车.ogg"
+}
+music = {
+	name = "super_event_133"
+	file = "短夜之星.ogg"
+}
+music = {
+	name = "super_event_134"
+	file = "然后一切归于白.ogg"
+}
+music = {
+	name = "super_event_135"
+	file = "猫咪舞会.ogg"
+}
+music = {
+	name = "super_event_138"
+	file = "你消失的世界.ogg"
+}
+music = {
+	name = "super_event_139"
+	file = "梦之火花.ogg"
+}
+music = {
+	name = "super_event_141"
+	file = "言霊.ogg"
+}
+music = {
+	name = "super_event_142"
+	file = "齐步走.ogg"
+}
+music = {
+	name = "虽然歌声无形"
+	file = "虽然歌声无形.ogg"
+}
+music = {
+	name = "super_event_140"
+	file = "折翼之蝶.ogg"
+}
+music = {
+	name = "默剧"
+	file = "默剧.ogg"
+}
+music = {
+	name = "吞噬夜空"
+	file = "吞噬夜空.ogg"
+}
+music = {
+	name = "永恒不变"
+	file = "永恒不变.ogg"
+}
+music = {
+	name = "super_event_103"
+	file = "今晚月色真美.ogg"
+}
+music = {
+	name = "super_event_137"
+	file = "Hope ac.ogg"
+}
+music = {
+	name = "super_event_136"
+	file = "If.ogg"
+}
+music = {
+	name = "像弹簧火箭一样"
+	file = "像弹簧火箭一样.ogg"
+}
+music = {
+	name = "super_event_100"
+	file = "空の灯と歌う幻想弦乐.ogg"
+}
+music = {
+	name = "super_event_109"
+	file = "梦之鸟的恋情.ogg"
+}
+music = {
+	name = "super_event_127"
+	file = "Masquerade Kill.ogg"
+}
+music = {
+	name = "super_event_126"
+	file = "反叛.ogg"
+}
+music = {
+	name = "super_event_99"
+	file = "春告.ogg"
+}
+music = {
+	name = "星屑"
+	file = "茶太 - 星屑.ogg"
+}
+music = {
+	name = "outcry"
+	file = "outcry.ogg"
+}
+music = {
+	name = "days"
+	file = "days.ogg"
+}
+music = {
+	name = "super_event_128"
+	file = "魔女狩猎.ogg"
+}
+music = {
+	name = "痛苦之村"
+	file = "痛苦之村.ogg"
+}
+music = {
+	name = "星之指引"
+	file = "星之指引.ogg"
+}
+music = {
+	name = "Past The Stargazing Season"
+	file = "Past The Stargazing Season.ogg"
+}
+
+music = {
+	name = "致我"
+	file = "致我.ogg"
+}
+music = {
+	name = "super_event_118"
+	file = "群星的镇魂歌.ogg"
+}
+music = {
+	name = "Sleeping Beauty"
+	file = "Sleeping Beauty.ogg"
+}
+music = {
+	name = "夜奏花"
+	file = "夜奏花.ogg"
+}
+music = {
+	name = "静寂の雪"
+	file = "静寂の雪.ogg"
+}
+music = {
+	name = "我们永远在一起吧"
+	file = "我们永远在一起吧.ogg"
+}
+music = {
+	name = "悠久花都"
+	file = "悠久花都.ogg"
+}
+music = {
+	name = "幻听"
+	file = "幻听.ogg"
+}
+music = {
+	name = "super_event_41"
+	file = "游京.ogg"
+}
+music = {
+	name = "super_event_42"
+	file = "浸春芜.ogg"
+}
+music = {
+	name = "super_event_43"
+	file = "出山.ogg"
+}
+
+music = {
+	name = "カラフル（五彩斑斓）"
+	file = "カラフル（五彩斑斓）.ogg"
+}
+music = {
+	name = "暮光之路"
+	file = "暮光之路.ogg"
+}
+music = {
+	name = "胜利荣光"
+	file = "胜利荣光.ogg"
+}
+music = {
+	name = "リンクス（携手）"
+	file = "リンクス（携手）.ogg"
+}
+music = {
+	name = "シグナル（信号）"
+	file = "シグナル（信号）.ogg"
+}
+music = {
+	name = "ririko"
+	file = "ririko.ogg"
+}
+music = {
+	name = "势魏延"
+	file = "势魏延.ogg"
+}
+music = {
+	name = "Magia"
+	file = "Magia.ogg"
+}
+music = {
+	name = "致以无名的抗争者"
+	file = "致以无名的抗争者.ogg"
+}
+music = {
+	name = "super_event_90"
+	file = "MON别看我只是一只羊.ogg"
+}
+music = {
+	name = "super_event_92"
+	file = "MON成吉思汗.ogg"
+}
+music = {
+	name = "super_event_93"
+	file = "MON成吉思汗颂.ogg"
+	volume = 3.00
+}
+music = {
+	name = "super_event_94"
+	file = "MON大哉乾元.ogg"
+}
+music = {
+	name = "super_event_91"
+	file = "MON红巾军军歌.ogg"
+	volume = 3.00
+}
+music = {
+	name = "super_event_89"
+	file = "MON狼图腾.ogg"
+}
+music = {
+	name = "super_event_97"
+	file = "MON龙的传人.ogg"
+}
+music = {
+	name = "super_event_98"
+	file = "MON瞄准强敌练.ogg"
+}
+music = {
+	name = "super_event_95"
+	file = "MON谁主沉浮.ogg"
+}
+music = {
+	name = "super_event_87"
+	file = "MON站在草原望北京.ogg"
+}
+music = {
+	name = "super_event_88"
+	file = "MON追梦赤子心.ogg"
+}
+music = {
+	name = "super_event_96"
+	file = "MON西伯利亚步枪兵.ogg"
+}
+music = {
+	name = "super_event_122"
+	file = "yuki_end.ogg"
+}
+music = {
+	name = "super_event_123"
+	file = "MGU_yuki_battle_against_ENG.ogg"
+}
+music = {
+	name = "super_event_124"
+	file = "the_dust_of_love.ogg"
+}
+music = {
+	name = "super_event_36"
+	file = "众神眷恋的幻想乡.ogg"
+}
+music = {
+	name = "在弗兰德的战场上"
+	file = "In_Flanders_Fields.ogg"
+}
+music = {
+	name = "super_event_158"
+	file = "不怕.ogg"
+}
+music = {
+	name = "super_event_150"
+	file = "歌唱动荡的青春-中文.ogg"
+}
+music = {
+	name = "super_event_160"
+	file = "怪物之歌.ogg"
+}
+music = {
+	name = "super_event_7121"
+	file = "Let the Maggots Sing.ogg"
+}
+music = {
+	name = "super_event_7122"
+	file = "Not My Paradiso.ogg"
+}
+music = {
+	name = "super_event_7124"
+	file = "回忆.ogg"
+}
+music = {
+	name = "super_event_7123"
+	file = "RIP.ogg"
+}
+music = {
+	name = "For you.写给你的歌"
+	file = "For you.写给你的歌.ogg"
+}
+music = {
+	name = "super_event_152"
+	file = "国旗.ogg"
+}
+music = {
+	name = "红昭愿dj"
+	file = "红昭愿dj.ogg"
+}
+music = {
+	name = "super_event_157"
+	file = "梦的光点.ogg"
+}
+music = {
+	name = "super_event_159"
+	file = "梦的光点.ogg"
+}
+music = {
+	name = "super_event_155"
+	file = "清波当家.ogg"
+}
+music = {
+	name = "super_event_154"
+	file = "权御天下.ogg"
+}
+music = {
+	name = "super_event_151"
+	file = "荣耀向我俯首.ogg"
+}
+music = {
+	name = "super_event_156"
+	file = "视奸.ogg"
+}
+music = {
+	name = "死别"
+	file = "死别.ogg"
+}
+music = {
+	name = "super_event_149"
+	file = "太阳照常升起.ogg"
+}
+music = {
+	name = "super_event_153"
+	file = "铁花飞.ogg"
+}
+music = {
+	name = "昔涟"
+	file = "昔涟.ogg"
+}
+music = {
+	name = "拂晓"
+	file = "拂晓.ogg"
+}
+music = {
+	name = "何者"
+	file = "何者.ogg"
+}
+music = {
+	name = "耀斑"
+	file = "耀斑.ogg"
+}
+music = {
+	name = "剑冢"
+	file = "剑冢.ogg"
+}
+music = {
+	name = "super_event_161"
+	file = "日语版国际歌.ogg"
+}
+music = {
+	name = "Universal_Collapse"
+	file = "Universal_Collapse.ogg"
+}
+music = {
+	name = "super_event_162"
+	file = "Endless Pulse（烈血湍流）.ogg"
+}
+
+music = {
+	name = "烈阳啊，请见我真名"
+	file = "烈阳啊，请见我真名.ogg"
+}
+
+music = {
+	name = "太阳是什么颜色"  ##宋庆龄
+	file = "太阳是什么颜色.ogg"
+}
+
+music = {
+	name = "我曾遇到一束光"  ##宋教仁
+	file = "我曾遇到一束光.ogg"
+}
+
+music = {
+	name = "歌声与微笑"  ##小蒋左
+	file = "歌声与微笑.ogg"
+}
+
+music = {
+	name = "太阳之子"  ##小蒋右
+	file = "太阳之子.ogg"
+}
+
+music = {
+	name = "大哉乾元"  ##胡宗南
+	file = "大哉乾元.ogg"
+}
+
+music = {
+	name = "反乌托邦Pt.2"  ##识之律者
+	file = "反乌托邦Pt.2.ogg"
+}
+
+music = {
+	name = "我是汤不是唐"  ##汤汤
+	file = "我是汤不是唐.ogg"
+}
+
+music = {
+	name = "赤刃映尘"  ##陈
+	file = "赤刃映尘.ogg"
+}
+
+music = {
+	name = "super_event_163"  ##美德共和国
+	file = "啊，五月的巴黎.ogg"
+}
+music = {
+	name = "super_event_164"  ##美德共和国-美洲大陆战争
+	file = "华沙曲.ogg"
+}
+music = {
+	name = "歌唱祖国68"
+	file = "歌唱祖国68.ogg"
+}
+music = {
+	name = "super_event_165"
+	file = "清姬.ogg"
+}
+music = {
+	name = "super_event_166"
+	file = "世界征服.ogg"
+}
+music = {
+	name = "加州之梦"
+	file = "加州之梦.ogg"
+}
+music = {
+	name = "火玫瑰"
+	file = "火玫瑰.ogg"
+}
+music = {
+	name = "解放之歌"
+	file = "解放之歌.ogg"
+}
+music = {
+	name = "super_event_167"
+	file = "最长之日.ogg"
+}
+music = {
+	name = "super_event_168"
+	file = "supereventFRA.ogg"
+}
+music = {
+	name = "super_event_169"
+	file = "supereventLIB.ogg"
+}

@@ -2,6 +2,19 @@
 # Liberia Decisions by remilia,reduxed by Yersin
 ###########################################
 LIB_debug = {
+	free_france10 = {
+		complete_effect = {
+		set_variable = { adorable_heart_super_event_var = 169 } 
+		adorable_heart_fire_super_event = yes 
+		}
+	}
+	free_france0 = {
+		complete_effect = {
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+		}
+	}
+	
 	free_france1 = {
 		complete_effect = {
 			KMK = {
@@ -60,55 +73,445 @@ LIB_debug = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		}
-	LIB_gongye = {
+	LIB_gongye1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_gongye_flag
 		}
 		}
-	LIB_junshi = {
+	LIB_junshi1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_junshi_flag
 		}
 		}
-	LIB_fangong = {
+	LIB_xijian1 = {
+		complete_effect = {
+			set_country_flag = LIB_open_xijian_flag
+		}
+		}
+	LIB_fangong1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_fangong_flag
 		}
 		}
-	LIB_ziyuan = {
+	LIB_ziyuan1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_ziyuan_flag
 		}
 		}
-	LIB_mimi = {
+	LIB_mimi1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_mimi_flag
 		}
 		}
-	LIB_wuhui = {
+	LIB_wuhui1 = {
 		complete_effect = {
 			set_country_flag = LIB_open_wuhui_flag
 		}
 		}
+	LIB_free1 = {
+		complete_effect = {
+			set_country_flag = LIB_open_free_flag
+		}
+		}
 	
 }
-FREE_FRA_Return_from_Hell = {
+
+LIB_xijian_category = {
+#隙间开始民工
+	LIB_xijiankaishi_mg = {
+    icon = GFX_decision_generic_construction
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+        NOT = { has_country_flag = LIB_loop_active_mg }
+		custom_trigger_tooltip = {
+            tooltip = "隙间未超过容量"
+           check_variable = { LIB_xijianrongliang < LIB_xijianshangxian }
+        }
+    }
+
+    complete_effect = {
+        set_country_flag = LIB_loop_active_mg
+		add_to_variable = {
+            var = LIB_civilian_factory_use
+            value = 5
+            tooltip = civilian_factory_use_tt
+			}
+        activate_mission = LIB_xijian_mg
+    }
+}
+#隙间中止民工
+	LIB_xijianzhongzhi_mg = {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+	custom_trigger_tooltip = {
+            tooltip = "已经开始神隐民用工厂"
+			has_country_flag = LIB_loop_active_mg
+        }
+    }
+    complete_effect = {
+        clr_country_flag = LIB_loop_active_mg
+        add_to_variable = {
+            var = LIB_civilian_factory_use
+            value = -5
+            tooltip = civilian_factory_use_tt
+			}
+        remove_decision = LIB_xijian_mg
+    }
+}
+
+#隙间民工
+LIB_xijian_mg = {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_mission_timeout = 10
+    fire_only_once = no
+	available = {
+        always = no
+    }
+	activation = {always = no}
+    complete_effect = {
+        # 循环继续
+    }
+
+    timeout_effect = {
+        # 给一个军工或地图外军工
+		random_state = {
+            limit = {
+			OR = {
+                is_core_of = FRA
+				is_core_of = KMK
+				is_core_of = KNM
+				}
+			industrial_complex > 0
+            }
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+        }
+        if = {
+            limit = {
+                any_state = {
+                    is_core_of = ROOT
+                   free_building_slots = { building = industrial_complex size > 0 include_locked = no }
+                }
+            }
+            random_state = {
+                limit = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = industrial_complex size > 0 include_locked = no }
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        else = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang
+                value = 1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang_mg
+                value = 1
+            }
+        }
+
+        # 判断是否继续循环
+        if = {
+            limit = {
+			has_completed_focus = LIB_new_focus_43
+                check_variable = { LIB_xijianrongliang < LIB_xijianshangxian }
+			any_state = {
+				OR = {
+                    is_core_of = FRA
+					is_core_of = KMK
+					is_core_of = KNM
+					}
+                industrial_complex > 0
+				}
+                }
+            activate_mission = LIB_xijian_mg
+
+            # 若已完成特定国策，缩短下次任务时长
+            if = {
+                limit = {
+					has_completed_focus = LIB_new_focus_43
+                    has_completed_focus = LIB_new_focus_44
+                }
+                add_days_mission_timeout = {
+                    mission = LIB_xijian_mg
+                    days = -2
+                }
+            }
+        }
+        else = {
+            clr_country_flag = LIB_loop_active_mg
+            add_to_variable = {
+                var = LIB_civilian_factory_use
+                value = -5
+                tooltip = civilian_factory_use_tt
+            }
+        }
+    }
+}
+
+#隙间开始军工
+LIB_xijiankaishi_jg = {
+    icon = GFX_decision_generic_construction
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+		custom_trigger_tooltip = {
+            tooltip = "隙间容量充足且未开始运作"
+           check_variable = { LIB_xijianrongliang < LIB_xijianshangxian }
+		   NOT = { has_country_flag = LIB_loop_active_jg }
+        }
+    }
+
+    complete_effect = {
+        set_country_flag = LIB_loop_active_jg
+		add_to_variable = {
+            var = LIB_civilian_factory_use
+            value = 5
+            tooltip = civilian_factory_use_tt
+			}
+        activate_mission = LIB_xijian_jg
+    }
+}
+#隙间中止军工
+LIB_xijianzhongzhi_jg = {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+	custom_trigger_tooltip = {
+            tooltip = "已经开始神隐军用工厂"
+			has_country_flag = LIB_loop_active_jg
+        }
+    }
+    complete_effect = {
+        clr_country_flag = LIB_loop_active_jg
+        add_to_variable = {
+            var = LIB_civilian_factory_use
+            value = -5
+            tooltip = civilian_factory_use_tt
+			}
+        remove_mission = LIB_xijian_jg
+    }
+}
+
+#隙间运作军工
+LIB_xijian_jg = {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_mission_timeout = 5
+    fire_only_once = no
+	available = {
+        always = no
+    }
+    complete_effect = {
+        # 循环继续
+    }
+	activation = {always = no}
+    timeout_effect = {
+        # 给一个军工或地图外军工
+		random_state = {
+			limit = {
+        OR = {
+            is_core_of = FRA
+            is_core_of = KMK
+            is_core_of = KNM
+        }
+        arms_factory > 0
+    }
+    remove_building = {
+        type = arms_factory
+        level = 1
+    }
+}
+        if = {
+            limit = {
+                any_state = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = arms_factory size > 0 include_locked = no }
+                }
+            }
+            random_state = {
+                limit = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = arms_factory size > 0 include_locked = no }
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        else = {
+            add_offsite_building = {
+                type = arms_factory
+                level = 1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang
+                value = 1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang_jg
+                value = 1
+            }
+        }
+
+        # 判断是否继续循环
+        if = {
+            limit = {
+                check_variable = { LIB_xijianrongliang < LIB_xijianshangxian }
+			any_state = {
+				OR = {
+                    is_core_of = FRA
+					is_core_of = KMK
+					is_core_of = KNM
+					}
+                arms_factory > 0
+				}
+                }
+            activate_mission = LIB_xijian_jg
+
+            # 若已完成特定国策，缩短下次任务时长
+            if = {
+                limit = {
+                    has_completed_focus = LIB_new_focus_44
+                }
+                add_days_mission_timeout = {
+                    mission = LIB_xijian_jg
+                    days = -2
+                }
+            }
+        }
+        else = {
+            clr_country_flag = LIB_loop_active_jg
+            add_to_variable = {
+                var = LIB_civilian_factory_use
+                value = -5
+                tooltip = civilian_factory_use_tt
+            }
+        }
+    }
+}
+
+#隙间转移民工
+LIB_xijianzhuanyi_mg = {
+    icon = GFX_decision_generic_construction
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+		custom_trigger_tooltip = {
+            tooltip = "隙间中存在民用工厂且现世有建筑槽位"
+			any_state = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = industrial_complex size > 0 include_locked = no }
+				}
+           check_variable = { LIB_xijianrongliang_mg > 1 }
+        }
+    }
+
+    complete_effect = {
+        random_state = {
+                limit = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = industrial_complex size > 0 include_locked = no }
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				}
+				add_to_variable = {
+                var = LIB_xijianrongliang
+                value = -1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang_mg
+                value = -1
+            }
+            }
+    }
+
+#隙间转移军工
+LIB_xijianzhuanyi_jg = {
+    icon = GFX_decision_generic_construction
+    cost = 0
+    fire_only_once = no
+	visible = { has_completed_focus = LIB_new_focus_43 }
+    available = {
+		custom_trigger_tooltip = {
+            tooltip = "隙间中存在军用工厂且现世有建筑槽位"
+			any_state = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = arms_factory size > 0 include_locked = no }
+				}
+           check_variable = { LIB_xijianrongliang_jg > 1 }
+        }
+    }
+
+    complete_effect = {
+        random_state = {
+                limit = {
+                    is_core_of = ROOT
+                    free_building_slots = { building = arms_factory size > 0 include_locked = no }
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+				}
+			add_to_variable = {
+				var = LIB_xijianrongliang
+				value = -1
+            }
+            add_to_variable = {
+                var = LIB_xijianrongliang_jg
+                value = -1
+            }
+            }
+    }
+}
+
+FREE_FRA_Return_from_Hell_category = {
 	FREE_FRA_Rebuild_Gensokyo = {
 		allowed = {
 			tag = LIB
 		}
 		visible = {
-			has_country_flag = Free_france_flag
+			has_country_flag = LIB_open_free_flag
 		}
 		available = {
-			controls_state = 16
 			custom_trigger_tooltip = {
-				tooltip = "已经稳定政局"
-				has_completed_focus = LIB_new_focus_42
-			}
-			not = {
+				tooltip = "人间之里光复，且白骨大军荡然无存"
+				controls_state = 16
+				not = {
 				country_exists = DVL
 			}
+			}
+			
 		}
 		fire_only_once = yes
 		cost = 0
@@ -116,33 +519,2245 @@ FREE_FRA_Return_from_Hell = {
 			factor = 100
 		}
 		complete_effect = {
+		news_event = {
+				id = LIB_news.2
+			}
 			set_capital = {
 				state = 16
 				remember_old_capital = no
 			}
-			FRA_set_rule_party_name = yes
-			set_cosmetic_tag = LIB_FRA
+			hidden_effect = {
+			set_party_name = {
+				ideology = fascism
+				long_name = "国家过渡委员会-月都系"
+				name = "国家过渡委员会-月都系"
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "国家过渡委员会-八云紫系"
+				name = "国家过渡委员会-八云紫系"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "国家过渡委员会-后户系"
+				name = "国家过渡委员会-后户系"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "国家过渡委员会-华扇系"
+				name = "国家过渡委员会-华扇系"
+			}
 			set_country_flag = LIB_Return_from_Hell_FLAG
 			every_state = {
 				limit = {
-					ROOT = {
-						or = {
-							any_allied_country = {
-								controls_state = PREV.PREV
-								PREV.PREV = { not = { is_core_of = PREV.PREV } }
-							}
-							controls_state = PREV
+				is_core_of = LIB
+				NOT = { is_controlled_by = LIB }
+				controller = {
+				is_in_faction_with = LIB
+				}	
 						}
-					}
-					has_state_flag = FRA_mainland_state
-					owner = { NOT = { tag = ROOT } }
-				}
-			}
+			transfer_state = LIB
+}
 			mark_focus_tree_layout_dirty = yes
+			
+		}
+		hidden_effect = {
+		complete_national_focus = LIB_new_focus_55
+		remove_ideas = FRA_XZYH_idea
+		add_ideas = FRA_Ran_idea
+		create_country_leader = {
+				name = "国家过渡委员会"
+				picture = "gfx/leaders/FRA/FRA_Electoral_Commission.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+			}
+		}
 		}
 	}
 }
-LIB_gongye = {
+LIB_ziyuan_category = {
+#合成石油工业
+	LIB_hcsy = {
+    icon = GFX_decision_generic_construction
+	visible = {
+        has_completed_focus = LIB_new_focus_40
+    }
+    cost = 100
+    days_remove = 60
+    fire_only_once = yes
+    available = {
+        num_of_civilian_factories_available_for_projects > 4
+        # 至少有一个州有空余建筑槽位
+    }
+
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+        # 如果没有合成石油实验科技，立刻获得
+        if = {
+            limit = {
+                NOT = { has_tech = synth_oil_experiments }
+            }
+            set_technology = { synth_oil_experiments = 1 }
+        }
+    }
+
+    remove_effect = {
+	459 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 2
+                instant_build = yes
+            }
+}
+            
+		}
+		}
+#挖掘金属
+LIB_wjjs = {
+    icon = GFX_decision_generic_construction
+	visible = {
+        has_completed_focus = LIB_new_focus_40
+    }
+    cost = 25
+    days_remove = 60
+    fire_only_once = yes
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+    }
+
+       remove_effect = {
+        805 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+		add_resource = {
+            type = steel
+            amount = 20
+            state = 805
+        }
+        add_resource = {
+            type = tungsten
+            amount = 10
+            state = 805
+        }
+    }
+}
+#推行节约与替代品
+LIB_txjy = {
+    icon = GFX_decision_generic_construction
+	visible = {
+        has_completed_focus = LIB_new_focus_40
+    }
+    cost = 25
+    days_remove = 60
+    fire_only_once = yes
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+    }
+
+       remove_effect = {
+        custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.1
+			tooltip = consumer_goods_factor_tt
+		} 
+		add_to_variable = {
+			var = LIB_production_lack_of_resource_penalty_factor
+			value = -0.15
+			tooltip = production_lack_of_resource_penalty_factor_tt
+		} 
+    }
+}
+}
+
+
+
+LIB_fangong_category = {
+#袭击
+LIB_xiji = {
+    icon = GFX_decision_generic_military
+    fire_only_once = no
+	days_remove = 100
+    available = {
+        has_army_experience > 50
+		has_navy_experience > 50
+        manpower > 9999
+        has_equipment = {
+            infantry_equipment > 1999
+        }
+        custom_trigger_tooltip = {
+            tooltip = "袭击部队还没有被尽可能地投资"
+            NOT = { has_country_flag = LIB_xiji_flag4 }
+        }
+    }
+
+    complete_effect = {
+        # 消耗资源
+        army_experience = -50
+		navy_experience = -50
+        add_manpower = -10000
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = -2000
+        }
+	}
+	remove_effect = {
+        # 按顺序推进阶段 flag
+        if = {
+            limit = { NOT = { has_country_flag = LIB_xiji_flag1 } }
+            set_country_flag = LIB_xiji_flag1
+        }
+        else_if = {
+            limit = { NOT = { has_country_flag = LIB_xiji_flag2 } }
+			clr_country_flag = LIB_xiji_flag1
+            set_country_flag = LIB_xiji_flag2
+        }
+        else_if = {
+            limit = { NOT = { has_country_flag = LIB_xiji_flag3 } }
+            clr_country_flag = LIB_xiji_flag2
+            set_country_flag = LIB_xiji_flag3
+        }
+        else_if = {
+            limit = { NOT = { has_country_flag = LIB_xiji_flag4 } }
+            clr_country_flag = LIB_xiji_flag3
+            set_country_flag = LIB_xiji_flag4
+        }
+    }
+}
+#超隙间计划
+LIB_chaoxijian = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = LIB_new_focus_49
+		}
+		available = {
+			NOT = {
+				173 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				168 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 173
+				state = 168
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {	
+		division_template = {
+    name = "LIB_Marine_Division"
+    division_names_group = LIB_MAR_01
+
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 0 y = 3 }
+        marine = { x = 0 y = 4 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+        marine = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+    name = "LIB_Irregular_Division"
+    division_names_group = LIB_IRR_01
+
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 0 y = 3 }
+        irregular_infantry = { x = 0 y = 4 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+			custom_effect_tooltip = LIB_xiji_qidong_tt_
+				173 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+				168 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30				
+					}
+				}
+			if = {
+			limit = {has_country_flag = LIB_xiji_flag1}
+           	173 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 12038
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			168 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 10024
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag2}
+           	173 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 12038
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			168 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 10024
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag3}
+           	173 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 12038
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			168 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 10024
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag4}
+           	173 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 12038
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			168 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 10024
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else = {
+			}
+		}
+		remove_effect = {
+		if = {
+		limit = { 173 = { controller = { tag = LIB } }
+        168 = { controller = { tag = LIB } }}
+		add_ideas = LIB_chenggongdenglu
+		}
+		custom_effect_tooltip = LIB_tooltip_news_1
+		}
+	}
+#龙马计划
+		LIB_longma = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = LIB_new_focus_50
+		}
+		available = {
+			NOT = {
+				21 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				22 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				817 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 817
+				state = 21
+				state = 22
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect =  {
+		division_template = {
+    name = "LIB_Marine_Division"
+    division_names_group = LIB_MAR_01
+
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 0 y = 3 }
+        marine = { x = 0 y = 4 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+        marine = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+    name = "LIB_Irregular_Division"
+    division_names_group = LIB_IRR_01
+
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 0 y = 3 }
+        irregular_infantry = { x = 0 y = 4 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+			custom_effect_tooltip = LIB_xiji_qidong_tt_
+				21 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+				22 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30				
+					}
+				}
+				817 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+			if = {
+			limit = {has_country_flag = LIB_xiji_flag1}
+           	21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 911
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 11834
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			22 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9898
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			817 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9853
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag2}
+           	21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 911
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 11834
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			22 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9898
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			817 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9853
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag3}
+           	21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 911
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 11834
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			22 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9898
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			817 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9853
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag4}
+           	21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 911
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			21 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 11834
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			22 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9898
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			817 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9853
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else = {
+			}
+		}
+		remove_effect = {
+		if = {
+		limit = { 21 = { controller = { tag = LIB } }
+        22 = { controller = { tag = LIB } }
+		817 = { controller = { tag = LIB } }}
+		add_ideas = LIB_chenggongdenglu
+		}
+		custom_effect_tooltip = LIB_tooltip_news_1
+		}			
+	}
+#雪橇天狗计划
+LIB_xueqiaotiangou = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = LIB_new_focus_51
+		}
+		available = {
+			NOT = {
+				117 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				115 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 117
+				state = 115
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect =  {
+		division_template = {
+    name = "LIB_Marine_Division"
+    division_names_group = LIB_MAR_01
+
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 0 y = 3 }
+        marine = { x = 0 y = 4 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+        marine = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+    name = "LIB_Irregular_Division"
+    division_names_group = LIB_IRR_01
+
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 0 y = 3 }
+        irregular_infantry = { x = 0 y = 4 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+			custom_effect_tooltip = LIB_xiji_qidong_tt_
+				117 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+				115 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30				
+					}
+				}
+
+			if = {
+			limit = {has_country_flag = LIB_xiji_flag1}
+           	117 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 819
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			115 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 10074
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag2}
+           	117 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 819
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			115 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 10074
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag3}
+           	117 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 819
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			115 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 10074
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag4}
+           117 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 819
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			115 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 10074
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			}
+			else = {
+			}
+		}
+		remove_effect = {
+		if = {
+		limit = { 117 = { controller = { tag = LIB } }
+        115 = { controller = { tag = LIB } }}
+		add_ideas = LIB_chenggongdenglu
+		}
+		custom_effect_tooltip = LIB_tooltip_news_1
+		}		
+	}
+#灵樱计划
+LIB_lingying = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = LIB_new_focus_52
+		}
+		available = {
+			NOT = {
+				983 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				14 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 983
+				state = 14
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect =  {
+		division_template = {
+    name = "LIB_Marine_Division"
+    division_names_group = LIB_MAR_01
+
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 0 y = 3 }
+        marine = { x = 0 y = 4 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+        marine = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+    name = "LIB_Irregular_Division"
+    division_names_group = LIB_IRR_01
+
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 0 y = 3 }
+        irregular_infantry = { x = 0 y = 4 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+			custom_effect_tooltip = LIB_xiji_qidong_tt_
+				983 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+				14 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30				
+					}
+				}
+
+			if = {
+			limit = {has_country_flag = LIB_xiji_flag1}
+           	983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 6536
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 3552
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9510
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9525
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag2}
+           	983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 6536
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 3552
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9510
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9525
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag3}
+           	983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 6536
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 3552
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9510
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9525
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag4}
+           	983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 6536
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			983 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 3552
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9510
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			14 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9525
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else = {
+			}
+			}
+		remove_effect = {
+		if = {
+		limit = { 983 = { controller = { tag = LIB } }
+		14 = { controller = { tag = LIB } }}
+		add_ideas = LIB_chenggongdenglu
+		}
+		}
+			custom_effect_tooltip = LIB_tooltip_news_1
+		}	
+#赤霾计划
+LIB_chimai = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = LIB_new_focus_53
+		}
+		available = {
+			NOT = {
+				7 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+				35 = {
+					controller = {
+						OR = {
+							tag = LIB
+							is_in_faction_with = LIB
+							is_subject_of = LIB
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+				state = 35
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}		
+		complete_effect = {
+		division_template = {
+    name = "LIB_Marine_Division"
+    division_names_group = LIB_MAR_01
+
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 0 y = 3 }
+        marine = { x = 0 y = 4 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+        marine = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+    name = "LIB_Irregular_Division"
+    division_names_group = LIB_IRR_01
+
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 0 y = 3 }
+        irregular_infantry = { x = 0 y = 4 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 1 y = 3 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+			custom_effect_tooltip = LIB_xiji_qidong_tt_
+				7 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30		
+					}
+				}
+				35 = {
+					add_dynamic_modifier = {
+						modifier = LIB_jingongjihua
+						scope = LIB		
+						days = 30				
+					}
+				}
+			if = {
+			limit = {has_country_flag = LIB_xiji_flag1}
+           	7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 3211
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9498
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 3262
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 1
+                prioritize_location = 9431
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag2}
+           	7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 3211
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9498
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 3262
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 2
+                prioritize_location = 9431
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag3}
+           	7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 3211
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9498
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 3262
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 3
+                prioritize_location = 9431
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_xiji_flag4}
+           	7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 3211
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			7 = {
+            create_unit = {
+                division = "name = \"海军步兵奇袭部队\" division_template = \"LIB_Marine_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9498
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 3262
+                allow_spawning_on_enemy_provs = yes
+            }
+				}
+			35 = {
+            create_unit = {
+                division = "name = \"游击部队\" division_template = \"LIB_Irregular_Division\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = ROOT
+                count = 4
+                prioritize_location = 9431
+                allow_spawning_on_enemy_provs = yes
+            }
+			}
+			}
+			else = {
+			}
+			
+		}
+		remove_effect = {
+		if = {
+		limit = { 7 = { controller = { tag = LIB } }
+        35 = { controller = { tag = LIB } }}
+		add_ideas = LIB_chenggongdenglu
+		}
+		custom_effect_tooltip = LIB_tooltip_news_1
+		}		
+	}
+#全国总起义
+	LIB_quanguoqiyi = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		cost = 10	
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+		OR = {
+		has_country_flag = LIB_xiji_flag1
+		has_country_flag = LIB_xiji_flag2
+		has_country_flag = LIB_xiji_flag3
+		has_country_flag = LIB_xiji_flag4
+		}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000			
+		}	
+		complete_effect = {
+		}
+		remove_effect = {
+		every_state = {
+		limit = {
+		OR = {
+		is_core_of = FRA
+		is_core_of = KMK
+		is_core_of = KNM
+		}
+		}
+		if = {
+		limit = {
+		has_country_flag = LIB_xiji_flag1
+		}
+		add_dynamic_modifier = {
+						modifier = LIB_quanguoqiyi
+						days = 60
+						}
+			}
+		else_if = {
+		limit = {
+		has_country_flag = LIB_xiji_flag2
+		}
+		add_dynamic_modifier = {
+						modifier = LIB_quanguoqiyi
+						days = 120
+						}
+			}
+		else_if = {
+		limit = {
+		has_country_flag = LIB_xiji_flag3
+		}
+		add_dynamic_modifier = {
+						modifier = LIB_quanguoqiyi
+						days = 180
+						}
+			}
+		else_if = {
+		limit = {
+		has_country_flag = LIB_xiji_flag4
+		}
+		add_dynamic_modifier = {
+						modifier = LIB_quanguoqiyi
+						days = 240
+						}
+			}
+		else = {
+		}
+		}
+	}
+	}
+	}
+LIB_junshi_category = {
+LIB_ruqinMOR {
+    icon = GFX_decision_generic_political_actions
+    cost = 10
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_68
+	has_war_with = DVL
+	country_exists = MOR}
+    war_with_on_remove = MOR   # 关键：告知游戏，30天后将对 MOR 宣战
+    allowed = { original_tag = LIB }
+    available = {
+        LIB = {
+        NOT = { has_war_with = MOR }}
+        MOR = { NOT = { is_in_faction_with = LIB } }
+    }
+
+    complete_effect = {
+    }
+    remove_effect = {
+    if = {
+        limit = {
+            MOR = { is_subject = no }
+        }
+        MOR = {
+            country_event = { id = LIB_lw.7 days = 1 }
+        }
+    }
+    else = {
+        MOR = {
+            overlord = {
+                country_event = { id = LIB_lw.8 days = 1 }
+            }
+        }
+    }
+}
+}
+LIB_ruqinLBA {
+    icon = GFX_decision_generic_political_actions
+    cost = 10
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_68
+	has_war_with = DVL
+	country_exists = LBA}
+    war_with_on_remove = LBA   
+    allowed = { original_tag = LIB }
+    available = {
+		LIB = {
+        NOT = { has_war_with = LBA }}
+        LBA = { NOT = { is_in_faction_with = LIB } }
+    }
+
+    complete_effect = {
+    }
+
+    remove_effect = {
+        LBA = {
+            country_event = { id = LIB_lw.7 days = 1 }
+        }
+    }
+}
+LIB_ruqinYSS = {
+    icon = GFX_decision_generic_political_actions
+    cost = 10
+    days_remove = 30
+    fire_only_once = no
+    war_with_on_remove = YSS   # 让 YSS 在30天内收到战争警告
+
+    allowed = { original_tag = LIB }
+
+    visible = {
+	has_completed_focus = LIB_new_focus_69
+    }
+
+    available = {
+       AND = {
+                country_exists = YSS
+                YSS = { NOT = { has_war_with = DVL } }
+                YSS = { NOT = { is_in_faction_with = LIB } }
+            }
+    }
+
+    complete_effect = {
+        # 可选：给 YSS 一个临时警告精神或事件
+    }
+
+    remove_effect = {
+        # 30天后，LIB 获得对 YSS 的宣战借口
+        create_wargoal = {
+            type = annex_everything
+            target = YSS
+        }
+    }
+}
+
+LIB_ruqinZIM = {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    fire_only_once = yes
+    allowed = { original_tag = LIB }
+	visible = {
+	has_completed_focus = LIB_new_focus_69
+    }
+    available = {
+        # 至少有一个目标满足全部条件，决议才可用
+        OR = {
+            AND = {
+                country_exists = ZXS
+                ZXS = { NOT = { has_war_with = DVL } }
+                ZXS = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZYX
+                ZYX = { NOT = { has_war_with = DVL } }
+                ZYX = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZCS
+                ZCS = { NOT = { has_war_with = DVL } }
+                ZCS = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZSH
+                ZSH = { NOT = { has_war_with = DVL } }
+                ZSH = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZSB
+                ZSB = { NOT = { has_war_with = DVL } }
+                ZSB = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZHJ
+                ZHJ = { NOT = { has_war_with = DVL } }
+                ZHJ = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZDM
+                ZDM = { NOT = { has_war_with = DVL } }
+                ZDM = { NOT = { is_in_faction_with = LIB } }
+            }
+            AND = {
+                country_exists = ZIM
+                ZIM = { NOT = { has_war_with = DVL } }
+                ZIM = { NOT = { is_in_faction_with = LIB } }
+            }
+        }
+    }
+
+    complete_effect = {
+        # 逐个检查并添加宣战借口
+        if = {
+            limit = {
+                country_exists = ZXS
+                ZXS = { NOT = { has_war_with = DVL } }
+                ZXS = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZXS
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZYX
+                ZYX = { NOT = { has_war_with = DVL } }
+                ZYX = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZYX
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZCS
+                ZCS = { NOT = { has_war_with = DVL } }
+                ZCS = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZCS
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZSH
+                ZSH = { NOT = { has_war_with = DVL } }
+                ZSH = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZSH
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZSB
+                ZSB = { NOT = { has_war_with = DVL } }
+                ZSB = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZSB
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZHJ
+                ZHJ = { NOT = { has_war_with = DVL } }
+                ZHJ = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZHJ
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZDM
+                ZDM = { NOT = { has_war_with = DVL } }
+                ZDM = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZDM
+            }
+        }
+        if = {
+            limit = {
+                country_exists = ZIM
+                ZIM = { NOT = { has_war_with = DVL } }
+                ZIM = { NOT = { is_in_faction_with = LIB } }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZIM
+            }
+        }
+    }
+}
+#步兵装备革新
+LIB_bubingzhuangbeigexin {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 100
+    }
+
+    complete_effect = {
+	add_army_experience = -100
+    }
+
+    remove_effect = {
+        custom_effect_tooltip = LIB_hxxfwj_tt
+		custom_effect_tooltip = LIB_infantry_cost_reduction_effect
+		hidden_effect = {
+		add_ideas = LIB_infantry_cost_reduction
+		}
+    }
+}
+#特种部队极端训练一期
+LIB_tzbdjdxlyq {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 100
+    }
+
+    complete_effect = {
+	army_experience = -100
+    }
+
+    remove_effect = {
+		set_country_flag = LIB_tzbdjdxlyq
+        custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_special_forces_attack_factor
+			value = 0.1
+			tooltip = special_forces_attack_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_special_forces_defence_factor
+			value = 0.1
+			tooltip = special_forces_defence_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_amphibious_invasion
+			value = 0.1
+			tooltip = amphibious_invasion_tt
+		}
+    }
+}
+#特种部队极端训练二期
+LIB_tzbdjdxleq {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_country_flag = LIB_tzbdjdxlyq}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 100
+    }
+
+    complete_effect = {
+	add_army_experience = -100
+    }
+
+    remove_effect = {
+       custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_special_forces_attack_factor
+			value = 0.1
+			tooltip = special_forces_attack_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_special_forces_defence_factor
+			value = 0.1
+			tooltip = special_forces_defence_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_amphibious_invasion
+			value = 0.1
+			tooltip = amphibious_invasion_tt
+		}
+    }
+}
+#推广特种部队经验
+LIB_tuiguangtzbd {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_country_flag = LIB_tzbdjdxlyq}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 100
+    }
+
+    complete_effect = {
+	add_army_experience = -100
+    }
+
+    remove_effect = {
+       custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_army_infantry_attack_factor
+			value = 0.1
+			tooltip = army_infantry_attack_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_army_infantry_defence_factor
+			value = 0.1
+			tooltip = army_infantry_defence_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_army_mechanized_attack_factor
+			value = 0.1
+			tooltip = mechanized_attack_factor
+		}
+		add_to_variable = {
+			var = LIB_army_mechanized_defence_factor
+			value = 0.1
+			tooltip = mechanized_defence_factor
+		}
+    }
+}
+#大玉嘈嘈如急雨
+LIB_dayucaocaorujiyu {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_74}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+        custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_static_anti_air_damage_factor
+			value = 0.15
+			tooltip = static_anti_air_damage_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_static_anti_air_hit_chance_factor
+			value = 0.15
+			tooltip = static_anti_air_hit_chance_factor_tt
+		}
+    }
+}
+#小玉切切如私雨
+LIB_xiaoyuqieqierusiyu {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_74}
+    allowed = { original_tag = LIB }
+    available = {
+	has_air_experience > 50
+    }
+
+    complete_effect = {
+	add_air_experience = -50
+    }
+
+    remove_effect = {
+        custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_air_superiority_efficiency
+			value = 0.1
+			tooltip = air_superiority_efficiency_tt
+		}
+		add_to_variable = {
+			var = LIB_air_attack_factor
+			value = 0.1
+			tooltip = air_attack_factor_tt
+		}
+    }
+}
+#嘈嘈切切错杂发
+LIB_caocaoqieqiecuozafa {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_74}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		custom_effect_tooltip = LIB_small_airframe_cost_reduction_effect1
+		custom_effect_tooltip = LIB_ccqqczf_effect
+		hidden_effect = {
+		add_ideas = LIB_ccqqczf_idea
+		}
+    }
+}
+#大玉小玉砸傻瓜
+LIB_dayuxiaoyuzashagua {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_74}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+        custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_air_attack_factor
+			value = 0.1
+			tooltip = air_attack_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_static_anti_air_hit_chance_factor
+			value = 0.1
+			tooltip = static_anti_air_hit_chance_factor_tt
+		}
+    }
+}
+#月都重炮
+LIB_yueduzhongpao {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_75}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		custom_effect_tooltip = LIB_super_heavy_artillery_cost_reduction_tt
+		hidden_effect = {
+		add_ideas = LIB_super_heavy_artillery_cost_reduction
+		}
+    }
+}
+#利用第四槐安通道
+LIB_disihuaiantongdao {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_75}
+    allowed = { original_tag = LIB }
+    available = {
+	has_air_experience > 50
+    }
+
+    complete_effect = {
+	add_air_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_terrain_penalty_reduction
+			value = 0.25
+			tooltip = terrain_penalty_reduction_tt
+		}
+		add_to_variable = {
+			var = LIB_air_accidents_factor
+			value = -0.25
+			tooltip = air_accidents_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_navy_visibility
+			value = -0.05
+			tooltip = navy_visibility_tt
+		}
+    }
+}
+#征召“因污秽拒服兵役者”
+LIB_zzwh {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_75}
+    allowed = { original_tag = LIB }
+    available = {
+	has_political_power > 50
+    }
+
+    complete_effect = {
+	add_political_power = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_industrial_capacity_factory
+			value = 0.1
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			var = LIB_economy_committee_conscription_factor
+			value = 0.05
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_supply_consumption_factor
+			value = -0.1
+			tooltip = supply_consumption_factor_tt
+		}
+    }
+}
+#秽身探知型水雷
+LIB_hstzxsl {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_75}
+    allowed = { original_tag = LIB }
+    available = {
+	has_navy_experience > 50
+    }
+
+    complete_effect = {
+	add_navy_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_navy_submarine_attack_factor
+			value = 0.1
+			tooltip = navy_submarine_attack_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_navy_visibility
+			value = -0.1
+			tooltip = navy_visibility_tt
+		}
+		
+    }
+}
+#在背后开门的能力
+LIB_hhzl {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_76}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_army_defence_factor
+			value = 0.1
+			tooltip = army_defence_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_army_morale_factor
+			value = 0.1
+			tooltip = army_morale_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_land_reinforce_rate
+			value = 0.03
+			tooltip = land_reinforce_rate_tt
+		}
+		add_to_variable = {
+			var = LIB_supply_consumption_factor
+			value = -0.1
+			tooltip = supply_consumption_factor_tt
+		}
+    }
+}
+#再起立术式
+LIB_zqlss {
+    icon = GFX_decision_generic_political_actions
+    cost = 0
+    days_remove = 30
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_72
+	has_completed_focus = LIB_new_focus_76}
+    allowed = { original_tag = LIB }
+    available = {
+	has_army_experience > 50
+    }
+
+    complete_effect = {
+	add_army_experience = -50
+    }
+
+    remove_effect = {
+	custom_effect_tooltip = LIB_hxxfwj_tt
+		add_to_variable = {
+			var = LIB_army_morale_factor
+			value = 0.1
+			tooltip = army_morale_factor_tt
+		}
+		add_to_variable = {
+			var = LIB_land_reinforce_rate
+			value = 0.02
+			tooltip = land_reinforce_rate_tt
+		}
+	hidden_effect = {
+	country_event = {
+	id = LIB_news.3}
+    }
+}
+}
+}
+
+LIB_gongye_category = {
 	LIB_xlgjs_decision = {
     icon = GFX_decision_infrastructure
     # 消耗 100 政治点数
@@ -150,7 +2765,7 @@ LIB_gongye = {
     days_remove = 140
     fire_only_once = yes
 	visible = {
-	has_completed_focus = LIB_new_focus_25 }
+	has_completed_focus = LIB_new_focus_26 }
     # 可用条件：459 必须由 ROOT 拥有并控制
     available = {
 	num_of_civilian_factories_available_for_projects > 4
@@ -194,8 +2809,68 @@ LIB_gongye = {
                 instant_build = yes
             }
         }
+		add_to_variable = {
+			var = LIB_economy_committee_production_factory_max_efficiency_factor
+			value = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		} # 生产效率上限
     }
 }
+
+LIB_xlgjs_JG_decision = {
+    icon = GFX_decision_infrastructure
+    # 消耗 100 政治点数
+    cost = 100
+    days_remove = 140
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_46 }
+    # 可用条件：459 必须由 ROOT 拥有并控制
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        459 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 10
+    }
+    # 点击瞬间无额外效果（所有效果在倒计时结束后结算）
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        459 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 12
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            # 3. 增加 4 个民用工厂
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            # 4. 增加 1 个军用工厂
+            add_building_construction = {
+                type = arms_factory
+                level = 10
+                instant_build = yes
+            }
+        }
+    }
+}
+
 LIB_hzg_decision = {
     icon = GFX_decision_infrastructure
     # 消耗 100 政治点数
@@ -203,8 +2878,7 @@ LIB_hzg_decision = {
     days_remove = 140
     fire_only_once = yes
 	visible = {
-	has_completed_focus = LIB_new_focus_25
-	has_completed_focus = LIB_new_focus_28 }
+	has_completed_focus = LIB_new_focus_27 }
     available = {
 	num_of_civilian_factories_available_for_projects > 4
         460 = {
@@ -250,15 +2924,77 @@ LIB_hzg_decision = {
                 instant_build = yes
             }
         }
+		add_to_variable = {
+			var = LIB_economy_committee_line_change_production_efficiency_factor
+			value = 0.05
+			tooltip = line_change_production_efficiency_factor_tt
+		} # 生产效率保持
     }
 }
+
+LIB_hzg_JG_decision = {
+    icon = GFX_decision_infrastructure
+    # 消耗 100 政治点数
+    cost = 100
+    days_remove = 140
+    fire_only_once = yes
+	visible = {
+	has_completed_focus = LIB_new_focus_46 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 4
+        460 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 10
+    }
+    # 点击瞬间无额外效果（所有效果在倒计时结束后结算）
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        460 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 12
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			add_building_construction = {
+				type = dockyard
+				level = 6
+				instant_build = yes
+			}
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 6
+                instant_build = yes
+            }
+        }
+    }
+}
+
 LIB_smxs_decision = {
     icon = GFX_decision_infrastructure
     cost = 100
     fire_only_once = yes
 	days_remove = 140
 	visible = {
-	has_completed_focus = LIB_new_focus_25
+	has_completed_focus = LIB_new_focus_28
 	has_completed_focus = LIB_new_focus_30 }
     available = {
 	num_of_civilian_factories_available_for_projects > 4
@@ -364,15 +3100,134 @@ LIB_smxs_decision = {
 			value = -0.05
 			tooltip = consumer_goods_factor_tt
 		} # 生活消费品工厂系数
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		} # 建设速度
     }
 }
+
+LIB_smxs_JG_decision = {
+    icon = GFX_decision_infrastructure
+    cost = 100
+    fire_only_once = yes
+	days_remove = 140
+	visible = {
+	has_completed_focus = LIB_new_focus_46 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 9
+        805 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		513 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		865 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+		665 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 10
+    }
+    complete_effect = {
+    }
+    # 140 天倒计时结束后执行
+    remove_effect = {
+        805 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 5
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+            }
+        }
+		513 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 2
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+          
+        }
+		865 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 2
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+		665 = {
+            # 1. 先增加 5 个建筑槽位（必须在添加建筑之前执行）
+            add_extra_state_shared_building_slots = 2
+            # 2. 如果基础设施未达到上限（基础游戏上限为 5），加 1 级基建
+            if = {
+                limit = {
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+		add_stability = 0.05
+		custom_effect_tooltip = LIB_gjdd_tt
+		add_to_variable = {
+			var = LIB_economy_committee_consumer_goods_factor
+			value = -0.05
+			tooltip = consumer_goods_factor_tt
+		} # 生活消费品工厂系数
+    }
+}
+
 LIB_yjlz_decision = {
     icon = GFX_decision_infrastructure
     cost = 100
 	days_remove = 100
     fire_only_once = yes
 	visible = {
-	has_completed_focus = LIB_new_focus_25
 	has_completed_focus = LIB_new_focus_29 }
     available = {
 	num_of_civilian_factories_available_for_projects > 4
@@ -410,15 +3265,144 @@ LIB_yjlz_decision = {
             amount = 10
             state = 805
         }
+		add_to_variable = {
+			var = LIB_economy_committee_production_speed_buildings_factor
+			value = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		} # 建设速度
     }
 }
-#堡垒一二三期
-LIB_fyyqgc1_decision = {
+
+LIB_yjlz_JG_decision = {
     icon = GFX_decision_infrastructure
-	cost = 50
-    days_remove = 100
+    cost = 100
+	days_remove = 100
     fire_only_once = yes
-	visible = {has_completed_focus = LIB_new_focus_45}
+	visible = {
+	has_completed_focus = LIB_new_focus_46 }
+    available = {
+	num_of_civilian_factories_available_for_projects > 9
+        805 = {
+            is_owned_by = ROOT
+            is_controlled_by = ROOT
+        }
+    }
+	 modifier = {
+        civilian_factory_use = 10
+    }
+    complete_effect = {
+    }
+    remove_effect = {
+        805 = {
+            add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+			add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+		add_resource = {
+            type = steel
+            amount = 30
+            state = 805
+        }
+        add_resource = {
+            type = tungsten
+            amount = 20
+            state = 805
+        }
+		add_resource = {
+			type = chromium
+			amount = 20
+			state = 805
+		}
+    }
+}
+
+LIB_GG_JG_decision = {
+    icon = GFX_decision_generic_construction
+    cost = 100
+    days_remove = 120
+    fire_only_once = yes
+
+    allowed = { original_tag = LIB }
+	visible = {has_completed_focus = LIB_new_focus_46 }
+    available = {
+        # 州 297 由 ROOT 或其附庸国拥有
+        297 = {
+            OR = {
+                is_owned_by = ROOT
+                owner = { is_subject_of = ROOT }
+            }
+        }
+        # 空闲民工大于 9（即至少 10 个）
+        num_of_civilian_factories_available_for_projects > 9
+    }
+
+    # 决议计时期间占用 15 个民工
+    modifier = {
+        civilian_factory_use = 15
+    }
+
+    complete_effect = {
+        # 点击时无额外效果
+    }
+
+    remove_effect = {
+        297 = {
+            # 1. 增加 20 个建筑槽位（必须在添加建筑之前）
+            add_extra_state_shared_building_slots = 20
+
+            # 2. 若基础设施未满级（默认上限 5），加 1 级基建
+            if = {
+                limit = { infrastructure < 5 }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            # 3. 增加 2 个民用工厂
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+
+            # 4. 增加 6 个船坞
+            add_building_construction = {
+                type = dockyard
+                level = 6
+                instant_build = yes
+            }
+
+            # 5. 增加 12 个军用工厂
+            add_building_construction = {
+                type = arms_factory
+                level = 12
+                instant_build = yes
+            }
+        }
+    }
+}
+
+LIB_xfygzd_decision = {
+    icon = GFX_decision_infrastructure
+	cost = 25
+    days_remove = 150
+    fire_only_once = yes
+	visible = {has_country_flag = LIB_xfygzd1}
     available = {
         num_of_civilian_factories_available_for_projects >= 5
         # 可选：检查省份归属，避免无效建设
@@ -427,6 +3411,57 @@ LIB_fyyqgc1_decision = {
         1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
         9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
         11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+    }
+
+    # 决议计时期间占用5个民工
+    modifier = {
+        civilian_factory_use = 5
+    }
+
+    complete_effect = {
+        # 无额外效果，建筑在倒计时结束后添加
+    }
+
+    remove_effect = {
+        # 省份 7132
+        753 = {
+            add_building_construction = {
+                type = bunker
+                level = 4
+                instant_build = yes
+				province = 4073
+            }
+            add_building_construction = {
+                type = bunker
+                level = 4
+                instant_build = yes
+				province = 12049
+            }
+            add_building_construction = {
+                type = coastal_bunker
+                level = 4
+                instant_build = yes
+				province = 12049
+            }
+        }
+		set_country_flag = LIB_yiqigongcheng
+    }
+}
+
+#堡垒一二三期
+LIB_fyyqgc1_decision = {
+    icon = GFX_decision_infrastructure
+	cost = 25
+    days_remove = 100
+    fire_only_once = yes
+	visible = {has_completed_focus = LIB_new_focus_45}
+    available = {
+        num_of_civilian_factories_available_for_projects >= 5
+        # 可选：检查省份归属，避免无效建设
+        805 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        459 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        460 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        458 = { is_owned_by = ROOT is_controlled_by = ROOT }
     }
 
     # 决议计时期间占用5个民工
@@ -517,20 +3552,20 @@ LIB_fyyqgc1_decision = {
 		set_country_flag = LIB_yiqigongcheng
     }
 }
+
 LIB_fyyqgc2_decision = {
     icon = GFX_decision_infrastructure
-	cost = 50
+	cost = 25
     days_remove = 100
     fire_only_once = yes
 	visible = {has_country_flag = LIB_yiqigongcheng}
     available = {
         num_of_civilian_factories_available_for_projects >= 5
         # 可选：检查省份归属，避免无效建设
-        7132 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        1145 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        805 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        459 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        460 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        458 = { is_owned_by = ROOT is_controlled_by = ROOT }
     }
 
     # 决议计时期间占用5个民工
@@ -621,20 +3656,20 @@ LIB_fyyqgc2_decision = {
 		set_country_flag = LIB_erqigongcheng
     }
 }
+
 LIB_fyyqgc3_decision = {
     icon = GFX_decision_infrastructure
-	cost = 50
+	cost = 25
     days_remove = 100
     fire_only_once = yes
 	visible = {has_country_flag = LIB_erqigongcheng}
     available = {
         num_of_civilian_factories_available_for_projects >= 5
         # 可选：检查省份归属，避免无效建设
-        7132 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        1145 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        1160 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        9994 = { is_owned_by = ROOT is_controlled_by = ROOT }
-        11921 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        805 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        459 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        460 = { is_owned_by = ROOT is_controlled_by = ROOT }
+        458 = { is_owned_by = ROOT is_controlled_by = ROOT }
     }
 
     # 决议计时期间占用5个民工
@@ -724,6 +3759,7 @@ LIB_fyyqgc3_decision = {
         }
     }
 }
+
 LIB_anti_air_yiqi = {
     icon = GFX_decision_generic_construction
     cost = 50
@@ -782,12 +3818,13 @@ LIB_anti_air_yiqi = {
         }
     }
 }
+
 LIB_anti_air_erqi = {
     icon = GFX_decision_generic_construction
 
     cost = 50
     days_remove = 60
-    fire_only_once = no
+    fire_only_once = yes
 
     # 只有已研发雷达科技时，决议才可见
     visible = {
@@ -846,13 +3883,14 @@ LIB_anti_air_erqi = {
         }
     }
 }
+
 #紧急碉堡
 LIB_bunker_construction_jinji = {
     icon = GFX_decision_generic_construction
 
     cost = 50
     days_remove = 60
-    fire_only_once = no
+    fire_only_once = yes
 
     # 只有省份446被DVL控制时，决议才可见
     visible = {
@@ -876,351 +3914,60 @@ LIB_bunker_construction_jinji = {
 
     remove_effect = {
         # state 665 的省份
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 11957
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 1105
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 4992
-            instant_build = yes
-        }
-        # state 513 的省份
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 12842
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 2049
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 5035
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 4903
-            instant_build = yes
-        }
-        add_building_construction = {
-            type = bunker
-            level = 4
-            province = 8061
-            instant_build = yes
-        }
+        665 = {
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 11957
+        instant_build = yes
+    }
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 1105
+        instant_build = yes
+    }
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 4992
+        instant_build = yes
     }
 }
-}
-LIB_junshi = {
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-free_france2 = {
-		complete_effect = {
-			FRA = {
-			country_event = {
-				id = LIB_lw.5
-			}
-		}
-		}
-	}
-}
-LIB_ziyuan = {
-#合成石油工业
-LIB_hcsy = {
-    icon = GFX_decision_generic_construction
-	visible = {
-        has_completed_focus = LIB_new_focus_40
-    }
-    cost = 100
-    days_remove = 60
-    fire_only_once = no
 
-    available = {
-        num_of_civilian_factories_available_for_projects >= 5
-        # 至少有一个州有空余建筑槽位
-        any_state = {
-            is_owned_by = ROOT
-            is_controlled_by = ROOT
-            free_building_slots = {
-                building = synthetic_refinery
-                size > 0
-            }
-        }
+# state 513 的省份
+513 = {
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 12842
+        instant_build = yes
     }
-
-    # 决议计时期间占用5个民工
-    modifier = {
-        civilian_factory_use = 5
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 2049
+        instant_build = yes
     }
-
-    complete_effect = {
-        # 如果没有合成石油实验科技，立刻获得
-        if = {
-            limit = {
-                NOT = { has_tech = 665 }
-            }
-            set_technology = { 665 = 1 }
-            custom_effect_tooltip = LIB_synthetic_refinery_tech_granted_tt
-        }
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 5035
+        instant_build = yes
     }
-
-    remove_effect = {
-        # 在任意有2个以上空位的州建造2个合成炼油厂
-        if = {
-            limit = {
-                any_state = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    free_building_slots = {
-                        building = synthetic_refinery
-                        size >= 2
-                    }
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    free_building_slots = {
-                        building = synthetic_refinery
-                        size >= 2
-                    }
-                }
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 2
-                    instant_build = yes
-                }
-            }
-        }
-        # 如果没有州有2个以上空位，则找两个各有1个空位的州分别建造
-        else_if = {
-            limit = {
-                any_state = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    free_building_slots = {
-                        building = synthetic_refinery
-                        size > 0
-                    }
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    free_building_slots = {
-                        building = synthetic_refinery
-                        size > 0
-                    }
-                }
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    free_building_slots = {
-                        building = synthetic_refinery
-                        size > 0
-                    }
-                }
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 4903
+        instant_build = yes
+    }
+    add_building_construction = {
+        type = bunker
+        level = 4
+        province = 8061
+        instant_build = yes
     }
 }
-#挖掘金属
-LIB_wjjs = {
-    icon = GFX_decision_generic_construction
-	visible = {
-        has_completed_focus = LIB_new_focus_40
-    }
-    cost = 25
-    days_remove = 60
-    fire_only_once = no
-    # 决议计时期间占用5个民工
-    modifier = {
-        civilian_factory_use = 5
-    }
-
-    complete_effect = {
-    }
-
-       remove_effect = {
-        805 = {
-            add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
-        }
-		add_resource = {
-            type = steel
-            amount = 20
-            state = 805
-        }
-        add_resource = {
-            type = tungsten
-            amount = 10
-            state = 805
-        }
-    }
-}
-#推行节约与替代品
-LIB_txjy = {
-    icon = GFX_decision_generic_construction
-	visible = {
-        has_completed_focus = LIB_new_focus_40
-    }
-    cost = 25
-    days_remove = 60
-    fire_only_once = no
-    # 决议计时期间占用5个民工
-    modifier = {
-        civilian_factory_use = 5
-    }
-
-    complete_effect = {
-    }
-
-       remove_effect = {
-        custom_effect_tooltip = LIB_gjdd_tt
-		add_to_variable = {
-			var = LIB_economy_committee_consumer_goods_factor
-			value = -0.1
-			tooltip = consumer_goods_factor_tt
-		} 
-		add_to_variable = {
-			var = LIB_production_lack_of_resource_penalty_factor
-			value = -0.15
-			tooltip = production_lack_of_resource_penalty_factor_tt
-		} 
-    }
-}
-}
-LIB_fangong = {
-#袭击
-LIB_xiji = {
-    icon = GFX_decision_generic_military
-    fire_only_once = no
-    available = {
-        has_army_experience >= 50
-		has_navy_experience >= 50
-        manpower > 9999
-        has_equipment = {
-            infantry_equipment > 1999
-        }
-        custom_trigger_tooltip = {
-            tooltip = LIB_xiji_no_flag4_tt
-            NOT = { has_country_flag = LIB_xiji_flag4 }
-        }
-    }
-
-    complete_effect = {
-        # 消耗资源
-        add_army_experience = -50
-		add_navy_experience = -50
-        add_manpower = -10000
-        add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = -2000
-        }
-
-        # 按顺序推进阶段 flag
-        if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag1 } }
-            add_country_flag = LIB_xiji_flag1
-        }
-        else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag2 } }
-			clr_country_flag = LIB_xiji_flag1
-            add_country_flag = LIB_xiji_flag2
-        }
-        else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag3 } }
-            clr_country_flag = LIB_xiji_flag2
-            add_country_flag = LIB_xiji_flag3
-        }
-        else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag4 } }
-            clr_country_flag = LIB_xiji_flag3
-            add_country_flag = LIB_xiji_flag4
-        }
     }
 }
 }

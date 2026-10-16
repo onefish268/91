@@ -417,9 +417,13 @@ defined_text = {
         trigger = { tag = PAQ }
         localization_key = GFX_PAQ_Side_Picture
     }   
-	text = {
+    text = {
         trigger = { tag = MON }
         localization_key = GFX_MON_Side_Picture
+    }
+    text = {
+        trigger = { tag = LIB }
+        localization_key = GFX_LIB_Side_Picture
     }
     text = {
         trigger = { tag = PA1 }
@@ -459,10 +463,6 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_Country_History_Button_ZIM
-    }
-    text = {
-        trigger = { tag = YSS }
-        localization_key = GFX_Country_History_Button_YSS
     }
     text = {
         trigger = { tag = GER }
@@ -551,10 +551,6 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_Local_History_Button_ZIM
-    }
-    text = {
-        trigger = { tag = YSS }
-        localization_key = GFX_Local_History_Button_YSS
     }
     text = {
         trigger = { tag = GER }
@@ -649,10 +645,6 @@ defined_text = {
         localization_key = GFX_World_History_Button_ZIM
     }
     text = {
-        trigger = { tag = YSS }
-        localization_key = GFX_World_History_Button_YSS
-    }
-    text = {
         trigger = { tag = FRA }
         localization_key = GFX_World_History_Button_FRA
     }
@@ -739,10 +731,6 @@ defined_text = {
     text = {
         trigger = { tag = ZIM }
         localization_key = GFX_Route_Guide_Button_ZIM
-    }
-    text = {
-        trigger = { tag = YSS }
-        localization_key = GFX_Route_Guide_Button_YSS
     }
     text = {
         trigger = { tag = FRA }
@@ -1300,6 +1288,10 @@ defined_text = {
         trigger = { tag = PA1 }
         localization_key = PA1_his_page_02_title
     } 
+     text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_his_page_02_title
+    } 
 }
 
 defined_text = {
@@ -1456,6 +1448,10 @@ defined_text = {
     text = {
         trigger = { tag = PA1 }
         localization_key = PA1_his_page_03_title
+    } 
+     text = {
+        trigger = { tag = LIB }
+        localization_key = LIB_his_page_03_title
     } 
 }
 

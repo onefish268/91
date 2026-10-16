@@ -1,0 +1,819 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Super_Event_Background"
+		texturefile = "gfx/super_event_gui/Adorable_heart_super_event_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Super_Event_Background_Alternate"
+		texturefile = "gfx/super_event_gui/Adorable_heart_super_event_bg_alternate.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Adorable_heart_super_event_music_button"
+		texturefile = "gfx/super_event_gui/Adorable_heart_super_event_music_button.dds"
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Super_Event_Text_Underlay"
+		textureFile = "gfx/super_event_gui/Adorable_heart_super_event_text_underlay.dds"
+	}
+	spriteType = {
+		name = "GFX_huifang_icon"
+		textureFile = "gfx/interface/huifang_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_guize_icon"
+		textureFile = "gfx/interface/guize_icon.dds"
+	}
+	spriteType = {
+		#第二次“伟大战争”
+		name = "GFX_super_event_1"
+		texturefile = "gfx/superevent_pictures/super_event_WWII.dds"
+	}
+	spriteType = {
+		#德意志归来
+		name = "GFX_super_event_22"
+		textureFile = "gfx//superevent_pictures//superevent_rebuild_of_GER.dds"
+	}
+	spriteType = {
+		#神州崩溃
+		name = "GFX_super_event_37"
+		textureFile = "gfx//superevent_pictures//superevent_CHI_1.dds"
+	}
+	spriteType = {
+		#袁克定
+		name = "GFX_super_event_40"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_Yuan_unit.dds"
+	}
+	spriteType = {
+		#帝国革新派
+		name = "GFX_super_event_38"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_2.dds"
+	}
+	spriteType = {
+		#帝国改良派
+		name = "GFX_super_event_39"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_3.dds"
+	}
+	spriteType = {
+		#联合统一
+		name = "GFX_super_event_41"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_federation.dds"
+	}
+	spriteType = {
+		#革命帝国
+		name = "GFX_super_event_42"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_revo_empire.dds"
+	}
+	spriteType = {
+		#和平革命
+		name = "GFX_super_event_43"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_PWDP.dds"
+	}
+	spriteType = {
+		#德国革命
+		name = "GFX_super_event_25"
+		textureFile = "gfx//superevent_pictures//superevent_GEU_VIC.dds"
+	}
+	spriteType = {
+		#法兰西归来
+		name = "GFX_super_event_70"
+		textureFile = "gfx//superevent_pictures//superevent_FRA_BACK.dds"
+	}
+	#########苏联参战#########
+	spriteType = {
+		name = "GFX_super_event_4"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_1.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_5"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_1.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_6"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_2.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_7"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_3.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_11"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_3.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_8"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_WAR_4.dds"
+	}
+	spriteType = {
+		#苏联解体
+		name = "GFX_super_event_9"
+		textureFile = "gfx//superevent_pictures//super_event_SOV_FAILURE.dds"
+	}
+	spriteType = {
+		#轴心国参战
+		name = "GFX_super_event_20"
+		textureFile = "gfx//superevent_pictures//super_event_AUS_WAR.dds"
+	}
+	spriteType = {
+		#轴心国参战
+		name = "GFX_super_event_21"
+		textureFile = "gfx//superevent_pictures//super_event_AUS_WAR.dds"
+	}
+	spriteType = {
+		#南美战争
+		name = "GFX_super_event_18"
+		textureFile = "gfx//superevent_pictures//super_event_SOUTH_AMERICAN_WAR.dds"
+	}
+	spriteType = {
+		#罗马尼亚统一巴尔干
+		name = "GFX_super_event_12"
+		textureFile = "gfx//superevent_pictures//super_event_ROM_BRG_UNIT.dds"
+	}
+	spriteType = {
+		#魔联阴云
+		name = "GFX_super_event_13"
+		textureFile = "gfx//superevent_pictures//super_event_MGU_CLOUD.dds"
+	}
+	spriteType = {
+		#伪世的物语
+		name = "GFX_super_event_14"
+		textureFile = "gfx//superevent_pictures//super_event_HOUMULA.dds"
+	}
+	spriteType = {
+		#圆环之理降临
+		name = "GFX_super_event_15"
+		textureFile = "gfx//superevent_pictures//super_event_MGU_MADOUKA.dds"
+	}
+	spriteType = {
+		#大德意志统一
+		name = "GFX_super_event_23"
+		textureFile = "gfx//superevent_pictures//super_event_great_germania.dds"
+	}
+	spriteType = {
+		#超日本帝国建立
+		name = "GFX_super_event_16"
+		textureFile = "gfx//superevent_pictures//super_event_Super_Japan_Empire.dds"
+	}
+	spriteType = {
+		#阿连德统一南美
+		name = "GFX_super_event_19"
+		textureFile = "gfx//superevent_pictures//super_event_Allende_unit_south_amercia.dds"
+	}
+	spriteType = {
+		#欧盟
+		name = "GFX_super_event_26"
+		textureFile = "gfx//superevent_pictures//super_event_GEU_Europe.dds"
+	}
+	spriteType = {
+		#中国再次陷入战火
+		name = "GFX_super_event_47"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_WAR_again.dds"
+	}
+	spriteType = {
+		#中国再次陷入战火
+		name = "GFX_super_event_48"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_WAR_again.dds"
+	}
+	#北欧统一
+	spriteType = {
+		name = "GFX_super_event_28"
+		textureFile = "gfx//superevent_pictures//super_event_CKP_Dorobo_Union.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_29"
+		textureFile = "gfx//superevent_pictures//super_event_CKP_Apocalypsis_Patriam.dds"
+	}
+	#####幻想乡
+	spriteType = {
+		name = "GFX_super_event_31"
+		textureFile = "gfx//superevent_pictures//super_event_FRA_unit_1.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_32"
+		textureFile = "gfx//superevent_pictures//super_event_FRA_unit_2.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_33"
+		textureFile = "gfx//superevent_pictures//super_event_FRA_unit_3.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_34"
+		textureFile = "gfx//superevent_pictures//super_event_FRA_unit_4.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_35"
+		textureFile = "gfx//superevent_pictures//super_event_coronation_of_Sanae.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_36"
+		textureFile = "gfx//superevent_pictures//super_event_Floreal_Revolution.dds"
+	}
+	##PAN
+	spriteType = {
+		name = "GFX_super_event_129"
+		textureFile = "gfx//superevent_pictures//super_event_PAN_USER.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_132"
+		textureFile = "gfx//superevent_pictures//super_event_PAN_WSY.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_131"
+		textureFile = "gfx//superevent_pictures//super_event_PAJ_GG.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_130"
+		textureFile = "gfx//superevent_pictures//super_event_PAJ_GZZ.dds"
+	}
+	#大萧条
+	spriteType = {
+		name = "GFX_super_event_30"
+		textureFile = "gfx//superevent_pictures//super_event_THE_BIG_DEPRESSION.dds"
+	}
+	#大帅
+	spriteType = {
+		name = "GFX_super_event_49"
+		textureFile = "gfx//superevent_pictures//super_event_MAN_dashuai.dds"
+	}
+	#少帅
+	spriteType = {
+		name = "GFX_super_event_50"
+		textureFile = "gfx//superevent_pictures//super_event_MAN_shaoshuai.dds"
+	}
+	#毛润芝
+	spriteType = {
+		name = "GFX_super_event_52"
+		textureFile = "gfx//superevent_pictures//super_event_PRC.dds"
+	}
+	#陈独秀
+	spriteType = {
+		name = "GFX_super_event_53"
+		textureFile = "gfx//superevent_pictures//super_event_PRC_Trotskyite.dds"
+	}
+	#布
+	spriteType = {
+		name = "GFX_super_event_54"
+		textureFile = "gfx//superevent_pictures//super_event_PRC_Bolshevik.dds"
+	}
+	#陈世涛
+	spriteType = {
+		name = "GFX_super_event_55"
+		textureFile = "gfx//superevent_pictures//super_event_PRC_Chen.dds"
+	}
+	#虎妞
+	spriteType = {
+		name = "GFX_super_event_56"
+		textureFile = "gfx//superevent_pictures//super_event_MAN_huniu.dds"
+	}
+	#杀马特团长
+	spriteType = {
+		name = "GFX_super_event_57"
+		textureFile = "gfx//superevent_pictures//super_event_MAN_shamate.dds"
+	}
+	#东百烤馒头
+	spriteType = {
+		name = "GFX_super_event_58"
+		textureFile = "gfx//superevent_pictures//super_event_MAN_KMT.dds"
+	}
+	#亚平宁统一战争
+	spriteType = {
+		name = "GFX_super_event_63"
+		textureFile = "gfx//superevent_pictures//super_event_aqua_war.dds"
+	}
+	#阿库西斯信仰大革命
+	spriteType = {
+		name = "GFX_super_event_64"
+		textureFile = "gfx//superevent_pictures//super_event_ITA_geming.dds"
+	}
+	#德意志之死
+	spriteType = {
+		name = "GFX_super_event_24"
+		textureFile = "gfx//superevent_pictures//super_event_death_of_germany.dds"
+	}
+	#精灵统一
+	spriteType = {
+		name = "GFX_super_event_65"
+		textureFile = "gfx//superevent_pictures//super_event_USA_unit.dds"
+	}
+	#人造卫星
+	spriteType = {
+		name = "GFX_super_event_144"
+		textureFile = "gfx//superevent_pictures//super_event_Launch_of_Sputnik.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_148"   # 无对应 super_event 条目，保留原名
+		textureFile = "gfx//superevent_pictures//GER_Launch_of_Sputnik.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_147"   # 无对应，保留
+		textureFile = "gfx//superevent_pictures//kristen_Launch_of_Sputnik.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_145"   # 无对应，保留
+		textureFile = "gfx//superevent_pictures//SOV_Launch_of_Sputnik.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_146"   # 无对应，保留
+		textureFile = "gfx//superevent_pictures//SWE_Launch_of_Sputnik.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_149"
+		textureFile = "gfx//superevent_pictures//super_event_Launch_of_Sputnik.dds"
+	}
+	#欧洲统一
+	spriteType = {
+		name = "GFX_super_event_67"
+		textureFile = "gfx//superevent_pictures//super_event_unit_of_Europe.dds"
+	}
+	#法国统一北美
+	spriteType = {
+		name = "GFX_super_event_68"
+		textureFile = "gfx//superevent_pictures//super_event_NFA_unit_NA.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_69"
+		textureFile = "gfx//superevent_pictures//super_event_NFA_unit_NA.dds"
+	}
+	#维新政府
+	spriteType = {
+		name = "GFX_super_event_59"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_GRCR.dds"
+	}
+	#唐可可-红
+	spriteType = {
+		name = "GFX_super_event_60"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_Tangkeke_c.dds"
+	}
+	#唐可可-蓝
+	spriteType = {
+		name = "GFX_super_event_61"
+		textureFile = "gfx//superevent_pictures//super_event_CHI_Tangkeke_d.dds"
+	}
+	#第二次统一战线
+	spriteType = {
+		name = "GFX_super_event_62"
+		textureFile = "gfx//superevent_pictures//super_event_Second_Great_East_Asian_War.dds"
+	}
+	#黑日计划
+	spriteType = {
+		name = "GFX_super_event_27"
+		textureFile = "gfx//superevent_pictures//super_event_black_sun_plan.dds"
+	}
+	#远洋
+	spriteType = {
+		name = "GFX_super_event_71"
+		textureFile = "gfx//superevent_pictures//super_event_NGD_NA_Zhude.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_72"
+		textureFile = "gfx//superevent_pictures//super_event_NGD_NA_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_73"
+		textureFile = "gfx//superevent_pictures//super_event_NGD_NA_fascism.dds"
+	}
+	#超次元
+	spriteType = {
+		name = "GFX_super_event_74"   # 无对应本地化条目，保留原名
+		textureFile = "gfx/superevent_pictures/super_event_NPT_breaking_dimensional_wall.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_75"
+		textureFile = "gfx/superevent_pictures/super_event_MOR_recover_country_left_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_76"
+		textureFile = "gfx/superevent_pictures/super_event_MOR_recover_country_right_wing.dds"
+	}
+	#齐亚德
+	spriteType = {
+		name = "GFX_super_event_77"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_unit_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_78"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_unit_Roma.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_79"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_rebulid_Roma.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_80"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_unit_junta.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_81"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_unit_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_82"
+		textureFile = "gfx//superevent_pictures//super_event_FRG_unit_imperial.dds"
+	}
+	#世界苏维埃
+	spriteType = {
+		name = "GFX_super_event_10"
+		textureFile = "gfx/superevent_pictures/super_event_World_Soviets.dds"
+	}
+	#中国解放战争
+	spriteType = {
+		name = "GFX_super_event_51"
+		textureFile = "gfx/superevent_pictures/super_event_Chinese_Liberation_War.dds"
+	}
+	#樱花帝国北进俄罗斯
+	spriteType = {
+		name = "GFX_super_event_17"
+		textureFile = "gfx/superevent_pictures/super_event_JAP_attack_SOV.dds"
+	}
+	#俄罗斯
+	spriteType = {
+		name = "GFX_super_event_83"
+		textureFile = "gfx//superevent_pictures//super_event_UKR_fxs_win.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_84"
+		textureFile = "gfx//superevent_pictures//super_event_UKR_junzhulixian_win.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_85"
+		textureFile = "gfx//superevent_pictures//super_event_UKR_shahuangzhuanzhi_win.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_86"
+		textureFile = "gfx//superevent_pictures//super_event_UKR_waerjili_win.dds"
+	}
+	#二战
+	spriteType = {
+		name = "GFX_super_event_2"
+		textureFile = "gfx//superevent_pictures//super_event_WW2_DVL.dds"
+	}
+	#最终圣战
+	spriteType = {
+		name = "GFX_super_event_3"
+		textureFile = "gfx//superevent_pictures//super_event_END_WAR.dds"
+	}
+	#蒙古太师
+	spriteType = {
+		name = "GFX_super_event_87"
+		textureFile = "gfx/superevent_pictures/super_event_MON_chi_win.dds"
+	}
+	#（蒙古）兔子统一
+	spriteType = {
+		name = "GFX_super_event_88"
+		textureFile = "gfx/superevent_pictures/super_event_MON_cy1_win.dds"
+	}
+	#（蒙古）灰太狼统一
+	spriteType = {
+		name = "GFX_super_event_89"
+		textureFile = "gfx/superevent_pictures/super_event_MON_cy2_win.dds"
+	}
+	#（蒙古）喜羊羊统一
+	spriteType = {
+		name = "GFX_super_event_90"
+		textureFile = "gfx/superevent_pictures/super_event_MON_cy3_win.dds"
+	}
+	#红巾军起义
+	spriteType = {
+		name = "GFX_super_event_91"
+		textureFile = "gfx/superevent_pictures/super_event_MON_hjj.dds"
+	}
+	#满穗
+	spriteType = {
+		name = "GFX_super_event_97"
+		textureFile = "gfx/superevent_pictures/super_event_MON_hjj1_win.dds"
+	}
+	#张伟
+	spriteType = {
+		name = "GFX_super_event_98"
+		textureFile = "gfx/superevent_pictures/super_event_MON_hjj2_win.dds"
+	}
+	#蒙古帝国重建
+	spriteType = {
+		name = "GFX_super_event_92"
+		textureFile = "gfx/superevent_pictures/super_event_MON_mge_win.dds"
+	}
+	#蒙古帝国大远征
+	spriteType = {
+		name = "GFX_super_event_93"
+		textureFile = "gfx/superevent_pictures/super_event_MON_mge_zhengfu.dds"
+	}
+	#大元（别烈思）
+	spriteType = {
+		name = "GFX_super_event_94"
+		textureFile = "gfx/superevent_pictures/super_event_MON_yua1_win.dds"
+	}
+	#大元（伯雷帖木儿）
+	spriteType = {
+		name = "GFX_super_event_95"
+		textureFile = "gfx/superevent_pictures/super_event_MON_yua2_win.dds"
+	}
+	#白军
+	spriteType = {
+		name = "GFX_super_event_96"
+		textureFile = "gfx/superevent_pictures/super_event_MON_whitearmy_win.dds"
+	}
+	spriteType = { #内战超事件
+		name = "GFX_super_event_125"
+		texturefile = "gfx/superevent_pictures/super_event_civil_war_YUKI_MGU.dds"
+	}
+	spriteType = { #再统一超事件
+		name = "GFX_super_event_124"
+		texturefile = "gfx/superevent_pictures/super_event_reunification_YUKI_MGU.dds"
+	}
+	spriteType = { #决战
+		name = "GFX_super_event_123"
+		texturefile = "gfx/superevent_pictures/super_event_declare_ENG_YUKI_MGU.dds"
+	}
+	spriteType = { #终局
+		name = "GFX_super_event_122"
+		texturefile = "gfx/superevent_pictures/super_event_end_YUKI_MGU.dds"
+	}
+	#重返洛维尼亚
+	spriteType = {
+		name = "GFX_super_event_133"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_yongheng_War.dds"
+	}
+	#第二次洛维尼亚革命
+	spriteType = {
+		name = "GFX_super_event_134"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_gm_War.dds"
+	}
+	#南美解放战争
+	spriteType = {
+		name = "GFX_super_event_135"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_qs_War.dds"
+	}
+	#北上战争
+	spriteType = {
+		name = "GFX_super_event_138"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_cf_War.dds"
+	}
+	#谢幕之战
+	spriteType = {
+		name = "GFX_super_event_139"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_xm_War.dds"
+	}
+	#诀别之战
+	spriteType = {
+		name = "GFX_super_event_140"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_lxly_War.dds"
+	}
+	#镇魂之战
+	spriteType = {
+		name = "GFX_super_event_137"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_Heart_War.dds"
+	}
+	#第二次南美革命战争
+	spriteType = {
+		name = "GFX_super_event_136"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_lxly_War2.dds"
+	}
+	#最后的圣战
+	spriteType = {
+		name = "GFX_super_event_142"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_Holy_Grail_War.dds"
+	}
+	#东征之战
+	spriteType = {
+		name = "GFX_super_event_141"
+		textureFile = "gfx/superevent_pictures/super_event_PAO_dz_War.dds"
+	}
+	#南美大灾变
+	spriteType = {
+		name = "GFX_super_event_126"
+		textureFile = "gfx/superevent_pictures/super_event_PAM_zaibian_War.dds"
+	}
+	#最后一餐
+	spriteType = {
+		name = "GFX_super_event_127"
+		textureFile = "gfx/superevent_pictures/super_event_PAM_last_War.dds"
+	}
+	#永世神选的加冕礼
+	spriteType = {
+		name = "GFX_super_event_128"
+		textureFile = "gfx/superevent_pictures/super_event_PAQ_last_War.dds"
+	}
+	spriteType = {
+		#致阿德莱希
+		name = "GFX_super_event_7121"
+		textureFile = "gfx//superevent_pictures//super_event_PAM_Nightingale_War.dds"
+	}
+	spriteType = {
+		#致以生者的抗争
+		name = "GFX_super_event_7122"
+		textureFile = "gfx//superevent_pictures//super_event_PAM_SHATTERED_DREAM_War.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_7123"
+		textureFile = "gfx//superevent_pictures//super_event_PAM_DVL_War.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_7124"
+		textureFile = "gfx//superevent_pictures//super_event_PAM_yq_War.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_121"
+		textureFile = "gfx/superevent_pictures/super_event_MTK_fengbao_jiangxi.dds"
+	}
+	#洛维尼亚革命
+	spriteType = {
+		name = "GFX_super_event_101"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_Liberation_War.dds"
+	}
+	#雪恨之战
+	spriteType = {
+		name = "GFX_super_event_102"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_Fuchou_War.dds"
+	}
+	#南美革命战争（木棉）
+	spriteType = {
+		name = "GFX_super_event_103"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_South_America_Revolution.dds"
+	}
+	#南美统一（木棉）
+	spriteType = {
+		name = "GFX_super_event_109"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_South_America_Unified.dds"
+	}
+	#南美统一
+	spriteType = {
+		name = "GFX_super_event_104"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_Tongyi_xueyi.dds"
+	}
+	#东征战争
+	spriteType = {
+		name = "GFX_super_event_105"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_wailai_xueyi.dds"
+	}
+	#美洲人民大团结
+	spriteType = {
+		name = "GFX_super_event_106"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_Tuanjie_xueyi.dds"
+	}
+	#南美革命战争
+	spriteType = {
+		name = "GFX_super_event_107"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_jiefang_xiaofeng.dds"
+	}
+	#晓枫南美统一
+	spriteType = {
+		name = "GFX_super_event_108"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_Tongyi_xiaofeng.dds"
+	}
+	#黑日远征
+	spriteType = {
+		name = "GFX_super_event_110"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_xuanzhan_xiaofeng.dds"
+	}
+	#世界革命战争
+	spriteType = {
+		name = "GFX_super_event_111"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_shijie_xiaofeng.dds"
+	}
+	#世界革命战争
+	spriteType = {
+		name = "GFX_super_event_112"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_shijie_mumian.dds"
+	}
+	#世界人民大团结
+	spriteType = {
+		name = "GFX_super_event_113"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_shengli_xiaofeng.dds"
+	}
+	#赤土丰收时
+	spriteType = {
+		name = "GFX_super_event_114"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_wanjie_mumian.dds"
+	}
+	#献给洛维尼亚的摇篮曲
+	spriteType = {
+		name = "GFX_super_event_115"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_lwny_xiaoguo.dds"
+	}
+	#最后的暴雨
+	spriteType = {
+		name = "GFX_super_event_116"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_by_xiaoguo.dds"
+	}
+	#禾果南美统一
+	spriteType = {
+		name = "GFX_super_event_117"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_tongyi_xiaoguo.dds"
+	}
+	#南美双子星
+	spriteType = {
+		name = "GFX_super_event_118"
+		textureFile = "gfx/superevent_pictures/super_event_MGU_tongyi_xiaoguo.dds"
+	}
+	#献给未曾哭泣的你
+	spriteType = {
+		name = "GFX_super_event_119"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_mnzy_xiaoguo.dds"
+	}
+	#对樱战争
+	spriteType = {
+		name = "GFX_super_event_120"
+		textureFile = "gfx/superevent_pictures/super_event_LHS_xzyh_xiaoguo.dds"
+	}
+	#第二次伟大战争（莉莉白）
+	spriteType = {
+		name = "GFX_super_event_99"
+		textureFile = "gfx/superevent_pictures/super_event_KNM_lili_War.dds"
+	}
+	#世界之春
+	spriteType = {
+		name = "GFX_super_event_100"
+		textureFile = "gfx/superevent_pictures/super_event_KNM_lili_Spring.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_153"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_CC.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_156"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_CNRS.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_152"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_Constitutionalists.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_150"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_Jiang_Left.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_151"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_Jiang_Right.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_149"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_RCKMT.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_155"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_Tangtang.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_154"
+		textureFile = "gfx/superevent_pictures/super_event_ROC_Whampoa.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_158"
+		textureFile = "gfx/superevent_pictures/super_event_CHI_unit_WUH_Wenya.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_159"
+		textureFile = "gfx/superevent_pictures/super_event_CHI_unit_WUH_Wentian.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_157"
+		textureFile = "gfx/superevent_pictures/super_event_CHI_unit_WUH_Tiexin.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_160"
+		textureFile = "gfx/superevent_pictures/super_event_CHI_unit_WUH_Sui.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_161"
+		textureFile = "gfx/superevent_pictures/super_event_161.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_super_event_162"
+		textureFile = "gfx/superevent_pictures/super_event_GRE_Theomachy.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_163"
+		textureFile = "gfx/superevent_pictures/super_event_PA1_reunification.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_164"
+		textureFile = "gfx/superevent_pictures/super_event_PA1_great_war.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_165"
+		textureFile = "gfx/superevent_pictures/super_event_165.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_166"
+		textureFile = "gfx/superevent_pictures/super_event_PA1_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_167"
+		textureFile = "gfx/superevent_pictures/super_event_PA1_D_day.dds"
+	}
+	#幻想乡流亡
+	spriteType = {
+		name = "GFX_super_event_168"
+		textureFile = "gfx/superevent_pictures/super_event_hxxlw.dds"
+	}
+	#幻想乡归来
+	spriteType = {
+		name = "GFX_super_event_169"
+		textureFile = "gfx/superevent_pictures/super_event_hxxgl.dds"
+	}
+}
