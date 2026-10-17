@@ -7,67 +7,67 @@ spriteTypes = {
     ###GUI
     #民族精神
 	spriteType = {
-        name = "GFX_idea_lib2"
+        name = "GFX_idea_lib_2"
         texturefile = "gfx/interface/ideas/LIB/lib2.png"
     }
     spriteType = {
-        name = "GFX_idea_lib3"
+        name = "GFX_idea_lib_3"
         texturefile = "gfx/interface/ideas/LIB/lib3.png"
     }
     spriteType = {
-        name = "GFX_idea_lib4"
+        name = "GFX_idea_lib_4"
         texturefile = "gfx/interface/ideas/LIB/lib4.png"
     }
     spriteType = {
-        name = "GFX_idea_lib5"
+        name = "GFX_idea_lib_5"
         texturefile = "gfx/interface/ideas/LIB/lib5.png"
     }
     spriteType = {
-        name = "GFX_idea_lib6"
+        name = "GFX_idea_lib_6"
         texturefile = "gfx/interface/ideas/LIB/lib6.png"
     }
     spriteType = {
-        name = "GFX_idea_lib7"
+        name = "GFX_idea_lib_7"
         texturefile = "gfx/interface/ideas/LIB/lib7.png"
     }
     spriteType = {
-        name = "GFX_idea_lib8"
+        name = "GFX_idea_lib_8"
         texturefile = "gfx/interface/ideas/LIB/lib8.png"
     }
     spriteType = {
-        name = "GFX_idea_lib9"
+        name = "GFX_idea_lib_9"
         texturefile = "gfx/interface/ideas/LIB/lib9.png"
     }
     spriteType = {
-        name = "GFX_idea_lib10"
+        name = "GFX_idea_lib_10"
         texturefile = "gfx/interface/ideas/LIB/lib10.png"
     }
     spriteType = {
-        name = "GFX_idea_lib11"
+        name = "GFX_idea_lib_11"
         texturefile = "gfx/interface/ideas/LIB/lib11.png"
     }
     spriteType = {
-        name = "GFX_idea_lib12"
+        name = "GFX_idea_lib_12"
         texturefile = "gfx/interface/ideas/LIB/lib12.png"
     }
     spriteType = {
-        name = "GFX_idea_lib13"
+        name = "GFX_idea_lib_13"
         texturefile = "gfx/interface/ideas/LIB/lib13.png"
     }
     spriteType = {
-        name = "GFX_idea_lib14"
+        name = "GFX_idea_lib_14"
         texturefile = "gfx/interface/ideas/LIB/lib14.png"
     }
     spriteType = {
-        name = "GFX_idea_lib15"
+        name = "GFX_idea_lib_15"
         texturefile = "gfx/interface/ideas/LIB/lib15.png"
     }
 	spriteType = {
-        name = "GFX_idea_lib16"
+        name = "GFX_idea_lib_16"
         texturefile = "gfx/interface/ideas/LIB/lib16.png"
     }
     spriteType = {
-        name = "GFX_idea_lib17"
+        name = "GFX_idea_lib_17"
         texturefile = "gfx/interface/ideas/LIB/lib17.png"
     }
     #领袖

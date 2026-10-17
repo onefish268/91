@@ -517,6 +517,7 @@ country_event = {
 		set_variable = { adorable_heart_super_event_var = 168 } 
 		adorable_heart_fire_super_event = yes 
 		set_country_flag = Free_france_flag
+		set_country_flag = LIB_FRA_has_fallen_flag
 		complete_national_focus = LIB_new_focus_33
 		set_autonomy = {
 				target = COG
@@ -710,6 +711,7 @@ country_event = {
 		set_variable = { adorable_heart_super_event_var = 168 } 
 		adorable_heart_fire_super_event = yes 
 		set_country_flag = Free_france_flag
+		set_country_flag = LIB_FRA_has_fallen_flag
 		complete_national_focus = LIB_new_focus_33
 		set_autonomy = {
 				target = COG
@@ -999,7 +1001,7 @@ country_event = {
 		LIB = { annex_country = { target = COG transfer_troops = yes } }
 		every_state = {
                 limit = {
-                    is_core_of = KMK
+                    is_core_of = COG
                 }
                 add_compliance = 85
 				}
@@ -1020,7 +1022,7 @@ country_event = {
 			limit = {has_country_flag = LIB_remi_in_power_flag }
 			COG = {
 			set_party_name = {
-				ideology = communism
+				ideology = neutrality
 				long_name = "蒙蕾米莉亚陛下赐福的贤者议会-橙系"
 				name = "贤者议会-橙系"
 			}
@@ -1030,7 +1032,7 @@ country_event = {
 			limit = {has_country_flag = LIB_fran_in_power_flag }
 			COG = {
 			set_party_name = {
-				ideology = communism
+				ideology = neutrality
 				long_name = "蒙芙兰朵露陛下赐福的贤者议会-橙系"
 				name = "贤者议会-橙系"
 			}
@@ -1039,7 +1041,7 @@ country_event = {
 			else = {
 			COG = {
 			set_party_name = {
-				ideology = communism
+				ideology = neutrality
 				long_name = "贤者议会-橙系"
 				name = "贤者议会-橙系"
 			}

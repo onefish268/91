@@ -2111,11 +2111,11 @@ LIB_ruqinYSS = {
 
     visible = {
 	has_completed_focus = LIB_new_focus_69
+	country_exists = YSS
     }
 
     available = {
        AND = {
-                country_exists = YSS
                 YSS = { NOT = { has_war_with = DVL } }
                 YSS = { NOT = { is_in_faction_with = LIB } }
             }
@@ -2133,7 +2133,38 @@ LIB_ruqinYSS = {
         }
     }
 }
+LIB_ruqinETH = {
+    icon = GFX_decision_generic_political_actions
+    cost = 10
+    days_remove = 30
+    fire_only_once = no
+    war_with_on_remove = ETH   
 
+    allowed = { original_tag = LIB }
+
+    visible = {
+	has_completed_focus = LIB_new_focus_69
+	country_exists = ETH
+    }
+
+    available = {
+       AND = {
+                ETH = { NOT = { has_war_with = DVL } }
+                ETH = { NOT = { is_in_faction_with = LIB } }
+            }
+    }
+
+    complete_effect = {
+    }
+
+    remove_effect = {
+        # 30天后，LIB 获得对 YSS 的宣战借口
+        create_wargoal = {
+            type = annex_everything
+            target = ETH
+        }
+    }
+}
 LIB_ruqinZIM = {
     icon = GFX_decision_generic_political_actions
     cost = 0
