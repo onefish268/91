@@ -2164,6 +2164,15 @@ country_event = {
 
 					leave_faction = yes
 
+					every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = {
+							tag = ROOT
+						}
+					}
+
 					# 爆内战，创建叛军国家
     				start_civil_war = {
 						ruling_party = communism
@@ -2416,6 +2425,16 @@ country_event = {
 				}
     		}
 			else = {
+
+				every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = {
+							tag = ROOT
+						}
+					}
+
 				# 爆内战，创建叛军国家
     			start_civil_war = {
 					ruling_party = communism
