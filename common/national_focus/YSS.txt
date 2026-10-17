@@ -7,7 +7,7 @@ focus_tree = {
 			tag = YSS
 		}
 	}
-	continuous_focus_position = {
+	continuous_focus_position = {#持续性国策位置
 		x = 3000
 		y = 2400
 	}
@@ -1006,8 +1006,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.1 tooltip = conscription_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			
 			hidden_effect = {
 				country_event = {
@@ -1037,9 +1037,9 @@ focus_tree = {
 				category = industry
 			}
 			custom_effect_tooltip =YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 tooltip = industry_repair_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.1 tooltip = industry_repair_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			
 		}
 	}
@@ -1057,9 +1057,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			
 		}
 	}
@@ -1076,6 +1076,19 @@ focus_tree = {
 			focus = YSS_focus_46
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
@@ -1096,6 +1109,19 @@ focus_tree = {
 			focus = YSS_focus_47
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 			add_research_slot = 1
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
@@ -1116,13 +1142,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			hidden_effect = {
 				country_event = {
 				    id = YSS.53
@@ -1176,12 +1198,28 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 			custom_effect_tooltip = YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
 			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
 			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 			
 			custom_effect_tooltip = YSS_tootip_45
+			mio:YSS_refurbishment_plant = {
+				add_mio_funds = 3000
+			}
 		}
 	}
 	focus = {
@@ -1197,6 +1235,19 @@ focus_tree = {
 			focus = YSS_focus_49
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = YSS_focus_46_0
@@ -1274,16 +1325,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip =YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 tooltip = foreign_subversive_activites_tt }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.1 tooltip = foreign_subversive_activites_tt }
 			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.1 tooltip = intelligence_agency_defense_tt }
 			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 tooltip = foreign_subversive_activites_tt }
-			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.15 tooltip = intelligence_agency_defense_tt }
-			
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }		
 		}
 	}
 	focus = {
@@ -1325,6 +1372,9 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			mio:YSS_train = {
+				add_mio_funds = 3000
+			}
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.1 tooltip = industry_repair_factor_tt }
 			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
@@ -1358,10 +1408,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor  = 0.05 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
-			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_line_change_production_efficiency_factor  = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			
 		}
 	}
@@ -1427,8 +1476,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = -5 tooltip = civilian_factory_use_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.1 tooltip = monthly_population_tt }
 			
 			hidden_effect = {
 				country_event = {
@@ -1436,8 +1485,7 @@ focus_tree = {
 					days = 5
 			    }
 			}
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 		}
 	}
 	focus = {
@@ -1466,10 +1514,10 @@ focus_tree = {
 				category = synth_resources
 			}
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 tooltip = army_fuel_consumption_factor_tt }
-			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 tooltip = energy_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.1 tooltip = army_fuel_consumption_factor_tt }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.1 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
 			hidden_effect = {
 				country_event = {
@@ -1563,9 +1611,9 @@ focus_tree = {
                 set_country_flag = jindu4_has_more
             }
 			custom_effect_tooltip =YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 tooltip = army_fuel_consumption_factor_tt }
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.1 tooltip = army_fuel_consumption_factor_tt }
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.1 tooltip = conscription_factor_tt }
-			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.05 tooltip = foreign_subversive_activites_tt }
+			add_to_variable = { YSS_economy_committee_foreign_subversive_activites = -0.1 tooltip = foreign_subversive_activites_tt }
 			add_to_variable = { YSS_economy_committee_intelligence_agency_defense = 0.15 tooltip = intelligence_agency_defense_tt }
 			
 		}
@@ -1636,10 +1684,23 @@ focus_tree = {
 				clr_country_flag = jindu3_has_more
                 set_country_flag = jindu4_has_more
             }
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.05 tooltip = industry_repair_factor_tt }
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
-			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.1 tooltip = industry_repair_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.1 tooltip = energy_gain_factor_tt }
 			
 		}
 	}
@@ -1708,8 +1769,8 @@ focus_tree = {
                 set_country_flag = jindu4_has_more
             }
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { YSS_economy_committee_monthly_population = 0.05 tooltip = monthly_population_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_monthly_population = 0.15 tooltip = monthly_population_tt }
 			
 		}
 	}
@@ -1740,6 +1801,9 @@ focus_tree = {
 			custom_effect_tooltip = YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_industry_repair_factor  = 0.15 tooltip = industry_repair_factor_tt }
 			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.15 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 tooltip = conscription_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 			
 
 			hidden_effect = {
@@ -1818,9 +1882,9 @@ focus_tree = {
                 set_country_flag = jindu4_has_more
             }
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { YSS_economy_committee_production_factory_max_efficiency_factor  = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 tooltip = conscription_factor_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 
 			
 		}
@@ -1870,8 +1934,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.35 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = 10 tooltip = civilian_factory_use_tt }
 			
 		}
 	}
@@ -1921,11 +1985,11 @@ focus_tree = {
 			}
 			add_stability = 0.1
 			custom_effect_tooltip = YSS_tootip_28
-			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 tooltip = army_fuel_consumption_factor_tt }
-			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.05 tooltip = energy_gain_factor_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 tooltip = civilian_factory_use_tt }
+			add_to_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.1 tooltip = army_fuel_consumption_factor_tt }
+			add_to_variable = { YSS_economy_committee_energy_gain_factor = 0.1 tooltip = energy_gain_factor_tt }
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { YSS_economy_committee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { YSS_economy_committee_civilian_factory_use = 5 tooltip = civilian_factory_use_tt }
 			
 		}
 	}
@@ -1969,10 +2033,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 tooltip = conscription_factor_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			add_to_variable = { YSS_economy_committee_conscription_factor = 0.15 tooltip = conscription_factor_tt }
-			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			
+			add_to_variable = { YSS_economy_committee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }			
 		}
 	}
 	focus = {
@@ -1988,6 +2049,19 @@ focus_tree = {
 			focus = YSS_focus_79
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			add_tech_bonus = {
 				name = YSS_focus_47_0
 				bonus = 0.5
@@ -2045,7 +2119,7 @@ focus_tree = {
         				size > 0
     				}
 				}
-				random_select_amount = 2
+				random_select_amount = 7
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -2058,7 +2132,7 @@ focus_tree = {
         				size > 0
     				}
 				}
-				random_select_amount = 2
+				random_select_amount = 7
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -2676,8 +2750,9 @@ focus_tree = {
 			has_country_flag = YSS_hongjun_baogao1
 	    }
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 200
 			add_stability = 0.05
+			add_war_support = 0.05
 	    }
 	}
 	focus = {
@@ -2700,8 +2775,32 @@ focus_tree = {
 			add_war_support = -0.05
 			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = -0.1
-				tooltip = army_strength_factor_tt
+				YSS_red_army_army_attack_factor = -0.1
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_breakthrough_factor = -0.1
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_against_major_factor = -0.1
+				tooltip = army_attack_against_major_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_against_minor_factor = -0.1
+				tooltip = army_attack_against_minor_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = -0.1
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_max_army_group_size = -5
+				tooltip = max_army_group_size_tt
+			}
+			add_to_variable = {
+				YSS_training_time_factor = 0.25
+				tooltip = training_time_factor_tt
 			}
 	    }
 	}
@@ -2720,8 +2819,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_army_org_factor = 0.1
+				YSS_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_speed_factor = 0.05
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = 0.05
+				tooltip = army_strength_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.05
+				tooltip = army_morale_factor_tt
 			}
 			hidden_effect = {
 				country_event = {
@@ -2788,8 +2903,28 @@ focus_tree = {
 			add_war_support = -0.05
 			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = -0.1
+				YSS_rm_experience_gain_army_factor = -0.15
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_experience_gain_army_unit_factor = -0.15
+				tooltip = experience_gain_army_unit_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_max_dig_in_factor = -0.1
+				tooltip = max_dig_in_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = -0.15
 				tooltip = army_strength_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = -0.1
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_org_factor = -0.1
+				tooltip = army_org_factor_tt
 			}
 	    }
 	}
@@ -2813,20 +2948,24 @@ focus_tree = {
 			add_war_support = -0.05
 			custom_effect_tooltip = YSS_tootip_26
 			add_to_variable = {
-				YSS_army_morale_factor = -0.05
-				tooltip = army_morale_factor_tt
+				YSS_red_army_supply_consumption_factor = 0.15
+				tooltip = supply_consumption_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_org_factor = -0.05
-				tooltip = army_org_factor_tt
-			}
-			add_to_variable = {
-				YSS_max_planning_factor = -0.05
+				YSS_max_planning_factor = -0.15
 				tooltip = max_planning_factor_tt
 			}
 			add_to_variable = {
-				YSS_training_time_factor = 0.1
-				tooltip = training_time_factor_tt
+				YSS_rm_out_of_supply_factor = 0.15
+				tooltip = out_of_supply_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_strength_factor = -0.15
+				tooltip = army_strength_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = -0.15
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
 			}
 	    }
 	}
@@ -2846,9 +2985,10 @@ focus_tree = {
 			focus = YSS_focus_125
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_47
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_training_time_factor = -0.15
+				YSS_training_time_factor = -0.1
 				tooltip = training_time_factor_tt
 			}
 		}
@@ -2868,12 +3008,16 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_army_morale_factor = 0.1
-				tooltip = army_morale_factor_tt
+				YSS_red_army_army_strength_factor = 0.1
+				tooltip = army_strength_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_org_factor = 0.15
+				YSS_army_org_factor = 0.1
 				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.1
+				tooltip = army_morale_factor_tt
 			}
 			hidden_effect = {
 				country_event = {
@@ -2900,18 +3044,29 @@ focus_tree = {
 			add_manpower = 30000
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_infantry_attack_factor = 0.05
-				tooltip = army_infantry_attack_factor_tt
-			}
-			add_to_variable = {
-				YSS_red_army_supply_consumption_factor = -0.1
-				tooltip = supply_consumption_factor_tt
-			}
-			add_to_variable = {
 				YSS_red_army_army_defence_factor = 0.1
 				tooltip = army_defence_factor_tt
 			}
-			
+			add_to_variable = {
+				YSS_red_army_army_attack_factor = 0.1
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_training_time_factor = -0.1
+				tooltip = training_time_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_combat_width_factor = -0.1
+				tooltip = combat_width_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_max_dig_in_factor = 0.1
+				tooltip = max_dig_in_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_infantry_attack_factor = 0.1
+				tooltip = army_infantry_attack_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2927,19 +3082,32 @@ focus_tree = {
 			focus = YSS_focus_126
 		}
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					free_building_slots = {
+				        building = industrial_complex
+        				size > 0
+    				}
+				}
+				random_select_amount = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
             add_equipment_bonus = {
 				name = YSS_focus_129
                 bonus = {
                     infantry_equipment = {
-                        build_cost_ic = -0.10
+                        build_cost_ic = -0.15
                         instant = yes
                     }
                     artillery_equipment = {
-                        build_cost_ic = -0.10
+                        build_cost_ic = -0.15
                         instant = yes
                     }
 					armor = {
-						build_cost_ic = -0.1
+						build_cost_ic = -0.15
 						instant = yes
 					}
                 }
@@ -2965,8 +3133,20 @@ focus_tree = {
 				tooltip = army_strength_factor_tt
 			}
 			add_to_variable = {
+				YSS_army_org_factor = 0.1
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
 				YSS_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
 			}
 			
 		}
@@ -2986,16 +3166,40 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_army_org_factor = 0.05
-				tooltip = army_org_factor_tt
+				YSS_red_army_breakthrough_factor = 0.1
+				tooltip = breakthrough_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_supply_consumption_factor = -0.1
-				tooltip = supply_consumption_factor_tt
+				YSS_red_army_army_attack_speed_factor = 0.1
+				tooltip = army_attack_speed_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
-				tooltip = army_morale_factor_tt
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_org_recovery_cap_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_org_recovery_cap_factor_tt
 			}
 			
 		}
@@ -3013,19 +3217,31 @@ focus_tree = {
 			focus = YSS_focus_128
 		}
 		completion_reward = {
-			army_experience = 50
+			army_experience = 150
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_infantry_attack_factor = 0.05
-				tooltip = army_infantry_attack_factor_tt
+				YSS_red_army_army_defence_factor = 0.1
+				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
-				tooltip = army_morale_factor_tt
+				YSS_red_army_army_attack_factor = 0.1
+				tooltip = army_attack_factor_tt
 			}
 			add_to_variable = {
 				YSS_training_time_factor = -0.1
 				tooltip = training_time_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_combat_width_factor = -0.1
+				tooltip = combat_width_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_max_dig_in_factor = 0.1
+				tooltip = max_dig_in_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_infantry_attack_factor = 0.1
+				tooltip = army_infantry_attack_factor_tt
 			}
 			hidden_effect = {
 				country_event = {
@@ -3090,7 +3306,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_army_org_factor = 0.05
+				YSS_army_org_factor = 0.1
 				tooltip = army_org_factor_tt
 			}
 			add_to_variable = {
@@ -3098,8 +3314,24 @@ focus_tree = {
 				tooltip = army_artillery_attack_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_supply_consumption_factor = -0.1
-				tooltip = supply_consumption_factor_tt
+				YSS_rm_special_forces_attack_factor = 0.15
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_unit_mot_anti_air_brigade_design_cost_factor = -0.1
+				tooltip = unit_mot_anti_air_brigade_design_cost_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_unit_mot_anti_tank_brigade_design_cost_factor = -0.1
+				tooltip = unit_mot_anti_tank_brigade_design_cost_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_unit_light_sp_artillery_brigade_design_cost_factor = -0.1
+				tooltip = unit_light_sp_artillery_brigade_design_cost_factor_tt
+			}
+			add_to_variable = {
+				YSS_unit_medium_sp_artillery_brigade_design_cost_factor = -0.1
+				tooltip = unit_medium_sp_artillery_brigade_design_cost_factor_tt
 			}
 			
 			custom_effect_tooltip = YSS_tootip_38
@@ -3120,16 +3352,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_attack_speed_factor = 0.05
-				tooltip = army_attack_speed_factor_tt
-			}
-			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
+				YSS_red_army_army_strength_factor = 0.1
 				tooltip = army_strength_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
+				YSS_army_org_factor = 0.1
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
 			}
 			
 		}
@@ -3149,12 +3389,40 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
-				tooltip = army_strength_factor_tt
+				YSS_red_army_breakthrough_factor = 0.1
+				tooltip = breakthrough_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_org_factor = 0.1
-				tooltip = army_org_factor_tt
+				YSS_red_army_army_attack_speed_factor = 0.1
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_org_recovery_cap_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_org_recovery_cap_factor_tt
 			}
 			
 		}
@@ -3174,12 +3442,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
-				tooltip = army_morale_factor_tt
+				YSS_max_planning_factor = 0.1
+				tooltip = max_planning_factor_tt
 			}
 			add_to_variable = {
-				YSS_max_planning_factor = 0.15
-				tooltip = max_planning_factor_tt
+				YSS_rm_planning_decay_rate_factor = -0.1
+				tooltip = planning_decay_rate_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_experience_gain_army_factor = 0.1
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_experience_gain_army_unit_factor = 0.1
+				tooltip = experience_gain_army_unit_factor_tt
+			}
+			add_to_variable = {
+				YSS_training_time_factor = -0.1
+				tooltip = training_time_factor_tt
 			}
 			
 		}
@@ -3198,6 +3478,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
+			add_to_variable = {
+				YSS_rm_recon_factor = 0.15
+				tooltip = recon_factor_tt
+			}
 			add_to_variable = {
 				YSS_red_army_armor_attack_factor = 0.1
 				tooltip = army_armor_attack_factor_tt
@@ -3235,11 +3519,11 @@ focus_tree = {
             add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_armor_speed_factor = 0.05
+				YSS_red_army_army_armor_speed_factor = 0.1
 				tooltip = army_armor_speed_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_army_artillery_attack_factor = 0.05
+				YSS_red_army_army_artillery_attack_factor = 0.1
 				tooltip = army_artillery_attack_factor_tt
 			}
 			add_to_variable = {
@@ -3304,16 +3588,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_attack_speed_factor = 0.05
-				tooltip = army_attack_speed_factor_tt
-			}
-			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
+				YSS_red_army_army_strength_factor = 0.1
 				tooltip = army_strength_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
+				YSS_army_org_factor = 0.1
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
 			}
 			
 		}
@@ -3333,16 +3625,40 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
+				YSS_red_army_breakthrough_factor = 0.1
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
 				YSS_red_army_army_attack_speed_factor = 0.1
 				tooltip = army_attack_speed_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_army_strength_factor = 0.05
-				tooltip = army_strength_factor_tt
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_max_org_factor_tt
 			}
 			add_to_variable = {
-				YSS_army_morale_factor = 0.05
-				tooltip = army_morale_factor_tt
+				YSS_rm_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_irregular_infantry_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_modifier_army_sub_unit_militia_org_recovery_cap_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_org_recovery_cap_factor_tt
 			}
 			
 		}
@@ -3360,29 +3676,56 @@ focus_tree = {
 			focus = YSS_focus_137
 		}
 		completion_reward = {
-			army_experience = 50
+			army_experience = 250
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_attack_against_major_factor = 0.05
-				tooltip = army_attack_against_major_factor_tt
+				YSS_red_army_heat_attrition_factor = -0.15
+				tooltip = heat_attrition_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_army_attack_against_minor_factor = 0.05
-				tooltip = army_attack_against_minor_factor_tt
+				YSS_red_army_army_defence_factor = 0.1
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_red_army_army_attack_factor = 0.1
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_training_time_factor = -0.1
+				tooltip = training_time_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_combat_width_factor = -0.1
+				tooltip = combat_width_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_max_dig_in_factor = 0.1
+				tooltip = max_dig_in_factor_tt
 			}
 			add_to_variable = {
 				YSS_red_army_army_infantry_attack_factor = 0.1
 				tooltip = army_infantry_attack_factor_tt
 			}
 			add_to_variable = {
-				YSS_max_planning_factor = 0.2
+				YSS_max_planning_factor = 0.1
 				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_planning_decay_rate_factor = -0.1
+				tooltip = planning_decay_rate_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_experience_gain_army_factor = 0.1
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_experience_gain_army_unit_factor = 0.1
+				tooltip = experience_gain_army_unit_factor_tt
 			}
 			add_to_variable = {
 				YSS_training_time_factor = -0.1
 				tooltip = training_time_factor_tt
 			}
-			
 		}
 	}
 	focus = {
@@ -3445,6 +3788,14 @@ focus_tree = {
 				YSS_red_army_supply_consumption_factor = -0.25
 				tooltip = supply_consumption_factor_tt
 			}
+			add_to_variable = {
+				YSS_rm_out_of_supply_factor = -0.25
+				tooltip = out_of_supply_factor_tt
+			}
+			add_to_variable = {
+				YSS_rm_casualty_trickleback = 0.15
+				tooltip = casualty_trickleback_tt
+			}
 			
 			custom_effect_tooltip = YSS_tootip_43
 			hidden_effect = {
@@ -3482,11 +3833,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
-				YSS_red_army_army_attack_against_major_factor = 0.05
+				YSS_red_army_army_attack_against_major_factor = 0.25
 				tooltip = army_attack_against_major_factor_tt
 			}
 			add_to_variable = {
-				YSS_red_army_army_attack_against_minor_factor = 0.05
+				YSS_red_army_army_attack_against_minor_factor = 0.25
 				tooltip = army_attack_against_minor_factor_tt
 			}
 			add_to_variable = {
@@ -3581,8 +3932,8 @@ focus_tree = {
 			focus = YSS_focus_148
 		}
 		completion_reward = {
-			navy_experience = 30
-			add_command_power = 20
+			navy_experience = 130
+			add_command_power = 120
 		}
 	}
 	focus = {
@@ -3600,7 +3951,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_industrial_capacity_dockyard = 0.05
+				YSS_industrial_capacity_dockyard = 0.1
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			
@@ -3628,11 +3979,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_navy_fighter_sortie_efficiency = 0.05
+				YSS_navy_fighter_sortie_efficiency = 0.1
 				tooltip = fighter_sortie_efficiency_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_hit_chance = 0.05
+				YSS_navy_naval_hit_chance = 0.1
 				tooltip = naval_hit_chance_tt
 			}
 			
@@ -3653,15 +4004,15 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_industrial_capacity_dockyard = 0.05
+				YSS_industrial_capacity_dockyard = 0.1
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			add_to_variable = {
-				YSS_production_cost_max_ship_hull_heavy = -800
+				YSS_production_cost_max_ship_hull_heavy = -1000
 				tooltip = production_cost_max_ship_hull_heavy_tt
 			}
 			add_to_variable = {
-				YSS_production_cost_max_ship_hull_cruiser = -500
+				YSS_production_cost_max_ship_hull_cruiser = -800
 				tooltip = production_cost_max_ship_hull_cruiser_tt
 			}
 			
@@ -3682,15 +4033,15 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+				YSS_navy_convoy_raiding_efficiency_factor = 0.1
 				tooltip = convoy_raiding_efficiency_factor_tt
 			}
 			add_to_variable = {
-				YSS_navy_fighter_sortie_efficiency = 0.05
+				YSS_navy_fighter_sortie_efficiency = 0.1
 				tooltip = fighter_sortie_efficiency_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_hit_chance = 0.05
+				YSS_navy_naval_hit_chance = 0.1
 				tooltip = naval_hit_chance_tt
 			}
 			hidden_effect = {
@@ -3717,23 +4068,32 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_industrial_capacity_dockyard = 0.05
+				YSS_industrial_capacity_dockyard = 0.1
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			add_to_variable = {
-				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+				YSS_navy_convoy_raiding_efficiency_factor = 0.1
 				tooltip = convoy_raiding_efficiency_factor_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_critical_score_chance_factor = 0.05
+				YSS_navy_naval_critical_score_chance_factor = 0.1
 				tooltip = naval_critical_score_chance_factor_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_damage_factor = 0.05
+				YSS_navy_naval_damage_factor = 0.1
 				tooltip = naval_damage_factor_tt
 			}
 			
 			custom_effect_tooltip = YSS_tootip_39
+			mio:YSS_battle_line_ship = {
+				add_mio_funds = 3000
+			}
+			mio:YSS_escort_ship = {
+				add_mio_funds = 3000
+			}
+			mio:YSS_refurbishment_repair = {
+				add_mio_funds = 3000
+			}
 		}
 	}
 	focus = {
@@ -3784,19 +4144,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
-				YSS_industrial_capacity_dockyard = 0.05
+				YSS_industrial_capacity_dockyard = 0.15
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			add_to_variable = {
-				YSS_navy_convoy_raiding_efficiency_factor = 0.05
+				YSS_navy_convoy_raiding_efficiency_factor = 0.15
 				tooltip = convoy_raiding_efficiency_factor_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_critical_score_chance_factor = 0.05
+				YSS_navy_naval_critical_score_chance_factor = 0.15
 				tooltip = naval_critical_score_chance_factor_tt
 			}
 			add_to_variable = {
-				YSS_navy_naval_damage_factor = 0.05
+				YSS_navy_naval_damage_factor = 0.15
 				tooltip = naval_damage_factor_tt
 			}
 			
@@ -3946,8 +4306,8 @@ focus_tree = {
 			focus = YSS_focus_162
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_command_power = 20
+			add_stability = -0.15
+			add_command_power = 120
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_airforce_air_accidents_factor = -0.15
@@ -4042,8 +4402,8 @@ focus_tree = {
 			focus = YSS_focus_163
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_command_power = 25
+			add_stability = -0.15
+			add_command_power = 250
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_air_training_xp_gain_factor = 0.1
@@ -4092,6 +4452,15 @@ focus_tree = {
             }
 			custom_effect_tooltip = YSS_tootip_40
 			custom_effect_tooltip = YSS_tootip_42
+			mio:YSS_light_aircraft = {
+				add_mio_funds = 3000
+			}
+			mio:YSS_air = {
+				add_mio_funds = 3000
+			}
+			mio:YSS_cas_aircraft = {
+				add_mio_funds = 3000
+			}
 		}
 	}
 	focus = {
@@ -4110,7 +4479,7 @@ focus_tree = {
 			focus = YSS_focus_166
 		}
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = -0.15
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_command_power_gain_mult = 0.15
@@ -4179,6 +4548,14 @@ focus_tree = {
 			add_to_variable = {
 				YSS_airforce_air_defence_factor = 0.15
 				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				YSS_airforce_ground_attack_factor = 0.15
+				tooltip = ground_attack_factor_tt
+			}
+			add_to_variable = {
+				YSS_airforce_air_attack_factor = 0.15
+				tooltip = air_attack_factor_tt
 			}
 			
 			hidden_effect = {
