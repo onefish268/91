@@ -2140,7 +2140,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
-		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
+		allow_branch = { has_completed_focus = LIB_new_focus_33 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2159,7 +2159,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
-		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
+		allow_branch = { has_completed_focus = LIB_new_focus_33 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2666,6 +2666,10 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = LIB_new_focus_72_tt
 		custom_effect_tooltip = LIB_new_focus_76_tt
+		swap_ideas = {
+            remove_idea = LIB_dwtzhzej1
+            add_idea = LIB_dwtzhzej2
+			}
 		}
 	}
 

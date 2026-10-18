@@ -711,7 +711,6 @@ country_event = {
 		set_variable = { adorable_heart_super_event_var = 168 } 
 		adorable_heart_fire_super_event = yes 
 		set_country_flag = Free_france_flag
-		set_country_flag = LIB_FRA_has_fallen_flag
 		complete_national_focus = LIB_new_focus_33
 		set_autonomy = {
 				target = COG
@@ -1013,10 +1012,15 @@ country_event = {
 		}
 		COG = {
 		add_ideas = LIB_Liberation_ransom
-		promote_character = {
-		character = FRA_Chen
-		ideology = autocracy_subideology
-		}
+		add_ideas = COG_youzongguo_idea
+		add_country_leader_role = {
+        character = FRA_Chen
+        promote_leader = yes
+        country_leader = {
+            ideology = moderatism
+            traits = { }
+        }
+    }
 		}
 		if = {
 			limit = {has_country_flag = LIB_remi_in_power_flag }
@@ -1238,6 +1242,7 @@ country_event = {
 	}
 	option = {
 		name = LIB_jjxt.6.b
+		
 		hidden_effect = {
 		scoped_sound_effect = "朋友的酒"
 		}
@@ -2081,6 +2086,24 @@ country_event = {
 	}
 	}
 
+	country_event = {
+	id = LIB_flavor.8
+	title = LIB_flavor.8.t
+	desc = LIB_flavor.8.d
+	fire_only_once = yes
+	trigger = {
+        tag = LIB
+        has_completed_focus = LIB_new_focus_75
+		NOT = {country_exists = GER}
+    }
+	mean_time_to_happen = { days = 120 } 
+	option = {
+		name = LIB_flavor.8.a
+	}
+	option = {
+		name = LIB_flavor.8.b
+	}
+	}
 #新闻
 country_event = {
 	id = LIB_news.1

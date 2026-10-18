@@ -2,6 +2,58 @@
 # Liberia Decisions by remilia,reduxed by Yersin
 ###########################################
 LIB_debug = {
+free_france11 = {
+complete_effect = {
+		LIB = {
+		FRA_Chen = { set_nationality = COG }
+		}
+		COG = {
+		add_ideas = LIB_Liberation_ransom
+		add_ideas = COG_youzongguo_idea
+		remove_country_leader_role = {
+		character = COG_Mima
+		ideology = neutrality
+		}
+		add_country_leader_role = {
+        character = FRA_Chen
+        promote_leader = yes
+        country_leader = {
+            ideology = moderatism
+            traits = { }
+        }
+    }
+		}
+		if = {
+			limit = {has_country_flag = LIB_remi_in_power_flag }
+			COG = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = "蒙蕾米莉亚陛下赐福的贤者议会-橙系"
+				name = "贤者议会-橙系"
+			}
+			}
+			}
+			else_if = {
+			limit = {has_country_flag = LIB_fran_in_power_flag }
+			COG = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = "蒙芙兰朵露陛下赐福的贤者议会-橙系"
+				name = "贤者议会-橙系"
+			}
+			}
+			}
+			else = {
+			COG = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = "贤者议会-橙系"
+				name = "贤者议会-橙系"
+			}
+			}
+	}
+	}
+	}
 	free_france10 = {
 		complete_effect = {
 		set_variable = { adorable_heart_super_event_var = 169 } 
