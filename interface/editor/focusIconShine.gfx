@@ -11807,4 +11807,4344 @@ spriteType = {
 		}
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_focus_yss1_shine"
+		texturefile = "gfx/focus_icon/GFX_focus_yss1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_yss1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/focus_icon/GFX_focus_yss1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+    name = "GFX_focus_yss2_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss2.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss3_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss3.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss4_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss4.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss5_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss5.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss6_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss6.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss7_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss7.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss8_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss8.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss9_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss9.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss10_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss10.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss11_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss11.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss12_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss12.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss13_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss13.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss14_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss14.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss15_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss15.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss16_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss16.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss17_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss17.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss18_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss18.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss19_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss19.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss20_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss20.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss21_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss21.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss22_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss22.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss23_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss23.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss24_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss24.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss25_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss25.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss26_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss26.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss27_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss27.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss28_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss28.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss29_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss29.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss30_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss30.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss31_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss31.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss32_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss32.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss33_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss33.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss34_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss34.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss35_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss35.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss36_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss36.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss37_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss37.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss38_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss38.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss39_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss39.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss40_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss40.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss41_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss41.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss41.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss41.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss42_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss42.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss42.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss42.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss43_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss43.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss43.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss43.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss44_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss44.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss44.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss44.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss45_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss45.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss45.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss45.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss46_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss46.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss46.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss46.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss47_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss47.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss47.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss47.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss48_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss48.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss48.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss48.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss49_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss49.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss49.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss49.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss50_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss50.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss50.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss50.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss51_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss51.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss51.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss51.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss52_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss52.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss52.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss52.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss53_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss53.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss53.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss53.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss54_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss54.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss54.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss54.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss55_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss55.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss55.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss55.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss56_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss56.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss56.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss56.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss57_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss57.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss57.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss57.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss58_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss58.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss58.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss58.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss59_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss59.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss59.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss59.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss60_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss60.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss60.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss60.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss61_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss61.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss61.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss61.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss62_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss62.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss62.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss62.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss63_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss63.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss63.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss63.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss64_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss64.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss64.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss64.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss65_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss65.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss65.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss65.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss66_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss66.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss66.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss66.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss67_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss67.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss67.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss67.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss68_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss68.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss68.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss68.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss69_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss69.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss69.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss69.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss70_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss70.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss70.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss70.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss71_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss71.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss71.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss71.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss72_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss72.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss72.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss72.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss73_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss73.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss73.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss73.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss74_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss74.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss74.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss74.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss75_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss75.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss75.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss75.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss76_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss76.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss76.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss76.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss77_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss77.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss77.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss77.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss78_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss78.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss78.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss78.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss79_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss79.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss79.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss79.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss80_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss80.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss80.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss80.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss81_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss81.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss81.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss81.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss82_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss82.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss82.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss82.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss83_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss83.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss83.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss83.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss84_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss84.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss84.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss84.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss85_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss85.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss85.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss85.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss86_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss86.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss86.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss86.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss87_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss87.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss87.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss87.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss88_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss88.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss88.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss88.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss89_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss89.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss89.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss89.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss90_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss90.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss90.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss90.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss91_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss91.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss91.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss91.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss92_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss92.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss92.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss92.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss93_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss93.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss93.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss93.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss94_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss94.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss94.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss94.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+SpriteType = {
+    name = "GFX_focus_yss95_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss95.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss95.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss95.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss96_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss96.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss96.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss96.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss97_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss97.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss97.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss97.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss98_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss98.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss98.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss98.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss99_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss99.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss99.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss99.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss100_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss100.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss100.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss100.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
+
+SpriteType = {
+    name = "GFX_focus_yss101_shine"
+    texturefile = "gfx/focus_icon/GFX_focus_yss101.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss101.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    animation = {
+        animationmaskfile = "gfx/focus_icon/GFX_focus_yss101.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = {
+            x = 0.0
+            y = 0.0
+        }
+        animationtexturescale = {
+            x = 1.0
+            y = 1.0
+        }
+    }
+    legacy_lazy_load = no
+}
 }
