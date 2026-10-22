@@ -61,13 +61,13 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+
 			if = {
         		limit = { is_subject = yes }
 
 				# autonomy_dominion: "自治领"
 				#autonomy_colony: "殖民领"
 				# 爆内战，创建叛军国家
-				leave_faction = yes
 
 				if = {
 					limit = { has_autonomy_state = autonomy_dominion }
@@ -77,18 +77,71 @@ country_event = {
 	               			target = ROOT
 	               			autonomy_state = autonomy_free
     	           			end_wars = yes
-        	    	   		end_civil_wars = yes
+        	    	   		end_civil_wars = no
            				}
 
-						set_country_flag = YSS_the_lord_of_country
+						meta_effect = {
+							text = {
+								set_country_flag = YSS_the_lord_of_[country_tag]
+							}
+							country_tag = "[?ROOT.GetTag]"
+						}
         			}
 
 					leave_faction = yes
 
 					every_country = {
-						limit = {
-							has_war_with = ROOT
+						limit = { has_war_with = ROOT }
+						white_peace = {
+							tag = ROOT
 						}
+					}
+
+					# 爆内战，创建叛军国家
+    				start_civil_war = {
+						ruling_party = communism
+        				ideology = neutrality
+        				size = 0.15
+        				army_ratio = 0.2
+	    	   			navy_ratio = 0.2
+		        		air_ratio = 0.2
+        			
+        				keep_all_characters = yes
+
+						country_event = {
+							id = YSS.1003
+							days = 60
+						}
+						
+						add_timed_idea = {
+							idea = ZYX_Suddenly_attack
+							days = 60
+						}
+    				}
+				}
+				else_if = {
+					limit = { has_autonomy_state = autonomy_colony }
+
+					OVERLORD = {
+            			set_autonomy = {
+	               			target = ROOT
+	               			autonomy_state = autonomy_free
+    	           			end_wars = yes
+        	    	   		end_civil_wars = no
+           				}
+
+						meta_effect = {
+							text = {
+								set_country_flag = YSS_the_lord_of_[country_tag]
+							}
+							country_tag = "[?ROOT.GetTag]"
+						}
+        			}
+
+					leave_faction = yes
+
+					every_country = {
+						limit = { has_war_with = ROOT }
 						white_peace = {
 							tag = ROOT
 						}
@@ -105,60 +158,10 @@ country_event = {
         			
         				keep_all_characters = yes
 	        		
-						random_country = {
-            				limit = { has_country_flag = YSS_the_lord_of_country }
-            				set_autonomy = {
-        	    			    target = PREV
-    	            			autonomous_state = autonomy_dominion
-		            		   	end_wars = no
-    			            	end_civil_wars = no
-            				}
-							clr_country_flag = YSS_the_lord_of_country
-   		 				}
-						
-						add_timed_idea = {
-							idea = ZYX_Suddenly_attack
+						country_event = {
+							id = YSS.1003
 							days = 60
 						}
-    				}
-				}
-				else_if = {
-					limit = { has_autonomy_state = autonomy_colony }
-
-					OVERLORD = {
-            			set_autonomy = {
-	               			target = ROOT
-	               			autonomy_state = autonomy_free
-    	           			end_wars = yes
-        	    	   		end_civil_wars = yes
-           				}
-
-						set_country_flag = YSS_the_lord_of_country
-        			}
-
-					leave_faction = yes
-
-					# 爆内战，创建叛军国家
-    				start_civil_war = {
-						ruling_party = communism
-        				ideology = neutrality
-        				size = 0.15
-        				army_ratio = 0.2
-	    	   			navy_ratio = 0.2
-		        		air_ratio = 0.2
-        			
-        				keep_all_characters = yes
-	        		
-						random_country = {
-            				limit = { has_country_flag = YSS_the_lord_of_country }
-            				set_autonomy = {
-        	    			    target = PREV
-    	            			autonomous_state = autonomy_colony
-		            		   	end_wars = no
-    			            	end_civil_wars = no
-            				}
-							clr_country_flag = YSS_the_lord_of_country
-   		 				}
 
 						add_timed_idea = {
 							idea = ZYX_Suddenly_attack
@@ -347,15 +350,6 @@ country_event = {
     		}
 			else = {
 
-				every_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						white_peace = {
-							tag = ROOT
-						}
-					}
-
 				# 爆内战，创建叛军国家
     			start_civil_war = {
 					ruling_party = communism
@@ -372,6 +366,15 @@ country_event = {
 						days = 60
 					}
     			}
+
+				every_country = {
+						limit = {
+							has_war_with = ROOT
+						}
+						white_peace = {
+							tag = ROOT
+						}
+					}
 
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
@@ -554,6 +557,266 @@ country_event = {
 						country_tag = "[ROOT.GetTag]"
 					}
 				}
+			}
+		}
+	}
+}
+country_event = {
+	#检测是哪个内战
+	id = YSS.1003
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = EGY
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = EGY
+				}
+			}
+
+			EGY = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_EGY }
+				set_autonomy = {
+	        		target = EGY
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = ZIM
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = ZIM
+				}
+			}
+
+			ZIM = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_ZIM }
+				set_autonomy = {
+	        		target = ZIM
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = ZSB
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = ZSB
+				}
+			}
+
+			ZSB = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_ZSB }
+				set_autonomy = {
+	        		target = ZSB
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = ZYX
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = ZYX
+				}
+			}
+
+			ZYX = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_ZYX }
+				set_autonomy = {
+	        		target = ZYX
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = EAS
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = EAS
+				}
+			}
+
+			EAS = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_EAS }
+				set_autonomy = {
+	        		target = EAS
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = LBA
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = LBA
+				}
+			}
+
+			LBA = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_LBA }
+				set_autonomy = {
+	        		target = LBA
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = LIB
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = LIB
+				}
+			}
+
+			LIB = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_LIB }
+				set_autonomy = {
+	        		target = LIB
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = SAF
+				}
+			}
+			
+			ROOT = {
+				white_peace = {
+					tag = SAF
+				}
+			}
+
+			SAF = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_SAF }
+				set_autonomy = {
+	        		target = SAF
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = {
+					exists = yes
+					has_war_with = COG
+				}
+			}
+
+			ROOT = {
+				white_peace = {
+					tag = COG
+				}
+			}
+
+			COG = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			random_country = {
+				limit = { has_country_flag = YSS_the_lord_of_COG }
+				set_autonomy = {
+	        		target = COG
+		            autonomy_state = autonomy_colony
+         			end_wars = yes
+        	 		end_civil_wars = yes
+           		}
 			}
 		}
 	}

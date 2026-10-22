@@ -608,11 +608,6 @@ ideas = {
 		ZYX_Suddenly_attack = {
 			picture = CHI_decisive_battle
 
-			rule = {
-				can_not_declare_war = yes
-				can_decline_call_to_war = yes
-			}
-
 			modifier = {
 				ai_call_ally_desire_factor = -10000
 				ai_join_ally_desire_factor = -10000
