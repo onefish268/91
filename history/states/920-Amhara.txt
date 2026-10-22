@@ -5,7 +5,8 @@ state = {
 	state_category = three
 
 	history = {
-		owner = YSS
+		owner = ETH
+		add_core_of = ETH
 		add_core_of = YSS
 		add_dynamic_modifier = {
             modifier = YSS_province_xingzheng_3

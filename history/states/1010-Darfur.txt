@@ -5,14 +5,8 @@ state = {
 	state_category = one
 	impassable = yes
 	history = {
-		owner = YSS
-		add_core_of = YSS
-		add_dynamic_modifier = {
-            modifier = YSS_province_xingzheng_1
-        }
-		add_dynamic_modifier = {
-            modifier = YSS_province_kaifa_1
-        }
+		owner = EGY
+		add_core_of = EGY
 		add_to_array = { state_victory_points = 5060 }
 
 		victory_points = { 5060 1 }

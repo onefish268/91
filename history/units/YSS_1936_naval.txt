@@ -3,10 +3,10 @@ units = {
 
 	fleet = { #战列队
 		name = "红海军国防舰队"
-		naval_base = 10928
+		naval_base = 5210
 		task_force = {
 			name = "红海军国防舰队"
-			location = 10928	
+			location = 5210	
 		 #战列		
 			ship = {
 				name = "联盟号"

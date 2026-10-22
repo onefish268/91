@@ -1,0 +1,50 @@
+﻿
+division_template = {
+	name = "东非自由战士"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "东非自由军团"
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+units = {
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AFA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 80
+	}
+}
