@@ -739,7 +739,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "YSS_faction_panel_banner_desc"
-			position = { x = 5 y = 975 }
+			position = { x = 5 y = 990 }
 			maxHeight = 20
 			maxWidth = 500
 			font = "hoi_18mbs"
