@@ -904,7 +904,8 @@ ideas = {
 				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.15
-				stability_weekly = 0.01
+				stability_weekly = 0.015
+				communism_drift = 0.2
 			}
 		}
 	}
