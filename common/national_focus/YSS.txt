@@ -1825,6 +1825,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_76
 		}
+		allow_branch = {
+			has_global_flag = second_weltkrieg_has_started
+	    }
 		available = {
 			has_global_flag = second_weltkrieg_has_started
 		}
