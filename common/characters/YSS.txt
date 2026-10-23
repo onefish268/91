@@ -1,7 +1,7 @@
 characters = {
 	#领导人
 	YSS_mlhm = {
-		name = "海尔"
+		name = "门柯思图"
 		portraits = {
 			civilian = {
 				large = GFX_YSS_mlhm

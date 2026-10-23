@@ -2077,3 +2077,22 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = YSS.90
+	title = YSS.90.t
+	desc = YSS.90.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS31_event
+
+	option = {
+		name = YSS.90.a
+		complete_national_focus = YSS_focus_1
+		set_country_flag = YSS_win_war
+		load_focus_tree = YSS_focus_tree
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+}

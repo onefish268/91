@@ -1440,6 +1440,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_2
@@ -1457,6 +1458,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_4
@@ -1474,6 +1476,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 60
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_3
@@ -1491,6 +1494,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 80
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_5
@@ -1508,6 +1512,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 130
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_6
@@ -1525,6 +1530,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_33
@@ -1542,6 +1548,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_116
@@ -1559,6 +1566,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_94
@@ -1576,6 +1584,7 @@ YSS_renwu_category = {
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 		}
 		available = {
 			has_completed_focus = YSS_focus_95

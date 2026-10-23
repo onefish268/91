@@ -1,0 +1,174 @@
+focus_tree = {
+	id = YSS_war_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = YSS
+		}
+	}
+	default = no
+	focus = {
+		id = YSS_war_focus_1
+		x = 13
+		y = -1
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss71
+		text_icon = YSS_focus_style
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 200
+			add_ideas = YSS_war_0
+		}
+	}
+	focus = {
+		id = YSS_war_focus_2
+		x = 11
+		y = 1
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss72
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_1
+		}
+		mutually_exclusive = {
+			focus = YSS_war_focus_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSS_war_0
+				add_idea = YSS_war_3
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = YSS
+			}
+		}
+	}
+	focus = {
+		id = YSS_war_focus_3
+		x = 15
+		y = 1
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss73
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_1
+		}
+		mutually_exclusive = {
+			focus = YSS_war_focus_2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSS_war_0
+				add_idea = YSS_war_1
+			}
+		}
+	}
+	focus = {
+		id = YSS_war_focus_4
+		x = 15
+		y = 3
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss76
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSS_war_1
+				add_idea = YSS_war_2
+			}
+			271 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = YSS_war_focus_5
+		x = 13
+		y = 5
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss77
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_4
+			focus = YSS_war_focus_6
+		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_tootip_48
+			declare_war_on = {
+				target = ETH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AOI
+				type = annex_everything
+			}
+			hidden_effect = {
+                news_event = { id = YSS.news.1 days = 1 }
+            }
+		}
+	}
+	focus = {
+		id = YSS_war_focus_6
+		x = 10
+		y = 3
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss74
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_2
+		}
+		completion_reward = {
+			add_collaboration = {
+				target = ETH
+				value = 0.45
+			}
+			add_collaboration = {
+				target = AOI
+				value = 0.45
+			}
+		}
+	}
+	focus = {
+		id = YSS_war_focus_7
+		x = 12
+		y = 3
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		icon = GFX_focus_yss75
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_war_focus_2
+		}
+		completion_reward = {
+			army_experience = 50
+			swap_ideas = {
+				remove_idea = YSS_war_3
+				add_idea = YSS_war_4
+			}
+		}
+	}
+}

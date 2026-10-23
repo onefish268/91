@@ -299,29 +299,65 @@ defined_text = {##文字介绍
     text = {
 		trigger = {
 			state = 271
+			owner = {
+				tag = YSS
+			}
 		}
 		localization_key = Adorable_heart_city_story_desc_ydsybb
+	}
+	text = {
+		trigger = {
+			state = 271
+		}
+		localization_key = Adorable_heart_city_story_desc_ydsybb_wu
 	}
 # 哈尔格萨
     text = {
 		trigger = {
 			state = 269
+			owner = {
+				tag = YSS
+			}
 		}
 		localization_key = Adorable_heart_city_story_desc_hegs
+	}
+	text = {
+		trigger = {
+			state = 269
+		}
+		localization_key = Adorable_heart_city_story_desc_ydsybb_wu
 	}
 # 喀土穆
     text = {
 		trigger = {
 			state = 551
+			owner = {
+				tag = YSS
+			}
 		}
 		localization_key = Adorable_heart_city_story_desc_ktm
+	}
+	text = {
+		trigger = {
+			state = 551
+		}
+		localization_key = Adorable_heart_city_story_desc_ydsybb_wu
 	}
 # 摩加迪沙
     text = {
 		trigger = {
 			state = 559
+			owner = {
+				tag = YSS
+			}
 		}
 		localization_key = Adorable_heart_city_story_desc_mjds
+	}
+	text = {
+		trigger = {
+			state = 559
+		}
+		localization_key = Adorable_heart_city_story_desc_ydsybb_wu
 	}
 # 纳萨力克（新德意志）
 	text = {

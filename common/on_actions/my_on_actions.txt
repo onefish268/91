@@ -6,6 +6,40 @@ on_actions = {
             }
         }
     }
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = { tag = YSS }     
+                    ROOT = { tag = ETH }   
+                }
+				YSS = {
+					white_peace = {
+						tag = ETH
+						message = YSS_win_ETH
+					}
+					annex_country = { target = ETH transfer_troops = no }
+				}
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = { tag = YSS }     
+                    ROOT = { tag = AOI }   
+                }
+				YSS = {
+					white_peace = {
+						tag = AOI
+						message = YSS_win_AOI
+					}
+					annex_country = { target = AOI transfer_troops = no }
+				}
+			}
+		}
+	}
     on_capitulation_immediate = {
 		effect = {
 			if = {
@@ -378,6 +412,24 @@ on_actions = {
 					}
 				}
                 country_event = YSS.2
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					YSS = {
+						exists = yes
+					}
+					ETH = {
+						exists = no
+					}
+					AOI = {
+						exists = no
+					}
+				}
+                country_event = YSS.90
             }
         }
     }

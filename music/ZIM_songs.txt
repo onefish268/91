@@ -208,3 +208,11 @@ music = {
         }
     }
 }
+music = {
+    song = "赶走匪徒"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

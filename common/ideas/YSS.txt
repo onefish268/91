@@ -1,6 +1,76 @@
 ideas = {
 	#国家层面
 	country = {
+		YSS_war_0 = {
+			#内战准备
+			name = YSS_war
+			picture = YSS_war
+			modifier = {
+				stability_weekly = 0.03
+				war_support_weekly = 0.03
+				conscription_factor = 0.15
+			}
+		}
+		YSS_war_1 = {
+			#内战准备右1
+			name = YSS_war
+			picture = YSS_war
+			modifier = {
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+				conscription_factor = 0.15
+				army_attack_factor = 0.1 
+				army_defence_factor = 0.1
+				coordination_bonus = 0.15
+				initiative_factor = 0.15
+				recon_factor = 0.25
+			}
+		}
+		YSS_war_2 = {
+			#内战准备右2
+			name = YSS_war
+			picture = YSS_war
+			modifier = {
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+				conscription_factor = 0.15
+				army_attack_factor = 0.1 
+				army_defence_factor = 0.1
+				coordination_bonus = 0.15
+				initiative_factor = 0.15
+				recon_factor = 0.25
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = -0.4
+					build_cost_ic = -0.35
+					instant = yes
+				}
+			}
+		}
+		YSS_war_3 = {
+			#内战准备左1
+			name = YSS_war
+			picture = YSS_war
+			modifier = {
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+				conscription_factor = 0.25
+			}
+		}
+		YSS_war_4 = {
+			#内战准备左2
+			name = YSS_war
+			picture = YSS_war
+			modifier = {
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+				conscription_factor = 0.25
+				army_core_attack_factor = 0.15
+				army_morale_factor = 0.15
+				max_planning_factor = 0.3
+			}
+		}
 		YSS_1 = {
 			#一团乱麻的宗教信仰
 			picture = YSS_1
@@ -78,7 +148,7 @@ ideas = {
 			#过于开放的外贸
 			picture = YSS_6
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = 0.25
 				foreign_subversive_activites = 0.15
 				research_speed_factor = -0.15
 				intelligence_agency_defense = -0.35

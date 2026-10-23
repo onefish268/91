@@ -7,7 +7,6 @@ set_stability = 0.4
 set_war_support = 1
 set_party_name = { ideology = fascism long_name = "东非远征军" name = "东非远征军" }
 add_ideas = {
-	ITA_zuihouyizhan_aoi
 	extensive_conscription
 	war_economy
 }

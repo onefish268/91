@@ -209,6 +209,7 @@ scripted_gui = {
 		window_name = "YSS_days_ui_window"
 		visible = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 	    }
 		effects = {
 			YSS_days_button_click = {
@@ -236,6 +237,7 @@ scripted_gui = {
 		window_name = "YSS_paper_ui_window"
 		visible = {
 			original_tag = YSS
+			has_country_flag =  YSS_win_war #联盟赢得内战
 	    }
 
 		effects = {
