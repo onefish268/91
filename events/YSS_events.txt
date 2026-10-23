@@ -2091,6 +2091,17 @@ country_event = {
 		set_country_flag = YSS_win_war
 		load_focus_tree = YSS_focus_tree
 		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+		    remove_ideas = YSS_war_2
+		    remove_ideas = YSS_war_4
+		}
+		custom_effect_tooltip = YSS_tootip_49
+		add_popularity = {
+                ideology = neutrality
+                popularity = 0.5
+        }
+		add_stability = -0.4
+		add_war_support = -0.5
 		ai_chance = {
 			base = 50
 		}
