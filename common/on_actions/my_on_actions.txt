@@ -466,6 +466,24 @@ on_actions = {
 
 			#####战后归还
 
+			random_country = {
+				limit = {
+					meta_trigger = {
+						text = {
+							has_country_flag = YSS_the_lord_of_[country_tag]
+						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
+
+				meta_effect = {
+					text = {
+						clr_country_flag = YSS_the_lord_of_[country_tag]
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
+			}
+
 			meta_effect = {
 				text = {
 					every_army_leader = {
