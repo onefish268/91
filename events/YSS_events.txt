@@ -1843,7 +1843,7 @@ country_event = {
                 random_owned_state = {
                     limit = {
                         is_core_of = ROOT
-					industrial_complex >
+					industrial_complex > 0
                     }
                     damage_building = {
                         type = industrial_complex

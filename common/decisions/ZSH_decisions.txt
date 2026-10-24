@@ -33,7 +33,7 @@ ZSH_Bandit_troubles_rampant = { #匪患猖獗
 			}
 			random_owned_state = {
 				limit = {
-					has_building = { type = infrastructure level > 0 }
+					infrastructure > 0
 				}
 				damage_building = {
 					type = infrastructure

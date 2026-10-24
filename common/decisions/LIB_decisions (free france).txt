@@ -2109,7 +2109,12 @@ LIB_ruqinMOR {
     complete_effect = {
     }
     remove_effect = {
-    if = {
+	if = {
+	limit = {
+	LIB = {has_war_with = MOR}
+	}
+	}
+    else_if = {
         limit = {
             MOR = { is_subject = no }
         }
@@ -2377,7 +2382,7 @@ LIB_bubingzhuangbeigexin {
     }
 
     complete_effect = {
-	add_army_experience = -100
+	army_experience = -100
     }
 
     remove_effect = {
@@ -2440,7 +2445,7 @@ LIB_tzbdjdxleq {
     }
 
     complete_effect = {
-	add_army_experience = -100
+	army_experience = -100
     }
 
     remove_effect = {
@@ -2477,7 +2482,7 @@ LIB_tuiguangtzbd {
     }
 
     complete_effect = {
-	add_army_experience = -100
+	army_experience = -100
     }
 
     remove_effect = {
@@ -2519,7 +2524,7 @@ LIB_dayucaocaorujiyu {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
@@ -2551,7 +2556,7 @@ LIB_xiaoyuqieqierusiyu {
     }
 
     complete_effect = {
-	add_air_experience = -50
+	air_experience = -50
     }
 
     remove_effect = {
@@ -2583,7 +2588,7 @@ LIB_caocaoqieqiecuozafa {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
@@ -2610,7 +2615,7 @@ LIB_dayuxiaoyuzashagua {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
@@ -2642,7 +2647,7 @@ LIB_yueduzhongpao {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
@@ -2668,7 +2673,7 @@ LIB_disihuaiantongdao {
     }
 
     complete_effect = {
-	add_air_experience = -50
+	air_experience = -50
     }
 
     remove_effect = {
@@ -2742,7 +2747,7 @@ LIB_hstzxsl {
     }
 
     complete_effect = {
-	add_navy_experience = -50
+	navy_experience = -50
     }
 
     remove_effect = {
@@ -2775,7 +2780,7 @@ LIB_hhzl {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
@@ -2817,7 +2822,7 @@ LIB_zqlss {
     }
 
     complete_effect = {
-	add_army_experience = -50
+	army_experience = -50
     }
 
     remove_effect = {
