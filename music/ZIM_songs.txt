@@ -216,3 +216,11 @@ music = {
         }
     }
 }
+music = {
+    song = "内战胜利"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

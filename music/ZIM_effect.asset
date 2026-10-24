@@ -128,3 +128,8 @@ music = {
     file = "赶走匪徒.ogg"
     volume = 1
 }
+music = {
+    name = "内战胜利"
+    file = "内战胜利.ogg"
+    volume = 1
+}

@@ -554,8 +554,24 @@ guiTypes = {
 		containerWindowType = {
 			name = "YSS_super_event_content"
 			position = { x = 100 y = 100 }
+			fade_time = 1000 
+			fade_delay = 500
+			fade_type = accelerated
 
 			iconType = {
+				name = "YSS_super_event_ui_icon"
+				spriteType = GFX_YSS_super_event_ui_icon
+				position = { x = 80 y = -29 }
+    		    scale = 1.22
+			}
+		}
+		containerWindowType = {
+			name = "YSS_super_event_pt_content"
+			position = { x = 100 y = 100 }
+			fade_time = 2500
+			fade_delay = 1500
+			fade_type = accelerated
+		    iconType = {
 				name = "YSS_super_event_photo1_icon"
 				spriteType = GFX_YSS_super_event_photo1_icon
 				position = { x = 150 y = 100 }
@@ -616,24 +632,51 @@ guiTypes = {
 	    	    scale = 1.8
 			}
 			iconType = {
-				name = "YSS_super_event_ui_icon"
-				spriteType = GFX_YSS_super_event_ui_icon
-				position = { x = 0 y = 0 }
-    		    scale = 1
+				name = "YSS_super_event_photo11_icon"
+				spriteType = GFX_YSS_super_event_photo11_icon
+				position = { x = 150 y = 100 }
+	    	    scale = 1.8
 			}
-			buttonType = {
+		}
+		containerWindowType = {
+			name = "YSS_super_event_text_out_content"
+			position = { x = 100 y = 100 }
+			fade_time = 1000 
+			fade_delay = 5500
+			fade_type = accelerated
+		    buttonType = {
 				name = "YSS_super_event_out_button"
 				spriteType = GFX_YSS_super_event_out_icon
-				position = { x = 455 y = 740 }
+				position = { x = 1050 y = 95 }
 				clicksound = click_default
-    		    scale = 3
+    		    scale = 0.22
 			}
-			instantTextBoxType = {
+		}
+		containerWindowType = {
+			name = "YSS_super_event_text_outbook_content"
+			position = { x = 100 y = 100 }
+			fade_time = 1000 
+			fade_delay = 3000
+			fade_type = accelerated
+			iconType = {
+				name = "YSS_super_event_text_icon"
+				spriteType = GFX_YSS_super_event_text_icon
+				position = { x = 880 y = 670 }
+	    	    scale = 1
+			}
+		}
+		containerWindowType = {
+			name = "YSS_super_event_text_content"
+			position = { x = 100 y = 100 }
+			fade_time = 1500 
+			fade_delay = 4000
+			fade_type = accelerated
+		    instantTextBoxType = {
 				name = "YSS_super_event_1_desc"
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_1_desc
 				format = left	
 			}
@@ -642,7 +685,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_2_desc
 				format = left		
 			}
@@ -651,7 +694,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_3_desc
 				format = left		
 			}
@@ -660,7 +703,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_4_desc
 				format = left		
 			}
@@ -669,7 +712,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_5_desc
 				format = left		
 			}
@@ -678,7 +721,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_6_desc
 				format = left		
 			}
@@ -687,7 +730,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_7_desc
 				format = left		
 			}
@@ -696,7 +739,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_8_desc
 				format = left		
 			}
@@ -705,7 +748,7 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_9_desc
 				format = left		
 			}
@@ -714,8 +757,17 @@ guiTypes = {
 				position = { x = 985 y = 790 }
 				maxHeight = 474
 				maxWidth = 250
-				font = "hoi_18mbs"
+				font = "hoi_36header"
 				text = YSS_super_event_10_desc
+				format = left		
+			}
+			instantTextBoxType = {
+				name = "YSS_super_event_11_desc"
+				position = { x = 985 y = 790 }
+				maxHeight = 474
+				maxWidth = 250
+				font = "hoi_36header"
+				text = YSS_super_event_11_desc
 				format = left		
 			}
 		}

@@ -275,6 +275,8 @@ scripted_gui = {
 			YSS_super_event_9_desc_visible = { has_country_flag = YSS_daqingxiwu }
 			YSS_super_event_photo10_icon_visible = { has_country_flag = YSS_gangeming }
 			YSS_super_event_10_desc_visible = { has_country_flag = YSS_gangeming }
+			YSS_super_event_photo11_icon_visible = { has_country_flag = YSS_win_neizhan }
+			YSS_super_event_11_desc_visible = { has_country_flag = YSS_win_neizhan }
 		}
 
 		effects = {
@@ -290,6 +292,7 @@ scripted_gui = {
 				clr_country_flag = YSS_daqingxi
 				clr_country_flag = YSS_daqingxiwu
 				clr_country_flag = YSS_gangeming
+				clr_country_flag = YSS_win_neizhan
 			}
 		}
 	}
