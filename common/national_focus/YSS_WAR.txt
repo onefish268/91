@@ -49,6 +49,11 @@ focus_tree = {
 				amount = 2000
 				producer = YSS
 			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100
+				producer = YSS
+			}
 		}
 	}
 	focus = {

@@ -40,6 +40,9 @@ division_template = {
 		infantry = { x = 2 y = 1 }
         infantry = { x = 2 y = 2 }
     }
+	regimental_support = {
+		field_guns = 2
+	}
 }
 
 
