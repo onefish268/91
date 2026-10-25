@@ -7,16 +7,31 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				communism > 0.2
+				has_country_flag = {
+					flag = YSS_prepare_support
+					days > 29
+				}
 			}
-			YSS = {
-				country_event = YSS.1001
+
+			if = {
+				limit = {
+					communism > 0.2
+				}
+				YSS = {
+					country_event = YSS.1001
+				}
 			}
-		}
-		else = {
-			country_event = {
-				id = YSS.1000
-				days = 30
+			else = {
+				set_country_flag = {
+					flag = YSS_prepare_support
+					days = 31
+					value = 1
+				}
+
+				country_event = {
+					id = YSS.1000
+					days = 30
+				}
 			}
 		}
 	}
@@ -819,6 +834,28 @@ country_event = {
            		}
 			}
 		}
+	}
+}
+country_event = {
+	#检测最低限度20% 没有条件限制
+	id = YSS.1004
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+			if = {
+				limit = {
+					communism > 0.2
+				}
+				YSS = {
+					country_event = YSS.1001
+				}
+			}
+			else = {
+				country_event = {
+					id = YSS.1000
+					days = 30
+				}
+			}
 	}
 }
 

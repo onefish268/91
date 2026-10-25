@@ -1,21 +1,30 @@
 debug_test_categories = {
 
 	
-	test_character = {
+	launch_flag_number = {
 		complete_effect = {
-			add_stability = YSS_officer_factor
-			add_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+			set_country_flag = {
+				flag = YSS_test_of_number
+				days = 10
+				value = 1
+			}
+
+			country_event = {
+				id = SA_FRA_event.00105
+				days = 9
+			}
 		}
 	}
 
-	test_character_return = {
+	is_equal_flag_number = {
+		available = {
+			has_country_flag = {
+				flag = YSS_test_of_number
+				days > 8
+			}
+		}
 		complete_effect = {
-			every_army_leader = {
-						limit = { has_character_flag = YSS_has_mission_to_aboard }
-						clr_character_flag = YSS_has_mission_to_aboard
-						clr_character_flag = go_to_EGY
-						set_nationality = YSS
-					}
+			add_stability = 0.01
 		}
 	}
 
