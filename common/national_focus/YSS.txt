@@ -1109,6 +1109,14 @@ focus_tree = {
 			focus = YSS_focus_47
 		}
 		completion_reward = {
+			if = {
+                limit = {
+                    NOT = { has_tech = YSS_train_equipment_1  }
+                }
+                set_technology = {
+                    YSS_train_equipment_1  = 1
+                }
+            }
 			every_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1123,6 +1131,11 @@ focus_tree = {
 				}
 			}
 			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 			
@@ -3026,6 +3039,22 @@ focus_tree = {
 			focus = YSS_focus_126
 		}
 		completion_reward = {
+			if = {
+                limit = {
+                    NOT = { has_tech = support_equipment_1 } # 支援装备基础科技ID为 support_equipment_1
+                }
+                set_technology = {
+                    support_equipment_1 = 1
+                }
+            }
+			if = {
+                limit = {
+                    NOT = { has_tech = motorized_equipment_0  }
+                }
+                set_technology = {
+                    motorized_equipment_0  = 1
+                }
+            }
 			every_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3056,6 +3085,9 @@ focus_tree = {
 					}
                 }
             }
+			every_military_industrial_organization = {
+				add_mio_funds = 2000
+			}
 		}
 	}
 	focus = {
@@ -3209,6 +3241,11 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = armor
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3248,6 +3285,11 @@ focus_tree = {
 			focus = YSS_focus_133
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_org_factor = 0.1
@@ -3428,6 +3470,11 @@ focus_tree = {
 				name = YSS_focus_138
 				folder = land
 			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_rm_recon_factor = 0.15
@@ -3465,9 +3512,9 @@ focus_tree = {
 			focus = YSS_focus_138
 		}
 		completion_reward = {
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = radar_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = radar_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3704,6 +3751,18 @@ focus_tree = {
                 uses = 1
                 category = cat_mechanized_equipment
             }
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3741,6 +3800,11 @@ focus_tree = {
 			focus = YSS_focus_139
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = motorized_equipment
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_supply_consumption_factor = -0.25
@@ -4349,6 +4413,11 @@ focus_tree = {
 			focus = YSS_focus_162
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_airforce_ground_attack_factor = 0.1
@@ -4435,6 +4504,13 @@ focus_tree = {
                 uses = 2
                 category = light_air  # 轻型飞机类别
             }
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 0.5
+				uses = 2
+				category = light_air
+				category = medium_air
+			}
 			custom_effect_tooltip = YSS_tootip_40
 			custom_effect_tooltip = YSS_tootip_42
 			mio:YSS_light_aircraft = {
