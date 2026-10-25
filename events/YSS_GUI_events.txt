@@ -350,6 +350,15 @@ country_event = {
     		}
 			else = {
 
+				every_country = {
+					limit = {
+						has_war_with = ROOT
+					}
+					white_peace = {
+						tag = ROOT
+					}
+				}
+
 				# 爆内战，创建叛军国家
     			start_civil_war = {
 					ruling_party = communism
@@ -366,15 +375,6 @@ country_event = {
 						days = 60
 					}
     			}
-
-				every_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						white_peace = {
-							tag = ROOT
-						}
-					}
 
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
