@@ -2112,3 +2112,40 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	#群众运动
+	id = YSS.91
+	hidden = yes
+	trigger = {
+		has_completed_focus = YSS_focus_24
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 55
+            compare = greater_than_or_equals
+        }
+	}
+	immediate = {
+		YSS = {
+			country_event = {
+				id = YSS.92
+			}
+		}
+	}
+}
+country_event = {
+	id = YSS.92
+	title = YSS.92.t
+	desc = YSS.92.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS31_event
+
+	option = {
+		name = YSS.92.a
+		set_country_flag = YSS_gm_qunzhongxingqi
+		custom_effect_tooltip = YSS_tootip_50
+		ai_chance = {
+			base = 50
+		}
+	}
+}

@@ -581,7 +581,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_26
@@ -605,7 +605,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_28
@@ -629,7 +629,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			add_manpower = -3000
 			hidden_effect = {
 			    uncomplete_national_focus = {
@@ -2263,10 +2263,6 @@ focus_tree = {
 			add_stability = 0.05
 			custom_effect_tooltip = YSS_tootip_6
 			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
-			add_to_variable = {
 				YSS_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tt
 			}
@@ -2296,10 +2292,6 @@ focus_tree = {
 		completion_reward = { 
 			add_stability = 0.1
 			custom_effect_tooltip = YSS_tootip_6
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
 			add_to_variable = {
 				YSS_defensive_war_stability_factor = 0.1
 				tooltip = defensive_war_stability_factor_tt
@@ -2414,16 +2406,12 @@ focus_tree = {
 			focus = YSS_focus_99
 		}
 		completion_reward = { 
+			add_stability = 0.25
 			custom_effect_tooltip = YSS_tootip_6
 			add_to_variable = {
 				YSS_7_monthly_population = 0.35
 				tooltip = monthly_population_tt
 			}
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
-			
 		}
 	}
 	focus = {
