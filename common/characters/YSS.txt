@@ -1090,33 +1090,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-	YSS_3_5 = {
-		name = "钟岚珠"
-		portraits = {
-			civilian = {
-				small = "gfx/leaders/YSS/82.png"
-				large = "gfx/leaders/YSS/80.png"
-			}
-		}
-		advisor = { 	
-			traits = {
-				army_chief_offensive_3
-			}
-			idea_token = YSS_3_5
-			slot = army_chief
-			cost = 150
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		field_marshal = {
-			skill = 2
-			attack_skill = 8
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
 	YSS_3_6 = {
 		name = "八云红"
 		portraits = {
