@@ -3421,6 +3421,13 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_138
+				folder = land
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_rm_recon_factor = 0.15
@@ -3621,6 +3628,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 250
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_142
+				folder = land
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_heat_attrition_factor = -0.15
@@ -4023,6 +4037,13 @@ focus_tree = {
 			focus = YSS_focus_152
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_154
+				folder = naval
+			}
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.1
@@ -4072,6 +4093,13 @@ focus_tree = {
 				ahead_reduction = 1
 				uses = 2
 				category = cv_tech
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_155
+				folder = naval
 			}
 			970 = {
 				add_building_construction = {
@@ -4437,6 +4465,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.15
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_169
+				folder = air
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_command_power_gain_mult = 0.15
@@ -4497,6 +4532,13 @@ focus_tree = {
 			focus = YSS_focus_170
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_171
+				folder = air
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_airforce_static_anti_air_damage_factor = 0.15
