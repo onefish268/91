@@ -198,7 +198,6 @@ country_event = {#魔界溪谷领地的未来
 	desc = SA_FRA_event.00105.d
 	#picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = {
 		name = SA_FRA_event.00105.a
