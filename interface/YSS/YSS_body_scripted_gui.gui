@@ -539,21 +539,16 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "YSS_super_event_ui_window"
-		position = { x = 250 y = 0 }
-		size = { width = 1500 height= 1100 }
+		position = { x = 500 y = 150 }
+		size = { width = 1415 height= 1110 }
 		orientation = left
-		moveable = yes
 		#clipping = no
+		scale = 0.75
 
-		background = {
-			name = "YSS_super_event_ui_background"
-			spriteType = GFX_YSS_super_event_icon
-			scale = 2
-		}
 
 		containerWindowType = {
 			name = "YSS_super_event_content"
-			position = { x = 100 y = 100 }
+			position = { x = 0 y = 0 }
 			fade_time = 1000 
 			fade_delay = 500
 			fade_type = accelerated
@@ -561,13 +556,13 @@ guiTypes = {
 			iconType = {
 				name = "YSS_super_event_ui_icon"
 				spriteType = GFX_YSS_super_event_ui_icon
-				position = { x = 80 y = -29 }
+				position = { x = 0 y = 0 }
     		    scale = 1.22
 			}
 		}
 		containerWindowType = {
 			name = "YSS_super_event_pt_content"
-			position = { x = 100 y = 100 }
+			position = { x = 33 y = 32 }
 			fade_time = 2500
 			fade_delay = 1500
 			fade_type = accelerated
@@ -640,16 +635,16 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "YSS_super_event_text_out_content"
-			position = { x = 100 y = 100 }
+			position = { x = 0 y = 0 }
 			fade_time = 1000 
 			fade_delay = 5500
 			fade_type = accelerated
 		    buttonType = {
 				name = "YSS_super_event_out_button"
 				spriteType = GFX_YSS_super_event_out_icon
-				position = { x = 1050 y = 95 }
+				position = { x = 1190 y = 190 }
 				clicksound = click_default
-    		    scale = 0.22
+    		    scale = 1
 			}
 		}
 		containerWindowType = {
