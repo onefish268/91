@@ -231,6 +231,52 @@ scripted_gui = {
 		}
 	}
 
+	YSS_zhenli_news_ui = { #真理报
+		context_type = player_context
+		window_name = "YSS_zhenli_news_ui_window"
+		visible = {
+			original_tag = YSS
+			has_country_flag = YSS_set_zhenli_new
+	    }
+		triggers = {
+			YSS_zhenli_news_paper1_visible = { has_country_flag = YSS_jidongzhuangzhi_news }
+			YSS_zhenli_news_paper2_visible = { has_country_flag = YSS_xinnian_news }
+			YSS_zhenli_news_paper3_visible = { has_country_flag = YSS_changge_news }
+			YSS_zhenli_news_paper4_visible = { has_country_flag = YSS_qiangewin_news }
+			YSS_zhenli_news_paper5_visible = { has_country_flag = YSS_bumengwin_news }
+			YSS_zhenli_news_paper6_visible = { has_country_flag = YSS_xiangqi_news }
+			YSS_zhenli_news_paper7_visible = { has_country_flag = YSS_shijianjiqi_news }
+			YSS_zhenli_news_paper8_visible = { has_country_flag = YSS_azilier_news }
+			YSS_zhenli_news_paper9_visible = { has_country_flag = YSS_wunv_news }
+			YSS_zhenli_news_paper10_visible = { has_country_flag = YSS_shengnv_news }
+			YSS_zhenli_news_paper11_visible = { has_country_flag = YSS_kangni_news }
+			YSS_zhenli_news_paper12_visible = { has_country_flag = YSS_yeren_news }
+			YSS_zhenli_news_paper13_visible = { has_country_flag = YSS_shushi_news }
+			YSS_zhenli_news_paper14_visible = { has_country_flag = YSS_yelai_news }
+			YSS_zhenli_news_paper15_visible = { has_country_flag = YSS_pink_news }
+		}
+		effects = {
+			YSS_zhenlibao_out_button_click = {
+			    clr_country_flag = YSS_set_zhenli_new
+				clr_country_flag = YSS_xinnian_news
+				clr_country_flag = YSS_jidongzhuangzhi_news
+				clr_country_flag = YSS_changge_news
+				clr_country_flag = YSS_qiangewin_news
+				clr_country_flag = YSS_bumengwin_news
+				clr_country_flag = YSS_xiangqi_news
+				clr_country_flag = YSS_shijianjiqi_news
+				clr_country_flag = YSS_azilier_news
+				clr_country_flag = YSS_wunv_news
+				clr_country_flag = YSS_shengnv_news
+				clr_country_flag = YSS_kangni_news
+				clr_country_flag = YSS_yeren_news
+				clr_country_flag = YSS_shushi_news
+				clr_country_flag = YSS_yelai_news
+				clr_country_flag = YSS_pink_news
+			}
+		}
+	}
+
 	YSS_paper_ui = { #求知报
 	    parent_window_token = politics_tab
 		context_type = player_context

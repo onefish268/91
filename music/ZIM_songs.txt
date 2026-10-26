@@ -224,3 +224,11 @@ music = {
         }
     }
 }
+music = {
+    song = "新闻放送"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

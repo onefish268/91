@@ -1228,6 +1228,7 @@ country_event = {
 	id = YSS.62
 	hidden = yes
 	trigger = {
+		date > 1938.5.1
 		YSS = {
 			has_completed_focus = YSS_focus_126
 			has_completed_focus = YSS_focus_148
@@ -2146,6 +2147,217 @@ country_event = {
 		custom_effect_tooltip = YSS_tootip_50
 		ai_chance = {
 			base = 50
+		}
+	}
+}
+
+country_event = {
+	#新闻
+	id = YSS.93
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1936.01.01
+	}
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_xinnian_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.94
+	hidden = yes
+	fire_only_once = yes
+
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_changge_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.95
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_qiangewin_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.96
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_bumengwin_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.97
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+		    set_country_flag = YSS_xiangqi_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.98
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_shijianjiqi_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.99
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_azilier_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.100
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_wunv_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.101
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_yeren_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.102
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_shushi_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.103
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_yelai_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#新闻
+	id = YSS.104
+	hidden = yes
+	fire_only_once = yes
+	
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_pink_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#群众运动
+	id = YSS.105
+	hidden = yes
+	trigger = {
+		has_completed_focus = YSS_focus_24
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 50
+            compare = greater_than_or_equals
+        }
+	}
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_shengnv_news
+			scoped_play_song = "新闻放送"
+		}
+	}
+}
+country_event = {
+	#群众运动
+	id = YSS.106
+	hidden = yes
+	trigger = {
+		has_completed_focus = YSS_focus_24
+		check_variable = {
+            var = YSS_liedu_mind_value
+            value = 85
+            compare = greater_than_or_equals
+        }
+	}
+	immediate = {
+		YSS = {
+			set_country_flag = YSS_set_zhenli_new
+			set_country_flag = YSS_kangni_news
+			scoped_play_song = "新闻放送"
 		}
 	}
 }

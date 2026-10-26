@@ -407,6 +407,149 @@ on_actions = {
         effect = {  
             if = {
                 limit = { 
+					focus_progress = {
+                        focus = YSS_focus_90
+                        progress > 7
+                    }
+				}
+				country_event = YSS.94
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_135
+                        progress > 7
+                    }
+					country_event = YSS.95
+				}
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_154
+                        progress > 7
+                    }
+				}
+				country_event = YSS.96
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_134
+                        progress > 7
+                    }
+				}
+				country_event = YSS.97
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_61
+                        progress > 7
+                    }
+				}
+				country_event = YSS.98
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_166
+                        progress > 7
+                    }
+				}
+				country_event = YSS.99
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_79
+                        progress > 7
+                    }
+				}
+				country_event = YSS.100
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_97
+                        progress > 7
+                    }
+				}
+				country_event = YSS.101
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_54
+                        progress > 7
+                    }
+				}
+				country_event = YSS.102
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_105
+                        progress > 7
+                    }
+				}
+				country_event = YSS.103
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_85
+                        progress > 7
+                    }
+				}
+				country_event = YSS.104
+            }
+        }
+    }
+	on_daily_YSS = {
+        effect = {  
+            if = {
+                limit = { 
 					YSS = {
 						has_stability < 0.04 
 					}
