@@ -300,7 +300,7 @@ focus_tree = {
 		x = 26
 		y = 0
 		cost = 0
-		icon = GFX_focus_TGI_land_of_pain
+		icon = GFX_focus_yss84
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -319,7 +319,7 @@ focus_tree = {
 		x = 26
 		y = 2
 		cost = 0
-		icon = GFX_focus_CHI_invoke_the_nine_powers
+		icon = GFX_focus_yss85
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -581,7 +581,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_26
@@ -605,7 +605,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			hidden_effect = {
 			    uncomplete_national_focus = {
                     focus = YSS_focus_28
@@ -629,7 +629,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = { 
-			add_stability = -0.15
+			add_stability = -0.1
 			add_manpower = -3000
 			hidden_effect = {
 			    uncomplete_national_focus = {
@@ -1109,6 +1109,14 @@ focus_tree = {
 			focus = YSS_focus_47
 		}
 		completion_reward = {
+			if = {
+                limit = {
+                    NOT = { has_tech = YSS_train_equipment_1  }
+                }
+                set_technology = {
+                    YSS_train_equipment_1  = 1
+                }
+            }
 			every_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1123,6 +1131,11 @@ focus_tree = {
 				}
 			}
 			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
 			custom_effect_tooltip =YSS_tootip_28
 			add_to_variable = { YSS_economy_committee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 			
@@ -2186,7 +2199,7 @@ focus_tree = {
 		x = 40
 		y = 10
 		cost = 2
-		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		icon = GFX_focus_yss80
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -2263,10 +2276,6 @@ focus_tree = {
 			add_stability = 0.05
 			custom_effect_tooltip = YSS_tootip_6
 			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
-			add_to_variable = {
 				YSS_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tt
 			}
@@ -2296,10 +2305,6 @@ focus_tree = {
 		completion_reward = { 
 			add_stability = 0.1
 			custom_effect_tooltip = YSS_tootip_6
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
 			add_to_variable = {
 				YSS_defensive_war_stability_factor = 0.1
 				tooltip = defensive_war_stability_factor_tt
@@ -2414,16 +2419,12 @@ focus_tree = {
 			focus = YSS_focus_99
 		}
 		completion_reward = { 
+			add_stability = 0.25
 			custom_effect_tooltip = YSS_tootip_6
 			add_to_variable = {
 				YSS_7_monthly_population = 0.35
 				tooltip = monthly_population_tt
 			}
-			add_to_variable = {
-				YSS_stability_weekly = 0.01
-				tooltip = stability_weekly_tt
-			}
-			
 		}
 	}
 	focus = {
@@ -2522,7 +2523,7 @@ focus_tree = {
 		x = 38
 		y = 11
 		cost = 3
-		icon = GFX_focus_JAP_peace_rise
+		icon = GFX_focus_yss81
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -2565,7 +2566,7 @@ focus_tree = {
 		x = 41
 		y = 12
 		cost = 5
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_yss82
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -2591,7 +2592,7 @@ focus_tree = {
 		x = 43
 		y = 12
 		cost = 5
-		icon = GFX_focus_por_latin_american_communism
+		icon = GFX_focus_yss78
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -2622,7 +2623,7 @@ focus_tree = {
 		x = 41
 		y = 14
 		cost = 5
-		icon = GFX_focus_SOV_support_spanish_poum
+		icon = GFX_focus_yss83
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		text_icon = YSS_focus_style
@@ -3038,6 +3039,22 @@ focus_tree = {
 			focus = YSS_focus_126
 		}
 		completion_reward = {
+			if = {
+                limit = {
+                    NOT = { has_tech = support_equipment_1 } # 支援装备基础科技ID为 support_equipment_1
+                }
+                set_technology = {
+                    support_equipment_1 = 1
+                }
+            }
+			if = {
+                limit = {
+                    NOT = { has_tech = motorized_equipment_0  }
+                }
+                set_technology = {
+                    motorized_equipment_0  = 1
+                }
+            }
 			every_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3068,6 +3085,9 @@ focus_tree = {
 					}
                 }
             }
+			every_military_industrial_organization = {
+				add_mio_funds = 2000
+			}
 		}
 	}
 	focus = {
@@ -3221,6 +3241,11 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = armor
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3260,6 +3285,11 @@ focus_tree = {
 			focus = YSS_focus_133
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_army_org_factor = 0.1
@@ -3433,6 +3463,18 @@ focus_tree = {
 			focus = YSS_focus_129
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_138
+				folder = land
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_rm_recon_factor = 0.15
@@ -3470,9 +3512,9 @@ focus_tree = {
 			focus = YSS_focus_138
 		}
 		completion_reward = {
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = radar_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = radar_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3633,6 +3675,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 250
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_142
+				folder = land
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_heat_attrition_factor = -0.15
@@ -3702,6 +3751,18 @@ focus_tree = {
                 uses = 1
                 category = cat_mechanized_equipment
             }
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_army_armor_speed_factor = 0.1
@@ -3739,6 +3800,11 @@ focus_tree = {
 			focus = YSS_focus_139
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = motorized_equipment
+			}
 			custom_effect_tooltip = YSS_tootip_27
 			add_to_variable = {
 				YSS_red_army_supply_consumption_factor = -0.25
@@ -4035,6 +4101,13 @@ focus_tree = {
 			focus = YSS_focus_152
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_154
+				folder = naval
+			}
 			custom_effect_tooltip = YSS_tootip_23
 			add_to_variable = {
 				YSS_industrial_capacity_dockyard = 0.1
@@ -4084,6 +4157,13 @@ focus_tree = {
 				ahead_reduction = 1
 				uses = 2
 				category = cv_tech
+			}
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_155
+				folder = naval
 			}
 			970 = {
 				add_building_construction = {
@@ -4333,6 +4413,11 @@ focus_tree = {
 			focus = YSS_focus_162
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_airforce_ground_attack_factor = 0.1
@@ -4419,6 +4504,13 @@ focus_tree = {
                 uses = 2
                 category = light_air  # 轻型飞机类别
             }
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 0.5
+				uses = 2
+				category = light_air
+				category = medium_air
+			}
 			custom_effect_tooltip = YSS_tootip_40
 			custom_effect_tooltip = YSS_tootip_42
 			mio:YSS_light_aircraft = {
@@ -4449,6 +4541,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.15
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_169
+				folder = air
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_command_power_gain_mult = 0.15
@@ -4509,6 +4608,13 @@ focus_tree = {
 			focus = YSS_focus_170
 		}
 		completion_reward = {
+			add_daily_mastery = {
+				#精通
+				amount = 0.5
+				days = 100
+				name = YSS_focus_171
+				folder = air
+			}
 			custom_effect_tooltip = YSS_tootip_16
 			add_to_variable = {
 				YSS_airforce_static_anti_air_damage_factor = 0.15
@@ -4558,7 +4664,7 @@ focus_tree = {
 		x = 42
 		y = 11
 		cost = 5
-		icon = GFX_focus_BRA_dec
+		icon = GFX_focus_yss79
 		text_icon = YSS_focus_style
 		continue_if_invalid = no
 		cancel_if_invalid = yes

@@ -48,6 +48,11 @@ ideas = {
 					build_cost_ic = -0.5
 					instant = yes
 				}
+				artillery_equipment = {
+					reliability = -0.4
+					build_cost_ic = -0.35
+					instant = yes
+				}
 			}
 		}
 		YSS_war_3 = {

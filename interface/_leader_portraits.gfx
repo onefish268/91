@@ -218,6 +218,81 @@ spriteTypes = {
         texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_photo11_icon.png"
         transparencecheck = yes
     }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper1"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper1.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper2"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper2.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper3"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper3.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper4"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper4.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper5"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper5.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper6"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper6.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper7"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper7.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper8"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper8.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper9"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper9.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper10"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper10.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper11"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper11.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper12"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper12.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper13"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper13.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper14"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper14.png"
+        transparencecheck = yes
+    }
+	spriteType = {
+        name = "GFX_YSS_zhenli_news_paper15"
+        texturefile = "gfx/leaders/YSS/GFX_YSS_zhenli_news_paper15.png"
+        transparencecheck = yes
+    }
     spriteType = {
         name = "GFX_YSS_super_event_icon"
         texturefile = "gfx/leaders/YSS/GFX_YSS_super_event_icon.png"

@@ -539,21 +539,16 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "YSS_super_event_ui_window"
-		position = { x = 250 y = 0 }
-		size = { width = 1500 height= 1100 }
+		position = { x = 500 y = 150 }
+		size = { width = 1415 height= 1110 }
 		orientation = left
-		moveable = yes
 		#clipping = no
+		scale = 0.75
 
-		background = {
-			name = "YSS_super_event_ui_background"
-			spriteType = GFX_YSS_super_event_icon
-			scale = 2
-		}
 
 		containerWindowType = {
 			name = "YSS_super_event_content"
-			position = { x = 100 y = 100 }
+			position = { x = 0 y = 0 }
 			fade_time = 1000 
 			fade_delay = 500
 			fade_type = accelerated
@@ -561,13 +556,13 @@ guiTypes = {
 			iconType = {
 				name = "YSS_super_event_ui_icon"
 				spriteType = GFX_YSS_super_event_ui_icon
-				position = { x = 80 y = -29 }
+				position = { x = 0 y = 0 }
     		    scale = 1.22
 			}
 		}
 		containerWindowType = {
 			name = "YSS_super_event_pt_content"
-			position = { x = 100 y = 100 }
+			position = { x = 33 y = 32 }
 			fade_time = 2500
 			fade_delay = 1500
 			fade_type = accelerated
@@ -640,16 +635,16 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "YSS_super_event_text_out_content"
-			position = { x = 100 y = 100 }
+			position = { x = 0 y = 0 }
 			fade_time = 1000 
 			fade_delay = 5500
 			fade_type = accelerated
 		    buttonType = {
 				name = "YSS_super_event_out_button"
 				spriteType = GFX_YSS_super_event_out_icon
-				position = { x = 1050 y = 95 }
+				position = { x = 1190 y = 190 }
 				clicksound = click_default
-    		    scale = 0.22
+    		    scale = 1
 			}
 		}
 		containerWindowType = {
@@ -771,6 +766,117 @@ guiTypes = {
 				format = left		
 			}
 		}
+	}
+}
+
+guiTypes = { #真理报
+
+	containerWindowType = {
+		name = "YSS_zhenli_news_ui_window"
+		position = { x = 600 y = 150 }
+		size = { width = 735 height= 752 }
+		moveable = yes
+		orientation = left
+		#clipping = no
+
+		iconType = {
+			name = "YSS_zhenli_news_paper1"
+			spriteType = GFX_YSS_zhenli_news_paper1 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper2"
+			spriteType = GFX_YSS_zhenli_news_paper2 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper3"
+			spriteType = GFX_YSS_zhenli_news_paper3 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper4"
+			spriteType = GFX_YSS_zhenli_news_paper4 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper5"
+			spriteType = GFX_YSS_zhenli_news_paper5 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper6"
+			spriteType = GFX_YSS_zhenli_news_paper6 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper7"
+			spriteType = GFX_YSS_zhenli_news_paper7 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper8"
+			spriteType = GFX_YSS_zhenli_news_paper8 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper9"
+			spriteType = GFX_YSS_zhenli_news_paper9 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper10"
+			spriteType = GFX_YSS_zhenli_news_paper10 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper11"
+			spriteType = GFX_YSS_zhenli_news_paper11 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper12"
+			spriteType = GFX_YSS_zhenli_news_paper12 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper13"
+			spriteType = GFX_YSS_zhenli_news_paper13 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper14"
+			spriteType = GFX_YSS_zhenli_news_paper14 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		iconType = {
+			name = "YSS_zhenli_news_paper15"
+			spriteType = GFX_YSS_zhenli_news_paper15 # 替换为你自己的sprite名称
+			position = { x = 0 y = 0 }
+			scale = 1
+		}
+		buttonType = {
+			name = "YSS_zhenlibao_out_button"
+			spriteType = GFX_YSS_super_event_out_icon
+			position = { x = 690 y = 190 }
+			clicksound = click_default
+    		scale = 1
+		}
+
 	}
 }
 

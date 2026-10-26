@@ -2179,8 +2179,8 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = -10}
-			add_to_variable = {YSS_liedu_mind_value = -10}
+			add_to_variable = {YSS_jindu_power_value = -5}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_2 = {
@@ -2212,8 +2212,8 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = -10}
-			add_to_variable = {YSS_liedu_mind_value = -10}
+			add_to_variable = {YSS_jindu_power_value = -5}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_3 = {
@@ -2245,8 +2245,8 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = -10}
-			add_to_variable = {YSS_liedu_mind_value = -10}
+			add_to_variable = {YSS_jindu_power_value = -5}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_4 = {
@@ -2278,8 +2278,8 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = -10}
-			add_to_variable = {YSS_liedu_mind_value = -10}
+			add_to_variable = {YSS_jindu_power_value = -5}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_5 = {
@@ -2309,8 +2309,116 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = -10}
-			add_to_variable = {YSS_liedu_mind_value = -10}
+			add_to_variable = {YSS_jindu_power_value = -5}
+			add_to_variable = {YSS_liedu_mind_value = -5}
+		}
+	}
+	YSS_gm_qunzhong_1 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 35
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_24
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+			has_country_flag = YSS_gm_qunzhongxingqi
+			check_variable = {
+                var = YSS_jindu_power_value
+                value = 60
+                compare = greater_than_or_equals
+            }
+		}
+		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
+        }
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_qunzhong
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 10}
+		}
+	}
+	YSS_gm_qunzhong_2 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 25
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_24
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+			has_country_flag = YSS_gm_qunzhongxingqi
+			check_variable = {
+                var = YSS_jindu_power_value
+                value = 75
+                compare = greater_than_or_equals
+            }
+		}
+		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
+        }
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_qunzhong
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 10}
+		}
+	}
+	YSS_gm_qunzhong_3 = {
+		icon = GFX_decision_default
+		days_mission_timeout = 15
+		activation = {
+			original_tag = YSS
+			has_completed_focus = YSS_focus_24
+			NOT = {
+				has_country_flag = YSS_daqingxi_jiaoting
+			}
+			has_country_flag = YSS_gm_qunzhongxingqi
+			check_variable = {
+                var = YSS_jindu_power_value
+                value = 85
+                compare = greater_than_or_equals
+            }
+		}
+		available = {
+			has_country_flag = YSS_daqingxi_jiaoting
+        }
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = YSS_gm_tooltip_qunzhong
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_jindu_power_value
+		         min = 0
+		         max = 100
+	        }
+			clamp_variable = {  ##限定最大/最小值（单次效果，非永久）
+		         var = YSS_liedu_mind_value
+		         min = 0
+		         max = 100
+	        }
+			add_to_variable = {YSS_liedu_mind_value = 10}
 		}
 	}
 	YSS_gm_6 = {
@@ -2337,7 +2445,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = 20}
+			add_to_variable = {YSS_jindu_power_value = 10}
 		}
 	}
 	YSS_gm_7 = {
@@ -2364,7 +2472,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = 25}
+			add_to_variable = {YSS_jindu_power_value = 15}
 		}
 	}
 	YSS_gm_8 = {
@@ -2391,7 +2499,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = 20}
+			add_to_variable = {YSS_jindu_power_value = 10}
 		}
 	}
 	YSS_gm_9 = {
@@ -2418,7 +2526,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = 30}
+			add_to_variable = {YSS_jindu_power_value = 15}
 		}
 	}
 	YSS_gm_10 = {
@@ -2445,8 +2553,9 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_jindu_power_value = 35}
-			add_to_variable = {YSS_liedu_mind_value = 30}
+			add_stability = -0.15
+			add_to_variable = {YSS_jindu_power_value = 20}
+			add_to_variable = {YSS_liedu_mind_value = 15}
 		}
 	}
 	YSS_gm_11 = {
@@ -2473,7 +2582,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = 25}
+			add_to_variable = {YSS_liedu_mind_value = 15}
 		}
 	}
 	YSS_gm_12 = {
@@ -2500,7 +2609,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = 15}
+			add_to_variable = {YSS_liedu_mind_value = 10}
 		}
 	}
 	YSS_gm_13 = {
@@ -2527,7 +2636,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = 30}
+			add_to_variable = {YSS_liedu_mind_value = 15}
 		}
 	}
 	YSS_gm_14 = {
@@ -2554,7 +2663,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = -30}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_15 = {
@@ -2581,7 +2690,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = -40}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_16 = {
@@ -2608,7 +2717,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = -25}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 	YSS_gm_17 = {
@@ -2635,7 +2744,7 @@ YSS_geming_category = {
 		         min = 0
 		         max = 100
 	        }
-			add_to_variable = {YSS_liedu_mind_value = -25}
+			add_to_variable = {YSS_liedu_mind_value = -5}
 		}
 	}
 }
@@ -2785,7 +2894,7 @@ YSS_xcgdb = {
 		}
 		days_remove = 50
 		cost = 50
-		days_re_enable = 50
+		days_re_enable = 30
 		complete_effect = {
 			set_variable = {
 				YSS_pub_temp = 4
@@ -2797,7 +2906,7 @@ YSS_xcgdb = {
 			opinion_gain_monthly_same_ideology_factor = 0.15
 			party_popularity_stability_factor = 0.15
 			political_power_factor = 0.15
-			stability_weekly_factor = 0.01
+			stability_weekly = 0.01
 		}
 		remove_effect = {
 			set_variable = {
