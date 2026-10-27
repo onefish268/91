@@ -2156,6 +2156,7 @@ country_event = {
 	id = YSS.93
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		date > 1936.01.01
 	}
@@ -2172,6 +2173,7 @@ country_event = {
 	id = YSS.94
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	immediate = {
 		YSS = {
@@ -2186,6 +2188,7 @@ country_event = {
 	id = YSS.95
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2200,6 +2203,7 @@ country_event = {
 	id = YSS.96
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2214,6 +2218,7 @@ country_event = {
 	id = YSS.97
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2228,6 +2233,7 @@ country_event = {
 	id = YSS.98
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2242,6 +2248,7 @@ country_event = {
 	id = YSS.99
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2256,6 +2263,7 @@ country_event = {
 	id = YSS.100
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2270,6 +2278,7 @@ country_event = {
 	id = YSS.101
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2284,6 +2293,7 @@ country_event = {
 	id = YSS.102
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2298,6 +2308,7 @@ country_event = {
 	id = YSS.103
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2312,6 +2323,7 @@ country_event = {
 	id = YSS.104
 	hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	immediate = {
 		YSS = {
@@ -2325,6 +2337,8 @@ country_event = {
 	#群众运动
 	id = YSS.105
 	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		has_completed_focus = YSS_focus_24
 		check_variable = {
@@ -2345,6 +2359,8 @@ country_event = {
 	#群众运动
 	id = YSS.106
 	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		has_completed_focus = YSS_focus_24
 		check_variable = {
