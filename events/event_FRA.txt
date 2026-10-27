@@ -1,4 +1,4 @@
-﻿add_namespace = FRA_Gensokyo
+add_namespace = FRA_Gensokyo
 add_namespace = FRA_Gensokyo_news
 add_namespace = FRA_Gensokyo_Alliance
 #舵手逝世
@@ -5266,30 +5266,6 @@ country_event = {
 			remove_core_of = ROOT
 		}
 		remove_ideas = FRA_Step_in_Democratization
-		ai_chance = {
-			base = 10
-		}
-	}
-}
-
-#八云紫接管舰队
-country_event = {
-	id = FRA_Gensokyo.134
-	title = FRA_Gensokyo.134.t
-	desc = FRA_Gensokyo.134.desc
-	#picture = GFX_event_FRA_tietie05
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = FRA_Gensokyo.134.a
-		transfer_navy = {
-			target = LIB
-		}
-		LIB = {
-			end_puppet_this = yes
-			set_cosmetic_tag = FRA_Navy_LIB
-			puppet = COG
-		}
 		ai_chance = {
 			base = 10
 		}
