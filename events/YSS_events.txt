@@ -1230,10 +1230,6 @@ country_event = {
 	trigger = {
 		date > 1938.5.1
 		YSS = {
-			has_completed_focus = YSS_focus_126
-			has_completed_focus = YSS_focus_148
-			has_completed_focus = YSS_focus_161
-			has_completed_focus = YSS_focus_42
 			NOT = {
 				has_completed_focus = YSS_focus_14
 			}
