@@ -35,7 +35,7 @@ scripted_gui = {
 					add_to_array = { YSS_picture_of_country_array = 2 }
 					add_to_array = { YSS_picture_of_country_array = 3 }
 				}
-				else = {
+				else_if = {
 					limit = { NOT = { has_country_flag = YSS_next_flags } }
 
 					clear_array = YSS_picture_of_country_array
@@ -56,7 +56,7 @@ scripted_gui = {
 					add_to_array = { YSS_all_buttons_array = 4 }
 					add_to_array = { YSS_all_buttons_array = 5 }
 				}
-				else = {
+				else_if = {
 					limit = { NOT = { has_country_flag = YSS_next_decisions } }
 
 					clear_array = YSS_all_buttons_array
