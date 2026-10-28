@@ -3022,7 +3022,7 @@ country_event = {#选择坦克
 		}
 	}
 	option = {
-		name = YYSS_tank
+		name = YSS_tank
 		mio:YSS_tank = {
 			add_mio_size = 1
 		}
