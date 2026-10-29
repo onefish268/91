@@ -1,551 +1,613 @@
+@ -1,678 +1,551 @@
 on_actions = {
-	on_monthly = {
+    on_monthly = {
+        effect = {
+            FRA = {
+                country_event = SA_invisible_event.001
+            }
+        }
+    }
+	on_capitulation_immediate = {
 		effect = {
-
-			FRA = {
-			country_event = SA_invisible_event.001
+			if = {
+				limit = {
+                    FROM = { tag = YSS }     
+                    ROOT = { tag = ETH }   
+                }
+				YSS = {
+					white_peace = {
+						tag = ETH
+						message = YSS_win_ETH
+					}
+					annex_country = { target = ETH transfer_troops = no }
+				}
 			}
-
 		}
 	}
 	on_capitulation_immediate = {
 		effect = {
-
 			if = {
-			limit = {
-			FROM = { tag = YSS }
-			ROOT = { tag = ETH }
+				limit = {
+                    FROM = { tag = YSS }     
+                    ROOT = { tag = AOI }   
+                }
+				YSS = {
+					white_peace = {
+						tag = AOI
+						message = YSS_win_AOI
+					}
+					annex_country = { target = AOI transfer_troops = no }
+				}
 			}
-			YSS = {
-			white_peace = {
-			tag = ETH
-			message = YSS_win_ETH
-			}
-			annex_country = { target = ETH transfer_troops = no }
-			}
-			}
-
-
+		}
+	}
+    on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = YSS }
-			ROOT = { tag = AOI }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZCS }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = ZCS
+						message = ZYX_win_ZCS
+					}
+					annex_country = { target = ZCS transfer_troops = yes }
+				}
 			}
-			YSS = {
-			white_peace = {
-			tag = AOI
-			message = YSS_win_AOI
-			}
-			annex_country = { target = AOI transfer_troops = no }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = ZCS }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = COG }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = COG
+					}
+					annex_country = { target = COG }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = ZCS
-			message = ZYX_win_ZCS
-			}
-			annex_country = { target = ZCS transfer_troops = yes }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = COG }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = EAS }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = EAS
+					}
+					annex_country = { target = EAS }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = COG
-			}
-			annex_country = { target = COG }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = EAS }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZXS }   
+                }
+                ZYX = {
+					white_peace = {
+						tag = ZXS
+						message = ZYX_win_ZXS
+					}
+					annex_country = { target = ZXS transfer_troops = yes }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = EAS
-			}
-			annex_country = { target = EAS }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = ZXS }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZSH }   
+                }
+                ZYX = {
+					white_peace = {
+						tag = ZSH
+						message = ZYX_win_ZSH
+					}
+					annex_country = { target = ZSH transfer_troops = yes }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = ZXS
-			message = ZYX_win_ZXS
-			}
-			annex_country = { target = ZXS transfer_troops = yes }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = ZSH }
+				limit = {
+                    FROM = { tag = ZYX }     
+                    ROOT = { tag = ZSB }   
+                }
+				ZYX = {
+					white_peace = {
+						tag = ZSB
+						message = ZYX_win_ZSB
+					}
+					annex_country = { target = ZSB transfer_troops = yes }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = ZSH
-			message = ZYX_win_ZSH
-			}
-			annex_country = { target = ZSH transfer_troops = yes }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZYX }
-			ROOT = { tag = ZSB }
+				limit = {
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZHJ }   
+                }
+				ZSB = {
+					white_peace = {
+						tag = ZHJ
+						message = ZSB_win_ZHJ
+					}
+					annex_country = { target = ZHJ transfer_troops = yes }
+				}
 			}
-			ZYX = {
-			white_peace = {
-			tag = ZSB
-			message = ZYX_win_ZSB
-			}
-			annex_country = { target = ZSB transfer_troops = yes }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZSB }
-			ROOT = { tag = ZHJ }
+				limit = {
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZSH }   
+                }
+				ZSB = {
+					white_peace = {
+						tag = ZSH
+						message = ZSB_win_ZSH
+					}
+					annex_country = { target = ZSH transfer_troops = yes }
+				}
 			}
-			ZSB = {
-			white_peace = {
-			tag = ZHJ
-			message = ZSB_win_ZHJ
-			}
-			annex_country = { target = ZHJ transfer_troops = yes }
-			}
-			}
-
-
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
 			if = {
-			limit = {
-			FROM = { tag = ZSB }
-			ROOT = { tag = ZSH }
+				limit = {
+                    FROM = { tag = ZSB }     
+                    ROOT = { tag = ZYX }   
+               }
+				ZSB = {
+					white_peace = {
+						tag = ZYX
+						message = ZSB_win_ZYX
+					}
+					annex_country = { target = ZYX transfer_troops = yes }
+				}
 			}
-			ZSB = {
-			white_peace = {
-			tag = ZSH
-			message = ZSB_win_ZSH
-			}
-			annex_country = { target = ZSH transfer_troops = yes }
-			}
-			}
-
-
-			if = {
-			limit = {
-			FROM = { tag = ZSB }
-			ROOT = { tag = ZYX }
-			}
-			ZSB = {
-			white_peace = {
-			tag = ZYX
-			message = ZSB_win_ZYX
-			}
-			annex_country = { target = ZYX transfer_troops = yes }
-			}
-			}
-
 		}
 	}
 	on_startup = {
 		effect = {
-
 			ZIM = {
-			country_event = {
-			id = ZIM.13
-			days = 5
+				country_event = {
+				    id = ZIM.13
+					days = 5
+			    }
 			}
-			}
-
-
-			every_country = {
-			limit = {
-			is_ai = no
-			}
-			country_event = znt.3
-			}
-
 		}
 	}
+	#on_startup = {
+	#	effect = {
+	#		every_country = {
+    #            limit = {
+    #                is_ai = no
+    #            }
+    #            country_event = znt.3
+    #        }
+	#	}
+	#}
 	on_daily_ZIM = {
-		effect = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.3
+					days = 9
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = new_focus_2
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.3
-			days = 9
-			}
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = new_focus_4
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.5
-			days = 10
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_4
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.5
+					days = 10
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = new_focus_5
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.6
-			days = 10
-			}
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = new_focus_7
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.7
-			days = 10
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_5
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.6
+					days = 10
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 1_focus_1
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.14
-			days = 4
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = new_focus_7
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.7
+					days = 10
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 1_focus_2
-			progress > 0
-			}
-			}
-			country_event = {
-			id = ZIM.15
-			days = 5
-			}
-			}
+                limit = { 
+					focus_progress = {
+                        focus = 1_focus_1
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.14
+					days = 4
+			    }
+            }
 
-		}
-	}
+			if = {
+                limit = { 
+					focus_progress = {
+                        focus = 1_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = ZIM.15
+					days = 5
+			    }
+            }
+        }
+    }
 	on_daily_ZDM = {
-		effect = {
+        effect = {  
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_2
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.1
+					days = 15
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_2
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.1
-			days = 15
-			}
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_7
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.2
-			days = 18
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_7
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.2
+					days = 18
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_4
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.3
-			days = 15
-			}
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_5
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.4
-			days = 15
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_4
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.3
+					days = 15
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_19
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.5
-			days = 10
-			}
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_5
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.4
+					days = 15
+			    }
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = 9_focus_14
-			progress > 0
-			}
-			}
-			country_event = {
-			id = zdm.7
-			days = 10
-			}
-			}
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_19
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.5
+					days = 10
+			    }
+            }
 
-		}
-	}
+			if = {
+                limit = { 
+					focus_progress = {
+                        focus = 9_focus_14
+                        progress > 0
+                    }
+				}
+                country_event = {
+				    id = zdm.7
+					days = 10
+			    }
+            }
+        }
+    }
 	on_daily_YSS = {
-		effect = {
+        effect = {  
+			if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_90
+                        progress > 0.25
+                    }
+				}
+				country_event = YSS.94
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_90
-			progress > 7
-			}
-			}
-			country_event = YSS.94
-			}
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_135
+                        progress > 0.25
+                    }
+					country_event = YSS.95
+				}
+            }
 
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_135
-			progress > 7
-			}
-			country_event = YSS.95
-			}
-			}
-
+            if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_154
+                        progress > 0.2
+                    }
+				}
+				country_event = YSS.96
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_154
-			progress > 7
-			}
-			}
-			country_event = YSS.96
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_134
-			progress > 7
-			}
-			}
-			country_event = YSS.97
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_134
+                        progress > 0.5
+                    }
+				}
+				country_event = YSS.97
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_61
-			progress > 7
-			}
-			}
-			country_event = YSS.98
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_166
-			progress > 7
-			}
-			}
-			country_event = YSS.99
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_61
+                        progress > 0.33
+                    }
+				}
+				country_event = YSS.98
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_79
-			progress > 7
-			}
-			}
-			country_event = YSS.100
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_97
-			progress > 7
-			}
-			}
-			country_event = YSS.101
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_166
+                        progress > 0.2
+                    }
+				}
+				country_event = YSS.99
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_54
-			progress > 7
-			}
-			}
-			country_event = YSS.102
-			}
-
-
-			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_105
-			progress > 7
-			}
-			}
-			country_event = YSS.103
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_79
+                        progress > 0.33
+                    }
+				}
+				country_event = YSS.100
+            }
 
 			if = {
-			limit = {
-			focus_progress = {
-			focus = YSS_focus_85
-			progress > 7
-			}
-			}
-			country_event = YSS.104
-			}
-
-
-			if = {
-			limit = {
-			YSS = {
-			has_stability < 0.04
-			}
-			}
-			country_event = YSS.2
-			}
-
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_97
+                        progress > 0.25
+                    }
+				}
+				country_event = YSS.101
+            }
 
 			if = {
-			limit = {
-			YSS = {
-			exists = yes
-			}
-			ETH = {
-			exists = no
-			}
-			AOI = {
-			exists = no
-			}
-			}
-			country_event = YSS.90
-			}
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_54
+                        progress > 0.33
+                    }
+				}
+				country_event = YSS.102
+            }
 
-		}
-	}
+			if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_105
+                        progress > 0.25
+                    }
+				}
+				country_event = YSS.103
+            }
+
+			if = {
+                limit = { 
+					focus_progress = {
+                        focus = YSS_focus_85
+                        progress > 0.33
+                    }
+				}
+				country_event = YSS.104
+            }
+
+			if = {
+                limit = { 
+					YSS = {
+						has_stability < 0.04 
+					}
+				}
+                country_event = YSS.2
+            }
+
+			if = {
+                limit = { 
+					YSS = {
+						exists = yes
+					}
+					ETH = {
+						exists = no
+					}
+					AOI = {
+						exists = no
+					}
+				}
+                country_event = YSS.90
+            }
+        }
+    }
+
 	on_civil_war_end = {
-		effect = {
+    effect = {
+        if = {
+            limit = {
+                ROOT = {
+					has_country_flag = YSS_launch_the_civil_war
+				}
+                # 可以根据需要加更多条件，比如确认是玩家赢的
+            }
 
-			text = {
-			set_temp_variable = { clean_num_of_factory = clear_num_of_factory }
+			set_country_flag = YSS_revoluntion_victory
 
-			YSS = {
-			add_offsite_building = {
-			type = arms_factory
-			level = clean_num_of_factory
+			remove_ideas = ZYX_Suddenly_attack
+
+			clear_variable = ROOT.YSS_officer_factor
+
+			remove_dynamic_modifier = { modifier = YSS_officer_support_revoluntion }
+
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = YSS_have_volunteer_to_this_country
+						has_country_flag = YSS_we_prepare_to_send_volunteer
+					}
+				}
+				clr_country_flag = YSS_have_volunteer_to_this_country
+				clr_country_flag = YSS_we_prepare_to_send_volunteer
+				add_to_variable = { YSS.YSS_volunteer_to_other_country_send_volunteer_size = -1 }
 			}
+
+			#####战后归还
+
+			random_country = {
+				limit = {
+					meta_trigger = {
+						text = {
+							has_country_flag = YSS_the_lord_of_[country_tag]
+						}
+						country_tag = "[ROOT.GetTag]"
+					}
+				}
+
+				meta_effect = {
+					text = {
+						clr_country_flag = YSS_the_lord_of_[country_tag]
+					}
+					country_tag = "[ROOT.GetTag]"
+				}
 			}
 
-			multiply_temp_variable = { clean_num_of_factory = -1 }
-
-			add_to_variable = { YSS.YSS_the_num_of_send_factories = clean_num_of_factory }
-
-			add_offsite_building = {
-			type = arms_factory
-			level = clean_num_of_factory
+			meta_effect = {
+				text = {
+					every_army_leader = {
+						limit = { has_character_flag = YSS_has_mission_to_aboard }
+						clr_character_flag = YSS_has_mission_to_aboard
+						clr_character_flag = go_to_[country_tag]
+						set_nationality = YSS
+					}
+				}
+				country_tag = "[ROOT.GetTag]"
 			}
-			}
-			test_number = "[?temp_var:clear_num_of_factory]"
 
-		}
-	}
+			meta_effect = {
+				text = {
+					set_temp_variable = { clear_num_of_factory = YSS.YSS_total_of_factory_[country_tag] }
+				}
+				country_tag = "[ROOT.GetTag]"
+			}
+
+			meta_effect = {
+				text = {
+					set_temp_variable = { clean_num_of_factory = clear_num_of_factory }
+
+					YSS = {
+						add_offsite_building = {
+							type = arms_factory
+							level = clean_num_of_factory
+						}
+					}
+
+					multiply_temp_variable = { clean_num_of_factory = -1 }
+
+					add_to_variable = { YSS.YSS_the_num_of_send_factories = clean_num_of_factory }
+
+					add_offsite_building = {
+						type = arms_factory
+						level = clean_num_of_factory
+					}
+				}
+				test_number = "[?temp_var:clear_num_of_factory]"
+			}
+            
+            YSS = {
+				add_to_faction = ROOT
+			}
+        }
+    }
+}
 }
