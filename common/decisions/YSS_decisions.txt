@@ -2,7 +2,7 @@ YSS_yisiland_category = {
 	
 	YSS_1_1 = {
 		name = YSS_1_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 100
 		}
@@ -22,7 +22,7 @@ YSS_yisiland_category = {
 	}
 	YSS_1_2 = {
 		name = YSS_1_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 100
 		}
@@ -45,7 +45,7 @@ YSS_yisiland_category = {
 	}
 	YSS_1_3 = {
 		name = YSS_1_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 100
 		}
@@ -68,7 +68,7 @@ YSS_yisiland_category = {
 	}
 	YSS_1_4 = {
 		name = YSS_1_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 100
 		}
@@ -91,7 +91,7 @@ YSS_yisiland_category = {
 	}
 	YSS_1_5 = {
 		name = YSS_1_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 100
 		}
@@ -117,7 +117,7 @@ YSS_states_category = {
 
 	YSS_2_0_1 = {
 		name = YSS_2_0_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -135,7 +135,7 @@ YSS_states_category = {
 
 	YSS_2_3_1 = {
 		name = YSS_2_3_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -186,7 +186,7 @@ YSS_states_category = {
 	}
 	YSS_2_3_2 = {
 		name = YSS_2_3_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -239,7 +239,7 @@ YSS_states_category = {
 	# ========== 549 ==========
 	YSS_2_1_admin = {
 		name = YSS_2_1_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -255,7 +255,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_dev = {
 		name = YSS_2_1_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -274,7 +274,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_dev_plus = {
 		name = YSS_2_1_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -302,7 +302,7 @@ YSS_states_category = {
 	# ========== 1010 ==========
 	YSS_2_1_9_admin = {
 		name = YSS_2_1_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -318,7 +318,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_13_dev = {
 		name = YSS_2_1_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -337,7 +337,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_13_dev_plus = {
 		name = YSS_2_1_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -365,7 +365,7 @@ YSS_states_category = {
 	# ========== 862 ==========
 	YSS_2_1_21_admin = {
 		name = YSS_2_1_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -381,7 +381,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_17_dev = {
 		name = YSS_2_1_6d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -400,7 +400,7 @@ YSS_states_category = {
 	}
 	YSS_2_1_17_dev_plus = {
 		name = YSS_2_1_6d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -428,7 +428,7 @@ YSS_states_category = {
 	# ========== 1233 ==========
 	YSS_2_2_admin = {
 		name = YSS_2_2_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -444,7 +444,7 @@ YSS_states_category = {
 	}
 	YSS_2_2_dev = {
 		name = YSS_2_2_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -463,7 +463,7 @@ YSS_states_category = {
 	}
 	YSS_2_2_dev_plus = {
 		name = YSS_2_2_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -491,7 +491,7 @@ YSS_states_category = {
 	# ========== 551 ==========
 	YSS_2_2_9_admin = {
 		name = YSS_2_2_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -507,7 +507,7 @@ YSS_states_category = {
 	}
 	YSS_2_2_12_dev = {
 		name = YSS_2_2_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -526,7 +526,7 @@ YSS_states_category = {
 	}
 	YSS_2_2_12_dev_plus = {
 		name = YSS_2_2_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -554,7 +554,7 @@ YSS_states_category = {
 	# ========== 921 ==========
 	YSS_2_4_1_admin = {
 		name = YSS_2_4_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -573,7 +573,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_1_admin_plus = {
 		name = YSS_2_4_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -599,7 +599,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_5_admin = {
 		name = YSS_2_4_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -617,7 +617,7 @@ YSS_states_category = {
 	# ========== 920 ==========
 	YSS_2_4_8_dev = {
 		name = YSS_2_4_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -636,7 +636,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_8_dev_plus = {
 		name = YSS_2_4_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -662,7 +662,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_12_admin = {
 		name = YSS_2_4_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -680,7 +680,7 @@ YSS_states_category = {
 	# ========== 923 ==========
 	YSS_2_4_14_dev = {
 		name = YSS_2_4_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -699,7 +699,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_14_dev_plus = {
 		name = YSS_2_4_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -725,7 +725,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_18_admin = {
 		name = YSS_2_4_6d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -743,7 +743,7 @@ YSS_states_category = {
 	# ========== 550 ==========
 	YSS_2_4_21_dev = {
 		name = YSS_2_4_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -762,7 +762,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_21_dev_plus = {
 		name = YSS_2_4_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -788,7 +788,7 @@ YSS_states_category = {
 	}
 	YSS_2_4_24_admin = {
 		name = YSS_2_4_8d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -806,7 +806,7 @@ YSS_states_category = {
 	# ========== 906 ==========
 	YSS_2_5_1_dev = {
 		name = YSS_2_5_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -825,7 +825,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_1_dev_plus = {
 		name = YSS_2_5_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -851,7 +851,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_5_admin = {
 		name = YSS_2_5_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -869,7 +869,7 @@ YSS_states_category = {
 	# ========== 269 ==========
 	YSS_2_5_9_dev = {
 		name = YSS_2_5_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -888,7 +888,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_9_dev_plus = {
 		name = YSS_2_5_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -914,7 +914,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_12_admin = {
 		name = YSS_2_5_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -932,7 +932,7 @@ YSS_states_category = {
 	# ========== 1234 ==========
 	YSS_2_5_14_dev = {
 		name = YSS_2_5_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -951,7 +951,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_14_dev_plus = {
 		name = YSS_2_5_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -977,7 +977,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_18_admin = {
 		name = YSS_2_5_6d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -995,7 +995,7 @@ YSS_states_category = {
 	# ========== 268 ==========
 	YSS_2_5_22_dev = {
 		name = YSS_2_5_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1014,7 +1014,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_22_dev_plus = {
 		name = YSS_2_5_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1040,7 +1040,7 @@ YSS_states_category = {
 	}
 	YSS_2_5_24_admin = {
 		name = YSS_2_5_8d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1058,7 +1058,7 @@ YSS_states_category = {
 	# ========== 559 ==========
 	YSS_2_6_1_dev = {
 		name = YSS_2_6_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1077,7 +1077,7 @@ YSS_states_category = {
 	}
 	YSS_2_6_1_dev_plus = {
 		name = YSS_2_6_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1103,7 +1103,7 @@ YSS_states_category = {
 	}
 	YSS_2_6_4_admin = {
 		name = YSS_2_6_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1121,7 +1121,7 @@ YSS_states_category = {
 	# ========== 1235 ==========
 	YSS_2_6_8_admin = {
 		name = YSS_2_6_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1137,7 +1137,7 @@ YSS_states_category = {
 	}
 	YSS_2_6_12_dev = {
 		name = YSS_2_6_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1156,7 +1156,7 @@ YSS_states_category = {
 	}
 	YSS_2_6_12_dev_plus = {
 		name = YSS_2_6_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1184,7 +1184,7 @@ YSS_states_category = {
 	# ========== 970 ==========
 	YSS_2_7_1_dev = {
 		name = YSS_2_7_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1203,7 +1203,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_1_dev_plus = {
 		name = YSS_2_7_1d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1229,7 +1229,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_2_admin = {
 		name = YSS_2_7_2d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1247,7 +1247,7 @@ YSS_states_category = {
 	# ========== 547 ==========
 	YSS_2_7_3_dev = {
 		name = YSS_2_7_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1266,7 +1266,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_3_dev_plus = {
 		name = YSS_2_7_3d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1292,7 +1292,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_6_admin = {
 		name = YSS_2_7_4d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1310,7 +1310,7 @@ YSS_states_category = {
 	# ========== 969 ==========
 	YSS_2_7_10_dev = {
 		name = YSS_2_7_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1329,7 +1329,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_10_dev_plus = {
 		name = YSS_2_7_5d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1355,7 +1355,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_14_admin = {
 		name = YSS_2_7_6d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1373,7 +1373,7 @@ YSS_states_category = {
 	# ========== 892 ==========
 	YSS_2_7_18_dev = {
 		name = YSS_2_7_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1392,7 +1392,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_18_dev_plus = {
 		name = YSS_2_7_7d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 60
@@ -1418,7 +1418,7 @@ YSS_states_category = {
 	}
 	YSS_2_7_22_admin = {
 		name = YSS_2_7_8d
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		cost = 25
 		days_remove = 31
@@ -1436,7 +1436,7 @@ YSS_states_category = {
 
 YSS_renwu_category = {
 	YSS_renwu_1 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
@@ -1454,7 +1454,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_2 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1472,7 +1472,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_3 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 60
 		activation = {
 			original_tag = YSS
@@ -1490,7 +1490,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_4 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 80
 		activation = {
 			original_tag = YSS
@@ -1508,7 +1508,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_5 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 130
 		activation = {
 			original_tag = YSS
@@ -1526,7 +1526,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_6 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
@@ -1544,7 +1544,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_7 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
@@ -1562,7 +1562,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_8 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
@@ -1580,7 +1580,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_9 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 210
 		activation = {
 			original_tag = YSS
@@ -1598,7 +1598,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_10 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1616,7 +1616,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_11 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1634,7 +1634,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_12 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1652,7 +1652,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_13 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1670,7 +1670,7 @@ YSS_renwu_category = {
 		}
     }
 	YSS_renwu_14 = {
-        icon = GFX_decision_default
+        icon = generic_political_discourse
 		days_mission_timeout = 40
 		activation = {
 			original_tag = YSS
@@ -1692,7 +1692,7 @@ YSS_renwu_category = {
 YSS_dao_category = {
 	YSS_dao_1 = {
 		name = YSS_dao_1
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1718,7 +1718,7 @@ YSS_dao_category = {
 	}
 	YSS_dao_2 = {
 		name = YSS_dao_2
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1744,7 +1744,7 @@ YSS_dao_category = {
 	}
 	YSS_dao_3 = {
 		name = YSS_dao_3
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1770,7 +1770,7 @@ YSS_dao_category = {
 	}
 	YSS_dao_4 = {
 		name = YSS_dao_4
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1795,7 +1795,7 @@ YSS_dao_category = {
 		}
 	}
 	YSS_dao_5 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1820,7 +1820,7 @@ YSS_dao_category = {
 		}
 	}
 	YSS_dao_6 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1848,7 +1848,7 @@ YSS_dao_category = {
 
 YSS_kj_buy_category = {
 	YSS_kj_buy_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1873,7 +1873,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_1_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1898,7 +1898,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_1_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1923,7 +1923,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1948,7 +1948,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_2_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1973,7 +1973,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_2_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -1998,7 +1998,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_3 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2023,7 +2023,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_3_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2048,7 +2048,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_3_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2073,7 +2073,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_4 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2098,7 +2098,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_4_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2123,7 +2123,7 @@ YSS_kj_buy_category = {
 		}
 	}
 	YSS_kj_buy_4_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2151,7 +2151,7 @@ YSS_kj_buy_category = {
 
 YSS_geming_category = {
 	YSS_gm_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 15
 		activation = {
 			original_tag = YSS
@@ -2184,7 +2184,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 15
 		activation = {
 			original_tag = YSS
@@ -2217,7 +2217,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_3 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
@@ -2250,7 +2250,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_4 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 20
 		activation = {
 			original_tag = YSS
@@ -2283,7 +2283,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_5 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 25
 		activation = {
 			original_tag = YSS
@@ -2314,7 +2314,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_qunzhong_1 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 35
 		activation = {
 			original_tag = YSS
@@ -2350,7 +2350,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_qunzhong_2 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 25
 		activation = {
 			original_tag = YSS
@@ -2386,7 +2386,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_qunzhong_3 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		days_mission_timeout = 15
 		activation = {
 			original_tag = YSS
@@ -2422,7 +2422,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_6 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2449,7 +2449,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_7 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2476,7 +2476,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_8 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2503,7 +2503,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_9 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2530,7 +2530,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_10 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2559,7 +2559,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_11 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2586,7 +2586,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_12 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2613,7 +2613,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_13 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2640,7 +2640,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_14 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2667,7 +2667,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_15 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2694,7 +2694,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_16 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}
@@ -2721,7 +2721,7 @@ YSS_geming_category = {
 		}
 	}
 	YSS_gm_17 = {
-		icon = GFX_decision_default
+		icon = generic_political_discourse
 		ai_will_do = {
 			factor = 1
 		}

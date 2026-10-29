@@ -85,8 +85,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 
+			# 已经在打内战就别再点火
 			if = {
-        		limit = { is_subject = yes }
+				limit = { has_civil_war = yes }
+			}
+			else_if = {
+				limit = { is_subject = yes }
 
 				# autonomy_dominion: "自治领"
 				#autonomy_colony: "殖民领"
