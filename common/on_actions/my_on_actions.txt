@@ -589,7 +589,7 @@ on_actions = {
 
 			set_country_flag = YSS_revoluntion_victory
 
-			remove_idea = ZYX_Suddenly_attack
+			remove_ideas = ZYX_Suddenly_attack
 
 			clear_variable = ROOT.YSS_officer_factor
 

@@ -61,6 +61,14 @@ country_event = {
 		name = YSS.1001.b
 		hidden_effect = {
 			FROM = {
+
+				set_country_flag = {
+					flag = YSS_prepare_support
+					days = 31
+					value = 1
+				}
+
+
 				country_event = {
 					id = YSS.1000
 					days = 30
@@ -115,7 +123,7 @@ country_event = {
 					# 爆内战，创建叛军国家
     				start_civil_war = {
 						ruling_party = communism
-        				ideology = neutrality
+        				ideology = ROOT
         				size = 0.15
         				army_ratio = 0.2
 	    	   			navy_ratio = 0.2
@@ -165,7 +173,7 @@ country_event = {
 					# 爆内战，创建叛军国家
     				start_civil_war = {
 						ruling_party = communism
-        				ideology = neutrality
+        				ideology = ROOT
         				size = 0.15
         				army_ratio = 0.2
 	    	   			navy_ratio = 0.2
@@ -189,6 +197,8 @@ country_event = {
 					idea = ZYX_Suddenly_attack
 					days = 60
 				}
+
+				#############以下的部分应该和BUG没有关系了
 
 				set_country_flag = YSS_launch_the_civil_war
 
@@ -376,8 +386,8 @@ country_event = {
 
 				# 爆内战，创建叛军国家
     			start_civil_war = {
-					ruling_party = communism
-        			ideology = neutrality
+					ruling_party = marxism
+        			ideology = ROOT
         			size = 0.15
         			army_ratio = 0.2
     	   			navy_ratio = 0.2
@@ -600,14 +610,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_EGY }
-				set_autonomy = {
-	        		target = EGY
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_EGY } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_EGY }
+					set_autonomy = {
+		        		target = EGY
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_EGY
+				}
 			}
 		}
 		else_if = {
@@ -628,14 +643,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_ZIM }
-				set_autonomy = {
-	        		target = ZIM
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_ZIM } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_ZIM }
+					set_autonomy = {
+		        		target = ZIM
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_ZIM
+				}
 			}
 		}
 		else_if = {
@@ -656,14 +676,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_ZSB }
-				set_autonomy = {
-	        		target = ZSB
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_ZSB } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_ZSB }
+					set_autonomy = {
+		        		target = ZSB
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_ZSB
+				}
 			}
 		}
 		else_if = {
@@ -684,14 +709,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_ZYX }
-				set_autonomy = {
-	        		target = ZYX
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_ZYX } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_ZYX }
+					set_autonomy = {
+		        		target = ZYX
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_ZYX
+				}
 			}
 		}
 		else_if = {
@@ -712,14 +742,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_EAS }
-				set_autonomy = {
-	        		target = EAS
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_EAS } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_EAS }
+					set_autonomy = {
+		        		target = EAS
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_EAS
+				}
 			}
 		}
 		else_if = {
@@ -740,14 +775,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_LBA }
-				set_autonomy = {
-	        		target = LBA
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_LBA } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_LBA }
+					set_autonomy = {
+		        		target = LBA
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_LBA
+				}
 			}
 		}
 		else_if = {
@@ -768,14 +808,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_LIB }
-				set_autonomy = {
-	        		target = LIB
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_LIB } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_LIB }
+					set_autonomy = {
+		        		target = LIB
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_LIB
+				}
 			}
 		}
 		else_if = {
@@ -796,14 +841,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_SAF }
-				set_autonomy = {
-	        		target = SAF
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_SAF } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_SAF }
+					set_autonomy = {
+		        		target = SAF
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_SAF
+				}
 			}
 		}
 		else_if = {
@@ -824,14 +874,19 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
-			random_country = {
-				limit = { has_country_flag = YSS_the_lord_of_COG }
-				set_autonomy = {
-	        		target = COG
-		            autonomy_state = autonomy_colony
-         			end_wars = yes
-        	 		end_civil_wars = yes
-           		}
+			if = {
+				limit = { any_country = { has_country_flag = YSS_the_lord_of_COG } }
+				random_country = {
+					limit = { has_country_flag = YSS_the_lord_of_COG }
+					set_autonomy = {
+		        		target = COG
+			            autonomy_state = autonomy_colony
+         				end_wars = yes
+        	 			end_civil_wars = yes
+           			}
+
+					clr_country_flag = YSS_the_lord_of_COG
+				}
 			}
 		}
 	}
@@ -3176,7 +3231,9 @@ country_event = {#加盟信件
 		}
 
 		if = {
-			YSS = { NOT = { has_country_flag = YSS_change_its_name } }
+			limit = {
+				YSS = { NOT = { has_country_flag = YSS_change_its_name } }
+			}
 			YSS = {
 				set_cosmetic_tag = YSS_AFRICA_UNION
 				set_country_flag = YSS_change_its_name

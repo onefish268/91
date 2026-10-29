@@ -27,7 +27,7 @@ country_event = {
 	option = {
 		name = YSS.2.a
 		ai_chance = {
-			base = 50
+			base = 30
 		}
 		release = ETH
 		ROOT = {
@@ -42,6 +42,14 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = YSS_tootip_4
+	}
+
+	option = {
+		trigger = { is_debug = yes }
+		name = "别TM打扰我debug！！"
+		ai_chance = {
+			base = 30
+		}
 	}
 }
 
