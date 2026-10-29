@@ -137,12 +137,12 @@ country_event = {
 
 						country_event = {
 							id = YSS.1003
-							days = 60
+							days = 120
 						}
 						
 						add_timed_idea = {
 							idea = ZYX_Suddenly_attack
-							days = 60
+							days = 120
 						}
     				}
 				}
@@ -187,19 +187,19 @@ country_event = {
 	        		
 						country_event = {
 							id = YSS.1003
-							days = 60
+							days = 120
 						}
 
 						add_timed_idea = {
 							idea = ZYX_Suddenly_attack
-							days = 60
+							days = 120
 						}
     				}
 				}
 
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
-					days = 60
+					days = 120
 				}
 
 				#############以下的部分应该和BUG没有关系了
@@ -399,15 +399,20 @@ country_event = {
         			
         			keep_all_characters = yes
 
+					country_event = {
+						id = YSS.1003
+						days = 120
+					}
+
 					add_timed_idea = {
 						idea = ZYX_Suddenly_attack
-						days = 60
+						days = 120
 					}
     			}
 
 				add_timed_idea = {
 					idea = ZYX_Suddenly_attack
-					days = 60
+					days = 120
 				}
 
 				set_country_flag = YSS_launch_the_civil_war
