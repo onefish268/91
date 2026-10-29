@@ -1,4 +1,3 @@
-# 由 DeepSeek 写成
 add_namespace = YSS
 country_event = {
 	#接收器
