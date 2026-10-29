@@ -1,3 +1,4 @@
+@ -1,678 +1,551 @@
 on_actions = {
     on_monthly = {
         effect = {
@@ -201,16 +202,16 @@ on_actions = {
 			}
 		}
 	}
-	on_startup = {
-		effect = {
-			every_country = {
-                limit = {
-                    is_ai = no
-                }
-                country_event = znt.3
-            }
-		}
-	}
+	#on_startup = {
+	#	effect = {
+	#		every_country = {
+    #            limit = {
+    #                is_ai = no
+    #            }
+    #            country_event = znt.3
+    #        }
+	#	}
+	#}
 	on_daily_ZIM = {
         effect = {  
             if = {
@@ -225,11 +226,8 @@ on_actions = {
 					days = 9
 			    }
             }
-        }
-    }
-	on_daily_ZIM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = new_focus_4
@@ -241,11 +239,8 @@ on_actions = {
 					days = 10
 			    }
             }
-        }
-    }
-	on_daily_ZIM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = new_focus_5
@@ -257,11 +252,8 @@ on_actions = {
 					days = 10
 			    }
             }
-        }
-    }
-	on_daily_ZIM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = new_focus_7
@@ -273,11 +265,8 @@ on_actions = {
 					days = 10
 			    }
             }
-        }
-    }
-	on_daily_ZIM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 1_focus_1
@@ -289,11 +278,8 @@ on_actions = {
 					days = 4
 			    }
             }
-        }
-    }
-	on_daily_ZIM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 1_focus_2
@@ -321,11 +307,8 @@ on_actions = {
 					days = 15
 			    }
             }
-        }
-    }
-	on_daily_ZDM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 9_focus_7
@@ -337,11 +320,8 @@ on_actions = {
 					days = 18
 			    }
             }
-        }
-    }
-	on_daily_ZDM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 9_focus_4
@@ -353,11 +333,8 @@ on_actions = {
 					days = 15
 			    }
             }
-        }
-    }
-	on_daily_ZDM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 9_focus_5
@@ -369,11 +346,8 @@ on_actions = {
 					days = 15
 			    }
             }
-        }
-    }
-	on_daily_ZDM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 9_focus_19
@@ -385,11 +359,8 @@ on_actions = {
 					days = 10
 			    }
             }
-        }
-    }
-	on_daily_ZDM = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = 9_focus_14
@@ -405,150 +376,117 @@ on_actions = {
     }
 	on_daily_YSS = {
         effect = {  
-            if = {
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_90
-                        progress > 7
+                        progress > 0.25
                     }
 				}
 				country_event = YSS.94
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_135
-                        progress > 7
+                        progress > 0.25
                     }
 					country_event = YSS.95
 				}
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
+
             if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_154
-                        progress > 7
+                        progress > 0.2
                     }
 				}
 				country_event = YSS.96
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_134
-                        progress > 7
+                        progress > 0.5
                     }
 				}
 				country_event = YSS.97
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_61
-                        progress > 7
+                        progress > 0.33
                     }
 				}
 				country_event = YSS.98
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_166
-                        progress > 7
+                        progress > 0.2
                     }
 				}
 				country_event = YSS.99
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_79
-                        progress > 7
+                        progress > 0.33
                     }
 				}
 				country_event = YSS.100
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_97
-                        progress > 7
+                        progress > 0.25
                     }
 				}
 				country_event = YSS.101
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_54
-                        progress > 7
+                        progress > 0.33
                     }
 				}
 				country_event = YSS.102
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_105
-                        progress > 7
+                        progress > 0.25
                     }
 				}
 				country_event = YSS.103
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					focus_progress = {
                         focus = YSS_focus_85
-                        progress > 7
+                        progress > 0.33
                     }
 				}
 				country_event = YSS.104
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					YSS = {
 						has_stability < 0.04 
@@ -556,11 +494,8 @@ on_actions = {
 				}
                 country_event = YSS.2
             }
-        }
-    }
-	on_daily_YSS = {
-        effect = {  
-            if = {
+
+			if = {
                 limit = { 
 					YSS = {
 						exists = yes
@@ -589,7 +524,7 @@ on_actions = {
 
 			set_country_flag = YSS_revoluntion_victory
 
-			remove_idea = ZYX_Suddenly_attack
+			remove_ideas = ZYX_Suddenly_attack
 
 			clear_variable = ROOT.YSS_officer_factor
 
@@ -674,5 +609,5 @@ on_actions = {
 			}
         }
     }
-}
+	}
 }
