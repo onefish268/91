@@ -619,6 +619,13 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_EGY
+				set_nationality = YSS
+			}
+
 			if = {
 				limit = { any_country = { has_country_flag = YSS_the_lord_of_EGY } }
 				random_country = {
@@ -650,6 +657,13 @@ country_event = {
 
 			ZIM = {
 				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_ZIM
+				set_nationality = YSS
 			}
 
 			if = {
@@ -685,6 +699,13 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_ZSB
+				set_nationality = YSS
+			}
+
 			if = {
 				limit = { any_country = { has_country_flag = YSS_the_lord_of_ZSB } }
 				random_country = {
@@ -716,6 +737,13 @@ country_event = {
 
 			ZYX = {
 				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_ZYX
+				set_nationality = YSS
 			}
 
 			if = {
@@ -751,6 +779,13 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_EAS
+				set_nationality = YSS
+			}
+
 			if = {
 				limit = { any_country = { has_country_flag = YSS_the_lord_of_EAS } }
 				random_country = {
@@ -782,6 +817,13 @@ country_event = {
 
 			LBA = {
 				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_LBA
+				set_nationality = YSS
 			}
 
 			if = {
@@ -817,6 +859,13 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_LIB
+				set_nationality = YSS
+			}
+
 			if = {
 				limit = { any_country = { has_country_flag = YSS_the_lord_of_LIB } }
 				random_country = {
@@ -850,6 +899,13 @@ country_event = {
 				annex_country = { target = ROOT transfer_troops = yes }
 			}
 
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_SAF
+				set_nationality = YSS
+			}
+
 			if = {
 				limit = { any_country = { has_country_flag = YSS_the_lord_of_SAF } }
 				random_country = {
@@ -881,6 +937,13 @@ country_event = {
 
 			COG = {
 				annex_country = { target = ROOT transfer_troops = yes }
+			}
+
+			every_army_leader = {
+				limit = { has_character_flag = YSS_has_mission_to_aboard }
+				clr_character_flag = YSS_has_mission_to_aboard
+				clr_character_flag = go_to_COG
+				set_nationality = YSS
 			}
 
 			if = {
