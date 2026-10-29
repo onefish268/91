@@ -128,10 +128,10 @@ country_event = {
     				start_civil_war = {
 						ruling_party = communism
         				ideology = ROOT
-        				size = 0.15
-        				army_ratio = 0.2
-	    	   			navy_ratio = 0.2
-		        		air_ratio = 0.2
+        				size = 0.6
+        				army_ratio = 0.6
+	    	   			navy_ratio = 0.3
+		        		air_ratio = 0.3
         			
         				keep_all_characters = yes
 
@@ -178,10 +178,10 @@ country_event = {
     				start_civil_war = {
 						ruling_party = communism
         				ideology = ROOT
-        				size = 0.15
-        				army_ratio = 0.2
-	    	   			navy_ratio = 0.2
-		        		air_ratio = 0.2
+        				size = 0.6
+        				army_ratio = 0.6
+	    	   			navy_ratio = 0.3
+		        		air_ratio = 0.3
         			
         				keep_all_characters = yes
 	        		
@@ -392,10 +392,10 @@ country_event = {
     			start_civil_war = {
 					ruling_party = marxism
         			ideology = ROOT
-        			size = 0.15
-        			army_ratio = 0.2
-    	   			navy_ratio = 0.2
-	        		air_ratio = 0.2
+        			size = 0.6
+        				army_ratio = 0.6
+	    	   			navy_ratio = 0.3
+		        		air_ratio = 0.3
         			
         			keep_all_characters = yes
 
