@@ -519,10 +519,19 @@ country_event = {
 		set_country_flag = Free_france_flag
 		set_country_flag = LIB_FRA_has_fallen_flag
 		complete_national_focus = LIB_new_focus_33
-		set_autonomy = {
+		if = {
+			limit = {
+				COG = {
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+				}
+			}
+
+			set_autonomy = {
 				target = COG
 				autonomy_state = autonomy_puppet
 			}
+		}
 		FRA = {
 			FRA_Inubashiri = { set_nationality = ROOT }
 			FRA_Nitori = { set_nationality = ROOT }
@@ -712,10 +721,19 @@ country_event = {
 		adorable_heart_fire_super_event = yes 
 		set_country_flag = Free_france_flag
 		complete_national_focus = LIB_new_focus_33
-		set_autonomy = {
+		if = {
+			limit = {
+				COG = {
+					NOT = { has_country_flag = YSS_launch_the_civil_war }
+					NOT = { has_country_flag = YSS_revoluntion_victory }
+				}
+			}
+
+			set_autonomy = {
 				target = COG
 				autonomy_state = autonomy_puppet
 			}
+		}
 		DVL = { annex_country = { target = FRA transfer_troops = no } }
 		FRA = {
 			FRA_Kamishirasawa_Keine = { set_nationality = ROOT }
