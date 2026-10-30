@@ -135,6 +135,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.7.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -384,6 +385,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.17.a
+		add_stability = -0.01
 		hidden_effect = {
 			country_event = {
 				id = YSS.18
@@ -406,6 +408,7 @@ country_event = {
 	picture = GFX_ZIM4_event
 	option = {
 		name = YSS.18.a
+		add_stability = -0.01
 		hidden_effect = {
 			country_event = {
 				id = YSS.19
@@ -428,6 +431,7 @@ country_event = {
 	picture = GFX_ZIM4_event
 	option = {
 		name = YSS.19.a
+		add_stability = -0.01
 		hidden_effect = {
 			country_event = {
 				id = YSS.20
@@ -967,6 +971,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.43.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -982,6 +987,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.44.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -997,6 +1003,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.45.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1012,6 +1019,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.46.a
+		add_political_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1027,6 +1035,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.47.a
+		add_political_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1042,6 +1051,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.48.a
+		add_political_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1057,6 +1067,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.49.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1072,6 +1083,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.50.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1087,6 +1099,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.51.a
+		add_command_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1102,6 +1115,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.52.a
+		add_command_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1117,6 +1131,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.53.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1132,6 +1147,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.54.a
+		add_command_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1147,6 +1163,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.55.a
+		add_command_power = -30
 		ai_chance = {
 			base = 50
 		}
@@ -1162,6 +1179,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.56.a
+		add_stability = -0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1177,6 +1195,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.57.a
+		add_political_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1192,6 +1211,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.58.a
+		add_political_power = 20
 		ai_chance = {
 			base = 50
 		}
@@ -1207,6 +1227,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.59.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1222,6 +1243,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.60.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1237,6 +1259,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.61.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -1787,6 +1810,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = YSS.79.a
+		add_stability = 0.01
 		ai_chance = {
 			base = 50
 		}
@@ -2030,6 +2054,8 @@ country_event = {
                 ideology = communism  
                 desc = "YSS_mlym_NEW_DESC"  
             }
+			remove_country_leader_trait = communist_theorist 
+			remove_country_leader_trait = PHI_nation_builder 
 		}
 		custom_effect_tooltip = YSS_tootip_34
 		ai_chance = {
@@ -2081,6 +2107,8 @@ country_event = {
                 ideology = communism  
                 desc = "YSS_mlym_NEW_DESC"  
             }
+			remove_country_leader_trait = communist_theorist 
+			remove_country_leader_trait = PHI_nation_builder 
 	    }
 		ai_chance = {
 			base = 50
@@ -2131,6 +2159,8 @@ country_event = {
                 ideology = communism  
                 desc = "YSS_mlym_NEW_DESC"  
             }
+			remove_country_leader_trait = communist_theorist 
+			remove_country_leader_trait = PHI_nation_builder 
 	    }
 		ai_chance = {
 			base = 50

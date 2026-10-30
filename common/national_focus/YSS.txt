@@ -996,6 +996,8 @@ focus_tree = {
                     ideology = communism  
                     desc = "YSS_mlym_NEW_DESC"  
                 }
+				remove_country_leader_trait = communist_theorist 
+			    remove_country_leader_trait = PHI_nation_builder 
             }
 		}
 	}
