@@ -2104,6 +2104,7 @@ country_event = {
         }
 		add_stability = -0.4
 		add_war_support = -0.5
+		custom_effect_tooltip = YSS_tootip_51
 		hidden_effect = {
 			set_country_flag = YSS_super_event
 			set_country_flag = YSS_win_neizhan
