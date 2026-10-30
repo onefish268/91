@@ -249,6 +249,10 @@ country_event = {
 				id = YSS.13
 				days = 7
 			}
+			set_country_leader_portrait = {
+				ideology = communism
+				portrait = GFX_mlym_body_1
+			}
 		}
 		add_stability = 0.15
 		complete_national_focus = YSS_focus_10
@@ -262,6 +266,10 @@ country_event = {
 			country_event = {
 				id = YSS.14
 				days = 7
+			}
+			set_country_leader_portrait = {
+				ideology = communism
+				portrait = GFX_mlym_body_1
 			}
 		}
 		complete_national_focus = YSS_focus_9
@@ -920,6 +928,10 @@ country_event = {
 				id = YSS.42
 				days = 14
 			}
+			set_country_leader_portrait = {
+				ideology = communism
+				portrait = GFX_mlym_body_2
+			}
 		}
 		ai_chance = {
 			base = 50
@@ -1500,6 +1512,12 @@ country_event = {
 		set_country_flag = YSS_daqingxi_jiaoting
 		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = YSS_tootip_30
+		hidden_effect = {
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_3
+		    }
+	    }
 		ai_chance = {
 			base = 50
 		}
@@ -1538,6 +1556,12 @@ country_event = {
 		set_country_flag = YSS_daqingxi_jiaoting
 		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = YSS_tootip_30
+		hidden_effect = {
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_3
+		    }
+	    }
 		ai_chance = {
 			base = 50
 		}
@@ -1576,6 +1600,12 @@ country_event = {
 		set_country_flag = YSS_daqingxi_jiaoting
 		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = YSS_tootip_30
+		hidden_effect = {
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_3
+		    }
+	    }
 		ai_chance = {
 			base = 50
 		}
@@ -1992,6 +2022,14 @@ country_event = {
 			set_country_flag = YSS_super_event
 			set_country_flag = YSS_gangeming
 			scoped_play_song = "二次胜利"
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_4
+		    }
+			set_country_leader_description = {
+                ideology = communism  
+                desc = "YSS_mlym_NEW_DESC"  
+            }
 		}
 		custom_effect_tooltip = YSS_tootip_34
 		ai_chance = {
@@ -2034,6 +2072,16 @@ country_event = {
 		complete_national_focus = YSS_focus_30
 		set_country_flag = YSS_daqingxi_jiaoting
 		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_4
+		    }
+			set_country_leader_description = {
+                ideology = communism  
+                desc = "YSS_mlym_NEW_DESC"  
+            }
+	    }
 		ai_chance = {
 			base = 50
 		}
@@ -2074,6 +2122,16 @@ country_event = {
 		complete_national_focus = YSS_focus_30
 		set_country_flag = YSS_daqingxi_jiaoting
 		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+		    set_country_leader_portrait = {
+			    ideology = communism
+			    portrait = GFX_mlym_body_4
+		    }
+			set_country_leader_description = {
+                ideology = communism  
+                desc = "YSS_mlym_NEW_DESC"  
+            }
+	    }
 		ai_chance = {
 			base = 50
 		}

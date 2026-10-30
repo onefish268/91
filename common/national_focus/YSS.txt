@@ -987,7 +987,15 @@ focus_tree = {
 			hidden_effect = {
                 set_country_flag = YSS_super_event
                 set_country_flag = YSS_daqingxiwu
-                scoped_play_song = "接着走吧"
+                scoped_play_song = "接着走吧"	
+		        set_country_leader_portrait = {
+			        ideology = communism
+			        portrait = GFX_mlym_body_4
+		        }
+			    set_country_leader_description = {
+                    ideology = communism  
+                    desc = "YSS_mlym_NEW_DESC"  
+                }
             }
 		}
 	}

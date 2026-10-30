@@ -85,6 +85,22 @@ spriteTypes = {
         name = GFX_YSS_LBA_icon
         texturefile = "gfx/leaders/YSS/GFX_YSS_body25_icon.png"
     }
+    spriteType = {
+        name = GFX_mlym_body_1
+        texturefile = "gfx/leaders/YSS/GFX_mlym_body_1.png"
+    }
+    spriteType = {
+        name = GFX_mlym_body_2
+        texturefile = "gfx/leaders/YSS/GFX_mlym_body_2.png"
+    }
+    spriteType = {
+        name = GFX_mlym_body_3
+        texturefile = "gfx/leaders/YSS/GFX_mlym_body_3.png"
+    }
+    spriteType = {
+        name = GFX_mlym_body_4
+        texturefile = "gfx/leaders/YSS/GFX_mlym_body_4.png"
+    }
 }
 
 
