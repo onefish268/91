@@ -25,15 +25,7 @@ objectTypes = {
 		animation = { id = "guard_rifle"	type = "GER_infantry_guard_rifle_animation" }
 		animation = { id = "aim_exercise"	type = "GER_infantry_aim_exercise_animation" }
 
-		meshsettings = {
-			name = "SOV_infantryShape"
-			index = 0
-			texture_diffuse = "SOV_infantry_diffuse.dds"
-			texture_normal = "SOV_infantry_normal.dds"
-			texture_specular = "SOV_infantry_specular.dds"
-			shader = "PdxMeshAdvanced"
-		}
-	}	
+		}	
 	
 	pdxmesh = {
 		name = "YSS_infantry_mg_mesh"
@@ -61,15 +53,7 @@ objectTypes = {
 		animation = { id = "guard_rifle"	type = "GER_infantry_guard_rifle_animation" }
 		animation = { id = "aim_exercise"	type = "GER_infantry_aim_exercise_mg_animation" }
 
-		meshsettings = {
-			name = "SOV_infantryShape"
-			index = 0
-			texture_diffuse = "SOV_infantry_diffuse.dds"
-			texture_normal = "SOV_infantry_normal.dds"
-			texture_specular = "SOV_infantry_specular.dds"
-			shader = "PdxMeshAdvanced"
 		}
-	}
 
 	pdxmesh = {
 		name = "YSS_infantry_snow_rifle_mesh"
@@ -97,15 +81,7 @@ objectTypes = {
 		animation = { id = "guard_rifle"	type = "GER_infantry_guard_rifle_animation" }
 		animation = { id = "aim_exercise"	type = "GER_infantry_aim_exercise_animation" }
 
-		meshsettings = {
-			name = "SOV_infantry_snowShape"
-			index = 0
-			texture_diffuse = "SOV_infantry_snow_diffuse.dds"
-			texture_normal = "SOV_infantry_snow_normal.dds"
-			texture_specular = "SOV_infantry_snow_specular.dds"
-			shader = "PdxMeshAdvanced"
-		}
-	}	
+		}	
 	
 	pdxmesh = {
 		name = "YSS_infantry_snow_mg_mesh"
@@ -133,42 +109,18 @@ objectTypes = {
 		animation = { id = "guard_rifle"	type = "GER_infantry_guard_rifle_animation" }
 		animation = { id = "aim_exercise"	type = "GER_infantry_aim_exercise_mg_animation" }
 
-		meshsettings = {
-			name = "SOV_infantry_snowShape"
-			index = 0
-			texture_diffuse = "SOV_infantry_snow_diffuse.dds"
-			texture_normal = "SOV_infantry_snow_normal.dds"
-			texture_specular = "SOV_infantry_snow_specular.dds"
-			shader = "PdxMeshAdvanced"
 		}
-	}
 
 	pdxmesh = {
 		name = "YSS_infantry_weapon_rifle_mesh"
 		file = "gfx/models/units/YSS_models/SOV_infantry_weapon_tokarev_rifle.mesh"
 
-		meshsettings = {
-			name = "rifle:MeshShape"
-			index = 0
-			texture_diffuse = "SOV_infantry_snow_diffuse.dds"
-			texture_normal = "SOV_infantry_snow_normal.dds"
-			texture_specular = "SOV_infantry_snow_specular.dds"
-			shader = "PdxMeshAdvanced"
-		}
-	}	
+		}	
 	
 	pdxmesh = {
 		name = "YSS_infantry_weapon_mg_mesh"
 		file = "gfx/models/units/YSS_models/SOV_infantry_weapon_PPSh_mg.mesh"
 
-		meshsettings = {
-			name = "polySurfaceShape1"
-			index = 0
-			texture_diffuse = "SOV_infantry_snow_diffuse.dds"
-			texture_normal = "SOV_infantry_snow_normal.dds"
-			texture_specular = "SOV_infantry_snow_specular.dds"
-			shader = "PdxMeshAdvanced"
 		}
-	}
 	
 }
