@@ -1,0 +1,64 @@
+﻿YSS 非洲联盟女兵模型 — 可直接覆盖版（V159）
+生成时间：%Y-%m-%d %H:%M:%S
+
+== 本版修的两件事 ==
+1) 头发/上衣在游戏里发棕：
+   根因 —— HOI4 按**文件名全局查找贴图**。我们的 hair1_nonna.dds、cloth2_nonna.dds
+   等名字与工作坊 Nonna 模组里的原版贴图同名，游戏加载到了原版那份（棕/金发），
+   我们放在 YSS_models 里的白色版本被忽略。
+   证据：只有我新建的独有文件名生效 —— braid_white（辫子，白色 ✓）、
+   trouser_col_u（裤子，深绿 ✓），其它共用名全是原版颜色。
+   修复 —— 全部贴图加 yss_ 前缀改名（36 张），只保留 nospec.dds 原名（原版提供）。
+
+2) 辫子只有上半截动：
+   根因 —— 辫子权重是我按"最近身体顶点"复制的，下半截靠近胸口，
+   拿到了躯干骨骼权重，所以贴着衣服不动。
+   修复 —— 辫子整条 100% 绑定到 head 骨骼，跟随头部整体运动。
+
+== 安装 ==
+解压 gfx/ 到 ...\Hearts of Iron IV\mod\YSS_fix\ 覆盖即可。
+
+== 文件清单 ==
+  gfx/models/units/YSS_models/SOV_infantry.mesh                7045528 B  md5 e706559f871e
+  gfx/models/units/YSS_models/SOV_infantry_snow.mesh            193859 B  md5 8edd128b1e9d
+  gfx/models/units/YSS_models/SOV_infantry_weapon_tokarev_rifle.mesh     23379 B  md5 6eee158ae687
+  gfx/models/units/YSS_models/SOV_infantry_weapon_PPSh_mg.mesh     24029 B  md5 d8331da70d71
+  gfx/models/units/YSS_models/SOV_infantry_diffuse.dds         2097280 B  md5 86e8d5028070
+  gfx/models/units/YSS_models/SOV_infantry_normal.dds          2097280 B  md5 208be2dff5d5
+  gfx/models/units/YSS_models/SOV_infantry_spec.dds            2097280 B  md5 7996ef470f36
+  gfx/models/units/YSS_models/yss_belt_leather.dds                5616 B  md5 d32fda4f8873
+  gfx/models/units/YSS_models/yss_braid_white.dds                  496 B  md5 dc76633bd478
+  gfx/models/units/YSS_models/yss_cap_palette.dds                49328 B  md5 afa153d03b23
+  gfx/models/units/YSS_models/yss_cloth1_nonna.dds              349680 B  md5 b2583d7620f3
+  gfx/models/units/YSS_models/yss_cloth1_nonna_normal.dds       349680 B  md5 ed1deffc1aa1
+  gfx/models/units/YSS_models/yss_cloth2_nonna.dds             1398256 B  md5 c331d0f4b130
+  gfx/models/units/YSS_models/yss_cloth2_nonna_normal.dds      1398256 B  md5 04a6adaf03bb
+  gfx/models/units/YSS_models/yss_cloth3_nonna.dds              349680 B  md5 b3950ab05193
+  gfx/models/units/YSS_models/yss_cloth3_nonna_normal.dds       349680 B  md5 26599a04979a
+  gfx/models/units/YSS_models/yss_detail_palette.dds             18560 B  md5 a811bec74c8a
+  gfx/models/units/YSS_models/yss_eyel_nonna.dds                 87536 B  md5 94f8047ed14d
+  gfx/models/units/YSS_models/yss_eyel_nonna_normal.dds          87536 B  md5 5c78d56d4ad0
+  gfx/models/units/YSS_models/yss_eyer_nonna.dds                 87536 B  md5 bd365d5fcdde
+  gfx/models/units/YSS_models/yss_eyer_nonna_normal.dds          87536 B  md5 5c78d56d4ad0
+  gfx/models/units/YSS_models/yss_face2_nonna.dds                22032 B  md5 ffc94e404cb8
+  gfx/models/units/YSS_models/yss_face2_nonna_normal.dds         22032 B  md5 58f925c4bfc2
+  gfx/models/units/YSS_models/yss_face3_nonna.dds               349680 B  md5 044f91b58d35
+  gfx/models/units/YSS_models/yss_face3_nonna_normal.dds        349680 B  md5 cce53978c2e8
+  gfx/models/units/YSS_models/yss_face_nonna.dds               1398256 B  md5 16e0cb3f4d45
+  gfx/models/units/YSS_models/yss_face_nonna_normal.dds        1398256 B  md5 beafe6f0000f
+  gfx/models/units/YSS_models/yss_flat_nrm.dds                     496 B  md5 98fb2e10f3c2
+  gfx/models/units/YSS_models/yss_hair1_nonna.dds              1398256 B  md5 aeed46728bb4
+  gfx/models/units/YSS_models/yss_hair1_nonna_normal.dds       1398256 B  md5 4d80255ad847
+  gfx/models/units/YSS_models/yss_hair2_nonna.dds              1398256 B  md5 e2ccb0d96376
+  gfx/models/units/YSS_models/yss_hair2_nonna_normal.dds       1398256 B  md5 4b8d940d0786
+  gfx/models/units/YSS_models/yss_mouth_nonna.dds               174928 B  md5 beee1773e217
+  gfx/models/units/YSS_models/yss_mouth_nonna_normal.dds        174928 B  md5 7ceef816de1e
+  gfx/models/units/YSS_models/yss_pants_nonna.dds              1398256 B  md5 ea85f51ea80c
+  gfx/models/units/YSS_models/yss_pants_nonna_normal.dds       1398256 B  md5 095d9fa3ce15
+  gfx/models/units/YSS_models/yss_skin_nonna_n.dds              240128 B  md5 1c260ae8eaa3
+  gfx/models/units/YSS_models/yss_skin_nonna_normal.dds         480128 B  md5 ca74fc9d4e05
+  gfx/models/units/YSS_models/yss_trouser_col_u.dds               5616 B  md5 29a2240a03e4
+  gfx/entities/YSS_model.gfx                                      7755 B  md5 070aa349e909
+  descriptor.mod                                                   205 B  md5 83edd6887c34
+
+共 41 个文件
