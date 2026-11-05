@@ -151,7 +151,6 @@ recruit_character = YSS_3_1
 recruit_character = YSS_3_2
 recruit_character = YSS_3_3
 recruit_character = YSS_3_4
-recruit_character = YSS_4_1
 recruit_character = YSS_4_2
 recruit_character = YSS_4_3
 recruit_character = YSS_4_4
@@ -217,4 +216,39 @@ recruit_character = YSS_1_45
 recruit_character = YSS_1_46
 recruit_character = YSS_1_47
 recruit_character = YSS_6_11
+recruit_character = YSS_Sainuxi
+recruit_character = YSS_Yierma
 
+YSS_1_28 = {#凤凰院凶真
+	set_character_flag = YSS_big_wash
+}
+YSS_1_17 = {#水之式
+	set_character_flag = YSS_big_wash
+}
+YSS_1_21 = {#锌镉熔融
+	set_character_flag = YSS_big_wash
+}
+YSS_1_22 = {#死翼千歌
+	set_character_flag = YSS_big_wash
+}
+YSS_1_13 = {#优木杏树
+	set_character_flag = YSS_big_wash
+}
+YSS_1_18 = {#毁灭隆音
+	set_character_flag = YSS_big_wash
+}
+YSS_1_4 = {#松浦果南
+	set_character_flag = YSS_big_wash
+}
+YSS_1_9 = {#鹿角圣良
+	set_character_flag = YSS_big_wash
+}
+YSS_1_12 = {#统堂英玲奈
+	set_character_flag = YSS_big_wash
+}
+YSS_Sainuxi = {#塞努希一世
+	set_character_flag = YSS_big_wash
+}
+YSS_Yierma = {#伊尔玛
+	set_character_flag = YSS_big_wash
+}

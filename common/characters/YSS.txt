@@ -88,6 +88,14 @@ characters = {
 				regional_traditionalist_leader
 			}
 			idea_token = YSS_1_4
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -183,6 +191,14 @@ characters = {
 				conservative_communist
 			}
 			idea_token = YSS_1_9
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -240,6 +256,14 @@ characters = {
 				unscrupulous_orchestrator_no_lar
 			}
 			idea_token = YSS_1_12
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			slot = political_advisor
 			cost = 150
 			ai_will_do = {
@@ -258,6 +282,14 @@ characters = {
 			traits = {
 				TAOG_collaborationist
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			idea_token = YSS_1_13
 			slot = political_advisor
 			cost = 150
@@ -334,6 +366,14 @@ characters = {
 			traits = {
 				HUN_the_old_warden
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+			
 			idea_token = YSS_1_17
 			slot = political_advisor
 			cost = 150
@@ -353,6 +393,14 @@ characters = {
 			traits = {
 				headstrong
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			idea_token = YSS_1_18
 			slot = political_advisor
 			cost = 150
@@ -410,6 +458,14 @@ characters = {
 			traits = {
 				SND_unreliable_opportunist
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			idea_token = YSS_1_21
 			slot = political_advisor
 			cost = 150
@@ -429,6 +485,14 @@ characters = {
 			traits = {
 				silent_mule
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
 			idea_token = YSS_1_22
 			slot = political_advisor
 			cost = 150
@@ -543,6 +607,14 @@ characters = {
 			traits = {
 				rebellious_educator
 			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+			
 			idea_token = YSS_1_28
 			slot = political_advisor
 			cost = 150
@@ -1165,7 +1237,7 @@ characters = {
 		}
 		advisor = { 	
 			traits = {
-				air_chief_all_weather_2
+				air_chief_all_weather_1
 			}
 			idea_token = YSS_4_3
 			slot = air_chief
@@ -1829,6 +1901,58 @@ characters = {
 			defense_skill = 1
 			maneuvering_skill = 1
 			coordination_skill = 1
+		}
+	}
+
+	YSS_Sainuxi = {
+		name = "塞努希一世"
+		portraits = {
+			
+		}
+		advisor = { 	
+			traits = {
+				YSS_the_past_ruler
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_Sainuxi
+			slot = political_advisor
+			cost = 50
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	YSS_Yierma = {
+		name = "伊尔玛"
+		portraits = {
+			
+		}
+		advisor = { 	
+			traits = {
+				YSS_the_useless_democratic_speeker
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_Sainuxi
+			slot = political_advisor
+			cost = 50
+			ai_will_do = {
+				factor = 0
+			}
 		}
 	}
 }

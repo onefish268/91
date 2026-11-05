@@ -103,9 +103,12 @@ debug_test_categories = {
 
 
 			hidden_effect = {
+				load_focus_tree = {
+					tree = YSS_focus_tree
+					keep_completed = no
+				}
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
-
 }

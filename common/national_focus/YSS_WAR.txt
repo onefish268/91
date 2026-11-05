@@ -130,6 +130,15 @@ focus_tree = {
 			}
 			hidden_effect = {
                 news_event = { id = YSS.news.1 days = 1 }
+
+				set_country_flag = YSS_the_civil_war_of_YSS_launched
+
+				if = {
+					limit = { has_country_flag = YSS_cut_down_the_difficulty_of_civil_war }
+
+					AOI = { add_ideas = { YSS_weeken_civil_war_enemy } }
+					ETH = { add_ideas = { YSS_weeken_civil_war_enemy } }
+				}
             }
 		}
 	}

@@ -1,4 +1,9 @@
-﻿l_simp_chinese: 
+﻿l_simp_chinese:
+ YSS_civil_war_0: "对[AOI.GetName]发动攻势"
+ YSS_civil_war_1: "对[ETH.GetName]发动攻势"
+ YSS_the_attack_to_AOI: "对[AOI.GetName]的攻势"
+ YSS_the_attack_to_ETH: "对[ETH.GetName]的攻势"
+ YSS_weeken_civil_war_enemy: "被革命浪潮所震慑"
  YSS_12: "我们从土地交易中获得的黄金"
  YSS.76.t: "[FROM.GetName]寻求和我们就地区归属权问题进行谈判"
  YSS.76.d: "就在昨日，[FROM.GetName]代表希望我们同她们就[?var:YSS_the_land_we_buy.GetName]地区归属权展开公平谈判，她们认为，这块地在她们历史上是有法理依据可言的，如果可以，她们愿意通过黄金赎回这些祖地。"
@@ -155,3 +160,6 @@
  YSS_volunteer_to_other_country_desc: "为了将让全体非洲人民拥有真正的自由与民主，作为这片大地上红色前哨的我们，应当积极地去输出革命去支持那些仍旧生活在重压下的非洲兄妹们，让可憎的寄生虫和腐朽的蛆虫被清除掉，让鲜艳的赤色染遍非洲的每一寸山河。"
  YSS_the_cooperation_benefit: "合作共赢"
  YSS_the_cooperation_benefit_desc: "索维耶特联盟积极和其他国家开展深度合作、并建设合作伙伴关系，从而促进两国开展更加深刻有效的文化交流、实现更加有效且长远的发展。"
+ YSS_the_past_ruler: "旧日权威"
+ YSS_the_useless_democratic_speeker: "虚伪的民主骗子"
+ YSS_advisor_locked_because_anti_revolution: "这些顾问无法使用，因为她们与中央的理念不和或是有害于革命。"

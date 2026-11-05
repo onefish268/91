@@ -1,3 +1,13 @@
+YSS_civil_war_category = {
+    picture = GFX_decision_generic_political_discourse
+    priority = 97
+    visible = {
+        original_tag = YSS 
+        has_country_flag = YSS_the_civil_war_of_YSS_launched
+        NOT = { has_country_flag = YSS_win_war }
+    }
+}
+
 YSS_states_category = {
     picture = GFX_decision_generic_political_discourse
     priority = 98

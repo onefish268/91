@@ -2124,6 +2124,16 @@ focus_tree = {
 		completion_reward = { 
 			add_political_power = 120
 			add_stability = 0.05
+
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "索维耶特联盟内务人民检查部"
+					#icon = 
+				}
+			}
 		}
 	}
 	focus = {
@@ -2206,7 +2216,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_93
-		x = 40
+		x = 41
 		y = 10
 		cost = 2
 		icon = GFX_focus_yss80
@@ -2345,7 +2355,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = YSS_tootip_6
 			add_to_variable = {
-				YSS_7_conscription_factor = 0.1
+				YSS_7_conscription_factor = 0.25
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = {
@@ -2573,7 +2583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_110
-		x = 41
+		x = 44
 		y = 12
 		cost = 5
 		icon = GFX_focus_yss82
@@ -2599,7 +2609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_112
-		x = 43
+		x = 46
 		y = 12
 		cost = 5
 		icon = GFX_focus_yss78
@@ -2629,8 +2639,46 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = YSS_focus_112_1
+		x = 42
+		y = 12
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		text_icon = YSS_focus_style
+		prerequisite = {
+			focus = YSS_focus_172
+		}
+		completion_reward = {
+
+			diplomatic_relation = {
+				country = PAN
+				relation = non_aggression_pact
+				active = yes
+			}
+			
+			add_equipment_to_stockpile = {
+            	type = infantry_equipment
+            	amount = 15000
+				producer = PAN
+        	}
+			add_equipment_to_stockpile = {
+            	type = artillery_equipment
+            	amount = 3000
+				producer = PAN
+        	}
+
+			add_tech_bonus = {
+				name = YSS_focus_122_1_tech
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
 		id = YSS_focus_113
-		x = 41
+		x = 44
 		y = 14
 		cost = 5
 		icon = GFX_focus_yss83
@@ -4350,6 +4398,8 @@ focus_tree = {
 				tooltip = air_defence_factor_tt
 			}
 			custom_effect_tooltip = YSS_tootip_37
+
+			recruit_character = YSS_4_1
 		}
 	}
 	focus = {
@@ -4444,7 +4494,16 @@ focus_tree = {
 					instant_build = yes
 					province = 5010 # North of Rome
 				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
 			}
+			
 			hidden_effect = {
 				country_event = {
 				    id = YSS.50
@@ -4671,7 +4730,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_focus_172
-		x = 42
+		x = 44
 		y = 11
 		cost = 5
 		icon = GFX_focus_yss79

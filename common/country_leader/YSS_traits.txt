@@ -1,0 +1,17 @@
+leader_traits = {
+	#旧日权威
+	YSS_the_past_ruler = {
+		stability_factor = -0.1
+		war_support_factor = 0.2
+		neutrality_drift = 0.15
+		party_popularity_stability_factor = -0.5
+	}
+	#虚伪的民主骗子
+	YSS_the_useless_democratic_speeker = {
+		stability_factor = -0.1
+		stability_weekly = -0.01
+		democratic_drift = 0.15
+		neutrality_drift = 0.05
+		party_popularity_stability_factor = -0.5
+	}
+}

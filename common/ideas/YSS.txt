@@ -1,6 +1,36 @@
 ideas = {
 	#国家层面
 	country = {
+		YSS_the_attack_to_ETH = {
+			name = YSS_the_attack_to_ETH
+			picture = GFX_focus_generic_spur_communist_revolutions
+			targeted_modifier = {
+				attack_bonus_against = 0.25
+				breakthrough_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				tag = ETH
+			}
+		}
+		YSS_the_attack_to_AOI = {
+			name = YSS_the_attack_to_AOI
+			picture = GFX_focus_generic_spur_communist_revolutions
+			targeted_modifier = {
+				attack_bonus_against = 0.2
+				breakthrough_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				tag = AOI
+			}
+		}
+		YSS_weeken_civil_war_enemy = {
+			name = YSS_weeken_civil_war_enemy
+			picture = GFX_focus_generic_spur_communist_revolutions
+			targeted_modifier = {
+				attack_bonus_against = -0.25
+				breakthrough_bonus_against = -0.25
+				defense_bonus_against = -0.25
+				tag = YSS
+			}
+		}
 		YSS_war_0 = {
 			#内战准备
 			name = YSS_war
@@ -981,6 +1011,9 @@ ideas = {
 			traits = {
 				railway_company
 			}
+			available = {
+				has_completed_focus = YSS_focus_46
+			}
 			modifier = {
 				coordination_bonus = 0.05
 				out_of_supply_factor = -0.1
@@ -999,6 +1032,9 @@ ideas = {
 			cost = 150
 			traits = {
 				industrial_concern
+			}
+			available = {
+				has_completed_focus = YSS_focus_46
 			}
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15
@@ -1045,6 +1081,9 @@ ideas = {
 				production_speed_buildings_powered_factor = 0.2
 				research_speed_factor = 0.15
 			}
+			available = {
+				has_completed_focus = YSS_focus_51
+			}
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -1061,6 +1100,9 @@ ideas = {
 			cost = 150
 			traits = {
 				refining_concern
+			}
+			available = {
+				has_completed_focus = YSS_focus_68
 			}
 			modifier = {
 				base_fuel_gain_factor = 0.15
@@ -1083,6 +1125,9 @@ ideas = {
 			cost = 150
 			traits = {
 				industrial_concern
+			}
+			available = {
+				has_completed_focus = YSS_focus_49
 			}
 			modifier = {
 				attrition = -0.05
@@ -1107,6 +1152,9 @@ ideas = {
 			cost = 150
 			traits = {
 				construction_company
+			}
+			available = {
+				has_completed_focus = YSS_focus_47
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.15

@@ -212,6 +212,13 @@ on_actions = {
     #        }
 	#	}
 	#}
+	on_startup = {
+		effect = {
+			YSS = {
+				country_event = YSS.9999
+			}
+		}
+	}
 	on_daily_ZIM = {
         effect = {  
             if = {

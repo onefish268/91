@@ -1422,6 +1422,14 @@ country_event = {
 	option = {
 		name = YSS.68.a
 		complete_national_focus = YSS_focus_20
+
+		every_character = {
+    		limit = {
+        		has_character_flag = YSS_big_wash
+    		}
+    		retire_character = THIS
+		}
+		
 		hidden_effect = {
 			country_event = {
 				id = YSS.69
@@ -2464,5 +2472,28 @@ country_event = {
 			set_country_flag = YSS_kangni_news
 			scoped_play_song = "新闻放送"
 		}
+	}
+}
+country_event = {
+	#难度的选择
+	id = YSS.9999
+	title = YSS.9999.t
+	desc = YSS.9999.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = YSS.9999.a
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = YSS.9999.b
+		ai_chance = {
+			base = 0
+		}
+
+		set_country_flag = YSS_cut_down_the_difficulty_of_civil_war
 	}
 }
