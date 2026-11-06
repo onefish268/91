@@ -1907,7 +1907,9 @@ characters = {
 	YSS_Sainuxi = {
 		name = "塞努希一世"
 		portraits = {
-			
+			civilian = {
+				small = "gfx/leaders/YSS/YSS_Sainuxi.png"
+			}
 		}
 		advisor = { 	
 			traits = {
@@ -1933,8 +1935,19 @@ characters = {
 	YSS_Yierma = {
 		name = "伊尔玛"
 		portraits = {
-			
+			civilian = {
+					small = "gfx/leaders/YSS/YSS_Yierma.png"
+			}
 		}
+		country_leader = {
+			
+			ideology = liberalism
+			traits = { 
+				YSS_the_useless_democratic_speeker
+	        }
+			id= -1
+		}
+
 		advisor = { 	
 			traits = {
 				YSS_the_useless_democratic_speeker

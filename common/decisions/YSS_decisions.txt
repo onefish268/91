@@ -1597,96 +1597,96 @@ YSS_renwu_category = {
 			add_stability = -0.15
 		}
     }
-	YSS_renwu_10 = {
-        icon = generic_political_discourse
-		days_mission_timeout = 40
-		activation = {
-			original_tag = YSS
-			has_completed_focus = YSS_focus_30
-		}
-		available = {
-			has_completed_focus = YSS_focus_31
-        }
-		is_good = no
-		fire_only_once = yes
+	#YSS_renwu_10 = {
+    #    icon = generic_political_discourse
+	#	days_mission_timeout = 40
+	#	activation = {
+	#		original_tag = YSS
+	#		has_completed_focus = YSS_focus_30
+	#	}
+	#	available = {
+	#		has_completed_focus = YSS_focus_31
+    #    }
+	#	is_good = no
+	#	fire_only_once = yes
+	#
+	#	timeout_effect = {
+	#		custom_effect_tooltip = YSS_renwu_false
+	#		add_stability = -0.15
+	#	}
+    #}
+	#YSS_renwu_11 = {
+    #    icon = generic_political_discourse
+	#	days_mission_timeout = 40
+	#	activation = {
+	#		original_tag = YSS
+	#		has_completed_focus = YSS_focus_31
+	#	}
+	#	available = {
+	#		has_completed_focus = YSS_focus_32
+    #    }
+	#	is_good = no
+	#	fire_only_once = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = YSS_renwu_false
-			add_stability = -0.15
-		}
-    }
-	YSS_renwu_11 = {
-        icon = generic_political_discourse
-		days_mission_timeout = 40
-		activation = {
-			original_tag = YSS
-			has_completed_focus = YSS_focus_31
-		}
-		available = {
-			has_completed_focus = YSS_focus_32
-        }
-		is_good = no
-		fire_only_once = yes
+	#	timeout_effect = {
+	#		custom_effect_tooltip = YSS_renwu_false
+	#		add_stability = -0.15
+	#	}
+    #}
+	#YSS_renwu_12 = {
+    #    icon = generic_political_discourse
+	#	days_mission_timeout = 40
+	#	activation = {
+	#		original_tag = YSS
+	#		has_completed_focus = YSS_focus_32
+	#	}
+	#	available = {
+	#		has_completed_focus = YSS_focus_43
+     #   }
+	#	is_good = no
+	#	fire_only_once = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = YSS_renwu_false
-			add_stability = -0.15
-		}
-    }
-	YSS_renwu_12 = {
-        icon = generic_political_discourse
-		days_mission_timeout = 40
-		activation = {
-			original_tag = YSS
-			has_completed_focus = YSS_focus_32
-		}
-		available = {
-			has_completed_focus = YSS_focus_43
-        }
-		is_good = no
-		fire_only_once = yes
+	#	timeout_effect = {
+	#		custom_effect_tooltip = YSS_renwu_false
+	#		add_stability = -0.15
+	#	}
+    #}
+	#YSS_renwu_13 = {
+     #   icon = generic_political_discourse
+	#	days_mission_timeout = 40
+	#	activation = {
+	#		original_tag = YSS
+	#		has_completed_focus = YSS_focus_43
+	#	}
+	#	available = {
+	#		has_completed_focus = YSS_focus_44
+     #   }
+	#	is_good = no
+	#	fire_only_once = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = YSS_renwu_false
-			add_stability = -0.15
-		}
-    }
-	YSS_renwu_13 = {
-        icon = generic_political_discourse
-		days_mission_timeout = 40
-		activation = {
-			original_tag = YSS
-			has_completed_focus = YSS_focus_43
-		}
-		available = {
-			has_completed_focus = YSS_focus_44
-        }
-		is_good = no
-		fire_only_once = yes
+	#	timeout_effect = {
+	#		custom_effect_tooltip = YSS_renwu_false
+	#		add_stability = -0.15
+	#	}
+    #}
+	#YSS_renwu_14 = {
+    #    icon = generic_political_discourse
+	#	days_mission_timeout = 40
+	#	activation = {
+	#		original_tag = YSS
+	#		has_completed_focus = YSS_focus_44
+	#	}
+	#	available = {
+	#		has_completed_focus = YSS_focus_45
+     #   }
+	#	is_good = no
+	#	fire_only_once = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = YSS_renwu_false
-			add_stability = -0.15
-		}
-    }
-	YSS_renwu_14 = {
-        icon = generic_political_discourse
-		days_mission_timeout = 40
-		activation = {
-			original_tag = YSS
-			has_completed_focus = YSS_focus_44
-		}
-		available = {
-			has_completed_focus = YSS_focus_45
-        }
-		is_good = no
-		fire_only_once = yes
-
-		timeout_effect = {
-			custom_effect_tooltip = YSS_renwu_false
-			add_stability = -0.15
-		}
-    }
+	#	timeout_effect = {
+	#		custom_effect_tooltip = YSS_renwu_false
+	#		add_stability = -0.15
+	#	}
+    #}
 }
 
 YSS_dao_category = {

@@ -2649,6 +2649,10 @@ focus_tree = {
 		prerequisite = {
 			focus = YSS_focus_172
 		}
+		available = {
+			PAN = { exists = yes }
+			GUA = { NOT = { exists = no } }
+		}
 		completion_reward = {
 
 			diplomatic_relation = {
