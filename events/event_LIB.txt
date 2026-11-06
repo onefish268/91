@@ -1,10 +1,10 @@
-add_namespace = LIB_dwmy#对外贸易
-add_namespace = LIB_lw#流亡 
-add_namespace = LIB_jjxt#经济萧条
-add_namespace = LIB_xh#循环
-add_namespace = LIB_fangong#反攻
-add_namespace = LIB_flavor#风味
-add_namespace = LIB_news#新闻
+add_namespace = LIB_dwmy #对外贸易
+add_namespace = LIB_lw #流亡 
+add_namespace = LIB_jjxt #经济萧条
+add_namespace = LIB_xh #循环
+add_namespace = LIB_fangong #反攻
+add_namespace = LIB_flavor #风味
+add_namespace = LIB_news #新闻
 
 #对外贸易事件
 #选择贸易对象
@@ -180,14 +180,14 @@ country_event = {
 			}
 		hidden_effect = {
 		FRA = {
-		country_event = {
+			country_event = {
 				id = LIB_dwmy.4
 			}
 		}
+	}
 		ai_chance = {
 			base = 25
 		}
-	}
 	}
 	option = {
 		name = LIB_dwmy.1.c
@@ -354,7 +354,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = LIB_dwmy.4.a
-		add_ideas = LIB_linhuishi_idea
+		add_ideas = LIB_lhsjk
 		add_to_variable = {
 				var = ubs_save
 				value = -100
@@ -362,14 +362,14 @@ country_event = {
 			}
 		hidden_effect = {
 		LIB = {
-		country_event = {
-        id = LIB_dwmy.3
-    }
+			country_event = {
+				id = LIB_dwmy.3
+			}
 		}
+	}
 		ai_chance = {
 			base = 9
 		}
-	}
 	}
 	option = {
 		name = LIB_dwmy.4.b	
@@ -482,8 +482,6 @@ country_event = {
 			set_cosmetic_tag = LIB_lw
 		}
 		
-		set_variable = { adorable_heart_super_event_var = 168 } 
-		adorable_heart_fire_super_event = yes 
 			KMK = {
 				diplomatic_relation = {
 					country = RIS
@@ -513,25 +511,16 @@ country_event = {
 	option = {
 		name = LIB_lw.3.a
 		custom_effect_tooltip = LIB_FRA_fallen_tt
+		add_research_slot = 1
 		hidden_effect = { 
-		set_variable = { adorable_heart_super_event_var = 168 } 
-		adorable_heart_fire_super_event = yes 
+		news_event = { id = LIB_news.1 }
 		set_country_flag = Free_france_flag
 		set_country_flag = LIB_FRA_has_fallen_flag
 		complete_national_focus = LIB_new_focus_33
-		if = {
-			limit = {
-				COG = {
-					NOT = { has_country_flag = YSS_launch_the_civil_war }
-					NOT = { has_country_flag = YSS_revoluntion_victory }
-				}
-			}
-
-			set_autonomy = {
+		set_autonomy = {
 				target = COG
 				autonomy_state = autonomy_puppet
 			}
-		}
 		FRA = {
 			FRA_Inubashiri = { set_nationality = ROOT }
 			FRA_Nitori = { set_nationality = ROOT }
@@ -646,8 +635,6 @@ country_event = {
 		name = LIB_lw.5.a
 		custom_effect_tooltip = LIB_FRA_fallen_tt
 		hidden_effect = {
-		set_variable = { adorable_heart_super_event_var = 168 } 
-		adorable_heart_fire_super_event = yes 
 		FRA = {
 			set_autonomy = {
 					target = LIB
@@ -662,6 +649,41 @@ country_event = {
 				is_faction_leader  = yes
 			}
 			dismantle_faction = yes
+		}
+		if = {
+			limit = { 
+			FRA = {
+			has_completed_focus = FRA_first_term_of_Ibaraki_Kasen }
+			}
+			set_country_flag = LIB_Kasen_in_power_flag
+		}
+		if = {
+			limit = { 
+			FRA = {
+			has_completed_focus = FRA_first_term_of_Marisa }
+			}
+			set_country_flag = LIB_Marisa_in_power_flag
+		}
+		if = {
+			limit = { 
+			FRA = {
+			has_completed_focus = FRA_first_term_of_Kamishirasawa_Keine }
+			}
+			set_country_flag = LIB_Keine_in_power_flag
+		}
+		if = {
+			limit = { 
+			FRA = {
+			has_completed_focus = FRA_revolution_ended_there }
+			}
+			set_country_flag = LIB_Sanae_in_power_flag
+		}
+		if = {
+			limit = { 
+			FRA = {
+			has_completed_focus = FRA_GFN_Reisen_Udongein_Inaba_Elected }
+			}
+			set_country_flag = LIB_Reisen_in_power_flag
 		}
 		if = {
 			limit = {
@@ -716,24 +738,15 @@ country_event = {
 	option = {
 		name = LIB_lw.6.a
 		custom_effect_tooltip = LIB_FRA_fallen_tt
+		add_research_slot = 1
 		hidden_effect = {
-		set_variable = { adorable_heart_super_event_var = 168 } 
-		adorable_heart_fire_super_event = yes 
+		news_event = { id = LIB_news.2 }
 		set_country_flag = Free_france_flag
 		complete_national_focus = LIB_new_focus_33
-		if = {
-			limit = {
-				COG = {
-					NOT = { has_country_flag = YSS_launch_the_civil_war }
-					NOT = { has_country_flag = YSS_revoluntion_victory }
-				}
-			}
-
-			set_autonomy = {
+		set_autonomy = {
 				target = COG
 				autonomy_state = autonomy_puppet
 			}
-		}
 		DVL = { annex_country = { target = FRA transfer_troops = no } }
 		FRA = {
 			FRA_Kamishirasawa_Keine = { set_nationality = ROOT }
@@ -827,13 +840,13 @@ country_event = {
             limit = { ROOT = { original_tag = MOR } }
             add_timed_idea = {
                 idea = LIB_rqxyxyj
-                days = 45
+                days = 180
             }
         }
         else = {
             add_timed_idea = {
                 idea = LIB_rqlby
-                days = 45
+                days = 180
             }
         }
     }
@@ -868,7 +881,7 @@ country_event = {
             }
 			add_timed_idea = {
             idea = LIB_rqxyxyj
-            days = 45
+            days = 180
 	}
         }
         ai_chance = { base = 50 }
@@ -896,36 +909,20 @@ country_event = {
         name = LIB_lw.9.a
         LIB = {
             set_country_flag = LIB_xfygzd1
-			country_event = {
-				id = LIB_lw.10
-			}
-	}
-        ai_chance = {
-            base = 10
-            modifier = {
-                factor = 9         
-				EGY = {
-				has_war_with = DVL
-				}
+            country_event = {
+                id = LIB_lw.10
             }
         }
-		}
+        ai_chance = { base = 100 }
+    }
     option = {
         name = LIB_lw.9.b
-		country_event = {
-				id = LIB_lw.11
-			}
-        ai_chance = {
-            base = 90
-            modifier = {
-                factor = 0         
-				EGY = {
-				has_war_with = DVL
-				}
-            }
+        country_event = {
+            id = LIB_lw.11
         }
+        ai_chance = { base = 0 }
     }
-	}
+}
 country_event = {
 	id = LIB_lw.10
 	title = LIB_lw.10.t
@@ -958,6 +955,8 @@ country_event = {
 		democratic = 25
 		communism = 25
 		}
+		remove_dynamic_modifier = { modifier = LIB_pxzc1_idea }
+		add_dynamic_modifier = { modifier = LIB_pxzc2_idea }
 		FRA = {
 		FRA_Kasen = { set_nationality = LIB }
 		}
@@ -1024,7 +1023,7 @@ country_event = {
 				}
 	}
 	option = {
-		name = LIB_lw.13.d
+		name = LIB_lw.13.e
 		LIB = {
 		FRA_Chen = { set_nationality = COG }
 		}
@@ -1253,7 +1252,7 @@ country_event = {
 	option = {
 		name = LIB_jjxt.6.a
 		hidden_effect = {
-		scoped_sound_effect = "朋友的酒"
+		scoped_sound_effect = "LIB_friends_wine"
 		}
 		custom_effect_tooltip = LIB_jjxt.1.a_tt
 		add_stability = -0.1
@@ -1262,7 +1261,7 @@ country_event = {
 		name = LIB_jjxt.6.b
 		
 		hidden_effect = {
-		scoped_sound_effect = "朋友的酒"
+		scoped_sound_effect = "LIB_friends_wine"
 		}
 		custom_effect_tooltip = LIB_jjxt.1.a_tt
 		add_stability = -0.1
@@ -2122,11 +2121,128 @@ country_event = {
 		name = LIB_flavor.8.b
 	}
 	}
+
+	country_event = {
+	id = LIB_flavor.10
+	title = LIB_flavor.10.t
+	desc = LIB_flavor.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.10.a
+		custom_effect_tooltip = LIB_flavor.10.a_tt
+		add_country_leader_trait = lib_meishuixing
+	}
+	}
+
+	country_event = {
+	id = LIB_flavor.11
+	title = LIB_flavor.11.t
+	desc = LIB_flavor.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_flavor.11.a
+	}
+	}
+
+	country_event = {
+	id = LIB_fangong.1
+	title = LIB_fangong.1.t
+	desc = LIB_fangong.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_fangong.1.a
+		add_ideas = LIB_xssy
+		hidden_effect = {
+			YSS = { country_event = { id = LIB_fangong.2 days = 30 } }
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = LIB_fangong.1.b
+		custom_effect_tooltip = LIB_fangong.1.b_tt
+		set_country_flag = LIB_yinmou_flag
+		ai_chance = { base = 0 }
+	}
+	}
+
+	country_event = {
+	id = LIB_fangong.2
+	title = LIB_fangong.2.t
+	desc = LIB_fangong.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_fangong.2.a
+		custom_effect_tooltip = LIB_fangong.2.a_tt
+	}
+	}
+
+	country_event = {
+	id = LIB_fangong.3
+	title = LIB_fangong.3.t
+	desc = LIB_fangong.3.d
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = LIB_fangong_ultimatum_sent
+	}
+	option = {
+		name = LIB_fangong.3.a
+		ai_chance = { base = 50 }
+		add_stability = -0.2
+		add_war_support = -0.2
+		LIB = {
+			set_autonomy = {
+				target = COG
+				autonomy_state = autonomy_puppet
+			}
+		}
+		COG = {
+			set_popularities = {
+				neutrality = 50
+				communism = 50
+			}
+		}
+	}
+	option = {
+		name = LIB_fangong.3.b
+		custom_effect_tooltip = LIB_fangong.3.b_tt
+		ai_chance = { base = 50 }
+		declare_war_on = { target = LIB type = annex_everything }
+		news_event = { id = LIB_news.5 }
+	}
+	}
+
+	news_event = {
+	id = LIB_news.5
+	title = LIB_news.5.t
+	desc = LIB_news.5.d
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_news.5.a
+		trigger = { TAG = YSS }
+	}
+	option = {
+		name = LIB_news.5.b
+		trigger = { TAG = LIB }
+	}
+	option = {
+		name = LIB_news.5.c
+		trigger = {
+			NOT = { TAG = YSS }
+			NOT = { TAG = LIB }
+		}
+	}
+	}
 #新闻
-country_event = {
+news_event = {
 	id = LIB_news.1
 	title = LIB_news.1.t
 	desc = LIB_news.1.d
+	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2135,15 +2251,21 @@ country_event = {
 		TAG = LIB
 		}
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	option = {
 		name = LIB_news.1.b
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	option = {
@@ -2156,17 +2278,21 @@ country_event = {
 		
 		}
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	
 	}
 	
-	country_event = {
+	news_event = {
 	id = LIB_news.2
 	title = LIB_news.2.t
 	desc = LIB_news.2.d
+	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -2175,15 +2301,21 @@ country_event = {
 		TAG = LIB
 		}
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	option = {
 		name = LIB_news.2.b
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	option = {
@@ -2196,24 +2328,58 @@ country_event = {
 		
 		}
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 168 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 168 } 
+		adorable_heart_fire_super_event = yes 
+	}
 	}
 	}
 	
 	}
 
-country_event = {
+news_event = {
 	id = LIB_news.3
 	title = LIB_news.3.t
 	desc = LIB_news.3.d
+	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = LIB_news.3.a
 	hidden_effect = {
-	set_variable = { adorable_heart_super_event_var = 169 } 
-	adorable_heart_fire_super_event = yes 
+	if = {
+		limit = { TAG = LIB }
+		set_variable = { adorable_heart_super_event_var = 169 } 
+		adorable_heart_fire_super_event = yes 
 	}
 	}
 	}
+	}
+
+news_event = {
+	id = LIB_news.4
+	title = LIB_news.4.t
+	desc = LIB_news.4.d
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = LIB_news.4.a
+		trigger = {
+			NOT = { OR = { TAG = DVL TAG = LIB } }
+		}
+	}
+	option = {
+		name = LIB_news.4.b
+		trigger = {
+			TAG = DVL
+		}
+	}
+	option = {
+		name = LIB_news.4.c
+		trigger = {
+			TAG = LIB
+		}
+	}
+}

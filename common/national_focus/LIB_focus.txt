@@ -120,6 +120,11 @@ focus_tree = {
 		custom_effect_tooltip = LIB_new_focus_3_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
+				var = ubs_save
+				value = 200
+				tooltip = UBS_SAVE_UP_200
+			}
+		add_to_variable = {
 			var = LIB_economy_committee_consumer_goods_factor
 			value = -0.1
 			tooltip = consumer_goods_factor_tt
@@ -136,7 +141,7 @@ focus_tree = {
 		}
 		add_to_variable = {
 			var = LIB_impure_party_stability_weekly
-			value = -0.01
+			value = -0.02
 			tooltip = stability_weekly_tt
 		}
 		add_to_variable = {
@@ -646,6 +651,14 @@ focus_tree = {
 			}
 		custom_effect_tooltip = LIB_new_focus_6_tt
 		custom_effect_tooltip = LIB_gjdd_tt
+		459 = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+			}
 		add_to_variable = {
 			var = LIB_industrial_capacity_dockyard
 			value = 0.1
@@ -1162,7 +1175,7 @@ focus_tree = {
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
 			var = LIB_impure_party_stability_weekly
-			value = 0.01
+			value = 0.02
 			tooltip = stability_weekly_tt
 		}
 		add_to_variable = {
@@ -1276,7 +1289,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_new_focus_26_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 			add_to_variable = {
             var = LIB_hcp_income_factor_monthly
@@ -1300,7 +1313,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_new_focus_26_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 			add_to_variable = {
             var = LIB_hcp_income_factor_monthly
@@ -1324,7 +1337,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_25_tt
+		custom_effect_tooltip = LIB_new_focus_26_tt
 		custom_effect_tooltip = LIB_gjdd_tt
 			add_to_variable = {
             var = LIB_hcp_income_factor_monthly
@@ -1349,7 +1362,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = LIB_sxzdtz
-
+		add_research_slot = 1
 		custom_effect_tooltip = LIB_gjdd_tt
 		add_to_variable = {
             var = LIB_hcp_income_factor_monthly
@@ -1393,7 +1406,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		allow_branch = { has_country_flag = Free_france_flag }
+		available = { always = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1462,7 +1475,7 @@ focus_tree = {
 			hidden_effect = {
 			country_event = { id = LIB_lw.12 days = 180 }
 			country_event = { id = LIB_lw.13 days = 3 }
-			add_dynamic_modifier = { modifier = LIB_pxzc1_idea } 
+			add_dynamic_modifier = { modifier = LIB_pxzc1_idea }
 			if = {
 			limit = {has_country_flag = LIB_remi_in_power_flag }
 			set_party_name = {
@@ -1547,6 +1560,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { factor = 25 }
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		bypass = {
 			or = {
 				is_in_faction_with = ENG
@@ -1570,6 +1584,18 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_36 }
 		cancel_if_invalid = yes
+		available = {
+			country_exists = EGY
+			EGY = {
+				OR = {
+					has_war_with = DVL
+					AND = {
+						is_subject = yes
+						overlord = { has_war_with = DVL }
+					}
+				}
+			}
+		}
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = {
@@ -1599,6 +1625,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		 completion_reward = {
         if = {
             limit = {
@@ -1681,7 +1708,6 @@ focus_tree = {
 		completion_reward = {
 		set_country_flag = LIB_open_xijian_flag
 		custom_effect_tooltip = bba_factory
-		add_dynamic_modifier = { modifier = LIB_civilian_factory_use }
 		}
 	}
 
@@ -1794,6 +1820,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_research_slot = 1
 		mio:LIB_Moriya_Ropeway = {
                 add_mio_size = 3
             }
@@ -2113,6 +2140,63 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = LIB_remi_in_power_flag
+						has_country_flag = LIB_fran_in_power_flag
+					}
+				}
+				if = {
+					limit = {
+						NOT = { country_exists = KMK }
+					}
+					release_autonomy = {
+						target = KMK
+						autonomy_state = autonomy_free
+						release_non_owned_controlled = yes
+						force_change_controller_for_non_ally_controlled = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KMK
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = FRA
+								is_core_of = KMK
+							}
+						}
+						transfer_state_to = KMK
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { country_exists = FRA }
+					}
+					release_autonomy = {
+						target = FRA
+						autonomy_state = autonomy_free
+						release_non_owned_controlled = yes
+						force_change_controller_for_non_ally_controlled = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FRA
+					}
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						transfer_state_to = FRA
+					}
+				}
+			}
 		}
 	}
 
@@ -2130,6 +2214,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			FRA = {
+				load_focus_tree = FRA_warlord_foucs_tree
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -2140,7 +2228,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
-		allow_branch = { has_completed_focus = LIB_new_focus_33 }
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2159,7 +2247,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_54 }
-		allow_branch = { has_completed_focus = LIB_new_focus_33 }
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2469,7 +2557,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		prerequisite = { focus = LIB_new_focus_68 }
-		allow_branch = { has_country_flag = LIB_FRA_has_fallen_flag }
+		allow_branch = { has_completed_focus = LIB_new_focus_35 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2477,6 +2565,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_equipment_to_stockpile = { type = anti_tank_equipment amount = 120 }
+		add_equipment_to_stockpile = { type = anti_air_equipment amount = 120 }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 500 }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 500 }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 500 }
 		army_experience = 200
 		division_template = {
     name = "幻想乡流亡部队"
@@ -2500,12 +2594,78 @@ focus_tree = {
 
     }
 }
+division_template = {
+    name = "幻想乡流亡装甲师"
+division_names_group = LIB_AMR_01
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		medium_tank = { x = 2 y = 0 }
+		medium_tank = { x = 2 y = 1 }
+		medium_tank = { x = 2 y = 2 }
+		medium_tank = { x = 3 y = 0 }
+		medium_tank = { x = 3 y = 1 }
+		medium_tank = { x = 3 y = 2 }
+    }
+
+    support = {
+        artillery = { x = 0 y = 0 }
+	engineer = { x = 0 y = 1 }
+
+    }
+}
+		create_equipment_variant = {
+            name = "决胜兵器"
+            type = medium_tank_chassis_1
+            allow_without_tech = yes
+        modules = {
+        turret_slot = tank_medium_three_man_tank_turret   # 中型三成员炮塔
+        main_armament_slot = tank_medium_cannon      # 中型加农炮
+        special_type_slot_1 = easy_maintenance  # 易维护改装
+        special_type_slot_2 = secondary_turret_hmg # 重机枪（第1挺）
+        special_type_slot_3 = secondary_turret_hmg # 重机枪（第2挺）
+        special_type_slot_4 = tank_radio_1       # 基础型无线电
+        engine_slot = tank_diesel_engine             # 柴油引擎
+        suspension_slot = tank_bogie_suspension      # 台车式悬挂
+        armor_slot = tank_riveted_armor              # 铆接装甲
+    }
+        }
+
+        # 2. 将100辆该型号坦克加入库存
+        add_equipment_to_stockpile = {
+            type = medium_tank_chassis_1
+            amount = 1000
+            variant_name = "决胜兵器"
+        }
+
 		459 = {
             create_unit = {
                 division = "name = \"幻想乡流亡部队\" division_template = \"幻想乡流亡部队\" start_experience_factor = 0.9 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
                 owner = ROOT
                 count = 12
                 prioritize_location = 1145
+                allow_spawning_on_enemy_provs = no
+            }
+			create_unit = {
+                division = "name = \"第1装甲师\" division_template = \"幻想乡流亡装甲师\" start_experience_factor = 0.9 force_equipment_variants = { medium_tank_chassis_1 = { owner = ROOT amount = 100 version_name = \"决胜兵器\" } }"
+                owner = ROOT
+                count = 1
+				prioritize_location = 1145
+                allow_spawning_on_enemy_provs = no
+            }
+			create_unit = {
+                division = "name = \"第2装甲师\" division_template = \"幻想乡流亡装甲师\" start_experience_factor = 0.9 force_equipment_variants = { medium_tank_chassis_1 = { owner = ROOT amount = 100 version_name = \"决胜兵器\" } }"
+                owner = ROOT
+                count = 1
+				prioritize_location = 1145
                 allow_spawning_on_enemy_provs = no
             }
 			}
@@ -2571,6 +2731,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_research_slot = 1
 		custom_effect_tooltip = LIB_new_focus_72_tt
 		}
 	}
@@ -2589,7 +2750,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_72_tt
 		custom_effect_tooltip = LIB_hxxfwj_tt
 		add_to_variable = {
 			var = LIB_rangers_special_forces_contribution_factor
@@ -2628,7 +2788,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_72_tt
+		custom_effect_tooltip = LIB_new_focus_74_tt
 		}
 	}
 	focus = {
@@ -2645,7 +2805,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_72_tt
 		custom_effect_tooltip = LIB_new_focus_75_tt
 		}
 	}
@@ -2664,7 +2823,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = LIB_new_focus_72_tt
 		custom_effect_tooltip = LIB_new_focus_76_tt
 		swap_ideas = {
             remove_idea = LIB_dwtzhzej1

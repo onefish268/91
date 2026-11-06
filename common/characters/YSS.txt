@@ -1968,4 +1968,62 @@ characters = {
 			}
 		}
 	}
+
+	YSS_cecilia = {
+		name = "采齐利娅·林·阿托纳"
+		desc = YSS_cecilia_desc
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/cecilia_small.png"
+				large = "gfx/leaders/YSS/cecilia_large.png"
+			}
+		}
+		advisor = {
+			traits = {
+				YSS_shouren_liaison
+			}
+			idea_token = YSS_cecilia
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#红色魔女
+	YSS_bri = {
+		name = "布里·林·安尔高"
+		desc = YSS_bri_desc
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/bri_small.png"
+				large = "gfx/leaders/YSS/bri_large.png"
+			}
+		}
+		advisor = {
+			traits = {
+				PRC_Red_Witch
+			}
+			idea_token = YSS_bri
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }

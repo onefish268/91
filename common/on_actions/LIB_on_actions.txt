@@ -6,6 +6,12 @@ on_actions = {
             set_variable = { var = LIB_party_democratic_pop value = party_popularity@democratic }
             set_variable = { var = LIB_party_communist_pop value = party_popularity@communism }
             set_variable = { var = LIB_party_neutral_pop value = party_popularity@neutrality }
+            set_variable = { var = LIB_pxzc_fascist_pop value = party_popularity@fascism }
+            multiply_variable = { var = LIB_pxzc_fascist_pop value = 0.2 }
+            set_variable = { var = LIB_pxzc_democratic_pop value = party_popularity@democratic }
+            multiply_variable = { var = LIB_pxzc_democratic_pop value = 0.2 }
+            set_variable = { var = LIB_pxzc_communist_pop value = party_popularity@communism }
+            multiply_variable = { var = LIB_pxzc_communist_pop value = 0.2 }
         }
     }
 	}
@@ -28,6 +34,34 @@ on_actions = {
                 var = LIB_party_neutral_pop
                 value = party_popularity@neutrality
             }
+            set_variable = { var = LIB_pxzc_fascist_pop value = party_popularity@fascism }
+            multiply_variable = { var = LIB_pxzc_fascist_pop value = 0.2 }
+            set_variable = { var = LIB_pxzc_democratic_pop value = party_popularity@democratic }
+            multiply_variable = { var = LIB_pxzc_democratic_pop value = 0.2 }
+            set_variable = { var = LIB_pxzc_communist_pop value = party_popularity@communism }
+            multiply_variable = { var = LIB_pxzc_communist_pop value = 0.2 }
+        }
+        if = {
+            limit = {
+                COG = {
+                    communism > 0.1
+                    NOT = { has_idea = LIB_xssy }
+                }
+                LIB = { NOT = { has_country_flag = LIB_yinmou_flag } }
+            }
+            LIB = { country_event = { id = LIB_fangong.1 } }
+        }
+        if = {
+            limit = {
+                COG = {
+                    has_government = communism
+                    has_war = no
+                    is_subject_of = YSS
+                }
+                LIB = { has_country_flag = LIB_yinmou_flag }
+                YSS = { NOT = { has_country_flag = LIB_fangong_ultimatum_sent } }
+            }
+            YSS = { country_event = { id = LIB_fangong.3 } }
         }
     }
 }
@@ -117,8 +151,7 @@ on_capitulation_immediate = {
 				has_completed_focus = LIB_new_focus_67
 				NOT = {has_country_flag = LIB_FRA_will_fall_flag}
                 }
-                country_event = LIB_flavor.2
-            }
+                country_event = LIB_flavor.10          }
         }
     }
 }

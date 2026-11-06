@@ -1,0 +1,108 @@
+LIB_ZWD_00 = 
+{
+	name = "新人间之里自卫队"
+
+	for_countries = { LIB }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" "militia" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "新人间之里自卫第%d大队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "新人间之里直属城市卫队" }
+    	2 = { "新香霖港直属城市卫队" }
+    	3 = { "新人间之里自卫第%d大队" }
+    	4 = { "新人间之里自卫第%d大队" }
+    	5 = { "新人间之里自卫第%d大队" }
+    	6 = { "新人间之里自卫第%d大队" }
+    	7 = { "新人间之里自卫第%d大队" }
+	}
+}
+
+LIB_MAR_01 = 
+{
+	name = "海军步兵师"
+
+	for_countries = { LIB }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "海军步兵第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "海军步兵第%d师" }
+    	2 = { "海军步兵第%d师" }
+    	3 = { "海军步兵第%d师" }
+    	4 = { "海军步兵第%d师" }
+    	5 = { "海军步兵第%d师" }
+    	6 = { "海军步兵第%d师" }
+    	7 = { "海军步兵第%d师" }
+	}
+}
+
+LIB_IRR_01 = 
+{
+	name = "游击大队"
+
+	for_countries = { LIB }
+
+	can_use = { always = yes }
+
+	division_types = { "irregular" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "游击第%d兵团"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "游击第%d兵团" }
+		2 = { "游击第%d兵团" }
+	}
+}
+
+LIB_AMR_01 = 
+{
+	name = "装甲力量"
+
+	for_countries = { LIB }
+
+	can_use = { always = yes }
+
+	division_types = { "armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FRA_INF_01 }
+
+	fallback_name = "第%d装甲师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d装甲师" }
+		2 = { "第%d装甲师" }
+	}
+}
+
+
+
