@@ -2521,3 +2521,17 @@ country_event = {
 		set_country_flag = YSS_cut_down_the_difficulty_of_civil_war
 	}
 }
+
+country_event = {
+	# 亚的斯亚贝巴郊外（纯演出，无效果）
+	id = YSS.2000
+	title = YSS.2000.t
+	desc = YSS.2000.d
+	picture = GFX_YSS2_event
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = YSS.2000.a
+	}
+}
