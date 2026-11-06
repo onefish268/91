@@ -2475,6 +2475,30 @@ country_event = {
 	}
 }
 country_event = {
+	#大清洗
+	id = YSS.64
+	title = YSS.64.t
+	desc = YSS.64.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_YSS6_event
+	option = {
+		name = YSS.64.a
+		complete_national_focus = YSS_focus_16
+		hidden_effect = {
+			country_event = {
+				id = YSS.65
+				days = 7
+			}
+			activate_shine_on_focus = YSS_focus_17
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
 	#难度的选择
 	id = YSS.9999
 	title = YSS.9999.t
