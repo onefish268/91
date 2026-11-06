@@ -59,7 +59,7 @@ units = {
 			}
 		 #驱逐
 			ship = {
-				name = "无产阶级号"
+				name = "自由号"
 				definition = destroyer
 				start_experience_factor = 0.25
 				equipment = {
@@ -107,7 +107,7 @@ units = {
 				}
 			}
 			ship = {
-				name = "红旗号"
+				name = "民主号"
 				definition = destroyer
 				start_experience_factor = 0.25
 				equipment = {
