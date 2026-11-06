@@ -19,17 +19,17 @@
     name = LIB_new_focus_34_desc_text 
     # 华扇
     text = {
-        trigger = { has_country_flag = LIB_Sanae_in_Kasen_flag }
+        trigger = { has_country_flag = LIB_Kasen_in_power_flag }
         localization_key = LIB_new_focus_34_desc_A
     }
 	# 魔理沙
     text = {
-        trigger = { has_country_flag = LIB_Marisa_in_Kasen_flag }
+        trigger = { has_country_flag = LIB_Marisa_in_power_flag }
         localization_key = LIB_new_focus_34_desc_B
     }
 	# 慧音
     text = {
-        trigger = { has_country_flag = LIB_Keine_in_Kasen_flag }
+        trigger = { has_country_flag = LIB_Keine_in_power_flag }
         localization_key = LIB_new_focus_34_desc_C
     }
     # 早苗
@@ -46,6 +46,40 @@
     text = {
         trigger = { always = yes }
         localization_key = LIB_new_focus_34_desc_F
+    }
+	}
+	defined_text = {
+    name = LIB_new_focus_57_text 
+    text = {
+        trigger = { 
+		OR = {
+		has_country_flag = LIB_Kasen_in_power_flag
+		has_country_flag = LIB_Sanae_in_power_flag
+		has_country_flag = LIB_Marisa_in_power_flag
+		has_country_flag = LIB_Keine_in_power_flag
+		has_country_flag = LIB_Reisen_in_power_flag		}
+		}
+        localization_key = LIB_new_focus_57_a
+    }
+    text = {
+        localization_key = LIB_new_focus_57_b
+    }
+	}
+	defined_text = {
+    name = LIB_new_focus_57_desc_text 
+    text = {
+        trigger = { 
+		OR = {
+		has_country_flag = LIB_Kasen_in_power_flag
+		has_country_flag = LIB_Sanae_in_power_flag
+		has_country_flag = LIB_Marisa_in_power_flag
+		has_country_flag = LIB_Keine_in_power_flag
+		has_country_flag = LIB_Reisen_in_power_flag		}
+		}
+        localization_key = LIB_new_focus_57_desc_a
+    }
+    text = {
+        localization_key = LIB_new_focus_57_desc_b
     }
 	}
 	#贤者议会名字
@@ -127,7 +161,7 @@
 		}
 	}
 	defined_text = {
-		name = GET_small_airframe_cost_reduction
+		name = GET_LIB_small_airframe_cost_reduction
 		text = {
 			trigger = {
 				has_idea = LIB_small_airframe_cost_reduction
@@ -221,3 +255,15 @@
 
 
 	
+
+	#自卫队/防卫军描述（动态修正 tooltip 用）
+	defined_text = {
+	name = LIB_HXXFWJ_DESC_NAME
+	text = {
+		trigger = { has_completed_focus = LIB_new_focus_69 }
+		localization_key = LIB_hxxfwj2_desc_name
+	}
+	text = {
+		localization_key = LIB_hxxfwj1_desc_name
+	}
+	}

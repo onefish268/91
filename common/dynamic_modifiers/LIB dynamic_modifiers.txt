@@ -2,7 +2,6 @@
 ###国家层面动态修正（由原民族精神转换，数值由变量驱动）###
 #新人间之里自卫队/幻想乡防卫军
 LIB_hxxfwj_idea = {
-	name = LIB_HXXFWJ_NAME
 	enable = {
 		always = yes
 	}
@@ -56,7 +55,6 @@ LIB_hxxfwj_idea = {
 }
 #国家动荡/经济复苏
 LIB_gjdd_idea = {
-	name = LIB_GJDD_NAME
 	enable = {
 		always = yes
 	}
@@ -89,98 +87,34 @@ LIB_pxzc1_idea = {
     icon = GFX_idea_lib_6
     party_popularity_stability_factor = -1.0
     stability_factor = 0.595
-    # 法西斯主义支持率驱动的加成
-    energy_gain_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    army_attack_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    research_speed_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    army_defence_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    # 民主主义支持率驱动的加成
-    conscription_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    army_morale_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    army_org_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    industry_repair_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-}	
+    energy_gain_factor = LIB_pxzc_fascist_pop
+    army_attack_factor = LIB_pxzc_fascist_pop
+    research_speed_factor = LIB_pxzc_fascist_pop
+    army_defence_factor = LIB_pxzc_fascist_pop
+    conscription_factor = LIB_pxzc_democratic_pop
+    army_morale_factor = LIB_pxzc_democratic_pop
+    army_org_factor = LIB_pxzc_democratic_pop
+    industry_repair_factor = LIB_pxzc_democratic_pop
+}
 LIB_pxzc2_idea = {
 	enable = {
 		always = yes
 	}
 	icon = GFX_idea_lib_6
-	party_popularity_stability_factor = -1.0#禁用党派支持率
-	stability_factor = 0.595#固定稳定度支持
-	arms_factory_build_speed_factor = {##建设速度
-        value = LIB_party_communist_pop
-        multiply = 0.20
-    }
-	production_factory_max_efficiency_factor = {##生产效率上限
-        value = LIB_party_communist_pop
-        multiply = 0.20
-    }
-	industrial_capacity_factory = {##工厂产出
-        value = LIB_party_communist_pop
-        multiply = 0.20
-    }
-	consumer_goods_factor = {##生活消费品工厂系数
-        value = LIB_party_communist_pop
-        multiply = 0.20
-    }
-	  # 法西斯主义支持率驱动的加成
-    energy_gain_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    army_attack_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    research_speed_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    army_defence_factor = {
-        value = LIB_party_fascist_pop
-        multiply = 0.20
-    }
-    # 民主主义支持率驱动的加成
-    conscription_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    army_morale_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    army_org_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
-    industry_repair_factor = {
-        value = LIB_party_democratic_pop
-        multiply = 0.20
-    }
+	party_popularity_stability_factor = -1.0
+	stability_factor = 0.595
+	production_speed_buildings_factor = LIB_pxzc_communist_pop
+	production_factory_max_efficiency_factor = LIB_pxzc_communist_pop
+	industrial_capacity_factory = LIB_pxzc_communist_pop
+	consumer_goods_factor = LIB_pxzc_communist_pop
+	energy_gain_factor = LIB_pxzc_fascist_pop
+	army_attack_factor = LIB_pxzc_fascist_pop
+	research_speed_factor = LIB_pxzc_fascist_pop
+	army_defence_factor = LIB_pxzc_fascist_pop
+	conscription_factor = LIB_pxzc_democratic_pop
+	army_morale_factor = LIB_pxzc_democratic_pop
+	army_org_factor = LIB_pxzc_democratic_pop
+	industry_repair_factor = LIB_pxzc_democratic_pop
 }
 #隙间工厂占用
 #总起义
@@ -200,9 +134,6 @@ LIB_quanguoqiyi = { #STATE MODIFIER #for ger vic
                 dig_in_speed_factor = -0.1		
                 org_loss_when_moving = 0.1
                 army_org_factor = -0.05
-                supply_consumption_factor = -0.1
-	supply_node_range = -0.1
-                attrition = 0.1
                 compliance_growth = -0.5
 	resistance_growth = 1
 	resistance_target = 0.5
@@ -223,4 +154,12 @@ LIB_jingongjihua = {
 	army_attack_factor = 0.5
 	army_defence_factor = 0.5
 	breakthrough_factor = 0.5
+}
+
+LIB_ruqin = { #STATE MODIFIER
+	icon = GFX_modifiers_SOV_invaders_must_die
+	custom_modifier_tooltip = LIB_ruqin_desc
+	army_attack_factor = 1
+	army_defence_factor = 1
+	compliance_gain = 0.1
 }

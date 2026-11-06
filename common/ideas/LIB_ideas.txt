@@ -1,5 +1,13 @@
 ideas = {
     country = {
+    #血色神隐
+    LIB_xssy = {
+        removal_cost = -1
+        picture = GFX_idea_generic_communism_banned
+        modifier = {
+            communism_drift = -0.03
+        }
+    }
 		#对外投资合作局
 		LIB_dwtzhzj = {
 			removal_cost = -1
@@ -68,11 +76,11 @@ ideas = {
 		LIB_zsdc = {
             picture = lib_13
             allowed = { original_tag = LIB }
-            removable = yes
+            removal_cost = -1
             
             # 关键：不满足以下任一条件时，精神会被自动移除
-            available = {
-                stability < 0.99
+            cancel = {
+                stability > 0.99
             }
 
             modifier = {
@@ -174,7 +182,19 @@ ideas = {
 			}
     		}
         }
-		#磷灰石进口
+				#成功登陆
+		LIB_chenggongdenglu = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				targeted_modifier = {
+					tag = DVL
+					defense_bonus_against = 0.25
+					attack_bonus_against = 0.25
+				}
+			}
+		}
+#磷灰石进口
 		 LIB_lhsjk = {
             removal_cost = -1
     		picture = lib_16
@@ -197,7 +217,6 @@ ideas = {
 		
 		LIB_Liberation_ransom = {
 			picture = FRA_Liberation_ransom
-			NAME = LIB_Liberation_ransom
 			allowed = {
 				always = no
 			}
