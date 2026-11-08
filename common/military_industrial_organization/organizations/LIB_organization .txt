@@ -7,7 +7,7 @@ LIB_arsenal_organization = {
 			original_tag = LIB
 		}
 	available = {
-		has_completed_focus = LIB_new_focus_48
+		LIB = { has_completed_focus = LIB_new_focus_48 }
 	}
 	equipment_type = { armor }
 	initial_trait = {
@@ -108,13 +108,9 @@ LIB_arsenal_organization = {
 		position = { x=6 y=2 }
 		relative_position_id = generic_mio_trait_standardized_components
 		available = {
-			has_completed_focus = LIB_new_focus_74
+			LIB = { has_completed_focus = LIB_new_focus_74 }
 		}
-			limit_to_equipment_type = {
-        "mio_cat_eq_all_light_tank"
-        "mio_cat_eq_all_medium_tank"
-        "mio_cat_eq_all_heavy_tank"
-    }
+			limit_to_equipment_type = { armor }
 	equipment_bonus = {
         air_attack = 0.20  # 对空攻击 +20%
     }
@@ -129,7 +125,7 @@ LIB_Kappa_Heavy_Industries_materiel = {
 			original_tag = LIB
 		}
 	available = {
-		has_completed_focus = LIB_new_focus_48
+		LIB = { has_completed_focus = LIB_new_focus_48 }
 	}
 	add_trait = { 
 		token = LIB_mio_trait_Improve_aa
@@ -138,7 +134,7 @@ LIB_Kappa_Heavy_Industries_materiel = {
 		special_trait_background = yes
 		position = { x=9 y=1 }
 		available = {
-			has_completed_focus = LIB_new_focus_74
+			LIB = { has_completed_focus = LIB_new_focus_74 }
 		}
 			limit_to_equipment_type = {
 			anti_air_equipment
@@ -156,7 +152,7 @@ LIB_Moriya_Ropeway = {  ##守矢索道
 			original_tag = LIB
 		}
 	available = {
-		has_completed_focus = LIB_new_focus_48
+		LIB = { has_completed_focus = LIB_new_focus_48 }
 	}
 	research_categories = { train_tech support_tech }
 	initial_trait = {
@@ -179,7 +175,7 @@ LIB_Moriya_Ropeway = {  ##守矢索道
 		special_trait_background = yes
 		position = { x=9 y=1 }
 		available = {
-			has_completed_focus = LIB_new_focus_74
+			LIB = { has_completed_focus = LIB_new_focus_74 }
 		}
 			limit_to_equipment_type = {
 			train_equipment
@@ -189,9 +185,9 @@ LIB_Moriya_Ropeway = {  ##守矢索道
     }
 		}
 }
-generic_mio_trait_improved_axle_fitting
 #####################
 LIB_Wings_of_Tengu = {
+	name = LIB_Wings_of_Tengu
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_Wings_of_Tengu
 	allowed = {	
@@ -199,7 +195,7 @@ LIB_Wings_of_Tengu = {
 		}
 	visible = { always = yes }
 	available = {
-		has_completed_focus = LIB_new_focus_48
+		LIB = { has_completed_focus = LIB_new_focus_48 }
 			
 		}
 	}

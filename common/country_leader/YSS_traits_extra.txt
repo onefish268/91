@@ -1,0 +1,11 @@
+# 由 DeepSeek 写成
+
+leader_traits = {
+	#兽人联络者
+	YSS_shouren_liaison = {
+		random = no
+		weekly_manpower = 500
+		production_efficiency_cap_factor = 0.05
+		stability_factor = -0.05
+	}
+}

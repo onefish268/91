@@ -22,7 +22,7 @@
  YSS_focus_172_desc: "联盟绝不能只是帝国主义汪洋大海中一座孤零零的红色孤岛。作为本大洲唯一的社会主义政权，我们肩负着不可推卸的历史使命。联盟必须主动出击。这不仅是为了保卫我们自身的革命果实，更是为了在整个大洲点燃燎原的星火。"
 
  YSS_map_support_0: "如果该国家不是§R共产主义§!，且和我们§R不在§!同一阵营，点击显示解放该国家的选项，反之，则显示互助选项。"
- YSS_map_support_1: "点击非洲地图清空刚理刚刚选择的国家。"
+ YSS_map_support_1: "点击非洲地图，清空刚刚选择的国家。"
 
  YSS_map_button_text: "[all_button_text_loc]"
  YSS_map_button_text_0: "消耗50£pol_power去给§Y[?var:YSS_chosen_array^0.GetName]§!提供一个每日增长 §Y0.1§! 共产党支持率buff，持续§Y365§!天。"

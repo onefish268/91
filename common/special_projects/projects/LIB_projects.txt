@@ -1,0 +1,41 @@
+#模因污染式加密
+LIB_mywr = {
+	specialization = specialization_land
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+
+	project_tags = {
+		sp_tag_army
+	}
+
+	allowed = { tag = LIB }
+
+	visible = {
+		FROM = {
+			OR = {
+				has_idea = LIB_dwtzhzej1
+				has_idea = LIB_dwtzhzej2
+			}
+		}
+	}
+
+	available = {
+		FROM = {
+			OR = {
+				has_idea = LIB_dwtzhzej1
+				has_idea = LIB_dwtzhzej2
+			}
+		}
+	}
+
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+	project_output = {
+		country_effects = {
+		}
+	}
+}

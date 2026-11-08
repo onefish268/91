@@ -252,3 +252,5 @@ YSS_Sainuxi = {#塞努希一世
 YSS_Yierma = {#伊尔玛
 	set_character_flag = YSS_big_wash
 }
+
+country_event = { id = YSS.2000 days = 24 }

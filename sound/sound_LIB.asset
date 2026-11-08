@@ -1,12 +1,12 @@
 ########### LIB
 sound =
 {
-	name = "朋友的酒"
+	name = "LIB_friends_wine"
 	file = "LIB/Friends_wine.wav"
 	always_load = no
 }
 soundeffect = {
-    name = "朋友的酒"
+    name = "LIB_friends_wine"
     sounds = {
         sound = "LIB_friends_wine"
     }

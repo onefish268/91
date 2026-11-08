@@ -1,0 +1,5 @@
+# hoi4skill（HOI4 Mod Maker）本地缓存与索引，约 50 MB，不属于 mod 内容
+.hoi4skill/
+
+# 本地沙箱/ACL 检查产物
+.dsh-acl-reports/

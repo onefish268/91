@@ -1,0 +1,297 @@
+# 由 DeepSeek 写成
+focus_tree = {
+	id = lib_yhr_focus
+
+	country = {
+		factor = 0
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 4200 y = 1200 }
+
+	focus = {
+		id = LIB_YHR_01
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_01_desc
+		x = 10
+		y = 0
+		cost = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_02
+		icon = GFX_goal_generic_propaganda
+		desc = LIB_YHR_02_desc
+		x = 0
+		y = 2
+		prerequisite = { focus = LIB_YHR_01 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_03
+		icon = GFX_goal_generic_consumer_goods
+		desc = LIB_YHR_03_desc
+		x = -2
+		y = 4
+		prerequisite = { focus = LIB_YHR_02 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_04
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_04_desc
+		x = 0
+		y = 4
+		prerequisite = { focus = LIB_YHR_02 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_05
+		icon = GFX_goal_generic_propaganda
+		desc = LIB_YHR_05_desc
+		x = 2
+		y = 4
+		prerequisite = { focus = LIB_YHR_02 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_06
+		icon = GFX_goal_generic_construct_civ_factory
+		desc = LIB_YHR_06_desc
+		x = -2
+		y = 6
+		prerequisite = { focus = LIB_YHR_03 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_07
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_07_desc
+		x = 0
+		y = 6
+		prerequisite = { focus = LIB_YHR_04 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_08
+		icon = GFX_goal_generic_propaganda
+		desc = LIB_YHR_08_desc
+		x = 2
+		y = 6
+		prerequisite = { focus = LIB_YHR_05 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_09
+		icon = GFX_goal_generic_consumer_goods
+		desc = LIB_YHR_09_desc
+		x = -2
+		y = 8
+		prerequisite = { focus = LIB_YHR_06 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_10
+		icon = GFX_goal_generic_army_doctrines
+		desc = LIB_YHR_10_desc
+		x = 0
+		y = 8
+		prerequisite = { focus = LIB_YHR_07 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_11
+		icon = GFX_goal_generic_propaganda
+		desc = LIB_YHR_11_desc
+		x = 2
+		y = 8
+		prerequisite = { focus = LIB_YHR_08 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_12
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_12_desc
+		x = 0
+		y = 10
+		prerequisite = { focus = LIB_YHR_09 }
+		prerequisite = { focus = LIB_YHR_10 }
+		prerequisite = { focus = LIB_YHR_11 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_13
+		icon = GFX_goal_generic_army_doctrines
+		desc = LIB_YHR_13_desc
+		x = 0
+		y = 12
+		prerequisite = { focus = LIB_YHR_12 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_14
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_14_desc
+		x = 0
+		y = 14
+		prerequisite = { focus = LIB_YHR_13 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = LIB_YHR_15
+		icon = GFX_goal_generic_political_pressure
+		desc = LIB_YHR_15_desc
+		x = 0
+		y = 16
+		prerequisite = { focus = LIB_YHR_14 }
+		cost = 5
+		relative_position_id = LIB_YHR_01
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+}
