@@ -92,6 +92,11 @@ country_event = {
 			else_if = {
 				limit = { is_subject = yes }
 
+				set_technology = {
+					infantry_weapons = 1
+					gw_artillery = 1
+				}
+
 				# autonomy_dominion: "自治领"
 				#autonomy_colony: "殖民领"
 				# 爆内战，创建叛军国家
@@ -354,20 +359,21 @@ country_event = {
 				}
 
 				division_template = {
-					name = "国际装甲旅"
+					name = "国际炮兵旅"
 					is_locked = yes
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
-						light_armor = { x = 1 y = 0 }
-						light_armor = { x = 1 y = 1 }
+						infantry = { x = 0 y = 0 }
+						artillery = { x = 1 y = 0 }
+						artillery = { x = 1 y = 1 }
 					}
 				}					
 				capital_scope = {
 					meta_effect = {
 						text = {
 							create_unit = {
-								division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
+								division = "name = \"国际志愿军\" division_template = \"国际炮兵旅\" start_experience_factor = 0"
 								owner = ROOT
 								allow_spawning_on_enemy_provs = yes
 								count = YSS.YSS_volunteer_level_2_[country_tag]
@@ -378,6 +384,11 @@ country_event = {
 				}
     		}
 			else = {
+
+				set_technology = {
+					infantry_weapons = 1
+					gw_artillery = 1
+				}
 
 				every_country = {
 					limit = {
@@ -390,7 +401,7 @@ country_event = {
 
 				# 爆内战，创建叛军国家
     			start_civil_war = {
-					ruling_party = marxism
+					ruling_party = communism
         			ideology = ROOT
         			size = 0.6
         				army_ratio = 0.6
@@ -569,7 +580,7 @@ country_event = {
 				}
 
 				division_template = {
-					name = "国际装甲旅"
+					name = "国际炮兵旅"
 					is_locked = yes
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -582,10 +593,11 @@ country_event = {
 					meta_effect = {
 						text = {
 							create_unit = {
-								division = "name = \"国际志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0"
+								division = "name = \"国际志愿军\" division_template = \"国际炮兵旅\" start_experience_factor = 0"
 								owner = ROOT
 								allow_spawning_on_enemy_provs = yes
 								count = YSS.YSS_volunteer_level_2_[country_tag]
+								producer = YSS
 							}
 						}
 						country_tag = "[ROOT.GetTag]"
@@ -2040,10 +2052,11 @@ country_event = {
 				meta_effect = {
 					text = {
 						create_unit = {
-							division = "name = \"[country_tag]志愿军\" division_template = \"国际装甲旅\" start_experience_factor = 0.2"
+							division = "name = \"[country_tag]志愿军\" division_template = \"国际炮兵旅\" start_experience_factor = 0.2"
 							owner = ROOT
 							allow_spawning_on_enemy_provs = yes
 							count = 1
+							producer = FROM
 						}
 					}
 					country_tag = "[FROM.GetName]"

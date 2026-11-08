@@ -356,6 +356,7 @@ YSS_return_button_effect_2 = {
 			var:YSS_chosen_array^0 = { NOT = { has_country_flag = YSS_revoluntion_victory } }
 			any_army_leader = {
 				NOT = { has_country_flag = YSS_has_mission_to_aboard }
+				is_hired_as_advisor = no
 			}
 		}
 
@@ -370,7 +371,10 @@ YSS_return_button_effect_2 = {
 				limit = { var:YSS_chosen_array^0 = { has_country_flag = YSS_launch_the_civil_war } }
 
 				random_army_leader = {
-					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+					limit = {
+						NOT = { has_character_flag = YSS_has_mission_to_aboard } 
+						is_hired_as_advisor = no
+					}
 					set_character_flag = YSS_has_mission_to_aboard
 					meta_effect = {
 						text = {
@@ -388,7 +392,10 @@ YSS_return_button_effect_2 = {
 			}
 			else = {
 				random_army_leader = {
-					limit = { NOT = { has_character_flag = YSS_has_mission_to_aboard } }
+					limit = {
+						NOT = { has_character_flag = YSS_has_mission_to_aboard }
+						is_hired_as_advisor = no
+					}
 					set_character_flag = YSS_has_mission_to_aboard
 					meta_effect = {
 						text = {
