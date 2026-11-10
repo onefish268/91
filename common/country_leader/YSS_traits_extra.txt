@@ -5,7 +5,7 @@ leader_traits = {
 	YSS_shouren_liaison = {
 		random = no
 		weekly_manpower = 500
-		production_efficiency_cap_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
 		stability_factor = -0.05
 	}
 	#革命近卫军司令——荻花内阁
