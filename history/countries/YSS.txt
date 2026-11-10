@@ -1,4 +1,4 @@
-﻿capital = 271
+capital = 271
 
 set_oob = "YSS_1936_land"
 set_naval_oob = "YSS_1936_naval"
@@ -212,10 +212,12 @@ recruit_character = YSS_1_41
 recruit_character = YSS_1_42
 recruit_character = YSS_1_43
 recruit_character = YSS_1_44
+recruit_character = YSS_1_44
 recruit_character = YSS_1_45
 recruit_character = YSS_1_46
 recruit_character = YSS_1_47
 recruit_character = YSS_6_11
+recruit_character = YSS_dihua
 recruit_character = YSS_Sainuxi
 recruit_character = YSS_Yierma
 

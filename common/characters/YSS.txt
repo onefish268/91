@@ -917,11 +917,11 @@ characters = {
 		}
 		advisor = { 	
 			traits = {
-				HUN_internationalist_marxist
+				YSS_atom_heart
 			}
 			idea_token = YSS_1_44
-			slot = political_advisor
-			cost = 150
+			slot = theorist
+			cost = 300
 			ai_will_do = {
 				factor = 10
 			}
@@ -975,11 +975,12 @@ characters = {
 		}
 		advisor = { 	
 			traits = {
-				SWI_commander_in_chief
+				YSS_mingjiu_commander_in_chief
+				mass_assault_expert
 			}
 			idea_token = YSS_1_47
-			slot = political_advisor
-			cost = 150
+			slot = theorist
+			cost = 300
 			ai_will_do = {
 				factor = 10
 			}
@@ -1182,7 +1183,18 @@ characters = {
 			}
 		}
 		field_marshal = {
-			skill = 2
+			traits = {
+				career_officer #职业军官
+				trait_cautious #谨慎
+				armor_officer #装甲军官
+				politically_connected #政治关联者
+				aggressive_assaulter #凌厉的攻击者
+				infantry_leader #步兵指挥官
+				panzer_leader #装甲指挥官
+				trait_mountaineer #山地专家
+				adaptable #强于适应
+			}
+			skill = 4
 			attack_skill = 6
 			defense_skill = 6
 			planning_skill = 6
@@ -1635,14 +1647,57 @@ characters = {
 				factor = 10
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
+				brilliant_strategist #天才战略家
+				career_officer #职业军官
+				aggressive_assaulter #凌厉的攻击者
+				infantry_leader #步兵指挥官
+				panzer_leader #装甲指挥官
+				trait_mountaineer #山地专家
+				adaptable #强于适应
 			}
 			skill = 1
 			attack_skill = 4
 			defense_skill = 2
 			planning_skill = 6
 			logistics_skill = 1
+		}
+	}
+	#元帅 / 革命近卫军司令
+	YSS_dihua = {
+		name = "荻花"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/126.png"
+				large = "gfx/leaders/YSS/125.png"
+			}
+		}
+		advisor = {
+			traits = {
+				YSS_dihua_guard_commander
+			}
+			idea_token = YSS_dihua_guard_commander
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				organizer #组织专家
+				infantry_leader #步兵指挥官
+				urban_assault_specialist #巷战专家
+				harsh_leader #严军统帅
+				career_officer #职业军官
+				inflexible_strategist #顽强的防御者
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 3
 		}
 	}
 #陆军将军
