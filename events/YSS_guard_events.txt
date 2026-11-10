@@ -1,0 +1,92 @@
+add_namespace = YSS_GUARD
+
+# 首都近卫军 —— 开局一个月后，是否把近卫军送上前线
+country_event = {
+	id = YSS_GUARD.8001
+	title = YSS_GUARD.8001.t
+	desc = YSS_GUARD.8001.d
+	picture = GFX_YSS4_event
+	fire_only_once = yes
+
+	trigger = {
+		tag = YSS
+		date > 1936.2.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = YSS_GUARD.8001.a
+		custom_effect_tooltip = YSS_GUARD.8001.a.tt
+		add_political_power = -25
+		# 联盟没有支援装备科技，按「外购」逻辑直接拿苏联产的支援装备
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 135
+			producer = SOV
+		}
+		division_template = {
+			name = "首都近卫军"
+			template_counter = 104
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				military_police = { x = 0 y = 2 }
+			}
+			regimental_support = {
+				fire_support = { x = 0 y = 0 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"首都近卫军第1师\" division_template = \"首都近卫军\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"首都近卫军第2师\" division_template = \"首都近卫军\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"首都近卫军第3师\" division_template = \"首都近卫军\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = YSS_GUARD.8001.b
+		add_stability = 0.05
+		add_political_power = 25
+	}
+
+	option = {
+		name = YSS_GUARD.8001.c
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 30
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 100
+			producer = SOV
+		}
+	}
+}

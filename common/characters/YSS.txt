@@ -1186,12 +1186,9 @@ characters = {
 			traits = {
 				career_officer #职业军官
 				trait_cautious #谨慎
-				armor_officer #装甲军官
 				harsh_leader #严厉的指挥官
-				aggressive_assaulter #凌厉的攻击者
 				infantry_leader #步兵指挥官
 				panzer_leader #装甲指挥官
-				trait_mountaineer #山地专家
 				adaptable #强于适应
 			}
 			skill = 4
@@ -1219,6 +1216,34 @@ characters = {
 			ai_will_do = {
 				factor = 10
 			}
+		}
+	}
+	#空军部长
+	YSS_baiheng = {
+		name = "白珩"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/127.png"
+				large = "gfx/leaders/YSS/128.png"
+			}
+		}
+		advisor = {
+			traits = {
+				YSS_baiheng_air_chief
+			}
+			idea_token = YSS_baiheng
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
 		}
 	}
 	YSS_4_2 = {
@@ -1686,17 +1711,15 @@ characters = {
 		}
 		field_marshal = {
 			traits = {
-				organizer #组织专家
 				infantry_leader #步兵指挥官
 				urban_assault_specialist #巷战专家
 				harsh_leader #严军统帅
-				career_officer #职业军官
 				inflexible_strategist #顽强的防御者
 				war_hero #战争英雄
 			}
-			skill = 4
+			skill = 5
 			attack_skill = 2
-			defense_skill = 7
+			defense_skill = 6
 			planning_skill = 4
 			logistics_skill = 3
 		}
