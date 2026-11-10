@@ -212,7 +212,6 @@ recruit_character = YSS_1_41
 recruit_character = YSS_1_42
 recruit_character = YSS_1_43
 recruit_character = YSS_1_44
-recruit_character = YSS_1_44
 recruit_character = YSS_1_45
 recruit_character = YSS_1_46
 recruit_character = YSS_1_47

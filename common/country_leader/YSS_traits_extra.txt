@@ -5,7 +5,7 @@ leader_traits = {
 	YSS_shouren_liaison = {
 		random = no
 		weekly_manpower = 500
-		production_factory_max_efficiency_factor = 0.05
+		production_efficiency_cap_factor = 0.05
 		stability_factor = -0.05
 	}
 	#革命近卫军司令——荻花内阁
@@ -32,5 +32,15 @@ leader_traits = {
 		army_attack_factor = 0.15
 		command_power_gain = 0.07
 		command_cap_increase = 30
+	}
+	#现代主义建筑师——陵内阁
+	YSS_ling_architect = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		production_speed_supply_node_factor = 0.10
+		production_speed_naval_base_factor = 0.10
+		supply_consumption_factor = -0.10
 	}
 }

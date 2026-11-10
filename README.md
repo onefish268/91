@@ -1,38 +1,44 @@
-# 钢铁萌心：狂野法则 — 将领改动补丁
+# YSS 人物改动补丁（钢铁萌心：狂野法则 · 91）
 
-本仓库不是完整的 mod，只包含 2026-11-10 这一次改动涉及的 **6 个文件**。
-完整 mod 约 370 MB，没必要一起上传。
+生成时间：2026-11-10 23:44:26
+只包含改动过的文件；覆盖进 mod 目录即可。
 
-## 改了什么
+## 目录结构
 
-- 八云红 / 茗旧 两位将领的军衔与特质
-- 新增元帅「荻花」（含独立立绘与内阁职位「革命近卫军司令」）
-- 茗旧、八云红 进入理论学家槽
-- 对应的中文本地化
-
-逐条说明见 [CHANGES.md](CHANGES.md)。
+```
+common/characters/YSS.txt                          角色定义（荻花 / 八云红 / 茗旧 / 陵）
+common/country_leader/YSS_traits_extra.txt         4 个自定义领袖特质
+history/countries/YSS.txt                          开局招募
+localisation/simp_chinese/YSS2_l_simp_chinese.yml  特质名与描述
+gfx/leaders/YSS/125.png                            荻花元帅立绘 156x210
+gfx/leaders/YSS/126.png                            荻花顾问头像 65x67
+MANIFEST.txt                                       文件哈希（用来确认覆盖成功）
+```
 
 ## 怎么用
 
-把本仓库里的 `common/`、`history/`、`localisation/`、`gfx/` 四个目录，
-连同原有目录结构覆盖到 mod 根目录即可：
+1. 备份 mod 目录
+2. 把 `common/` `history/` `localisation/` `gfx/` 覆盖进
+   `C:\Program Files (x86)\Steam\steamapps\workshop\content\394360\91\`
+3. **开新档**——人物等级、特质、内阁职位都写在存档里，旧档不会变
 
-```
-C:\Program Files (x86)\Steam\steamapps\workshop\content\394360\91\
-```
+## 为什么“陵没有变化”
 
-覆盖前建议先备份同名文件。
+按可能性排序：
 
-## 注意
+1. **用的旧存档**。陵在旧档里已经是军长，等级和特质存在存档数据里，改文件不会回溯。必须开新游戏。
+2. **只覆盖了部分文件**。陵涉及两个文件：`common/characters/YSS.txt`（等级/特质）和 `localisation/…YSS2…yml`（特质名）。少覆盖一个就会显示不对或没变。
+3. **覆盖到了错的目录**。Steam 创意工坊的 mod 在 `workshop/content/394360/91/`；如果你有自己的本地副本（`Documents/Paradox Interactive/Hearts of Iron IV/mod/…`），要覆盖的是正在启用的那一份。
+4. **上传的是旧包**。用 `MANIFEST.txt` 核对：`common/characters/YSS.txt` 应为 33552 字节，SHA256 以 `F5A6FA91` 开头。
 
-- `common/characters/YSS.txt` 是**整个文件**，基于 v1.19.3 的版本；如果你那边这个文件已经有别的改动，
-  不要直接覆盖，照着 CHANGES.md 手工合并。
-- 新增角色靠 `history/countries/YSS.txt` 里的 `recruit_character` 生效，**旧存档看不到，需要新开档**。
+## 生效后应该看到
 
-## 验证
+- 将领列表里，**陵**是元帅（不是军长），特质只有「后勤奇才」
+- **荻花**作为新元帅出现，另有内阁「革命近卫军司令」
+- **八云红**元帅 4 级 9 特质；理论学家「原子之心」300 点
+- **茗旧**元帅 7 特质；理论学家 300 点
+- 陵的政治顾问特质显示为「后勤工程师」
 
-```
-hoi4skill validate . --game-root "C:\Program Files (x86)\Steam\steamapps\common\Hearts of Iron IV" --auto-mod-paths --launcher-dir "C:\Users\andy\Documents\Paradox Interactive\Hearts of Iron IV\mod" --changed-only --changed common/characters/YSS.txt --changed common/country_leader/YSS_traits_extra.txt --changed history/countries/YSS.txt --changed localisation/simp_chinese/YSS2_l_simp_chinese.yml
-```
+## 依赖
 
-结果：`OK: no static issues found.`
+需要 `Adorable heart`（workshop 2879371758）作为前置。

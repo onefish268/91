@@ -936,7 +936,7 @@ characters = {
 		}
 		advisor = { 	
 			traits = {
-				JAP_modernist_architect
+				YSS_ling_architect #后勤工程师
 			}
 			idea_token = YSS_1_45
 			slot = political_advisor
@@ -1187,7 +1187,7 @@ characters = {
 				career_officer #职业军官
 				trait_cautious #谨慎
 				armor_officer #装甲军官
-				politically_connected #政治关联者
+				harsh_leader #严厉的指挥官
 				aggressive_assaulter #凌厉的攻击者
 				infantry_leader #步兵指挥官
 				panzer_leader #装甲指挥官
@@ -1198,7 +1198,7 @@ characters = {
 			attack_skill = 6
 			defense_skill = 6
 			planning_skill = 6
-			logistics_skill = 5
+			logistics_skill = 6
 		}
 	}
 	#空军部长
@@ -1692,6 +1692,7 @@ characters = {
 				harsh_leader #严军统帅
 				career_officer #职业军官
 				inflexible_strategist #顽强的防御者
+				war_hero #战争英雄
 			}
 			skill = 4
 			attack_skill = 2
@@ -1709,7 +1710,10 @@ characters = {
 				large = "gfx/leaders/YSS/117.png"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
+			traits = {
+				logistics_wizard #后勤奇才
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

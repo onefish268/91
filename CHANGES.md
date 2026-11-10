@@ -1,182 +1,72 @@
-# 改动明细（2026-11-10）
+# 改动明细
 
-mod：钢铁萌心：狂野法则（`descriptor.mod` version 1.19.3，workshop id 3772620704）
+基准：Steam 创意工坊 91 号 mod 原版文件。“→”左边是原版，右边是改后。
 
----
+## 1. 新增角色：荻花
 
-## 1. `common/characters/YSS.txt`
+**common/characters/YSS.txt** 新增 `YSS_dihua`
 
-### YSS_1_44 八云红 — 内阁顾问 → 理论学家
+- 元帅：skill 4 / 进攻 2 / 防御 7 / 计划 4 / 后勤 3
+- 特质：organizer 组织专家、infantry_leader 步兵指挥官、urban_assault_specialist 巷战专家、harsh_leader 严军统帅、career_officer 职业军官、inflexible_strategist 顽强的防御者、war_hero 战争英雄
+- 内阁：`slot = political_advisor`，特质 `YSS_dihua_guard_commander`“革命近卫军司令”，cost 150
+  - 反间谍 +0.5、核心领土防御 +15%、社会主义支持 +0.05、意识形态变化抵制 +10%
+- 立绘：`gfx/leaders/YSS/125.png`（156×210）、`126.png`（65×67）
 
-| 字段 | 改前 | 改后 |
+**history/countries/YSS.txt** 新增 `recruit_character = YSS_dihua`
+
+## 2. 八云红
+
+| 位置 | 原版 | 改后 |
 |---|---|---|
-| `slot` | `political_advisor` | `theorist` |
-| `traits` | `HUN_internationalist_marxist` | `YSS_atom_heart` |
-| `cost` | 150 | 300 |
+| `YSS_3_6` 元帅 | skill 2，无特质，后勤 5 | skill 4，9 条特质，后勤 6 |
+| `YSS_1_44` 内阁 | political_advisor | theorist，`YSS_atom_heart`“原子之心”，cost 300 |
 
-新特质「原子之心」：人海突击学说精通度 +30%（原版 `mass_assault_expert` 的两倍）、陆军经验增长 +0.60。
+`YSS_3_6` 特质：career_officer 职业军官、trait_cautious 谨慎、armor_officer 装甲军官、harsh_leader 严厉的指挥官、aggressive_assaulter 凌厉的攻击者、infantry_leader 步兵指挥官、panzer_leader 装甲指挥官、trait_mountaineer 山地专家、adaptable 强于适应
 
-### YSS_1_47 茗旧 — 内阁顾问 → 理论学家
+**history/countries/YSS.txt** 新增 `recruit_character = YSS_1_44`
 
-| 字段 | 改前 | 改后 |
+## 3. 茗旧
+
+| 位置 | 原版 | 改后 |
 |---|---|---|
-| `slot` | `political_advisor` | `theorist` |
-| `traits` | `SWI_commander_in_chief` | `YSS_mingjiu_commander_in_chief` + `mass_assault_expert` |
-| `cost` | 150 | 300 |
+| `YSS_6_11` | corps_commander，无特质 | field_marshal，7 条特质 |
+| `YSS_1_47` 内阁 | political_advisor，`SWI_commander_in_chief` | theorist，`YSS_mingjiu_commander_in_chief` + `mass_assault_expert`，cost 150 → 300 |
 
-`YSS_mingjiu_commander_in_chief` 是原版「总司令」的进攻版：把 `army_defence_factor = 0.15` 换成 `army_attack_factor = 0.15`，
-其余（陆军经验 +40%、指挥点增长 +7%、指挥上限 +30）不变。
-`mass_assault_expert` 用原版键，自带 +15% 人海突击精通度。
+`YSS_6_11` 特质：brilliant_strategist 天才战略家、career_officer 职业军官、aggressive_assaulter 凌厉的攻击者、infantry_leader 步兵指挥官、panzer_leader 装甲指挥官、trait_mountaineer 山地专家、adaptable 强于适应
 
-### YSS_3_6 八云红 — 陆军元帅
+原版 `SWI_commander_in_chief` 是“陆军防御 +15%”，改为自建特质后是“陆军进攻 +15%”，其余数值保留（陆军经验 +0.40、指挥点 +0.07、指挥上限 +30）。
 
-- `skill`：2 → 4
-- `traits`：原本为空，现为 9 条
+## 4. 陵
 
-```
-traits = {
-    career_officer          # 职业军官
-    trait_cautious          # 谨慎
-    armor_officer           # 装甲军官
-    politically_connected   # 政治关联者
-    aggressive_assaulter    # 凌厉的攻击者
-    infantry_leader         # 步兵指挥官
-    panzer_leader           # 装甲指挥官
-    trait_mountaineer       # 山地专家
-    adaptable               # 强于适应
-}
-```
-
-数值未动：attack 6 / defense 6 / planning 6 / logistics 5。
-
-### YSS_6_11 茗旧 — 军长 → 陆军元帅
-
-- 角色块 `corps_commander` → `field_marshal`（`aggressive_assaulter` 是元帅专属特质，挂在军长上不生效）
-- `traits`：原本为空，现为 7 条
-
-```
-traits = {
-    brilliant_strategist    # 天才战略家
-    career_officer          # 职业军官
-    aggressive_assaulter    # 凌厉的攻击者
-    infantry_leader         # 步兵指挥官
-    panzer_leader           # 装甲指挥官
-    trait_mountaineer       # 山地专家
-    adaptable               # 强于适应
-}
-```
-
-数值未动：skill 1 / attack 4 / defense 2 / planning 6 / logistics 1。
-
-### 新增 YSS_dihua 荻花 — 陆军元帅 + 内阁顾问
-
-```
-YSS_dihua = {
-    name = "荻花"
-    portraits = {
-        civilian = {
-            small = "gfx/leaders/YSS/126.png"
-            large = "gfx/leaders/YSS/125.png"
-        }
-    }
-    advisor = {
-        traits = { YSS_dihua_guard_commander }
-        idea_token = YSS_dihua_guard_commander
-        slot = political_advisor
-        cost = 150
-        ai_will_do = { factor = 10 }
-    }
-    field_marshal = {
-        traits = {
-            organizer              # 组织专家
-            infantry_leader        # 步兵指挥官
-            urban_assault_specialist # 巷战专家
-            harsh_leader           # 严军统帅
-            career_officer         # 职业军官
-            inflexible_strategist  # 顽强的防御者
-        }
-        skill = 4
-        attack_skill = 2
-        defense_skill = 7
-        planning_skill = 4
-        logistics_skill = 3
-    }
-}
-```
-
----
-
-## 2. `common/country_leader/YSS_traits_extra.txt`
-
-新增 3 个领袖特质（写在原有 `leader_traits = { }` 块内）：
-
-```
-YSS_mingjiu_commander_in_chief = {
-    random = no
-    sprite = 9
-    experience_gain_army = 0.40
-    army_attack_factor = 0.15
-    command_power_gain = 0.07
-    command_cap_increase = 30
-}
-
-YSS_dihua_guard_commander = {
-    random = no
-    sprite = 9
-    intelligence_agency_defense = 0.5
-    army_core_defence_factor = 0.15
-    communism_drift = 0.05
-    drift_defence_factor = 0.10
-}
-
-YSS_atom_heart = {
-    random = no
-    sprite = 9
-    mass_assault_mastery_gain_factor = 0.30
-    experience_gain_army = 0.60
-}
-```
-
----
-
-## 3. `history/countries/YSS.txt`
-
-新增两行招募：
-
-```
-recruit_character = YSS_dihua
-recruit_character = YSS_1_44
-```
-
-`YSS_1_44` 原来是「从未被招募」的状态，所以八云红的内阁顾问在游戏里根本看不到；改成理论学家后补上了招募。
-
----
-
-## 4. `localisation/simp_chinese/YSS2_l_simp_chinese.yml`
-
-追加 6 行（3 个特质 × 名称 + 描述）：
-
-```
- YSS_mingjiu_commander_in_chief: "总司令"
- YSS_mingjiu_commander_in_chief_desc: "§L此人主张以进攻代替防守，认为最好的防御就是有力的进攻。§!"
- YSS_dihua_guard_commander: "革命近卫军司令"
- YSS_dihua_guard_commander_desc: "§L旧帝国皇帝近卫军的前领队。门柯斯图的革命理念感染了她，她带着一支只忠于自己的近卫部队倒戈，从内部推翻了帝国。§!"
- YSS_atom_heart: "原子之心"
- YSS_atom_heart_desc: "§L她把作战理论命名为「原子之心」：胜负最终取决于谁能在战线上堆出更多的师，以及谁能把它们更快地练成活人。§!"
-```
-
----
-
-## 5. 新增立绘
-
-| 文件 | 规格 | 用途 |
+| 位置 | 原版 | 改后 |
 |---|---|---|
-| `gfx/leaders/YSS/125.png` | 156×210 | 荻花 大立绘（红底渐变，与其他元帅一致） |
-| `gfx/leaders/YSS/126.png` | 65×67 | 荻花 小头像（倾斜卡片 + 暗色描边，与现有顾问头像一致） |
+| `YSS_7_1` | corps_commander | field_marshal，特质 `logistics_wizard`“后勤奇才” |
+| `YSS_1_45` 内阁 | `JAP_modernist_architect`“现代主义建筑师” | `YSS_ling_architect`“后勤工程师” |
 
----
+`YSS_ling_architect` 效果：建造速度 +10%、铁路建设 +10%、补给中心建设 +10%、海军基地建设 +10%、补给消耗 -10%。
 
-## 6. 未保留的改动
+注意：陵的旧档不会变。他在旧存档里已经是军长，等级与特质存在存档数据中。
 
-`map/railways.txt` 曾加过一条 `1 2 5210 8183`（连通蒙巴萨一带断开的两段铁路），
-按要求已还原，**不在本补丁内**。
+## 5. 自定义特质（common/country_leader/YSS_traits_extra.txt）
+
+| 特质键 | 显示名 | 效果 |
+|---|---|---|
+| `YSS_mingjiu_commander_in_chief` | 总司令 | 陆军经验 +0.40、陆军进攻 +15%、指挥点 +0.07、指挥上限 +30 |
+| `YSS_dihua_guard_commander` | 革命近卫军司令 | 反间谍 +0.5、核心领土防御 +15%、共产主义支持 +0.05、意识形态抵制 +0.10 |
+| `YSS_atom_heart` | 原子之心 | 人海突击学说精通 +30%、陆军经验 +0.60 |
+| `YSS_ling_architect` | 后勤工程师 | 建造 +10%、铁路/补给中心/港口各 +10%、补给消耗 -10% |
+
+## 6. 本地化（localisation/simp_chinese/YSS2_l_simp_chinese.yml）
+
+文件末尾追加 8 行：4 个特质名 + 4 段描述（§L…§! 格式），保持 UTF-8 BOM。
+
+## 提交信息参考
+
+```
+YSS: add 荻花, rework 八云红/茗旧/陵 as marshals and advisors
+
+- 新增元帅与内阁顾问「荻花」，含立绘
+- 八云红、茗旧转为元帅；八云红/茗旧转任理论学家
+- 陵转为元帅（后勤奇才），内阁改为「后勤工程师」
+- 新增 4 个自定义领袖特质与本地化
+```
