@@ -217,6 +217,7 @@ recruit_character = YSS_1_46
 recruit_character = YSS_1_47
 recruit_character = YSS_6_11
 recruit_character = YSS_dihua
+recruit_character = YSS_baiheng
 recruit_character = YSS_Sainuxi
 recruit_character = YSS_Yierma
 

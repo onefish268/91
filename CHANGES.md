@@ -1,72 +1,102 @@
-# 改动明细
+﻿# 改动清单（相对 mod 根目录）
 
-基准：Steam 创意工坊 91 号 mod 原版文件。“→”左边是原版，右边是改后。
+> 作者：荻花　· 导出日期：2026-11-11　· 适用版本：钢铁萌心：狂野法则 1.19.3（HOI4 1.19）
+> 这些文件**只包含本补丁相关的改动**，覆盖到 mod 根目录即可；不包含原版 mod 的任何其他内容。
 
-## 1. 新增角色：荻花
+---
 
-**common/characters/YSS.txt** 新增 `YSS_dihua`
+## 1. `common/characters/YSS.txt`
 
-- 元帅：skill 4 / 进攻 2 / 防御 7 / 计划 4 / 后勤 3
-- 特质：organizer 组织专家、infantry_leader 步兵指挥官、urban_assault_specialist 巷战专家、harsh_leader 严军统帅、career_officer 职业军官、inflexible_strategist 顽强的防御者、war_hero 战争英雄
-- 内阁：`slot = political_advisor`，特质 `YSS_dihua_guard_commander`“革命近卫军司令”，cost 150
-  - 反间谍 +0.5、核心领土防御 +15%、社会主义支持 +0.05、意识形态变化抵制 +10%
-- 立绘：`gfx/leaders/YSS/125.png`（156×210）、`126.png`（65×67）
+### 新增角色
 
-**history/countries/YSS.txt** 新增 `recruit_character = YSS_dihua`
-
-## 2. 八云红
-
-| 位置 | 原版 | 改后 |
+| 角色 | 顾问槽位 | 将领槽位 |
 |---|---|---|
-| `YSS_3_6` 元帅 | skill 2，无特质，后勤 5 | skill 4，9 条特质，后勤 6 |
-| `YSS_1_44` 内阁 | political_advisor | theorist，`YSS_atom_heart`“原子之心”，cost 300 |
+| 荻花 `YSS_dihua` | 政治顾问「革命近卫军司令」，150 政治点 | 元帅，5 级，进攻 2 / 防御 6 / 计划 4 / 后勤 3 |
+| 白珩 `YSS_baiheng` | 政治顾问「云上流亡者」，150 政治点 | 军长，3 级，进攻 3 / 防御 2 / 计划 3 / 后勤 2 |
 
-`YSS_3_6` 特质：career_officer 职业军官、trait_cautious 谨慎、armor_officer 装甲军官、harsh_leader 严厉的指挥官、aggressive_assaulter 凌厉的攻击者、infantry_leader 步兵指挥官、panzer_leader 装甲指挥官、trait_mountaineer 山地专家、adaptable 强于适应
+- 荻花元帅特质：步兵指挥官、巷战专家、严厉的指挥官、顽强的防御者、战争英雄
+- 白珩无将领特质（效果全在顾问特质上）
 
-**history/countries/YSS.txt** 新增 `recruit_character = YSS_1_44`
+### 修改
 
-## 3. 茗旧
+| 角色 | 改动 |
+|---|---|
+| 八云红 `YSS_3_6`（元帅） | 4 级；进攻 6 / 防御 6 / 计划 6 / 后勤 6；特质 6 条：职业军官、谨慎、严厉的指挥官、步兵指挥官、装甲指挥官、强于适应 |
+| 八云红 `YSS_1_44`（政治顾问 → 理论学家） | 「原子之心」，300 政治点 |
+| 茗旧 `YSS_1_47`（政治顾问 → 理论学家） | 300 政治点；特质：总司令（进攻向）+ 人海突击专家 |
+| 茗旧 `YSS_6_11`（军长 → 元帅） | 7 条特质：天才的战略家、职业军官、凌厉的攻击者、步兵指挥官、装甲指挥官、山地专家、强于适应 |
+| 陵 `YSS_1_45`（政治顾问） | 特质改为「后勤工程师」，150 政治点 |
+| 陵 `YSS_7_1`（元帅） | 1 级 1/1/1/1；特质仅「后勤奇才」 |
 
-| 位置 | 原版 | 改后 |
+---
+
+## 2. `common/country_leader/YSS_traits_extra.txt`
+
+在 `leader_traits = { }` 内新增 5 个特质：
+
+| 键 | 中文名 | 效果 |
 |---|---|---|
-| `YSS_6_11` | corps_commander，无特质 | field_marshal，7 条特质 |
-| `YSS_1_47` 内阁 | political_advisor，`SWI_commander_in_chief` | theorist，`YSS_mingjiu_commander_in_chief` + `mass_assault_expert`，cost 150 → 300 |
+| `YSS_mingjiu_commander_in_chief` | 总司令 | 陆军经验 +40%、**陆军进攻 +15%**、指挥点 +0.07、指挥上限 +30 |
+| `YSS_dihua_guard_commander` | 革命近卫军司令 | 反间谍 +0.5、核心领土防御 +15%、社会主义支持 +0.05、意识形态变化抵制 +10% |
+| `YSS_atom_heart` | 原子之心 | 人海突击学说精通度 +30%、陆军经验 +60% |
+| `YSS_ling_architect` | 后勤工程师 | 建筑/铁路/补给中心/海军基地建造速度各 +10%、补给消耗 -10% |
+| `YSS_baiheng_air_chief` | 云上流亡者 | 空军机动 +20%、最大航速 +15%、对空攻击 +15%、制空效率 +25%、王牌生成 +25%、被击落时联队经验损失 -20% |
 
-`YSS_6_11` 特质：brilliant_strategist 天才战略家、career_officer 职业军官、aggressive_assaulter 凌厉的攻击者、infantry_leader 步兵指挥官、panzer_leader 装甲指挥官、trait_mountaineer 山地专家、adaptable 强于适应
+---
 
-原版 `SWI_commander_in_chief` 是“陆军防御 +15%”，改为自建特质后是“陆军进攻 +15%”，其余数值保留（陆军经验 +0.40、指挥点 +0.07、指挥上限 +30）。
+## 3. `history/countries/YSS.txt`
 
-## 4. 陵
-
-| 位置 | 原版 | 改后 |
-|---|---|---|
-| `YSS_7_1` | corps_commander | field_marshal，特质 `logistics_wizard`“后勤奇才” |
-| `YSS_1_45` 内阁 | `JAP_modernist_architect`“现代主义建筑师” | `YSS_ling_architect`“后勤工程师” |
-
-`YSS_ling_architect` 效果：建造速度 +10%、铁路建设 +10%、补给中心建设 +10%、海军基地建设 +10%、补给消耗 -10%。
-
-注意：陵的旧档不会变。他在旧存档里已经是军长，等级与特质存在存档数据中。
-
-## 5. 自定义特质（common/country_leader/YSS_traits_extra.txt）
-
-| 特质键 | 显示名 | 效果 |
-|---|---|---|
-| `YSS_mingjiu_commander_in_chief` | 总司令 | 陆军经验 +0.40、陆军进攻 +15%、指挥点 +0.07、指挥上限 +30 |
-| `YSS_dihua_guard_commander` | 革命近卫军司令 | 反间谍 +0.5、核心领土防御 +15%、共产主义支持 +0.05、意识形态抵制 +0.10 |
-| `YSS_atom_heart` | 原子之心 | 人海突击学说精通 +30%、陆军经验 +0.60 |
-| `YSS_ling_architect` | 后勤工程师 | 建造 +10%、铁路/补给中心/港口各 +10%、补给消耗 -10% |
-
-## 6. 本地化（localisation/simp_chinese/YSS2_l_simp_chinese.yml）
-
-文件末尾追加 8 行：4 个特质名 + 4 段描述（§L…§! 格式），保持 UTF-8 BOM。
-
-## 提交信息参考
+新增三条招募：
 
 ```
-YSS: add 荻花, rework 八云红/茗旧/陵 as marshals and advisors
-
-- 新增元帅与内阁顾问「荻花」，含立绘
-- 八云红、茗旧转为元帅；八云红/茗旧转任理论学家
-- 陵转为元帅（后勤奇才），内阁改为「后勤工程师」
-- 新增 4 个自定义领袖特质与本地化
+recruit_character = YSS_1_44
+recruit_character = YSS_dihua
+recruit_character = YSS_baiheng
 ```
+
+---
+
+## 4. `events/YSS_guard_events.txt`（新增文件）
+
+事件 **YSS.8001「联盟的命运」**：`tag = YSS`、日期晚于 `1936.2.1` 触发一次（开局约一个月）。
+
+**选项一「毫无疑问，是的！让她们上吧！」**
+- 政治点数 -25
+- 解锁科技 `tech_support`（联盟开局没有支援装备科技，否则后续装备会被引擎丢弃）
+- 入库 **135 件苏联产支援装备**（`producer = SOV`，按外购逻辑，不需要科技；3 个师各 45）
+- 在首都亚的斯亚贝巴创建 3 支「首都近卫军」师：9 个步兵营 + 火炮支援连 / 工兵连 / 宪兵队 + 团级支援重武器连，装备与人力满编，训练度 0.1（训练有素）
+- 兵牌 `template_counter = 104`（与其他部队区分）
+
+**选项二「我们的首都同样也需要保卫。」**
+- 稳定度 +5%、政治点数 +25
+
+**选项三「让她们分一部分武器过来就好了。」**
+- 1500 支初级步兵装备、30 门战间期火炮、100 件苏联产支援装备
+
+---
+
+## 5. `localisation/simp_chinese/YSS2_l_simp_chinese.yml`
+
+追加条目（UTF-8 BOM 保持不变）：
+
+- 事件：`YSS.8001.t` / `.d` / `.a` / `.a.tt` / `.b` / `.c`
+- 特质与职位：`YSS_mingjiu_commander_in_chief`、`YSS_dihua_guard_commander`、`YSS_atom_heart`、`YSS_ling_architect`、`YSS_baiheng_air_chief`（各含 `_desc`）
+
+---
+
+## 6. `gfx/leaders/YSS/`
+
+| 文件 | 规格 | 用途 |
+|---|---|---|
+| `125.png` | 156×210 | 荻花 大立绘（淡红渐变底，与 mod 其他将领一致） |
+| `126.png` | 65×67 | 荻花 小头像（倾斜卡片样式，复用 mod 原有 alpha 蒙版） |
+| `127.png` | 65×67 | 白珩 小头像 |
+| `128.png` | 156×210 | 白珩 大立绘 |
+
+---
+
+## 注意
+
+- **必须新开档**：将领的军衔与特质写在存档里，旧档不会变化；事件也只在开局触发一次。
+- 若只想用事件、不要将领改动，可以只覆盖 `events/` 与 `localisation/` 两个目录。
+- 校验：`hoi4skill validate . --game-root <HOI4 安装目录> --auto-mod-paths --launcher-dir <启动器 mod 目录> --changed-only`

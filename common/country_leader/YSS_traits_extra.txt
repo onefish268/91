@@ -43,4 +43,15 @@ leader_traits = {
 		production_speed_naval_base_factor = 0.10
 		supply_consumption_factor = -0.10
 	}
+	#空军部长——白珩
+	YSS_baiheng_air_chief = {
+		random = no
+		sprite = 2
+		air_agility_factor = 0.20
+		air_maximum_speed_factor = 0.15
+		air_attack_factor = 0.15
+		air_superiority_efficiency = 0.25
+		air_ace_generation_chance_factor = 0.25
+		air_wing_xp_loss_when_killed_factor = -0.20
+	}
 }
