@@ -1,0 +1,257 @@
+capital = 271
+
+set_oob = "YSS_1936_land"
+set_naval_oob = "YSS_1936_naval"
+
+set_stability = 0.45
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	the_red_army_tech = 1
+}
+set_convoys = 306
+set_variable = { another_country_leader_group = 66 }
+
+add_ideas = {
+	YSS_1
+	YSS_5
+	YSS_6
+	YSS_10
+}
+
+#原民族精神（联盟红军/联盟海军/联盟空军/经济统筹委员会/不纯洁的党组织）已转换为动态修正（变量驱动）
+
+#联盟红军
+set_variable = { YSS_red_army_army_armor_speed_factor = -0.1 }
+set_variable = { YSS_red_army_army_artillery_attack_factor = 0.05 }
+set_variable = { YSS_red_army_army_attack_against_major_factor = 0.03 }
+set_variable = { YSS_red_army_army_attack_against_minor_factor = -0.05 }
+set_variable = { YSS_red_army_army_infantry_attack_factor = -0.05 }
+set_variable = { YSS_red_army_heat_attrition_factor = -0.15 }
+set_variable = { YSS_red_army_mechanized_attack_factor = -0.25 }
+set_variable = { YSS_red_army_motorized_attack_factor = -0.25 }
+set_variable = { YSS_red_army_armor_attack_factor = -0.2 }
+set_variable = { YSS_red_army_armor_defence_factor = -0.2 }
+set_variable = { YSS_red_army_supply_consumption_factor = 0.2 }
+set_variable = { YSS_red_army_army_attack_speed_factor = -0.1 }
+set_variable = { YSS_red_army_army_defence_factor = 0.1 }
+set_variable = { YSS_red_army_army_strength_factor = 0.15 }
+set_variable = { YSS_red_army_max_army_group_size = 5 }
+set_variable = { YSS_red_army_army_attack_factor = 0 }
+set_variable = { YSS_red_army_breakthrough_factor = 0 }
+add_dynamic_modifier = { modifier = YSS_2 }
+
+#联盟海军
+set_variable = { YSS_navy_convoy_raiding_efficiency_factor = -0.1 }
+set_variable = { YSS_navy_fighter_sortie_efficiency = -0.15 }
+set_variable = { YSS_navy_naval_critical_score_chance_factor = -0.05 }
+set_variable = { YSS_navy_naval_damage_factor = 0.05 }
+set_variable = { YSS_navy_naval_hit_chance = -0.1 }
+set_variable = { YSS_navy_navy_capital_ship_attack_factor = 0.05 }
+set_variable = { YSS_navy_navy_screen_attack_factor = 0.05 }
+set_variable = { YSS_navy_navy_submarine_attack_factor = -0.15 }
+add_dynamic_modifier = { modifier = YSS_3 }
+
+#联盟空军
+set_variable = { YSS_airforce_ground_attack_factor = -0.1 }
+set_variable = { YSS_airforce_static_anti_air_damage_factor = -0.25 }
+set_variable = { YSS_airforce_air_accidents_factor = 0.35 }
+set_variable = { YSS_airforce_air_attack_factor = -0.15 }
+set_variable = { YSS_airforce_air_defence_factor = -0.15 }
+add_dynamic_modifier = { modifier = YSS_4 }
+
+#经济统筹委员会
+set_variable = { YSS_economy_committee_army_fuel_consumption_factor = -0.05 }
+set_variable = { YSS_economy_committee_civilian_factory_use = -1 }
+set_variable = { YSS_economy_committee_consumer_goods_factor = 0.2 }
+set_variable = { YSS_economy_committee_energy_gain_factor = 0.05 }
+set_variable = { YSS_economy_committee_industrial_capacity_factory = 0.05 }
+set_variable = { YSS_economy_committee_industry_repair_factor = 0.05 }
+set_variable = { YSS_economy_committee_line_change_production_efficiency_factor = -0.1 }
+set_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = -0.1 }
+set_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = -0.1 }
+add_dynamic_modifier = { modifier = YSS_8 }
+
+#不纯洁的党组织
+set_variable = { YSS_impure_party_party_popularity_stability_factor = -0.25 }
+set_variable = { YSS_impure_party_political_power_factor = -0.25 }
+set_variable = { YSS_impure_party_stability_weekly = -0.01 }
+set_variable = { YSS_impure_party_drift_defence_factor = -0.25 }
+add_dynamic_modifier = { modifier = YSS_9 }
+
+#中央政治局
+set_variable = { YSS_command_power_gain_mult = -0.15 }
+set_variable = { YSS_defensive_war_stability_factor = 0.15 }
+set_variable = { YSS_forced_surrender_limit = 0.05 }
+set_variable = { YSS_offensive_war_stability_factor = 0.1 }
+set_variable = { YSS_political_power_cost = 0.55 }
+set_variable = { YSS_production_speed_buildings_factor = 0.05 }
+set_variable = { YSS_stability_weekly = 0.01 }
+set_variable = { YSS_drift_defence_factor = 0.15 }
+add_dynamic_modifier = { modifier = YSS_7 }
+
+set_variable = { YSS_volunteer_to_other_country_send_volunteer_size = 0 }
+add_dynamic_modifier = { modifier = YSS_volunteer_to_other_country }
+
+#宣传鼓动部
+set_variable = {
+	YSS_pub_slot_A = 0
+}
+set_variable = {
+	YSS_pub_slot_B = -1
+}
+set_variable = {
+	YSS_pub_slot_C = -1
+}
+
+log = "[GetDateText]: [Root.GetName]: YSS国家精神转动态修正初始化完成"
+log = "[GetDateText]: [Root.GetName]: 动态修正变量检查 陆军兵力=[?YSS_red_army_army_strength_factor] 民用工厂占用=[?YSS_economy_committee_civilian_factory_use] 政治点数=[?YSS_impure_party_political_power_factor]"
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+
+	democratic = 5
+	fascism = 0
+	communism = 80
+	neutrality = 15
+
+} 
+
+create_faction_from_template = faction_template_Africa_union
+
+recruit_character = YSS_mlhm
+recruit_character = YSS_1_1
+recruit_character = YSS_1_2
+recruit_character = YSS_1_3
+recruit_character = YSS_1_4
+recruit_character = YSS_1_5
+recruit_character = YSS_1_6
+recruit_character = YSS_1_7
+recruit_character = YSS_1_8
+recruit_character = YSS_1_9
+recruit_character = YSS_1_10
+recruit_character = YSS_1_11
+recruit_character = YSS_1_12
+recruit_character = YSS_1_13
+recruit_character = YSS_1_14
+recruit_character = YSS_1_15
+recruit_character = YSS_2_1
+recruit_character = YSS_2_2
+recruit_character = YSS_2_3
+recruit_character = YSS_3_1
+recruit_character = YSS_3_2
+recruit_character = YSS_3_3
+recruit_character = YSS_3_4
+recruit_character = YSS_4_2
+recruit_character = YSS_4_3
+recruit_character = YSS_4_4
+recruit_character = YSS_5_1
+recruit_character = YSS_5_2
+recruit_character = YSS_5_3
+recruit_character = YSS_6_1
+recruit_character = YSS_6_2
+recruit_character = YSS_6_3
+recruit_character = YSS_6_4
+recruit_character = YSS_6_5
+recruit_character = YSS_6_6
+recruit_character = YSS_6_7
+recruit_character = YSS_6_8
+recruit_character = YSS_8_1
+recruit_character = YSS_8_2
+recruit_character = YSS_8_3
+recruit_character = YSS_7_1
+recruit_character = YSS_7_2
+recruit_character = YSS_7_3
+recruit_character = YSS_7_4
+recruit_character = YSS_7_5
+recruit_character = YSS_7_6
+recruit_character = YSS_7_7
+recruit_character = YSS_7_8
+recruit_character = YSS_7_9
+recruit_character = YSS_7_10
+recruit_character = YSS_7_11
+recruit_character = YSS_7_habu
+recruit_character = YSS_3_6
+recruit_character = YSS_6_9
+recruit_character = YSS_6_10
+recruit_character = YSS_1_16
+recruit_character = YSS_1_17
+recruit_character = YSS_1_18
+recruit_character = YSS_1_19
+recruit_character = YSS_1_20
+recruit_character = YSS_1_21
+recruit_character = YSS_1_22
+recruit_character = YSS_1_23
+recruit_character = YSS_1_24
+recruit_character = YSS_1_25
+recruit_character = YSS_1_26
+recruit_character = YSS_1_27
+recruit_character = YSS_1_28
+recruit_character = YSS_1_29
+recruit_character = YSS_1_30
+recruit_character = YSS_1_31
+recruit_character = YSS_1_32
+recruit_character = YSS_1_33
+recruit_character = YSS_1_34
+recruit_character = YSS_1_35
+recruit_character = YSS_1_36
+recruit_character = YSS_1_37
+recruit_character = YSS_1_38
+recruit_character = YSS_1_39
+recruit_character = YSS_1_40
+recruit_character = YSS_1_41
+recruit_character = YSS_1_42
+recruit_character = YSS_1_43
+recruit_character = YSS_1_44
+recruit_character = YSS_1_45
+recruit_character = YSS_1_46
+recruit_character = YSS_1_47
+recruit_character = YSS_6_11
+recruit_character = YSS_dihua
+recruit_character = YSS_Sainuxi
+recruit_character = YSS_Yierma
+
+YSS_1_28 = {#凤凰院凶真
+	set_character_flag = YSS_big_wash
+}
+YSS_1_17 = {#水之式
+	set_character_flag = YSS_big_wash
+}
+YSS_1_21 = {#锌镉熔融
+	set_character_flag = YSS_big_wash
+}
+YSS_1_22 = {#死翼千歌
+	set_character_flag = YSS_big_wash
+}
+YSS_1_13 = {#优木杏树
+	set_character_flag = YSS_big_wash
+}
+YSS_1_18 = {#毁灭隆音
+	set_character_flag = YSS_big_wash
+}
+YSS_1_4 = {#松浦果南
+	set_character_flag = YSS_big_wash
+}
+YSS_1_9 = {#鹿角圣良
+	set_character_flag = YSS_big_wash
+}
+YSS_1_12 = {#统堂英玲奈
+	set_character_flag = YSS_big_wash
+}
+YSS_Sainuxi = {#塞努希一世
+	set_character_flag = YSS_big_wash
+}
+YSS_Yierma = {#伊尔玛
+	set_character_flag = YSS_big_wash
+}
+
+country_event = { id = YSS.2000 days = 24 }

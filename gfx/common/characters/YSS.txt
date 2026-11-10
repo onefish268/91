@@ -1,0 +1,2088 @@
+characters = {
+	#领导人
+	YSS_mlhm = {
+		name = "门柯思图"
+		portraits = {
+			civilian = {
+				large = GFX_YSS_mlhm
+			}
+		}
+		country_leader = {
+			desc = mlym_DESC
+			ideology = marxism
+			traits = { 
+		    communist_theorist	
+			AFG_general_secretary
+			PHI_nation_builder
+	        }
+			id= -1
+		}
+	}
+	#顾问
+	YSS_1_1 = {
+		name = "小原鞠莉"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/1.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				COG_Kangnaixin_basic
+			}
+			idea_token = YSS_1_1
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_2 = {
+		name = "黑泽露比"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/2.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				NOR_conciliatory_socialist
+			}
+			idea_token = YSS_1_2
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_3 = {
+		name = "樱内梨子"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/3.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SWE_respectful_occupier
+			}
+			idea_token = YSS_1_3
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_4 = {
+		name = "松浦果南"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/4.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				regional_traditionalist_leader
+			}
+			idea_token = YSS_1_4
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_5 = {
+		name = "黑泽黛雅"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/5.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				seasoned_administrator
+			}
+			idea_token = YSS_1_5
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_6 = {
+		name = "渡边曜"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/6.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				la_pasionaria
+			}
+			idea_token = YSS_1_6
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_7 = {
+		name = "国木田花丸"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/7.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				polish_peasant_champion
+			}
+			idea_token = YSS_1_7
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_8 = {
+		name = "津岛善子"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/8.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				socialist_novelist
+			}
+			idea_token = YSS_1_8
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_9 = {
+		name = "鹿角圣良"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/9.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				conservative_communist
+			}
+			idea_token = YSS_1_9
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_10 = {
+		name = "鹿角理亚"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/10.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				head_of_the_nkvd_yagoda_no_paranoia
+			}
+			idea_token = YSS_1_10
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_11 = {
+		name = "绮罗翼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/11.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				popular_figurehead
+			}
+			idea_token = YSS_1_11
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_12 = {
+		name = "统堂英玲奈"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/12.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				unscrupulous_orchestrator_no_lar
+			}
+			idea_token = YSS_1_12
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_13 = {
+		name = "优木杏树"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/13.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				TAOG_collaborationist
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_1_13
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_14 = {
+		name = "夜莱"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/14.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				compassionate_gentleman
+			}
+			idea_token = YSS_1_14
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_15 = {
+		name = "夜刃"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/15.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SIA_ananda_administrator_1
+			}
+			idea_token = YSS_1_15
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_16 = {
+		name = "灰者"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/84.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				devoted_communist
+			}
+			idea_token = YSS_1_16
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_17 = {
+		name = "水之式"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/85.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				HUN_the_old_warden
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+			
+			idea_token = YSS_1_17
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_18 = {
+		name = "毁灭隆音"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/86.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				headstrong
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_1_18
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_19 = {
+		name = "露露缇雅·泽金"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/87.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				GER_stern_communist
+			}
+			idea_token = YSS_1_19
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_20 = {
+		name = "莉萝·艾"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/88.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				indomitable_perseverance
+			}
+			idea_token = YSS_1_20
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_21 = {
+		name = "锌镉熔融"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/89.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SND_unreliable_opportunist
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_1_21
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_22 = {
+		name = "死翼千歌"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/90.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				silent_mule
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_1_22
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_23 = {
+		name = "西利欧"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/91.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				NOR_supplies_commisioner
+			}
+			idea_token = YSS_1_23
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_24 = {
+		name = "空"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/92.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				BEL_man_with_a_plan
+			}
+			idea_token = YSS_1_24
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_25 = {
+		name = "白"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/93.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JAP_financial_genius
+			}
+			idea_token = YSS_1_25
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_26 = {
+		name = "史蒂芬妮·多拉"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/94.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				silent_workhorse
+			}
+			idea_token = YSS_1_26
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_27 = {
+		name = "牧濑红莉栖"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/95.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				NOR_callous_engineer
+			}
+			idea_token = YSS_1_27
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_28 = {
+		name = "凤凰院凶真"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/96.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				rebellious_educator
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+			
+			idea_token = YSS_1_28
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_29 = {
+		name = "吉普莉尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/97.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				head_of_the_nkvd_beriya_no_paranoia
+			}
+			idea_token = YSS_1_29
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_30 = {
+		name = "帆楼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/98.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				RAJ_GOE_cultural_icon
+			}
+			idea_token = YSS_1_30
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_31 = {
+		name = "巫女"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/99.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				PRC_charming_revoluionary
+			}
+			idea_token = YSS_1_31
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_32 = {
+		name = "初濑伊纲"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/100.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				JUNO_popular_among_the_people
+			}
+			idea_token = YSS_1_32
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_33 = {
+		name = "椎名真由理"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/101.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				AST_a_sound_voice_trait
+			}
+			idea_token = YSS_1_33
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_34 = {
+		name = "产屋敷耀哉"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/104.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SWE_solidified_mandate_upgraded
+			}
+			idea_token = YSS_1_34
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_35 = {
+		name = "灶门炭治郎"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/105.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				compassionate_gentleman
+			}
+			idea_token = YSS_1_35
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_36 = {
+		name = "蝴蝶忍"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/106.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				appeasing_technocrat
+			}
+			idea_token = YSS_1_36
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_37 = {
+		name = "甘露寺蜜璃"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/107.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				la_pasionaria
+			}
+			idea_token = YSS_1_37
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_38 = {
+		name = "富冈义勇"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/108.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				silent_workhorse
+			}
+			idea_token = YSS_1_38
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_39 = {
+		name = "栗花落香奈乎"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/109.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				AST_a_sound_voice_trait
+			}
+			idea_token = YSS_1_39
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_40 = {
+		name = "阿尔敏·阿诺德"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/110.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SIA_ananda_industry_3
+			}
+			idea_token = YSS_1_40
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_41 = {
+		name = "韩吉·佐耶"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/111.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				BRA_modernist_architect
+			}
+			idea_token = YSS_1_41
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_42 = {
+		name = "让·基尔希斯坦"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/112.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SIA_ananda_administrator_1
+			}
+			idea_token = YSS_1_42
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_43 = {
+		name = "希斯特利亚·雷斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/113.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				SWE_respectful_occupier
+			}
+			idea_token = YSS_1_43
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_44 = {
+		name = "八云红"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/114.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				YSS_atom_heart
+			}
+			idea_token = YSS_1_44
+			slot = theorist
+			cost = 300
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_45 = {
+		name = "陵"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/116.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				YSS_ling_architect #后勤工程师
+			}
+			idea_token = YSS_1_45
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_46 = {
+		name = "秋"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/120.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				nuclear_enthusiast
+				jiasu_trait
+			}
+			idea_token = YSS_1_46
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_1_47 = {
+		name = "茗旧"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/121.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				YSS_mingjiu_commander_in_chief
+				mass_assault_expert
+			}
+			idea_token = YSS_1_47
+			slot = theorist
+			cost = 300
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	#理论家
+	YSS_2_1 = {
+		name = "伊米露爱因"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/16.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				grand_battle_plan_expert
+			}
+			idea_token = YSS_2_1
+			slot = theorist
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_2_2 = {
+		name = "米娅·泰勒"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/17.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				well_renowned_military_theorist
+			}
+			idea_token = YSS_2_2
+			slot = theorist
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_2_3 = {
+		name = "埃尔文·史密斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/18.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				well_renowned_military_theorist
+			}
+			idea_token = YSS_2_3
+			slot = theorist
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	#陆军部长
+	YSS_3_1 = {
+		name = "战争姬"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/19.png"
+				large = "gfx/leaders/YSS/52.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_offensive_2
+			}
+			idea_token = YSS_3_1
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist #天才的战略家
+				offensive_doctrine #进攻大师
+				armor_officer #装甲军官
+				panzer_leader #装甲专家
+				trickster #奇袭专家
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	YSS_3_2 = {
+		name = "绫叁"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/20.png"
+				large = "gfx/leaders/YSS/53.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_regrouping_3
+			}
+			idea_token = YSS_3_2
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				trickster #奇袭专家
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	YSS_3_3 = {
+		name = "克拉米·杰尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/21.png"
+				large = "gfx/leaders/YSS/54.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_offensive_3
+			}
+			idea_token = YSS_3_3
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_3_4 = {
+		name = "宫下爱"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/22.png"
+				large = "gfx/leaders/YSS/55.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_morale_3
+			}
+			idea_token = YSS_3_4
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_3_6 = {
+		name = "八云红"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/114.png"
+				large = "gfx/leaders/YSS/115.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_reform_2
+			}
+			idea_token = YSS_3_6
+			slot = army_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer #职业军官
+				trait_cautious #谨慎
+				armor_officer #装甲军官
+				harsh_leader #严厉的指挥官
+				aggressive_assaulter #凌厉的攻击者
+				infantry_leader #步兵指挥官
+				panzer_leader #装甲指挥官
+				trait_mountaineer #山地专家
+				adaptable #强于适应
+			}
+			skill = 4
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	#空军部长
+	YSS_4_1 = {
+		name = "阿兹莉尔"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/23.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_ground_support_2
+			}
+			idea_token = YSS_4_1
+			slot = air_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_4_2 = {
+		name = "三船栞子"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/24.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_all_weather_2
+			}
+			idea_token = YSS_4_2
+			slot = air_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_4_3 = {
+		name = "炼狱杏寿郎"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/25.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_all_weather_1
+			}
+			idea_token = YSS_4_3
+			slot = air_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_4_4 = {
+		name = "时透无一郎"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/26.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				air_chief_reform_1
+			}
+			idea_token = YSS_4_4
+			slot = air_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	#海军部长
+	YSS_5_1 = {
+		name = "川"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/27.png"
+				large = "gfx/leaders/YSS/56.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_chief_reform_2
+			}
+			idea_token = YSS_5_1
+			slot = navy_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
+	YSS_5_2 = {
+		name = "澪琉"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/28.png"
+				large = "gfx/leaders/YSS/57.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_fleet_logistics_1
+			}
+			idea_token = YSS_5_2
+			slot = navy_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+	}
+	YSS_5_3 = {
+		name = "樱坂雫"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/102.png"
+				large = "gfx/leaders/YSS/103.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			idea_token = YSS_5_3
+			slot = navy_chief
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+	}
+	#统帅部（总司令）	
+	YSS_6_1 = {
+		name = "莱拉·罗蕾莱"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/29.png"
+				large = "gfx/leaders/YSS/58.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_capital_ship_2
+			}
+			idea_token = YSS_6_1
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	YSS_6_2 = {
+		name = "布拉姆·斯托卡"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/30.png"
+				large = "gfx/leaders/YSS/59.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_concealment_1
+			}
+			idea_token = YSS_6_2
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	YSS_6_3 = {
+		name = "朗基努斯"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/31.png"
+				large = "gfx/leaders/YSS/60.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_infantry_2
+			}
+			idea_token = YSS_6_3
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_6_4 = {
+		name = "优木雪菜"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/32.png"
+				large = "gfx/leaders/YSS/61.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_organizational_2
+			}
+			idea_token = YSS_6_4
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	YSS_6_5 = {
+		name = "上原步梦"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/33.png"
+				large = "gfx/leaders/YSS/62.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_logistics_1
+			}
+			idea_token = YSS_6_5
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	YSS_6_6 = {
+		name = "悲鸣屿行冥"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/34.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_chief_organizational_2
+			}
+			idea_token = YSS_6_6
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	YSS_6_7 = {
+		name = "利威尔·阿克曼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/35.png"
+				large = "gfx/leaders/YSS/63.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_regrouping_3
+			}
+			idea_token = YSS_6_7
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 8
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_6_8 = {
+		name = "三笠·阿克曼"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/36.png"
+				large = "gfx/leaders/YSS/64.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				navy_amphibious_assault_2
+			}
+			idea_token = YSS_6_8
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_6_9 = {
+		name = "莱纳·布朗"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/83.png"
+				large = "gfx/leaders/YSS/81.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_logistics_1
+			}
+			idea_token = YSS_6_9
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	YSS_6_10 = {
+		name = "兽耳酱"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/118.png"
+				large = "gfx/leaders/YSS/119.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_armored_3
+			}
+			idea_token = YSS_6_10
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				trait_reckless
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 1
+		}
+	}
+	YSS_6_11 = {
+		name = "茗旧"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/121.png"
+				large = "gfx/leaders/YSS/122.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				army_artillery_3
+			}
+			idea_token = YSS_6_11
+			slot = high_command
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist #天才战略家
+				career_officer #职业军官
+				aggressive_assaulter #凌厉的攻击者
+				infantry_leader #步兵指挥官
+				panzer_leader #装甲指挥官
+				trait_mountaineer #山地专家
+				adaptable #强于适应
+			}
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 1
+		}
+	}
+	#元帅 / 革命近卫军司令
+	YSS_dihua = {
+		name = "荻花"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/126.png"
+				large = "gfx/leaders/YSS/125.png"
+			}
+		}
+		advisor = {
+			traits = {
+				YSS_dihua_guard_commander
+			}
+			idea_token = YSS_dihua_guard_commander
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				organizer #组织专家
+				infantry_leader #步兵指挥官
+				urban_assault_specialist #巷战专家
+				harsh_leader #严军统帅
+				career_officer #职业军官
+				inflexible_strategist #顽强的防御者
+				war_hero #战争英雄
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+#陆军将军
+    YSS_7_1 = {
+		name = "陵"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/116.png"
+				large = "gfx/leaders/YSS/117.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				logistics_wizard #后勤奇才
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_2 = {
+		name = "伊芙・梅里斯丹"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/69.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_3 = {
+		name = "崇音"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/70.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_4 = {
+		name = "拉斯特"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/71.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_5 = {
+		name = "冷砂"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/72.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_6 = {
+		name = "冥焱·雪奈"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/73.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_7 = {
+		name = "周茹冰"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/74.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_8 = {
+		name = "灰星"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/75.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_9 = {
+		name = "奥里西斯"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/76.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_10 = {
+		name = "凛音"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/77.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_11 = {
+		name = "艾莉娅"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/78.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	YSS_7_habu = {
+		name = "粉红"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/79.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+#海军将官
+    YSS_8_1 = {
+		name = "丽娅丝"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/65.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_2 = {
+		name = "克莉·怀特洛克"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/66.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_3 = {
+		name = "伊丽莎白·阿夫顿"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/67.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_4 = {
+		name = "小玉"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/123.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	YSS_8_5 = {
+		name = "红兔"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSS/124.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+
+	YSS_Sainuxi = {
+		name = "塞努希一世"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/YSS_Sainuxi.png"
+			}
+		}
+		advisor = { 	
+			traits = {
+				YSS_the_past_ruler
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_Sainuxi
+			slot = political_advisor
+			cost = 50
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	YSS_Yierma = {
+		name = "伊尔玛"
+		portraits = {
+			civilian = {
+					small = "gfx/leaders/YSS/YSS_Yierma.png"
+			}
+		}
+		country_leader = {
+			
+			ideology = liberalism
+			traits = { 
+				YSS_the_useless_democratic_speeker
+	        }
+			id= -1
+		}
+
+		advisor = { 	
+			traits = {
+				YSS_the_useless_democratic_speeker
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = YSS_advisor_locked_because_anti_revolution
+					always = no
+				}
+			}
+
+			idea_token = YSS_Sainuxi
+			slot = political_advisor
+			cost = 50
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	YSS_cecilia = {
+		name = "采齐利娅·林·阿托纳"
+		desc = YSS_cecilia_desc
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/cecilia_small.png"
+				large = "gfx/leaders/YSS/cecilia_large.png"
+			}
+		}
+		advisor = {
+			traits = {
+				YSS_shouren_liaison
+			}
+			idea_token = YSS_cecilia
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	#红色魔女
+	YSS_bri = {
+		name = "布里·林·安尔高"
+		desc = YSS_bri_desc
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YSS/bri_small.png"
+				large = "gfx/leaders/YSS/bri_large.png"
+			}
+		}
+		advisor = {
+			traits = {
+				PRC_Red_Witch
+			}
+			idea_token = YSS_bri
+			slot = political_advisor
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

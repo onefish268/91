@@ -1,0 +1,46 @@
+# 由 DeepSeek 写成
+
+leader_traits = {
+	#兽人联络者
+	YSS_shouren_liaison = {
+		random = no
+		weekly_manpower = 500
+		production_efficiency_cap_factor = 0.05
+		stability_factor = -0.05
+	}
+	#革命近卫军司令——荻花内阁
+	YSS_dihua_guard_commander = {
+		random = no
+		sprite = 9
+		intelligence_agency_defense = 0.5
+		army_core_defence_factor = 0.15
+		communism_drift = 0.05
+		drift_defence_factor = 0.10
+	}
+	#原子之心——八云红理论学家
+	YSS_atom_heart = {
+		random = no
+		sprite = 9
+		mass_assault_mastery_gain_factor = 0.30
+		experience_gain_army = 0.60
+	}
+	#总司令（进攻向）——茗旧内阁：原「陆军防御+15%」改为「陆军进攻+15%」
+	YSS_mingjiu_commander_in_chief = {
+		random = no
+		sprite = 9
+		experience_gain_army = 0.40
+		army_attack_factor = 0.15
+		command_power_gain = 0.07
+		command_cap_increase = 30
+	}
+	#现代主义建筑师——陵内阁
+	YSS_ling_architect = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		production_speed_supply_node_factor = 0.10
+		production_speed_naval_base_factor = 0.10
+		supply_consumption_factor = -0.10
+	}
+}
