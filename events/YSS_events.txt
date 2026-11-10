@@ -1834,6 +1834,9 @@ country_event = {
 		NOT = {
 			has_country_flag = YSS.80_flag
 		}
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
 		check_variable = {
             var = YSS_liedu_mind_value
             value = 60
@@ -1950,10 +1953,13 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = {
-						var = YSS_liedu_mind_value
-						value = 60
-						compare = less_than
+					OR = {
+						check_variable = {
+							var = YSS_liedu_mind_value
+							value = 60
+							compare = less_than
+						}
+						has_country_flag = YSS_daqingxi_jiaoting
 					}
 				}
 				YSS = {
@@ -1981,6 +1987,9 @@ country_event = {
 	hidden = yes
 	trigger = {
 		has_completed_focus = YSS_focus_24
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
 		check_variable = {
             var = YSS_jindu_power_value
             value = 100
@@ -2064,6 +2073,12 @@ country_event = {
             }
 			remove_country_leader_trait = communist_theorist 
 			remove_country_leader_trait = PHI_nation_builder 
+			add_to_variable = { YSS_liedu_mind_value = -100 }
+			clamp_variable = {
+				var = YSS_liedu_mind_value
+				min = 0
+				max = 100
+			}
 		}
 		custom_effect_tooltip = YSS_tootip_34
 		ai_chance = {
@@ -2078,6 +2093,9 @@ country_event = {
 	hidden = yes
 	trigger = {
 		has_completed_focus = YSS_focus_24
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
 		check_variable = {
             var = YSS_liedu_mind_value
             value = 0
@@ -2117,6 +2135,12 @@ country_event = {
             }
 			remove_country_leader_trait = communist_theorist 
 			remove_country_leader_trait = PHI_nation_builder 
+			add_to_variable = { YSS_liedu_mind_value = -100 }
+			clamp_variable = {
+				var = YSS_liedu_mind_value
+				min = 0
+				max = 100
+			}
 	    }
 		ai_chance = {
 			base = 50
@@ -2130,6 +2154,9 @@ country_event = {
 	hidden = yes
 	trigger = {
 		has_completed_focus = YSS_focus_24
+		NOT = {
+			has_country_flag = YSS_daqingxi_jiaoting
+		}
 		check_variable = {
             var = YSS_liedu_mind_value
             value = 100
@@ -2169,6 +2196,12 @@ country_event = {
             }
 			remove_country_leader_trait = communist_theorist 
 			remove_country_leader_trait = PHI_nation_builder 
+			add_to_variable = { YSS_liedu_mind_value = -100 }
+			clamp_variable = {
+				var = YSS_liedu_mind_value
+				min = 0
+				max = 100
+			}
 	    }
 		ai_chance = {
 			base = 50
@@ -2533,5 +2566,9 @@ country_event = {
 
 	option = {
 		name = YSS.2000.a
+		hidden_effect = {
+			recruit_character = YSS_cecilia
+			recruit_character = YSS_bri
+		}
 	}
 }
