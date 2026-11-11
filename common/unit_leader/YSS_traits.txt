@@ -1,4 +1,57 @@
 leader_traits = {
+	YSS_bloodsucker = {
+		#吸血鬼
+		type = land
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			land_night_attack = 0.15
+			army_morale_factor = 0.05
+			wounded_chance_factor = -0.5
+			experience_loss_factor = -0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	YSS_armored_titan = {
+		#铠之巨人
+		type = land
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_strength_factor = 0.10
+		}
+	}
+	YSS_traveler = {
+		#旅人
+		type = land
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_speed_factor = 0.10
+			org_loss_when_moving = -0.15
+			terrain_penalty_reduction = 0.15
+		}
+	}
+
+	YSS_holy_see = {
+		#圣地
+		type = land
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			max_dig_in_factor = 0.10
+			wounded_chance_factor = -0.30
+		}
+	}
 	YSS_love_live = {
 		#Love Live！
 		type = all

@@ -1,0 +1,30 @@
+﻿YSS 陆军将领一览（元帅 / 将军）
+
+战争姬          元帅         L4  4/2/3/4   YSS_holy_see、brilliant_strategist、offensive_doctrine、armor_officer、panzer_leader、trickster
+绫叁           元帅         L3  2/2/1/4   infantry_leader、organizer、YSS_holy_see、trickster
+克拉米·杰尔       元帅         L1  2/2/1/1   organizer、brilliant_strategist、trickster
+宫下爱          元帅         L4  4/2/5/5   organizer、brilliant_strategist、media_personality、YSS_love_live
+八云红          元帅         L4  6/6/6/6   career_officer、trait_cautious、harsh_leader、infantry_leader、panzer_leader、adaptable
+白珩           将军         L3  3/2/3/2   （无）
+布拉姆·斯托卡      将军         L4  4/4/2/2   YSS_bloodsucker、trickster、commando、urban_assault_specialist
+朗基努斯         将军         L1  2/2/1/1   infantry_leader、trait_cautious、YSS_holy_see
+优木雪菜         将军         L3  2/1/3/3   commando、infantry_leader、trickster、YSS_love_live
+上原步梦         将军         L2  2/4/1/2   inflexible_strategist、infantry_leader、organizer、YSS_love_live
+利威尔·阿克曼      将军         L5  8/1/1/1   commando、ranger、urban_assault_specialist、trickster、trait_reckless
+莱纳·布朗        将军         L1  4/2/1/3   YSS_armored_titan、infantry_leader、commando、trait_reckless
+兽耳酱          将军         L1  4/2/6/1   armor_officer、trait_reckless、politically_connected
+茗旧           元帅         L1  4/2/6/1   brilliant_strategist、career_officer、aggressive_assaulter、infantry_leader、trait_mountaineer、adaptable
+荻花           元帅         L5  2/6/4/3   infantry_leader、urban_assault_specialist、harsh_leader、inflexible_strategist、war_hero
+伊芙・梅里斯丹      将军         L2  1/2/5/2   media_personality、organizer、trait_cautious、brilliant_strategist
+崇音           将军         L1  2/1/2/1   trickster、commando、YSS_bloodsucker
+拉斯特          将军         L1  1/2/1/2   brilliant_strategist、trickster、YSS_bloodsucker
+冷砂           将军         L1  2/1/1/2   harsh_leader、urban_assault_specialist、YSS_holy_see
+冥焱·雪奈        将军         L1  1/1/3/1   commando、trickster、YSS_traveler
+周茹冰          将军         L1  2/2/1/1   trickster、ranger、YSS_traveler
+灰星           将军         L1  2/2/1/1   ranger、trickster、YSS_traveler
+奥里西斯         将军         L1  2/2/1/1   commando、urban_assault_specialist、YSS_traveler
+凛音           将军         L1  1/1/2/2   YSS_traveler、ranger、trickster
+艾莉娅          将军         L1  1/3/1/1   inflexible_strategist、organizer、YSS_traveler
+粉红           将军         L3  5/3/2/2   Master_of_magic、trait_reckless、harsh_leader、media_personality
+采齐利娅·林·阿托纳   将军         L3  1/1/5/4   （无）
+布里·林·安尔高     将军         L1  1/2/2/1   （无）
