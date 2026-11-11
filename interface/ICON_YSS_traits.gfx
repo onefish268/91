@@ -1,7 +1,27 @@
 spriteTypes = {
-	#特质图标：吸血鬼（YSS 自制版）
+	#特质图标
 	spriteType = {
 		name = "GFX_trait_YSS_bloodsucker"
-		texturefile = "gfx/interface/traits/YSS_bloodsucker.dds"
+		texturefile = "gfx/interface/traits/YSS_bloodsucker.png"
+	}
+	spriteType = {
+		name = "GFX_trait_YSS_love_live"
+		texturefile = "gfx/interface/traits/YSS_love_live.png"
+	}
+	spriteType = {
+		name = "GFX_trait_YSS_holy_see"
+		texturefile = "gfx/interface/traits/YSS_holy_see.png"
+	}
+	spriteType = {
+		name = "GFX_trait_YSS_armored_titan"
+		texturefile = "gfx/interface/traits/YSS_armored_titan.png"
+	}
+	spriteType = {
+		name = "GFX_trait_YSS_traveler"
+		texturefile = "gfx/interface/traits/YSS_traveler.png"
+	}
+	spriteType = {
+		name = "GFX_trait_YSS_mage_tower"
+		texturefile = "gfx/interface/traits/YSS_mage_tower.png"
 	}
 }
