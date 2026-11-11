@@ -1130,8 +1130,8 @@ characters = {
 		}
 		field_marshal = {
 			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1156,11 +1156,14 @@ characters = {
 			}
 		}
 		field_marshal = {
+			traits = {
+				YSS_love_live #Love Live！
+			}
 			skill = 4
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 5
 		}
 	}
 	YSS_3_6 = {
@@ -1487,6 +1490,9 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = {
+				YSS_love_live #Love Live！
+			}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 1
@@ -1514,6 +1520,9 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = {
+				YSS_love_live #Love Live！
+			}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
@@ -1560,6 +1569,13 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = {
+				commando #突击队
+				ranger #游骑兵
+				urban_assault_specialist #巷战专家
+				trickster #诡道
+				trait_reckless #鲁莽
+			}
 			skill = 5
 			attack_skill = 8
 			defense_skill = 1
@@ -1678,7 +1694,6 @@ characters = {
 				career_officer #职业军官
 				aggressive_assaulter #凌厉的攻击者
 				infantry_leader #步兵指挥官
-				panzer_leader #装甲指挥官
 				trait_mountaineer #山地专家
 				adaptable #强于适应
 			}
@@ -1738,8 +1753,8 @@ characters = {
 				logistics_wizard #后勤奇才
 			}
 			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1754,9 +1769,9 @@ characters = {
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 	YSS_7_3 = {
@@ -1768,9 +1783,9 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
@@ -1784,9 +1799,9 @@ characters = {
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 	YSS_7_5 = {
@@ -1798,10 +1813,10 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 	YSS_7_6 = {
@@ -1815,7 +1830,7 @@ characters = {
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 1
 		}
 	}
@@ -1828,8 +1843,8 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1843,8 +1858,8 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1858,8 +1873,8 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1875,8 +1890,8 @@ characters = {
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	YSS_7_11 = {
@@ -1889,7 +1904,7 @@ characters = {
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1902,11 +1917,17 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = {
+				Master_of_magic #魔法大师
+				trait_reckless #鲁莽（幽灵的冲动）
+				harsh_leader #统军严帅（暴躁、音量递增）
+				media_personality #媒体人物（想被看见、想当普通女孩）
+			}
 			skill = 3
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 #海军将官
@@ -2103,8 +2124,8 @@ characters = {
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}

@@ -179,3 +179,6 @@
  YSS_GUARD.8001.a.tt: "在首都部署 §Y3§! 支「首都近卫军」师：9 个步兵营，支援连为火炮支援连、工兵连、宪兵队，团级支援为重武器连。装备与人力满编。"
  YSS_GUARD.8001.b: "我们的首都同样也需要保卫。"
  YSS_GUARD.8001.c: "让她们分一部分武器过来就好了。"
+ YSS_love_live: "Love Live！"
+ YSS_love_live_desc: "§L她们把排练室搬到了战壕里。歌声不算战术，但部队确实不容易被打散。§!"
+ MODIFIER_EXPERIENCE_GAIN_FACTOR: "陆军将领经验获取"
