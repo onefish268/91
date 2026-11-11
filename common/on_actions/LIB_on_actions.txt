@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			LIB = { country_event = { id = LIB_flavor.1000 } }
         LIB = {
             set_variable = { var = LIB_party_fascist_pop value = party_popularity@fascism }
             set_variable = { var = LIB_party_democratic_pop value = party_popularity@democratic }
@@ -45,6 +46,7 @@ on_actions = {
             limit = {
                 COG = {
                     communism > 0.1
+                    has_idea = the_influence_of_YSS
                     NOT = { has_idea = LIB_xssy }
                 }
                 LIB = { NOT = { has_country_flag = LIB_yinmou_flag } }

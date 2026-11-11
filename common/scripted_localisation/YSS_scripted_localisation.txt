@@ -488,3 +488,40 @@ defined_text = {
 		localization_key = "GFX_YSS_publicity_image_J"
 	}
 }
+
+defined_text = {
+	name = Get_YSS_war5_name
+	text = {
+		trigger = {
+			has_country_flag = YSS_daxiaotiao
+		}
+		localization_key = YSS_war5_name_daxiaotiao
+	}
+	text = {
+		localization_key = YSS_war5_name_jibuti
+	}
+}
+defined_text = {
+	name = Get_YSS_war5_desc
+	text = {
+		trigger = {
+			has_country_flag = YSS_daxiaotiao
+		}
+		localization_key = YSS_war5_desc_daxiaotiao
+	}
+	text = {
+		localization_key = YSS_war5_desc_jibuti
+	}
+}
+defined_text = {
+	name = Get_YSS_war5_effect
+	text = {
+		trigger = {
+			has_country_flag = YSS_daxiaotiao
+		}
+		localization_key = YSS_war5_effect_daxiaotiao
+	}
+	text = {
+		localization_key = YSS_war5_effect_jibuti
+	}
+}

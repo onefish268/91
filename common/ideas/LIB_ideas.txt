@@ -158,30 +158,6 @@ ideas = {
             navy_visibility = -0.10                      # 海军舰船可见度（负值正面）
             }
         }
-		#入侵新游汐叶界
-		LIB_rqxyxyj = {
-            removal_cost = -1
-    		picture = lib_17
-    		modifier = {
-                targeted_modifier = {
-				tag = MOR
-				defense_bonus_against = 0.25
-				attack_bonus_against = 0.25
-			}
-    		}
-        }
-		#入侵利比亚
-		LIB_rqlby = {
-            removal_cost = -1
-    		picture = lib_17
-    		modifier = {
-                targeted_modifier = {
-				tag = LBA
-				defense_bonus_against = 0.25
-				attack_bonus_against = 0.25
-			}
-    		}
-        }
 				#成功登陆
 		LIB_chenggongdenglu = {
 			removal_cost = -1
@@ -232,30 +208,6 @@ ideas = {
 				mic_to_target_factor = 0.8
 			}
 		}
-		#八云紫建设计划
-        LIB_bba_building = {
-            removal_cost = -1
-    		picture = ARG_construction_guilds
-    		modifier = {
-                economy_cost_factor = -0.1
-                stability_factor = -0.1
-                production_speed_buildings_factor = 0.1
-    		}
-        }
-		#探女的计划
-        LIB_sagume_plan_idea = {
-            removal_cost = -1
-    		picture = triumphant_will
-            modifier = {
-                planning_speed = 0.2
-            }
-            targeted_modifier = {
-    			tag = DVL
-    			#战斗修正种类
-    			attack_bonus_against = 0.15
-    			defense_bonus_against = 0.15
-    		}
-        }
 		#对外投资合作二局
         LIB_dwtzhzej1 = {
             removal_cost = -1
@@ -281,6 +233,17 @@ ideas = {
         }
     }
     hidden_ideas = {
+		LIB_snw = {
+			picture = GFX_idea_lib_12
+			allowed = { original_tag = LIB }
+			removal_cost = -1
+			modifier = {
+				civilian_intel_to_others = -15
+				army_intel_to_others = -15
+				navy_intel_to_others = -15
+				airforce_intel_to_others = -15
+			}
+		}
 	LIB_infantry_cost_reduction = {
     picture = GFX_idea_generic_industrial_concern
     allowed = {
@@ -356,7 +319,7 @@ ideas = {
             instant = yes
             build_cost_ic = -0.10
         }
-		super_heavsuper_heavy_railway_gun_equipmenty_artillery = {
+		super_heavy_railway_gun_equipment = {
             instant = yes
             build_cost_ic = -0.10
         }

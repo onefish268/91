@@ -816,4 +816,9 @@ spriteTypes = {
 		name = "GFX_super_event_169"
 		textureFile = "gfx/superevent_pictures/super_event_hxxgl.dds"
 	}
+	#大南方战争
+	spriteType = {
+		name = "GFX_super_event_170"
+		textureFile = "gfx/superevent_pictures/super_event_dnfzz.dds"
+	}
 }

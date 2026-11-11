@@ -1991,3 +1991,11 @@ music = {
         }
     }
 }
+music = {
+	song = "super_event_170"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

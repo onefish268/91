@@ -26,7 +26,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_war_focus_2
-		x = 11
+		relative_position_id = YSS_war_focus_1
+		x = 0
 		y = 1
 		cost = 2
 		cancel_if_invalid = yes
@@ -35,9 +36,6 @@ focus_tree = {
 		text_icon = YSS_focus_style
 		prerequisite = {
 			focus = YSS_war_focus_1
-		}
-		mutually_exclusive = {
-			focus = YSS_war_focus_3
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -58,94 +56,9 @@ focus_tree = {
 	}
 	focus = {
 		id = YSS_war_focus_3
-		x = 15
-		y = 1
-		cost = 2
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		icon = GFX_focus_yss73
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_war_focus_1
-		}
-		mutually_exclusive = {
-			focus = YSS_war_focus_2
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = YSS_war_0
-				add_idea = YSS_war_1
-			}
-		}
-	}
-	focus = {
-		id = YSS_war_focus_4
-		x = 15
-		y = 3
-		cost = 2
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		icon = GFX_focus_yss76
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_war_focus_3
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = YSS_war_1
-				add_idea = YSS_war_2
-			}
-			271 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-			}
-		}
-	}
-	focus = {
-		id = YSS_war_focus_5
-		x = 13
-		y = 5
-		cost = 2
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		icon = GFX_focus_yss77
-		text_icon = YSS_focus_style
-		prerequisite = {
-			focus = YSS_war_focus_4
-			focus = YSS_war_focus_6
-		}
-		completion_reward = {
-			custom_effect_tooltip = YSS_tootip_48
-			declare_war_on = {
-				target = ETH
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = AOI
-				type = annex_everything
-			}
-			hidden_effect = {
-                news_event = { id = YSS.news.1 days = 1 }
-
-				set_country_flag = YSS_the_civil_war_of_YSS_launched
-
-				if = {
-					limit = { has_country_flag = YSS_cut_down_the_difficulty_of_civil_war }
-
-					AOI = { add_ideas = { YSS_weeken_civil_war_enemy } }
-					ETH = { add_ideas = { YSS_weeken_civil_war_enemy } }
-				}
-            }
-		}
-	}
-	focus = {
-		id = YSS_war_focus_6
-		x = 10
-		y = 3
+		relative_position_id = YSS_war_focus_1
+		x = 0
+		y = 2
 		cost = 2
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -163,25 +76,89 @@ focus_tree = {
 				target = AOI
 				value = 0.45
 			}
+			swap_ideas = {
+				remove_idea = YSS_war_3
+				add_idea = YSS_war_4
+			}
 		}
 	}
 	focus = {
-		id = YSS_war_focus_7
-		x = 12
+		id = YSS_war_focus_4
+		relative_position_id = YSS_war_focus_1
+		x = 0
 		y = 3
 		cost = 2
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		icon = GFX_focus_yss75
+		icon = GFX_focus_yss76
 		text_icon = YSS_focus_style
 		prerequisite = {
-			focus = YSS_war_focus_2
+			focus = YSS_war_focus_3
 		}
 		completion_reward = {
+			custom_effect_tooltip = YSS_war_focus_4_tt
 			army_experience = 50
-			swap_ideas = {
-				remove_idea = YSS_war_3
-				add_idea = YSS_war_4
+			hidden_effect = {
+				every_controlled_state = {
+					limit = {
+						OR = {
+							state = 944
+							state = 547
+							state = 271
+						}
+					}
+					create_unit = {
+						division = "division_template = \"索维耶特地方军区兵团\" start_experience_factor = 0 start_equipment_factor = 0.1 start_manpower_factor = 1"
+						owner = ROOT
+						count = 5
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = YSS_war_focus_5
+		relative_position_id = YSS_war_focus_1
+		x = 0
+		y = 4
+		cost = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		dynamic = yes
+		icon = {
+			GFX_focus_yss77 = {
+				has_country_flag = YSS_daxiaotiao
+			}
+			GFX_focus_yss73 = yes
+		}
+		text_icon = YSS_focus_style
+		bypass = {
+			AND = {
+				has_war_with = ETH
+				has_war_with = AOI
+			}
+		}
+		prerequisite = {
+			focus = YSS_war_focus_4
+		}
+		completion_reward = {
+			custom_effect_tooltip = YSS_war5_effect
+			hidden_effect = {
+				declare_war_on = {
+					target = ETH
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = AOI
+					type = annex_everything
+				}
+				news_event = { id = YSS.news.1 days = 1 }
+				set_country_flag = YSS_the_civil_war_of_YSS_launched
+				if = {
+					limit = { has_country_flag = YSS_cut_down_the_difficulty_of_civil_war }
+					AOI = { add_ideas = { YSS_weeken_civil_war_enemy } }
+					ETH = { add_ideas = { YSS_weeken_civil_war_enemy } }
+				}
 			}
 		}
 	}

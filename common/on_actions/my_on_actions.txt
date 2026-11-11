@@ -503,17 +503,11 @@ on_actions = {
             }
 
 			if = {
-                limit = { 
-					YSS = {
-						exists = yes
-					}
-					ETH = {
-						exists = no
-					}
-					AOI = {
-						exists = no
-					}
-				}
+                limit = {
+                    has_country_flag = YSS_the_civil_war_of_YSS_launched
+                    NOT = { has_war_with = ETH }
+                    NOT = { has_war_with = AOI }
+                }
                 country_event = YSS.90
             }
         }

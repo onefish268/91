@@ -2572,3 +2572,39 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	# 利用大萧条？（纯演出提示，触发由外部决定）
+	id = YSS.9998
+	title = YSS.9998.t
+	desc = YSS.9998.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = YSS.9998.a
+		# 完成奖励与 YSS_war_focus_5 保持一致
+		custom_effect_tooltip = YSS.9998.a_tt
+		hidden_effect = {
+			declare_war_on = {
+				target = ETH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AOI
+				type = annex_everything
+			}
+			news_event = { id = YSS.news.1 days = 1 }
+			set_country_flag = YSS_the_civil_war_of_YSS_launched
+			if = {
+				limit = { has_country_flag = YSS_cut_down_the_difficulty_of_civil_war }
+				AOI = { add_ideas = { YSS_weeken_civil_war_enemy } }
+				ETH = { add_ideas = { YSS_weeken_civil_war_enemy } }
+			}
+		}
+	}
+
+	option = {
+		name = YSS.9998.b
+	}
+}

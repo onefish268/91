@@ -232,3 +232,11 @@ music = {
         }
     }
 }
+music = {
+    song = "童葬祭"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

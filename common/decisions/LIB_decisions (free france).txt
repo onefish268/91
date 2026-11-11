@@ -2,6 +2,11 @@
 # Liberia Decisions by remilia,reduxed by Yersin
 ###########################################
 LIB_debug = {
+	LIB_debug_news5 = {
+		complete_effect = {
+			news_event = { id = LIB_news.5 }
+		}
+	}
 free_france11 = {
 complete_effect = {
 		LIB = {
@@ -665,7 +670,7 @@ FREE_FRA_Return_from_Hell_category = {
 				is_in_faction_with = LIB
 				}	
 						}
-			transfer_state = LIB
+			transfer_state_to = LIB
 }
 			mark_focus_tree_layout_dirty = yes
 			
@@ -724,7 +729,10 @@ LIB_ziyuan_category = {
             }
 }
     hidden_effect = {
-        country_event = { id = LIB_flavor.11 }
+        if = {
+            limit = { NOT = { has_country_flag = LIB_close_flavor_flag } }
+            country_event = { id = LIB_flavor.11 }
+        }
     }
             
 		}
@@ -816,7 +824,7 @@ LIB_xiji = {
     available = {
         has_army_experience > 50
 		has_navy_experience > 50
-        manpower > 9999
+        has_manpower > 9999
         has_equipment = {
             infantry_equipment > 1999
         }
@@ -2278,235 +2286,293 @@ LIB_ruqinLBA {
 	visible = {
 	has_completed_focus = LIB_new_focus_68
 	has_war_with = DVL
-	country_exists = LBA}
+	OR = {
+		country_exists = LBA
+		AND = {
+			448 = { controller = { has_war_with = LIB } }
+			450 = { controller = { has_war_with = LIB } }
+			451 = { controller = { has_war_with = LIB } }
+			663 = { controller = { has_war_with = LIB } }
+		}
+	}
+	}
     war_with_on_remove = LBA   
     allowed = { original_tag = LIB }
     available = {
-		LIB = {
-        NOT = { has_war_with = LBA }}
-        LBA = { NOT = { is_in_faction_with = LIB } }
-    }
+		OR = {
+			AND = {
+				country_exists = LBA
+				LIB = { NOT = { has_war_with = LBA } }
+				LBA = { NOT = { is_in_faction_with = LIB } }
+			}
+			AND = {
+				448 = { controller = { has_war_with = LIB } }
+				450 = { controller = { has_war_with = LIB } }
+				451 = { controller = { has_war_with = LIB } }
+				663 = { controller = { has_war_with = LIB } }
+			}
+		}
+	}
 
     complete_effect = {
     }
 
     remove_effect = {
-        LBA = {
-            country_event = { id = LIB_lw.7 days = 1 }
-        }
-    }
+		if = {
+			limit = { country_exists = LBA }
+			LBA = {
+				country_event = { id = LIB_lw.7 days = 1 }
+			}
+		}
+		else_if = {
+			limit = {
+				448 = { controller = { has_war_with = LIB } }
+				450 = { controller = { has_war_with = LIB } }
+				451 = { controller = { has_war_with = LIB } }
+				663 = { controller = { has_war_with = LIB } }
+			}
+			448 = {
+				add_dynamic_modifier = {
+					modifier = LIB_ruqin
+					scope = LIB
+					days = 365
+				}
+			}
+			450 = {
+				add_dynamic_modifier = {
+					modifier = LIB_ruqin
+					scope = LIB
+					days = 365
+				}
+			}
+			451 = {
+				add_dynamic_modifier = {
+					modifier = LIB_ruqin
+					scope = LIB
+					days = 365
+				}
+			}
+			663 = {
+				add_dynamic_modifier = {
+					modifier = LIB_ruqin
+					scope = LIB
+					days = 365
+				}
+			}
+		}
+	}
 }
-LIB_ruqinYSS = {
-    icon = GFX_decision_generic_political_actions
-    cost = 10
-    days_remove = 30
-    fire_only_once = no
-    war_with_on_remove = YSS   # 让 YSS 在30天内收到战争警告
-
-    allowed = { original_tag = LIB }
-
-    visible = {
-	has_completed_focus = LIB_new_focus_69
-	country_exists = YSS
-    }
-
-    available = {
-       AND = {
-                YSS = { NOT = { has_war_with = DVL } }
-                YSS = { NOT = { is_in_faction_with = LIB } }
-            }
-    }
-
-    complete_effect = {
-        # 可选：给 YSS 一个临时警告精神或事件
-    }
-
-    remove_effect = {
-        # 30天后，LIB 获得对 YSS 的宣战借口
-        create_wargoal = {
-            type = annex_everything
-            target = YSS
-        }
-    }
-}
-LIB_ruqinETH = {
-    icon = GFX_decision_generic_political_actions
-    cost = 10
-    days_remove = 30
-    fire_only_once = no
-    war_with_on_remove = ETH   
-
-    allowed = { original_tag = LIB }
-
-    visible = {
-	has_completed_focus = LIB_new_focus_69
-	country_exists = ETH
-    }
-
-    available = {
-       AND = {
-                ETH = { NOT = { has_war_with = DVL } }
-                ETH = { NOT = { is_in_faction_with = LIB } }
-            }
-    }
-
-    complete_effect = {
-    }
-
-    remove_effect = {
-        # 30天后，LIB 获得对 YSS 的宣战借口
-        create_wargoal = {
-            type = annex_everything
-            target = ETH
-        }
-    }
-}
-LIB_ruqinZIM = {
-    icon = GFX_decision_generic_political_actions
-    cost = 0
-    fire_only_once = yes
-    allowed = { original_tag = LIB }
-	visible = {
-	has_completed_focus = LIB_new_focus_69
-    }
-    available = {
-        # 至少有一个目标满足全部条件，决议才可用
-        OR = {
-            AND = {
-                country_exists = ZXS
-                ZXS = { NOT = { has_war_with = DVL } }
-                ZXS = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZYX
-                ZYX = { NOT = { has_war_with = DVL } }
-                ZYX = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZCS
-                ZCS = { NOT = { has_war_with = DVL } }
-                ZCS = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZSH
-                ZSH = { NOT = { has_war_with = DVL } }
-                ZSH = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZSB
-                ZSB = { NOT = { has_war_with = DVL } }
-                ZSB = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZHJ
-                ZHJ = { NOT = { has_war_with = DVL } }
-                ZHJ = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZDM
-                ZDM = { NOT = { has_war_with = DVL } }
-                ZDM = { NOT = { is_in_faction_with = LIB } }
-            }
-            AND = {
-                country_exists = ZIM
-                ZIM = { NOT = { has_war_with = DVL } }
-                ZIM = { NOT = { is_in_faction_with = LIB } }
-            }
-        }
-    }
-
-    complete_effect = {
-        # 逐个检查并添加宣战借口
-        if = {
-            limit = {
-                country_exists = ZXS
-                ZXS = { NOT = { has_war_with = DVL } }
-                ZXS = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZXS
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZYX
-                ZYX = { NOT = { has_war_with = DVL } }
-                ZYX = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZYX
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZCS
-                ZCS = { NOT = { has_war_with = DVL } }
-                ZCS = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZCS
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZSH
-                ZSH = { NOT = { has_war_with = DVL } }
-                ZSH = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZSH
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZSB
-                ZSB = { NOT = { has_war_with = DVL } }
-                ZSB = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZSB
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZHJ
-                ZHJ = { NOT = { has_war_with = DVL } }
-                ZHJ = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZHJ
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZDM
-                ZDM = { NOT = { has_war_with = DVL } }
-                ZDM = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZDM
-            }
-        }
-        if = {
-            limit = {
-                country_exists = ZIM
-                ZIM = { NOT = { has_war_with = DVL } }
-                ZIM = { NOT = { is_in_faction_with = LIB } }
-            }
-            create_wargoal = {
-                type = annex_everything
-                target = ZIM
-            }
-        }
-    }
-}
+#LIB_ruqinYSS = {
+#    icon = GFX_decision_generic_political_actions
+#    cost = 10
+#    days_remove = 30
+#    fire_only_once = no
+#    war_with_on_remove = YSS   # 让 YSS 在30天内收到战争警告
+#
+#    allowed = { original_tag = LIB }
+#
+#    visible = {
+#	has_completed_focus = LIB_new_focus_69
+#	country_exists = YSS
+#    }
+#
+#    available = {
+#       AND = {
+#                YSS = { NOT = { has_war_with = DVL } }
+#                YSS = { NOT = { is_in_faction_with = LIB } }
+#            }
+#    }
+#
+#    complete_effect = {
+#        # 可选：给 YSS 一个临时警告精神或事件
+#    }
+#
+#    remove_effect = {
+#        # 30天后，LIB 获得对 YSS 的宣战借口
+#        create_wargoal = {
+#            type = annex_everything
+#            target = YSS
+#        }
+#    }
+#}
+#LIB_ruqinETH = {
+#    icon = GFX_decision_generic_political_actions
+#    cost = 10
+#    days_remove = 30
+#    fire_only_once = no
+#    war_with_on_remove = ETH   
+#
+#    allowed = { original_tag = LIB }
+#
+#    visible = {
+#	has_completed_focus = LIB_new_focus_69
+#	country_exists = ETH
+#    }
+#
+#    available = {
+#       AND = {
+#                ETH = { NOT = { has_war_with = DVL } }
+#                ETH = { NOT = { is_in_faction_with = LIB } }
+#            }
+#    }
+#
+#    complete_effect = {
+#    }
+#
+#    remove_effect = {
+#        # 30天后，LIB 获得对 YSS 的宣战借口
+#        create_wargoal = {
+#            type = annex_everything
+#            target = ETH
+#        }
+#    }
+#}
+#LIB_ruqinZIM = {
+#    icon = GFX_decision_generic_political_actions
+#    cost = 0
+#    fire_only_once = yes
+#    allowed = { original_tag = LIB }
+#	visible = {
+#	has_completed_focus = LIB_new_focus_69
+#    }
+#    available = {
+#        # 至少有一个目标满足全部条件，决议才可用
+#        OR = {
+#            AND = {
+#                country_exists = ZXS
+#                ZXS = { NOT = { has_war_with = DVL } }
+#                ZXS = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZYX
+#                ZYX = { NOT = { has_war_with = DVL } }
+#                ZYX = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZCS
+#                ZCS = { NOT = { has_war_with = DVL } }
+#                ZCS = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZSH
+#                ZSH = { NOT = { has_war_with = DVL } }
+#                ZSH = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZSB
+#                ZSB = { NOT = { has_war_with = DVL } }
+#                ZSB = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZHJ
+#                ZHJ = { NOT = { has_war_with = DVL } }
+#                ZHJ = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZDM
+#                ZDM = { NOT = { has_war_with = DVL } }
+#                ZDM = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            AND = {
+#                country_exists = ZIM
+#                ZIM = { NOT = { has_war_with = DVL } }
+#                ZIM = { NOT = { is_in_faction_with = LIB } }
+#            }
+#        }
+#    }
+#
+#    complete_effect = {
+#        # 逐个检查并添加宣战借口
+#        if = {
+#            limit = {
+#                country_exists = ZXS
+#                ZXS = { NOT = { has_war_with = DVL } }
+#                ZXS = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZXS
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZYX
+#                ZYX = { NOT = { has_war_with = DVL } }
+#                ZYX = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZYX
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZCS
+#                ZCS = { NOT = { has_war_with = DVL } }
+#                ZCS = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZCS
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZSH
+#                ZSH = { NOT = { has_war_with = DVL } }
+#                ZSH = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZSH
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZSB
+#                ZSB = { NOT = { has_war_with = DVL } }
+#                ZSB = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZSB
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZHJ
+#                ZHJ = { NOT = { has_war_with = DVL } }
+#                ZHJ = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZHJ
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZDM
+#                ZDM = { NOT = { has_war_with = DVL } }
+#                ZDM = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZDM
+#            }
+#        }
+#        if = {
+#            limit = {
+#                country_exists = ZIM
+#                ZIM = { NOT = { has_war_with = DVL } }
+#                ZIM = { NOT = { is_in_faction_with = LIB } }
+#            }
+#            create_wargoal = {
+#                type = annex_everything
+#                target = ZIM
+#            }
+#        }
+#    }
+#}
 #步兵装备革新
 LIB_bubingzhuangbeigexin {
     icon = GFX_decision_generic_political_actions
@@ -2639,12 +2705,12 @@ LIB_tuiguangtzbd {
 		add_to_variable = {
 			var = LIB_army_mechanized_attack_factor
 			value = 0.1
-			tooltip = mechanized_attack_factor
+			tooltip = mechanized_attack_factor_tt
 		}
 		add_to_variable = {
 			var = LIB_army_mechanized_defence_factor
 			value = 0.1
-			tooltip = mechanized_defence_factor
+			tooltip = mechanized_defence_factor_tt
 		}
     }
 }
@@ -2791,7 +2857,7 @@ LIB_yueduzhongpao {
 
     remove_effect = {
 	custom_effect_tooltip = LIB_hxxfwj_tt
-		custom_effect_tooltip = LIB_super_heavy_artillery_cost_reduction_tt
+		custom_effect_tooltip = LIB_super_heavy_artillery_cost_reduction_effect
 		hidden_effect = {
 		add_ideas = LIB_super_heavy_artillery_cost_reduction
 		}
@@ -3498,6 +3564,7 @@ LIB_yjlz_decision = {
 			value = 0.05
 			tooltip = production_speed_buildings_factor_tt
 		} # 建设速度
+        country_event = { id = LIB_flavor.14 }
     }
 }
 
@@ -3632,7 +3699,7 @@ LIB_xfygzd_decision = {
     fire_only_once = yes
 	visible = {has_country_flag = LIB_xfygzd1}
     available = {
-        num_of_civilian_factories_available_for_projects >= 5
+        num_of_civilian_factories_available_for_projects > 4
         # 苏伊士州仍需在埃及（或其宗主国）或我方手中，避免在失守后白建
         753 = {
             OR = {
@@ -3689,7 +3756,7 @@ LIB_fyyqgc1_decision = {
     fire_only_once = yes
 	visible = {has_completed_focus = LIB_new_focus_45}
     available = {
-        num_of_civilian_factories_available_for_projects >= 5
+        num_of_civilian_factories_available_for_projects > 4
         # 可选：检查省份归属，避免无效建设
         805 = { is_owned_by = ROOT is_controlled_by = ROOT }
         459 = { is_owned_by = ROOT is_controlled_by = ROOT }
@@ -3793,7 +3860,7 @@ LIB_fyyqgc2_decision = {
     fire_only_once = yes
 	visible = {has_country_flag = LIB_yiqigongcheng}
     available = {
-        num_of_civilian_factories_available_for_projects >= 5
+        num_of_civilian_factories_available_for_projects > 4
         # 可选：检查省份归属，避免无效建设
         805 = { is_owned_by = ROOT is_controlled_by = ROOT }
         459 = { is_owned_by = ROOT is_controlled_by = ROOT }
@@ -3897,7 +3964,7 @@ LIB_fyyqgc3_decision = {
     fire_only_once = yes
 	visible = {has_country_flag = LIB_erqigongcheng}
     available = {
-        num_of_civilian_factories_available_for_projects >= 5
+        num_of_civilian_factories_available_for_projects > 4
         # 可选：检查省份归属，避免无效建设
         805 = { is_owned_by = ROOT is_controlled_by = ROOT }
         459 = { is_owned_by = ROOT is_controlled_by = ROOT }
@@ -4000,7 +4067,7 @@ LIB_anti_air_yiqi = {
     fire_only_once = yes
 	visible = {has_completed_focus = LIB_new_focus_45}
     available = {
-        num_of_civilian_factories_available_for_projects >= 10
+        num_of_civilian_factories_available_for_projects > 9
         805 = { is_owned_by = ROOT is_controlled_by = ROOT }
         459 = { is_owned_by = ROOT is_controlled_by = ROOT }
         460 = { is_owned_by = ROOT is_controlled_by = ROOT }
@@ -4065,7 +4132,7 @@ LIB_anti_air_erqi = {
     }
 
     available = {
-        num_of_civilian_factories_available_for_projects >= 10
+        num_of_civilian_factories_available_for_projects > 9
         805 = { is_owned_by = ROOT is_controlled_by = ROOT }
         459 = { is_owned_by = ROOT is_controlled_by = ROOT }
         460 = { is_owned_by = ROOT is_controlled_by = ROOT }
@@ -4133,7 +4200,7 @@ LIB_bunker_construction_jinji = {
     }
 
     available = {
-        num_of_civilian_factories_available_for_projects >= 10
+        num_of_civilian_factories_available_for_projects > 9
     }
 
     # 决议计时期间占用10个民工

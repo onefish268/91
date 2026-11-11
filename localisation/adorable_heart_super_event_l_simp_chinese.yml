@@ -921,6 +921,11 @@
   super_event_169_QUOTE_SOURCE_LOC: "——八云紫，《东方茨歌仙》"
   super_event_169_CLOSED_LOC: "挣脱束缚，只向着你飞奔而去，等待已如此漫长"
   
+  super_event_170: "大南方战争"
+  super_event_170_QUOTE_LOC: "我们正在前进，我们正在做我们的前人从未做过的，极其光荣伟大的事业。"
+  super_event_170_QUOTE_SOURCE_LOC: "——门柯思图，索维耶特联盟总书记"
+  super_event_170_CLOSED_LOC: "踏入凡世，踏入泥潭，踏入地狱"
+  
   AH_debug_se_text: "[adorable_heart_Get_Super_Event_Title]（[?adorable_heart_super_event_var]）"
   adorable_heart_Super_Event_Title: "§b[adorable_heart_Get_Super_Event_Title]§!"
   superevents_note_title: "§b[get_superevents_note_title]§!"

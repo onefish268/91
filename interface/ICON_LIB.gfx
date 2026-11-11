@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LIB/LIB_XZYH.png"
 	}
     ###GUI
+    #特殊计划图标
+	spriteType = {
+		name = "GFX_LIB_mywr"
+		texturefile = "gfx/interface/special_project/project_icons/LIB_mywr.dds"
+	}
     #民族精神
 	spriteType = {
         name = "GFX_idea_lib_2"

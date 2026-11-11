@@ -1048,3 +1048,7 @@ music = {
 	name = "super_event_169"
 	file = "supereventLIB.ogg"
 }
+music = {
+	name = "super_event_170"
+	file = "supereventdnfzz.ogg"
+}

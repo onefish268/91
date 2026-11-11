@@ -1,6 +1,7 @@
 #模因污染式加密
 LIB_mywr = {
 	specialization = specialization_land
+	icon = GFX_LIB_mywr
 
 	breakthrough_cost = {
 		specialization_land = 1
@@ -36,6 +37,7 @@ LIB_mywr = {
 
 	project_output = {
 		country_effects = {
+			add_ideas = LIB_snw
 		}
 	}
 }

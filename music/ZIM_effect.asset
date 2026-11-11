@@ -138,3 +138,8 @@ music = {
     file = "新闻放送.ogg"
     volume = 1
 }
+music = {
+    name = "童葬祭"
+    file = "童葬祭.ogg"
+    volume = 1
+}

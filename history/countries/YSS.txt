@@ -1,4 +1,4 @@
-capital = 271
+﻿capital = 271
 
 set_oob = "YSS_1936_land"
 set_naval_oob = "YSS_1936_naval"
@@ -125,7 +125,41 @@ set_popularities = {
 	neutrality = 15
 
 } 
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 750
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 250
+	producer = CHI
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 250
+	producer = DVL
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 250
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 250
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 250
+	producer = ITA
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 320
+	producer = YSS
+}
 create_faction_from_template = faction_template_Africa_union
 
 recruit_character = YSS_mlhm
