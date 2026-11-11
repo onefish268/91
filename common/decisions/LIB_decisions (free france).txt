@@ -3564,7 +3564,14 @@ LIB_yjlz_decision = {
 			value = 0.05
 			tooltip = production_speed_buildings_factor_tt
 		} # 建设速度
-        country_event = { id = LIB_flavor.14 }
+		hidden_effect = {
+        if = {
+        	limit = {
+        		NOT = { has_country_flag = LIB_close_flavor_flag }
+        	}
+        	country_event = { id = LIB_flavor.14 }
+        }
+		}
     }
 }
 
