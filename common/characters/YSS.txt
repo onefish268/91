@@ -414,6 +414,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "gfx/leaders/YSS/87.png"
+				large = "gfx/leaders/YSS/130.png"
 			}
 		}
 		advisor = { 	
@@ -427,7 +428,21 @@ characters = {
 				factor = 10
 			}
 		}
+		field_marshal = {
+			traits = {
+				YSS_mage_tower #法师塔
+				brilliant_strategist #天才的战略家
+				trait_cautious #谨慎
+				trickster #奇袭专家
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
 	}
+
 	YSS_1_20 = {
 		name = "莉萝·艾"
 		portraits = {

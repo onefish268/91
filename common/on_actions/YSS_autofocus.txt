@@ -1,0 +1,113 @@
+on_actions = {
+	# ── YSS「大庆喜」党纪国策链：自动推进，玩家无需手动点 ──
+	# 每完成一环，下一环在 70 天后自动完成（相当于默认国策时长）
+	on_daily = {
+		effect = {
+			if = {
+				limit = { tag = YSS }
+				# YSS_focus_30（入口，需要 大庆喜 庭 flag）
+				if = {
+					limit = {
+						has_country_flag = YSS_daqingxi_jiaoting
+						NOT = { has_completed_focus = YSS_focus_30 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_30 } }
+						set_variable = { YSS_af_30 = 1 }
+					}
+					subtract_from_variable = { YSS_af_30 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_30 < 1 } }
+						complete_national_focus = YSS_focus_30
+						clear_variable = YSS_af_30
+					}
+				}
+				# YSS_focus_31（前置 YSS_focus_30）
+				if = {
+					limit = {
+						has_completed_focus = YSS_focus_30
+						NOT = { has_completed_focus = YSS_focus_31 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_31 } }
+						set_variable = { YSS_af_31 = 70 }
+					}
+					subtract_from_variable = { YSS_af_31 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_31 < 1 } }
+						complete_national_focus = YSS_focus_31
+						clear_variable = YSS_af_31
+					}
+				}
+				# YSS_focus_32（前置 YSS_focus_31）
+				if = {
+					limit = {
+						has_completed_focus = YSS_focus_31
+						NOT = { has_completed_focus = YSS_focus_32 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_32 } }
+						set_variable = { YSS_af_32 = 70 }
+					}
+					subtract_from_variable = { YSS_af_32 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_32 < 1 } }
+						complete_national_focus = YSS_focus_32
+						clear_variable = YSS_af_32
+					}
+				}
+				# YSS_focus_43（前置 YSS_focus_32）
+				if = {
+					limit = {
+						has_completed_focus = YSS_focus_32
+						NOT = { has_completed_focus = YSS_focus_43 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_43 } }
+						set_variable = { YSS_af_43 = 70 }
+					}
+					subtract_from_variable = { YSS_af_43 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_43 < 1 } }
+						complete_national_focus = YSS_focus_43
+						clear_variable = YSS_af_43
+					}
+				}
+				# YSS_focus_44（前置 YSS_focus_43）
+				if = {
+					limit = {
+						has_completed_focus = YSS_focus_43
+						NOT = { has_completed_focus = YSS_focus_44 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_44 } }
+						set_variable = { YSS_af_44 = 70 }
+					}
+					subtract_from_variable = { YSS_af_44 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_44 < 1 } }
+						complete_national_focus = YSS_focus_44
+						clear_variable = YSS_af_44
+					}
+				}
+				# YSS_focus_45（前置 YSS_focus_44）
+				if = {
+					limit = {
+						has_completed_focus = YSS_focus_44
+						NOT = { has_completed_focus = YSS_focus_45 }
+					}
+					if = {
+						limit = { NOT = { has_variable = YSS_af_45 } }
+						set_variable = { YSS_af_45 = 70 }
+					}
+					subtract_from_variable = { YSS_af_45 = 1 }
+					if = {
+						limit = { check_variable = { YSS_af_45 < 1 } }
+						complete_national_focus = YSS_focus_45
+						clear_variable = YSS_af_45
+					}
+				}
+			}
+		}
+	}
+}
