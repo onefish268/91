@@ -1,0 +1,38 @@
+﻿YSS 本次修改说明（2026-11-11，第二批上传）
+
+一、将领与特质（common/characters/YSS.txt）
+1) 削弱
+   - 八云红：特质 9→6 条（去掉装甲军官、政治关联者、凌厉的攻击者、山地专家），等级 4
+   - 荻花：删掉职业军官与组织专家，剩 5 条；等级 5，防御 6
+   - 茗旧：删掉装甲指挥官，剩 6 条
+2) 加点：15 位原本 1/1/1/1 的将领按「1 级 +2、每多 1 级 +4」重新分配
+   （宫下爱 4/2/5/5、粉红 5/3/2/2、艾莉娅 1/3/1/1 等）
+3) 新特质体系（每人最多一条自制特质，其余为原版）
+   - 圣地 YSS_holy_see：战争姬、绫叁、朗基努斯、冷砂
+   - 吸血鬼 YSS_bloodsucker：布拉姆·斯托卡、崇音、拉斯特
+   - 旅人 YSS_traveler：冥焱·雪奈、周茹冰、灰星、奥里西斯、艾莉娅、凛音
+   - Love Live！YSS_love_live：宫下爱、优木雪菜、上原步梦
+   - 铠之巨人 YSS_armored_titan（HP+10%）：莱纳·布朗
+   - 其余按等级补 2~3 条原版特质（L1 共 3 条，L2 以上共 4 条）
+4) 单人调整
+   - 利威尔：+5 条（突击队、游骑兵、巷战专家、诡道、鲁莽）
+   - 绫叁：+2 条（步兵指挥官、组织专家）
+   - 克拉米·杰尔：+3 条（组织专家、天才的战略家、奇袭专家）
+   - 伊芙·梅里斯丹：等级 1→2，数值 1/2/5/2，+4 条原版特质
+   - 凛音：旅人 + 游骑兵 + 奇袭专家
+
+二、新增文件
+   - common/unit_leader/YSS_traits.txt        5 条自制特质定义
+   - gfx/interface/traits/YSS_bloodsucker.dds 吸血鬼图标（复制自基础 mod 同款）
+   - interface/ICON_YSS_traits.gfx            图标注册（GFX_trait_YSS_bloodsucker）
+
+三、立绘
+   - gfx/leaders/YSS/75.png 换成灰星的半身像
+
+四、修正
+   - YSS_shouren_liaison 的非法修正值改为 production_factory_max_efficiency_factor = 0.05
+     （还原 Yeersin 提交 4d45282 的修正，此前被整份覆盖丢失）
+
+五、本地化（localisation/simp_chinese/YSS2_l_simp_chinese.yml）
+   - 新增自制特质的名称与描述（吸血鬼为正面描述）
+   - 事件 YSS_GUARD.8001 相关文本

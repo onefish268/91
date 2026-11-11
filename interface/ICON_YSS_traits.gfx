@@ -1,0 +1,7 @@
+spriteTypes = {
+	#特质图标：吸血鬼（YSS 自制版）
+	spriteType = {
+		name = "GFX_trait_YSS_bloodsucker"
+		texturefile = "gfx/interface/traits/YSS_bloodsucker.dds"
+	}
+}
