@@ -1,0 +1,27 @@
+﻿YSS 上传清单 2026-11-11
+
+上传方式：GitHub → Add file → Upload files，把下面 4 个文件按目录拖入（保留相对路径）。
+
+路径	字节	SHA256
+----------------------------------------------------------------------------------------------------
+common/characters/YSS.txt	34354	db1ee8577e55195763e69a764f0f7298a359cbd9300fbb3a1098278748819ece
+common/country_leader/YSS_traits_extra.txt	1478	ea49a0995f95aa980bfbfb375c51d1d6186d8d6324160f86c6d50beaee90ee16
+common/unit_leader/YSS_traits.txt	237	f2b525653ff76a0b0586dae8fb0d82184387a16a8b6feb8873df6591ad1005f3
+localisation/simp_chinese/YSS2_l_simp_chinese.yml	13245	0820baa16b247df5b77cb5244280505db278a6b9c4638dfcf29d52641b32e3c9
+
+共 4 个文件，49314 字节
+
+无需再传：gfx/leaders/YSS/125~128.png、events/YSS_guard_events.txt、history/countries/YSS.txt、map/railways.txt
+
+建议在仓库删除的历史误传文件：
+README.md
+CHANGES.md
+MANIFEST.txt
+gfx/CHANGES.md
+gfx/README.md
+gfx/common/characters/YSS.txt
+gfx/common/country_leader/YSS_traits_extra.txt
+gfx/gfx/leaders/YSS/125.png
+gfx/gfx/leaders/YSS/126.png
+gfx/history/countries/YSS.txt
+gfx/localisation/simp_chinese/YSS2_l_simp_chinese.yml
