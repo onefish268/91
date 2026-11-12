@@ -14,6 +14,9 @@ country_event = {
 			}
 
 			if = {
+				limit = { has_country_flag = YSS_revolution_be_destroyed }
+			}
+			else_if = {
 				limit = {
 					communism > 0.2
 				}
@@ -289,13 +292,8 @@ country_event = {
 									country_tag = "[ROOT.GetTag]"
 								}
 							}
-
-							meta_effect = {
-								text = {
-									add_to_temp_variable = { round_i = 1 }
-								}
-								country_tag = "[ROOT.GetTag]"
-							}
+							
+							add_to_temp_variable = { round_i = 1 }
 
 							YSS = {
 								random_owned_controlled_state = {
@@ -489,16 +487,6 @@ country_event = {
 					country_tag = "[ROOT.GetTag]"
 				}
 
-						meta_effect = {
-					text = {
-						add_offsite_building = {
-	            			type = arms_factory
-            				level = YSS.YSS_total_of_factory_[country_tag]
-        				}
-					}
-					country_tag = "[ROOT.GetTag]"
-				}
-
 						set_temp_variable = { round_i = 0 }
 
 						while_loop_effect = {
@@ -511,12 +499,7 @@ country_event = {
 								}
 							}
 
-							meta_effect = {
-								text = {
-									add_to_temp_variable = { round_i = 1 }
-								}
-								country_tag = "[ROOT.GetTag]"
-							}
+							add_to_temp_variable = { round_i = 1 }
 
 							YSS = {
 								random_owned_controlled_state = {

@@ -2262,9 +2262,10 @@ country_event = {
 		}
 		COG = {
 			set_popularities = {
-				neutrality = 50
-				communism = 50
+				neutrality = 95
+				communism = 5
 			}
+			set_country_flag = YSS_revolution_be_destroyed
 		}
 	}
 	option = {

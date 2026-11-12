@@ -578,6 +578,8 @@ on_actions = {
 			meta_effect = {
 				text = {
 					set_temp_variable = { clear_num_of_factory = YSS.YSS_total_of_factory_[country_tag] }
+
+					set_variable = { YSS.YSS_total_of_factory_[country_tag] = 0 }
 				}
 				country_tag = "[ROOT.GetTag]"
 			}

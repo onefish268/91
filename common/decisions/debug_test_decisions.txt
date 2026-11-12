@@ -16,15 +16,11 @@ debug_test_categories = {
 		}
 	}
 
-	is_equal_flag_number = {
-		available = {
-			has_country_flag = {
-				flag = YSS_test_of_number
-				days > 8
-			}
-		}
+	test_of_while_effect = {
 		complete_effect = {
-			add_stability = 0.01
+			add_political_power = YSS_total_of_factory_EGY
+			add_political_power = YSS_total_of_factory_LBA
+			add_political_power = YSS_the_num_of_send_factories
 		}
 	}
 
