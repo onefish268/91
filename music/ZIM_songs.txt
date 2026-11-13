@@ -240,3 +240,19 @@ music = {
         }
     }
 }
+music = {
+    song = "绯红恶魔姗姗而至"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}
+music = {
+    song = "妖妖跋扈"
+    chance = {
+        modifier = {
+            factor = 0
+        }
+    }
+}

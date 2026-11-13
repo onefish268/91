@@ -273,13 +273,23 @@ LIB_xijian_mg = {
             if = {
                 limit = {
                     any_state = {
-                        is_core_of = ROOT
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        OR = {
+                            is_core_of = ROOT
+                            is_core_of = COG
+                        }
                         free_building_slots = { building = industrial_complex size > 0 include_locked = no }
                     }
                 }
                 random_state = {
                     limit = {
-                        is_core_of = ROOT
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        OR = {
+                            is_core_of = ROOT
+                            is_core_of = COG
+                        }
                         free_building_slots = { building = industrial_complex size > 0 include_locked = no }
                     }
                     add_building_construction = {
@@ -446,13 +456,23 @@ LIB_xijian_jg = {
             if = {
                 limit = {
                     any_state = {
-                        is_core_of = ROOT
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        OR = {
+                            is_core_of = ROOT
+                            is_core_of = COG
+                        }
                         free_building_slots = { building = arms_factory size > 0 include_locked = no }
                     }
                 }
                 random_state = {
                     limit = {
-                        is_core_of = ROOT
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        OR = {
+                            is_core_of = ROOT
+                            is_core_of = COG
+                        }
                         free_building_slots = { building = arms_factory size > 0 include_locked = no }
                     }
                     add_building_construction = {
@@ -528,7 +548,12 @@ LIB_xijianzhuanyi_mg = {
 		custom_trigger_tooltip = {
             tooltip = "隙间中存在民用工厂且现世有建筑槽位"
 			any_state = {
-                    is_core_of = ROOT
+                    is_owned_by = ROOT
+                    is_controlled_by = ROOT
+                    OR = {
+                        is_core_of = ROOT
+                        is_core_of = COG
+                    }
                     free_building_slots = { building = industrial_complex size > 0 include_locked = no }
 				}
            check_variable = { LIB_xijianrongliang_mg > 0 }
@@ -538,7 +563,12 @@ LIB_xijianzhuanyi_mg = {
     complete_effect = {
         random_state = {
             limit = {
-                is_core_of = ROOT
+                is_owned_by = ROOT
+                is_controlled_by = ROOT
+                OR = {
+                    is_core_of = ROOT
+                    is_core_of = COG
+                }
                 free_building_slots = { building = industrial_complex size > 0 include_locked = no }
             }
             add_building_construction = {
@@ -573,7 +603,12 @@ LIB_xijianzhuanyi_jg = {
 		custom_trigger_tooltip = {
             tooltip = "隙间中存在军用工厂且现世有建筑槽位"
 			any_state = {
-                    is_core_of = ROOT
+                    is_owned_by = ROOT
+                    is_controlled_by = ROOT
+                    OR = {
+                        is_core_of = ROOT
+                        is_core_of = COG
+                    }
                     free_building_slots = { building = arms_factory size > 0 include_locked = no }
 				}
            check_variable = { LIB_xijianrongliang_jg > 0 }
@@ -583,7 +618,12 @@ LIB_xijianzhuanyi_jg = {
     complete_effect = {
         random_state = {
             limit = {
-                is_core_of = ROOT
+                is_owned_by = ROOT
+                is_controlled_by = ROOT
+                OR = {
+                    is_core_of = ROOT
+                    is_core_of = COG
+                }
                 free_building_slots = { building = arms_factory size > 0 include_locked = no }
             }
             add_building_construction = {
@@ -1059,6 +1099,18 @@ division_template = {
 		limit = { 173 = { controller = { has_war_with = DVL } }
         168 = { controller = { has_war_with = DVL } }}
 		add_timed_idea = { idea = LIB_chenggongdenglu days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = LIB_remi_in_power_flag
+					has_country_flag = LIB_fran_in_power_flag
+				}
+			}
+			play_song = "绯红恶魔姗姗而至"
+		}
+		else = {
+			play_song = "妖妖跋扈"
+		}
 		}
 		custom_effect_tooltip = LIB_tooltip_news_1
 		}
@@ -1345,6 +1397,18 @@ division_template = {
         22 = { controller = { has_war_with = DVL } }
 		817 = { controller = { has_war_with = DVL } }}
 		add_timed_idea = { idea = LIB_chenggongdenglu days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = LIB_remi_in_power_flag
+					has_country_flag = LIB_fran_in_power_flag
+				}
+			}
+			play_song = "绯红恶魔姗姗而至"
+		}
+		else = {
+			play_song = "妖妖跋扈"
+		}
 		}
 		custom_effect_tooltip = LIB_tooltip_news_1
 		}			
@@ -1542,6 +1606,18 @@ division_template = {
 		limit = { 117 = { controller = { has_war_with = DVL } }
         115 = { controller = { has_war_with = DVL } }}
 		add_timed_idea = { idea = LIB_chenggongdenglu days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = LIB_remi_in_power_flag
+					has_country_flag = LIB_fran_in_power_flag
+				}
+			}
+			play_song = "绯红恶魔姗姗而至"
+		}
+		else = {
+			play_song = "妖妖跋扈"
+		}
 		}
 		custom_effect_tooltip = LIB_tooltip_news_1
 		}		
@@ -1811,6 +1887,18 @@ division_template = {
 		limit = { 983 = { controller = { has_war_with = DVL } }
 		14 = { controller = { has_war_with = DVL } }}
 		add_timed_idea = { idea = LIB_chenggongdenglu days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = LIB_remi_in_power_flag
+					has_country_flag = LIB_fran_in_power_flag
+				}
+			}
+			play_song = "绯红恶魔姗姗而至"
+		}
+		else = {
+			play_song = "妖妖跋扈"
+		}
 		}
 			custom_effect_tooltip = LIB_tooltip_news_1
 		}	
@@ -2080,6 +2168,18 @@ division_template = {
 		limit = { 7 = { controller = { has_war_with = DVL } }
         35 = { controller = { has_war_with = DVL } }}
 		add_timed_idea = { idea = LIB_chenggongdenglu days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = LIB_remi_in_power_flag
+					has_country_flag = LIB_fran_in_power_flag
+				}
+			}
+			play_song = "绯红恶魔姗姗而至"
+		}
+		else = {
+			play_song = "妖妖跋扈"
+		}
 		}
 		custom_effect_tooltip = LIB_tooltip_news_1
 		}		

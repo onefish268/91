@@ -143,3 +143,13 @@ music = {
     file = "童葬祭.ogg"
     volume = 1
 }
+music = {
+    name = "绯红恶魔姗姗而至"
+    file = "绯红恶魔姗姗而至.ogg"
+    volume = 1
+}
+music = {
+    name = "妖妖跋扈"
+    file = "妖妖跋扈.ogg"
+    volume = 1
+}

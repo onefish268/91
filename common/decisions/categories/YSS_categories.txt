@@ -85,3 +85,12 @@ YSS_xcgdb = {
 	}
 	scripted_gui = YSS_pl_cat_gui
 }
+
+YSS_faction_struggle_category = {
+	picture = GFX_decision_generic_political_discourse
+	priority = 96
+	visible = {
+		original_tag = YSS
+	}
+	visible_when_empty = yes
+}

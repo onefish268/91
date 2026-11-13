@@ -290,3 +290,9 @@ YSS_Yierma = {#伊尔玛
 }
 
 country_event = { id = YSS.2000 days = 24 }
+#联盟派系斗争：党权派/军队派/国家派/世界派的初始影响力
+set_variable = { YSS_party_party_point = 4 }
+set_variable = { YSS_party_army_point = 3 }
+set_variable = { YSS_party_country_point = 2 }
+set_variable = { YSS_party_world_point = 1 }
+
