@@ -45,6 +45,9 @@ country_event = {
 	title = YSS.1001.t
 	desc = YSS.1001.d
 	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = YSS_revolution_be_destroyed }
+	}
 	option = {
 		name = YSS.1001.a
 		#////////引爆战争的代码
