@@ -525,3 +525,134 @@ defined_text = {
 		localization_key = YSS_war5_effect_jibuti
 	}
 }
+
+defined_text = {
+	name = Get_YSS_leader_party_name
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_army_point > YSS_party_party_point } }
+			NOT = { check_variable = { YSS_party_country_point > YSS_party_party_point } }
+			NOT = { check_variable = { YSS_party_world_point > YSS_party_party_point } }
+		}
+		localization_key = YSS_party_name_party
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_party_point > YSS_party_army_point } }
+			NOT = { check_variable = { YSS_party_country_point > YSS_party_army_point } }
+			NOT = { check_variable = { YSS_party_world_point > YSS_party_army_point } }
+		}
+		localization_key = YSS_party_name_army
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_party_point > YSS_party_country_point } }
+			NOT = { check_variable = { YSS_party_army_point > YSS_party_country_point } }
+			NOT = { check_variable = { YSS_party_world_point > YSS_party_country_point } }
+		}
+		localization_key = YSS_party_name_country
+	}
+	text = {
+		localization_key = YSS_party_name_world
+	}
+}
+
+defined_text = {
+	name = Get_YSS_party_party_situation
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_party_point > 2 } }
+		}
+		localization_key = YSS_party_situation_low
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_party_point = 3 }
+		}
+		localization_key = YSS_party_situation_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_party_point = 4 }
+		}
+		localization_key = YSS_party_situation_high
+	}
+	text = {
+		localization_key = YSS_party_situation_max
+	}
+}
+
+defined_text = {
+	name = Get_YSS_party_army_situation
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_army_point > 2 } }
+		}
+		localization_key = YSS_party_situation_low
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_army_point = 3 }
+		}
+		localization_key = YSS_party_situation_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_army_point = 4 }
+		}
+		localization_key = YSS_party_situation_high
+	}
+	text = {
+		localization_key = YSS_party_situation_max
+	}
+}
+
+defined_text = {
+	name = Get_YSS_party_country_situation
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_country_point > 2 } }
+		}
+		localization_key = YSS_party_situation_low
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_country_point = 3 }
+		}
+		localization_key = YSS_party_situation_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_country_point = 4 }
+		}
+		localization_key = YSS_party_situation_high
+	}
+	text = {
+		localization_key = YSS_party_situation_max
+	}
+}
+
+defined_text = {
+	name = Get_YSS_party_world_situation
+	text = {
+		trigger = {
+			NOT = { check_variable = { YSS_party_world_point > 2 } }
+		}
+		localization_key = YSS_party_situation_low
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_world_point = 3 }
+		}
+		localization_key = YSS_party_situation_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { YSS_party_world_point = 4 }
+		}
+		localization_key = YSS_party_situation_high
+	}
+	text = {
+		localization_key = YSS_party_situation_max
+	}
+}
