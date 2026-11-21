@@ -94,6 +94,10 @@ spriteTypes = {
 	}
     #超事件
     #结语
+	spriteType = {
+		name = "GFX_LIB_End_Icon_1"
+		texturefile = "gfx/interface/gui/end_ui/LIB_End_Icon.png"
+	}
 	#决议
     #事件
 

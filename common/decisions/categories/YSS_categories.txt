@@ -94,3 +94,30 @@ YSS_faction_struggle_category = {
 	}
 	visible_when_empty = yes
 }
+
+YSS_srgdtm_category = {
+	picture = GFX_decision_generic_political_discourse
+	scripted_gui = YSS_srgdtm_ui
+	priority = 96
+	visible = {
+		original_tag = YSS
+		has_country_flag = YSS_srgdtm_open_flag
+	}
+	visible_when_empty = yes
+}
+YSS_sannianjihua_category = {
+	picture = GFX_decision_generic_political_discourse
+	priority = 95
+	visible = {
+		has_completed_focus = YSS_focus_42
+	}
+	visible_when_empty = yes
+}
+
+YSS_debug_category = {
+	picture = GFX_decision_generic_political_discourse
+	priority = 9999
+	visible = {
+		is_debug = yes
+	}
+}

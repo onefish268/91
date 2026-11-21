@@ -201,6 +201,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				weekly_manpower = -10000
 			}
 			targeted_modifier = {
 				tag = LIB

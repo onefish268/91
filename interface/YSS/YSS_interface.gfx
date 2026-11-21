@@ -312,4 +312,25 @@ spriteTypes = {
 		name = GFX_YSS_publicity_image_J
 		texturefile = "gfx/leaders/YSS/GFX_YSS_publicity_image_J.png"
 	}
+    spriteType = {
+        name = GFX_YSS_srgdtm_banner
+        texturefile = "gfx/guis/YSS/srgdtm_banner.png"
+        transparencecheck = yes
+    }
+    # 兽人共斗同盟决议组头图：三层头像叠放（0 = 采齐利娅，1 = 布里，2 = 梅莱斯）
+    spriteType = {
+        name = GFX_YSS_srgdtm_layer0
+        texturefile = "gfx/guis/YSS/srgdtm_layer0.png"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_YSS_srgdtm_layer1
+        texturefile = "gfx/guis/YSS/srgdtm_layer1.png"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_YSS_srgdtm_layer2
+        texturefile = "gfx/guis/YSS/srgdtm_layer2.png"
+        transparencecheck = yes
+    }
 }

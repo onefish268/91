@@ -74,6 +74,8 @@ set_variable = { YSS_economy_committee_industry_repair_factor = 0.05 }
 set_variable = { YSS_economy_committee_line_change_production_efficiency_factor = -0.1 }
 set_variable = { YSS_economy_committee_production_factory_efficiency_gain_factor = -0.1 }
 set_variable = { YSS_economy_committee_production_factory_max_efficiency_factor = -0.1 }
+set_variable = { YSS_economy_committee_arms_factory_construction_speed = -9.99 }
+set_variable = { YSS_economy_committee_industrial_complex_construction_speed = -9.99 }
 add_dynamic_modifier = { modifier = YSS_8 }
 
 #不纯洁的党组织
@@ -296,3 +298,8 @@ set_variable = { YSS_party_army_point = 3 }
 set_variable = { YSS_party_country_point = 2 }
 set_variable = { YSS_party_world_point = 1 }
 
+
+set_variable = { YSS_srgdtm_leader = 0 }
+set_variable = { YSS_srgdtm_power = 0 }
+set_variable = { YSS_srgdtm_loyalty = 0 }
+set_variable = { YSS_sannianjihua_tourumingong = 0 }

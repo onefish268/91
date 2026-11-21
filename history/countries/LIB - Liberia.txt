@@ -43,7 +43,8 @@ set_cosmetic_tag = LIB_FRA
 
 set_popularities = {
 	democratic = 30
-	neutrality = 70
+	neutrality = 65
+	fascism = 5
 }
 
 recruit_character = FRA_Yukari

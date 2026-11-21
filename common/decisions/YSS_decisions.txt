@@ -3188,3 +3188,1137 @@ YSS_civil_war_category = {
 		}
 	}
 }
+
+YSS_srgdtm_category = {
+
+	YSS_gmssp_decision = {
+		icon = generic_political_discourse
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 200
+		days_remove = 60
+		visible = {
+			original_tag = YSS
+		}
+		allowed = {
+			original_tag = YSS
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = YSS_gmssp_idea
+				days = 60
+			}
+		}
+	}
+
+	YSS_wg_lhscjx = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_51 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_47
+			NOT = { has_completed_focus = YSS_focus_51 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_51
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_pq_wggy = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_61 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_51
+			NOT = { has_completed_focus = YSS_focus_61 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_61
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_wg_ybzp = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_63 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_61
+			NOT = { has_completed_focus = YSS_focus_63 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_63
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_yj_tlz = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_52 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_47
+			NOT = { has_completed_focus = YSS_focus_52 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_52
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_pq_wghg = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_68 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_48
+			NOT = { has_completed_focus = YSS_focus_68 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_68
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_pq_wgtlj = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_42
+			NOT = { has_completed_focus = YSS_focus_54 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_68
+			NOT = { has_completed_focus = YSS_focus_54 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_54
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_pq_wtlfy = {
+		icon = generic_political_discourse
+		cost = 200
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			has_completed_focus = YSS_focus_162
+			NOT = { has_completed_focus = YSS_focus_164 }
+		}
+		available = {
+			has_completed_focus = YSS_focus_163
+			NOT = { has_completed_focus = YSS_focus_164 }
+		}
+		complete_effect = {
+			complete_national_focus = YSS_focus_164
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YSS_smuggle_1 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 120
+		days_re_enable = 60
+
+		visible = {
+			has_country_flag = YSS_sannianjihua_flag_1
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			random_list = {
+				25 = { country_event = { id = YSS.9997 } }
+				25 = { add_to_variable = { ubs_save = 100 } }
+				25 = { add_to_variable = { YSS_gy_point = 5 } }
+				12.5 = {
+					268 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+				}
+				12.5 = { add_political_power = 50 }
+			}
+		}
+	}
+
+	YSS_smuggle_2 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 120
+		days_re_enable = 60
+
+		visible = {
+			has_country_flag = YSS_sannianjihua_flag_2
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			random_list = {
+				25 = { country_event = { id = YSS.9997 } }
+				25 = { add_to_variable = { ubs_save = 100 } }
+				25 = { add_to_variable = { YSS_gy_point = 5 } }
+				12.5 = {
+					268 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+				}
+				12.5 = { add_political_power = 50 }
+			}
+		}
+	}
+
+	YSS_smuggle_3 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 120
+		days_re_enable = 60
+
+		visible = {
+			has_country_flag = YSS_sannianjihua_flag_3
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			random_list = {
+				25 = { country_event = { id = YSS.9997 } }
+				25 = { add_to_variable = { ubs_save = 100 } }
+				25 = { add_to_variable = { YSS_gy_point = 5 } }
+				12.5 = {
+					268 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					}
+				}
+				12.5 = { add_political_power = 50 }
+			}
+		}
+	}
+
+	YSS_gy_waihui = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+
+		visible = {
+			has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_waihui_need
+				check_variable = { ubs_save > 99 }
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -100
+				tooltip = UBS_SAVE_down_100
+			}
+			add_to_variable = {
+				var = YSS_gy_point
+				value = 1
+				tooltip = YSS_tt_gy_gain1
+			}
+		}
+	}
+}
+
+YSS_sannianjihua_category = {
+	YSS_gy_touru1 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+
+		visible = {
+			has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_civ_p1
+			hidden_effect = { add_to_variable = { YSS_economy_committee_civilian_factory_use = 1 } }
+			custom_effect_tooltip = YSS_tt_gy_out_p0_4
+			hidden_effect = { add_to_variable = { YSS_gy_output = 0.4 } }
+			hidden_effect = { add_to_variable = { YSS_sannianjihua_tourumingong = 1 } }
+		}
+	}
+	YSS_gy_touru10 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+
+		visible = {
+			has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_civ_p10
+			hidden_effect = { add_to_variable = { YSS_economy_committee_civilian_factory_use = 10 } }
+			custom_effect_tooltip = YSS_tt_gy_out_p4
+			hidden_effect = { add_to_variable = { YSS_gy_output = 4 } }
+			hidden_effect = { add_to_variable = { YSS_sannianjihua_tourumingong = 10 } }
+		}
+	}
+	YSS_gy_chechu1 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+
+		visible = {
+			has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_chechu1
+				check_variable = { YSS_sannianjihua_tourumingong > 0 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_civ_m1
+			hidden_effect = { add_to_variable = { YSS_economy_committee_civilian_factory_use = -1 } }
+			custom_effect_tooltip = YSS_tt_gy_out_m0_4
+			hidden_effect = { add_to_variable = { YSS_gy_output = -0.4 } }
+			hidden_effect = { add_to_variable = { YSS_sannianjihua_tourumingong = -1 } }
+		}
+	}
+	YSS_gy_chechu10 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+
+		visible = {
+			has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_chechu10
+				check_variable = { YSS_sannianjihua_tourumingong > 9 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_civ_m10
+			hidden_effect = { add_to_variable = { YSS_economy_committee_civilian_factory_use = -10 } }
+			custom_effect_tooltip = YSS_tt_gy_out_m4
+			hidden_effect = { add_to_variable = { YSS_gy_output = -4 } }
+			hidden_effect = { add_to_variable = { YSS_sannianjihua_tourumingong = -10 } }
+		}
+	}
+	YSS_gy_1 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need10
+				check_variable = { YSS_gy_point > 9.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend10
+			hidden_effect = { add_to_variable = { YSS_gy_point = -10 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_4
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.4 } }
+			923 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_1
+		}
+	}
+
+	YSS_gy_2 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need10
+				check_variable = { YSS_gy_point > 9.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend10
+			hidden_effect = { add_to_variable = { YSS_gy_point = -10 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_4
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.4 } }
+			922 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_2
+		}
+	}
+
+	YSS_gy_3 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need10
+				check_variable = { YSS_gy_point > 9.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend10
+			hidden_effect = { add_to_variable = { YSS_gy_point = -10 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_4
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.4 } }
+			920 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_3
+		}
+	}
+
+	YSS_gy_4 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need20
+				check_variable = { YSS_gy_point > 19.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend20
+			hidden_effect = { add_to_variable = { YSS_gy_point = -20 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_7
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.7 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_7
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.7 } }
+			271 = {
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_4
+		}
+	}
+
+	YSS_gy_5 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 150
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need35
+				check_variable = { YSS_gy_point > 34.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend35
+			hidden_effect = { add_to_variable = { YSS_gy_point = -35 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_2
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.2 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			271 = {
+				add_extra_state_shared_building_slots = 11
+				add_building_construction = { type = industrial_complex level = 11 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_5
+		}
+	}
+
+	YSS_gy_6 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_51
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need18
+				check_variable = { YSS_gy_point > 17.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend18
+			hidden_effect = { add_to_variable = { YSS_gy_point = -18 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			1232 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+			1232 = { add_resource = { type = steel amount = 20 } }
+			set_country_flag = YSS_sannianjihua_flag_6
+		}
+	}
+
+	YSS_gy_7 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_51
+		has_completed_focus = YSS_focus_54
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need20
+				check_variable = { YSS_gy_point > 19.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend20
+			hidden_effect = { add_to_variable = { YSS_gy_point = -20 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_8
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.8 } }
+			547 = {
+				add_extra_state_shared_building_slots = 9
+				add_building_construction = { type = industrial_complex level = 9 instant_build = yes }
+			}
+			custom_effect_tooltip = YSS_tt_gy_out_p3
+			hidden_effect = { add_to_variable = { YSS_gy_output = 3 } }
+			set_country_flag = YSS_sannianjihua_flag_7
+		}
+	}
+
+	YSS_gy_8 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 150
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_51
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need45
+				check_variable = { YSS_gy_point > 44.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend45
+			hidden_effect = { add_to_variable = { YSS_gy_point = -45 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			944 = {
+				add_extra_state_shared_building_slots = 14
+				add_building_construction = { type = industrial_complex level = 14 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_8
+		}
+	}
+
+	YSS_gy_9 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_51
+		has_completed_focus = YSS_focus_68
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need18
+				check_variable = { YSS_gy_point > 17.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend18
+			hidden_effect = { add_to_variable = { YSS_gy_point = -18 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			906 = {
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+				add_building_construction = { type = dockyard level = 2 instant_build = yes }
+			}
+			906 = { add_resource = { type = oil amount = 25 } }
+			if = {
+				limit = { NOT = { has_tech = synth_oil_experiments } }
+				set_technology = { synth_oil_experiments = 1 }
+			}
+			if = {
+				limit = { NOT = { has_tech = fuel_silos } }
+				set_technology = { fuel_silos = 1 }
+			}
+			set_country_flag = YSS_sannianjihua_flag_9
+		}
+	}
+
+	YSS_gy_10 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_74
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need25
+				check_variable = { YSS_gy_point > 24.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend25
+			hidden_effect = { add_to_variable = { YSS_gy_point = -25 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			1232 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_10
+		}
+	}
+
+	YSS_gy_11 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_74
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need25
+				check_variable = { YSS_gy_point > 24.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend25
+			hidden_effect = { add_to_variable = { YSS_gy_point = -25 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			269 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_11
+		}
+	}
+
+	YSS_gy_12 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_74
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need25
+				check_variable = { YSS_gy_point > 24.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend25
+			hidden_effect = { add_to_variable = { YSS_gy_point = -25 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 1.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			970 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_12
+		}
+	}
+
+	YSS_gy_13 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_68
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need25
+				check_variable = { YSS_gy_point > 24.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend25
+			hidden_effect = { add_to_variable = { YSS_gy_point = -25 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 0.5 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m0_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -0.5 } }
+			921 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			custom_effect_tooltip = YSS_tt_gy_out_p3
+			hidden_effect = { add_to_variable = { YSS_gy_output = 3 } }
+			set_country_flag = YSS_sannianjihua_flag_13
+		}
+	}
+
+	YSS_gy_14 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_49
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need30
+				check_variable = { YSS_gy_point > 29.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend30
+			hidden_effect = { add_to_variable = { YSS_gy_point = -30 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p2_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 2.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			271 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_14
+		}
+	}
+
+	YSS_gy_15 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_55
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need35
+				check_variable = { YSS_gy_point > 34.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend35
+			hidden_effect = { add_to_variable = { YSS_gy_point = -35 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p2_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 2.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			922 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_15
+		}
+	}
+
+	YSS_gy_16 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_49
+		has_completed_focus = YSS_focus_57
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need30
+				check_variable = { YSS_gy_point > 29.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend30
+			hidden_effect = { add_to_variable = { YSS_gy_point = -30 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p2_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 2.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			269 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_16
+		}
+	}
+
+	YSS_gy_17 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_49
+		has_completed_focus = YSS_focus_57
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need25
+				check_variable = { YSS_gy_point > 24.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend25
+			hidden_effect = { add_to_variable = { YSS_gy_point = -25 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p2_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 2.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.0 } }
+			970 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+			}
+			if = {
+				limit = { NOT = { has_tech = tech_trucks } }
+				set_technology = { tech_trucks = 1 }
+			}
+			if = {
+				limit = { NOT = { has_tech = motorised_infantry } }
+				set_technology = { motorised_infantry = 1 }
+			}
+			set_country_flag = YSS_sannianjihua_flag_17
+		}
+	}
+
+	YSS_gy_18 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		NOT = { has_country_flag = YSS_sannianjihuazidonghua_flag }
+		has_completed_focus = YSS_focus_49
+		has_completed_focus = YSS_focus_57
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YSS_tt_gy_need35
+				check_variable = { YSS_gy_point > 34.99 }
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = YSS_tt_gy_spend35
+			hidden_effect = { add_to_variable = { YSS_gy_point = -35 } }
+			custom_effect_tooltip = YSS_tt_gy_up_p2_0
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = 2.0 } }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = YSS_tt_gy_up_m1_5
+			hidden_effect = { add_to_variable = { YSS_gy_upkeep_hard = -1.5 } }
+			559 = {
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+				add_building_construction = { type = dockyard level = 5 instant_build = yes }
+			}
+			set_country_flag = YSS_sannianjihua_flag_18
+		}
+	}
+
+	YSS_gy_19 = {
+		icon = GFX_decision_generic_political_actions
+		cost = 0
+		fire_only_once = yes
+
+		visible = {
+		has_completed_focus = YSS_focus_42
+		has_country_flag = YSS_sannianjihua_flag_1
+		has_country_flag = YSS_sannianjihua_flag_2
+		has_country_flag = YSS_sannianjihua_flag_3
+		has_country_flag = YSS_sannianjihua_flag_4
+		has_country_flag = YSS_sannianjihua_flag_5
+		has_country_flag = YSS_sannianjihua_flag_6
+		has_country_flag = YSS_sannianjihua_flag_7
+		has_country_flag = YSS_sannianjihua_flag_8
+		has_country_flag = YSS_sannianjihua_flag_9
+		has_country_flag = YSS_sannianjihua_flag_10
+		has_country_flag = YSS_sannianjihua_flag_11
+		has_country_flag = YSS_sannianjihua_flag_12
+		has_country_flag = YSS_sannianjihua_flag_13
+		has_country_flag = YSS_sannianjihua_flag_14
+		has_country_flag = YSS_sannianjihua_flag_15
+		has_country_flag = YSS_sannianjihua_flag_16
+		has_country_flag = YSS_sannianjihua_flag_17
+		has_country_flag = YSS_sannianjihua_flag_18
+		}
+
+		complete_effect = {
+			set_country_flag = YSS_sannianjihua_flag_19
+		}
+	}
+}
+# 由 DeepSeek 写成（调试决议）
+YSS_debug_category = {
+	YSS_debug_ethaoi = {
+		allowed = {
+			original_tag = YSS
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_debug = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = { country_exists = ETH }
+				annex_country = {
+					target = ETH
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = { country_exists = AOI }
+				annex_country = {
+					target = AOI
+					transfer_troops = no
+				}
+			}
+			country_event = { id = YSS.90 }
+		}
+	}
+}

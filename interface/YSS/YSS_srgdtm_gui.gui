@@ -1,0 +1,14 @@
+guiTypes = {
+	# 头图窗口：绑在 YSS_srgdtm_category 上（scripted_gui = YSS_srgdtm_ui）
+	# 图片本身由 scripted_gui 的 properties 绑定：srgdtm_figure = { image = "[YSS_Get_srgdtm_figure]" }
+	# 三种状态（采齐利娅 / 布里 / 梅莱斯）由 defined_text 按变量切
+	containerWindowType = {
+		name = "YSS_srgdtm_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 244 }
+		iconType = {
+			name = "srgdtm_figure"
+			position = { x = 0 y = 0 }
+		}
+	}
+}

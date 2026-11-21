@@ -885,25 +885,27 @@ LIB_xiji = {
         }
 	}
 	remove_effect = {
-        # 按顺序推进阶段 flag
+        # 按顺序推进阶段 flag（先清空全部，再写入下一级，避免多旗并存）
         if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag1 } }
-            set_country_flag = LIB_xiji_flag1
+            limit = { has_country_flag = LIB_xiji_flag3 }
+            clr_country_flag = LIB_xiji_flag1
+            clr_country_flag = LIB_xiji_flag2
+            clr_country_flag = LIB_xiji_flag3
+            set_country_flag = LIB_xiji_flag4
         }
         else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag2 } }
-			clr_country_flag = LIB_xiji_flag1
-            set_country_flag = LIB_xiji_flag2
-        }
-        else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag3 } }
+            limit = { has_country_flag = LIB_xiji_flag2 }
+            clr_country_flag = LIB_xiji_flag1
             clr_country_flag = LIB_xiji_flag2
             set_country_flag = LIB_xiji_flag3
         }
         else_if = {
-            limit = { NOT = { has_country_flag = LIB_xiji_flag4 } }
-            clr_country_flag = LIB_xiji_flag3
-            set_country_flag = LIB_xiji_flag4
+            limit = { has_country_flag = LIB_xiji_flag1 }
+            clr_country_flag = LIB_xiji_flag1
+            set_country_flag = LIB_xiji_flag2
+        }
+        else = {
+            set_country_flag = LIB_xiji_flag1
         }
     }
 }
@@ -2312,7 +2314,7 @@ division_template = {
 	}
 	}
 LIB_junshi_category = {
-LIB_ruqinMOR {
+LIB_ruqinMOR = {
     icon = GFX_decision_generic_political_actions
     cost = 10
     days_remove = 30
@@ -2378,7 +2380,7 @@ LIB_ruqinMOR {
     }
 }
 }
-LIB_ruqinLBA {
+LIB_ruqinLBA = {
     icon = GFX_decision_generic_political_actions
     cost = 10
     days_remove = 30
@@ -2674,7 +2676,7 @@ LIB_ruqinLBA {
 #    }
 #}
 #步兵装备革新
-LIB_bubingzhuangbeigexin {
+LIB_bubingzhuangbeigexin = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2699,7 +2701,7 @@ LIB_bubingzhuangbeigexin {
     }
 }
 #特种部队极端训练一期
-LIB_tzbdjdxlyq {
+LIB_tzbdjdxlyq = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2737,7 +2739,7 @@ LIB_tzbdjdxlyq {
     }
 }
 #特种部队极端训练二期
-LIB_tzbdjdxleq {
+LIB_tzbdjdxleq = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2773,7 +2775,7 @@ LIB_tzbdjdxleq {
     }
 }
 #推广特种部队经验
-LIB_tuiguangtzbd {
+LIB_tuiguangtzbd = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2815,7 +2817,7 @@ LIB_tuiguangtzbd {
     }
 }
 #大玉嘈嘈如急雨
-LIB_dayucaocaorujiyu {
+LIB_dayucaocaorujiyu = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2847,7 +2849,7 @@ LIB_dayucaocaorujiyu {
     }
 }
 #小玉切切如私雨
-LIB_xiaoyuqieqierusiyu {
+LIB_xiaoyuqieqierusiyu = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2879,7 +2881,7 @@ LIB_xiaoyuqieqierusiyu {
     }
 }
 #嘈嘈切切错杂发
-LIB_caocaoqieqiecuozafa {
+LIB_caocaoqieqiecuozafa = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2906,7 +2908,7 @@ LIB_caocaoqieqiecuozafa {
     }
 }
 #大玉小玉砸傻瓜
-LIB_dayuxiaoyuzashagua {
+LIB_dayuxiaoyuzashagua = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2938,7 +2940,7 @@ LIB_dayuxiaoyuzashagua {
     }
 }
 #月都重炮
-LIB_yueduzhongpao {
+LIB_yueduzhongpao = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -2964,7 +2966,7 @@ LIB_yueduzhongpao {
     }
 }
 #利用第四槐安通道
-LIB_disihuaiantongdao {
+LIB_disihuaiantongdao = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -3001,7 +3003,7 @@ LIB_disihuaiantongdao {
     }
 }
 #征召“因污秽拒服兵役者”
-LIB_zzwh {
+LIB_zzwh = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -3038,7 +3040,7 @@ LIB_zzwh {
     }
 }
 #秽身探知型水雷
-LIB_hstzxsl {
+LIB_hstzxsl = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -3071,7 +3073,7 @@ LIB_hstzxsl {
     }
 }
 #在背后开门的能力
-LIB_hhzl {
+LIB_hhzl = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30
@@ -3113,7 +3115,7 @@ LIB_hhzl {
     }
 }
 #再起立术式
-LIB_zqlss {
+LIB_zqlss = {
     icon = GFX_decision_generic_political_actions
     cost = 0
     days_remove = 30

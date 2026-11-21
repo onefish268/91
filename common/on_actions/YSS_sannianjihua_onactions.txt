@@ -1,0 +1,78 @@
+# 由 DeepSeek 写成
+on_actions = {
+	on_monthly_YSS = {
+		effect = {
+			if = {
+				limit = { has_country_flag = YSS_open_sannianjihua }
+				set_variable = { YSS_gy_upkeep_soft = 0 }
+			if = {
+				limit = { num_of_factories > 149 }
+				set_variable = { YSS_gy_upkeep_soft = 15 }
+			}
+			else_if = {
+				limit = { num_of_factories > 139 }
+				set_variable = { YSS_gy_upkeep_soft = 14 }
+			}
+			else_if = {
+				limit = { num_of_factories > 129 }
+				set_variable = { YSS_gy_upkeep_soft = 13 }
+			}
+			else_if = {
+				limit = { num_of_factories > 119 }
+				set_variable = { YSS_gy_upkeep_soft = 12 }
+			}
+			else_if = {
+				limit = { num_of_factories > 109 }
+				set_variable = { YSS_gy_upkeep_soft = 11 }
+			}
+			else_if = {
+				limit = { num_of_factories > 99 }
+				set_variable = { YSS_gy_upkeep_soft = 10 }
+			}
+			else_if = {
+				limit = { num_of_factories > 89 }
+				set_variable = { YSS_gy_upkeep_soft = 9 }
+			}
+			else_if = {
+				limit = { num_of_factories > 79 }
+				set_variable = { YSS_gy_upkeep_soft = 8 }
+			}
+			else_if = {
+				limit = { num_of_factories > 69 }
+				set_variable = { YSS_gy_upkeep_soft = 7 }
+			}
+			else_if = {
+				limit = { num_of_factories > 59 }
+				set_variable = { YSS_gy_upkeep_soft = 6 }
+			}
+			else_if = {
+				limit = { num_of_factories > 49 }
+				set_variable = { YSS_gy_upkeep_soft = 5 }
+			}
+			else_if = {
+				limit = { num_of_factories > 39 }
+				set_variable = { YSS_gy_upkeep_soft = 4 }
+			}
+			else_if = {
+				limit = { num_of_factories > 29 }
+				set_variable = { YSS_gy_upkeep_soft = 3 }
+			}
+			else_if = {
+				limit = { num_of_factories > 19 }
+				set_variable = { YSS_gy_upkeep_soft = 2 }
+			}
+			else_if = {
+				limit = { num_of_factories > 9 }
+				set_variable = { YSS_gy_upkeep_soft = 1 }
+			}
+				add_to_variable = { YSS_gy_point = { value = YSS_gy_output } }
+				add_to_variable = { YSS_gy_point = { value = YSS_gy_upkeep_hard multiply = -1 } }
+				add_to_variable = { YSS_gy_point = { value = YSS_gy_upkeep_soft multiply = -1 } }
+				clamp_variable = { var = YSS_gy_point min = 0 }
+				set_variable = { YSS_gy_upkeep_total = 0 }
+				add_to_variable = { YSS_gy_upkeep_total = { value = YSS_gy_upkeep_hard } }
+				add_to_variable = { YSS_gy_upkeep_total = { value = YSS_gy_upkeep_soft } }
+			}
+		}
+	}
+}

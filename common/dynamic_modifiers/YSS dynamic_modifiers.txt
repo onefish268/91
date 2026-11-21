@@ -191,6 +191,8 @@ YSS_8 = {
 	research_speed_factor = YSS_economy_committee_research_speed_factor  ##研究速度
 	intelligence_agency_defense = YSS_economy_committee_intelligence_agency_defense  ##反间谍
 	production_speed_buildings_factor = YSS_economy_committee_production_speed_buildings_factor  ##建设速度
+	production_speed_arms_factory_factor = YSS_economy_committee_arms_factory_construction_speed   ##军用工厂建设速度
+	production_speed_industrial_complex_factor = YSS_economy_committee_industrial_complex_construction_speed   ##民用工厂建设速度
 }	
 #不纯洁的党组织
 YSS_9 = {

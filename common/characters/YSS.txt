@@ -537,6 +537,7 @@ characters = {
 	}
 	YSS_1_24 = {
 		name = "空"
+		desc = "YSS_1_24_desc"
 		portraits = {
 			civilian = {
 				small = "gfx/leaders/YSS/92.png"
@@ -556,6 +557,7 @@ characters = {
 	}
 	YSS_1_25 = {
 		name = "白"
+		desc = "YSS_1_25_desc"
 		portraits = {
 			civilian = {
 				small = "gfx/leaders/YSS/93.png"

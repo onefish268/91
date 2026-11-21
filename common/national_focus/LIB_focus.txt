@@ -1813,6 +1813,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = LIB_dwtzhzej1
+		remove_ideas = LIB_xjkj
 		create_intelligence_agency = {
         name = "对外投资合作二局"
     }
@@ -2126,12 +2127,7 @@ focus_tree = {
 		mark_focus_tree_layout_dirty = yes
 		drop_cosmetic_tag = yes
 		set_cosmetic_tag = LIB_lw
-		if = {
-			limit = {
-				NOT = { has_country_flag = LIB_close_flavor_flag }
-			}
-			country_event = { id = LIB_flavor.16 days = 3 }
-		}
+		country_event = { id = LIB_flavor.16 days = 3 }
 		}
 	}
 	

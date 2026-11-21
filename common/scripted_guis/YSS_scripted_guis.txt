@@ -451,5 +451,15 @@ scripted_gui = {
 		}
 	}
 	
+
+	YSS_srgdtm_ui = { #兽人共斗同盟决议组头图
+		context_type = decision_category
+		window_name = "YSS_srgdtm_ui_window"
+		properties = {
+			srgdtm_figure = {
+				image = "[YSS_Get_srgdtm_figure]"
+			}
+		}
+	}
 }
 

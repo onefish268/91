@@ -1,0 +1,3730 @@
+# 由 DeepSeek 写成
+# 覆盖父 mod common/decisions/_generic_decisions.txt：把 LIB 从搜捕/查禁类决议的 allowed 中排除
+
+political_actions = {
+    load_generic_focus2 = { #载入通用国策
+        allowed = {
+        }
+        available = {
+        }
+        visible = {
+			or = {
+				is_ai = no
+				has_game_rule = {
+					rule = generic_focus
+					option = yes
+				}
+			}
+			has_focus_tree = generic_focus
+        }
+        fire_only_once = yes
+        priority = 10
+        complete_effect = {
+			load_focus_tree = generic_focus2
+        }
+        timeout_effect = {
+        }
+		ai_will_do = {
+			base = 1000
+		}
+    }
+	YBLY_quick_decision_in_war = { #
+		visible = {
+			has_global_flag = Iberian_civil_war_start
+			tag = AHM
+		}
+		available = {
+			has_global_flag = {
+				flag = Iberian_civil_war_start
+				days > 360
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+				limit = {
+					or = {
+						tag = NPT
+						tag = ARF
+						tag = BLA
+						tag = MOR
+					}
+				}
+				add_ideas = POL_veteran_troops_weary
+			}
+		}
+	}
+	YBLY_quick_decision_in_war_end = { #
+		visible = {
+			not = {
+				has_global_flag = Iberian_civil_war_start
+			}
+			tag = AHM
+		}
+		available = {
+			not = {
+				has_global_flag = Iberian_civil_war_start
+			}
+			date > 1938.6.1
+		}
+		ai_will_do = {
+			base = 1000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+				limit = {
+					or = {
+						tag = NPT
+						tag = ARF
+						tag = BLA
+						tag = MOR
+					}
+				}
+				remove_ideas = POL_veteran_troops_weary
+			}
+		}
+	}
+    PAM_kuilei = { #用于莉兰迪亚王国傀儡的意识形态
+        icon = GFX_galgamelili
+        allowed = {
+            original_tag = AHM
+        }
+        target_trigger = {
+            FROM = {
+                is_in_faction_with = PAM
+                is_subject_of = PAM
+				or = {
+                	not = {
+                	    has_country_flag = PAM_jiancekuilei
+                	}
+					not = {
+						has_country_leader_ideology = wolfpack_survivalism
+					}
+				}
+            }
+        }
+        available = {
+            PAM = {
+				has_completed_focus = PAM_bhqrh
+			}
+        }
+        visible = {
+        }
+        fire_only_once = yes
+        priority = 10
+        days_mission_timeout = 79999
+        is_good = no
+        complete_effect = {
+            FROM = {
+                set_country_flag = PAM_jiancekuilei
+                set_country_leader_ideology = wolfpack_survivalism
+                set_party_name = {
+                    ideology = fascism
+                    long_name = sln_fascism_party
+                    name = sln_fascism_party_long
+                }
+            }
+        }
+        timeout_effect = {
+        }
+		ai_will_do = {
+			base = 1000
+		}
+    }
+	AHM_SOV_war_with_DVL = {
+		allowed = { tag = AHM }
+		available = {
+			DVL = { has_war_with = SOV }
+		}
+		visible = {
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			set_global_flag = AHM_SOV_war_with_DVL
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	AHM_FRA_GER_war_with_DVL = { 
+		allowed = { tag = AHM }
+		available = {
+			or = {
+				DVL = { has_war_with = FRA }
+				DVL = { has_war_with = GER }
+			}
+			not = {
+				has_global_flag = second_weltkrieg_has_started
+			}
+		}
+		visible = {
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			set_global_flag = second_weltkrieg_has_started
+		}
+	}
+	return_cores_to_ally = {
+		icon = generic_agreement
+		available = {
+			ROOT = {
+				OR = {
+					has_war = no
+					surrender_progress < 0.20
+				}
+			}
+		}
+		visible = {
+			is_in_faction = yes
+			NOT = { has_country_flag = KR_returning_land }
+			any_owned_state = {
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
+				}
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+				}
+				NOT = { has_state_flag = KR_keeping_state@ROOT }
+			}
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+		}
+		target_root_trigger = {
+			is_in_faction = yes
+		}
+		target_array = allies
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision return_cores_to_ally target: [From.GetName]"
+			set_country_flag = KR_returning_land
+			FROM = { save_event_target_as = return_to }
+			country_event = annex.3
+		}
+	}
+	return_cores_to_subject = {
+		icon = generic_agreement
+		available = {
+			ROOT = {
+				OR = {
+					has_war = no
+					surrender_progress < 0.20
+				}
+			}
+		}
+		visible = {
+			is_in_faction = no
+			num_subjects > 0
+			NOT = { has_country_flag = KR_returning_land }
+			any_owned_state = {
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
+				}
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+				}
+				NOT = { has_state_flag = KR_keeping_state@ROOT }
+			}
+			FROM = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+		}
+		target_root_trigger = {
+			is_in_faction = no
+			num_subjects > 0
+		}
+		target_array = subjects
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision return_cores_to_subject target: [From.GetName]"
+			set_country_flag = KR_returning_land
+			FROM = { save_event_target_as = return_to }
+			country_event = annex.3
+		}
+	}
+	AI_improve_north_America = {
+		allowed = {
+			tag = AHM
+		}
+		available = {
+		}
+		visible = {
+			or = {
+				is_ai = yes
+				is_debug = yes
+			}
+			USA = { is_ai = yes }
+			NFA = { is_ai = yes }
+			NGD = { is_ai = yes }
+			FRG = { is_ai = yes }
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			country_event = {
+				id = ah_germany.2000
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	Rebuild_third_international = {
+		icon = generic_industry
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+		}
+		visible = {
+			or = {
+				has_country_flag = Build_third_international_westline
+				#has_country_flag = European_Liberation_League_leader
+			}
+			has_government = communism
+			is_faction_leader = yes
+			is_major = yes
+			SOV = {
+				not = {
+					has_idea = faction_leader_third_international
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_faction_name = Third_international
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	eng_target_decision = {
+		allowed = {
+			always = no
+		}
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				has_country_flag = former_eng_country
+			}
+			ROOT = {
+				is_subject = no
+			}
+		}
+		target_root_trigger = {
+			has_country_flag = win_eng
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			# modifier = {
+			# 	ROOT = {
+			# 		is_neighbor_of = FROM
+			# 	}
+			# 	factor = 0
+			# }
+		}
+		complete_effect = {
+			FROM = {
+				white_peace = ROOT
+			}
+		}
+	}
+	targeted_race_for_the_bomb = {
+		icon = generic_research
+		allowed = {
+			always = no
+		}
+		available = {
+			#Target is FROM
+			has_tech = atomic_research
+			NOT = {
+				has_global_flag = first_nuke_dropped
+			}
+			NOT = {
+				has_idea = race_for_the_bomb
+			}
+		}
+		target_root_trigger = {
+			has_tech = atomic_research
+			NOT = {
+				has_global_flag = first_nuke_dropped
+			}
+			NOT = {
+				has_idea = race_for_the_bomb
+			}
+		}
+		#If this trigger matches a country.
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				has_tech = nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+		visible = {
+			#Target is FROM
+			has_tech = atomic_research
+			NOT = {
+				has_global_flag = first_nuke_dropped
+			}
+			NOT = {
+				has_idea = race_for_the_bomb
+			}
+			FROM = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				has_tech = nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = racing_for_the_bomb
+			add_ideas = race_for_the_bomb
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_other_country = {
+					has_tech = nukes
+				}
+			}
+		}
+	}
+	improved_worker_conditions_1 = {
+		icon = generic_industry
+		available = {
+			has_stability < 1
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		modifier = {
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.1
+			industrial_capacity_factory = -0.1
+		}
+		days_remove = 180
+		days_re_enable = 540
+		cost = 100
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155				#Spend on other things first
+			}
+		}
+	}
+	anti_fascist_raids = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		visible = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		available = {
+			fascism > 0.1
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		modifier = {
+			fascism_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 150
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				tag = AUS
+				fascism > 0.45
+				is_historical_focus_on = no
+			}
+			modifier = {
+				add = 10
+				tag = AUS
+				fascism > 0.45
+				#DVL = {
+					#has_completed_focus = GER_reestablish_free_elections
+				#}
+			}
+			modifier = {
+				add = 10
+				tag = AUS
+				fascism > 0.45
+				#has_completed_focus = liberty_ethos
+			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = {
+					has_global_flag = spanish_civil_war
+				}
+			}
+		}
+	}
+	anti_democratic_raids = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+		available = {
+			democratic > 0.1
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		modifier = {
+			democratic_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_communist_raids = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		visible = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		available = {
+			communism > 0.1
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_fascist_party = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		available = {
+			fascism < 0.2
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_government = fascism
+			}
+			fascism > 0
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = fascism
+			}
+		}
+		modifier = {
+			fascism_drift = -0.05
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@fascism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_fascism_flag
+			}
+			remove_fascist_spirits_effect = yes
+			custom_effect_tooltip = ban_fascist_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_democratic_party = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		available = {
+			democratic < 0.2
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+			democratic > 0
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = democratic
+			}
+		}
+		modifier = {
+			democratic_drift = -0.05
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@democratic
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_democratic_flag
+			}
+			remove_democratic_spirits_effect = yes
+			custom_effect_tooltip = ban_democratic_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_communist_party = {
+		icon = generic_civil_support
+		allowed = { not = { tag = FRA }  not = { tag = LIB }}
+		available = {
+			communism < 0.2
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_government = communism
+			}
+			communism > 0
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = communism
+			}
+		}
+		modifier = {
+			communism_drift = -0.05
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@communism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_communism_flag
+			}
+			remove_communist_spirits_effect = yes
+			custom_effect_tooltip = ban_communist_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_fascist_state = {
+		icon = generic_political_discourse
+		allowed = { not = { tag = FRA } }
+		available = {
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+					original_tag = BUL
+				}
+				NOT = {
+					has_country_flag = {
+						flag = BUL_freedom_of_press_flag
+						days < 365
+					}
+					focus_progress = {
+						focus = BUL_freedom_of_press
+						progress > 0
+					}
+				}
+			}
+		}
+		visible = {
+			has_government = fascism
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = 0.03
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_democratic_state = {
+		icon = generic_political_discourse
+		allowed = { not = { tag = FRA } }
+		available = {
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					has_country_flag = {
+						flag = BUL_freedom_of_press_flag
+						days < 365
+					}
+					focus_progress = {
+						focus = BUL_freedom_of_press
+						progress > 0
+					}
+				}
+			}
+		}
+		visible = {
+			has_government = democratic
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = 0.03
+			neutrality_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_communist_state = {
+		icon = generic_political_discourse
+		allowed = { not = { tag = FRA } }
+		available = {
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					has_country_flag = {
+						flag = BUL_freedom_of_press_flag
+						days < 365
+					}
+					focus_progress = {
+						focus = BUL_freedom_of_press
+						progress > 0
+					}
+				}
+			}
+		}
+		visible = {
+			has_government = communism
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		modifier = {
+			communism_drift = 0.03
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_neutrality_state = {
+		icon = generic_political_discourse
+		allowed = { not = { tag = FRA } }
+		available = {
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					has_country_flag = {
+						flag = BUL_freedom_of_press_flag
+						days < 365
+					}
+					focus_progress = {
+						focus = BUL_freedom_of_press
+						progress > 0
+					}
+				}
+			}
+		}
+		visible = {
+			has_government = neutrality
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				NOT = {
+					original_tag = GRE
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = 0.03
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	Establish_to_generic_economy_faction = {
+		icon = GFX_generic_economy_faction_text_icon
+		available = {
+		}
+		visible = {
+			is_faction_leader = yes
+			check_variable = { THIS.economy_faction_var = 0 }
+			not = {
+				any_country = { check_variable = { THIS.economy_faction_var = 10 } }
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			capital_scope = { save_global_event_target_as = generic_economy_faction_capital_state }
+			save_global_event_target_as = generic_economy_faction_leader
+			hidden_effect = { add_ideas = generic_economy_faction_idea }
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	diversify_special_forces = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+		}
+
+		available = {
+		}
+
+		visible = {
+			is_major = yes
+			date > 1940.1.1
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_potential_special_forces_tree = yes
+		}
+		ai_will_do = {
+			factor = 201
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+	diversify_special_forces2 = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+		}
+
+		available = {
+			can_unlock_second_track_of_sf_doctrine = yes
+		}
+
+		visible = {
+			is_major = yes
+			date > 1940.1.1
+			can_unlock_second_track_of_sf_doctrine = yes
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_potential_special_forces_tree = yes
+		}
+		ai_will_do = {
+			factor = 201
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+	# diversify_special_forces3 = {
+
+	# 	icon = GFX_decision_generic_military
+
+	# 	allowed = {
+	# 	}
+
+	# 	available = {
+	# 		is_major = yes
+	# 		has_any_grand_doctrine = land
+	# 		has_completed_track = infantry
+	# 		has_completed_track = combat_support
+	# 		has_completed_track = armor
+	# 		has_completed_track = operations
+	# 	}
+
+	# 	visible = {
+	# 		is_major = yes
+	# 		has_any_grand_doctrine = land
+	# 	}
+
+	# 	fire_only_once = yes
+
+	# 	cost = 50
+
+	# 	complete_effect = {
+	# 		add_potential_special_forces_tree = yes
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 201
+	# 		modifier = {
+	# 			factor = 0
+	# 			is_major = no
+	# 		}
+	# 	}
+	# }
+}
+
+economy_decisions = {
+}
+
+propaganda_efforts = {
+	war_propaganda = {
+		icon = generic_prepare_civil_war
+		available = {
+			NOT = {
+				has_country_flag = war_propaganda_campaign_running
+			}
+			has_war_support < 0.5
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
+		}
+		visible = {
+			OR = {
+				has_war_with_non_exiled_country = yes
+				any_neighbor_country = {
+					AND = {
+						NOT = {
+							has_government = ROOT
+						}
+						has_offensive_war = yes
+						has_added_tension_amount > 10
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 180
+		cost = 150
+		modifier = {
+			war_support_weekly = 0.005
+		}
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	war_propaganda_casualties = {
+		icon = generic_prepare_civil_war
+		available = {
+			#NOT = { has_country_flag = war_propaganda_campaign_running }
+			has_casualties_war_support < 0
+		}
+		visible = {
+			# has_war = yes
+			has_war_with_non_exiled_country = yes
+		}
+		fire_only_once = no
+		days_remove = 180
+		remove_trigger = {
+			has_war = no
+		}
+		cost = 100
+		modifier = {
+			weekly_casualties_war_support = 0.006
+		}
+		#complete_effect = {
+		#	set_country_flag = war_propaganda_campaign_running
+		#}
+		#remove_effect = {
+		#	clr_country_flag = war_propaganda_campaign_running
+		#}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10				#AI should probably just choose this one for general purposes.
+				has_war = yes
+				has_war_support < 0.7
+			}
+			modifier = {
+				add = 20
+				has_war = yes
+				has_war_support < 0.5
+			}
+			modifier = {
+				add = 30
+				has_war = yes
+				has_war_support < 0.3
+			}
+			modifier = {
+				add = 201				#ie; consider prio idea
+				has_war = yes
+				has_casualties_war_support < -0.25
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				OR = {
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					has_idea = extensive_conscription
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_support > 0.9
+			}
+		}
+	}
+	war_propaganda_convoys = {
+		icon = GFX_decision_generic_naval
+		available = {
+			#NOT = { has_country_flag = war_propaganda_campaign_running }
+			has_convoys_war_support < 0
+		}
+		visible = {
+			# has_war = yes
+			has_war_with_non_exiled_country = yes
+		}
+		fire_only_once = no
+		days_remove = 180
+		remove_trigger = {
+			has_war = no
+		}
+		cost = 100
+		modifier = {
+			weekly_convoys_war_support = 0.006
+		}
+		#complete_effect = {
+		#	set_country_flag = war_propaganda_campaign_running
+		#}
+		#remove_effect = {
+		#	clr_country_flag = war_propaganda_campaign_running
+		#}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201				#ie; consider prio idea
+				has_war = yes
+				has_convoys_war_support < -0.29
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				OR = {
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					has_idea = extensive_conscription
+				}
+			}
+		}
+	}
+	war_propaganda_bombing = {
+		icon = GFX_decision_generic_air
+		available = {
+			#	NOT = { has_country_flag = war_propaganda_campaign_running }
+			has_bombing_war_support < 0
+		}
+		visible = {
+			# has_war = yes
+			has_war_with_non_exiled_country = yes
+		}
+		fire_only_once = no
+		days_remove = 180
+		remove_trigger = {
+			has_war = no
+		}
+		cost = 100
+		modifier = {
+			weekly_bombing_war_support = 0.006
+		}
+		#complete_effect = {
+		#	set_country_flag = war_propaganda_campaign_running
+		#}
+		#remove_effect = {
+		#	clr_country_flag = war_propaganda_campaign_running
+		#}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10				#AI should probably just choose this one for general purposes.
+				has_war = yes
+				has_war_support < 0.65
+			}
+			modifier = {
+				add = 20
+				has_war = yes
+				has_war_support < 0.5
+			}
+			modifier = {
+				add = 30
+				has_war = yes
+				has_war_support < 0.35
+			}
+			modifier = {
+				add = 201				#ie; consider prio idea
+				has_war = yes
+				has_bombing_war_support < -0.2
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				OR = {
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					has_idea = extensive_conscription
+				}
+			}
+		}
+	}
+	
+	war_propaganda_radio_industry = { 
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			threat > 0.25
+			has_tech = radio
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			add_war_support = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201
+				has_war_support < 0.6
+			}
+		}
+	}
+	
+	war_propaganda_film_industry = { 
+
+		icon = generic_prepare_civil_war
+
+		available = { 
+			has_war_with_non_exiled_country = yes
+			OR = {
+				is_major = yes
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				threat > 0.5
+			}
+			else = {
+				threat > 0.30
+			}
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 100 
+
+		complete_effect = {
+			effect_tooltip = {
+				add_war_support = 0.10
+			}
+			hidden_effect = {
+				country_event = political.33
+				set_country_flag = has_taken_the_war_propaganda_film_industry_decision
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201
+				has_war_support < 0.6
+			}
+		}
+	}
+}
+
+operations = {
+	rebuild_the_Kalma_alliance = {
+		allowed = {
+			OR = {
+				original_tag = FIN
+				#original_tag = SWE
+				original_tag = NOR
+				original_tag = DEN
+			}
+		}
+		visible = {
+			owns_state = 1104
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = rebuild_the_Kalma_alliance_tt
+				NOT = {
+					any_state = {
+						is_nordic_state = yes
+						NOT = { is_owned_and_controlled_by = ROOT }
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					not = {
+						or = {
+							has_cosmetic_tag = DEN_Overlord_governor
+							has_cosmetic_tag = DEN_Overlord
+						}
+					}
+				}
+				set_cosmetic_tag = Kalma
+			}
+			if = {
+				limit = {
+					1104 = {
+						NOT = { is_core_of = ROOT }
+					}
+				}
+				1104 = { add_core_of = ROOT }
+			}
+			set_capital = {
+				state = 1104
+			}
+			if = {
+				limit = { tag = DEN }
+				add_research_slot = 1
+			}
+		}
+	}
+}
+
+special_projects = {
+	rebuild_suez_canal = {
+		icon = GFX_decision_generic_special_project
+		available = {
+			has_full_control_of_state = 446
+			has_full_control_of_state = 453
+			num_of_civilian_factories > 15
+		}
+		visible = {
+			has_global_flag = SUEZ_CANAL_BLOCKED
+		}
+		fire_only_once = no
+		days_remove = 365
+		cost = 120
+		modifier = {
+			civilian_factory_use = 15
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 446
+					has_full_control_of_state = 453
+				}
+				set_country_flag = rebuilt_suez
+				clr_global_flag = SUEZ_CANAL_BLOCKED
+				country_event = {
+					id = wtt_news.42
+					hours = 6
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0				# Don't bother if your navy is weak AND not ENG
+				has_navy_size = {
+					size < 100
+				}
+				NOT = {
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 200				# Prioritize if Italy is being invaded and you can't get to the battlefront (no control of Gibraltar strait)
+				NOT = {
+					OR = {
+						has_full_control_of_state = 118
+						any_allied_country = {
+							has_full_control_of_state = 118
+						}
+					}
+				}
+				has_war_with = ITA
+				ITA = {
+					surrender_progress > 0.1
+				}
+				has_full_control_of_state = 447
+				has_full_control_of_state = 454
+				has_full_control_of_state = 452
+				has_full_control_of_state = 456
+				has_full_control_of_state = 457
+				NOT = {
+					has_country_flag = blew_up_suez
+				}
+			}
+			modifier = {
+				factor = 200				# Prioritize if UK
+				tag = ENG
+			}
+			modifier = {
+				factor = 10				# Prioritize if not at war
+				has_war = no
+			}
+		}
+	}
+}
+
+war_measures = {
+	emergency_factory_conversion_defensive = {
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories > 5			#Change this if amount of factories change
+		}
+		visible = {
+			has_defensive_war = yes
+			has_offensive_war = no
+		}
+		fire_only_once = no
+		days_re_enable = 90
+		cost = 100
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	emergency_factory_conversion_offensive = {
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories > 5			#Change this if amount of factories change
+		}
+		visible = {
+			has_offensive_war = yes
+		}
+		fire_only_once = no
+		days_re_enable = 90
+		cost = 100
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+			add_stability = -0.03
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	desperate_defense = {
+		icon = generic_prepare_civil_war
+		available = {
+			surrender_progress > 0.5
+		}
+		visible = {
+			surrender_progress > 0
+		}
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 360
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.6
+				factor = 10
+			}
+		}
+		modifier = {
+			army_defence_factor = 0.2
+			dig_in_speed_factor = 0.5
+		}
+		complete_effect = {
+		}
+	}
+	women_in_the_workforce = {
+		icon = generic_industry
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war = yes
+			has_idea = tot_economic_mobilisation
+			OR = {
+				AND = {
+					has_government = democratic
+					has_war_support > 0.79
+				}
+				AND = {
+					has_government = communism
+					has_war_support > 0.79
+				}
+				AND = {
+					has_government = fascism
+					OR = {
+						has_war_support > 0.89
+						surrender_progress > 0
+					}
+				}
+				AND = {
+					has_government = neutrality
+					has_war_support > 0.84
+					has_stability > 0.7
+				}
+			}
+		}
+		visible = {
+			has_war = yes
+		}
+		cost = 100
+		days_remove = -1
+		remove_trigger = {
+			OR = {
+				has_war = no
+				not = {
+					has_idea = tot_economic_mobilisation
+				}
+			}
+		}
+		modifier = {
+			conscription = 0.03
+			stability_factor = -0.05
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_manpower < 100000
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					tag = CAN
+				}
+				country_event = {
+					id = canada_vanilla.1
+					hours = 6
+				}
+				# Ronnie the Bren Gun Girl
+			}
+		}
+	}
+	war_bonds = {
+		icon = generic_industry
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war = yes
+			OR = {
+				AND = {
+					has_government = democratic
+					has_war_support > 0.79
+				}
+				AND = {
+					has_government = communism
+					has_war_support > 0.79
+				}
+				AND = {
+					has_government = fascism
+					OR = {
+						has_war_support > 0.89
+						surrender_progress > 0
+					}
+				}
+				AND = {
+					has_government = neutrality
+					has_war_support > 0.84
+					has_stability > 0.7
+				}
+			}
+		}
+		visible = {
+			has_war = yes
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = GER_war_bonds_var?50
+		modifier = {
+			consumer_goods_factor = -0.2
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 100
+				factor = 0				#use as pp dump
+			}
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = GER_war_bonds_var
+					}
+				}
+				set_variable = {
+					var = GER_war_bonds_var
+					value = 50
+				}
+			}
+			add_to_variable = {
+				var = GER_war_bonds_var
+				value = 25
+			}
+			if = {
+				limit = {
+					has_variable = GER_war_bonds_war_support_var
+				}
+				add_war_support = GER_war_bonds_war_support_var
+			}
+			add_to_variable = {
+				var = GER_war_bonds_war_support_var
+				value = -0.025
+			}
+		}
+	}
+}
+
+foreign_politics = {
+	object_to_attaches = {
+		allowed = {
+			has_dlc = "Waking the Tiger"
+		}
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					has_country_flag = rejected_withdrawing_attache
+				}
+				NOT = {
+					has_country_flag = rejected_withdrawing_attache@ROOT
+				}
+				NOT = {
+					has_country_flag = object_attache_going_on
+				}
+			}
+			has_war = yes
+			has_capitulated = no
+			NOT = {
+				has_war_with = FROM
+			}
+			any_enemy_country = {
+				has_attache_from = FROM
+			}
+		}
+		target_root_trigger = {
+			has_war = yes
+			has_capitulated = no
+		}
+		target_trigger = {
+			NOT = {
+				has_war_with = FROM
+			}
+			#FROM = { has_sent_attache = yes } # Make such trigger to optimize if it becomes a performance problem again.
+			any_enemy_country = {
+				has_attache_from = FROM
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.14
+					hours = 6
+				}
+			}
+			hidden_effect = {
+				FROM = {
+					set_country_flag = object_attache_going_on
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#经济系统
+adorable_heart_UBS_bank = {
+	#政治点换钱
+	UBS_diya_pp = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			NOT = {
+				TAG = SWI
+				has_war_with = SWI
+			}
+		}
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 1
+				adorable_heart_jingji_1 = yes
+			}
+			modifier = {
+				factor = 0.1
+				num_of_factories < 99
+			}
+			modifier = {
+				factor = 0
+				adorable_heart_jingji_2 = yes
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					ubs_load > ubs_save
+				}
+				check_variable = {
+					var = ubs_save
+					value = 500
+					compare = equals
+				}
+				adorable_heart_jingji_3 = yes
+			}
+			modifier = {
+				factor = 0
+				adorable_heart_jingji_4 = yes
+			}
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_5 = yes
+			}
+			modifier = {
+				factor = 0
+				has_political_power < 150
+			}
+			modifier = {
+				factor = 0
+				date < 1939.10.1
+				TAG = DVL
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+			modifier = {
+				factor = 5
+				has_idea = jingji_xiaotiao
+			}
+			modifier = {
+				add = var:ROOT.pp_to_ubs
+			}
+			modifier = {
+				factor = 0
+				and = {
+					has_political_power < 1000
+					tag = ENG
+				}
+			}
+		}
+		available = {
+			has_political_power > 100
+			NOT = {
+				has_country_flag = diya_CD_30_1
+			}
+		}
+		cost = 100
+		modifier = {
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = 50
+				tooltip = UBS_SAVE_UP_50
+			}
+			UBS_bank_icon_frames = yes
+			set_country_flag = {
+				flag = diya_CD_30_1
+				value = 1
+				days = 30
+			}
+		}
+	}
+	UBS_gongchang_pp = {
+		#存在ai乱卖问题
+		icon = GFX_decision_generic_construction
+		visible = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			industrial_complex > 8
+			NOT = {
+				has_country_flag = diya_CD_30_2
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			country_event = adorable_heart_jueyi.8
+			set_country_flag = {
+				flag = diya_CD_30_2
+				value = 1
+				days = 30
+			}
+		}
+	}
+	#钱换政治点
+	duihuan_pp_1 = {
+		icon = GFX_decision_duihuan_pp_1
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_1 = yes
+			}
+			modifier = {
+				factor = 1
+				adorable_heart_jingji_2 = yes
+			}
+			modifier = {
+				factor = 0
+				adorable_heart_jingji_3 = yes
+			}
+			modifier = {
+				factor = 3
+				adorable_heart_jingji_4 = yes
+			}
+			modifier = {
+				factor = 0
+				has_political_power > 300
+			}
+			modifier = {
+				factor = 0.6
+				adorable_heart_jingji_5 = yes
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					TAG = DVL
+					TAG = JAP
+					TAG = ITA
+				}
+			}
+			modifier = {
+				add = var:ROOT.ubs_to_pp
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<1000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 100
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_100
+		available = {
+			NOT = {
+				#has_country_flag = goumai_CD_30_1
+				has_idea = jingji_xiaotiao
+			}
+		}
+		#days_re_enable = 1
+		days_remove = 60
+		modifier = {
+			political_power_gain = 1
+		}
+		complete_effect = {
+			#add_political_power = 70
+			add_to_variable = {
+				var = ubs_save
+				value = -100
+				tooltip = UBS_SAVE_down_100
+			}
+			UBS_bank_icon_frames = yes
+			#set_country_flag = {
+			#	flag = goumai_CD_30_1
+			#	value = 1
+			#	days = 30
+			#}
+		}
+	}
+	#钱换民工
+	duihuan_gongchang_1 = {
+		#购买民工-（被暂时删除） 
+		icon = GFX_decision_duihuan_gongchang_1
+		visible = {
+			#always = no
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_1 = yes
+			}
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_2 = yes
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = ubs_load
+					value = 2000
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 3
+				adorable_heart_jingji_4 = yes
+			}
+			modifier = {
+				factor = 0.6
+				adorable_heart_jingji_5 = yes
+			}
+			modifier = {
+				factor = 1
+				OR = {
+					TAG = DVL
+					TAG = USA
+					TAG = ENG
+				}
+			}
+			modifier = {
+				add = var:ROOT.ubs_to_civ
+			}
+			modifier = {
+				factor = 0
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 500
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_500
+		available = {
+			num_of_civilian_factories_available_for_projects > 7
+			NOT = {
+				has_country_flag = goumai_CD_30_2
+				has_idea = jingji_xiaotiao
+			}
+		}
+		#days_re_enable = 1
+		modifier = {
+			civilian_factory_use = 8
+		}
+		days_remove = 60
+		remove_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+						is_core_of = ROOT
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+						is_core_of = ROOT
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				#custom_effect_tooltip = core_yes
+				else_if = {
+					limit = {
+						any_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					custom_effect_tooltip = core_no
+				}
+				else_if = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -500
+				tooltip = UBS_SAVE_down_500
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换建筑槽
+	duihuan_jianzhucao_1 = { 
+		icon = GFX_decision_duihuan_gongchang_1
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = {
+				has_idea = jingji_xiaotiao
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 300
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_300
+		available = {
+			any_owned_state = {
+			NOT = { has_state_flag = infrastructure_building_slot_flag }
+			is_fully_controlled_by = ROOT
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_flag }
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = infrastructure_building_slot_flag
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -300
+				tooltip = UBS_SAVE_down_300
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换基建
+	duihuan_jijian_1 = { 
+		icon = GFX_decision_duihuan_gongchang_1
+		visible = {
+		}
+		available = {
+			NOT = {
+			has_idea = jingji_xiaotiao
+			}
+			any_state = {
+			is_core_of = ROOT
+			infrastructure < 5
+			not = { has_state_flag = AHM_infrastructure_flag }
+			}
+		}
+		days_remove = 60
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 3
+				adorable_heart_jingji_4 = yes
+			}
+			modifier = {
+				factor = 0.6
+				adorable_heart_jingji_5 = yes
+			}
+			modifier = {
+				factor = 1
+				OR = {
+					TAG = DVL
+					TAG = USA
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 200
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_200
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					infrastructure < 5
+					not = { has_state_flag = AHM_infrastructure_flag }
+				}
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+				set_state_flag = AHM_infrastructure_flag
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -200
+				tooltip = UBS_SAVE_down_200
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换建造加成
+	benguo_fazhan = {
+		icon = GFX_decision_duihuan_gongchang_1
+		available = {
+			NOT = {
+			has_idea = jingji_xiaotiao
+			}
+		}
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_2 = yes
+			}
+			modifier = {
+				factor = 0
+				adorable_heart_jingji_3 = yes
+			}
+			modifier = {
+				factor = 2
+				adorable_heart_jingji_4 = yes
+			}
+			modifier = {
+				factor = 0.5
+				adorable_heart_jingji_5 = yes
+			}
+			modifier = {
+				add = var:ROOT.ubs_to_build_speed
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<1000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 300
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_300
+		available = {
+			# custom_trigger_tooltip = {
+			# 	tooltip = cunkuan_xuqiu_200
+			# 	check_variable = {
+			# 		var = ubs_save
+			# 		value = 300
+			# 		compare = greater_than_or_equals
+			# 	}
+			# }
+		}
+		days_remove = 120
+		modifier = {
+			#production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.05
+			consumer_goods_factor = -0.05
+			production_speed_infrastructure_factor = 0.1
+			production_speed_synthetic_refinery_factor = 0.1
+			production_speed_nuclear_reactor_factor = 0.1
+			
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -300
+				tooltip = UBS_SAVE_down_300
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换人力
+	goumai_renli = {
+		icon = GFX_decision_duihuan_gongchang_1
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = var:ROOT.ubs_to_manpower
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<2000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 200
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_200
+		available = {
+			NOT = {
+				has_idea = jingji_xiaotiao
+			}
+		}
+		days_re_enable = 1
+		days_remove = 30
+		modifier = {
+		}
+		remove_effect = {
+			add_manpower = 20000
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -200
+				tooltip = UBS_SAVE_down_200
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换燃油
+	goumai_ranyou = {
+		icon = GFX_decision_duihuan_gongchang_1
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = var:ROOT.ubs_to_fuel
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<2000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		available = {
+			NOT = {
+				has_idea = jingji_xiaotiao
+			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = cunkuan_xuqiu_200
+			# 	check_variable = {
+			# 		var = ubs_save
+			# 		value = 200
+			# 		compare = greater_than_or_equals
+			# 	}
+			# }
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 300
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_300
+		days_re_enable = 1
+		days_remove = 10
+		modifier = {
+		}
+		remove_effect = {
+			add_fuel = 100000
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -300
+				tooltip = UBS_SAVE_down_300
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换稳定度
+	goumai_stability = {
+		icon = GFX_stability_icon
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = var:ROOT.ubs_to_stability
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<2000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		available = {
+			has_stability < 0.6
+			NOT = {
+				has_idea = jingji_xiaotiao
+			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = cunkuan_xuqiu_200
+			# 	check_variable = {
+			# 		var = ubs_save
+			# 		value = 200
+			# 		compare = greater_than_or_equals
+			# 	}
+			# }
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 300
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_300
+		days_re_enable = 1
+		days_remove = 120
+		modifier = {
+			stability_weekly = 0.005
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -300
+				tooltip = UBS_SAVE_down_300
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#钱换战争支持度
+	goumai_war_support = {
+		icon = GFX_war_support_icon
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = var:ROOT.ubs_to_ws
+			}
+			modifier = {
+				factor = 0
+				and = {
+					check_variable = {
+						ubs_save<2000
+					}
+					tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+			modifier = {
+				factor = 10
+				tag = JAP
+			}
+		}
+		available = {
+			threat > 0.5
+			or = {
+			has_war_support < 0.5
+			if = {
+			has_war = yes
+			has_war_support < 0.8
+			}
+			}
+			NOT = {
+				has_idea = jingji_xiaotiao
+			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = cunkuan_xuqiu_150
+			# 	check_variable = {
+			# 		var = ubs_save
+			# 		value = 150
+			# 		compare = greater_than_or_equals
+			# 	}
+			# }
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = ubs_save
+				value = 500
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = HCP_500
+		days_re_enable = 1
+		days_remove = 90
+		modifier = {
+			consumer_goods_factor = -0.1
+			war_support_weekly = 0.01
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ubs_save
+				value = -500
+				tooltip = UBS_SAVE_down_500
+			}
+			UBS_bank_icon_frames = yes
+		}
+	}
+	#债务换钱
+	daikuan = {
+		icon = GFX_decision_duihuan_pp_2
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = var:ROOT.loan_to_ubs
+			}
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				tag = FRA
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = daikuan_forbid
+			}
+			NOT = {
+				has_country_flag = daikuan_CD_60
+				has_idea = jingji_xiaotiao
+			}
+			custom_trigger_tooltip = {
+				tooltip = daikuan_xuqiu_3000
+				check_variable = {
+					var = ubs_load
+					value = 3000
+					compare = less_than
+				}
+			}
+		}
+		days_re_enable = 1
+		modifier = {
+		}
+		complete_effect = {
+			country_event = adorable_heart_jueyi.9
+			set_country_flag = {
+				flag = daikuan_CD_60
+				value = 1
+				days = 60
+			}
+		}
+	}
+	#归还债务
+	huanzhai = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			check_variable = {
+				var = ubs_load
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = ubs_save
+				value = 0
+				compare = greater_than
+			}
+		}
+		days_re_enable = 1
+		modifier = {
+		}
+		complete_effect = {
+			custom_effect_tooltip = ubs_huanzhai_text
+			if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = greater_than_or_equals
+					}
+				}
+				add_to_variable = {
+					var = ubs_save
+					value = -500
+				}
+				add_to_variable = {
+					var = ubs_load
+					value = -500
+				}
+				UBS_bank_icon_frames = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = less_than
+					}
+				}
+				set_temp_variable = {
+					load_minuend_temp = ubs_load
+				}
+				subtract_from_variable = {
+					var = ubs_save
+					value = load_minuend_temp
+				}
+				set_variable = {
+					ubs_load = 0
+				}
+				UBS_bank_icon_frames = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = greater_than_or_equals
+					}
+				}
+				set_temp_variable = {
+					save_minuend_temp = ubs_save
+				}
+				subtract_from_variable = {
+					var = ubs_load
+					value = save_minuend_temp
+				}
+				set_variable = {
+					ubs_save = 0
+				}
+				UBS_bank_icon_frames = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						ubs_save > ubs_load
+					}
+				}
+				subtract_from_variable = {
+					var = ubs_save
+					value = ubs_load
+				}
+				set_variable = {
+					ubs_load = 0
+				}
+				UBS_bank_icon_frames = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						ubs_load > ubs_save
+					}
+				}
+				subtract_from_variable = {
+					var = ubs_load
+					value = ubs_save
+				}
+				set_variable = {
+					ubs_save = 0
+				}
+				UBS_bank_icon_frames = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = ubs_save
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						var = ubs_load
+						value = 500
+						compare = less_than
+					}
+					check_variable = {
+						ubs_load = ubs_save
+					}
+				}
+				set_variable = {
+					ubs_save = 0
+				}
+				set_variable = {
+					ubs_load = 0
+				}
+				UBS_bank_icon_frames = yes
+			}
+		}
+	}
+	restructure_supply_system = {
+		#one time boost to get a few cheap supply hubs
+		visible = {
+		#	OR = {
+		#		is_major = no
+		#		AND = {
+		#			is_faction_leader = yes
+		#			num_of_factories < 51					#would be a minor if it wasn't for faction leader status
+		#		}
+		#	}
+		}
+		fire_only_once = yes
+		days_remove = 120
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				num_of_factories < 30
+				factor = 0
+			}
+		}
+		modifier = {
+			production_speed_supply_node_factor = 3
+		}
+		complete_effect = {
+			set_variable = {
+				node_goal = num_of_supply_nodes
+			}
+			add_to_variable = {
+				node_goal = 3
+			}
+			#maximum 3 additional nodes
+		}
+		cancel_trigger = {
+			check_variable = {
+				node_goal < num_of_supply_nodes
+			}
+			#if the number of supply nodes exceeds the old number by +3, immediately cancel
+		}
+	}
+	seize_some_trains_woo = {
+		#repeating train seize
+		visible = {
+			num_of_factories < 60
+		}
+		available = {
+			has_equipment = {
+				train_equipment < 101
+			}
+			has_tech = basic_train
+		}
+		days_remove = 180
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.56
+				factor = 0
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 15
+			}
+			add_stability = -0.05
+		}
+	}
+	infrastructure_building_slot = {
+		icon = generic_construction
+		allowed = {
+			always = yes
+		}
+		cost = 100
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			any_owned_state = {
+				NOT = {
+					has_state_flag = infrastructure_building_slot_flag
+				}
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+			}
+		}
+		visible = {
+			any_owned_state = {
+				NOT = {
+					has_state_flag = infrastructure_building_slot_flag
+				}
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+			}
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = {
+						has_state_flag = infrastructure_building_slot_flag
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = infrastructure_building_slot_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+		}
+	}
+	war_building_slot = {
+		icon = generic_construction
+		allowed = {
+			always = yes
+		}
+		cost = 50
+		fire_only_once = no
+		available = {
+			has_war = yes
+			any_owned_state = {
+				NOT = {
+					has_state_flag = war_building_slot_flag
+				}
+				is_fully_controlled_by = ROOT
+			}
+		}
+		visible = {
+			has_war = yes
+			any_owned_state = {
+				NOT = {
+					has_state_flag = war_building_slot_flag
+				}
+				is_fully_controlled_by = ROOT
+			}
+		}
+        complete_effect = {
+        	add_war_support = -0.025
+			add_stability = -0.025
+			if = {
+				limit = {
+					any_owned_state = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 4
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 4
+					}
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = war_building_slot_flag
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_state = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 2
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 2
+					}
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = war_building_slot_flag
+				}
+			}
+			else = {
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+					}
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = war_building_slot_flag
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+			modifier = {
+				any_owned_state = {
+					infrastructure > 3
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = no
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+adorable_heart_generic_decision = {
+	DEBUG_TEST = {
+		available = {
+			has_any_grand_doctrine = land
+			custom_trigger_tooltip = {
+				tooltip = 11
+				check_variable = { ROC_inner_circle_characters_chiang^0 = 0 compare = not_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = 22
+				check_variable = { ROC_inner_circle_characters_RCKMT^0 = 0 compare = not_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = 33
+				ROC_policy_not_changge = no
+			}
+					has_game_rule = {
+						rule = AH_KMK_KNM_WAR_ai_behavior_SELECTION
+						option = FRA_CW_GAME_RULE_2
+					}
+		}
+		visible = {
+			is_debug = yes
+		}
+		modifier = {
+			naval_night_attack = 0.3
+			naval_attrition = 0.3
+		}
+		complete_effect = {
+			custom_effect_tooltip = DEBUG_TEST
+		}
+	}
+	economy_faction_debug = {
+		available = {
+		}
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = economy_faction_debug_tt
+			hidden_effect = {
+				DVL = {
+					set_country_flag = DVL_Promote_economic_synergy
+					set_variable = { global.num_of_Berlin_Economic_Agreement = 0 }
+					clear_array = global.Berlin_Economic_Agreement_member
+					add_ideas = DVL_Berlin_Economic_Agreement
+					custom_effect_tooltip = DVL_Promote_economic_synergy_tt
+					hidden_effect = {
+						add_dynamic_modifier = {
+							modifier = DVL_Berlin_Economic_Agreement_leader
+						}
+						every_country = {
+							limit = { is_subject_of = DVL }
+							add_ideas = DVL_Berlin_Economic_Agreement
+						}
+					}
+				}
+				GER = {
+					add_ideas = GER_Vienna_Convention_idea
+				}
+				ENG = {
+					add_dynamic_modifier = {
+						modifier = ENG_dynamic_modifier_wto
+					}	
+						set_variable = { economy_faction_var = 1 }
+						wto_effect = yes
+				}
+				CAN = {
+					country_event = ENG_event_wto.1 		
+				}
+				RAJ = {
+					country_event = ENG_event_wto.1 					
+				}
+				SAF = {
+					country_event = ENG_event_wto.1 				
+				}
+				AST = {
+					country_event = ENG_event_wto.1 				
+				}
+				MAL = {
+					country_event = ENG_event_wto.1 				
+				}
+				EGY = {
+					country_event = ENG_event_wto.1 					
+				}
+				EAS = {
+					country_event = ENG_event_wto.1 			
+				}
+				RYU = {
+					country_event = ENG_event_wto.1  				
+				}
+				NEE = {
+					country_event = ENG_event_wto.1 				
+				}
+				YEM = {
+					country_event = ENG_event_wto.1 				
+				}
+				SOV = {
+					set_variable = { global.num_comecon_member = 0 }
+					custom_effect_tooltip = SOV_formation_comecon_tooltip
+					unlock_decision_tooltip = SOV_establish_research_organization
+					hidden_effect = {
+						add_dynamic_modifier = {
+							modifier = SOV_comecon_leader
+						}
+						set_variable = { economy_faction_var = 2 }   ##设置阵营变量
+						comecon_effect = yes   ##计算阵营相关
+					}
+				}
+				BAY = { complete_national_focus = GEU_Rudolph_Economic_Plan }
+				CHI = {
+					set_variable = { economy_faction_var = 7 }   ##设置阵营变量
+					China_tribute_system_effect = yes   ##计算阵营相关
+				}
+			}
+		}
+	}
+	remove_AI_Arms_imitation = {
+		visible = {
+			has_idea = AI_Arms_imitation
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			remove_ideas = AI_Arms_imitation
+		}
+	}
+	# road_guide_view = {
+	# 	visible = {
+	# 		always = yes
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	available = {
+	# 		always = yes
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = show_welcome_splash
+	# 		if = {
+	# 			limit = { check_variable = { Route_Guide_Button_Var < 2 } }
+	# 			set_variable = { Country_History_Button_Var = 1 }
+	# 			set_variable = { Local_History_Button_Var = 1 }
+	# 			set_variable = { World_History_Button_Var = 1 }
+	# 			set_variable = { Route_Guide_Button_Var = 2 }
+	# 		}
+	# 		else = {
+	# 			set_variable = { Country_History_Button_Var = 1 }
+	# 			set_variable = { Local_History_Button_Var = 1 }
+	# 			set_variable = { World_History_Button_Var = 1 }
+	# 			set_variable = { Route_Guide_Button_Var = 1 }
+	# 		}
+	# 	}
+	# }
+	# guanbi_super_event_music = {
+	# 	visible = {
+	# 		always = yes
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	available = {
+	# 		always = yes
+	# 		not = {
+	# 			has_global_flag = no_super_event_music
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_global_flag = no_super_event_music
+	# 	}
+	# }
+	# kaiqi_super_event_music = {
+	# 	visible = {
+	# 		always = yes
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	available = {
+	# 		always = yes
+	# 		has_global_flag = no_super_event_music
+	# 	}
+	# 	complete_effect = {
+	# 		clr_global_flag = no_super_event_music
+	# 	}
+	# }
+	what_is_this = {
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = what_is_this_tt
+			hidden_effect = {
+				country_event = {
+					id = generic.2006
+				}
+			}
+		}
+	}
+}
+
+Online_decisions_category = {
+	Online_decisions_can_declare_war = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		available = {
+			not = {
+				has_global_flag = second_weltkrieg_has_started
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = Online_decisions_warning
+			set_global_flag = second_weltkrieg_has_started
+		}
+	}
+	Online_decisions_can_create_factiion = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = Online_decisions_warning
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_create_factions = yes
+			}
+		}
+	}
+	Online_decisions_can_leave_factiion = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_in_faction = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = Online_decisions_warning
+			leave_faction = yes
+		}
+	}
+	Online_decisions_can_dismantle_faction = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_faction_leader = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = Online_decisions_warning
+			dismantle_faction = yes
+		}
+	}
+	Online_decisions_can_add_to_faction = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_in_faction = no
+		}
+		target_trigger = {
+			FROM = {
+				is_faction_leader = yes
+			}
+			ROOT = {
+				is_in_faction = no
+				is_subject = no
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = Online_decisions_warning
+			FROM = {
+				country_event = generic.2002
+			}
+		}
+	}
+}
+
+Disarm_mobilization_category = {
+	Disarm_mobilization_economic = {
+		activation = {
+			or = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+				has_idea = GER_total_war_law
+			}
+			has_war = no
+			not = { has_country_flag = Base_Country }
+		}
+		available = {
+		}
+		cancel_trigger = {
+			or = {
+				has_war = yes
+				not = {
+					or = {
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+						has_idea = GER_total_war_law
+					}
+				}
+			}
+		}
+		icon = GFX_decision_hol_war_on_pacifism
+		is_good = no
+		days_mission_timeout = 60
+		selectable_mission = yes
+		complete_effect = {
+			add_ideas = partial_economic_mobilisation
+			#add_political_power = -150
+		}
+		timeout_effect = {
+			#add_ideas = partial_economic_mobilisation
+			add_stability = -0.15
+			add_war_support = -0.15
+			add_political_power = -200
+			activate_mission = Disarm_mobilization_economic
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	Disarm_mobilization_manpower = {
+		activation = {
+			or = {
+				has_idea = service_by_requirement
+				has_idea = all_adults_serve
+				has_idea = scraping_the_barrel
+			}
+			has_war = no
+			not = { has_country_flag = Base_Country }
+		}
+		available = {
+		}
+		cancel_trigger = {
+			or = {
+				has_war = yes
+				not = {
+					or = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+				}
+			}
+		}
+		icon = GFX_decision_hol_war_on_pacifism
+		is_good = no
+		days_mission_timeout = 60
+		selectable_mission = yes
+		complete_effect = {
+			add_ideas = extensive_conscription
+		}
+		timeout_effect = {
+			#add_ideas = extensive_conscription
+			add_stability = -0.15
+			add_war_support = -0.15
+			if = {
+				limit = {
+					has_idea = service_by_requirement
+				}
+				add_political_power = -150
+			}
+			else_if = {
+				limit = {
+					has_idea = all_adults_serve
+				}
+				add_political_power = -250
+			}
+			else_if = {
+				limit = {
+					has_idea = scraping_the_barrel
+				}
+				add_political_power = -350
+			}
+			activate_mission = Disarm_mobilization_manpower
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}
+
+White_peace_with_USA_D_C = {
+	White_peace_with_USA_D = {
+		visible = {
+			has_war_with = USA
+			not = {
+				tag = ENG
+			}
+			capital_scope = {
+				is_on_continent = europe
+			}
+			or = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+			USA = {
+				is_major = yes
+				is_faction_leader = yes
+				is_subject = no
+				or = {
+					any_allied_country = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					any_controlled_state = {
+						is_on_continent = europe
+					}
+				}
+			}
+			not = {
+				has_country_flag = Be_rejected_wp_USA
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = no_American_allies
+				not = {
+					any_allied_country = {
+						capital_scope = {
+							or = {
+								is_on_continent = north_america
+								is_on_continent = central_america
+								is_on_continent = south_america
+							}
+						}
+						has_capitulated = no
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_Lost_springboard_in_Europe
+				USA = {
+					not = {
+						any_allied_country = {
+							capital_scope = {
+								is_on_continent = europe
+							}
+							has_capitulated = no
+						}
+					}
+					not = {
+						any_controlled_state = {
+							is_on_continent = europe
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			USA = {
+				country_event = {
+					id = generic.2017
+				}
+			}
+		}
+	}
+}
+sinkiang_mineral_category = {
+}
+
+Space_Race_decision = {
+	Launch_of_satellite_decision = {
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 50
+		}
+		cost = 100
+		days_remove = 200
+		available = {
+			num_of_civilian_factories_available_for_projects > 49
+			is_special_project_completed = sp:sp_staged_rockets
+			is_special_project_completed = sp:sp_satellite
+			not = { has_country_flag = arrive_the_space }
+		}
+		remove_effect = {
+			custom_effect_tooltip = Launch_of_satellite_decision_tt
+			set_country_flag = arrive_the_space
+			hidden_effect = {
+				if = {
+					limit = {
+						not = { has_global_flag = human_first_arrive_the_space }
+					}
+					news_event = { id = generic.2021 }
+				}
+			}
+		}
+	}
+}
+
+generic_economy_faction = {
+	Invite_FROM_add_to_generic_economy_faction = {
+		icon = GFX_generic_economy_faction_text_icon
+		allowed = {
+		}
+		target_trigger = {
+			ROOT = {
+				has_idea = generic_economy_faction_idea
+				is_subject = no
+				is_faction_leader = yes
+				check_variable = { ROOT.economy_faction_var = 10 }
+			}
+			FROM = {
+				not_in_any_economy_faction = yes
+				not = { has_country_flag = Invite_FROM_add_to_generic_economy_faction }
+			}
+		}
+		target_array = allies
+		available = {
+			not = { has_war_with = FROM }
+		}
+		cost = 10
+		days_remove = 15
+		remove_effect = {
+			FROM = {
+				set_country_flag = Invite_FROM_add_to_generic_economy_faction
+				country_event = {
+					id = generic.2023
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}
+
+AHM_decision = {
+	
+}
+
+#白衣的测试决议组
+baiyi_debug_decision_categories = {
+    #创建一个右下角测试用弹窗
+    create_a_test_popupin_the_bottom_right_corner = {
+        complete_effect = {
+            adorable_heart_test = yes
+        }
+    }
+    #人物加经验-测试升级提示
+    character_level_up_test = {
+        complete_effect = {
+            random_unit_leader = { gain_xp = 5000 }
+            # ENG = { add_to_faction = ROOT }
+        }
+    }
+}
